@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DutchTap
 
-## Getting Started
+A tiny, polished Dutch grammar memory trainer. Three tap-based modes —
+**de/het**, **deze/dit/die/dat**, and **adjective endings** — sharing one
+noun bank, with a spaced-repetition engine that keeps bringing missed
+words back until they're automatic.
 
-First, run the development server:
+Play as a guest (progress saved on-device) or create a username/password
+account (no email — a one-time recovery code is your password reset
+method) to sync progress across devices.
+
+## Local setup
+
+Requirements: Node.js 20+, a MongoDB Atlas connection string.
 
 ```bash
+npm install
+cp .env.example .env.local   # fill in MONGODB_URI and SESSION_SECRET
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). Guest mode works
+immediately with no database; account features need `MONGODB_URI`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Production build |
+| `npm run start` | Run the production build |
+| `npm run lint` | ESLint |
+| `npm test` | Unit/integration tests (Vitest) — pure grammar/mastery logic, content validation, auth primitives |
+| `npm run test:e2e` | End-to-end tests (Playwright) — runs against a real dev server **and the real MongoDB Atlas database** in `MONGODB_URI`; creates and deletes its own `e2e_`-prefixed accounts |
+| `npm run test:coverage` | Vitest with coverage |
 
-## Learn More
+## Environment variables
 
-To learn more about Next.js, take a look at the following resources:
+See [.env.example](.env.example). Only two are used:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `MONGODB_URI` — Atlas connection string, including a database name.
+- `SESSION_SECRET` — random string used to sign session cookies (generate
+  with `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Documentation
 
-## Deploy on Vercel
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — how the pieces fit together
+- [docs/CONTENT_AUDIT.md](docs/CONTENT_AUDIT.md) — noun/adjective bank verification
+- [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) — Vercel + Atlas + custom domain steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+83 unit tests (Vitest) cover the grammar engine, the mastery/repetition
+engine, content validation, and auth primitives — all pure logic, no
+network. 7 end-to-end tests (Playwright) exercise the real app in a real
+browser against the real database: guest play, the wrong-word repetition
+contract, all four demonstrative forms, adjective base/-e grading, and
+the full account lifecycle (register, recovery code, guest-progress
+merge, logout, login, password reset).

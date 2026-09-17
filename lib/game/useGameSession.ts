@@ -59,18 +59,32 @@ export function useGameSession(mode: GameMode | "weak-review") {
 
   const flushSync = useCallback((useBeacon: boolean) => {
     if (!isAccountRef.current || pendingSyncRef.current.size === 0) return;
-    const records = Array.from(pendingSyncRef.current.values());
+    // Pull this batch out of the pending queue optimistically, but put any
+    // record back if the request actually fails — otherwise a network
+    // hiccup silently drops that answer's server-side sync forever (the
+    // in-memory session state still has it; only the DB write is lost).
+    const batch = pendingSyncRef.current;
     pendingSyncRef.current = new Map();
+    const records = Array.from(batch.values());
     const body = JSON.stringify({ records, ...latestTotalsRef.current });
 
+    const requeue = () => {
+      for (const [key, record] of batch) {
+        if (!pendingSyncRef.current.has(key)) pendingSyncRef.current.set(key, record);
+      }
+    };
+
     if (useBeacon && typeof navigator !== "undefined" && navigator.sendBeacon) {
-      navigator.sendBeacon("/api/progress", new Blob([body], { type: "application/json" }));
+      // sendBeacon fires on page-hide/unload and gives no success signal;
+      // if the browser couldn't even queue it, requeue for the next mount.
+      const queued = navigator.sendBeacon("/api/progress", new Blob([body], { type: "application/json" }));
+      if (!queued) requeue();
     } else {
-      fetch("/api/progress", { method: "POST", headers: { "Content-Type": "application/json" }, body, keepalive: true }).catch(
-        () => {
-          // Best-effort sync; local UI state already reflects the answer.
-        },
-      );
+      fetch("/api/progress", { method: "POST", headers: { "Content-Type": "application/json" }, body, keepalive: true })
+        .then((res) => {
+          if (!res.ok) requeue();
+        })
+        .catch(requeue);
     }
   }, []);
 

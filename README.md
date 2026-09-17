@@ -22,6 +22,18 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000). Guest mode works
 immediately with no database; account features need `MONGODB_URI`.
 
+### Or run it in a container
+
+```bash
+docker build -t dutchtap:local .
+docker run -d --name dutchtap-local -p 3001:3000 --env-file .env.local dutchtap:local
+```
+
+Open [http://localhost:3001](http://localhost:3001). The image is a
+multi-stage build using Next.js's `output: "standalone"` mode (see
+`next.config.ts`) — no real env vars are needed at build time, only at
+`docker run`. Stop it with `docker rm -f dutchtap-local`.
+
 ## Commands
 
 | Command | Purpose |

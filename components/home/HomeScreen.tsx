@@ -13,6 +13,10 @@ export function HomeScreen() {
   const [accountStats, setAccountStats] = useState<OverviewStats | null>(null);
 
   useEffect(() => {
+    // localStorage doesn't exist during SSR; reading it in an effect (not a
+    // lazy useState initializer) is deliberate so the server-rendered and
+    // first-client-render markup match, avoiding a hydration mismatch.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setGuestProgress(loadLocalProgress());
   }, []);
 

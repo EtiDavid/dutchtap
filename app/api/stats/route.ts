@@ -17,7 +17,7 @@ export async function GET() {
   const [docs, user] = await Promise.all([progress.find({ userId }).toArray(), users.findOne({ _id: userId })]);
   if (!user) return jsonError("Not signed in", 401);
 
-  const records = docs.map(({ _id, userId: _userId, updatedAt, ...record }) => record);
+  const records = docs.map(({ _id, userId: _userId, updatedAt: _updatedAt, ...record }) => record);
   const stats = computeDetailedStats(records, nounIndex, user.lifetimeScore, user.totalCorrect, user.totalWrong);
 
   return NextResponse.json(stats);

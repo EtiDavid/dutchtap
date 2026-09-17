@@ -41,7 +41,7 @@ export async function POST(request: Request) {
 
   const accountProgressByKey: Record<string, ProgressRecord> = {};
   for (const doc of existingDocs) {
-    const { _id, userId: _userId, updatedAt, ...record } = doc;
+    const { _id, userId: _userId, updatedAt: _updatedAt, ...record } = doc;
     accountProgressByKey[record.conceptKey] = record;
   }
 

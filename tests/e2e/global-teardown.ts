@@ -16,7 +16,6 @@ export default async function globalTeardown() {
     }
     if (users.length > 0) {
       await db.collection("users").deleteMany({ usernameLower: /^e2e_/ });
-      // eslint-disable-next-line no-console
       console.log(`[global-teardown] removed ${users.length} e2e test account(s)`);
     }
   } finally {

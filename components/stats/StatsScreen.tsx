@@ -36,6 +36,9 @@ export function StatsScreen() {
 
     const local = loadLocalProgress();
     const records = Object.values(local.progressByKey);
+    // localStorage read: must happen post-mount (see HomeScreen for why),
+    // and this branch is also gated on account/accountLoading changing.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setStats(computeDetailedStats(records, nounIndex, local.lifetimeScore, local.totalCorrect, local.totalWrong));
   }, [account, accountLoading]);
 

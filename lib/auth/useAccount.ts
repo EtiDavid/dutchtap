@@ -24,6 +24,10 @@ export function useAccount() {
   }, []);
 
   useEffect(() => {
+    // Session status can only be checked client-side (HTTP-only cookie);
+    // the resulting setState calls happen after an async fetch resolves,
+    // not synchronously — this is the standard fetch-on-mount pattern.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     refresh();
   }, [refresh]);
 

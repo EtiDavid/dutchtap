@@ -46,12 +46,14 @@ export function useGameSession(mode: GameMode | "weak-review") {
   const [error, setError] = useState<string | null>(null);
   const [sessionStats, setSessionStats] = useState({ answered: 0, correct: 0, wrong: 0 });
   const [streak, setStreak] = useState(0);
+  // A Set in state (not a ref) because `summary` reads its size during
+  // render (via useMemo) — refs must never be read during render.
+  const [improvedConcepts, setImprovedConcepts] = useState<Set<string>>(new Set());
 
   const questionIndexRef = useRef(0);
   const startedAtRef = useRef(new Date().toISOString());
   const recentConceptKeysRef = useRef<string[]>([]);
   const masteryAtSessionStartRef = useRef<Map<string, number>>(new Map());
-  const improvedConceptsRef = useRef<Set<string>>(new Set());
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pendingSyncRef = useRef<Map<string, ProgressRecord>>(new Map());
   const latestTotalsRef = useRef({ lifetimeScore: 0, totalCorrect: 0, totalWrong: 0 });
@@ -218,7 +220,8 @@ export function useGameSession(mode: GameMode | "weak-review") {
         masteryAtSessionStartRef.current.set(current.conceptKey, 0);
       }
       if (updatedRecord.masteryLevel > (masteryAtSessionStartRef.current.get(current.conceptKey) ?? 0)) {
-        improvedConceptsRef.current.add(current.conceptKey);
+        const conceptKey = current.conceptKey;
+        setImprovedConcepts((prev) => (prev.has(conceptKey) ? prev : new Set(prev).add(conceptKey)));
       }
 
       const updatedProgress: ProgressState = {
@@ -271,10 +274,10 @@ export function useGameSession(mode: GameMode | "weak-review") {
       wrong: sessionStats.wrong,
       accuracy: sessionStats.answered > 0 ? Math.round((sessionStats.correct / sessionStats.answered) * 100) : 0,
       pointsEarned: sessionStats.correct,
-      conceptsImproved: improvedConceptsRef.current.size,
+      conceptsImproved: improvedConcepts.size,
       weakConceptsRemaining: progress ? countWeakConcepts(progress.progressByKey) : 0,
     }),
-    [sessionStats, progress],
+    [sessionStats, progress, improvedConcepts],
   );
 
   const currentMasteryLevel = current && progress ? (progress.progressByKey[current.conceptKey]?.masteryLevel ?? 0) : 0;

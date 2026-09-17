@@ -21,7 +21,7 @@ export async function GET() {
 
   const progressByKey: Record<string, ProgressRecord> = {};
   for (const doc of records) {
-    const { _id, userId: _userId, updatedAt, ...record } = doc;
+    const { _id, userId: _userId, updatedAt: _updatedAt, ...record } = doc;
     progressByKey[record.conceptKey] = record;
   }
 

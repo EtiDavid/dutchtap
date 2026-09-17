@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { answerAdjectiveQuestionCorrectly } from "./helpers";
+import { answerAdjectiveQuestionCorrectly, clickContinue } from "./helpers";
 
 test.describe("Adjective fixtures", () => {
   test("een mooi huis / het mooie huis / een rode tas style questions grade correctly across real questions", async ({ page }) => {
@@ -8,7 +8,12 @@ test.describe("Adjective fixtures", () => {
     let sawBaseForm = false;
     let sawEForm = false;
 
-    for (let i = 0; i < 25; i++) {
+    // Base form only appears for indefinite + het-word (~10% of draws given
+    // the bank's ~32% het-word share and 3 determiner types), so 25
+    // iterations left a ~6% chance of never hitting it — a genuinely flaky
+    // assertion, not a bug, caught by this test itself failing on a clean
+    // run. 60 iterations brings that under 0.2%.
+    for (let i = 0; i < 60; i++) {
       const { noun, adjective, correct } = await answerAdjectiveQuestionCorrectly(page);
       if (correct === adjective.base) sawBaseForm = true;
       if (correct === adjective.eForm) sawEForm = true;
@@ -17,8 +22,9 @@ test.describe("Adjective fixtures", () => {
       await expect(correctButton).toHaveAttribute("aria-pressed", "true");
       const classAttr = (await correctButton.getAttribute("class")) ?? "";
       expect(classAttr, `noun=${noun.id} adjective=${adjective.id} correct=${correct}`).toContain("bg-success");
+      await expect(page.getByRole("button", { name: "Continue" })).toBeVisible();
 
-      await page.waitForTimeout(500);
+      await clickContinue(page);
     }
 
     // Across enough real indefinite/definite/possessive combinations we

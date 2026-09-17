@@ -20,7 +20,7 @@ export function GameScreen({ mode }: { mode: RouteMode }) {
     currentMasteryLevel,
     endSession,
     submitAnswer,
-    continueAfterWrong,
+    continueToNext,
   } = useGameSession(mode);
   const [exited, setExited] = useState(false);
 
@@ -50,7 +50,7 @@ export function GameScreen({ mode }: { mode: RouteMode }) {
             feedback={feedback}
             selectedAnswer={selectedAnswer}
             onAnswer={submitAnswer}
-            onContinue={continueAfterWrong}
+            onContinue={continueToNext}
           />
         ) : (
           <div className="flex flex-col items-center gap-4 text-center">

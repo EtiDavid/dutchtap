@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { answerDemonstrativeQuestionCorrectly } from "./helpers";
+import { answerDemonstrativeQuestionCorrectly, clickContinue } from "./helpers";
 
 const DEMONSTRATIVES = ["deze", "dit", "die", "dat"];
 
@@ -20,8 +20,10 @@ test.describe("Demonstrative fixtures", () => {
       // Wrong-only classes never applied to the button we clicked when we clicked the right one.
       const classAttr = (await correctButton.getAttribute("class")) ?? "";
       expect(classAttr).toContain("bg-success");
+      // A correct guess still gets the rule explanation, not just a point.
+      await expect(page.getByRole("button", { name: "Continue" })).toBeVisible();
 
-      await page.waitForTimeout(500);
+      await clickContinue(page);
     }
 
     for (const d of DEMONSTRATIVES) {

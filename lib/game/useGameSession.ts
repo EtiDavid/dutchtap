@@ -15,7 +15,6 @@ import { clearSessionState, loadSessionState, saveSessionState } from "./session
 const nounIndex = new Map(NOUNS.map((n) => [n.id, n]));
 const allCandidates = buildAllCandidates(NOUNS);
 
-const CORRECT_ADVANCE_DELAY_MS = 450;
 const ACCOUNT_SYNC_INTERVAL_MS = 4000;
 
 export type AnswerFeedback = "idle" | "correct" | "wrong";
@@ -54,7 +53,6 @@ export function useGameSession(mode: GameMode | "weak-review") {
   const startedAtRef = useRef(new Date().toISOString());
   const recentConceptKeysRef = useRef<string[]>([]);
   const masteryAtSessionStartRef = useRef<Map<string, number>>(new Map());
-  const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const pendingSyncRef = useRef<Map<string, ProgressRecord>>(new Map());
   const latestTotalsRef = useRef({ lifetimeScore: 0, totalCorrect: 0, totalWrong: 0 });
   const isAccountRef = useRef(false);
@@ -221,12 +219,6 @@ export function useGameSession(mode: GameMode | "weak-review") {
     };
   }, [flushSync]);
 
-  useEffect(() => {
-    return () => {
-      if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
-    };
-  }, []);
-
   const submitAnswer = useCallback(
     (choice: string) => {
       if (!current || !progress || feedback !== "idle") return;
@@ -299,19 +291,16 @@ export function useGameSession(mode: GameMode | "weak-review") {
 
       recentConceptKeysRef.current = [...recentConceptKeysRef.current, current.conceptKey].slice(-2);
       questionIndexRef.current += 1;
-
-      // Correct answers auto-advance quickly (nothing to read). Wrong
-      // answers wait for the learner to tap Continue, so the correction
-      // and rule explanation don't get swept away by a timer.
-      if (isCorrect) {
-        advanceTimerRef.current = setTimeout(() => nextQuestion(updatedProgress.progressByKey), CORRECT_ADVANCE_DELAY_MS);
-      }
     },
-    [current, progress, feedback, nextQuestion],
+    [current, progress, feedback],
   );
 
-  const continueAfterWrong = useCallback(() => {
-    if (feedback !== "wrong" || !progress) return;
+  // Neither correct nor wrong answers auto-advance — both wait for a
+  // deliberate tap, so the explanation of *why* the answer is correct has
+  // time to actually be read (not just the correction on a miss: reading
+  // it after a correct guess is exactly what turns a guess into knowledge).
+  const continueToNext = useCallback(() => {
+    if (feedback === "idle" || !progress) return;
     nextQuestion(progress.progressByKey);
   }, [feedback, progress, nextQuestion]);
 
@@ -360,6 +349,6 @@ export function useGameSession(mode: GameMode | "weak-review") {
     currentMasteryLevel,
     isAccount,
     submitAnswer,
-    continueAfterWrong,
+    continueToNext,
   };
 }

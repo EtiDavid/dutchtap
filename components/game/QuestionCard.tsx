@@ -57,7 +57,10 @@ export function QuestionCard({
       {question.mode === "demonstrative" && <DistanceBadge distance={question.distance} />}
 
       <div aria-live="polite" className="min-h-6 px-4 text-center text-sm text-muted">
-        {feedback === "wrong" && <InlineMarkdown text={explainQuestion(question)} />}
+        {/* Shown on both a miss (the correction) and a correct guess (the
+            reasoning) — getting it right by luck should still teach the
+            rule, not just award a point. */}
+        {feedback !== "idle" && <InlineMarkdown text={explainQuestion(question)} />}
       </div>
 
       <div className={`grid w-full max-w-sm gap-3 ${gridCols}`}>
@@ -78,14 +81,16 @@ export function QuestionCard({
         </p>
       )}
 
-      {feedback === "wrong" && (
+      {feedback !== "idle" && (
         <button
           type="button"
           onClick={onContinue}
           autoFocus
-          className="h-12 w-full max-w-sm rounded-2xl bg-foreground text-base font-semibold text-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          className={`h-12 w-full max-w-sm rounded-2xl text-base font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
+            feedback === "correct" ? "bg-success text-success-foreground" : "bg-foreground text-background"
+          }`}
         >
-          Okay, got it
+          {feedback === "correct" ? "Continue" : "Okay, got it"}
         </button>
       )}
     </div>

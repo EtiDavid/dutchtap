@@ -15,6 +15,12 @@ async function answerButton(page: Page, text: string) {
   return page.locator("button", { hasText: new RegExp(`^${text}$`, "i") }).first();
 }
 
+/** Neither correct nor wrong answers auto-advance anymore; every answer needs an explicit Continue tap. */
+export async function clickContinue(page: Page) {
+  const continueButton = page.getByRole("button", { name: /^(Continue|Okay, got it)$/ });
+  await continueButton.click();
+}
+
 /** Reads the current article question, clicks the objectively correct answer, waits for feedback. */
 export async function answerArticleQuestionCorrectly(page: Page) {
   await page.waitForSelector("text=DE OF HET");

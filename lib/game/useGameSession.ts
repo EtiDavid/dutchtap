@@ -9,17 +9,14 @@ import type { ProgressRecord } from "@/lib/mastery/types";
 import { buildAllCandidates } from "./candidates";
 import { generateQuestion } from "./generateQuestion";
 import { countWeakConcepts } from "./weakWords";
-import {
-  loadLocalProgress,
-  saveLocalProgress,
-  type LocalProgressState,
-} from "@/lib/sync/localProgress";
+import { loadLocalProgress, saveLocalProgress } from "@/lib/sync/localProgress";
 
 const nounIndex = new Map(NOUNS.map((n) => [n.id, n]));
 const allCandidates = buildAllCandidates(NOUNS);
 
 const CORRECT_ADVANCE_DELAY_MS = 450;
 const WRONG_ADVANCE_DELAY_MS = 1000;
+const ACCOUNT_SYNC_INTERVAL_MS = 4000;
 
 export type AnswerFeedback = "idle" | "correct" | "wrong";
 
@@ -33,8 +30,16 @@ export type SessionSummary = {
   weakConceptsRemaining: number;
 };
 
+type ProgressState = {
+  progressByKey: Record<string, ProgressRecord>;
+  lifetimeScore: number;
+  totalCorrect: number;
+  totalWrong: number;
+};
+
 export function useGameSession(mode: GameMode | "weak-review") {
-  const [progress, setProgress] = useState<LocalProgressState | null>(null);
+  const [progress, setProgress] = useState<ProgressState | null>(null);
+  const [isAccount, setIsAccount] = useState(false);
   const [current, setCurrent] = useState<{ conceptKey: string; question: GrammarQuestion } | null>(null);
   const [feedback, setFeedback] = useState<AnswerFeedback>("idle");
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -43,10 +48,31 @@ export function useGameSession(mode: GameMode | "weak-review") {
   const [streak, setStreak] = useState(0);
 
   const questionIndexRef = useRef(0);
+  const startedAtRef = useRef(new Date().toISOString());
   const recentConceptKeysRef = useRef<string[]>([]);
   const masteryAtSessionStartRef = useRef<Map<string, number>>(new Map());
   const improvedConceptsRef = useRef<Set<string>>(new Set());
   const advanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pendingSyncRef = useRef<Map<string, ProgressRecord>>(new Map());
+  const latestTotalsRef = useRef({ lifetimeScore: 0, totalCorrect: 0, totalWrong: 0 });
+  const isAccountRef = useRef(false);
+
+  const flushSync = useCallback((useBeacon: boolean) => {
+    if (!isAccountRef.current || pendingSyncRef.current.size === 0) return;
+    const records = Array.from(pendingSyncRef.current.values());
+    pendingSyncRef.current = new Map();
+    const body = JSON.stringify({ records, ...latestTotalsRef.current });
+
+    if (useBeacon && typeof navigator !== "undefined" && navigator.sendBeacon) {
+      navigator.sendBeacon("/api/progress", new Blob([body], { type: "application/json" }));
+    } else {
+      fetch("/api/progress", { method: "POST", headers: { "Content-Type": "application/json" }, body, keepalive: true }).catch(
+        () => {
+          // Best-effort sync; local UI state already reflects the answer.
+        },
+      );
+    }
+  }, []);
 
   const nextQuestion = useCallback(
     (progressByKey: Record<string, ProgressRecord>) => {
@@ -72,16 +98,73 @@ export function useGameSession(mode: GameMode | "weak-review") {
     [mode],
   );
 
-  // Load guest progress on mount and start the session.
   useEffect(() => {
-    const loaded = loadLocalProgress();
-    setProgress(loaded);
-    for (const [key, record] of Object.entries(loaded.progressByKey)) {
-      masteryAtSessionStartRef.current.set(key, record.masteryLevel);
+    let cancelled = false;
+
+    async function init() {
+      try {
+        const meRes = await fetch("/api/auth/me");
+        if (meRes.ok) {
+          const account = await meRes.json();
+          const progressRes = await fetch("/api/progress");
+          const remote = progressRes.ok
+            ? await progressRes.json()
+            : { progressByKey: {}, lifetimeScore: account.lifetimeScore, totalCorrect: account.totalCorrect, totalWrong: account.totalWrong };
+          if (cancelled) return;
+          isAccountRef.current = true;
+          setIsAccount(true);
+          latestTotalsRef.current = {
+            lifetimeScore: remote.lifetimeScore,
+            totalCorrect: remote.totalCorrect,
+            totalWrong: remote.totalWrong,
+          };
+          setProgress(remote);
+          for (const [key, record] of Object.entries(remote.progressByKey as Record<string, ProgressRecord>)) {
+            masteryAtSessionStartRef.current.set(key, record.masteryLevel);
+          }
+          nextQuestion(remote.progressByKey);
+          return;
+        }
+      } catch {
+        // fall through to guest mode
+      }
+
+      const loaded = loadLocalProgress();
+      if (cancelled) return;
+      isAccountRef.current = false;
+      setIsAccount(false);
+      latestTotalsRef.current = {
+        lifetimeScore: loaded.lifetimeScore,
+        totalCorrect: loaded.totalCorrect,
+        totalWrong: loaded.totalWrong,
+      };
+      setProgress(loaded);
+      for (const [key, record] of Object.entries(loaded.progressByKey)) {
+        masteryAtSessionStartRef.current.set(key, record.masteryLevel);
+      }
+      nextQuestion(loaded.progressByKey);
     }
-    nextQuestion(loaded.progressByKey);
+
+    init();
+    return () => {
+      cancelled = true;
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mode]);
+
+  // Periodic + on-exit sync for signed-in accounts.
+  useEffect(() => {
+    const interval = setInterval(() => flushSync(false), ACCOUNT_SYNC_INTERVAL_MS);
+    const handleHide = () => flushSync(true);
+    document.addEventListener("visibilitychange", handleHide);
+    window.addEventListener("pagehide", handleHide);
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener("visibilitychange", handleHide);
+      window.removeEventListener("pagehide", handleHide);
+      flushSync(true);
+    };
+  }, [flushSync]);
 
   useEffect(() => {
     return () => {
@@ -124,8 +207,7 @@ export function useGameSession(mode: GameMode | "weak-review") {
         improvedConceptsRef.current.add(current.conceptKey);
       }
 
-      const updatedProgress: LocalProgressState = {
-        ...progress,
+      const updatedProgress: ProgressState = {
         progressByKey: { ...progress.progressByKey, [current.conceptKey]: updatedRecord },
         lifetimeScore: progress.lifetimeScore + (isCorrect ? 1 : 0),
         totalCorrect: progress.totalCorrect + (isCorrect ? 1 : 0),
@@ -133,7 +215,26 @@ export function useGameSession(mode: GameMode | "weak-review") {
       };
 
       setProgress(updatedProgress);
-      saveLocalProgress(updatedProgress);
+      latestTotalsRef.current = {
+        lifetimeScore: updatedProgress.lifetimeScore,
+        totalCorrect: updatedProgress.totalCorrect,
+        totalWrong: updatedProgress.totalWrong,
+      };
+
+      if (isAccountRef.current) {
+        pendingSyncRef.current.set(current.conceptKey, updatedRecord);
+      } else {
+        saveLocalProgress({
+          schemaVersion: 1,
+          progressByKey: updatedProgress.progressByKey,
+          lifetimeScore: updatedProgress.lifetimeScore,
+          totalCorrect: updatedProgress.totalCorrect,
+          totalWrong: updatedProgress.totalWrong,
+          createdAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+        });
+      }
+
       setSessionStats((s) => ({
         answered: s.answered + 1,
         correct: s.correct + (isCorrect ? 1 : 0),
@@ -164,6 +265,22 @@ export function useGameSession(mode: GameMode | "weak-review") {
 
   const currentMasteryLevel = current && progress ? (progress.progressByKey[current.conceptKey]?.masteryLevel ?? 0) : 0;
 
+  const endSession = useCallback(() => {
+    flushSync(true);
+    if (!isAccountRef.current || sessionStats.answered === 0) return;
+    const body = JSON.stringify({
+      mode,
+      startedAt: startedAtRef.current,
+      endedAt: new Date().toISOString(),
+      questions: sessionStats.answered,
+      correct: sessionStats.correct,
+      wrong: sessionStats.wrong,
+      scoreEarned: sessionStats.correct,
+      accuracy: sessionStats.answered > 0 ? Math.round((sessionStats.correct / sessionStats.answered) * 100) : 0,
+    });
+    fetch("/api/sessions", { method: "POST", headers: { "Content-Type": "application/json" }, body, keepalive: true }).catch(() => {});
+  }, [flushSync, mode, sessionStats]);
+
   return {
     current,
     feedback,
@@ -172,8 +289,10 @@ export function useGameSession(mode: GameMode | "weak-review") {
     lifetimeScore: progress?.lifetimeScore ?? 0,
     sessionScore: sessionStats.correct,
     streak,
+    endSession,
     summary,
     currentMasteryLevel,
+    isAccount,
     submitAnswer,
   };
 }

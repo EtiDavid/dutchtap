@@ -9,7 +9,7 @@ import { QuestionCard } from "./QuestionCard";
 import { SessionSummary } from "./SessionSummary";
 
 export function GameScreen({ mode }: { mode: RouteMode }) {
-  const { current, feedback, selectedAnswer, error, sessionScore, streak, summary, currentMasteryLevel, submitAnswer } =
+  const { current, feedback, selectedAnswer, error, sessionScore, streak, summary, currentMasteryLevel, endSession, submitAnswer } =
     useGameSession(mode);
   const [exited, setExited] = useState(false);
 
@@ -23,7 +23,14 @@ export function GameScreen({ mode }: { mode: RouteMode }) {
 
   return (
     <div className="flex min-h-dvh flex-col">
-      <ScoreBar score={sessionScore} streak={streak} onExit={() => setExited(true)} />
+      <ScoreBar
+        score={sessionScore}
+        streak={streak}
+        onExit={() => {
+          endSession();
+          setExited(true);
+        }}
+      />
 
       <main className="flex flex-1 flex-col items-center justify-center gap-8 px-6 pb-10">
         {current ? (

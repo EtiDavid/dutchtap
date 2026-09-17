@@ -3,45 +3,65 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { loadLocalProgress, type LocalProgressState } from "@/lib/sync/localProgress";
-import { computeOverviewStats } from "@/lib/stats/overview";
+import { computeOverviewStats, type OverviewStats } from "@/lib/stats/overview";
+import { useAccount } from "@/lib/auth/useAccount";
 import { ModeCard } from "./ModeCard";
 
 export function HomeScreen() {
-  const [progress, setProgress] = useState<LocalProgressState | null>(null);
+  const { account, loading: accountLoading, logout } = useAccount();
+  const [guestProgress, setGuestProgress] = useState<LocalProgressState | null>(null);
+  const [accountStats, setAccountStats] = useState<OverviewStats | null>(null);
 
   useEffect(() => {
-    setProgress(loadLocalProgress());
+    setGuestProgress(loadLocalProgress());
   }, []);
 
-  const stats = progress
-    ? computeOverviewStats(progress.progressByKey, progress.lifetimeScore, progress.totalCorrect, progress.totalWrong)
-    : null;
+  useEffect(() => {
+    if (!account) return;
+    let cancelled = false;
+    fetch("/api/stats")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!cancelled && data) setAccountStats(data.overall);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [account]);
+
+  const stats = account
+    ? accountStats
+    : guestProgress
+      ? computeOverviewStats(guestProgress.progressByKey, guestProgress.lifetimeScore, guestProgress.totalCorrect, guestProgress.totalWrong)
+      : null;
 
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-sm flex-col gap-8 px-6 py-8">
       <header className="flex items-center justify-between">
         <div>
           <p className="text-xl font-bold text-foreground">DutchTap</p>
-          <p className="text-xs text-muted">Guest · progress saved on this device</p>
+          <p className="text-xs text-muted">
+            {accountLoading ? "…" : account ? account.username : "Guest · progress saved on this device"}
+          </p>
         </div>
         <div className="flex items-center gap-3">
           <span className="text-base font-semibold text-accent">{stats?.lifetimeScore ?? 0} pts</span>
-          <Link
-            href="/account"
-            className="text-sm font-medium text-foreground underline decoration-border underline-offset-4"
-          >
-            Log in
-          </Link>
+          {!accountLoading &&
+            (account ? (
+              <button type="button" onClick={() => logout()} className="text-sm font-medium text-foreground underline decoration-border underline-offset-4">
+                Log out
+              </button>
+            ) : (
+              <Link href="/account" className="text-sm font-medium text-foreground underline decoration-border underline-offset-4">
+                Log in
+              </Link>
+            ))}
         </div>
       </header>
 
       <div className="flex flex-col gap-3">
-        <ModeCard
-          href="/game/article"
-          title="De or Het"
-          subtitle="Learn the article."
-          example="het kantoor"
-        />
+        <ModeCard href="/game/article" title="De or Het" subtitle="Learn the article." example="het kantoor" />
         <ModeCard
           href="/game/demonstrative"
           title="Deze · Dit · Die · Dat"

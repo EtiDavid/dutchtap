@@ -53,23 +53,28 @@ documents the shape only.
    round, create a test account, confirm the recovery code appears,
    log out, log back in.
 
-## 4. Custom domain — `dutch.etidavid.dev`
+## 4. Custom domain — `dutchtap.etidavid.dev`
 
-1. In the Vercel project → **Settings → Domains** → add `dutch.etidavid.dev`.
-2. Vercel will display the **exact** DNS record it needs (a CNAME
-   pointing at `cname.vercel-dns.com`, or an A record — Vercel decides
-   based on whether `dutch` is a subdomain, which it is here, so expect
-   a CNAME). **Use the value Vercel shows you at the time**, not a
-   value copied from documentation or memory — Vercel's target can
-   change.
-3. At your DNS provider for `etidavid.dev`, add that exact record for
-   the `dutch` host.
+DNS for `etidavid.dev` is on **Cloudflare**.
+
+1. In the Vercel project → **Settings → Domains** → add `dutchtap.etidavid.dev`.
+2. Vercel displays the **exact** DNS record it needs. **Use the value
+   Vercel shows you at the time**, not a value copied from
+   documentation or memory — Vercel's target is unique per domain and
+   can change. At the time this was set up, it was:
+   - Type: `CNAME`
+   - Name: `dutchtap`
+   - Target: `ae6f6f8a84d4df63.vercel-dns-017.com`
+3. In Cloudflare, add that record under the `etidavid.dev` zone → **DNS
+   → Records**. Set the proxy status to **DNS only** (grey cloud, not
+   orange/proxied) — Cloudflare's proxy in front of Vercel breaks
+   Vercel's own SSL certificate provisioning and can cause a redirect
+   loop.
 4. Wait for DNS propagation (Vercel's dashboard shows verification
-   status live; usually minutes, can take longer depending on your
-   provider's TTL).
+   status live; usually minutes with Cloudflare).
 5. Vercel automatically provisions HTTPS (Let's Encrypt) once DNS
    verifies — no manual certificate step.
-6. Confirm `https://dutch.etidavid.dev` loads the app and that HTTP
+6. Confirm `https://dutchtap.etidavid.dev` loads the app and that HTTP
    redirects to HTTPS (Vercel does this by default).
 
 ## 5. Redeploy / rollback
@@ -91,5 +96,5 @@ documents the shape only.
       hard-fail if Mongo is briefly unavailable)
 - [ ] Account creation, recovery code display, login, logout all work
       against the production database
-- [ ] `dutch.etidavid.dev` resolves and serves over HTTPS
+- [ ] `dutchtap.etidavid.dev` resolves and serves over HTTPS
 - [ ] No secrets visible in the deployed page source or API responses

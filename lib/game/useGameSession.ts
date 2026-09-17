@@ -10,6 +10,7 @@ import { buildAllCandidates } from "./candidates";
 import { generateQuestion } from "./generateQuestion";
 import { countWeakConcepts } from "./weakWords";
 import { loadLocalProgress, saveLocalProgress } from "@/lib/sync/localProgress";
+import { clearSessionState, loadSessionState, saveSessionState } from "./sessionState";
 
 const nounIndex = new Map(NOUNS.map((n) => [n.id, n]));
 const allCandidates = buildAllCandidates(NOUNS);
@@ -116,6 +117,27 @@ export function useGameSession(mode: GameMode | "weak-review") {
   useEffect(() => {
     let cancelled = false;
 
+    // If this mode has an in-progress session from before a refresh, resume
+    // it (score, streak, and the exact question the learner was on) instead
+    // of silently starting over — see lib/game/sessionState.ts.
+    function resumeOrStart(progressByKey: Record<string, ProgressRecord>) {
+      const persisted = loadSessionState(mode);
+      if (persisted && persisted.current) {
+        questionIndexRef.current = persisted.questionIndex;
+        startedAtRef.current = persisted.startedAt;
+        recentConceptKeysRef.current = persisted.recentConceptKeys;
+        setImprovedConcepts(new Set(persisted.improvedConcepts));
+        setSessionStats(persisted.sessionStats);
+        setStreak(persisted.streak);
+        setCurrent(persisted.current);
+        setFeedback(persisted.feedback);
+        setSelectedAnswer(persisted.selectedAnswer);
+        setError(null);
+        return;
+      }
+      nextQuestion(progressByKey);
+    }
+
     async function init() {
       try {
         const meRes = await fetch("/api/auth/me");
@@ -137,7 +159,7 @@ export function useGameSession(mode: GameMode | "weak-review") {
           for (const [key, record] of Object.entries(remote.progressByKey as Record<string, ProgressRecord>)) {
             masteryAtSessionStartRef.current.set(key, record.masteryLevel);
           }
-          nextQuestion(remote.progressByKey);
+          resumeOrStart(remote.progressByKey);
           return;
         }
       } catch {
@@ -157,7 +179,7 @@ export function useGameSession(mode: GameMode | "weak-review") {
       for (const [key, record] of Object.entries(loaded.progressByKey)) {
         masteryAtSessionStartRef.current.set(key, record.masteryLevel);
       }
-      nextQuestion(loaded.progressByKey);
+      resumeOrStart(loaded.progressByKey);
     }
 
     init();
@@ -166,6 +188,24 @@ export function useGameSession(mode: GameMode | "weak-review") {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mode]);
+
+  // Mirror the in-progress session to sessionStorage after every change, so
+  // a refresh resumes it (see resumeOrStart above) instead of looking like
+  // the score/question were lost.
+  useEffect(() => {
+    if (!progress) return;
+    saveSessionState(mode, {
+      sessionStats,
+      streak,
+      questionIndex: questionIndexRef.current,
+      recentConceptKeys: recentConceptKeysRef.current,
+      improvedConcepts: Array.from(improvedConcepts),
+      startedAt: startedAtRef.current,
+      current,
+      feedback,
+      selectedAnswer,
+    });
+  }, [mode, progress, sessionStats, streak, improvedConcepts, current, feedback, selectedAnswer]);
 
   // Periodic + on-exit sync for signed-in accounts.
   useEffect(() => {
@@ -292,6 +332,7 @@ export function useGameSession(mode: GameMode | "weak-review") {
 
   const endSession = useCallback(() => {
     flushSync(true);
+    clearSessionState(mode);
     if (!isAccountRef.current || sessionStats.answered === 0) return;
     const body = JSON.stringify({
       mode,

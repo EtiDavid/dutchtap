@@ -53,11 +53,17 @@ documents the shape only.
    round, create a test account, confirm the recovery code appears,
    log out, log back in.
 
-## 4. Custom domain — `dutchtap.etidavid.dev`
+## 4. Custom domain — `dutchtap.davideti.dev`
 
-DNS for `etidavid.dev` is on **Cloudflare**.
+DNS for `davideti.dev` is on **Cloudflare** (registered directly through
+Cloudflare Registrar).
 
-1. In the Vercel project → **Settings → Domains** → add `dutchtap.etidavid.dev`.
+Note: the domain is `davideti.dev`, not `etidavid.dev` — easy to get
+backwards from the `EtiDavid` GitHub handle and the `etidavid.github.io`
+repo, which is a *different* domain entirely. Don't assume; check the
+Cloudflare dashboard's Domains list if unsure.
+
+1. In the Vercel project → **Settings → Domains** → add `dutchtap.davideti.dev`.
 2. Vercel displays the **exact** DNS record it needs. **Use the value
    Vercel shows you at the time**, not a value copied from
    documentation or memory — Vercel's target is unique per domain and
@@ -65,7 +71,7 @@ DNS for `etidavid.dev` is on **Cloudflare**.
    - Type: `CNAME`
    - Name: `dutchtap`
    - Target: `ae6f6f8a84d4df63.vercel-dns-017.com`
-3. In Cloudflare, add that record under the `etidavid.dev` zone → **DNS
+3. In Cloudflare, add that record under the `davideti.dev` zone → **DNS
    → Records**. Set the proxy status to **DNS only** (grey cloud, not
    orange/proxied) — Cloudflare's proxy in front of Vercel breaks
    Vercel's own SSL certificate provisioning and can cause a redirect
@@ -74,8 +80,13 @@ DNS for `etidavid.dev` is on **Cloudflare**.
    status live; usually minutes with Cloudflare).
 5. Vercel automatically provisions HTTPS (Let's Encrypt) once DNS
    verifies — no manual certificate step.
-6. Confirm `https://dutchtap.etidavid.dev` loads the app and that HTTP
+6. Confirm `https://dutchtap.davideti.dev` loads the app and that HTTP
    redirects to HTTPS (Vercel does this by default).
+
+**Status: live.** Verified `dutchtap.davideti.dev` resolves, serves over
+HTTPS with a Vercel-issued certificate, HTTP redirects to HTTPS (308),
+and the full register/login/recovery flow works against it directly —
+not just the `.vercel.app` URL.
 
 ## 5. Redeploy / rollback
 
@@ -91,10 +102,12 @@ DNS for `etidavid.dev` is on **Cloudflare**.
 
 ## 6. Post-deploy checklist
 
-- [ ] `MONGODB_URI` and `SESSION_SECRET` set in Vercel for Production
-- [ ] Guest play works with no database (confirms the app doesn't
-      hard-fail if Mongo is briefly unavailable)
-- [ ] Account creation, recovery code display, login, logout all work
-      against the production database
-- [ ] `dutchtap.etidavid.dev` resolves and serves over HTTPS
-- [ ] No secrets visible in the deployed page source or API responses
+- [x] `MONGODB_URI` and `SESSION_SECRET` set in Vercel for Production
+- [x] Guest play works with no database — verified via the local
+      dev-server E2E suite (`test:e2e`); not re-tested against a
+      deliberately-broken production database, on purpose
+- [x] Account creation, recovery code display, login, logout all work
+      against the production database — verified directly on both
+      `dutchtap.vercel.app` and `dutchtap.davideti.dev`
+- [x] `dutchtap.davideti.dev` resolves and serves over HTTPS
+- [x] No secrets visible in the deployed page source or API responses

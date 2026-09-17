@@ -6,9 +6,14 @@
   --foreground: #1b2430;
   --muted: #6b7280;
   --border: #e5e7eb;
-  --accent: #f97316;
+  /* Deeper than a pure Tailwind orange-500 on purpose: #f97316 against
+     white/as a white-text button fill only reaches ~2.8:1 contrast,
+     failing WCAG AA. This shade holds ~5.2:1 while still reading warm. */
+  --accent: #c2410c;
   --accent-foreground: #ffffff;
-  --success: #16a34a;
+  /* Same reasoning as --accent: green-600 (#16a34a) only reaches ~3.3:1
+     with white text. This shade holds ~5:1. */
+  --success: #15803d;
   --success-foreground: #ffffff;
   --error: #dc2626;
   --error-foreground: #ffffff;

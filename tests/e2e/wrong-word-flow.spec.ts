@@ -14,12 +14,22 @@ test.describe("Wrong-word flow", () => {
     await expect(correctButton).toHaveAttribute("aria-pressed", "false");
     await expect(page.getByText(new RegExp(`${correct} ${noun.singular}`, "i")).first()).toBeVisible();
 
+    // Wrong answers must NOT auto-advance — the learner needs time to read
+    // the correction. A "Okay, got it" button waits for a deliberate tap.
+    const continueButton = page.getByRole("button", { name: "Okay, got it" });
+    await expect(continueButton).toBeVisible();
+    await page.waitForTimeout(1500);
+    await expect(page.getByText("DE OF HET")).toBeVisible(); // still the same question, not advanced
+    await expect(wrongButton).toHaveAttribute("aria-pressed", "true"); // feedback still showing
+
+    await continueButton.click();
+    await expect(continueButton).not.toBeVisible();
+
     // The underlying repetition engine must have scheduled this concept to
     // return within a 2-5 question window (spec section 17), not immediately
     // and not "eventually whenever". We assert the contract directly against
     // persisted state rather than clicking through N more questions hoping to
     // observe it live (which would make this test flaky by nature).
-    await page.waitForTimeout(1100); // wait past the wrong-answer auto-advance
     const state = await page.evaluate(() => {
       const raw = localStorage.getItem("dutchtap:guest-progress");
       return raw ? JSON.parse(raw) : null;

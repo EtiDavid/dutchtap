@@ -15,7 +15,6 @@ const nounIndex = new Map(NOUNS.map((n) => [n.id, n]));
 const allCandidates = buildAllCandidates(NOUNS);
 
 const CORRECT_ADVANCE_DELAY_MS = 450;
-const WRONG_ADVANCE_DELAY_MS = 1000;
 const ACCOUNT_SYNC_INTERVAL_MS = 4000;
 
 export type AnswerFeedback = "idle" | "correct" | "wrong";
@@ -261,11 +260,20 @@ export function useGameSession(mode: GameMode | "weak-review") {
       recentConceptKeysRef.current = [...recentConceptKeysRef.current, current.conceptKey].slice(-2);
       questionIndexRef.current += 1;
 
-      const delay = isCorrect ? CORRECT_ADVANCE_DELAY_MS : WRONG_ADVANCE_DELAY_MS;
-      advanceTimerRef.current = setTimeout(() => nextQuestion(updatedProgress.progressByKey), delay);
+      // Correct answers auto-advance quickly (nothing to read). Wrong
+      // answers wait for the learner to tap Continue, so the correction
+      // and rule explanation don't get swept away by a timer.
+      if (isCorrect) {
+        advanceTimerRef.current = setTimeout(() => nextQuestion(updatedProgress.progressByKey), CORRECT_ADVANCE_DELAY_MS);
+      }
     },
     [current, progress, feedback, nextQuestion],
   );
+
+  const continueAfterWrong = useCallback(() => {
+    if (feedback !== "wrong" || !progress) return;
+    nextQuestion(progress.progressByKey);
+  }, [feedback, progress, nextQuestion]);
 
   const summary: SessionSummary = useMemo(
     () => ({
@@ -311,5 +319,6 @@ export function useGameSession(mode: GameMode | "weak-review") {
     currentMasteryLevel,
     isAccount,
     submitAnswer,
+    continueAfterWrong,
   };
 }

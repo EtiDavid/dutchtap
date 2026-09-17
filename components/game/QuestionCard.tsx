@@ -26,11 +26,13 @@ export function QuestionCard({
   feedback,
   selectedAnswer,
   onAnswer,
+  onContinue,
 }: {
   question: GrammarQuestion;
   feedback: AnswerFeedback;
   selectedAnswer: string | null;
   onAnswer: (value: string) => void;
+  onContinue: () => void;
 }) {
   const disabled = feedback !== "idle";
   const gridCols = question.mode === "demonstrative" ? "grid-cols-2" : "grid-cols-2";
@@ -74,6 +76,17 @@ export function QuestionCard({
         <p className="text-lg font-semibold text-success" aria-live="polite">
           +1
         </p>
+      )}
+
+      {feedback === "wrong" && (
+        <button
+          type="button"
+          onClick={onContinue}
+          autoFocus
+          className="h-12 w-full max-w-sm rounded-2xl bg-foreground text-base font-semibold text-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          Okay, got it
+        </button>
       )}
     </div>
   );

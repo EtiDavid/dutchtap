@@ -6,9 +6,12 @@ import { loadLocalProgress, type LocalProgressState } from "@/lib/sync/localProg
 import { computeOverviewStats, type OverviewStats } from "@/lib/stats/overview";
 import { useAccount } from "@/lib/auth/useAccount";
 import { ModeCard } from "./ModeCard";
+import { StreakBadge } from "@/components/practice/StreakBadge";
+import { usePracticeStreak } from "@/lib/practice/usePracticeStreak";
 
 export function HomeScreen() {
   const { account, loading: accountLoading, logout } = useAccount();
+  const { streak, practisedToday } = usePracticeStreak();
   const [guestProgress, setGuestProgress] = useState<LocalProgressState | null>(null);
   const [accountStats, setAccountStats] = useState<OverviewStats | null>(null);
 
@@ -63,6 +66,8 @@ export function HomeScreen() {
             ))}
         </div>
       </header>
+
+      <StreakBadge streak={streak} practisedToday={practisedToday} />
 
       <div className="flex flex-col gap-3">
         <ModeCard href="/flashcards" title="Flashcards" subtitle="Learn sentences with pictures and sound." example="Kan ik met de kaart betalen?" />

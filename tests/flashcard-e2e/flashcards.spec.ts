@@ -88,6 +88,8 @@ test('skipping before reveal stops playback, changes the card and preserves save
   expect(await stored(page)).toEqual(baseline);
   await page.reload();
   expect(await stored(page)).toEqual(baseline);
+  // The reload resumes the session; finishing it shows the menu with the unchanged progress.
+  await page.getByRole('button', { name: 'Finish for now' }).click();
   await expect(page.getByLabel('Your cards by level')).toContainText('Mastered 1');
 });
 

@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { CATEGORIES } from '@/lib/flashcards/engine';
+import { AppNav } from '../nav/AppNav';
+import { BackButton } from '../nav/BackButton';
 import { filterVocabulary, VOCABULARY, vocabularyExamples } from '@/lib/vocabulary';
 
 export function VocabularyScreen({ cardId = '' }: { cardId?: string }) {
@@ -11,8 +13,8 @@ export function VocabularyScreen({ cardId = '' }: { cardId?: string }) {
   const entries = filterVocabulary(query, category, type, cardId);
   const field = 'mt-2 w-full rounded-xl border border-border bg-white p-3 text-base';
 
-  return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 py-6">
-    <header className="flex justify-between text-sm"><Link href="/" className="text-muted underline">DutchTap / Home</Link><Link href="/flashcards" className="font-semibold text-accent underline">Go to Flashcards</Link></header>
+  return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pb-28 pt-6">
+    {cardId && <header className="text-sm"><BackButton fallback="/flashcards">Back to where you were</BackButton></header>}
     <div><h1 className="text-3xl font-bold tracking-tight">Vocabulary</h1><p className="mt-2 text-muted">Useful words and expressions from your sentence cards.</p></div>
     {cardId && <p className="text-sm text-muted">Words from this sentence. <Link href="/vocabulary" className="text-accent underline">Browse all words</Link></p>}
     <label className="text-sm font-semibold">Search words<input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Dutch, English or Dutch explanation" className={field} /></label>
@@ -34,5 +36,6 @@ export function VocabularyScreen({ cardId = '' }: { cardId?: string }) {
         <div className="mt-3 flex flex-wrap gap-3">{examples.map(({ card }) => <Link key={card.id} href={`/sentences/${card.id}`} className="text-sm text-accent underline">View sentence: {card.id}</Link>)}</div>
       </article>;
     })}
+    <AppNav />
   </main>;
 }

@@ -156,3 +156,45 @@ Unit tests cover the deck, levels, weighted drawing, quiz weights, merge and sch
 (`tests/flashcards*.test.ts`). `npm run test:flashcards` runs browser tests for both
 modes, the quiz and a mocked account sync; they do not touch Atlas. Live ElevenLabs
 generation and real Atlas syncing are not covered by automated tests.
+
+## Progress picture, milestones and streak
+
+- The Flashcards menu shows a stacked bar of Difficult / Medium / Easy / Mastered counts
+  (`components/flashcards/LevelBar.tsx`) and how many more Mastered cards until the next
+  milestone. It is a picture of learning, not a score.
+- Marking a card **Mastered** so that the total reaches **10, 50 or 100** shows a dismissible
+  congratulation (`lib/flashcards/milestones.ts`).
+- A gentle **practice streak** (flashcards menu, quiz menu and Home) counts consecutive days with at
+  least one rating or quiz answer. A streak from yesterday stays alive until the end of today and
+  missing a day never shows a penalty message (`lib/practice/streak.ts`). Practice days are stored on
+  this device only (`dutchtap:practice-days:v1`) and are not synced to accounts.
+
+## Resuming after a refresh
+
+A flashcard session (mode, place, the chosen card set, the current card, whether the answer is
+revealed and the chosen level) and the current quiz question (including whether it was answered) are
+saved on the device as you go (`lib/flashcards/sessionStore.ts`). Refreshing, or leaving for another
+page and coming back, continues exactly there; **Finish for now** clears it. The quiz exercise is
+rebuilt from the card and question number, so it is the same exercise, and an answered question is
+not counted a second time. Sessions older than 24 hours are ignored, as is any corrupted data.
+
+## Grammar notes
+
+`data/grammar-notes.json` gives every one of the 300 sentences a plain-English **rule** and 2-3
+**similar examples** with English (plus the card's own variation, shown first). They appear under
+"Grammar rule & similar examples" on flashcards (after you reveal the sentence), in the quiz (after
+you answer) and, expanded, on each sentence page (`/sentences/<id>`). Each example has a 🔊 button
+that uses the device's Dutch voice (there are no recordings for examples).
+
+The notes are kept separate from the card data so the original card fields stay unchanged.
+`tests/grammarNotes.test.ts` checks that every card has a note, that examples are 2-3 per card and
+that none repeats the card's own sentence or variation. **The notes were written by an AI assistant
+and have not had a native-speaker review**; treat them like the rest of the content and have a Dutch
+speaker check them before relying on them.
+
+## Navigation
+
+The learning pages (Flashcards, Quiz, Words and sentence pages) share a bottom tab bar
+(`components/nav/AppNav.tsx`): Home, Flashcards, Quiz, Words. A dot on a tab means a session is
+waiting there; opening it continues where you left off. Sentence pages have a **Back** button and a
+**Continue flashcards** link, and a vocabulary list opened from a sentence has a back link.

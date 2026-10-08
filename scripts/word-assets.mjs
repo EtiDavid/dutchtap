@@ -50,9 +50,18 @@ mkdirSync(dir, { recursive: true });
 const file = join(dir, onlyMissing ? 'WORD-ASSETS-MISSING.json' : 'WORD-ASSETS.json');
 writeFileSync(file, JSON.stringify(out, null, 2) + '\n');
 
+const pendingNounImageFile = join(dir, 'NOUN-IMAGE-PROMPTS-PENDING.json');
+const pendingNounImages = entries
+  .filter(entry => entry.kind === 'noun' && !entry.hasImage)
+  .map(({ id, dutch, english, category, imageFile, imagePrompt }) => ({
+    id, dutch, english, category, imageFile, imagePrompt,
+  }));
+writeFileSync(pendingNounImageFile, JSON.stringify(pendingNounImages, null, 2) + '\n');
+
 const count = (k, f) => entries.filter(e => e.kind === k && f(e)).length;
 for (const kind of ['noun', 'adjective']) {
   const total = entries.filter(e => e.kind === kind).length;
   console.log(`${kind}s: ${count(kind, e => e.hasImage)}/${total} pictures, ${count(kind, e => e.hasAudio)}/${total} sounds`);
 }
 console.log(`Wrote ${out.length} entries to ${file.replace(root + '/', '')}`);
+console.log(`Wrote ${pendingNounImages.length} pending noun prompts to ${pendingNounImageFile.replace(root + '/', '')}`);

@@ -50,20 +50,21 @@ export function QuizScreen() {
     </> : <>
       <div className="flex justify-between text-sm text-muted"><span>{CATEGORIES[card.category as keyof typeof CATEGORIES]}</span><span>{exercise.kind === 'blank' ? 'Fill the blank' : 'Word order'}</span></div>
       <article key={asked} className="flashcard-enter overflow-hidden rounded-3xl border border-border bg-white shadow-sm">
-        <Image src={card.image} alt={card.cue} width={1536} height={1024} priority className="aspect-[3/2] w-full object-cover" />
+        {card.imageStatus === 'pending' ? <div className="flex aspect-[3/2] items-center justify-center bg-surface p-6 text-center text-sm text-muted">Illustration awaiting generation</div> : <Image src={card.image} alt={card.cue} width={1536} height={1024} priority className="aspect-[3/2] w-full object-cover" />}
         <div className="p-6">
           <p className="text-base text-muted">{card.english}</p>
           {!outcome ? (exercise.kind === 'blank' ? <>
             <p lang="nl" className="mt-3 text-2xl font-semibold leading-snug">{exercise.before}<span className="mx-1 inline-block min-w-12 border-b-2 border-accent text-center text-accent" aria-label="blank">&nbsp;</span>{exercise.after}</p>
             <div className="mt-4 grid grid-cols-3 gap-2">{exercise.options.map(o => <button key={o} lang="nl" className={button} onClick={() => answer(isBlankCorrect(exercise, o))}>{o}</button>)}</div>
           </> : <>
+            <p className="mt-3 text-sm text-muted">Reproduce the taught sentence. Other Dutch word orders can also be valid.</p>
             <p className="mt-3 min-h-12 rounded-xl border border-dashed border-border p-3 text-lg font-medium" lang="nl" aria-label="Your sentence">{built.length ? built.map(i => exercise.words[i]).join(' ') : <span className="text-sm font-normal text-muted">Tap the words in the right order</span>}</p>
             <div className="mt-3 flex flex-wrap gap-2">{exercise.words.map((w, i) => <button key={i} lang="nl" disabled={built.includes(i)} className={`${button} disabled:opacity-30`} onClick={() => setBuilt([...built, i])}>{w}</button>)}</div>
             <div className="mt-3 grid grid-cols-[2fr_1fr] gap-2"><button className={primary} disabled={built.length !== exercise.words.length} onClick={() => answer(isOrderCorrect(exercise, built.map(i => exercise.words[i])))}>Check</button><button className={button} disabled={!built.length} onClick={() => setBuilt(built.slice(0, -1))}>Undo</button></div>
           </>) : <>
-            <p role="status" className={`mt-3 text-sm font-semibold ${outcome === 'right' ? 'text-success' : 'text-accent'}`}>{outcome === 'right' ? 'Juist! Correct.' : 'Not quite. Here is the sentence:'}</p>
+            <p role="status" className={`mt-3 text-sm font-semibold ${outcome === 'right' ? 'text-success' : 'text-accent'}`}>{outcome === 'right' ? 'Juist! Correct.' : exercise.kind === 'order' ? 'That differs from the taught sentence. Here it is:' : 'Not quite. Here is the sentence:'}</p>
             <p lang="nl" className="mt-2 text-2xl font-semibold leading-snug">{card.dutch}</p>
-            <div className="mt-4 flex gap-2"><button className={button} onClick={() => void listen(card)}>Listen</button><button className={button} onClick={() => void listen(card, true)}>Listen slowly</button><button aria-label="Stop audio" className={button} onClick={stop}>Stop</button></div>
+            {card.audioStatus === 'awaiting-recording' ? <p className="mt-4 text-sm text-muted">Diederik recording awaiting installation.</p> : <div className="mt-4 flex gap-2"><button className={button} onClick={() => void listen(card)}>Listen</button><button className={button} onClick={() => void listen(card, true)}>Listen slowly</button><button aria-label="Stop audio" className={button} onClick={stop}>Stop</button></div>}
             {sound && <p role="status" className="mt-2 text-xs text-muted">{sound}</p>}
             <details className="mt-5 border-t border-border pt-4"><summary className="cursor-pointer text-sm font-semibold">Why this sentence?</summary><p className="mt-3 text-sm leading-relaxed text-muted">{card.grammar}</p></details>
           </>}

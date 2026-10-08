@@ -58,6 +58,8 @@ See [.env.example](.env.example). Only two are used:
 
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — how the pieces fit together
 - [docs/CONTENT_AUDIT.md](docs/CONTENT_AUDIT.md) — noun/adjective bank verification
+- [docs/FLASHCARDS.md](docs/FLASHCARDS.md) — flashcards, quiz, levels and audio generation
+- [docs/word-assets/CHATGPT-INSTRUCTIONS.md](docs/word-assets/CHATGPT-INSTRUCTIONS.md) — adding pictures and sounds to words
 - [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) — Vercel + Atlas + custom domain steps
 
 ## Tests

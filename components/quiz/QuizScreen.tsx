@@ -1,0 +1,76 @@
+'use client';
+import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { CARDS, CATEGORIES, drawCard, quizWeight, recordQuiz } from '@/lib/flashcards/engine';
+import { buildExercise, isBlankCorrect, isOrderCorrect, pickKind, type Exercise } from '@/lib/flashcards/exercises';
+import { useReviews } from '@/lib/flashcards/useReviews';
+import { useCardAudio } from '@/lib/flashcards/useCardAudio';
+import { button, primary } from '../flashcards/styles';
+
+type Question = { id: string; exercise: Exercise };
+
+export function QuizScreen() {
+  const { account, reviews, ready, status, persist, guestAvailable, copyGuest } = useReviews();
+  const { sound, listen, stop } = useCardAudio();
+  const [category, setCategory] = useState('all');
+  const [question, setQuestion] = useState<Question | null>(null);
+  const [asked, setAsked] = useState(0);
+  const [built, setBuilt] = useState<number[]>([]);
+  const [outcome, setOutcome] = useState<'right' | 'wrong' | null>(null);
+
+  const card = CARDS.find(c => c.id === question?.id);
+  const exercise = question?.exercise;
+
+  function ask(n: number, from = reviews, avoid?: string) {
+    stop(); setBuilt([]); setOutcome(null);
+    const ids = CARDS.filter(c => category === 'all' || c.category === category).map(c => c.id);
+    const id = drawCard(ids, from, quizWeight, Math.random, avoid);
+    const picked = CARDS.find(c => c.id === id);
+    const built = picked && buildExercise(picked, pickKind(n), String(n));
+    if (!picked || !built) { setQuestion(null); return; }
+    setQuestion({ id: picked.id, exercise: built }); setAsked(n);
+  }
+  function answer(right: boolean) {
+    if (!card) return;
+    setOutcome(right ? 'right' : 'wrong');
+    void persist({ ...reviews, [card.id]: recordQuiz(card.id, reviews[card.id], right) });
+  }
+
+  return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 py-6">
+    <header className="flex items-center justify-between"><Link href="/" className="text-sm text-muted underline">DutchTap / Home</Link><Link href="/flashcards" className="text-sm font-semibold text-accent underline">Go to Flashcards</Link></header>
+    <div><h1 className="text-3xl font-bold tracking-tight">Quiz</h1><p className="mt-2 text-muted">Tap the missing word, or tap the words into the right order.</p></div>
+    <p className="text-xs text-muted" role="status">{status} {account && <button onClick={() => void persist(reviews)} disabled={!ready} className="ml-2 underline">Retry sync</button>}</p>
+
+    {!card || !exercise ? <>
+      <label className="text-sm font-semibold">Choose a place<select value={category} onChange={e => setCategory(e.target.value)} className="mt-2 w-full rounded-xl border border-border bg-white p-3 text-base"><option value="all">Everyday mix</option>{Object.entries(CATEGORIES).map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
+      <p className="text-sm leading-relaxed text-muted">The quiz uses the same pictures and sentences as the flashcards. Sentences you get wrong come back sooner; ones you get right again and again appear less often. There is no score.</p>
+      <button className={primary} disabled={!ready} onClick={() => ask(0)}>Start the quiz</button>
+      {guestAvailable && <button className={button} onClick={copyGuest}>Copy my guest progress to this account</button>}
+    </> : <>
+      <div className="flex justify-between text-sm text-muted"><span>{CATEGORIES[card.category as keyof typeof CATEGORIES]}</span><span>{exercise.kind === 'blank' ? 'Fill the blank' : 'Word order'}</span></div>
+      <article key={asked} className="flashcard-enter overflow-hidden rounded-3xl border border-border bg-white shadow-sm">
+        <Image src={card.image} alt={card.cue} width={1536} height={1024} priority className="aspect-[3/2] w-full object-cover" />
+        <div className="p-6">
+          <p className="text-base text-muted">{card.english}</p>
+          {!outcome ? (exercise.kind === 'blank' ? <>
+            <p lang="nl" className="mt-3 text-2xl font-semibold leading-snug">{exercise.before}<span className="mx-1 inline-block min-w-12 border-b-2 border-accent text-center text-accent" aria-label="blank">&nbsp;</span>{exercise.after}</p>
+            <div className="mt-4 grid grid-cols-3 gap-2">{exercise.options.map(o => <button key={o} lang="nl" className={button} onClick={() => answer(isBlankCorrect(exercise, o))}>{o}</button>)}</div>
+          </> : <>
+            <p className="mt-3 min-h-12 rounded-xl border border-dashed border-border p-3 text-lg font-medium" lang="nl" aria-label="Your sentence">{built.length ? built.map(i => exercise.words[i]).join(' ') : <span className="text-sm font-normal text-muted">Tap the words in the right order</span>}</p>
+            <div className="mt-3 flex flex-wrap gap-2">{exercise.words.map((w, i) => <button key={i} lang="nl" disabled={built.includes(i)} className={`${button} disabled:opacity-30`} onClick={() => setBuilt([...built, i])}>{w}</button>)}</div>
+            <div className="mt-3 grid grid-cols-[2fr_1fr] gap-2"><button className={primary} disabled={built.length !== exercise.words.length} onClick={() => answer(isOrderCorrect(exercise, built.map(i => exercise.words[i])))}>Check</button><button className={button} disabled={!built.length} onClick={() => setBuilt(built.slice(0, -1))}>Undo</button></div>
+          </>) : <>
+            <p role="status" className={`mt-3 text-sm font-semibold ${outcome === 'right' ? 'text-success' : 'text-accent'}`}>{outcome === 'right' ? 'Juist! Correct.' : 'Not quite. Here is the sentence:'}</p>
+            <p lang="nl" className="mt-2 text-2xl font-semibold leading-snug">{card.dutch}</p>
+            <div className="mt-4 flex gap-2"><button className={button} onClick={() => void listen(card)}>Listen</button><button className={button} onClick={() => void listen(card, true)}>Listen slowly</button><button aria-label="Stop audio" className={button} onClick={stop}>Stop</button></div>
+            {sound && <p role="status" className="mt-2 text-xs text-muted">{sound}</p>}
+            <details className="mt-5 border-t border-border pt-4"><summary className="cursor-pointer text-sm font-semibold">Why this sentence?</summary><p className="mt-3 text-sm leading-relaxed text-muted">{card.grammar}</p></details>
+          </>}
+        </div>
+      </article>
+      {outcome && <button className={primary} onClick={() => ask(asked + 1, undefined, card.id)}>Continue</button>}
+      <button className="text-sm text-muted underline" onClick={() => { stop(); setQuestion(null); }}>Finish for now</button>
+    </>}
+  </main>;
+}

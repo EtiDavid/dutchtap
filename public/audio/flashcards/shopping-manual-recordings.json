@@ -1,0 +1,67 @@
+{
+  "source": "shopping.mp3",
+  "voice": "Diederik — Vlaamse warme stem (user selected)",
+  "method": "Nine merged silence gaps; cuts at pause midpoints. Expected text follows the supplied script, not an independent transcription.",
+  "clips": [
+    {
+      "file": "shopping-01.mp3",
+      "expected_sentence": "Waar kan ik de melk vinden?",
+      "source_start_seconds": 0,
+      "source_end_seconds": 1.8481
+    },
+    {
+      "file": "shopping-02.mp3",
+      "expected_sentence": "Ik wil graag twee broodjes, alstublieft.",
+      "source_start_seconds": 1.8481,
+      "source_end_seconds": 5.0349
+    },
+    {
+      "file": "shopping-03.mp3",
+      "expected_sentence": "Kan ik met de kaart betalen?",
+      "source_start_seconds": 5.0349,
+      "source_end_seconds": 7.1756
+    },
+    {
+      "file": "shopping-04.mp3",
+      "expected_sentence": "Hoeveel kost deze tas?",
+      "source_start_seconds": 7.1756,
+      "source_end_seconds": 9.264
+    },
+    {
+      "file": "shopping-05.mp3",
+      "expected_sentence": "Heeft u ook een kleinere maat?",
+      "source_start_seconds": 9.264,
+      "source_end_seconds": 11.3742
+    },
+    {
+      "file": "shopping-06.mp3",
+      "expected_sentence": "Ik heb geen zak nodig.",
+      "source_start_seconds": 11.3742,
+      "source_end_seconds": 13.1886
+    },
+    {
+      "file": "shopping-07.mp3",
+      "expected_sentence": "Mag ik de bon, alstublieft?",
+      "source_start_seconds": 13.1886,
+      "source_end_seconds": 15.5702
+    },
+    {
+      "file": "shopping-08.mp3",
+      "expected_sentence": "Deze appels zijn goedkoper.",
+      "source_start_seconds": 15.5702,
+      "source_end_seconds": 18.4581
+    },
+    {
+      "file": "shopping-09.mp3",
+      "expected_sentence": "Ik zoek een cadeau voor mijn vriendin.",
+      "source_start_seconds": 18.4581,
+      "source_end_seconds": 20.934
+    },
+    {
+      "file": "shopping-10.mp3",
+      "expected_sentence": "Ik neem deze, bedankt.",
+      "source_start_seconds": 20.934,
+      "source_end_seconds": 23.1706
+    }
+  ]
+}

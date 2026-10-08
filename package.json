@@ -10,7 +10,13 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "audio:sample": "node scripts/generate-flashcard-audio.mjs",
+    "audio:all": "node scripts/generate-flashcard-audio.mjs --all",
+    "audio:voices": "node scripts/generate-flashcard-audio.mjs --voices",
+    "audio:check": "node scripts/generate-flashcard-audio.mjs --all --dry-run",
+    "assets:words": "node scripts/word-assets.mjs",
+    "test:flashcards": "playwright test --config playwright.flashcards.config.ts"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

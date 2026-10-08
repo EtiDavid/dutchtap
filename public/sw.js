@@ -1,4 +1,4 @@
-const CACHE_NAME = "dutchtap-v1";
+const CACHE_NAME = "dutchtap-v2";
 const PRECACHE_URLS = ["/", "/manifest.webmanifest"];
 
 self.addEventListener("install", (event) => {

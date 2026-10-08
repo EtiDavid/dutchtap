@@ -3,6 +3,9 @@ import type { GrammarQuestion } from "@/lib/grammar/types";
 import { InlineMarkdown } from "@/components/ui/InlineMarkdown";
 import { AnswerButton, answerButtonState } from "./AnswerButton";
 import type { AnswerFeedback } from "@/lib/game/useGameSession";
+import { WordImage } from "@/components/words/WordImage";
+import { useCardAudio } from "@/lib/flashcards/useCardAudio";
+import { adjectiveSpeech, nounSpeech, wordAudioUrl } from "@/lib/words/assets";
 
 function ModeLabel({ question }: { question: GrammarQuestion }) {
   if (question.mode === "article") return <span>DE OF HET</span>;
@@ -35,6 +38,11 @@ export function QuestionCard({
   onContinue: () => void;
 }) {
   const disabled = feedback !== "idle";
+  const { sound, listen, stop } = useCardAudio();
+  const { noun } = question;
+  const word = question.isPlural ? noun.plural : noun.singular;
+  // The recording says the singular noun with its article; plural questions use the device voice instead.
+  const speech = { dutch: nounSpeech(noun, question.isPlural), audio: question.isPlural ? undefined : wordAudioUrl("noun", noun.id) };
   const gridCols = question.mode === "demonstrative" ? "grid-cols-2" : "grid-cols-2";
 
   return (
@@ -42,6 +50,11 @@ export function QuestionCard({
       <p className="text-xs font-semibold tracking-[0.2em] text-muted">
         <ModeLabel question={question} />
       </p>
+
+      <div className="flex items-center justify-center gap-3">
+        <WordImage key={noun.id} kind="noun" id={noun.id} label={word} />
+        {question.mode === "adjective" && <WordImage key={question.adjective.id} kind="adjective" id={question.adjective.id} label={question.adjective.base} />}
+      </div>
 
       <div className="flex flex-col items-center gap-2 text-center">
         {question.mode === "adjective" ? (
@@ -75,6 +88,26 @@ export function QuestionCard({
         ))}
       </div>
 
+      {feedback !== "idle" && (
+        <div className="flex flex-col items-center gap-1">
+          <div className="flex gap-2">
+            <button type="button" onClick={() => void listen(speech)} className="h-10 rounded-xl border border-border px-4 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent">
+              🔊 Listen
+            </button>
+            {question.mode === "adjective" && (
+              <button
+                type="button"
+                onClick={() => void listen({ dutch: adjectiveSpeech(question.adjective), audio: wordAudioUrl("adjective", question.adjective.id) })}
+                className="h-10 rounded-xl border border-border px-4 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
+              >
+                🔊 {question.adjective.base}
+              </button>
+            )}
+          </div>
+          {sound && <p role="status" className="text-xs text-muted">{sound}</p>}
+        </div>
+      )}
+
       {feedback === "correct" && (
         <p className="text-lg font-semibold text-success" aria-live="polite">
           +1
@@ -84,7 +117,10 @@ export function QuestionCard({
       {feedback !== "idle" && (
         <button
           type="button"
-          onClick={onContinue}
+          onClick={() => {
+            stop();
+            onContinue();
+          }}
           autoFocus
           className={`h-12 w-full max-w-sm rounded-2xl text-base font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
             feedback === "correct" ? "bg-success text-success-foreground" : "bg-foreground text-background"

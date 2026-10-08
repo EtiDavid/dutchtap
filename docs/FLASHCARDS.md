@@ -1,12 +1,19 @@
 # Daily Dutch — speaking flashcards
 
-50 original A1/A2-oriented sentences: 10 each for shopping, school, transport,
-home and conversation. Every card has a situation, English meaning, a short
-pattern explanation and a variation. Fifty generated editorial illustrations depict individual sentences and
-share a recurring character. This complements the frozen Nova Dutch Academy
+300 A1/A2-oriented sentences: the preserved original 50 plus 250 reviewed
+additions extracted from the two supplied source videos. Every card has a situation,
+English meaning, a short pattern explanation and a variation. Individual editorial
+illustrations depict each sentence and share the established visual style. This complements the frozen Nova Dutch Academy
 curriculum; self-ratings do not promote a formal grammar module.
 
 ## Generate audio on your PC
+
+For the 250-card expansion, the workflow is **manual ElevenLabs recordings with
+Diederik**, followed by local splitting and installation. No ElevenLabs API is
+used for that expansion. The ten approved text batches and ordered ID mappings are
+in `docs/expansion/audio/`. See [expansion status](expansion/STATUS.md) for source
+provenance and current asset counts. The API commands below document the existing optional legacy script;
+they are not required for the manual recording workflow.
 
 Use Node **20.12+** (or a newer supported Node release). Pull this feature branch
 first. The script runs locally; credentials are never read by the browser or a
@@ -85,6 +92,9 @@ Before moving on, the learner picks a level for the card: **Difficult, Medium,
 Easy or Mastered**. Every card starts as Difficult, and its last choice is
 pre-selected the next time it appears.
 
+**Skip without rating** is available before and after reveal. It stops playback
+and advances without saving a level or changing learning counters.
+
 A number of cards (e.g. 10) is the size of the *set*: that many cards are picked
 at random, favouring Difficult ones, and the session keeps cycling through them
 until the learner finishes. Unlimited draws from every card in the chosen place.
@@ -106,7 +116,20 @@ Types alternate. Sentences answered wrongly come back sooner (weight 8); new one
 weigh 6; a streak of 5 correct slows a card (2) and 10 correct in a row slows it
 further (0.5). No score is kept. Exercises are pure and seeded
 (`lib/flashcards/exercises.ts`). Word order is checked against the card's sentence,
-so another valid order is marked wrong, and the correct sentence is always shown.
+and the prompt explicitly asks to reproduce that taught sentence. A different
+order is described as a mismatch, without claiming it is ungrammatical.
+Reviewed valid hebben/kunnen forms with u and je are accepted and excluded from
+wrong options.
+
+## Vocabulary
+
+`/vocabulary` is a text-only browser linked from Home and sentence cards. It
+contains 163 reviewed words and expressions linked to the 300-card deck.
+Search uses Dutch headwords, English meanings and Dutch explanations; filters
+cover place and word type. Nouns include articles and plurals when appropriate,
+and separable/reflexive verbs include useful forms. Every example links to an
+actual card at `/sentences/<id>`. No pictures, recordings or progress system are
+added for vocabulary.
 
 ## Persistence
 
@@ -120,8 +143,9 @@ when a card is next saved. An explicit button copies guest progress into an acco
 ## Playback
 
 Generated MP3s are preferred. Slow playback uses 0.8x with pitch preservation.
-On missing/failed files, a Dutch device voice is used only when available. If
-neither source is available, the UI says so and read-aloud practice still works.
+On missing/failed legacy files, a Dutch device voice is used only when available.
+The 250 additions use their installed Diederik clips and never substitute a device
+voice. If neither legacy source is available, the UI says so.
 Recall mode offers audio only after revealing. New playback stops the previous
 clip, and leaving a card/unmounting cancels playback. No microphone or external
 speech service is used by the deployed app.

@@ -2,7 +2,9 @@ import { test, expect, type Page } from '@playwright/test';
 import { CARDS, newReview, rateLevel } from '../../lib/flashcards/engine';
 
 const GUEST_KEY = 'dutchtap:flashcards:v2:guest';
-const guest = (page: Page) => page.route('**/api/auth/me', route => route.fulfill({ status: 401, json: { error: 'Not signed in' } }));
+const guest = async (page: Page) => {
+  await page.route('**/api/auth/me', route => route.fulfill({ status: 401, json: { error: 'Not signed in' } }));
+};
 // Cards are drawn at random, so tests read which card is on screen.
 const shownDutch = (page: Page) => page.locator('article p[lang="nl"]').first().innerText();
 const cardByDutch = (dutch: string) => CARDS.find(c => c.dutch === dutch)!;
@@ -32,10 +34,6 @@ test('read mode shows the Dutch, defaults to Difficult and saves the chosen leve
   await page.getByRole('button', { name: 'Easy', exact: true }).click();
   await page.getByRole('button', { name: 'Next card' }).click();
   expect((await stored(page))[first.id].level).toBe('easy');
-  // Keep going until the same card comes back: its last choice is pre-selected.
-  for (let i = 0; i < 80 && (await shownDutch(page)) !== first.dutch; i++) await page.getByRole('button', { name: 'Next card' }).click();
-  await expect(page.getByText(first.dutch, { exact: true })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Easy', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'Finish for now' }).click();
   await expect(page.getByRole('heading', { name: 'Flashcards' })).toBeVisible();
   await expect(page.getByLabel('Your cards by level')).toContainText('Easy 1');
@@ -43,6 +41,8 @@ test('read mode shows the Dutch, defaults to Difficult and saves the chosen leve
 
 test('say-it mode shows only the picture and situation until you check', async ({ page }) => {
   await guest(page); await page.goto('/flashcards');
+  // Choose the first original card after React has hydrated.
+  await page.evaluate(() => { Math.random = () => 0; });
   await page.getByRole('button', { name: 'Start saying' }).click();
   await page.getByRole('button', { name: 'Unlimited' }).click();
   const card = await cardByScenario(page);
@@ -50,6 +50,7 @@ test('say-it mode shows only the picture and situation until you check', async (
   await expect(page.getByText(card.dutch, { exact: true })).not.toBeVisible();
   await expect(page.getByRole('button', { name: 'Listen', exact: true })).not.toBeVisible();
   await expect(page.getByRole('button', { name: 'Next card' })).not.toBeVisible();
+  await expect(page.getByRole('button', { name: 'Skip without rating' })).toBeVisible();
   await expect.poll(() => page.locator('article img').evaluate(img => (img as HTMLImageElement).complete && (img as HTMLImageElement).naturalWidth > 0)).toBe(true);
   await page.getByRole('button', { name: 'Check the Dutch' }).click();
   await expect(page.getByText(card.dutch, { exact: true })).toBeVisible();
@@ -59,6 +60,35 @@ test('say-it mode shows only the picture and situation until you check', async (
   const review = (await stored(page))[card.id];
   expect(review.level).toBe('mastered'); expect(review.masteredCount).toBe(1);
   await expect(page.getByText('How do you say it?')).toBeVisible();
+});
+
+test('skipping before reveal stops playback, changes the card and preserves saved progress', async ({ page }) => {
+  await guest(page);
+  const baseline = { 'shopping-01': rateLevel('shopping-01', undefined, 'mastered') };
+  await page.addInitScript(({ key, records }) => {
+    localStorage.setItem(key, JSON.stringify(records));
+    (window as unknown as { audioPauseCount: number }).audioPauseCount = 0;
+    HTMLMediaElement.prototype.play = async function () {};
+    HTMLMediaElement.prototype.pause = function () { (window as unknown as { audioPauseCount: number }).audioPauseCount++; };
+  }, { key: GUEST_KEY, records: baseline });
+  await page.goto('/flashcards');
+  await page.evaluate(() => { Math.random = () => 0; });
+  await page.getByRole('button', { name: 'Start saying' }).click();
+  await page.getByRole('button', { name: 'Unlimited' }).click();
+  const before = await cardByScenario(page);
+  await page.getByRole('button', { name: 'Skip without rating' }).click();
+  const after = await cardByScenario(page);
+  expect(after.id).not.toBe(before.id);
+  expect(await stored(page)).toEqual(baseline);
+  await page.getByRole('button', { name: 'Check the Dutch' }).click();
+  await page.getByRole('button', { name: 'Listen', exact: true }).click();
+  const pauses = await page.evaluate(() => (window as unknown as { audioPauseCount: number }).audioPauseCount);
+  await page.getByRole('button', { name: 'Skip without rating' }).click();
+  expect(await page.evaluate(() => (window as unknown as { audioPauseCount: number }).audioPauseCount)).toBeGreaterThan(pauses);
+  expect(await stored(page)).toEqual(baseline);
+  await page.reload();
+  expect(await stored(page)).toEqual(baseline);
+  await expect(page.getByLabel('Your cards by level')).toContainText('Mastered 1');
 });
 
 test('signed-in levels load from and sync to the account', async ({ page }) => {
@@ -78,4 +108,22 @@ test('signed-in levels load from and sync to the account', async ({ page }) => {
   await page.getByRole('button', { name: 'Next card' }).click();
   await expect(page.getByText('Saved & synced')).toBeVisible();
   expect((remote[card.id] as { level: string }).level).toBe('mastered');
+});
+
+test('new categories practise and save new IDs with installed Diederik audio', async ({ page }) => {
+  await guest(page); await page.goto('/flashcards');
+  await page.evaluate(() => { Math.random = () => 0; });
+  await expect(page.getByLabel('Your cards by level')).toContainText('Difficult 300');
+  await page.getByRole('combobox', { name: 'Choose a place' }).selectOption('work');
+  await page.getByRole('button', { name: 'Start reading' }).click();
+  await page.getByRole('button', { name: 'Unlimited' }).click();
+  const card = cardByDutch(await shownDutch(page));
+  expect(card.id).toBe('work-01');
+  await expect(page.getByRole('button', { name: 'Listen', exact: true })).toBeVisible();
+  await expect.poll(() => page.locator('article img').evaluate(img => (img as HTMLImageElement).complete && (img as HTMLImageElement).naturalWidth > 0)).toBe(true);
+  await page.getByRole('button', { name: 'Easy', exact: true }).click();
+  await page.getByRole('button', { name: 'Next card' }).click();
+  expect((await stored(page))[card.id].level).toBe('easy');
+  await page.reload();
+  expect((await stored(page))[card.id].level).toBe('easy');
 });

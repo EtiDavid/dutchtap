@@ -67,6 +67,7 @@ export function HomeScreen() {
       <div className="flex flex-col gap-3">
         <ModeCard href="/flashcards" title="Flashcards" subtitle="Learn sentences with pictures and sound." example="Kan ik met de kaart betalen?" />
         <ModeCard href="/quiz" title="Quiz" subtitle="Tap the missing word or the word order." example="Kan ik ___ de kaart betalen?" />
+        <ModeCard href="/vocabulary" title="Vocabulary" subtitle="Words and expressions from your sentence cards." example="op slot doen · to lock" />
         <ModeCard href="/game/article" title="De or Het" subtitle="Learn the article." example="het kantoor" />
         <ModeCard
           href="/game/demonstrative"

@@ -16,6 +16,7 @@
     "audio:voices": "node scripts/generate-flashcard-audio.mjs --voices",
     "audio:check": "node scripts/generate-flashcard-audio.mjs --all --dry-run",
     "assets:words": "node scripts/word-assets.mjs",
+    "assets:flashcards": "node scripts/check-flashcard-assets.mjs",
     "test:flashcards": "playwright test --config playwright.flashcards.config.ts"
   },
   "dependencies": {

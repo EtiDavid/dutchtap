@@ -6,6 +6,7 @@ import { CARDS, CATEGORIES, DEFAULT_LEVEL, LEVELS, LEVEL_LABELS, countByLevel, d
 import { useReviews } from '@/lib/flashcards/useReviews';
 import { useCardAudio } from '@/lib/flashcards/useCardAudio';
 import { button, primary } from './styles';
+import { wordsForCard } from '@/lib/vocabulary';
 
 type Mode = 'read' | 'say';
 const MODES: Record<Mode, { title: string; blurb: string; action: string }> = {
@@ -45,6 +46,10 @@ export function FlashcardScreen() {
     show(drawCard(set, updated, flashcardWeight, Math.random, card.id) ?? null, updated);
   }
   function finish() { stop(); setCardId(null); setSet([]); }
+  function skip() {
+    if (!card) return;
+    show(drawCard(set, reviews, flashcardWeight, Math.random, card.id) ?? null);
+  }
 
   const levelPicker = card && (mode === 'read' || revealed) && <section aria-label="How well do you know this card?">
     <p className="mb-2 text-center text-sm text-muted">How well do you know this card?</p>
@@ -68,7 +73,7 @@ export function FlashcardScreen() {
     </> : <>
       <div className="flex justify-between text-sm text-muted"><span>{CATEGORIES[card.category as keyof typeof CATEGORIES]}</span><span>{MODES[mode].title}</span></div>
       <article key={card.id + (cardId ?? '')} className="flashcard-enter overflow-hidden rounded-3xl border border-border bg-white shadow-sm">
-        <Image src={card.image} alt={mode === 'say' && !revealed ? card.scenario : card.cue} width={1536} height={1024} priority className="aspect-[3/2] w-full object-cover" />
+        {card.imageStatus === 'pending' ? <div className="flex aspect-[3/2] items-center justify-center bg-surface p-6 text-center text-sm text-muted">Illustration awaiting generation</div> : <Image src={card.image} alt={mode === 'say' && !revealed ? card.scenario : card.cue} width={1536} height={1024} priority className="aspect-[3/2] w-full object-cover" />}
         <div className="p-6">
           {mode === 'say' && !revealed ? <>
             <p className="text-lg leading-snug">{card.scenario}</p>
@@ -77,13 +82,16 @@ export function FlashcardScreen() {
           </> : <>
             <p lang="nl" className="text-2xl font-semibold leading-snug">{card.dutch}</p>
             <p className="mt-3 text-base text-muted">{card.english}</p>
-            <div className="mt-4 flex gap-2"><button className={button} onClick={() => void listen(card)}>Listen</button><button className={button} onClick={() => void listen(card, true)}>Listen slowly</button><button aria-label="Stop audio" className={button} onClick={stop}>Stop</button></div>
+            {card.audioStatus === 'awaiting-recording' ? <p className="mt-4 text-sm text-muted">Diederik recording awaiting installation.</p> : <div className="mt-4 flex gap-2"><button className={button} onClick={() => void listen(card)}>Listen</button><button className={button} onClick={() => void listen(card, true)}>Listen slowly</button><button aria-label="Stop audio" className={button} onClick={stop}>Stop</button></div>}
             {sound && <p role="status" className="mt-2 text-xs text-muted">{sound}</p>}
             <details className="mt-5 border-t border-border pt-4"><summary className="cursor-pointer text-sm font-semibold">Why this sentence? + Try a variation</summary><p className="mt-3 text-sm leading-relaxed text-muted">{card.grammar}</p><p lang="nl" className="mt-3 font-medium">{card.variation}</p></details>
+            <div className="mt-4 flex flex-wrap gap-3">{wordsForCard(card.id).map(word => <Link key={word.id} href={`/vocabulary?card=${card.id}#${word.id}`} lang="nl" className="text-sm text-accent underline">{word.headword}</Link>)}</div>
+            <Link href={wordsForCard(card.id).length ? `/vocabulary?card=${card.id}` : '/vocabulary'} className="mt-3 block text-sm text-accent underline">{wordsForCard(card.id).length ? 'Vocabulary for this sentence' : 'Browse vocabulary'}</Link>
           </>}
         </div>
       </article>
       {mode === 'say' && !revealed && <button className={primary} onClick={() => setRevealed(true)}>Check the Dutch</button>}
+      <button className={button} onClick={skip}>Skip without rating</button>
       {levelPicker}
       <button className="text-sm text-muted underline" onClick={finish}>Finish for now</button>
     </>}

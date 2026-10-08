@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { NOUNS } from "@/data/nouns";
 import { ADJECTIVES } from "@/data/adjectives";
+import nounImageIds from "@/data/noun-image-ids.json";
 import type { GameMode, GrammarQuestion } from "@/lib/grammar/types";
 import { applyAnswer } from "@/lib/mastery/repetition";
 import type { ProgressRecord } from "@/lib/mastery/types";
@@ -13,7 +14,13 @@ import { loadLocalProgress, saveLocalProgress } from "@/lib/sync/localProgress";
 import { clearSessionState, loadSessionState, saveSessionState } from "./sessionState";
 
 const nounIndex = new Map(NOUNS.map((n) => [n.id, n]));
-const allCandidates = buildAllCandidates(NOUNS);
+const nounImageIdSet = new Set<string>(nounImageIds);
+const candidates = buildAllCandidates(NOUNS);
+const allCandidates = {
+  ...candidates,
+  article: candidates.article.filter((candidate) => nounImageIdSet.has(candidate.wordId)),
+  demonstrative: candidates.demonstrative.filter((candidate) => nounImageIdSet.has(candidate.wordId)),
+};
 
 const ACCOUNT_SYNC_INTERVAL_MS = 4000;
 
@@ -120,7 +127,10 @@ export function useGameSession(mode: GameMode | "weak-review") {
     // of silently starting over — see lib/game/sessionState.ts.
     function resumeOrStart(progressByKey: Record<string, ProgressRecord>) {
       const persisted = loadSessionState(mode);
-      if (persisted && persisted.current) {
+      const persistedNounHasImage = persisted?.current
+        ? nounImageIdSet.has(persisted.current.question.noun.id)
+        : false;
+      if (persisted && persisted.current && (mode === "adjective" || mode === "weak-review" || persistedNounHasImage)) {
         questionIndexRef.current = persisted.questionIndex;
         startedAtRef.current = persisted.startedAt;
         recentConceptKeysRef.current = persisted.recentConceptKeys;

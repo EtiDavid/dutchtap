@@ -2,17 +2,16 @@ import type { Card } from './engine';
 
 // Active-recall exercises built from a card's Dutch sentence. Pure and seeded,
 // so the same card + seed always yields the same exercise (stable across re-renders).
-export type BlankExercise = { kind: 'blank'; before: string; after: string; answer: string; options: string[] };
+export type BlankExercise = { kind: 'blank'; before: string; after: string; answer: string; acceptedAnswers: string[]; options: string[] };
 export type OrderExercise = { kind: 'order'; words: string[]; answer: string[] };
 export type Exercise = BlankExercise | OrderExercise;
 export type ExerciseKind = Exercise['kind'];
 
-// Only groups where, given the rest of the sentence, exactly one option is correct.
-// Verb forms differ by subject; de/het and deze/dit differ by noun gender/number.
+// Reviewed equivalent forms are excluded from distractors below.
 const VERB_GROUPS = [
   ['ben', 'bent', 'is', 'zijn'],
   ['heb', 'hebt', 'heeft', 'hebben'],
-  ['kun', 'kunt', 'kunnen'],
+  ['kan', 'kun', 'kunt', 'kunnen'],
   ['mag', 'mogen'],
   ['moet', 'moeten'],
   ['zal', 'zullen'],
@@ -22,7 +21,7 @@ const VERB_GROUPS = [
 ];
 const NOUN_GROUPS = [['de', 'het'], ['deze', 'dit']];
 
-const core = (token: string) => token.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '');
+const core = (token: string) => /^['’][st][.,!?;:]?$/i.test(token) ? token.replace(/[.,!?;:]$/, '') : token.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '');
 const matchCase = (word: string, like: string) => (like[0] !== like[0].toLowerCase() ? word[0].toUpperCase() + word.slice(1) : word);
 
 function seeded(seed: string): () => number {
@@ -38,6 +37,17 @@ function shuffle<T>(items: T[], rand: () => number): T[] {
 }
 
 export function buildBlank(card: Card, seed: string): BlankExercise | null {
+  if (card.quizBlank) {
+    const { index, acceptedAnswers, distractors } = card.quizBlank;
+    const tokens = card.dutch.split(' ');
+    const answer = core(tokens[index]);
+    const at = tokens[index].indexOf(answer);
+    const before = tokens.slice(0, index).join(' ') + (index ? ' ' : '') + tokens[index].slice(0, at);
+    const after = tokens[index].slice(at + answer.length) + (index < tokens.length - 1 ? ' ' : '') + tokens.slice(index + 1).join(' ');
+    const rand = seeded(`${card.id}:blank:${seed}`);
+    return { kind: 'blank', before, after, answer, acceptedAnswers, options: shuffle([answer, ...distractors.slice(0, 2)], rand) };
+  }
+  if (card.quizMode === 'order') return null;
   const tokens = card.dutch.split(' ');
   const rand = seeded(`${card.id}:blank:${seed}`);
   const candidates: { index: number; group: string[] }[] = [];
@@ -52,18 +62,30 @@ export function buildBlank(card: Card, seed: string): BlankExercise | null {
   const { index, group } = candidates[Math.floor(rand() * candidates.length)];
   const answer = core(tokens[index]);
   const lower = answer.toLowerCase();
-  const wrong = shuffle(group.filter(w => w !== lower), rand).slice(0, 2).map(w => matchCase(w, answer));
+  const previous = core(tokens[index - 1] ?? '').toLowerCase();
+  const following = core(tokens[index + 1] ?? '').toLowerCase();
+  let accepted = [lower];
+  // Vlaanderen Team Taaladvies: both hebt/heeft u and kunt/kan u are correct.
+  // Only adjacent subject pronouns are covered; no speculative clause parsing.
+  if ((previous === 'u' || following === 'u') && ['hebt', 'heeft'].includes(lower)) accepted = ['hebt', 'heeft'];
+  if ((previous === 'u' || following === 'u') && ['kan', 'kunt'].includes(lower)) accepted = ['kan', 'kunt'];
+  if (['je', 'jij'].includes(following) && ['kan', 'kun'].includes(lower)) accepted = ['kan', 'kun'];
+  if (['je', 'jij'].includes(previous) && ['kan', 'kunt'].includes(lower)) accepted = ['kan', 'kunt'];
+  const acceptedAnswers = accepted.map(w => matchCase(w, answer));
+  const wrong = shuffle(group.filter(w => !accepted.includes(w)), rand).slice(0, 2).map(w => matchCase(w, answer));
   const at = tokens[index].indexOf(answer);
   const lead = tokens[index].slice(0, at);
   const trail = tokens[index].slice(at + answer.length);
   const head = tokens.slice(0, index).join(' ');
   const tail = tokens.slice(index + 1).join(' ');
-  return { kind: 'blank', before: (head ? head + ' ' : '') + lead, after: trail + (tail ? ' ' + tail : ''), answer, options: shuffle([answer, ...wrong], rand) };
+  return { kind: 'blank', before: (head ? head + ' ' : '') + lead, after: trail + (tail ? ' ' + tail : ''), answer, acceptedAnswers, options: shuffle([answer, ...wrong], rand) };
 }
 
 export function buildOrder(card: Card, seed: string): OrderExercise | null {
   const answer = card.dutch.split(' ').map(core).filter(Boolean);
-  if (answer.length < 4 || answer.length > 9) return null;
+  const minimum = card.source ? 2 : 4;
+  const maximum = card.source ? 18 : 9;
+  if (answer.length < minimum || answer.length > maximum) return null;
   answer[0] = answer[0][0].toLowerCase() + answer[0].slice(1);
   const rand = seeded(`${card.id}:order:${seed}`);
   let words = shuffle(answer, rand);
@@ -78,5 +100,5 @@ export function buildExercise(card: Card, kind: ExerciseKind, seed = ''): Exerci
 // Alternate types as a card is practised, so each sentence is met in different ways.
 export function pickKind(attempts: number): ExerciseKind { return attempts % 2 === 0 ? 'blank' : 'order'; }
 
-export const isBlankCorrect = (e: BlankExercise, choice: string) => choice === e.answer;
+export const isBlankCorrect = (e: BlankExercise, choice: string) => e.acceptedAnswers.includes(choice);
 export const isOrderCorrect = (e: OrderExercise, built: string[]) => built.join(' ') === e.answer.join(' ');

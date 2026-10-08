@@ -7,6 +7,7 @@ const stored = (page: Page) => page.evaluate(k => JSON.parse(localStorage.getIte
 async function startQuiz(page: Page) {
   await page.route('**/api/auth/me', route => route.fulfill({ status: 401, json: { error: 'Not signed in' } }));
   await page.goto('/quiz');
+  await page.evaluate(() => { Math.random = () => 0; });
   await page.getByRole('button', { name: 'Start the quiz' }).click();
   // A few sentences have nothing suitable to blank and get word order instead; restart until a blank question appears.
   for (let i = 0; i < 30 && await page.getByText('Word order', { exact: true }).isVisible(); i++) {
@@ -54,7 +55,8 @@ test('the next question is a word-order exercise that is checked against the sen
   const first = await currentBlank(page, 0);
   await page.getByRole('button', { name: first.e.answer, exact: true }).click();
   await page.getByRole('button', { name: 'Continue' }).click();
-  await expect(page.getByText('Word order')).toBeVisible();
+  await expect(page.getByText('Word order', { exact: true })).toBeVisible();
+  await expect(page.getByText('Reproduce the taught sentence. Other Dutch word orders can also be valid.', { exact: true })).toBeVisible();
   const card = await currentCard(page);
   expect(card.id).not.toBe(first.card.id);
   const order = buildExercise(card, 'order', '1')!;

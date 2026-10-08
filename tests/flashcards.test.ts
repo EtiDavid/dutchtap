@@ -7,9 +7,8 @@ function seededRand(seed = 1) { let a = seed; return () => { a = (a + 0x6d2b79f5
 const withLevel = (id: string, level: 'difficult' | 'medium' | 'easy' | 'mastered', masteredCount = 0) => ({ ...newReview(id, now), level, masteredCount });
 
 describe('flashcard deck', () => {
-  it('has 50 unique complete cards, ten per place, each with a situation that is not the answer', () => {
-    expect(CARDS).toHaveLength(50); expect(new Set(CARDS.map(c => c.id)).size).toBe(50);
-    for (const category of new Set(CARDS.map(c => c.category))) expect(CARDS.filter(c => c.category === category)).toHaveLength(10);
+  it('has exactly 300 unique text cards, each with a situation that is not the answer', () => {
+    expect(CARDS).toHaveLength(300); expect(new Set(CARDS.map(c => c.id)).size).toBe(300);
     for (const c of CARDS) {
       for (const key of ['dutch', 'english', 'cue', 'scenario', 'grammar', 'variation', 'audio', 'image'] as const) expect(c[key].length).toBeGreaterThan(4);
       expect(c.scenario.toLowerCase()).not.toContain(c.dutch.toLowerCase().replace(/[.?!]/g, ''));
@@ -27,7 +26,7 @@ describe('levels', () => {
   it('counts cards by level, treating unseen cards as difficult', () => {
     const reviews: Reviews = { 'shopping-01': withLevel('shopping-01', 'mastered') };
     const counts = countByLevel(CARDS, reviews);
-    expect(counts.mastered).toBe(1); expect(counts.difficult).toBe(49);
+    expect(counts.mastered).toBe(1); expect(counts.difficult).toBe(CARDS.length - 1);
   });
   it('shows difficult most, then medium, easy, mastered, and mastered-many-times least', () => {
     const w = (level: 'difficult' | 'medium' | 'easy' | 'mastered', n = 0) => flashcardWeight(withLevel('x', level, n));
@@ -53,14 +52,14 @@ describe('drawing cards', () => {
   it('picks a set of distinct cards that favours difficult ones, or all cards for unlimited', () => {
     const all = CARDS.map(c => c.id);
     const reviews: Reviews = Object.fromEntries(all.slice(0, 25).map(id => [id, withLevel(id, 'mastered', 10)]));
-    expect(pickCardSet(all, reviews, null)).toHaveLength(50);
+    expect(pickCardSet(all, reviews, null)).toHaveLength(CARDS.length);
     let masteredPicked = 0;
     for (let seed = 1; seed <= 40; seed++) {
       const set = pickCardSet(all, reviews, 10, seededRand(seed));
       expect(new Set(set).size).toBe(10);
       masteredPicked += set.filter(id => reviews[id]).length;
     }
-    expect(masteredPicked / 40).toBeLessThan(1); // 25 of 50 are mastered, yet on average under 1 of 10 is picked
+    expect(masteredPicked / 40).toBeLessThan(1);
   });
 });
 

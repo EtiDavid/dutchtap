@@ -28,10 +28,9 @@ test('a PNG noun picture is used when a WebP is unavailable', async ({ page }) =
   await expect(page.locator('main img')).toBeVisible();
 });
 
-test('adjective questions show a picture slot for the noun and for the adjective', async ({ page }) => {
+test('adjective questions show an installed noun picture without an empty adjective slot', async ({ page }) => {
   await noAccount(page);
-  await page.route('**/words/nouns/*.webp', route => route.fulfill({ contentType: 'image/png', body: PIXEL }));
   await page.goto('/game/adjective');
   await expect(page.locator('main img')).toHaveCount(1);
-  await expect(page.getByTestId('word-image-placeholder')).toHaveCount(1);
+  await expect(page.getByTestId('word-image-placeholder')).toHaveCount(0);
 });

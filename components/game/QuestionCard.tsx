@@ -6,6 +6,9 @@ import type { AnswerFeedback } from "@/lib/game/useGameSession";
 import { WordImage } from "@/components/words/WordImage";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { adjectiveSpeech, nounSpeech, wordAudioUrl } from "@/lib/words/assets";
+import adjectiveImageIds from "@/data/adjective-image-ids.json";
+
+const adjectiveImageIdSet = new Set<string>(adjectiveImageIds);
 
 function ModeLabel({ question }: { question: GrammarQuestion }) {
   if (question.mode === "article") return <span>DE OF HET</span>;
@@ -53,7 +56,9 @@ export function QuestionCard({
 
       <div className="flex items-center justify-center gap-3">
         <WordImage key={noun.id} kind="noun" id={noun.id} label={word} />
-        {question.mode === "adjective" && <WordImage key={question.adjective.id} kind="adjective" id={question.adjective.id} label={question.adjective.base} />}
+        {question.mode === "adjective" && adjectiveImageIdSet.has(question.adjective.id) && (
+          <WordImage key={question.adjective.id} kind="adjective" id={question.adjective.id} label={question.adjective.base} />
+        )}
       </div>
 
       <div className="flex flex-col items-center gap-2 text-center">

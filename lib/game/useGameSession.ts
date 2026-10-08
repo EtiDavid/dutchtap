@@ -20,6 +20,7 @@ const allCandidates = {
   ...candidates,
   article: candidates.article.filter((candidate) => nounImageIdSet.has(candidate.wordId)),
   demonstrative: candidates.demonstrative.filter((candidate) => nounImageIdSet.has(candidate.wordId)),
+  adjective: candidates.adjective.filter((candidate) => nounImageIdSet.has(candidate.wordId)),
 };
 
 const ACCOUNT_SYNC_INTERVAL_MS = 4000;
@@ -130,7 +131,7 @@ export function useGameSession(mode: GameMode | "weak-review") {
       const persistedNounHasImage = persisted?.current
         ? nounImageIdSet.has(persisted.current.question.noun.id)
         : false;
-      if (persisted && persisted.current && (mode === "adjective" || mode === "weak-review" || persistedNounHasImage)) {
+      if (persisted && persisted.current && (mode === "weak-review" || persistedNounHasImage)) {
         questionIndexRef.current = persisted.questionIndex;
         startedAtRef.current = persisted.startedAt;
         recentConceptKeysRef.current = persisted.recentConceptKeys;

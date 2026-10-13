@@ -1,6 +1,6 @@
 # Stage 1 handover: persistent learning sessions
 
-Branch **`feature/persistent-sessions`**, created from `main` at `197c084` (the merge of pull request #3).
+Branch **`feature/persistent-sessions`** (merged to `main`; section 14 is the guide for Codex's next-300 work), created from `main` at `197c084` (the merge of pull request #3).
 Nothing was pushed, merged or deployed.
 
 * `893c717` Add persistent learning sessions (Study, Speaking, Quiz) with account and guest storage
@@ -196,3 +196,60 @@ npm run test:prod
 ```
 
 Reviewable diff: `git diff main...feature/persistent-sessions --stat`. The clutter folders `.codex/` and `data/.codex/` are not part of the change.
+
+## 14. Instructions for Codex: integrating the next 300 sentences
+
+Written after reading `codex/next-300-preparation` (commit `b654a81`, 50 staged cards `work-31` to `work-80`, based on the older commit `1803b72`).
+Codex's branch only adds files under `content-preparation/next-300/`. **Stage 1 is merged to `main`; branch from `main` (or rebase onto it) before integrating, because your base predates the session engine, the breakdowns file and the service worker.**
+Do not edit `main` directly, do not change Stage 1 code, and do not push or merge without the owner's instruction.
+
+### 14.1 Correction already made to existing content
+`shopping-05` ("Heeft u ook een kleinere maat?") said "u takes the same verb form as hij/zij". That overgeneralised. Branch `fix/shopping-05-u-verb-form` rewrites the note rule and the breakdown `forms` line: with *hebben* both *heeft u* and *hebt u* are standard, and modals differ (*kunt u*, Belgian *kan u*). The card text, ID, picture and recording are untouched. Your `existing-note-review-issues.json` entry can be marked applied once that branch is merged.
+
+### 14.2 What the app reads, and where each new card must appear
+| Need | File | Rule |
+| --- | --- | --- |
+| The card | `data/flashcard-additions.json` (appended in `lib/flashcards/engine.ts`: `CARDS = [...rawCards, ...additions]`) | Fields: `id, category, dutch, english, cue, scenario, grammar, variation, image, audio`, plus optional `difficulty, source{videoId,timestampSeconds}, vocabularyIds, imageStatus, audioStatus, quizMode, quizBlank`. Look at the existing 250 entries for the exact shape. **New unique ID, never an existing one.** |
+| Topic | `CATEGORIES` in `lib/flashcards/engine.ts` | Existing: shopping, school, transport, home, conversation, administration, weather, food, work, health, leisure. A new topic must be added there. `work` already exists. |
+| Short rule + 2 to 3 examples | `data/grammar-notes.json` | `{ rule, examples: [{dutch, english}, ...] }`. Examples are 2 or 3 and must not repeat. Only these keys are read; extra rich fields in your staging file must be dropped or kept in a staging file. |
+| Detailed breakdown | `data/grammar-breakdowns.json` | `{ meaning, parts:[{label,text}], order, forms, compare, mistake:{wrong,right,why} }`. |
+| Vocabulary | `data/vocabulary.json` | Your 39 additions have no ID or headword collision with the live list. Apply the 10 occurrence updates by adding to existing entries; keep one headword per entry. |
+| Picture | `public/illustrations/cards/<id>.webp` | Path must equal the card's `image`. |
+| Recording | `public/audio/flashcards/<id>.mp3` | Path must equal the card's `audio`. Not recorded yet for your 50. |
+
+### 14.3 Compatibility results already checked for your 50 cards
+No ID collisions; categories valid; no duplicate or near-duplicate sentences against the live 300; every breakdown rebuilds its sentence; every note has 2 examples with no repeats; word-order tokens 2 to 9. All 39 vocabulary headwords are new.
+
+### 14.4 Things you must resolve
+1. **Quiz fields.** `quizMode` and `quizBlank` are *optional*. Cards without them work: word order uses the sentence tokens, and the blank exercise is derived automatically (`lib/flashcards/exercises.ts`). Only add `quizBlank` (`index` into `dutch.split(' ')`, `acceptedAnswers`, `distractors`) where you want a fixed gap; use `quizMode: "order"` to disable the blank exercise for a card.
+2. **Extra fields.** Remove staging-only fields from the card records that go into `flashcard-additions.json`. Keep `adapted: true` honestly only if the app type allows it (add to the `Card` type in `lib/flashcards/engine.ts` if you want it in the data); the 12 adapted cards must stay labelled adaptations.
+3. **Breakdown part labels.** `tests/grammarBreakdowns.test.ts` caps the distinct label set at 60 and requires `subject`, `finite verb`, `object`. The live set is 49 labels:
+   adjective, adverb, complement, conjunction, direction, duration, finite verb, finite verb (auxiliary), finite verb (modal), finite verb (past auxiliary), finite verb (past modal), finite verb (past), finite verb at the end, fixed phrase, imperative verb, indirect object, infinitive, infinitive (as noun), infinitive (separable verb), infinitive (te phrase), introductory word, manner phrase, negation, negation (geen + noun), noun, noun phrase, object, om te phrase, participle, place phrase, politeness word, predicate adjective, preposition, preposition phrase, progressive (aan het), pronoun, pronoun and particle, pronoun and preposition, quantity, question phrase, question word, reflexive pronoun, reflexive verb, separable particle, subject, subject (infinitive phrase), subject (infinitive), time phrase, verb of suggestion.
+   Your 26 new labels would exceed 60. **Map your labels onto the live ones** (for example "finite modal" becomes "finite verb (modal)") and add a new label only when no live label describes the part. If the final set truly needs more than 60 labels, raise the cap in that test *and say so in the pull request*; do not rename live labels, because they appear in the UI.
+4. **Tests that count the deck.** Update `tests/expansion.content.test.ts` (lines asserting 300 unique cards, texts, images, recordings) and `tests/flashcards.test.ts` (exactly 300 cards) to the new total. `tests/expansion.preservation.test.ts` checks the original fields and media bytes of the existing cards; it must keep passing unchanged.
+5. **Recordings.** `npm run assets:flashcards -- --complete` fails until every new card has a recording. Do not merge a deck with missing recordings, or ship the cards in a branch where the asset check is expected to fail and say so.
+6. **Review status.** Nothing is native-speaker reviewed. Do not describe the cards as reviewed in the UI or docs. Have a Dutch speaker check the verb clusters and the adapted sentences.
+
+### 14.5 Why sessions are safe with new cards
+Existing sessions store their own `cardIds`, so new cards never appear in them. Sessions created afterwards read the deck through `CARDS`. Global levels for a card with no record start at Difficult. The server accepts any card present in the deck (up to 100 per session). The engine, API, store and service worker need no change. Never change an existing card's `dutch` text: Quiz tokens and saved answers derive from it.
+
+### 14.6 Order of work
+1. Merge `fix/shopping-05-u-verb-form` (owner's decision).
+2. New branch from `main`: for example `feature/next-300-batch-1`.
+3. Add the 50 cards, notes, breakdowns, vocabulary, pictures; map labels; update the counting tests.
+4. Record audio for the two batches of 25, then run the checks below.
+5. Report anything that does not fit this guide instead of working around it.
+
+### 14.7 Checks to run before opening a pull request
+```bash
+npx tsc --noEmit && npx eslint
+docker run -d --name dutchtap-test-mongo -p 127.0.0.1:27018:27017 mongo:7   # optional
+TEST_MONGODB_URI=mongodb://127.0.0.1:27018 npm test          # last verified on main: 246 pass
+npm run assets:flashcards -- --complete
+E2E_PORT=3100 npm run test:flashcards                        # 52 pass; use a free port, not 3000
+npm run test:prod
+```
+The Atlas-backed suite in `tests/e2e` creates real accounts and must not be run against production.
+
+### 14.8 Do not
+Change existing IDs, sentence text, pictures or recordings; change the session engine, API, store or service worker; add the remaining 250 cards before their review; run destructive tests against production; deploy.

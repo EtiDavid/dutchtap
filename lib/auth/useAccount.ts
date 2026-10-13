@@ -1,38 +1,46 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { disposeUserStores } from "@/lib/sessions/registry";
 
 export type Account = { username: string; lifetimeScore: number; totalCorrect: number; totalWrong: number };
+
+// One lookup is shared by every component on a page, so opening a screen costs a single /api/auth/me request.
+let inflight: Promise<Account | null> | null = null;
+async function lookupAccount(force: boolean): Promise<Account | null> {
+  if (inflight && !force) return inflight;
+  inflight = (async () => {
+    try {
+      const res = await fetch("/api/auth/me");
+      return res.ok ? ((await res.json()) as Account) : null;
+    } catch {
+      return null;
+    } finally {
+      setTimeout(() => { inflight = null; }, 1500);
+    }
+  })();
+  return inflight;
+}
 
 export function useAccount() {
   const [account, setAccount] = useState<Account | null>(null);
   const [loading, setLoading] = useState(true);
 
   const refresh = useCallback(async () => {
-    try {
-      const res = await fetch("/api/auth/me");
-      if (res.ok) {
-        setAccount(await res.json());
-      } else {
-        setAccount(null);
-      }
-    } catch {
-      setAccount(null);
-    } finally {
-      setLoading(false);
-    }
+    setAccount(await lookupAccount(true));
+    setLoading(false);
   }, []);
 
   useEffect(() => {
-    // Session status can only be checked client-side (HTTP-only cookie);
-    // the resulting setState calls happen after an async fetch resolves,
-    // not synchronously — this is the standard fetch-on-mount pattern.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    refresh();
-  }, [refresh]);
+    let cancelled = false;
+    void lookupAccount(false).then((found) => { if (!cancelled) { setAccount(found); setLoading(false); } });
+    return () => { cancelled = true; };
+  }, []);
 
   const logout = useCallback(async () => {
     await fetch("/api/auth/logout", { method: "POST" });
+    inflight = null;
+    disposeUserStores(); // nothing of this person stays in memory for the next one
     setAccount(null);
   }, []);
 

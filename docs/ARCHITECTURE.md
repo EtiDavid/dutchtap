@@ -9,7 +9,7 @@ Atlas, HTTP-only signed-cookie sessions (no third-party auth provider).
 
 ```
 app/            routes (pages + API route handlers)
-components/     UI, grouped by feature (game, home, account, stats, ui)
+components/     UI, grouped by feature (game, home, account, stats, sessions, flashcards, quiz, nav, ui)
 lib/
   grammar/      pure grammar rules — article, demonstrative, adjective
   mastery/      pure spaced-repetition/mastery engine
@@ -17,12 +17,34 @@ lib/
   auth/         password/recovery-code hashing, session cookies, lockout
   db/           MongoDB client, typed collections
   sync/         guest localStorage persistence + guest<->account merge
+  flashcards/   deck, global card levels, milestones, legacy exercises
+  sessions/     learning sessions: engine, API service, repositories, client store
+  practice/     the gentle daily streak
   stats/        overview/detailed stats computation
   validation/   Zod schemas for every API input
 data/           the noun and adjective banks (version-controlled, not DB)
 tests/          Vitest unit tests
-tests/e2e/      Playwright end-to-end tests
+tests/e2e/      Playwright end-to-end tests against Atlas (grammar games, accounts)
+tests/flashcard-e2e/  isolated browser tests for sessions (no Atlas)
+tests/prod-e2e/       production-build checks (service worker)
 ```
+
+## Learning sessions (`lib/sessions`, `app/api/learning-sessions`)
+
+Flashcards, Speaking and the word-order Quiz run inside **sessions**: fixed sets of sentence ids chosen once.
+Full contracts and rules are in [STAGE-1-HANDOVER.md](STAGE-1-HANDOVER.md); the shape of the design is:
+
+* **One pure reducer.** Every learner action (`study/next`, `speaking/submit`, `quiz/submit`, ...) is a small object with a unique id.
+  `applyAction` in `lib/sessions/engine.ts` applies it identically on the device (instantly) and on the server (authoritatively). Random
+  choices are made by the device and carried in the action, so a refresh or a replay never re-rolls anything.
+* **Server** (`service.ts` over a `SessionRepo` interface; `mongoRepo.ts` for MongoDB, `memoryRepo.ts` for tests): owner always comes from the signed
+  cookie; a partial unique index on `(userId, slot)` enforces at most five active sessions atomically; updates are compare-and-swap on a
+  revision and re-apply the batch to the latest stored session, so stale devices cannot overwrite counters; applied action ids make replays harmless.
+* **Client** (`store.ts`): local-first. Actions are applied and saved to the device at once, queued, and sent idempotently; failures leave an honest
+  status and retry. Guests use the same store without the network. Stores are scoped per person and dropped from memory on logout.
+* **Global card levels** stay in their own records (`flashcardReviews` / `dutchtap:flashcards:v2:*`), separate from session progress. A Speaking
+  rating updates exactly one level record.
+* **Service worker** (`public/sw.js`): network-first pages so deployments reach returning users, with offline fallback.
 
 ## Why the vocabulary isn't in MongoDB
 

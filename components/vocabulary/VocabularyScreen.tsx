@@ -14,7 +14,7 @@ export function VocabularyScreen({ cardId = '' }: { cardId?: string }) {
   const field = 'mt-2 w-full rounded-xl border border-border bg-white p-3 text-base';
 
   return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pb-28 pt-6">
-    {cardId && <header className="text-sm"><BackButton fallback="/flashcards">Back to where you were</BackButton></header>}
+    <header className="text-sm"><BackButton fallback="/flashcards">{cardId ? 'Back to where you were' : 'Back'}</BackButton></header>
     <div><h1 className="text-3xl font-bold tracking-tight">Vocabulary</h1><p className="mt-2 text-muted">Useful words and expressions from your sentence cards.</p></div>
     {cardId && <p className="text-sm text-muted">Words from this sentence. <Link href="/vocabulary" className="text-accent underline">Browse all words</Link></p>}
     <label className="text-sm font-semibold">Search words<input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Dutch, English or Dutch explanation" className={field} /></label>

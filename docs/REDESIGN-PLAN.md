@@ -1,6 +1,6 @@
 # DutchTap redesign — requirements and plan
 
-Status: **all five steps are built (flashcards, quiz, Home, word picture/sound slots, docs).**
+Status: **superseded in part: flashcards now run in persistent sessions (see STAGE-1-HANDOVER.md). Earlier status was: all five steps are built (flashcards, quiz, Home, word picture/sound slots, docs).**
 
 ## 1. What you asked for (your words, organised)
 

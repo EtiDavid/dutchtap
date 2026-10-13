@@ -1,0 +1,286 @@
+import { CARDS, CATEGORIES, DEFAULT_LEVEL, LEVELS, LEVEL_LABELS, flashcardWeight, type Level, type Reviews } from '@/lib/flashcards/engine';
+import { newId } from './ids';
+import {
+  APPLIED_LOG_LIMIT, EVENT_LOG_LIMIT, MAX_ACTIVE_SESSIONS, MAX_SESSION_CARDS, QUIZ_POINTS, RETIRE_AT,
+  type Action, type ApplyResult, type CardProgress, type LevelEffect, type Mode, type Rejection, type Session,
+} from './types';
+import { isTokenPermutation, isValidDraft, isOrderAnswerCorrect, sentenceTokens, seededRandom, shuffled, shuffledTokenOrder } from './wordOrder';
+
+type Rand = () => number;
+const cardById = new Map(CARDS.map(card => [card.id, card]));
+export const deckCard = (id: string) => cardById.get(id);
+
+export const emptyProgress = (): CardProgress => ({ spStreak: 0, spDone: false, spAttempts: 0, qStreak: 0, qDone: false, qCorrect: 0, qWrong: 0, qLastWrong: false });
+export const progressOf = (session: Session, id: string): CardProgress => session.cards[id] ?? emptyProgress();
+
+// ---- Creating a session ---------------------------------------------------------------------------------------
+/** Topic = the place a sentence belongs to (shopping, school, ...). Level = how well the learner knows it. */
+export const topicLabel = (topic: string) => (topic === 'all' ? 'All places' : CATEGORIES[topic as keyof typeof CATEGORIES] ?? topic);
+export const levelOf = (reviews: Reviews, id: string): Level => reviews[id]?.level ?? DEFAULT_LEVEL;
+
+export function eligibleIds(topic: string, level: Level, reviews: Reviews): string[] {
+  return CARDS.filter(card => (topic === 'all' || card.category === topic) && levelOf(reviews, card.id) === level).map(card => card.id);
+}
+export function levelCounts(topic: string, reviews: Reviews): Record<Level, number> {
+  const counts: Record<Level, number> = { difficult: 0, medium: 0, easy: 0, mastered: 0 };
+  for (const card of CARDS) if (topic === 'all' || card.category === topic) counts[levelOf(reviews, card.id)]++;
+  return counts;
+}
+
+export type LevelAvailability = { level: Level; available: number; enough: boolean; message: string };
+/** Which starting levels can supply `count` distinct cards for this topic, with a plain explanation for each one that cannot. */
+export function levelAvailability(topic: string, count: number, reviews: Reviews): LevelAvailability[] {
+  const counts = levelCounts(topic, reviews);
+  return LEVELS.map(level => {
+    const available = counts[level];
+    const enough = Number.isInteger(count) && count >= 1 && available >= count;
+    const message = enough || !Number.isInteger(count) || count < 1 ? '' : available === 0
+      ? `There are no ${LEVEL_LABELS[level]} cards here. Choose another level, or practise Difficult cards and rate them ${LEVEL_LABELS[level]}.`
+      : `${LEVEL_LABELS[level]} has ${available} ${available === 1 ? 'card' : 'cards'}; you requested ${count}. Choose fewer cards or practise Difficult cards and rate them ${LEVEL_LABELS[level]}.`;
+    return { level, available, enough, message };
+  });
+}
+
+export type Creation = { topic: string; count: number; level: Level };
+export type CreationCheck = { ok: true } | { ok: false; code: 'count' | 'level' | 'limit' | 'none'; message: string };
+export function checkCreation({ topic, count, level }: Creation, reviews: Reviews, activeSessions: number): CreationCheck {
+  if (activeSessions >= MAX_ACTIVE_SESSIONS) return { ok: false, code: 'limit', message: `You already have ${MAX_ACTIVE_SESSIONS} active sessions. Finish one (complete Speaking and Quiz) or delete one before creating another.` };
+  if (!Number.isInteger(count) || count < 1 || count > MAX_SESSION_CARDS) return { ok: false, code: 'count', message: `Choose a number of cards from 1 to ${MAX_SESSION_CARDS}.` };
+  const availability = levelAvailability(topic, count, reviews);
+  if (!availability.some(a => a.enough)) return { ok: false, code: 'none', message: `No level has ${count} cards for ${topicLabel(topic)}. Choose fewer cards or another place.` };
+  const chosen = availability.find(a => a.level === level)!;
+  if (!chosen.enough) return { ok: false, code: 'level', message: chosen.message };
+  return { ok: true };
+}
+
+export function defaultSessionName(topic: string, count: number, level: Level, now = new Date()): string {
+  const date = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+  return `${topicLabel(topic)} · ${count} ${LEVEL_LABELS[level]} ${count === 1 ? 'card' : 'cards'} · ${date}`;
+}
+
+/** A shuffled study round. If possible, the round does not start with `avoidFirst` (the last card of the previous round). */
+export function shuffleRound(ids: readonly string[], rand: Rand, avoidFirst?: string): string[] {
+  const order = shuffled(ids, rand);
+  if (avoidFirst && order.length > 1 && order[0] === avoidFirst) {
+    const swap = 1 + Math.floor(rand() * (order.length - 1));
+    [order[0], order[swap]] = [order[swap], order[0]];
+  }
+  return order;
+}
+
+/** Picks `count` distinct cards from `pool` at random. */
+export function sampleCards(pool: readonly string[], count: number, rand: Rand = Math.random): string[] {
+  return shuffled(pool, rand).slice(0, count);
+}
+
+export function createSessionFromIds(input: { id?: string; name: string; cardIds: string[]; topic: string; startingLevel: Level; now?: Date; rand?: Rand }): Session {
+  const now = (input.now ?? new Date()).toISOString();
+  const rand = input.rand ?? Math.random;
+  return {
+    id: input.id ?? newId(), name: input.name.trim().slice(0, 80), cardIds: [...input.cardIds], topic: input.topic, startingLevel: input.startingLevel,
+    createdAt: now, updatedAt: now, status: 'active', completedAt: null, rev: 0,
+    study: { order: shuffleRound(input.cardIds, rand), pos: 0, round: 1 },
+    speaking: { current: null, done: false }, quiz: { current: null, done: false, points: 0 },
+    cards: Object.fromEntries(input.cardIds.map(id => [id, emptyProgress()])), events: [], applied: [],
+  };
+}
+
+/** Chooses the fixed set once. Returns null when the request cannot be met (nothing is substituted). */
+export function createSession(input: Creation & { reviews: Reviews; name?: string; id?: string; now?: Date; rand?: Rand }): Session | null {
+  const pool = eligibleIds(input.topic, input.level, input.reviews);
+  if (!Number.isInteger(input.count) || input.count < 1 || input.count > MAX_SESSION_CARDS || pool.length < input.count) return null;
+  const rand = input.rand ?? Math.random;
+  return createSessionFromIds({
+    id: input.id, topic: input.topic, startingLevel: input.level, now: input.now, rand,
+    name: input.name?.trim() || defaultSessionName(input.topic, input.count, input.level, input.now),
+    cardIds: sampleCards(pool, input.count, rand),
+  });
+}
+
+/** A new session over exactly the same cards, with fresh counters. */
+export function practiseAgain(source: Session, options: { id?: string; now?: Date; rand?: Rand } = {}): Session {
+  return createSessionFromIds({ ...options, name: `Again: ${source.name.replace(/^Again: /, '')}`, cardIds: source.cardIds, topic: source.topic, startingLevel: source.startingLevel });
+}
+
+// ---- Reading a session ----------------------------------------------------------------------------------------
+export const unfinished = (session: Session, mode: 'speaking' | 'quiz'): string[] =>
+  session.cardIds.filter(id => !(mode === 'speaking' ? progressOf(session, id).spDone : progressOf(session, id).qDone));
+export const retired = (session: Session, mode: 'speaking' | 'quiz') => session.cardIds.length - unfinished(session, mode).length;
+export const isComplete = (session: Session) => session.speaking.done && session.quiz.done;
+
+export function sessionStats(session: Session) {
+  let spAttempts = 0, qCorrect = 0, qWrong = 0;
+  for (const id of session.cardIds) { const p = progressOf(session, id); spAttempts += p.spAttempts; qCorrect += p.qCorrect; qWrong += p.qWrong; }
+  const answered = qCorrect + qWrong;
+  return {
+    total: session.cardIds.length, speakingRetired: retired(session, 'speaking'), quizRetired: retired(session, 'quiz'),
+    speakingAttempts: spAttempts, quizCorrect: qCorrect, quizWrong: qWrong, quizAccuracy: answered ? Math.round((qCorrect / answered) * 100) : null,
+    quizPoints: session.quiz.points, studyRound: session.study.round, studyPosition: session.study.pos + 1,
+  };
+}
+
+// ---- Choosing the next card (random choices are made by the device and sent as part of the action) ----------------
+function drawWeighted(ids: readonly string[], weightOf: (id: string) => number, rand: Rand, avoid?: string): string | undefined {
+  const pool = ids.length > 1 && avoid ? ids.filter(id => id !== avoid) : [...ids];
+  const total = pool.reduce((sum, id) => sum + weightOf(id), 0);
+  if (!pool.length) return undefined;
+  if (total <= 0) return pool[Math.floor(rand() * pool.length)];
+  let target = rand() * total;
+  for (const id of pool) { target -= weightOf(id); if (target < 0) return id; }
+  return pool[pool.length - 1];
+}
+/** Speaking favours Difficult > Medium > Easy > Mastered using the learner's current global level. */
+export function pickSpeakingCard(session: Session, reviews: Reviews, rand: Rand = Math.random, avoid?: string, retiring?: string): string | undefined {
+  return drawWeighted(unfinished(session, 'speaking').filter(id => id !== retiring), id => flashcardWeight(reviews[id]), rand, avoid);
+}
+/** True when rating this card `level` now would be its tenth consecutive recall, retiring it from Speaking. */
+export function wouldRetireSpeaking(session: Session, cardId: string, level: Level): boolean {
+  return level === 'mastered' && progressOf(session, cardId).spStreak + 1 >= RETIRE_AT;
+}
+/** Quiz brings missed cards back sooner and shows well-answered ones less often. Retired cards have no weight. */
+export function quizDrawWeight(progress: CardProgress): number {
+  if (progress.qDone) return 0;
+  if (progress.qLastWrong) return 10;
+  if (progress.qCorrect + progress.qWrong === 0) return 6;
+  return Math.max(0.5, 6 - progress.qStreak * 0.5);
+}
+export function pickQuizCard(session: Session, rand: Rand = Math.random, avoid?: string): string | undefined {
+  return drawWeighted(unfinished(session, 'quiz'), id => quizDrawWeight(progressOf(session, id)), rand, avoid);
+}
+export function newAttemptId() { return newId(); }
+
+// ---- The action reducer (identical on the device and on the server) -------------------------------------------
+const reject = (session: Session, reason: Rejection): ApplyResult => ({ session, applied: false, reason, effects: [] });
+
+/** Chooses the card to continue with after a rating/answer, trusting the device's random choice only when valid. */
+function resolveNext(remaining: string[], proposed: string | undefined, previous: string): string | undefined {
+  if (!remaining.length) return undefined;
+  const valid = proposed && remaining.includes(proposed) && (remaining.length === 1 || proposed !== previous);
+  return valid ? proposed : remaining.find(id => id !== previous) ?? remaining[0];
+}
+
+export function applyAction(input: Session, action: Action, now: Date = new Date()): ApplyResult {
+  if (input.applied.includes(action.id)) return reject(input, 'duplicate');
+  // A finished session still allows Study, renaming and dismissing the last Quiz feedback; nothing else changes it.
+  if (input.status === 'archived' && action.type !== 'study/next' && action.type !== 'rename' && action.type !== 'quiz/continue') return reject(input, 'archived');
+  const s = structuredClone(input);
+  const stamp = now.toISOString();
+  const effects: LevelEffect[] = [];
+  const logEvent = (event: Omit<Session['events'][number], 'id' | 'at'>) => { s.events.push({ id: action.id, at: action.at, ...event }); if (s.events.length > EVENT_LOG_LIMIT) s.events.splice(0, s.events.length - EVENT_LOG_LIMIT); };
+  const progress = (id: string) => (s.cards[id] ??= emptyProgress());
+
+  switch (action.type) {
+    case 'study/next': {
+      if (s.study.pos + 1 < s.study.order.length) { s.study.pos += 1; break; }
+      const proposed = action.nextOrder;
+      const valid = proposed && proposed.length === s.cardIds.length && new Set(proposed).size === s.cardIds.length && proposed.every(id => s.cardIds.includes(id))
+        && !(proposed.length > 1 && proposed[0] === s.study.order[s.study.order.length - 1]);
+      s.study.order = valid ? [...proposed] : shuffleRound(s.cardIds, seededRandom(`${s.id}:${s.study.round + 1}`), s.study.order[s.study.order.length - 1]);
+      s.study.pos = 0; s.study.round += 1;
+      break;
+    }
+    case 'rename': s.name = action.name.trim().slice(0, 80); break;
+    case 'speaking/open': {
+      if (s.speaking.current) return reject(input, 'busy');
+      if (!s.cardIds.includes(action.cardId) || progress(action.cardId).spDone) return reject(input, 'invalid');
+      s.speaking.current = { cardId: action.cardId, attemptId: action.attemptId, revealed: false, chosen: null };
+      break;
+    }
+    case 'speaking/reveal': {
+      if (s.speaking.current?.attemptId !== action.attemptId) return reject(input, 'stale');
+      s.speaking.current.revealed = true;
+      break;
+    }
+    case 'speaking/choose': {
+      const current = s.speaking.current;
+      if (current?.attemptId !== action.attemptId) return reject(input, 'stale');
+      if (!current.revealed) return reject(input, 'not-revealed');
+      current.chosen = action.level;
+      break;
+    }
+    case 'speaking/submit': {
+      const current = s.speaking.current;
+      if (current?.attemptId !== action.attemptId) return reject(input, 'stale');
+      if (!current.revealed) return reject(input, 'not-revealed');
+      if (current.chosen !== action.level) return reject(input, 'not-chosen'); // an explicit rating for this attempt is required
+      const p = progress(current.cardId);
+      p.spAttempts += 1;
+      const recalled = action.level === 'mastered'; // Mastered = "I recalled this correctly before revealing"
+      p.spStreak = recalled ? Math.min(RETIRE_AT, p.spStreak + 1) : 0;
+      if (p.spStreak >= RETIRE_AT) p.spDone = true;
+      logEvent({ mode: 'speaking', cardId: current.cardId, result: recalled ? 'recalled' : 'not-recalled', level: action.level, pointsDelta: 0 });
+      effects.push({ cardId: current.cardId, level: action.level, at: action.at });
+      s.speaking.done = unfinished(s, 'speaking').length === 0;
+      const nextId = resolveNext(unfinished(s, 'speaking'), action.next?.cardId, current.cardId);
+      s.speaking.current = nextId ? { cardId: nextId, attemptId: action.next?.cardId === nextId ? action.next.attemptId : `${action.id}-n`, revealed: false, chosen: null } : null;
+      break;
+    }
+    case 'quiz/open': {
+      if (s.quiz.current) return reject(input, 'busy');
+      const card = deckCard(action.cardId);
+      if (!card || !s.cardIds.includes(action.cardId) || progress(action.cardId).qDone) return reject(input, 'invalid');
+      const order = isTokenPermutation(card.dutch, action.tokenOrder) ? action.tokenOrder : shuffledTokenOrder(card.dutch, seededRandom(action.attemptId));
+      s.quiz.current = { cardId: action.cardId, attemptId: action.attemptId, tokenOrder: order, answer: [], outcome: null };
+      break;
+    }
+    case 'quiz/draft': {
+      const current = s.quiz.current;
+      if (current?.attemptId !== action.attemptId || current.outcome) return reject(input, 'stale');
+      if (!isValidDraft(deckCard(current.cardId)?.dutch ?? '', action.answer)) return reject(input, 'invalid');
+      current.answer = [...action.answer];
+      break;
+    }
+    case 'quiz/submit': {
+      const current = s.quiz.current;
+      if (current?.attemptId !== action.attemptId || current.outcome) return reject(input, 'stale'); // the same attempt can be scored only once
+      const card = deckCard(current.cardId);
+      if (!card || !isTokenPermutation(card.dutch, action.answer)) return reject(input, 'incomplete');
+      const correct = isOrderAnswerCorrect(card.dutch, action.answer);
+      const p = progress(current.cardId);
+      if (correct) { p.qCorrect += 1; p.qStreak = Math.min(RETIRE_AT, p.qStreak + 1); p.qLastWrong = false; if (p.qStreak >= RETIRE_AT) p.qDone = true; }
+      else { p.qWrong += 1; p.qStreak = 0; p.qLastWrong = true; }
+      const points = correct ? QUIZ_POINTS : 0;
+      s.quiz.points += points;
+      s.quiz.done = unfinished(s, 'quiz').length === 0;
+      current.answer = [...action.answer];
+      current.outcome = { correct, points };
+      logEvent({ mode: 'quiz', cardId: current.cardId, result: correct ? 'correct' : 'wrong', pointsDelta: points });
+      break;
+    }
+    case 'quiz/continue': {
+      const current = s.quiz.current;
+      if (current?.attemptId !== action.attemptId) return reject(input, 'stale');
+      if (!current.outcome) return reject(input, 'incomplete');
+      const nextId = resolveNext(unfinished(s, 'quiz'), action.next?.cardId, current.cardId);
+      if (!nextId) { s.quiz.current = null; break; }
+      const nextCard = deckCard(nextId)!;
+      const proposedFor = action.next?.cardId === nextId ? action.next : null;
+      const attemptId = proposedFor?.attemptId ?? `${action.id}-n`;
+      const order = proposedFor && isTokenPermutation(nextCard.dutch, proposedFor.tokenOrder) ? proposedFor.tokenOrder : shuffledTokenOrder(nextCard.dutch, seededRandom(attemptId));
+      s.quiz.current = { cardId: nextId, attemptId, tokenOrder: order, answer: [], outcome: null };
+      break;
+    }
+  }
+
+  s.applied.push(action.id);
+  if (s.applied.length > APPLIED_LOG_LIMIT) s.applied.splice(0, s.applied.length - APPLIED_LOG_LIMIT);
+  s.updatedAt = stamp;
+  if (s.status === 'active' && isComplete(s)) { s.status = 'archived'; s.completedAt = stamp; }
+  return { session: s, applied: true, effects };
+}
+
+/** Applies several actions in order; used by the server and when a device replays its offline queue. */
+export function applyActions(session: Session, actions: readonly Action[], now: Date = new Date()) {
+  let current = session;
+  const applied: string[] = []; const rejected: { id: string; reason: Rejection }[] = []; const effects: LevelEffect[] = [];
+  for (const action of actions) {
+    const result = applyAction(current, action, now);
+    current = result.session;
+    if (result.applied) { applied.push(action.id); effects.push(...result.effects); }
+    else rejected.push({ id: action.id, reason: result.reason! });
+  }
+  return { session: current, applied, rejected, effects };
+}
+
+export const tokensForCard = (cardId: string) => sentenceTokens(deckCard(cardId)?.dutch ?? '');
+export type { Mode };

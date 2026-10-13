@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
   output: "standalone",
   // The dev-only badge defaults to bottom-left, where it would cover the Home tab of the bottom navigation.
   devIndicators: { position: "top-right" },
+  async headers() {
+    // The worker file itself must never be served from a cache, or a new version could not be discovered.
+    return [{ source: "/sw.js", headers: [{ key: "Cache-Control", value: "no-cache, no-store, must-revalidate" }, { key: "Service-Worker-Allowed", value: "/" }] }];
+  },
 };
 
 export default nextConfig;

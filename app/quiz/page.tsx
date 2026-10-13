@@ -1,2 +1,2 @@
-import { QuizScreen } from '@/components/quiz/QuizScreen';
-export default function QuizPage() { return <QuizScreen />; }
+import { QuizChooser } from '@/components/sessions/QuizChooser';
+export default function QuizPage() { return <QuizChooser />; }

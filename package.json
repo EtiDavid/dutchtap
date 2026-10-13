@@ -17,7 +17,9 @@
     "audio:check": "node scripts/generate-flashcard-audio.mjs --all --dry-run",
     "assets:words": "node scripts/word-assets.mjs",
     "assets:flashcards": "node scripts/check-flashcard-assets.mjs",
-    "test:flashcards": "playwright test --config playwright.flashcards.config.ts"
+    "test:flashcards": "playwright test --config playwright.flashcards.config.ts",
+    "test:prod": "playwright test --config playwright.prod.config.ts",
+    "test:sessions-db": "TEST_MONGODB_URI=mongodb://127.0.0.1:27018 vitest run tests/sessions.mongo.test.ts"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

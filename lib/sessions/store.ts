@@ -139,6 +139,7 @@ export class SessionStore {
     const raw = (() => { try { return this.storage?.getItem(storageKeyFor(this.scope)) ?? null; } catch { this.storageOk = false; return null; } })();
     const { state, dropped } = parsePersisted(raw);
     this.state = state; this.loaded = true;
+    this.writeSummary();
     if (dropped) this.notify('Some saved session data could not be read and was skipped. Your card levels are unaffected.');
     this.publish();
     if (this.isAccount) await this.sync();
@@ -146,11 +147,26 @@ export class SessionStore {
   private persist() {
     try {
       this.storage?.setItem(storageKeyFor(this.scope), JSON.stringify(this.state));
+      this.storageOk = true;
+    } catch { this.storageOk = false; }
+    this.writeSummary();
+  }
+  /** A tiny summary for the navigation bar's "session waiting" dot. It belongs to whoever is signed in now and is cleared on logout. */
+  private writeSummary() {
+    try {
       const active = Object.values(this.state.sessions).filter(s => s.status === 'active').length;
       this.storage?.setItem(SUMMARY_KEY, JSON.stringify({ scope: scopeKey(this.scope), active, last: this.state.lastOpened }));
-      this.storageOk = true;
       if (typeof window !== 'undefined') window.dispatchEvent(new Event(SESSIONS_CHANGED));
-    } catch { this.storageOk = false; }
+    } catch { /* cosmetic only */ }
+  }
+  /** Drops everything held in memory and stops all timers. Saved data on the device is left as it is. */
+  dispose() {
+    if (this.debounceHandle) this.timers.clear(this.debounceHandle);
+    if (this.retryHandle) this.timers.clear(this.retryHandle);
+    this.debounceHandle = null; this.retryHandle = null;
+    this.state = empty(); this.notices = []; this.error = null; this.loaded = false;
+    this.listeners.clear(); this.levelListener = null; this.reviewsListener = null; this.fetchImpl = null;
+    this.snapshot = this.buildSnapshot();
   }
   private commit() { this.persist(); this.publish(); }
 

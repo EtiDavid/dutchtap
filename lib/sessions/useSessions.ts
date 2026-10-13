@@ -1,16 +1,9 @@
 'use client';
 import { useEffect, useMemo, useSyncExternalStore } from 'react';
 import { useAccount } from '@/lib/auth/useAccount';
-import { SessionStore, scopeKey, type Scope, type Snapshot } from './store';
+import { type SessionStore, type Snapshot } from './store';
+import { getStore } from './registry';
 
-// One store per signed-in identity (or the guest) per page load, so account A's sessions are never mixed with account B's.
-const registry = new Map<string, SessionStore>();
-export function getStore(scope: Scope): SessionStore {
-  const key = scopeKey(scope);
-  let store = registry.get(key);
-  if (!store) { store = new SessionStore({ scope }); registry.set(key, store); }
-  return store;
-}
 const EMPTY: Snapshot = { ready: false, sessions: [], status: 'local', pending: 0, error: null, notices: [], refused: {}, lastOpened: null, storageOk: true, online: true };
 const noop = () => () => undefined;
 const startedStores = new WeakSet<SessionStore>();

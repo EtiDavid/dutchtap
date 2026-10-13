@@ -148,7 +148,7 @@ test.describe('Quiz', () => {
     await expect(page.getByTestId('quiz-feedback')).toContainText('Correct. +10 points');
     await expect(page.getByTestId('quiz-points')).toHaveText('10');
     await expect(page.getByTestId('correct-progress')).toHaveText('1 / 10 correct in a row');
-    await expect(page.getByText(card.dutch, { exact: true })).toBeVisible();
+    await expect(page.locator('article > div > p[lang="nl"]').filter({ hasText: card.dutch })).toBeVisible(); // the taught sentence (the breakdown repeats it in its correction)
     await page.reload();
     await expect(page.getByTestId('quiz-feedback')).toContainText('Correct. +10 points');
     await expect(page.getByTestId('quiz-points')).toHaveText('10');
@@ -171,7 +171,7 @@ test.describe('Quiz', () => {
     const feedback = await page.getByTestId('quiz-feedback').innerText();
     if (/Correct/.test(feedback)) test.skip(true, 'this sentence reads the same backwards');
     await expect(page.getByTestId('quiz-feedback')).toContainText('That differs from the taught sentence');
-    await expect(page.getByText(card.dutch, { exact: true })).toBeVisible();
+    await expect(page.locator('article > div > p[lang="nl"]').filter({ hasText: card.dutch })).toBeVisible();
     await expect(page.getByTestId('quiz-points')).toHaveText('10');
     await expect(page.getByTestId('correct-progress')).toHaveText('0 / 10 correct in a row');
     await expect(page.getByTestId('grammar-notes')).toBeVisible();

@@ -380,3 +380,25 @@ describe('level effects', () => {
 });
 
 export type { Session };
+
+describe('forgetting a learner on logout', () => {
+  it('dispose clears memory and timers but leaves the saved copy for their next login', async () => {
+    const server = new FakeServer();
+    const first = await started(userScope('anna'), server);
+    const s = makeSession(2); first.store.create(s); await first.store.sync();
+    first.store.dispatch(s.id, { type: 'study/next' });
+    first.store.dispose();
+    expect(first.store.getSnapshot()).toMatchObject({ ready: false, sessions: [], pending: 0 });
+    expect(first.store.get(s.id)).toBeUndefined();
+    await first.store.sync(); // a disposed store can no longer talk to the server
+    expect(server.calls.filter(c => c.startsWith('POST')).length).toBe(1); // only the earlier create: the unsent step was not sent after dispose
+    const again = await started(userScope('anna'), server, first.storage);
+    expect(again.store.get(s.id)!.study.pos).toBe(1); // the unsent step is still there for their next login
+  });
+  it('writes a scoped summary for the navigation dot', async () => {
+    const { store, storage } = await started(guestScope);
+    store.create(makeSession(2));
+    const summary = JSON.parse(storage.getItem('dutchtap:sessions:summary:v1')!);
+    expect(summary).toMatchObject({ scope: 'guest', active: 1 });
+  });
+});

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { disposeUserStores } from "@/lib/sessions/registry";
 
 export type Account = { username: string; lifetimeScore: number; totalCorrect: number; totalWrong: number };
 
@@ -39,6 +40,7 @@ export function useAccount() {
   const logout = useCallback(async () => {
     await fetch("/api/auth/logout", { method: "POST" });
     inflight = null;
+    disposeUserStores(); // nothing of this person stays in memory for the next one
     setAccount(null);
   }, []);
 

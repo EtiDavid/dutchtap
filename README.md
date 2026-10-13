@@ -1,9 +1,11 @@
 # DutchTap
 
-A tiny, polished Dutch grammar memory trainer. Three tap-based modes —
-**de/het**, **deze/dit/die/dat**, and **adjective endings** — sharing one
-noun bank, with a spaced-repetition engine that keeps bringing missed
-words back until they're automatic.
+A tiny, polished Dutch memory trainer. **Flashcards**: study a fixed set of
+everyday sentences, say them from memory with a self-rating, and quiz yourself
+on the same set by putting the words in order. Plus three tap-based grammar
+modes — **de/het**, **deze/dit/die/dat**, and **adjective endings** — sharing
+one noun bank, with a spaced-repetition engine that keeps bringing missed words
+back until they're automatic.
 
 Play as a guest (progress saved on-device) or create a username/password
 account (no email — a one-time recovery code is your password reset
@@ -45,6 +47,10 @@ multi-stage build using Next.js's `output: "standalone"` mode (see
 | `npm test` | Unit/integration tests (Vitest) — pure grammar/mastery logic, content validation, auth primitives |
 | `npm run test:e2e` | End-to-end tests (Playwright) — runs against a real dev server **and the real MongoDB Atlas database** in `MONGODB_URI`; creates and deletes its own `e2e_`-prefixed accounts |
 | `npm run test:coverage` | Vitest with coverage |
+| `npm run test:flashcards` | Isolated browser tests for sessions (account endpoints served in memory, never Atlas). Set `E2E_PORT=3100` if port 3000 is taken |
+| `npm run test:sessions-db` | Session server logic against a real **local** MongoDB (`docker run -d -p 127.0.0.1:27018:27017 mongo:7`); refuses non-local databases |
+| `npm run test:prod` | Builds the app and checks the production service worker |
+| `npm run assets:flashcards -- --complete` | Confirms all 300 pictures and recordings exist |
 
 ## Environment variables
 
@@ -58,16 +64,15 @@ See [.env.example](.env.example). Only two are used:
 
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — how the pieces fit together
 - [docs/CONTENT_AUDIT.md](docs/CONTENT_AUDIT.md) — noun/adjective bank verification
-- [docs/FLASHCARDS.md](docs/FLASHCARDS.md) — flashcards, quiz, levels and audio generation
+- [docs/FLASHCARDS.md](docs/FLASHCARDS.md) — sessions, flashcards, quiz, levels and audio generation
+- [docs/STAGE-1-HANDOVER.md](docs/STAGE-1-HANDOVER.md) — session engine, API and storage contracts, rules, tests, how to add content
+- [docs/GRAMMAR-COVERAGE.md](docs/GRAMMAR-COVERAGE.md) — which practised grammar patterns the 300 sentences cover, gaps and proposals
 - [docs/word-assets/CHATGPT-INSTRUCTIONS.md](docs/word-assets/CHATGPT-INSTRUCTIONS.md) — adding pictures and sounds to words
 - [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) — Vercel + Atlas + custom domain steps
 
 ## Tests
 
-83 unit tests (Vitest) cover the grammar engine, the mastery/repetition
-engine, content validation, and auth primitives — all pure logic, no
-network. 7 end-to-end tests (Playwright) exercise the real app in a real
-browser against the real database: guest play, the wrong-word repetition
-contract, all four demonstrative forms, adjective base/-e grading, and
-the full account lifecycle (register, recovery code, guest-progress
-merge, logout, login, password reset).
+Hundreds of unit tests (Vitest) cover the grammar engine, the mastery engine, content validation, auth primitives, the session engine and
+server logic, the client store (offline, replay, several devices) and the service worker, all as pure logic with no network. Browser tests
+(Playwright) exercise sessions end to end without touching Atlas; a separate Atlas-backed suite (`npm run test:e2e`) covers the grammar games and
+the account lifecycle. See [docs/STAGE-1-HANDOVER.md](docs/STAGE-1-HANDOVER.md) section 11 for exactly what runs and what does not.

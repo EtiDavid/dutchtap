@@ -77,49 +77,49 @@ Verify your ElevenLabs plan permits your intended website use before publishing
 recordings. Commit the audio files and manifest after checking them, then deploy
 through your normal workflow. No ElevenLabs key is needed on the hosting platform.
 
-## Flashcards
+## Learning sessions
 
-Two modes, both started from a pop-up asking how many cards to practise
-(10 / 20 / 30 / Unlimited). No score, points or day schedule are kept.
+A **session** is one fixed set of sentences that the learner studies, says from memory and quizzes
+on. Switching modes never changes the set; refreshing, navigating, logging out and in, or using another
+device (signed in) continues exactly where the learner stopped. Guests get the same sessions, saved on
+the device. See [STAGE-1-HANDOVER.md](STAGE-1-HANDOVER.md) for the contracts and rules.
 
-- **Read & understand** shows the picture and the Dutch sentence, with English,
-  audio and a grammar note.
-- **Say it from memory** shows only the picture and a short *situation* (a
-  `scenario` per card, not a translation) and asks "How do you say it?". The
-  **Check the Dutch** button reveals the sentence and audio.
+Two different filters are used, with these names everywhere:
 
-Before moving on, the learner picks a level for the card: **Difficult, Medium,
-Easy or Mastered**. Every card starts as Difficult, and its last choice is
-pre-selected the next time it appears.
+* **Topic / place**: shopping, school, transport, ... or *All places*.
+* **Knowledge level**: Difficult, Medium, Easy, Mastered. New cards are Difficult.
 
-**Skip without rating** is available before and after reveal. It stops playback
-and advances without saving a level or changing learning counters.
+**Creating a session** (Flashcards page): choose the topic, a card count (10, 20, 30, 50 or a custom count from
+1 to 100) and ONE starting level. The dialog shows how many cards each level has in that topic, using the
+latest global levels. A level with fewer cards than requested is disabled and explained ("Easy has 12 cards;
+you requested 20. Choose fewer cards or practise Difficult cards and rate them Easy."). Nothing is ever
+substituted silently. The distinct cards are picked **once** and stored; later global-level changes or new
+deck content never change an existing session. At most **five active** sessions are allowed (completed ones
+do not count). A session can be renamed, deleted (one confirmation; global levels and other sessions stay),
+and, once finished, practised again as a new session over the same cards.
 
-A number of cards (e.g. 10) is the size of the *set*: that many cards are picked
-at random, favouring Difficult ones, and the session keeps cycling through them
-until the learner finishes. Unlimited draws from every card in the chosen place.
+**Study** (no grading): the session's cards in shuffled *complete* rounds, each card once per round, with
+Dutch, English, picture, audio, grammar breakdown, variation, similar examples and vocabulary links. No
+levels, no counters, no points; it never completes a session.
 
-How often a card is drawn (`lib/flashcards/engine.ts`, weights are tunable):
-Difficult 8, Medium 4, Easy 2, Mastered 0.5 — and 0.15 once a card has been
-marked Mastered 10 times. The card just shown is not repeated immediately.
+**Speaking** (weighted retrieval): picture and situation first, Dutch and audio hidden. After **Check the
+Dutch** the learner must explicitly rate the attempt (Difficult / Medium / Easy / Mastered), even if the
+card's last level is shown as a hint. There is no skip. Mastered means "I recalled this correctly before
+revealing". The rating becomes the card's global level. Cards are drawn at random favouring Difficult
+over Medium over Easy over Mastered (weights 8 / 4 / 2 / 0.5), never the same card twice in a row while
+two or more remain. **Ten consecutive Mastered ratings retire a card from Speaking in this session**
+(any other rating resets that session/card count to zero; revealing, listening, leaving or refreshing never
+counts). A card keeps its global level and can appear in other sessions.
 
-## Quiz
+**Quiz** (word order, +10 points): picture and English meaning; tap the shuffled words into the taught
+sentence. Each word is its own token, so repeated words work. A correct submission gives +10 points and one
+step toward ten correct in a row; a wrong one gives 0, resets that card's streak, shows the taught
+sentence with grammar help, and makes the card come back sooner. Ten correct in a row retire the card from
+the Quiz in this session. The same attempt can be scored only once, even across refreshes, retries and
+devices. Different valid Dutch word orders are described as such, not as ungrammatical.
 
-`/quiz` is separate from the flashcards but uses the same pictures, sentences and
-saved progress record. Each question is one of two active-recall exercises:
-
-- **Fill the blank** blanks a verb form (ben/bent/is, kun/kunt/kunnen, …) or de/het,
-  deze/dit, offering only options where exactly one is grammatical.
-- **Word order** has the learner tap the shuffled words into the sentence.
-
-Types alternate. Sentences answered wrongly come back sooner (weight 8); new ones
-weigh 6; a streak of 5 correct slows a card (2) and 10 correct in a row slows it
-further (0.5). No score is kept. Exercises are pure and seeded
-(`lib/flashcards/exercises.ts`). Word order is checked against the card's sentence,
-and the prompt explicitly asks to reproduce that taught sentence. A different
-order is described as a mismatch, without claiming it is ungrammatical.
-Reviewed valid hebben/kunnen forms with u and je are accepted and excluded from
-wrong options.
+A session is **completed and archived only when both Speaking and the Quiz are complete**. Completed
+sessions keep their history, stay open for Study, free an active slot, and are never reset by reopening.
 
 ## Vocabulary
 
@@ -133,12 +133,15 @@ added for vocabulary.
 
 ## Persistence
 
-One record per card (`level`, `masteredCount`, `seen`, quiz counters, `updatedAt`)
-in the browser (`dutchtap:flashcards:v2:guest` or `…:v2:user:<username>`) and, for
-signed-in users, the `flashcardReviews` MongoDB collection (unique user/card index,
-newest `updatedAt` wins). The earlier rating/schedule format is ignored: old local
-data lives under a different key, old server rows are skipped on read and cleaned
-when a card is next saved. An explicit button copies guest progress into an account.
+* **Global card levels** (one record per card) are unchanged from before sessions: `dutchtap:flashcards:v2:guest` and
+  `dutchtap:flashcards:v2:user:<username>` on the device, and the `flashcardReviews` collection for accounts. Speaking
+  ratings update exactly one record, not the whole deck.
+* **Sessions**: accounts store them in the `learningSessions` collection (owner = the signed-in user, never taken from
+  the client); guests in `dutchtap:sessions:v1:guest`. Signed-in users also keep a copy and an unsent-action queue on the
+  device (`dutchtap:sessions:v1:user:<username>`), so a dropped connection loses nothing.
+* **Streak days** are per person on the device (`dutchtap:practice-days:v2:<scope>`); the old shared list becomes the guest's.
+* Old transient practice state (`dutchtap:session:*`) is offered once as a saved session where it is valid, otherwise
+  dropped with an explanation. Global levels are never touched by that import.
 
 ## Playback
 
@@ -152,49 +155,55 @@ speech service is used by the deployed app.
 
 ## Verification
 
-Unit tests cover the deck, levels, weighted drawing, quiz weights, merge and schema
-(`tests/flashcards*.test.ts`). `npm run test:flashcards` runs browser tests for both
-modes, the quiz and a mocked account sync; they do not touch Atlas. Live ElevenLabs
-generation and real Atlas syncing are not covered by automated tests.
+* `npm test`: unit tests for the session engine, server logic, client store (offline, replay, two devices, import,
+  isolation), service worker, deck content, grammar notes and breakdowns.
+* `npm run test:sessions-db`: the same server logic against a **real MongoDB** (parallel creation of the fifth session,
+  owner isolation, compare-and-swap with simultaneous writers). Start a throwaway local database first:
+  `docker run -d --name dutchtap-test-mongo -p 127.0.0.1:27018:27017 mongo:7`. These tests refuse to run against
+  anything but localhost, so they can never touch Atlas.
+* `npm run test:flashcards`: browser tests (mobile and desktop widths) with account endpoints served by the real server
+  logic in memory; never Atlas. Use `E2E_PORT=3100` if another dev server already uses port 3000.
+* `npm run test:prod`: builds the app and checks the production service worker (offline visits, old-cache removal).
+* `npm run assets:flashcards -- --complete`: confirms all 300 pictures and recordings exist.
+
+Live ElevenLabs generation and real Atlas syncing are not covered by automated tests.
 
 ## Progress picture, milestones and streak
 
-- The Flashcards menu shows a stacked bar of Difficult / Medium / Easy / Mastered counts
-  (`components/flashcards/LevelBar.tsx`) and how many more Mastered cards until the next
-  milestone. It is a picture of learning, not a score.
-- Marking a card **Mastered** so that the total reaches **10, 50 or 100** shows a dismissible
-  congratulation (`lib/flashcards/milestones.ts`).
-- A gentle **practice streak** (flashcards menu, quiz menu and Home) counts consecutive days with at
-  least one rating or quiz answer. A streak from yesterday stays alive until the end of today and
-  missing a day never shows a penalty message (`lib/practice/streak.ts`). Practice days are stored on
-  this device only (`dutchtap:practice-days:v1`) and are not synced to accounts.
+- The Flashcards dashboard shows a stacked bar of Difficult / Medium / Easy / Mastered counts for the whole deck
+  (`components/flashcards/LevelBar.tsx`) and how many more Mastered cards until the next milestone. It is a picture
+  of learning, not a score, and it is separate from each session's progress.
+- A Speaking rating that makes the Mastered total reach **10, 50 or 100** shows a dismissible congratulation
+  (`lib/flashcards/milestones.ts`). It appears at the moment of the rating only, so a reload never repeats it.
+- A gentle **practice streak** (dashboard, Quiz page and Home) counts consecutive days with at least one Study step,
+  Speaking rating or Quiz answer. A streak from yesterday stays alive until the end of today and missing a day never shows
+  a penalty message (`lib/practice/streak.ts`). Practice days are stored per person on this device only and are not
+  synced to accounts.
 
-## Resuming after a refresh
+## Grammar notes and sentence breakdowns
 
-A flashcard session (mode, place, the chosen card set, the current card, whether the answer is
-revealed and the chosen level) and the current quiz question (including whether it was answered) are
-saved on the device as you go (`lib/flashcards/sessionStore.ts`). Refreshing, or leaving for another
-page and coming back, continues exactly there; **Finish for now** clears it. The quiz exercise is
-rebuilt from the card and question number, so it is the same exercise, and an answered question is
-not counted a second time. Sessions older than 24 hours are ignored, as is any corrupted data.
+Every sentence has a collapsible **Grammar rule & similar examples** panel with two layers:
 
-## Grammar notes
+1. **Sentence breakdown** (`data/grammar-breakdowns.json`): what the speaker is doing; the sentence cut into
+   labelled parts using its own words (the labels spell out the pattern, for example *time phrase + finite verb +
+   subject + direction*); why the word order is what it is (verb-second, inversion, question, imperative,
+   subordinate verb-final, verb bracket; "second position" means the second *constituent*, not the second word);
+   the verb forms and endings that matter; a comparison with English; and one common mistake with the correction
+   and the reason.
+2. **In short** and **similar examples** (`data/grammar-notes.json`): the short rule plus 2 to 3 examples with
+   English, each with a device-voice 🔊 button (there are no recordings for them).
 
-`data/grammar-notes.json` gives every one of the 300 sentences a plain-English **rule** and 2-3
-**similar examples** with English (plus the card's own variation, shown first). They appear under
-"Grammar rule & similar examples" on flashcards (after you reveal the sentence), in the quiz (after
-you answer) and, expanded, on each sentence page (`/sentences/<id>`). Each example has a 🔊 button
-that uses the device's Dutch voice (there are no recordings for examples).
-
-The notes are kept separate from the card data so the original card fields stay unchanged.
-`tests/grammarNotes.test.ts` checks that every card has a note, that examples are 2-3 per card and
-that none repeats the card's own sentence or variation. **The notes were written by an AI assistant
-and have not had a native-speaker review**; treat them like the rest of the content and have a Dutch
-speaker check them before relying on them.
+The breakdown parts are tested to rebuild exactly the card's sentence. The "why this word order" text was generated
+from the labelled parts using each sentence's own words and then reviewed; the other fields were written by hand.
+**All of this was written by an AI assistant and has not had a native-speaker review.** Treat it like the rest of the
+content and have a Dutch speaker check it. Coverage of the patterns David has practised is audited in
+[GRAMMAR-COVERAGE.md](GRAMMAR-COVERAGE.md).
 
 ## Navigation
 
 The learning pages (Flashcards, Quiz, Words and sentence pages) share a bottom tab bar
-(`components/nav/AppNav.tsx`): Home, Flashcards, Quiz, Words. A dot on a tab means a session is
-waiting there; opening it continues where you left off. Sentence pages have a **Back** button and a
-**Continue flashcards** link, and a vocabulary list opened from a sentence has a back link.
+(`components/nav/AppNav.tsx`): Home, Flashcards, Quiz, Words. A dot on a tab means an active session is waiting.
+Sessions open inside the Flashcards page (`/flashcards?session=ID&mode=study|speaking|quiz`), so one cached page serves
+every session, online or offline. A session shows its name, a **Study / Speaking / Quiz** switcher with each mode's
+progress, and **Back to sessions**. The **Quiz** tab opens a chooser of active sessions (the quiz always uses one
+session's own sentences). Vocabulary and sentence links return to the same session, mode and card (browser Back).

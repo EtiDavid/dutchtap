@@ -1,7 +1,11 @@
 # Stage 1 handover: persistent learning sessions
 
 Branch **`feature/persistent-sessions`**, created from `main` at `197c084` (the merge of pull request #3).
-Nothing was pushed, merged or deployed. The exact head commit is printed at the end of this file (section 13) and by `git log -1`.
+Nothing was pushed, merged or deployed.
+
+* `893c717` Add persistent learning sessions (Study, Speaking, Quiz) with account and guest storage
+* `7dcf8de` Add detailed sentence breakdowns, coverage audit, logout scoping and the Stage 1 handover
+* the head commit (`git log -1`) only records those hashes and the final test results in this file.
 
 Stage 1 uses the **existing 300 sentences**, their pictures, recordings, vocabulary and grammar notes. No sentence, ID,
 picture or recording was changed, and the next 300 sentences are **not** included.
@@ -148,9 +152,21 @@ See `docs/GRAMMAR-COVERAGE.md` for the pattern audit, gaps and proposals, and th
 
 ## 11. Tests and results
 
-Run on this branch (all passed; see section 13 for the exact counts at the final commit):
+Results on this branch at its final state (everything below passed):
 
-* `npx tsc --noEmit`, `npx eslint app components lib tests scripts`: clean.
+| Check | Result |
+| --- | --- |
+| `npx tsc --noEmit` | no errors |
+| `npx eslint app components lib tests scripts` | no errors or warnings |
+| `npm test` | 239 passed, 7 skipped (the 7 real-MongoDB tests need `TEST_MONGODB_URI`) |
+| `TEST_MONGODB_URI=mongodb://127.0.0.1:27018 npm test` | **246 passed** (29 files) including the real-MongoDB tests |
+| `npm run test:flashcards` | **52 passed** (browser; the Quiz and session tests also repeated 4 to 6 times to catch card-specific flakiness) |
+| `npm run test:prod` | **2 passed** (production build, service worker) |
+| `npm run assets:flashcards -- --complete` | 300 of 300 pictures and recordings, no errors |
+| production build (`npm run build`, run by `test:prod`) | succeeds |
+
+What the suites cover:
+
 * `npm test` with `TEST_MONGODB_URI` set (real local MongoDB, never Atlas): unit tests for the engine (creation, counts and disabled levels, Study rounds, Speaking rating/weights/retirement, Quiz scoring/streaks/retirement, completion/archive, practise again), server (ownership, five-active limit including parallel creation, replay, two-device compare-and-swap, no resurrection, global-level effects once), client store (offline, lost responses, two devices, refused sessions, import, isolation, corrupted/blocked storage), service worker routing, deck content, notes and breakdowns, existing grammar-game and flashcard suites.
 * `npm run test:flashcards` (browser, mobile 390px with desktop 1280px layout checks; account endpoints served by the real server logic in memory): creation dialog, counts, limits, keyboard modal, all three modes, refresh persistence, completion and archive, practise again, account sync, offline queue, owner isolation, import, two devices, deleted-elsewhere, refused session, tab bar, vocabulary return, breakdown UI, no overflow and no console errors.
 * `npm run test:prod` (production build): service worker registers, old caches removed, visited pages and sessions work offline, `/sw.js` not cacheable.

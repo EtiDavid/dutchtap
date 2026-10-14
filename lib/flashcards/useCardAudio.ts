@@ -1,38 +1,16 @@
 'use client';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useSyncExternalStore } from 'react';
+import type { Lang } from '@/lib/lang';
+import { play, playbackMessage, stopAllSpeech, subscribePlayback } from '@/lib/speech/playback';
 
-/** Plays a card's recording; falls back to a Dutch device voice. New playback stops the old one. */
+/** A sentence to play: Dutch cards have a recording; French (and any card without one) is spoken by a device voice of its language. */
+export type Speakable = { text: string; lang: Lang; audio?: string };
+
+/** Playback for the page. Starting a sound stops the previous one; leaving the page stops everything. */
 export function useCardAudio() {
-  const [sound, setSound] = useState('');
-  const player = useRef<HTMLAudioElement | null>(null);
-  const token = useRef(0);
-
-  const stop = useCallback(() => {
-    token.current++; player.current?.pause();
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) window.speechSynthesis.cancel();
-    setSound('');
-  }, []);
-  useEffect(() => () => { token.current++; player.current?.pause(); if ('speechSynthesis' in window) window.speechSynthesis.cancel(); }, []);
-
-  const listen = useCallback(async (card: { audio?: string; dutch: string }, slow = false) => {
-    token.current++; player.current?.pause();
-    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-    const mine = token.current; setSound('Playing…');
-    const speakWithDeviceVoice = () => {
-      if (mine !== token.current) return;
-      if (!('speechSynthesis' in window)) { setSound('Audio unavailable. Add the recordings to enable playback.'); return; }
-      const voices = window.speechSynthesis.getVoices();
-      const voice = voices.find(v => v.lang.toLowerCase() === 'nl-be') || voices.find(v => v.lang.toLowerCase().startsWith('nl'));
-      if (!voice) { setSound('No recording or Dutch device voice available yet. You can still read aloud.'); return; }
-      const utterance = new SpeechSynthesisUtterance(card.dutch); utterance.voice = voice; utterance.lang = voice.lang; utterance.rate = slow ? 0.75 : 0.95;
-      utterance.onend = () => { if (mine === token.current) setSound('Device voice used · recording not installed yet'); };
-      utterance.onerror = () => { if (mine === token.current) setSound('Playback failed. Please try again.'); };
-      window.speechSynthesis.speak(utterance);
-    };
-    if (!card.audio) { speakWithDeviceVoice(); return; }
-    const audio = new Audio(card.audio); player.current = audio; audio.playbackRate = slow ? 0.8 : 1; audio.preservesPitch = true;
-    audio.onended = () => { if (mine === token.current) setSound(''); };
-    try { await audio.play(); } catch { speakWithDeviceVoice(); }
-  }, []);
+  const sound = useSyncExternalStore(subscribePlayback, playbackMessage, () => '');
+  useEffect(() => () => stopAllSpeech(), []);
+  const listen = useCallback((item: Speakable, slow = false) => play(item, slow), []);
+  const stop = useCallback(() => stopAllSpeech(), []);
   return { sound, listen, stop };
 }

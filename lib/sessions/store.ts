@@ -3,6 +3,7 @@ import type { Level, Review, Reviews } from '@/lib/flashcards/engine';
 import { reviewSchema } from '@/lib/flashcards/validation';
 import { applyAction, applyActions, practiseAgain } from './engine';
 import { newId } from './ids';
+import type { Lang } from '@/lib/lang';
 import {
   MAX_ACTIONS_PER_REQUEST, MAX_ACTIVE_SESSIONS, actionSchema, sessionSchema,
   type Action, type ActionInput, type LevelEffect, type Mode, type Rejection, type Session,
@@ -92,7 +93,7 @@ export class SessionStore {
   private online = true;
   private loaded = false;
   private levelListener: ((effects: LevelEffect[]) => void) | null = null;
-  private reviewsListener: ((reviews: Record<string, Review>) => void) | null = null;
+  private reviewsListener: ((lang: Lang, reviews: Record<string, Review>) => void) | null = null;
 
   constructor(options: { scope: Scope; storage?: StorageLike | null; fetch?: Fetch | null; now?: () => Date; timers?: Timers }) {
     this.scope = options.scope;
@@ -110,7 +111,7 @@ export class SessionStore {
   private get isAccount() { return this.scope.kind === 'user'; }
   activeCount() { return Object.values(this.state.sessions).filter(s => s.status === 'active').length; }
   onLevelEffects(listener: ((effects: LevelEffect[]) => void) | null) { this.levelListener = listener; }
-  onServerReviews(listener: ((reviews: Record<string, Review>) => void) | null) { this.reviewsListener = listener; }
+  onServerReviews(listener: ((lang: Lang, reviews: Record<string, Review>) => void) | null) { this.reviewsListener = listener; }
   setOnline(online: boolean) { this.online = online; if (online) { this.retryDelay = 4000; void this.sync(); } this.publish(); }
 
   private pendingCount() {
@@ -319,7 +320,7 @@ export class SessionStore {
         if (server.success) s.sessions[id] = this.withPending(server.data, s.pendingActions[id]);
         const reviews: Record<string, Review> = {};
         for (const [cardId, value] of Object.entries(body.reviews ?? {})) { const parsed = reviewSchema.safeParse(value); if (parsed.success) reviews[cardId] = parsed.data; }
-        if (Object.keys(reviews).length) this.reviewsListener?.(reviews);
+        if (Object.keys(reviews).length) this.reviewsListener?.(s.sessions[id].lang, reviews);
       }
       if (s.pendingActions[id] && !s.pendingActions[id].length) delete s.pendingActions[id];
     }

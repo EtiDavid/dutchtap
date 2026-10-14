@@ -1,6 +1,8 @@
 import { z } from 'zod';
 import { CARDS, CATEGORIES, LEVELS, type Level } from '@/lib/flashcards/engine';
 import { ID_PATTERN } from './ids';
+import { DEFAULT_LANG, LANGS, type Lang } from '@/lib/lang';
+import { hasContent } from '@/lib/content/cards';
 
 export const MAX_ACTIVE_SESSIONS = 5;
 export const MAX_SESSION_CARDS = 100;
@@ -46,7 +48,8 @@ const quizCurrent = z.object({
 export type SpeakingCurrent = z.infer<typeof speakingCurrent>;
 export type QuizCurrent = z.infer<typeof quizCurrent>;
 
-export const sessionSchema = z.object({
+const langSchema = z.enum(LANGS);
+const sessionShape = z.object({
   id: idString,
   name: z.string().trim().min(1).max(80),
   cardIds: z.array(cardId).min(1).max(MAX_SESSION_CARDS),
@@ -62,15 +65,25 @@ export const sessionSchema = z.object({
   cards: z.record(z.string(), cardProgressSchema),
   events: z.array(eventSchema).max(EVENT_LOG_LIMIT),
   applied: z.array(idString).max(APPLIED_LOG_LIMIT),
-}).superRefine((s, ctx) => {
+});
+type SessionShape = z.infer<typeof sessionShape> & { lang: Lang };
+function checkSession(s: SessionShape, ctx: z.RefinementCtx) {
   const ids = new Set(s.cardIds);
   const fail = (message: string) => ctx.addIssue({ code: 'custom', message });
+  // Every card must exist in the session's own language: a French session can never hold a card that has no French content.
+  for (const id of new Set([...s.cardIds, ...s.study.order, ...[s.speaking.current, s.quiz.current].flatMap(c => (c ? [c.cardId] : []))])) if (!hasContent(s.lang, id)) fail(`Card ${id} is not available in this language`);
   if (ids.size !== s.cardIds.length) fail('Duplicate card ids');
   if (Object.keys(s.cards).some(id => !ids.has(id))) fail('Progress for a card outside the session');
   if (s.study.order.length !== s.cardIds.length || s.study.order.some(id => !ids.has(id)) || new Set(s.study.order).size !== s.cardIds.length) fail('Study order is not a permutation of the session cards');
   if (s.study.pos >= s.study.order.length) fail('Study position out of range');
   for (const current of [s.speaking.current, s.quiz.current]) if (current && !ids.has(current.cardId)) fail('Current card outside the session');
-});
+}
+/**
+ * A session has ONE immutable language. Records saved before French existed carry no language and are Dutch, so reading
+ * stored data treats a missing language as 'nl'. New requests must name their language: an unknown or malformed one is rejected.
+ */
+export const sessionSchema = sessionShape.extend({ lang: langSchema.default(DEFAULT_LANG) }).superRefine(checkSession);
+export const newSessionSchema = sessionShape.extend({ lang: langSchema }).superRefine(checkSession);
 export type Session = z.infer<typeof sessionSchema>;
 
 const actionBase = { id: idString, at: isoDate };
@@ -91,6 +104,6 @@ export type Action = z.infer<typeof actionSchema>;
 export type ActionInput = Action extends infer A ? (A extends { id: string; at: string } ? Omit<A, 'id' | 'at'> : never) : never;
 
 /** A change to the learner's global card level caused by a Speaking rating. */
-export type LevelEffect = { cardId: string; level: Level; at: string };
+export type LevelEffect = { lang: Lang; cardId: string; level: Level; at: string };
 export type Rejection = 'duplicate' | 'archived' | 'stale' | 'invalid' | 'busy' | 'incomplete' | 'not-revealed' | 'not-chosen';
 export type ApplyResult = { session: Session; applied: boolean; reason?: Rejection; effects: LevelEffect[] };

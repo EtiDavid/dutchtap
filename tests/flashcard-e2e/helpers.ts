@@ -10,11 +10,14 @@ export const asGuest = (page: Page) => page.route('**/api/auth/me', route => rou
 
 /** Signs in as `username` and serves the session and level endpoints from the REAL server logic (in memory, never Atlas). */
 export async function asAccount(page: Page, server: FakeServer, username = 'anna') {
-  const levels = new Map<string, Review>();
+  const levelsByLang: Record<string, Map<string, Review>> = { nl: new Map() };
+  const levels = levelsByLang.nl;
   await page.route('**/api/auth/me', route => route.fulfill({ json: { username, lifetimeScore: 0, totalCorrect: 0, totalWrong: 0 } }));
-  await page.route('**/api/flashcards', async route => {
-    if (route.request().method() === 'POST') { for (const record of route.request().postDataJSON().records) levels.set(record.id, record); await route.fulfill({ json: { ok: true } }); }
-    else await route.fulfill({ json: { reviews: Object.fromEntries(levels) } });
+  await page.route('**/api/flashcards**', async route => {
+    const lang = new URL(route.request().url()).searchParams.get('lang') ?? (route.request().method() === 'POST' ? route.request().postDataJSON().lang : null) ?? 'nl';
+    const store = (levelsByLang[lang] ??= new Map<string, Review>());
+    if (route.request().method() === 'POST') { for (const record of route.request().postDataJSON().records) store.set(record.id, record); await route.fulfill({ json: { ok: true } }); }
+    else await route.fulfill({ json: { reviews: Object.fromEntries(store) } });
   });
   await page.route('**/api/learning-sessions**', async route => {
     const request = route.request();
@@ -65,8 +68,8 @@ export const savedGuestSessions = (page: Page) => page.evaluate((key) => {
 
 const escape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 /** Taps the words of `dutch` into the right order. */
-export async function solveQuiz(page: Page, dutch: string) {
-  for (const word of sentenceTokens(dutch)) await page.locator('[data-token]:not([disabled])', { hasText: new RegExp(`^${escape(word)}$`) }).first().click();
+export async function solveQuiz(page: Page, dutch: string, lang: 'nl' | 'fr' = 'nl') {
+  for (const word of sentenceTokens(dutch, lang)) await page.locator('[data-token]:not([disabled])', { hasText: new RegExp(`^${escape(word)}$`) }).first().click();
 }
 /** Taps the words in a reversed order, which is wrong unless the sentence is a palindrome of words. */
 export async function solveQuizWrong(page: Page, dutch: string) {

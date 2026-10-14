@@ -1,5 +1,6 @@
 import { MongoServerError, ObjectId, type Collection, type Db } from 'mongodb';
 import { reviewSchema } from '@/lib/flashcards/validation';
+import type { Lang } from '@/lib/lang';
 import { newReview, type Review } from '@/lib/flashcards/engine';
 import { applyLevelToReview, type ReviewRepo, type SessionRepo, type StoredSession } from './service';
 import { MAX_ACTIVE_SESSIONS, type Session } from './types';
@@ -18,7 +19,8 @@ async function sessionsCollection(db: Db): Promise<Collection<SessionDoc>> {
   }
   return collection;
 }
-const toStored = (doc: SessionDoc): StoredSession => ({ session: { ...doc.session, rev: doc.rev }, slot: doc.slot ?? null });
+// Sessions saved before French existed carry no language: they are Dutch.
+const toStored = (doc: SessionDoc): StoredSession => ({ session: { ...doc.session, lang: doc.session.lang ?? 'nl', rev: doc.rev }, slot: doc.slot ?? null });
 
 /** MongoDB-backed sessions. The owner is always the authenticated user's ObjectId; it is never taken from the client. */
 export class MongoSessionRepo implements SessionRepo {
@@ -60,12 +62,25 @@ export class MongoSessionRepo implements SessionRepo {
   async remove(owner: string, id: string) { return (await (await sessionsCollection(this.db)).deleteOne({ userId: this.owner(owner), id })).deletedCount === 1; }
 }
 
-const reviewsIndexed = new WeakSet<Db>();
+/**
+ * Each learning language keeps its own card levels in its own collection: Dutch stays in the original `flashcardReviews`
+ * (unchanged, no migration, no index change), other languages use `flashcardReviews_<lang>`. A card id therefore never
+ * shares a record, or a unique index, across languages.
+ */
+export const reviewsCollectionName = (lang: Lang) => (lang === 'nl' ? 'flashcardReviews' : `flashcardReviews_${lang}`);
+const reviewsIndexed = new WeakMap<Db, Set<string>>();
+export async function reviewsCollection(db: Db, lang: Lang): Promise<Collection<ReviewDoc>> {
+  const name = reviewsCollectionName(lang);
+  const collection = db.collection<ReviewDoc>(name);
+  let done = reviewsIndexed.get(db);
+  if (!done) { done = new Set(); reviewsIndexed.set(db, done); }
+  if (!done.has(name)) { await collection.createIndex({ userId: 1, id: 1 }, { unique: true }); done.add(name); }
+  return collection;
+}
 export class MongoReviewRepo implements ReviewRepo {
   constructor(private db: Db) {}
-  async applyLevel(owner: string, cardId: string, level: Review['level'], at: string) {
-    const collection = this.db.collection<ReviewDoc>('flashcardReviews');
-    if (!reviewsIndexed.has(this.db)) { await collection.createIndex({ userId: 1, id: 1 }, { unique: true }); reviewsIndexed.add(this.db); }
+  async applyLevel(owner: string, lang: Lang, cardId: string, level: Review['level'], at: string) {
+    const collection = await reviewsCollection(this.db, lang);
     const userId = new ObjectId(owner);
     for (let attempt = 0; attempt < 6; attempt++) {
       const doc = await collection.findOne({ userId, id: cardId });

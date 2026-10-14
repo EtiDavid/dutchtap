@@ -187,7 +187,7 @@ describe('account sessions: saving, offline use and retries', () => {
     const remote = (await server.repo.get(server.owner, s.id))!.session;
     expect(remote.quiz.points).toBe(10);
     expect(remote.cards[remote.events.find(e => e.mode === 'speaking')!.cardId].spAttempts).toBe(1);
-    expect((server.reviews.rows.get(`${server.owner}\u0000${remote.events.find(e => e.mode === 'speaking')!.cardId}`))!.seen).toBe(1);
+    expect((server.reviews.rows.get(`${server.owner}\u0000nl\u0000${remote.events.find(e => e.mode === 'speaking')!.cardId}`))!.seen).toBe(1);
     expect(store.get(s.id)!.quiz.points).toBe(10);
   });
   it('a lost response while creating a session does not create a second copy', async () => {

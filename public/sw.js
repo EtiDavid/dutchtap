@@ -17,7 +17,9 @@ const STATIC_CACHE = `dutchtap-static-${VERSION}`;
 const PAGES_CACHE = `dutchtap-pages-${VERSION}`;
 const MEDIA_CACHE = `dutchtap-media-${VERSION}`;
 const CURRENT_CACHES = [STATIC_CACHE, PAGES_CACHE, MEDIA_CACHE];
-const PRECACHE_PAGES = ['/', '/flashcards', '/quiz', '/vocabulary', '/manifest.webmanifest'];
+// French pages name their language in the URL (?lang=fr) and are cached under that exact URL, so a French address can never be
+// answered with a different language's cached entry. The page shell is language-neutral; the language is read from the address.
+const PRECACHE_PAGES = ['/', '/flashcards', '/quiz', '/vocabulary', '/flashcards?lang=fr', '/quiz?lang=fr', '/vocabulary?lang=fr', '/manifest.webmanifest'];
 const NETWORK_TIMEOUT_MS = 4000;
 
 self.addEventListener('install', (event) => {

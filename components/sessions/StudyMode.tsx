@@ -11,7 +11,7 @@ import type { ModeProps } from './modeTypes';
 export function StudyMode({ session, store, onPractised }: ModeProps) {
   const { sound, listen, stop } = useCardAudio();
   const { order, pos, round } = session.study;
-  const card = deckCard(order[pos]);
+  const card = deckCard(session.lang, order[pos]);
   if (!card) return <p>This sentence is no longer available.</p>;
 
   function next() {
@@ -27,10 +27,10 @@ export function StudyMode({ session, store, onPractised }: ModeProps) {
     <article key={`${round}-${pos}`} className="flashcard-enter overflow-hidden rounded-3xl border border-border bg-white shadow-sm">
       <CardImage card={card} alt={card.cue} />
       <div className="p-6">
-        <p lang="nl" className="text-2xl font-semibold leading-snug">{card.dutch}</p>
+        <p lang={card.lang} className="text-2xl font-semibold leading-snug">{card.text}</p>
         <p className="mt-3 text-base text-muted">{card.english}</p>
         <AudioControls card={card} sound={sound} listen={listen} stop={stop} />
-        <GrammarNotes key={card.id} cardId={card.id} variation={card.variation} />
+        <GrammarNotes key={card.id} cardId={card.id} lang={card.lang} variation={card.variation} />
         <VocabLinks card={card} />
       </div>
     </article>

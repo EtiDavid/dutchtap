@@ -45,7 +45,7 @@ export function QuestionCard({
   const { noun } = question;
   const word = question.isPlural ? noun.plural : noun.singular;
   // The recording says the singular noun with its article; plural questions use the device voice instead.
-  const speech = { dutch: nounSpeech(noun, question.isPlural), audio: question.isPlural ? undefined : wordAudioUrl("noun", noun.id) };
+  const speech = { text: nounSpeech(noun, question.isPlural), lang: "nl" as const, audio: question.isPlural ? undefined : wordAudioUrl("noun", noun.id) };
   const gridCols = question.mode === "demonstrative" ? "grid-cols-2" : "grid-cols-2";
 
   return (
@@ -102,7 +102,7 @@ export function QuestionCard({
             {question.mode === "adjective" && (
               <button
                 type="button"
-                onClick={() => void listen({ dutch: adjectiveSpeech(question.adjective), audio: wordAudioUrl("adjective", question.adjective.id) })}
+                onClick={() => void listen({ text: adjectiveSpeech(question.adjective), lang: "nl", audio: wordAudioUrl("adjective", question.adjective.id) })}
                 className="h-10 rounded-xl border border-border px-4 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
               >
                 🔊 {question.adjective.base}

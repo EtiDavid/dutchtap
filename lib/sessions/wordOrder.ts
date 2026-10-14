@@ -1,16 +1,23 @@
-import type { Card } from '@/lib/flashcards/engine';
+import type { Lang } from '@/lib/lang';
 
 /**
  * Word-order exercise for a session Quiz. Each word is a distinct token instance (t0, t1, ...), so repeated
  * words ("Het is het ...") stay separate pieces. Answers are graded on the words, so two identical words may
  * be swapped freely.
  */
-const strip = (token: string) =>
+const stripDutch = (token: string) =>
   /^['’][st][.,!?;:]?$/i.test(token) ? token.replace(/[.,!?;:]$/, '') : token.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '');
+/**
+ * French: the taught spelling is kept whole. Elided and hyphenated words stay one piece (j’habite, l’école, aujourd’hui,
+ * qu’il, est-ce, avez-vous), accents are never touched, and only punctuation around a word (including « » and the
+ * space that French puts before ? ! : ;) is dropped. An orphan apostrophe left alone is not a word.
+ */
+const stripFrench = (token: string) => token.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '');
 
 /** The taught sentence as words without punctuation; the first word is lower-cased so it does not give the start away. */
-export function sentenceTokens(dutch: string): string[] {
-  const words = dutch.split(/\s+/).map(strip).filter(Boolean);
+export function sentenceTokens(text: string, lang: Lang = 'nl'): string[] {
+  const strip = lang === 'fr' ? stripFrench : stripDutch;
+  const words = text.split(/\s+/).map(strip).filter(Boolean);
   if (words.length) words[0] = words[0][0].toLowerCase() + words[0].slice(1);
   return words;
 }
@@ -30,8 +37,8 @@ export function shuffled<T>(items: readonly T[], rand: () => number): T[] {
 }
 
 /** A shuffled order of token ids that differs from the taught order whenever that is possible. */
-export function shuffledTokenOrder(dutch: string, rand: () => number = Math.random): string[] {
-  const words = sentenceTokens(dutch);
+export function shuffledTokenOrder(text: string, rand: () => number = Math.random, lang: Lang = 'nl'): string[] {
+  const words = sentenceTokens(text, lang);
   const ids = words.map((_, i) => tokenId(i));
   const sameWords = (order: string[]) => order.every((id, i) => words[tokenIndex(id)] === words[i]);
   if (new Set(words).size === 1) return ids; // every word identical: nothing to reorder
@@ -42,30 +49,30 @@ export function shuffledTokenOrder(dutch: string, rand: () => number = Math.rand
 }
 
 /** True when `order` uses every token id exactly once. */
-export function isTokenPermutation(dutch: string, order: readonly string[]): boolean {
-  const n = sentenceTokens(dutch).length;
+export function isTokenPermutation(text: string, order: readonly string[], lang: Lang = 'nl'): boolean {
+  const n = sentenceTokens(text, lang).length;
   if (order.length !== n) return false;
   const seen = new Set<number>();
   for (const id of order) { const i = tokenIndex(id); if (i < 0 || i >= n || seen.has(i)) return false; seen.add(i); }
   return true;
 }
 /** True when `answer` only uses valid, distinct token ids (it may be partial). */
-export function isValidDraft(dutch: string, answer: readonly string[]): boolean {
-  const n = sentenceTokens(dutch).length;
+export function isValidDraft(text: string, answer: readonly string[], lang: Lang = 'nl'): boolean {
+  const n = sentenceTokens(text, lang).length;
   const seen = new Set<number>();
   for (const id of answer) { const i = tokenIndex(id); if (i < 0 || i >= n || seen.has(i)) return false; seen.add(i); }
   return true;
 }
 /** Grades a complete answer against the taught sentence. */
-export function isOrderAnswerCorrect(dutch: string, answer: readonly string[]): boolean {
-  const words = sentenceTokens(dutch);
-  return isTokenPermutation(dutch, answer) && answer.every((id, i) => words[tokenIndex(id)] === words[i]);
+export function isOrderAnswerCorrect(text: string, answer: readonly string[], lang: Lang = 'nl'): boolean {
+  const words = sentenceTokens(text, lang);
+  return isTokenPermutation(text, answer, lang) && answer.every((id, i) => words[tokenIndex(id)] === words[i]);
 }
-export const answerText = (dutch: string, answer: readonly string[]) => answer.map(id => sentenceTokens(dutch)[tokenIndex(id)]).join(' ');
+export const answerText = (text: string, answer: readonly string[], lang: Lang = 'nl') => answer.map(id => sentenceTokens(text, lang)[tokenIndex(id)]).join(' ');
 
 /** Every sentence in the deck must give a usable exercise; a one-word sentence is flagged so the UI can say so. */
-export function describeExercise(card: Pick<Card, 'dutch'>): { words: number; trivial: boolean; reorderable: boolean } {
-  const words = sentenceTokens(card.dutch);
+export function describeExercise(card: { text: string; lang?: Lang }): { words: number; trivial: boolean; reorderable: boolean } {
+  const words = sentenceTokens(card.text, card.lang ?? 'nl');
   return { words: words.length, trivial: words.length < 2, reorderable: new Set(words).size > 1 };
 }
 

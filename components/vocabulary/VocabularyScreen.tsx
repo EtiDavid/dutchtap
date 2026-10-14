@@ -4,38 +4,49 @@ import Link from 'next/link';
 import { CATEGORIES } from '@/lib/flashcards/engine';
 import { AppNav } from '../nav/AppNav';
 import { BackButton } from '../nav/BackButton';
-import { filterVocabulary, VOCABULARY, vocabularyExamples } from '@/lib/vocabulary';
+import { LanguageGate } from '../lang/LanguageGate';
+import { LanguageSwitch } from '../lang/LanguageSwitch';
+import { filterVocabulary, vocabularyExamples, vocabularyFor, type FrenchVocabularyEntry } from '@/lib/vocabulary';
+import { copy } from '@/lib/lang/copy';
+import { LANG_INFO, withLang, type Lang } from '@/lib/lang';
+import { DASHBOARD_URL } from '@/lib/sessions/nav';
 
 export function VocabularyScreen({ cardId = '' }: { cardId?: string }) {
+  return <LanguageGate>{(lang, choose) => <VocabularyView key={lang} lang={lang} cardId={cardId} onSwitchLanguage={choose} />}</LanguageGate>;
+}
+
+function VocabularyView({ lang, cardId, onSwitchLanguage }: { lang: Lang; cardId: string; onSwitchLanguage: (lang: Lang) => void }) {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('all');
   const [type, setType] = useState('all');
-  const entries = filterVocabulary(query, category, type, cardId);
+  const entries = filterVocabulary(query, category, type, cardId, lang);
   const field = 'mt-2 w-full rounded-xl border border-border bg-white p-3 text-base';
+  const all = vocabularyFor(lang);
 
-  return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pb-28 pt-6">
-    <header className="text-sm"><BackButton fallback="/flashcards">{cardId ? 'Back to where you were' : 'Back'}</BackButton></header>
-    <div><h1 className="text-3xl font-bold tracking-tight">Vocabulary</h1><p className="mt-2 text-muted">Useful words and expressions from your sentence cards.</p></div>
-    {cardId && <p className="text-sm text-muted">Words from this sentence. <Link href="/vocabulary" className="text-accent underline">Browse all words</Link></p>}
-    <label className="text-sm font-semibold">Search words<input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Dutch, English or Dutch explanation" className={field} /></label>
+  return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pb-28 pt-6" data-lang={lang}>
+    <header className="flex items-center justify-between gap-3 text-sm"><BackButton fallback={withLang(DASHBOARD_URL, lang)}>{cardId ? 'Back to where you were' : 'Back'}</BackButton><LanguageSwitch lang={lang} onSwitch={onSwitchLanguage} /></header>
+    <div><h1 className="text-3xl font-bold tracking-tight">Vocabulary</h1><p className="mt-2 text-muted">Useful {LANG_INFO[lang].english} words and expressions from your sentence cards.</p></div>
+    {cardId && <p className="text-sm text-muted">Words from this sentence. <Link href={withLang('/vocabulary', lang)} className="text-accent underline">Browse all words</Link></p>}
+    <label className="text-sm font-semibold">Search words<input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder={copy(lang).searchPlaceholder} className={field} /></label>
     <div className="grid grid-cols-2 gap-3">
       <label className="text-sm font-semibold">Place<select value={category} onChange={event => setCategory(event.target.value)} className={field}><option value="all">All places</option>{Object.entries(CATEGORIES).map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
-      <label className="text-sm font-semibold">Word type<select value={type} onChange={event => setType(event.target.value)} className={field}><option value="all">All types</option>{[...new Set(VOCABULARY.map(entry => entry.type))].map(kind => <option key={kind} value={kind}>{kind}</option>)}</select></label>
+      <label className="text-sm font-semibold">Word type<select value={type} onChange={event => setType(event.target.value)} className={field}><option value="all">All types</option>{[...new Set(all.map(entry => entry.type))].map(kind => <option key={kind} value={kind}>{kind}</option>)}</select></label>
     </div>
     <p role="status" className="text-sm text-muted">{entries.length} {entries.length === 1 ? 'entry' : 'entries'}</p>
     {!entries.length && <p>No matching words. Try another search or filter.</p>}
     {entries.map(entry => {
-      const examples = vocabularyExamples(entry);
+      const examples = vocabularyExamples(entry, lang);
       const first = examples[0];
+      const gender = (entry as FrenchVocabularyEntry).gender;
       return <article key={entry.id} id={entry.id} className="scroll-mt-6 rounded-2xl border border-border bg-surface p-5">
-        <h2 lang="nl" className="text-xl font-bold">{entry.article ? `${entry.article} ` : ''}{entry.headword}</h2>
-        <p className="mt-1 text-sm text-muted">{entry.type}{entry.plural ? ` · plural: ${entry.plural}` : ''}</p>
-        <p className="mt-3 font-medium">{entry.english}</p><p lang="nl" className="mt-2 leading-relaxed">{entry.explanation}</p>
+        <h2 lang={lang} className="text-xl font-bold">{entry.article ? `${entry.article} ` : ''}{entry.headword}</h2>
+        <p className="mt-1 text-sm text-muted">{entry.type}{gender ? ` · ${gender === 'm' ? 'masculine' : 'feminine'}` : ''}{entry.plural ? ` · plural: ${entry.plural}` : ''}</p>
+        <p className="mt-3 font-medium">{entry.english}</p><p lang={lang} className="mt-2 leading-relaxed">{entry.explanation}</p>
         {entry.details && <p className="mt-2 text-sm leading-relaxed text-muted">{entry.details}</p>}
-        {first && <div className="mt-4 border-t border-border pt-3"><p lang="nl" className="font-medium">{first.card.dutch}</p><p className="mt-1 text-sm text-muted">{first.card.english}</p><p className="mt-2 text-xs text-muted">Form in this example: <span lang="nl">{first.form}</span></p></div>}
-        <div className="mt-3 flex flex-wrap gap-3">{examples.map(({ card }) => <Link key={card.id} href={`/sentences/${card.id}`} className="text-sm text-accent underline">View sentence: {card.id}</Link>)}</div>
+        {first && <div className="mt-4 border-t border-border pt-3"><p lang={lang} className="font-medium">{first.card.text}</p><p className="mt-1 text-sm text-muted">{first.card.english}</p><p className="mt-2 text-xs text-muted">Form in this example: <span lang={lang} className="font-semibold">{first.form}</span></p></div>}
+        <div className="mt-3 flex flex-wrap gap-3">{examples.map(({ card }) => <Link key={card.id} href={withLang(`/sentences/${card.id}`, lang)} className="text-sm text-accent underline">View sentence: {card.id}</Link>)}</div>
       </article>;
     })}
-    <AppNav />
+    <AppNav lang={lang} />
   </main>;
 }

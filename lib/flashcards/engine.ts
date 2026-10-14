@@ -93,7 +93,7 @@ export function mergeReviews(a: Reviews, b: Reviews): Reviews {
   return merged;
 }
 
-export function countByLevel(cards: Card[], reviews: Reviews): Record<Level, number> {
+export function countByLevel(cards: readonly { id: string }[], reviews: Reviews): Record<Level, number> {
   const counts: Record<Level, number> = { difficult: 0, medium: 0, easy: 0, mastered: 0 };
   for (const c of cards) counts[reviews[c.id]?.level ?? DEFAULT_LEVEL]++;
   return counts;

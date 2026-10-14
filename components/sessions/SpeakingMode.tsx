@@ -4,6 +4,7 @@ import { CATEGORIES, DEFAULT_LEVEL, LEVELS, LEVEL_LABELS, rateLevel, type Level 
 import { useCardAudio } from '@/lib/flashcards/useCardAudio';
 import { deckCard, newAttemptId, pickSpeakingCard, progressOf, retired, wouldRetireSpeaking } from '@/lib/sessions/engine';
 import { RETIRE_AT } from '@/lib/sessions/types';
+import { copy } from '@/lib/lang/copy';
 import { button, primary } from '../flashcards/styles';
 import { GrammarNotes } from '../flashcards/GrammarNotes';
 import { AudioControls, CardImage, VocabLinks } from './CardParts';
@@ -37,7 +38,7 @@ export function SpeakingMode({ session, store, reviews, reviewsReady, onPractise
     {summary}
   </section>;
 
-  const card = current ? deckCard(current.cardId) : undefined;
+  const card = current ? deckCard(session.lang, current.cardId) : undefined;
   if (!current || !card) return <p className="text-muted" role="status">Choosing your next sentence…</p>;
   const progress = progressOf(session, card.id);
   const lastLevel: Level = reviews[card.id]?.level ?? DEFAULT_LEVEL;
@@ -66,10 +67,10 @@ export function SpeakingMode({ session, store, reviews, reviewsReady, onPractise
           <p className="mt-4 text-xl font-bold text-accent">How do you say it?</p>
           <p className="mt-1 text-sm text-muted">Say it out loud first, then check.</p>
         </> : <>
-          <p lang="nl" className="text-2xl font-semibold leading-snug">{card.dutch}</p>
+          <p lang={card.lang} className="text-2xl font-semibold leading-snug">{card.text}</p>
           <p className="mt-3 text-base text-muted">{card.english}</p>
           <AudioControls card={card} sound={sound} listen={listen} stop={stop} />
-          <GrammarNotes key={card.id} cardId={card.id} variation={card.variation} />
+          <GrammarNotes key={card.id} cardId={card.id} lang={card.lang} variation={card.variation} />
           <VocabLinks card={card} />
         </>}
         <p className="mt-5 text-sm font-semibold" data-testid="recall-progress">{progress.spStreak} / {RETIRE_AT} consecutive recalls</p>
@@ -78,7 +79,7 @@ export function SpeakingMode({ session, store, reviews, reviewsReady, onPractise
     </article>
 
     {!current.revealed
-      ? <button type="button" className={primary} onClick={reveal}>Check the Dutch</button>
+      ? <button type="button" className={primary} onClick={reveal}>{copy(session.lang).checkAnswer}</button>
       : <section aria-label="Rate your recall" className="flex flex-col gap-3">
         <p className="text-center text-sm font-semibold">How well did you recall it before revealing?</p>
         <div className="grid grid-cols-4 gap-2" role="group" aria-label="Your rating">

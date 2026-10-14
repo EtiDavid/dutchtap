@@ -7,6 +7,7 @@ import { retired } from '@/lib/sessions/engine';
 import { DASHBOARD_URL, navigateTo, parseMode, sessionUrl } from '@/lib/sessions/nav';
 import type { SessionStore, Snapshot } from '@/lib/sessions/store';
 import { MAX_ACTIVE_SESSIONS, type Mode } from '@/lib/sessions/types';
+import { LANG_INFO, withLang, type Lang } from '@/lib/lang';
 import { button, primary } from '../flashcards/styles';
 import { Modal } from '../ui/Modal';
 import { CompletionSummary } from './CompletionSummary';
@@ -16,8 +17,8 @@ import { StudyMode } from './StudyMode';
 import { SyncStatus } from './SyncStatus';
 
 /** One session: its name, a Study / Speaking / Quiz switcher, and the active mode. The set of cards never changes while you switch. */
-export function SessionView({ sessionId, store, snapshot, reviews, reviewsReady, signedIn, onPractised, celebration, onDismissCelebration }: {
-  sessionId: string; store: SessionStore; snapshot: Snapshot; reviews: Reviews; reviewsReady: boolean; signedIn: boolean;
+export function SessionView({ sessionId, lang, store, snapshot, reviews, reviewsReady, signedIn, onPractised, celebration, onDismissCelebration }: {
+  sessionId: string; lang: Lang; store: SessionStore; snapshot: Snapshot; reviews: Reviews; reviewsReady: boolean; signedIn: boolean;
   onPractised: () => void; celebration: string; onDismissCelebration: () => void;
 }) {
   const params = useSearchParams();
@@ -33,7 +34,7 @@ export function SessionView({ sessionId, store, snapshot, reviews, reviewsReady,
   if (!session) return <section className="flex flex-col gap-4 rounded-2xl border border-border bg-surface p-6 text-center" data-testid="session-missing">
     <h2 className="text-xl font-bold">Session not found</h2>
     <p className="text-sm text-muted">It may have been deleted, possibly on another device. Your card levels are unchanged.</p>
-    <Link href={DASHBOARD_URL} className={`${primary} block`}>Back to sessions</Link>
+    <Link href={withLang(DASHBOARD_URL, lang)} className={`${primary} block`}>Back to sessions</Link>
   </section>;
 
   const total = session.cardIds.length;
@@ -52,10 +53,10 @@ export function SessionView({ sessionId, store, snapshot, reviews, reviewsReady,
 
   return <div className="flex flex-col gap-5">
     <div className="flex items-center justify-between gap-3">
-      <Link href={DASHBOARD_URL} className="text-sm font-semibold text-accent underline" data-testid="back-to-sessions">← Back to sessions</Link>
+      <Link href={withLang(DASHBOARD_URL, session.lang)} className="text-sm font-semibold text-accent underline" data-testid="back-to-sessions">← Back to sessions</Link>
       <button type="button" className="text-sm text-muted underline" onClick={() => { setName(session.name); setRenaming(true); }}>Rename</button>
     </div>
-    <div><h2 className="text-2xl font-bold leading-snug" data-testid="session-name">{session.name}</h2><p className="text-xs text-muted">{total} fixed {total === 1 ? 'sentence' : 'sentences'} · the same set in every mode</p></div>
+    <div><h2 className="text-2xl font-bold leading-snug" data-testid="session-name">{session.name}</h2><p className="text-xs text-muted"><span data-testid="session-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {total} fixed {total === 1 ? 'sentence' : 'sentences'} · the same set in every mode</p></div>
     <SyncStatus snapshot={snapshot} guest={!signedIn} onRetry={() => void store.sync()} />
     {snapshot.refused[session.id] && <p role="alert" className="rounded-xl bg-accent/10 p-3 text-xs">{snapshot.refused[session.id]} <button type="button" onClick={() => store.retryRefused(session.id)} className="font-semibold underline">Retry</button></p>}
     {notice && <p role="status" className="rounded-xl bg-accent/10 p-3 text-sm">{notice}</p>}

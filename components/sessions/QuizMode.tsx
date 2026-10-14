@@ -4,6 +4,7 @@ import { CATEGORIES } from '@/lib/flashcards/engine';
 import { useCardAudio } from '@/lib/flashcards/useCardAudio';
 import { deckCard, newAttemptId, pickQuizCard, progressOf, retired } from '@/lib/sessions/engine';
 import { QUIZ_POINTS, RETIRE_AT } from '@/lib/sessions/types';
+import { copy } from '@/lib/lang/copy';
 import { shuffledTokenOrder, tokensForSentence } from '@/lib/sessions/wordOrder';
 import { button, primary } from '../flashcards/styles';
 import { GrammarNotes } from '../flashcards/GrammarNotes';
@@ -21,8 +22,8 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
     const live = store.get(session.id);
     if (!live || live.quiz.done || live.quiz.current) return;
     const cardId = pickQuizCard(live);
-    const card = cardId ? deckCard(cardId) : undefined;
-    if (card) store.dispatch(live.id, { type: 'quiz/open', cardId: card.id, attemptId: newAttemptId(), tokenOrder: shuffledTokenOrder(card.dutch) });
+    const card = cardId ? deckCard(live.lang, cardId) : undefined;
+    if (card) store.dispatch(live.id, { type: 'quiz/open', cardId: card.id, attemptId: newAttemptId(), tokenOrder: shuffledTokenOrder(card.text, Math.random, live.lang) });
   }, [session.id, session.status, hasCurrent, session.quiz.done, store]);
 
   const total = session.cardIds.length;
@@ -42,9 +43,9 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
     {stats}
   </section>;
 
-  const card = current ? deckCard(current.cardId) : undefined;
+  const card = current ? deckCard(session.lang, current.cardId) : undefined;
   if (!current || !card) return <p className="text-muted" role="status">Choosing your next sentence…</p>;
-  const words = tokensForSentence(card.dutch);
+  const words = tokensForSentence(card.text, session.lang);
   const progress = progressOf(session, card.id);
   const placed = current.answer;
   const outcome = current.outcome;
@@ -60,8 +61,8 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
   function next() {
     stop();
     const nextId = pickQuizCard(session, Math.random, current!.cardId);
-    const nextCard = nextId ? deckCard(nextId) : undefined;
-    store.dispatch(session.id, { type: 'quiz/continue', attemptId: current!.attemptId, next: nextCard ? { cardId: nextCard.id, attemptId: newAttemptId(), tokenOrder: shuffledTokenOrder(nextCard.dutch) } : null });
+    const nextCard = nextId ? deckCard(session.lang, nextId) : undefined;
+    store.dispatch(session.id, { type: 'quiz/continue', attemptId: current!.attemptId, next: nextCard ? { cardId: nextCard.id, attemptId: newAttemptId(), tokenOrder: shuffledTokenOrder(nextCard.text, Math.random, session.lang) } : null });
   }
 
   return <section aria-label="Quiz" className="flex flex-col gap-5">
@@ -72,16 +73,16 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
       <div className="p-6">
         <p className="text-base text-muted" data-testid="quiz-english">{card.english}</p>
         {!outcome ? <>
-          <p className="mt-3 text-sm text-muted">Reproduce the taught sentence. Other Dutch word orders can also be valid, so tap the words in the order you learned.</p>
-          <p className="mt-3 min-h-12 rounded-xl border border-dashed border-border p-3 text-lg font-medium" lang="nl" aria-label="Your sentence" data-testid="quiz-answer">{placed.length ? placed.map(id => words[Number(id.slice(1))]).join(' ') : <span className="text-sm font-normal text-muted">Tap the words in the right order</span>}</p>
-          <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="Words">{current.tokenOrder.map(id => <button key={id} type="button" lang="nl" data-token={id} disabled={placed.includes(id)} className={`${button} disabled:opacity-30`} onClick={() => place(id)}>{words[Number(id.slice(1))]}</button>)}</div>
+          <p className="mt-3 text-sm text-muted">Reproduce the taught sentence. {copy(session.lang).otherOrders}</p>
+          <p className="mt-3 min-h-12 rounded-xl border border-dashed border-border p-3 text-lg font-medium" lang={session.lang} aria-label="Your sentence" data-testid="quiz-answer">{placed.length ? placed.map(id => words[Number(id.slice(1))]).join(' ') : <span className="text-sm font-normal text-muted">Tap the words in the right order</span>}</p>
+          <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="Words">{current.tokenOrder.map(id => <button key={id} type="button" lang={session.lang} data-token={id} disabled={placed.includes(id)} className={`${button} disabled:opacity-30`} onClick={() => place(id)}>{words[Number(id.slice(1))]}</button>)}</div>
           <div className="mt-3 grid grid-cols-[2fr_1fr_1fr] gap-2"><button type="button" className={primary} disabled={placed.length !== words.length} onClick={check}>Check</button><button type="button" className={button} disabled={!placed.length} onClick={undo}>Undo</button><button type="button" className={button} disabled={!placed.length} onClick={clear}>Clear</button></div>
         </> : <>
-          <p role="status" data-testid="quiz-feedback" className={`mt-3 text-sm font-semibold ${outcome.correct ? 'text-success' : 'text-accent'}`}>{outcome.correct ? `Juist! Correct. +${QUIZ_POINTS} points` : 'That differs from the taught sentence. Here it is:'}</p>
-          <p lang="nl" className="mt-2 text-2xl font-semibold leading-snug">{card.dutch}</p>
-          {!outcome.correct && <p className="mt-1 text-xs text-muted">Your answer: <span lang="nl">{placed.map(id => words[Number(id.slice(1))]).join(' ')}</span></p>}
+          <p role="status" data-testid="quiz-feedback" className={`mt-3 text-sm font-semibold ${outcome.correct ? 'text-success' : 'text-accent'}`}>{outcome.correct ? `${copy(session.lang).correct} Correct. +${QUIZ_POINTS} points` : 'That differs from the taught sentence. Here it is:'}</p>
+          <p lang={session.lang} className="mt-2 text-2xl font-semibold leading-snug">{card.text}</p>
+          {!outcome.correct && <p className="mt-1 text-xs text-muted">Your answer: <span lang={session.lang}>{placed.map(id => words[Number(id.slice(1))]).join(' ')}</span></p>}
           <AudioControls card={card} sound={sound} listen={listen} stop={stop} />
-          <GrammarNotes key={card.id} cardId={card.id} variation={card.variation} defaultOpen={!outcome.correct} />
+          <GrammarNotes key={card.id} cardId={card.id} lang={card.lang} variation={card.variation} defaultOpen={!outcome.correct} />
           <VocabLinks card={card} />
         </>}
         <p className="mt-5 text-sm font-semibold" data-testid="correct-progress">{progress.qStreak} / {RETIRE_AT} correct in a row</p>

@@ -1,0 +1,792 @@
+{
+ "shopping-01": {
+  "meaning": "Vous demandez à un employé où se trouve un produit dans le magasin.",
+  "parts": [
+   {
+    "label": "mot interrogatif",
+    "text": "Où"
+   },
+   {
+    "label": "verbe modal",
+    "text": "puis"
+   },
+   {
+    "label": "sujet",
+    "text": "-je"
+   },
+   {
+    "label": "infinitif",
+    "text": "trouver"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "le lait"
+   }
+  ],
+  "order": "Le mot interrogatif « où » est en premier. Ensuite, on inverse le verbe et le sujet : « puis-je » au lieu de « je peux ». On ajoute un trait d’union. Le verbe « trouver » reste à l’infinitif, après le verbe modal.",
+  "forms": "« Puis-je » est la forme inversée de « je peux » : on ne dit pas « peux-je ». Le verbe pouvoir est irrégulier : je peux, tu peux, il peut.",
+  "compare": "English also puts the verb before the subject (“can I”), but French adds a hyphen and uses the special form puis-je. In everyday speech French often says « Où est-ce que je peux… ? » or « Où je peux… ? ».",
+  "mistake": {
+   "wrong": "Où peux-je trouver le lait ?",
+   "right": "Où puis-je trouver le lait ?",
+   "why": "Avec « je », la forme inversée de pouvoir est « puis-je », pas « peux-je »."
+  },
+  "help": "The question word où comes first; then the verb and pronoun swap, and the second verb stays in the infinitive."
+ },
+ "shopping-02": {
+  "meaning": "Vous commandez poliment deux petits pains à la boulangerie.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Je"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "voudrais"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "deux petits pains"
+   },
+   {
+    "label": "formule de politesse",
+    "text": "s’il vous plaît"
+   }
+  ],
+  "order": "L’ordre est simple : sujet « je », verbe « voudrais », puis l’objet « deux petits pains ». La formule de politesse « s’il vous plaît » est à la fin (elle peut aussi être au début).",
+  "forms": "« Voudrais » est le conditionnel de vouloir et sonne plus poli que « veux ». Le pluriel « petits pains » prend un -s. « S’il » est la contraction de « si il ».",
+  "compare": "“I would like” in English corresponds to je voudrais. Saying je veux (“I want”) would sound too direct in a shop.",
+  "mistake": {
+   "wrong": "Je veux deux petits pains.",
+   "right": "Je voudrais deux petits pains, s’il vous plaît.",
+   "why": "« Je veux » est correct mais très direct ; pour commander, « je voudrais » est plus poli."
+  },
+  "help": "Je voudrais is the polite request form; s’il vous plaît can go at the end or the start."
+ },
+ "shopping-03": {
+  "meaning": "À la caisse, vous demandez si le paiement par carte est possible.",
+  "parts": [
+   {
+    "label": "verbe modal",
+    "text": "Puis"
+   },
+   {
+    "label": "sujet",
+    "text": "-je"
+   },
+   {
+    "label": "infinitif",
+    "text": "payer"
+   },
+   {
+    "label": "complément de manière",
+    "text": "par carte"
+   }
+  ],
+  "order": "C’est une question oui/non. On met le verbe avant le sujet : « puis-je ». Le verbe « payer » est à l’infinitif. « Par carte » dit comment on paye.",
+  "forms": "« Puis-je » remplace « je peux » dans une question formelle. « Par » (et non « avec ») se dit pour le moyen de paiement : par carte, par virement.",
+  "compare": "English says “by card” too. In casual French you can keep the order and rely on tone: « Je peux payer par carte ? ».",
+  "mistake": {
+   "wrong": "Puis-je payer avec la carte ?",
+   "right": "Puis-je payer par carte ?",
+   "why": "Avec le moyen de paiement, on dit plutôt « par carte » ; « avec la carte » est compris mais moins naturel."
+  },
+  "help": "A yes/no question: the verb puis comes before je. By card is par carte."
+ },
+ "shopping-04": {
+  "meaning": "Vous voulez connaître le prix d’un sac.",
+  "parts": [
+   {
+    "label": "mot interrogatif",
+    "text": "Combien"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "coûte"
+   },
+   {
+    "label": "sujet",
+    "text": "ce sac"
+   }
+  ],
+  "order": "Le mot interrogatif « combien » est au début. Ensuite vient le verbe « coûte » et enfin le sujet « ce sac ». Avec « combien » on peut mettre le verbe avant un sujet nominal.",
+  "forms": "« Ce » s’emploie devant un nom masculin : ce sac. Devant un nom féminin : cette robe. Le verbe s’accorde avec le sujet : ce sac coûte, ces sacs coûtent.",
+  "compare": "English says “How much does this bag cost?” with do/does; French has no auxiliary here, just combien + coûte.",
+  "mistake": {
+   "wrong": "Combien coûte cette sac ?",
+   "right": "Combien coûte ce sac ?",
+   "why": "« Sac » est masculin : on dit ce sac, pas cette sac."
+  },
+  "help": "Combien opens the question, the verb comes next, then the subject; ce is used before a masculine noun."
+ },
+ "shopping-05": {
+  "meaning": "Le vêtement est trop grand ; vous demandez une taille plus petite à la vendeuse.",
+  "parts": [
+   {
+    "label": "verbe conjugué",
+    "text": "Avez"
+   },
+   {
+    "label": "sujet",
+    "text": "-vous"
+   },
+   {
+    "label": "adverbe",
+    "text": "aussi"
+   },
+   {
+    "label": "groupe nominal",
+    "text": "une taille plus petite"
+   }
+  ],
+  "order": "C’est une question oui/non avec inversion : verbe + trait d’union + sujet (« avez-vous »). L’adverbe « aussi » vient ensuite. Le groupe nominal « une taille plus petite » est le complément d’objet.",
+  "forms": "« Taille » est féminin, donc « petite » prend un -e. Le comparatif se forme avec « plus » + adjectif, placé après le nom ici : une taille plus petite.",
+  "compare": "English uses “smaller” (an -er ending); French uses plus petite, “more small”. “Do you have” becomes avez-vous.",
+  "mistake": {
+   "wrong": "Avez-vous aussi une taille plus petit ?",
+   "right": "Avez-vous aussi une taille plus petite ?",
+   "why": "L’adjectif s’accorde avec « taille », qui est féminin : petite."
+  },
+  "help": "Avez-vous is the formal question form; plus + adjective makes the comparison, and the adjective agrees with taille."
+ },
+ "shopping-06": {
+  "meaning": "La caissière propose un sac ; vous répondez que vous n’en avez pas besoin.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Je"
+   },
+   {
+    "label": "négation",
+    "text": "n’"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "ai"
+   },
+   {
+    "label": "négation",
+    "text": "pas"
+   },
+   {
+    "label": "expression figée",
+    "text": "besoin de"
+   },
+   {
+    "label": "groupe nominal",
+    "text": "sac"
+   }
+  ],
+  "order": "Le sujet « je » est en premier. La négation entoure le verbe : « n’ » avant « ai » et « pas » après. Ensuite vient « besoin de » et le nom « sac ».",
+  "forms": "« Ne » devient « n’ » devant une voyelle : n’ai. « Avoir besoin de » est suivi directement du nom, sans article : besoin de sac. On dit « d’un sac » si on parle d’un sac précis.",
+  "compare": "English says “I do not need a bag” with do not; French wraps ne … pas around the verb avoir and uses besoin (literally “to have need of”).",
+  "mistake": {
+   "wrong": "Je n’ai pas besoin un sac.",
+   "right": "Je n’ai pas besoin de sac.",
+   "why": "Le verbe « avoir besoin » se construit toujours avec « de » devant le nom."
+  },
+  "help": "Ne … pas surrounds avoir, and besoin is always followed by de."
+ },
+ "shopping-07": {
+  "meaning": "Vous venez de payer et vous demandez poliment le ticket de caisse.",
+  "parts": [
+   {
+    "label": "verbe modal",
+    "text": "Puis"
+   },
+   {
+    "label": "sujet",
+    "text": "-je"
+   },
+   {
+    "label": "infinitif",
+    "text": "avoir"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "le ticket"
+   },
+   {
+    "label": "formule de politesse",
+    "text": "s’il vous plaît"
+   }
+  ],
+  "order": "On met le verbe avant le sujet : « puis-je ». Le verbe « avoir » est à l’infinitif et il est suivi de l’objet « le ticket ». La formule de politesse peut aussi se dire au début de la phrase.",
+  "forms": "« Puis-je » est la forme inversée de « je peux ». « Le ticket » est masculin. En Belgique on dit souvent « le ticket » ; en France on dit plutôt « le reçu » ou « le ticket de caisse ».",
+  "compare": "English “May I have…?” maps to puis-je avoir… ; French does not use a separate word for “may”: pouvoir covers both “can” and “may”.",
+  "mistake": {
+   "wrong": "Puis-je avoir la ticket ?",
+   "right": "Puis-je avoir le ticket ?",
+   "why": "« Ticket » est masculin, donc l’article est « le »."
+  },
+  "help": "Puis-je avoir… is a polite request. Pouvoir means both can and may."
+ },
+ "shopping-08": {
+  "meaning": "Vous comparez des prix et vous montrez que ces pommes coûtent moins.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Ces pommes"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "sont"
+   },
+   {
+    "label": "adverbe",
+    "text": "moins"
+   },
+   {
+    "label": "adjectif",
+    "text": "chères"
+   }
+  ],
+  "order": "Le sujet « ces pommes » vient en premier, puis le verbe « sont », puis l’adjectif attribut avec « moins ».",
+  "forms": "« Pomme » est féminin pluriel, donc l’adjectif s’accorde : chères (-e et -s). Le verbe être au pluriel : elles sont, ces pommes sont.",
+  "compare": "English has the one-word comparative “cheaper”. French uses two words: moins cher (“less expensive”).",
+  "mistake": {
+   "wrong": "Ces pommes sont moins cher.",
+   "right": "Ces pommes sont moins chères.",
+   "why": "L’adjectif s’accorde avec « pommes » : féminin pluriel, donc chères."
+  },
+  "help": "Moins + adjective = less …; the adjective chères agrees with the plural feminine pommes."
+ },
+ "shopping-09": {
+  "meaning": "Dans un magasin, vous expliquez à la vendeuse que vous cherchez un cadeau.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Je"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "cherche"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "un cadeau"
+   },
+   {
+    "label": "groupe prépositionnel",
+    "text": "pour ma copine"
+   }
+  ],
+  "order": "L’ordre est sujet – verbe – objet : « Je cherche un cadeau ». Le groupe « pour mon amie » est ajouté à la fin pour dire à qui il est destiné.",
+  "forms": "« Chercher » est un verbe régulier en -er : je cherche. On dit « ma » devant un nom féminin (ma copine) et « mon » devant un nom masculin (mon père) ou féminin qui commence par une voyelle (mon amie).",
+  "compare": "English says “looking for”, with a preposition; French chercher already means “to look for”, so there is no word for “for” after it.",
+  "mistake": {
+   "wrong": "Je cherche pour un cadeau.",
+   "right": "Je cherche un cadeau.",
+   "why": "« Chercher » ne prend pas de préposition : on cherche quelque chose directement."
+  },
+  "help": "Chercher means “to look for” on its own; mon is used before amie because it starts with a vowel."
+ },
+ "shopping-10": {
+  "meaning": "Vous avez choisi un article et vous dites au vendeur que vous le prenez.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Je"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "prends"
+   },
+   {
+    "label": "pronom",
+    "text": "celui-ci"
+   },
+   {
+    "label": "formule de politesse",
+    "text": "merci"
+   }
+  ],
+  "order": "Le sujet « je » vient avant le verbe « prends ». Le pronom « celui-ci » est l’objet. « Merci » est dit à la fin.",
+  "forms": "« Prendre » est irrégulier : je prends, tu prends, il prend. « Celui-ci » est masculin singulier ; pour une chose féminine, on dit « celle-ci ».",
+  "compare": "English “I’ll take” uses a future form; French usually uses the present: je prends.",
+  "mistake": {
+   "wrong": "Je prend celui-ci.",
+   "right": "Je prends celui-ci.",
+   "why": "Avec « je », le verbe prendre s’écrit « prends » avec un -s final."
+  },
+  "help": "Je prends is the present tense used for an immediate decision; celui-ci means “this one” (masculine)."
+ },
+ "school-01": {
+  "meaning": "Vous n’avez pas compris le professeur et vous lui demandez poliment d’expliquer encore.",
+  "parts": [
+   {
+    "label": "verbe modal",
+    "text": "Pouvez"
+   },
+   {
+    "label": "sujet",
+    "text": "-vous"
+   },
+   {
+    "label": "infinitif",
+    "text": "expliquer"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "cela"
+   },
+   {
+    "label": "complément de manière",
+    "text": "encore une fois"
+   },
+   {
+    "label": "formule de politesse",
+    "text": "s’il vous plaît"
+   }
+  ],
+  "order": "Dans la question, le verbe vient avant le pronom sujet : « pouvez-vous ». Le verbe « expliquer » reste à l’infinitif, suivi de l’objet « cela ». « Encore une fois » dit qu’on veut répéter.",
+  "forms": "Avec « vous », pouvoir fait « vous pouvez » : pouvez-vous. On relie le verbe et « vous » par un trait d’union quand on inverse.",
+  "compare": "English “explain that again” uses one word (again); French uses encore une fois (“one more time”).",
+  "mistake": {
+   "wrong": "Pouvez vous expliquer cela encore une fois ?",
+   "right": "Pouvez-vous expliquer cela encore une fois ?",
+   "why": "Dans l’inversion, le verbe et le pronom sujet sont reliés par un trait d’union."
+  },
+  "help": "Pouvez-vous + infinitive politely asks someone to do something; encore une fois means once more."
+ },
+ "school-02": {
+  "meaning": "Vous regardez un exercice et vous dites que vous ne comprenez pas une question.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Je"
+   },
+   {
+    "label": "négation",
+    "text": "ne"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "comprends"
+   },
+   {
+    "label": "négation",
+    "text": "pas"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "cette question"
+   }
+  ],
+  "order": "Le sujet est en premier. Le verbe « comprends » est entouré de « ne » et « pas ». L’objet « cette question » vient après.",
+  "forms": "« Comprendre » est irrégulier : je comprends, tu comprends, il comprend. « Question » est féminin : cette question.",
+  "compare": "English uses “do not” before the verb; French puts ne before and pas after the verb.",
+  "mistake": {
+   "wrong": "Je ne comprends pas ce question.",
+   "right": "Je ne comprends pas cette question.",
+   "why": "« Question » est un nom féminin : on dit cette question, pas ce question."
+  },
+  "help": "Ne … pas surrounds the verb comprends; cette is used before the feminine noun question."
+ },
+ "school-03": {
+  "meaning": "Vous voyez un mot que vous ne connaissez pas et vous demandez sa signification.",
+  "parts": [
+   {
+    "label": "mot interrogatif",
+    "text": "Que"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "veut dire"
+   },
+   {
+    "label": "sujet",
+    "text": "ce mot"
+   }
+  ],
+  "order": "Le mot interrogatif « que » est en premier. Le verbe « veut dire » vient ensuite et le sujet « ce mot » est placé après lui. Avec « que », on ne peut pas garder le sujet avant le verbe.",
+  "forms": "« Vouloir dire » est une expression : il veut dire. « Mot » est masculin : ce mot. On écrit « veut » avec -t.",
+  "compare": "English “What does this word mean?” needs do/does; French uses only the expression veut dire. “Mean” = vouloir dire (literally “to want to say”) or signifier.",
+  "mistake": {
+   "wrong": "Qu’est-ce que veut dire ce mot ?",
+   "right": "Que veut dire ce mot ?",
+   "why": "Après « qu’est-ce que », il faut le sujet avant le verbe : Qu’est-ce que ce mot veut dire ? Sinon on utilise « Que veut dire ce mot ? »."
+  },
+  "help": "Que opens the question and the noun subject comes after the verb. Spoken alternative: Qu’est-ce que ce mot veut dire ?"
+ },
+ "school-04": {
+  "meaning": "Vous voulez interrompre brièvement le professeur pour poser une question.",
+  "parts": [
+   {
+    "label": "verbe modal",
+    "text": "Puis"
+   },
+   {
+    "label": "sujet",
+    "text": "-je"
+   },
+   {
+    "label": "infinitif",
+    "text": "poser"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "une question"
+   },
+   {
+    "label": "adverbe",
+    "text": "rapidement"
+   }
+  ],
+  "order": "Le verbe précède le sujet dans cette question formelle : « puis-je ». L’infinitif « poser » est suivi de l’objet. L’adverbe « rapidement » vient à la fin.",
+  "forms": "« Poser une question » est une collocation fixe. L’adverbe « rapidement » est formé à partir de l’adjectif féminin « rapide » + -ment.",
+  "compare": "English uses “ask a question”; French uses poser (to put/pose) a question. “Ask” alone is demander, which is for asking for something.",
+  "mistake": {
+   "wrong": "Puis-je demander une question ?",
+   "right": "Puis-je poser une question ?",
+   "why": "On dit « poser une question », pas « demander une question »."
+  },
+  "help": "Poser une question is the fixed phrase (not demander); puis-je makes the request polite."
+ },
+ "school-05": {
+  "meaning": "Le professeur demande si vous avez fait vos devoirs ; vous répondez que oui.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "J’"
+   },
+   {
+    "label": "auxiliaire",
+    "text": "ai"
+   },
+   {
+    "label": "adverbe",
+    "text": "déjà"
+   },
+   {
+    "label": "participe passé",
+    "text": "fait"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "mes devoirs"
+   }
+  ],
+  "order": "Le sujet « j’ » est suivi de l’auxiliaire « ai ». L’adverbe « déjà » se place entre l’auxiliaire et le participe passé. L’objet « mes devoirs » vient à la fin.",
+  "forms": "« Je » devient « j’ » devant la voyelle de « ai ». « Faire » a le participe passé « fait ». « Devoirs » est toujours pluriel pour les devoirs scolaires : mes devoirs.",
+  "compare": "English “I have already done” uses have + done; French uses j’ai + fait. The word déjà sits between the two verbs, like “already”.",
+  "mistake": {
+   "wrong": "J’ai déjà fais mes devoirs.",
+   "right": "J’ai déjà fait mes devoirs.",
+   "why": "Le participe passé de « faire » s’écrit « fait » (avec -t), pas « fais »."
+  },
+  "help": "The past is formed with j’ai + participle fait; déjà goes in the middle."
+ },
+ "school-06": {
+  "meaning": "Vous voulez connaître la date limite pour remettre un travail.",
+  "parts": [
+   {
+    "label": "mot interrogatif",
+    "text": "Quand"
+   },
+   {
+    "label": "verbe modal",
+    "text": "devons"
+   },
+   {
+    "label": "sujet",
+    "text": "-nous"
+   },
+   {
+    "label": "infinitif",
+    "text": "rendre"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "ce travail"
+   }
+  ],
+  "order": "Le mot interrogatif « quand » commence la phrase. Ensuite le verbe « devons » précède le sujet « nous » (inversion). L’infinitif « rendre » et l’objet « ce travail » finissent la phrase.",
+  "forms": "« Devoir » au présent : je dois, tu dois, il doit, nous devons, vous devez, ils doivent. « Rendre » veut dire ici « remettre » (to hand in), mais aussi « to give back ». « Travail » est masculin : ce travail.",
+  "compare": "English “have to” is expressed by the single verb devoir. French also uses rendre for handing in homework, not donner.",
+  "mistake": {
+   "wrong": "Quand nous devons rendre ce travail ?",
+   "right": "Quand devons-nous rendre ce travail ?",
+   "why": "Dans une question soignée, on inverse le verbe et le sujet : devons-nous. Dans la conversation, on dit aussi « Quand est-ce que nous devons… ? »."
+  },
+  "help": "Quand opens the question; devons-nous + infinitive rendre says “when must we hand in”."
+ },
+ "school-07": {
+  "meaning": "On vous demande où est votre stylo ; vous répondez qu’il est sur la table.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Mon stylo"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "est"
+   },
+   {
+    "label": "complément de lieu",
+    "text": "sur la table"
+   }
+  ],
+  "order": "Le sujet « mon stylo » est en premier. Le verbe « est » suit. Le complément de lieu « sur la table » termine la phrase.",
+  "forms": "« Mon » est masculin car « stylo » est masculin. « La table » est féminin. Le verbe être : il est.",
+  "compare": "Dutch says “ligt” (lies); English says “is”; French also says est, a simple form of être.",
+  "mistake": {
+   "wrong": "Mon stylo est dessus la table.",
+   "right": "Mon stylo est sur la table.",
+   "why": "La préposition correcte est « sur » ; « dessus » s’utilise seul : il est dessus."
+  },
+  "help": "Être + sur la table tells where the pen is; mon agrees with the masculine noun stylo."
+ },
+ "school-08": {
+  "meaning": "Un camarade demande vos projets ; vous dites que demain vous irez à l’école.",
+  "parts": [
+   {
+    "label": "complément de temps",
+    "text": "Demain"
+   },
+   {
+    "label": "sujet",
+    "text": "je"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "vais"
+   },
+   {
+    "label": "préposition",
+    "text": "à"
+   },
+   {
+    "label": "groupe nominal",
+    "text": "l’école"
+   }
+  ],
+  "order": "En français, on peut commencer par « demain » et garder l’ordre sujet – verbe : « Demain, je vais… » (pas d’inversion comme en néerlandais). Une virgule sépare le complément de temps.",
+  "forms": "« Aller » est irrégulier : je vais, tu vas, il va, nous allons. « À l’ » est devant une voyelle : à l’école. Devant un nom masculin : au (à + le) cinéma.",
+  "compare": "Dutch inverts after a time phrase (Morgen ga ik); French does not: Demain, je vais. English also keeps the subject first.",
+  "mistake": {
+   "wrong": "Demain vais-je à l’école.",
+   "right": "Demain, je vais à l’école.",
+   "why": "Après un complément de temps en début de phrase, on garde l’ordre normal sujet + verbe."
+  },
+  "help": "After Demain, French keeps subject + verb; aller à + place says where you go."
+ },
+ "school-09": {
+  "meaning": "Vous arrivez en retard en classe et vous expliquez que votre train est retardé.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Je"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "suis"
+   },
+   {
+    "label": "expression figée",
+    "text": "en retard"
+   },
+   {
+    "label": "conjonction",
+    "text": "parce que"
+   },
+   {
+    "label": "proposition subordonnée",
+    "text": "mon train a du retard"
+   }
+  ],
+  "order": "La première partie est une phrase normale : sujet « je » + verbe « suis ». « Parce que » introduit la cause. Dans la subordonnée, l’ordre est aussi sujet + verbe : « mon train a du retard ». Le verbe ne va pas à la fin.",
+  "forms": "« Parce que » devient « parce qu’ » devant une voyelle : parce qu’il. « Avoir du retard » dit qu’un train n’est pas à l’heure ; « être en retard » dit qu’une personne arrive trop tard.",
+  "compare": "English “because my train is delayed” keeps the verb in the middle; French does the same. Dutch moves the verb to the end after omdat.",
+  "mistake": {
+   "wrong": "Je suis en retard parce que mon train du retard a.",
+   "right": "Je suis en retard parce que mon train a du retard.",
+   "why": "En français, l’ordre ne change pas après « parce que » : sujet + verbe + complément."
+  },
+  "help": "After parce que the clause keeps normal order; the train has du retard, but a person is en retard."
+ },
+ "school-10": {
+  "meaning": "Vous proposez de pratiquer avec un camarade de classe.",
+  "parts": [
+   {
+    "label": "verbe modal",
+    "text": "Pouvons"
+   },
+   {
+    "label": "sujet",
+    "text": "-nous"
+   },
+   {
+    "label": "pronom réfléchi",
+    "text": "nous"
+   },
+   {
+    "label": "infinitif",
+    "text": "entraîner"
+   },
+   {
+    "label": "adverbe",
+    "text": "ensemble"
+   }
+  ],
+  "order": "La question commence par le verbe « pouvons » avant le sujet « -nous ». Ensuite vient l’infinitif pronominal « nous entraîner » : le pronom réfléchi est placé juste avant l’infinitif. L’adverbe « ensemble » termine la phrase.",
+  "forms": "Le verbe est « s’entraîner ». À l’infinitif après un verbe conjugué, le pronom s’accorde avec le sujet : nous … nous entraîner, je … m’entraîner. « Entraîner » s’écrit avec un accent circonflexe sur le « i ».",
+  "compare": "English “practise” has no reflexive form; French s’entraîner is reflexive (literally “to train oneself”).",
+  "mistake": {
+   "wrong": "Pouvons-nous s’entraîner ensemble ?",
+   "right": "Pouvons-nous nous entraîner ensemble ?",
+   "why": "Le pronom réfléchi s’accorde avec le sujet « nous » : nous entraîner, pas s’entraîner."
+  },
+  "help": "S’entraîner is reflexive: the pronoun matches the subject, so nous … nous entraîner."
+ },
+ "transport-01": {
+  "meaning": "Vous êtes à la gare et vous voulez savoir de quel quai le train part.",
+  "parts": [
+   {
+    "label": "groupe prépositionnel",
+    "text": "De quel quai"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "part"
+   },
+   {
+    "label": "sujet",
+    "text": "le train"
+   }
+  ],
+  "order": "Le groupe interrogatif « de quel quai » est en premier. Le verbe « part » vient ensuite et le sujet nominal « le train » est après le verbe : c’est une inversion simple avec un groupe interrogatif.",
+  "forms": "« Quel » s’accorde : quel quai (masculin singulier). Le verbe partir au présent : il part. En Belgique, on dit aussi « voie » pour le quai : de quelle voie.",
+  "compare": "English “From which platform does the train depart?” uses do/does; French has none and the noun subject follows the verb.",
+  "mistake": {
+   "wrong": "De quelle quai part le train ?",
+   "right": "De quel quai part le train ?",
+   "why": "« Quai » est masculin, donc « quel » sans -le."
+  },
+  "help": "De quel quai… asks which platform; quel agrees with the masculine noun, and the subject follows the verb."
+ },
+ "transport-02": {
+  "meaning": "Vous n’êtes pas sûr de votre trajet et vous demandez s’il faut changer de train ici.",
+  "parts": [
+   {
+    "label": "verbe modal",
+    "text": "Dois"
+   },
+   {
+    "label": "sujet",
+    "text": "-je"
+   },
+   {
+    "label": "infinitif",
+    "text": "changer"
+   },
+   {
+    "label": "complément d’objet indirect",
+    "text": "de train"
+   },
+   {
+    "label": "complément de lieu",
+    "text": "ici"
+   }
+  ],
+  "order": "C’est une question oui/non : le verbe « dois » précède le sujet « -je ». L’infinitif « changer » est suivi de « de train ». Le lieu « ici » est à la fin.",
+  "forms": "« Devoir » : je dois. « Changer de » + nom sans article : changer de train (pas « changer le train »).",
+  "compare": "English says “change trains” (plural); French says changer de train (singular with de).",
+  "mistake": {
+   "wrong": "Dois-je changer le train ici ?",
+   "right": "Dois-je changer de train ici ?",
+   "why": "Avec le sens de « prendre un autre train », on dit « changer de train »."
+  },
+  "help": "Dois-je asks whether it is necessary; changer de train is the fixed way to say change trains."
+ },
+ "transport-03": {
+  "meaning": "Avant de monter, vous demandez si ce train va à Bruges.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Ce train"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "va"
+   },
+   {
+    "label": "pronom",
+    "text": "-t-il"
+   },
+   {
+    "label": "groupe prépositionnel",
+    "text": "à Bruges"
+   }
+  ],
+  "order": "Dans la question formelle avec un sujet nominal, le nom reste devant, puis le verbe est suivi d’un pronom sujet : « Ce train va-t-il… ». C’est une inversion complexe. Beaucoup de gens disent plus simplement « Ce train va à Bruges ? ».",
+  "forms": "Le « -t- » est ajouté entre deux voyelles pour séparer « va » et « il ». On dit « à Bruges » avec une ville. Le verbe aller : il va.",
+  "compare": "English uses “does”; French can use est-ce que (Est-ce que ce train va à Bruges ?), the intonation question (Ce train va à Bruges ?) or the formal inversion shown here.",
+  "mistake": {
+   "wrong": "Ce train va-il à Bruges ?",
+   "right": "Ce train va-t-il à Bruges ?",
+   "why": "On ajoute « -t- » entre deux voyelles : va-t-il, pas « va-il »."
+  },
+  "help": "The formal question repeats the subject as il after the verb, with -t- in between."
+ },
+ "transport-04": {
+  "meaning": "Au guichet, vous achetez un billet pour Gand.",
+  "parts": [
+   {
+    "label": "sujet",
+    "text": "Je"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "voudrais"
+   },
+   {
+    "label": "complément d’objet direct",
+    "text": "un billet"
+   },
+   {
+    "label": "groupe prépositionnel",
+    "text": "pour Gand"
+   },
+   {
+    "label": "formule de politesse",
+    "text": "s’il vous plaît"
+   }
+  ],
+  "order": "Sujet « je », verbe « voudrais », objet « un billet ». Le groupe « pour Gand » précise la destination et « s’il vous plaît » finit la phrase.",
+  "forms": "« Voudrais » est le conditionnel de vouloir, plus poli que « veux ». « Billet » est masculin : un billet. En Belgique, on dit « billet » ou « ticket » ; « Gand » est le nom français de Gent.",
+  "compare": "English says “a ticket to Ghent” with to; French uses pour for the destination of a ticket.",
+  "mistake": {
+   "wrong": "Je voudrais un billet à Gand.",
+   "right": "Je voudrais un billet pour Gand.",
+   "why": "Pour un billet, la destination se dit avec « pour » : un billet pour Gand."
+  },
+  "help": "Je voudrais is polite; billet pour + city names the destination."
+ },
+ "transport-05": {
+  "meaning": "Vous attendez un ami et vous demandez à quelle heure le train arrive.",
+  "parts": [
+   {
+    "label": "locution interrogative",
+    "text": "À quelle heure"
+   },
+   {
+    "label": "verbe conjugué",
+    "text": "arrive"
+   },
+   {
+    "label": "sujet",
+    "text": "le train"
+   }
+  ],
+  "order": "La question commence par « à quelle heure ». Ensuite le verbe « arrive » précède le sujet nominal « le train » : c’est la même inversion simple que dans « De quel quai part le train ? ».",
+  "forms": "« Quelle » est féminin singulier car « heure » est féminin. « Arrive » est la forme de « il/elle ».",
+  "compare": "English uses do/does and the subject before the verb; French inverts the noun subject after the verb.",
+  "mistake": {
+   "wrong": "À quel heure arrive le train ?",
+   "right": "À quelle heure arrive le train ?",
+   "why": "« Heure » est féminin : on écrit « quelle »."
+  },
+  "help": "À quelle heure introduces the time question; quelle is feminine because heure is."
+ }
+}

@@ -168,7 +168,7 @@ describe('Speaking', () => {
   });
   it('reports the level change as an effect so the global level is updated once', () => {
     const result = rateSpeaking(makeSession(2), 'medium');
-    expect(result.effects).toEqual([{ cardId: result.session.events[0].cardId, level: 'medium', at: expect.any(String) }]);
+    expect(result.effects).toEqual([{ lang: 'nl', cardId: result.session.events[0].cardId, level: 'medium', at: expect.any(String) }]);
     const replay = applyAction(result.session, makeAction({ type: 'study/next' }), NOW); // unrelated action: no effect
     expect(replay.effects).toEqual([]);
   });

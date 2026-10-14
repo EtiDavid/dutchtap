@@ -1,6 +1,6 @@
 # French as a second learning language — handover
 
-Branch: `feature/french-learning` (from `main` at d7db817). Not pushed, merged or deployed. Container not rebuilt unless requested.
+Branch: `feature/french-learning` (from `main` at d7db817; checkpoint cabced7, complete content commit 8694b95). Not pushed, merged or deployed. Container not rebuilt unless requested.
 
 ## Scope delivered
 * Learner picks **Nederlands** or **Français** on first launch (remembered; switch always visible; interface stays English). Existing Dutch

@@ -4,7 +4,8 @@ import { createHash } from 'node:crypto';
 const root = new URL('../', import.meta.url);
 const originals = JSON.parse(await readFile(new URL('data/flashcards.json', root), 'utf8'));
 const additions = JSON.parse(await readFile(new URL('data/flashcard-additions.json', root), 'utf8'));
-const cards = [...originals, ...additions];
+const moreAdditions = JSON.parse(await readFile(new URL('data/flashcard-additions-2.json', root), 'utf8'));
+const cards = [...originals, ...additions, ...moreAdditions];
 const seen = new Set();
 const images = new Set();
 const audio = new Set();
@@ -33,5 +34,5 @@ for (const card of cards) {
     } catch (error) { errors.push(`${card.id}: ${kind}: ${error.message}`); }
   }
 }
-console.log(JSON.stringify({ cards: cards.length, additions: additions.length, readyImages, pendingImages: cards.length - readyImages, readyAudio, awaitingRecordings: cards.length - readyAudio, errors }, null, 2));
-if (cards.length !== 300 || additions.length !== 250 || errors.length || (process.argv.includes('--complete') && (readyImages !== cards.length || readyAudio !== cards.length))) process.exitCode = 1;
+console.log(JSON.stringify({ cards: cards.length, additions: additions.length + moreAdditions.length, readyImages, pendingImages: cards.length - readyImages, readyAudio, awaitingRecordings: cards.length - readyAudio, errors }, null, 2));
+if (cards.length !== 600 || additions.length !== 250 || moreAdditions.length !== 300 || errors.length || (process.argv.includes('--complete') && (readyImages !== cards.length || readyAudio !== cards.length))) process.exitCode = 1;

@@ -7,8 +7,8 @@ function seededRand(seed = 1) { let a = seed; return () => { a = (a + 0x6d2b79f5
 const withLevel = (id: string, level: 'difficult' | 'medium' | 'easy' | 'mastered', masteredCount = 0) => ({ ...newReview(id, now), level, masteredCount });
 
 describe('flashcard deck', () => {
-  it('has exactly 300 unique text cards, each with a situation that is not the answer', () => {
-    expect(CARDS).toHaveLength(300); expect(new Set(CARDS.map(c => c.id)).size).toBe(300);
+  it('has exactly 600 unique text cards, each with a situation that is not the answer', () => {
+    expect(CARDS).toHaveLength(600); expect(new Set(CARDS.map(c => c.id)).size).toBe(600);
     for (const c of CARDS) {
       for (const key of ['dutch', 'english', 'cue', 'scenario', 'grammar', 'variation', 'audio', 'image'] as const) expect(c[key].length).toBeGreaterThan(4);
       expect(c.scenario.toLowerCase()).not.toContain(c.dutch.toLowerCase().replace(/[.?!]/g, ''));

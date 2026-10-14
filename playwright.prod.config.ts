@@ -4,6 +4,6 @@ const port = process.env.PROD_PORT || '3200';
 const url = `http://127.0.0.1:${port}`;
 export default defineConfig({
   testDir: './tests/prod-e2e', workers: 1, retries: 0, reporter: 'list',
-  use: { baseURL: url, viewport: { width: 390, height: 844 } },
+  use: { baseURL: url, viewport: { width: 390, height: 844 }, storageState: { cookies: [], origins: [{ origin: url, localStorage: [{ name: 'dutchtap:language:v1', value: 'nl' }] }] } },
   webServer: { command: `npm run build && npx next start -H 127.0.0.1 -p ${port}`, url, reuseExistingServer: false, timeout: 300_000 },
 });

@@ -1,6 +1,7 @@
 import { newReview, type Level, type Review } from '@/lib/flashcards/engine';
 import { applyActions, isComplete, unfinished } from './engine';
-import { MAX_ACTIONS_PER_REQUEST, MAX_ACTIVE_SESSIONS, actionSchema, sessionSchema, type Action, type LevelEffect, type Rejection, type Session } from './types';
+import type { Lang } from '@/lib/lang';
+import { MAX_ACTIONS_PER_REQUEST, MAX_ACTIVE_SESSIONS, actionSchema, newSessionSchema, type Action, type LevelEffect, type Rejection, type Session } from './types';
 
 /** Server-side session logic, independent of the database so it can be tested with an in-memory repository. */
 export type StoredSession = { session: Session; slot: number | null };
@@ -15,8 +16,8 @@ export interface SessionRepo {
   remove(owner: string, id: string): Promise<boolean>;
 }
 export interface ReviewRepo {
-  /** Applies one Speaking rating to the learner's global card level and returns the stored record. */
-  applyLevel(owner: string, cardId: string, level: Level, at: string): Promise<Review>;
+  /** Applies one Speaking rating to the learner's global card level for that language and returns the stored record. */
+  applyLevel(owner: string, lang: Lang, cardId: string, level: Level, at: string): Promise<Review>;
 }
 
 export function applyLevelToReview(existing: Review | undefined, cardId: string, level: Level, at: string): Review {
@@ -47,7 +48,7 @@ export type CreateResult =
 
 /** Creates a session (or imports one from a guest device). Idempotent on the session id. */
 export async function createSession(repo: SessionRepo, owner: string, raw: unknown): Promise<CreateResult> {
-  const parsed = sessionSchema.safeParse(raw);
+  const parsed = newSessionSchema.safeParse(raw); // a new session must name its language
   if (!parsed.success) return { status: 'invalid', message: parsed.error.issues[0]?.message ?? 'Invalid session' };
   const result = await repo.insert(owner, normalizeSession(parsed.data));
   if (result.ok) return { status: 'created', session: result.stored.session };
@@ -86,7 +87,7 @@ export async function applySessionActions(repo: SessionRepo, reviews: ReviewRepo
     const next: Session = { ...result.session, rev: stored.session.rev + 1 };
     if (!(await repo.replace(owner, id, stored.session.rev, next))) continue; // someone else wrote first: re-read and re-apply
     const updated: Record<string, Review> = {};
-    for (const effect of result.effects as LevelEffect[]) updated[effect.cardId] = await reviews.applyLevel(owner, effect.cardId, effect.level, effect.at);
+    for (const effect of result.effects as LevelEffect[]) updated[effect.cardId] = await reviews.applyLevel(owner, effect.lang, effect.cardId, effect.level, effect.at);
     return { status: 'ok', session: next, applied: result.applied, rejected: result.rejected, reviews: updated };
   }
   return { status: 'busy' };

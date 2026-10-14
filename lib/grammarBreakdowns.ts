@@ -1,4 +1,6 @@
 import breakdowns from '@/data/grammar-breakdowns.json';
+import frBreakdowns from '@/data/fr/grammar-breakdowns.json';
+import type { Lang } from '@/lib/lang';
 
 /**
  * A detailed, collapsible breakdown for every sentence: what the speaker is doing, the sentence cut into labelled parts (using its
@@ -14,10 +16,13 @@ export type Breakdown = {
   forms: string;
   compare: string;
   mistake: { wrong: string; right: string; why: string };
+  /** French only: a one or two line English help for a beginner. The explanation itself is in simple French. */
+  help?: string;
 };
 
 export const BREAKDOWNS = breakdowns as Record<string, Breakdown>;
-export const breakdownFor = (cardId: string): Breakdown | undefined => BREAKDOWNS[cardId];
+export const FRENCH_BREAKDOWNS = frBreakdowns as Record<string, Breakdown>;
+export const breakdownFor = (cardId: string, lang: Lang = 'nl'): Breakdown | undefined => (lang === 'fr' ? FRENCH_BREAKDOWNS : BREAKDOWNS)[cardId];
 
 /** The abstract pattern, e.g. "time phrase + finite verb + subject + direction". Position, not word count, defines the order. */
 export const patternOf = (breakdown: Breakdown): string => breakdown.parts.map(part => part.label).join(' + ');

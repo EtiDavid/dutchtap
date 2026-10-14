@@ -3,6 +3,8 @@ import { useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SESSIONS_CHANGED, SUMMARY_KEY } from '@/lib/sessions/store';
+import { DEFAULT_LANG, withLang, type Lang } from '@/lib/lang';
+import { useSavedLanguage } from '@/lib/lang/useLanguage';
 
 const TABS = [
   { href: '/', label: 'Home', icon: '🏠', session: null },
@@ -23,8 +25,11 @@ function subscribe(listener: () => void) {
  * Bottom tab bar shared by the learning pages. Tabs with a session waiting show a dot,
  * and opening that tab resumes exactly where the learner left off.
  */
-export function AppNav() {
+export function AppNav({ lang }: { lang?: Lang } = {}) {
   const pathname = usePathname();
+  // The page's own language when it has one (a session), otherwise the saved choice. Dutch links stay exactly as they were.
+  const saved = useSavedLanguage().lang;
+  const effective = lang ?? saved ?? DEFAULT_LANG;
   // Re-read on every render (route changes re-render this component) and whenever sessions change in this or another tab.
   const waiting = useSyncExternalStore(subscribe, hasActiveSessions, () => false);
 
@@ -35,7 +40,7 @@ export function AppNav() {
         const active = isActive(tab.href);
         const resumable = !!tab.session && waiting && !active;
         return <li key={tab.href}>
-          <Link href={tab.href} aria-current={active ? 'page' : undefined} className={`relative flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs font-semibold focus-visible:outline-2 focus-visible:outline-accent ${active ? 'text-accent' : 'text-muted'}`}>
+          <Link href={tab.href === '/' ? tab.href : withLang(tab.href, effective)} aria-current={active ? 'page' : undefined} className={`relative flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs font-semibold focus-visible:outline-2 focus-visible:outline-accent ${active ? 'text-accent' : 'text-muted'}`}>
             <span aria-hidden className="text-lg">{tab.icon}</span>
             {tab.label}
             {resumable && <><span aria-hidden className="absolute right-[28%] top-2 h-2.5 w-2.5 rounded-full bg-accent" /><span className="sr-only">, session in progress</span></>}

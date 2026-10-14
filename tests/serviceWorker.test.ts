@@ -53,7 +53,7 @@ describe('service worker', () => {
     sandboxFetch = async request => html(`page ${new URL(request.url).pathname}`);
     const sw = load();
     await sw.fire('install');
-    expect([...(await sw.caches.open('dutchtap-pages-v3')).entries.keys()].map(u => new URL(u).pathname).sort()).toEqual(['/', '/flashcards', '/manifest.webmanifest', '/quiz', '/vocabulary']);
+    expect([...(await sw.caches.open('dutchtap-pages-v3')).entries.keys()].map(u => { const url = new URL(u); return url.pathname + url.search; }).sort()).toEqual(['/', '/flashcards', '/flashcards?lang=fr', '/manifest.webmanifest', '/quiz', '/quiz?lang=fr', '/vocabulary', '/vocabulary?lang=fr']);
     expect(sw.state().skipped).toBe(true);
     for (const old of ['dutchtap-v1', 'dutchtap-v2', 'dutchtap-pages-v2', 'unrelated-cache']) await sw.caches.open(old);
     await sw.fire('activate');
@@ -147,5 +147,20 @@ describe('service worker', () => {
     expect((await sw.fire('fetch', nav('/flashcards')))!.status).toBe(500);
     sandboxFetch = async () => { throw new TypeError('offline'); };
     expect((await sw.fire('fetch', nav('/flashcards')))!.status).toBe(503);
+  });
+
+  it('keeps French and Dutch addresses apart: each is cached under its own URL and answered from its own entry', async () => {
+    sandboxFetch = async request => html(`page ${new URL(request.url).pathname}${new URL(request.url).search}`);
+    const sw = load();
+    await sw.fire('install');
+    const online = await sw.fire('fetch', nav('/flashcards?lang=fr'));
+    expect(await online!.text()).toBe('page /flashcards?lang=fr');
+    const dutch = await sw.fire('fetch', nav('/flashcards'));
+    expect(await dutch!.text()).toBe('page /flashcards');
+    sandboxFetch = async () => { throw new Error('offline'); };
+    const frenchOffline = await sw.fire('fetch', nav('/flashcards?lang=fr'));
+    expect(await frenchOffline!.text()).toBe('page /flashcards?lang=fr');
+    const dutchOffline = await sw.fire('fetch', nav('/flashcards'));
+    expect(await dutchOffline!.text()).toBe('page /flashcards');
   });
 });

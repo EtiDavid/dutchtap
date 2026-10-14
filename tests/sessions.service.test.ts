@@ -166,7 +166,7 @@ describe('applying actions', () => {
     const first = await send(A, s.id, ...batch) as Extract<Awaited<ReturnType<typeof send>>, { status: 'ok' }>;
     expect(first.reviews[s.cardIds[0]]).toMatchObject({ level: 'mastered', masteredCount: 1, seen: 1 });
     await send(A, s.id, ...batch);
-    expect(reviews.rows.get(`${A}\u0000${s.cardIds[0]}`)).toMatchObject({ level: 'mastered', masteredCount: 1, seen: 1 });
+    expect(reviews.rows.get(`${A}\u0000nl\u0000${s.cardIds[0]}`)).toMatchObject({ level: 'mastered', masteredCount: 1, seen: 1 });
     // Study, Quiz and rejected actions never touch global levels
     await send(A, s.id, makeAction({ type: 'study/next' }));
     expect(reviews.rows.size).toBe(1);
@@ -187,7 +187,7 @@ describe('applying actions', () => {
     const attemptId = 'attempt-svc-0004';
     const old = (type: 'speaking/open' | 'speaking/reveal') => makeAction(type === 'speaking/open' ? { type, cardId: s.cardIds[0], attemptId } : { type, attemptId });
     await send(A, s.id, old('speaking/open'), old('speaking/reveal'), makeAction({ type: 'speaking/choose', attemptId, level: 'easy' }), makeAction({ type: 'speaking/submit', attemptId, level: 'easy', next: null }));
-    expect(reviews.rows.get(`${A}\u0000${s.cardIds[0]}`)).toMatchObject({ level: 'difficult', seen: 2 });
+    expect(reviews.rows.get(`${A}\u0000nl\u0000${s.cardIds[0]}`)).toMatchObject({ level: 'difficult', seen: 2 });
   });
   it('two devices working at once never lose counters (compare-and-swap with re-apply)', async () => {
     const s = await created(A, makeSession(2));
@@ -222,7 +222,7 @@ describe('applying actions', () => {
     const attemptId = 'attempt-svc-0006';
     await send(A, s.id, makeAction({ type: 'speaking/open', cardId: s.cardIds[0], attemptId }), makeAction({ type: 'speaking/reveal', attemptId }), makeAction({ type: 'speaking/choose', attemptId, level: 'easy' }), makeAction({ type: 'speaking/submit', attemptId, level: 'easy', next: null }));
     await deleteSession(repo, A, s.id);
-    expect(reviews.rows.get(`${A}\u0000${s.cardIds[0]}`)).toMatchObject({ level: 'easy' });
+    expect(reviews.rows.get(`${A}\u0000nl\u0000${s.cardIds[0]}`)).toMatchObject({ level: 'easy' });
     expect(await getSession(repo, A, other.id)).not.toBeNull();
   });
   it('a finished session is archived, frees its slot, and Study keeps working afterwards', async () => {

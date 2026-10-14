@@ -7,7 +7,10 @@ import { clearLegacy, readLegacy, type LegacyPractice } from '@/lib/sessions/leg
 import { DASHBOARD_URL, navigateTo, sessionUrl } from '@/lib/sessions/nav';
 import type { SessionStore, Snapshot } from '@/lib/sessions/store';
 import { useGuestStore } from '@/lib/sessions/useSessions';
-import { countByLevel, CARDS, type Reviews } from '@/lib/flashcards/engine';
+import { countByLevel, type Reviews } from '@/lib/flashcards/engine';
+import { cardsFor } from '@/lib/content/cards';
+import { LANG_INFO, withLang, type Lang } from '@/lib/lang';
+import { LanguageSwitch } from '../lang/LanguageSwitch';
 import { button, primary } from '../flashcards/styles';
 import { LevelBar } from '../flashcards/LevelBar';
 import { StreakBadge } from '../practice/StreakBadge';
@@ -17,14 +20,16 @@ import { SessionCard } from './SessionCard';
 import { SyncStatus } from './SyncStatus';
 
 type Props = {
+  lang: Lang; onSwitchLanguage: (lang: Lang) => void;
   store: SessionStore; snapshot: Snapshot; reviews: Reviews; signedIn: boolean;
   streak: { streak: number; practisedToday: boolean }; levelsStatus: string; guestLevelsAvailable: boolean; onCopyGuestLevels: () => void;
 };
 
 /** The session dashboard: create a session, continue an active one, or look back at completed ones. */
-export function SessionsDashboard({ store, snapshot, reviews, signedIn, streak, levelsStatus, guestLevelsAvailable, onCopyGuestLevels }: Props) {
+export function SessionsDashboard({ lang, onSwitchLanguage, store, snapshot, reviews, signedIn, streak, levelsStatus, guestLevelsAvailable, onCopyGuestLevels }: Props) {
   const [creating, setCreating] = useState(false);
   const [tab, setTab] = useState<'active' | 'completed'>('active');
+  const [showAll, setShowAll] = useState(false);
   const [deleting, setDeleting] = useState<Session | null>(null);
   const [renaming, setRenaming] = useState<Session | null>(null);
   const [renameValue, setRenameValue] = useState('');
@@ -36,12 +41,17 @@ export function SessionsDashboard({ store, snapshot, reviews, signedIn, streak, 
   // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => { setLegacy(readLegacy()); }, []);
 
-  const active = snapshot.sessions.filter(s => s.status === 'active');
-  const completed = snapshot.sessions.filter(s => s.status === 'archived');
+  // The five-session limit counts sessions in ALL languages; the list can be narrowed to this language, but the limit is never hidden.
+  const allActive = snapshot.sessions.filter(s => s.status === 'active');
+  const visible = snapshot.sessions.filter(s => showAll || s.lang === lang);
+  const active = visible.filter(s => s.status === 'active');
+  const completed = visible.filter(s => s.status === 'archived');
+  const elsewhere = snapshot.sessions.length - snapshot.sessions.filter(s => s.lang === lang).length;
+  const otherActive = allActive.filter(s => s.lang !== lang);
   const localOnly = active.filter(session => snapshot.refused[session.id]).length; // refused by the account, kept on this device
-  const full = active.length >= MAX_ACTIVE_SESSIONS;
-  const last = snapshot.lastOpened && snapshot.sessions.find(s => s.id === snapshot.lastOpened!.id && s.status === 'active');
-  const levelCounts = countByLevel(CARDS, reviews);
+  const full = allActive.length >= MAX_ACTIVE_SESSIONS;
+  const last = snapshot.lastOpened && visible.find(s => s.id === snapshot.lastOpened!.id && s.status === 'active');
+  const levelCounts = countByLevel(cardsFor(lang), reviews);
 
   function open(id: string, mode: 'study' | 'speaking' | 'quiz' = 'study') { navigateTo(sessionUrl(id, mode)); }
   function handleCreate(session: Session): string | null {
@@ -56,7 +66,7 @@ export function SessionsDashboard({ store, snapshot, reviews, signedIn, streak, 
   }
   function importLegacy() {
     if (!legacy.practice) return;
-    const session = createSessionFromIds({ name: `Earlier practice · ${legacy.practice.cardIds.length} cards`, cardIds: legacy.practice.cardIds, topic: legacy.practice.topic, startingLevel: 'difficult' });
+    const session = createSessionFromIds({ lang: 'nl', name: `Earlier practice · ${legacy.practice.cardIds.length} cards`, cardIds: legacy.practice.cardIds, topic: legacy.practice.topic, startingLevel: 'difficult' });
     const result = store.create(session);
     if (!result.ok) { setMessage(result.message); return; }
     clearLegacy(); setLegacy({ practice: null, found: false }); open(session.id, 'study');
@@ -73,13 +83,14 @@ export function SessionsDashboard({ store, snapshot, reviews, signedIn, streak, 
 
   const list = tab === 'active' ? active : completed;
   return <div className="flex flex-col gap-5">
+    <div className="flex items-center justify-between gap-3"><p className="text-sm text-muted" data-testid="dashboard-language">Learning <strong lang={lang}>{LANG_INFO[lang].native}</strong></p><LanguageSwitch lang={lang} onSwitch={onSwitchLanguage} /></div>
     <StreakBadge streak={streak.streak} practisedToday={streak.practisedToday} />
     <SyncStatus snapshot={snapshot} guest={!signedIn} onRetry={() => void store.sync()} />
 
     {snapshot.notices.map(notice => <p key={notice.id} role="status" className="flex items-start justify-between gap-3 rounded-2xl bg-accent/10 px-4 py-3 text-sm"><span>{notice.text}</span><button type="button" aria-label="Dismiss notice" className="text-muted" onClick={() => store.dismissNotice(notice.id)}>✕</button></p>)}
     {message && <p role="status" className="flex items-start justify-between gap-3 rounded-2xl bg-surface px-4 py-3 text-sm"><span>{message}</span><button type="button" aria-label="Dismiss message" className="text-muted" onClick={() => setMessage(null)}>✕</button></p>}
 
-    {legacy.found && <section aria-label="Earlier practice" className="rounded-2xl border border-border bg-surface p-4 text-sm" data-testid="legacy-banner">
+    {lang === 'nl' && legacy.found && <section aria-label="Earlier practice" className="rounded-2xl border border-border bg-surface p-4 text-sm" data-testid="legacy-banner">
       <p className="font-semibold">Practice sessions are now saved.</p>
       <p className="mt-1 text-muted">{legacy.practice ? `We found an earlier flashcard set of ${legacy.practice.cardIds.length} sentences. You can keep it as a saved session.` : 'Your earlier unfinished practice is replaced by saved sessions. Your card levels are unchanged.'}</p>
       <div className="mt-3 flex gap-2">{legacy.practice && <button type="button" className={primary} onClick={importLegacy}>Keep as a session</button>}<button type="button" className={button} onClick={dismissLegacy}>{legacy.practice ? 'No thanks' : 'OK'}</button></div>
@@ -91,15 +102,17 @@ export function SessionsDashboard({ store, snapshot, reviews, signedIn, streak, 
       <button type="button" className={`${primary} mt-3`} onClick={importGuest}>Import guest sessions</button>
     </section>}
 
+    {elsewhere > 0 && <p className="flex flex-wrap items-center gap-2 rounded-2xl bg-surface px-4 py-3 text-xs" data-testid="other-language-sessions"><span>{showAll ? 'Showing sessions in every language.' : `You also have ${elsewhere} ${elsewhere === 1 ? 'session' : 'sessions'} in another language (${otherActive.length} active).`}</span><button type="button" className="font-semibold text-accent underline" onClick={() => setShowAll(value => !value)}>{showAll ? `Show only ${LANG_INFO[lang].english}` : 'Show all sessions'}</button></p>}
+
     {last && <Link href={sessionUrl(last.id, snapshot.lastOpened!.mode)} className={`${primary} block text-center`} data-testid="continue">Continue: {last.name} · {snapshot.lastOpened!.mode}</Link>}
 
     <section aria-label="Create" className="flex flex-col gap-2">
       <button type="button" className={last ? button : primary} onClick={() => setCreating(true)} disabled={full}>Create session</button>
-      {full && <p className="text-xs text-muted" data-testid="limit-hint">You have {MAX_ACTIVE_SESSIONS} active sessions. Finish one (complete Speaking and the Quiz) or delete one to create another.</p>}
+      {full && <p className="text-xs text-muted" data-testid="limit-hint">You have {MAX_ACTIVE_SESSIONS} active sessions across all languages{otherActive.length ? ` (${allActive.length - otherActive.length} in ${LANG_INFO[lang].english}, ${otherActive.length} in other languages)` : ''}. Finish one (complete Speaking and the Quiz) or delete one to create another.</p>}
     </section>
 
     <div className="grid grid-cols-2 gap-2" role="group" aria-label="Sessions">
-      <button type="button" aria-pressed={tab === 'active'} onClick={() => setTab('active')} className={`${button} ${tab === 'active' ? 'border-accent bg-accent text-white' : ''}`}>Active ({active.length - localOnly}/{MAX_ACTIVE_SESSIONS}{localOnly ? ` + ${localOnly} on this device only` : ''})</button>
+      <button type="button" aria-pressed={tab === 'active'} onClick={() => setTab('active')} className={`${button} ${tab === 'active' ? 'border-accent bg-accent text-white' : ''}`}>Active ({showAll || !otherActive.length ? `${active.length - localOnly}/${MAX_ACTIVE_SESSIONS}` : `${active.length - localOnly} · ${allActive.length}/${MAX_ACTIVE_SESSIONS} in all languages`}{localOnly ? ` + ${localOnly} on this device only` : ''})</button>
       <button type="button" aria-pressed={tab === 'completed'} onClick={() => setTab('completed')} className={`${button} ${tab === 'completed' ? 'border-accent bg-accent text-white' : ''}`}>Completed ({completed.length})</button>
     </div>
 
@@ -112,13 +125,13 @@ export function SessionsDashboard({ store, snapshot, reviews, signedIn, streak, 
 
     <hr className="border-border" />
     <section aria-label="Card levels" className="flex flex-col gap-3">
-      <h2 className="text-lg font-bold">Your card levels</h2>
+      <h2 className="text-lg font-bold">Your {LANG_INFO[lang].english} card levels</h2>
       <p className="text-xs text-muted">Levels belong to the sentences, not to a session. They only change when you rate a card in Speaking. {levelsStatus}</p>
       <LevelBar counts={levelCounts} />
       {guestLevelsAvailable && <button type="button" className={button} onClick={onCopyGuestLevels}>Copy my guest card levels to this account</button>}
     </section>
 
-    {creating && <CreateSessionDialog reviews={reviews} activeCount={active.length} onCreate={handleCreate} onClose={() => setCreating(false)} />}
+    {creating && <CreateSessionDialog lang={lang} reviews={reviews} activeCount={allActive.length} onCreate={handleCreate} onClose={() => setCreating(false)} />}
     {deleting && <Modal title="Delete this session?" onClose={() => setDeleting(null)}>
       <p className="mt-3 text-sm"><strong>{deleting.name}</strong> and its session progress (Speaking and Quiz counters, points, Study position) will be removed.</p>
       <p className="mt-2 text-sm text-muted">Your card levels (Difficult, Medium, Easy, Mastered) stay as they are, and your other sessions are not affected.</p>
@@ -133,4 +146,4 @@ export function SessionsDashboard({ store, snapshot, reviews, signedIn, streak, 
   </div>;
 }
 
-export { DASHBOARD_URL };
+export { DASHBOARD_URL, withLang };

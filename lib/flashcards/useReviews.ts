@@ -5,21 +5,26 @@ import { mergeReviews, rateLevel, type Reviews, type Review } from './engine';
 import { masteredTotal, milestoneCrossed } from './milestones';
 import { reviewsSchema } from './validation';
 import type { LevelEffect } from '@/lib/sessions/types';
+import { DEFAULT_LANG, type Lang } from '@/lib/lang';
 
 // v2 keys: the earlier rating-based flashcard data used a different shape and is ignored.
-const GUEST_KEY = 'dutchtap:flashcards:v2:guest';
+// Dutch keeps its original keys; every other language has its own, so levels are never shared across languages or people.
+const guestKey = (lang: Lang) => (lang === DEFAULT_LANG ? 'dutchtap:flashcards:v2:guest' : `dutchtap:flashcards:v2:${lang}:guest`);
+const userKey = (lang: Lang, username: string) => (lang === DEFAULT_LANG ? `dutchtap:flashcards:v2:user:${username.toLowerCase()}` : `dutchtap:flashcards:v2:${lang}:user:${username.toLowerCase()}`);
+const api = (lang: Lang) => (lang === DEFAULT_LANG ? '/api/flashcards' : `/api/flashcards?lang=${lang}`);
 export const readLocal = (key: string): Reviews => {
   try { const parsed = reviewsSchema.safeParse(JSON.parse(localStorage.getItem(key) || '{}')); return parsed.success ? parsed.data : {}; } catch { return {}; }
 };
 
-/** Loads and saves the learner's global card levels: on this device, plus the account when signed in. */
-export function useReviews() {
+const EMPTY: Reviews = {};
+/** Loads and saves the learner's global card levels for ONE language: on this device, plus the account when signed in. */
+export function useReviews(lang: Lang = DEFAULT_LANG) {
   const { account, loading } = useAccount();
   const [reviews, setReviews] = useState<Reviews>({});
-  const [ready, setReady] = useState(false);
+  const [loadedKey, setLoadedKey] = useState<string | null>(null);
   const [status, setStatus] = useState('Loading progress…');
   const [guestAvailable, setGuestAvailable] = useState(false);
-  const storageKey = account ? `dutchtap:flashcards:v2:user:${account.username.toLowerCase()}` : GUEST_KEY;
+  const storageKey = account ? userKey(lang, account.username) : guestKey(lang);
   const latest = useRef<Reviews>({});
   const key = useRef(storageKey);
   useEffect(() => { key.current = storageKey; }, [storageKey]);
@@ -28,13 +33,13 @@ export function useReviews() {
     if (loading) return;
     let cancelled = false;
     async function load() {
-      setReady(false);
+      setLoadedKey(null);
       const local = readLocal(storageKey);
       let next = local;
       let message = account ? 'Saved on this device · sync unavailable' : 'Saved on this device';
       if (account) {
         try {
-          const response = await fetch('/api/flashcards');
+          const response = await fetch(api(lang));
           if (!response.ok) throw new Error();
           const parsed = reviewsSchema.safeParse((await response.json()).reviews);
           if (!parsed.success) throw new Error();
@@ -43,11 +48,11 @@ export function useReviews() {
       }
       if (cancelled) return;
       latest.current = next;
-      setReviews(next); setStatus(message); setReady(true);
-      setGuestAvailable(!!account && Object.keys(readLocal(GUEST_KEY)).length > 0);
+      setReviews(next); setStatus(message); setLoadedKey(storageKey);
+      setGuestAvailable(!!account && Object.keys(readLocal(guestKey(lang))).length > 0);
     }
     void load(); return () => { cancelled = true; };
-  }, [loading, account, storageKey]);
+  }, [loading, account, storageKey, lang]);
 
   const store = useCallback((next: Reviews) => {
     latest.current = next; setReviews(next);
@@ -62,13 +67,13 @@ export function useReviews() {
       try {
         const records = (changed ?? Object.keys(next)).map(id => next[id]).filter(Boolean);
         if (records.length) {
-          const response = await fetch('/api/flashcards', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ records }) });
+          const response = await fetch('/api/flashcards', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lang, records }) });
           if (!response.ok) throw new Error();
         }
         setStatus(stored ? 'Saved & synced' : 'Synced to account');
       } catch { setStatus(stored ? 'Saved locally · sync failed; use Retry sync' : 'Saving failed · keep this page open and retry'); }
     }
-  }, [account, store]);
+  }, [account, store, lang]);
 
   /**
    * Applies Speaking ratings to the global levels on this device. The account copy is updated by the session
@@ -77,17 +82,19 @@ export function useReviews() {
   const applyEffects = useCallback((effects: LevelEffect[]): { crossed: number | null } => {
     const before = latest.current;
     let next = before;
-    for (const effect of effects) next = { ...next, [effect.cardId]: rateLevel(effect.cardId, next[effect.cardId], effect.level, new Date(effect.at)) };
+    for (const effect of effects.filter(e => e.lang === lang)) next = { ...next, [effect.cardId]: rateLevel(effect.cardId, next[effect.cardId], effect.level, new Date(effect.at)) };
     store(next);
     return { crossed: milestoneCrossed(masteredTotal(before), masteredTotal(next)) };
-  }, [store]);
+  }, [store, lang]);
 
-  /** Merges account records returned by the server (newer wins). */
-  const mergeServer = useCallback((records: Record<string, Review>) => { store(mergeReviews(latest.current, records)); }, [store]);
+  /** Merges account records returned by the server (newer wins). Records of another language are not ours to merge. */
+  const mergeServer = useCallback((from: Lang, records: Record<string, Review>) => { if (from === lang) store(mergeReviews(latest.current, records)); }, [store, lang]);
 
   const copyGuest = useCallback(() => {
-    const merged = mergeReviews(latest.current, readLocal(GUEST_KEY));
-    void persist(merged, Object.keys(readLocal(GUEST_KEY))); setGuestAvailable(false);
-  }, [persist]);
-  return { account, reviews, ready, status, persist, applyEffects, mergeServer, guestAvailable, copyGuest, scopeKey: storageKey };
+    const merged = mergeReviews(latest.current, readLocal(guestKey(lang)));
+    void persist(merged, Object.keys(readLocal(guestKey(lang)))); setGuestAvailable(false);
+  }, [persist, lang]);
+  // Levels belong to one language: until this language's levels are loaded, nothing from another language is shown.
+  const ready = loadedKey === storageKey;
+  return { account, reviews: ready ? reviews : EMPTY, ready, status, persist, applyEffects, mergeServer, guestAvailable, copyGuest, scopeKey: storageKey };
 }

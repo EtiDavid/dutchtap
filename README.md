@@ -50,7 +50,7 @@ multi-stage build using Next.js's `output: "standalone"` mode (see
 | `npm run test:flashcards` | Isolated browser tests for sessions (account endpoints served in memory, never Atlas). Set `E2E_PORT=3100` if port 3000 is taken |
 | `npm run test:sessions-db` | Session server logic against a real **local** MongoDB (`docker run -d -p 127.0.0.1:27018:27017 mongo:7`); refuses non-local databases |
 | `npm run test:prod` | Builds the app and checks the production service worker |
-| `npm run assets:flashcards -- --complete` | Confirms all 300 pictures and recordings exist |
+| `npm run assets:flashcards -- --complete` | Confirms all 600 pictures and recordings exist |
 
 ## Environment variables
 
@@ -66,7 +66,7 @@ See [.env.example](.env.example). Only two are used:
 - [docs/CONTENT_AUDIT.md](docs/CONTENT_AUDIT.md) — noun/adjective bank verification
 - [docs/FLASHCARDS.md](docs/FLASHCARDS.md) — sessions, flashcards, quiz, levels and audio generation
 - [docs/STAGE-1-HANDOVER.md](docs/STAGE-1-HANDOVER.md) — session engine, API and storage contracts, rules, tests, how to add content
-- [docs/GRAMMAR-COVERAGE.md](docs/GRAMMAR-COVERAGE.md) — which practised grammar patterns the 300 sentences cover, gaps and proposals
+- [docs/GRAMMAR-COVERAGE.md](docs/GRAMMAR-COVERAGE.md) — which practised grammar patterns the first 300 sentences cover (not yet re-audited for the 600), gaps and proposals
 - [docs/word-assets/CHATGPT-INSTRUCTIONS.md](docs/word-assets/CHATGPT-INSTRUCTIONS.md) — adding pictures and sounds to words
 - [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) — Vercel + Atlas + custom domain steps
 

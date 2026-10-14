@@ -2,6 +2,9 @@
 import { notesFor } from '@/lib/grammarNotes';
 import { breakdownFor, hasForms, patternOf } from '@/lib/grammarBreakdowns';
 import { useCardAudio } from '@/lib/flashcards/useCardAudio';
+import { CARDS } from '@/lib/flashcards/engine';
+
+const ADAPTED = new Set(CARDS.filter(card => card.adapted).map(card => card.id));
 
 const heading = 'mt-4 text-xs font-semibold uppercase tracking-wide text-muted';
 
@@ -17,6 +20,7 @@ export function GrammarNotes({ cardId, variation, defaultOpen = false }: { cardI
     {breakdown && <section aria-label="Sentence breakdown" data-testid="breakdown">
       <h3 className={heading}>Sentence breakdown</h3>
       <p className="mt-2 text-sm">{breakdown.meaning}</p>
+      {ADAPTED.has(cardId) && <p className="mt-2 text-xs text-muted" data-testid="adapted-note">Adapted: this sentence is reworded from the source video to fit a clear everyday situation. It has not been checked by a native speaker.</p>}
       <p className="mt-2 text-xs text-muted" data-testid="breakdown-pattern">Pattern: {patternOf(breakdown)}</p>
       <ol className="mt-2 flex flex-wrap gap-2" aria-label="This sentence, part by part">
         {breakdown.parts.map((part, index) => <li key={index} className="rounded-xl border border-border bg-surface px-3 py-2">

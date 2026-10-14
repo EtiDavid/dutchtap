@@ -1,7 +1,8 @@
 # Daily Dutch — speaking flashcards
 
-300 A1/A2-oriented sentences: the preserved original 50 plus 250 reviewed
-additions extracted from the two supplied source videos. Every card has a situation,
+600 A1/A2-oriented sentences: the preserved original 50, 250 reviewed
+additions extracted from the two supplied source videos, and a second set of 300
+(`work-31` to `work-330`, see [STAGE-2-HANDOVER.md](STAGE-2-HANDOVER.md)). Every card has a situation,
 English meaning, a short pattern explanation and a variation. Individual editorial
 illustrations depict each sentence and share the established visual style. This complements the frozen Nova Dutch Academy
 curriculum; self-ratings do not promote a formal grammar module.
@@ -124,7 +125,7 @@ sessions keep their history, stay open for Study, free an active slot, and are n
 ## Vocabulary
 
 `/vocabulary` is a text-only browser linked from Home and sentence cards. It
-contains 163 reviewed words and expressions linked to the 300-card deck.
+contains 441 reviewed words and expressions linked to the 600-card deck.
 Search uses Dutch headwords, English meanings and Dutch explanations; filters
 cover place and word type. Nouns include articles and plurals when appropriate,
 and separable/reflexive verbs include useful forms. Every example links to an
@@ -164,7 +165,7 @@ speech service is used by the deployed app.
 * `npm run test:flashcards`: browser tests (mobile and desktop widths) with account endpoints served by the real server
   logic in memory; never Atlas. Use `E2E_PORT=3100` if another dev server already uses port 3000.
 * `npm run test:prod`: builds the app and checks the production service worker (offline visits, old-cache removal).
-* `npm run assets:flashcards -- --complete`: confirms all 300 pictures and recordings exist.
+* `npm run assets:flashcards -- --complete`: confirms all 600 pictures and recordings exist.
 
 Live ElevenLabs generation and real Atlas syncing are not covered by automated tests.
 

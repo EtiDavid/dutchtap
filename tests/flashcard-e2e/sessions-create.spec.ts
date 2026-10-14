@@ -25,7 +25,7 @@ test.describe('the session dashboard and the create dialog', () => {
     await expect(dialog.getByLabel('Place (topic)')).toHaveValue('all');
     await expect(dialog.getByRole('button', { name: '10', exact: true })).toHaveAttribute('aria-pressed', 'true');
     await expect(dialog.getByRole('radio', { name: /Difficult/ })).toHaveAttribute('aria-checked', 'true');
-    await expect(dialog.getByRole('radio', { name: /Difficult/ })).toContainText('300 cards'); // cards without a record are Difficult
+    await expect(dialog.getByRole('radio', { name: /Difficult/ })).toContainText('600 cards'); // cards without a record are Difficult
     for (const level of ['Medium', 'Easy', 'Mastered']) {
       await expect(dialog.getByRole('radio', { name: new RegExp(level) })).toBeDisabled();
       await expect(dialog.getByRole('radio', { name: new RegExp(level) })).toContainText('0 cards');

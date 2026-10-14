@@ -1,15 +1,17 @@
 import rawCards from '@/data/flashcards.json';
 import additions from '@/data/flashcard-additions.json';
+import moreAdditions from '@/data/flashcard-additions-2.json';
 export type Card = typeof rawCards[number] & {
   difficulty?: string;
   source?: { videoId: string; timestampSeconds: number };
   vocabularyIds?: string[];
   imageStatus?: string;
   audioStatus?: string;
+  adapted?: boolean;
   quizMode?: string;
   quizBlank?: { index: number; acceptedAnswers: string[]; distractors: string[] };
 };
-export const CARDS: Card[] = [...rawCards, ...additions];
+export const CARDS: Card[] = [...rawCards, ...additions, ...moreAdditions];
 export const CATEGORIES = { shopping: 'Shopping', school: 'School', transport: 'Train & transport', home: 'Home', conversation: 'Conversation', administration: 'Administration', weather: 'Weather', food: 'Food & cafés', work: 'Work', health: 'Health', leisure: 'Leisure' };
 
 // How well the learner knows a card. New cards start as "difficult".

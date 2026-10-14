@@ -12,9 +12,9 @@ const normalise = (text: string) => text.toLocaleLowerCase('nl').replace(/[^\p{L
 describe('250 reviewed additions', () => {
   it('adds exactly 250 distinct sentences to the protected originals', () => {
     expect(additions).toHaveLength(250);
-    expect(CARDS).toHaveLength(300);
-    expect(new Set(CARDS.map(card => card.id)).size).toBe(300);
-    expect(new Set(CARDS.map(card => normalise(card.dutch))).size).toBe(300);
+    expect(CARDS).toHaveLength(600);
+    expect(new Set(CARDS.map(card => card.id)).size).toBe(600);
+    expect(new Set(CARDS.map(card => normalise(card.dutch))).size).toBe(600);
     expect(additions.filter(card => card.source.videoId === 'local-video-1')).toHaveLength(100);
     expect(additions.filter(card => card.source.videoId === 'LZwfl7gBat8')).toHaveLength(150);
     for (const card of additions) {
@@ -34,8 +34,8 @@ describe('250 reviewed additions', () => {
   });
   it('keeps one unique prompt and asset filename per sentence, with honest readiness', () => {
     expect(prompts).toHaveLength(250);
-    expect(new Set(CARDS.map(card => card.image)).size).toBe(300);
-    expect(new Set(CARDS.map(card => card.audio)).size).toBe(300);
+    expect(new Set(CARDS.map(card => card.image)).size).toBe(600);
+    expect(new Set(CARDS.map(card => card.audio)).size).toBe(600);
     for (const card of additions) {
       expect(card.image).toBe(`/illustrations/cards/${card.id}.webp`);
       expect(card.audio).toBe(`/audio/flashcards/${card.id}.mp3`);

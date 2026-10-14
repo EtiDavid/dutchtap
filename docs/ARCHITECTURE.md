@@ -46,6 +46,22 @@ Full contracts and rules are in [STAGE-1-HANDOVER.md](STAGE-1-HANDOVER.md); the 
   rating updates exactly one level record.
 * **Service worker** (`public/sw.js`): network-first pages so deployments reach returning users, with offline fallback.
 
+## Learning languages (`lib/lang`, `lib/content`, `lib/speech`, `data/fr`)
+
+DutchTap teaches Dutch and French in the same persistent-session app. Full detail is in [FRENCH-HANDOVER.md](FRENCH-HANDOVER.md).
+
+* **Shared situations, language-specific content.** Card ids, topics, scenarios, cues and the 600 pictures are shared. Sentence text, meaning,
+  variation, grammar note, breakdown and vocabulary are per language. Everything resolves through `cardFor(lang, id)` in `lib/content/cards.ts`.
+* **A session has one immutable `lang`.** Stored sessions without `lang` are legacy Dutch (`nl`); a malformed `lang` is rejected. Progress, levels,
+  streaks and milestones are scoped by user *and* language. The five-active-session limit counts across languages (partial unique index
+  `(userId, slot)` is unchanged).
+* **Storage.** Dutch reviews stay in `flashcardReviews` and `dutchtap:flashcards:v2:*`; French uses `flashcardReviews_fr` and `dutchtap:flashcards:v2:fr:*`.
+  The API takes `?lang=` / `lang` (absent = `nl`, invalid = 400). No existing document or index is changed.
+* **URLs.** `?lang=fr` selects French on listing pages; Dutch URLs are unchanged. Session and sentence pages use the session's own language.
+* **French speech** is the browser's device voice only (`lib/speech`): fr-BE, then fr-FR, then any `fr`. A Dutch or English voice is never used for
+  French. There are no French recordings and no microphone access.
+* **Rollback.** Remove (or archive) French sessions before rolling back to a build without `lang`; Dutch data is untouched.
+
 ## Why the vocabulary isn't in MongoDB
 
 The noun/adjective bank (`data/nouns.ts`, `data/adjectives.ts`) is

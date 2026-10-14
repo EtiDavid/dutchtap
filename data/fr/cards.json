@@ -117,7 +117,7 @@
    "chercher",
    "cadeau",
    "copine",
-   "ma"
+   "mon"
   ],
   "register": "vous"
  },
@@ -323,5 +323,7309 @@
    "arriver"
   ],
   "register": "neutral"
+ },
+ {
+  "id": "transport-06",
+  "text": "Est-ce que cette place est libre ?",
+  "english": "Is this seat free?",
+  "variation": "Est-ce que cette place-là est libre ?",
+  "variationEnglish": "Is that seat free?",
+  "vocabularyIds": [
+   "place",
+   "libre",
+   "est-ce-que",
+   "ce"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "transport-07",
+  "text": "Mon train a dix minutes de retard.",
+  "english": "My train is ten minutes delayed.",
+  "variation": "Mon train a cinq minutes de retard.",
+  "variationEnglish": "My train is five minutes late.",
+  "vocabularyIds": [
+   "avoir-du-retard",
+   "minute",
+   "train"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-08",
+  "text": "Où puis-je acheter mon billet ?",
+  "english": "Where can I buy my ticket?",
+  "variation": "Où puis-je acheter un billet ?",
+  "variationEnglish": "Where can I buy a ticket?",
+  "vocabularyIds": [
+   "acheter",
+   "billet"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "transport-09",
+  "text": "Je descends à l’arrêt suivant.",
+  "english": "I am getting off at the next stop.",
+  "variation": "Je descends ici.",
+  "variationEnglish": "I am getting off here.",
+  "vocabularyIds": [
+   "descendre",
+   "arret",
+   "suivant"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-10",
+  "text": "Pouvez-vous m’aider avec mes bagages ?",
+  "english": "Can you help me with my luggage?",
+  "variation": "Pouvez-vous m’aider avec mon billet ?",
+  "variationEnglish": "Can you help me with my ticket?",
+  "vocabularyIds": [
+   "aider",
+   "bagage",
+   "me"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "home-01",
+  "text": "Où sont mes clés ?",
+  "english": "Where are my keys?",
+  "variation": "Où est mon téléphone ?",
+  "variationEnglish": "Where is my phone?",
+  "vocabularyIds": [
+   "ou-adv",
+   "cle",
+   "mon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-02",
+  "text": "Je suis en train de cuisiner.",
+  "english": "I am cooking.",
+  "variation": "Je suis en train de manger.",
+  "variationEnglish": "I am eating.",
+  "vocabularyIds": [
+   "cuisiner",
+   "en-train-de"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-03",
+  "text": "As-tu fermé la porte à clé ?",
+  "english": "Have you locked the door?",
+  "variation": "As-tu fermé la fenêtre ?",
+  "variationEnglish": "Have you closed the window?",
+  "vocabularyIds": [
+   "fermer",
+   "porte",
+   "a-cle"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-04",
+  "text": "J’ai déjà fait la vaisselle.",
+  "english": "I have already washed the dishes.",
+  "variation": "J’ai déjà fait la lessive.",
+  "variationEnglish": "I have already done the laundry.",
+  "vocabularyIds": [
+   "faire",
+   "vaisselle",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-05",
+  "text": "Peux-tu ouvrir la fenêtre ?",
+  "english": "Can you open the window?",
+  "variation": "Peux-tu ouvrir la porte ?",
+  "variationEnglish": "Can you open the door?",
+  "vocabularyIds": [
+   "ouvrir",
+   "fenetre",
+   "pouvoir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-06",
+  "text": "C’est ta tasse.",
+  "english": "This is your cup.",
+  "variation": "C’est ma tasse.",
+  "variationEnglish": "This is my cup.",
+  "vocabularyIds": [
+   "tasse",
+   "ton",
+   "cest"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-07",
+  "text": "Après le travail, je rentre à vélo.",
+  "english": "After work I cycle home.",
+  "variation": "Après l’école, je rentre à vélo.",
+  "variationEnglish": "After school I cycle home.",
+  "vocabularyIds": [
+   "rentrer",
+   "travail",
+   "velo"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-08",
+  "text": "Il y a du lait dans le frigo.",
+  "english": "There is milk in the fridge.",
+  "variation": "Il y a de l’eau dans le frigo.",
+  "variationEnglish": "There is water in the fridge.",
+  "vocabularyIds": [
+   "il-y-a",
+   "lait",
+   "frigo"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-09",
+  "text": "Je range ma chambre.",
+  "english": "I am tidying my room.",
+  "variation": "Je range la cuisine.",
+  "variationEnglish": "I am tidying the kitchen.",
+  "vocabularyIds": [
+   "ranger",
+   "chambre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-10",
+  "text": "On mange ensemble ?",
+  "english": "Shall we eat together?",
+  "variation": "On cuisine ensemble ?",
+  "variationEnglish": "Shall we cook together?",
+  "vocabularyIds": [
+   "on",
+   "manger",
+   "ensemble"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-01",
+  "text": "Je parle un peu français.",
+  "english": "I speak a little French.",
+  "variation": "Je comprends un peu le français.",
+  "variationEnglish": "I understand a little French.",
+  "vocabularyIds": [
+   "parler",
+   "un-peu",
+   "francais"
+  ],
+  "register": "neutral",
+  "scenario": "You meet someone new. Tell them you speak a little French.",
+  "cue": "You meet someone new. Tell them you speak a little French.",
+  "note": "Scenario reworded: the Dutch card says Dutch; French learners say French."
+ },
+ {
+  "id": "conversation-02",
+  "text": "Peux-tu parler un peu plus lentement ?",
+  "english": "Can you speak a little more slowly?",
+  "variation": "Peux-tu parler un peu plus fort ?",
+  "variationEnglish": "Can you speak a little louder?",
+  "vocabularyIds": [
+   "lentement",
+   "parler",
+   "plus"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-03",
+  "text": "Comment vas-tu ?",
+  "english": "How are you?",
+  "variation": "Comment allez-vous ?",
+  "variationEnglish": "How are you? (formal)",
+  "vocabularyIds": [
+   "comment",
+   "aller"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-04",
+  "text": "J’habite à Roeselare.",
+  "english": "I live in Roeselare.",
+  "variation": "J’habite à Bruges.",
+  "variationEnglish": "I live in Bruges.",
+  "vocabularyIds": [
+   "habiter",
+   "a-ville"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-05",
+  "text": "D’où viens-tu ?",
+  "english": "Where are you from?",
+  "variation": "D’où venez-vous ?",
+  "variationEnglish": "Where are you from? (formal)",
+  "vocabularyIds": [
+   "d-ou",
+   "venir"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-06",
+  "text": "As-tu du temps demain ?",
+  "english": "Do you have time tomorrow?",
+  "variation": "As-tu du temps aujourd’hui ?",
+  "variationEnglish": "Do you have time today?",
+  "vocabularyIds": [
+   "avoir",
+   "temps",
+   "demain"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-07",
+  "text": "Je ne peux pas venir aujourd’hui.",
+  "english": "I cannot come today.",
+  "variation": "Je ne peux pas venir demain.",
+  "variationEnglish": "I cannot come tomorrow.",
+  "vocabularyIds": [
+   "pouvoir",
+   "venir",
+   "aujourd-hui"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-08",
+  "text": "On se retrouve à trois heures ?",
+  "english": "Shall we meet at three o’clock?",
+  "variation": "On se retrouve à quatre heures ?",
+  "variationEnglish": "Shall we meet at four o’clock?",
+  "vocabularyIds": [
+   "se-retrouver",
+   "heure"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-09",
+  "text": "Je suis fatigué, mais je me sens bien.",
+  "english": "I am tired, but I feel good.",
+  "variation": "Je suis occupé, mais je me sens bien.",
+  "variationEnglish": "I am busy, but I feel good.",
+  "vocabularyIds": [
+   "fatigue",
+   "se-sentir",
+   "bien",
+   "mais"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-10",
+  "text": "Merci pour ton aide.",
+  "english": "Thank you for your help.",
+  "variation": "Merci pour votre aide.",
+  "variationEnglish": "Thank you for your help. (formal)",
+  "vocabularyIds": [
+   "merci",
+   "aide",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-11",
+  "text": "Il s’inquiète de perdre ses clés.",
+  "english": "He is worried about losing his keys.",
+  "variation": "Je m’inquiète pour mes clés.",
+  "variationEnglish": "I am worried about my keys.",
+  "vocabularyIds": [
+   "s-inquieter",
+   "perdre",
+   "cle"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "administration-01",
+  "text": "Quel est le taux de change actuel ?",
+  "english": "What is the current exchange rate?",
+  "variation": "Quel est le prix actuel ?",
+  "variationEnglish": "What is the current price?",
+  "vocabularyIds": [
+   "quel",
+   "taux-de-change",
+   "actuel"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "shopping-11",
+  "text": "Je paie avec ma carte de crédit.",
+  "english": "I am paying with my credit card.",
+  "variation": "Je paie avec ma carte bancaire.",
+  "variationEnglish": "I am paying with my bank card.",
+  "vocabularyIds": [
+   "payer",
+   "carte-de-credit",
+   "mon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-01",
+  "text": "Il y a beaucoup de brouillard.",
+  "english": "It is very foggy.",
+  "variation": "Il y a beaucoup de soleil.",
+  "variationEnglish": "It is very sunny.",
+  "vocabularyIds": [
+   "il-y-a",
+   "beaucoup-de",
+   "brouillard"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-01",
+  "text": "J’avais déjà cuit le pain.",
+  "english": "I had already baked the bread.",
+  "variation": "J’avais déjà cuit le gâteau.",
+  "variationEnglish": "I had already baked the cake.",
+  "vocabularyIds": [
+   "cuire",
+   "pain",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-01",
+  "text": "Je vérifie le stock.",
+  "english": "I am checking the stock.",
+  "variation": "Je vérifie la commande.",
+  "variationEnglish": "I am checking the order.",
+  "vocabularyIds": [
+   "verifier",
+   "stock"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "health-01",
+  "text": "Se reposer te fait du bien.",
+  "english": "Resting is good for you.",
+  "variation": "Marcher te fait du bien.",
+  "variationEnglish": "Walking is good for you.",
+  "vocabularyIds": [
+   "se-reposer",
+   "faire-du-bien",
+   "bien-nom"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-12",
+  "text": "Quelle est votre opinion à ce sujet ?",
+  "english": "What is your opinion on this?",
+  "variation": "Quelle est votre opinion sur ce plan ?",
+  "variationEnglish": "What is your opinion on this plan?",
+  "vocabularyIds": [
+   "opinion",
+   "sujet",
+   "votre"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "conversation-13",
+  "text": "Où est-elle allée ?",
+  "english": "Where did she go?",
+  "variation": "Où est-il allé ?",
+  "variationEnglish": "Where did he go?",
+  "vocabularyIds": [
+   "aller",
+   "ou-adv"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-02",
+  "text": "Je rédigerai un rapport.",
+  "english": "I will prepare a report.",
+  "variation": "Je rédigerai un compte rendu.",
+  "variationEnglish": "I will write up a summary.",
+  "vocabularyIds": [
+   "rediger",
+   "rapport"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-11",
+  "text": "Ils cherchaient un appartement.",
+  "english": "They were looking for an apartment.",
+  "variation": "Ils cherchaient une maison.",
+  "variationEnglish": "They were looking for a house.",
+  "vocabularyIds": [
+   "chercher",
+   "appartement"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-03",
+  "text": "La réunion s’est terminée.",
+  "english": "The meeting ended.",
+  "variation": "Le cours s’est terminé.",
+  "variationEnglish": "The class ended.",
+  "vocabularyIds": [
+   "se-terminer",
+   "reunion"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-14",
+  "text": "Nous avons parlé pendant des heures.",
+  "english": "We talked for hours.",
+  "variation": "Nous nous sommes promenés pendant des heures.",
+  "variationEnglish": "We walked for hours.",
+  "vocabularyIds": [
+   "parler",
+   "pendant",
+   "heure"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-04",
+  "text": "Je vous tiens au courant.",
+  "english": "I will keep you informed.",
+  "variation": "Je te tiens au courant.",
+  "variationEnglish": "I will keep you informed. (informal)",
+  "vocabularyIds": [
+   "tenir-au-courant",
+   "vous"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "conversation-15",
+  "text": "Il est cinq heures et demie.",
+  "english": "It is half past five.",
+  "variation": "Il est six heures et demie.",
+  "variationEnglish": "It is half past six.",
+  "vocabularyIds": [
+   "heure",
+   "demi",
+   "il-est"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-02",
+  "text": "J’adore les journées ensoleillées.",
+  "english": "I love sunny days.",
+  "variation": "J’adore les journées chaudes.",
+  "variationEnglish": "I love warm days.",
+  "vocabularyIds": [
+   "adorer",
+   "journee",
+   "ensoleille"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-05",
+  "text": "Il a fini de lire le rapport.",
+  "english": "He has finished reading the report.",
+  "variation": "Il a fini d’écrire le rapport.",
+  "variationEnglish": "He has finished writing the report.",
+  "vocabularyIds": [
+   "finir",
+   "lire",
+   "rapport"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-16",
+  "text": "Auras-tu besoin d’aide ?",
+  "english": "Will you need help?",
+  "variation": "Auras-tu besoin d’aide demain ?",
+  "variationEnglish": "Will you need help tomorrow?",
+  "vocabularyIds": [
+   "avoir",
+   "avoir-besoin-de",
+   "aide"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-17",
+  "text": "Nous avons envie de rester.",
+  "english": "We feel like staying.",
+  "variation": "Nous avons envie de nous promener.",
+  "variationEnglish": "We feel like going for a walk.",
+  "vocabularyIds": [
+   "avoir-envie-de",
+   "rester"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-12",
+  "text": "Il a acheté un souvenir.",
+  "english": "He bought a souvenir.",
+  "variation": "Il a acheté un cadeau.",
+  "variationEnglish": "He bought a gift.",
+  "vocabularyIds": [
+   "acheter",
+   "souvenir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-03",
+  "text": "Nous vérifierons la météo.",
+  "english": "We will check the weather.",
+  "variation": "Nous vérifierons l’heure de départ.",
+  "variationEnglish": "We will check the departure time.",
+  "vocabularyIds": [
+   "verifier",
+   "meteo"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-18",
+  "text": "J’ai oublié ton nom.",
+  "english": "I have forgotten your name.",
+  "variation": "J’ai oublié ton adresse.",
+  "variationEnglish": "I have forgotten your address.",
+  "vocabularyIds": [
+   "oublier",
+   "nom",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "transport-11",
+  "text": "Peut-on y aller à pied ?",
+  "english": "Can you walk there?",
+  "variation": "Peut-on y aller à vélo ?",
+  "variationEnglish": "Can you cycle there?",
+  "vocabularyIds": [
+   "y",
+   "aller",
+   "a-pied"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-02",
+  "text": "Pourrais-je avoir un peu d’eau ?",
+  "english": "May I have some water?",
+  "variation": "Pourrais-je avoir un peu de café ?",
+  "variationEnglish": "May I have some coffee?",
+  "vocabularyIds": [
+   "pouvoir",
+   "avoir",
+   "eau"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-06",
+  "text": "J’y reviendrai.",
+  "english": "I will get back to you about it.",
+  "variation": "J’y reviendrai demain.",
+  "variationEnglish": "I will come back to it tomorrow.",
+  "vocabularyIds": [
+   "revenir",
+   "y"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-03",
+  "text": "Nous avons bu du café.",
+  "english": "We drank coffee.",
+  "variation": "Nous avons bu du thé.",
+  "variationEnglish": "We drank tea.",
+  "vocabularyIds": [
+   "boire",
+   "cafe"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-12",
+  "text": "Il est parti il y a une heure.",
+  "english": "He left an hour ago.",
+  "variation": "Il est parti il y a dix minutes.",
+  "variationEnglish": "He left ten minutes ago.",
+  "vocabularyIds": [
+   "partir",
+   "il-y-a-temps",
+   "heure"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-12",
+  "text": "Je préfère rester à la maison.",
+  "english": "I would rather stay at home.",
+  "variation": "Je préfère rester ici.",
+  "variationEnglish": "I would rather stay here.",
+  "vocabularyIds": [
+   "preferer",
+   "rester",
+   "maison"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-07",
+  "text": "Elle a nettoyé le bureau.",
+  "english": "She cleaned the desk.",
+  "variation": "Elle a nettoyé la table.",
+  "variationEnglish": "She cleaned the table.",
+  "vocabularyIds": [
+   "nettoyer",
+   "bureau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-19",
+  "text": "Cela semblait un peu étrange.",
+  "english": "It sounded somewhat strange.",
+  "variation": "Cela semblait très étrange.",
+  "variationEnglish": "It sounded very strange.",
+  "vocabularyIds": [
+   "sembler",
+   "etrange",
+   "un-peu"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "health-02",
+  "text": "J’ai besoin d’un médecin.",
+  "english": "I need a doctor.",
+  "variation": "J’ai besoin d’un rendez-vous.",
+  "variationEnglish": "I need an appointment.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "medecin"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-20",
+  "text": "Dis-moi si tu as besoin de quelque chose.",
+  "english": "Let me know if you need anything.",
+  "variation": "Dis-moi si tu as besoin d’aide.",
+  "variationEnglish": "Let me know if you need help.",
+  "vocabularyIds": [
+   "dire",
+   "avoir-besoin-de",
+   "quelque-chose"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "leisure-01",
+  "text": "Ils ont vu le film.",
+  "english": "They have seen the film.",
+  "variation": "Ils ont vu le spectacle.",
+  "variationEnglish": "They have seen the show.",
+  "vocabularyIds": [
+   "voir",
+   "film"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-08",
+  "text": "Je confirme les détails.",
+  "english": "I am confirming the details.",
+  "variation": "Je confirme le rendez-vous.",
+  "variationEnglish": "I am confirming the appointment.",
+  "vocabularyIds": [
+   "confirmer",
+   "detail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-09",
+  "text": "Elle est occupée à écrire un e-mail.",
+  "english": "She is busy writing an email.",
+  "variation": "Elle est occupée à écrire une lettre.",
+  "variationEnglish": "She is busy writing a letter.",
+  "vocabularyIds": [
+   "occupe",
+   "ecrire",
+   "e-mail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-21",
+  "text": "Je suis d’accord avec cela.",
+  "english": "I agree with that.",
+  "variation": "Je suis d’accord avec toi.",
+  "variationEnglish": "I agree with you.",
+  "vocabularyIds": [
+   "etre-d-accord",
+   "cela"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-02",
+  "text": "Avant, j’allais au cinéma.",
+  "english": "I used to go to the cinema.",
+  "variation": "Avant, j’allais au théâtre.",
+  "variationEnglish": "I used to go to the theatre.",
+  "vocabularyIds": [
+   "aller",
+   "avant",
+   "cinema"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-13",
+  "text": "Ils sont partis tôt.",
+  "english": "They left early.",
+  "variation": "Ils sont partis tard.",
+  "variationEnglish": "They left late.",
+  "vocabularyIds": [
+   "partir",
+   "tot"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-22",
+  "text": "C’est une excellente idée !",
+  "english": "That is a great idea!",
+  "variation": "C’est une bonne idée !",
+  "variationEnglish": "That is a good idea!",
+  "vocabularyIds": [
+   "idee",
+   "excellent",
+   "cest"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-23",
+  "text": "Cela vaut la peine d’essayer.",
+  "english": "It is worth a try.",
+  "variation": "Cela vaut la peine de regarder.",
+  "variationEnglish": "It is worth a look.",
+  "vocabularyIds": [
+   "valoir-la-peine",
+   "essayer"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-10",
+  "text": "Pouvons-nous travailler ensemble là-dessus ?",
+  "english": "Can we work together on this?",
+  "variation": "Pouvons-nous travailler ensemble sur ce projet ?",
+  "variationEnglish": "Can we work together on this project?",
+  "vocabularyIds": [
+   "travailler",
+   "ensemble",
+   "la-dessus"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-03",
+  "text": "Ils s’exercent à dessiner.",
+  "english": "They are practising their drawing skills.",
+  "variation": "Ils s’exercent à écrire.",
+  "variationEnglish": "They are practising their writing skills.",
+  "vocabularyIds": [
+   "s-exercer",
+   "dessiner"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-24",
+  "text": "Elle t’a téléphoné.",
+  "english": "She called you.",
+  "variation": "Elle m’a téléphoné.",
+  "variationEnglish": "She called me.",
+  "vocabularyIds": [
+   "telephoner",
+   "te"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-25",
+  "text": "J’ai rencontré de nouvelles personnes.",
+  "english": "I met new people.",
+  "variation": "J’ai rencontré des gens sympas.",
+  "variationEnglish": "I met nice people.",
+  "vocabularyIds": [
+   "rencontrer",
+   "personne",
+   "nouveau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-04",
+  "text": "Il va bientôt pleuvoir.",
+  "english": "It is about to rain.",
+  "variation": "Il va bientôt neiger.",
+  "variationEnglish": "It is about to snow.",
+  "vocabularyIds": [
+   "pleuvoir",
+   "bientot"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-13",
+  "text": "Il est responsable du rangement.",
+  "english": "He is responsible for tidying up.",
+  "variation": "Il est responsable du nettoyage.",
+  "variationEnglish": "He is responsible for cleaning.",
+  "vocabularyIds": [
+   "responsable",
+   "rangement"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-04",
+  "text": "J’ai bu une limonade.",
+  "english": "I drank a lemonade.",
+  "variation": "J’ai bu une tasse de thé.",
+  "variationEnglish": "I drank a cup of tea.",
+  "vocabularyIds": [
+   "boire",
+   "limonade"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-26",
+  "text": "Penser à toi me fait sourire.",
+  "english": "Thinking of you makes me smile.",
+  "variation": "Penser à elle me fait sourire.",
+  "variationEnglish": "Thinking of her makes me smile.",
+  "vocabularyIds": [
+   "penser-a",
+   "sourire",
+   "faire-sourire"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "home-14",
+  "text": "Je dois recharger mon téléphone.",
+  "english": "I need to charge my phone.",
+  "variation": "Je dois recharger mon ordinateur portable.",
+  "variationEnglish": "I need to charge my laptop.",
+  "vocabularyIds": [
+   "devoir",
+   "recharger",
+   "telephone"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "school-11",
+  "text": "Continue d’essayer jusqu’à ce que tu comprennes.",
+  "english": "Keep trying until you understand it.",
+  "variation": "Continue de t’entraîner jusqu’à ce que tu comprennes.",
+  "variationEnglish": "Keep practising until you understand it.",
+  "vocabularyIds": [
+   "continuer",
+   "essayer",
+   "jusqua-ce-que",
+   "comprendre"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-11",
+  "text": "Quelle est la date limite ?",
+  "english": "When is the deadline?",
+  "variation": "Quand a lieu la réunion ?",
+  "variationEnglish": "When is the meeting?",
+  "vocabularyIds": [
+   "date-limite",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-12",
+  "text": "Planifions un suivi.",
+  "english": "Let's schedule a follow-up.",
+  "variation": "Planifions une réunion.",
+  "variationEnglish": "Let's schedule a meeting.",
+  "vocabularyIds": [
+   "planifier",
+   "suivi"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-14",
+  "text": "Est-ce loin à pied ?",
+  "english": "Is it a long walk?",
+  "variation": "Est-ce loin à vélo ?",
+  "variationEnglish": "Is it far by bike?",
+  "vocabularyIds": [
+   "loin",
+   "a-pied"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-15",
+  "text": "C’est en face du parc.",
+  "english": "It is opposite the park.",
+  "variation": "C’est en face de la gare.",
+  "variationEnglish": "It is opposite the station.",
+  "vocabularyIds": [
+   "en-face-de",
+   "parc"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-13",
+  "text": "J’ai l’habitude de travailler de longues heures.",
+  "english": "I am used to working long hours.",
+  "variation": "J’ai l’habitude de commencer tôt.",
+  "variationEnglish": "I am used to starting early.",
+  "vocabularyIds": [
+   "avoir-lhabitude-de",
+   "travailler",
+   "heure"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "school-12",
+  "text": "Explique-le-moi.",
+  "english": "Explain it to me.",
+  "variation": "Explique-le-nous.",
+  "variationEnglish": "Explain it to us.",
+  "vocabularyIds": [
+   "expliquer",
+   "le"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "transport-16",
+  "text": "Où séjournerez-vous ?",
+  "english": "Where will you be staying?",
+  "variation": "Où passerez-vous la nuit ?",
+  "variationEnglish": "Where will you spend the night?",
+  "vocabularyIds": [
+   "sejourner",
+   "ou-adv"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "conversation-27",
+  "text": "J’avais déjà entendu cette histoire.",
+  "english": "I had heard that story before.",
+  "variation": "J’avais déjà entendu cette chanson.",
+  "variationEnglish": "I had already heard that song.",
+  "vocabularyIds": [
+   "entendre",
+   "histoire",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-28",
+  "text": "Que dois-je faire ?",
+  "english": "What should I do?",
+  "variation": "Que devons-nous faire ?",
+  "variationEnglish": "What should we do?",
+  "vocabularyIds": [
+   "que",
+   "devoir",
+   "faire"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-29",
+  "text": "Ça a l’air génial !",
+  "english": "That sounds great!",
+  "variation": "Ça a l’air sympa !",
+  "variationEnglish": "That sounds nice!",
+  "vocabularyIds": [
+   "avoir-lair",
+   "genial",
+   "ca"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-05",
+  "text": "Où as-tu mangé ?",
+  "english": "Where did you eat?",
+  "variation": "Où as-tu mangé à midi ?",
+  "variationEnglish": "Where did you eat at lunchtime?",
+  "vocabularyIds": [
+   "manger",
+   "ou-adv"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-30",
+  "text": "Nous avions déjà fait un choix.",
+  "english": "We had already made a choice.",
+  "variation": "Nous avions déjà fixé un rendez-vous.",
+  "variationEnglish": "We had already arranged an appointment.",
+  "vocabularyIds": [
+   "faire",
+   "choix",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-13",
+  "text": "Deux douzaines d’œufs.",
+  "english": "Two dozen eggs.",
+  "variation": "Une douzaine d’œufs.",
+  "variationEnglish": "One dozen eggs.",
+  "vocabularyIds": [
+   "douzaine",
+   "oeuf"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-14",
+  "text": "Fixons une nouvelle date limite.",
+  "english": "Let's set a new deadline.",
+  "variation": "Fixons une date limite réalisable.",
+  "variationEnglish": "Let's set a realistic deadline.",
+  "vocabularyIds": [
+   "fixer",
+   "nouveau",
+   "date-limite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "administration-02",
+  "text": "Faites-le-moi parvenir.",
+  "english": "Have it sent to me.",
+  "variation": "Faites-le-nous parvenir.",
+  "variationEnglish": "Have it sent to us.",
+  "vocabularyIds": [
+   "faire-parvenir",
+   "le"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "food-06",
+  "text": "J’ai envie de manger.",
+  "english": "I feel like eating.",
+  "variation": "J’ai envie de cuisiner.",
+  "variationEnglish": "I feel like cooking.",
+  "vocabularyIds": [
+   "avoir-envie-de",
+   "manger"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-15",
+  "text": "Nous avons parlé du projet.",
+  "english": "We talked about the project.",
+  "variation": "Nous avons parlé du planning.",
+  "variationEnglish": "We talked about the schedule.",
+  "vocabularyIds": [
+   "parler",
+   "projet"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-17",
+  "text": "Connaissez-vous ce quartier ?",
+  "english": "Do you know this neighbourhood?",
+  "variation": "Connaissez-vous cette rue ?",
+  "variationEnglish": "Do you know this street?",
+  "vocabularyIds": [
+   "connaitre",
+   "quartier"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "conversation-31",
+  "text": "Je suis tellement fier.",
+  "english": "I am so proud.",
+  "variation": "Je suis très fier.",
+  "variationEnglish": "I am very proud.",
+  "vocabularyIds": [
+   "fier",
+   "tellement"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-32",
+  "text": "Qu’est-ce que tu fais ?",
+  "english": "What are you doing?",
+  "variation": "Qu’est-ce que vous faites ?",
+  "variationEnglish": "What are you doing? (plural or formal)",
+  "vocabularyIds": [
+   "quest-ce-que",
+   "faire"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "leisure-04",
+  "text": "Nous avons hâte d’être en vacances.",
+  "english": "We are looking forward to the holiday.",
+  "variation": "Nous avons hâte d’être au week-end.",
+  "variationEnglish": "We are looking forward to the weekend.",
+  "vocabularyIds": [
+   "avoir-hate-de",
+   "etre",
+   "vacances"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-15",
+  "text": "J’avais déjà éteint les lumières.",
+  "english": "I had already turned off the lights.",
+  "variation": "J’avais déjà éteint la télévision.",
+  "variationEnglish": "I had already turned off the television.",
+  "vocabularyIds": [
+   "eteindre",
+   "lumiere"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-18",
+  "text": "Suivez cette rue.",
+  "english": "Walk down this street.",
+  "variation": "Suivez cette rue-là.",
+  "variationEnglish": "Follow that street.",
+  "vocabularyIds": [
+   "suivre",
+   "rue"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "shopping-14",
+  "text": "Je voudrais ceci.",
+  "english": "I would like this.",
+  "variation": "Je voudrais cela.",
+  "variationEnglish": "I would like that.",
+  "vocabularyIds": [
+   "vouloir",
+   "ceci"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "transport-19",
+  "text": "Y a-t-il du wifi gratuit ?",
+  "english": "Is there free Wi-Fi?",
+  "variation": "Y a-t-il du wifi gratuit ici ?",
+  "variationEnglish": "Is there free Wi-Fi here?",
+  "vocabularyIds": [
+   "il-y-a",
+   "wifi",
+   "gratuit"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "food-07",
+  "text": "J’ai essayé un nouveau plat.",
+  "english": "I tried a new dish.",
+  "variation": "J’ai essayé une nouvelle soupe.",
+  "variationEnglish": "I tried a new soup.",
+  "vocabularyIds": [
+   "essayer",
+   "nouveau",
+   "plat"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-08",
+  "text": "Puis-je voir la carte ?",
+  "english": "May I see the menu?",
+  "variation": "Puis-je voir la carte des vins ?",
+  "variationEnglish": "May I see the wine list?",
+  "vocabularyIds": [
+   "voir",
+   "carte-menu",
+   "pouvoir"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "weather-05",
+  "text": "Il fait très froid ici.",
+  "english": "It is very cold here.",
+  "variation": "Il fait très chaud ici.",
+  "variationEnglish": "It is very hot here.",
+  "vocabularyIds": [
+   "faire",
+   "froid",
+   "tres",
+   "ici"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-16",
+  "text": "Nous avions terminé le projet en avance.",
+  "english": "We had finished the project early.",
+  "variation": "Nous avions terminé la tâche en avance.",
+  "variationEnglish": "We had finished the task early.",
+  "vocabularyIds": [
+   "terminer",
+   "projet",
+   "en-avance"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-33",
+  "text": "Merci infiniment.",
+  "english": "Thank you very much.",
+  "variation": "Merci infiniment pour votre aide.",
+  "variationEnglish": "Thank you very much for your help.",
+  "vocabularyIds": [
+   "merci",
+   "infiniment"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-20",
+  "text": "Où est la gare ?",
+  "english": "Where is the train station?",
+  "variation": "Où est la gare routière ?",
+  "variationEnglish": "Where is the bus station?",
+  "vocabularyIds": [
+   "gare",
+   "ou-adv"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "food-09",
+  "text": "Allons prendre un café.",
+  "english": "Let's go and have a cup of coffee.",
+  "variation": "Allons prendre un thé.",
+  "variationEnglish": "Let's go and have a cup of tea.",
+  "vocabularyIds": [
+   "aller",
+   "prendre",
+   "cafe"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-34",
+  "text": "Il avait l’air très content.",
+  "english": "He seemed very happy.",
+  "variation": "Il avait l’air très fatigué.",
+  "variationEnglish": "He seemed very tired.",
+  "vocabularyIds": [
+   "avoir-lair",
+   "content"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-06",
+  "text": "Il y a eu un orage.",
+  "english": "There was a thunderstorm.",
+  "variation": "Il y a eu une tempête de neige.",
+  "variationEnglish": "There was a snowstorm.",
+  "vocabularyIds": [
+   "il-y-a",
+   "orage"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-10",
+  "text": "J’ai payé l’addition.",
+  "english": "I paid the bill.",
+  "variation": "J’ai payé le loyer.",
+  "variationEnglish": "I paid the rent.",
+  "vocabularyIds": [
+   "payer",
+   "addition"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-05",
+  "text": "À quelle fréquence t’entraînes-tu ?",
+  "english": "How often do you train?",
+  "variation": "À quelle fréquence te promènes-tu ?",
+  "variationEnglish": "How often do you go for a walk?",
+  "vocabularyIds": [
+   "a-quelle-frequence",
+   "s-entrainer"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-17",
+  "text": "Nous en discuterons à ce moment-là.",
+  "english": "We will discuss it then.",
+  "variation": "Nous en discuterons demain.",
+  "variationEnglish": "We will discuss it tomorrow.",
+  "vocabularyIds": [
+   "en-pronoun",
+   "discuter",
+   "a-ce-moment-la"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-06",
+  "text": "Allons courir.",
+  "english": "Let's go for a run.",
+  "variation": "Allons nous promener.",
+  "variationEnglish": "Let's go for a walk.",
+  "vocabularyIds": [
+   "aller",
+   "courir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-15",
+  "text": "Il est en train de fermer le magasin.",
+  "english": "He is busy closing the shop.",
+  "variation": "Il est en train de fermer la porte.",
+  "variationEnglish": "He is busy closing the door.",
+  "vocabularyIds": [
+   "en-train-de",
+   "fermer",
+   "magasin"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-18",
+  "text": "Nous envisageons d’ouvrir un magasin.",
+  "english": "We are thinking about opening a shop.",
+  "variation": "Nous envisageons d’ouvrir un café.",
+  "variationEnglish": "We are thinking about opening a café.",
+  "vocabularyIds": [
+   "envisager",
+   "ouvrir",
+   "magasin"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-16",
+  "text": "J’ai acheté ça hier.",
+  "english": "I bought this yesterday.",
+  "variation": "J’ai acheté ça la semaine dernière.",
+  "variationEnglish": "I bought this last week.",
+  "vocabularyIds": [
+   "acheter",
+   "hier",
+   "ca"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-35",
+  "text": "Peut-on se voir mardi ?",
+  "english": "Can we meet on Tuesday?",
+  "variation": "Peut-on se voir vendredi ?",
+  "variationEnglish": "Can we meet on Friday?",
+  "vocabularyIds": [
+   "se-voir",
+   "mardi"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "health-03",
+  "text": "Je me sentais un peu fatigué.",
+  "english": "I felt a little tired.",
+  "variation": "Je me sentais un peu malade.",
+  "variationEnglish": "I felt a little ill.",
+  "vocabularyIds": [
+   "se-sentir",
+   "fatigue",
+   "un-peu"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "administration-03",
+  "text": "J’avais déjà écrit la lettre.",
+  "english": "I had already written the letter.",
+  "variation": "J’avais déjà écrit l’e-mail.",
+  "variationEnglish": "I had already written the email.",
+  "vocabularyIds": [
+   "ecrire",
+   "lettre",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-36",
+  "text": "Puis-je avoir ton numéro ?",
+  "english": "Can I have your number?",
+  "variation": "Puis-je avoir ton adresse e-mail ?",
+  "variationEnglish": "Can I have your email address?",
+  "vocabularyIds": [
+   "avoir",
+   "numero",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "transport-21",
+  "text": "Je vais te montrer le chemin.",
+  "english": "I will show you the way.",
+  "variation": "Je vais vous montrer le chemin.",
+  "variationEnglish": "I will show you the way. (formal)",
+  "vocabularyIds": [
+   "montrer",
+   "chemin",
+   "te"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-37",
+  "text": "Il rappellera.",
+  "english": "He will call back.",
+  "variation": "Il rappellera demain.",
+  "variationEnglish": "He will call back tomorrow.",
+  "vocabularyIds": [
+   "rappeler"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-22",
+  "text": "Pouvez-vous me montrer le chemin ?",
+  "english": "Can you show me the way?",
+  "variation": "Pouvez-vous nous montrer le chemin ?",
+  "variationEnglish": "Can you show us the way?",
+  "vocabularyIds": [
+   "pouvoir",
+   "montrer",
+   "chemin"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "weather-07",
+  "text": "Fait-il froid dehors ?",
+  "english": "Is it cold outside?",
+  "variation": "Fait-il chaud dehors ?",
+  "variationEnglish": "Is it warm outside?",
+  "vocabularyIds": [
+   "faire",
+   "froid",
+   "dehors"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-38",
+  "text": "Pouvons-nous déplacer ce rendez-vous ?",
+  "english": "Can we reschedule this?",
+  "variation": "Pouvons-nous déplacer la réunion ?",
+  "variationEnglish": "Can we reschedule the meeting?",
+  "vocabularyIds": [
+   "deplacer",
+   "rendez-vous"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-39",
+  "text": "Il nous a caché cela.",
+  "english": "He hid it from us.",
+  "variation": "Il nous a caché la clé.",
+  "variationEnglish": "He hid the key from us.",
+  "vocabularyIds": [
+   "cacher",
+   "nous"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-17",
+  "text": "Elle portait une écharpe.",
+  "english": "She was wearing a scarf.",
+  "variation": "Elle portait un manteau.",
+  "variationEnglish": "She was wearing a coat.",
+  "vocabularyIds": [
+   "porter",
+   "echarpe"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-40",
+  "text": "J’ai pris une décision.",
+  "english": "I made a decision.",
+  "variation": "J’ai pris une décision difficile.",
+  "variationEnglish": "I made a difficult decision.",
+  "vocabularyIds": [
+   "prendre",
+   "decision"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-16",
+  "text": "Mon téléphone n’a plus de batterie.",
+  "english": "My phone's battery is dead.",
+  "variation": "La batterie de mon téléphone est vide.",
+  "variationEnglish": "My phone's battery is empty.",
+  "vocabularyIds": [
+   "batterie",
+   "ne-plus",
+   "telephone"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "health-04",
+  "text": "Ils vont s’asseoir dans la salle d’attente jusqu’à ce que le médecin les appelle.",
+  "english": "They will sit in the waiting room until the doctor calls them.",
+  "variation": "Ils restent dans la salle d’attente jusqu’à ce que le médecin les appelle.",
+  "variationEnglish": "They stay in the waiting room until the doctor calls them.",
+  "vocabularyIds": [
+   "s-asseoir",
+   "salle-d-attente",
+   "jusqua-ce-que",
+   "appeler"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-41",
+  "text": "Elle est contente de cette opportunité.",
+  "english": "She is happy about the opportunity.",
+  "variation": "Elle est contente de cette chance.",
+  "variationEnglish": "She is happy about this chance.",
+  "vocabularyIds": [
+   "content",
+   "opportunite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-11",
+  "text": "Où est le sac de nourriture ?",
+  "english": "Where is the bag of food?",
+  "variation": "Où est le sac avec le repas ?",
+  "variationEnglish": "Where is the bag with the meal?",
+  "vocabularyIds": [
+   "sac",
+   "nourriture"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-42",
+  "text": "Ça n’a pas marché la première fois.",
+  "english": "It did not work the first time.",
+  "variation": "Ça a marché la deuxième fois.",
+  "variationEnglish": "It worked the second time.",
+  "vocabularyIds": [
+   "marcher",
+   "premier",
+   "fois"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-43",
+  "text": "C’est très flou.",
+  "english": "It is very blurry.",
+  "variation": "La photo est très floue.",
+  "variationEnglish": "The photo is very blurry.",
+  "vocabularyIds": [
+   "flou",
+   "tres"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-18",
+  "text": "As-tu acheté cela pour moi ?",
+  "english": "Did you buy it for me?",
+  "variation": "As-tu acheté ce livre pour moi ?",
+  "variationEnglish": "Did you buy this book for me?",
+  "vocabularyIds": [
+   "acheter",
+   "pour",
+   "moi"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "school-13",
+  "text": "C’est très facile.",
+  "english": "This is very easy.",
+  "variation": "C’est très difficile.",
+  "variationEnglish": "This is very difficult.",
+  "vocabularyIds": [
+   "facile",
+   "tres"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-23",
+  "text": "Ils partent en vacances vendredi.",
+  "english": "They are leaving for their holiday on Friday.",
+  "variation": "Ils partent en vacances lundi.",
+  "variationEnglish": "They are leaving on holiday on Monday.",
+  "vocabularyIds": [
+   "partir",
+   "vacances",
+   "vendredi"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "school-14",
+  "text": "Lis-le-moi à voix haute.",
+  "english": "Read it aloud to me.",
+  "variation": "Lis-moi la lettre à voix haute.",
+  "variationEnglish": "Read me the letter aloud.",
+  "vocabularyIds": [
+   "lire",
+   "a-voix-haute"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "transport-24",
+  "text": "J’ai besoin d’une carte.",
+  "english": "I need a map.",
+  "variation": "J’ai besoin d’un plan de la ville.",
+  "variationEnglish": "I need a city map.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "carte"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-07",
+  "text": "Nous sommes ici pour jouer.",
+  "english": "We are here to play.",
+  "variation": "Nous sommes ici pour nous entraîner.",
+  "variationEnglish": "We are here to practise.",
+  "vocabularyIds": [
+   "etre",
+   "jouer",
+   "ici"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "health-05",
+  "text": "Je me lave les mains avant chaque repas.",
+  "english": "I wash my hands before every meal.",
+  "variation": "Je me lave les mains avant de manger.",
+  "variationEnglish": "I wash my hands before eating.",
+  "vocabularyIds": [
+   "se-laver",
+   "main",
+   "repas"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-25",
+  "text": "Je suis prêt à partir.",
+  "english": "I am ready to go.",
+  "variation": "Je suis prêt à quitter la maison.",
+  "variationEnglish": "I am ready to leave the house.",
+  "vocabularyIds": [
+   "pret",
+   "partir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-19",
+  "text": "Il arrive parfois en retard à cause de la circulation.",
+  "english": "He sometimes arrives late because of traffic.",
+  "variation": "Il arrive parfois en retard à cause des embouteillages.",
+  "variationEnglish": "He sometimes arrives late because of traffic jams.",
+  "vocabularyIds": [
+   "arriver",
+   "parfois",
+   "a-cause-de",
+   "circulation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-17",
+  "text": "Ils voulaient déménager dans une maison plus grande.",
+  "english": "They wanted to move to a bigger house.",
+  "variation": "Ils voulaient déménager dans une maison plus petite.",
+  "variationEnglish": "They wanted to move to a smaller house.",
+  "vocabularyIds": [
+   "vouloir",
+   "demenager",
+   "maison"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-26",
+  "text": "Où sont les toilettes ?",
+  "english": "Where is the toilet?",
+  "variation": "Où se trouvent les toilettes ?",
+  "variationEnglish": "Where are the toilets?",
+  "vocabularyIds": [
+   "toilettes"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "health-06",
+  "text": "Elle sera un jour une excellente médecin.",
+  "english": "She will be a great doctor one day.",
+  "variation": "Elle sera un jour une bonne médecin.",
+  "variationEnglish": "She will be a good doctor one day.",
+  "vocabularyIds": [
+   "etre",
+   "un-jour",
+   "medecin"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-08",
+  "text": "C’était un magnifique coucher de soleil.",
+  "english": "It was a beautiful sunset.",
+  "variation": "C’était un magnifique lever de soleil.",
+  "variationEnglish": "It was a beautiful sunrise.",
+  "vocabularyIds": [
+   "coucher-de-soleil",
+   "magnifique",
+   "cest"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-20",
+  "text": "Ils ont utilisé la salle de réunion pour la présentation.",
+  "english": "They used the meeting room for the presentation.",
+  "variation": "Ils ont utilisé la salle de classe pour la présentation.",
+  "variationEnglish": "They used the classroom for the presentation.",
+  "vocabularyIds": [
+   "utiliser",
+   "salle-de-reunion",
+   "presentation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-21",
+  "text": "Je connaîtrai les résultats au plus tard lundi.",
+  "english": "I will know the results by Monday at the latest.",
+  "variation": "Je connaîtrai les résultats au plus tard vendredi.",
+  "variationEnglish": "I will know the results by Friday at the latest.",
+  "vocabularyIds": [
+   "connaitre",
+   "resultat",
+   "au-plus-tard"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-08",
+  "text": "Je danserai avec toi au mariage.",
+  "english": "I will dance with you at the wedding.",
+  "variation": "Je danserai avec toi à la fête.",
+  "variationEnglish": "I will dance with you at the party.",
+  "vocabularyIds": [
+   "danser",
+   "mariage"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-44",
+  "text": "Je veux te l’envoyer.",
+  "english": "I want to send it to you.",
+  "variation": "Je veux t’envoyer la photo.",
+  "variationEnglish": "I want to send you the photo.",
+  "vocabularyIds": [
+   "vouloir",
+   "envoyer",
+   "te"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-45",
+  "text": "Nous t’aiderons.",
+  "english": "We will help you.",
+  "variation": "Nous vous aiderons.",
+  "variationEnglish": "We will help you. (formal)",
+  "vocabularyIds": [
+   "aider",
+   "te"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-46",
+  "text": "Ils sont en route.",
+  "english": "They are on their way.",
+  "variation": "Les invités sont en route.",
+  "variationEnglish": "The guests are on their way.",
+  "vocabularyIds": [
+   "etre",
+   "en-route"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-47",
+  "text": "Je ne suis qu’un invité.",
+  "english": "I am only a guest.",
+  "variation": "Je ne suis ici qu’un invité.",
+  "variationEnglish": "I am only a guest here.",
+  "vocabularyIds": [
+   "ne-que",
+   "invite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-09",
+  "text": "Je viendrai à ta fête.",
+  "english": "I will come to your party.",
+  "variation": "Je viendrai samedi à ta fête.",
+  "variationEnglish": "I will come to your party on Saturday.",
+  "vocabularyIds": [
+   "venir",
+   "fete",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "home-18",
+  "text": "C’est très sale.",
+  "english": "It is very dirty.",
+  "variation": "La table est très sale.",
+  "variationEnglish": "The table is very dirty.",
+  "vocabularyIds": [
+   "sale",
+   "tres"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-48",
+  "text": "Donne-le-moi.",
+  "english": "Give it to me.",
+  "variation": "Donne-moi la clé.",
+  "variationEnglish": "Give me the key.",
+  "vocabularyIds": [
+   "donner",
+   "moi"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "leisure-10",
+  "text": "J’ai dansé avec ma femme à la réception.",
+  "english": "I danced with my wife at the reception.",
+  "variation": "J’ai dansé avec ma femme à la fête.",
+  "variationEnglish": "I danced with my wife at the party.",
+  "vocabularyIds": [
+   "danser",
+   "femme",
+   "reception"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-19",
+  "text": "Avant, nous restions debout tard.",
+  "english": "We used to stay up late.",
+  "variation": "Avant, nous restions debout jusqu’à minuit.",
+  "variationEnglish": "We used to stay up until midnight.",
+  "vocabularyIds": [
+   "rester",
+   "debout",
+   "tard"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-09",
+  "text": "Il commence à faire froid.",
+  "english": "It is getting cold.",
+  "variation": "Il commence à faire chaud.",
+  "variationEnglish": "It is getting warm.",
+  "vocabularyIds": [
+   "commencer",
+   "faire",
+   "froid"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-20",
+  "text": "Nous habitions en ville.",
+  "english": "We lived in the city.",
+  "variation": "Nous habitions en dehors de la ville.",
+  "variationEnglish": "We lived outside the city.",
+  "vocabularyIds": [
+   "habiter",
+   "ville"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-11",
+  "text": "Elle a acheté les billets.",
+  "english": "She bought the tickets.",
+  "variation": "Elle a réservé les billets.",
+  "variationEnglish": "She reserved the tickets.",
+  "vocabularyIds": [
+   "acheter",
+   "billet"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-49",
+  "text": "Il est difficile d’aider.",
+  "english": "It is difficult to help.",
+  "variation": "Il est difficile d’aider tout le monde.",
+  "variationEnglish": "It is difficult to help everyone.",
+  "vocabularyIds": [
+   "difficile",
+   "aider"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-50",
+  "text": "Je réfléchis au nom.",
+  "english": "I am thinking about the name.",
+  "variation": "Je réfléchis à un nom.",
+  "variationEnglish": "I am thinking about a name.",
+  "vocabularyIds": [
+   "reflechir",
+   "nom"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-10",
+  "text": "Nous avons regardé le coucher de soleil.",
+  "english": "We watched the sunset.",
+  "variation": "Nous avons regardé les étoiles.",
+  "variationEnglish": "We watched the stars.",
+  "vocabularyIds": [
+   "regarder",
+   "coucher-de-soleil"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "administration-04",
+  "text": "Peux-tu me l’envoyer ?",
+  "english": "Will you send it to me?",
+  "variation": "Peux-tu m’envoyer la lettre ?",
+  "variationEnglish": "Can you send me the letter?",
+  "vocabularyIds": [
+   "envoyer",
+   "pouvoir"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "weather-11",
+  "text": "La lune est brillante.",
+  "english": "The moon is bright.",
+  "variation": "Les étoiles sont brillantes.",
+  "variationEnglish": "The stars are bright.",
+  "vocabularyIds": [
+   "lune",
+   "brillant"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-22",
+  "text": "Elle a reçu un prix pour son travail.",
+  "english": "She received an award for her work.",
+  "variation": "Elle a reçu un prix pour ses recherches.",
+  "variationEnglish": "She received an award for her research.",
+  "vocabularyIds": [
+   "recevoir",
+   "prix-recompense",
+   "travail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-12",
+  "text": "Comment est le petit-déjeuner ?",
+  "english": "How is the breakfast?",
+  "variation": "Comment est la nourriture ?",
+  "variationEnglish": "How is the food?",
+  "vocabularyIds": [
+   "comment",
+   "petit-dejeuner"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-51",
+  "text": "J’avais déjà vu les informations.",
+  "english": "I had already seen the news.",
+  "variation": "J’avais déjà vu le message.",
+  "variationEnglish": "I had already seen the message.",
+  "vocabularyIds": [
+   "voir",
+   "informations"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "school-15",
+  "text": "Je ne peux pas te l’expliquer.",
+  "english": "I cannot explain it to you.",
+  "variation": "Je ne peux pas expliquer ce mot.",
+  "variationEnglish": "I cannot explain this word.",
+  "vocabularyIds": [
+   "pouvoir",
+   "expliquer"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-52",
+  "text": "C’est ma faute.",
+  "english": "It is my fault.",
+  "variation": "Ça, c’est ma faute.",
+  "variationEnglish": "That is my fault.",
+  "vocabularyIds": [
+   "faute",
+   "cest"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-27",
+  "text": "J’attendais à l’arrêt de bus.",
+  "english": "I was waiting at the bus stop.",
+  "variation": "J’attendais sur le quai.",
+  "variationEnglish": "I was waiting on the platform.",
+  "vocabularyIds": [
+   "attendre",
+   "arret",
+   "bus"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-13",
+  "text": "Elle n’a pas bu son café.",
+  "english": "She did not drink her coffee.",
+  "variation": "Elle n’a pas bu son thé.",
+  "variationEnglish": "She did not drink her tea.",
+  "vocabularyIds": [
+   "boire",
+   "cafe"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-21",
+  "text": "Tu dors maintenant ?",
+  "english": "Are you sleeping now?",
+  "variation": "Tu dors déjà ?",
+  "variationEnglish": "Are you already sleeping?",
+  "vocabularyIds": [
+   "dormir",
+   "maintenant"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "shopping-19",
+  "text": "J’ai acheté des fruits.",
+  "english": "I bought some fruit.",
+  "variation": "J’ai acheté des légumes.",
+  "variationEnglish": "I bought some vegetables.",
+  "vocabularyIds": [
+   "acheter",
+   "fruit"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-23",
+  "text": "Ils parlent des détails.",
+  "english": "They are talking about the details.",
+  "variation": "Ils parlent du planning.",
+  "variationEnglish": "They are talking about the schedule.",
+  "vocabularyIds": [
+   "parler",
+   "detail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-28",
+  "text": "Où est le lit ?",
+  "english": "Where is the bed?",
+  "variation": "Où est le lit supplémentaire ?",
+  "variationEnglish": "Where is the extra bed?",
+  "vocabularyIds": [
+   "lit",
+   "ou-adv"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-53",
+  "text": "Rends-le-nous.",
+  "english": "Give it back to us.",
+  "variation": "Rends-nous le ballon.",
+  "variationEnglish": "Give us the ball back.",
+  "vocabularyIds": [
+   "rendre",
+   "le"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "transport-29",
+  "text": "Nous prenons l’avion avec la même compagnie chaque fois.",
+  "english": "We fly with the same airline every time.",
+  "variation": "Nous prenons toujours l’avion avec la même compagnie.",
+  "variationEnglish": "We always fly with the same airline.",
+  "vocabularyIds": [
+   "prendre",
+   "avion",
+   "meme",
+   "compagnie",
+   "chaque-fois"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-54",
+  "text": "Je ne peux pas encore te le dire.",
+  "english": "I cannot tell you yet.",
+  "variation": "Je ne peux pas encore vous le dire.",
+  "variationEnglish": "I cannot tell you yet. (formal)",
+  "vocabularyIds": [
+   "pouvoir",
+   "encore",
+   "dire"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "home-22",
+  "text": "Ils pensent à déménager.",
+  "english": "They are thinking about moving.",
+  "variation": "Ils pensent à déménager à Gand.",
+  "variationEnglish": "They are thinking about moving to Ghent.",
+  "vocabularyIds": [
+   "penser-a",
+   "demenager"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-30",
+  "text": "C’est là-bas.",
+  "english": "It is over there.",
+  "variation": "La gare est là-bas.",
+  "variationEnglish": "The station is over there.",
+  "vocabularyIds": [
+   "la-bas"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-55",
+  "text": "Parlez-vous anglais ?",
+  "english": "Do you speak English?",
+  "variation": "Parlez-vous néerlandais ?",
+  "variationEnglish": "Do you speak Dutch?",
+  "vocabularyIds": [
+   "parler",
+   "anglais"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "leisure-12",
+  "text": "Ils ont fait des projets pour le week-end.",
+  "english": "They made plans for the weekend.",
+  "variation": "Ils ont fait des projets pour les vacances.",
+  "variationEnglish": "They made plans for the holidays.",
+  "vocabularyIds": [
+   "faire",
+   "projet",
+   "week-end"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "school-16",
+  "text": "Tu dois écouter.",
+  "english": "You need to listen.",
+  "variation": "Tu dois bien écouter.",
+  "variationEnglish": "You need to listen carefully.",
+  "vocabularyIds": [
+   "devoir",
+   "ecouter"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "leisure-13",
+  "text": "Ils regardaient le match.",
+  "english": "They were watching the match.",
+  "variation": "Ils regardaient la finale.",
+  "variationEnglish": "They were watching the final.",
+  "vocabularyIds": [
+   "regarder",
+   "match"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-23",
+  "text": "Il est occupé à nettoyer les fenêtres.",
+  "english": "He is busy cleaning the windows.",
+  "variation": "Il est occupé à nettoyer la cuisine.",
+  "variationEnglish": "He is busy cleaning the kitchen.",
+  "vocabularyIds": [
+   "occupe",
+   "nettoyer",
+   "fenetre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-24",
+  "text": "C’est propre.",
+  "english": "It is clean.",
+  "variation": "La cuisine est propre.",
+  "variationEnglish": "The kitchen is clean.",
+  "vocabularyIds": [
+   "propre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-56",
+  "text": "Qui est là maintenant ?",
+  "english": "Who is there now?",
+  "variation": "Qui est là en ce moment ?",
+  "variationEnglish": "Who is there at the moment?",
+  "vocabularyIds": [
+   "qui",
+   "la-adv",
+   "maintenant"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-20",
+  "text": "C’est mon sac.",
+  "english": "This is my bag.",
+  "variation": "C’est ton sac.",
+  "variationEnglish": "This is your bag.",
+  "vocabularyIds": [
+   "sac",
+   "mon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-57",
+  "text": "Ils nous ont demandé de venir tôt.",
+  "english": "They asked us to come early.",
+  "variation": "Ils nous ont demandé d’arriver à l’heure.",
+  "variationEnglish": "They asked us to arrive on time.",
+  "vocabularyIds": [
+   "demander",
+   "venir",
+   "tot"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-31",
+  "text": "Nous sommes passés devant la banque.",
+  "english": "We passed the bank.",
+  "variation": "Nous sommes passés devant le musée.",
+  "variationEnglish": "We passed the museum.",
+  "vocabularyIds": [
+   "passer",
+   "devant",
+   "banque"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-14",
+  "text": "Tu n’as pas perdu le match.",
+  "english": "You did not lose the match.",
+  "variation": "Tu as gagné le match.",
+  "variationEnglish": "You won the match.",
+  "vocabularyIds": [
+   "perdre",
+   "match"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "shopping-21",
+  "text": "Ils ont payé les meubles en espèces.",
+  "english": "They paid cash for the furniture.",
+  "variation": "Ils ont payé les meubles par carte.",
+  "variationEnglish": "They paid for the furniture by card.",
+  "vocabularyIds": [
+   "payer",
+   "meuble",
+   "en-especes"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-25",
+  "text": "J’entends les oiseaux chanter chaque matin.",
+  "english": "I hear the birds singing every morning.",
+  "variation": "J’entends les oiseaux chanter chaque soir.",
+  "variationEnglish": "I hear the birds singing every evening.",
+  "vocabularyIds": [
+   "entendre",
+   "oiseau",
+   "chanter"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-15",
+  "text": "J’en ai assez de cette musique.",
+  "english": "I am tired of this music.",
+  "variation": "J’en ai assez de cette chanson.",
+  "variationEnglish": "I am tired of this song.",
+  "vocabularyIds": [
+   "en-avoir-assez-de",
+   "musique"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-58",
+  "text": "J’aime bien sa voiture.",
+  "english": "I like his car.",
+  "variation": "J’aime bien son vélo.",
+  "variationEnglish": "I like his / her bike.",
+  "vocabularyIds": [
+   "aimer-bien",
+   "voiture",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-16",
+  "text": "Avant, j’allais au parc.",
+  "english": "I used to go to the park.",
+  "variation": "Avant, j’allais souvent au parc.",
+  "variationEnglish": "I used to go to the park often.",
+  "vocabularyIds": [
+   "aller",
+   "parc"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "school-17",
+  "text": "J’apprends quelque chose de nouveau chaque jour.",
+  "english": "I learn something new every day.",
+  "variation": "J’apprends quelque chose de nouveau chaque semaine.",
+  "variationEnglish": "I learn something new every week.",
+  "vocabularyIds": [
+   "apprendre",
+   "quelque-chose",
+   "chaque"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-59",
+  "text": "Elle va avoir davantage confiance en elle.",
+  "english": "She is going to believe in herself more.",
+  "variation": "Elle va se faire davantage confiance.",
+  "variationEnglish": "She is going to trust herself more.",
+  "vocabularyIds": [
+   "aller",
+   "avoir",
+   "confiance",
+   "davantage"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "health-07",
+  "text": "Elle s’est réveillée et s’est sentie beaucoup mieux.",
+  "english": "She woke up and felt much better.",
+  "variation": "Elle s’est réveillée et s’est sentie reposée.",
+  "variationEnglish": "She woke up and felt rested.",
+  "vocabularyIds": [
+   "se-reveiller",
+   "se-sentir",
+   "mieux"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-60",
+  "text": "Il est très grand.",
+  "english": "He is very tall.",
+  "variation": "Il est très imposant.",
+  "variationEnglish": "He is very imposing (big).",
+  "vocabularyIds": [
+   "grand",
+   "tres"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-26",
+  "text": "Il lave ses vêtements à la laverie.",
+  "english": "He washes his clothes at the laundrette.",
+  "variation": "Il lave ses vêtements à la maison.",
+  "variationEnglish": "He washes his clothes at home.",
+  "vocabularyIds": [
+   "laver",
+   "vetement",
+   "laverie"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-17",
+  "text": "Jouer au bowling est une activité sociale amusante.",
+  "english": "Bowling is a fun social activity.",
+  "variation": "Danser est une activité sociale amusante.",
+  "variationEnglish": "Dancing is a fun social activity.",
+  "vocabularyIds": [
+   "jouer",
+   "bowling",
+   "activite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-61",
+  "text": "Il m’a téléphoné ce matin.",
+  "english": "He called me this morning.",
+  "variation": "Il m’a téléphoné hier.",
+  "variationEnglish": "He called me yesterday.",
+  "vocabularyIds": [
+   "telephoner",
+   "matin"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-62",
+  "text": "Je reviens tout de suite.",
+  "english": "I will be right back.",
+  "variation": "Je reviens dans une minute.",
+  "variationEnglish": "I will be back in a minute.",
+  "vocabularyIds": [
+   "revenir",
+   "tout-de-suite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-32",
+  "text": "Il va au travail en bus.",
+  "english": "He goes to work by bus.",
+  "variation": "Il va au travail en train.",
+  "variationEnglish": "He goes to work by train.",
+  "vocabularyIds": [
+   "aller",
+   "travail",
+   "bus"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-18",
+  "text": "Chanter est sa passion.",
+  "english": "Singing is her passion.",
+  "variation": "Danser est sa passion.",
+  "variationEnglish": "Dancing is her passion.",
+  "vocabularyIds": [
+   "chanter",
+   "passion",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-33",
+  "text": "Nous partons maintenant.",
+  "english": "We are leaving now.",
+  "variation": "Nous partons bientôt.",
+  "variationEnglish": "We are leaving soon.",
+  "vocabularyIds": [
+   "partir",
+   "maintenant"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-19",
+  "text": "Elle est en train de chanter.",
+  "english": "She is singing now.",
+  "variation": "Elle est en train de danser.",
+  "variationEnglish": "She is dancing now.",
+  "vocabularyIds": [
+   "en-train-de",
+   "chanter"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-20",
+  "text": "Dessiner est un passe-temps créatif.",
+  "english": "Drawing is a creative hobby.",
+  "variation": "Peindre est un passe-temps créatif.",
+  "variationEnglish": "Painting is a creative hobby.",
+  "vocabularyIds": [
+   "dessiner",
+   "passe-temps",
+   "creatif"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-27",
+  "text": "Je vais le mesurer.",
+  "english": "I will measure it.",
+  "variation": "Je vais mesurer la pièce.",
+  "variationEnglish": "I will measure the room.",
+  "vocabularyIds": [
+   "mesurer",
+   "aller",
+   "le"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-63",
+  "text": "Peux-tu me le montrer ?",
+  "english": "Will you show it to me?",
+  "variation": "Peux-tu me montrer la photo ?",
+  "variationEnglish": "Can you show me the photo?",
+  "vocabularyIds": [
+   "pouvoir",
+   "montrer"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "food-14",
+  "text": "Elle aime cuisiner pour ses amis.",
+  "english": "She likes cooking for her friends.",
+  "variation": "Elle aime faire des gâteaux pour ses amis.",
+  "variationEnglish": "She likes baking cakes for her friends.",
+  "vocabularyIds": [
+   "aimer",
+   "cuisiner",
+   "ami"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-64",
+  "text": "Tu es libre de partir.",
+  "english": "You are free to go.",
+  "variation": "Tu es libre de t’en aller.",
+  "variationEnglish": "You are free to go away.",
+  "vocabularyIds": [
+   "libre",
+   "partir"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "food-15",
+  "text": "Elle a attendu une heure au restaurant.",
+  "english": "She waited in the restaurant for an hour.",
+  "variation": "Elle a attendu une heure au café.",
+  "variationEnglish": "She waited in the café for an hour.",
+  "vocabularyIds": [
+   "attendre",
+   "restaurant",
+   "heure"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-65",
+  "text": "Il m’a donné un bon conseil.",
+  "english": "He gave me good advice.",
+  "variation": "Il nous a donné un bon conseil.",
+  "variationEnglish": "He gave us good advice.",
+  "vocabularyIds": [
+   "donner",
+   "conseil",
+   "bon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-24",
+  "text": "Où travailles-tu ?",
+  "english": "Where do you work?",
+  "variation": "Où travaillez-vous ?",
+  "variationEnglish": "Where do you work? (formal)",
+  "vocabularyIds": [
+   "travailler",
+   "ou-adv"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "home-28",
+  "text": "Je vais le soulever.",
+  "english": "I will lift it up.",
+  "variation": "Je vais soulever la boîte.",
+  "variationEnglish": "I will lift the box.",
+  "vocabularyIds": [
+   "soulever",
+   "aller"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-66",
+  "text": "Il vaut mieux aider.",
+  "english": "It is better to help.",
+  "variation": "Il vaut mieux travailler ensemble.",
+  "variationEnglish": "It is better to work together.",
+  "vocabularyIds": [
+   "valoir-mieux",
+   "aider"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-12",
+  "text": "Quel temps fait-il ?",
+  "english": "What is the weather like?",
+  "variation": "Quel temps fera-t-il demain ?",
+  "variationEnglish": "What will the weather be like tomorrow?",
+  "vocabularyIds": [
+   "temps",
+   "faire",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-16",
+  "text": "Quelqu’un a-t-il de l’eau ?",
+  "english": "Does anyone have water?",
+  "variation": "Quelqu’un a-t-il une bouteille d’eau ?",
+  "variationEnglish": "Does anyone have a bottle of water?",
+  "vocabularyIds": [
+   "quelquun",
+   "avoir",
+   "eau"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "school-18",
+  "text": "Elle m’a expliqué cela.",
+  "english": "She explained it to me.",
+  "variation": "Elle m’a expliqué l’exercice.",
+  "variationEnglish": "She explained the exercise to me.",
+  "vocabularyIds": [
+   "expliquer",
+   "me",
+   "cela"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "weather-13",
+  "text": "Elle regardait le ciel.",
+  "english": "She was looking at the sky.",
+  "variation": "Elle regardait les nuages.",
+  "variationEnglish": "She was looking at the clouds.",
+  "vocabularyIds": [
+   "regarder",
+   "ciel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-22",
+  "text": "Quel est le prix ?",
+  "english": "What is the price?",
+  "variation": "Quel est le prix de ce livre ?",
+  "variationEnglish": "What is the price of this book?",
+  "vocabularyIds": [
+   "prix-cout",
+   "quel"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "conversation-67",
+  "text": "Est-ce sans danger ?",
+  "english": "Is it safe?",
+  "variation": "Est-ce sans danger ici ?",
+  "variationEnglish": "Is it safe here?",
+  "vocabularyIds": [
+   "sans-danger",
+   "danger"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-25",
+  "text": "Nous résolvons les problèmes dès qu’ils se présentent.",
+  "english": "We solve problems as soon as they arise.",
+  "variation": "Nous corrigeons les erreurs dès que nous les remarquons.",
+  "variationEnglish": "We fix mistakes as soon as we notice them.",
+  "vocabularyIds": [
+   "resoudre",
+   "probleme",
+   "des-que",
+   "se-presenter"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-68",
+  "text": "Voici mon mari.",
+  "english": "This is my husband.",
+  "variation": "Voici ma femme.",
+  "variationEnglish": "This is my wife.",
+  "vocabularyIds": [
+   "voici",
+   "mari",
+   "mon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "health-08",
+  "text": "Il suit un régime sain.",
+  "english": "He follows a healthy diet.",
+  "variation": "Il suit un régime végétarien.",
+  "variationEnglish": "He follows a vegetarian diet.",
+  "vocabularyIds": [
+   "suivre",
+   "regime",
+   "sain"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-21",
+  "text": "Ils parlent du film.",
+  "english": "They are talking about the film.",
+  "variation": "Ils parlent de la série.",
+  "variationEnglish": "They are talking about the series.",
+  "vocabularyIds": [
+   "parler",
+   "film"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-69",
+  "text": "Je perds patience quand les gens sont impolis.",
+  "english": "I lose my patience when people are rude.",
+  "variation": "Je perds patience quand les gens mentent.",
+  "variationEnglish": "I lose my patience when people lie.",
+  "vocabularyIds": [
+   "perdre-patience",
+   "gens",
+   "impoli"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-70",
+  "text": "J’ai peur de l’avenir.",
+  "english": "I am afraid of the future.",
+  "variation": "J’ai peur du changement.",
+  "variationEnglish": "I am afraid of the change.",
+  "vocabularyIds": [
+   "avoir-peur-de",
+   "avenir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-71",
+  "text": "Quel est le problème ?",
+  "english": "What is the problem?",
+  "variation": "Quel est exactement le problème ?",
+  "variationEnglish": "What exactly is the problem?",
+  "vocabularyIds": [
+   "probleme",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-34",
+  "text": "Je suis à l’arrêt de bus chaque matin.",
+  "english": "I stand at the bus stop every morning.",
+  "variation": "Je suis à l’arrêt de bus chaque soir.",
+  "variationEnglish": "I stand at the bus stop every evening.",
+  "vocabularyIds": [
+   "etre",
+   "arret",
+   "chaque"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-26",
+  "text": "Elle va bientôt trouver un nouvel emploi.",
+  "english": "She is going to find a new job soon.",
+  "variation": "Elle va bientôt trouver un autre travail.",
+  "variationEnglish": "She is going to find another job soon.",
+  "vocabularyIds": [
+   "trouver",
+   "emploi",
+   "nouveau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "school-19",
+  "text": "Elle n’est pas allée à l’école.",
+  "english": "She did not go to school.",
+  "variation": "Elle n’est pas allée à l’école hier.",
+  "variationEnglish": "She did not go to school yesterday.",
+  "vocabularyIds": [
+   "aller",
+   "ecole"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "leisure-22",
+  "text": "Avant, nous allions à la plage chaque été.",
+  "english": "We used to go to the beach every summer.",
+  "variation": "Avant, nous allions à la mer chaque été.",
+  "variationEnglish": "We used to go to the sea every summer.",
+  "vocabularyIds": [
+   "aller",
+   "plage",
+   "ete"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-72",
+  "text": "Il est difficile de le dire.",
+  "english": "It is hard to say.",
+  "variation": "Il est difficile de le prévoir.",
+  "variationEnglish": "It is hard to predict.",
+  "vocabularyIds": [
+   "difficile",
+   "dire"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-29",
+  "text": "Nous avions déjà nettoyé la maison.",
+  "english": "We had already cleaned the house.",
+  "variation": "Nous avions déjà nettoyé la cuisine.",
+  "variationEnglish": "We had already cleaned the kitchen.",
+  "vocabularyIds": [
+   "nettoyer",
+   "maison",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-73",
+  "text": "J’avais déjà vérifié l’heure.",
+  "english": "I had already checked the time.",
+  "variation": "J’avais déjà vérifié la date.",
+  "variationEnglish": "I had already checked the date.",
+  "vocabularyIds": [
+   "verifier",
+   "heure",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-23",
+  "text": "Cela ressemble à de l’or.",
+  "english": "That looks like gold.",
+  "variation": "Cela ressemble à de l’argent.",
+  "variationEnglish": "That looks like silver.",
+  "vocabularyIds": [
+   "ressembler",
+   "or"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-30",
+  "text": "Sortir le chien est ma tâche.",
+  "english": "Walking the dog is my job.",
+  "variation": "Donner à manger au chat est ma tâche.",
+  "variationEnglish": "Feeding the cat is my job.",
+  "vocabularyIds": [
+   "sortir",
+   "chien",
+   "tache"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-27",
+  "text": "Ils commenceront la construction du nouveau bâtiment le mois prochain.",
+  "english": "They will start constructing the new building next month.",
+  "variation": "Ils commenceront la construction du nouveau bâtiment la semaine prochaine.",
+  "variationEnglish": "They will start constructing the new building next week.",
+  "vocabularyIds": [
+   "commencer",
+   "construction",
+   "batiment"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-31",
+  "text": "Tu n’en as pas fait un gâchis.",
+  "english": "You did not make a mess of it.",
+  "variation": "Tu n’en as pas fait un problème.",
+  "variationEnglish": "You did not make a problem of it.",
+  "vocabularyIds": [
+   "faire",
+   "en-pronoun",
+   "gachis"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "health-09",
+  "text": "Te sens-tu mieux ?",
+  "english": "Are you feeling better?",
+  "variation": "Te sens-tu déjà mieux ?",
+  "variationEnglish": "Are you already feeling better?",
+  "vocabularyIds": [
+   "se-sentir",
+   "mieux"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "school-20",
+  "text": "Ils comprendront les règles après la formation.",
+  "english": "They will understand the rules after the training.",
+  "variation": "Ils comprendront les règles après l’explication.",
+  "variationEnglish": "They will understand the rules after the explanation.",
+  "vocabularyIds": [
+   "comprendre",
+   "regle",
+   "formation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "administration-05",
+  "text": "Quel est le temps d’attente ?",
+  "english": "How long is the wait?",
+  "variation": "Quel est le temps d’attente pour un rendez-vous ?",
+  "variationEnglish": "How long is the wait for an appointment?",
+  "vocabularyIds": [
+   "temps-attente",
+   "quel"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "food-17",
+  "text": "J’ai soif.",
+  "english": "I am thirsty.",
+  "variation": "J’ai très soif.",
+  "variationEnglish": "I am very thirsty.",
+  "vocabularyIds": [
+   "avoir-soif"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-74",
+  "text": "Elle a entendu les nouvelles à la radio.",
+  "english": "She heard the news on the radio.",
+  "variation": "Elle a entendu les nouvelles à la télévision.",
+  "variationEnglish": "She heard the news on television.",
+  "vocabularyIds": [
+   "entendre",
+   "nouvelles",
+   "radio"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-24",
+  "text": "J’ai besoin de mon portefeuille.",
+  "english": "I need my wallet.",
+  "variation": "J’ai besoin de ma carte bancaire.",
+  "variationEnglish": "I need my bank card.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "portefeuille",
+   "mon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "food-18",
+  "text": "Ils n’avaient pas d’eau.",
+  "english": "They did not have any water.",
+  "variation": "Ils n’avaient pas de nourriture.",
+  "variationEnglish": "They did not have any food.",
+  "vocabularyIds": [
+   "avoir",
+   "eau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-32",
+  "text": "Ils accrochent les décorations cet après-midi.",
+  "english": "They will put up the decorations this afternoon.",
+  "variation": "Ils accrochent les décorations demain.",
+  "variationEnglish": "They will put up the decorations tomorrow.",
+  "vocabularyIds": [
+   "accrocher",
+   "decoration",
+   "apres-midi"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-75",
+  "text": "Je vais réessayer.",
+  "english": "I will try again.",
+  "variation": "Je vais essayer encore une fois.",
+  "variationEnglish": "I am going to try one more time.",
+  "vocabularyIds": [
+   "reessayer",
+   "aller"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-35",
+  "text": "Elle va prendre l’avion pour Londres l’été prochain.",
+  "english": "She is going to fly to London next summer.",
+  "variation": "Elle va prendre l’avion pour Paris l’été prochain.",
+  "variationEnglish": "She is going to fly to Paris next summer.",
+  "vocabularyIds": [
+   "prendre",
+   "avion",
+   "prochain"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "school-21",
+  "text": "Je savais la réponse, mais je l’ai oubliée.",
+  "english": "I knew the answer, but I have forgotten it.",
+  "variation": "Je savais le nom, mais je l’ai oublié.",
+  "variationEnglish": "I knew the name, but I have forgotten it.",
+  "vocabularyIds": [
+   "savoir",
+   "reponse",
+   "oublier",
+   "mais"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-28",
+  "text": "Nous écrivons des rapports chaque semaine.",
+  "english": "We write reports every week.",
+  "variation": "Nous écrivons des rapports chaque mois.",
+  "variationEnglish": "We write reports every month.",
+  "vocabularyIds": [
+   "ecrire",
+   "rapport",
+   "chaque"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-36",
+  "text": "Quand arrivent-ils ?",
+  "english": "When will they arrive?",
+  "variation": "Quand arrive-t-il ?",
+  "variationEnglish": "When will he arrive?",
+  "vocabularyIds": [
+   "arriver",
+   "quand"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-29",
+  "text": "Je pense à changer de travail.",
+  "english": "I am thinking about changing jobs.",
+  "variation": "Je pense à changer d’école.",
+  "variationEnglish": "I am thinking about changing schools.",
+  "vocabularyIds": [
+   "penser-a",
+   "changer-de",
+   "travail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-76",
+  "text": "Quel est ce bruit ?",
+  "english": "What is that noise?",
+  "variation": "Quelle est cette musique ?",
+  "variationEnglish": "What is that music?",
+  "vocabularyIds": [
+   "bruit",
+   "quel",
+   "ce"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-37",
+  "text": "Où sont-ils allés ?",
+  "english": "Where did they go?",
+  "variation": "Où est-il allé ?",
+  "variationEnglish": "Where did he go?",
+  "vocabularyIds": [
+   "aller",
+   "ou-adv"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-33",
+  "text": "Tu vas ranger ta chambre avant de partir.",
+  "english": "You are going to tidy your room before you leave.",
+  "variation": "Tu vas ranger ton bureau avant de partir.",
+  "variationEnglish": "You are going to tidy your desk before you leave.",
+  "vocabularyIds": [
+   "ranger",
+   "chambre",
+   "avant-de"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "conversation-77",
+  "text": "Elle semblait perplexe.",
+  "english": "She seemed confused.",
+  "variation": "Elle semblait hésitante.",
+  "variationEnglish": "She seemed hesitant.",
+  "vocabularyIds": [
+   "sembler",
+   "perplexe"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-34",
+  "text": "Nous cultivons nos propres légumes dans le jardin.",
+  "english": "We grow our own vegetables in the garden.",
+  "variation": "Nous cultivons nos propres herbes dans le jardin.",
+  "variationEnglish": "We grow our own herbs in the garden.",
+  "vocabularyIds": [
+   "cultiver",
+   "propre",
+   "legume",
+   "jardin"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-25",
+  "text": "J’ai vendu ma vieille voiture le mois dernier.",
+  "english": "I sold my old car last month.",
+  "variation": "J’ai vendu mon vieux vélo la semaine dernière.",
+  "variationEnglish": "I sold my old bike last week.",
+  "vocabularyIds": [
+   "vendre",
+   "vieux",
+   "voiture",
+   "dernier"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-78",
+  "text": "Je veux savoir pourquoi.",
+  "english": "I want to know why.",
+  "variation": "Je veux savoir quand.",
+  "variationEnglish": "I want to know when.",
+  "vocabularyIds": [
+   "vouloir",
+   "savoir",
+   "pourquoi"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "transport-38",
+  "text": "Ils sont arrivés en retard.",
+  "english": "They arrived late.",
+  "variation": "Ils sont arrivés à l’heure.",
+  "variationEnglish": "They arrived on time.",
+  "vocabularyIds": [
+   "arriver",
+   "etre-en-retard"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-26",
+  "text": "J’avais déjà fait les courses.",
+  "english": "I had already done the shopping.",
+  "variation": "J’avais déjà fait les courses hier.",
+  "variationEnglish": "I had already done the shopping yesterday.",
+  "vocabularyIds": [
+   "faire-les-courses",
+   "avoir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-35",
+  "text": "Je vais te le réparer.",
+  "english": "I will repair it for you.",
+  "variation": "Je vais réparer ton vélo.",
+  "variationEnglish": "I will repair your bike.",
+  "vocabularyIds": [
+   "reparer",
+   "aller"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "weather-14",
+  "text": "L’automne arrive.",
+  "english": "Autumn is coming.",
+  "variation": "L’hiver arrive.",
+  "variationEnglish": "Winter is coming.",
+  "vocabularyIds": [
+   "automne",
+   "arriver"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "shopping-27",
+  "text": "Il est derrière le comptoir de la boulangerie.",
+  "english": "He stands behind the counter in the bakery.",
+  "variation": "Il est derrière le comptoir du magasin.",
+  "variationEnglish": "He stands behind the counter in the shop.",
+  "vocabularyIds": [
+   "derriere",
+   "comptoir",
+   "boulangerie"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-30",
+  "text": "Je commence à travailler à huit heures du matin.",
+  "english": "I start work at eight in the morning.",
+  "variation": "Je commence à travailler à neuf heures du matin.",
+  "variationEnglish": "I start work at nine in the morning.",
+  "vocabularyIds": [
+   "commencer",
+   "travailler",
+   "du-matin"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "conversation-79",
+  "text": "Je vous en prie.",
+  "english": "You're welcome.",
+  "variation": "De rien.",
+  "variationEnglish": "You're welcome. (informal)",
+  "vocabularyIds": [
+   "je-vous-en-prie"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "home-36",
+  "text": "Je fais mon lit chaque matin.",
+  "english": "I make my bed every morning.",
+  "variation": "Je fais mon lit chaque soir.",
+  "variationEnglish": "I make my bed every evening.",
+  "vocabularyIds": [
+   "faire",
+   "lit",
+   "chaque"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "home-37",
+  "text": "Ils utilisent la peinture restante pour la chambre.",
+  "english": "They are using the leftover paint for the bedroom.",
+  "variation": "Ils utilisent la peinture restante pour la cuisine.",
+  "variationEnglish": "They are using the leftover paint for the kitchen.",
+  "vocabularyIds": [
+   "utiliser",
+   "peinture",
+   "restant"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-31",
+  "text": "Est-ce votre poste de travail ?",
+  "english": "Is this your workplace?",
+  "variation": "Est-ce là votre poste de travail ?",
+  "variationEnglish": "Is that your workplace?",
+  "vocabularyIds": [
+   "poste-de-travail",
+   "votre"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-32",
+  "text": "Je préparerai l’ordre du jour.",
+  "english": "I'll prepare the agenda.",
+  "variation": "Demain, je préparerai l’ordre du jour.",
+  "variationEnglish": "Tomorrow, I will prepare the agenda.",
+  "vocabularyIds": [
+   "preparer",
+   "ordre-du-jour"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-33",
+  "text": "Quel est l’objectif ?",
+  "english": "What is the goal?",
+  "variation": "Quel est l’objectif de cette réunion ?",
+  "variationEnglish": "What is the goal of this meeting?",
+  "vocabularyIds": [
+   "objectif",
+   "quel"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-34",
+  "text": "Nous avons discuté de beaucoup de choses.",
+  "english": "We discussed many things.",
+  "variation": "Pendant la réunion, nous avons discuté de beaucoup de choses.",
+  "variationEnglish": "During the meeting, we discussed many things.",
+  "vocabularyIds": [
+   "discuter",
+   "beaucoup-de",
+   "chose"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-35",
+  "text": "C’est agréable d’être ici.",
+  "english": "It's nice to be here.",
+  "variation": "Il est agréable d’être ici.",
+  "variationEnglish": "It is pleasant to be here.",
+  "vocabularyIds": [
+   "agreable",
+   "etre",
+   "ici"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-36",
+  "text": "Faisons entendre leurs voix.",
+  "english": "Let's make their voices heard.",
+  "variation": "Faisons aussi entendre leurs voix.",
+  "variationEnglish": "Let's also make their voices heard.",
+  "vocabularyIds": [
+   "faire-entendre",
+   "voix",
+   "leur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-37",
+  "text": "Nous nous sommes rencontrés hier matin.",
+  "english": "We met each other yesterday morning.",
+  "variation": "Hier matin, nous nous sommes rencontrés.",
+  "variationEnglish": "Yesterday morning, we met each other.",
+  "vocabularyIds": [
+   "se-rencontrer",
+   "hier-matin"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-38",
+  "text": "Examinons le contrat.",
+  "english": "Let's look over the contract.",
+  "variation": "Examinons le contrat ensemble.",
+  "variationEnglish": "Let's look over the contract together.",
+  "vocabularyIds": [
+   "examiner",
+   "contrat"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-39",
+  "text": "Nous envisageons toutes les options.",
+  "english": "We're considering all the options.",
+  "variation": "Nous envisageons toutes les possibilités.",
+  "variationEnglish": "We are considering all the possibilities.",
+  "vocabularyIds": [
+   "envisager",
+   "tout",
+   "option"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-40",
+  "text": "J’ai terminé ma formation.",
+  "english": "I've completed my training.",
+  "variation": "J’ai terminé la formation.",
+  "variationEnglish": "I have completed the training.",
+  "vocabularyIds": [
+   "terminer",
+   "formation"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-41",
+  "text": "J’ai besoin de son approbation.",
+  "english": "I need his approval.",
+  "variation": "J’ai besoin de son accord.",
+  "variationEnglish": "I need his / her agreement.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "approbation",
+   "son"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-42",
+  "text": "Donnez-lui son rapport.",
+  "english": "Give him his report.",
+  "variation": "Remettez-lui son rapport.",
+  "variationEnglish": "Hand him his report.",
+  "vocabularyIds": [
+   "donner",
+   "lui",
+   "rapport"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-43",
+  "text": "Elle a expliqué l’itinéraire.",
+  "english": "She explained the route.",
+  "variation": "Hier, elle a expliqué l’itinéraire.",
+  "variationEnglish": "Yesterday, she explained the route.",
+  "vocabularyIds": [
+   "expliquer",
+   "itineraire"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-44",
+  "text": "Nous avons acheté cela pour elle.",
+  "english": "We bought it for her.",
+  "variation": "Nous avons acheté un cadeau pour elle.",
+  "variationEnglish": "We bought a gift for her.",
+  "vocabularyIds": [
+   "acheter",
+   "elle"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-45",
+  "text": "Pouvez-vous expliquer cela plus en détail ?",
+  "english": "Could you explain this further?",
+  "variation": "Pouvez-vous développer ce point ?",
+  "variationEnglish": "Could you elaborate on this point?",
+  "vocabularyIds": [
+   "pouvoir",
+   "expliquer",
+   "en-detail"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-46",
+  "text": "J’attribuerai les ressources.",
+  "english": "I'll allocate the resources.",
+  "variation": "J’attribuerai les ressources disponibles.",
+  "variationEnglish": "I will allocate the available resources.",
+  "vocabularyIds": [
+   "attribuer",
+   "ressource"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-47",
+  "text": "Il a travaillé tard hier soir.",
+  "english": "He worked late yesterday evening.",
+  "variation": "Hier soir, il a travaillé tard.",
+  "variationEnglish": "Yesterday evening, he worked late.",
+  "vocabularyIds": [
+   "travailler",
+   "tard",
+   "hier-soir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-48",
+  "text": "Tu devrais me l’apporter.",
+  "english": "You should bring it to me.",
+  "variation": "Tu devrais l’apporter à mon bureau.",
+  "variationEnglish": "You should bring it to my office.",
+  "vocabularyIds": [
+   "devoir",
+   "apporter"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-49",
+  "text": "Je suis au téléphone.",
+  "english": "I'm making a phone call.",
+  "variation": "Mon collègue est au téléphone.",
+  "variationEnglish": "My colleague is on the phone.",
+  "vocabularyIds": [
+   "etre-au-telephone",
+   "telephone"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-50",
+  "text": "Je l’expliquerai plus tard.",
+  "english": "I'll explain it later.",
+  "variation": "Plus tard, je l’expliquerai.",
+  "variationEnglish": "Later, I will explain it.",
+  "vocabularyIds": [
+   "expliquer",
+   "plus-tard"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-51",
+  "text": "Construire un avenir demande du travail.",
+  "english": "Building a future takes work.",
+  "variation": "Construire un avenir demande du temps.",
+  "variationEnglish": "Building a future takes time.",
+  "vocabularyIds": [
+   "construire",
+   "avenir",
+   "demander-requerir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-52",
+  "text": "Ma proposition est prête.",
+  "english": "My proposal is ready.",
+  "variation": "Ma proposition est maintenant prête.",
+  "variationEnglish": "My proposal is now ready.",
+  "vocabularyIds": [
+   "proposition",
+   "pret"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-53",
+  "text": "Pouvez-vous vous en occuper ?",
+  "english": "Could you take care of this?",
+  "variation": "Pouvez-vous traiter cette demande ?",
+  "variationEnglish": "Can you process this request?",
+  "vocabularyIds": [
+   "s-occuper-de",
+   "pouvoir"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-54",
+  "text": "Il est en train de réparer la fuite.",
+  "english": "He's busy fixing the leak.",
+  "variation": "Il s’occupe de réparer la fuite.",
+  "variationEnglish": "He is taking care of fixing the leak.",
+  "vocabularyIds": [
+   "en-train-de",
+   "reparer",
+   "fuite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-55",
+  "text": "Puis-je proposer quelque chose ?",
+  "english": "May I suggest something?",
+  "variation": "Puis-je proposer une solution ?",
+  "variationEnglish": "May I suggest a solution?",
+  "vocabularyIds": [
+   "proposer",
+   "quelque-chose",
+   "pouvoir"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-56",
+  "text": "Je suis malade.",
+  "english": "I'm ill.",
+  "variation": "Je suis malade aujourd’hui.",
+  "variationEnglish": "I am ill today.",
+  "vocabularyIds": [
+   "malade",
+   "etre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-57",
+  "text": "Le réseau a régulièrement besoin d’entretien.",
+  "english": "The network needs regular maintenance.",
+  "variation": "Notre réseau a régulièrement besoin d’entretien.",
+  "variationEnglish": "Our network needs regular maintenance.",
+  "vocabularyIds": [
+   "reseau",
+   "regulierement",
+   "avoir-besoin-de",
+   "entretien"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-58",
+  "text": "Je vends mon vieil ordinateur portable.",
+  "english": "I'm selling my old laptop.",
+  "variation": "Je vends mon vieil ordinateur.",
+  "variationEnglish": "I'm selling my old computer.",
+  "vocabularyIds": [
+   "vendre",
+   "vieux",
+   "ordinateur-portable"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-59",
+  "text": "Est-ce clair ?",
+  "english": "Is it clear?",
+  "variation": "L’explication est-elle claire ?",
+  "variationEnglish": "Is the explanation clear?",
+  "vocabularyIds": [
+   "clair"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-60",
+  "text": "Soyez présent.",
+  "english": "Show up.",
+  "variation": "Soyez présent demain, à l’heure.",
+  "variationEnglish": "Be there tomorrow, on time.",
+  "vocabularyIds": [
+   "etre",
+   "present"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-61",
+  "text": "Cet investissement est très risqué.",
+  "english": "This investment is very risky.",
+  "variation": "Cet investissement-là est très risqué.",
+  "variationEnglish": "That investment is very risky.",
+  "vocabularyIds": [
+   "investissement",
+   "risque-adj",
+   "ce"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-62",
+  "text": "Tu le lui paies.",
+  "english": "You pay it to her.",
+  "variation": "C’est toi qui le lui paies.",
+  "variationEnglish": "You are the one who pays it to her.",
+  "vocabularyIds": [
+   "payer",
+   "lui",
+   "le"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-63",
+  "text": "Je suis une demi-heure en avance pour la réunion.",
+  "english": "I'm half an hour too early for the meeting.",
+  "variation": "Je suis dix minutes en avance pour le rendez-vous.",
+  "variationEnglish": "I am ten minutes early for the appointment.",
+  "vocabularyIds": [
+   "demi-heure",
+   "en-avance",
+   "reunion"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-64",
+  "text": "Il a fait cela pour nous.",
+  "english": "He made it for us.",
+  "variation": "Il a fait cette étagère pour nous.",
+  "variationEnglish": "He made this shelf for us.",
+  "vocabularyIds": [
+   "faire",
+   "cela"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-65",
+  "text": "Donne ce dossier au responsable.",
+  "english": "Give this folder to the manager.",
+  "variation": "Donne ce dossier-là au responsable.",
+  "variationEnglish": "Give that folder to the manager.",
+  "vocabularyIds": [
+   "donner",
+   "dossier",
+   "responsable-nom"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-66",
+  "text": "Je suis prêt pour ma présentation.",
+  "english": "I'm ready for my presentation.",
+  "variation": "Je suis prêt pour l’entretien.",
+  "variationEnglish": "I am ready for the interview.",
+  "vocabularyIds": [
+   "pret",
+   "presentation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-67",
+  "text": "Écris-tu le rapport maintenant ?",
+  "english": "Are you writing the report now?",
+  "variation": "Est-ce que tu écris le rapport maintenant ?",
+  "variationEnglish": "Are you writing the report now?",
+  "vocabularyIds": [
+   "ecrire",
+   "rapport"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-68",
+  "text": "Dois-tu me le dire avant la réunion ?",
+  "english": "Do you have to tell me that before the meeting?",
+  "variation": "Dois-tu me le dire aujourd’hui ?",
+  "variationEnglish": "Do you have to tell me that today?",
+  "vocabularyIds": [
+   "devoir",
+   "dire",
+   "avant-prep"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-69",
+  "text": "Il m’en faut un.",
+  "english": "I need one.",
+  "variation": "Il m’en faut deux.",
+  "variationEnglish": "I need two.",
+  "vocabularyIds": [
+   "falloir",
+   "en-pronoun"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-70",
+  "text": "Intervenez, s’il vous plaît.",
+  "english": "Intervene.",
+  "variation": "Intervenez maintenant, s’il vous plaît.",
+  "variationEnglish": "Intervene now, please.",
+  "vocabularyIds": [
+   "intervenir",
+   "sil-vous-plait"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-71",
+  "text": "Ça me semble réalisable.",
+  "english": "That sounds like a plan.",
+  "variation": "Ça me semble un bon plan.",
+  "variationEnglish": "That seems like a good plan.",
+  "vocabularyIds": [
+   "sembler",
+   "realisable"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-72",
+  "text": "Pouvez-vous donner des exemples ?",
+  "english": "Could you give examples?",
+  "variation": "Pouvez-vous donner deux exemples ?",
+  "variationEnglish": "Could you give two examples?",
+  "vocabularyIds": [
+   "donner",
+   "exemple"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-73",
+  "text": "Ils sont partis.",
+  "english": "They're gone.",
+  "variation": "Les visiteurs sont partis.",
+  "variationEnglish": "The visitors have left.",
+  "vocabularyIds": [
+   "partir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-74",
+  "text": "Pouvez-vous établir un devis ?",
+  "english": "Could you draw up a quotation?",
+  "variation": "Pouvez-vous établir un devis écrit ?",
+  "variationEnglish": "Could you draw up a written quotation?",
+  "vocabularyIds": [
+   "etablir",
+   "devis"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-75",
+  "text": "Nous lui avons offert nos services.",
+  "english": "We offered her our services.",
+  "variation": "Nous lui avons offert notre aide.",
+  "variationEnglish": "We offered her our help.",
+  "vocabularyIds": [
+   "offrir",
+   "service",
+   "lui"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-76",
+  "text": "Utilisez ce formulaire.",
+  "english": "Use this form.",
+  "variation": "Utilisez ce formulaire-là.",
+  "variationEnglish": "Use that form.",
+  "vocabularyIds": [
+   "utiliser",
+   "formulaire"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-77",
+  "text": "Nous avons besoin d’une nouvelle stratégie.",
+  "english": "We need a new strategy.",
+  "variation": "Nous avons besoin d’une autre stratégie.",
+  "variationEnglish": "We need another strategy.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "strategie",
+   "nouveau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-78",
+  "text": "Pouvons-nous utiliser leur salle de réunion ?",
+  "english": "Can we use their meeting room?",
+  "variation": "Pouvons-nous utiliser leur bureau ?",
+  "variationEnglish": "Can we use their office?",
+  "vocabularyIds": [
+   "utiliser",
+   "leur",
+   "salle-de-reunion"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-79",
+  "text": "C’est notre héritage.",
+  "english": "This is our legacy.",
+  "variation": "Voilà notre héritage.",
+  "variationEnglish": "There is our legacy.",
+  "vocabularyIds": [
+   "heritage",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-80",
+  "text": "As-tu terminé ta tâche ?",
+  "english": "Have you finished your task?",
+  "variation": "As-tu fini ta tâche ?",
+  "variationEnglish": "Have you finished your task?",
+  "vocabularyIds": [
+   "terminer",
+   "tache",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-81",
+  "text": "Je vérifierai son agenda.",
+  "english": "I'll check her calendar.",
+  "variation": "Demain, je vérifierai son agenda.",
+  "variationEnglish": "Tomorrow, I will check her calendar.",
+  "vocabularyIds": [
+   "verifier",
+   "agenda"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-82",
+  "text": "Finalisons notre proposition.",
+  "english": "Let's finalize our proposal.",
+  "variation": "Finalisons notre proposition aujourd’hui.",
+  "variationEnglish": "Let's finalize our proposal today.",
+  "vocabularyIds": [
+   "finaliser",
+   "proposition",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-83",
+  "text": "J’avais déjà appelé le bureau.",
+  "english": "I'd already called the office.",
+  "variation": "J’avais déjà appelé la réception.",
+  "variationEnglish": "I had already called the reception desk.",
+  "vocabularyIds": [
+   "appeler",
+   "bureau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-84",
+  "text": "Notre projet est stimulant.",
+  "english": "Our project is challenging.",
+  "variation": "Ce projet est stimulant.",
+  "variationEnglish": "This project is challenging.",
+  "vocabularyIds": [
+   "projet",
+   "stimulant",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-85",
+  "text": "Il est en train de charger le camion.",
+  "english": "He's busy loading the truck.",
+  "variation": "Il est occupé à charger le camion.",
+  "variationEnglish": "He is busy loading the truck.",
+  "vocabularyIds": [
+   "en-train-de",
+   "charger",
+   "camion"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-86",
+  "text": "Peux-tu me dire le code d’accès ?",
+  "english": "Can you tell me the access code?",
+  "variation": "Peux-tu me dire le mot de passe ?",
+  "variationEnglish": "Can you tell me the password?",
+  "vocabularyIds": [
+   "code-d-acces",
+   "dire",
+   "pouvoir"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-87",
+  "text": "Trouvez les documents manquants.",
+  "english": "Find the missing documents.",
+  "variation": "Trouvez le document manquant.",
+  "variationEnglish": "Find the missing document.",
+  "vocabularyIds": [
+   "trouver",
+   "document",
+   "manquant"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-88",
+  "text": "Peux-tu m’expliquer les nouvelles règles de sécurité ?",
+  "english": "Can you explain the new safety rules to me?",
+  "variation": "Peux-tu m’expliquer la nouvelle procédure ?",
+  "variationEnglish": "Can you explain the new procedure to me?",
+  "vocabularyIds": [
+   "expliquer",
+   "regle",
+   "securite",
+   "nouveau"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-89",
+  "text": "Elle est douée pour expliquer les choses.",
+  "english": "She's good at explaining things.",
+  "variation": "Elle explique très bien les choses.",
+  "variationEnglish": "She explains things very well.",
+  "vocabularyIds": [
+   "doue",
+   "expliquer",
+   "chose"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-90",
+  "text": "Parles-en avec moi, s’il te plaît.",
+  "english": "Please talk with me about it.",
+  "variation": "Parles-en avec moi demain.",
+  "variationEnglish": "Talk with me about it tomorrow.",
+  "vocabularyIds": [
+   "parler",
+   "en-pronoun",
+   "sil-te-plait"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-91",
+  "text": "Je suis désolé de devoir demander cela.",
+  "english": "I'm sorry to have to ask this.",
+  "variation": "Je suis navré de devoir demander cela.",
+  "variationEnglish": "I am sorry to have to ask this.",
+  "vocabularyIds": [
+   "desole",
+   "devoir",
+   "demander"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-92",
+  "text": "Elle m’a rendu mon badge.",
+  "english": "She gave me my badge back.",
+  "variation": "Elle m’a rendu ma clé.",
+  "variationEnglish": "She gave me my key back.",
+  "vocabularyIds": [
+   "rendre",
+   "badge"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-93",
+  "text": "Apporte ce colis à la réception.",
+  "english": "Take this package to reception.",
+  "variation": "Apporte ce colis-là à la réception.",
+  "variationEnglish": "Take that package to reception.",
+  "vocabularyIds": [
+   "apporter",
+   "colis",
+   "reception"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-94",
+  "text": "Quel est le programme pour cet après-midi ?",
+  "english": "What is the agenda for this afternoon?",
+  "variation": "Quel est le programme pour demain ?",
+  "variationEnglish": "What is the agenda for tomorrow?",
+  "vocabularyIds": [
+   "programme",
+   "quel",
+   "apres-midi"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-95",
+  "text": "Le produit a besoin d’une mise à jour.",
+  "english": "The product needs an update.",
+  "variation": "Ce produit a besoin d’une mise à jour.",
+  "variationEnglish": "This product needs an update.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "mise-a-jour",
+   "produit"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-96",
+  "text": "Je m’en occupe.",
+  "english": "I'll take care of it.",
+  "variation": "Je m’occupe de la réservation.",
+  "variationEnglish": "I'll take care of the booking.",
+  "vocabularyIds": [
+   "s-occuper-de",
+   "en-pronoun"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-97",
+  "text": "Pouvez-vous proposer une solution à ce problème de réseau ?",
+  "english": "Could you provide a solution to this network problem?",
+  "variation": "Pouvez-vous proposer une solution à ce problème ?",
+  "variationEnglish": "Could you provide a solution to this problem?",
+  "vocabularyIds": [
+   "proposer",
+   "solution",
+   "probleme",
+   "reseau"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-98",
+  "text": "Votre contribution est essentielle.",
+  "english": "Your input is crucial.",
+  "variation": "Votre avis est essentiel.",
+  "variationEnglish": "Your opinion is essential.",
+  "vocabularyIds": [
+   "contribution",
+   "essentiel",
+   "votre"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-99",
+  "text": "Je veux aller au salon professionnel la semaine prochaine.",
+  "english": "I want to go to the trade fair next week.",
+  "variation": "Je veux aller au salon professionnel demain.",
+  "variationEnglish": "I want to go to the trade fair tomorrow.",
+  "vocabularyIds": [
+   "vouloir",
+   "aller",
+   "salon-professionnel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-100",
+  "text": "Je pèse le colis.",
+  "english": "I'm weighing the package.",
+  "variation": "Je pèse cette boîte.",
+  "variationEnglish": "I'm weighing this box.",
+  "vocabularyIds": [
+   "peser",
+   "colis"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-101",
+  "text": "Tu m’entends ?",
+  "english": "Can you hear me?",
+  "variation": "M’entends-tu ?",
+  "variationEnglish": "Can you hear me?",
+  "vocabularyIds": [
+   "entendre",
+   "me"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-102",
+  "text": "Son équipe est très occupée.",
+  "english": "His team is very busy.",
+  "variation": "Son équipe est très occupée aujourd’hui.",
+  "variationEnglish": "His team is very busy today.",
+  "vocabularyIds": [
+   "equipe",
+   "occupe",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-103",
+  "text": "J’ai hâte.",
+  "english": "I'm looking forward to it.",
+  "variation": "J’ai vraiment hâte.",
+  "variationEnglish": "I am really looking forward to it.",
+  "vocabularyIds": [
+   "avoir-hate",
+   "hate"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-104",
+  "text": "Ça ne me dérange pas.",
+  "english": "I don't mind.",
+  "variation": "Cela ne me dérange pas.",
+  "variationEnglish": "That does not bother me.",
+  "vocabularyIds": [
+   "deranger",
+   "ne-pas"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-105",
+  "text": "Leurs idées sont innovantes.",
+  "english": "Their ideas are innovative.",
+  "variation": "Leurs propositions sont innovantes.",
+  "variationEnglish": "Their proposals are innovative.",
+  "vocabularyIds": [
+   "idee",
+   "innovant",
+   "leur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-106",
+  "text": "Je m’y mets tout de suite.",
+  "english": "I'll get started on it right away.",
+  "variation": "On s’y met demain.",
+  "variationEnglish": "We will get started on it tomorrow.",
+  "vocabularyIds": [
+   "se-mettre-a",
+   "tout-de-suite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-107",
+  "text": "Ses efforts ont été reconnus.",
+  "english": "His efforts were recognized.",
+  "variation": "Ses efforts ont été remarqués.",
+  "variationEnglish": "His efforts were noticed.",
+  "vocabularyIds": [
+   "effort",
+   "reconnaitre",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-108",
+  "text": "Nous avons besoin de plus de temps.",
+  "english": "We need more time.",
+  "variation": "Nous avons besoin d’un peu plus de temps.",
+  "variationEnglish": "We need a little more time.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "plus-de",
+   "temps"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-109",
+  "text": "Ils parlent du prix.",
+  "english": "They're talking about the price.",
+  "variation": "Ils parlent des coûts.",
+  "variationEnglish": "They are talking about the costs.",
+  "vocabularyIds": [
+   "parler",
+   "prix-cout"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-110",
+  "text": "Bon travail.",
+  "english": "Well done.",
+  "variation": "Tu as très bien fait cela.",
+  "variationEnglish": "You did that very well.",
+  "vocabularyIds": [
+   "bon",
+   "travail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-111",
+  "text": "Elle nous a envoyé les photos.",
+  "english": "She sent the photos to us.",
+  "variation": "Elle a envoyé les photos au client.",
+  "variationEnglish": "She sent the photos to the client.",
+  "vocabularyIds": [
+   "envoyer",
+   "photo",
+   "nous"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-112",
+  "text": "Je ne suis pas encore sûr.",
+  "english": "I'm not sure yet.",
+  "variation": "Nous ne sommes pas encore sûrs.",
+  "variationEnglish": "We are not sure yet.",
+  "vocabularyIds": [
+   "sur-certain",
+   "encore"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-113",
+  "text": "Où est le piège ?",
+  "english": "What's the catch?",
+  "variation": "Où se cache le piège ?",
+  "variationEnglish": "Where is the catch hiding?",
+  "vocabularyIds": [
+   "piege",
+   "ou-adv"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-114",
+  "text": "Il a parlé avec le responsable.",
+  "english": "He spoke with the manager.",
+  "variation": "Elle a parlé avec le responsable.",
+  "variationEnglish": "She spoke with the manager.",
+  "vocabularyIds": [
+   "parler",
+   "responsable-nom"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-115",
+  "text": "Déléguons les tâches.",
+  "english": "Let's delegate tasks.",
+  "variation": "Déléguons ces tâches.",
+  "variationEnglish": "Let's delegate these tasks.",
+  "vocabularyIds": [
+   "deleguer",
+   "tache"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-116",
+  "text": "Il a terminé sa tâche.",
+  "english": "He completed his task.",
+  "variation": "Elle a terminé sa tâche.",
+  "variationEnglish": "She completed her task.",
+  "vocabularyIds": [
+   "terminer",
+   "tache",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-117",
+  "text": "Qui est responsable ?",
+  "english": "Who's in charge?",
+  "variation": "Qui est responsable aujourd’hui ?",
+  "variationEnglish": "Who is in charge today?",
+  "vocabularyIds": [
+   "responsable",
+   "qui"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-118",
+  "text": "Envoie-lui le contrat signé.",
+  "english": "Send the signed contract to him.",
+  "variation": "Envoyez-lui le contrat signé.",
+  "variationEnglish": "Send him the signed contract. (formal)",
+  "vocabularyIds": [
+   "envoyer",
+   "lui",
+   "contrat",
+   "signe"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-119",
+  "text": "Je dois trouver une solution à cette fuite.",
+  "english": "I have to find a solution to this leak.",
+  "variation": "Nous devons trouver une solution à cette fuite.",
+  "variationEnglish": "We have to find a solution to this leak.",
+  "vocabularyIds": [
+   "devoir",
+   "solution",
+   "fuite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-120",
+  "text": "Je suis ici pour demander conseil.",
+  "english": "I'm here to ask for advice.",
+  "variation": "Je suis ici pour demander de l’aide.",
+  "variationEnglish": "I am here to ask for help.",
+  "vocabularyIds": [
+   "demander-conseil",
+   "ici"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-121",
+  "text": "Aujourd’hui, je suis occupé avec le planning.",
+  "english": "I'm busy with the planning today.",
+  "variation": "Aujourd’hui, nous sommes occupés avec le planning.",
+  "variationEnglish": "Today we are busy with the schedule.",
+  "vocabularyIds": [
+   "aujourd-hui",
+   "occupe",
+   "planning"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-122",
+  "text": "Écoute bien.",
+  "english": "Listen carefully.",
+  "variation": "Écoute bien l’explication.",
+  "variationEnglish": "Listen carefully to the explanation.",
+  "vocabularyIds": [
+   "ecouter",
+   "bien"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-123",
+  "text": "Nous avons besoin de leurs commentaires avant vendredi.",
+  "english": "We need their input before Friday.",
+  "variation": "Nous avons besoin de leurs commentaires avant lundi.",
+  "variationEnglish": "We need their input before Monday.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "commentaire",
+   "leur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-124",
+  "text": "J’attends un appel.",
+  "english": "I'm waiting for a phone call.",
+  "variation": "Nous attendons un appel.",
+  "variationEnglish": "We are waiting for a call.",
+  "vocabularyIds": [
+   "attendre",
+   "appel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-125",
+  "text": "Ils travaillent leurs compétences.",
+  "english": "They're practising their skills.",
+  "variation": "Nous travaillons nos compétences.",
+  "variationEnglish": "We are practising our skills.",
+  "vocabularyIds": [
+   "travailler",
+   "competence",
+   "leur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-126",
+  "text": "Pouvons-nous conclure cet accord ?",
+  "english": "Can we close this deal?",
+  "variation": "Pouvons-nous conclure ce contrat ?",
+  "variationEnglish": "Can we close this contract?",
+  "vocabularyIds": [
+   "conclure",
+   "accord",
+   "ce"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-127",
+  "text": "Commençons la présentation.",
+  "english": "Let's start the presentation.",
+  "variation": "Commençons la présentation maintenant.",
+  "variationEnglish": "Let's start the presentation now.",
+  "vocabularyIds": [
+   "commencer",
+   "presentation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-128",
+  "text": "C’est notre vision commune.",
+  "english": "This is our shared vision.",
+  "variation": "Voilà notre vision commune.",
+  "variationEnglish": "There is our shared vision.",
+  "vocabularyIds": [
+   "vision",
+   "commun",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-129",
+  "text": "Comment va ton travail ?",
+  "english": "How's work going?",
+  "variation": "Comment vont tes études ?",
+  "variationEnglish": "How are your studies going?",
+  "vocabularyIds": [
+   "comment",
+   "aller",
+   "travail"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-130",
+  "text": "Donne la batterie de rechange au technicien.",
+  "english": "Give the spare battery to the technician.",
+  "variation": "Donne-lui la batterie de rechange.",
+  "variationEnglish": "Give her the spare battery.",
+  "vocabularyIds": [
+   "donner",
+   "batterie-de-rechange",
+   "technicien"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-131",
+  "text": "Je suis désolé d’entendre cela.",
+  "english": "I'm sorry to hear that.",
+  "variation": "Nous sommes désolés d’entendre cela.",
+  "variationEnglish": "We are sorry to hear that.",
+  "vocabularyIds": [
+   "desole",
+   "entendre",
+   "cela"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-132",
+  "text": "Il nous a dit que le train a du retard.",
+  "english": "He told us that the train is delayed.",
+  "variation": "Il nous a dit que le bus a du retard.",
+  "variationEnglish": "He told us that the bus is delayed.",
+  "vocabularyIds": [
+   "dire",
+   "avoir-du-retard",
+   "que-conj"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-133",
+  "text": "Quelle est la vitesse ?",
+  "english": "What's the speed?",
+  "variation": "Quelle est la vitesse maximale ?",
+  "variationEnglish": "What is the maximum speed?",
+  "vocabularyIds": [
+   "vitesse",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-134",
+  "text": "Trouve la réponse dans le manuel.",
+  "english": "Find the answer in the manual.",
+  "variation": "Cherche la réponse dans le manuel.",
+  "variationEnglish": "Look for the answer in the manual.",
+  "vocabularyIds": [
+   "trouver",
+   "reponse",
+   "manuel"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-135",
+  "text": "J’envoie mon e-mail.",
+  "english": "I'll send my email.",
+  "variation": "J’envoie mon e-mail tout à l’heure.",
+  "variationEnglish": "I will send my email in a little while.",
+  "vocabularyIds": [
+   "envoyer",
+   "e-mail",
+   "mon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-136",
+  "text": "Le métier d’acteur est exigeant.",
+  "english": "Acting is a demanding profession.",
+  "variation": "Enseigner est un métier exigeant.",
+  "variationEnglish": "Teaching is a demanding profession.",
+  "vocabularyIds": [
+   "metier",
+   "acteur",
+   "exigeant"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-137",
+  "text": "Je t’ai rendu la clé empruntée.",
+  "english": "I returned the borrowed key to you.",
+  "variation": "Je t’ai rendu le livre emprunté.",
+  "variationEnglish": "I returned the borrowed book to you.",
+  "vocabularyIds": [
+   "rendre",
+   "cle",
+   "emprunte"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-138",
+  "text": "Elle sait de quoi elle parle.",
+  "english": "She knows what she is talking about.",
+  "variation": "Il sait de quoi il parle.",
+  "variationEnglish": "He knows what he is talking about.",
+  "vocabularyIds": [
+   "savoir",
+   "de-quoi"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-139",
+  "text": "Pouvez-vous préciser cela ?",
+  "english": "Could you explain that in more detail?",
+  "variation": "Pouvez-vous préciser votre proposition ?",
+  "variationEnglish": "Could you clarify your proposal?",
+  "vocabularyIds": [
+   "preciser",
+   "pouvoir",
+   "cela"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-140",
+  "text": "Qu’est-ce qui reste ?",
+  "english": "What's left?",
+  "variation": "Qu’est-ce qui reste encore ?",
+  "variationEnglish": "What is still left?",
+  "vocabularyIds": [
+   "quest-ce-qui",
+   "rester"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-141",
+  "text": "Son heure est venue.",
+  "english": "His time has come.",
+  "variation": "Son heure est enfin venue.",
+  "variationEnglish": "His time has finally come.",
+  "vocabularyIds": [
+   "heure",
+   "venir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-142",
+  "text": "Je veux utiliser le nouveau scanner.",
+  "english": "I want to use the new scanner.",
+  "variation": "Nous voulons utiliser le nouveau scanner.",
+  "variationEnglish": "We want to use the new scanner.",
+  "vocabularyIds": [
+   "vouloir",
+   "utiliser",
+   "nouveau",
+   "scanner"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-143",
+  "text": "C’est un bon point.",
+  "english": "That's a good point.",
+  "variation": "C’est un point important.",
+  "variationEnglish": "That is an important point.",
+  "vocabularyIds": [
+   "point",
+   "bon",
+   "cest"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-144",
+  "text": "Peuvent-ils lui apprendre à utiliser la machine ?",
+  "english": "Can they teach him how to operate the machine?",
+  "variation": "Peuvent-ils lui montrer comment utiliser la machine ?",
+  "variationEnglish": "Can they show him how to use the machine?",
+  "vocabularyIds": [
+   "apprendre",
+   "pouvoir",
+   "machine",
+   "lui"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-145",
+  "text": "Nous planifions notre budget.",
+  "english": "We're planning our budget.",
+  "variation": "Nous planifions notre budget pour l’an prochain.",
+  "variationEnglish": "We are planning our budget for next year.",
+  "vocabularyIds": [
+   "planifier",
+   "budget",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-146",
+  "text": "Ils m’ont appris à attacher la ceinture de sécurité.",
+  "english": "They taught me how to fasten the safety belt.",
+  "variation": "Ils m’ont appris à détacher la ceinture.",
+  "variationEnglish": "They taught me how to unfasten the belt.",
+  "vocabularyIds": [
+   "apprendre",
+   "attacher",
+   "ceinture-de-securite"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-147",
+  "text": "Aide-les à ranger.",
+  "english": "Help them with the tidying up.",
+  "variation": "Aidez-les à ranger.",
+  "variationEnglish": "Help them with the tidying up. (formal)",
+  "vocabularyIds": [
+   "aider",
+   "les",
+   "ranger"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-148",
+  "text": "Quelle est notre arme secrète ?",
+  "english": "What's our secret weapon?",
+  "variation": "Notre expérience est notre arme secrète.",
+  "variationEnglish": "Our experience is our secret weapon.",
+  "vocabularyIds": [
+   "arme",
+   "secret",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-149",
+  "text": "Nous sommes en retard.",
+  "english": "We're late.",
+  "variation": "Nous sommes en retard pour la réunion.",
+  "variationEnglish": "We are late for the meeting.",
+  "vocabularyIds": [
+   "etre-en-retard",
+   "etre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-150",
+  "text": "Vends-lui la vieille imprimante.",
+  "english": "Sell the old printer to him.",
+  "variation": "Vendez-lui la vieille imprimante.",
+  "variationEnglish": "Sell him the old printer. (formal)",
+  "vocabularyIds": [
+   "vendre",
+   "lui",
+   "imprimante",
+   "vieux"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-151",
+  "text": "Sa formation était efficace.",
+  "english": "His training was effective.",
+  "variation": "Sa formation était très efficace.",
+  "variationEnglish": "His training was very effective.",
+  "vocabularyIds": [
+   "formation",
+   "efficace",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-152",
+  "text": "Diriger une entreprise est difficile.",
+  "english": "Running a business is difficult.",
+  "variation": "Gérer un magasin est difficile.",
+  "variationEnglish": "Managing a shop is difficult.",
+  "vocabularyIds": [
+   "diriger",
+   "entreprise",
+   "difficile"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-153",
+  "text": "Peux-tu écrire l’invitation pour moi ?",
+  "english": "Can you write the invitation for me?",
+  "variation": "Peux-tu écrire l’invitation à ma place ?",
+  "variationEnglish": "Can you write the invitation in my place?",
+  "vocabularyIds": [
+   "ecrire",
+   "invitation",
+   "moi"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-154",
+  "text": "L’économie est en croissance.",
+  "english": "The economy is growing.",
+  "variation": "L’économie locale est en croissance.",
+  "variationEnglish": "The local economy is growing.",
+  "vocabularyIds": [
+   "economie",
+   "croissance"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-155",
+  "text": "La réunion est annulée.",
+  "english": "The meeting has been cancelled.",
+  "variation": "Le rendez-vous est annulé.",
+  "variationEnglish": "The appointment has been cancelled.",
+  "vocabularyIds": [
+   "annuler",
+   "reunion"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-156",
+  "text": "Ils prévoient de rester tard.",
+  "english": "They're planning to stay late.",
+  "variation": "Nous prévoyons de rester plus longtemps.",
+  "variationEnglish": "We are planning to stay longer.",
+  "vocabularyIds": [
+   "prevoir",
+   "rester",
+   "tard"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-157",
+  "text": "Es-tu disponible maintenant ?",
+  "english": "Are you available now?",
+  "variation": "Es-tu disponible demain ?",
+  "variationEnglish": "Are you available tomorrow?",
+  "vocabularyIds": [
+   "disponible",
+   "etre",
+   "maintenant"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-158",
+  "text": "Nous pensons à changer le menu.",
+  "english": "We're thinking about changing the menu.",
+  "variation": "Nous pensons à élargir le menu.",
+  "variationEnglish": "We are thinking about expanding the menu.",
+  "vocabularyIds": [
+   "penser-a",
+   "changer",
+   "menu"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-159",
+  "text": "Raconte-nous cela.",
+  "english": "Tell us about it.",
+  "variation": "Raconte-moi cela.",
+  "variationEnglish": "Tell me about it.",
+  "vocabularyIds": [
+   "raconter",
+   "nous"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-160",
+  "text": "J’apprécie ton conseil.",
+  "english": "I appreciate your advice.",
+  "variation": "Nous apprécions ton conseil.",
+  "variationEnglish": "We appreciate your advice.",
+  "vocabularyIds": [
+   "apprecier",
+   "conseil",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-161",
+  "text": "Nos clients sont importants.",
+  "english": "Our customers are important.",
+  "variation": "Nos employés sont importants.",
+  "variationEnglish": "Our employees are important.",
+  "vocabularyIds": [
+   "client",
+   "important",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-162",
+  "text": "J’avais déjà envoyé la lettre.",
+  "english": "I'd already sent the letter.",
+  "variation": "Elle avait déjà envoyé la lettre.",
+  "variationEnglish": "She had already sent the letter.",
+  "vocabularyIds": [
+   "envoyer",
+   "lettre",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-163",
+  "text": "J’en ai trois.",
+  "english": "I have three of them.",
+  "variation": "J’en ai encore trois.",
+  "variationEnglish": "I still have three of them.",
+  "vocabularyIds": [
+   "en-pronoun",
+   "avoir",
+   "trois"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-164",
+  "text": "L’équipe a respecté le délai malgré la panne.",
+  "english": "The team met the deadline despite the malfunction.",
+  "variation": "L’équipe a respecté le délai malgré le retard.",
+  "variationEnglish": "The team met the deadline despite the delay.",
+  "vocabularyIds": [
+   "respecter",
+   "delai",
+   "malgre",
+   "panne"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-165",
+  "text": "Je n’en suis pas sûr.",
+  "english": "I'm not sure about that.",
+  "variation": "Nous n’en sommes pas sûrs.",
+  "variationEnglish": "We are not sure about that.",
+  "vocabularyIds": [
+   "sur-certain",
+   "en-pronoun"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-166",
+  "text": "Il n’était pas à son bureau.",
+  "english": "He wasn't at the desk.",
+  "variation": "Elle n’était pas à son bureau.",
+  "variationEnglish": "She wasn't at her desk.",
+  "vocabularyIds": [
+   "etre",
+   "bureau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-167",
+  "text": "J’essaie de réparer la lampe cassée.",
+  "english": "I'm trying to repair the broken lamp.",
+  "variation": "Nous essayons de réparer la lampe cassée.",
+  "variationEnglish": "We are trying to repair the broken lamp.",
+  "vocabularyIds": [
+   "essayer",
+   "reparer",
+   "lampe",
+   "casse"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-168",
+  "text": "Ce programme est facile à apprendre.",
+  "english": "This program is easy to learn.",
+  "variation": "Cette méthode est facile à apprendre.",
+  "variationEnglish": "This method is easy to learn.",
+  "vocabularyIds": [
+   "facile",
+   "apprendre",
+   "programme-logiciel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-169",
+  "text": "Qu’est-ce qui vaut mieux : réparer ou remplacer ?",
+  "english": "What's better: repairing or replacing?",
+  "variation": "Qu’est-ce qui coûte moins cher : réparer ou remplacer ?",
+  "variationEnglish": "What costs less: repairing or replacing?",
+  "vocabularyIds": [
+   "valoir-mieux",
+   "reparer",
+   "remplacer",
+   "ou-conj"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-170",
+  "text": "La discussion est très courte.",
+  "english": "The discussion is very short.",
+  "variation": "La pause est très courte.",
+  "variationEnglish": "The break is very short.",
+  "vocabularyIds": [
+   "discussion",
+   "court",
+   "tres"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-171",
+  "text": "Nous avions déjà fermé le magasin.",
+  "english": "We'd already closed the shop.",
+  "variation": "Nous avions déjà fermé le bureau.",
+  "variationEnglish": "We had already closed the office.",
+  "vocabularyIds": [
+   "fermer",
+   "magasin",
+   "deja"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-172",
+  "text": "Leur proposition a été acceptée.",
+  "english": "Their proposal was accepted.",
+  "variation": "Leur idée a été acceptée.",
+  "variationEnglish": "Their idea was accepted.",
+  "vocabularyIds": [
+   "accepter",
+   "proposition",
+   "leur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-173",
+  "text": "M’as-tu montré le nouveau design ?",
+  "english": "Have you shown me the new design?",
+  "variation": "Lui as-tu montré le nouveau design ?",
+  "variationEnglish": "Have you shown her the new design?",
+  "vocabularyIds": [
+   "montrer",
+   "design",
+   "me"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-174",
+  "text": "Fais cela avant de partir.",
+  "english": "Do this before you leave.",
+  "variation": "Fais cela avant de rentrer.",
+  "variationEnglish": "Do this before you go home.",
+  "vocabularyIds": [
+   "faire",
+   "avant-de",
+   "partir"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-175",
+  "text": "Nous avions déjà clôturé l’exercice comptable.",
+  "english": "We'd already closed the financial year.",
+  "variation": "Ils avaient déjà clôturé l’exercice comptable.",
+  "variationEnglish": "They had already closed the financial year.",
+  "vocabularyIds": [
+   "cloturer",
+   "exercice-comptable"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-176",
+  "text": "Je réfléchis à l’objectif.",
+  "english": "I'm thinking carefully about the goal.",
+  "variation": "Nous réfléchissons à l’objectif.",
+  "variationEnglish": "We are thinking carefully about the goal.",
+  "vocabularyIds": [
+   "reflechir",
+   "objectif"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-177",
+  "text": "Je reste debout ici.",
+  "english": "I'll stay standing here.",
+  "variation": "Je reste assis ici.",
+  "variationEnglish": "I'll stay seated here.",
+  "vocabularyIds": [
+   "rester",
+   "debout",
+   "ici"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-178",
+  "text": "Ils parlent de la qualité, pas de la couleur.",
+  "english": "They're talking about the quality, not the colour.",
+  "variation": "Ils parlent de la qualité, pas du prix.",
+  "variationEnglish": "They are talking about the quality, not the price.",
+  "vocabularyIds": [
+   "parler",
+   "qualite",
+   "couleur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-179",
+  "text": "Laisse-moi regarder un instant.",
+  "english": "Let me have a quick look.",
+  "variation": "Laisse-moi regarder le dessin.",
+  "variationEnglish": "Let me look at the drawing.",
+  "vocabularyIds": [
+   "laisser",
+   "regarder",
+   "instant"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-180",
+  "text": "Notre entreprise valorise la diversité.",
+  "english": "Our company values diversity.",
+  "variation": "Notre organisation valorise la diversité.",
+  "variationEnglish": "Our organisation values diversity.",
+  "vocabularyIds": [
+   "valoriser",
+   "diversite",
+   "entreprise"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-181",
+  "text": "C’est son ordinateur.",
+  "english": "That is his computer.",
+  "variation": "Voilà son ordinateur.",
+  "variationEnglish": "There is his / her computer.",
+  "vocabularyIds": [
+   "ordinateur",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-182",
+  "text": "Peux-tu parler un instant ?",
+  "english": "Can you talk for a moment?",
+  "variation": "Peux-tu parler tout à l’heure ?",
+  "variationEnglish": "Can you talk in a little while?",
+  "vocabularyIds": [
+   "pouvoir",
+   "parler",
+   "instant"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-183",
+  "text": "Elle est contente de son nouveau travail.",
+  "english": "She's happy with her new job.",
+  "variation": "Elle est contente de ses nouveaux collègues.",
+  "variationEnglish": "She is happy with her new colleagues.",
+  "vocabularyIds": [
+   "content",
+   "nouveau",
+   "travail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-184",
+  "text": "Il m’a envoyé un e-mail.",
+  "english": "He sent me an email.",
+  "variation": "Il m’a écrit un e-mail.",
+  "variationEnglish": "He wrote me an email.",
+  "vocabularyIds": [
+   "envoyer",
+   "e-mail",
+   "me"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-185",
+  "text": "Ils t’ont écrit une lettre.",
+  "english": "They have written you a letter.",
+  "variation": "Ils vous ont écrit une lettre.",
+  "variationEnglish": "They have written you a letter. (formal)",
+  "vocabularyIds": [
+   "ecrire",
+   "lettre",
+   "te"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-186",
+  "text": "Acheter des vêtements coûte cher.",
+  "english": "Buying clothes is expensive.",
+  "variation": "Acheter de nouveaux vêtements coûte cher.",
+  "variationEnglish": "Buying new clothes is expensive.",
+  "vocabularyIds": [
+   "acheter",
+   "vetement",
+   "couter-cher"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-187",
+  "text": "Ils vous appelleront dès que la commande sera prête.",
+  "english": "They'll call you as soon as the order is ready.",
+  "variation": "Ils vous appelleront dès que le colis sera prêt.",
+  "variationEnglish": "They will call you as soon as the parcel is ready.",
+  "vocabularyIds": [
+   "appeler",
+   "commande",
+   "des-que"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-188",
+  "text": "Quel était son commentaire ?",
+  "english": "What was his feedback?",
+  "variation": "Quel était leur commentaire ?",
+  "variationEnglish": "What was their feedback?",
+  "vocabularyIds": [
+   "commentaire",
+   "quel",
+   "etre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-189",
+  "text": "Partagez votre écran, s’il vous plaît.",
+  "english": "Please share your screen.",
+  "variation": "Partagez la bonne fenêtre, s’il vous plaît.",
+  "variationEnglish": "Please share the right window.",
+  "vocabularyIds": [
+   "partager",
+   "ecran",
+   "sil-vous-plait"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-190",
+  "text": "Elle nous a rendu la caution.",
+  "english": "She returned the deposit to us.",
+  "variation": "Elle nous a remboursé la caution.",
+  "variationEnglish": "She refunded the deposit to us.",
+  "vocabularyIds": [
+   "rendre",
+   "caution"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-191",
+  "text": "C’est ma responsabilité.",
+  "english": "This is my responsibility.",
+  "variation": "Ça, c’est ma responsabilité.",
+  "variationEnglish": "That is my responsibility.",
+  "vocabularyIds": [
+   "responsabilite",
+   "cest",
+   "mon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-192",
+  "text": "J’enverrai le rapport.",
+  "english": "I'll send the report.",
+  "variation": "J’enverrai le rapport ce soir.",
+  "variationEnglish": "I will send the report tonight.",
+  "vocabularyIds": [
+   "envoyer",
+   "rapport"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-193",
+  "text": "Quelle est la fiabilité de cette mesure ?",
+  "english": "How reliable is this measurement?",
+  "variation": "Quelle est la fiabilité de ces mesures ?",
+  "variationEnglish": "How reliable are these measurements?",
+  "vocabularyIds": [
+   "fiabilite",
+   "mesure",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-194",
+  "text": "Rester positif est important.",
+  "english": "Staying positive is important.",
+  "variation": "Rester calme est important.",
+  "variationEnglish": "Staying calm is important.",
+  "vocabularyIds": [
+   "rester",
+   "positif",
+   "important"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-195",
+  "text": "Es-tu occupé avec la préparation ?",
+  "english": "Are you busy with the preparation?",
+  "variation": "Es-tu occupé avec les invitations ?",
+  "variationEnglish": "Are you busy with the invitations?",
+  "vocabularyIds": [
+   "occupe",
+   "preparation",
+   "etre"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-196",
+  "text": "Il a expliqué sa théorie.",
+  "english": "He explained his theory.",
+  "variation": "Elle a expliqué sa théorie.",
+  "variationEnglish": "She explained her theory.",
+  "vocabularyIds": [
+   "expliquer",
+   "theorie",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-197",
+  "text": "Vérifiez mon travail, s’il vous plaît.",
+  "english": "Please check my work.",
+  "variation": "Vérifiez mon calcul, s’il vous plaît.",
+  "variationEnglish": "Please check my calculation.",
+  "vocabularyIds": [
+   "verifier",
+   "travail",
+   "sil-vous-plait"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-198",
+  "text": "Parle maintenant, car la réunion commence bientôt.",
+  "english": "Talk now, because the meeting starts shortly.",
+  "variation": "Parle maintenant, car il n’y aura plus de temps.",
+  "variationEnglish": "Talk now, because there will be no more time.",
+  "vocabularyIds": [
+   "parler",
+   "car",
+   "bientot"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-199",
+  "text": "Quel est son prochain coup ?",
+  "english": "What's his next move?",
+  "variation": "Quel est leur prochain coup ?",
+  "variationEnglish": "What is their next move?",
+  "vocabularyIds": [
+   "coup",
+   "prochain",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-200",
+  "text": "À quelle heure arrive-t-il ?",
+  "english": "What time does he arrive?",
+  "variation": "À quelle heure arrivent-ils ?",
+  "variationEnglish": "What time do they arrive?",
+  "vocabularyIds": [
+   "arriver",
+   "heure"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-201",
+  "text": "Nous devons rester compétitifs.",
+  "english": "We have to stay competitive.",
+  "variation": "Nous devons rester flexibles.",
+  "variationEnglish": "We have to stay flexible.",
+  "vocabularyIds": [
+   "devoir",
+   "rester",
+   "competitif"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-202",
+  "text": "J’envoie une invitation à tous les voisins.",
+  "english": "I'll send an invitation to all the neighbours.",
+  "variation": "Nous envoyons une invitation à tous les voisins.",
+  "variationEnglish": "We are sending an invitation to all the neighbours.",
+  "vocabularyIds": [
+   "envoyer",
+   "invitation",
+   "voisin",
+   "tout"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-203",
+  "text": "Ils font preuve de patience.",
+  "english": "They're being patient.",
+  "variation": "Nous devons faire preuve de patience.",
+  "variationEnglish": "We have to show patience.",
+  "vocabularyIds": [
+   "faire-preuve-de",
+   "patience"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-204",
+  "text": "Il lui expliquera la déviation.",
+  "english": "He'll explain the diversion to him.",
+  "variation": "Elle lui expliquera la déviation.",
+  "variationEnglish": "She will explain the diversion to him.",
+  "vocabularyIds": [
+   "expliquer",
+   "deviation",
+   "lui"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-205",
+  "text": "Attends-le à l’entrée.",
+  "english": "Wait for him by the entrance.",
+  "variation": "Attends-la à l’entrée.",
+  "variationEnglish": "Wait for her by the entrance.",
+  "vocabularyIds": [
+   "attendre",
+   "entree",
+   "le"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-206",
+  "text": "Je te promets que je serai à l’heure.",
+  "english": "I promise you that I'll be on time.",
+  "variation": "Je te promets que je viendrai demain.",
+  "variationEnglish": "I promise you that I will come tomorrow.",
+  "vocabularyIds": [
+   "promettre",
+   "etre",
+   "a-l-heure"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-207",
+  "text": "Je te vois demain à l’arrêt.",
+  "english": "I'll see you tomorrow at the stop.",
+  "variation": "Je te vois demain à la gare.",
+  "variationEnglish": "I'll see you tomorrow at the station.",
+  "vocabularyIds": [
+   "voir",
+   "arret",
+   "te"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-208",
+  "text": "Portez les dossiers pour moi, s’il vous plaît.",
+  "english": "Please carry the folders for me.",
+  "variation": "Portez les cartons pour moi, s’il vous plaît.",
+  "variationEnglish": "Please carry the boxes for me.",
+  "vocabularyIds": [
+   "porter",
+   "dossier",
+   "moi"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-209",
+  "text": "Je suis ici pour travailler sur le projet de rénovation.",
+  "english": "I'm here to work on the renovation project.",
+  "variation": "Nous sommes ici pour travailler sur le projet de rénovation.",
+  "variationEnglish": "We are here to work on the renovation project.",
+  "vocabularyIds": [
+   "travailler",
+   "projet",
+   "renovation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-210",
+  "text": "Lancez ce programme après l’installation.",
+  "english": "Start this program after installation.",
+  "variation": "Lancez le programme après l’installation.",
+  "variationEnglish": "Start the program after the installation.",
+  "vocabularyIds": [
+   "lancer",
+   "programme-logiciel",
+   "installation"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-211",
+  "text": "Ils se concentrent sur leur travail.",
+  "english": "They're focusing on their work.",
+  "variation": "Nous nous concentrons sur notre travail.",
+  "variationEnglish": "We are focusing on our work.",
+  "vocabularyIds": [
+   "se-concentrer",
+   "travail",
+   "leur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-212",
+  "text": "Il est parti tôt parce que le train a été annulé.",
+  "english": "He left early because the train was cancelled.",
+  "variation": "Il est parti tôt parce que le bus a été annulé.",
+  "variationEnglish": "He left early because the bus was cancelled.",
+  "vocabularyIds": [
+   "partir",
+   "parce-que",
+   "annuler",
+   "train"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-213",
+  "text": "Quelle est la meilleure approche ?",
+  "english": "What's the best approach?",
+  "variation": "Quelle est la meilleure approche pour ce problème ?",
+  "variationEnglish": "What is the best approach for this problem?",
+  "vocabularyIds": [
+   "meilleur",
+   "approche",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-214",
+  "text": "Je vais réparer la fermeture éclair cassée.",
+  "english": "I'm going to repair the broken zip.",
+  "variation": "Nous allons réparer la fermeture éclair cassée.",
+  "variationEnglish": "We are going to repair the broken zip.",
+  "vocabularyIds": [
+   "aller",
+   "reparer",
+   "fermeture-eclair",
+   "casse"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-215",
+  "text": "Faisons le point sur notre avancement.",
+  "english": "Let's review our progress.",
+  "variation": "Faisons ensemble le point sur notre avancement.",
+  "variationEnglish": "Let's review our progress together.",
+  "vocabularyIds": [
+   "faire-le-point",
+   "avancement",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-216",
+  "text": "Est-ce ta décision ?",
+  "english": "Is this your decision?",
+  "variation": "Est-ce votre décision ?",
+  "variationEnglish": "Is this your (plural or formal) decision?",
+  "vocabularyIds": [
+   "decision",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-217",
+  "text": "Il est en train de vérifier l’heure.",
+  "english": "He's checking the time.",
+  "variation": "Il est en train de vérifier le planning.",
+  "variationEnglish": "He is checking the schedule.",
+  "vocabularyIds": [
+   "en-train-de",
+   "verifier",
+   "heure"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-218",
+  "text": "J’ai trouvé ton idée sympa.",
+  "english": "I liked your idea.",
+  "variation": "Nous avons trouvé ton idée sympa.",
+  "variationEnglish": "We liked your idea.",
+  "vocabularyIds": [
+   "trouver",
+   "idee",
+   "sympa"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-219",
+  "text": "Confirmez votre réservation, s’il vous plaît.",
+  "english": "Please confirm your booking.",
+  "variation": "Confirmez votre réservation avant ce soir, s’il vous plaît.",
+  "variationEnglish": "Please confirm your booking before tonight.",
+  "vocabularyIds": [
+   "confirmer",
+   "reservation",
+   "sil-vous-plait"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-220",
+  "text": "Nous réfléchissons au risque de cet investissement.",
+  "english": "We're considering the risk of this investment.",
+  "variation": "Nous réfléchissons aux conséquences de cet investissement.",
+  "variationEnglish": "We are considering the consequences of this investment.",
+  "vocabularyIds": [
+   "reflechir",
+   "risque",
+   "investissement"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-221",
+  "text": "Quel est notre avantage concurrentiel par rapport aux grandes entreprises ?",
+  "english": "What's our competitive advantage compared with larger companies?",
+  "variation": "Quel est notre avantage par rapport aux grandes entreprises ?",
+  "variationEnglish": "What is our advantage compared with larger companies?",
+  "vocabularyIds": [
+   "avantage",
+   "concurrentiel",
+   "par-rapport-a",
+   "entreprise"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-222",
+  "text": "Cette solution fonctionnera-t-elle ?",
+  "english": "Will this solution work?",
+  "variation": "Ce plan fonctionnera-t-il ?",
+  "variationEnglish": "Will this plan work?",
+  "vocabularyIds": [
+   "fonctionner",
+   "solution"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-223",
+  "text": "Nous avons besoin de notre responsable pour résoudre ce conflit.",
+  "english": "We need our manager to resolve this conflict.",
+  "variation": "Nous avons besoin d’aide pour résoudre ce conflit.",
+  "variationEnglish": "We need help to resolve this conflict.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "resoudre",
+   "conflit"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-224",
+  "text": "Célébrons notre succès.",
+  "english": "Let's celebrate our success.",
+  "variation": "Célébrons notre succès ensemble.",
+  "variationEnglish": "Let's celebrate our success together.",
+  "vocabularyIds": [
+   "celebrer",
+   "succes",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-225",
+  "text": "C’est très important pour notre collaboration.",
+  "english": "This is very important for our cooperation.",
+  "variation": "C’est très important pour notre projet.",
+  "variationEnglish": "This is very important for our project.",
+  "vocabularyIds": [
+   "important",
+   "collaboration",
+   "tres"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-226",
+  "text": "Explique-nous la différence entre ces matériaux.",
+  "english": "Explain the difference between these materials to us.",
+  "variation": "Explique-nous la différence entre ces couleurs.",
+  "variationEnglish": "Explain the difference between these colours to us.",
+  "vocabularyIds": [
+   "expliquer",
+   "difference",
+   "materiau"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-227",
+  "text": "As-tu réparé mon vélo pour moi ?",
+  "english": "Have you repaired my bicycle for me?",
+  "variation": "As-tu réparé ma bicyclette pour moi ?",
+  "variationEnglish": "Have you repaired my bicycle for me?",
+  "vocabularyIds": [
+   "reparer",
+   "velo",
+   "moi"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-228",
+  "text": "La réparation sera-t-elle longue ?",
+  "english": "Will the repair take a long time?",
+  "variation": "L’installation sera-t-elle longue ?",
+  "variationEnglish": "Will the installation take a long time?",
+  "vocabularyIds": [
+   "reparation",
+   "long",
+   "etre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-229",
+  "text": "Le client a approuvé la conception finale.",
+  "english": "The customer has approved the final design.",
+  "variation": "Le client a approuvé le nouveau design.",
+  "variationEnglish": "The customer has approved the new design.",
+  "vocabularyIds": [
+   "approuver",
+   "conception",
+   "final"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-230",
+  "text": "Il a terminé le travail.",
+  "english": "He finished the work.",
+  "variation": "Elle a terminé le travail.",
+  "variationEnglish": "She finished the work.",
+  "vocabularyIds": [
+   "terminer",
+   "travail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-231",
+  "text": "Tu n’as pas fait d’erreur.",
+  "english": "You haven't made a mistake.",
+  "variation": "Tu n’as pas fait d’erreurs.",
+  "variationEnglish": "You haven't made any mistakes.",
+  "vocabularyIds": [
+   "faire",
+   "erreur"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-232",
+  "text": "Appelle-la après le repas de midi.",
+  "english": "Call her after lunch.",
+  "variation": "Appelle-la après la réunion.",
+  "variationEnglish": "Call her after the meeting.",
+  "vocabularyIds": [
+   "appeler",
+   "la-pronom",
+   "repas-de-midi"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-233",
+  "text": "Sa réunion commence bientôt.",
+  "english": "His meeting starts soon.",
+  "variation": "Sa réunion commence tout à l’heure.",
+  "variationEnglish": "His meeting starts in a little while.",
+  "vocabularyIds": [
+   "commencer",
+   "reunion",
+   "bientot"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-234",
+  "text": "Qui appelle ?",
+  "english": "Who's calling?",
+  "variation": "Qui appelle maintenant ?",
+  "variationEnglish": "Who is calling now?",
+  "vocabularyIds": [
+   "qui",
+   "appeler"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-235",
+  "text": "Quels sont les principaux enseignements ?",
+  "english": "What are the key insights?",
+  "variation": "Quelles sont les principales conclusions ?",
+  "variationEnglish": "What are the main conclusions?",
+  "vocabularyIds": [
+   "enseignement",
+   "principal",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-236",
+  "text": "Quelle est la date d’inscription ?",
+  "english": "What's the date of registration?",
+  "variation": "Quelle est la date de la rencontre ?",
+  "variationEnglish": "What is the date of the meeting?",
+  "vocabularyIds": [
+   "date",
+   "inscription",
+   "quel"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-237",
+  "text": "M’as-tu envoyé la facture ?",
+  "english": "Have you sent me the invoice?",
+  "variation": "M’as-tu envoyé la note ?",
+  "variationEnglish": "Have you sent me the bill?",
+  "vocabularyIds": [
+   "envoyer",
+   "facture",
+   "me"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-238",
+  "text": "Je veux réparer la chaise endommagée.",
+  "english": "I want to repair the damaged chair.",
+  "variation": "Nous voulons réparer la chaise endommagée.",
+  "variationEnglish": "We want to repair the damaged chair.",
+  "vocabularyIds": [
+   "vouloir",
+   "reparer",
+   "chaise",
+   "endommage"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-239",
+  "text": "Ils partagent leurs idées.",
+  "english": "They share their ideas.",
+  "variation": "Nous partageons nos idées.",
+  "variationEnglish": "We share our ideas.",
+  "vocabularyIds": [
+   "partager",
+   "idee",
+   "leur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-240",
+  "text": "Pouvez-vous me guider pas à pas ?",
+  "english": "Could you guide me through it?",
+  "variation": "Pouvez-vous me guider dans la procédure ?",
+  "variationEnglish": "Could you guide me through the procedure?",
+  "vocabularyIds": [
+   "guider",
+   "pas-a-pas",
+   "pouvoir"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-241",
+  "text": "Avez-vous évalué son travail ?",
+  "english": "Have you assessed his work?",
+  "variation": "Avez-vous déjà évalué son travail ?",
+  "variationEnglish": "Have you already assessed his work?",
+  "vocabularyIds": [
+   "evaluer",
+   "travail",
+   "son"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-242",
+  "text": "Merci de votre patience pendant l’attente.",
+  "english": "Thank you for your patience while waiting.",
+  "variation": "Merci de votre patience.",
+  "variationEnglish": "Thank you for your patience.",
+  "vocabularyIds": [
+   "merci",
+   "patience",
+   "attente"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-243",
+  "text": "Achète le billet de train pour lui.",
+  "english": "Buy the train ticket for him.",
+  "variation": "Achète le billet de train pour elle.",
+  "variationEnglish": "Buy the train ticket for her.",
+  "vocabularyIds": [
+   "acheter",
+   "billet-de-train",
+   "lui"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-244",
+  "text": "Elle a volé mon idée.",
+  "english": "She has stolen my idea.",
+  "variation": "Il a volé mon idée.",
+  "variationEnglish": "He has stolen my idea.",
+  "vocabularyIds": [
+   "voler-steal",
+   "idee",
+   "mon"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-245",
+  "text": "Il travaillait très dur.",
+  "english": "He worked very hard.",
+  "variation": "Elle travaillait très dur.",
+  "variationEnglish": "She worked very hard.",
+  "vocabularyIds": [
+   "travailler",
+   "dur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-246",
+  "text": "Tu avais l’air très fatigué.",
+  "english": "You looked very tired.",
+  "variation": "Tu avais l’air très épuisé.",
+  "variationEnglish": "You looked very exhausted.",
+  "vocabularyIds": [
+   "avoir-lair",
+   "fatigue"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-247",
+  "text": "Apporte les échantillons au laboratoire.",
+  "english": "Take the samples to the laboratory.",
+  "variation": "Apporte les échantillons au chercheur.",
+  "variationEnglish": "Take the samples to the researcher.",
+  "vocabularyIds": [
+   "apporter",
+   "echantillon",
+   "laboratoire"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-248",
+  "text": "Quel est l’objectif général de cette formation ?",
+  "english": "What's the overall aim of this training course?",
+  "variation": "Quel est l’objectif général de ce projet ?",
+  "variationEnglish": "What is the overall aim of this project?",
+  "vocabularyIds": [
+   "objectif",
+   "general",
+   "formation"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-249",
+  "text": "Combien de temps avons-nous ?",
+  "english": "How much time do we have?",
+  "variation": "Combien de temps avez-vous ?",
+  "variationEnglish": "How much time do you have?",
+  "vocabularyIds": [
+   "combien-de",
+   "temps",
+   "avoir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-250",
+  "text": "Puis-je utiliser mon ordinateur portable ?",
+  "english": "May I use my laptop?",
+  "variation": "Puis-je utiliser mon téléphone ?",
+  "variationEnglish": "May I use my phone?",
+  "vocabularyIds": [
+   "pouvoir",
+   "utiliser",
+   "ordinateur-portable"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-251",
+  "text": "Son ordinateur est hors ligne.",
+  "english": "Her computer is offline.",
+  "variation": "Son ordinateur est déconnecté.",
+  "variationEnglish": "Her computer is disconnected.",
+  "vocabularyIds": [
+   "ordinateur",
+   "hors-ligne",
+   "son"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-252",
+  "text": "Ce plan de travail est facile à nettoyer.",
+  "english": "This worktop is easy to clean.",
+  "variation": "Cette table est facile à nettoyer.",
+  "variationEnglish": "This table is easy to clean.",
+  "vocabularyIds": [
+   "plan-de-travail",
+   "facile",
+   "nettoyer"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-253",
+  "text": "Voici notre programme pour la journée de formation.",
+  "english": "This is our agenda for the training day.",
+  "variation": "Voici notre programme pour la rencontre.",
+  "variationEnglish": "This is our agenda for the meeting.",
+  "vocabularyIds": [
+   "voici",
+   "programme",
+   "journee-de-formation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-254",
+  "text": "Nous travaillions au bureau.",
+  "english": "We worked at the office.",
+  "variation": "Nous travaillions à la maison.",
+  "variationEnglish": "We worked at home.",
+  "vocabularyIds": [
+   "travailler",
+   "bureau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-255",
+  "text": "Je comprends pourquoi tu hésites.",
+  "english": "I understand why you are unsure.",
+  "variation": "Je comprends pourquoi tu doutes.",
+  "variationEnglish": "I understand why you doubt.",
+  "vocabularyIds": [
+   "comprendre",
+   "pourquoi",
+   "hesiter"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-256",
+  "text": "Cette piste cyclable est très sûre.",
+  "english": "This cycle path is very safe.",
+  "variation": "Ce chemin est très sûr.",
+  "variationEnglish": "This path is very safe.",
+  "vocabularyIds": [
+   "sur-safe",
+   "piste-cyclable"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-257",
+  "text": "Est-ce votre rapport sur l’accident ?",
+  "english": "Is this your report of the accident?",
+  "variation": "Est-ce votre rapport sur la visite ?",
+  "variationEnglish": "Is this your report of the visit?",
+  "vocabularyIds": [
+   "rapport",
+   "accident",
+   "votre"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-258",
+  "text": "Il leur vend son vélo.",
+  "english": "He sells his bicycle to them.",
+  "variation": "Il leur vend sa voiture.",
+  "variationEnglish": "He sells them his car.",
+  "vocabularyIds": [
+   "vendre",
+   "leur-pronom",
+   "velo"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-259",
+  "text": "Quel est ton plan pour le déménagement ?",
+  "english": "What's your plan for the move?",
+  "variation": "Quel est votre plan pour le déménagement ?",
+  "variationEnglish": "What is your (formal or plural) plan for the move?",
+  "vocabularyIds": [
+   "plan",
+   "demenagement",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-260",
+  "text": "Pouvez-vous m’envoyer le rapport ?",
+  "english": "Could you send me the report?",
+  "variation": "Pouvez-vous m’envoyer le rapport final ?",
+  "variationEnglish": "Could you send me the final report?",
+  "vocabularyIds": [
+   "pouvoir",
+   "envoyer",
+   "rapport"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-261",
+  "text": "Quel est leur plus grand obstacle pour trouver un logement ?",
+  "english": "What's their biggest obstacle to finding accommodation?",
+  "variation": "Quel est leur plus gros problème pour trouver un logement ?",
+  "variationEnglish": "What is their biggest problem in finding accommodation?",
+  "vocabularyIds": [
+   "obstacle",
+   "logement",
+   "grand"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-262",
+  "text": "Puis-je emprunter ton stylo pour signer ce formulaire ?",
+  "english": "May I borrow your pen to sign this form?",
+  "variation": "Puis-je emprunter votre stylo pour signer ce formulaire ?",
+  "variationEnglish": "May I borrow your pen to sign this form? (formal)",
+  "vocabularyIds": [
+   "emprunter",
+   "stylo",
+   "signer"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-263",
+  "text": "Je suis en retard pour le dernier tram.",
+  "english": "I'm too late for the last tram.",
+  "variation": "Nous sommes en retard pour le dernier tram.",
+  "variationEnglish": "We are late for the last tram.",
+  "vocabularyIds": [
+   "etre-en-retard",
+   "dernier",
+   "tram"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-264",
+  "text": "Nous devons stimuler l’innovation.",
+  "english": "We have to encourage innovation.",
+  "variation": "Nous devons stimuler la créativité.",
+  "variationEnglish": "We have to encourage creativity.",
+  "vocabularyIds": [
+   "stimuler",
+   "innovation",
+   "devoir"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-265",
+  "text": "Quelle est leur arme secrète pour faire du pain ?",
+  "english": "What's their secret weapon for baking bread?",
+  "variation": "Quel est leur secret pour faire du pain ?",
+  "variationEnglish": "What is their secret for baking bread?",
+  "vocabularyIds": [
+   "arme",
+   "secret",
+   "pain",
+   "quel"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-266",
+  "text": "Je suis désolé, la machine à café est en panne.",
+  "english": "I'm sorry, the coffee machine is broken.",
+  "variation": "Je suis désolé, l’imprimante est en panne.",
+  "variationEnglish": "I'm sorry, the printer is broken.",
+  "vocabularyIds": [
+   "desole",
+   "machine-a-cafe",
+   "en-panne"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-267",
+  "text": "Quel est le prochain nombre de cette suite ?",
+  "english": "What's the next number in this sequence?",
+  "variation": "Quel est le prochain mot de cette suite ?",
+  "variationEnglish": "What is the next word in this sequence?",
+  "vocabularyIds": [
+   "nombre",
+   "suite",
+   "prochain"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-268",
+  "text": "Je m’occupe de la logistique.",
+  "english": "I'll handle the logistics.",
+  "variation": "Nous nous occupons de la logistique.",
+  "variationEnglish": "We will handle the logistics.",
+  "vocabularyIds": [
+   "s-occuper-de",
+   "logistique"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-269",
+  "text": "Quelle est la prochaine étape pour demander un permis ?",
+  "english": "What's the next step in applying for a permit?",
+  "variation": "Quelle est la prochaine étape de cette demande ?",
+  "variationEnglish": "What is the next step of this application?",
+  "vocabularyIds": [
+   "etape",
+   "permis",
+   "demander"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-270",
+  "text": "Nous attendons avec impatience le début du cours de langue.",
+  "english": "We're looking forward to the start of the language course.",
+  "variation": "Nous attendons avec impatience le début du cours.",
+  "variationEnglish": "We are looking forward to the start of the course.",
+  "vocabularyIds": [
+   "attendre",
+   "impatience",
+   "debut",
+   "cours"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-271",
+  "text": "Je suis ici pour réparer l’ascenseur.",
+  "english": "I'm here to repair the lift.",
+  "variation": "Nous sommes ici pour réparer l’ascenseur.",
+  "variationEnglish": "We are here to repair the lift.",
+  "vocabularyIds": [
+   "ascenseur",
+   "reparer",
+   "ici"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-272",
+  "text": "Ce formulaire se remplit rapidement.",
+  "english": "This form can be filled in quickly.",
+  "variation": "Cette carte se remplit rapidement.",
+  "variationEnglish": "This card can be filled in quickly.",
+  "vocabularyIds": [
+   "remplir",
+   "rapidement",
+   "formulaire"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-273",
+  "text": "Ils seront en retard pour l’inscription.",
+  "english": "They'll be too late for registration.",
+  "variation": "Nous serons en retard pour l’inscription.",
+  "variationEnglish": "We will be late for registration.",
+  "vocabularyIds": [
+   "etre",
+   "etre-en-retard",
+   "inscription"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-274",
+  "text": "Je n’étais pas au bureau quand la livraison est arrivée.",
+  "english": "I wasn't at the office when the delivery arrived.",
+  "variation": "Je n’étais pas à la maison quand la livraison est arrivée.",
+  "variationEnglish": "I wasn't at home when the delivery arrived.",
+  "vocabularyIds": [
+   "etre",
+   "livraison",
+   "arriver",
+   "quand-conj"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-275",
+  "text": "Il vaut mieux attendre la confirmation.",
+  "english": "It's better to wait for confirmation.",
+  "variation": "Il vaut mieux attendre la réponse.",
+  "variationEnglish": "It is better to wait for the answer.",
+  "vocabularyIds": [
+   "valoir-mieux",
+   "attendre",
+   "confirmation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-276",
+  "text": "Explique-moi le contenu de cette lettre, s’il te plaît.",
+  "english": "Please explain the content of this letter to me.",
+  "variation": "Explique-moi cette lettre, s’il te plaît.",
+  "variationEnglish": "Please explain this letter to me.",
+  "vocabularyIds": [
+   "expliquer",
+   "contenu",
+   "sil-te-plait"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-277",
+  "text": "J’ai l’intention de continuer à vivre en Belgique.",
+  "english": "I'm planning to continue living in Belgium.",
+  "variation": "Je compte continuer à vivre en Belgique.",
+  "variationEnglish": "I intend to continue living in Belgium.",
+  "vocabularyIds": [
+   "avoir-lintention-de",
+   "continuer",
+   "vivre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-278",
+  "text": "Réfléchissons ensemble à des idées pour une fête de quartier.",
+  "english": "Let's brainstorm ideas for a neighbourhood party.",
+  "variation": "Réfléchissons ensemble à la fête de quartier.",
+  "variationEnglish": "Let's think together about the neighbourhood party.",
+  "vocabularyIds": [
+   "reflechir",
+   "ensemble",
+   "fete-de-quartier"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-279",
+  "text": "Il est important de rester calme pendant un conflit.",
+  "english": "It's important to stay calm during a conflict.",
+  "variation": "Il est important de rester calme.",
+  "variationEnglish": "It is important to stay calm.",
+  "vocabularyIds": [
+   "important",
+   "rester",
+   "calme",
+   "conflit"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-280",
+  "text": "Cet horodateur est facile à utiliser.",
+  "english": "This parking meter is easy to use.",
+  "variation": "Cette machine est facile à utiliser.",
+  "variationEnglish": "This machine is easy to use.",
+  "vocabularyIds": [
+   "horodateur",
+   "facile",
+   "utiliser"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-281",
+  "text": "Nous devons harmoniser nos objectifs.",
+  "english": "We have to align our goals with each other.",
+  "variation": "Nous harmonisons nos objectifs.",
+  "variationEnglish": "We are aligning our goals.",
+  "vocabularyIds": [
+   "devoir",
+   "harmoniser",
+   "objectif",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-282",
+  "text": "Il a terminé sa formation sans soutien financier.",
+  "english": "He completed his training without financial support.",
+  "variation": "Elle a terminé sa formation sans soutien financier.",
+  "variationEnglish": "She completed her training without financial support.",
+  "vocabularyIds": [
+   "terminer",
+   "formation",
+   "soutien",
+   "sans"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-283",
+  "text": "J’ai peur de l’échec.",
+  "english": "I'm afraid of failure.",
+  "variation": "Nous avons peur de l’échec.",
+  "variationEnglish": "We are afraid of failure.",
+  "vocabularyIds": [
+   "avoir-peur-de",
+   "echec"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-284",
+  "text": "C’est mon plus grand défi pendant le stage.",
+  "english": "This is my greatest challenge during the internship.",
+  "variation": "C’est ma tâche la plus difficile pendant le stage.",
+  "variationEnglish": "This is my most difficult task during the internship.",
+  "vocabularyIds": [
+   "defi",
+   "stage",
+   "grand"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-285",
+  "text": "Nous devons allumer le chauffage.",
+  "english": "We have to turn on the heating.",
+  "variation": "Nous allumons le chauffage.",
+  "variationEnglish": "We are turning on the heating.",
+  "vocabularyIds": [
+   "devoir",
+   "allumer",
+   "chauffage"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-286",
+  "text": "Je suis ici pour rester.",
+  "english": "I'm here to stay.",
+  "variation": "Nous sommes ici pour rester.",
+  "variationEnglish": "We are here to stay.",
+  "vocabularyIds": [
+   "etre",
+   "rester",
+   "ici"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-287",
+  "text": "Nous attendons avec impatience la réponse à notre candidature.",
+  "english": "We're looking forward to the reply to our job application.",
+  "variation": "J’attends avec impatience la réponse à ma candidature.",
+  "variationEnglish": "I am looking forward to the reply to my application.",
+  "vocabularyIds": [
+   "attendre",
+   "reponse",
+   "candidature"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-288",
+  "text": "Nous essaierons de réparer la fuite dans le toit.",
+  "english": "We'll try to repair the leak in the roof.",
+  "variation": "Nous essaierons de réparer la fuite du toit.",
+  "variationEnglish": "We will try to repair the leak in the roof.",
+  "vocabularyIds": [
+   "essayer",
+   "reparer",
+   "fuite",
+   "toit"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-289",
+  "text": "Veuillez mettre à jour votre statut.",
+  "english": "Please update your status.",
+  "variation": "Voulez-vous mettre à jour votre statut ?",
+  "variationEnglish": "Would you update your status?",
+  "vocabularyIds": [
+   "veuillez",
+   "mettre-a-jour",
+   "statut"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-290",
+  "text": "Demande-lui le chemin de la gare.",
+  "english": "Ask him for directions to the station.",
+  "variation": "Demandez-lui le chemin de la gare.",
+  "variationEnglish": "Ask him for directions to the station. (formal)",
+  "vocabularyIds": [
+   "demander",
+   "chemin",
+   "gare"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-291",
+  "text": "Quelles sont vos attentes ?",
+  "english": "What are your expectations?",
+  "variation": "Quelles sont tes attentes ?",
+  "variationEnglish": "What are your expectations? (informal)",
+  "vocabularyIds": [
+   "attente",
+   "quel",
+   "votre"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-292",
+  "text": "Elle est prête à présenter sa proposition.",
+  "english": "She's ready to explain her proposal.",
+  "variation": "Il est prêt à présenter sa proposition.",
+  "variationEnglish": "He is ready to explain his proposal.",
+  "vocabularyIds": [
+   "pret",
+   "presenter",
+   "proposition"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-293",
+  "text": "Cela demande une attention immédiate.",
+  "english": "This requires immediate attention.",
+  "variation": "Cette erreur demande une attention immédiate.",
+  "variationEnglish": "This error requires immediate attention.",
+  "vocabularyIds": [
+   "demander-requerir",
+   "attention",
+   "immediat"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-294",
+  "text": "Tiens tes promesses.",
+  "english": "Keep your promises.",
+  "variation": "Respecte tes engagements.",
+  "variationEnglish": "Honour your commitments.",
+  "vocabularyIds": [
+   "tenir",
+   "promesse",
+   "ton"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-295",
+  "text": "Tu n’as apporté aucun changement.",
+  "english": "You haven't made a change.",
+  "variation": "Tu n’as apporté aucune modification.",
+  "variationEnglish": "You haven't made any modification.",
+  "vocabularyIds": [
+   "apporter",
+   "aucun",
+   "changement"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-296",
+  "text": "Quelle est ma prochaine étape après cet entretien d’embauche ?",
+  "english": "What's my next step after this job interview?",
+  "variation": "Quelle est la prochaine étape après cet entretien ?",
+  "variationEnglish": "What is the next step after this interview?",
+  "vocabularyIds": [
+   "etape",
+   "entretien-d-embauche",
+   "quel"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-297",
+  "text": "Je fais de mon mieux.",
+  "english": "I'm doing my best.",
+  "variation": "Nous faisons de notre mieux.",
+  "variationEnglish": "We are doing our best.",
+  "vocabularyIds": [
+   "faire-de-son-mieux",
+   "mieux"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-298",
+  "text": "Ils n’étaient pas dans la salle pendant la conversation.",
+  "english": "They weren't in the room during the conversation.",
+  "variation": "Pendant la conversation, ils n’étaient pas dans la salle.",
+  "variationEnglish": "During the conversation, they were not in the room.",
+  "vocabularyIds": [
+   "etre",
+   "salle",
+   "conversation"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-299",
+  "text": "Il était content du résultat.",
+  "english": "He was happy with the result.",
+  "variation": "Elle était contente du résultat.",
+  "variationEnglish": "She was happy with the result.",
+  "vocabularyIds": [
+   "content",
+   "resultat",
+   "etre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-300",
+  "text": "Rapporte-moi les outils empruntés.",
+  "english": "Bring the borrowed tools back to me.",
+  "variation": "Rapporte-les-moi.",
+  "variationEnglish": "Bring them back to me.",
+  "vocabularyIds": [
+   "rapporter",
+   "outil",
+   "emprunte"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-301",
+  "text": "Quelle est l’astuce pour défaire ce nœud ?",
+  "english": "What's the trick to untying this knot?",
+  "variation": "Comment défaire ce nœud ?",
+  "variationEnglish": "How do I undo this knot?",
+  "vocabularyIds": [
+   "astuce",
+   "defaire",
+   "noeud"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-302",
+  "text": "Il est temps de rappeler les clients.",
+  "english": "It's time to call the customers back.",
+  "variation": "Il est maintenant temps de rappeler les clients.",
+  "variationEnglish": "It is now time to call the customers back.",
+  "vocabularyIds": [
+   "il-est-temps-de",
+   "rappeler",
+   "client"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-303",
+  "text": "Il est habitué à soulever des charges lourdes.",
+  "english": "He's used to heavy lifting.",
+  "variation": "Il est habitué à soulever des cartons lourds.",
+  "variationEnglish": "He is used to lifting heavy boxes.",
+  "vocabularyIds": [
+   "habitue",
+   "soulever",
+   "charge",
+   "lourd"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-304",
+  "text": "Ils sont ici pour la visite guidée.",
+  "english": "They're here for the guided tour.",
+  "variation": "Ils sont là pour la visite guidée.",
+  "variationEnglish": "They are here for the guided tour.",
+  "vocabularyIds": [
+   "visite-guidee",
+   "etre",
+   "ici"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-305",
+  "text": "Je pense à créer une entreprise.",
+  "english": "I'm thinking about starting a business.",
+  "variation": "J’envisage de créer une entreprise.",
+  "variationEnglish": "I am considering starting a business.",
+  "vocabularyIds": [
+   "penser-a",
+   "creer",
+   "entreprise"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-306",
+  "text": "Je t’ai acheté un dictionnaire.",
+  "english": "I bought a dictionary for you.",
+  "variation": "Je t’ai acheté ce dictionnaire.",
+  "variationEnglish": "I bought this dictionary for you.",
+  "vocabularyIds": [
+   "acheter",
+   "dictionnaire",
+   "te"
+  ],
+  "register": "tu",
+  "scenario": "You present a newly purchased dictionary to a friend who is learning French.",
+  "cue": "You present a newly purchased dictionary to a friend who is learning French.",
+  "note": "Scenario reworded: the Dutch card says the friend learns Dutch; the French learner's friend learns French."
+ },
+ {
+  "id": "work-307",
+  "text": "Nous dépassons notre budget.",
+  "english": "We're over our budget.",
+  "variation": "Nous dépassons le budget convenu.",
+  "variationEnglish": "We are over the agreed budget.",
+  "vocabularyIds": [
+   "depasser",
+   "budget",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-308",
+  "text": "Le niveau de l’eau monte.",
+  "english": "The water level is rising.",
+  "variation": "Le niveau de l’eau monte vite.",
+  "variationEnglish": "The water level is rising quickly.",
+  "vocabularyIds": [
+   "niveau",
+   "monter",
+   "eau"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-309",
+  "text": "C’est assez de peinture pour ce mur.",
+  "english": "That's enough paint for this wall.",
+  "variation": "Cette quantité de peinture suffit pour le mur.",
+  "variationEnglish": "This amount of paint is enough for the wall.",
+  "vocabularyIds": [
+   "assez-de",
+   "peinture",
+   "mur"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-310",
+  "text": "Nous avons séjourné à l’hôtel pendant la conférence.",
+  "english": "We stayed at the hotel during the conference.",
+  "variation": "Pendant la conférence, nous avons séjourné à l’hôtel.",
+  "variationEnglish": "During the conference, we stayed at the hotel.",
+  "vocabularyIds": [
+   "sejourner",
+   "hotel",
+   "conference"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-311",
+  "text": "Tu n’as pas laissé de message sur mon répondeur.",
+  "english": "You didn't leave a message on my voicemail.",
+  "variation": "Tu n’as laissé aucun message sur mon répondeur.",
+  "variationEnglish": "You did not leave any message on my voicemail.",
+  "vocabularyIds": [
+   "laisser",
+   "message",
+   "repondeur"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-312",
+  "text": "Montre-leur le nouveau design.",
+  "english": "Show them the new design.",
+  "variation": "Montrez-leur le nouveau plan.",
+  "variationEnglish": "Show them the new plan. (formal)",
+  "vocabularyIds": [
+   "montrer",
+   "leur-pronom",
+   "design"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-313",
+  "text": "Je vais travailler à la bibliothèque.",
+  "english": "I'm going to work in the library.",
+  "variation": "Aujourd’hui, je vais travailler à la bibliothèque.",
+  "variationEnglish": "Today I am going to work in the library.",
+  "vocabularyIds": [
+   "aller",
+   "travailler",
+   "bibliotheque"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-314",
+  "text": "Notre cours de cuisine commence maintenant.",
+  "english": "Our cooking lesson starts now.",
+  "variation": "Maintenant, notre cours de cuisine commence.",
+  "variationEnglish": "Now our cooking lesson is starting.",
+  "vocabularyIds": [
+   "cours-de-cuisine",
+   "commencer",
+   "notre"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-315",
+  "text": "Elle a acheté la peinture pour nous.",
+  "english": "She bought the paint for us.",
+  "variation": "Elle nous a acheté la peinture.",
+  "variationEnglish": "She bought us the paint.",
+  "vocabularyIds": [
+   "acheter",
+   "peinture",
+   "nous"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-316",
+  "text": "Prenons une décision sur les dates de vacances.",
+  "english": "Let's make a decision about the holiday dates.",
+  "variation": "Choisissons les dates de vacances.",
+  "variationEnglish": "Let's choose the holiday dates.",
+  "vocabularyIds": [
+   "prendre",
+   "decision",
+   "date",
+   "vacances"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-317",
+  "text": "J’ai besoin d’un stylo à encre bleue.",
+  "english": "I need a pen with blue ink.",
+  "variation": "J’ai besoin d’un stylo bleu.",
+  "variationEnglish": "I need a blue pen.",
+  "vocabularyIds": [
+   "avoir-besoin-de",
+   "stylo",
+   "encre",
+   "bleu"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-318",
+  "text": "Seras-tu libre la semaine prochaine pour déménager ?",
+  "english": "Will you be free next week to move house?",
+  "variation": "Serez-vous libre la semaine prochaine pour déménager ?",
+  "variationEnglish": "Will you be free next week to move house? (formal)",
+  "vocabularyIds": [
+   "etre",
+   "libre",
+   "demenager"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-319",
+  "text": "La recette de cette soupe est simple.",
+  "english": "The recipe for this soup is simple.",
+  "variation": "Cette recette est simple.",
+  "variationEnglish": "This recipe is simple.",
+  "vocabularyIds": [
+   "recette",
+   "soupe",
+   "simple"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-320",
+  "text": "Identifions des occasions de bénévolat.",
+  "english": "Let's identify opportunities for volunteer work.",
+  "variation": "Cherchons des possibilités de bénévolat.",
+  "variationEnglish": "Let's look for volunteering possibilities.",
+  "vocabularyIds": [
+   "identifier",
+   "occasion",
+   "benevolat"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-321",
+  "text": "J’avais déjà fait le travail préparatoire quand le technicien est arrivé.",
+  "english": "I'd already done the preparatory work when the technician arrived.",
+  "variation": "Quand le technicien est arrivé, j’avais déjà fait le travail préparatoire.",
+  "variationEnglish": "When the technician arrived, I had already done the preparatory work.",
+  "vocabularyIds": [
+   "faire",
+   "travail-preparatoire",
+   "technicien",
+   "arriver"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-322",
+  "text": "Travailles-tu maintenant sur le rapport de l’excursion ?",
+  "english": "Are you working on the report about the excursion now?",
+  "variation": "Es-tu en train d’écrire le rapport de l’excursion ?",
+  "variationEnglish": "Are you in the middle of writing the excursion report?",
+  "vocabularyIds": [
+   "travailler",
+   "rapport",
+   "excursion"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-323",
+  "text": "Est-ce ta réponse définitive à l’invitation ?",
+  "english": "Is that your final answer to the invitation?",
+  "variation": "Est-ce là ta réponse définitive à l’invitation ?",
+  "variationEnglish": "Is that your final answer to the invitation?",
+  "vocabularyIds": [
+   "reponse",
+   "definitif",
+   "invitation"
+  ],
+  "register": "tu"
+ },
+ {
+  "id": "work-324",
+  "text": "Où est son bureau dans ce bâtiment ?",
+  "english": "Where is his office in this building?",
+  "variation": "Où se trouve son bureau dans ce bâtiment ?",
+  "variationEnglish": "Where is his office located in this building?",
+  "vocabularyIds": [
+   "bureau",
+   "batiment",
+   "ou-adv"
+  ],
+  "register": "vous"
+ },
+ {
+  "id": "work-325",
+  "text": "L’entretien de cette machine est important.",
+  "english": "The maintenance of this machine is important.",
+  "variation": "L’entretien régulier est important.",
+  "variationEnglish": "Regular maintenance is important.",
+  "vocabularyIds": [
+   "entretien",
+   "machine",
+   "important"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-326",
+  "text": "Je rappelle le dentiste après le travail.",
+  "english": "I'll call the dentist back after work.",
+  "variation": "Après le travail, je rappelle le dentiste.",
+  "variationEnglish": "After work, I will call the dentist back.",
+  "vocabularyIds": [
+   "rappeler",
+   "dentiste",
+   "travail"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-327",
+  "text": "Nous avons trouvé une solution au problème de stockage.",
+  "english": "We have found a solution to the storage problem.",
+  "variation": "Nous avons résolu le problème de stockage.",
+  "variationEnglish": "We have solved the storage problem.",
+  "vocabularyIds": [
+   "trouver",
+   "solution",
+   "probleme",
+   "stockage"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-328",
+  "text": "La boutique de vélos est-elle ouverte le lundi ?",
+  "english": "Is the bicycle shop open on Mondays?",
+  "variation": "La boutique de vélos est-elle ouverte les lundis ?",
+  "variationEnglish": "Is the bicycle shop open on Mondays?",
+  "vocabularyIds": [
+   "boutique",
+   "ouvert",
+   "le-lundi"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-329",
+  "text": "L’entreprise a mis à jour sa politique.",
+  "english": "The company has updated its policy.",
+  "variation": "L’entreprise a mis à jour la politique.",
+  "variationEnglish": "The company has updated the policy.",
+  "vocabularyIds": [
+   "mettre-a-jour",
+   "politique",
+   "entreprise"
+  ],
+  "register": "neutral"
+ },
+ {
+  "id": "work-330",
+  "text": "Sois malin et compare les prix avant de réserver.",
+  "english": "Be smart and compare the prices before you book.",
+  "variation": "Sois prudent et compare les prix avant de réserver.",
+  "variationEnglish": "Be careful and compare the prices before you book.",
+  "vocabularyIds": [
+   "etre",
+   "malin",
+   "comparer",
+   "reserver"
+  ],
+  "register": "tu"
  }
 ]

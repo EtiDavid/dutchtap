@@ -66,6 +66,8 @@ See [.env.example](.env.example). Only two are used:
 - [docs/CONTENT_AUDIT.md](docs/CONTENT_AUDIT.md) — noun/adjective bank verification
 - [docs/FLASHCARDS.md](docs/FLASHCARDS.md) — sessions, flashcards, quiz, levels and audio generation
 - [docs/STAGE-1-HANDOVER.md](docs/STAGE-1-HANDOVER.md) — session engine, API and storage contracts, rules, tests, how to add content
+- [docs/FRENCH-HANDOVER.md](docs/FRENCH-HANDOVER.md) — French as a second learning language: scope, data, review status, speech limits, tests
+- [docs/french/REVIEW-TABLE.md](docs/french/REVIEW-TABLE.md) — review table for all 600 French cards
 - [docs/GRAMMAR-COVERAGE.md](docs/GRAMMAR-COVERAGE.md) — which practised grammar patterns the first 300 sentences cover (not yet re-audited for the 600), gaps and proposals
 - [docs/word-assets/CHATGPT-INSTRUCTIONS.md](docs/word-assets/CHATGPT-INSTRUCTIONS.md) — adding pictures and sounds to words
 - [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) — Vercel + Atlas + custom domain steps

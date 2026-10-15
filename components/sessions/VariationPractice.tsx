@@ -1,4 +1,6 @@
 "use client";
+import { modelFor } from "@/lib/practice/communication";
+import { AnswerModels, FamilyExamples } from "./AnswerModels";
 import { useState } from "react";
 import {
   parentFor,
@@ -105,9 +107,32 @@ export function ReviewHistory({
 }) {
   const [position, setPosition] = useState<number | null>(null);
   const { sound, listen, stop } = useCardAudio();
-  const history = session.history?.[mode] ?? [];
-  const card =
+  const fullHistory = session.history?.[mode] ?? [];
+  const history =
+    mode === "quiz" && session.quiz.current?.outcome
+      ? fullHistory.slice(0, -1)
+      : fullHistory;
+  const original =
     position === null ? undefined : deckCard(session.lang, history[position]);
+  const saved =
+    mode === "quiz" && position !== null
+      ? session.quizReview?.[
+          position - (fullHistory.length - (session.quizReview?.length ?? 0))
+        ]
+      : undefined;
+  const answer =
+    original && saved?.cardId === original.id
+      ? modelFor(original, saved.answerId)
+      : undefined;
+  const card =
+    original && answer
+      ? {
+          ...original,
+          text: answer.text,
+          english: answer.english,
+          audio: answer.id === "model" ? original.audio : undefined,
+        }
+      : original;
   if (!history.length) return null;
   return (
     <section className="flex flex-col gap-3" aria-label="Previous cards">
@@ -163,7 +188,17 @@ export function ReviewHistory({
                 {sound}
               </p>
             )}
-            <VariationExplanation id={card.id} />
+            {original && <AnswerModels card={original} activeId={answer?.id} />}
+            {original && <FamilyExamples card={original} />}
+            {!variationFor(card.id) &&
+              answer &&
+              answer.id !== "model" &&
+              original && (
+                <p className="mt-5 text-xs text-muted">
+                  Full breakdown below refers to the original card:{" "}
+                  <span lang="nl">{original.text}</span>
+                </p>
+              )}
             {!variationFor(card.id) && (
               <GrammarNotes
                 cardId={card.id}

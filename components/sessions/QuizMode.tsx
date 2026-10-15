@@ -4,6 +4,7 @@ import { CATEGORIES } from "@/lib/flashcards/engine";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import {
   deckCard,
+  quizModel,
   newAttemptId,
   pickQuizCard,
   availablePractice,
@@ -12,11 +13,9 @@ import {
 } from "@/lib/sessions/engine";
 import { QUIZ_POINTS, RETIRE_AT } from "@/lib/sessions/types";
 import { isVariation, variationFor } from "@/lib/variations/content";
-import {
-  VariationControls,
-  VariationExplanation,
-  ReviewHistory,
-} from "./VariationPractice";
+import { VariationControls, ReviewHistory } from "./VariationPractice";
+import { AnswerModels, FamilyExamples } from "./AnswerModels";
+import { modelFor } from "@/lib/practice/communication";
 import { copy } from "@/lib/lang/copy";
 import {
   shuffledTokenOrder,
@@ -42,6 +41,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
     if (card)
       store.dispatch(live.id, {
         type: "quiz/open",
+        rotateAnswers: live.lang === "nl",
         cardId: card.id,
         attemptId: newAttemptId(),
         tokenOrder: shuffledTokenOrder(card.text, Math.random, live.lang),
@@ -107,7 +107,22 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
         Choosing your next sentence…
       </p>
     );
-  const words = tokensForSentence(card.text, session.lang);
+  const selected = quizModel(session);
+  if (!selected)
+    return (
+      <p role="alert">
+        This saved answer is unavailable. Your card progress is still saved.
+      </p>
+    );
+  const feedback =
+    modelFor(card, current.outcome?.answerId ?? selected.id) ?? selected;
+  const spokenCard = {
+    ...card,
+    text: feedback.text,
+    english: feedback.english,
+    audio: feedback.id === "model" ? card.audio : undefined,
+  };
+  const words = tokensForSentence(selected.text, session.lang);
   const progress = progressOf(session, card.id);
   const placed = current.answer;
   const outcome = current.outcome;
@@ -151,6 +166,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
     const nextCard = nextId ? deckCard(session.lang, nextId) : undefined;
     store.dispatch(session.id, {
       type: "quiz/continue",
+      rotateAnswers: session.lang === "nl",
       attemptId: current!.attemptId,
       next: nextCard
         ? {
@@ -179,6 +195,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
       {stats}
       <article
         key={current.attemptId}
+        data-answer-id={current.answerId ?? "model"}
         className="flashcard-enter overflow-hidden rounded-3xl border border-border bg-white shadow-sm"
       >
         {!isVariation(card.id) && <CardImage card={card} alt={card.scenario} />}
@@ -188,14 +205,34 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
           </p>
         )}
         <div className="p-6">
-          <p className="text-base text-muted" data-testid="quiz-english">
-            {card.english}
-          </p>
-          <p className="mt-2 text-sm text-muted">Situation: {card.scenario}</p>
+          {session.lang === "nl" ? (
+            <p
+              className="text-base leading-relaxed"
+              data-testid="quiz-situation"
+            >
+              {card.scenario}
+            </p>
+          ) : (
+            <>
+              <p className="text-base text-muted" data-testid="quiz-english">
+                {card.english}
+              </p>
+              <p className="mt-2 text-sm text-muted">
+                Situation: {card.scenario}
+              </p>
+            </>
+          )}
           {!outcome ? (
             <>
               <p className="mt-3 text-sm text-muted">
-                Reproduce the taught sentence. {copy(session.lang).otherOrders}
+                {session.lang === "nl" ? (
+                  "Build an answer for this situation using every tile. The model wording can change next time; reviewed alternative orders using these words are accepted."
+                ) : (
+                  <>
+                    Reproduce the taught sentence.{" "}
+                    {copy(session.lang).otherOrders}
+                  </>
+                )}
               </p>
               <p
                 className="mt-3 min-h-12 rounded-xl border border-dashed border-border p-3 text-lg font-medium"
@@ -266,14 +303,25 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
               >
                 {outcome.correct
                   ? `${copy(session.lang).correct} Correct. +${QUIZ_POINTS} points`
-                  : "That differs from the taught sentence. Here it is:"}
+                  : session.lang === "nl"
+                    ? "That order does not match a reviewed answer for these tiles. One model is:"
+                    : "That differs from the taught sentence. Here it is:"}
               </p>
               <p
                 lang={session.lang}
                 className="mt-2 text-2xl font-semibold leading-snug"
+                data-testid="quiz-model-answer"
               >
-                {card.text}
+                {feedback.text}
               </p>
+              {session.lang === "nl" && (
+                <p
+                  className="mt-2 text-sm text-muted"
+                  data-testid="quiz-english"
+                >
+                  {feedback.english}
+                </p>
+              )}
               {!outcome.correct && (
                 <p className="mt-1 text-xs text-muted">
                   Your answer:{" "}
@@ -283,14 +331,20 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
                 </p>
               )}
               <AudioControls
-                card={card}
+                card={spokenCard}
                 sound={sound}
                 listen={listen}
                 stop={stop}
               />
-              {isVariation(card.id) ? (
-                <VariationExplanation id={card.id} />
-              ) : (
+              <AnswerModels card={card} activeId={feedback.id} />
+              <FamilyExamples card={card} />
+              {!isVariation(card.id) && feedback.id !== "model" && (
+                <p className="mt-5 text-xs text-muted">
+                  Full breakdown below refers to the original card:{" "}
+                  <span lang="nl">{card.text}</span>
+                </p>
+              )}
+              {!isVariation(card.id) && (
                 <GrammarNotes
                   key={card.id}
                   cardId={card.id}

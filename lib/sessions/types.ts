@@ -7,6 +7,9 @@ import {
   parentFor,
   variationsFor,
 } from "@/lib/variations/content";
+import { modelFor } from "@/lib/practice/communication";
+import { variationCard } from "@/lib/variations/content";
+import { cardFor } from "@/lib/content/cards";
 import { hasContent } from "@/lib/content/cards";
 
 export const MAX_ACTIVE_SESSIONS = 5;
@@ -46,6 +49,12 @@ export const cardProgressSchema = z.object({
   qWrong: count,
   qLastWrong: z.boolean(),
   level: z.enum(LEVELS).optional(),
+  quizAnswerRotation: z
+    .object({
+      remaining: z.array(z.string().max(80)).max(30),
+      last: z.string().max(80),
+    })
+    .optional(),
 });
 export type CardProgress = z.infer<typeof cardProgressSchema>;
 
@@ -67,6 +76,7 @@ const speakingCurrent = z.object({
   chosen: z.enum(LEVELS).nullable(),
 });
 const quizCurrent = z.object({
+  answerId: z.string().max(80).optional(),
   cardId: practiceId,
   attemptId: idString,
   tokenOrder: z
@@ -75,7 +85,11 @@ const quizCurrent = z.object({
     .max(40),
   answer: z.array(z.string().regex(/^t\d{1,2}$/)).max(40),
   outcome: z
-    .object({ correct: z.boolean(), points: z.number().int().min(0).max(1000) })
+    .object({
+      correct: z.boolean(),
+      points: z.number().int().min(0).max(1000),
+      answerId: z.string().max(80).optional(),
+    })
     .nullable(),
 });
 export type SpeakingCurrent = z.infer<typeof speakingCurrent>;
@@ -126,6 +140,10 @@ const sessionShape = z.object({
       quiz: z.array(practiceId).max(100),
     })
     .default({ study: [], speaking: [], quiz: [] }),
+  quizReview: z
+    .array(z.object({ cardId: practiceId, answerId: z.string().max(80) }))
+    .max(100)
+    .optional(),
   events: z.array(eventSchema).max(EVENT_LOG_LIMIT),
   applied: z.array(idString).max(APPLIED_LOG_LIMIT),
 });
@@ -176,6 +194,42 @@ function checkSession(s: SessionShape, ctx: z.RefinementCtx) {
     )
   )
     fail("History outside session");
+  const resolvePractice = (id: string) =>
+    s.lang === "nl" && variationFor(id)
+      ? variationCard(id)
+      : cardFor(s.lang, id);
+  if (s.quiz.current?.answerId) {
+    const c = resolvePractice(s.quiz.current.cardId);
+    if (!c || !modelFor(c, s.quiz.current.answerId))
+      fail("Unknown answer for current card");
+  }
+  if (s.quiz.current?.outcome?.answerId) {
+    const c = resolvePractice(s.quiz.current.cardId);
+    if (!c || !modelFor(c, s.quiz.current.outcome.answerId))
+      fail("Unknown feedback answer");
+  }
+  if (
+    s.quizReview?.some((r) => {
+      const c = resolvePractice(r.cardId);
+      return !ids.has(parentFor(r.cardId)) || !c || !modelFor(c, r.answerId);
+    })
+  )
+    fail("Invalid quiz review");
+  for (const [id, p] of [
+    ...Object.entries(s.cards),
+    ...Object.entries(s.childProgress),
+  ]) {
+    if (p.quizAnswerRotation) {
+      const c = resolvePractice(id);
+      const r = p.quizAnswerRotation;
+      if (
+        !c ||
+        new Set(r.remaining).size !== r.remaining.length ||
+        [...r.remaining, r.last].some((a) => !modelFor(c, a))
+      )
+        fail("Invalid answer rotation");
+    }
+  }
   if (ids.size !== s.cardIds.length) fail("Duplicate card ids");
   if (Object.keys(s.cards).some((id) => !ids.has(id)))
     fail("Progress for a card outside the session");
@@ -261,6 +315,7 @@ export const actionSchema = z.discriminatedUnion("type", [
   z.object({
     ...actionBase,
     type: z.literal("quiz/open"),
+    rotateAnswers: z.boolean().optional(),
     cardId: practiceId,
     attemptId: idString,
     tokenOrder: z
@@ -286,6 +341,7 @@ export const actionSchema = z.discriminatedUnion("type", [
   z.object({
     ...actionBase,
     type: z.literal("quiz/continue"),
+    rotateAnswers: z.boolean().optional(),
     attemptId: idString,
     next: attempt
       .extend({

@@ -3,6 +3,7 @@ import { deckCard, shuffleRound } from "@/lib/sessions/engine";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { CATEGORIES } from "@/lib/flashcards/engine";
 import { VariationControls, ReviewHistory } from "./VariationPractice";
+import { AnswerModels } from "./AnswerModels";
 import { primary } from "../flashcards/styles";
 import { GrammarNotes } from "../flashcards/GrammarNotes";
 import { AudioControls, CardImage, VocabLinks } from "./CardParts";
@@ -61,6 +62,7 @@ export function StudyMode({ session, store, onPractised }: ModeProps) {
             listen={listen}
             stop={stop}
           />
+          <AnswerModels card={card} />
           <GrammarNotes
             key={card.id}
             cardId={card.id}

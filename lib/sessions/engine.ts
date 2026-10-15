@@ -1,4 +1,10 @@
 import {
+  communicationFor,
+  modelFor,
+  matchAnswer,
+  type ModelAnswer,
+} from "@/lib/practice/communication";
+import {
   CATEGORIES,
   DEFAULT_LEVEL,
   LEVELS,
@@ -497,6 +503,56 @@ function releaseChildren(s: Session, parent: string) {
     ).length;
   f.unlocked = Math.max(f.unlocked, Math.min(10, 2 + learned));
 }
+/** The model is saved per attempt. Old saved attempts without answerId retain the original model. */
+export function quizModel(session: Session, current = session.quiz.current) {
+  const card = current && deckCard(session.lang, current.cardId);
+  return card && current ? modelFor(card, current.answerId) : undefined;
+}
+function openQuizAttempt(
+  s: Session,
+  cardId: string,
+  attemptId: string,
+  tokenOrder: string[],
+  rotate: boolean,
+) {
+  const card = deckCard(s.lang, cardId)!;
+  let selected: ModelAnswer = communicationFor(card).answers[0];
+  const rotating = rotate && s.lang === "nl";
+  if (rotating) {
+    const p = isVariation(cardId)
+      ? (s.childProgress[cardId] ??= emptyProgress())
+      : (s.cards[cardId] ??= emptyProgress());
+    const ids = communicationFor(card).answers.map((a) => a.id);
+    const previous = p.quizAnswerRotation;
+    let remaining = (previous?.remaining ?? []).filter((id) =>
+      ids.includes(id),
+    );
+    if (!remaining.length) {
+      remaining = shuffled(ids, seededRandom(attemptId + ":models"));
+      if (remaining.length > 1 && remaining[0] === previous?.last)
+        [remaining[0], remaining[1]] = [remaining[1], remaining[0]];
+    }
+    const chosen = remaining.shift()!;
+    selected = modelFor(card, chosen)!;
+    p.quizAnswerRotation = { remaining, last: chosen };
+  }
+  const order =
+    !rotating && isTokenPermutation(selected.text, tokenOrder, s.lang)
+      ? tokenOrder
+      : shuffledTokenOrder(
+          selected.text,
+          seededRandom(attemptId + ":tiles"),
+          s.lang,
+        );
+  return {
+    cardId,
+    attemptId,
+    tokenOrder: order,
+    answer: [],
+    outcome: null,
+    ...(rotating ? { answerId: selected.id } : {}),
+  };
+}
 export function newAttemptId() {
   return newId();
 }
@@ -740,29 +796,20 @@ export function applyAction(
       const card = deckCard(s.lang, action.cardId);
       if (!card || !allowed(action.cardId, "quiz"))
         return reject(input, "invalid");
-      const order = isTokenPermutation(card.text, action.tokenOrder, s.lang)
-        ? action.tokenOrder
-        : shuffledTokenOrder(card.text, seededRandom(action.attemptId), s.lang);
-      s.quiz.current = {
-        cardId: action.cardId,
-        attemptId: action.attemptId,
-        tokenOrder: order,
-        answer: [],
-        outcome: null,
-      };
+      s.quiz.current = openQuizAttempt(
+        s,
+        action.cardId,
+        action.attemptId,
+        action.tokenOrder,
+        action.rotateAnswers ?? false,
+      );
       break;
     }
     case "quiz/draft": {
       const current = s.quiz.current;
       if (current?.attemptId !== action.attemptId || current.outcome)
         return reject(input, "stale");
-      if (
-        !isValidDraft(
-          deckCard(s.lang, current.cardId)?.text ?? "",
-          action.answer,
-          s.lang,
-        )
-      )
+      if (!isValidDraft(quizModel(s)?.text ?? "", action.answer, s.lang))
         return reject(input, "invalid");
       current.answer = [...action.answer];
       break;
@@ -772,10 +819,22 @@ export function applyAction(
       if (current?.attemptId !== action.attemptId || current.outcome)
         return reject(input, "stale"); // the same attempt can be scored only once
       const card = deckCard(s.lang, current.cardId);
-      if (!card || !isTokenPermutation(card.text, action.answer, s.lang))
+      const selected = quizModel(s);
+      if (
+        !card ||
+        !selected ||
+        !isTokenPermutation(selected.text, action.answer, s.lang)
+      )
         return reject(input, "incomplete");
       if (!allowed(current.cardId, "quiz")) return reject(input, "invalid");
-      const correct = isOrderAnswerCorrect(card.text, action.answer, s.lang);
+      const matched =
+        s.lang === "nl"
+          ? matchAnswer(card, selected, action.answer)
+          : undefined;
+      const correct =
+        s.lang === "nl"
+          ? !!matched
+          : isOrderAnswerCorrect(selected.text, action.answer, s.lang);
       const p = progress(current.cardId);
       if (correct) {
         p.qCorrect += 1;
@@ -801,8 +860,22 @@ export function applyAction(
       s.quiz.points += points;
       s.quiz.done = unfinished(s, "quiz").length === 0;
       current.answer = [...action.answer];
-      current.outcome = { correct, points };
+      current.outcome = {
+        correct,
+        points,
+        ...(matched && (current.answerId || matched.id !== selected.id)
+          ? { answerId: matched.id }
+          : {}),
+      };
       remember("quiz", current.cardId);
+      if (s.lang === "nl") {
+        s.quizReview ??= [];
+        s.quizReview.push({
+          cardId: current.cardId,
+          answerId: matched?.id ?? selected.id,
+        });
+        if (s.quizReview.length > 100) s.quizReview.shift();
+      }
       logEvent({
         mode: "quiz",
         cardId: current.cardId,
@@ -828,18 +901,13 @@ export function applyAction(
       const nextCard = deckCard(s.lang, nextId)!;
       const proposedFor = action.next?.cardId === nextId ? action.next : null;
       const attemptId = proposedFor?.attemptId ?? `${action.id}-n`;
-      const order =
-        proposedFor &&
-        isTokenPermutation(nextCard.text, proposedFor.tokenOrder, s.lang)
-          ? proposedFor.tokenOrder
-          : shuffledTokenOrder(nextCard.text, seededRandom(attemptId), s.lang);
-      s.quiz.current = {
-        cardId: nextId,
+      s.quiz.current = openQuizAttempt(
+        s,
+        nextCard.id,
         attemptId,
-        tokenOrder: order,
-        answer: [],
-        outcome: null,
-      };
+        proposedFor?.tokenOrder ?? [],
+        action.rotateAnswers ?? false,
+      );
       break;
     }
   }

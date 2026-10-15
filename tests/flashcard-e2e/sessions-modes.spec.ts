@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import { CARDS } from "../../lib/flashcards/engine";
 import {
   asGuest,
+  currentQuizModel,
   cardByDutch,
   createSession,
   GUEST_LEVELS_KEY,
@@ -24,7 +25,7 @@ test.describe("one fixed set, shared by every mode", () => {
     await createSession(page, { topic: "shopping", count: 5 });
     const [{ cardIds }] = await savedGuestSessions(page);
     const dutchOf = (id: string) => CARDS.find((c) => c.id === id)!.dutch;
-    const englishOf = (id: string) => CARDS.find((c) => c.id === id)!.english;
+
     expect(cardIds).toHaveLength(5);
     expect(cardIds.map(dutchOf)).toContain(await shownDutch(page));
     await switchMode(page, "speaking");
@@ -32,10 +33,8 @@ test.describe("one fixed set, shared by every mode", () => {
     await page.getByRole("button", { name: "Check the Dutch" }).click();
     expect(cardIds.map(dutchOf)).toContain(await shownDutch(page));
     await switchMode(page, "quiz");
-    await expect(page.getByTestId("quiz-english")).toBeVisible();
-    expect(cardIds.map(englishOf)).toContain(
-      await page.getByTestId("quiz-english").innerText(),
-    );
+    await expect(page.getByTestId("quiz-situation")).toBeVisible();
+    expect(cardIds).toContain((await currentQuizModel(page)).id);
     await page.reload();
     await switchMode(page, "study");
     expect(cardIds.map(dutchOf)).toContain(await shownDutch(page));
@@ -231,8 +230,7 @@ test.describe("Speaking", () => {
 
 test.describe("Quiz", () => {
   async function currentCard(page: import("@playwright/test").Page) {
-    const english = await page.getByTestId("quiz-english").innerText();
-    return CARDS.find((c) => c.english === english)!;
+    return currentQuizModel(page);
   }
 
   test("hides the Dutch until checked; a correct word order earns 10 points and a refresh does not score it again", async ({
@@ -248,7 +246,10 @@ test.describe("Quiz", () => {
       page.getByRole("button", { name: "Listen", exact: true }),
     ).toHaveCount(0);
     await expect(
-      page.getByText("Other Dutch word orders can also be valid"),
+      page.getByText(
+        "reviewed alternative orders using these words are accepted",
+        { exact: false },
+      ),
     ).toBeVisible();
     await solveQuiz(page, card.dutch);
     await page.getByRole("button", { name: "Check", exact: true }).click();
@@ -289,6 +290,7 @@ test.describe("Quiz", () => {
     await expect(page.getByTestId("correct-progress")).toHaveText(
       "1 / 10 correct in a row",
     );
+    const secondModel = await currentQuizModel(page);
     await solveQuizWrong(page, card.dutch);
     if (
       await page.getByRole("button", { name: "Check", exact: true }).isEnabled()
@@ -298,12 +300,12 @@ test.describe("Quiz", () => {
     if (/Correct/.test(feedback))
       test.skip(true, "this sentence reads the same backwards");
     await expect(page.getByTestId("quiz-feedback")).toContainText(
-      "That differs from the taught sentence",
+      "does not match a reviewed answer",
     );
     await expect(
       page
         .locator('article > div > p[lang="nl"]')
-        .filter({ hasText: card.dutch }),
+        .filter({ hasText: secondModel.dutch }),
     ).toBeVisible();
     await expect(page.getByTestId("quiz-points")).toHaveText("10");
     await expect(page.getByTestId("correct-progress")).toHaveText(

@@ -1,3 +1,4 @@
+import { scenarioFor } from "@/lib/practice/communication";
 import references from "@/data/dutch-variations.json";
 import practiceBank from "@/data/dutch-practice-bank.json";
 import { CARDS } from "@/lib/flashcards/engine";
@@ -34,7 +35,7 @@ export const FAMILIES: Record<string, Variation[]> = Object.fromEntries(
           parentId,
           text,
           english,
-          scenario: `Say this in Dutch: “${english}”`,
+          scenario: scenarioFor(text, "Describe the situation in Dutch."),
           focus: pattern.focus,
           explanation: pattern.hint,
           example: { text: exampleText, english: exampleEnglish },

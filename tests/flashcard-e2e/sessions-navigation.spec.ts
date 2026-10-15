@@ -67,7 +67,7 @@ test.describe("navigation", () => {
       "aria-current",
       "page",
     );
-    await expect(page.getByTestId("quiz-english")).toBeVisible();
+    await expect(page.getByTestId("quiz-situation")).toBeVisible();
   });
 
   test("leaving a session for another page and coming back continues the same mode and card", async ({

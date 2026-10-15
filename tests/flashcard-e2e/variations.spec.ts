@@ -45,7 +45,7 @@ const read = async (page: import("@playwright/test").Page) =>
   (await savedGuestSessions(page))[0] as unknown as Session;
 test("default rating, automatic gradual children, device audio and previous-card review survive a reload", async ({
   page,
-}) => {
+}, testInfo) => {
   await seed(page);
   await page.getByRole("button", { name: "Check the Dutch" }).click();
   await expect(
@@ -72,7 +72,7 @@ test("default rating, automatic gradual children, device audio and previous-card
   await expect(
     page.getByRole("button", { name: "Difficult", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
-  await expect(page.getByLabel("Variation explanation")).toBeVisible();
+  await expect(page.getByLabel("Ways to say it")).toBeVisible();
   const child = (await read(page)).speaking.current!.cardId;
   await page.getByRole("button", { name: "Easy", exact: true }).click();
   await page.getByRole("button", { name: "Next", exact: true }).click();
@@ -104,7 +104,7 @@ test("default rating, automatic gradual children, device audio and previous-card
     quizId === "food-07"
       ? "Ik probeerde een nieuw gerecht."
       : variationsFor("food-07").find((v) => v.id === quizId)!.text;
-  await expect(page.getByText("Situation:", { exact: false })).toBeVisible();
+  await expect(page.getByTestId("quiz-situation")).toBeVisible();
   await solveQuiz(page, text);
   await page.getByRole("button", { name: "Check", exact: true }).click();
   await expect(page.getByTestId("quiz-points")).toHaveText("10");
@@ -116,7 +116,7 @@ test("default rating, automatic gradual children, device audio and previous-card
   }));
   expect(width.doc).toBeLessThanOrEqual(width.view);
   await page.screenshot({
-    path: "/workspace/scratch/b18413a6ada4/deliverables/dutchtap-variation-mobile.png",
+    path: testInfo.outputPath("dutchtap-variation-mobile.png"),
     fullPage: true,
   });
 });

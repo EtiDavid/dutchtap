@@ -20,11 +20,8 @@ import {
 } from "@/lib/sessions/engine";
 import { RETIRE_AT } from "@/lib/sessions/types";
 import { isVariation, variationFor } from "@/lib/variations/content";
-import {
-  VariationControls,
-  VariationExplanation,
-  ReviewHistory,
-} from "./VariationPractice";
+import { VariationControls, ReviewHistory } from "./VariationPractice";
+import { AnswerModels, FamilyExamples } from "./AnswerModels";
 import { copy } from "@/lib/lang/copy";
 import { button, primary } from "../flashcards/styles";
 import { GrammarNotes } from "../flashcards/GrammarNotes";
@@ -216,9 +213,9 @@ export function SpeakingMode({
                 listen={listen}
                 stop={stop}
               />
-              {isVariation(card.id) ? (
-                <VariationExplanation id={card.id} />
-              ) : (
+              <AnswerModels card={card} />
+              <FamilyExamples card={card} />
+              {!isVariation(card.id) && (
                 <GrammarNotes
                   key={card.id}
                   cardId={card.id}

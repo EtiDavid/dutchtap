@@ -25,10 +25,10 @@ def construct(row):
  formtext=' '.join(f'{key}: present forms {v[0]} / {v[1]} / {v[2]}; past singular {v[3]}, plural {v[4]}; perfect {v[5] or "not used as a standalone form here"}. {v[6]}' for key,v in lex)
  title,rule,compare=patterns[pattern]
  first=parts[0]['text'];subject=next((p['text'] for p in parts if p['label']=='subject'),None)
- if pattern=='imperative':order=f'The instruction starts with {finite["text"]}; the addressed person is understood. '+rule
+ if pattern=='imperative':order=(f'The instruction starts with {finite["text"]}; the addressed person is understood. ' if parts[0] is finite else f'After the introductory phrase {first}, the instruction uses {finite["text"]} with the addressed person understood. ')+rule
  elif pattern in ['yes-no','modal-question','polite']:order=f'The finite verb {finite["text"]} comes before subject {subject or "the addressed person"}. '+rule
  elif pattern in ['question','past-question']:order=f'The first question constituent is {first}; {finite["text"]} is the finite verb. '+rule
- else:order=f'The first constituent is {first}; {finite["text"]} is the finite main verb'+(f' and {subject} is its subject.' if subject else '.')+' '+rule
+ else:order=f'The first constituent is {first}; {finite["text"]} is a finite main verb'+(f' and {subject} is its subject.' if subject else '.')+' In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. '+rule
  detail=note+' '+formtext
  lemma,v=lex[0];original=finite['text'];bare=original.strip('.,?!;:').lower();old=original.strip('.,?!;:')
  # Only incorrect finite agreement is assembled. All replacement forms are explicitly supplied, never conjugated.

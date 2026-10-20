@@ -37,3 +37,11 @@ Browser plugin not available; use installed Playwright and isolated flashcard fi
 The supplied frozen grammar curriculum and selected extracted passages from the available possessives and July diary PDFs are background, not an answer key or mastery evidence. PDF translations contain defects and will not be copied as verified material.
 
 Progress and actual validation outcomes will be recorded alongside the authored batches and final reports.
+
+## Saved authoring checkpoints
+
+- Baseline: unit 291 passed / 7 isolated MongoDB tests skipped; lint passed; 600 image/600 recording asset checks passed.
+- Ten complete benchmark parent rows and their first 12 child models established the authoring format. Five collection/session/replay regression tests passed; Next type generation and TypeScript passed.
+- Office, clarification and user support authored: 180 parents, 1,800 child entries, 216 distinct child sentences. Compiled output is intentionally incomplete. Vocabulary enrichment and final cross-batch editorial review remain in progress.
+- Family examples intentionally reuse a thematic reviewed library. The assembler only combines literal reviewed sentence parts and explicit lexicon forms; it does not translate or derive conjugations.
+- Next: author problems/impact, troubleshooting, meetings, priorities, changes, incidents and remote areas; complete vocabulary; validate all source/answer annotations; then finish integration tests, assets, browser QA and download installer.

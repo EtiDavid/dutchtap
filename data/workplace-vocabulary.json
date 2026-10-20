@@ -24,6 +24,10 @@
       {
         "cardId": "career-office-059",
         "form": "servicedesk"
+      },
+      {
+        "cardId": "career-support-005",
+        "form": "servicedesk"
       }
     ]
   },
@@ -62,12 +66,24 @@
     "id": "career-gebruiker",
     "occurrences": [
       {
+        "cardId": "career-clarification-034",
+        "form": "gebruiker"
+      },
+      {
         "cardId": "career-office-002",
         "form": "gebruikers"
       },
       {
         "cardId": "career-office-021",
         "form": "gebruikers"
+      },
+      {
+        "cardId": "career-support-017",
+        "form": "gebruikers"
+      },
+      {
+        "cardId": "career-support-027",
+        "form": "gebruiker"
       }
     ]
   },
@@ -146,7 +162,15 @@
     "id": "career-team",
     "occurrences": [
       {
+        "cardId": "career-clarification-035",
+        "form": "team"
+      },
+      {
         "cardId": "career-office-006",
+        "form": "team"
+      },
+      {
+        "cardId": "career-support-010",
         "form": "team"
       }
     ]
@@ -244,6 +268,10 @@
       {
         "cardId": "career-office-043",
         "form": "werkwijze"
+      },
+      {
+        "cardId": "career-support-046",
+        "form": "werkwijze"
       }
     ]
   },
@@ -258,12 +286,116 @@
     "id": "career-melding",
     "occurrences": [
       {
+        "cardId": "career-clarification-012",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-clarification-014",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-clarification-034",
+        "form": "melding"
+      },
+      {
         "cardId": "career-office-004",
         "form": "meldingen"
       },
       {
         "cardId": "career-office-022",
         "form": "meldingen"
+      },
+      {
+        "cardId": "career-support-004",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-support-006",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-support-009",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-support-018",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-support-019",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-support-020",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-support-041",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-support-055",
+        "form": "melding"
+      }
+    ]
+  },
+  {
+    "headword": "foutmelding",
+    "english": "error message",
+    "explanation": "Een bericht dat aangeeft dat iets fout is gegaan.",
+    "type": "noun",
+    "article": "de",
+    "plural": "foutmeldingen",
+    "details": "Do not assume the message proves the underlying cause.",
+    "id": "career-foutmelding",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-014",
+        "form": "foutmelding"
+      },
+      {
+        "cardId": "career-support-013",
+        "form": "foutmelding"
+      }
+    ]
+  },
+  {
+    "headword": "ticket",
+    "english": "support ticket",
+    "explanation": "Een geregistreerde vraag of melding die je kunt opvolgen.",
+    "type": "noun",
+    "article": "het",
+    "plural": "tickets",
+    "details": "An IT support record here; closing it is not deleting it.",
+    "id": "career-ticket",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-020",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-clarification-050",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-support-048",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-support-053",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-support-054",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-support-057",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-support-060",
+        "form": "ticket"
       }
     ]
   },
@@ -278,8 +410,72 @@
     "id": "career-toepassing",
     "occurrences": [
       {
+        "cardId": "career-clarification-001",
+        "form": "toepassing"
+      },
+      {
+        "cardId": "career-clarification-031",
+        "form": "toepassing"
+      },
+      {
         "cardId": "career-office-042",
         "form": "toepassingen"
+      },
+      {
+        "cardId": "career-support-011",
+        "form": "toepassing"
+      }
+    ]
+  },
+  {
+    "headword": "account",
+    "english": "account",
+    "explanation": "Een registratie waarmee iemand een dienst kan gebruiken.",
+    "type": "noun",
+    "article": "het",
+    "plural": "accounts",
+    "details": "Een nieuw account; het nieuwe account. New is not necessarily unfamiliar.",
+    "id": "career-account",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-011",
+        "form": "account"
+      },
+      {
+        "cardId": "career-clarification-013",
+        "form": "account"
+      }
+    ]
+  },
+  {
+    "headword": "toegang",
+    "english": "access",
+    "explanation": "De mogelijkheid of toestemming om iets te gebruiken.",
+    "type": "noun",
+    "article": "de",
+    "plural": "",
+    "details": "Toegang tot a system; successful login and permission are different.",
+    "id": "career-toegang",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-018",
+        "form": "toegang"
+      }
+    ]
+  },
+  {
+    "headword": "oorzaak",
+    "english": "cause",
+    "explanation": "Wat ervoor zorgt dat een probleem ontstaat.",
+    "type": "noun",
+    "article": "de",
+    "plural": "oorzaken",
+    "details": "A symptom or workaround does not establish the cause.",
+    "id": "career-oorzaak",
+    "occurrences": [
+      {
+        "cardId": "career-support-042",
+        "form": "oorzaak"
       }
     ]
   },
@@ -313,6 +509,22 @@
     "details": "Forms: zijn; ben; was; ben geweest. State or identity; zijn is irregular.",
     "id": "career-zijn",
     "occurrences": [
+      {
+        "cardId": "career-clarification-013",
+        "form": "is"
+      },
+      {
+        "cardId": "career-clarification-016",
+        "form": "is"
+      },
+      {
+        "cardId": "career-clarification-025",
+        "form": "ben"
+      },
+      {
+        "cardId": "career-clarification-047",
+        "form": "is"
+      },
       {
         "cardId": "career-office-003",
         "form": "is"
@@ -368,6 +580,18 @@
       {
         "cardId": "career-office-057",
         "form": "ben"
+      },
+      {
+        "cardId": "career-support-018",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-support-050",
+        "form": "is"
+      },
+      {
+        "cardId": "career-support-052",
+        "form": "is"
       }
     ]
   },
@@ -381,6 +605,46 @@
     "details": "Forms: hebben; heb; had; heb gehad. Possession or auxiliary; hebben is irregular.",
     "id": "career-hebben",
     "occurrences": [
+      {
+        "cardId": "career-clarification-003",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-clarification-019",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-clarification-027",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-clarification-031",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-clarification-033",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-clarification-034",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-clarification-036",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-clarification-039",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-clarification-045",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-clarification-046",
+        "form": "heb"
+      },
       {
         "cardId": "career-office-009",
         "form": "heb"
@@ -428,6 +692,38 @@
       {
         "cardId": "career-office-059",
         "form": "had"
+      },
+      {
+        "cardId": "career-support-006",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-support-018",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-support-027",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-support-036",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-support-038",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-support-048",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-support-055",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-support-059",
+        "form": "heeft"
       }
     ]
   },
@@ -460,6 +756,26 @@
       {
         "cardId": "career-office-051",
         "form": "werk"
+      },
+      {
+        "cardId": "career-support-015",
+        "form": "werkt"
+      }
+    ]
+  },
+  {
+    "headword": "helpen",
+    "english": "help",
+    "explanation": "Iemand ondersteunen bij iets.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: helpen; help; hielp; heb geholpen. Helpen takes a person as object; met introduces the task.",
+    "id": "career-helpen",
+    "occurrences": [
+      {
+        "cardId": "career-support-003",
+        "form": "helpen"
       }
     ]
   },
@@ -484,6 +800,10 @@
       {
         "cardId": "career-office-043",
         "form": "ken"
+      },
+      {
+        "cardId": "career-support-042",
+        "form": "ken"
       }
     ]
   },
@@ -498,6 +818,14 @@
     "id": "career-weten",
     "occurrences": [
       {
+        "cardId": "career-clarification-015",
+        "form": "weet"
+      },
+      {
+        "cardId": "career-clarification-038",
+        "form": "weet"
+      },
+      {
         "cardId": "career-office-020",
         "form": "weet"
       },
@@ -507,6 +835,10 @@
       },
       {
         "cardId": "career-office-048",
+        "form": "weet"
+      },
+      {
+        "cardId": "career-support-047",
         "form": "weet"
       }
     ]
@@ -558,12 +890,36 @@
     "id": "career-leren",
     "occurrences": [
       {
+        "cardId": "career-clarification-051",
+        "form": "leer"
+      },
+      {
         "cardId": "career-office-042",
         "form": "leren"
       },
       {
         "cardId": "career-office-048",
         "form": "leren"
+      }
+    ]
+  },
+  {
+    "headword": "beginnen",
+    "english": "begin",
+    "explanation": "Met een activiteit starten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: beginnen; begin; begon; ben begonnen. Beginning an activity uses zijn in the perfect; beginnen met names the activity.",
+    "id": "career-beginnen",
+    "occurrences": [
+      {
+        "cardId": "career-support-014",
+        "form": "begon"
+      },
+      {
+        "cardId": "career-support-039",
+        "form": "beginnen"
       }
     ]
   },
@@ -577,6 +933,22 @@
     "details": "Forms: kunnen; kan; kon; heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te.",
     "id": "career-kunnen",
     "occurrences": [
+      {
+        "cardId": "career-clarification-005",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-clarification-010",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-clarification-040",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-clarification-049",
+        "form": "kunnen"
+      },
       {
         "cardId": "career-office-031",
         "form": "kunnen"
@@ -592,6 +964,34 @@
       {
         "cardId": "career-office-058",
         "form": "kunnen"
+      },
+      {
+        "cardId": "career-support-003",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-support-020",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-support-022",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-support-025",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-support-026",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-support-044",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-support-050",
+        "form": "kan"
       }
     ]
   },
@@ -605,6 +1005,22 @@
     "details": "Forms: moeten; moet; moest; heb gemoeten. Necessity or obligation; a following infinitive has no te. In a perfect verb cluster: heb moeten werken.",
     "id": "career-moeten",
     "occurrences": [
+      {
+        "cardId": "career-clarification-032",
+        "form": "moet"
+      },
+      {
+        "cardId": "career-clarification-040",
+        "form": "moet"
+      },
+      {
+        "cardId": "career-clarification-041",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-clarification-044",
+        "form": "moeten"
+      },
       {
         "cardId": "career-office-048",
         "form": "moet"
@@ -622,7 +1038,27 @@
     "id": "career-mogen",
     "occurrences": [
       {
+        "cardId": "career-clarification-037",
+        "form": "mogen"
+      },
+      {
+        "cardId": "career-clarification-060",
+        "form": "mag"
+      },
+      {
         "cardId": "career-office-014",
+        "form": "mag"
+      },
+      {
+        "cardId": "career-support-007",
+        "form": "mag"
+      },
+      {
+        "cardId": "career-support-031",
+        "form": "mag"
+      },
+      {
+        "cardId": "career-support-053",
         "form": "mag"
       }
     ]
@@ -637,6 +1073,10 @@
     "details": "Forms: willen; wil; wilde; heb gewild. Desire/intention; hij wil has no -t. A following infinitive has no te.",
     "id": "career-willen",
     "occurrences": [
+      {
+        "cardId": "career-clarification-048",
+        "form": "wil"
+      },
       {
         "cardId": "career-office-042",
         "form": "wil"
@@ -654,8 +1094,100 @@
     "id": "career-zullen",
     "occurrences": [
       {
+        "cardId": "career-clarification-005",
+        "form": "zou"
+      },
+      {
+        "cardId": "career-clarification-009",
+        "form": "zal"
+      },
+      {
+        "cardId": "career-clarification-049",
+        "form": "zou"
+      },
+      {
         "cardId": "career-office-030",
         "form": "zal"
+      },
+      {
+        "cardId": "career-support-026",
+        "form": "zouden"
+      },
+      {
+        "cardId": "career-support-040",
+        "form": "zal"
+      },
+      {
+        "cardId": "career-support-043",
+        "form": "zal"
+      },
+      {
+        "cardId": "career-support-060",
+        "form": "zal"
+      }
+    ]
+  },
+  {
+    "headword": "gaan",
+    "english": "go / be going to",
+    "explanation": "Zich verplaatsen of een activiteit binnenkort doen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: gaan; ga; ging; ben gegaan. Movement or an upcoming action; gaan plus an action infinitive does not take te.",
+    "id": "career-gaan",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-035",
+        "form": "gaat"
+      },
+      {
+        "cardId": "career-support-045",
+        "form": "gaat"
+      }
+    ]
+  },
+  {
+    "headword": "bedoelen",
+    "english": "mean / intend",
+    "explanation": "Een bepaalde betekenis of bedoeling hebben.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: bedoelen; bedoel; bedoelde; heb bedoeld. Meaning or intending; inseparable be- gives bedoeld without ge-.",
+    "id": "career-bedoelen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-011",
+        "form": "bedoel"
+      },
+      {
+        "cardId": "career-clarification-013",
+        "form": "bedoelt"
+      },
+      {
+        "cardId": "career-clarification-018",
+        "form": "bedoel"
+      },
+      {
+        "cardId": "career-clarification-020",
+        "form": "bedoel"
+      },
+      {
+        "cardId": "career-clarification-029",
+        "form": "bedoelt"
+      },
+      {
+        "cardId": "career-clarification-038",
+        "form": "bedoelt"
+      },
+      {
+        "cardId": "career-clarification-042",
+        "form": "bedoel"
+      },
+      {
+        "cardId": "career-support-034",
+        "form": "bedoel"
       }
     ]
   },
@@ -670,8 +1202,92 @@
     "id": "career-herhalen",
     "occurrences": [
       {
+        "cardId": "career-clarification-002",
+        "form": "herhalen"
+      },
+      {
+        "cardId": "career-clarification-009",
+        "form": "herhalen"
+      },
+      {
+        "cardId": "career-clarification-010",
+        "form": "herhalen"
+      },
+      {
+        "cardId": "career-clarification-057",
+        "form": "herhaal"
+      },
+      {
         "cardId": "career-office-050",
         "form": "herhalen"
+      }
+    ]
+  },
+  {
+    "headword": "onderzoeken",
+    "english": "investigate",
+    "explanation": "Proberen uit te vinden wat er aan de hand is.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: onderzoeken; onderzoek; onderzocht; heb onderzocht. Investigate; irregular onderzocht, without ge-.",
+    "id": "career-onderzoeken",
+    "occurrences": [
+      {
+        "cardId": "career-support-041",
+        "form": "onderzoek"
+      }
+    ]
+  },
+  {
+    "headword": "proberen",
+    "english": "try / attempt",
+    "explanation": "Een poging doen zonder zeker te zijn dat het lukt.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: proberen; probeer; probeerde; heb geprobeerd. Attempt an action with te; proberen te openen. Trying is not a guarantee of success.",
+    "id": "career-proberen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-024",
+        "form": "probeer"
+      }
+    ]
+  },
+  {
+    "headword": "krijgen",
+    "english": "get / receive",
+    "explanation": "Iets ontvangen of ervaren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: krijgen; krijg; kreeg; heb gekregen. Receive/get; irregular past and participle.",
+    "id": "career-krijgen",
+    "occurrences": [
+      {
+        "cardId": "career-support-008",
+        "form": "krijgt"
+      },
+      {
+        "cardId": "career-support-010",
+        "form": "krijgen"
+      }
+    ]
+  },
+  {
+    "headword": "ontvangen",
+    "english": "receive",
+    "explanation": "Een bericht, bestand of voorwerp krijgen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: ontvangen; ontvang; ontving; heb ontvangen. Receive; inseparable ont-, no ge-. Receipt does not necessarily imply understanding.",
+    "id": "career-ontvangen",
+    "occurrences": [
+      {
+        "cardId": "career-support-006",
+        "form": "ontvangen"
       }
     ]
   }

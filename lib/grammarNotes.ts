@@ -1,3 +1,4 @@
+import workplaceNotes from "@/data/workplace-grammar-notes.json";
 import notes from "@/data/grammar-notes.json";
 import frNotes from "@/data/fr/grammar-notes.json";
 import type { Lang } from "@/lib/lang";
@@ -9,7 +10,7 @@ export type GrammarNote = {
   originalExamples?: { dutch: string; english: string }[];
 };
 // One explanation (the rule) plus related example sentences for every flashcard sentence.
-export const GRAMMAR_NOTES = notes as Record<string, GrammarNote>;
+export const GRAMMAR_NOTES = { ...notes, ...workplaceNotes } as Record<string, GrammarNote>;
 
 /** French notes: a rule in simple French, a short English help line, and examples in `text`. */
 export type FrenchNote = {

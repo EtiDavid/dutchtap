@@ -1,0 +1,464 @@
+{
+  "office-team": {
+    "focus": "team",
+    "examples": [
+      {
+        "text": "Onze nieuwe collega helpt met de telefoonmeldingen.",
+        "english": "Our new colleague helps with telephone support requests.",
+        "scenario": "A teammate asks what the newest colleague does. Explain that this colleague helps with requests received by phone.",
+        "explanation": "Present statement. The first constituent is Onze nieuwe collega; helpt is the finite main verb and Onze nieuwe collega is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Onze agrees with singular de collega; nieuwe describes a recently joined colleague, not necessarily an unfamiliar person."
+      },
+      {
+        "text": "Na de introductie ken ik de namen van mijn teamleden.",
+        "english": "After the introduction, I know my team members' names.",
+        "scenario": "You have finished a team introduction. Tell a colleague that you now know your team members' names.",
+        "explanation": "Fronted phrase and V2. The first constituent is Na de introductie; ken is the finite main verb and ik is its subject. The complete time, place or object phrase is one first constituent. The finite verb follows it, then the subject: second position means a constituent, not the second written word. Na de introductie is one first constituent. Kennen expresses familiarity with the names, rather than weten plus a fact clause."
+      },
+      {
+        "text": "Wie begeleidt de stagiairs op de servicedesk?",
+        "english": "Who guides the interns on the service desk?",
+        "scenario": "New interns are joining the service desk. Ask a colleague which person is responsible for guiding them.",
+        "explanation": "Question word and inversion. The first question constituent is Wie; begeleidt is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Wie is the subject of this question. There is no additional subject after begeleidt; de stagiairs is its object."
+      },
+      {
+        "text": "Ik heb vroeger in een ondersteuningsteam gewerkt.",
+        "english": "I used to work in a support team.",
+        "scenario": "While introducing your experience to a new colleague, explain that you worked in a support team in the past.",
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite main verb and Ik is its subject. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Heb gewerkt reports past work experience; vroeger establishes that it belongs to an earlier period."
+      },
+      {
+        "text": "Mijn collega beheert de gebruikersaccounts.",
+        "english": "My colleague manages the user accounts.",
+        "scenario": "Someone asks who manages user accounts. Explain that a colleague of yours performs that task.",
+        "explanation": "Present statement. The first constituent is Mijn collega; beheert is the finite main verb and Mijn collega is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Mijn is possessive; gebruikersaccounts is a plural compound whose singular is het gebruikersaccount."
+      },
+      {
+        "text": "We leren de nieuwe teamleden kennen.",
+        "english": "We are getting to know the new team members.",
+        "scenario": "A colleague asks how the team introductions are going. Say that you are getting to know the new team members together.",
+        "explanation": "Present statement. The first constituent is We; leren is the finite main verb and We is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Leren kennen is a fixed combination meaning become acquainted with; kennen is a bare infinitive here."
+      },
+      {
+        "text": "Ik ben nog niet bekend met onze interne werkwijze.",
+        "english": "I am not yet familiar with our internal way of working.",
+        "scenario": "You recently joined the team. Explain to a colleague that you are not yet familiar with its internal way of working.",
+        "explanation": "Niet, geen and scope. The first constituent is Ik; ben is the finite main verb and Ik is its subject. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Bekend met expresses familiarity; nog niet leaves open that you will become familiar later. Onze belongs with de werkwijze."
+      },
+      {
+        "text": "Ik zal me tijdens het teamoverleg voorstellen.",
+        "english": "I will introduce myself during the team meeting.",
+        "scenario": "Before your first team meeting, tell a colleague that you will introduce yourself during it.",
+        "explanation": "Future intention or commitment. The first constituent is Ik; zal is the finite main verb and Ik is its subject. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work. Zich voorstellen is reflexive. Ik takes me; voorstellen stays joined as a final infinitive after zal."
+      },
+      {
+        "text": "Kan ik op mijn eerste werkdag met een collega meelopen?",
+        "english": "Can I shadow a colleague on my first working day?",
+        "scenario": "You are arranging your first working day. Ask whether you can shadow a colleague while learning the job.",
+        "explanation": "Modal request or permission question. The finite verb Kan comes before subject ik. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Meelopen is workplace shadowing here, not taking over the colleague's responsibilities. Op introduces the working day."
+      },
+      {
+        "text": "Gisteren stelde de teamleider mij aan de collega's voor.",
+        "english": "Yesterday the team leader introduced me to the colleagues.",
+        "scenario": "A friend asks about yesterday's onboarding. Report that the team leader introduced you to your colleagues.",
+        "explanation": "Simple past. The first constituent is Gisteren; stelde is the finite main verb and de teamleider is its subject. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Gisteren is one first constituent; stelde follows before the subject. Mij is the introduced person, not the person doing the introduction."
+      },
+      {
+        "text": "Werkt u ook in het ondersteuningsteam?",
+        "english": "Do you also work in the support team?",
+        "scenario": "During a formal introduction to someone you do not know, politely ask whether they also work in the support team.",
+        "explanation": "Yes/no question. The finite verb Werkt comes before subject u. The finite verb starts the yes/no question, followed by the subject. With subject je/jij after the verb, an ordinary present stem loses its -t; formal u does not follow that rule. Formal u keeps werkt in inversion; the drop-t rule with subject je does not apply to u."
+      },
+      {
+        "text": "Stel je aan de nieuwe teamleden voor.",
+        "english": "Introduce yourself to the new team members.",
+        "scenario": "You are helping a colleague join a group of new team members. Ask that colleague informally to introduce themselves.",
+        "explanation": "Spoken instruction. The instruction starts with Stel; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. The addressed subject is understood; je is reflexive. Stel ... voor is the split form of voorstellen."
+      }
+    ]
+  },
+  "office-facilities": {
+    "focus": "facilities",
+    "examples": [
+      {
+        "text": "Waar staat de printer voor bezoekers?",
+        "english": "Where is the printer for visitors?",
+        "scenario": "A visitor needs to print a document. Ask a colleague where the visitor printer is located.",
+        "explanation": "Question word and inversion. The first question constituent is Waar; staat is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Staat describes a standing device's location; de printer is the subject, not an object."
+      },
+      {
+        "text": "Is de stille werkruimte vandaag beschikbaar?",
+        "english": "Is the quiet workspace available today?",
+        "scenario": "You need a quiet place to work today. Ask whether the quiet workspace is available.",
+        "explanation": "Yes/no question. The finite verb Is comes before subject de stille werkruimte. The finite verb starts the yes/no question, followed by the subject. With subject je/jij after the verb, an ordinary present stem loses its -t; formal u does not follow that rule. Beschikbaar expresses availability, not permission to access every room. Vandaag fixes the relevant day."
+      },
+      {
+        "text": "De vergaderzaal bevindt zich naast de receptie.",
+        "english": "The meeting room is next to reception.",
+        "scenario": "A new colleague asks where the meeting room is. Explain that it is located next to reception.",
+        "explanation": "Present statement. The first constituent is De vergaderzaal; bevindt is the finite main verb and De vergaderzaal is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Zich bevinden is a reflexive location expression; singular de vergaderzaal takes zich."
+      },
+      {
+        "text": "Mag ik deze vrije werkplek gebruiken?",
+        "english": "May I use this available workstation?",
+        "scenario": "You see an available workstation but do not know whether you may use it. Ask a colleague for permission.",
+        "explanation": "Modal request or permission question. The finite verb Mag comes before subject ik. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Vrij describes that the workstation is unoccupied; mag asks separately for permission. Werkplek is a de-word, so deze fits."
+      },
+      {
+        "text": "Bij de ingang staat een kast voor bezoekerspassen.",
+        "english": "There is a cabinet for visitor passes by the entrance.",
+        "scenario": "A colleague is looking for visitor passes. Tell them where the cabinet for those passes stands.",
+        "explanation": "Fronted phrase and V2. The first constituent is Bij de ingang; staat is the finite main verb and een kast voor bezoekerspassen. is its subject. The complete time, place or object phrase is one first constituent. The finite verb follows it, then the subject: second position means a constituent, not the second written word. A location phrase is first, followed by staat and the introduced subject een kast. No extra er is required in this location-first sentence."
+      },
+      {
+        "text": "Vanmorgen zocht ik naar een rustige vergaderzaal.",
+        "english": "This morning I looked for a quiet meeting room.",
+        "scenario": "You are telling a colleague about this morning. Explain that you looked for a quiet meeting room then.",
+        "explanation": "Simple past. The first constituent is Vanmorgen; zocht is the finite main verb and ik is its subject. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Zocht is simple past; zoeken naar introduces what you are looking for. Een rustige takes -e with de vergaderzaal."
+      },
+      {
+        "text": "Vraag de receptionist naar een bezoekerspas.",
+        "english": "Ask the receptionist for a visitor pass.",
+        "scenario": "A visitor needs an entry pass. Tell a colleague to ask the receptionist for a visitor pass.",
+        "explanation": "Spoken instruction. The instruction starts with Vraag; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Vragen naar requests the item here. The instruction is addressed to the colleague, not to the receptionist directly."
+      },
+      {
+        "text": "Ik heb de ruimte voor het videogesprek al gevonden.",
+        "english": "I have already found the room for the video call.",
+        "scenario": "A colleague offers to help you find the room for a video call. Explain that you have already found it.",
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite main verb and Ik is its subject. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Al means already; the completed search has a present result. Voor het videogesprek identifies the intended room."
+      },
+      {
+        "text": "Ik weet niet welke ingang de bezoekers gebruiken.",
+        "english": "I do not know which entrance visitors use.",
+        "scenario": "You are arranging a visitor's arrival. Tell a colleague that you do not know which entrance the visitors use.",
+        "explanation": "Main and subordinate clause. The first constituent is Ik; weet is the finite main verb and Ik is its subject. The main clause retains its own finite-verb position. The conjunction introduces a separate clause whose subject and other material precede its finite verb or verb group. The conjunction's meaning must fit the situation. The embedded question begins with welke ingang; its subject de bezoekers precedes final gebruiken. Weten introduces missing factual information."
+      },
+      {
+        "text": "De lockers staan tegenover de personeelsingang.",
+        "english": "The lockers are opposite the staff entrance.",
+        "scenario": "A colleague wants to store a bag before work. Explain where the lockers are located.",
+        "explanation": "Present statement. The first constituent is De lockers; staan is the finite main verb and De lockers is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Plural de lockers takes staan. Tegenover is a location preposition meaning opposite."
+      },
+      {
+        "text": "Ik zal de nieuwe medewerker door het gebouw rondleiden.",
+        "english": "I will show the new employee around the building.",
+        "scenario": "Your team leader asks who will give a new employee a tour. Offer a firm commitment to show them around the building.",
+        "explanation": "Future intention or commitment. The first constituent is Ik; zal is the finite main verb and Ik is its subject. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work. The employee is the object being shown around. Rondleiden remains joined after zal; the tour has not happened yet."
+      },
+      {
+        "text": "Heeft deze werkplek een aansluiting voor mijn laptop?",
+        "english": "Does this workstation have a connection for my laptop?",
+        "scenario": "You are choosing a workstation for your laptop. Ask whether this workstation has a suitable connection.",
+        "explanation": "Yes/no question. The finite verb Heeft comes before subject deze werkplek. The finite verb starts the yes/no question, followed by the subject. With subject je/jij after the verb, an ordinary present stem loses its -t; formal u does not follow that rule. Heeft agrees with singular deze werkplek. The question concerns an available connection, not permission to connect an unauthorised device."
+      }
+    ]
+  },
+  "office-availability": {
+    "focus": "availability",
+    "examples": [
+      {
+        "text": "Ik ben tot de middag bereikbaar via de servicedesk.",
+        "english": "I am reachable through the service desk until noon.",
+        "scenario": "A colleague asks how to contact you this morning. Explain that the service desk can reach you until noon.",
+        "explanation": "Present statement. The first constituent is Ik; ben is the finite main verb and Ik is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Tot gives the end of availability; bereikbaar means contactable, not necessarily free of other tasks."
+      },
+      {
+        "text": "Na mijn afspraak kan ik weer meldingen oppakken.",
+        "english": "After my appointment, I can pick up support requests again.",
+        "scenario": "You have an appointment during working hours. Tell a colleague when you will be able to resume handling support requests.",
+        "explanation": "Fronted phrase and V2. The first constituent is Na mijn afspraak; kan is the finite main verb and ik is its subject. The complete time, place or object phrase is one first constituent. The finite verb follows it, then the subject: second position means a constituent, not the second written word. The complete appointment phrase is first; kan follows before ik. Weer means resuming an activity, not a new request."
+      },
+      {
+        "text": "Bent u na de middag bereikbaar voor een kort gesprek?",
+        "english": "Are you reachable for a short conversation in the afternoon?",
+        "scenario": "You are arranging a formal conversation with someone you do not know. Politely ask whether they are reachable in the afternoon.",
+        "explanation": "Yes/no question. The finite verb Bent comes before subject u. The finite verb starts the yes/no question, followed by the subject. With subject je/jij after the verb, an ordinary present stem loses its -t; formal u does not follow that rule. Formal u takes bent in this question. Na de middag is common Belgian wording for the afternoon."
+      },
+      {
+        "text": "Ik ben tijdens de opleiding niet beschikbaar voor telefoontjes.",
+        "english": "I am not available for phone calls during the training.",
+        "scenario": "You will attend training and cannot take calls during it. Explain this availability limit to your team.",
+        "explanation": "Niet, geen and scope. The first constituent is Ik; ben is the finite main verb and Ik is its subject. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Niet negates availability for calls during a particular period; it does not say you are absent for the entire day."
+      },
+      {
+        "text": "Ik heb mijn afwezigheid aan de planning doorgegeven.",
+        "english": "I have informed the scheduling team of my absence.",
+        "scenario": "A colleague asks whether scheduling knows you will be absent. Say that you have already informed that team.",
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite main verb and Ik is its subject. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. De planning can refer to the scheduling function/team here. Doorgegeven is the separable participle of doorgeven."
+      },
+      {
+        "text": "Kun je mijn telefoontjes tot tien uur overnemen?",
+        "english": "Can you take over my phone calls until ten o'clock?",
+        "scenario": "You have a short morning commitment. Ask a colleague informally to handle your phone calls until ten.",
+        "explanation": "Modal request or permission question. The finite verb Kun comes before subject je. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. The requested coverage ends at ten; it is not an indefinite transfer of responsibility. Overnemen remains a final infinitive."
+      },
+      {
+        "text": "Ik laat je weten zodra ik weer beschikbaar ben.",
+        "english": "I will let you know as soon as I am available again.",
+        "scenario": "You cannot help a colleague immediately. Promise to notify them as soon as you become available again.",
+        "explanation": "Main and subordinate clause. The first constituent is Ik; laat is the finite main verb and Ik is its subject. The main clause retains its own finite-verb position. The conjunction introduces a separate clause whose subject and other material precede its finite verb or verb group. The conjunction's meaning must fit the situation. Laten weten takes a bare infinitive. Zodra introduces a future time clause whose finite ben is final; it does not use an extra zal."
+      },
+      {
+        "text": "Tijdens het eerste telefoontje was ik al in een ander gesprek.",
+        "english": "During the first call I was already on another call.",
+        "scenario": "A colleague asks why you could not answer the first call earlier. Explain that you were already talking to someone else.",
+        "explanation": "Simple past. The first constituent is Tijdens het eerste telefoontje; was is the finite main verb and ik is its subject. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Was locates the conflicting call in the past. Al means that the other call had begun by that time."
+      },
+      {
+        "text": "Mijn werkdag begint een halfuur later dan die van jou.",
+        "english": "My working day starts half an hour later than yours.",
+        "scenario": "You compare schedules with a colleague. Explain that your working day begins half an hour later than theirs.",
+        "explanation": "Present statement. The first constituent is Mijn werkdag; begint is the finite main verb and Mijn werkdag is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Later dan is a comparative. Die van jou refers back to de werkdag and avoids repeating the noun."
+      },
+      {
+        "text": "Laten we onze beschikbaarheid voor morgen afstemmen.",
+        "english": "Let's coordinate our availability for tomorrow.",
+        "scenario": "You and a colleague need to cover tomorrow's requests. Suggest coordinating when each of you is available.",
+        "explanation": "Joint proposal. The first constituent is Laten; Laten is the finite main verb and we is its subject. Laten we invites the speaker and others to act together. The requested action is a bare infinitive; the proposal does not report that the action has already been completed. A joint proposal includes the speaker. Onze belongs with de beschikbaarheid; the proposal is not a claim that schedules already agree."
+      },
+      {
+        "text": "Ik kom eerder om de ochtendploeg te ondersteunen.",
+        "english": "I will come in earlier to support the morning shift.",
+        "scenario": "Tomorrow's morning shift needs help. Explain to your colleague that you will come in earlier for that purpose.",
+        "explanation": "Purpose or intended action. The first constituent is Ik; kom is the finite main verb and Ik is its subject. Om introduces an infinitive phrase with te. Its object can come before the infinitive; with a separable verb te stands between its particle and verb. This is not a second finite clause. A present with this arranged future context describes your plan. Om introduces purpose; ondersteunen has te here, unlike after a modal."
+      },
+      {
+        "text": "Wie is vanavond het aanspreekpunt voor dringende meldingen?",
+        "english": "Who is the point of contact for urgent requests this evening?",
+        "scenario": "Before the evening coverage begins, ask your team who the point of contact for urgent requests will be.",
+        "explanation": "Question word and inversion. The first question constituent is Wie; is is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Wie is the subject. Dringende takes -e before plural meldingen; the question is limited to this evening."
+      }
+    ]
+  },
+  "office-breaks": {
+    "focus": "breaks",
+    "examples": [
+      {
+        "text": "Ik neem mijn pauze na het huidige gesprek.",
+        "english": "I will take my break after the current call.",
+        "scenario": "A colleague asks when you will take a break. Explain that you will finish the current call first.",
+        "explanation": "Present statement. The first constituent is Ik; neem is the finite main verb and Ik is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. The present plus a future sequence expresses an arrangement. Huidige identifies the call currently underway."
+      },
+      {
+        "text": "Kun je de telefoon opnemen terwijl ik even pauze neem?",
+        "english": "Can you answer the phone while I take a short break?",
+        "scenario": "You need a short break but calls must still be answered. Ask a colleague informally to cover the phone during your break.",
+        "explanation": "Modal request or permission question. The finite verb Kun comes before subject je. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Opnemen means answer the phone here. Terwijl introduces simultaneous actions; neem is final inside that clause."
+      },
+      {
+        "text": "We hebben geen gezamenlijke lunchpauze op drukke dagen.",
+        "english": "We do not have a shared lunch break on busy days.",
+        "scenario": "A new colleague asks about lunch arrangements. Explain that on busy days the team does not take lunch together.",
+        "explanation": "Niet, geen and scope. The first constituent is We; hebben is the finite main verb and We is its subject. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Geen negates the indefinite shared lunch break. The qualification op drukke dagen matters; this is not a claim about every day."
+      },
+      {
+        "text": "Tijdens mijn pauze blijft de servicedesk bereikbaar.",
+        "english": "The service desk remains reachable during my break.",
+        "scenario": "A colleague worries that callers cannot reach support while you take a break. Explain that the service desk remains reachable.",
+        "explanation": "Fronted phrase and V2. The first constituent is Tijdens mijn pauze; blijft is the finite main verb and de servicedesk is its subject. The complete time, place or object phrase is one first constituent. The finite verb follows it, then the subject: second position means a constituent, not the second written word. Blijft expresses continuation; the team's coverage is not the same as your individual availability."
+      },
+      {
+        "text": "Ik heb met mijn collega een later pauzemoment afgesproken.",
+        "english": "I have agreed on a later break time with my colleague.",
+        "scenario": "Your team leader asks how your break is covered. Explain that you and a colleague have agreed on a later time for your break.",
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite main verb and Ik is its subject. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Afspreken met identifies the colleague; een later pauzemoment is the agreed item, not a completed break."
+      },
+      {
+        "text": "Laat me even weten wanneer je terug bent.",
+        "english": "Let me know when you are back.",
+        "scenario": "A colleague is about to take a break. Ask them informally to let you know when they return.",
+        "explanation": "Spoken instruction. The instruction starts with Laat; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Me is the receiver of the information. Wanneer je terug bent describes a future return, with final bent."
+      },
+      {
+        "text": "Tijdens de lunch bespraken we de eerste werkweek.",
+        "english": "During lunch we discussed the first working week.",
+        "scenario": "You are telling a colleague about an earlier lunch. Say that you discussed the first working week together.",
+        "explanation": "Simple past. The first constituent is Tijdens de lunch; bespraken is the finite main verb and we is its subject. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Bespraken agrees with plural we. Bespreken takes the topic as a direct object without over."
+      },
+      {
+        "text": "Een korte wandeling helpt me om daarna weer geconcentreerd te werken.",
+        "english": "A short walk helps me work with concentration again afterward.",
+        "scenario": "A colleague asks why you go outside during a break. Explain that a short walk helps you concentrate on work afterward.",
+        "explanation": "Present statement. The first constituent is Een korte wandeling; helpt is the finite main verb and Een korte wandeling is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Me is the person helped; the om te phrase describes the helpful result. Daarna means after the walk."
+      },
+      {
+        "text": "Neem jij vandaag de eerste pauze?",
+        "english": "Are you taking the first break today?",
+        "scenario": "You are checking today's coverage with a colleague. Ask informally whether they are taking the first break.",
+        "explanation": "Yes/no question. The finite verb Neem comes before subject jij. The finite verb starts the yes/no question, followed by the subject. With subject je/jij after the verb, an ordinary present stem loses its -t; formal u does not follow that rule. Neem before subject jij has no -t. De eerste pauze identifies its order rather than the duration."
+      },
+      {
+        "text": "Ik zal de nieuwe collega bij de lunch betrekken.",
+        "english": "I will include the new colleague at lunch.",
+        "scenario": "A team member worries that the newcomer may feel left out. Promise to include the new colleague at lunch.",
+        "explanation": "Future intention or commitment. The first constituent is Ik; zal is the finite main verb and Ik is its subject. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work. Iemand bij iets betrekken means include someone in something; it does not mean ask them to perform a task."
+      },
+      {
+        "text": "Ik weet niet of de kantine vandaag open is.",
+        "english": "I do not know whether the canteen is open today.",
+        "scenario": "A colleague asks about lunch in the canteen. Say that you do not know whether it is open today.",
+        "explanation": "Main and subordinate clause. The first constituent is Ik; weet is the finite main verb and Ik is its subject. The main clause retains its own finite-verb position. The conjunction introduces a separate clause whose subject and other material precede its finite verb or verb group. The conjunction's meaning must fit the situation. Of means whether, not or, in this embedded yes/no question. Is is final in the subordinate clause."
+      },
+      {
+        "text": "Onze pauzeruimte is kleiner dan de kantine.",
+        "english": "Our break room is smaller than the canteen.",
+        "scenario": "A new colleague asks about the eating areas. Explain that your team's break room is smaller than the canteen.",
+        "explanation": "Possessives and adjective endings. The first constituent is Onze pauzeruimte; is is the finite main verb and Onze pauzeruimte is its subject. A possessive refers to the owner, while ons/onze follows the noun: ons for a singular het-word, onze for de-words and plurals. Adjective endings depend on the article, definiteness and noun gender. Onze accompanies de pauzeruimte; kleiner dan compares sizes. Klein describes the room, not the team."
+      }
+    ]
+  },
+  "office-experience": {
+    "focus": "experience",
+    "examples": [
+      {
+        "text": "Ik beheer vooral accounts en toegangsrechten.",
+        "english": "I mainly manage accounts and access rights.",
+        "scenario": "A colleague asks about your regular responsibilities. Explain that most of your administration concerns accounts and access rights.",
+        "explanation": "Present statement. The first constituent is Ik; beheer is the finite main verb and Ik is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Vooral limits the emphasis without claiming these are your only tasks. Accounts and toegangsrechten are direct objects."
+      },
+      {
+        "text": "Ik ken deze toepassing nog niet goed.",
+        "english": "I do not know this application well yet.",
+        "scenario": "A colleague asks you to help with an application you are still learning. Explain that you are not very familiar with it yet.",
+        "explanation": "Niet, geen and scope. The first constituent is Ik; ken is the finite main verb and Ik is its subject. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Kennen concerns familiarity with the application. Nog niet goed does not necessarily mean you have never used it."
+      },
+      {
+        "text": "Ik heb eerder gebruikers op afstand ondersteund.",
+        "english": "I have previously supported users remotely.",
+        "scenario": "During an introduction, a teammate asks about your experience. Say that you have supported users remotely before.",
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite main verb and Ik is its subject. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Ondersteund has no added ge- with onder-. Eerder indicates previous experience without naming an exact date."
+      },
+      {
+        "text": "Ik wil onze cloudomgeving beter leren kennen.",
+        "english": "I want to get to know our cloud environment better.",
+        "scenario": "You are discussing learning goals with a colleague. Explain that you want to become more familiar with the team's cloud environment.",
+        "explanation": "Modal and final infinitive. The first constituent is Ik; wil is the finite main verb and Ik is its subject. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. This is a learning intention, not demonstrated competence. Leren kennen means become familiar with."
+      },
+      {
+        "text": "Ik voel me zeker bij eenvoudige supportvragen.",
+        "english": "I feel confident with straightforward support questions.",
+        "scenario": "Your mentor asks how confident you feel. Explain that straightforward support questions are within your comfort zone.",
+        "explanation": "Reflexive construction. The first constituent is Ik; voel is the finite main verb and Ik is its subject. The reflexive pronoun belongs to the verb's subject: ik–me, je–je, hij/zij–zich, we–ons. A separable reflexive verb still splits in a main clause. Voel is a verb; gevoel is a noun. Me is required for the state expression ik voel me zeker."
+      },
+      {
+        "text": "Welke taken horen bij mijn rol als junior beheerder?",
+        "english": "Which tasks belong to my role as a junior administrator?",
+        "scenario": "You are clarifying the boundaries of your new role. Ask your manager which tasks are part of your junior administrator position.",
+        "explanation": "Question word and inversion. The first question constituent is Welke taken; horen is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Horen bij is a fixed combination meaning belong to; it does not describe hearing a sound here."
+      },
+      {
+        "text": "Mijn vorige team werkte met een ander meldingssysteem.",
+        "english": "My previous team worked with a different ticketing system.",
+        "scenario": "A colleague notices you are learning the request system. Explain that your previous team used a different system.",
+        "explanation": "Simple past. The first constituent is Mijn vorige team; werkte is the finite main verb and Mijn vorige team is its subject. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Vorige establishes an earlier team. Ander means different, not necessarily new or unknown."
+      },
+      {
+        "text": "Ik heb er nog weinig ervaring mee.",
+        "english": "I still have little experience with it.",
+        "scenario": "Your mentor asks about a tool you have just discussed. Explain that you still have little experience using that tool.",
+        "explanation": "Existential or referring er. The first constituent is Ik; heb is the finite main verb and Ik is its subject. Er can introduce the existence/appearance of something, or combine with a preposition to refer back to a thing. These are different functions; agreement and meaning depend on the actual sentence. Er ... mee refers back to the tool. Met changes to mee in this referring combination; er is not a location word."
+      },
+      {
+        "text": "Ik weet hoe het team de documentatie bijwerkt.",
+        "english": "I know how the team updates the documentation.",
+        "scenario": "A colleague asks whether you understand the team's documentation process. Say that you know how the team updates it.",
+        "explanation": "Main and subordinate clause. The first constituent is Ik; weet is the finite main verb and Ik is its subject. The main clause retains its own finite-verb position. The conjunction introduces a separate clause whose subject and other material precede its finite verb or verb group. The conjunction's meaning must fit the situation. Weten hoe introduces procedural factual knowledge. Bijwerkt stays joined at the end of the embedded clause."
+      },
+      {
+        "text": "Ik zal de serverdocumentatie deze week doornemen.",
+        "english": "I will go through the server documentation this week.",
+        "scenario": "You are agreeing on onboarding work with your mentor. Commit to reviewing the server documentation this week.",
+        "explanation": "Future intention or commitment. The first constituent is Ik; zal is the finite main verb and Ik is its subject. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work. Doornemen means review/read through here, not change the documentation. Deze week gives a time frame, not a completed result."
+      },
+      {
+        "text": "Ik maak aantekeningen om de werkwijze beter te onthouden.",
+        "english": "I take notes to remember the procedure better.",
+        "scenario": "A colleague asks why you are writing during a demonstration. Explain that you take notes to remember the procedure better.",
+        "explanation": "Purpose or intended action. The first constituent is Ik; maak is the finite main verb and Ik is its subject. Om introduces an infinitive phrase with te. Its object can come before the infinitive; with a separable verb te stands between its particle and verb. This is not a second finite clause. Om names the purpose. Onthouden is remember/retain, while kennen is familiarity and weten concerns facts."
+      },
+      {
+        "text": "Mag ik deze taak onder begeleiding uitvoeren?",
+        "english": "May I carry out this task under supervision?",
+        "scenario": "You are not yet ready to perform a task alone. Ask your mentor for permission to carry it out with supervision.",
+        "explanation": "Modal request or permission question. The finite verb Mag comes before subject ik. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Mag requests permission, not a claim of ability. Onder begeleiding explicitly limits how you would perform the task."
+      }
+    ]
+  },
+  "office-remote": {
+    "focus": "remote",
+    "examples": [
+      {
+        "text": "Ik werk op vrijdag van thuis uit.",
+        "english": "I work from home on Fridays.",
+        "scenario": "A teammate asks about your regular Friday work location. Explain that you work from home that day.",
+        "explanation": "Present statement. The first constituent is Ik; werk is the finite main verb and Ik is its subject. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Van thuis uit is common standard Belgian wording; vanuit huis is also used. Op vrijdag describes a recurring schedule here."
+      },
+      {
+        "text": "Morgen ben ik alleen via chat bereikbaar.",
+        "english": "Tomorrow I will only be reachable through chat.",
+        "scenario": "You are arranging tomorrow's contact options. Tell a colleague that chat will be the only way to reach you.",
+        "explanation": "Fronted phrase and V2. The first constituent is Morgen; ben is the finite main verb and ik is its subject. The complete time, place or object phrase is one first constituent. The finite verb follows it, then the subject: second position means a constituent, not the second written word. Alleen limits the contact channel. It does not mean that you will be working alone."
+      },
+      {
+        "text": "Ik kom naar kantoor als de gebruiker mijn hulp ter plaatse nodig heeft.",
+        "english": "I will come to the office if the user needs my help on site.",
+        "scenario": "You are working remotely and discussing an unresolved request. Explain the condition under which you will come to the office.",
+        "explanation": "Main and subordinate clause. The first constituent is Ik; kom is the finite main verb and Ik is its subject. The main clause retains its own finite-verb position. The conjunction introduces a separate clause whose subject and other material precede its finite verb or verb group. The conjunction's meaning must fit the situation. Als introduces a condition, not a certainty. Nodig heeft forms the need expression at the end of the subordinate clause."
+      },
+      {
+        "text": "Ik heb een rustige plek voor de ondersteuningsgesprekken ingericht.",
+        "english": "I have set up a quiet place for the support calls.",
+        "scenario": "A colleague asks whether you can take support calls while working remotely. Explain that you have set up a quiet place for them.",
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite main verb and Ik is its subject. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Ingericht is the separable participle of inrichten. The statement concerns a completed setup, not a plan."
+      },
+      {
+        "text": "Ben je tijdens je thuiswerkdag op hetzelfde nummer bereikbaar?",
+        "english": "Are you reachable on the same number during your work-from-home day?",
+        "scenario": "A colleague will work from home tomorrow. Ask informally whether the usual number will still reach them during that day.",
+        "explanation": "Yes/no question. The finite verb Ben comes before subject je. The finite verb starts the yes/no question, followed by the subject. With subject je/jij after the verb, an ordinary present stem loses its -t; formal u does not follow that rule. Bereikbaar op een nummer is the fixed contact expression. Je before thuiswerkdag is possessive, while the earlier je is subject."
+      },
+      {
+        "text": "We kunnen de overdracht ook op afstand bespreken.",
+        "english": "We can also discuss the handover remotely.",
+        "scenario": "You and a colleague cannot meet at the office for a handover. Offer remote discussion as another possible option.",
+        "explanation": "Modal and final infinitive. The first constituent is We; kunnen is the finite main verb and We is its subject. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Kunnen expresses an available option here, not formal permission. Ook adds an option without claiming remote handover has already happened."
+      },
+      {
+        "text": "Ik heb thuis geen toegang tot de kantoorprinter.",
+        "english": "I do not have access to the office printer from home.",
+        "scenario": "While working from home, you are asked to print a document on the office printer. Explain that you do not have access to it there.",
+        "explanation": "Niet, geen and scope. The first constituent is Ik; heb is the finite main verb and Ik is its subject. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Geen negates access as an uncountable noun. Tot introduces the resource; this does not by itself diagnose the technical cause."
+      },
+      {
+        "text": "Gisteren werkten we vanuit verschillende kantoren.",
+        "english": "Yesterday we worked from different offices.",
+        "scenario": "A colleague asks where the team worked yesterday. Report that team members were working from different offices.",
+        "explanation": "Simple past. The first constituent is Gisteren; werkten is the finite main verb and we is its subject. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Werkten is plural past. Verschillende does not mean unknown; it describes more than one distinct office location."
+      },
+      {
+        "text": "Laten we onze kantoordagen op elkaar afstemmen.",
+        "english": "Let's coordinate our office days with each other.",
+        "scenario": "You and a teammate want to overlap at the office. Suggest coordinating the days on which you each come in.",
+        "explanation": "Joint proposal. The first constituent is Laten; Laten is the finite main verb and we is its subject. Laten we invites the speaker and others to act together. The requested action is a bare infinitive; the proposal does not report that the action has already been completed. Afstemmen op elkaar expresses reciprocal coordination. Onze agrees with plural kantoordagen."
+      },
+      {
+        "text": "Ik ben de werkplek thuis aan het inrichten.",
+        "english": "I am setting up the workspace at home.",
+        "scenario": "A colleague asks what you are doing at the moment. Explain that you are currently setting up your home workspace.",
+        "explanation": "Ongoing activity with aan het. The first constituent is Ik; ben is the finite main verb and Ik is its subject. A finite form of zijn describes the ongoing state. Aan het is followed by an infinitive, not an extra finite verb. For separable verbs more than one progressive placement can be natural. Aan het inrichten describes an action in progress. It does not mean the workspace is ready yet."
+      },
+      {
+        "text": "Welke gesprekken voeren we liever op kantoor?",
+        "english": "Which conversations do we prefer to have at the office?",
+        "scenario": "Your team is agreeing how to work together remotely. Ask which conversations the group would rather hold at the office.",
+        "explanation": "Question word and inversion. The first question constituent is Welke gesprekken; voeren is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Een gesprek voeren is a fixed expression. Liever expresses a preference, not a ban on remote conversations."
+      },
+      {
+        "text": "Ik gebruik een headset om thuis duidelijk verstaanbaar te zijn.",
+        "english": "I use a headset so that I can be heard clearly at home.",
+        "scenario": "Someone asks about your remote-call setup. Explain that you use a headset to make yourself clearly audible while at home.",
+        "explanation": "Purpose or intended action. The first constituent is Ik; gebruik is the finite main verb and Ik is its subject. Om introduces an infinitive phrase with te. Its object can come before the infinitive; with a separable verb te stands between its particle and verb. This is not a second finite clause. Verstaanbaar concerns whether others can hear/understand the speech clearly, not whether the message's content has been understood."
+      }
+    ]
+  }
+}

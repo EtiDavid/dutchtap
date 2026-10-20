@@ -1,3 +1,4 @@
+import workplace from "@/data/workplace-communication.json";
 import catalogue from "@/data/dutch-communication.json";
 import type { Lang } from "@/lib/lang";
 import {
@@ -19,7 +20,7 @@ export type PracticeSentence = {
   scenario: string;
   lang: Lang;
 };
-const tasks = catalogue as Record<string, CommunicationTask>;
+const tasks = { ...catalogue, ...workplace } as Record<string, CommunicationTask>;
 /** Exact authored text is the key. French and legacy records keep their single model. */
 export function communicationFor(card: PracticeSentence): CommunicationTask {
   return card.lang === "nl" && tasks[card.text]

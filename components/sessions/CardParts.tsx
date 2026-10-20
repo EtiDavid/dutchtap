@@ -17,6 +17,7 @@ export function CardImage({
   alt: string;
   priority?: boolean;
 }) {
+  if (!card.image || card.imageStatus === "not-applicable") return null;
   return card.imageStatus === "pending" ? (
     <div className="flex aspect-[3/2] items-center justify-center bg-surface p-6 text-center text-sm text-muted">
       Illustration awaiting generation
@@ -83,6 +84,7 @@ export function AudioControls({
           </button>
         </div>
       )}
+      {card.audioStatus === "device" && card.lang === "nl" && <p className="mt-2 text-xs text-muted">Spoken by your device’s Dutch voice.</p>}
       {card.lang === "fr" && (
         <p className="mt-2 text-xs text-muted">
           Spoken by your device’s French voice (synthetic speech, not a

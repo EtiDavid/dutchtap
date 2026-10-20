@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { LEVEL_LABELS } from '@/lib/flashcards/engine';
+import { COLLECTION_LABELS } from '@/lib/content/collections';
 import { retired, sessionStats, topicLabel } from '@/lib/sessions/engine';
 import { sessionUrl } from '@/lib/sessions/nav';
 import type { Session } from '@/lib/sessions/types';
@@ -18,7 +19,7 @@ export function SessionCard({ session, refused, highlight, onRename, onDelete, o
     <header className="flex items-start justify-between gap-3">
       <div>
         <h3 className="text-lg font-bold leading-snug">{session.name}</h3>
-        <p className="text-xs text-muted"><span data-testid="session-card-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {topicLabel(session.topic)} · {total} {total === 1 ? 'card' : 'cards'} · started with {LEVEL_LABELS[session.startingLevel]}{done ? ' · completed' : ''}</p>
+        <p className="text-xs text-muted"><span data-testid="session-card-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {session.collection === 'workplace' ? `${COLLECTION_LABELS.workplace} · ` : ''}{topicLabel(session.topic)} · {total} {total === 1 ? 'card' : 'cards'} · started with {LEVEL_LABELS[session.startingLevel]}{done ? ' · completed' : ''}</p>
       </div>
       {done && <span className="rounded-full bg-success/20 px-2 py-1 text-xs font-semibold">Completed</span>}
     </header>

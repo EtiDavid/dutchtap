@@ -1,7 +1,9 @@
 import rawCards from '@/data/flashcards.json';
 import additions from '@/data/flashcard-additions.json';
 import moreAdditions from '@/data/flashcard-additions-2.json';
+import workplace from '@/data/workplace-cards.json';
 export type Card = typeof rawCards[number] & {
+  collection?: "everyday" | "workplace";
   difficulty?: string;
   source?: { videoId: string; timestampSeconds: number };
   vocabularyIds?: string[];
@@ -11,7 +13,8 @@ export type Card = typeof rawCards[number] & {
   quizMode?: string;
   quizBlank?: { index: number; acceptedAnswers: string[]; distractors: string[] };
 };
-export const CARDS: Card[] = [...rawCards, ...additions, ...moreAdditions];
+export const EVERYDAY_CARDS: Card[] = [...rawCards, ...additions, ...moreAdditions];
+export const CARDS: Card[] = [...EVERYDAY_CARDS, ...workplace] as Card[];
 export const CATEGORIES = { shopping: 'Shopping', school: 'School', transport: 'Train & transport', home: 'Home', conversation: 'Conversation', administration: 'Administration', weather: 'Weather', food: 'Food & cafés', work: 'Work', health: 'Health', leisure: 'Leisure' };
 
 // How well the learner knows a card. New cards start as "difficult".

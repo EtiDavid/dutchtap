@@ -46,6 +46,8 @@ import {
   shuffledTokenOrder,
 } from "./wordOrder";
 
+import { WORK_AREAS, collectionAvailable, validTopic, type Collection } from "@/lib/content/collections";
+
 type Rand = () => number;
 /** The card in the session's own language (undefined if that language has no content for it). */
 export const deckCard = (lang: Lang, id: string): LCard | undefined =>
@@ -70,7 +72,7 @@ export const progressOf = (session: Session, id: string): CardProgress =>
 export const topicLabel = (topic: string) =>
   topic === "all"
     ? "All places"
-    : (CATEGORIES[topic as keyof typeof CATEGORIES] ?? topic);
+    : (CATEGORIES[topic as keyof typeof CATEGORIES] ?? WORK_AREAS[topic as keyof typeof WORK_AREAS] ?? topic);
 export const levelOf = (reviews: Reviews, id: string): Level =>
   reviews[id]?.level ?? DEFAULT_LEVEL;
 
@@ -79,11 +81,13 @@ export function eligibleIds(
   level: Level,
   reviews: Reviews,
   lang: Lang = DEFAULT_LANG,
+  collection: Collection = "everyday",
 ): string[] {
   return cardsFor(lang)
     .filter(
       (card) =>
-        (topic === "all" || card.category === topic) &&
+        collectionAvailable(lang, collection) && card.collection === collection &&
+        validTopic(collection, topic) && (topic === "all" || card.category === topic) &&
         levelOf(reviews, card.id) === level,
     )
     .map((card) => card.id);
@@ -92,6 +96,7 @@ export function levelCounts(
   topic: string,
   reviews: Reviews,
   lang: Lang = DEFAULT_LANG,
+  collection: Collection = "everyday",
 ): Record<Level, number> {
   const counts: Record<Level, number> = {
     difficult: 0,
@@ -100,7 +105,7 @@ export function levelCounts(
     mastered: 0,
   };
   for (const card of cardsFor(lang))
-    if (topic === "all" || card.category === topic)
+    if (collectionAvailable(lang, collection) && card.collection === collection && validTopic(collection, topic) && (topic === "all" || card.category === topic))
       counts[levelOf(reviews, card.id)]++;
   return counts;
 }
@@ -117,8 +122,9 @@ export function levelAvailability(
   count: number,
   reviews: Reviews,
   lang: Lang = DEFAULT_LANG,
+  collection: Collection = "everyday",
 ): LevelAvailability[] {
-  const counts = levelCounts(topic, reviews, lang);
+  const counts = levelCounts(topic, reviews, lang, collection);
   return LEVELS.map((level) => {
     const available = counts[level];
     const enough = Number.isInteger(count) && count >= 1 && available >= count;
@@ -133,6 +139,7 @@ export function levelAvailability(
 }
 
 export type Creation = {
+  collection?: Collection;
   topic: string;
   count: number;
   level: Level;
@@ -142,7 +149,7 @@ export type CreationCheck =
   | { ok: true }
   | { ok: false; code: "count" | "level" | "limit" | "none"; message: string };
 export function checkCreation(
-  { topic, count, level, lang = DEFAULT_LANG }: Creation,
+  { topic, count, level, lang = DEFAULT_LANG, collection = "everyday" }: Creation,
   reviews: Reviews,
   activeSessions: number,
 ): CreationCheck {
@@ -158,7 +165,7 @@ export function checkCreation(
       code: "count",
       message: `Choose a number of cards from 1 to ${MAX_SESSION_CARDS}.`,
     };
-  const availability = levelAvailability(topic, count, reviews, lang);
+  const availability = levelAvailability(topic, count, reviews, lang, collection);
   if (!availability.some((a) => a.enough))
     return {
       ok: false,
@@ -215,6 +222,7 @@ export function createSessionFromIds(input: {
   cardIds: string[];
   topic: string;
   startingLevel: Level;
+  collection?: Collection;
   lang?: Lang;
   now?: Date;
   rand?: Rand;
@@ -223,6 +231,7 @@ export function createSessionFromIds(input: {
   const rand = input.rand ?? Math.random;
   return {
     id: input.id ?? newId(),
+    collection: input.collection ?? "everyday",
     lang: input.lang ?? DEFAULT_LANG,
     name: input.name.trim().slice(0, 80),
     cardIds: [...input.cardIds],
@@ -274,7 +283,7 @@ export function createSession(
   },
 ): Session | null {
   const lang = input.lang ?? DEFAULT_LANG;
-  const pool = eligibleIds(input.topic, input.level, input.reviews, lang);
+  const pool = eligibleIds(input.topic, input.level, input.reviews, lang, input.collection ?? "everyday");
   if (
     !Number.isInteger(input.count) ||
     input.count < 1 ||
@@ -286,6 +295,7 @@ export function createSession(
   return createSessionFromIds({
     id: input.id,
     topic: input.topic,
+    collection: input.collection ?? "everyday",
     startingLevel: input.level,
     lang,
     now: input.now,
@@ -313,6 +323,7 @@ export function practiseAgain(
     name: `Again: ${source.name.replace(/^Again: /, "")}`,
     cardIds: source.cardIds,
     topic: source.topic,
+    collection: source.collection,
     startingLevel: source.startingLevel,
     lang: source.lang,
   });

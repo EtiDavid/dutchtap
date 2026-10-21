@@ -93,6 +93,9 @@ describe('complete Dutch at Work publication',()=>{
   });
   it('keeps existing word senses separate from new workplace meanings',()=>{
     const ids=(id:string)=>wordsForCard(id).map(w=>w.id);
+    expect(ids('career-office-007')).not.toContain('career-werk');
+    expect(ids('career-clarification-041')).not.toContain('career-vraag');
+    expect(ids('career-remote-041')).not.toContain('career-antwoord');
     expect(ids('career-changes-001')).toContain('career-leesrecht');
     expect(ids('career-support-021')).toContain('beschikbaar');
     expect(ids('career-office-045')).toContain('career-gevoel');

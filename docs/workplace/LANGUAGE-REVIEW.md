@@ -11,6 +11,7 @@ For each batch, editorial review considered the Dutch/English pair, actual commu
 ## Corrections made during review
 
 - Split vocabulary senses that must not inherit an old definition: self-introduction versus proposing, demonstrating versus occurring, loading data versus cargo, closing windows versus concluding agreements, work shifts versus services, and figurative cause/location. Existing meanings and links remain unchanged.
+- Checked homographs in vocabulary backlinks: finite werk does not point to the noun werk, and verb forms vragen/antwoorden do not point to question/answer nouns. Reviewed exclusions prevent those misleading links.
 - Replaced a support sentence that differed from published recovery-time material only by “exacte”; its final version explains which data is needed before a reliable estimate.
 - Rewrote a cumbersome repeated “nodig” support sentence into a direct statement of relevant data needs.
 - Rejected draft alternative answers with changed actors, questions turned into statements, awkward focus, or mismatched card references. The final alternatives were read alongside their actual parents; all preserve the intended actor, action, time, certainty and communication act.

@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import more from "@/data/flashcard-additions-2.json";
-import { CARDS, CATEGORIES } from "@/lib/flashcards/engine";
+import { EVERYDAY_CARDS as CARDS, CATEGORIES } from "@/lib/flashcards/engine";
 import { BREAKDOWNS } from "@/lib/grammarBreakdowns";
 import { GRAMMAR_NOTES } from "@/lib/grammarNotes";
 import { VOCABULARY } from "@/lib/vocabulary";

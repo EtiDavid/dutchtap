@@ -85,6 +85,7 @@ export function variationCard(id: string): LCard | undefined {
         vocabularyIds: [],
         image: "",
         audio: undefined,
+        ...(p.collection === "workplace" ? { audioStatus: "device", imageStatus: "not-applicable" } : {}),
       }
     : undefined;
 }

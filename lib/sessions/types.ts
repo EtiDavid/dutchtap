@@ -156,6 +156,7 @@ function checkSession(s: SessionShape, ctx: z.RefinementCtx) {
   if (!collectionAvailable(s.lang, s.collection)) fail("Collection is unavailable in this language");
   if (!validTopic(s.collection, s.topic)) fail("Topic is outside this collection");
   if (s.cardIds.some(id => cardFor(s.lang, id)?.collection !== s.collection)) fail("Card outside selected collection");
+  if (s.collection === "workplace" && s.topic !== "all" && s.cardIds.some(id => cardFor(s.lang, id)?.category !== s.topic)) fail("Card outside selected workplace area");
   // Every card must exist in the session's own language: a French session can never hold a card that has no French content.
   for (const id of new Set([
     ...s.cardIds,

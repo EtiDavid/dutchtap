@@ -77,7 +77,7 @@ describe("authored Dutch communication content", () => {
         .flat()
         .map((v) => variationCard(v.id)!),
     ];
-    expect(cards).toHaveLength(6600);
+    expect(cards).toHaveLength(13200);
     for (const card of cards) {
       const t = communicationFor(card);
       expect(t.scenario.length, card.id).toBeGreaterThan(40);

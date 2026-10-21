@@ -4,7 +4,7 @@ import additions from '@/data/flashcard-additions.json';
 import review from '@/docs/expansion/content-review.json';
 import prompts from '@/docs/expansion/illustration-prompts.json';
 import batches from '@/docs/expansion/audio/manifest.json';
-import { CARDS, CATEGORIES } from '@/lib/flashcards/engine';
+import { EVERYDAY_CARDS as CARDS, CATEGORIES } from '@/lib/flashcards/engine';
 import { VOCABULARY } from '@/lib/vocabulary';
 
 const normalise = (text: string) => text.toLocaleLowerCase('nl').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();

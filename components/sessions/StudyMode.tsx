@@ -1,7 +1,6 @@
 "use client";
-import { deckCard, shuffleRound } from "@/lib/sessions/engine";
+import { topicLabel, deckCard, shuffleRound } from "@/lib/sessions/engine";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
-import { CATEGORIES } from "@/lib/flashcards/engine";
 import { VariationControls, ReviewHistory } from "./VariationPractice";
 import { AnswerModels } from "./AnswerModels";
 import { primary } from "../flashcards/styles";
@@ -35,7 +34,7 @@ export function StudyMode({ session, store, onPractised }: ModeProps) {
         <VariationControls session={session} store={store} id={card.id} />
       )}
       <div className="flex justify-between text-sm text-muted">
-        <span>{CATEGORIES[card.category as keyof typeof CATEGORIES]}</span>
+        <span>{topicLabel(card.category)}</span>
         <span data-testid="study-position">
           Round {round} · sentence {pos + 1} of {order.length}
         </span>

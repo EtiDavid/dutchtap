@@ -52,6 +52,10 @@
       {
         "cardId": "career-office-011",
         "form": "ondersteuningsteam"
+      },
+      {
+        "cardId": "career-remote-021",
+        "form": "ondersteuningsteam"
       }
     ]
   },
@@ -66,7 +70,51 @@
     "id": "career-gebruiker",
     "occurrences": [
       {
+        "cardId": "career-changes-008",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-changes-019",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-changes-043",
+        "form": "gebruiker"
+      },
+      {
         "cardId": "career-clarification-034",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-incidents-031",
+        "form": "gebruikers"
+      },
+      {
+        "cardId": "career-incidents-037",
+        "form": "gebruikers"
+      },
+      {
+        "cardId": "career-incidents-039",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-incidents-045",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-incidents-057",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-meetings-015",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-meetings-040",
+        "form": "gebruikers"
+      },
+      {
+        "cardId": "career-meetings-055",
         "form": "gebruiker"
       },
       {
@@ -78,12 +126,36 @@
         "form": "gebruikers"
       },
       {
+        "cardId": "career-priorities-030",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-problems-019",
+        "form": "gebruikers"
+      },
+      {
+        "cardId": "career-problems-056",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-remote-014",
+        "form": "gebruiker"
+      },
+      {
+        "cardId": "career-remote-036",
+        "form": "gebruiker"
+      },
+      {
         "cardId": "career-support-017",
         "form": "gebruikers"
       },
       {
         "cardId": "career-support-027",
         "form": "gebruiker"
+      },
+      {
+        "cardId": "career-troubleshooting-035",
+        "form": "gebruikers"
       }
     ]
   },
@@ -98,6 +170,22 @@
     "id": "career-collega",
     "occurrences": [
       {
+        "cardId": "career-changes-046",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-meetings-012",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-meetings-018",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-meetings-058",
+        "form": "collega"
+      },
+      {
         "cardId": "career-office-004",
         "form": "collega"
       },
@@ -107,6 +195,34 @@
       },
       {
         "cardId": "career-office-033",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-priorities-026",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-priorities-049",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-problems-011",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-problems-047",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-remote-055",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-remote-060",
+        "form": "collega"
+      },
+      {
+        "cardId": "career-troubleshooting-053",
         "form": "collega"
       }
     ]
@@ -122,11 +238,23 @@
     "id": "career-aanspreekpunt",
     "occurrences": [
       {
+        "cardId": "career-incidents-026",
+        "form": "aanspreekpunt"
+      },
+      {
+        "cardId": "career-incidents-051",
+        "form": "aanspreekpunt"
+      },
+      {
         "cardId": "career-office-003",
         "form": "aanspreekpunt"
       },
       {
         "cardId": "career-office-021",
+        "form": "aanspreekpunt"
+      },
+      {
+        "cardId": "career-remote-052",
         "form": "aanspreekpunt"
       }
     ]
@@ -142,11 +270,19 @@
     "id": "career-teamleider",
     "occurrences": [
       {
+        "cardId": "career-meetings-048",
+        "form": "teamleider"
+      },
+      {
         "cardId": "career-office-003",
         "form": "teamleider"
       },
       {
         "cardId": "career-office-056",
+        "form": "teamleider"
+      },
+      {
+        "cardId": "career-problems-015",
         "form": "teamleider"
       }
     ]
@@ -162,12 +298,36 @@
     "id": "career-team",
     "occurrences": [
       {
+        "cardId": "career-changes-042",
+        "form": "teams"
+      },
+      {
         "cardId": "career-clarification-035",
+        "form": "team"
+      },
+      {
+        "cardId": "career-incidents-013",
+        "form": "teams"
+      },
+      {
+        "cardId": "career-incidents-053",
+        "form": "teams"
+      },
+      {
+        "cardId": "career-incidents-055",
         "form": "team"
       },
       {
         "cardId": "career-office-006",
         "form": "team"
+      },
+      {
+        "cardId": "career-priorities-007",
+        "form": "teams"
+      },
+      {
+        "cardId": "career-remote-013",
+        "form": "teams"
       },
       {
         "cardId": "career-support-010",
@@ -220,6 +380,10 @@
       {
         "cardId": "career-office-053",
         "form": "medewerker"
+      },
+      {
+        "cardId": "career-problems-014",
+        "form": "medewerker"
       }
     ]
   },
@@ -266,6 +430,14 @@
     "id": "career-werkwijze",
     "occurrences": [
       {
+        "cardId": "career-incidents-034",
+        "form": "werkwijze"
+      },
+      {
+        "cardId": "career-incidents-057",
+        "form": "werkwijze"
+      },
+      {
         "cardId": "career-office-043",
         "form": "werkwijze"
       },
@@ -298,12 +470,60 @@
         "form": "melding"
       },
       {
+        "cardId": "career-incidents-004",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-incidents-007",
+        "form": "meldingen"
+      },
+      {
+        "cardId": "career-incidents-009",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-incidents-024",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-incidents-030",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-incidents-054",
+        "form": "meldingen"
+      },
+      {
         "cardId": "career-office-004",
         "form": "meldingen"
       },
       {
         "cardId": "career-office-022",
         "form": "meldingen"
+      },
+      {
+        "cardId": "career-priorities-001",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-priorities-006",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-problems-010",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-problems-020",
+        "form": "meldingen"
+      },
+      {
+        "cardId": "career-problems-027",
+        "form": "melding"
+      },
+      {
+        "cardId": "career-problems-031",
+        "form": "melding"
       },
       {
         "cardId": "career-support-004",
@@ -336,6 +556,14 @@
       {
         "cardId": "career-support-055",
         "form": "melding"
+      },
+      {
+        "cardId": "career-troubleshooting-009",
+        "form": "meldingen"
+      },
+      {
+        "cardId": "career-troubleshooting-028",
+        "form": "melding"
       }
     ]
   },
@@ -350,11 +578,35 @@
     "id": "career-foutmelding",
     "occurrences": [
       {
+        "cardId": "career-changes-028",
+        "form": "foutmeldingen"
+      },
+      {
         "cardId": "career-clarification-014",
         "form": "foutmelding"
       },
       {
+        "cardId": "career-problems-008",
+        "form": "foutmelding"
+      },
+      {
+        "cardId": "career-problems-011",
+        "form": "foutmelding"
+      },
+      {
+        "cardId": "career-problems-021",
+        "form": "foutmelding"
+      },
+      {
         "cardId": "career-support-013",
+        "form": "foutmelding"
+      },
+      {
+        "cardId": "career-troubleshooting-016",
+        "form": "foutmelding"
+      },
+      {
+        "cardId": "career-troubleshooting-055",
         "form": "foutmelding"
       }
     ]
@@ -370,11 +622,35 @@
     "id": "career-ticket",
     "occurrences": [
       {
+        "cardId": "career-changes-010",
+        "form": "ticket"
+      },
+      {
         "cardId": "career-clarification-020",
         "form": "ticket"
       },
       {
         "cardId": "career-clarification-050",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-incidents-059",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-meetings-002",
+        "form": "tickets"
+      },
+      {
+        "cardId": "career-meetings-018",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-priorities-030",
+        "form": "ticket"
+      },
+      {
+        "cardId": "career-remote-047",
         "form": "ticket"
       },
       {
@@ -422,7 +698,19 @@
         "form": "toepassingen"
       },
       {
+        "cardId": "career-priorities-025",
+        "form": "toepassing"
+      },
+      {
+        "cardId": "career-problems-005",
+        "form": "toepassing"
+      },
+      {
         "cardId": "career-support-011",
+        "form": "toepassing"
+      },
+      {
+        "cardId": "career-troubleshooting-022",
         "form": "toepassing"
       }
     ]
@@ -444,6 +732,26 @@
       {
         "cardId": "career-clarification-013",
         "form": "account"
+      },
+      {
+        "cardId": "career-meetings-008",
+        "form": "account"
+      },
+      {
+        "cardId": "career-problems-012",
+        "form": "account"
+      },
+      {
+        "cardId": "career-problems-054",
+        "form": "account"
+      },
+      {
+        "cardId": "career-troubleshooting-039",
+        "form": "account"
+      },
+      {
+        "cardId": "career-troubleshooting-046",
+        "form": "account"
       }
     ]
   },
@@ -458,8 +766,160 @@
     "id": "career-toegang",
     "occurrences": [
       {
+        "cardId": "career-changes-002",
+        "form": "toegang"
+      },
+      {
+        "cardId": "career-changes-003",
+        "form": "toegang"
+      },
+      {
+        "cardId": "career-changes-005",
+        "form": "toegang"
+      },
+      {
+        "cardId": "career-changes-006",
+        "form": "toegang"
+      },
+      {
+        "cardId": "career-changes-009",
+        "form": "toegang"
+      },
+      {
+        "cardId": "career-changes-036",
+        "form": "toegang"
+      },
+      {
         "cardId": "career-clarification-018",
         "form": "toegang"
+      },
+      {
+        "cardId": "career-meetings-027",
+        "form": "toegang"
+      },
+      {
+        "cardId": "career-priorities-051",
+        "form": "toegang"
+      },
+      {
+        "cardId": "career-problems-054",
+        "form": "toegang"
+      }
+    ]
+  },
+  {
+    "headword": "recht",
+    "english": "permission / access right",
+    "explanation": "Een toestemming om een bepaalde handeling uit te voeren.",
+    "type": "noun",
+    "article": "het",
+    "plural": "rechten",
+    "details": "IT access permission here, not the adjective straight.",
+    "id": "career-recht",
+    "occurrences": [
+      {
+        "cardId": "career-changes-004",
+        "form": "rechten"
+      },
+      {
+        "cardId": "career-changes-007",
+        "form": "rechten"
+      },
+      {
+        "cardId": "career-priorities-022",
+        "form": "rechten"
+      },
+      {
+        "cardId": "career-remote-024",
+        "form": "rechten"
+      },
+      {
+        "cardId": "career-troubleshooting-035",
+        "form": "rechten"
+      },
+      {
+        "cardId": "career-troubleshooting-046",
+        "form": "rechten"
+      }
+    ]
+  },
+  {
+    "headword": "wijziging",
+    "english": "change",
+    "explanation": "Een aanpassing waardoor iets anders wordt.",
+    "type": "noun",
+    "article": "de",
+    "plural": "wijzigingen",
+    "details": "A planned change is not necessarily already approved.",
+    "id": "career-wijziging",
+    "occurrences": [
+      {
+        "cardId": "career-changes-014",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-changes-041",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-changes-044",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-changes-050",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-changes-051",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-changes-053",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-meetings-018",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-meetings-028",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-priorities-055",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-remote-002",
+        "form": "wijzigingen"
+      },
+      {
+        "cardId": "career-remote-035",
+        "form": "wijziging"
+      },
+      {
+        "cardId": "career-troubleshooting-048",
+        "form": "wijziging"
+      }
+    ]
+  },
+  {
+    "headword": "testomgeving",
+    "english": "test environment",
+    "explanation": "Een aparte omgeving waarin je iets veilig kunt testen.",
+    "type": "noun",
+    "article": "de",
+    "plural": "testomgevingen",
+    "details": "Not the live production environment.",
+    "id": "career-testomgeving",
+    "occurrences": [
+      {
+        "cardId": "career-changes-002",
+        "form": "testomgeving"
+      },
+      {
+        "cardId": "career-changes-011",
+        "form": "testomgeving"
       }
     ]
   },
@@ -474,7 +934,39 @@
     "id": "career-oorzaak",
     "occurrences": [
       {
+        "cardId": "career-incidents-003",
+        "form": "oorzaak"
+      },
+      {
+        "cardId": "career-incidents-028",
+        "form": "oorzaken"
+      },
+      {
+        "cardId": "career-incidents-032",
+        "form": "oorzaak"
+      },
+      {
+        "cardId": "career-incidents-058",
+        "form": "oorzaak"
+      },
+      {
+        "cardId": "career-problems-060",
+        "form": "oorzaak"
+      },
+      {
         "cardId": "career-support-042",
+        "form": "oorzaak"
+      },
+      {
+        "cardId": "career-troubleshooting-044",
+        "form": "oorzaak"
+      },
+      {
+        "cardId": "career-troubleshooting-047",
+        "form": "oorzaak"
+      },
+      {
+        "cardId": "career-troubleshooting-048",
         "form": "oorzaak"
       }
     ]
@@ -489,6 +981,14 @@
     "details": "Include current status, ownership and next steps.",
     "id": "career-overdracht",
     "occurrences": [
+      {
+        "cardId": "career-incidents-046",
+        "form": "overdracht"
+      },
+      {
+        "cardId": "career-meetings-006",
+        "form": "overdracht"
+      },
       {
         "cardId": "career-office-030",
         "form": "overdracht"
@@ -506,9 +1006,29 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: zijn; ben; was; ben geweest. State or identity; zijn is irregular.",
+    "details": "Forms: zijn; ben; was; ben geweest. State or identity; zijn is irregular. Present: ben / is / zijn. Past: was / waren. Perfect: ben geweest.",
     "id": "career-zijn",
     "occurrences": [
+      {
+        "cardId": "career-changes-017",
+        "form": "is"
+      },
+      {
+        "cardId": "career-changes-020",
+        "form": "is"
+      },
+      {
+        "cardId": "career-changes-036",
+        "form": "is"
+      },
+      {
+        "cardId": "career-changes-050",
+        "form": "is"
+      },
+      {
+        "cardId": "career-changes-055",
+        "form": "is"
+      },
       {
         "cardId": "career-clarification-013",
         "form": "is"
@@ -523,6 +1043,118 @@
       },
       {
         "cardId": "career-clarification-047",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-002",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-003",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-010",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-011",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-012",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-020",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-026",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-030",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-036",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-040",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-046",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-047",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-incidents-050",
+        "form": "is"
+      },
+      {
+        "cardId": "career-incidents-051",
+        "form": "ben"
+      },
+      {
+        "cardId": "career-incidents-060",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-003",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-meetings-005",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-006",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-007",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-010",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-meetings-013",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-meetings-014",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-017",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-025",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-037",
+        "form": "ben"
+      },
+      {
+        "cardId": "career-meetings-043",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-050",
+        "form": "is"
+      },
+      {
+        "cardId": "career-meetings-059",
         "form": "is"
       },
       {
@@ -548,6 +1180,10 @@
       {
         "cardId": "career-office-023",
         "form": "ben"
+      },
+      {
+        "cardId": "career-office-025",
+        "form": "bent"
       },
       {
         "cardId": "career-office-028",
@@ -582,8 +1218,144 @@
         "form": "ben"
       },
       {
-        "cardId": "career-support-018",
+        "cardId": "career-priorities-004",
+        "form": "is"
+      },
+      {
+        "cardId": "career-priorities-006",
+        "form": "is"
+      },
+      {
+        "cardId": "career-priorities-014",
         "form": "zijn"
+      },
+      {
+        "cardId": "career-priorities-015",
+        "form": "is"
+      },
+      {
+        "cardId": "career-priorities-018",
+        "form": "is"
+      },
+      {
+        "cardId": "career-priorities-032",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-priorities-037",
+        "form": "is"
+      },
+      {
+        "cardId": "career-priorities-040",
+        "form": "is"
+      },
+      {
+        "cardId": "career-priorities-048",
+        "form": "is"
+      },
+      {
+        "cardId": "career-priorities-056",
+        "form": "is"
+      },
+      {
+        "cardId": "career-problems-007",
+        "form": "is"
+      },
+      {
+        "cardId": "career-problems-009",
+        "form": "is"
+      },
+      {
+        "cardId": "career-problems-024",
+        "form": "is"
+      },
+      {
+        "cardId": "career-problems-039",
+        "form": "is"
+      },
+      {
+        "cardId": "career-problems-049",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-problems-052",
+        "form": "is"
+      },
+      {
+        "cardId": "career-problems-055",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-problems-059",
+        "form": "is"
+      },
+      {
+        "cardId": "career-problems-060",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-003",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-006",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-remote-008",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-020",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-022",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-032",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-034",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-036",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-044",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-049",
+        "form": "bent"
+      },
+      {
+        "cardId": "career-remote-050",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-051",
+        "form": "ben"
+      },
+      {
+        "cardId": "career-remote-052",
+        "form": "is"
+      },
+      {
+        "cardId": "career-remote-060",
+        "form": "ben"
+      },
+      {
+        "cardId": "career-support-007",
+        "form": "bent"
+      },
+      {
+        "cardId": "career-support-021",
+        "form": "bent"
       },
       {
         "cardId": "career-support-050",
@@ -592,6 +1364,38 @@
       {
         "cardId": "career-support-052",
         "form": "is"
+      },
+      {
+        "cardId": "career-troubleshooting-006",
+        "form": "is"
+      },
+      {
+        "cardId": "career-troubleshooting-024",
+        "form": "is"
+      },
+      {
+        "cardId": "career-troubleshooting-032",
+        "form": "is"
+      },
+      {
+        "cardId": "career-troubleshooting-034",
+        "form": "zijn"
+      },
+      {
+        "cardId": "career-troubleshooting-046",
+        "form": "is"
+      },
+      {
+        "cardId": "career-troubleshooting-048",
+        "form": "is"
+      },
+      {
+        "cardId": "career-troubleshooting-053",
+        "form": "is"
+      },
+      {
+        "cardId": "career-troubleshooting-059",
+        "form": "ben"
       }
     ]
   },
@@ -602,9 +1406,61 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: hebben; heb; had; heb gehad. Possession or auxiliary; hebben is irregular.",
+    "details": "Forms: hebben; heb; had; heb gehad. Possession or auxiliary; hebben is irregular. Present: heb / heeft / hebben. Past: had / hadden. Perfect: heb gehad.",
     "id": "career-hebben",
     "occurrences": [
+      {
+        "cardId": "career-changes-001",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-changes-004",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-changes-005",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-changes-008",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-changes-012",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-changes-019",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-changes-022",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-changes-033",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-changes-037",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-changes-046",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-changes-052",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-changes-054",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-changes-059",
+        "form": "hebben"
+      },
       {
         "cardId": "career-clarification-003",
         "form": "heb"
@@ -644,6 +1500,122 @@
       {
         "cardId": "career-clarification-046",
         "form": "heb"
+      },
+      {
+        "cardId": "career-incidents-005",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-incidents-006",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-incidents-007",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-incidents-013",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-incidents-016",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-incidents-024",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-incidents-025",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-incidents-027",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-incidents-028",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-incidents-035",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-incidents-037",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-incidents-044",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-incidents-055",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-meetings-002",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-meetings-008",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-meetings-011",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-meetings-012",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-meetings-015",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-meetings-016",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-meetings-018",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-meetings-019",
+        "form": "hadden"
+      },
+      {
+        "cardId": "career-meetings-020",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-meetings-032",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-meetings-035",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-meetings-041",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-meetings-044",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-meetings-048",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-meetings-056",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-meetings-058",
+        "form": "hebben"
       },
       {
         "cardId": "career-office-009",
@@ -694,6 +1666,126 @@
         "form": "had"
       },
       {
+        "cardId": "career-priorities-001",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-priorities-012",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-priorities-016",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-priorities-022",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-priorities-028",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-priorities-029",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-priorities-035",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-priorities-044",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-priorities-049",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-priorities-057",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-problems-011",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-problems-012",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-problems-018",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-problems-020",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-problems-026",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-problems-028",
+        "form": "hadden"
+      },
+      {
+        "cardId": "career-problems-046",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-problems-048",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-problems-050",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-problems-054",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-remote-002",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-remote-013",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-remote-014",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-remote-025",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-remote-030",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-remote-031",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-remote-034",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-remote-042",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-remote-048",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-remote-056",
+        "form": "heb"
+      },
+      {
         "cardId": "career-support-006",
         "form": "heb"
       },
@@ -714,6 +1806,10 @@
         "form": "heb"
       },
       {
+        "cardId": "career-support-044",
+        "form": "hebben"
+      },
+      {
         "cardId": "career-support-048",
         "form": "heb"
       },
@@ -723,6 +1819,26 @@
       },
       {
         "cardId": "career-support-059",
+        "form": "heeft"
+      },
+      {
+        "cardId": "career-troubleshooting-017",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-troubleshooting-035",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-troubleshooting-038",
+        "form": "hebben"
+      },
+      {
+        "cardId": "career-troubleshooting-044",
+        "form": "heb"
+      },
+      {
+        "cardId": "career-troubleshooting-058",
         "form": "heeft"
       }
     ]
@@ -734,9 +1850,29 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: werken; werk; werkte; heb gewerkt. Werken aan introduces a task; op de servicedesk describes the workplace.",
+    "details": "Forms: werken; werk; werkte; heb gewerkt. Werken aan introduces a task; op de servicedesk describes the workplace. Present: werk / werkt / werken. Past: werkte / werkten. Perfect: heb gewerkt.",
     "id": "career-werken",
     "occurrences": [
+      {
+        "cardId": "career-incidents-017",
+        "form": "werken"
+      },
+      {
+        "cardId": "career-incidents-031",
+        "form": "werken"
+      },
+      {
+        "cardId": "career-incidents-038",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-incidents-054",
+        "form": "werken"
+      },
+      {
+        "cardId": "career-meetings-001",
+        "form": "werk"
+      },
       {
         "cardId": "career-office-001",
         "form": "werk"
@@ -758,7 +1894,47 @@
         "form": "werk"
       },
       {
+        "cardId": "career-priorities-051",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-problems-016",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-problems-019",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-problems-022",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-problems-023",
+        "form": "werkte"
+      },
+      {
+        "cardId": "career-problems-052",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-problems-057",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-remote-018",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-remote-051",
+        "form": "werk"
+      },
+      {
         "cardId": "career-support-015",
+        "form": "werkt"
+      },
+      {
+        "cardId": "career-troubleshooting-039",
         "form": "werkt"
       }
     ]
@@ -770,12 +1946,24 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: helpen; help; hielp; heb geholpen. Helpen takes a person as object; met introduces the task.",
+    "details": "Forms: helpen; help; hielp; heb geholpen. Helpen takes a person as object; met introduces the task. Present: help / helpt / helpen. Past: hielp / hielpen. Perfect: heb geholpen.",
     "id": "career-helpen",
     "occurrences": [
       {
+        "cardId": "career-meetings-024",
+        "form": "helpen"
+      },
+      {
+        "cardId": "career-remote-046",
+        "form": "helpt"
+      },
+      {
         "cardId": "career-support-003",
         "form": "helpen"
+      },
+      {
+        "cardId": "career-troubleshooting-047",
+        "form": "helpt"
       }
     ]
   },
@@ -786,7 +1974,7 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: kennen; ken; kende; heb gekend. Familiarity with a person, place or thing; not interchangeable with weten plus a fact clause.",
+    "details": "Forms: kennen; ken; kende; heb gekend. Familiarity with a person, place or thing; not interchangeable with weten plus a fact clause. Present: ken / kent / kennen. Past: kende / kenden. Perfect: heb gekend.",
     "id": "career-kennen",
     "occurrences": [
       {
@@ -802,6 +1990,10 @@
         "form": "ken"
       },
       {
+        "cardId": "career-priorities-025",
+        "form": "ken"
+      },
+      {
         "cardId": "career-support-042",
         "form": "ken"
       }
@@ -814,9 +2006,17 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: weten; weet; wist; heb geweten. Knowledge of a fact or answer; weten of/dat introduces a clause.",
+    "details": "Forms: weten; weet; wist; heb geweten. Knowledge of a fact or answer; weten of/dat introduces a clause. Present: weet / weet / weten. Past: wist / wisten. Perfect: heb geweten.",
     "id": "career-weten",
     "occurrences": [
+      {
+        "cardId": "career-changes-039",
+        "form": "weten"
+      },
+      {
+        "cardId": "career-changes-043",
+        "form": "weten"
+      },
       {
         "cardId": "career-clarification-015",
         "form": "weet"
@@ -838,8 +2038,40 @@
         "form": "weet"
       },
       {
+        "cardId": "career-priorities-010",
+        "form": "weten"
+      },
+      {
+        "cardId": "career-priorities-039",
+        "form": "weet"
+      },
+      {
+        "cardId": "career-problems-030",
+        "form": "weet"
+      },
+      {
+        "cardId": "career-problems-046",
+        "form": "weet"
+      },
+      {
+        "cardId": "career-remote-043",
+        "form": "weten"
+      },
+      {
         "cardId": "career-support-047",
         "form": "weet"
+      },
+      {
+        "cardId": "career-troubleshooting-040",
+        "form": "weet"
+      },
+      {
+        "cardId": "career-troubleshooting-052",
+        "form": "weten"
+      },
+      {
+        "cardId": "career-troubleshooting-054",
+        "form": "weten"
       }
     ]
   },
@@ -850,7 +2082,7 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: ondersteunen; ondersteun; ondersteunde; heb ondersteund. Support; no ge- in ondersteund.",
+    "details": "Forms: ondersteunen; ondersteun; ondersteunde; heb ondersteund. Support; no ge- in ondersteund. Present: ondersteun / ondersteunt / ondersteunen. Past: ondersteunde / ondersteunden. Perfect: heb ondersteund.",
     "id": "career-ondersteunen",
     "occurrences": [
       {
@@ -859,6 +2091,10 @@
       },
       {
         "cardId": "career-office-024",
+        "form": "ondersteunen"
+      },
+      {
+        "cardId": "career-troubleshooting-050",
         "form": "ondersteunen"
       }
     ]
@@ -870,12 +2106,28 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: beheren; beheer; beheerde; heb beheerd. Manage/administer; inseparable be-, no ge-.",
+    "details": "Forms: beheren; beheer; beheerde; heb beheerd. Manage/administer; inseparable be-, no ge-. Present: beheer / beheert / beheren. Past: beheerde / beheerden. Perfect: heb beheerd.",
     "id": "career-beheren",
     "occurrences": [
       {
         "cardId": "career-office-006",
         "form": "beheert"
+      }
+    ]
+  },
+  {
+    "headword": "voorstellen",
+    "english": "introduce oneself",
+    "explanation": "Vertellen wie je bent wanneer je iemand ontmoet.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Reflexive zich voorstellen aan someone means introduce oneself. This is different from een voorstel doen or iets voorstellen in the proposal sense. Present: stel voor / stelt voor / stellen voor. Past: stelde voor / stelden voor. Perfect: heb voorgesteld.",
+    "id": "career-voorstellen-introduce",
+    "occurrences": [
+      {
+        "cardId": "career-office-010",
+        "form": "stel"
       }
     ]
   },
@@ -886,7 +2138,7 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: leren; leer; leerde; heb geleerd. Learning a skill; leren kennen means become acquainted with.",
+    "details": "Forms: leren; leer; leerde; heb geleerd. Learning a skill; leren kennen means become acquainted with. Present: leer / leert / leren. Past: leerde / leerden. Perfect: heb geleerd.",
     "id": "career-leren",
     "occurrences": [
       {
@@ -910,9 +2162,37 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: beginnen; begin; begon; ben begonnen. Beginning an activity uses zijn in the perfect; beginnen met names the activity.",
+    "details": "Forms: beginnen; begin; begon; ben begonnen. Beginning an activity uses zijn in the perfect; beginnen met names the activity. Present: begin / begint / beginnen. Past: begon / begonnen. Perfect: ben begonnen.",
     "id": "career-beginnen",
     "occurrences": [
+      {
+        "cardId": "career-changes-030",
+        "form": "beginnen"
+      },
+      {
+        "cardId": "career-changes-043",
+        "form": "begint"
+      },
+      {
+        "cardId": "career-changes-052",
+        "form": "beginnen"
+      },
+      {
+        "cardId": "career-priorities-051",
+        "form": "beginnen"
+      },
+      {
+        "cardId": "career-priorities-058",
+        "form": "beginnen"
+      },
+      {
+        "cardId": "career-problems-017",
+        "form": "begon"
+      },
+      {
+        "cardId": "career-problems-030",
+        "form": "begon"
+      },
       {
         "cardId": "career-support-014",
         "form": "begon"
@@ -920,6 +2200,10 @@
       {
         "cardId": "career-support-039",
         "form": "beginnen"
+      },
+      {
+        "cardId": "career-troubleshooting-011",
+        "form": "begin"
       }
     ]
   },
@@ -930,9 +2214,13 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: kunnen; kan; kon; heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te.",
+    "details": "Forms: kunnen; kan; kon; heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. Present: kan / kan / kunnen. Past: kon / konden. Perfect: heb gekund.",
     "id": "career-kunnen",
     "occurrences": [
+      {
+        "cardId": "career-changes-045",
+        "form": "kunnen"
+      },
       {
         "cardId": "career-clarification-005",
         "form": "kunnen"
@@ -950,6 +2238,46 @@
         "form": "kunnen"
       },
       {
+        "cardId": "career-incidents-017",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-incidents-019",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-incidents-025",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-incidents-031",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-incidents-054",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-incidents-057",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-meetings-022",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-meetings-024",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-meetings-029",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-meetings-034",
+        "form": "kunnen"
+      },
+      {
         "cardId": "career-office-031",
         "form": "kunnen"
       },
@@ -964,6 +2292,98 @@
       {
         "cardId": "career-office-058",
         "form": "kunnen"
+      },
+      {
+        "cardId": "career-priorities-009",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-priorities-014",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-priorities-023",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-priorities-027",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-priorities-034",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-priorities-038",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-priorities-042",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-priorities-045",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-priorities-054",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-priorities-058",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-problems-013",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-problems-038",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-problems-041",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-problems-044",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-problems-051",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-problems-053",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-problems-056",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-remote-011",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-remote-017",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-remote-027",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-remote-045",
+        "form": "kan"
+      },
+      {
+        "cardId": "career-remote-053",
+        "form": "kunnen"
+      },
+      {
+        "cardId": "career-remote-054",
+        "form": "kan"
       },
       {
         "cardId": "career-support-003",
@@ -986,12 +2406,12 @@
         "form": "kunnen"
       },
       {
-        "cardId": "career-support-044",
+        "cardId": "career-support-050",
         "form": "kan"
       },
       {
-        "cardId": "career-support-050",
-        "form": "kan"
+        "cardId": "career-troubleshooting-045",
+        "form": "kunnen"
       }
     ]
   },
@@ -1002,9 +2422,29 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: moeten; moet; moest; heb gemoeten. Necessity or obligation; a following infinitive has no te. In a perfect verb cluster: heb moeten werken.",
+    "details": "Forms: moeten; moet; moest; heb gemoeten. Necessity or obligation; a following infinitive has no te. In a perfect verb cluster: heb moeten werken. Present: moet / moet / moeten. Past: moest / moesten. Perfect: heb gemoeten.",
     "id": "career-moeten",
     "occurrences": [
+      {
+        "cardId": "career-changes-023",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-changes-040",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-changes-043",
+        "form": "moet"
+      },
+      {
+        "cardId": "career-changes-049",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-changes-052",
+        "form": "moeten"
+      },
       {
         "cardId": "career-clarification-032",
         "form": "moet"
@@ -1022,8 +2462,72 @@
         "form": "moeten"
       },
       {
+        "cardId": "career-incidents-022",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-incidents-029",
+        "form": "moet"
+      },
+      {
+        "cardId": "career-incidents-034",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-incidents-043",
+        "form": "moet"
+      },
+      {
+        "cardId": "career-incidents-053",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-meetings-054",
+        "form": "moet"
+      },
+      {
         "cardId": "career-office-048",
         "form": "moet"
+      },
+      {
+        "cardId": "career-priorities-003",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-priorities-010",
+        "form": "moet"
+      },
+      {
+        "cardId": "career-priorities-017",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-priorities-033",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-priorities-053",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-problems-037",
+        "form": "moet"
+      },
+      {
+        "cardId": "career-problems-042",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-problems-047",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-remote-038",
+        "form": "moeten"
+      },
+      {
+        "cardId": "career-troubleshooting-052",
+        "form": "moeten"
       }
     ]
   },
@@ -1034,9 +2538,29 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: mogen; mag; mocht; heb gemogen. Permission; a following infinitive has no te.",
+    "details": "Forms: mogen; mag; mocht; heb gemogen. Permission; a following infinitive has no te. Present: mag / mag / mogen. Past: mocht / mochten. Perfect: heb gemogen.",
     "id": "career-mogen",
     "occurrences": [
+      {
+        "cardId": "career-changes-007",
+        "form": "mogen"
+      },
+      {
+        "cardId": "career-changes-011",
+        "form": "mag"
+      },
+      {
+        "cardId": "career-changes-014",
+        "form": "mag"
+      },
+      {
+        "cardId": "career-changes-018",
+        "form": "mogen"
+      },
+      {
+        "cardId": "career-changes-060",
+        "form": "mogen"
+      },
       {
         "cardId": "career-clarification-037",
         "form": "mogen"
@@ -1046,7 +2570,23 @@
         "form": "mag"
       },
       {
+        "cardId": "career-meetings-028",
+        "form": "mag"
+      },
+      {
+        "cardId": "career-meetings-031",
+        "form": "mag"
+      },
+      {
         "cardId": "career-office-014",
+        "form": "mag"
+      },
+      {
+        "cardId": "career-priorities-043",
+        "form": "mag"
+      },
+      {
+        "cardId": "career-remote-028",
         "form": "mag"
       },
       {
@@ -1060,6 +2600,10 @@
       {
         "cardId": "career-support-053",
         "form": "mag"
+      },
+      {
+        "cardId": "career-troubleshooting-022",
+        "form": "mag"
       }
     ]
   },
@@ -1070,15 +2614,43 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: willen; wil; wilde; heb gewild. Desire/intention; hij wil has no -t. A following infinitive has no te.",
+    "details": "Forms: willen; wil; wilde; heb gewild. Desire/intention; hij wil has no -t. A following infinitive has no te. Present: wil / wil / willen. Past: wilde / wilden. Perfect: heb gewild.",
     "id": "career-willen",
     "occurrences": [
+      {
+        "cardId": "career-changes-013",
+        "form": "wil"
+      },
       {
         "cardId": "career-clarification-048",
         "form": "wil"
       },
       {
         "cardId": "career-office-042",
+        "form": "wil"
+      },
+      {
+        "cardId": "career-priorities-010",
+        "form": "wil"
+      },
+      {
+        "cardId": "career-priorities-024",
+        "form": "wil"
+      },
+      {
+        "cardId": "career-priorities-047",
+        "form": "wil"
+      },
+      {
+        "cardId": "career-remote-047",
+        "form": "wil"
+      },
+      {
+        "cardId": "career-troubleshooting-018",
+        "form": "wil"
+      },
+      {
+        "cardId": "career-troubleshooting-049",
         "form": "wil"
       }
     ]
@@ -1090,7 +2662,7 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: zullen; zal; zou; no standalone perfect taught. Zal/zult and zal/zul je are accepted. Zou/zouden can introduce a tentative or polite request. No ordinary standalone perfect is taught here.",
+    "details": "Forms: zullen; zal; zou; no standalone perfect taught. Zal/zult and zal/zul je are accepted. Zou/zouden can introduce a tentative or polite request. No ordinary standalone perfect is taught here. Present: zal / zal / zullen. Past: zou / zouden. Perfect: no standalone perfect taught.",
     "id": "career-zullen",
     "occurrences": [
       {
@@ -1106,8 +2678,24 @@
         "form": "zou"
       },
       {
+        "cardId": "career-incidents-058",
+        "form": "zullen"
+      },
+      {
+        "cardId": "career-meetings-051",
+        "form": "zal"
+      },
+      {
         "cardId": "career-office-030",
         "form": "zal"
+      },
+      {
+        "cardId": "career-priorities-055",
+        "form": "zullen"
+      },
+      {
+        "cardId": "career-remote-007",
+        "form": "zullen"
       },
       {
         "cardId": "career-support-026",
@@ -1134,7 +2722,7 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: gaan; ga; ging; ben gegaan. Movement or an upcoming action; gaan plus an action infinitive does not take te.",
+    "details": "Forms: gaan; ga; ging; ben gegaan. Movement or an upcoming action; gaan plus an action infinitive does not take te. Present: ga / gaat / gaan. Past: ging / gingen. Perfect: ben gegaan.",
     "id": "career-gaan",
     "occurrences": [
       {
@@ -1142,8 +2730,48 @@
         "form": "gaat"
       },
       {
+        "cardId": "career-meetings-004",
+        "form": "ga"
+      },
+      {
+        "cardId": "career-problems-045",
+        "form": "gaan"
+      },
+      {
+        "cardId": "career-remote-039",
+        "form": "ga"
+      },
+      {
+        "cardId": "career-remote-058",
+        "form": "gaan"
+      },
+      {
         "cardId": "career-support-045",
         "form": "gaat"
+      },
+      {
+        "cardId": "career-troubleshooting-051",
+        "form": "ga"
+      },
+      {
+        "cardId": "career-troubleshooting-056",
+        "form": "gaan"
+      }
+    ]
+  },
+  {
+    "headword": "antwoorden",
+    "english": "answer / reply",
+    "explanation": "Een reactie op een vraag of bericht geven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: antwoorden; antwoord; antwoordde; heb geantwoord. Antwoorden op a question/message; answered does not automatically mean resolved. Present: antwoord / antwoordt / antwoorden. Past: antwoordde / antwoordden. Perfect: heb geantwoord.",
+    "id": "career-antwoorden",
+    "occurrences": [
+      {
+        "cardId": "career-remote-041",
+        "form": "antwoorden"
       }
     ]
   },
@@ -1154,7 +2782,7 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: bedoelen; bedoel; bedoelde; heb bedoeld. Meaning or intending; inseparable be- gives bedoeld without ge-.",
+    "details": "Forms: bedoelen; bedoel; bedoelde; heb bedoeld. Meaning or intending; inseparable be- gives bedoeld without ge-. Present: bedoel / bedoelt / bedoelen. Past: bedoelde / bedoelden. Perfect: heb bedoeld.",
     "id": "career-bedoelen",
     "occurrences": [
       {
@@ -1186,8 +2814,40 @@
         "form": "bedoel"
       },
       {
+        "cardId": "career-meetings-033",
+        "form": "bedoelt"
+      },
+      {
+        "cardId": "career-meetings-037",
+        "form": "bedoelen"
+      },
+      {
+        "cardId": "career-remote-040",
+        "form": "bedoelen"
+      },
+      {
         "cardId": "career-support-034",
         "form": "bedoel"
+      }
+    ]
+  },
+  {
+    "headword": "voordoen",
+    "english": "demonstrate",
+    "explanation": "Laten zien hoe je een handeling uitvoert.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Forms: voordoen; doe voor; deed voor; heb voorgedaan. Separable: voordoen means demonstrate an action; voor te doen. Present: doe voor / doet voor / doen voor. Past: deed voor / deden voor. Perfect: heb voorgedaan.",
+    "id": "career-voordoen-demonstrate",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-021",
+        "form": "voordoen"
+      },
+      {
+        "cardId": "career-clarification-022",
+        "form": "voordoen"
       }
     ]
   },
@@ -1198,7 +2858,7 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: herhalen; herhaal; herhaalde; heb herhaald. Repeat; inseparable her- means no ge- in herhaald.",
+    "details": "Forms: herhalen; herhaal; herhaalde; heb herhaald. Repeat; inseparable her- means no ge- in herhaald. Present: herhaal / herhaalt / herhalen. Past: herhaalde / herhaalden. Perfect: heb herhaald.",
     "id": "career-herhalen",
     "occurrences": [
       {
@@ -1220,6 +2880,18 @@
       {
         "cardId": "career-office-050",
         "form": "herhalen"
+      },
+      {
+        "cardId": "career-problems-038",
+        "form": "herhalen"
+      },
+      {
+        "cardId": "career-troubleshooting-012",
+        "form": "herhalen"
+      },
+      {
+        "cardId": "career-troubleshooting-017",
+        "form": "herhaald"
       }
     ]
   },
@@ -1230,11 +2902,23 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: onderzoeken; onderzoek; onderzocht; heb onderzocht. Investigate; irregular onderzocht, without ge-.",
+    "details": "Forms: onderzoeken; onderzoek; onderzocht; heb onderzocht. Investigate; irregular onderzocht, without ge-. Present: onderzoek / onderzoekt / onderzoeken. Past: onderzocht / onderzochten. Perfect: heb onderzocht.",
     "id": "career-onderzoeken",
     "occurrences": [
       {
         "cardId": "career-support-041",
+        "form": "onderzoek"
+      },
+      {
+        "cardId": "career-troubleshooting-020",
+        "form": "onderzoeken"
+      },
+      {
+        "cardId": "career-troubleshooting-043",
+        "form": "onderzoeken"
+      },
+      {
+        "cardId": "career-troubleshooting-059",
         "form": "onderzoek"
       }
     ]
@@ -1246,12 +2930,16 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: proberen; probeer; probeerde; heb geprobeerd. Attempt an action with te; proberen te openen. Trying is not a guarantee of success.",
+    "details": "Forms: proberen; probeer; probeerde; heb geprobeerd. Attempt an action with te; proberen te openen. Trying is not a guarantee of success. Present: probeer / probeert / proberen. Past: probeerde / probeerden. Perfect: heb geprobeerd.",
     "id": "career-proberen",
     "occurrences": [
       {
         "cardId": "career-clarification-024",
         "form": "probeer"
+      },
+      {
+        "cardId": "career-troubleshooting-027",
+        "form": "proberen"
       }
     ]
   },
@@ -1262,9 +2950,21 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: krijgen; krijg; kreeg; heb gekregen. Receive/get; irregular past and participle.",
+    "details": "Forms: krijgen; krijg; kreeg; heb gekregen. Receive/get; irregular past and participle. Present: krijg / krijgt / krijgen. Past: kreeg / kregen. Perfect: heb gekregen.",
     "id": "career-krijgen",
     "occurrences": [
+      {
+        "cardId": "career-priorities-002",
+        "form": "krijgt"
+      },
+      {
+        "cardId": "career-priorities-050",
+        "form": "krijgt"
+      },
+      {
+        "cardId": "career-problems-014",
+        "form": "krijgt"
+      },
       {
         "cardId": "career-support-008",
         "form": "krijgt"
@@ -1282,12 +2982,4308 @@
     "type": "verb",
     "article": "",
     "plural": "",
-    "details": "Forms: ontvangen; ontvang; ontving; heb ontvangen. Receive; inseparable ont-, no ge-. Receipt does not necessarily imply understanding.",
+    "details": "Forms: ontvangen; ontvang; ontving; heb ontvangen. Receive; inseparable ont-, no ge-. Receipt does not necessarily imply understanding. Present: ontvang / ontvangt / ontvangen. Past: ontving / ontvingen. Perfect: heb ontvangen.",
     "id": "career-ontvangen",
     "occurrences": [
       {
+        "cardId": "career-problems-020",
+        "form": "ontvangen"
+      },
+      {
+        "cardId": "career-problems-058",
+        "form": "ontvangen"
+      },
+      {
+        "cardId": "career-remote-031",
+        "form": "ontvangen"
+      },
+      {
         "cardId": "career-support-006",
         "form": "ontvangen"
+      }
+    ]
+  },
+  {
+    "headword": "aangeven",
+    "english": "indicate",
+    "explanation": "Duidelijk zeggen of tonen wat belangrijk is.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: indicate/specify; aan te geven. Present: geef aan / geeft aan / geven aan. Past: gaf aan / gaven aan. Perfect: heb aangegeven.",
+    "id": "career-aangeven",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-034",
+        "form": "aangeven"
+      },
+      {
+        "cardId": "career-clarification-049",
+        "form": "aangeven"
+      },
+      {
+        "cardId": "career-support-017",
+        "form": "aangeven"
+      }
+    ]
+  },
+  {
+    "headword": "aanmaken",
+    "english": "create",
+    "explanation": "Een nieuw account of nieuw bestand maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: create a new account/record; aan te maken. Present: maak aan / maakt aan / maken aan. Past: maakte aan / maakten aan. Perfect: heb aangemaakt.",
+    "id": "career-aanmaken",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-013",
+        "form": "aangemaakt"
+      },
+      {
+        "cardId": "career-support-004",
+        "form": "maak"
+      }
+    ]
+  },
+  {
+    "headword": "aanpakken",
+    "english": "tackle",
+    "explanation": "Met een taak of probleem aan het werk gaan.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: tackle a task, aan te pakken. Present: pak aan / pakt aan / pakken aan. Past: pakte aan / pakten aan. Perfect: heb aangepakt.",
+    "id": "career-aanpakken",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-007",
+        "form": "pakken"
+      }
+    ]
+  },
+  {
+    "headword": "aanvaarden",
+    "english": "accept",
+    "explanation": "Akkoord gaan met een uitnodiging of voorstel.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Accept, particularly common in Belgian Dutch. No ge- in aanvaard. Present: aanvaard / aanvaardt / aanvaarden. Past: aanvaardde / aanvaardden. Perfect: heb aanvaard.",
+    "id": "career-aanvaarden",
+    "occurrences": [
+      {
+        "cardId": "career-remote-014",
+        "form": "aanvaard"
+      }
+    ]
+  },
+  {
+    "headword": "aanvullen",
+    "english": "add missing information",
+    "explanation": "Ontbrekende informatie erbij zetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: add missing information; aan te vullen. Present: vul aan / vult aan / vullen aan. Past: vulde aan / vulden aan. Perfect: heb aangevuld.",
+    "id": "career-aanvullen",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-011",
+        "form": "aangevuld"
+      },
+      {
+        "cardId": "career-remote-007",
+        "form": "aanvullen"
+      }
+    ]
+  },
+  {
+    "headword": "aanwijzen",
+    "english": "point out",
+    "explanation": "Tonen waar iets staat of wie bedoeld is.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: point out/indicate a particular item; aan te wijzen. Present: wijs aan / wijst aan / wijzen aan. Past: wees aan / wezen aan. Perfect: heb aangewezen.",
+    "id": "career-aanwijzen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-029",
+        "form": "aanwijzen"
+      }
+    ]
+  },
+  {
+    "headword": "afhangen",
+    "english": "depend",
+    "explanation": "Bepaald worden door iets anders.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable afhangen van means depend on; het hangt ervan af. Present: hang af / hangt af / hangen af. Past: hing af / hingen af. Perfect: heeft afgehangen.",
+    "id": "career-afhangen",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-052",
+        "form": "hangt"
+      }
+    ]
+  },
+  {
+    "headword": "afnemen",
+    "english": "decrease",
+    "explanation": "Minder worden in aantal of omvang.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: decrease in this intransitive sense, with zijn. Taking something away is a different transitive sense. Present: neem af / neemt af / nemen af. Past: nam af / namen af. Perfect: is afgenomen.",
+    "id": "career-afnemen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-018",
+        "form": "neemt"
+      }
+    ]
+  },
+  {
+    "headword": "behouden",
+    "english": "retain",
+    "explanation": "Zorgen dat iets blijft bestaan of beschikbaar blijft.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Retain or preserve, irregular behield and behouden. Present: behoud / behoudt / behouden. Past: behield / behielden. Perfect: heb behouden.",
+    "id": "career-behouden",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-030",
+        "form": "behouden"
+      }
+    ]
+  },
+  {
+    "headword": "beschrijven",
+    "english": "describe",
+    "explanation": "In woorden vertellen hoe iets is of gebeurt.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Describe; irregular beschreef and beschreven, without ge-. Present: beschrijf / beschrijft / beschrijven. Past: beschreef / beschreven. Perfect: heb beschreven.",
+    "id": "career-beschrijven",
+    "occurrences": [
+      {
+        "cardId": "career-changes-022",
+        "form": "beschreven"
+      },
+      {
+        "cardId": "career-remote-030",
+        "form": "beschreven"
+      },
+      {
+        "cardId": "career-support-013",
+        "form": "beschrijven"
+      },
+      {
+        "cardId": "career-support-048",
+        "form": "beschreven"
+      }
+    ]
+  },
+  {
+    "headword": "beslissen",
+    "english": "decide",
+    "explanation": "Een keuze maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Decide; deciding to do something does not mean it has happened. Present: beslis / beslist / beslissen. Past: besliste / beslisten. Perfect: heb beslist.",
+    "id": "career-beslissen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-060",
+        "form": "beslist"
+      }
+    ]
+  },
+  {
+    "headword": "besluiten",
+    "english": "decide",
+    "explanation": "Een beslissing nemen over wat er gaat gebeuren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Decide, often besluiten om iets te doen. Present: besluit / besluit / besluiten. Past: besloot / besloten. Perfect: heb besloten.",
+    "id": "career-besluiten",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-044",
+        "form": "besloten"
+      }
+    ]
+  },
+  {
+    "headword": "betreffen",
+    "english": "concern",
+    "explanation": "Over iets of iemand gaan.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Concern a scope or subject, irregular betrof and betroffen. Present: betref / betreft / betreffen. Past: betrof / betroffen. Perfect: heeft betroffen.",
+    "id": "career-betreffen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-009",
+        "form": "betreft"
+      }
+    ]
+  },
+  {
+    "headword": "betrekken",
+    "english": "involve",
+    "explanation": "Iemand laten meedoen of meenemen in een bespreking.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Iemand bij iets betrekken means involve/include someone in something; no ge- with be-. Present: betrek / betrekt / betrekken. Past: betrok / betrokken. Perfect: heb betrokken.",
+    "id": "career-betrekken",
+    "occurrences": [
+      {
+        "cardId": "career-office-033",
+        "form": "betrekken"
+      }
+    ]
+  },
+  {
+    "headword": "bevatten",
+    "english": "contain",
+    "explanation": "Iets als onderdeel hebben.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Contain, no ge- with be-. Present: bevat / bevat / bevatten. Past: bevatte / bevatten. Perfect: heeft bevat.",
+    "id": "career-bevatten",
+    "occurrences": [
+      {
+        "cardId": "career-changes-028",
+        "form": "bevat"
+      },
+      {
+        "cardId": "career-incidents-009",
+        "form": "bevat"
+      },
+      {
+        "cardId": "career-incidents-042",
+        "form": "bevat"
+      },
+      {
+        "cardId": "career-remote-009",
+        "form": "bevat"
+      }
+    ]
+  },
+  {
+    "headword": "bewaren",
+    "english": "keep",
+    "explanation": "Iets niet wegdoen en beschikbaar houden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Keep/store; inseparable be-, no ge-. Present: bewaar / bewaart / bewaren. Past: bewaarde / bewaarden. Perfect: heb bewaard.",
+    "id": "career-bewaren",
+    "occurrences": [
+      {
+        "cardId": "career-changes-059",
+        "form": "bewaard"
+      },
+      {
+        "cardId": "career-clarification-044",
+        "form": "bewaard"
+      },
+      {
+        "cardId": "career-office-020",
+        "form": "bewaren"
+      },
+      {
+        "cardId": "career-remote-029",
+        "form": "bewaren"
+      },
+      {
+        "cardId": "career-support-056",
+        "form": "bewaar"
+      },
+      {
+        "cardId": "career-troubleshooting-055",
+        "form": "bewaar"
+      }
+    ]
+  },
+  {
+    "headword": "bewerken",
+    "english": "edit",
+    "explanation": "De inhoud van een document aanpassen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Edit an object, no ge- with be-. Present: bewerk / bewerkt / bewerken. Past: bewerkte / bewerkten. Perfect: heb bewerkt.",
+    "id": "career-bewerken",
+    "occurrences": [
+      {
+        "cardId": "career-problems-051",
+        "form": "bewerken"
+      }
+    ]
+  },
+  {
+    "headword": "bewijzen",
+    "english": "prove",
+    "explanation": "Met duidelijke gegevens aantonen dat iets waar is.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Prove, stronger than suggest or suspect. Present: bewijs / bewijst / bewijzen. Past: bewees / bewezen. Perfect: heb bewezen.",
+    "id": "career-bewijzen",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-042",
+        "form": "bewijst"
+      }
+    ]
+  },
+  {
+    "headword": "beëindigen",
+    "english": "end",
+    "explanation": "Een activiteit laten stoppen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "End/terminate an activity or connection; no ge- with be-. Present: beëindig / beëindigt / beëindigen. Past: beëindigde / beëindigden. Perfect: heb beëindigd.",
+    "id": "career-beëindigen",
+    "occurrences": [
+      {
+        "cardId": "career-support-040",
+        "form": "beëindigen"
+      }
+    ]
+  },
+  {
+    "headword": "bijhouden",
+    "english": "keep track of",
+    "explanation": "Informatie regelmatig aanvullen zodat ze actueel blijft.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: keep track of information, bij te houden. Present: houd bij / houdt bij / houden bij. Past: hield bij / hielden bij. Perfect: heb bijgehouden.",
+    "id": "career-bijhouden",
+    "occurrences": [
+      {
+        "cardId": "career-remote-053",
+        "form": "bijhouden"
+      }
+    ]
+  },
+  {
+    "headword": "bijsturen",
+    "english": "adjust course",
+    "explanation": "De aanpak veranderen om een beter resultaat te krijgen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: adjust the course of work, bij te sturen. Present: stuur bij / stuurt bij / sturen bij. Past: stuurde bij / stuurden bij. Perfect: heb bijgestuurd.",
+    "id": "career-bijsturen",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-034",
+        "form": "bijsturen"
+      }
+    ]
+  },
+  {
+    "headword": "bijwerken",
+    "english": "update",
+    "explanation": "Informatie aanvullen met de laatste wijzigingen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: update; bij te werken. Present: werk bij / werkt bij / werken bij. Past: werkte bij / werkten bij. Perfect: heb bijgewerkt.",
+    "id": "career-bijwerken",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-013",
+        "form": "bijgewerkt"
+      },
+      {
+        "cardId": "career-meetings-054",
+        "form": "bijwerken"
+      },
+      {
+        "cardId": "career-office-060",
+        "form": "werk"
+      },
+      {
+        "cardId": "career-priorities-019",
+        "form": "bijwerken"
+      },
+      {
+        "cardId": "career-priorities-030",
+        "form": "werk"
+      }
+    ]
+  },
+  {
+    "headword": "deelnemen",
+    "english": "participate",
+    "explanation": "Meedoen aan een gesprek of activiteit.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: deelnemen aan means participate in, deel te nemen. Present: neem deel / neemt deel / nemen deel. Past: nam deel / namen deel. Perfect: heb deelgenomen.",
+    "id": "career-deelnemen",
+    "occurrences": [
+      {
+        "cardId": "career-remote-019",
+        "form": "neemt"
+      }
+    ]
+  },
+  {
+    "headword": "denken",
+    "english": "think",
+    "explanation": "Een gedachte of mening hebben.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Denken dat introduces a belief; it is weaker than certainty. Denken aan/over have distinct uses. Present: denk / denkt / denken. Past: dacht / dachten. Perfect: heb gedacht.",
+    "id": "career-denken",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-018",
+        "form": "dacht"
+      },
+      {
+        "cardId": "career-problems-049",
+        "form": "dachten"
+      }
+    ]
+  },
+  {
+    "headword": "doorgaan",
+    "english": "continue or go ahead",
+    "explanation": "Verdergaan of zoals gepland plaatsvinden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: continue/proceed; door te gaan. Present: ga door / gaat door / gaan door. Past: ging door / gingen door. Perfect: ben doorgegaan.",
+    "id": "career-doorgaan",
+    "occurrences": [
+      {
+        "cardId": "career-changes-060",
+        "form": "doorgaan"
+      }
+    ]
+  },
+  {
+    "headword": "doorsturen",
+    "english": "forward",
+    "explanation": "Een ontvangen bericht naar iemand anders sturen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: forward a message; door te sturen. Present: stuur door / stuurt door / sturen door. Past: stuurde door / stuurden door. Perfect: heb doorgestuurd.",
+    "id": "career-doorsturen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-021",
+        "form": "stuur"
+      }
+    ]
+  },
+  {
+    "headword": "doorverwijzen",
+    "english": "refer on",
+    "explanation": "Iemand naar een andere contactpersoon verwijzen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: refer someone on, door te verwijzen. Present: verwijs door / verwijst door / verwijzen door. Past: verwees door / verwezen door. Perfect: heb doorverwezen.",
+    "id": "career-doorverwijzen",
+    "occurrences": [
+      {
+        "cardId": "career-remote-049",
+        "form": "verwijs"
+      }
+    ]
+  },
+  {
+    "headword": "eindigen",
+    "english": "end",
+    "explanation": "Tot een einde komen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "End intransitively, with zijn in this sense. Present: eindig / eindigt / eindigen. Past: eindigde / eindigden. Perfect: ben geëindigd.",
+    "id": "career-eindigen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-047",
+        "form": "eindigt"
+      }
+    ]
+  },
+  {
+    "headword": "ervaren",
+    "english": "experience",
+    "explanation": "Zelf meemaken hoe iets gaat of voelt.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Experience; irregular ervoer and ervaren. Present: ervaar / ervaart / ervaren. Past: ervoer / ervoeren. Perfect: heb ervaren.",
+    "id": "career-ervaren",
+    "occurrences": [
+      {
+        "cardId": "career-support-017",
+        "form": "ervaren"
+      }
+    ]
+  },
+  {
+    "headword": "escaleren",
+    "english": "escalate",
+    "explanation": "Een melding naar een hoger ondersteuningsniveau brengen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Escalate a report to a higher support level in this transitive workplace use. Present: escaleer / escaleert / escaleren. Past: escaleerde / escaleerden. Perfect: heb geëscaleerd.",
+    "id": "career-escaleren",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-022",
+        "form": "escaleren"
+      }
+    ]
+  },
+  {
+    "headword": "formuleren",
+    "english": "phrase",
+    "explanation": "Een gedachte in duidelijke woorden uitdrukken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Formulate/phrase in words. Present: formuleer / formuleert / formuleren. Past: formuleerde / formuleerden. Perfect: heb geformuleerd.",
+    "id": "career-formuleren",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-060",
+        "form": "formuleren"
+      }
+    ]
+  },
+  {
+    "headword": "gebeuren",
+    "english": "happen",
+    "explanation": "Plaatsvinden zonder dat de zin zegt wie het doet.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Happen; usually a situation/event is subject; perfect with zijn. Present: gebeur / gebeurt / gebeuren. Past: gebeurde / gebeurden. Perfect: is gebeurd.",
+    "id": "career-gebeuren",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-040",
+        "form": "gebeuren"
+      },
+      {
+        "cardId": "career-problems-036",
+        "form": "gebeurde"
+      },
+      {
+        "cardId": "career-support-011",
+        "form": "gebeurt"
+      }
+    ]
+  },
+  {
+    "headword": "gebruiken",
+    "english": "use",
+    "explanation": "Met iets werken om een doel te bereiken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Use; ordinary participle gebruikt, not gegebruikt. Present: gebruik / gebruikt / gebruiken. Past: gebruikte / gebruikten. Perfect: heb gebruikt.",
+    "id": "career-gebruiken",
+    "occurrences": [
+      {
+        "cardId": "career-changes-021",
+        "form": "gebruiken"
+      },
+      {
+        "cardId": "career-clarification-026",
+        "form": "gebruiken"
+      },
+      {
+        "cardId": "career-clarification-053",
+        "form": "gebruiken"
+      },
+      {
+        "cardId": "career-office-014",
+        "form": "gebruiken"
+      },
+      {
+        "cardId": "career-office-015",
+        "form": "gebruiken"
+      },
+      {
+        "cardId": "career-office-040",
+        "form": "gebruik"
+      },
+      {
+        "cardId": "career-problems-056",
+        "form": "gebruiken"
+      },
+      {
+        "cardId": "career-support-011",
+        "form": "gebruikt"
+      },
+      {
+        "cardId": "career-support-016",
+        "form": "gebruikt"
+      },
+      {
+        "cardId": "career-support-038",
+        "form": "gebruikt"
+      },
+      {
+        "cardId": "career-troubleshooting-019",
+        "form": "gebruik"
+      }
+    ]
+  },
+  {
+    "headword": "gelden",
+    "english": "apply or be valid",
+    "explanation": "Van toepassing of geldig zijn.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Apply/be valid; gelden voor introduces the affected scope. Present: geld / geldt / gelden. Past: gold / golden. Perfect: heeft gegolden.",
+    "id": "career-gelden",
+    "occurrences": [
+      {
+        "cardId": "career-changes-006",
+        "form": "geldt"
+      },
+      {
+        "cardId": "career-changes-015",
+        "form": "geldt"
+      }
+    ]
+  },
+  {
+    "headword": "geven",
+    "english": "give",
+    "explanation": "Iets aan iemand overhandigen of beschikbaar maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Give; a receiver can be an indirect object or introduced with aan. Present: geef / geeft / geven. Past: gaf / gaven. Perfect: heb gegeven.",
+    "id": "career-geven",
+    "occurrences": [
+      {
+        "cardId": "career-changes-003",
+        "form": "geeft"
+      },
+      {
+        "cardId": "career-changes-016",
+        "form": "geeft"
+      },
+      {
+        "cardId": "career-changes-032",
+        "form": "geeft"
+      },
+      {
+        "cardId": "career-meetings-009",
+        "form": "geeft"
+      },
+      {
+        "cardId": "career-priorities-005",
+        "form": "geef"
+      },
+      {
+        "cardId": "career-remote-024",
+        "form": "geeft"
+      }
+    ]
+  },
+  {
+    "headword": "gissen",
+    "english": "guess",
+    "explanation": "Een mogelijk antwoord noemen zonder het zeker te weten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Guess, without claiming established knowledge. Present: gis / gist / gissen. Past: giste / gisten. Perfect: heb gegist.",
+    "id": "career-gissen",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-049",
+        "form": "gissen"
+      }
+    ]
+  },
+  {
+    "headword": "halen",
+    "english": "meet or reach",
+    "explanation": "Een doel of afgesproken tijd bereiken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Fetch/reach/manage to attend; een afspraak halen means make the appointment in this context. Present: haal / haalt / halen. Past: haalde / haalden. Perfect: heb gehaald.",
+    "id": "career-halen",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-031",
+        "form": "haal"
+      },
+      {
+        "cardId": "career-support-025",
+        "form": "halen"
+      }
+    ]
+  },
+  {
+    "headword": "herstarten",
+    "english": "restart",
+    "explanation": "Een programma of apparaat opnieuw starten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Restart an object, no ge- with her-. Present: herstart / herstart / herstarten. Past: herstartte / herstartten. Perfect: heb herstart.",
+    "id": "career-herstarten",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-023",
+        "form": "herstart"
+      }
+    ]
+  },
+  {
+    "headword": "herstellen",
+    "english": "restore",
+    "explanation": "Iets weer in de vorige of goede toestand brengen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Hebben for restoring an object; zijn for a system returning to a state. Present: herstel / herstelt / herstellen. Past: herstelde / herstelden. Perfect: heb hersteld / ben hersteld.",
+    "id": "career-herstellen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-056",
+        "form": "herstellen"
+      },
+      {
+        "cardId": "career-incidents-034",
+        "form": "herstellen"
+      },
+      {
+        "cardId": "career-incidents-040",
+        "form": "hersteld"
+      },
+      {
+        "cardId": "career-incidents-060",
+        "form": "hersteld"
+      }
+    ]
+  },
+  {
+    "headword": "horen bij",
+    "english": "belong to",
+    "explanation": "Onderdeel zijn van iets.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Fixed combination horen bij means belong to/be part of, rather than hear a sound. Present: hoor bij / hoort bij / horen bij. Past: hoorde bij / hoorden bij. Perfect: heb erbij gehoord.",
+    "id": "career-horen-bij",
+    "occurrences": [
+      {
+        "cardId": "career-changes-025",
+        "form": "hoort"
+      }
+    ]
+  },
+  {
+    "headword": "houden",
+    "english": "keep",
+    "explanation": "Zorgen dat iets in een bepaalde toestand blijft.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Iemand op de hoogte houden means keep someone informed. Present: houd / houdt / houden. Past: hield / hielden. Perfect: heb gehouden.",
+    "id": "career-houden",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-059",
+        "form": "houden"
+      }
+    ]
+  },
+  {
+    "headword": "indelen",
+    "english": "classify or organise",
+    "explanation": "Iets in groepen of delen verdelen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: classify/organise; in te delen. Present: deel in / deelt in / delen in. Past: deelde in / deelden in. Perfect: heb ingedeeld.",
+    "id": "career-indelen",
+    "occurrences": [
+      {
+        "cardId": "career-support-020",
+        "form": "indelen"
+      }
+    ]
+  },
+  {
+    "headword": "informeren",
+    "english": "inform",
+    "explanation": "Iemand informatie geven over een onderwerp.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Informeren over a topic; informeren naar asks about something. Present: informeer / informeert / informeren. Past: informeerde / informeerden. Perfect: heb geïnformeerd.",
+    "id": "career-informeren",
+    "occurrences": [
+      {
+        "cardId": "career-changes-046",
+        "form": "geïnformeerd"
+      },
+      {
+        "cardId": "career-problems-047",
+        "form": "informeren"
+      },
+      {
+        "cardId": "career-support-043",
+        "form": "informeren"
+      }
+    ]
+  },
+  {
+    "headword": "inplannen",
+    "english": "schedule",
+    "explanation": "Een taak op een bepaald tijdstip in de planning zetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: schedule; in te plannen. Present: plan in / plant in / plannen in. Past: plande in / planden in. Perfect: heb ingepland.",
+    "id": "career-inplannen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-044",
+        "form": "ingepland"
+      },
+      {
+        "cardId": "career-priorities-055",
+        "form": "inplannen"
+      },
+      {
+        "cardId": "career-support-028",
+        "form": "plan"
+      }
+    ]
+  },
+  {
+    "headword": "inschakelen",
+    "english": "enable",
+    "explanation": "Een functie of apparaat aanzetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: enable or turn on, in te schakelen. Present: schakel in / schakelt in / schakelen in. Past: schakelde in / schakelden in. Perfect: heb ingeschakeld.",
+    "id": "career-inschakelen",
+    "occurrences": [
+      {
+        "cardId": "career-remote-015",
+        "form": "inschakelen"
+      },
+      {
+        "cardId": "career-troubleshooting-006",
+        "form": "ingeschakeld"
+      }
+    ]
+  },
+  {
+    "headword": "inschatten",
+    "english": "estimate or assess",
+    "explanation": "Zo goed mogelijk bepalen wat waarschijnlijk nodig is.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: estimate or assess, in te schatten. Present: schat in / schat in / schatten in. Past: schatte in / schatten in. Perfect: heb ingeschat.",
+    "id": "career-inschatten",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-014",
+        "form": "inschatten"
+      }
+    ]
+  },
+  {
+    "headword": "installeren",
+    "english": "install",
+    "explanation": "Een programma of apparaat klaarzetten voor gebruik.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Install, with diaeresis in geïnstalleerd. Present: installeer / installeert / installeren. Past: installeerde / installeerden. Perfect: heb geïnstalleerd.",
+    "id": "career-installeren",
+    "occurrences": [
+      {
+        "cardId": "career-problems-028",
+        "form": "geïnstalleerd"
+      }
+    ]
+  },
+  {
+    "headword": "instellen",
+    "english": "configure",
+    "explanation": "De gewenste waarden voor een functie kiezen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: instellen, stel in, in te stellen, ingesteld. Present: stel in / stelt in / stellen in. Past: stelde in / stelden in. Perfect: heb ingesteld.",
+    "id": "career-instellen",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-002",
+        "form": "ingesteld"
+      }
+    ]
+  },
+  {
+    "headword": "klaarkomen",
+    "english": "finish a task",
+    "explanation": "Met een taak klaar raken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: klaarkomen met een taak means finish a task. The met phrase fixes this work-related meaning. Present: kom klaar / komt klaar / komen klaar. Past: kwam klaar / kwamen klaar. Perfect: ben klaargekomen.",
+    "id": "career-klaarkomen",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-013",
+        "form": "klaargekomen"
+      }
+    ]
+  },
+  {
+    "headword": "klaarmaken",
+    "english": "prepare",
+    "explanation": "Iets gereedmaken voor gebruik.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: get ready/prepare; klaar te maken. Present: maak klaar / maakt klaar / maken klaar. Past: maakte klaar / maakten klaar. Perfect: heb klaargemaakt.",
+    "id": "career-klaarmaken",
+    "occurrences": [
+      {
+        "cardId": "career-office-019",
+        "form": "klaargemaakt"
+      },
+      {
+        "cardId": "career-office-057",
+        "form": "klaarmaken"
+      }
+    ]
+  },
+  {
+    "headword": "klikken",
+    "english": "click",
+    "explanation": "Een knop of koppeling met de muis kiezen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Klikken op an interface item; click and confirm are not automatically the same action. Present: klik / klikt / klikken. Past: klikte / klikten. Perfect: heb geklikt.",
+    "id": "career-klikken",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-023",
+        "form": "klik"
+      },
+      {
+        "cardId": "career-troubleshooting-014",
+        "form": "klik"
+      }
+    ]
+  },
+  {
+    "headword": "kloppen",
+    "english": "be correct",
+    "explanation": "Juist zijn of met de gegevens overeenkomen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "In the expression het klopt, be correct/match; not physically knock in these examples. Present: klop / klopt / kloppen. Past: klopte / klopten. Perfect: heeft geklopt.",
+    "id": "career-kloppen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-044",
+        "form": "klopt"
+      },
+      {
+        "cardId": "career-clarification-049",
+        "form": "klopt"
+      }
+    ]
+  },
+  {
+    "headword": "knipperen",
+    "english": "blink",
+    "explanation": "Steeds kort aan en uit gaan.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "A light flashes or blinks, rather than a person giving an answer. Present: knipper / knippert / knipperen. Past: knipperde / knipperden. Perfect: heeft geknipperd.",
+    "id": "career-knipperen",
+    "occurrences": [
+      {
+        "cardId": "career-problems-002",
+        "form": "knippert"
+      }
+    ]
+  },
+  {
+    "headword": "kosten",
+    "english": "cost or take",
+    "explanation": "Een hoeveelheid tijd, geld of moeite vragen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Usually a thing/task is the subject: het kost tijd. Costs and quoted prices are not necessarily the same. Present: kost / kost / kosten. Past: kostte / kostten. Perfect: heeft gekost.",
+    "id": "career-kosten",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-039",
+        "form": "kost"
+      }
+    ]
+  },
+  {
+    "headword": "laden",
+    "english": "load",
+    "explanation": "Gegevens in een programma beschikbaar maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Load data or a page in a program, rather than put cargo in a vehicle. Present: laad / laadt / laden. Past: laadde / laadden. Perfect: heb geladen.",
+    "id": "career-laden-data",
+    "occurrences": [
+      {
+        "cardId": "career-problems-003",
+        "form": "laadt"
+      }
+    ]
+  },
+  {
+    "headword": "laten",
+    "english": "let",
+    "explanation": "Toestaan dat iemand iets doet of zorgen dat iets gebeurt.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Laten plus bare infinitive; joint proposal Laten we, and laten zien means show. Present: laat / laat / laten. Past: liet / lieten. Perfect: heb gelaten.",
+    "id": "career-laten",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-030",
+        "form": "laten"
+      },
+      {
+        "cardId": "career-clarification-050",
+        "form": "laten"
+      },
+      {
+        "cardId": "career-meetings-039",
+        "form": "laten"
+      },
+      {
+        "cardId": "career-office-027",
+        "form": "laat"
+      },
+      {
+        "cardId": "career-office-038",
+        "form": "laten"
+      },
+      {
+        "cardId": "career-remote-043",
+        "form": "laat"
+      },
+      {
+        "cardId": "career-troubleshooting-004",
+        "form": "laat"
+      },
+      {
+        "cardId": "career-troubleshooting-054",
+        "form": "laat"
+      }
+    ]
+  },
+  {
+    "headword": "lezen",
+    "english": "read",
+    "explanation": "Geschreven woorden bekijken en hun inhoud opnemen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Read; irregular las and gelezen. Present: lees / leest / lezen. Past: las / lazen. Perfect: heb gelezen.",
+    "id": "career-lezen",
+    "occurrences": [
+      {
+        "cardId": "career-problems-051",
+        "form": "lezen"
+      },
+      {
+        "cardId": "career-remote-031",
+        "form": "gelezen"
+      },
+      {
+        "cardId": "career-remote-034",
+        "form": "gelezen"
+      },
+      {
+        "cardId": "career-troubleshooting-003",
+        "form": "lezen"
+      }
+    ]
+  },
+  {
+    "headword": "lijden",
+    "english": "suffer",
+    "explanation": "Nadeel ondervinden van iets.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Suffer, lijden onder names the pressure or harmful condition. Present: lijd / lijdt / lijden. Past: leed / leden. Perfect: heb geleden.",
+    "id": "career-lijden",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-047",
+        "form": "lijdt"
+      }
+    ]
+  },
+  {
+    "headword": "lopen",
+    "english": "run",
+    "explanation": "Bezig zijn als proces of activiteit.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Lopen can describe a process running. Motion with a destination may instead use zijn. Present: loop / loopt / lopen. Past: liep / liepen. Perfect: heb gelopen.",
+    "id": "career-lopen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-014",
+        "form": "loopt"
+      },
+      {
+        "cardId": "career-meetings-017",
+        "form": "loopt"
+      },
+      {
+        "cardId": "career-priorities-054",
+        "form": "lopen"
+      }
+    ]
+  },
+  {
+    "headword": "loskoppelen",
+    "english": "disconnect",
+    "explanation": "De verbinding tussen twee dingen verbreken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: disconnect, los te koppelen. Present: koppel los / koppelt los / koppelen los. Past: koppelde los / koppelden los. Perfect: heb losgekoppeld.",
+    "id": "career-loskoppelen",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-026",
+        "form": "koppel"
+      }
+    ]
+  },
+  {
+    "headword": "maken",
+    "english": "make",
+    "explanation": "Iets tot stand brengen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Make/do; compare een fout maken and een reservekopie maken. Present: maak / maakt / maken. Past: maakte / maakten. Perfect: heb gemaakt.",
+    "id": "career-maken",
+    "occurrences": [
+      {
+        "cardId": "career-changes-026",
+        "form": "maak"
+      },
+      {
+        "cardId": "career-clarification-034",
+        "form": "gemaakt"
+      },
+      {
+        "cardId": "career-office-050",
+        "form": "maak"
+      },
+      {
+        "cardId": "career-troubleshooting-008",
+        "form": "maken"
+      }
+    ]
+  },
+  {
+    "headword": "markeren",
+    "english": "mark",
+    "explanation": "Iets met een teken of label duidelijk maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Mark or label a status clearly. Present: markeer / markeert / markeren. Past: markeerde / markeerden. Perfect: heb gemarkeerd.",
+    "id": "career-markeren",
+    "occurrences": [
+      {
+        "cardId": "career-remote-025",
+        "form": "gemarkeerd"
+      }
+    ]
+  },
+  {
+    "headword": "meekijken",
+    "english": "look together",
+    "explanation": "Samen met iemand naar een taak of probleem kijken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: look along/check together, often via shared screen; mee te kijken. Present: kijk mee / kijkt mee / kijken mee. Past: keek mee / keken mee. Perfect: heb meegekeken.",
+    "id": "career-meekijken",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-021",
+        "form": "meekijken"
+      },
+      {
+        "cardId": "career-support-033",
+        "form": "kijk"
+      }
+    ]
+  },
+  {
+    "headword": "meesturen",
+    "english": "send along",
+    "explanation": "Iets samen met een bericht versturen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: send along with; mee te sturen. Present: stuur mee / stuurt mee / sturen mee. Past: stuurde mee / stuurden mee. Perfect: heb meegestuurd.",
+    "id": "career-meesturen",
+    "occurrences": [
+      {
+        "cardId": "career-support-019",
+        "form": "stuur"
+      }
+    ]
+  },
+  {
+    "headword": "melden",
+    "english": "report",
+    "explanation": "Informatie over een gebeurtenis of probleem doorgeven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Report an issue; de melding is the report/request, not necessarily an error or outage. Present: meld / meldt / melden. Past: meldde / meldden. Perfect: heb gemeld.",
+    "id": "career-melden",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-001",
+        "form": "melden"
+      },
+      {
+        "cardId": "career-incidents-010",
+        "form": "meld"
+      },
+      {
+        "cardId": "career-priorities-034",
+        "form": "meld"
+      },
+      {
+        "cardId": "career-remote-057",
+        "form": "melden"
+      }
+    ]
+  },
+  {
+    "headword": "mislukken",
+    "english": "fail",
+    "explanation": "Niet het gewenste resultaat hebben.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Fail to succeed, with zijn in the perfect. Present: misluk / mislukt / mislukken. Past: mislukte / mislukten. Perfect: is mislukt.",
+    "id": "career-mislukken",
+    "occurrences": [
+      {
+        "cardId": "career-changes-039",
+        "form": "mislukt"
+      },
+      {
+        "cardId": "career-changes-056",
+        "form": "mislukt"
+      }
+    ]
+  },
+  {
+    "headword": "missen",
+    "english": "miss",
+    "explanation": "Iets niet hebben of een gebeurtenis niet kunnen bijwonen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Miss/fail to hear or notice something; context decides the sense. Present: mis / mist / missen. Past: miste / misten. Perfect: heb gemist.",
+    "id": "career-missen",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-026",
+        "form": "missen"
+      }
+    ]
+  },
+  {
+    "headword": "nalezen",
+    "english": "read through",
+    "explanation": "Een tekst lezen om hem te controleren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: read through or check, na te lezen. Present: lees na / leest na / lezen na. Past: las na / lazen na. Perfect: heb nagelezen.",
+    "id": "career-nalezen",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-027",
+        "form": "nalezen"
+      }
+    ]
+  },
+  {
+    "headword": "nalopen",
+    "english": "go through and check",
+    "explanation": "Stappen of voorwaarden één voor één controleren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: go through and check, na te lopen. Present: loop na / loopt na / lopen na. Past: liep na / liepen na. Perfect: heb nagelopen.",
+    "id": "career-nalopen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-029",
+        "form": "nalopen"
+      },
+      {
+        "cardId": "career-changes-058",
+        "form": "nalopen"
+      }
+    ]
+  },
+  {
+    "headword": "nemen",
+    "english": "take",
+    "explanation": "Iets pakken of een verantwoordelijkheid aanvaarden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Take; use fixed combinations such as een beslissing nemen. Present: neem / neemt / nemen. Past: nam / namen. Perfect: heb genomen.",
+    "id": "career-nemen",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-052",
+        "form": "neemt"
+      },
+      {
+        "cardId": "career-office-032",
+        "form": "neem"
+      },
+      {
+        "cardId": "career-office-034",
+        "form": "genomen"
+      },
+      {
+        "cardId": "career-office-038",
+        "form": "nemen"
+      },
+      {
+        "cardId": "career-priorities-046",
+        "form": "neem"
+      },
+      {
+        "cardId": "career-priorities-060",
+        "form": "neem"
+      }
+    ]
+  },
+  {
+    "headword": "noemen",
+    "english": "name or mention",
+    "explanation": "De naam van iets zeggen of iets vermelden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Name/mention something; not necessarily give it a new name. Present: noem / noemt / noemen. Past: noemde / noemden. Perfect: heb genoemd.",
+    "id": "career-noemen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-004",
+        "form": "genoemd"
+      },
+      {
+        "cardId": "career-clarification-007",
+        "form": "noemen"
+      },
+      {
+        "cardId": "career-support-002",
+        "form": "noemen"
+      }
+    ]
+  },
+  {
+    "headword": "noteren",
+    "english": "note down",
+    "explanation": "Informatie opschrijven om ze te bewaren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Write down information, observations or an error message. Present: noteer / noteert / noteren. Past: noteerde / noteerden. Perfect: heb genoteerd.",
+    "id": "career-noteren",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-025",
+        "form": "noteren"
+      },
+      {
+        "cardId": "career-clarification-058",
+        "form": "noteer"
+      },
+      {
+        "cardId": "career-incidents-044",
+        "form": "genoteerd"
+      },
+      {
+        "cardId": "career-meetings-042",
+        "form": "noteer"
+      },
+      {
+        "cardId": "career-support-010",
+        "form": "noteer"
+      },
+      {
+        "cardId": "career-troubleshooting-036",
+        "form": "noteert"
+      }
+    ]
+  },
+  {
+    "headword": "nummeren",
+    "english": "number",
+    "explanation": "Een nummer aan een onderdeel geven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Number an item to identify it clearly. Present: nummer / nummert / nummeren. Past: nummerde / nummerden. Perfect: heb genummerd.",
+    "id": "career-nummeren",
+    "occurrences": [
+      {
+        "cardId": "career-remote-048",
+        "form": "genummerd"
+      }
+    ]
+  },
+  {
+    "headword": "omschrijven",
+    "english": "describe in other words",
+    "explanation": "Met andere woorden uitleggen wat iets is.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Describe in other words; inseparable in this sense, with omschreven. Present: omschrijf / omschrijft / omschrijven. Past: omschreef / omschreven. Perfect: heb omschreven.",
+    "id": "career-omschrijven",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-017",
+        "form": "omschrijven"
+      },
+      {
+        "cardId": "career-clarification-055",
+        "form": "omschrijven"
+      }
+    ]
+  },
+  {
+    "headword": "onthouden",
+    "english": "remember",
+    "explanation": "Informatie in je geheugen bewaren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Remember/retain information; inseparable ont-, no ge-. Present: onthoud / onthoudt / onthouden. Past: onthield / onthielden. Perfect: heb onthouden.",
+    "id": "career-onthouden",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-058",
+        "form": "onthoud"
+      }
+    ]
+  },
+  {
+    "headword": "ontstaan",
+    "english": "arise",
+    "explanation": "Beginnen te bestaan.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Arise or come into existence, with zijn. Present: ontsta / ontstaat / ontstaan. Past: ontstond / ontstonden. Perfect: is ontstaan.",
+    "id": "career-ontstaan",
+    "occurrences": [
+      {
+        "cardId": "career-problems-024",
+        "form": "ontstaan"
+      }
+    ]
+  },
+  {
+    "headword": "openen",
+    "english": "open",
+    "explanation": "Een bestand of venster toegankelijk maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Ordinary inseparable verb openen, not open plus another verb. Present: open / opent / openen. Past: opende / openden. Perfect: heb geopend.",
+    "id": "career-openen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-023",
+        "form": "openen"
+      },
+      {
+        "cardId": "career-clarification-045",
+        "form": "geopend"
+      },
+      {
+        "cardId": "career-problems-013",
+        "form": "openen"
+      },
+      {
+        "cardId": "career-problems-032",
+        "form": "open"
+      },
+      {
+        "cardId": "career-remote-027",
+        "form": "openen"
+      }
+    ]
+  },
+  {
+    "headword": "opleveren",
+    "english": "yield",
+    "explanation": "Een bepaald resultaat geven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: yield a result, op te leveren. Present: lever op / levert op / leveren op. Past: leverde op / leverden op. Perfect: heb opgeleverd.",
+    "id": "career-opleveren",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-015",
+        "form": "levert"
+      }
+    ]
+  },
+  {
+    "headword": "oplopen",
+    "english": "incur",
+    "explanation": "Een hoeveelheid vertraging krijgen in deze context.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: vertraging oplopen means incur a delay, with hebben. Present: loop op / loopt op / lopen op. Past: liep op / liepen op. Perfect: heb opgelopen.",
+    "id": "career-oplopen",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-035",
+        "form": "opgelopen"
+      }
+    ]
+  },
+  {
+    "headword": "opnemen",
+    "english": "answer, record or include",
+    "explanation": "Een gesprek aannemen, geluid vastleggen of iets ergens bij zetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: opnemen can mean answer a phone, record or include; contact opnemen met means get in touch with. Context determines which sense is meant. Present: neem op / neemt op / nemen op. Past: nam op / namen op. Perfect: heb opgenomen.",
+    "id": "career-opnemen",
+    "occurrences": [
+      {
+        "cardId": "career-support-005",
+        "form": "opgenomen"
+      },
+      {
+        "cardId": "career-support-047",
+        "form": "neem"
+      }
+    ]
+  },
+  {
+    "headword": "opschrijven",
+    "english": "write down",
+    "explanation": "Informatie op papier of in een bestand zetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: write down; op te schrijven. Present: schrijf op / schrijft op / schrijven op. Past: schreef op / schreven op. Perfect: heb opgeschreven.",
+    "id": "career-opschrijven",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-010",
+        "form": "schrijf"
+      },
+      {
+        "cardId": "career-troubleshooting-007",
+        "form": "schrijf"
+      }
+    ]
+  },
+  {
+    "headword": "opschuiven",
+    "english": "move back",
+    "explanation": "Op een later moment in de planning komen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: a scheduled task moves back, with zijn for this change of position. Present: schuif op / schuift op / schuiven op. Past: schoof op / schoven op. Perfect: is opgeschoven.",
+    "id": "career-opschuiven",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-050",
+        "form": "schuift"
+      }
+    ]
+  },
+  {
+    "headword": "opslaan",
+    "english": "save",
+    "explanation": "Gegevens bewaren in een bestand of systeem.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: opslaan, sla op, op te slaan, opgeslagen. Present: sla op / slaat op / slaan op. Past: sloeg op / sloegen op. Perfect: heb opgeslagen.",
+    "id": "career-opslaan",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-021",
+        "form": "sla"
+      }
+    ]
+  },
+  {
+    "headword": "opsplitsen",
+    "english": "split up",
+    "explanation": "Iets in kleinere delen verdelen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: divide into smaller parts; op te splitsen. Present: splits op / splitst op / splitsen op. Past: splitste op / splitsten op. Perfect: heb opgesplitst.",
+    "id": "career-opsplitsen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-030",
+        "form": "opsplitsen"
+      }
+    ]
+  },
+  {
+    "headword": "optreden",
+    "english": "occur",
+    "explanation": "Zich voordoen, zoals een fout of storing.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: a problem occurs, het probleem treedt op; normally zijn in this sense. Present: treed op / treedt op / treden op. Past: trad op / traden op. Perfect: is opgetreden.",
+    "id": "career-optreden",
+    "occurrences": [
+      {
+        "cardId": "career-problems-033",
+        "form": "treedt"
+      }
+    ]
+  },
+  {
+    "headword": "opvolgen",
+    "english": "follow up",
+    "explanation": "Een melding blijven volgen en de nodige acties doen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: follow up a request, op te volgen. Present: volg op / volgt op / volgen op. Past: volgde op / volgden op. Perfect: heb opgevolgd.",
+    "id": "career-opvolgen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-052",
+        "form": "volgt"
+      }
+    ]
+  },
+  {
+    "headword": "opvragen",
+    "english": "request information",
+    "explanation": "Vragen om bepaalde gegevens te krijgen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: request/retrieve information; op te vragen. Present: vraag op / vraagt op / vragen op. Past: vroeg op / vroegen op. Perfect: heb opgevraagd.",
+    "id": "career-opvragen",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-015",
+        "form": "opgevraagd"
+      }
+    ]
+  },
+  {
+    "headword": "overdragen",
+    "english": "hand over",
+    "explanation": "Een taak of verantwoordelijkheid aan iemand anders geven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: hand over work; over te dragen. Present: draag over / draagt over / dragen over. Past: droeg over / droegen over. Perfect: heb overgedragen.",
+    "id": "career-overdragen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-041",
+        "form": "draag"
+      },
+      {
+        "cardId": "career-priorities-060",
+        "form": "draag"
+      }
+    ]
+  },
+  {
+    "headword": "overeenkomen",
+    "english": "match",
+    "explanation": "Met iets anders overeenstemmen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: overeenkomen met means match or correspond. Present: kom overeen / komt overeen / komen overeen. Past: kwam overeen / kwamen overeen. Perfect: ben overeengekomen.",
+    "id": "career-overeenkomen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-031",
+        "form": "komt"
+      },
+      {
+        "cardId": "career-troubleshooting-005",
+        "form": "komt"
+      }
+    ]
+  },
+  {
+    "headword": "overnemen",
+    "english": "take over",
+    "explanation": "Een taak of verantwoordelijkheid van iemand anders aannemen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: take over ownership/task; over te nemen. Present: neem over / neemt over / nemen over. Past: nam over / namen over. Perfect: heb overgenomen.",
+    "id": "career-overnemen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-023",
+        "form": "overnemen"
+      },
+      {
+        "cardId": "career-incidents-030",
+        "form": "overgenomen"
+      },
+      {
+        "cardId": "career-incidents-045",
+        "form": "neemt"
+      },
+      {
+        "cardId": "career-priorities-024",
+        "form": "overnemen"
+      },
+      {
+        "cardId": "career-remote-060",
+        "form": "neemt"
+      }
+    ]
+  },
+  {
+    "headword": "overslaan",
+    "english": "skip",
+    "explanation": "Een stap niet uitvoeren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: skip/omit; over te slaan. Present: sla over / slaat over / slaan over. Past: sloeg over / sloegen over. Perfect: heb overgeslagen.",
+    "id": "career-overslaan",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-037",
+        "form": "overslaan"
+      }
+    ]
+  },
+  {
+    "headword": "passen",
+    "english": "suit",
+    "explanation": "Geschikt zijn voor iemand of een situatie.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Fitting/suiting; context determines whether a time suits someone. Present: pas / past / passen. Past: paste / pasten. Perfect: heb gepast.",
+    "id": "career-passen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-042",
+        "form": "past"
+      },
+      {
+        "cardId": "career-remote-012",
+        "form": "past"
+      }
+    ]
+  },
+  {
+    "headword": "printen",
+    "english": "print",
+    "explanation": "Een document op papier afdrukken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Print a document, not send an email. Present: print / print / printen. Past: printte / printten. Perfect: heb geprint.",
+    "id": "career-printen",
+    "occurrences": [
+      {
+        "cardId": "career-problems-006",
+        "form": "print"
+      }
+    ]
+  },
+  {
+    "headword": "reageren",
+    "english": "respond",
+    "explanation": "Een antwoord of andere reactie geven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Reageren op names the trigger or message being answered. Present: reageer / reageert / reageren. Past: reageerde / reageerden. Perfect: heb gereageerd.",
+    "id": "career-reageren",
+    "occurrences": [
+      {
+        "cardId": "career-problems-001",
+        "form": "reageert"
+      },
+      {
+        "cardId": "career-remote-054",
+        "form": "reageren"
+      }
+    ]
+  },
+  {
+    "headword": "registreren",
+    "english": "record or register",
+    "explanation": "Informatie officieel in een systeem zetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Record/register a request; this does not mean approve or resolve it. Present: registreer / registreert / registreren. Past: registreerde / registreerden. Perfect: heb geregistreerd.",
+    "id": "career-registreren",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-004",
+        "form": "registreren"
+      },
+      {
+        "cardId": "career-incidents-008",
+        "form": "geregistreerd"
+      },
+      {
+        "cardId": "career-support-001",
+        "form": "registreer"
+      }
+    ]
+  },
+  {
+    "headword": "rekenen",
+    "english": "allow or calculate",
+    "explanation": "Tijd of middelen in een schatting meenemen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Rekenen op can mean count on. Tijd rekenen means allow time in an estimate. Present: reken / rekent / rekenen. Past: rekende / rekenden. Perfect: heb gerekend.",
+    "id": "career-rekenen",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-017",
+        "form": "rekenen"
+      }
+    ]
+  },
+  {
+    "headword": "samenvatten",
+    "english": "summarise",
+    "explanation": "De belangrijkste punten kort weergeven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: summarise; samen te vatten. Present: vat samen / vat samen / vatten samen. Past: vatte samen / vatten samen. Perfect: heb samengevat.",
+    "id": "career-samenvatten",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-043",
+        "form": "vat"
+      },
+      {
+        "cardId": "career-remote-002",
+        "form": "samengevat"
+      },
+      {
+        "cardId": "career-remote-033",
+        "form": "samenvatten"
+      }
+    ]
+  },
+  {
+    "headword": "schatten",
+    "english": "estimate",
+    "explanation": "Een waarschijnlijke hoeveelheid of duur bepalen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Estimate, not promise an exact result. Present: schat / schat / schatten. Past: schatte / schatten. Perfect: heb geschat.",
+    "id": "career-schatten",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-011",
+        "form": "schat"
+      }
+    ]
+  },
+  {
+    "headword": "slagen",
+    "english": "succeed",
+    "explanation": "Het gewenste resultaat bereiken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Succeed or pass, with zijn in this sense. Present: slaag / slaagt / slagen. Past: slaagde / slaagden. Perfect: ben geslaagd.",
+    "id": "career-slagen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-035",
+        "form": "slaagt"
+      }
+    ]
+  },
+  {
+    "headword": "sluiten",
+    "english": "close",
+    "explanation": "Een venster of document dichtdoen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Close a document or window. This is different from een overeenkomst sluiten, which means conclude an agreement. Present: sluit / sluit / sluiten. Past: sloot / sloten. Perfect: heb gesloten.",
+    "id": "career-sluiten-window",
+    "occurrences": [
+      {
+        "cardId": "career-support-032",
+        "form": "sluit"
+      },
+      {
+        "cardId": "career-troubleshooting-022",
+        "form": "sluiten"
+      },
+      {
+        "cardId": "career-troubleshooting-028",
+        "form": "sluiten"
+      }
+    ]
+  },
+  {
+    "headword": "spelen",
+    "english": "play a role",
+    "explanation": "Invloed hebben in de uitdrukking een rol spelen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Een rol spelen means play a role. Present: speel / speelt / spelen. Past: speelde / speelden. Perfect: heb gespeeld.",
+    "id": "career-spelen",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-043",
+        "form": "speelt"
+      }
+    ]
+  },
+  {
+    "headword": "staan",
+    "english": "stand or be located",
+    "explanation": "Op een plaats staan of als informatie vermeld zijn.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Standing/location or a setting's displayed state; er staat may introduce displayed information. Present: sta / staat / staan. Past: stond / stonden. Perfect: heb gestaan.",
+    "id": "career-staan",
+    "occurrences": [
+      {
+        "cardId": "career-changes-044",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-clarification-015",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-incidents-008",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-incidents-048",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-meetings-049",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-office-013",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-remote-005",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-remote-016",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-remote-026",
+        "form": "staan"
+      },
+      {
+        "cardId": "career-support-023",
+        "form": "staat"
+      },
+      {
+        "cardId": "career-troubleshooting-002",
+        "form": "staat"
+      }
+    ]
+  },
+  {
+    "headword": "stellen",
+    "english": "ask a question",
+    "explanation": "Een vraag aan iemand richten in de combinatie een vraag stellen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Een vraag stellen means ask a question. Present: stel / stelt / stellen. Past: stelde / stelden. Perfect: heb gesteld.",
+    "id": "career-stellen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-059",
+        "form": "stellen"
+      },
+      {
+        "cardId": "career-meetings-031",
+        "form": "stellen"
+      }
+    ]
+  },
+  {
+    "headword": "stoppen",
+    "english": "stop",
+    "explanation": "Een activiteit beëindigen of ermee ophouden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Intransitive stopping commonly uses zijn; stopping an object uses hebben. Present: stop / stopt / stoppen. Past: stopte / stopten. Perfect: ben gestopt / heb gestopt.",
+    "id": "career-stoppen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-048",
+        "form": "stoppen"
+      },
+      {
+        "cardId": "career-incidents-040",
+        "form": "stoppen"
+      },
+      {
+        "cardId": "career-problems-043",
+        "form": "stopt"
+      },
+      {
+        "cardId": "career-support-037",
+        "form": "stoppen"
+      },
+      {
+        "cardId": "career-troubleshooting-029",
+        "form": "stop"
+      }
+    ]
+  },
+  {
+    "headword": "terugdraaien",
+    "english": "roll back",
+    "explanation": "Een wijziging ongedaan maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: reverse or roll back a change, terug te draaien. Present: draai terug / draait terug / draaien terug. Past: draaide terug / draaiden terug. Perfect: heb teruggedraaid.",
+    "id": "career-terugdraaien",
+    "occurrences": [
+      {
+        "cardId": "career-changes-053",
+        "form": "draaien"
+      },
+      {
+        "cardId": "career-changes-057",
+        "form": "terugdraaien"
+      }
+    ]
+  },
+  {
+    "headword": "testen",
+    "english": "test",
+    "explanation": "Controleren of iets onder bepaalde omstandigheden werkt.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Testing does not by itself establish approval for a change. Present: test / test / testen. Past: testte / testten. Perfect: heb getest.",
+    "id": "career-testen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-036",
+        "form": "getest"
+      },
+      {
+        "cardId": "career-incidents-037",
+        "form": "getest"
+      },
+      {
+        "cardId": "career-meetings-020",
+        "form": "getest"
+      },
+      {
+        "cardId": "career-troubleshooting-018",
+        "form": "testen"
+      },
+      {
+        "cardId": "career-troubleshooting-053",
+        "form": "testen"
+      },
+      {
+        "cardId": "career-troubleshooting-057",
+        "form": "test"
+      }
+    ]
+  },
+  {
+    "headword": "toekennen",
+    "english": "grant",
+    "explanation": "Een recht of rol officieel aan iemand geven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: grant a right, toe te kennen. Present: ken toe / kent toe / kennen toe. Past: kende toe / kenden toe. Perfect: heb toegekend.",
+    "id": "career-toekennen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-005",
+        "form": "toegekend"
+      }
+    ]
+  },
+  {
+    "headword": "toestaan",
+    "english": "allow",
+    "explanation": "Toestemming geven voor iets.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: allow; toe te staan; permission differs from technical ability. Present: sta toe / staat toe / staan toe. Past: stond toe / stonden toe. Perfect: heb toegestaan.",
+    "id": "career-toestaan",
+    "occurrences": [
+      {
+        "cardId": "career-changes-019",
+        "form": "toegestaan"
+      }
+    ]
+  },
+  {
+    "headword": "toevoegen",
+    "english": "add",
+    "explanation": "Iets erbij zetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: add something aan a record or message; toe te voegen. Present: voeg toe / voegt toe / voegen toe. Past: voegde toe / voegden toe. Perfect: heb toegevoegd.",
+    "id": "career-toevoegen",
+    "occurrences": [
+      {
+        "cardId": "career-support-060",
+        "form": "toevoegen"
+      }
+    ]
+  },
+  {
+    "headword": "tonen",
+    "english": "show",
+    "explanation": "Iets zichtbaar of duidelijk maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Show; iemand iets tonen names the viewer and the object. Present: toon / toont / tonen. Past: toonde / toonden. Perfect: heb getoond.",
+    "id": "career-tonen",
+    "occurrences": [
+      {
+        "cardId": "career-office-017",
+        "form": "tonen"
+      }
+    ]
+  },
+  {
+    "headword": "uitbreiden",
+    "english": "extend",
+    "explanation": "Groter maken of meer mogelijkheden geven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: extend or expand an object, uit te breiden. Present: breid uit / breidt uit / breiden uit. Past: breidde uit / breidden uit. Perfect: heb uitgebreid.",
+    "id": "career-uitbreiden",
+    "occurrences": [
+      {
+        "cardId": "career-changes-007",
+        "form": "uitbreiden"
+      }
+    ]
+  },
+  {
+    "headword": "uitlopen",
+    "english": "overrun",
+    "explanation": "Langer duren dan gepland.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: a schedule overruns, with zijn in this sense. Present: loop uit / loopt uit / lopen uit. Past: liep uit / liepen uit. Perfect: is uitgelopen.",
+    "id": "career-uitlopen",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-023",
+        "form": "loopt uit"
+      }
+    ]
+  },
+  {
+    "headword": "uitschakelen",
+    "english": "turn off",
+    "explanation": "Een functie of apparaat uitzetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: turn off or disable, uit te schakelen. Present: schakel uit / schakelt uit / schakelen uit. Past: schakelde uit / schakelden uit. Perfect: heb uitgeschakeld.",
+    "id": "career-uitschakelen",
+    "occurrences": [
+      {
+        "cardId": "career-remote-017",
+        "form": "uitschakelen"
+      }
+    ]
+  },
+  {
+    "headword": "uitsluiten",
+    "english": "rule out",
+    "explanation": "Bepalen dat iets geen mogelijke oorzaak meer is.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: rule out or exclude, uit te sluiten. Present: sluit uit / sluit uit / sluiten uit. Past: sloot uit / sloten uit. Perfect: heb uitgesloten.",
+    "id": "career-uitsluiten",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-028",
+        "form": "uitgesloten"
+      },
+      {
+        "cardId": "career-troubleshooting-045",
+        "form": "uitsluiten"
+      },
+      {
+        "cardId": "career-troubleshooting-047",
+        "form": "sluiten"
+      }
+    ]
+  },
+  {
+    "headword": "uitspreken",
+    "english": "pronounce",
+    "explanation": "Woorden hardop zeggen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: pronounce; uit te spreken. Present: spreek uit / spreekt uit / spreken uit. Past: sprak uit / spraken uit. Perfect: heb uitgesproken.",
+    "id": "career-uitspreken",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-005",
+        "form": "uitspreken"
+      },
+      {
+        "cardId": "career-clarification-054",
+        "form": "spreek"
+      }
+    ]
+  },
+  {
+    "headword": "uitstellen",
+    "english": "postpone",
+    "explanation": "Een taak naar een later moment verplaatsen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: postpone; uit te stellen. Present: stel uit / stelt uit / stellen uit. Past: stelde uit / stelden uit. Perfect: heb uitgesteld.",
+    "id": "career-uitstellen",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-044",
+        "form": "stellen"
+      },
+      {
+        "cardId": "career-priorities-043",
+        "form": "uitstellen"
+      },
+      {
+        "cardId": "career-problems-042",
+        "form": "uitstellen"
+      }
+    ]
+  },
+  {
+    "headword": "uitvoeren",
+    "english": "carry out",
+    "explanation": "Een afgesproken handeling werkelijk doen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: uitvoeren, voer uit, uit te voeren, uitgevoerd. Present: voer uit / voert uit / voeren uit. Past: voerde uit / voerden uit. Perfect: heb uitgevoerd.",
+    "id": "career-uitvoeren",
+    "occurrences": [
+      {
+        "cardId": "career-changes-020",
+        "form": "voeren"
+      },
+      {
+        "cardId": "career-clarification-024",
+        "form": "voeren"
+      },
+      {
+        "cardId": "career-clarification-032",
+        "form": "uitvoeren"
+      },
+      {
+        "cardId": "career-incidents-047",
+        "form": "uitgevoerd"
+      },
+      {
+        "cardId": "career-meetings-028",
+        "form": "uitvoeren"
+      },
+      {
+        "cardId": "career-office-049",
+        "form": "uitvoeren"
+      },
+      {
+        "cardId": "career-office-058",
+        "form": "uitvoeren"
+      },
+      {
+        "cardId": "career-support-035",
+        "form": "uitvoeren"
+      },
+      {
+        "cardId": "career-support-049",
+        "form": "uitvoeren"
+      },
+      {
+        "cardId": "career-support-051",
+        "form": "uitvoeren"
+      },
+      {
+        "cardId": "career-troubleshooting-038",
+        "form": "uitgevoerd"
+      }
+    ]
+  },
+  {
+    "headword": "vallen",
+    "english": "fall",
+    "explanation": "Binnen of buiten een bereik horen in deze context.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Fall, also vallen buiten means be outside a scope. Present: val / valt / vallen. Past: viel / vielen. Perfect: ben gevallen.",
+    "id": "career-vallen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-024",
+        "form": "vallen"
+      }
+    ]
+  },
+  {
+    "headword": "vastleggen",
+    "english": "document",
+    "explanation": "Informatie of een afspraak blijvend noteren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: record/document an agreement; vast te leggen. Present: leg vast / legt vast / leggen vast. Past: legde vast / legden vast. Perfect: heb vastgelegd.",
+    "id": "career-vastleggen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-023",
+        "form": "vastleggen"
+      },
+      {
+        "cardId": "career-changes-037",
+        "form": "vastgelegd"
+      },
+      {
+        "cardId": "career-changes-057",
+        "form": "leg"
+      },
+      {
+        "cardId": "career-clarification-050",
+        "form": "vastleggen"
+      },
+      {
+        "cardId": "career-meetings-018",
+        "form": "vastgelegd"
+      },
+      {
+        "cardId": "career-meetings-050",
+        "form": "leggen"
+      },
+      {
+        "cardId": "career-remote-046",
+        "form": "leggen"
+      },
+      {
+        "cardId": "career-support-055",
+        "form": "vastgelegd"
+      }
+    ]
+  },
+  {
+    "headword": "vastlopen",
+    "english": "freeze or get stuck",
+    "explanation": "Niet meer verder kunnen als proces of toepassing.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: a process freezes or gets stuck, with zijn. Present: loop vast / loopt vast / lopen vast. Past: liep vast / liepen vast. Perfect: is vastgelopen.",
+    "id": "career-vastlopen",
+    "occurrences": [
+      {
+        "cardId": "career-problems-005",
+        "form": "loopt"
+      },
+      {
+        "cardId": "career-problems-032",
+        "form": "loopt"
+      }
+    ]
+  },
+  {
+    "headword": "vaststellen",
+    "english": "establish",
+    "explanation": "Op basis van gegevens bepalen dat iets zo is.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: establish or determine, vast te stellen. Present: stel vast / stelt vast / stellen vast. Past: stelde vast / stelden vast. Perfect: heb vastgesteld.",
+    "id": "career-vaststellen",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-044",
+        "form": "vastgesteld"
+      }
+    ]
+  },
+  {
+    "headword": "vastzitten",
+    "english": "be stuck",
+    "explanation": "Niet verder kunnen met een taak.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: be stuck, vast te zitten. Present: zit vast / zit vast / zitten vast. Past: zat vast / zaten vast. Perfect: heb vastgezeten.",
+    "id": "career-vastzitten",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-007",
+        "form": "vastzitten"
+      }
+    ]
+  },
+  {
+    "headword": "veranderen",
+    "english": "change",
+    "explanation": "Anders worden of iets anders maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Hebben when changing an object; zijn when the subject itself changes state. Present: verander / verandert / veranderen. Past: veranderde / veranderden. Perfect: heb veranderd / ben veranderd.",
+    "id": "career-veranderen",
+    "occurrences": [
+      {
+        "cardId": "career-office-027",
+        "form": "verandert"
+      },
+      {
+        "cardId": "career-office-060",
+        "form": "verander"
+      },
+      {
+        "cardId": "career-problems-026",
+        "form": "veranderd"
+      },
+      {
+        "cardId": "career-troubleshooting-010",
+        "form": "verandert"
+      }
+    ]
+  },
+  {
+    "headword": "verdelen",
+    "english": "divide",
+    "explanation": "Een geheel in delen aan verschillende mensen geven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Distribute/divide among people or time slots; inseparable ver-, no ge-. Present: verdeel / verdeelt / verdelen. Past: verdeelde / verdeelden. Perfect: heb verdeeld.",
+    "id": "career-verdelen",
+    "occurrences": [
+      {
+        "cardId": "career-office-031",
+        "form": "verdelen"
+      },
+      {
+        "cardId": "career-priorities-026",
+        "form": "verdelen"
+      },
+      {
+        "cardId": "career-priorities-045",
+        "form": "verdelen"
+      },
+      {
+        "cardId": "career-remote-059",
+        "form": "verdeeld"
+      }
+    ]
+  },
+  {
+    "headword": "verdergaan",
+    "english": "continue",
+    "explanation": "Na een onderbreking opnieuw doorgaan.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: continue; verder te gaan. Present: ga verder / gaat verder / gaan verder. Past: ging verder / gingen verder. Perfect: ben verdergegaan.",
+    "id": "career-verdergaan",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-022",
+        "form": "verdergaan"
+      }
+    ]
+  },
+  {
+    "headword": "verduidelijken",
+    "english": "clarify",
+    "explanation": "Duidelijker uitleggen wat bedoeld wordt.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Clarify; inseparable ver-, no ge-. Present: verduidelijk / verduidelijkt / verduidelijken. Past: verduidelijkte / verduidelijkten. Perfect: heb verduidelijkt.",
+    "id": "career-verduidelijken",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-037",
+        "form": "verduidelijken"
+      },
+      {
+        "cardId": "career-remote-038",
+        "form": "verduidelijken"
+      }
+    ]
+  },
+  {
+    "headword": "verdwijnen",
+    "english": "disappear",
+    "explanation": "Niet meer zichtbaar of aanwezig zijn.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Disappear; zijn in the perfect. Present: verdwijn / verdwijnt / verdwijnen. Past: verdween / verdwenen. Perfect: ben verdwenen.",
+    "id": "career-verdwijnen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-060",
+        "form": "verdwijnt"
+      },
+      {
+        "cardId": "career-problems-031",
+        "form": "verdwijnt"
+      }
+    ]
+  },
+  {
+    "headword": "verhelpen",
+    "english": "remedy",
+    "explanation": "Een fout of storing oplossen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Remedy or resolve, irregular verhielp and verholpen. Present: verhelp / verhelpt / verhelpen. Past: verhielp / verhielpen. Perfect: heb verholpen.",
+    "id": "career-verhelpen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-016",
+        "form": "verholpen"
+      }
+    ]
+  },
+  {
+    "headword": "vermelden",
+    "english": "mention",
+    "explanation": "Informatie uitdrukkelijk in een tekst of gesprek noemen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Mention/quote information; no ge- with ver-. Present: vermeld / vermeldt / vermelden. Past: vermeldde / vermeldden. Perfect: heb vermeld.",
+    "id": "career-vermelden",
+    "occurrences": [
+      {
+        "cardId": "career-changes-010",
+        "form": "vermelden"
+      },
+      {
+        "cardId": "career-remote-006",
+        "form": "vermeld"
+      }
+    ]
+  },
+  {
+    "headword": "verminderen",
+    "english": "reduce",
+    "explanation": "Een hoeveelheid kleiner maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Reduce an object, with hebben. An amount decreasing can instead use zijn. Present: verminder / vermindert / verminderen. Past: verminderde / verminderden. Perfect: heb verminderd.",
+    "id": "career-verminderen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-033",
+        "form": "vermindert"
+      }
+    ]
+  },
+  {
+    "headword": "vernieuwen",
+    "english": "refresh",
+    "explanation": "De inhoud opnieuw laden of iets vernieuwd maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Refresh or renew, no ge- with ver-. Present: vernieuw / vernieuwt / vernieuwen. Past: vernieuwde / vernieuwden. Perfect: heb vernieuwd.",
+    "id": "career-vernieuwen",
+    "occurrences": [
+      {
+        "cardId": "career-problems-037",
+        "form": "vernieuwen"
+      }
+    ]
+  },
+  {
+    "headword": "verplaatsen",
+    "english": "move or reschedule",
+    "explanation": "Een plaats of afgesproken tijd veranderen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Reschedule/move; inseparable ver-, no ge-. Present: verplaats / verplaatst / verplaatsen. Past: verplaatste / verplaatsten. Perfect: heb verplaatst.",
+    "id": "career-verplaatsen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-045",
+        "form": "verplaatsen"
+      },
+      {
+        "cardId": "career-priorities-033",
+        "form": "verplaatsen"
+      },
+      {
+        "cardId": "career-support-026",
+        "form": "verplaatsen"
+      }
+    ]
+  },
+  {
+    "headword": "verschijnen",
+    "english": "appear",
+    "explanation": "Zichtbaar worden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Appear; zijn in the perfect for appearing. Present: verschijn / verschijnt / verschijnen. Past: verscheen / verschenen. Perfect: ben verschenen.",
+    "id": "career-verschijnen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-002",
+        "form": "verschenen"
+      },
+      {
+        "cardId": "career-meetings-014",
+        "form": "verschenen"
+      },
+      {
+        "cardId": "career-problems-008",
+        "form": "verschijnt"
+      },
+      {
+        "cardId": "career-problems-010",
+        "form": "verschijnt"
+      },
+      {
+        "cardId": "career-troubleshooting-014",
+        "form": "verschijnt"
+      },
+      {
+        "cardId": "career-troubleshooting-029",
+        "form": "verschijnt"
+      }
+    ]
+  },
+  {
+    "headword": "verschillen",
+    "english": "differ",
+    "explanation": "Niet hetzelfde zijn.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Verschillen van means differ from. Present: verschil / verschilt / verschillen. Past: verschilde / verschilden. Perfect: heb verschild.",
+    "id": "career-verschillen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-034",
+        "form": "verschilt"
+      },
+      {
+        "cardId": "career-troubleshooting-040",
+        "form": "verschillen"
+      }
+    ]
+  },
+  {
+    "headword": "verschuiven",
+    "english": "shift",
+    "explanation": "Een tijdstip of plaats veranderen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Hebben when moving an object, zijn when the subject itself shifts. Present: verschuif / verschuift / verschuiven. Past: verschoof / verschoven. Perfect: heb verschoven / ben verschoven.",
+    "id": "career-verschuiven",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-038",
+        "form": "verschuiven"
+      }
+    ]
+  },
+  {
+    "headword": "verstaan",
+    "english": "hear clearly",
+    "explanation": "Gesproken woorden goed kunnen horen en herkennen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Hear/understand spoken wording clearly; compare begrijpen for grasping the meaning. Present: versta / verstaat / verstaan. Past: verstond / verstonden. Perfect: heb verstaan.",
+    "id": "career-verstaan",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-003",
+        "form": "verstaan"
+      },
+      {
+        "cardId": "career-clarification-056",
+        "form": "versta"
+      }
+    ]
+  },
+  {
+    "headword": "vertragen",
+    "english": "delay or slow",
+    "explanation": "Zorgen dat iets meer tijd kost.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Delay an object, or become slower in an intransitive use. Present: vertraag / vertraagt / vertragen. Past: vertraagde / vertraagden. Perfect: heb vertraagd.",
+    "id": "career-vertragen",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-030",
+        "form": "vertraagt"
+      },
+      {
+        "cardId": "career-problems-043",
+        "form": "vertraagt"
+      },
+      {
+        "cardId": "career-problems-048",
+        "form": "vertraagd"
+      }
+    ]
+  },
+  {
+    "headword": "verwachten",
+    "english": "expect",
+    "explanation": "Denken dat iets waarschijnlijk zal gebeuren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Expect rather than guarantee, no ge- with ver-. Present: verwacht / verwacht / verwachten. Past: verwachtte / verwachtten. Perfect: heb verwacht.",
+    "id": "career-verwachten",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-007",
+        "form": "verwacht"
+      },
+      {
+        "cardId": "career-remote-045",
+        "form": "verwachten"
+      }
+    ]
+  },
+  {
+    "headword": "verwerken",
+    "english": "process",
+    "explanation": "Gegevens behandelen zodat ze gebruikt kunnen worden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Process information, inseparable ver-. Present: verwerk / verwerkt / verwerken. Past: verwerkte / verwerkten. Perfect: heb verwerkt.",
+    "id": "career-verwerken",
+    "occurrences": [
+      {
+        "cardId": "career-problems-041",
+        "form": "verwerken"
+      }
+    ]
+  },
+  {
+    "headword": "verwijderen",
+    "english": "remove or delete",
+    "explanation": "Iets weghalen uit een bestand of systeem.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Remove/delete; inseparable ver-, no ge-. Present: verwijder / verwijdert / verwijderen. Past: verwijderde / verwijderden. Perfect: heb verwijderd.",
+    "id": "career-verwijderen",
+    "occurrences": [
+      {
+        "cardId": "career-support-058",
+        "form": "verwijderen"
+      },
+      {
+        "cardId": "career-troubleshooting-025",
+        "form": "verwijder"
+      }
+    ]
+  },
+  {
+    "headword": "verwijzen",
+    "english": "refer",
+    "explanation": "Zeggen waar iemand informatie kan vinden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Verwijzen naar means refer to; irregular verwees/verwezen. Present: verwijs / verwijst / verwijzen. Past: verwees / verwezen. Perfect: heb verwezen.",
+    "id": "career-verwijzen",
+    "occurrences": [
+      {
+        "cardId": "career-support-057",
+        "form": "verwijs"
+      }
+    ]
+  },
+  {
+    "headword": "verzamelen",
+    "english": "collect",
+    "explanation": "Verschillende gegevens bij elkaar brengen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Collect or gather, no ge- with ver-. Present: verzamel / verzamelt / verzamelen. Past: verzamelde / verzamelden. Perfect: heb verzameld.",
+    "id": "career-verzamelen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-007",
+        "form": "verzameld"
+      },
+      {
+        "cardId": "career-meetings-004",
+        "form": "verzamelen"
+      },
+      {
+        "cardId": "career-meetings-019",
+        "form": "verzameld"
+      },
+      {
+        "cardId": "career-meetings-057",
+        "form": "verzamelen"
+      }
+    ]
+  },
+  {
+    "headword": "voegen",
+    "english": "attach or add",
+    "explanation": "Iets bij een bericht of document zetten.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Add/join something bij a record or attachment. Present: voeg / voegt / voegen. Past: voegde / voegden. Perfect: heb gevoegd.",
+    "id": "career-voegen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-024",
+        "form": "gevoegd"
+      }
+    ]
+  },
+  {
+    "headword": "voelen",
+    "english": "feel",
+    "explanation": "Een lichamelijke of emotionele toestand ervaren.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Zich voelen describes a state; gevoel is a noun, not a finite verb. Present: voel / voelt / voelen. Past: voelde / voelden. Perfect: heb gevoeld.",
+    "id": "career-voelen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-059",
+        "form": "voel"
+      },
+      {
+        "cardId": "career-office-044",
+        "form": "voel"
+      }
+    ]
+  },
+  {
+    "headword": "volgen",
+    "english": "follow",
+    "explanation": "Een volgorde, instructie of ontwikkeling bijhouden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Follow instructions or a sequence; no preposition needed for its direct object. Present: volg / volgt / volgen. Past: volgde / volgden. Perfect: heb gevolgd.",
+    "id": "career-volgen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-021",
+        "form": "volgt"
+      },
+      {
+        "cardId": "career-clarification-027",
+        "form": "gevolgd"
+      },
+      {
+        "cardId": "career-incidents-057",
+        "form": "volgen"
+      },
+      {
+        "cardId": "career-troubleshooting-013",
+        "form": "volg"
+      }
+    ]
+  },
+  {
+    "headword": "voorkomen",
+    "english": "prevent",
+    "explanation": "Zorgen dat iets niet gebeurt.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Inseparable in the sense prevent. Occur is a different, separable use. Present: voorkom / voorkomt / voorkomen. Past: voorkwam / voorkwamen. Perfect: heb voorkomen.",
+    "id": "career-voorkomen",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-047",
+        "form": "voorkomen"
+      }
+    ]
+  },
+  {
+    "headword": "voorzien",
+    "english": "allow for or provide",
+    "explanation": "In een planning tijd of middelen beschikbaar maken.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Allow for or provide, common in Belgian workplace Dutch. Inseparable in this meaning. Present: voorzie / voorziet / voorzien. Past: voorzag / voorzagen. Perfect: heb voorzien.",
+    "id": "career-voorzien",
+    "occurrences": [
+      {
+        "cardId": "career-changes-049",
+        "form": "voorzien"
+      }
+    ]
+  },
+  {
+    "headword": "wegnemen",
+    "english": "remove",
+    "explanation": "Een oorzaak of blokkade laten verdwijnen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: remove an obstacle, weg te nemen. Present: neem weg / neemt weg / nemen weg. Past: nam weg / namen weg. Perfect: heb weggenomen.",
+    "id": "career-wegnemen",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-032",
+        "form": "neemt"
+      },
+      {
+        "cardId": "career-meetings-029",
+        "form": "wegnemen"
+      }
+    ]
+  },
+  {
+    "headword": "wegvallen",
+    "english": "drop out",
+    "explanation": "Plotseling niet meer beschikbaar zijn.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: sound/connection drops out; weg te vallen, perfect with zijn in this sense. Present: val weg / valt weg / vallen weg. Past: viel weg / vielen weg. Perfect: is weggevallen.",
+    "id": "career-wegvallen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-006",
+        "form": "valt"
+      },
+      {
+        "cardId": "career-problems-007",
+        "form": "weggevallen"
+      },
+      {
+        "cardId": "career-problems-034",
+        "form": "valt"
+      }
+    ]
+  },
+  {
+    "headword": "wijzigen",
+    "english": "modify",
+    "explanation": "Een instelling of tekst aanpassen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Change or modify, distinct from merely checking a value. Present: wijzig / wijzigt / wijzigen. Past: wijzigde / wijzigden. Perfect: heb gewijzigd.",
+    "id": "career-wijzigen",
+    "occurrences": [
+      {
+        "cardId": "career-changes-011",
+        "form": "wijzigen"
+      },
+      {
+        "cardId": "career-troubleshooting-008",
+        "form": "wijzigen"
+      }
+    ]
+  },
+  {
+    "headword": "worden",
+    "english": "become",
+    "explanation": "In een nieuwe toestand komen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Become in a change of state. Passive worden plus participle is a different construction. Present: word / wordt / worden. Past: werd / werden. Perfect: ben geworden.",
+    "id": "career-worden",
+    "occurrences": [
+      {
+        "cardId": "career-changes-040",
+        "form": "worden"
+      },
+      {
+        "cardId": "career-remote-028",
+        "form": "worden"
+      }
+    ]
+  },
+  {
+    "headword": "zeggen",
+    "english": "say",
+    "explanation": "Met woorden iets meedelen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Zeggen dat reports content; say something to someone can use tegen. Present: zeg / zegt / zeggen. Past: zei / zeiden. Perfect: heb gezegd.",
+    "id": "career-zeggen",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-001",
+        "form": "zeggen"
+      },
+      {
+        "cardId": "career-clarification-008",
+        "form": "zei"
+      },
+      {
+        "cardId": "career-clarification-020",
+        "form": "zegt"
+      }
+    ]
+  },
+  {
+    "headword": "zetten",
+    "english": "put",
+    "explanation": "Iets op een plaats of in een overzicht brengen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Put/place; singular and plural past are zette/zetten. Present: zet / zet / zetten. Past: zette / zetten. Perfect: heb gezet.",
+    "id": "career-zetten",
+    "occurrences": [
+      {
+        "cardId": "career-clarification-039",
+        "form": "gezet"
+      },
+      {
+        "cardId": "career-incidents-059",
+        "form": "zetten"
+      },
+      {
+        "cardId": "career-office-026",
+        "form": "gezet"
+      },
+      {
+        "cardId": "career-remote-004",
+        "form": "zetten"
+      },
+      {
+        "cardId": "career-remote-047",
+        "form": "zetten"
+      },
+      {
+        "cardId": "career-remote-056",
+        "form": "gezet"
+      },
+      {
+        "cardId": "career-troubleshooting-033",
+        "form": "zetten"
+      }
+    ]
+  },
+  {
+    "headword": "zien",
+    "english": "see",
+    "explanation": "Met je ogen waarnemen.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "See; laten zien means show, with a bare infinitive. Present: zie / ziet / zien. Past: zag / zagen. Perfect: heb gezien.",
+    "id": "career-zien",
+    "occurrences": [
+      {
+        "cardId": "career-changes-033",
+        "form": "gezien"
+      },
+      {
+        "cardId": "career-clarification-028",
+        "form": "zag"
+      },
+      {
+        "cardId": "career-meetings-038",
+        "form": "zien"
+      },
+      {
+        "cardId": "career-problems-004",
+        "form": "zie"
+      },
+      {
+        "cardId": "career-problems-015",
+        "form": "ziet"
+      },
+      {
+        "cardId": "career-problems-021",
+        "form": "zag"
+      },
+      {
+        "cardId": "career-support-009",
+        "form": "zie"
+      },
+      {
+        "cardId": "career-support-012",
+        "form": "ziet"
+      },
+      {
+        "cardId": "career-support-034",
+        "form": "ziet"
+      },
+      {
+        "cardId": "career-troubleshooting-037",
+        "form": "zie"
+      }
+    ]
+  },
+  {
+    "headword": "zitten",
+    "english": "sit or be situated",
+    "explanation": "Zich op een plaats of in een bepaalde toestand bevinden.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Irregular zat / zaten / gezeten. De planning zit vol means the schedule is full. Present: zit / zit / zitten. Past: zat / zaten. Perfect: heb gezeten.",
+    "id": "career-zitten",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-020",
+        "form": "zit"
+      },
+      {
+        "cardId": "career-priorities-041",
+        "form": "zit"
+      }
+    ]
+  },
+  {
+    "headword": "instelling",
+    "english": "setting",
+    "explanation": "Een gekozen waarde die bepaalt hoe een functie werkt.",
+    "type": "noun",
+    "article": "de",
+    "plural": "instellingen",
+    "details": "An individual setting, not a complete configuration.",
+    "id": "career-instelling",
+    "occurrences": [
+      {
+        "cardId": "career-changes-011",
+        "form": "instelling"
+      },
+      {
+        "cardId": "career-changes-056",
+        "form": "instelling"
+      },
+      {
+        "cardId": "career-problems-026",
+        "form": "instellingen"
+      },
+      {
+        "cardId": "career-troubleshooting-004",
+        "form": "instellingen"
+      },
+      {
+        "cardId": "career-troubleshooting-009",
+        "form": "instellingen"
+      }
+    ]
+  },
+  {
+    "headword": "toestemming",
+    "english": "permission",
+    "explanation": "Een akkoord dat iemand iets mag doen.",
+    "type": "noun",
+    "article": "de",
+    "plural": "",
+    "details": "Permission is distinct from technical ability.",
+    "id": "career-toestemming",
+    "occurrences": [
+      {
+        "cardId": "career-changes-012",
+        "form": "toestemming"
+      },
+      {
+        "cardId": "career-changes-015",
+        "form": "toestemming"
+      },
+      {
+        "cardId": "career-clarification-018",
+        "form": "toestemming"
+      },
+      {
+        "cardId": "career-clarification-041",
+        "form": "toestemming"
+      },
+      {
+        "cardId": "career-meetings-028",
+        "form": "toestemming"
+      }
+    ]
+  },
+  {
+    "headword": "blokkade",
+    "english": "blocker",
+    "explanation": "Iets waardoor een taak niet verder kan.",
+    "type": "noun",
+    "article": "de",
+    "plural": "blokkades",
+    "details": "A practical obstacle to progress.",
+    "id": "career-blokkade",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-010",
+        "form": "blokkades"
+      },
+      {
+        "cardId": "career-meetings-025",
+        "form": "blokkade"
+      },
+      {
+        "cardId": "career-meetings-029",
+        "form": "blokkade"
+      }
+    ]
+  },
+  {
+    "headword": "prioriteit",
+    "english": "priority",
+    "explanation": "Hoe belangrijk of dringend een taak is tegenover andere taken.",
+    "type": "noun",
+    "article": "de",
+    "plural": "prioriteiten",
+    "details": "Higher priority changes task order.",
+    "id": "career-prioriteit",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-001",
+        "form": "prioriteit"
+      }
+    ]
+  },
+  {
+    "headword": "schatting",
+    "english": "estimate",
+    "explanation": "Een zo goed mogelijke inschatting van tijd of hoeveelheid.",
+    "type": "noun",
+    "article": "de",
+    "plural": "schattingen",
+    "details": "An estimate is not a guaranteed completion time.",
+    "id": "career-schatting",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-015",
+        "form": "schatting"
+      },
+      {
+        "cardId": "career-priorities-019",
+        "form": "schatting"
+      },
+      {
+        "cardId": "career-priorities-039",
+        "form": "schatting"
+      }
+    ]
+  },
+  {
+    "headword": "leverancier",
+    "english": "supplier",
+    "explanation": "Een persoon of bedrijf dat iets levert.",
+    "type": "noun",
+    "article": "de",
+    "plural": "leveranciers",
+    "details": "A supplier may be external to the team.",
+    "id": "career-leverancier",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-026",
+        "form": "leverancier"
+      },
+      {
+        "cardId": "career-priorities-057",
+        "form": "leverancier"
+      }
+    ]
+  },
+  {
+    "headword": "levering",
+    "english": "delivery",
+    "explanation": "Het brengen of beschikbaar stellen van iets dat besteld is.",
+    "type": "noun",
+    "article": "de",
+    "plural": "leveringen",
+    "details": "Scheduled and received delivery are different states.",
+    "id": "career-levering",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-035",
+        "form": "levering"
+      },
+      {
+        "cardId": "career-priorities-052",
+        "form": "levering"
+      },
+      {
+        "cardId": "career-priorities-056",
+        "form": "levering"
+      },
+      {
+        "cardId": "career-problems-048",
+        "form": "levering"
+      }
+    ]
+  },
+  {
+    "headword": "besluit",
+    "english": "decision",
+    "explanation": "Een keuze die na overleg is gemaakt.",
+    "type": "noun",
+    "article": "het",
+    "plural": "besluiten",
+    "details": "A decision is more definite than a proposal.",
+    "id": "career-besluit",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-042",
+        "form": "besluit"
+      },
+      {
+        "cardId": "career-meetings-043",
+        "form": "besluit"
+      },
+      {
+        "cardId": "career-meetings-047",
+        "form": "besluit"
+      }
+    ]
+  },
+  {
+    "headword": "actielijst",
+    "english": "action list",
+    "explanation": "Een overzicht van taken die iemand nog moet uitvoeren.",
+    "type": "noun",
+    "article": "de",
+    "plural": "actielijsten",
+    "details": "Record an owner and timing for each action.",
+    "id": "career-actielijst",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-051",
+        "form": "actielijst"
+      }
+    ]
+  },
+  {
+    "headword": "eigenaar",
+    "english": "owner",
+    "explanation": "De persoon die verantwoordelijk is voor een taak of systeem.",
+    "type": "noun",
+    "article": "de",
+    "plural": "eigenaars",
+    "details": "Workplace ownership, not necessarily legal property.",
+    "id": "career-eigenaar",
+    "occurrences": [
+      {
+        "cardId": "career-changes-016",
+        "form": "eigenaar"
+      },
+      {
+        "cardId": "career-changes-020",
+        "form": "eigenaar"
+      },
+      {
+        "cardId": "career-changes-054",
+        "form": "eigenaar"
+      },
+      {
+        "cardId": "career-clarification-018",
+        "form": "eigenaar"
+      },
+      {
+        "cardId": "career-meetings-054",
+        "form": "eigenaar"
+      },
+      {
+        "cardId": "career-meetings-056",
+        "form": "eigenaar"
+      },
+      {
+        "cardId": "career-meetings-059",
+        "form": "eigenaar"
+      }
+    ]
+  },
+  {
+    "headword": "incident",
+    "english": "incident",
+    "explanation": "Een gebeurtenis die de normale werking van een dienst verstoort.",
+    "type": "noun",
+    "article": "het",
+    "plural": "incidenten",
+    "details": "A service disruption requiring coordination.",
+    "id": "career-incident",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-004",
+        "form": "incident"
+      },
+      {
+        "cardId": "career-incidents-008",
+        "form": "incident"
+      },
+      {
+        "cardId": "career-incidents-016",
+        "form": "incident"
+      },
+      {
+        "cardId": "career-incidents-022",
+        "form": "incident"
+      },
+      {
+        "cardId": "career-incidents-041",
+        "form": "incident"
+      },
+      {
+        "cardId": "career-incidents-051",
+        "form": "incident"
+      },
+      {
+        "cardId": "career-incidents-056",
+        "form": "incident"
+      }
+    ]
+  },
+  {
+    "headword": "onderbreking",
+    "english": "interruption",
+    "explanation": "Een periode waarin iets tijdelijk stopt.",
+    "type": "noun",
+    "article": "de",
+    "plural": "onderbrekingen",
+    "details": "Can be planned or unexpected.",
+    "id": "career-onderbreking",
+    "occurrences": [
+      {
+        "cardId": "career-changes-018",
+        "form": "onderbreking"
+      },
+      {
+        "cardId": "career-changes-043",
+        "form": "onderbreking"
+      },
+      {
+        "cardId": "career-incidents-001",
+        "form": "onderbreking"
+      }
+    ]
+  },
+  {
+    "headword": "omweg",
+    "english": "workaround",
+    "explanation": "Een andere manier om tijdelijk verder te kunnen.",
+    "type": "noun",
+    "article": "de",
+    "plural": "omwegen",
+    "details": "A workaround need not remove the underlying cause.",
+    "id": "career-omweg",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-032",
+        "form": "omweg"
+      },
+      {
+        "cardId": "career-incidents-035",
+        "form": "omweg"
+      },
+      {
+        "cardId": "career-incidents-037",
+        "form": "omweg"
+      },
+      {
+        "cardId": "career-incidents-040",
+        "form": "omweg"
+      },
+      {
+        "cardId": "career-problems-060",
+        "form": "omweg"
+      }
+    ]
+  },
+  {
+    "headword": "herstel",
+    "english": "recovery",
+    "explanation": "Het weer bruikbaar maken van een dienst of systeem.",
+    "type": "noun",
+    "article": "het",
+    "plural": "",
+    "details": "Recovery is separate from knowing the cause.",
+    "id": "career-herstel",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-053",
+        "form": "herstel"
+      },
+      {
+        "cardId": "career-incidents-059",
+        "form": "herstel"
+      }
+    ]
+  },
+  {
+    "headword": "nacontrole",
+    "english": "post-change check",
+    "explanation": "Een controle na een handeling of wijziging.",
+    "type": "noun",
+    "article": "de",
+    "plural": "nacontroles",
+    "details": "Checks the resulting state rather than preparation.",
+    "id": "career-nacontrole",
+    "occurrences": [
+      {
+        "cardId": "career-changes-049",
+        "form": "nacontrole"
+      },
+      {
+        "cardId": "career-changes-055",
+        "form": "nacontrole"
+      },
+      {
+        "cardId": "career-incidents-056",
+        "form": "nacontrole"
+      }
+    ]
+  },
+  {
+    "headword": "overname",
+    "english": "takeover",
+    "explanation": "Het aannemen van een taak of verantwoordelijkheid van iemand anders.",
+    "type": "noun",
+    "article": "de",
+    "plural": "overnames",
+    "details": "Requires confirmation, not merely a sent message.",
+    "id": "career-overname",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-049",
+        "form": "overname"
+      },
+      {
+        "cardId": "career-incidents-050",
+        "form": "overname"
+      },
+      {
+        "cardId": "career-priorities-028",
+        "form": "overname"
+      }
+    ]
+  },
+  {
+    "headword": "ploeg",
+    "english": "shift team",
+    "explanation": "Een groep mensen die tijdens dezelfde periode werkt.",
+    "type": "noun",
+    "article": "de",
+    "plural": "ploegen",
+    "details": "A group of workers, not the time period alone.",
+    "id": "career-ploeg",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-043",
+        "form": "ploeg"
+      }
+    ]
+  },
+  {
+    "headword": "wachtrij",
+    "english": "queue",
+    "explanation": "Een reeks aanvragen die op behandeling wachten.",
+    "type": "noun",
+    "article": "de",
+    "plural": "wachtrijen",
+    "details": "A shrinking queue is an observation, not proof of full recovery.",
+    "id": "career-wachtrij",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-018",
+        "form": "wachtrij"
+      }
+    ]
+  },
+  {
+    "headword": "logbestand",
+    "english": "log file",
+    "explanation": "Een bestand waarin gebeurtenissen van een systeem staan.",
+    "type": "noun",
+    "article": "het",
+    "plural": "logbestanden",
+    "details": "Log evidence must be interpreted rather than assumed conclusive.",
+    "id": "career-logbestand",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-051",
+        "form": "logbestanden"
+      }
+    ]
+  },
+  {
+    "headword": "foutcode",
+    "english": "error code",
+    "explanation": "Een code waarmee een systeem een fout aanduidt.",
+    "type": "noun",
+    "article": "de",
+    "plural": "foutcodes",
+    "details": "Copy the exact code for diagnosis.",
+    "id": "career-foutcode",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-024",
+        "form": "foutcode"
+      },
+      {
+        "cardId": "career-troubleshooting-014",
+        "form": "foutcode"
+      },
+      {
+        "cardId": "career-troubleshooting-033",
+        "form": "foutcodes"
+      },
+      {
+        "cardId": "career-troubleshooting-052",
+        "form": "foutcode"
+      }
+    ]
+  },
+  {
+    "headword": "waarschuwing",
+    "english": "warning",
+    "explanation": "Een melding die op een mogelijk probleem wijst.",
+    "type": "noun",
+    "article": "de",
+    "plural": "waarschuwingen",
+    "details": "A warning is not always a confirmed outage.",
+    "id": "career-waarschuwing",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-002",
+        "form": "waarschuwing"
+      },
+      {
+        "cardId": "career-troubleshooting-029",
+        "form": "waarschuwing"
+      }
+    ]
+  },
+  {
+    "headword": "verbinding",
+    "english": "connection",
+    "explanation": "Een koppeling waardoor apparaten of mensen gegevens uitwisselen.",
+    "type": "noun",
+    "article": "de",
+    "plural": "verbindingen",
+    "details": "Technical connection in these cards.",
+    "id": "career-verbinding",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-005",
+        "form": "verbinding"
+      },
+      {
+        "cardId": "career-incidents-012",
+        "form": "verbinding"
+      },
+      {
+        "cardId": "career-incidents-043",
+        "form": "verbinding"
+      },
+      {
+        "cardId": "career-problems-007",
+        "form": "verbinding"
+      },
+      {
+        "cardId": "career-problems-040",
+        "form": "verbinding"
+      },
+      {
+        "cardId": "career-support-040",
+        "form": "verbinding"
+      },
+      {
+        "cardId": "career-troubleshooting-041",
+        "form": "verbinding"
+      },
+      {
+        "cardId": "career-troubleshooting-053",
+        "form": "verbinding"
+      }
+    ]
+  },
+  {
+    "headword": "toestel",
+    "english": "device",
+    "explanation": "Een apparaat waarmee iemand werkt.",
+    "type": "noun",
+    "article": "het",
+    "plural": "toestellen",
+    "details": "Common Belgian Dutch for a device.",
+    "id": "career-toestel",
+    "occurrences": [
+      {
+        "cardId": "career-priorities-052",
+        "form": "toestel"
+      },
+      {
+        "cardId": "career-support-016",
+        "form": "toestel"
+      },
+      {
+        "cardId": "career-support-024",
+        "form": "toestel"
+      },
+      {
+        "cardId": "career-troubleshooting-017",
+        "form": "toestel"
+      },
+      {
+        "cardId": "career-troubleshooting-031",
+        "form": "toestel"
+      }
+    ]
+  },
+  {
+    "headword": "configuratie",
+    "english": "configuration",
+    "explanation": "De verzameling instellingen van een systeem.",
+    "type": "noun",
+    "article": "de",
+    "plural": "configuraties",
+    "details": "Copy the previous configuration before an authorised change.",
+    "id": "career-configuratie",
+    "occurrences": [
+      {
+        "cardId": "career-changes-026",
+        "form": "configuratie"
+      },
+      {
+        "cardId": "career-changes-059",
+        "form": "configuratie"
+      }
+    ]
+  },
+  {
+    "headword": "tijdvenster",
+    "english": "time window",
+    "explanation": "Een afgesproken periode waarin een handeling mag gebeuren.",
+    "type": "noun",
+    "article": "het",
+    "plural": "tijdvensters",
+    "details": "Includes an end time, not an unlimited approval.",
+    "id": "career-tijdvenster",
+    "occurrences": [
+      {
+        "cardId": "career-changes-042",
+        "form": "tijdvenster"
+      }
+    ]
+  },
+  {
+    "headword": "testgegevens",
+    "english": "test data",
+    "explanation": "Gegevens die bedoeld zijn om een systeem te testen.",
+    "type": "noun",
+    "article": "de",
+    "plural": "",
+    "details": "Plural noun, not necessarily real customer data.",
+    "id": "career-testgegevens",
+    "occurrences": [
+      {
+        "cardId": "career-changes-021",
+        "form": "testgegevens"
+      },
+      {
+        "cardId": "career-clarification-026",
+        "form": "testgegevens"
+      }
+    ]
+  },
+  {
+    "headword": "testaccount",
+    "english": "test account",
+    "explanation": "Een account dat voor controles en proeven wordt gebruikt.",
+    "type": "noun",
+    "article": "het",
+    "plural": "testaccounts",
+    "details": "Distinct from a user's everyday account.",
+    "id": "career-testaccount",
+    "occurrences": [
+      {
+        "cardId": "career-changes-004",
+        "form": "testaccount"
+      },
+      {
+        "cardId": "career-changes-027",
+        "form": "testaccount"
+      },
+      {
+        "cardId": "career-meetings-012",
+        "form": "testaccounts"
+      },
+      {
+        "cardId": "career-meetings-022",
+        "form": "testaccount"
+      }
+    ]
+  },
+  {
+    "headword": "randvoorwaarde",
+    "english": "precondition",
+    "explanation": "Een voorwaarde waaraan vooraf voldaan moet zijn.",
+    "type": "noun",
+    "article": "de",
+    "plural": "randvoorwaarden",
+    "details": "Needed before the activity starts.",
+    "id": "career-randvoorwaarde",
+    "occurrences": [
+      {
+        "cardId": "career-changes-029",
+        "form": "randvoorwaarden"
+      }
+    ]
+  },
+  {
+    "headword": "stopcriterium",
+    "english": "stopping criterion",
+    "explanation": "Een afgesproken grens waarbij een test moet stoppen.",
+    "type": "noun",
+    "article": "het",
+    "plural": "stopcriteria",
+    "details": "Irregular plural criteria.",
+    "id": "career-stopcriterium",
+    "occurrences": [
+      {
+        "cardId": "career-changes-030",
+        "form": "stopcriteria"
+      }
+    ]
+  },
+  {
+    "headword": "beginsituatie",
+    "english": "initial state",
+    "explanation": "De toestand voordat een test of wijziging begint.",
+    "type": "noun",
+    "article": "de",
+    "plural": "beginsituaties",
+    "details": "A baseline for later comparison.",
+    "id": "career-beginsituatie",
+    "occurrences": [
+      {
+        "cardId": "career-changes-023",
+        "form": "beginsituatie"
+      },
+      {
+        "cardId": "career-changes-034",
+        "form": "beginsituatie"
+      }
+    ]
+  },
+  {
+    "headword": "afwijking",
+    "english": "deviation",
+    "explanation": "Een verschil met wat afgesproken of verwacht is.",
+    "type": "noun",
+    "article": "de",
+    "plural": "afwijkingen",
+    "details": "Record the observation before diagnosing a cause.",
+    "id": "career-afwijking",
+    "occurrences": [
+      {
+        "cardId": "career-changes-037",
+        "form": "afwijking"
+      }
+    ]
+  },
+  {
+    "headword": "waarneming",
+    "english": "observation",
+    "explanation": "Wat iemand zelf ziet, hoort of meet.",
+    "type": "noun",
+    "article": "de",
+    "plural": "waarnemingen",
+    "details": "Different from a hypothesis explaining it.",
+    "id": "career-waarneming",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-009",
+        "form": "waarnemingen"
+      }
+    ]
+  },
+  {
+    "headword": "bijlage",
+    "english": "attachment",
+    "explanation": "Een bestand dat bij een bericht wordt meegestuurd.",
+    "type": "noun",
+    "article": "de",
+    "plural": "bijlagen",
+    "details": "An attached draft is not automatically the final version.",
+    "id": "career-bijlage",
+    "occurrences": [
+      {
+        "cardId": "career-problems-032",
+        "form": "bijlage"
+      },
+      {
+        "cardId": "career-troubleshooting-018",
+        "form": "bijlage"
+      }
+    ]
+  },
+  {
+    "headword": "koppeling",
+    "english": "link",
+    "explanation": "Een verwijzing waarmee je een pagina of bestand kunt openen.",
+    "type": "noun",
+    "article": "de",
+    "plural": "koppelingen",
+    "details": "Sharing a link does not grant new permissions.",
+    "id": "career-koppeling",
+    "occurrences": [
+      {
+        "cardId": "career-remote-018",
+        "form": "koppeling"
+      },
+      {
+        "cardId": "career-remote-023",
+        "form": "koppeling"
+      },
+      {
+        "cardId": "career-remote-024",
+        "form": "koppeling"
+      }
+    ]
+  },
+  {
+    "headword": "ontvangst",
+    "english": "receipt",
+    "explanation": "Het krijgen van een bericht of bestand.",
+    "type": "noun",
+    "article": "de",
+    "plural": "",
+    "details": "Does not imply reading, understanding or approval.",
+    "id": "career-ontvangst",
+    "occurrences": [
+      {
+        "cardId": "career-remote-037",
+        "form": "ontvangst"
+      }
+    ]
+  },
+  {
+    "headword": "leesbevestiging",
+    "english": "read receipt",
+    "explanation": "Een melding dat een bericht is geopend of gelezen.",
+    "type": "noun",
+    "article": "de",
+    "plural": "leesbevestigingen",
+    "details": "Not an agreement to act.",
+    "id": "career-leesbevestiging",
+    "occurrences": [
+      {
+        "cardId": "career-remote-032",
+        "form": "leesbevestiging"
+      }
+    ]
+  },
+  {
+    "headword": "bereikbaarheid",
+    "english": "contactability",
+    "explanation": "De mogelijkheid om contact met iemand te krijgen.",
+    "type": "noun",
+    "article": "de",
+    "plural": "",
+    "details": "Different from having free time to perform work.",
+    "id": "career-bereikbaarheid",
+    "occurrences": [
+      {
+        "cardId": "career-office-060",
+        "form": "bereikbaarheid"
+      },
+      {
+        "cardId": "career-remote-056",
+        "form": "bereikbaarheid"
+      }
+    ]
+  },
+  {
+    "headword": "afwezigheid",
+    "english": "absence",
+    "explanation": "Een periode waarin iemand niet aanwezig of beschikbaar is.",
+    "type": "noun",
+    "article": "de",
+    "plural": "afwezigheden",
+    "details": "Arrange cover when absence affects ownership.",
+    "id": "career-afwezigheid",
+    "occurrences": [
+      {
+        "cardId": "career-remote-057",
+        "form": "afwezigheid"
+      }
+    ]
+  },
+  {
+    "headword": "namiddag",
+    "english": "afternoon",
+    "explanation": "Het deel van de dag na de middag.",
+    "type": "noun",
+    "article": "de",
+    "plural": "namiddagen",
+    "details": "Common standard Belgian Dutch.",
+    "id": "career-namiddag",
+    "occurrences": [
+      {
+        "cardId": "career-remote-012",
+        "form": "namiddag"
+      },
+      {
+        "cardId": "career-support-026",
+        "form": "namiddag"
+      }
+    ]
+  },
+  {
+    "headword": "ondersteuning",
+    "english": "support",
+    "explanation": "Hulp bij het gebruik van systemen of bij het werk.",
+    "type": "noun",
+    "article": "de",
+    "plural": "",
+    "details": "A function, not necessarily one named team.",
+    "id": "career-ondersteuning",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-038",
+        "form": "ondersteuning"
+      },
+      {
+        "cardId": "career-remote-019",
+        "form": "ondersteuning"
+      }
+    ]
+  },
+  {
+    "headword": "beheerder",
+    "english": "administrator",
+    "explanation": "Iemand die een systeem of de toegang ertoe beheert.",
+    "type": "noun",
+    "article": "de",
+    "plural": "beheerders",
+    "details": "An administrator may grant rights but still needs relevant approval.",
+    "id": "career-beheerder",
+    "occurrences": [
+      {
+        "cardId": "career-changes-005",
+        "form": "beheerder"
+      },
+      {
+        "cardId": "career-changes-060",
+        "form": "beheerder"
+      },
+      {
+        "cardId": "career-meetings-021",
+        "form": "beheerder"
+      }
+    ]
+  },
+  {
+    "headword": "afspreken",
+    "english": "agree on an action",
+    "explanation": "Samen bepalen wat iemand gaat doen of welke regel geldt.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Separable: spreek af, afgesproken. This sense concerns agreeing an action or rule, rather than arranging when and where to meet. Present: spreek af / spreekt af / spreken af. Past: sprak af / spraken af. Perfect: heb afgesproken.",
+    "id": "career-afspreken-agreement",
+    "occurrences": [
+      {
+        "cardId": "career-meetings-041",
+        "form": "afgesproken"
+      },
+      {
+        "cardId": "career-remote-020",
+        "form": "afspreken"
+      },
+      {
+        "cardId": "career-remote-058",
+        "form": "spreken af"
+      }
+    ]
+  },
+  {
+    "headword": "dienst",
+    "english": "shift",
+    "explanation": "Een afgesproken periode waarin iemand werkt.",
+    "type": "noun",
+    "article": "de",
+    "plural": "diensten",
+    "details": "Work-shift sense, distinct from a professional service. De avonddienst is an evening shift.",
+    "id": "career-dienst-shift",
+    "occurrences": [
+      {
+        "cardId": "career-incidents-041",
+        "form": "dienst"
+      },
+      {
+        "cardId": "career-incidents-049",
+        "form": "dienst"
+      },
+      {
+        "cardId": "career-meetings-006",
+        "form": "avonddienst"
+      },
+      {
+        "cardId": "career-office-030",
+        "form": "dienst"
+      }
+    ]
+  },
+  {
+    "headword": "liggen",
+    "english": "be due to or be with",
+    "explanation": "Een mogelijke oorzaak of plaats van een probleem aangeven.",
+    "type": "verb",
+    "article": "",
+    "plural": "",
+    "details": "Het probleem ligt aan de verbinding gives a possible source of the problem, not a physical lying position. Present: lig / ligt / liggen. Past: lag / lagen. Perfect: heb gelegen.",
+    "id": "career-liggen-aan",
+    "occurrences": [
+      {
+        "cardId": "career-troubleshooting-041",
+        "form": "ligt"
       }
     ]
   }

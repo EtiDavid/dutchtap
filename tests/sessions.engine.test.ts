@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CARDS, CATEGORIES, newReview, rateLevel, type Level } from '@/lib/flashcards/engine';
+import { EVERYDAY_CARDS as CARDS, CATEGORIES, newReview, rateLevel, type Level } from '@/lib/flashcards/engine';
 import {
   applyAction, applyActions, checkCreation, createSession, defaultSessionName, eligibleIds, isComplete, levelAvailability, levelCounts,
   pickQuizCard, pickSpeakingCard, practiseAgain, quizDrawWeight, retired, sessionStats, unfinished,

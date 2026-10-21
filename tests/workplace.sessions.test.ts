@@ -36,6 +36,7 @@ describe('collection selection and compatibility', () => {
     expect(parsed.cards).toEqual(old.cards);expect(parsed.cardIds).toEqual(old.cardIds);
     expect(sessionSchema.safeParse({...fresh(),collection:'everyday'}).success).toBe(false);
     expect(sessionSchema.safeParse({...fresh(),lang:'fr'}).success).toBe(false);
+    expect(sessionSchema.safeParse({...fresh(),topic:'incidents'}).success).toBe(false);
     expect(practiseAgain(fresh()).collection).toBe('workplace');
   });
 });
@@ -64,5 +65,26 @@ describe('existing learning rules on workplace content', () => {
     const result=applyAction(saved,action);expect(result.session.quiz.points).toBe(10);
     expect(applyAction(result.session,action).session.quiz.points).toBe(10);
     expect(result.session.cardIds).toEqual(s.cardIds);
+  });
+});
+
+describe('workplace server and offline replay',()=>{
+  it('retains collection, selected model and draft when an offline account reloads and a lost response is replayed',async()=>{
+    const {FakeServer,MemoryStorage}=await import('./helpers/fakeServer');
+    const {SessionStore}=await import('@/lib/sessions/store');
+    const server=new FakeServer(),storage=new MemoryStorage();
+    const options={scope:{kind:'user' as const,username:'anna'},storage,fetch:server.fetch,now:()=>NOW,timers:{set:()=>0,clear:()=>{}}};
+    let store=new SessionStore(options);await store.start();const s=fresh();store.create(s);await store.sync();server.online=false;
+    store.dispatch(s.id,{type:'quiz/open',cardId:s.cardIds[0],attemptId:uid('attempt'),tokenOrder:['t0'],rotateAnswers:true});
+    const initial=store.get(s.id)!;
+    store.dispatch(s.id,{type:'quiz/draft',attemptId:initial.quiz.current!.attemptId,answer:['t0']});store.dispose();
+    store=new SessionStore(options);await store.start();const restored=store.get(s.id)!;
+    expect(restored.collection).toBe('workplace');expect(restored.quiz.current!.answerId).toBe(initial.quiz.current!.answerId);expect(restored.quiz.current!.answer).toEqual(['t0']);
+    const {quizModel}=await import('@/lib/sessions/engine');
+    store.dispatch(s.id,{type:'quiz/submit',attemptId:restored.quiz.current!.attemptId,answer:sentenceTokens(quizModel(restored)!.text).map((_,i)=>tokenId(i))});
+    server.online=true;server.dropResponses=1;await store.sync();await store.sync();
+    const other=new SessionStore({...options,storage:new MemoryStorage()});await other.start();const persisted=other.get(s.id)!;
+    expect(persisted.collection).toBe('workplace');expect(persisted.cardIds).toEqual(s.cardIds);expect(persisted.quiz.points).toBe(10);expect(persisted.quizReview).toHaveLength(1);expect(persisted.cards[s.cardIds[0]].qCorrect).toBe(1);
+    store.dispose();other.dispose();
   });
 });

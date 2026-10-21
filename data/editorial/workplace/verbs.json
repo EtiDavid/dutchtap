@@ -6,7 +6,7 @@
     "was",
     "waren",
     "ben geweest",
-    "State or identity; zijn is irregular."
+    "Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction."
   ],
   "hebben": [
     "heb",
@@ -15,7 +15,7 @@
     "had",
     "hadden",
     "heb gehad",
-    "Possession or auxiliary; hebben is irregular."
+    "Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction."
   ],
   "werken": [
     "werk",
@@ -383,8 +383,8 @@
     "loggen in",
     "logde in",
     "logden in",
-    "ben ingelogd",
-    "Separable: inloggen, log in, in te loggen, ingelogd. A login action is distinct from holding access rights."
+    "heb ingelogd / ben ingelogd",
+    "Separable: log in, in te loggen, ingelogd. Heb ingelogd reports a login action; ben ingelogd can describe the resulting signed-in state. Neither implies access to every resource."
   ],
   "aanmelden": [
     "meld aan",
@@ -888,7 +888,7 @@
     "reageerde",
     "reageerden",
     "heb gereageerd",
-    "Reageren op a message/request; may mean respond rather than solve."
+    "Reageren op names the trigger or message being answered."
   ],
   "aanpassen": [
     "pas aan",
@@ -950,8 +950,8 @@
     "herstarten",
     "herstartte",
     "herstartten",
-    "heb herstart / ben herstart",
-    "Inseparable her-: herstart. Hebben with an object; zijn for a system that restarted."
+    "heb herstart",
+    "Restart an object, no ge- with her-."
   ],
   "herstellen": [
     "herstel",
@@ -996,7 +996,7 @@
     "ontbrak",
     "ontbraken",
     "heeft ontbroken",
-    "An item is missing: er ontbreekt informatie; no added ge-."
+    "Be missing, with the missing item as grammatical subject."
   ],
   "afronden": [
     "rond af",
@@ -1780,5 +1780,1004 @@
     "kwamen terug",
     "ben teruggekomen",
     "Separable: return/recur; terug te komen."
+  ],
+  "knipperen": [
+    "knipper",
+    "knippert",
+    "knipperen",
+    "knipperde",
+    "knipperden",
+    "heeft geknipperd",
+    "A light flashes or blinks, rather than a person giving an answer."
+  ],
+  "laden": [
+    "laad",
+    "laadt",
+    "laden",
+    "laadde",
+    "laadden",
+    "heb geladen",
+    "Load data or charge a battery according to the object."
+  ],
+  "uitvallen": [
+    "val uit",
+    "valt uit",
+    "vallen uit",
+    "viel uit",
+    "vielen uit",
+    "is uitgevallen",
+    "Separable: a device or service fails, with zijn in this sense."
+  ],
+  "vastlopen": [
+    "loop vast",
+    "loopt vast",
+    "lopen vast",
+    "liep vast",
+    "liepen vast",
+    "is vastgelopen",
+    "Separable: a process freezes or gets stuck, with zijn."
+  ],
+  "verliezen": [
+    "verlies",
+    "verliest",
+    "verliezen",
+    "verloor",
+    "verloren",
+    "heb verloren",
+    "Lose, with irregular verloor and verloren."
+  ],
+  "printen": [
+    "print",
+    "print",
+    "printen",
+    "printte",
+    "printten",
+    "heb geprint",
+    "Print a document, not send an email."
+  ],
+  "vertragen": [
+    "vertraag",
+    "vertraagt",
+    "vertragen",
+    "vertraagde",
+    "vertraagden",
+    "heb vertraagd",
+    "Delay an object, or become slower in an intransitive use."
+  ],
+  "verwerken": [
+    "verwerk",
+    "verwerkt",
+    "verwerken",
+    "verwerkte",
+    "verwerkten",
+    "heb verwerkt",
+    "Process information, inseparable ver-."
+  ],
+  "afhandelen": [
+    "handel af",
+    "handelt af",
+    "handelen af",
+    "handelde af",
+    "handelden af",
+    "heb afgehandeld",
+    "Separable: handle or process a request, af te handelen."
+  ],
+  "bestaan": [
+    "besta",
+    "bestaat",
+    "bestaan",
+    "bestond",
+    "bestonden",
+    "heeft bestaan",
+    "Exist, with irregular bestond and bestaan."
+  ],
+  "bewerken": [
+    "bewerk",
+    "bewerkt",
+    "bewerken",
+    "bewerkte",
+    "bewerkten",
+    "heb bewerkt",
+    "Edit an object, no ge- with be-."
+  ],
+  "installeren": [
+    "installeer",
+    "installeert",
+    "installeren",
+    "installeerde",
+    "installeerden",
+    "heb geïnstalleerd",
+    "Install, with diaeresis in geïnstalleerd."
+  ],
+  "invoeren": [
+    "voer in",
+    "voert in",
+    "voeren in",
+    "voerde in",
+    "voerden in",
+    "heb ingevoerd",
+    "Separable: enter data or introduce a change, in te voeren."
+  ],
+  "mislukken": [
+    "misluk",
+    "mislukt",
+    "mislukken",
+    "mislukte",
+    "mislukten",
+    "is mislukt",
+    "Fail to succeed, with zijn in the perfect."
+  ],
+  "ontstaan": [
+    "ontsta",
+    "ontstaat",
+    "ontstaan",
+    "ontstond",
+    "ontstonden",
+    "is ontstaan",
+    "Arise or come into existence, with zijn."
+  ],
+  "stilliggen": [
+    "lig stil",
+    "ligt stil",
+    "liggen stil",
+    "lag stil",
+    "lagen stil",
+    "heeft stilgelegen",
+    "Separable: be at a standstill, stil te liggen."
+  ],
+  "vernieuwen": [
+    "vernieuw",
+    "vernieuwt",
+    "vernieuwen",
+    "vernieuwde",
+    "vernieuwden",
+    "heb vernieuwd",
+    "Refresh or renew, no ge- with ver-."
+  ],
+  "worden": [
+    "word",
+    "wordt",
+    "worden",
+    "werd",
+    "werden",
+    "ben geworden",
+    "Become in a change of state. Passive worden plus participle is a different construction."
+  ],
+  "baseren": [
+    "baseer",
+    "baseert",
+    "baseren",
+    "baseerde",
+    "baseerden",
+    "heb gebaseerd",
+    "Baseren op introduces the grounds for an assessment."
+  ],
+  "behouden": [
+    "behoud",
+    "behoudt",
+    "behouden",
+    "behield",
+    "behielden",
+    "heb behouden",
+    "Retain or preserve, irregular behield and behouden."
+  ],
+  "bewijzen": [
+    "bewijs",
+    "bewijst",
+    "bewijzen",
+    "bewees",
+    "bewezen",
+    "heb bewezen",
+    "Prove, stronger than suggest or suspect."
+  ],
+  "bijhouden": [
+    "houd bij",
+    "houdt bij",
+    "houden bij",
+    "hield bij",
+    "hielden bij",
+    "heb bijgehouden",
+    "Separable: keep track of information, bij te houden."
+  ],
+  "gissen": [
+    "gis",
+    "gist",
+    "gissen",
+    "giste",
+    "gisten",
+    "heb gegist",
+    "Guess, without claiming established knowledge."
+  ],
+  "inschakelen": [
+    "schakel in",
+    "schakelt in",
+    "schakelen in",
+    "schakelde in",
+    "schakelden in",
+    "heb ingeschakeld",
+    "Separable: enable or turn on, in te schakelen."
+  ],
+  "klaarzetten": [
+    "zet klaar",
+    "zet klaar",
+    "zetten klaar",
+    "zette klaar",
+    "zetten klaar",
+    "heb klaargezet",
+    "Separable: prepare or set ready, klaar te zetten."
+  ],
+  "loskoppelen": [
+    "koppel los",
+    "koppelt los",
+    "koppelen los",
+    "koppelde los",
+    "koppelden los",
+    "heb losgekoppeld",
+    "Separable: disconnect, los te koppelen."
+  ],
+  "opleveren": [
+    "lever op",
+    "levert op",
+    "leveren op",
+    "leverde op",
+    "leverden op",
+    "heb opgeleverd",
+    "Separable: yield a result, op te leveren."
+  ],
+  "samenhangen": [
+    "hang samen",
+    "hangt samen",
+    "hangen samen",
+    "hing samen",
+    "hingen samen",
+    "heeft samengehangen",
+    "Separable: samenhangen met means be related to, not necessarily cause."
+  ],
+  "slagen": [
+    "slaag",
+    "slaagt",
+    "slagen",
+    "slaagde",
+    "slaagden",
+    "ben geslaagd",
+    "Succeed or pass, with zijn in this sense."
+  ],
+  "spelen": [
+    "speel",
+    "speelt",
+    "spelen",
+    "speelde",
+    "speelden",
+    "heb gespeeld",
+    "Een rol spelen means play a role."
+  ],
+  "toelaten": [
+    "laat toe",
+    "laat toe",
+    "laten toe",
+    "liet toe",
+    "lieten toe",
+    "heb toegelaten",
+    "Separable: allow, toe te laten."
+  ],
+  "uitsluiten": [
+    "sluit uit",
+    "sluit uit",
+    "sluiten uit",
+    "sloot uit",
+    "sloten uit",
+    "heb uitgesloten",
+    "Separable: rule out or exclude, uit te sluiten."
+  ],
+  "vaststellen": [
+    "stel vast",
+    "stelt vast",
+    "stellen vast",
+    "stelde vast",
+    "stelden vast",
+    "heb vastgesteld",
+    "Separable: establish or determine, vast te stellen."
+  ],
+  "vereisen": [
+    "vereis",
+    "vereist",
+    "vereisen",
+    "vereiste",
+    "vereisten",
+    "heeft vereist",
+    "Require, no ge- with ver-."
+  ],
+  "verschillen": [
+    "verschil",
+    "verschilt",
+    "verschillen",
+    "verschilde",
+    "verschilden",
+    "heb verschild",
+    "Verschillen van means differ from."
+  ],
+  "wijzen": [
+    "wijs",
+    "wijst",
+    "wijzen",
+    "wees",
+    "wezen",
+    "heb gewezen",
+    "Wijzen op means point to, with irregular wees and gewezen."
+  ],
+  "wijzigen": [
+    "wijzig",
+    "wijzigt",
+    "wijzigen",
+    "wijzigde",
+    "wijzigden",
+    "heb gewijzigd",
+    "Change or modify, distinct from merely checking a value."
+  ],
+  "overeenkomen": [
+    "kom overeen",
+    "komt overeen",
+    "komen overeen",
+    "kwam overeen",
+    "kwamen overeen",
+    "ben overeengekomen",
+    "Separable: overeenkomen met means match or correspond."
+  ],
+  "aansluiten": [
+    "sluit aan",
+    "sluit aan",
+    "sluiten aan",
+    "sloot aan",
+    "sloten aan",
+    "heb aangesloten",
+    "Separable: zich aansluiten bij means support or join, with a reflexive pronoun."
+  ],
+  "afmaken": [
+    "maak af",
+    "maakt af",
+    "maken af",
+    "maakte af",
+    "maakten af",
+    "heb afgemaakt",
+    "Separable: finish, af te maken."
+  ],
+  "bellen": [
+    "bel",
+    "belt",
+    "bellen",
+    "belde",
+    "belden",
+    "heb gebeld",
+    "Call by telephone, with the person as an object."
+  ],
+  "besluiten": [
+    "besluit",
+    "besluit",
+    "besluiten",
+    "besloot",
+    "besloten",
+    "heb besloten",
+    "Decide, often besluiten om iets te doen."
+  ],
+  "dekken": [
+    "dek",
+    "dekt",
+    "dekken",
+    "dekte",
+    "dekten",
+    "heb gedekt",
+    "Cover a scope or requirement in this context."
+  ],
+  "intrekken": [
+    "trek in",
+    "trekt in",
+    "trekken in",
+    "trok in",
+    "trokken in",
+    "heb ingetrokken",
+    "Separable: revoke or withdraw an object, in te trekken."
+  ],
+  "klaarkomen": [
+    "kom klaar",
+    "komt klaar",
+    "komen klaar",
+    "kwam klaar",
+    "kwamen klaar",
+    "ben klaargekomen",
+    "Separable: klaarkomen met een taak means finish a task. The met phrase fixes this work-related meaning."
+  ],
+  "lopen": [
+    "loop",
+    "loopt",
+    "lopen",
+    "liep",
+    "liepen",
+    "heb gelopen",
+    "Lopen can describe a process running. Motion with a destination may instead use zijn."
+  ],
+  "oplopen": [
+    "loop op",
+    "loopt op",
+    "lopen op",
+    "liep op",
+    "liepen op",
+    "heb opgelopen",
+    "Separable: vertraging oplopen means incur a delay, with hebben."
+  ],
+  "regelen": [
+    "regel",
+    "regelt",
+    "regelen",
+    "regelde",
+    "regelden",
+    "heb geregeld",
+    "Arrange something, without implying a formal approval."
+  ],
+  "samenvoegen": [
+    "voeg samen",
+    "voegt samen",
+    "voegen samen",
+    "voegde samen",
+    "voegden samen",
+    "heb samengevoegd",
+    "Separable: merge, samen te voegen."
+  ],
+  "schetsen": [
+    "schets",
+    "schetst",
+    "schetsen",
+    "schetste",
+    "schetsten",
+    "heb geschetst",
+    "Outline the context or situation."
+  ],
+  "tegenhouden": [
+    "houd tegen",
+    "houdt tegen",
+    "houden tegen",
+    "hield tegen",
+    "hielden tegen",
+    "heb tegengehouden",
+    "Separable: hold back or prevent progress, tegen te houden."
+  ],
+  "uitlopen": [
+    "loop uit",
+    "loopt uit",
+    "lopen uit",
+    "liep uit",
+    "liepen uit",
+    "is uitgelopen",
+    "Separable: a schedule overruns, with zijn in this sense."
+  ],
+  "verwachten": [
+    "verwacht",
+    "verwacht",
+    "verwachten",
+    "verwachtte",
+    "verwachtten",
+    "heb verwacht",
+    "Expect rather than guarantee, no ge- with ver-."
+  ],
+  "verzamelen": [
+    "verzamel",
+    "verzamelt",
+    "verzamelen",
+    "verzamelde",
+    "verzamelden",
+    "heb verzameld",
+    "Collect or gather, no ge- with ver-."
+  ],
+  "voorkomen": [
+    "voorkom",
+    "voorkomt",
+    "voorkomen",
+    "voorkwam",
+    "voorkwamen",
+    "heb voorkomen",
+    "Inseparable in the sense prevent. Occur is a different, separable use."
+  ],
+  "voorleggen": [
+    "leg voor",
+    "legt voor",
+    "leggen voor",
+    "legde voor",
+    "legden voor",
+    "heb voorgelegd",
+    "Separable: put a question or proposal to someone, voor te leggen."
+  ],
+  "weergeven": [
+    "geef weer",
+    "geeft weer",
+    "geven weer",
+    "gaf weer",
+    "gaven weer",
+    "heb weergegeven",
+    "Separable: display or reflect accurately, weer te geven."
+  ],
+  "wegnemen": [
+    "neem weg",
+    "neemt weg",
+    "nemen weg",
+    "nam weg",
+    "namen weg",
+    "heb weggenomen",
+    "Separable: remove an obstacle, weg te nemen."
+  ],
+  "aankomen": [
+    "kom aan",
+    "komt aan",
+    "komen aan",
+    "kwam aan",
+    "kwamen aan",
+    "ben aangekomen",
+    "Separable: arrive, with zijn."
+  ],
+  "aankunnen": [
+    "kan aan",
+    "kan aan",
+    "kunnen aan",
+    "kon aan",
+    "konden aan",
+    "heb aangekund",
+    "Separable: cope with or handle, aan te kunnen."
+  ],
+  "aanpakken": [
+    "pak aan",
+    "pakt aan",
+    "pakken aan",
+    "pakte aan",
+    "pakten aan",
+    "heb aangepakt",
+    "Separable: tackle a task, aan te pakken."
+  ],
+  "bevatten": [
+    "bevat",
+    "bevat",
+    "bevatten",
+    "bevatte",
+    "bevatten",
+    "heeft bevat",
+    "Contain, no ge- with be-."
+  ],
+  "bijsturen": [
+    "stuur bij",
+    "stuurt bij",
+    "sturen bij",
+    "stuurde bij",
+    "stuurden bij",
+    "heb bijgestuurd",
+    "Separable: adjust the course of work, bij te sturen."
+  ],
+  "hoeven": [
+    "hoef",
+    "hoeft",
+    "hoeven",
+    "hoefde",
+    "hoefden",
+    "heb gehoeven",
+    "Usually with negation and a te infinitive. In a perfect cluster: niet hoeven te wachten."
+  ],
+  "inschatten": [
+    "schat in",
+    "schat in",
+    "schatten in",
+    "schatte in",
+    "schatten in",
+    "heb ingeschat",
+    "Separable: estimate or assess, in te schatten."
+  ],
+  "lijden": [
+    "lijd",
+    "lijdt",
+    "lijden",
+    "leed",
+    "leden",
+    "heb geleden",
+    "Suffer, lijden onder names the pressure or harmful condition."
+  ],
+  "nalezen": [
+    "lees na",
+    "leest na",
+    "lezen na",
+    "las na",
+    "lazen na",
+    "heb nagelezen",
+    "Separable: read through or check, na te lezen."
+  ],
+  "opschuiven": [
+    "schuif op",
+    "schuift op",
+    "schuiven op",
+    "schoof op",
+    "schoven op",
+    "is opgeschoven",
+    "Separable: a scheduled task moves back, with zijn for this change of position."
+  ],
+  "opvolgen": [
+    "volg op",
+    "volgt op",
+    "volgen op",
+    "volgde op",
+    "volgden op",
+    "heb opgevolgd",
+    "Separable: follow up a request, op te volgen."
+  ],
+  "plaatsvinden": [
+    "vind plaats",
+    "vindt plaats",
+    "vinden plaats",
+    "vond plaats",
+    "vonden plaats",
+    "heeft plaatsgevonden",
+    "Separable: take place, plaats te vinden."
+  ],
+  "rekenen": [
+    "reken",
+    "rekent",
+    "rekenen",
+    "rekende",
+    "rekenden",
+    "heb gerekend",
+    "Rekenen op can mean count on. Tijd rekenen means allow time in an estimate."
+  ],
+  "schatten": [
+    "schat",
+    "schat",
+    "schatten",
+    "schatte",
+    "schatten",
+    "heb geschat",
+    "Estimate, not promise an exact result."
+  ],
+  "uitblijven": [
+    "blijf uit",
+    "blijft uit",
+    "blijven uit",
+    "bleef uit",
+    "bleven uit",
+    "is uitgebleven",
+    "Separable: fail to occur or arrive, with zijn."
+  ],
+  "vallen": [
+    "val",
+    "valt",
+    "vallen",
+    "viel",
+    "vielen",
+    "ben gevallen",
+    "Fall, also vallen buiten means be outside a scope."
+  ],
+  "vastzitten": [
+    "zit vast",
+    "zit vast",
+    "zitten vast",
+    "zat vast",
+    "zaten vast",
+    "heb vastgezeten",
+    "Separable: be stuck, vast te zitten."
+  ],
+  "verschuiven": [
+    "verschuif",
+    "verschuift",
+    "verschuiven",
+    "verschoof",
+    "verschoven",
+    "heb verschoven / ben verschoven",
+    "Hebben when moving an object, zijn when the subject itself shifts."
+  ],
+  "voorgaan": [
+    "ga voor",
+    "gaat voor",
+    "gaan voor",
+    "ging voor",
+    "gingen voor",
+    "ben voorgegaan",
+    "Separable: take precedence, with zijn."
+  ],
+  "voorspellen": [
+    "voorspel",
+    "voorspelt",
+    "voorspellen",
+    "voorspelde",
+    "voorspelden",
+    "heb voorspeld",
+    "Predict, inseparable in this meaning."
+  ],
+  "wegen": [
+    "weeg",
+    "weegt",
+    "wegen",
+    "woog",
+    "wogen",
+    "heb gewogen",
+    "Weigh, also figuratively carry weight in a decision."
+  ],
+  "aantonen": [
+    "toon aan",
+    "toont aan",
+    "tonen aan",
+    "toonde aan",
+    "toonden aan",
+    "heb aangetoond",
+    "Separable: demonstrate or establish with evidence, aan te tonen."
+  ],
+  "aanvragen": [
+    "vraag aan",
+    "vraagt aan",
+    "vragen aan",
+    "vroeg aan",
+    "vroegen aan",
+    "heb aangevraagd",
+    "Separable: apply for or request, aan te vragen."
+  ],
+  "afwijken": [
+    "wijk af",
+    "wijkt af",
+    "wijken af",
+    "week af",
+    "weken af",
+    "ben afgeweken",
+    "Separable: afwijken van means differ from or deviate from, with zijn."
+  ],
+  "betreffen": [
+    "betref",
+    "betreft",
+    "betreffen",
+    "betrof",
+    "betroffen",
+    "heeft betroffen",
+    "Concern a scope or subject, irregular betrof and betroffen."
+  ],
+  "doorvoeren": [
+    "voer door",
+    "voert door",
+    "voeren door",
+    "voerde door",
+    "voerden door",
+    "heb doorgevoerd",
+    "Separable: implement a change, door te voeren."
+  ],
+  "eindigen": [
+    "eindig",
+    "eindigt",
+    "eindigen",
+    "eindigde",
+    "eindigden",
+    "ben geëindigd",
+    "End intransitively, with zijn in this sense."
+  ],
+  "klaarstaan": [
+    "sta klaar",
+    "staat klaar",
+    "staan klaar",
+    "stond klaar",
+    "stonden klaar",
+    "heb klaargestaan",
+    "Separable: stand ready, klaar te staan."
+  ],
+  "nalopen": [
+    "loop na",
+    "loopt na",
+    "lopen na",
+    "liep na",
+    "liepen na",
+    "heb nagelopen",
+    "Separable: go through and check, na te lopen."
+  ],
+  "overblijven": [
+    "blijf over",
+    "blijft over",
+    "blijven over",
+    "bleef over",
+    "bleven over",
+    "is overgebleven",
+    "Separable: remain or be left over, with zijn."
+  ],
+  "terugdraaien": [
+    "draai terug",
+    "draait terug",
+    "draaien terug",
+    "draaide terug",
+    "draaiden terug",
+    "heb teruggedraaid",
+    "Separable: reverse or roll back a change, terug te draaien."
+  ],
+  "toekennen": [
+    "ken toe",
+    "kent toe",
+    "kennen toe",
+    "kende toe",
+    "kenden toe",
+    "heb toegekend",
+    "Separable: grant a right, toe te kennen."
+  ],
+  "uitbreiden": [
+    "breid uit",
+    "breidt uit",
+    "breiden uit",
+    "breidde uit",
+    "breidden uit",
+    "heb uitgebreid",
+    "Separable: extend or expand an object, uit te breiden."
+  ],
+  "verklaren": [
+    "verklaar",
+    "verklaart",
+    "verklaren",
+    "verklaarde",
+    "verklaarden",
+    "heb verklaard",
+    "Explain a result, no ge- with ver-."
+  ],
+  "verlopen": [
+    "verloop",
+    "verloopt",
+    "verlopen",
+    "verliep",
+    "verliepen",
+    "is verlopen",
+    "Proceed, or expire, according to context. Perfect uses zijn."
+  ],
+  "vervallen": [
+    "verval",
+    "vervalt",
+    "vervallen",
+    "verviel",
+    "vervielen",
+    "is vervallen",
+    "Lapse or expire, perfect with zijn."
+  ],
+  "vervangen": [
+    "vervang",
+    "vervangt",
+    "vervangen",
+    "verving",
+    "vervingen",
+    "heb vervangen",
+    "Replace, no ge- with ver-."
+  ],
+  "voorzien": [
+    "voorzie",
+    "voorziet",
+    "voorzien",
+    "voorzag",
+    "voorzagen",
+    "heb voorzien",
+    "Allow for or provide, common in Belgian workplace Dutch. Inseparable in this meaning."
+  ],
+  "afnemen": [
+    "neem af",
+    "neemt af",
+    "nemen af",
+    "nam af",
+    "namen af",
+    "is afgenomen",
+    "Separable: decrease in this intransitive sense, with zijn. Taking something away is a different transitive sense."
+  ],
+  "escaleren": [
+    "escaleer",
+    "escaleert",
+    "escaleren",
+    "escaleerde",
+    "escaleerden",
+    "heb geëscaleerd",
+    "Escalate a report to a higher support level in this transitive workplace use."
+  ],
+  "openstaan": [
+    "sta open",
+    "staat open",
+    "staan open",
+    "stond open",
+    "stonden open",
+    "heeft opengestaan",
+    "Separable: an action remains outstanding, open te staan."
+  ],
+  "verhelpen": [
+    "verhelp",
+    "verhelpt",
+    "verhelpen",
+    "verhielp",
+    "verhielpen",
+    "heb verholpen",
+    "Remedy or resolve, irregular verhielp and verholpen."
+  ],
+  "verminderen": [
+    "verminder",
+    "vermindert",
+    "verminderen",
+    "verminderde",
+    "verminderden",
+    "heb verminderd",
+    "Reduce an object, with hebben. An amount decreasing can instead use zijn."
+  ],
+  "veroorzaken": [
+    "veroorzaak",
+    "veroorzaakt",
+    "veroorzaken",
+    "veroorzaakte",
+    "veroorzaakten",
+    "heb veroorzaakt",
+    "Cause, a stronger claim than merely preceding another event."
+  ],
+  "aanvaarden": [
+    "aanvaard",
+    "aanvaardt",
+    "aanvaarden",
+    "aanvaardde",
+    "aanvaardden",
+    "heb aanvaard",
+    "Accept, particularly common in Belgian Dutch. No ge- in aanvaard."
+  ],
+  "achterlaten": [
+    "laat achter",
+    "laat achter",
+    "laten achter",
+    "liet achter",
+    "lieten achter",
+    "heb achtergelaten",
+    "Separable: leave something behind, achter te laten."
+  ],
+  "benoemen": [
+    "benoem",
+    "benoemt",
+    "benoemen",
+    "benoemde",
+    "benoemden",
+    "heb benoemd",
+    "State or name explicitly in this context, no ge- with be-."
+  ],
+  "corrigeren": [
+    "corrigeer",
+    "corrigeert",
+    "corrigeren",
+    "corrigeerde",
+    "corrigeerden",
+    "heb gecorrigeerd",
+    "Correct an error."
+  ],
+  "deelnemen": [
+    "neem deel",
+    "neemt deel",
+    "nemen deel",
+    "nam deel",
+    "namen deel",
+    "heb deelgenomen",
+    "Separable: deelnemen aan means participate in, deel te nemen."
+  ],
+  "doorverwijzen": [
+    "verwijs door",
+    "verwijst door",
+    "verwijzen door",
+    "verwees door",
+    "verwezen door",
+    "heb doorverwezen",
+    "Separable: refer someone on, door te verwijzen."
+  ],
+  "markeren": [
+    "markeer",
+    "markeert",
+    "markeren",
+    "markeerde",
+    "markeerden",
+    "heb gemarkeerd",
+    "Mark or label a status clearly."
+  ],
+  "nummeren": [
+    "nummer",
+    "nummert",
+    "nummeren",
+    "nummerde",
+    "nummerden",
+    "heb genummerd",
+    "Number an item to identify it clearly."
+  ],
+  "uitschakelen": [
+    "schakel uit",
+    "schakelt uit",
+    "schakelen uit",
+    "schakelde uit",
+    "schakelden uit",
+    "heb uitgeschakeld",
+    "Separable: turn off or disable, uit te schakelen."
   ]
 }

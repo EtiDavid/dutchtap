@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { hasContent } from '@/lib/content/cards';
 import { CARDS, LEVELS } from './engine';
 import { LANGS } from '@/lib/lang';
 const ids = new Set(CARDS.map(c=>c.id));
@@ -9,4 +10,4 @@ export const reviewSchema = z.object({
 });
 export const reviewsSchema = z.record(z.string(),reviewSchema).refine(records=>Object.entries(records).every(([id,r])=>id===r.id));
 /** `lang` is optional only so that requests from before French existed (Dutch) keep working; an unknown language is rejected. */
-export const syncSchema = z.object({lang: z.enum(LANGS).optional(), records: z.array(reviewSchema).max(CARDS.length)});
+export const syncSchema = z.object({lang: z.enum(LANGS).optional(), records: z.array(reviewSchema).max(CARDS.length)}).refine(data => data.records.every(record => hasContent(data.lang ?? 'nl', record.id)), 'Card is unavailable in this language');

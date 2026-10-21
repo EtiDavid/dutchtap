@@ -6,6 +6,7 @@ const originals = JSON.parse(await readFile(new URL('data/flashcards.json', root
 const additions = JSON.parse(await readFile(new URL('data/flashcard-additions.json', root), 'utf8'));
 const moreAdditions = JSON.parse(await readFile(new URL('data/flashcard-additions-2.json', root), 'utf8'));
 const cards = [...originals, ...additions, ...moreAdditions];
+const workplace = JSON.parse(await readFile(new URL('data/workplace-cards.json', root), 'utf8'));
 const seen = new Set();
 const images = new Set();
 const audio = new Set();
@@ -34,5 +35,10 @@ for (const card of cards) {
     } catch (error) { errors.push(`${card.id}: ${kind}: ${error.message}`); }
   }
 }
-console.log(JSON.stringify({ cards: cards.length, additions: additions.length + moreAdditions.length, readyImages, pendingImages: cards.length - readyImages, readyAudio, awaitingRecordings: cards.length - readyAudio, errors }, null, 2));
-if (cards.length !== 600 || additions.length !== 250 || moreAdditions.length !== 300 || errors.length || (process.argv.includes('--complete') && (readyImages !== cards.length || readyAudio !== cards.length))) process.exitCode = 1;
+for (const card of workplace) {
+  if (seen.has(card.id)) errors.push(`Duplicate ID: ${card.id}`);
+  seen.add(card.id);
+  if (!card.id.startsWith('career-') || card.collection !== 'workplace' || card.image !== '' || card.audio !== '' || card.imageStatus !== 'not-applicable' || card.audioStatus !== 'device') errors.push(`Invalid intentional media policy: ${card.id}`);
+}
+console.log(JSON.stringify({ cards: cards.length + workplace.length, recordedIllustratedCards: cards.length, intentionalPicturelessDeviceCards: workplace.length, additions: additions.length + moreAdditions.length, readyImages, pendingImages: cards.length - readyImages, readyAudio, awaitingRecordings: cards.length - readyAudio, errors }, null, 2));
+if (workplace.length !== 600 || cards.length !== 600 || additions.length !== 250 || moreAdditions.length !== 300 || errors.length || (process.argv.includes('--complete') && (readyImages !== cards.length || readyAudio !== cards.length))) process.exitCode = 1;

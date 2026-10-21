@@ -1,3 +1,4 @@
+import workplaceBreakdowns from "@/data/workplace-breakdowns.json";
 import breakdowns from "@/data/grammar-breakdowns.json";
 import frBreakdowns from "@/data/fr/grammar-breakdowns.json";
 import type { Lang } from "@/lib/lang";
@@ -22,7 +23,7 @@ export type Breakdown = {
   practiceGuide?: string;
 };
 
-export const BREAKDOWNS = breakdowns as Record<string, Breakdown>;
+export const BREAKDOWNS = { ...breakdowns, ...workplaceBreakdowns } as Record<string, Breakdown>;
 export const FRENCH_BREAKDOWNS = frBreakdowns as Record<string, Breakdown>;
 export const breakdownFor = (
   cardId: string,

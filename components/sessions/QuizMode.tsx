@@ -1,8 +1,8 @@
 "use client";
 import { useEffect } from "react";
-import { CATEGORIES } from "@/lib/flashcards/engine";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import {
+  topicLabel,
   deckCard,
   quizModel,
   newAttemptId,
@@ -189,7 +189,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
         <VariationControls session={session} store={store} id={card.id} />
       )}
       <div className="flex justify-between text-sm text-muted">
-        <span>{CATEGORIES[card.category as keyof typeof CATEGORIES]}</span>
+        <span>{topicLabel(card.category)}</span>
         <span>Word order</span>
       </div>
       {stats}

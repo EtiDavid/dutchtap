@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CARDS } from '@/lib/flashcards/engine';
+import { EVERYDAY_CARDS as CARDS } from '@/lib/flashcards/engine';
 import { cardFor, cardsFor, hasContent } from '@/lib/content/cards';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
 import { notesFor } from '@/lib/grammarNotes';

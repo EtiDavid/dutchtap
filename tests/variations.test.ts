@@ -54,8 +54,8 @@ function rate(
   return run(s, { type: "speaking/submit", attemptId, level, next: null });
 }
 describe("Dutch family content", () => {
-  it("covers all 600 parents with ten distinct related sentences, translations and teaching examples", () => {
-    expect(Object.keys(FAMILIES)).toHaveLength(600);
+  it("covers all 1,200 parents with ten distinct related sentences, translations and teaching examples", () => {
+    expect(Object.keys(FAMILIES)).toHaveLength(1200);
     for (const card of CARDS) {
       const vs = variationsFor(card.id);
       expect(vs).toHaveLength(10);

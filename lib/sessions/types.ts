@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { COLLECTIONS, WORK_AREAS, collectionAvailable, validTopic } from "@/lib/content/collections";
 import { CARDS, CATEGORIES, LEVELS, type Level } from "@/lib/flashcards/engine";
 import { ID_PATTERN } from "./ids";
 import { DEFAULT_LANG, LANGS, type Lang } from "@/lib/lang";
@@ -23,8 +24,8 @@ export const MAX_ACTIONS_PER_REQUEST = 60;
 
 export type Mode = "study" | "speaking" | "quiz";
 export const MODES: readonly Mode[] = ["study", "speaking", "quiz"];
-export type Topic = "all" | keyof typeof CATEGORIES;
-export const TOPICS = ["all", ...Object.keys(CATEGORIES)] as readonly string[];
+export type Topic = "all" | keyof typeof CATEGORIES | keyof typeof WORK_AREAS;
+export const TOPICS = ["all", ...Object.keys(CATEGORIES), ...Object.keys(WORK_AREAS)] as readonly string[];
 
 const deckIds = new Set(CARDS.map((card) => card.id));
 const cardId = z.string().refine((id) => deckIds.has(id), "Unknown card");
@@ -97,6 +98,7 @@ export type QuizCurrent = z.infer<typeof quizCurrent>;
 
 const langSchema = z.enum(LANGS);
 const sessionShape = z.object({
+  collection: z.enum(COLLECTIONS).default("everyday"),
   id: idString,
   name: z.string().trim().min(1).max(80),
   cardIds: z.array(cardId).min(1).max(MAX_SESSION_CARDS),
@@ -151,6 +153,10 @@ type SessionShape = z.infer<typeof sessionShape> & { lang: Lang };
 function checkSession(s: SessionShape, ctx: z.RefinementCtx) {
   const ids = new Set(s.cardIds);
   const fail = (message: string) => ctx.addIssue({ code: "custom", message });
+  if (!collectionAvailable(s.lang, s.collection)) fail("Collection is unavailable in this language");
+  if (!validTopic(s.collection, s.topic)) fail("Topic is outside this collection");
+  if (s.cardIds.some(id => cardFor(s.lang, id)?.collection !== s.collection)) fail("Card outside selected collection");
+  if (s.collection === "workplace" && s.topic !== "all" && s.cardIds.some(id => cardFor(s.lang, id)?.category !== s.topic)) fail("Card outside selected workplace area");
   // Every card must exist in the session's own language: a French session can never hold a card that has no French content.
   for (const id of new Set([
     ...s.cardIds,

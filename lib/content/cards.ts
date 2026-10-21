@@ -9,6 +9,7 @@ import { DEFAULT_LANG, type Lang } from "@/lib/lang";
  * (Study, Speaking, Quiz, sentence pages, notes, vocabulary, speech) resolves cards here, so none of it hard-codes a language.
  */
 export type LCard = {
+  collection: "everyday" | "workplace";
   id: string;
   lang: Lang;
   category: string;
@@ -62,6 +63,7 @@ function dutchCard(card: Card): LCard {
   return {
     id: card.id,
     lang: "nl",
+    collection: card.collection ?? "everyday",
     category: card.category,
     text: card.dutch,
     english: card.english,
@@ -72,7 +74,7 @@ function dutchCard(card: Card): LCard {
     vocabularyIds: card.vocabularyIds ?? [],
     image: card.image,
     imageStatus: card.imageStatus,
-    audio: card.audio,
+    audio: card.audio || undefined,
     audioStatus: card.audioStatus,
     adapted: card.adapted,
   };
@@ -81,6 +83,7 @@ function frenchCard(shared: Card, record: FrenchCardRecord): LCard {
   return {
     id: shared.id,
     lang: "fr",
+    collection: "everyday",
     category: shared.category,
     text: record.text,
     english: record.english,

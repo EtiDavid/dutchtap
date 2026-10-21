@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-21",
+  "base": "1f353b78e6db247011ed383d4544c1d6a5c84761",
+  "method": "Actual bundle installer exercised in temporary local Git clones. Every installed changed file is checked against its manifest SHA-256. No primary checkout or live database is used.",
+  "checks": {
+    "dryRunLeavesFilesUnchanged": true,
+    "trackedDirtyRefusedWithoutEdits": true,
+    "untrackedDestinationRefusedWithoutEdits": true,
+    "symlinkDestinationRefusedWithoutEdits": true,
+    "matchingBasePatchAndAllFileHashes": true,
+    "unrelatedUntrackedFilePreserved": true,
+    "noCommitOrHeadChange": true,
+    "differentHeadRefusedWithoutEdits": true
+  },
+  "reproduce": "python3 scripts/verify-workplace-package.py /path/to/extracted/package"
+}

@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
 import {
-  CATEGORIES,
   LEVELS,
   LEVEL_LABELS,
   rateLevel,
@@ -9,6 +8,7 @@ import {
 } from "@/lib/flashcards/engine";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import {
+  topicLabel,
   deckCard,
   newAttemptId,
   pickSpeakingCard,
@@ -169,7 +169,7 @@ export function SpeakingMode({
         <VariationControls session={session} store={store} id={card.id} />
       )}
       <div className="flex justify-between text-sm text-muted">
-        <span>{CATEGORIES[card.category as keyof typeof CATEGORIES]}</span>
+        <span>{topicLabel(card.category)}</span>
         {summary}
       </div>
       <article

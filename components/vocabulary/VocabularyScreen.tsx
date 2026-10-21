@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import { WORK_AREAS } from '@/lib/content/collections';
 import { CATEGORIES } from '@/lib/flashcards/engine';
 import { AppNav } from '../nav/AppNav';
 import { BackButton } from '../nav/BackButton';
@@ -29,7 +30,7 @@ function VocabularyView({ lang, cardId, onSwitchLanguage }: { lang: Lang; cardId
     {cardId && <p className="text-sm text-muted">Words from this sentence. <Link href={withLang('/vocabulary', lang)} className="text-accent underline">Browse all words</Link></p>}
     <label className="text-sm font-semibold">Search words<input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder={copy(lang).searchPlaceholder} className={field} /></label>
     <div className="grid grid-cols-2 gap-3">
-      <label className="text-sm font-semibold">Place<select value={category} onChange={event => setCategory(event.target.value)} className={field}><option value="all">All places</option>{Object.entries(CATEGORIES).map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select></label>
+      <label className="text-sm font-semibold">Place<select value={category} onChange={event => setCategory(event.target.value)} className={field}><option value="all">All places</option>{Object.entries(CATEGORIES).map(([id, label]) => <option key={id} value={id}>{label}</option>)}{lang === 'nl' && <optgroup label="Dutch at Work">{Object.entries(WORK_AREAS).map(([id, label]) => <option key={id} value={id}>{label}</option>)}</optgroup>}</select></label>
       <label className="text-sm font-semibold">Word type<select value={type} onChange={event => setType(event.target.value)} className={field}><option value="all">All types</option>{[...new Set(all.map(entry => entry.type))].map(kind => <option key={kind} value={kind}>{kind}</option>)}</select></label>
     </div>
     <p role="status" className="text-sm text-muted">{entries.length} {entries.length === 1 ? 'entry' : 'entries'}</p>

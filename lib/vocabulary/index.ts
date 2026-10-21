@@ -1,9 +1,13 @@
+import workplaceEntries from '@/data/workplace-vocabulary.json';
+import workplaceLinks from '@/data/workplace-vocabulary-links.json';
 import entries from '@/data/vocabulary.json';
 import frEntries from '@/data/fr/vocabulary.json';
 import { cardFor, type LCard } from '@/lib/content/cards';
 import type { Lang } from '@/lib/lang';
 
-export const VOCABULARY = entries;
+const addedLinks = new Map((workplaceLinks as { id: string; occurrencesToAppend: { cardId: string; form: string }[] }[]).map(x => [x.id, x.occurrencesToAppend]));
+export const VOCABULARY: (typeof entries[number])[] = [...entries.map(entry => ({ ...entry,
+  occurrences: [...entry.occurrences, ...(addedLinks.get(entry.id) ?? [])] })), ...workplaceEntries];
 export type DutchVocabularyEntry = typeof entries[number];
 /** A French entry: `gender` (m/f) is kept even when the article is elided (l'école), `article` is le/la/les/'' . */
 export type FrenchVocabularyEntry = DutchVocabularyEntry & { gender?: 'm' | 'f' | '' };

@@ -4,7 +4,7 @@ Date: 21 October 2026. Starting revision: `1f353b78e6db247011ed383d4544c1d6a5c84
 
 ## Result and scope
 
-600 new parents, 60 per workplace area; 1,200 total Dutch parents. There are 6,000 new child entries backed by 720 distinct child sentences, 600 distinct family sets, and 1,389 distinct new model answers across 1,320 distinct prompts. Vocabulary adds 247 entries and appends 237 occurrence links across 55 existing entries. New word senses are separate when the old definition does not fit. Every new parent has relevant backlinks.
+600 new parents, 60 per workplace area; 1,200 total Dutch parents. There are 6,000 new child entries backed by 720 distinct child sentences, 600 distinct family sets, and 1,389 distinct new model answers across 1,320 distinct prompts. Vocabulary adds 290 entries and appends 262 occurrence links across 60 existing entries. New word senses are separate when the old definition does not fit. Every new parent has relevant backlinks.
 
 The implementation extends the existing card, family, answer, vocabulary and session lookups. Collection selection is persisted with an Everyday default for older sessions. The original Work topic remains separate. Session validation rejects cross-collection membership, unavailable French content and a mismatched workplace area. No fallback fills an insufficient pool. Existing action reducers still own weighting, unlocking, scoring, retirement and offline replay.
 
@@ -24,7 +24,7 @@ Old Dutch/French data and all 1,200 original image/audio files are protected by 
 | Full isolated Playwright suite | 75 passed |
 | Final focused workplace browser run | 5 passed, mobile and desktop, with stable screenshot capture |
 | Production-server workplace browser run | 5 passed; isolated fixture APIs, no production database |
-| Safe installer / exact-base patch | See `installer-validation.json` and installation instructions |
+| Safe installer / exact-base patch | Passed: exact-base apply and all file hashes; dry run, dirty tree, untracked collision, symlink and wrong HEAD checks. See `installer-validation.json` |
 
 The optional MongoDB suite was already skipped at baseline and was not pointed at a live database. Full browser tests use existing in-memory fixtures and mocked account/session endpoints. Native browser text-to-speech is emulated for deterministic routing checks; the tests do not establish the pronunciation or quality of a voice installed on another device. A missing Dutch voice produces guidance and no English fallback.
 

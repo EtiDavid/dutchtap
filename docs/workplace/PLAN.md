@@ -49,7 +49,7 @@ Progress and actual validation outcomes will be recorded alongside the authored 
 ## Completion checkpoint
 
 - All ten areas authored: 600 new parents, 6,000 child entries, 720 distinct child sentences, 600 distinct family sets and 1,389 distinct models.
-- Vocabulary completed: 247 additions; 237 new backlinks across 55 existing entries. Different meanings have separate entries; original definitions remain unchanged.
+- Vocabulary completed: 290 additions; 262 new backlinks across 60 existing entries. Different meanings have separate entries; original definitions remain unchanged.
 - Final content/session suite: 303 passed / 7 optional local MongoDB tests skipped. Lint, content assembly, original media checks and production build passed. Full isolated browser suite: 75 passed; focused workplace tests: 5 passed on development and production builds.
 - Exact duplicates are rejected. The final lexical near-duplicate screen found no candidates at the recorded threshold after replacing one redundant recovery-time sentence.
 - Local implementation complete. Installer/package verification is recorded in the delivery reports. No push, merge, deployment or production database access is authorised or performed.

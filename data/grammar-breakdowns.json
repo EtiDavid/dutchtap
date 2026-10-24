@@ -15429,7 +15429,7 @@
   ],
   "order": "In a main clause the finite verb is in second position, after one first constituent. The other verb normally occurs toward the end. De klant is first and heeft second; the object precedes final goedgekeurd.",
   "forms": "Goedkeuren is separable: keurt goed; its participle is goedgekeurd. Ontwerp is a het-word, but after definite het the adjective receives -e: definitieve. The perfect presents completed approval.",
-  "compare": "English has approved and Dutch heeft goedgekeurd both describe completed acceptance. Removing the unexplained possessive avoids guessing whose design it was.",
+  "compare": "English has approved and Dutch heeft goedgekeurd both describe completed acceptance of the final design.",
   "mistake": {
    "wrong": "De klant heeft het definitieve ontwerp gegoedkeurd.",
    "right": "De klant heeft het definitieve ontwerp goedgekeurd.",
@@ -15959,7 +15959,7 @@
   ],
   "order": "An instruction starts with the verb. Breng starts the instruction; the object precedes the destination naar het laboratorium.",
   "forms": "Brengen has stem breng and irregular participle gebracht. Monsters means test samples here, not mythical creatures. Laboratorium is a het-word. Naar marks the destination.",
-  "compare": "English take the samples to and Dutch breng de monsters naar specify transport to a destination, avoiding the unexplained to yourself in the source.",
+  "compare": "English take the samples to and Dutch breng de monsters naar describe transporting the samples to the laboratory. Naar names the destination.",
   "mistake": {
    "wrong": "Breng de monsters naar de laboratorium.",
    "right": "Breng de monsters naar het laboratorium.",
@@ -16865,7 +16865,7 @@
   ],
   "order": "In a main clause the finite verb is in second position, after one first constituent. The other verb normally occurs toward the end. Ik is first and ben second. The intended activity follows van plan and ends with te blijven wonen.",
   "forms": "Van plan zijn takes a te-infinitive, optionally introduced by om. Blijven wonen expresses continued residence; wonen follows blijven without another te. België uses a diaeresis. This is intention, not seeking an opportunity.",
-  "compare": "English planning to continue living preserves van plan and blijven; source looking to stay could obscure the intention.",
+  "compare": "English planning to continue living preserves both the intention in van plan and the continuation in blijven.",
   "mistake": {
    "wrong": "Ik ben van plan in België te blijven te wonen.",
    "right": "Ik ben van plan in België te blijven wonen.",
@@ -17055,7 +17055,7 @@
   ],
   "order": "In a main clause the finite verb is in second position, after one first constituent. Ik is first and ben second; bang takes its fear object with voor.",
   "forms": "Bang voor is a fixed adjective-preposition combination. Bang is predicative without -e. Abstract mislukking can refer to failure generally without an article. A particular failed attempt would be een mislukking.",
-  "compare": "English afraid of uses of; Dutch bang voor uses voor, not van.",
+  "compare": "English afraid of corresponds to bang voor in this model. Bang van is also accepted, especially in Belgian Dutch; do not treat van as universally incorrect.",
   "mistake": {
    "wrong": "Ik zijn bang voor mislukking.",
    "right": "Ik ben bang voor mislukking.",
@@ -17076,7 +17076,7 @@
     "text": "is"
    },
    {
-    "label": "predicate adjective",
+    "label": "noun complement",
     "text": "mijn grootste uitdaging"
    },
    {
@@ -17508,7 +17508,8 @@
   "mistake": {
    "wrong": "Ze was niet in de kamer.",
    "right": "Ze waren niet in de kamer.",
-   "why": "They requires plural waren."
+   "why": "Ze was is grammatical for she was. This scenario concerns two colleagues, so use plural waren for they were.",
+   "alternative": true
   },
   "practiceFocus": "Niet and geen with the right scope",
   "practiceGuide": "Geen negates an indefinite noun: geen tijd, geen koffie. Niet can negate a predicate, action or more specific constituent: niet moe, de vraag niet begrijpen. Its location depends on what is negated, not on an absolute rule 'always at the end'. With a second verb the final verb bracket stays after niet. Dutch niet hoeven te means not having to; niet mogen means not being allowed to."
@@ -17614,7 +17615,7 @@
     "text": "is"
    },
    {
-    "label": "predicate adjective",
+    "label": "noun complement",
     "text": "tijd"
    },
    {
@@ -17680,7 +17681,7 @@
     "text": "hier"
    },
    {
-    "label": "om te phrase",
+    "label": "purpose preposition phrase",
     "text": "voor de rondleiding"
    }
   ],
@@ -17690,7 +17691,8 @@
   "mistake": {
    "wrong": "Ze is hier voor de rondleiding.",
    "right": "Ze zijn hier voor de rondleiding.",
-   "why": "They requires zijn."
+   "why": "Ze is is grammatical for she is. This scenario concerns several visitors, so use plural zijn for they are.",
+   "alternative": true
   },
   "practiceFocus": "Zijn/worden and descriptions",
   "practiceGuide": "Zijn describes a state; worden describes becoming/changing: het is koud versus het wordt koud. Use one finite verb for the main clause, not is wordt. The predicate adjective normally stays uninflected: het huis is mooi. A noun complement keeps its own article/possessive, and the finite verb agrees with its subject (de kamers zijn)."
@@ -17823,11 +17825,11 @@
     "text": "is"
    },
    {
-    "label": "predicate adjective",
+    "label": "noun complement",
     "text": "genoeg verf"
    },
    {
-    "label": "om te phrase",
+    "label": "purpose preposition phrase",
     "text": "voor deze muur"
    }
   ],
@@ -18027,7 +18029,8 @@
   "mistake": {
    "wrong": "Zij hebben de verf voor ons gekocht.",
    "right": "Zij heeft de verf voor ons gekocht.",
-   "why": "She requires singular heeft; hebben would mean they."
+   "why": "Zij hebben is grammatical for they have. This scenario concerns one woman, so use singular heeft for she has.",
+   "alternative": true
   },
   "practiceFocus": "Perfect tense and the verb bracket",
   "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
@@ -18273,7 +18276,7 @@
     "text": "dat"
    },
    {
-    "label": "predicate adjective",
+    "label": "noun complement",
     "text": "je definitieve antwoord op de uitnodiging"
    }
   ],
@@ -18343,8 +18346,8 @@
    "right": "Het onderhoud van deze machine is belangrijk.",
    "why": "Predicate belangrijk has no -e."
   },
-  "practiceFocus": "An infinitive used to name an activity",
-  "practiceGuide": "An infinitive can name an activity and function like a noun: het lezen, het schoonmaken. A whole activity phrase can be the subject: De hond uitlaten is mijn taak. Its finite verb still follows that entire first constituent. Infinitives used as nouns normally take het; de was is a separate noun meaning laundry. Do not confuse the activity noun with a conjugated verb."
+  "practiceFocus": "Activity nouns and infinitives as subjects",
+  "practiceGuide": "Onderhoud is an ordinary noun meaning maintenance, not the infinitive onderhouden. The full noun phrase het onderhoud van deze machine is the singular subject of is. The related examples practise the closely related construction with an infinitive naming an activity, such as Het schoonmaken van de keuken kost tijd. Both constructions can name an activity as the subject, but their word forms differ."
  },
  "work-326": {
   "meaning": "I'll call the dentist back after work. You check a missed call from the dental practice while leaving work and plan to return it afterward.",
@@ -18382,7 +18385,7 @@
   "practiceGuide": "In a main clause a separable verb's finite part and particle separate: ik ruim ... op. With a modal, the infinitive stays together: ik moet opruimen. A participle normally puts ge between prefix and stem (opgeruimd), but stems beginning with unstressed be-/ver-/ont-/her- may not add ge. With te, split around te: op te ruimen. Learn the whole expression and its meaning."
  },
  "work-327": {
-  "meaning": "We have found a solution to the storage problem. A team shows newly fitted shelves that solve the shortage of storage space in their room.",
+  "meaning": "We have found a solution to the storage problem. Your group has identified a solution after investigating a shortage of storage space; the sentence does not by itself say that it has already been implemented.",
   "parts": [
    {
     "label": "subject",

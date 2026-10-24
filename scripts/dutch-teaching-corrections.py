@@ -248,6 +248,29 @@ fixes.update({
 })
 b['work-109']['mistake'].update(alternative=True,why='Ze praat is grammatical for she talks. In this situation ze refers to two colleagues, so use plural praten for they are talking.')
 
+# Work-211 through work-330: inspected model-specific teaching corrections.
+fixes.update({
+ 'work-229':{'compare':'English has approved and Dutch heeft goedgekeurd both describe completed acceptance of the final design.'},
+ 'work-247':{'compare':'English take the samples to and Dutch breng de monsters naar describe transporting the samples to the laboratory. Naar names the destination.'},
+ 'work-277':{'compare':'English planning to continue living preserves both the intention in van plan and the continuation in blijven.'},
+ 'work-283':{'compare':'English afraid of corresponds to bang voor in this model. Bang van is also accepted, especially in Belgian Dutch; do not treat van as universally incorrect.'},
+ 'work-327':{'meaning':'We have found a solution to the storage problem. Your group has identified a solution after investigating a shortage of storage space; the sentence does not by itself say that it has already been implemented.'}
+})
+for key,text,label in [
+ ('work-284','mijn grootste uitdaging','noun complement'),
+ ('work-302','tijd','noun complement'),
+ ('work-304','voor de rondleiding','purpose preposition phrase'),
+ ('work-309','genoeg verf','noun complement'),
+ ('work-309','voor deze muur','purpose preposition phrase'),
+ ('work-323','je definitieve antwoord op de uitnodiging','noun complement')]:
+ for part in b[key]['parts']:
+  if part['text']==text:part['label']=label
+for key,why in [
+ ('work-298','Ze was is grammatical for she was. This scenario concerns two colleagues, so use plural waren for they were.'),
+ ('work-304','Ze is is grammatical for she is. This scenario concerns several visitors, so use plural zijn for they are.'),
+ ('work-315','Zij hebben is grammatical for they have. This scenario concerns one woman, so use singular heeft for she has.')]:
+ b[key]['mistake'].update(alternative=True,why=why)
+
 for key,changes in fixes.items():b[key].update(changes)
 b['shopping-13']['mistake'].update(alternative=True,why='Twee dozijn is the ordinary counting-unit form. A plural such as dozijnen can emphasise separate groups or quantities in an appropriate context. Practise the neutral purchase phrase without claiming the plural is impossible everywhere.')
 b['health-06']['mistake'].update(alternative=True,why='Een geweldige dokter is the ordinary inflected model. An uninflected adjective can also occur before a person or profession noun when assessing the person in that role. The missing -e is therefore not automatically an error in every such phrase.')
@@ -303,6 +326,9 @@ notes['work-179']['rule']=b['work-179']['order']+' '+b['work-179']['forms']+' Ex
 for item in b.values():
  if item.get('practiceFocus') == 'Nodig hebben: needing a thing':
   item['practiceGuide']='In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig.'
+# The main card uses an activity noun; its related bank practises activity infinitives.
+b['work-325']['practiceFocus']='Activity nouns and infinitives as subjects'
+b['work-325']['practiceGuide']='Onderhoud is an ordinary noun meaning maintenance, not the infinitive onderhouden. The full noun phrase het onderhoud van deze machine is the singular subject of is. The related examples practise the closely related construction with an infinitive naming an activity, such as Het schoonmaken van de keuken kost tijd. Both constructions can name an activity as the subject, but their word forms differ.'
 for n,data in [('grammar-breakdowns.json',b),('grammar-notes.json',notes)]:
  (root/'data'/n).write_text(json.dumps(data,ensure_ascii=False,indent=1)+'\n')
 print('Applied targeted editorial corrections to the 600-record everyday collection; this is not a complete semantic review.')

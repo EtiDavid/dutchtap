@@ -101,7 +101,14 @@ fixes.update({
  'conversation-16':{'forms':'Zul je and zal je are both standard future questions. Compare je zult with zul je, where subject je follows the finite verb and the added -t is omitted. Hulp nodig hebben means need help: hebben remains an infinitive after zul/zal, with hulp nodig between the finite verb and infinitive.'},
  'work-05':{'practiceGuide':'Klaar met means finished with; bezig met means busy with. Both can introduce a noun-like activity: het lezen van het rapport. Compare Hij is klaar met lezen (finished reading) and Hij is bezig met lezen (still occupied with reading). The related examples practise naming activities and this contrast; being busy does not mean being finished.'}
 })
+fixes.update({
+ 'conversation-18':{'compare':'English uses have in I have forgotten your name. Dutch commonly uses zijn here: ik ben je naam vergeten. Ben is a perfect auxiliary in this sentence, not a passive meaning that someone has forgotten the speaker.'},
+ 'home-12':{'forms':'Blijven: ik blijf, ik bleef, ik ben gebleven. Liever is the comparative of graag and expresses a preference. Ik blijf liever thuis means I would rather stay home; liever does not itself mark a past or conditional tense. In this model it follows finite blijf, but adverb position depends on the rest of the clause.'},
+ 'conversation-19':{'forms':'Klinken: het klinkt; simple past het klonk, plural klonken; perfect het heeft geklonken. Enigszins means somewhat and is fairly formal. Vreemd describes how it sounded: it is a predicate adjective after linking klonk and has no attributive -e. Compare a noun phrase with an adjective: een vreemd geluid, het vreemde geluid.'},
+ 'conversation-21':{'compare':'The whole expression het eens zijn met corresponds to English agree with. Daarmee refers to with that; ermee refers to with it. Het remains a fixed part of the Dutch expression. Do not interpret the English word agree as a word-for-word translation of ben or eens alone.'}
+})
 for key,changes in fixes.items():b[key].update(changes)
+b['transport-12']['mistake']['why']='Vertrekken takes zijn in this departure sense: hij is vertrokken. Learn auxiliary choice with the particular verb; a different verb such as verlaten uses hebben: hij heeft het gebouw verlaten.'
 b['conversation-11']['mistake']['why']='The intended person worrying is hij, so the reflexive is zich. Me refers to the speaker instead and would not express his own worry. Keep over het verliezen van zijn sleutels for what worries him.'
 b['work-03']['mistake']['why']='This subject is one meeting, so eindigen takes singular past eindigde here. With plural de vergaderingen use eindigden. Do not generalise -de to every singular past verb.'
 b['home-11']['mistake']['alternative']=False

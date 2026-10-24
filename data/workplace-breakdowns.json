@@ -5430,14 +5430,14 @@
       }
     ],
     "order": "The first constituent is Vandaag; werk is the finite (conjugated) verb and ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete time, place or object phrase is one first constituent. The finite verb follows it, then the subject: second position means a constituent, not the second written word.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. werken: present forms werk / werkt / werken; past singular werkte, plural werkten; perfect heb gewerkt. Werken aan introduces a task; op de servicedesk describes the workplace.",
+    "forms": "Vandaag is fronted as one time constituent, so finite werk comes before ik. Werken aan names the task being worked on; present tense can describe current work. werken: present forms werk / werkt / werken; past singular werkte, plural werkten; perfect heb gewerkt. Werken aan introduces a task; op de servicedesk describes the workplace.",
     "compare": "English can keep subject before verb after an initial time phrase; Dutch uses inversion here.",
     "mistake": {
       "wrong": "Vandaag werken ik aan de installatiehandleiding.",
       "right": "Vandaag werk ik aan de installatiehandleiding.",
       "why": "The stated subject and tense require the finite form werk here. werken is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Today I am working on the installation guide. You are giving a short team meeting update about your own work, with a clear time reference. State today's focus."
+    "meaning": "Today I am working on the installation guide. Today's work is the installation guide. Give the team an update on your current focus."
   },
   "career-meetings-002": {
     "parts": [
@@ -5463,14 +5463,14 @@
       }
     ],
     "order": "The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. afhandelen: present forms handel af / handelt af / handelen af; past singular handelde af, plural handelden af; perfect heb afgehandeld. Separable: handle or process a request, af te handelen. Vocabulary in this sentence: het ticket; plural tickets. An IT support record here; closing it is not deleting it.",
+    "forms": "Heb afgehandeld is the perfect of separable afhandelen. Gisteren places the action yesterday; three tickets is the object, while ik controls heb. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. afhandelen: present forms handel af / handelt af / handelen af; past singular handelde af, plural handelden af; perfect heb afgehandeld. Separable: handle or process a request, af te handelen. Vocabulary in this sentence: het ticket; plural tickets. An IT support record here; closing it is not deleting it.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "Ik hebben gisteren drie openstaande tickets afgehandeld.",
       "right": "Ik heb gisteren drie openstaande tickets afgehandeld.",
       "why": "The stated subject and tense require the finite form heb here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Yesterday I handled three outstanding tickets. You are giving a short team meeting update about your own work, with a clear time reference. Report three completed tickets from yesterday."
+    "meaning": "Yesterday I handled three outstanding tickets. You handled three outstanding tickets yesterday. Report that completed work in the meeting."
   },
   "career-meetings-003": {
     "parts": [
@@ -5483,19 +5483,23 @@
         "text": "zijn"
       },
       {
+        "label": "complement",
+        "text": "bezig"
+      },
+      {
         "label": "preposition phrase",
-        "text": "bezig met de voorbereiding van de demonstratie."
+        "text": "met de voorbereiding van de demonstratie."
       }
     ],
     "order": "The first constituent is We; zijn is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A finite form of zijn plus bezig describes an ongoing activity. Met takes an activity noun/nominalised infinitive; a te-infinitive construction names the action directly. Do not confuse met with the conjunction terwijl.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de voorbereiding; plural voorbereidingen. Preparation is distinct from execution or successful testing.",
+    "forms": "Zijn agrees with we. Bezig describes an ongoing activity and met introduces the noun phrase de voorbereiding van de demonstratie; this is not a completed perfect. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de voorbereiding; plural voorbereidingen. Preparation is distinct from execution or successful testing.",
     "compare": "English busy working or working on can correspond to bezig met or bezig te; choose the construction actually written here.",
     "mistake": {
       "wrong": "We ben bezig met de voorbereiding van de demonstratie.",
       "right": "We zijn bezig met de voorbereiding van de demonstratie.",
       "why": "The stated subject and tense require the finite form zijn here. ben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "We are preparing the demonstration. You are giving a short team meeting update about your own work, with a clear time reference. Describe your team's ongoing preparation."
+    "meaning": "We are preparing the demonstration. Your team is currently preparing a demonstration. Describe that ongoing preparation to colleagues."
   },
   "career-meetings-004": {
     "parts": [
@@ -5521,14 +5525,14 @@
       }
     ],
     "order": "The first constituent is Na dit overleg; ga is the finite (conjugated) verb and ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. gaan: present forms ga / gaat / gaan; past singular ging, plural gingen; perfect ben gegaan. Movement or an upcoming action; gaan plus an action infinitive does not take te. verzamelen: present forms verzamel / verzamelt / verzamelen; past singular verzamelde, plural verzamelden; perfect heb verzameld. Collect or gather, no ge- with ver-. Vocabulary in this sentence: het overleg; plural overleggen. Het overleg; short duration can be erg kort.",
+    "forms": "Na dit overleg is one first constituent, followed by finite ga and subject ik. Gaan takes bare infinitive verzamelen for the planned action. gaan: present forms ga / gaat / gaan; past singular ging, plural gingen; perfect ben gegaan. Movement or an upcoming action; gaan plus an action infinitive does not take te. verzamelen: present forms verzamel / verzamelt / verzamelen; past singular verzamelde, plural verzamelden; perfect heb verzameld. Collect or gather, no ge- with ver-. Vocabulary in this sentence: het overleg; plural overleggen. Het overleg; short duration can be erg kort.",
     "compare": "English will or be going to expresses a future intention; Dutch can also use the present with an explicit future time.",
     "mistake": {
       "wrong": "Na dit overleg gaan ik de testresultaten verzamelen.",
       "right": "Na dit overleg ga ik de testresultaten verzamelen.",
       "why": "The stated subject and tense require the finite form ga here. gaan is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "After this meeting, I am going to collect the test results. You are giving a short team meeting update about your own work, with a clear time reference. State your next action after the meeting."
+    "meaning": "After this meeting, I am going to collect the test results. You plan to collect the test results after the current meeting. State your next action."
   },
   "career-meetings-005": {
     "parts": [
@@ -5554,14 +5558,14 @@
       }
     ],
     "order": "The first constituent is De controle; is is the finite (conjugated) verb and De controle is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause.",
+    "forms": "Nog niet means not yet. Klaar is an adjective after is, with no -e; the sentence describes an unfinished state rather than a perfect verb form. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause.",
     "compare": "English often uses not or no where Dutch distinguishes niet from geen.",
     "mistake": {
       "wrong": "De controle zijn nog niet klaar.",
       "right": "De controle is nog niet klaar.",
       "why": "The stated subject and tense require the finite form is here. zijn is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The check is not finished yet. You are giving a short team meeting update about your own work, with a clear time reference. State that the check remains unfinished."
+    "meaning": "The check is not finished yet. A check is still unfinished. Tell colleagues that it has not been completed yet."
   },
   "career-meetings-006": {
     "parts": [
@@ -5574,19 +5578,19 @@
         "text": "is"
       },
       {
-        "label": "object",
+        "label": "complement",
         "text": "de overdracht aan de avonddienst."
       }
     ],
     "order": "The first constituent is Mijn belangrijkste taak; is is the finite (conjugated) verb and Mijn belangrijkste taak is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de overdracht; plural overdrachten. Include current status, ownership and next steps. de dienst; plural diensten. Work-shift sense, distinct from a professional service. De avonddienst is an evening shift. de taak; plural taken. Keep ownership and the requested action explicit.",
+    "forms": "Mijn belangrijkste taak is singular with is. De overdracht is a noun complement naming the task; aan de avonddienst identifies the receiving shift. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de overdracht; plural overdrachten. Include current status, ownership and next steps. de dienst; plural diensten. Work-shift sense, distinct from a professional service. De avonddienst is an evening shift. de taak; plural taken. Keep ownership and the requested action explicit.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "Mijn belangrijkste taak zijn de overdracht aan de avonddienst.",
       "right": "Mijn belangrijkste taak is de overdracht aan de avonddienst.",
       "why": "The stated subject and tense require the finite form is here. zijn is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "My most important task is the handover to the evening shift. You are giving a short team meeting update about your own work, with a clear time reference. Name your main task today."
+    "meaning": "My most important task is the handover to the evening shift. Your main task is handing over to the evening shift. Identify that priority in your update."
   },
   "career-meetings-007": {
     "parts": [
@@ -5604,14 +5608,14 @@
       }
     ],
     "order": "The first constituent is Ik; verwacht is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. verwachten: present forms verwacht / verwacht / verwachten; past singular verwachtte, plural verwachtten; perfect heb verwacht. Expect rather than guarantee, no ge- with ver-. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause.",
+    "forms": "Verwacht states an expectation. Dat introduces its content; vanmiddag gives the expected time and klaar is ends the clause. Klaar means finished for this check. verwachten: present forms verwacht / verwacht / verwachten; past singular verwachtte, plural verwachtten; perfect heb verwacht. Expect rather than guarantee, no ge- with ver-. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause.",
     "compare": "English usually keeps subject–verb–object inside the embedded clause; Dutch moves the finite verb/group toward its end.",
     "mistake": {
       "wrong": "Ik verwachten dat de controle vanmiddag klaar is.",
       "right": "Ik verwacht dat de controle vanmiddag klaar is.",
       "why": "The stated subject and tense require the finite form verwacht here. verwachten is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I expect the check to be ready this afternoon. You are giving a short team meeting update about your own work, with a clear time reference. Give an expectation rather than a guarantee."
+    "meaning": "I expect the check to be ready this afternoon. You expect the check to be completed this afternoon, but cannot guarantee it. Express that expectation."
   },
   "career-meetings-008": {
     "parts": [
@@ -5629,18 +5633,22 @@
       },
       {
         "label": "object",
-        "text": "nog een account nodig."
+        "text": "nog een account"
+      },
+      {
+        "label": "complement",
+        "text": "nodig."
       }
     ],
     "order": "The first constituent is Voor de nieuwe test; heb is the finite (conjugated) verb and ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. Vocabulary in this sentence: het account; plural accounts. Een nieuw account; het nieuwe account. New is not necessarily unfamiliar.",
+    "forms": "Voor de nieuwe test identifies the purpose, not a deadline. The fronted phrase is followed by heb ik; hebben ... nodig means need, with nog marking the remaining requirement. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. Vocabulary in this sentence: het account; plural accounts. Een nieuw account; het nieuwe account. New is not necessarily unfamiliar.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "Voor de nieuwe test hebben ik nog een account nodig.",
       "right": "Voor de nieuwe test heb ik nog een account nodig.",
       "why": "The stated subject and tense require the finite form heb here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "For the new test, I still need an account. You are giving a short team meeting update about your own work, with a clear time reference. State the resource still needed for the test."
+    "meaning": "For the new test, I still need an account. You still need an account for a new test. Explain the outstanding resource requirement."
   },
   "career-meetings-009": {
     "parts": [
@@ -5662,7 +5670,7 @@
       }
     ],
     "order": "Wie is itself the question subject and is followed by finite geeft; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. geven: present forms geef / geeft / geven; past singular gaf, plural gaven; perfect heb gegeven. Give; a receiver can be an indirect object or introduced with aan.",
+    "forms": "Wie is the question subject, followed by geeft. Vandaag specifies the day; de eerste update is the object, and no additional subject is inserted. geven: present forms geef / geeft / geven; past singular gaf, plural gaven; perfect heb gegeven. Give; a receiver can be an indirect object or introduced with aan.",
     "compare": "English often inserts do/does; Dutch normally puts the finite verb before the subject instead.",
     "mistake": {
       "wrong": "Wie geven vandaag de eerste update?",
@@ -5670,7 +5678,7 @@
       "why": "Wie can ask about one person or several people. Compare the number intended here and the published agreement; a different finite number is not automatically ungrammatical in every possible reading of a wie question.",
       "alternative": true
     },
-    "meaning": "Who is giving the first update today? You are giving a short team meeting update about your own work, with a clear time reference. Ask who starts today's updates."
+    "meaning": "Who is giving the first update today? The team is about to start today's updates. Ask who is giving the first one."
   },
   "career-meetings-010": {
     "parts": [
@@ -5692,14 +5700,14 @@
       }
     ],
     "order": "The first constituent is Er; zijn is the finite (conjugated) verb and geen nieuwe blokkades. is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope.",
-    "forms": "Vandaag identifies the current plan, gisteren a completed or past action. An update should distinguish work in progress from completion. Er introduces the existence or occurrence, rather than being the grammatical subject. The following noun phrase is the subject and controls finite-verb agreement. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de blokkade; plural blokkades. A practical obstacle to progress.",
+    "forms": "Er introduces existence; geen nieuwe blokkades is the plural subject, taking zijn. Sinds gisteren extends the state from yesterday to now, so Dutch uses the present here. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de blokkade; plural blokkades. A practical obstacle to progress.",
     "compare": "English often uses not or no where Dutch distinguishes niet from geen.",
     "mistake": {
       "wrong": "Er ben sinds gisteren geen nieuwe blokkades.",
       "right": "Er zijn sinds gisteren geen nieuwe blokkades.",
       "why": "The stated subject and tense require the finite form zijn here. ben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "There have been no new blockers since yesterday. You are giving a short team meeting update about your own work, with a clear time reference. Report no new blockers since yesterday."
+    "meaning": "There have been no new blockers since yesterday. No new blockers have arisen since yesterday. Report that continuing absence to the team."
   },
   "career-meetings-011": {
     "parts": [
@@ -5725,14 +5733,14 @@
       }
     ],
     "order": "The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. aanvullen: present forms vul aan / vult aan / vullen aan; past singular vulde aan, plural vulden aan; perfect heb aangevuld. Separable: add missing information; aan te vullen. Vocabulary in this sentence: de handleiding; plural handleidingen. In de handleiding is the source location of information. de stap; plural stappen. Step order can affect a test result.",
+    "forms": "Heb aangevuld is perfect with separable aanvullen. De handleiding is the document supplemented; met de nieuwe stappen identifies the material added. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. aanvullen: present forms vul aan / vult aan / vullen aan; past singular vulde aan, plural vulden aan; perfect heb aangevuld. Separable: add missing information; aan te vullen. Vocabulary in this sentence: de handleiding; plural handleidingen. In de handleiding is the source location of information. de stap; plural stappen. Step order can affect a test result.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "Ik hebben de handleiding met de nieuwe stappen aangevuld.",
       "right": "Ik heb de handleiding met de nieuwe stappen aangevuld.",
       "why": "The stated subject and tense require the finite form heb here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I have added the new steps to the manual. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Report the completed manual update."
+    "meaning": "I have added the new steps to the manual. You added the new steps to the manual. Report that completed documentation update."
   },
   "career-meetings-012": {
     "parts": [
@@ -5754,14 +5762,14 @@
       }
     ],
     "order": "The first constituent is De collega's; hebben is the finite (conjugated) verb and De collega's is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. controleren: present forms controleer / controleert / controleren; past singular controleerde, plural controleerden; perfect heb gecontroleerd. Check something; not necessarily a full investigation of its cause. Vocabulary in this sentence: de collega; plural collega's. Nieuw describes a recently joined colleague; onbekend means unfamiliar. het testaccount; plural testaccounts. Distinct from a user's everyday account.",
+    "forms": "Plural de collega's takes hebben. Gecontroleerd is the participle, while de testaccounts is the object checked; the sentence does not give the check's outcome. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. controleren: present forms controleer / controleert / controleren; past singular controleerde, plural controleerden; perfect heb gecontroleerd. Check something; not necessarily a full investigation of its cause. Vocabulary in this sentence: de collega; plural collega's. Nieuw describes a recently joined colleague; onbekend means unfamiliar. het testaccount; plural testaccounts. Distinct from a user's everyday account.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "De collega's heb de testaccounts gecontroleerd.",
       "right": "De collega's hebben de testaccounts gecontroleerd.",
       "why": "The stated subject and tense require the finite form hebben here. heb is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The colleagues have checked the test accounts. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Report a completed check by colleagues."
+    "meaning": "The colleagues have checked the test accounts. Your colleagues have checked the test accounts. Report who performed that completed check."
   },
   "career-meetings-013": {
     "parts": [
@@ -5774,7 +5782,7 @@
         "text": "zijn"
       },
       {
-        "label": "time phrase",
+        "label": "preposition phrase",
         "text": "met alle geplande controles"
       },
       {
@@ -5783,14 +5791,14 @@
       }
     ],
     "order": "The first constituent is We; zijn is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. klaarkomen: present forms kom klaar / komt klaar / komen klaar; past singular kwam klaar, plural kwamen klaar; perfect ben klaargekomen. Separable: klaarkomen met een taak means finish a task. The met phrase fixes this work-related meaning. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause.",
+    "forms": "Zijn klaargekomen is the perfect of klaarkomen. Met alle geplande controles identifies the tasks finished; alle covers every planned check, not every possible check. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. klaarkomen: present forms kom klaar / komt klaar / komen klaar; past singular kwam klaar, plural kwamen klaar; perfect ben klaargekomen. Separable: klaarkomen met een taak means finish a task. The met phrase fixes this work-related meaning. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "We ben met alle geplande controles klaargekomen.",
       "right": "We zijn met alle geplande controles klaargekomen.",
       "why": "The stated subject and tense require the finite form zijn here. ben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "We have finished all the planned checks. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Report completion of every planned check."
+    "meaning": "We have finished all the planned checks. Your team has finished every planned check. Report the completion of that full set."
   },
   "career-meetings-014": {
     "parts": [
@@ -5812,14 +5820,14 @@
       }
     ],
     "order": "The first constituent is De laatste versie; is is the finite (conjugated) verb and De laatste versie is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. verschijnen: present forms verschijn / verschijnt / verschijnen; past singular verscheen, plural verschenen; perfect ben verschenen. Appear; zijn in the perfect for appearing. Vocabulary in this sentence: de versie; plural versies. Newest does not automatically mean approved.",
+    "forms": "Is verschenen is the perfect of verschijnen with zijn. Gisteravond gives the past time; appearing is not a passive action performed on the version. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. verschijnen: present forms verschijn / verschijnt / verschijnen; past singular verscheen, plural verschenen; perfect ben verschenen. Appear; zijn in the perfect for appearing. Vocabulary in this sentence: de versie; plural versies. Newest does not automatically mean approved.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "De laatste versie zijn gisteravond verschenen.",
       "right": "De laatste versie is gisteravond verschenen.",
       "why": "The stated subject and tense require the finite form is here. zijn is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The latest version appeared yesterday evening. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Report the release time."
+    "meaning": "The latest version appeared yesterday evening. The latest version appeared yesterday evening. Report that release time to the team."
   },
   "career-meetings-015": {
     "parts": [
@@ -5845,14 +5853,14 @@
       }
     ],
     "order": "The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. opvragen: present forms vraag op / vraagt op / vragen op; past singular vroeg op, plural vroegen op; perfect heb opgevraagd. Separable: request/retrieve information; op te vragen. Vocabulary in this sentence: de gebruiker; plural gebruikers. A user is not necessarily an administrator.",
+    "forms": "Heb opgevraagd is perfect with separable opvragen. Bij de gebruiker identifies whom you approached; requesting information does not assert receipt of a reply. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. opvragen: present forms vraag op / vraagt op / vragen op; past singular vroeg op, plural vroegen op; perfect heb opgevraagd. Separable: request/retrieve information; op te vragen. Vocabulary in this sentence: de gebruiker; plural gebruikers. A user is not necessarily an administrator.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "Ik hebben de ontbrekende informatie bij de gebruiker opgevraagd.",
       "right": "Ik heb de ontbrekende informatie bij de gebruiker opgevraagd.",
       "why": "The stated subject and tense require the finite form heb here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I have requested the missing information from the user. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Report a request made, without implying a reply."
+    "meaning": "I have requested the missing information from the user. You requested missing information from the user, but have not necessarily received it. Report the request made."
   },
   "career-meetings-016": {
     "parts": [
@@ -5878,14 +5886,14 @@
       }
     ],
     "order": "The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. vergelijken: present forms vergelijk / vergelijkt / vergelijken; past singular vergeleek, plural vergeleken; perfect heb vergeleken. Compare; inseparable ver-, irregular vergeleken. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence. het resultaat; plural resultaten. ",
+    "forms": "Hebben vergeleken is the perfect of vergelijken. Met het vorige verslag gives the comparison reference; the sentence does not state that the results match it. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. vergelijken: present forms vergelijk / vergelijkt / vergelijken; past singular vergeleek, plural vergeleken; perfect heb vergeleken. Compare; inseparable ver-, irregular vergeleken. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence. het resultaat; plural resultaten. ",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "We heb de resultaten met het vorige verslag vergeleken.",
       "right": "We hebben de resultaten met het vorige verslag vergeleken.",
       "why": "The stated subject and tense require the finite form hebben here. heb is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "We have compared the results with the previous report. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Report the completed comparison."
+    "meaning": "We have compared the results with the previous report. Your team compared the results with the previous report. Report that completed comparison."
   },
   "career-meetings-017": {
     "parts": [
@@ -5918,15 +5926,15 @@
         "text": "nog."
       }
     ],
-    "order": "The first constituent is De installatie; is is the finite (conjugated) verb and De installatie is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. lopen: present forms loop / loopt / lopen; past singular liep, plural liepen; perfect heb gelopen. Lopen can describe a process running. Motion with a destination may instead use zijn. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause.",
-    "compare": "English often uses not or no where Dutch distinguishes niet from geen.",
+    "order": "The first constituent is De installatie; is is the finite (conjugated) verb and De installatie is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
+    "forms": "Maar coordinates two main clauses: de installatie is and de controle loopt. Klaar is an adjective; nog says the check continues. Neither clause is a perfect construction. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. lopen: present forms loop / loopt / lopen; past singular liep, plural liepen; perfect heb gelopen. Lopen can describe a process running. Motion with a destination may instead use zijn. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause.",
+    "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "De installatie zijn klaar, maar de controle loopt nog.",
       "right": "De installatie is klaar, maar de controle loopt nog.",
       "why": "The stated subject and tense require the finite form is here. zijn is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The installation is finished, but the check is still running. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Distinguish completed installation from ongoing verification."
+    "meaning": "The installation is finished, but the check is still running. Installation is finished, but verification is still running. Distinguish those two work states."
   },
   "career-meetings-018": {
     "parts": [
@@ -5952,14 +5960,14 @@
       }
     ],
     "order": "The first constituent is Mijn collega; heeft is the finite (conjugated) verb and Mijn collega is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. vastleggen: present forms leg vast / legt vast / leggen vast; past singular legde vast, plural legden vast; perfect heb vastgelegd. Separable: record/document an agreement; vast te leggen. Vocabulary in this sentence: de collega; plural collega's. Nieuw describes a recently joined colleague; onbekend means unfamiliar. het ticket; plural tickets. An IT support record here; closing it is not deleting it. de wijziging; plural wijzigingen. A planned change is not necessarily already approved.",
+    "forms": "Heeft vastgelegd is perfect with separable vastleggen. Mijn collega is the singular subject; in het ticket identifies the recording location. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. vastleggen: present forms leg vast / legt vast / leggen vast; past singular legde vast, plural legden vast; perfect heb vastgelegd. Separable: record/document an agreement; vast te leggen. Vocabulary in this sentence: de collega; plural collega's. Nieuw describes a recently joined colleague; onbekend means unfamiliar. het ticket; plural tickets. An IT support record here; closing it is not deleting it. de wijziging; plural wijzigingen. A planned change is not necessarily already approved.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "Mijn collega hebben de wijziging in het ticket vastgelegd.",
       "right": "Mijn collega heeft de wijziging in het ticket vastgelegd.",
       "why": "The stated subject and tense require the finite form heeft here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "My colleague has documented the change in the ticket. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Report where the change was recorded."
+    "meaning": "My colleague has documented the change in the ticket. Your colleague documented the change in the ticket. Report where it was recorded."
   },
   "career-meetings-019": {
     "parts": [
@@ -5985,14 +5993,14 @@
       }
     ],
     "order": "The first constituent is Vóór de vergadering; hadden is the finite (conjugated) verb and we is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Had/hadden plus a participle reports an event completed before another past reference point. A following toen/nadat clause helps place those events in order.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. verzamelen: present forms verzamel / verzamelt / verzamelen; past singular verzamelde, plural verzamelden; perfect heb verzameld. Collect or gather, no ge- with ver-. Vocabulary in this sentence: het antwoord; plural antwoorden. Do not assume a missing answer means permission.",
+    "forms": "Hadden verzameld is the past perfect, earlier than the past meeting. The fronted phrase vóór de vergadering is followed by hadden we; All the answers are included. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. verzamelen: present forms verzamel / verzamelt / verzamelen; past singular verzamelde, plural verzamelden; perfect heb verzameld. Collect or gather, no ge- with ver-. Vocabulary in this sentence: het antwoord; plural antwoorden. Do not assume a missing answer means permission.",
     "compare": "English had plus participle has the corresponding earlier-past meaning; do not substitute a present perfect without changing that reference point.",
     "mistake": {
       "wrong": "Vóór de vergadering had we alle antwoorden verzameld.",
       "right": "Vóór de vergadering hadden we alle antwoorden verzameld.",
       "why": "The stated subject and tense require the finite form hadden here. had is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Before the meeting, we had collected all the answers. You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Place collection before the meeting."
+    "meaning": "Before the meeting, we had collected all the answers. All answers had already been collected before the meeting began. Place that completed collection before the past meeting."
   },
   "career-meetings-020": {
     "parts": [
@@ -6018,14 +6026,14 @@
       }
     ],
     "order": "The first question constituent is Welke onderdelen; hebben is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed.",
-    "forms": "The perfect uses a finite auxiliary and a participle. Afgerond describes completion, not simply being busy. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. testen: present forms test / test / testen; past singular testte, plural testten; perfect heb getest. Testing does not by itself establish approval for a change.",
+    "forms": "Welke onderdelen is the fronted question object; jullie is the plural subject of hebben. Al means already and getest completes the perfect bracket. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. testen: present forms test / test / testen; past singular testte, plural testten; perfect heb getest. Testing does not by itself establish approval for a change.",
     "compare": "English often inserts do/does; Dutch normally puts the finite verb before the subject instead.",
     "mistake": {
       "wrong": "Welke onderdelen heb jullie al getest?",
       "right": "Welke onderdelen hebben jullie al getest?",
       "why": "The stated subject and tense require the finite form hebben here. heb is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Which parts have you already tested? You are reporting completed work in a meeting, making clear what was checked and what remains outside scope. Ask which parts the group has tested."
+    "meaning": "Which parts have you already tested? You need to know which parts your colleagues have already tested. Ask the group directly."
   },
   "career-meetings-021": {
     "parts": [
@@ -6043,14 +6051,14 @@
       }
     ],
     "order": "The first constituent is Ik; wacht is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. wachten: present forms wacht / wacht / wachten; past singular wachtte, plural wachtten; perfect heb gewacht. Wachten op names what is awaited. Vocabulary in this sentence: de goedkeuring; plural goedkeuringen. In this sentence, permission for a proposed action. de beheerder; plural beheerders. An administrator may grant rights but still needs relevant approval.",
+    "forms": "Wachten takes op for what is awaited. Van de beheerder identifies whose approval is needed; the sentence does not say approval has been given. wachten: present forms wacht / wacht / wachten; past singular wachtte, plural wachtten; perfect heb gewacht. Wachten op names what is awaited. Vocabulary in this sentence: de goedkeuring; plural goedkeuringen. In this sentence, permission for a proposed action. de beheerder; plural beheerders. An administrator may grant rights but still needs relevant approval.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "Ik wachten op de goedkeuring van de beheerder.",
       "right": "Ik wacht op de goedkeuring van de beheerder.",
       "why": "The stated subject and tense require the finite form wacht here. wachten is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I am waiting for the administrator's approval. You are raising a blocker in a team meeting and identifying what is needed to continue the work. Name the approval blocking your work."
+    "meaning": "I am waiting for the administrator's approval. Your work is waiting for approval from the administrator. Name that dependency in the meeting."
   },
   "career-meetings-022": {
     "parts": [
@@ -6076,14 +6084,14 @@
       }
     ],
     "order": "The first constituent is Zonder testaccount; kunnen is the finite (conjugated) verb and we is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. verdergaan: present forms ga verder / gaat verder / gaan verder; past singular ging verder, plural gingen verder; perfect ben verdergegaan. Separable: continue; verder te gaan. Vocabulary in this sentence: het testaccount; plural testaccounts. Distinct from a user's everyday account.",
+    "forms": "Zonder testaccount is fronted, so kunnen precedes we. Niet negates the ability to continue; verdergaan stays a joined infinitive without te after kunnen. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. verdergaan: present forms ga verder / gaat verder / gaan verder; past singular ging verder, plural gingen verder; perfect ben verdergegaan. Separable: continue; verder te gaan. Vocabulary in this sentence: het testaccount; plural testaccounts. Distinct from a user's everyday account.",
     "compare": "English can/must/may also take a bare infinitive, but Dutch can place the object and time phrases before that final infinitive.",
     "mistake": {
       "wrong": "Zonder testaccount kan we niet verdergaan.",
       "right": "Zonder testaccount kunnen we niet verdergaan.",
       "why": "The stated subject and tense require the finite form kunnen here. kan is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Without a test account, we cannot continue. You are raising a blocker in a team meeting and identifying what is needed to continue the work. Explain what prevents progress."
+    "meaning": "Without a test account, we cannot continue. Your team cannot continue without a test account. Explain what is preventing progress."
   },
   "career-meetings-023": {
     "parts": [
@@ -6096,7 +6104,7 @@
         "text": "loopt"
       },
       {
-        "label": "adverb",
+        "label": "separable particle",
         "text": "uit"
       },
       {
@@ -6105,14 +6113,14 @@
       }
     ],
     "order": "The first constituent is De planning; loopt is the finite (conjugated) verb and De planning is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. uitlopen: present forms loop uit / loopt uit / lopen uit; past singular liep uit, plural liepen uit; perfect is uitgelopen. Separable: a schedule overruns, with zijn in this sense. ontbreken: present forms ontbreek / ontbreekt / ontbreken; past singular ontbrak, plural ontbraken; perfect heeft ontbroken. Be missing, with the missing item as grammatical subject. Vocabulary in this sentence: de planning; plural planningen. Bezig met de planning refers to arranging the work or its schedule. het gegeven; plural gegevens. The plural gegevens means data, and takes plural verb agreement.",
+    "forms": "Uitlopen splits as loopt ... uit. Omdat introduces the cause; de gegevens is plural, taking ontbreken at the clause's end. uitlopen: present forms loop uit / loopt uit / lopen uit; past singular liep uit, plural liepen uit; perfect is uitgelopen. Separable: a schedule overruns, with zijn in this sense. ontbreken: present forms ontbreek / ontbreekt / ontbreken; past singular ontbrak, plural ontbraken; perfect heeft ontbroken. Be missing, with the missing item as grammatical subject. Vocabulary in this sentence: de planning; plural planningen. Bezig met de planning refers to arranging the work or its schedule. het gegeven; plural gegevens. The plural gegevens means data, and takes plural verb agreement.",
     "compare": "English usually keeps subject–verb–object inside the embedded clause; Dutch moves the finite verb/group toward its end.",
     "mistake": {
       "wrong": "De planning lopen uit omdat de gegevens ontbreken.",
       "right": "De planning loopt uit omdat de gegevens ontbreken.",
       "why": "The stated subject and tense require the finite form loopt here. lopen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The schedule is slipping because the data is missing. You are raising a blocker in a team meeting and identifying what is needed to continue the work. Explain the cause of the delay."
+    "meaning": "The schedule is slipping because the data is missing. Missing data is making the schedule slip. Explain the reason for the delay."
   },
   "career-meetings-024": {
     "parts": [
@@ -6125,7 +6133,7 @@
         "text": "iemand"
       },
       {
-        "label": "indirect object",
+        "label": "object",
         "text": "mij"
       },
       {
@@ -6138,14 +6146,14 @@
       }
     ],
     "order": "The finite verb Kan comes before subject iemand. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. helpen: present forms help / helpt / helpen; past singular hielp, plural hielpen; perfect heb geholpen. Helpen takes a person as object; met introduces the task. Vocabulary in this sentence: de foutcode; plural foutcodes. Copy the exact code for diagnosis.",
+    "forms": "Kan precedes subject iemand. Mij is the person helped, a direct object of helpen; met deze foutcode identifies the issue for which help is requested. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. helpen: present forms help / helpt / helpen; past singular hielp, plural hielpen; perfect heb geholpen. Helpen takes a person as object; met introduces the task. Vocabulary in this sentence: de foutcode; plural foutcodes. Copy the exact code for diagnosis.",
     "compare": "English can/could/may are not interchangeable in every situation; preserve the intended ability or permission distinction.",
     "mistake": {
       "wrong": "Kunnen iemand mij met deze foutcode helpen?",
       "right": "Kan iemand mij met deze foutcode helpen?",
       "why": "The stated subject and tense require the finite form Kan here. kunnen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Can someone help me with this error code? You are raising a blocker in a team meeting and identifying what is needed to continue the work. Ask the team for help with the error code."
+    "meaning": "Can someone help me with this error code? An error code is blocking your work. Ask the team whether someone can help you with it."
   },
   "career-meetings-025": {
     "parts": [
@@ -6162,19 +6170,19 @@
         "text": "niet"
       },
       {
-        "label": "object",
+        "label": "complement",
         "text": "de blokkade."
       }
     ],
     "order": "The first constituent is De technische controle; is is the finite (conjugated) verb and De technische controle is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de blokkade; plural blokkades. A practical obstacle to progress. de controle; plural controles. A check need not establish the underlying cause.",
+    "forms": "Niet negates identifying the technical check as de blokkade. De blokkade is a noun complement after is, not an object receiving an action. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de blokkade; plural blokkades. A practical obstacle to progress. de controle; plural controles. A check need not establish the underlying cause.",
     "compare": "English often uses not or no where Dutch distinguishes niet from geen.",
     "mistake": {
       "wrong": "De technische controle zijn niet de blokkade.",
       "right": "De technische controle is niet de blokkade.",
       "why": "The stated subject and tense require the finite form is here. zijn is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The technical check is not the blocker. You are raising a blocker in a team meeting and identifying what is needed to continue the work. Correct an incorrect assumption about the blocker."
+    "meaning": "The technical check is not the blocker. Colleagues think the technical check is the blocker, but that is incorrect. Correct that assumption."
   },
   "career-meetings-026": {
     "parts": [
@@ -6196,14 +6204,14 @@
       }
     ],
     "order": "The first constituent is We; missen is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. missen: present forms mis / mist / missen; past singular miste, plural misten; perfect heb gemist. Miss/fail to hear or notice something; context decides the sense. Vocabulary in this sentence: de leverancier; plural leveranciers. A supplier may be external to the team. de bevestiging; plural bevestigingen. Wachten op de bevestiging: wait for confirmation.",
+    "forms": "Missen is finite with we. Nog marks the continuing absence; van de leverancier identifies the source of the confirmation being awaited. missen: present forms mis / mist / missen; past singular miste, plural misten; perfect heb gemist. Miss/fail to hear or notice something; context decides the sense. Vocabulary in this sentence: de leverancier; plural leveranciers. A supplier may be external to the team. de bevestiging; plural bevestigingen. Wachten op de bevestiging: wait for confirmation.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "We mis nog de bevestiging van de leverancier.",
       "right": "We missen nog de bevestiging van de leverancier.",
       "why": "The stated subject and tense require the finite form missen here. mis is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "We are still missing the supplier's confirmation. You are raising a blocker in a team meeting and identifying what is needed to continue the work. Name the missing external confirmation."
+    "meaning": "We are still missing the supplier's confirmation. Your team is still missing confirmation from the supplier. Name that remaining external dependency."
   },
   "career-meetings-027": {
     "parts": [
@@ -6225,14 +6233,14 @@
       }
     ],
     "order": "The first constituent is Zolang de toegang ontbreekt,; blijft is the finite (conjugated) verb and de test is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. blijven: present forms blijf / blijft / blijven; past singular bleef, plural bleven; perfect ben gebleven. Remaining or continuing; forms the perfect with zijn. ontbreken: present forms ontbreek / ontbreekt / ontbreken; past singular ontbrak, plural ontbraken; perfect heeft ontbroken. Be missing, with the missing item as grammatical subject. Vocabulary in this sentence: de toegang; no useful plural in this use. Toegang tot a system; successful login and permission are different.",
+    "forms": "Zolang introduces a continuing condition. Its whole clause comes before main-clause blijft de test; geblokkeerd describes the continuing blocked state. blijven: present forms blijf / blijft / blijven; past singular bleef, plural bleven; perfect ben gebleven. Remaining or continuing; forms the perfect with zijn. ontbreken: present forms ontbreek / ontbreekt / ontbreken; past singular ontbrak, plural ontbraken; perfect heeft ontbroken. Be missing, with the missing item as grammatical subject. Vocabulary in this sentence: de toegang; no useful plural in this use. Toegang tot a system; successful login and permission are different.",
     "compare": "English can keep the main subject before the verb after an initial when/if/because clause; Dutch uses main-clause inversion.",
     "mistake": {
       "wrong": "Zolang de toegang ontbreekt, blijven de test geblokkeerd.",
       "right": "Zolang de toegang ontbreekt, blijft de test geblokkeerd.",
       "why": "The stated subject and tense require the finite form blijft here. blijven is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "As long as access is missing, the test remains blocked. You are raising a blocker in a team meeting and identifying what is needed to continue the work. State the ongoing access dependency."
+    "meaning": "As long as access is missing, the test remains blocked. The test cannot proceed while access remains unavailable. State how long that blocker persists."
   },
   "career-meetings-028": {
     "parts": [
@@ -6258,14 +6266,14 @@
       }
     ],
     "order": "The first constituent is Ik; mag is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. mogen: present forms mag / mag / mogen; past singular mocht, plural mochten; perfect heb gemogen. Permission; a following infinitive has no te. uitvoeren: present forms voer uit / voert uit / voeren uit; past singular voerde uit, plural voerden uit; perfect heb uitgevoerd. Separable: uitvoeren, voer uit, uit te voeren, uitgevoerd. Vocabulary in this sentence: de wijziging; plural wijzigingen. A planned change is not necessarily already approved. de toestemming; no useful plural in this use. Permission is distinct from technical ability.",
+    "forms": "Mag concerns permission rather than technical ability. Niet zonder toestemming prohibits carrying out the change without authorisation; uitvoeren stays infinitive without te. mogen: present forms mag / mag / mogen; past singular mocht, plural mochten; perfect heb gemogen. Permission; a following infinitive has no te. uitvoeren: present forms voer uit / voert uit / voeren uit; past singular voerde uit, plural voerden uit; perfect heb uitgevoerd. Separable: uitvoeren, voer uit, uit te voeren, uitgevoerd. Vocabulary in this sentence: de wijziging; plural wijzigingen. A planned change is not necessarily already approved. de toestemming; no useful plural in this use. Permission is distinct from technical ability.",
     "compare": "English can/must/may also take a bare infinitive, but Dutch can place the object and time phrases before that final infinitive.",
     "mistake": {
       "wrong": "Ik mogen de wijziging niet zonder toestemming uitvoeren.",
       "right": "Ik mag de wijziging niet zonder toestemming uitvoeren.",
       "why": "The stated subject and tense require the finite form mag here. mogen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I am not allowed to carry out the change without permission. You are raising a blocker in a team meeting and identifying what is needed to continue the work. Explain a permission constraint."
+    "meaning": "I am not allowed to carry out the change without permission. You need permission before carrying out a change. Explain that you are not allowed to proceed without it."
   },
   "career-meetings-029": {
     "parts": [
@@ -6274,7 +6282,7 @@
         "text": "Wie"
       },
       {
-        "label": "finite verb",
+        "label": "finite verb (modal)",
         "text": "kan"
       },
       {
@@ -6287,7 +6295,7 @@
       }
     ],
     "order": "Wie is itself the question subject and is followed by finite kan; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. wegnemen: present forms neem weg / neemt weg / nemen weg; past singular nam weg, plural namen weg; perfect heb weggenomen. Separable: remove an obstacle, weg te nemen. Vocabulary in this sentence: de blokkade; plural blokkades. A practical obstacle to progress.",
+    "forms": "Wie is the question subject. Kan is the modal and wegnemen remains a joined infinitive; the question asks about ability rather than reporting a completed fix. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. wegnemen: present forms neem weg / neemt weg / nemen weg; past singular nam weg, plural namen weg; perfect heb weggenomen. Separable: remove an obstacle, weg te nemen. Vocabulary in this sentence: de blokkade; plural blokkades. A practical obstacle to progress.",
     "compare": "English often inserts do/does; Dutch normally puts the finite verb before the subject instead.",
     "mistake": {
       "wrong": "Wie kunnen deze blokkade wegnemen?",
@@ -6295,7 +6303,7 @@
       "why": "Wie can ask about one person or several people. Compare the number intended here and the published agreement; a different finite number is not automatically ungrammatical in every possible reading of a wie question.",
       "alternative": true
     },
-    "meaning": "Who can remove this blocker? You are raising a blocker in a team meeting and identifying what is needed to continue the work. Ask who is able to unblock the work."
+    "meaning": "Who can remove this blocker? The team needs someone who can remove the current blocker. Ask who is able to do that."
   },
   "career-meetings-030": {
     "parts": [
@@ -6313,14 +6321,14 @@
       }
     ],
     "order": "The first constituent is De ontbrekende handleiding; vertraagt is the finite (conjugated) verb and De ontbrekende handleiding is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Wachten op names a dependency. Zolang gives a continuing condition. Kunnen concerns ability, mogen permission. vertragen: present forms vertraag / vertraagt / vertragen; past singular vertraagde, plural vertraagden; perfect heb vertraagd. Delay an object, or become slower in an intransitive use. Vocabulary in this sentence: de handleiding; plural handleidingen. In de handleiding is the source location of information. de voorbereiding; plural voorbereidingen. Preparation is distinct from execution or successful testing.",
+    "forms": "De ontbrekende handleiding is the singular subject of vertraagt. Ontbrekende describes the missing manual; de voorbereiding is what is delayed. vertragen: present forms vertraag / vertraagt / vertragen; past singular vertraagde, plural vertraagden; perfect heb vertraagd. Delay an object, or become slower in an intransitive use. Vocabulary in this sentence: de handleiding; plural handleidingen. In de handleiding is the source location of information. de voorbereiding; plural voorbereidingen. Preparation is distinct from execution or successful testing.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "De ontbrekende handleiding vertragen de voorbereiding.",
       "right": "De ontbrekende handleiding vertraagt de voorbereiding.",
       "why": "The stated subject and tense require the finite form vertraagt here. vertragen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The missing manual delays the preparation. You are raising a blocker in a team meeting and identifying what is needed to continue the work. Explain the preparation dependency."
+    "meaning": "The missing manual delays the preparation. Preparation is delayed because the manual is missing. Explain that dependency to colleagues."
   },
   "career-meetings-031": {
     "parts": [
@@ -6333,12 +6341,16 @@
         "text": "ik"
       },
       {
-        "label": "time phrase",
+        "label": "adverb",
         "text": "hier"
       },
       {
         "label": "object",
-        "text": "een vraag over"
+        "text": "een vraag"
+      },
+      {
+        "label": "adverb",
+        "text": "over"
       },
       {
         "label": "infinitive",
@@ -6346,14 +6358,14 @@
       }
     ],
     "order": "The finite verb Mag comes before subject ik. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. mogen: present forms mag / mag / mogen; past singular mocht, plural mochten; perfect heb gemogen. Permission; a following infinitive has no te. stellen: present forms stel / stelt / stellen; past singular stelde, plural stelden; perfect heb gesteld. Een vraag stellen means ask a question. Vocabulary in this sentence: de vraag; plural vragen. In support contexts, vraag may be a question or a request.",
+    "forms": "Mag ik asks permission. Hier ... over is a split referring adverb meaning about this; een vraag is the object of stellen. Hier does not indicate a time. mogen: present forms mag / mag / mogen; past singular mocht, plural mochten; perfect heb gemogen. Permission; a following infinitive has no te. stellen: present forms stel / stelt / stellen; past singular stelde, plural stelden; perfect heb gesteld. Een vraag stellen means ask a question. Vocabulary in this sentence: de vraag; plural vragen. In support contexts, vraag may be a question or a request.",
     "compare": "English can/could/may are not interchangeable in every situation; preserve the intended ability or permission distinction.",
     "mistake": {
       "wrong": "Mogen ik hier een vraag over stellen?",
       "right": "Mag ik hier een vraag over stellen?",
       "why": "The stated subject and tense require the finite form Mag here. mogen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "May I ask a question about this? You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Ask for a turn to ask a question."
+    "meaning": "May I ask a question about this? You want to ask about the point currently being discussed. Politely ask permission to raise your question."
   },
   "career-meetings-032": {
     "parts": [
@@ -6371,14 +6383,14 @@
       }
     ],
     "order": "The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. Vocabulary in this sentence: de aanvulling; plural aanvullingen. In a meeting, an addition to the discussion.",
+    "forms": "Heb is a main verb here, not a perfect auxiliary. Een aanvulling op dat punt means something added about that particular point. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. Vocabulary in this sentence: de aanvulling; plural aanvullingen. In a meeting, an addition to the discussion.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "Ik hebben een aanvulling op dat punt.",
       "right": "Ik heb een aanvulling op dat punt.",
       "why": "The stated subject and tense require the finite form heb here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I have something to add to that point. You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Introduce a related addition."
+    "meaning": "I have something to add to that point. A colleague has made a point and you have a related addition. Introduce that addition."
   },
   "career-meetings-033": {
     "parts": [
@@ -6400,14 +6412,14 @@
       }
     ],
     "order": "The first constituent is Ik; begrijp is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. begrijpen: present forms begrijp / begrijpt / begrijpen; past singular begreep, plural begrepen; perfect heb begrepen. Understanding content; inseparable be-, so begrepen has no added ge-. bedoelen: present forms bedoel / bedoelt / bedoelen; past singular bedoelde, plural bedoelden; perfect heb bedoeld. Meaning or intending; inseparable be- gives bedoeld without ge-.",
+    "forms": "Niet helemaal means not fully, leaving partial understanding possible. Wat introduces the embedded question; je is its subject and bedoelt is final. begrijpen: present forms begrijp / begrijpt / begrijpen; past singular begreep, plural begrepen; perfect heb begrepen. Understanding content; inseparable be-, so begrepen has no added ge-. bedoelen: present forms bedoel / bedoelt / bedoelen; past singular bedoelde, plural bedoelden; perfect heb bedoeld. Meaning or intending; inseparable be- gives bedoeld without ge-.",
     "compare": "English usually keeps subject–verb–object inside the embedded clause; Dutch moves the finite verb/group toward its end.",
     "mistake": {
       "wrong": "Ik begrijpen niet helemaal wat je met beschikbaar bedoelt.",
       "right": "Ik begrijp niet helemaal wat je met beschikbaar bedoelt.",
       "why": "The stated subject and tense require the finite form begrijp here. begrijpen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I do not fully understand what you mean by available. You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Ask indirectly for clarification of available. Use informal je/jij for your colleague."
+    "meaning": "I do not fully understand what you mean by available. A colleague uses available in a way you do not fully understand. Explain your partial uncertainty. Use informal je/jij for your colleague."
   },
   "career-meetings-034": {
     "parts": [
@@ -6433,14 +6445,14 @@
       }
     ],
     "order": "The finite verb Kunnen comes before subject we. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. blijven: present forms blijf / blijft / blijven; past singular bleef, plural bleven; perfect ben gebleven. Remaining or continuing; forms the perfect with zijn. Vocabulary in this sentence: de planning; plural planningen. Bezig met de planning refers to arranging the work or its schedule.",
+    "forms": "Kunnen we is a joint request. Bij de planning blijven means stay with that topic; even softens the request rather than giving an exact duration. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. blijven: present forms blijf / blijft / blijven; past singular bleef, plural bleven; perfect ben gebleven. Remaining or continuing; forms the perfect with zijn. Vocabulary in this sentence: de planning; plural planningen. Bezig met de planning refers to arranging the work or its schedule.",
     "compare": "English can/could/may are not interchangeable in every situation; preserve the intended ability or permission distinction.",
     "mistake": {
       "wrong": "Kan we even bij de planning blijven?",
       "right": "Kunnen we even bij de planning blijven?",
       "why": "The stated subject and tense require the finite form Kunnen here. kan is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Can we stay with the planning for a moment? You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Bring the discussion back to planning."
+    "meaning": "Can we stay with the planning for a moment? The discussion has drifted away from planning. Ask the group to stay on that topic briefly."
   },
   "career-meetings-035": {
     "parts": [
@@ -6462,14 +6474,14 @@
       }
     ],
     "order": "The first constituent is Daarover; heb is the finite (conjugated) verb and ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. Vocabulary in this sentence: de vraag; plural vragen. In support contexts, vraag may be a question or a request.",
+    "forms": "Daarover means about that and is fronted, followed by heb ik. Een andere vraag changes the question, while the topic referred to stays the same. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. Vocabulary in this sentence: de vraag; plural vragen. In support contexts, vraag may be a question or a request.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "Daarover hebben ik een andere vraag.",
       "right": "Daarover heb ik een andere vraag.",
       "why": "The stated subject and tense require the finite form heb here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I have a different question about that. You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Introduce a different question on the same topic."
+    "meaning": "I have a different question about that. You have a different question about the same topic. Introduce it while referring back to the discussion."
   },
   "career-meetings-036": {
     "parts": [
@@ -6495,14 +6507,14 @@
       }
     ],
     "order": "The finite verb Kun comes before subject je. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. uitleggen: present forms leg uit / legt uit / leggen uit; past singular legde uit, plural legden uit; perfect heb uitgelegd. Separable: uitleggen, leg uit, uit te leggen, uitgelegd.",
+    "forms": "Kun precedes je. Met een voorbeeld gives the method of explaining; uitleggen stays joined as an infinitive after the modal. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. uitleggen: present forms leg uit / legt uit / leggen uit; past singular legde uit, plural legden uit; perfect heb uitgelegd. Separable: uitleggen, leg uit, uit te leggen, uitgelegd.",
     "compare": "English can/could/may are not interchangeable in every situation; preserve the intended ability or permission distinction.",
     "mistake": {
       "wrong": "Kunnen je het verschil met een voorbeeld uitleggen?",
       "right": "Kun je het verschil met een voorbeeld uitleggen?",
       "why": "The stated subject and tense require the finite form Kun here. kunnen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Can you explain the difference with an example? You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Ask for an example that clarifies the distinction. Use informal je/jij for your colleague."
+    "meaning": "Can you explain the difference with an example? A distinction remains unclear to you. Ask a colleague informally to explain it through an example. Use informal je/jij for your colleague."
   },
   "career-meetings-037": {
     "parts": [
@@ -6524,14 +6536,14 @@
       }
     ],
     "order": "The first constituent is Ik; ben is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. bedoelen: present forms bedoel / bedoelt / bedoelen; past singular bedoelde, plural bedoelden; perfect heb bedoeld. Meaning or intending; inseparable be- gives bedoeld without ge-.",
+    "forms": "Of introduces whether. Hetzelfde is what we mean and bedoelen comes at the clause's end; niet zeker describes uncertainty rather than definite disagreement. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. bedoelen: present forms bedoel / bedoelt / bedoelen; past singular bedoelde, plural bedoelden; perfect heb bedoeld. Meaning or intending; inseparable be- gives bedoeld without ge-.",
     "compare": "English often uses not or no where Dutch distinguishes niet from geen.",
     "mistake": {
       "wrong": "Ik zijn niet zeker of we hetzelfde bedoelen.",
       "right": "Ik ben niet zeker of we hetzelfde bedoelen.",
       "why": "The stated subject and tense require the finite form ben here. zijn is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I am not sure whether we mean the same thing. You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Check a possible misunderstanding."
+    "meaning": "I am not sure whether we mean the same thing. You suspect a misunderstanding about what the group means. Say that you are unsure whether everyone means the same thing."
   },
   "career-meetings-038": {
     "parts": [
@@ -6553,14 +6565,14 @@
       }
     ],
     "order": "The first constituent is Vanuit de ondersteuning; zien is the finite (conjugated) verb and we is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. zien: present forms zie / ziet / zien; past singular zag, plural zagen; perfect heb gezien. See; laten zien means show, with a bare infinitive. Vocabulary in this sentence: de ondersteuning; no useful plural in this use. A function, not necessarily one named team.",
+    "forms": "Vanuit de ondersteuning is a fronted perspective phrase, followed by zien we. Nog een risico means another risk; it does not specify the total count. zien: present forms zie / ziet / zien; past singular zag, plural zagen; perfect heb gezien. See; laten zien means show, with a bare infinitive. Vocabulary in this sentence: de ondersteuning; no useful plural in this use. A function, not necessarily one named team.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "Vanuit de ondersteuning zie we nog een risico.",
       "right": "Vanuit de ondersteuning zien we nog een risico.",
       "why": "The stated subject and tense require the finite form zien here. zie is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "From the support perspective, we see another risk. You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Add the support team's perspective."
+    "meaning": "From the support perspective, we see another risk. Your support team sees an additional risk in the proposal. Add that perspective to the discussion."
   },
   "career-meetings-039": {
     "parts": [
@@ -6586,14 +6598,14 @@
       }
     ],
     "order": "Laten we starts the joint proposal; this is not ordinary declarative subject-first order. Laten we invites the speaker and others to act together. The requested action is a bare infinitive; the proposal does not report that the action has already been completed.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. laten: present forms laat / laat / laten; past singular liet, plural lieten; perfect heb gelaten. Laten plus bare infinitive; joint proposal Laten we, and laten zien means show. bespreken: present forms bespreek / bespreekt / bespreken; past singular besprak, plural bespraken; perfect heb besproken. Discuss; inseparable be-, no ge-. Vocabulary in this sentence: de pauze; plural pauzes. Lunchpauze is a lunch break.",
+    "forms": "Laten we introduces a proposal including the speaker. Bespreken stays infinitive without te, and na de pauze sets the proposed discussion time. laten: present forms laat / laat / laten; past singular liet, plural lieten; perfect heb gelaten. Laten plus bare infinitive; joint proposal Laten we, and laten zien means show. bespreken: present forms bespreek / bespreekt / bespreken; past singular besprak, plural bespraken; perfect heb besproken. Discuss; inseparable be-, no ge-. Vocabulary in this sentence: de pauze; plural pauzes. Lunchpauze is a lunch break.",
     "compare": "English let's plus infinitive corresponds naturally to Dutch laten we plus infinitive.",
     "mistake": {
       "wrong": "Laat we dit punt na de pauze bespreken.",
       "right": "Laten we dit punt na de pauze bespreken.",
       "why": "The stated subject and tense require the finite form Laten here. laat is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Let's discuss this point after the break. You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Propose moving this point until after the break."
+    "meaning": "Let's discuss this point after the break. You want the group to discuss this point after the break. Make that joint proposal."
   },
   "career-meetings-040": {
     "parts": [
@@ -6615,14 +6627,14 @@
       }
     ],
     "order": "The first question constituent is Wat; betekent is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed.",
-    "forms": "Polite questions can use mogen or kunnen. Daar refers to the previous point; daarover concerns that topic. betekenen: present forms beteken / betekent / betekenen; past singular betekende, plural betekenden; perfect heeft betekend. Mean/signify; generally a word or event is the subject. Vocabulary in this sentence: de gebruiker; plural gebruikers. A user is not necessarily an administrator.",
+    "forms": "Wat asks about the implications. Dat is the subject of betekent, referring to the proposal; voor de gebruikers identifies the affected people, not a deadline. betekenen: present forms beteken / betekent / betekenen; past singular betekende, plural betekenden; perfect heeft betekend. Mean/signify; generally a word or event is the subject. Vocabulary in this sentence: de gebruiker; plural gebruikers. A user is not necessarily an administrator.",
     "compare": "English often inserts do/does; Dutch normally puts the finite verb before the subject instead.",
     "mistake": {
       "wrong": "Wat betekenen dat voor de gebruikers?",
       "right": "Wat betekent dat voor de gebruikers?",
       "why": "The stated subject and tense require the finite form betekent here. betekenen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "What does that mean for the users? You are participating in a team meeting and asking clearly to speak, clarify a point, or return to the agenda. Ask for the user impact of the proposal."
+    "meaning": "What does that mean for the users? A proposal may affect users. Ask what that proposal means for them."
   },
   "career-meetings-041": {
     "parts": [
@@ -6639,7 +6651,7 @@
         "text": "we"
       },
       {
-        "label": "time phrase",
+        "label": "adverb",
         "text": "precies"
       },
       {
@@ -6648,14 +6660,14 @@
       }
     ],
     "order": "The first question constituent is Wat; hebben is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. afspreken: present forms spreek af / spreekt af / spreken af; past singular sprak af, plural spraken af; perfect heb afgesproken. Separable: arrange/agree; afspraak and afgesproken are different forms.",
+    "forms": "Hebben afgesproken forms the perfect. Wat is the question object, we the subject, and precies asks for the agreement's exact content. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. afspreken: present forms spreek af / spreekt af / spreken af; past singular sprak af, plural spraken af; perfect heb afgesproken. Separable: arrange/agree; afspraak and afgesproken are different forms.",
     "compare": "English often inserts do/does; Dutch normally puts the finite verb before the subject instead.",
     "mistake": {
       "wrong": "Wat heb we precies afgesproken?",
       "right": "Wat hebben we precies afgesproken?",
       "why": "The stated subject and tense require the finite form hebben here. heb is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "What exactly have we agreed? You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Ask for the precise agreement."
+    "meaning": "What exactly have we agreed? The group has reached an agreement, but you need its exact terms. Ask what was agreed."
   },
   "career-meetings-042": {
     "parts": [
@@ -6677,14 +6689,14 @@
       }
     ],
     "order": "The first constituent is Ik; noteer is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. noteren: present forms noteer / noteert / noteren; past singular noteerde, plural noteerden; perfect heb genoteerd. Write down information, observations or an error message. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence. het besluit; plural besluiten. A decision is more definite than a proposal.",
+    "forms": "Noteer is present and can announce the immediate recording action. Het besluit is the object; in het verslag names the written record. noteren: present forms noteer / noteert / noteren; past singular noteerde, plural noteerden; perfect heb genoteerd. Write down information, observations or an error message. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence. het besluit; plural besluiten. A decision is more definite than a proposal.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "Ik noteren het besluit in het verslag.",
       "right": "Ik noteer het besluit in het verslag.",
       "why": "The stated subject and tense require the finite form noteer here. noteren is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I record the decision in the minutes. You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Say where the decision will be recorded."
+    "meaning": "I record the decision in the minutes. The group reached a decision and you will record it in the minutes. Say where you are putting it."
   },
   "career-meetings-043": {
     "parts": [
@@ -6701,7 +6713,7 @@
         "text": "nog"
       },
       {
-        "label": "object",
+        "label": "complement",
         "text": "een voorstel,"
       },
       {
@@ -6710,14 +6722,14 @@
       }
     ],
     "order": "The first constituent is Dit; is is the finite (conjugated) verb and Dit is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: het besluit; plural besluiten. A decision is more definite than a proposal. het voorstel; plural voorstellen. Not the verb voorstellen.",
+    "forms": "Nog means still. Een voorstel and geen definitief besluit are noun complements after is; the contrast separates a proposal from a final decision. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: het besluit; plural besluiten. A decision is more definite than a proposal. het voorstel; plural voorstellen. Not the verb voorstellen.",
     "compare": "English often uses not or no where Dutch distinguishes niet from geen.",
     "mistake": {
       "wrong": "Dit zijn nog een voorstel, geen definitief besluit.",
       "right": "Dit is nog een voorstel, geen definitief besluit.",
       "why": "The stated subject and tense require the finite form is here. zijn is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "This is still a proposal, not a final decision. You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Clarify the proposal's status."
+    "meaning": "This is still a proposal, not a final decision. A proposal is being discussed, but no final decision has been reached. Clarify its status."
   },
   "career-meetings-044": {
     "parts": [
@@ -6739,14 +6751,14 @@
       }
     ],
     "order": "The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. besluiten: present forms besluit / besluit / besluiten; past singular besloot, plural besloten; perfect heb besloten. Decide, often besluiten om iets te doen. uitstellen: present forms stel uit / stelt uit / stellen uit; past singular stelde uit, plural stelden uit; perfect heb uitgesteld. Separable: postpone; uit te stellen.",
+    "forms": "Hebben besloten is perfect. Om introduces the decided action, not a purpose in this sentence; uitstellen places te between uit and stellen. Een dag gives the postponement's extent. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. besluiten: present forms besluit / besluit / besluiten; past singular besloot, plural besloten; perfect heb besloten. Decide, often besluiten om iets te doen. uitstellen: present forms stel uit / stelt uit / stellen uit; past singular stelde uit, plural stelden uit; perfect heb uitgesteld. Separable: postpone; uit te stellen.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "We heb besloten om de test een dag uit te stellen.",
       "right": "We hebben besloten om de test een dag uit te stellen.",
       "why": "The stated subject and tense require the finite form hebben here. heb is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "We have decided to postpone the test by a day. You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Report a decision to delay the test."
+    "meaning": "We have decided to postpone the test by a day. Your team decided to move the test one day later. Report that decision without claiming the test has already happened."
   },
   "career-meetings-045": {
     "parts": [
@@ -6763,7 +6775,7 @@
         "text": "de afspraak"
       },
       {
-        "label": "time phrase",
+        "label": "adverb",
         "text": "schriftelijk"
       },
       {
@@ -6772,14 +6784,14 @@
       }
     ],
     "order": "The finite verb Kun comes before subject je. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. bevestigen: present forms bevestig / bevestigt / bevestigen; past singular bevestigde, plural bevestigden; perfect heb bevestigd. Confirm; inseparable be-, no ge-. Vocabulary in this sentence: de afspraak; plural afspraken. The context distinguishes an appointment from a work agreement.",
+    "forms": "Kun precedes je and bevestigen remains infinitive. Schriftelijk means in writing and describes how confirmation should be given, not when. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. bevestigen: present forms bevestig / bevestigt / bevestigen; past singular bevestigde, plural bevestigden; perfect heb bevestigd. Confirm; inseparable be-, no ge-. Vocabulary in this sentence: de afspraak; plural afspraken. The context distinguishes an appointment from a work agreement.",
     "compare": "English can/could/may are not interchangeable in every situation; preserve the intended ability or permission distinction.",
     "mistake": {
       "wrong": "Kunnen je de afspraak schriftelijk bevestigen?",
       "right": "Kun je de afspraak schriftelijk bevestigen?",
       "why": "The stated subject and tense require the finite form Kun here. kunnen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Can you confirm the agreement in writing? You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Request written confirmation. Use informal je/jij for your colleague."
+    "meaning": "Can you confirm the agreement in writing? You need written confirmation of the agreement. Ask a colleague informally to provide it. Use informal je/jij for your colleague."
   },
   "career-meetings-046": {
     "parts": [
@@ -6797,14 +6809,14 @@
       }
     ],
     "order": "The first constituent is In het verslag; ontbreekt is the finite (conjugated) verb and de reden voor het uitstel. is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. ontbreken: present forms ontbreek / ontbreekt / ontbreken; past singular ontbrak, plural ontbraken; perfect heeft ontbroken. Be missing, with the missing item as grammatical subject. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence.",
+    "forms": "In het verslag is fronted. De reden voor het uitstel is the singular subject of ontbreekt; voor het uitstel explains which reason, not a deadline. ontbreken: present forms ontbreek / ontbreekt / ontbreken; past singular ontbrak, plural ontbraken; perfect heeft ontbroken. Be missing, with the missing item as grammatical subject. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "In het verslag ontbreken de reden voor het uitstel.",
       "right": "In het verslag ontbreekt de reden voor het uitstel.",
       "why": "The stated subject and tense require the finite form ontbreekt here. ontbreken is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The reason for the postponement is missing from the minutes. You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Identify the missing rationale."
+    "meaning": "The reason for the postponement is missing from the minutes. The minutes omit the reason for postponement. Point out what is missing from that record."
   },
   "career-meetings-047": {
     "parts": [
@@ -6822,14 +6834,14 @@
       }
     ],
     "order": "The first constituent is Ik; controleer is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. controleren: present forms controleer / controleert / controleren; past singular controleerde, plural controleerden; perfect heb gecontroleerd. Check something; not necessarily a full investigation of its cause. weergeven: present forms geef weer / geeft weer / geven weer; past singular gaf weer, plural gaven weer; perfect heb weergegeven. Separable: display or reflect accurately, weer te geven. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence. het besluit; plural besluiten. A decision is more definite than a proposal.",
+    "forms": "Of introduces a whether-question. Het verslag is its subject; ons matches singular het besluit. Weergeeft stays joined at the end of the embedded clause. controleren: present forms controleer / controleert / controleren; past singular controleerde, plural controleerden; perfect heb gecontroleerd. Check something; not necessarily a full investigation of its cause. weergeven: present forms geef weer / geeft weer / geven weer; past singular gaf weer, plural gaven weer; perfect heb weergegeven. Separable: display or reflect accurately, weer te geven. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence. het besluit; plural besluiten. A decision is more definite than a proposal.",
     "compare": "English usually keeps subject–verb–object inside the embedded clause; Dutch moves the finite verb/group toward its end.",
     "mistake": {
       "wrong": "Ik controleren of het verslag ons besluit correct weergeeft.",
       "right": "Ik controleer of het verslag ons besluit correct weergeeft.",
       "why": "The stated subject and tense require the finite form controleer here. controleren is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I check whether the minutes accurately reflect our decision. You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Describe reviewing the record for accuracy."
+    "meaning": "I check whether the minutes accurately reflect our decision. You are checking whether the minutes accurately reflect your team's decision. Describe that accuracy review."
   },
   "career-meetings-048": {
     "parts": [
@@ -6846,7 +6858,7 @@
         "text": "het voorstel"
       },
       {
-        "label": "time phrase",
+        "label": "negation",
         "text": "nog niet"
       },
       {
@@ -6855,14 +6867,14 @@
       }
     ],
     "order": "The first constituent is De teamleider; heeft is the finite (conjugated) verb and De teamleider is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. goedkeuren: present forms keur goed / keurt goed / keuren goed; past singular keurde goed, plural keurden goed; perfect heb goedgekeurd. Separable: approve; goed te keuren. Vocabulary in this sentence: de teamleider; plural teamleiders. Singular subject takes a singular verb. het voorstel; plural voorstellen. Not the verb voorstellen.",
+    "forms": "Heeft goedgekeurd is perfect with separable goedkeuren. Nog niet means not yet; it does not claim the proposal can never be approved. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. goedkeuren: present forms keur goed / keurt goed / keuren goed; past singular keurde goed, plural keurden goed; perfect heb goedgekeurd. Separable: approve; goed te keuren. Vocabulary in this sentence: de teamleider; plural teamleiders. Singular subject takes a singular verb. het voorstel; plural voorstellen. Not the verb voorstellen.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "De teamleider hebben het voorstel nog niet goedgekeurd.",
       "right": "De teamleider heeft het voorstel nog niet goedgekeurd.",
       "why": "The stated subject and tense require the finite form heeft here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The team leader has not approved the proposal yet. You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. State that approval is pending."
+    "meaning": "The team leader has not approved the proposal yet. The team leader has not yet approved the proposal. State that approval remains pending."
   },
   "career-meetings-049": {
     "parts": [
@@ -6884,14 +6896,14 @@
       }
     ],
     "order": "Welke datum is itself the question subject and is followed by finite staat; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. staan: present forms sta / staat / staan; past singular stond, plural stonden; perfect heb gestaan. Standing/location or a setting's displayed state; er staat may introduce displayed information. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence.",
+    "forms": "Welke datum is itself the question subject, taking staat. Nu limits the question to the current record; in het verslag gives its location. staan: present forms sta / staat / staan; past singular stond, plural stonden; perfect heb gestaan. Standing/location or a setting's displayed state; er staat may introduce displayed information. Vocabulary in this sentence: het verslag; plural verslagen. A written account in this sentence.",
     "compare": "English often inserts do/does; Dutch normally puts the finite verb before the subject instead.",
     "mistake": {
       "wrong": "Welke datum staan nu in het verslag?",
       "right": "Welke datum staat nu in het verslag?",
       "why": "The stated subject and tense require the finite form staat here. staan is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Which date is now in the minutes? You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Check the recorded date."
+    "meaning": "Which date is now in the minutes? The meeting record contains a date that needs checking. Ask which date is currently written there."
   },
   "career-meetings-050": {
     "parts": [
@@ -6917,14 +6929,14 @@
       }
     ],
     "order": "The first constituent is Als iedereen akkoord is,; leggen is the finite (conjugated) verb and we is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end.",
-    "forms": "Afspreken is agree or arrange. Besluiten is decide. Nog niet marks that a proposed action is not yet approved. vastleggen: present forms leg vast / legt vast / leggen vast; past singular legde vast, plural legden vast; perfect heb vastgelegd. Separable: record/document an agreement; vast te leggen. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de afspraak; plural afspraken. The context distinguishes an appointment from a work agreement.",
+    "forms": "Als introduces the condition and iedereen is singular with is. The fronted clause is followed by leggen we; vastleggen splits as leggen ... vast. vastleggen: present forms leg vast / legt vast / leggen vast; past singular legde vast, plural legden vast; perfect heb vastgelegd. Separable: record/document an agreement; vast te leggen. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de afspraak; plural afspraken. The context distinguishes an appointment from a work agreement.",
     "compare": "English can keep the main subject before the verb after an initial when/if/because clause; Dutch uses main-clause inversion.",
     "mistake": {
       "wrong": "Als iedereen akkoord is, leg we de afspraak vast.",
       "right": "Als iedereen akkoord is, leggen we de afspraak vast.",
       "why": "The stated subject and tense require the finite form leggen here. leg is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "If everyone agrees, we will record the agreement. You are checking a meeting decision and its record, distinguishing a proposal from a confirmed agreement. Make recording conditional on agreement."
+    "meaning": "If everyone agrees, we will record the agreement. The group will record the agreement only if everyone agrees. State that condition."
   },
   "career-meetings-051": {
     "parts": [
@@ -6950,14 +6962,14 @@
       }
     ],
     "order": "The first constituent is Ik; zal is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. zullen: present forms zal / zal / zullen; past singular zou, plural zouden; perfect not used as a standalone form here. Zal/zult and zal/zul je are accepted. Zou/zouden can introduce a tentative or polite request. No ordinary standalone perfect is taught here. versturen: present forms verstuur / verstuurt / versturen; past singular verstuurde, plural verstuurden; perfect heb verstuurd. Send out a message; inseparable ver-, no ge-. Vocabulary in this sentence: het overleg; plural overleggen. Het overleg; short duration can be erg kort. de actielijst; plural actielijsten. Record an owner and timing for each action.",
+    "forms": "Zal is finite with ik, while versturen stays infinitive. Na het overleg means after the meeting, not a deadline before it. zullen: present forms zal / zal / zullen; past singular zou, plural zouden; perfect not used as a standalone form here. Zal/zult and zal/zul je are accepted. Zou/zouden can introduce a tentative or polite request. No ordinary standalone perfect is taught here. versturen: present forms verstuur / verstuurt / versturen; past singular verstuurde, plural verstuurden; perfect heb verstuurd. Send out a message; inseparable ver-, no ge-. Vocabulary in this sentence: het overleg; plural overleggen. Het overleg; short duration can be erg kort. de actielijst; plural actielijsten. Record an owner and timing for each action.",
     "compare": "English will or be going to expresses a future intention; Dutch can also use the present with an explicit future time.",
     "mistake": {
       "wrong": "Ik zullen de actielijst na het overleg versturen.",
       "right": "Ik zal de actielijst na het overleg versturen.",
       "why": "The stated subject and tense require the finite form zal here. zullen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I will send the action list after the meeting. You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Take responsibility for sending the list."
+    "meaning": "I will send the action list after the meeting. You will send the action list after the meeting. Take responsibility for that follow-up."
   },
   "career-meetings-052": {
     "parts": [
@@ -6979,7 +6991,7 @@
       }
     ],
     "order": "Wie is itself the question subject and is followed by finite neemt; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. nemen: present forms neem / neemt / nemen; past singular nam, plural namen; perfect heb genomen. Take; use fixed combinations such as een beslissing nemen. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause. de documentatie; no useful plural in this use. Usually an uncountable collection of documents.",
+    "forms": "Wie is the question subject. Op zich nemen means take upon oneself; zich refers back to the person identified by wie, and de controle is the responsibility taken on. nemen: present forms neem / neemt / nemen; past singular nam, plural namen; perfect heb genomen. Take; use fixed combinations such as een beslissing nemen. Vocabulary in this sentence: de controle; plural controles. A check need not establish the underlying cause. de documentatie; no useful plural in this use. Usually an uncountable collection of documents.",
     "compare": "English often inserts do/does; Dutch normally puts the finite verb before the subject instead.",
     "mistake": {
       "wrong": "Wie nemen de controle van de documentatie op zich?",
@@ -6987,7 +6999,7 @@
       "why": "Wie can ask about one person or several people. Compare the number intended here and the published agreement; a different finite number is not automatically ungrammatical in every possible reading of a wie question.",
       "alternative": true
     },
-    "meaning": "Who will take on checking the documentation? You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Ask who owns the documentation review."
+    "meaning": "Who will take on checking the documentation? The documentation review needs an owner. Ask who will take responsibility for checking it."
   },
   "career-meetings-053": {
     "parts": [
@@ -7013,14 +7025,14 @@
       }
     ],
     "order": "The first constituent is We; spreken is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. afspreken: present forms spreek af / spreekt af / spreken af; past singular sprak af, plural spraken af; perfect heb afgesproken. Separable: arrange/agree; afspraak and afgesproken are different forms.",
+    "forms": "Afspreken splits as spreken ... af. Voor vrijdag means scheduled for Friday in this arrangement; it is not automatically a deadline before Friday. afspreken: present forms spreek af / spreekt af / spreken af; past singular sprak af, plural spraken af; perfect heb afgesproken. Separable: arrange/agree; afspraak and afgesproken are different forms.",
     "compare": "English often uses a similar subject–verb order, but Dutch keeps the finite verb second when another complete phrase comes first.",
     "mistake": {
       "wrong": "We spreek voor vrijdag een korte terugkoppeling af.",
       "right": "We spreken voor vrijdag een korte terugkoppeling af.",
       "why": "The stated subject and tense require the finite form spreken here. spreek is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "We arrange a short feedback session for Friday. You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Arrange a Friday follow-up."
+    "meaning": "We arrange a short feedback session for Friday. Your team is arranging a short feedback session for Friday. State that arrangement."
   },
   "career-meetings-054": {
     "parts": [
@@ -7046,14 +7058,14 @@
       }
     ],
     "order": "The first constituent is De eigenaar; moet is the finite (conjugated) verb and De eigenaar is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. moeten: present forms moet / moet / moeten; past singular moest, plural moesten; perfect heb gemoeten. Necessity or obligation; a following infinitive has no te. In a perfect verb cluster: heb moeten werken. bijwerken: present forms werk bij / werkt bij / werken bij; past singular werkte bij, plural werkten bij; perfect heb bijgewerkt. Separable: update; bij te werken. Vocabulary in this sentence: de eigenaar; plural eigenaars. Workplace ownership, not necessarily legal property.",
+    "forms": "Moet agrees with singular de eigenaar and bijwerken stays infinitive. Voor donderdag sets the deadline for the update, rather than the day on which it is scheduled. moeten: present forms moet / moet / moeten; past singular moest, plural moesten; perfect heb gemoeten. Necessity or obligation; a following infinitive has no te. In a perfect verb cluster: heb moeten werken. bijwerken: present forms werk bij / werkt bij / werken bij; past singular werkte bij, plural werkten bij; perfect heb bijgewerkt. Separable: update; bij te werken. Vocabulary in this sentence: de eigenaar; plural eigenaars. Workplace ownership, not necessarily legal property.",
     "compare": "English can/must/may also take a bare infinitive, but Dutch can place the object and time phrases before that final infinitive.",
     "mistake": {
       "wrong": "De eigenaar moeten de status voor donderdag bijwerken.",
       "right": "De eigenaar moet de status voor donderdag bijwerken.",
       "why": "The stated subject and tense require the finite form moet here. moeten is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "The owner must update the status before Thursday. You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Set the status-update deadline."
+    "meaning": "The owner must update the status before Thursday. The action owner must update the status before Thursday. State that deadline."
   },
   "career-meetings-055": {
     "parts": [
@@ -7071,14 +7083,14 @@
       }
     ],
     "order": "The first constituent is Ik; bevestig is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. bevestigen: present forms bevestig / bevestigt / bevestigen; past singular bevestigde, plural bevestigden; perfect heb bevestigd. Confirm; inseparable be-, no ge-. bellen: present forms bel / belt / bellen; past singular belde, plural belden; perfect heb gebeld. Call by telephone, with the person as an object. Vocabulary in this sentence: de gebruiker; plural gebruikers. A user is not necessarily an administrator.",
+    "forms": "Dat introduces the commitment's content. Morgen gives bel a future reading despite its present form; ik is the subject of both bevestig and bel. bevestigen: present forms bevestig / bevestigt / bevestigen; past singular bevestigde, plural bevestigden; perfect heb bevestigd. Confirm; inseparable be-, no ge-. bellen: present forms bel / belt / bellen; past singular belde, plural belden; perfect heb gebeld. Call by telephone, with the person as an object. Vocabulary in this sentence: de gebruiker; plural gebruikers. A user is not necessarily an administrator.",
     "compare": "English usually keeps subject–verb–object inside the embedded clause; Dutch moves the finite verb/group toward its end.",
     "mistake": {
       "wrong": "Ik bevestigen dat ik de gebruiker morgen bel.",
       "right": "Ik bevestig dat ik de gebruiker morgen bel.",
       "why": "The stated subject and tense require the finite form bevestig here. bevestigen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "I confirm that I will call the user tomorrow. You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Confirm your callback commitment."
+    "meaning": "I confirm that I will call the user tomorrow. You commit to calling the user tomorrow. Confirm that specific next-day action."
   },
   "career-meetings-056": {
     "parts": [
@@ -7100,14 +7112,14 @@
       }
     ],
     "order": "The first constituent is Deze actie; heeft is the finite (conjugated) verb and Deze actie is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. Vocabulary in this sentence: de eigenaar; plural eigenaars. Workplace ownership, not necessarily legal property.",
+    "forms": "Heeft is a main verb expressing possession, not a perfect auxiliary. Nog geen eigenaar means no owner yet, leaving later assignment possible. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. Vocabulary in this sentence: de eigenaar; plural eigenaars. Workplace ownership, not necessarily legal property.",
     "compare": "English often uses not or no where Dutch distinguishes niet from geen.",
     "mistake": {
       "wrong": "Deze actie hebben nog geen eigenaar.",
       "right": "Deze actie heeft nog geen eigenaar.",
       "why": "The stated subject and tense require the finite form heeft here. hebben is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "This action does not have an owner yet. You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Flag an unassigned action."
+    "meaning": "This action does not have an owner yet. An action still has no assigned owner. Flag that unassigned responsibility at the meeting."
   },
   "career-meetings-057": {
     "parts": [
@@ -7133,14 +7145,14 @@
       }
     ],
     "order": "The finite verb Kun comes before subject jij. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. verzamelen: present forms verzamel / verzamelt / verzamelen; past singular verzamelde, plural verzamelden; perfect heb verzameld. Collect or gather, no ge- with ver-.",
+    "forms": "Kun precedes emphatic subject jij. Tegen dinsdag gives the intended by-Tuesday deadline; verzamelen stays an infinitive without te. kunnen: present forms kan / kan / kunnen; past singular kon, plural konden; perfect heb gekund. Kan/kunt with je are both standard; before subject je use kan/kun. A following action infinitive has no te. verzamelen: present forms verzamel / verzamelt / verzamelen; past singular verzamelde, plural verzamelden; perfect heb verzameld. Collect or gather, no ge- with ver-.",
     "compare": "English can/could/may are not interchangeable in every situation; preserve the intended ability or permission distinction.",
     "mistake": {
       "wrong": "Kunnen jij de testresultaten tegen dinsdag verzamelen?",
       "right": "Kun jij de testresultaten tegen dinsdag verzamelen?",
       "why": "The stated subject and tense require the finite form Kun here. kunnen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "Can you collect the test results by Tuesday? You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Ask a colleague to gather results by Tuesday. Use informal je/jij for your colleague."
+    "meaning": "Can you collect the test results by Tuesday? You need a colleague to gather the test results by Tuesday. Ask them directly whether they can do it. Use informal je/jij for your colleague."
   },
   "career-meetings-058": {
     "parts": [
@@ -7166,14 +7178,14 @@
       }
     ],
     "order": "The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. toewijzen: present forms wijs toe / wijst toe / wijzen toe; past singular wees toe, plural wezen toe; perfect heb toegewezen. Separable: assign a request or rights; toe te wijzen. Vocabulary in this sentence: de collega; plural collega's. Nieuw describes a recently joined colleague; onbekend means unfamiliar.",
+    "forms": "Hebben toegewezen is perfect with separable toewijzen. Aan één collega identifies the recipient and emphasises one colleague, rather than an unspecified group. hebben: present forms heb / heeft / hebben; past singular had, plural hadden; perfect heb gehad. Irregular hebben: ik heb, je hebt, hij heeft, wij hebben. Inversion heb je. Formal u can use hebt or heeft. Heb gehad is possession in the perfect; heb plus another participle is an auxiliary construction. toewijzen: present forms wijs toe / wijst toe / wijzen toe; past singular wees toe, plural wezen toe; perfect heb toegewezen. Separable: assign a request or rights; toe te wijzen. Vocabulary in this sentence: de collega; plural collega's. Nieuw describes a recently joined colleague; onbekend means unfamiliar.",
     "compare": "English past reporting may correspond to Dutch perfect; Dutch often puts the object before the final participle.",
     "mistake": {
       "wrong": "We heb de opvolging aan één collega toegewezen.",
       "right": "We hebben de opvolging aan één collega toegewezen.",
       "why": "The stated subject and tense require the finite form hebben here. heb is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "We have assigned the follow-up to one colleague. You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Report the assigned follow-up owner."
+    "meaning": "We have assigned the follow-up to one colleague. Your team assigned follow-up to one colleague. Report that completed allocation of responsibility."
   },
   "career-meetings-059": {
     "parts": [
@@ -7195,14 +7207,14 @@
       }
     ],
     "order": "The first constituent is Zodra de controle klaar is,; stuurt is the finite (conjugated) verb and de eigenaar is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. sturen: present forms stuur / stuurt / sturen; past singular stuurde, plural stuurden; perfect heb gestuurd. Send; a recipient may be an object or introduced with naar/aan as context requires. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de eigenaar; plural eigenaars. Workplace ownership, not necessarily legal property. de controle; plural controles. A check need not establish the underlying cause.",
+    "forms": "Zodra means as soon as, and klaar is ends its clause. The complete clause comes first, followed by stuurt de eigenaar in the main clause. sturen: present forms stuur / stuurt / sturen; past singular stuurde, plural stuurden; perfect heb gestuurd. Send; a recipient may be an object or introduced with naar/aan as context requires. zijn: present forms ben / is / zijn; past singular was, plural waren; perfect ben geweest. Irregular zijn: ik ben, je/u bent, hij is, wij zijn. With inversion ben je, but bent u. Perfect ben geweest; passive zijn plus another participle is a different construction. Vocabulary in this sentence: de eigenaar; plural eigenaars. Workplace ownership, not necessarily legal property. de controle; plural controles. A check need not establish the underlying cause.",
     "compare": "English can keep the main subject before the verb after an initial when/if/because clause; Dutch uses main-clause inversion.",
     "mistake": {
       "wrong": "Zodra de controle klaar is, sturen de eigenaar een update.",
       "right": "Zodra de controle klaar is, stuurt de eigenaar een update.",
       "why": "The stated subject and tense require the finite form stuurt here. sturen is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "As soon as the check is complete, the owner sends an update. You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Set the trigger for the owner's update."
+    "meaning": "As soon as the check is complete, the owner sends an update. The owner should send an update as soon as the check is complete. State that trigger."
   },
   "career-meetings-060": {
     "parts": [
@@ -7228,14 +7240,14 @@
       }
     ],
     "order": "The first question constituent is Wanneer; bekijken is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed.",
-    "forms": "Voor plus a time gives a deadline, op names a scheduled day. Wie asks for an owner rather than assuming one. bekijken: present forms bekijk / bekijkt / bekijken; past singular bekeek, plural bekeken; perfect heb bekeken. View/look at; no ge- with be-.",
+    "forms": "Wanneer is the question word, followed by finite bekijken and subject we. Opnieuw means again; openstaande describes actions that remain outstanding. bekijken: present forms bekijk / bekijkt / bekijken; past singular bekeek, plural bekeken; perfect heb bekeken. View/look at; no ge- with be-.",
     "compare": "English often inserts do/does; Dutch normally puts the finite verb before the subject instead.",
     "mistake": {
       "wrong": "Wanneer bekijk we de openstaande acties opnieuw?",
       "right": "Wanneer bekijken we de openstaande acties opnieuw?",
       "why": "The stated subject and tense require the finite form bekijken here. bekijk is not the matching finite form for this sentence; an infinitive is not automatically a finite verb."
     },
-    "meaning": "When do we review the outstanding actions again? You are agreeing follow-up actions at the end of a meeting and making ownership and timing explicit. Ask for the next review point."
+    "meaning": "When do we review the outstanding actions again? The group needs another review of its outstanding actions. Ask when that review will happen."
   },
   "career-office-001": {
     "parts": [

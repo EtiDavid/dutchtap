@@ -278,6 +278,9 @@ b['conversation-01']['mistake']['why']='This amount of a language is een beetje 
 b['conversation-04']['mistake']['why']='For residence in the city of Roeselare use in Roeselare. Op Roeselare does not express the intended location in this sentence.'
 b['conversation-02']['mistake']['why']='In this neutral request, put the complete adverb phrase wat langzamer before the infinitive spreken. Do not infer that every possible Dutch phrase must precede the last verb: full prepositional phrases, for example, can follow the verb bracket.'
 b['conversation-09']['parts']=[{'label':'subject','text':'Ik'},{'label':'finite verb','text':'ben'},{'label':'adjective','text':'moe'},{'label':'conjunction','text':'maar'},{'label':'subject','text':'ik'},{'label':'finite verb','text':'voel'},{'label':'reflexive pronoun','text':'me'},{'label':'adjective','text':'goed'}]
+# Corrections found during the work-151 through work-210 semantic inspection.
+b['work-169']['mistake'].update(alternative=False,why='The comparative of goed is beter, not goeder. The problem here is the comparative form, not statement-order confirmation questions.')
+b['work-191']['mistake']['why']='The singular complement mijn verantwoordelijkheid takes is in this identification. Dit can also introduce a plural identification, such as Dit zijn onze taken; dit does not always require is.'
 # Add the useful main-card detail to the short rule, instead of leaving inconsistent duplicates.
 for key in fixes:notes[key]['rule']=b[key]['order']+' '+b[key]['forms']
 notes['transport-01']['rule']=b['transport-01']['order']+' '+b['transport-01']['forms']
@@ -295,6 +298,7 @@ notes['administration-05']['rule']+=' Example meaning: Wat is de openingstijd? a
 notes['home-36']['rule']+=' Example caution: Ik maak mijn kamer op is not the ordinary way to say I tidy my room. Use Ik ruim mijn kamer op for tidying; learn opmaken with het bed for making a bed.'
 notes['work-27']['rule']+=' Met de bouw van het nieuwe gebouw identifies the activity, while ze is the grammatical subject.'
 notes['conversation-79']['rule']+=' Dank u wel in the related examples expresses thanks; it is not a reply meaning You are welcome.'
+notes['work-179']['rule']=b['work-179']['order']+' '+b['work-179']['forms']+' Example meaning: Laat hem even uitspreken naturally means Let him finish speaking. Even softens the request and gives him a brief opportunity to finish; it does not mean that finishing lasts for a moment.'
 # Preserve the historical bank while clarifying its grammar guide in editable metadata.
 for item in b.values():
  if item.get('practiceFocus') == 'Nodig hebben: needing a thing':

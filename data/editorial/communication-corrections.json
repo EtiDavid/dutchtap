@@ -1513,5 +1513,126 @@
   "Dat is onze auto.": {
     "answers": [],
     "explanation": "Dat stands alone as the subject of an identification. Onze is the possessive before singular de-word auto. The standalone dat does not have to agree with auto as an attached demonstrative would: compare die auto. It identifies the car as belonging to the speaker's group."
+  },
+  "Het account heeft te veel rechten voor deze taak.": {
+    "explanation": "Het account is the singular subject, so hebben becomes heeft. Te veel means too many here: rechten are system permissions. Voor deze taak limits the comparison to this task; taak is a de-word, so use deze.",
+    "answers": []
+  },
+  "Wie keurt deze toegang goed?": {
+    "explanation": "Wie asks which person approves access and is itself the subject. Keurt is the finite part of separable goedkeuren; goed follows the object deze toegang. Toegang is a de-word, so use deze.",
+    "answers": []
+  },
+  "Ik kan me aanmelden, maar de map niet openen.": {
+    "explanation": "Kan is the finite modal with ik. Aanmelden and openen remain infinitives without te. Me refers back to the speaker in zich aanmelden, meaning sign in. The second clause omits repeated ik kan: maar ik kan de map niet openen. Niet negates opening the folder.",
+    "answers": []
+  },
+  "We hebben de oude rechten nog niet ingetrokken.": {
+    "explanation": "We takes plural hebben, followed later by participle ingetrokken from separable intrekken. Nog niet means not yet: the old permissions remain in effect for now. Oude has -e before the definite plural noun rechten.",
+    "answers": []
+  },
+  "Deze rol geeft alleen toegang tot de rapporten.": {
+    "explanation": "Deze rol is the singular subject and takes geeft, from geven. Rol is a de-word, so use deze. Toegang tot names what can be accessed. Alleen restricts access to the reports in this situation.",
+    "answers": []
+  },
+  "Mag de stagiair dit testaccount gebruiken?": {
+    "explanation": "This permission question starts with finite mag, followed by subject de stagiair. Gebruiken stays an infinitive without te after mogen. Testaccount is a het-word, so use dit. Mag asks whether use is permitted, rather than whether the intern knows how.",
+    "answers": []
+  },
+  "Ik vraag waarom extra schrijfrechten nodig zijn.": {
+    "explanation": "Ik vraag has ordinary main-clause order. Waarom introduces an embedded why-question, with subject extra schrijfrechten before final zijn. The subject is plural, so use zijn rather than is. Nodig is a predicate adjective, without -e. Schrijfrechten means permissions to write or modify data.",
+    "answers": []
+  },
+  "De toegang van gisteren is niet meer geldig.": {
+    "explanation": "De toegang is singular, so use is. Van gisteren identifies the access from yesterday. Niet meer means no longer, indicating that it was valid before. Geldig describes the access after is and takes no adjective ending.",
+    "answers": []
+  },
+  "De eigenaar heeft de aanvraag goedgekeurd.": {
+    "explanation": "The singular subject de eigenaar takes heeft. Goedgekeurd is the participle of separable goedkeuren: goed + ge + keurd. The object de aanvraag comes before the final participle. This reports completed approval, rather than merely a request for approval.",
+    "answers": []
+  },
+  "Tot wanneer blijft de tijdelijke rol actief?": {
+    "explanation": "Tot wanneer is one question phrase meaning until when. Finite blijft follows it, then subject de tijdelijke rol. Blijven means remain here. Tijdelijke has -e before the definite de-word rol; actief is a predicate adjective and has no -e.",
+    "answers": []
+  },
+  "Controleer de rechten na de rolwijziging.": {
+    "explanation": "Controleer is the imperative stem of controleren. De rechten is the object; na de rolwijziging specifies when to check them. Na means after here, not to or during.",
+    "answers": []
+  },
+  "Als de opdracht eindigt, trekken we de extra toegang in.": {
+    "explanation": "The entire als-clause is the first constituent, followed by main finite trekken and subject we. Inside it, de opdracht precedes singular eindigt. Intrekken splits into trekken ... in in the main clause. Als describes the point when the assignment ends here.",
+    "answers": []
+  },
+  "Mag ik uw sessie voor deze test onderbreken?": {
+    "explanation": "Mag comes before ik in this permission question. Onderbreken remains an infinitive without te after mogen. Uw is the polite possessive before sessie. Voor deze test names the purpose of interrupting the session.",
+    "answers": []
+  },
+  "De goedkeuring betreft alleen de geplande handeling.": {
+    "explanation": "The singular subject de goedkeuring takes betreft, from betreffen, meaning concerns or applies to. Alleen limits approval to the planned action. Geplande has -e before the definite de-word handeling.",
+    "answers": []
+  },
+  "De beheerder heeft de uitbreiding niet goedgekeurd.": {
+    "explanation": "Singular de beheerder takes heeft. The object de uitbreiding precedes niet and final participle goedgekeurd, from goedkeuren. Niet negates approval of this extension; it does not mean that no extension exists.",
+    "answers": []
+  },
+  "Waar staat de toestemming geregistreerd?": {
+    "explanation": "Waar asks for the location of the record. Finite staat follows waar and precedes subject de toestemming. Geregistreerd is the participle used with staan to describe the recorded status; the question does not ask where someone is standing.",
+    "answers": []
+  },
+  "We moeten de nieuwe scope opnieuw voorleggen.": {
+    "explanation": "Plural we takes moeten, expressing necessity. Voorleggen stays together as an infinitive without te after moeten; as a finite main verb it splits: we leggen de scope voor. Opnieuw means again. Nieuwe has -e before de scope.",
+    "answers": []
+  },
+  "Ik heb voor de test expliciet toestemming gevraagd.": {
+    "explanation": "Heb is the finite perfect auxiliary, and gevraagd is the participle of vragen. Toestemming vragen means ask permission; asking does not itself establish that permission was granted. In this scenario voor de test means before the test. The same words can mean for the test in a different context.",
+    "answers": [],
+    "scenario": "You are discussing a workplace test that has already taken place. State that you explicitly asked permission before the test, without claiming that permission was granted."
+  },
+  "De eigenaar vraagt welke gegevens we bekijken.": {
+    "explanation": "The main clause has singular vraagt after de eigenaar. Welke gegevens is the object question phrase introducing an embedded question; it is not a conjunction. Subject we precedes final bekijken. Gegevens is plural, so use welke.",
+    "answers": []
+  },
+  "Technische toegang is geen vervanging voor toestemming.": {
+    "explanation": "Technische toegang is a singular subject, followed by is. Geen negates the indefinite noun phrase een vervanging. Vervanging voor means substitute for; technical access alone does not supply the intended permission.",
+    "answers": []
+  },
+  "Kun je het akkoord bij de aanvraag voegen?": {
+    "explanation": "Kun precedes informal subject je in this request. Voegen remains an infinitive without te after kunnen. Iets bij iets voegen means add or attach one item to another: here het akkoord is added to de aanvraag.",
+    "answers": []
+  },
+  "Als de toestemming vervalt, stoppen we de test.": {
+    "explanation": "The whole if-clause comes first; main finite stoppen then precedes subject we. Inside the als-clause, singular toestemming takes final vervalt, from vervallen, meaning expire or cease to apply. De test is the object of stoppen.",
+    "answers": []
+  },
+  "Voor deze stap is een apart akkoord nodig.": {
+    "explanation": "Voor deze stap is the first constituent, followed by finite is and subject een apart akkoord. Nodig is a predicate adjective. Akkoord is a het-word, so the adjective after indefinite een is apart without -e. Stap is a de-word, so use deze.",
+    "answers": []
+  },
+  "Bevestig eerst het afgesproken tijdvenster.": {
+    "explanation": "Bevestig is the imperative stem of bevestigen; the addressed person is understood. Eerst means first, before proceeding. Afgesproken is the participle of afspreken used before het tijdvenster and describes the window already agreed upon.",
+    "answers": []
+  },
+  "We hebben een afzonderlijke testmap aangemaakt.": {
+    "explanation": "We takes plural perfect auxiliary hebben. Aangemaakt is the participle of separable aanmaken: aan + ge + maakt. Testmap takes de, so the adjective after een has -e: afzonderlijke. The sentence reports completed creation.",
+    "answers": []
+  },
+  "Wat verwachten we na de eerste stap?": {
+    "explanation": "Wat is the object question word asking for the expected outcome. Finite verwachten comes next, before subject we. Na de eerste stap means after the first step; eerste is the ordinal adjective, rather than the quantity one.",
+    "answers": []
+  },
+  "De test moet zonder echte klantgegevens verlopen.": {
+    "explanation": "The singular subject de test takes moet. Verlopen is an infinitive without te after moeten and means proceed or run in this context. Zonder introduces what must be absent. Echte has -e before plural klantgegevens.",
+    "answers": []
+  },
+  "De voorbereiding is niet hetzelfde als een geslaagde test.": {
+    "explanation": "De voorbereiding is singular and takes is. Niet negates hetzelfde, meaning the same thing. Hetzelfde als compares preparation with a successful test. Geslaagde describes the de-word test and therefore has -e after een.",
+    "answers": []
+  },
+  "Ik zet de controlelijst voor de collega klaar.": {
+    "explanation": "Ik takes finite zet. Klaarzetten is separable: zet comes second and klaar follows the object and beneficiary phrase. Voor de collega identifies whom the checklist is prepared for; it does not specify that the colleague prepares it.",
+    "answers": []
+  },
+  "We spreken af wie de resultaten noteert.": {
+    "explanation": "Afspreken splits into main finite spreken and particle af. The following embedded question states what is agreed. Wie is itself its subject, so singular noteert follows de resultaten at the end; de resultaten is the object, not the subject.",
+    "answers": []
   }
 }

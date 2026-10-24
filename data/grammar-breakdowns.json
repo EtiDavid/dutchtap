@@ -1623,12 +1623,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (maakt) second (verb-second order).",
-  "forms": "The reflexive pronoun matches the subject: ik maak me, jij maakt je, hij maakt zich, wij maken ons. Het verliezen is an infinitive used as a noun.",
+  "forms": "Zich zorgen maken over means worry about. Match the reflexive to the person worrying: ik maak me, jij maakt je, hij maakt zich, wij maken ons. Here hij is worried about losing his own keys. Het verliezen names an activity as a noun; van zijn sleutels says what he might lose. Zijn means his before sleutels, not the verb be.",
   "compare": "English says \"He worries about losing\"; Dutch uses zich zorgen maken over.",
   "mistake": {
    "wrong": "Hij maakt me zorgen over zijn sleutels.",
    "right": "Hij maakt zich zorgen over zijn sleutels.",
-   "why": "The reflexive pronoun must match the subject (hij ... zich)."
+   "why": "The intended person worrying is hij, so the reflexive is zich. Me refers to the speaker instead and would not express his own worry. Keep over het verliezen van zijn sleutels for what worries him."
   },
   "practiceFocus": "Reflexive pronouns refer to the subject",
   "practiceGuide": "Match the reflexive to the subject: ik/me, jij/je, hij-zij/zich, wij/ons, jullie/je, zij plural/zich. A question can contain two je forms: Voel je je beter? The first is the subject, the second reflexive. The reflexive belongs to the Dutch expression even if natural English does not say myself. In an embedded clause the verb group normally closes the clause."
@@ -1931,7 +1931,7 @@
    "wrong": "Ze waren zoeken een flat.",
    "right": "Ze waren op zoek naar een flat.",
    "why": "Op zoek zijn naar is an idiom meaning be looking for. Dutch also has the ordinary verb zoeken: Ze zochten een flat. The issue in the first phrase is using a bare infinitive after waren.",
-   "alternative": true
+   "alternative": false
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -1949,12 +1949,12 @@
    }
   ],
   "order": "In a normal main clause the subject (De vergadering) comes first and the finite verb (eindigde) second (verb-second order).",
-  "forms": "Regular past tense: stem plus -de (eindigen becomes eindigde); the plural ends in -den.",
+  "forms": "Eindigen has stem eindig. Singular simple past adds -de: de vergadering eindigde. Plural adds -den: de vergaderingen eindigden. These are forms of this verb, not a rule that every singular past ends in -de; other regular verbs use -te, and irregular verbs have their own forms.",
   "compare": "English \"The meeting ended\" works the same way.",
   "mistake": {
    "wrong": "De vergadering eindigden.",
    "right": "De vergadering eindigde.",
-   "why": "A singular subject takes -de."
+   "why": "This subject is one meeting, so eindigen takes singular past eindigde here. With plural de vergaderingen use eindigden. Do not generalise -de to every singular past verb."
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -1980,7 +1980,7 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (hebben) second (verb-second order). The other verb parts are not conjugated: the participle (gepraat) normally occurs toward the end.",
-  "forms": "Praten: gepraat. Dutch often uses the perfect for a finished event where English uses the simple past.",
+  "forms": "This perfect uses hebben: we hebben urenlang gepraat. Hebben is finite and agrees with plural we; gepraat is the participle of praten. The perfect can use zijn with other verbs/meanings, such as we zijn vertrokken. Compare simple past we praatten, with double t, and present we praten. Urenlang means for hours.",
   "compare": "English says \"We talked\" (simple past); Dutch says \"We have talked\".",
   "mistake": {
    "wrong": "We hebben gepraat urenlang.",
@@ -2108,7 +2108,7 @@
    "why": "To be finished with is klaar zijn met in Dutch."
   },
   "practiceFocus": "Bezig met: a noun or an activity",
-  "practiceGuide": "Bezig met introduces what occupies someone: a noun (de was) or an infinitive used as an activity noun (het wassen). Infinitives used as nouns take het, not de: het koken. Met het schoonmaken van de ramen is a noun-like phrase; compare the verbal progressive de ramen aan het schoonmaken. Bezig can also introduce te + infinitive, with different word order."
+  "practiceGuide": "Klaar met means finished with; bezig met means busy with. Both can introduce a noun-like activity: het lezen van het rapport. Compare Hij is klaar met lezen (finished reading) and Hij is bezig met lezen (still occupied with reading). The related examples practise naming activities and this contrast; being busy does not mean being finished."
  },
  "conversation-16": {
   "meaning": "Asking if someone will need help.",
@@ -2135,12 +2135,13 @@
    }
   ],
   "order": "This is a yes/no question. With no question word, it begins with the finite verb (Zul), and the subject (je) follows it. The other verb parts are not conjugated: the infinitive (hebben) normally occurs toward the end.",
-  "forms": "Zullen with je: the -t drops (zult becomes zul). Hulp nodig hebben means to need help.",
+  "forms": "Zul je and zal je are both standard future questions. Compare je zult with zul je, where subject je follows the finite verb and the added -t is omitted. Hulp nodig hebben means need help: hebben remains an infinitive after zul/zal, with hulp nodig between the finite verb and infinitive.",
   "compare": "English \"Will you need help?\" has the same inversion.",
   "mistake": {
    "wrong": "Je zult hulp nodig hebben?",
    "right": "Zul je hulp nodig hebben?",
-   "why": "Start a yes/no question with the finite verb."
+   "why": "Je zult hulp nodig hebben? can be a confirmation question with questioning intonation. For the neutral question here, use Zul je hulp nodig hebben? or Zal je hulp nodig hebben? The model is not a rule that statement-order confirmation questions are impossible.",
+   "alternative": true
   },
   "practiceFocus": "Questions with a modal verb",
   "practiceGuide": "In a yes/no question the finite modal comes before the subject, and the other verb remains an infinitive: Kun je het raam openen? With subject je/jij AFTER the finite verb, the usual second-person -t drops (kun je); u retains its form. With u, both kunt u and kan u are possible; both hebt u and heeft u are standard. A bare noun request can leave an understood action unspoken: Mag ik de bon?"

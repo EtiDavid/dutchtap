@@ -1,4 +1,37 @@
 {
+  "We hebben onze manager nodig om dit conflict op te lossen.": {
+    "scenario": "Your group cannot resolve a conflict without the manager's involvement. Explain that you need your manager to help bring about a resolution.",
+    "explanation": "We takes plural hebben. Onze manager is the person needed, and nodig completes iets nodig hebben. Manager is a de-word, so use onze. Om dit conflict op te lossen gives the purpose of needing the manager: resolving the conflict. It does not specify that the manager must do every part alone. Oplossen is separable, with te between op and lossen; conflict is a het-word, so use dit.",
+    "answers": []
+  },
+  "We hebben een oplossing voor het opslagprobleem gevonden.": {
+    "scenario": "After investigating a storage problem, your group has identified a solution. Announce that you have found a solution, without claiming that it has already been implemented.",
+    "answers": []
+  },
+  "Ik ben daar niet zeker van.": {
+    "answers": [{
+      "id": "review-20261024c-1",
+      "text": "Dat weet ik niet zeker.",
+      "english": "I'm not sure about that.",
+      "explanation": "Dat refers to the claim and is fronted as the object. Finite weet comes next, before subject ik. Niet zeker weten expresses uncertainty about that claim. The original uses zeker zijn van with split daar ... van; both withhold certainty without saying the claim is false."
+    }]
+  },
+  "Ze oefenen geduld.": {
+    "answers": [{
+      "id": "review-20261024c-1",
+      "text": "Ze zijn geduldig.",
+      "english": "They are being patient.",
+      "explanation": "Zijn agrees with plural ze; geduldig is a predicate adjective without an agreement ending. In this situation the people are waiting patiently now, so zijn geduldig describes the same behaviour as the idiom geduld oefenen. It does not say they are practising a separate training exercise."
+    }]
+  },
+  "We zitten boven ons budget.": {
+    "answers": [{
+      "id": "review-20261024c-1",
+      "text": "We hebben ons budget overschreden.",
+      "english": "We have exceeded our budget.",
+      "explanation": "The scenario explicitly says the group has spent beyond its budget. Hebben ... overschreden reports passing that limit; zitten boven ons budget describes the resulting financial position. Budget is a singular het-word, so use ons. Overschrijden is inseparable in this sense; its participle is overschreden."
+    }]
+  },
   "Mag ik even iets vragen?": {
     "english": "May I ask a quick question?",
     "answers": []

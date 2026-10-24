@@ -60,4 +60,7 @@ body {
 .flash-progress::-webkit-progress-value { background: var(--accent); border-radius: 999px; transition: width 200ms; }
 .flash-progress::-moz-progress-bar { background: var(--accent); border-radius: 999px; }
 .flashcard-enter { animation: flashcard-arrive 220ms ease-out; }
+.quiz-confetti i { position: absolute; top: -1rem; width: .5rem; height: .9rem; border-radius: 2px; animation: quiz-confetti-fall .8s ease-in forwards; }
+@keyframes quiz-confetti-fall { to { translate: 0 min(70vh, 600px); rotate: 280deg; opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .quiz-confetti { display: none; } }
 @keyframes flashcard-arrive { from { opacity: .4; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }

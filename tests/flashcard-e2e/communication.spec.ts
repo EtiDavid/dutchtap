@@ -140,7 +140,7 @@ test("one situation cycles through every model, restores its draft, and shows th
   ).toBe(true);
 });
 
-test("a child gives a real instruction scenario, natural possessive alternatives and ten related examples", async ({
+test("a child gives a precise instruction scenario, meaningful alternatives, pronoun notes and ten related examples", async ({
   page,
 }, testInfo) => {
   await page.setViewportSize({ width: 1280, height: 900 });
@@ -167,14 +167,16 @@ test("a child gives a real instruction scenario, natural possessive alternatives
   });
   await seed(page, s, "speaking");
   await expect(
-    page.getByText(/Your friend wants to sell their old car/),
+    page.getByText(/Your friend owns an old car/),
   ).toBeVisible();
   await expect(page.locator("article img")).toHaveCount(0);
   await page.getByRole("button", { name: "Check the Dutch" }).click();
   await page.getByTestId("other-models").locator("summary").click();
   await expect(page.getByTestId("other-models")).toContainText(
-    "Verkoop jouw oude auto aan Zoë.",
+    "Verkoop Zoë je oude auto.",
   );
+  await page.getByText('Pronoun & form notes', { exact:true }).click();
+  await expect(page.getByText('Verkoop jouw oude auto aan Zoë.', { exact:true })).toBeVisible();
   await page.getByTestId("family-examples").locator("summary").click();
   await expect(
     page.getByTestId("family-examples").getByRole("listitem"),
@@ -185,7 +187,7 @@ test("a child gives a real instruction scenario, natural possessive alternatives
   });
   await switchMode(page, "quiz");
   await expect(page.getByTestId("quiz-situation")).toContainText(
-    "Tell your friend directly",
+    "direct instruction",
   );
   await expect(page.getByTestId("quiz-english")).toHaveCount(0);
   await solveQuiz(page, child.text);

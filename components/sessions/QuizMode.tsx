@@ -1,5 +1,7 @@
 "use client";
 import { useEffect } from "react";
+import { celebrateCorrect } from '@/lib/practice/celebrate';
+import { FeedbackSettings } from '@/components/practice/QuizFeedback';
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import {
   topicLabel,
@@ -153,11 +155,12 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
   }
   function check() {
     if (outcome || placed.length !== words.length) return;
-    store.dispatch(session.id, {
+    const result = store.dispatch(session.id, {
       type: "quiz/submit",
       attemptId: current!.attemptId,
       answer: placed,
     });
+    if (result.applied && result.session?.quiz.current?.outcome?.correct) celebrateCorrect();
     onPractised();
   }
   function next() {
@@ -184,6 +187,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
 
   return (
     <section aria-label="Quiz" className="flex flex-col gap-5">
+      <FeedbackSettings />
       <ReviewHistory session={session} mode="quiz" />
       {session.lang === "nl" && (
         <VariationControls session={session} store={store} id={card.id} />
@@ -222,6 +226,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
               </p>
             </>
           )}
+          {!outcome && <div className="mt-3 flex flex-wrap gap-2"><button type="button" className={button} onClick={() => void listen({text:card.scenario,lang:'en'})}>Listen to situation (English)</button><button type="button" className={button} onClick={stop}>Stop prompt</button>{sound && <p role="status" className="w-full text-sm text-muted">{sound}</p>}</div>}
           {!outcome ? (
             <>
               <p className="mt-3 text-sm text-muted">

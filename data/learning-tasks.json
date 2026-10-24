@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "lab-inversion-01",
+    "topic": "inversion",
+    "promptNl": "Je werkt vandaag thuis. Begin je antwoord met Vandaag. Spreek over jezelf (ik).",
+    "promptEnglish": "You work from home today. Start with Vandaag. Speak about yourself using I.",
+    "answers": [
+      "Vandaag werk ik thuis."
+    ],
+    "english": "Today I am working from home.",
+    "explanation": "Vandaag is one time constituent; werk is second and ik follows. Do not say Vandaag ik werk.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-inversion-02",
+    "topic": "inversion",
+    "promptNl": "Je hebt gisteren een verslag verstuurd. Begin met Gisteren. Spreek over jezelf (ik).",
+    "promptEnglish": "You sent a report yesterday. Begin with Gisteren. Speak about yourself using I.",
+    "answers": [
+      "Gisteren heb ik een verslag verstuurd."
+    ],
+    "english": "Yesterday I sent a report.",
+    "explanation": "Heb is the finite auxiliary in second position. Verstuurd stays at the end of this clause.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-inversion-03",
+    "topic": "inversion",
+    "promptNl": "Jullie testen morgen samen de server. Spreek voor de groep en begin met Morgen.",
+    "promptEnglish": "You and your colleagues will test the server tomorrow. Speak for the group and start with Morgen.",
+    "answers": [
+      "Morgen testen we de server."
+    ],
+    "english": "Tomorrow we are testing the server.",
+    "explanation": "Testen agrees with plural we. Dutch present plus morgen can describe a future arrangement.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-inversion-04",
+    "topic": "inversion",
+    "promptNl": "Je kunt hier een kaartje kopen. Begin je uitleg met Hier. Spreek over jezelf (ik).",
+    "promptEnglish": "You can buy a ticket here. Explain this and begin with Hier. Speak about yourself using I.",
+    "answers": [
+      "Hier kan ik een kaartje kopen."
+    ],
+    "english": "Here I can buy a ticket.",
+    "explanation": "Hier is first, finite kan second, ik third. Kopen remains an infinitive after kan.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-inversion-05",
+    "topic": "inversion",
+    "promptNl": "Je gaat na het werk naar huis. Begin met Na het werk. Spreek over jezelf (ik).",
+    "promptEnglish": "You go home after work. Start with Na het werk. Speak about yourself using I.",
+    "answers": [
+      "Na het werk ga ik naar huis."
+    ],
+    "english": "After work I go home.",
+    "explanation": "Na het werk is a single first constituent although it contains three words. Ga follows it.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-inversion-06",
+    "topic": "inversion",
+    "promptNl": "Je hebt vandaag hulp nodig. Begin met Vandaag. Spreek over jezelf (ik).",
+    "promptEnglish": "You need help today. Begin with Vandaag. Speak about yourself using I.",
+    "answers": [
+      "Vandaag heb ik hulp nodig."
+    ],
+    "english": "Today I need help.",
+    "explanation": "The expression is hulp nodig hebben. Heb is finite; nodig is not a second verb.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-omdat-01",
+    "topic": "omdat",
+    "promptNl": "Een collega vraagt waarom je thuis werkt. De trein rijdt niet. Leg de reden uit met omdat. Spreek over jezelf (ik).",
+    "promptEnglish": "A colleague asks why you work from home. The train is not running. Explain using omdat. Speak about yourself using I.",
+    "answers": [
+      "Ik werk thuis omdat de trein niet rijdt."
+    ],
+    "english": "I work from home because the train is not running.",
+    "explanation": "In the reason clause de trein is the subject and rijdt is finite at the end; niet negates rijdt.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-omdat-02",
+    "topic": "omdat",
+    "promptNl": "Je belt de helpdesk: je computer werkt niet. Leg met omdat uit waarom je belt. Spreek over jezelf (ik).",
+    "promptEnglish": "You are calling the helpdesk because your computer does not work. Explain using omdat. Speak about yourself using I.",
+    "answers": [
+      "Ik bel de helpdesk omdat mijn computer niet werkt."
+    ],
+    "english": "I am calling the helpdesk because my computer does not work.",
+    "explanation": "Mijn computer comes before niet werkt in the omdat clause. Bel is the main clause's finite verb.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-omdat-03",
+    "topic": "omdat",
+    "promptNl": "Je kunt niet inloggen: je wachtwoord is verlopen. Leg dit uit met omdat. Spreek over jezelf (ik).",
+    "promptEnglish": "You cannot sign in because your password has expired. Explain using omdat. Speak about yourself using I.",
+    "answers": [
+      "Ik kan niet inloggen omdat mijn wachtwoord is verlopen."
+    ],
+    "english": "I cannot sign in because my password has expired.",
+    "explanation": "Kan takes infinitive inloggen. The subordinate perfect uses is verlopen; verlopen is not conjugated again.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-omdat-04",
+    "topic": "omdat",
+    "promptNl": "Je neemt een jas mee: het is koud. Geef de reden met omdat. Spreek over jezelf (ik).",
+    "promptEnglish": "You take a coat because it is cold. Explain using omdat. Speak about yourself using I.",
+    "answers": [
+      "Ik neem een jas mee omdat het koud is."
+    ],
+    "english": "I take a coat because it is cold.",
+    "explanation": "Meenemen splits into neem ... mee in the main clause. Het koud is is the subordinate order.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-omdat-05",
+    "topic": "omdat",
+    "promptNl": "Jullie wachten op een collega: zij heeft de sleutel. Spreek voor de groep en gebruik omdat.",
+    "promptEnglish": "Your group waits for a female colleague because she has the key. Speak for everyone and use omdat.",
+    "answers": [
+      "We wachten op onze collega omdat zij de sleutel heeft."
+    ],
+    "english": "We are waiting for our colleague because she has the key.",
+    "explanation": "Wachten op is the fixed combination. Zij is singular here, so heeft follows the object de sleutel.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-omdat-06",
+    "topic": "omdat",
+    "promptNl": "Je hebt gisteren de vergadering gemist: je was ziek. Leg dit uit met omdat. Spreek over jezelf (ik).",
+    "promptEnglish": "You missed yesterday's meeting because you were ill. Explain using omdat. Speak about yourself using I.",
+    "answers": [
+      "Ik heb de vergadering gemist omdat ik ziek was."
+    ],
+    "english": "I missed the meeting because I was ill.",
+    "explanation": "Heb ... gemist reports the missed event. In the reason clause was follows ik ziek.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-dat-01",
+    "topic": "dat",
+    "promptNl": "De server werkt weer volgens jou. Vertel een collega wat je denkt; begin met Ik denk dat. Spreek over jezelf (ik).",
+    "promptEnglish": "You think the server works again. Tell a colleague, starting with Ik denk dat. Speak about yourself using I.",
+    "answers": [
+      "Ik denk dat de server weer werkt."
+    ],
+    "english": "I think the server works again.",
+    "explanation": "Dat introduces the thought. Werkt follows subject de server and adverb weer.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-dat-02",
+    "topic": "dat",
+    "promptNl": "Je collega komt morgen. Zeg dat je dit weet, met Ik weet dat. Spreek over jezelf (ik).",
+    "promptEnglish": "You know your colleague is coming tomorrow. Say so using Ik weet dat. Speak about yourself using I.",
+    "answers": [
+      "Ik weet dat mijn collega morgen komt."
+    ],
+    "english": "I know my colleague is coming tomorrow.",
+    "explanation": "Weet introduces information, not familiarity. Komt is the finite verb of the dat clause.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-dat-03",
+    "topic": "dat",
+    "promptNl": "Je bent blij: het probleem is opgelost. Verbind dit met dat. Spreek over jezelf (ik).",
+    "promptEnglish": "You are pleased that the problem has been resolved. Connect the ideas using dat. Speak about yourself using I.",
+    "answers": [
+      "Ik ben blij dat het probleem is opgelost."
+    ],
+    "english": "I am glad that the problem has been resolved.",
+    "explanation": "Ben blij expresses your state. The dat clause uses passive/resultative is opgelost, not heeft opgelost.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-dat-04",
+    "topic": "dat",
+    "promptNl": "Je hoopt dat de trein op tijd komt. Vertel dat aan iemand. Spreek over jezelf (ik).",
+    "promptEnglish": "Tell someone that you hope the train arrives on time. Speak about yourself using I.",
+    "answers": [
+      "Ik hoop dat de trein op tijd komt."
+    ],
+    "english": "I hope the train arrives on time.",
+    "explanation": "Hoop is finite for ik. Op tijd belongs before the subordinate finite verb komt.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-dat-05",
+    "topic": "dat",
+    "promptNl": "Je wilt een collega vertellen dat je het verslag hebt gelezen. Begin met Ik wil zeggen dat. Spreek over jezelf (ik).",
+    "promptEnglish": "You want to say you have read the report. Begin with Ik wil zeggen dat. Speak about yourself using I.",
+    "answers": [
+      "Ik wil zeggen dat ik het verslag heb gelezen."
+    ],
+    "english": "I want to say that I have read the report.",
+    "explanation": "Wil is finite; zeggen is infinitive. The dat clause has its own auxiliary heb and participle gelezen.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-dat-06",
+    "topic": "dat",
+    "promptNl": "Je leidinggevende zegt: de vergadering begint om tien uur. Vertel dit met Mijn leidinggevende zegt dat.",
+    "promptEnglish": "Your manager says the meeting starts at ten. Report this using Mijn leidinggevende zegt dat.",
+    "answers": [
+      "Mijn leidinggevende zegt dat de vergadering om tien uur begint."
+    ],
+    "english": "My manager says the meeting starts at ten.",
+    "explanation": "The dat clause reports the message without quoting it. Begint follows the time phrase.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-als-01",
+    "topic": "als",
+    "promptNl": "Je belt je collega wanneer je hulp nodig hebt. Beschrijf deze gewoonte met Als aan het begin. Spreek over jezelf (ik).",
+    "promptEnglish": "You call your colleague whenever you need help. Describe the habit, beginning with Als. Speak about yourself using I.",
+    "answers": [
+      "Als ik hulp nodig heb, bel ik mijn collega."
+    ],
+    "english": "When I need help, I call my colleague.",
+    "explanation": "Als introduces a recurring situation. Heb closes that clause; bel starts the following main clause, then ik.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-als-02",
+    "topic": "als",
+    "promptNl": "Bij een storing van de server moet een collega gebeld worden. Zeg wat jij doet; begin met Als. Spreek over jezelf (ik).",
+    "promptEnglish": "If the server goes down, you call your colleague. Say what you do, starting with Als. Speak about yourself using I.",
+    "answers": [
+      "Als de server uitvalt, bel ik mijn collega."
+    ],
+    "english": "If the server goes down, I call my colleague.",
+    "explanation": "Uitvallen remains uitvalt as a finite subordinate verb. The main clause begins bel ik.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-als-03",
+    "topic": "als",
+    "promptNl": "Je blijft thuis wanneer het regent. Beschrijf deze gewoonte met Als vooraan. Spreek over jezelf (ik).",
+    "promptEnglish": "You stay home when it rains. Describe that habit with Als first. Speak about yourself using I.",
+    "answers": [
+      "Als het regent, blijf ik thuis."
+    ],
+    "english": "When it rains, I stay home.",
+    "explanation": "Het is the weather subject. Blijf is first after the entire opening als clause; ik follows.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-als-04",
+    "topic": "als",
+    "promptNl": "Je stuurt het verslag wanneer het klaar is. Begin met Ik stuur en gebruik als. Spreek over jezelf (ik).",
+    "promptEnglish": "You will send the report when it is ready. Begin with Ik stuur and use als. Speak about yourself using I.",
+    "answers": [
+      "Ik stuur het verslag als het klaar is."
+    ],
+    "english": "I will send the report when it is ready.",
+    "explanation": "Als can describe an anticipated event. Is follows het klaar in the subordinate clause.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-als-05",
+    "topic": "als",
+    "promptNl": "Je wilt weten of een probleem terugkomt. Vraag je collega om je dan te bellen met Bel me als.",
+    "promptEnglish": "Ask a colleague to call you if the problem returns, using Bel me als.",
+    "answers": [
+      "Bel me als het probleem terugkomt."
+    ],
+    "english": "Call me if the problem returns.",
+    "explanation": "Bel is an imperative. Terugkomen is joined as terugkomt in this subordinate clause.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-als-06",
+    "topic": "als",
+    "promptNl": "Je slaat je werk op wanneer je pauze neemt. Beschrijf deze gewoonte met als. Spreek over jezelf (ik).",
+    "promptEnglish": "Say you save your work whenever you take a break. Use als to introduce the recurring occasion. Speak about yourself using I.",
+    "answers": [
+      "Ik sla mijn werk op als ik pauze neem."
+    ],
+    "english": "I save my work when I take a break.",
+    "explanation": "Opslaan splits in the main clause: sla ... op. Neem follows pauze in the als clause.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tot-01",
+    "topic": "tot",
+    "promptNl": "Je bent bij de dokter. Zeg dat je wacht totdat de dokter je roept, met tot. Spreek over jezelf (ik).",
+    "promptEnglish": "You are at the doctor's. Say you wait until the doctor calls you, using tot. Speak about yourself using I.",
+    "answers": [
+      "Ik wacht tot de dokter me roept."
+    ],
+    "english": "I wait until the doctor calls me.",
+    "explanation": "De dokter is doing the calling, so roept is singular. Me is the person called, not the subject.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tot-02",
+    "topic": "tot",
+    "promptNl": "Jullie wachten op twee artsen die jullie zullen roepen. Spreek voor de groep met tot.",
+    "promptEnglish": "Your group waits until two doctors call you. Speak for the group, using tot.",
+    "answers": [
+      "We wachten tot de dokters ons roepen."
+    ],
+    "english": "We wait until the doctors call us.",
+    "explanation": "De dokters is plural, so roepen agrees with it. Ons means us and does not determine the verb.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tot-03",
+    "topic": "tot",
+    "promptNl": "Je blijft hier zolang je collega nog niet terug is. Gebruik tot. Spreek over jezelf (ik).",
+    "promptEnglish": "You will stay here until your colleague returns. Use tot. Speak about yourself using I.",
+    "answers": [
+      "Ik blijf hier tot mijn collega terugkomt."
+    ],
+    "english": "I stay here until my colleague returns.",
+    "explanation": "Tot introduces the endpoint. Terugkomt is joined in subordinate order.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tot-04",
+    "topic": "tot",
+    "promptNl": "Vraag iemand even te wachten: de installatie moet eerst klaar zijn. Gebruik Wacht tot.",
+    "promptEnglish": "Ask someone to wait until the installation is ready, using Wacht tot.",
+    "answers": [
+      "Wacht tot de installatie klaar is."
+    ],
+    "english": "Wait until the installation is ready.",
+    "explanation": "Wacht is an imperative. Klaar is an adjective; is closes the subordinate clause.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tot-05",
+    "topic": "tot",
+    "promptNl": "Je werkt verder totdat het probleem opgelost is. Gebruik tot. Spreek over jezelf (ik).",
+    "promptEnglish": "You keep working until the problem is resolved. Use tot. Speak about yourself using I.",
+    "answers": [
+      "Ik werk door tot het probleem is opgelost."
+    ],
+    "english": "I keep working until the problem is resolved.",
+    "explanation": "Doorwerken splits into werk door. Is opgelost describes the resolved problem.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tot-06",
+    "topic": "tot",
+    "promptNl": "Je wacht met vertrekken: de regen moet eerst stoppen. Gebruik Ik wacht tot. Spreek over jezelf (ik).",
+    "promptEnglish": "You wait until the rain stops before leaving. Express the waiting using Ik wacht tot. Speak about yourself using I.",
+    "answers": [
+      "Ik wacht tot de regen stopt."
+    ],
+    "english": "I wait until the rain stops.",
+    "explanation": "Tot marks the endpoint. Stopt agrees with singular de regen.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-toen-01",
+    "topic": "toen",
+    "promptNl": "Je kwam gisteren thuis en belde toen Zoë. Vertel dit met Toen vooraan. Spreek over jezelf (ik).",
+    "promptEnglish": "Yesterday you arrived home and then called Zoë. Tell this with Toen first. Speak about yourself using I.",
+    "answers": [
+      "Toen ik thuiskwam, belde ik Zoë."
+    ],
+    "english": "When I got home, I called Zoë.",
+    "explanation": "One past occasion uses toen. Thuiskwam is joined at the subordinate end; belde ik uses main-clause inversion.",
+    "tense": "past"
+  },
+  {
+    "id": "lab-toen-02",
+    "topic": "toen",
+    "promptNl": "Je opende gisteren een bestand. Er verscheen op dat moment een foutmelding. Begin met Toen. Spreek over jezelf (ik).",
+    "promptEnglish": "You opened a file yesterday and an error appeared at that moment. Begin with Toen. Speak about yourself using I.",
+    "answers": [
+      "Toen ik het bestand opende, verscheen er een foutmelding."
+    ],
+    "english": "When I opened the file, an error message appeared.",
+    "explanation": "Opende is past in the toen clause; verscheen is the irregular past of verschijnen. Er introduces the new message.",
+    "tense": "past"
+  },
+  {
+    "id": "lab-toen-03",
+    "topic": "toen",
+    "promptNl": "Je was gisteren op kantoor en sprak daar met je manager. Begin met Toen. Spreek over jezelf (ik).",
+    "promptEnglish": "You were at the office yesterday and spoke with your manager there. Begin with Toen. Speak about yourself using I.",
+    "answers": [
+      "Toen ik op kantoor was, sprak ik met mijn manager."
+    ],
+    "english": "When I was at the office, I spoke with my manager.",
+    "explanation": "Was closes the toen clause. Sprak is the past of spreken and comes before ik after the opening clause.",
+    "tense": "past"
+  },
+  {
+    "id": "lab-toen-04",
+    "topic": "toen",
+    "promptNl": "Tijdens je vorige bezoek was de winkel dicht. Vertel dat met Toen ik aankwam. Spreek over jezelf (ik).",
+    "promptEnglish": "On your previous visit the shop was closed when you arrived. Begin with Toen ik aankwam. Speak about yourself using I.",
+    "answers": [
+      "Toen ik aankwam, was de winkel dicht."
+    ],
+    "english": "When I arrived, the shop was closed.",
+    "explanation": "Aankomen is separable but joined as aankwam here. Was precedes de winkel in the following main clause.",
+    "tense": "past"
+  },
+  {
+    "id": "lab-toen-05",
+    "topic": "toen",
+    "promptNl": "Gisteren begon de vergadering. Op dat moment zat jij al klaar. Begin met Toen. Spreek over jezelf (ik).",
+    "promptEnglish": "Yesterday the meeting started and you were already ready. Begin with Toen. Speak about yourself using I.",
+    "answers": [
+      "Toen de vergadering begon, zat ik al klaar."
+    ],
+    "english": "When the meeting started, I was already seated and ready.",
+    "explanation": "Begon is the past of beginnen. Zat is the past of zitten; al means already here.",
+    "tense": "past"
+  },
+  {
+    "id": "lab-toen-06",
+    "topic": "toen",
+    "promptNl": "Je testte gisteren de verbinding en alles werkte. Vertel dit met Toen. Spreek over jezelf (ik).",
+    "promptEnglish": "You tested the connection yesterday and everything worked. Report that using Toen. Speak about yourself using I.",
+    "answers": [
+      "Toen ik de verbinding testte, werkte alles."
+    ],
+    "english": "When I tested the connection, everything worked.",
+    "explanation": "Testte retains the stem's t before past -te. Werkte begins the main clause before subject alles.",
+    "tense": "past"
+  },
+  {
+    "id": "lab-tense-01",
+    "topic": "tense",
+    "promptNl": "Vertel wat je nu doet: je bent onderweg naar de markt. Spreek over jezelf (ik).",
+    "promptEnglish": "Say what you are doing now: you are on your way to the market. Speak about yourself using I.",
+    "answers": [
+      "Ik ga naar de markt."
+    ],
+    "english": "I am going to the market.",
+    "explanation": "Ga is present for ik; no ben is needed before it.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tense-02",
+    "topic": "tense",
+    "promptNl": "Je vertelt een verhaal over gisteren. Je ging toen naar de markt. Gebruik de onvoltooid verleden tijd. Spreek over jezelf (ik).",
+    "promptEnglish": "Tell a story about yesterday: you went to the market. Use the simple past. Speak about yourself using I.",
+    "answers": [
+      "Ik ging naar de markt."
+    ],
+    "english": "I went to the market.",
+    "explanation": "Ging is the simple past of gaan. The sentence has one finite verb.",
+    "tense": "past"
+  },
+  {
+    "id": "lab-tense-03",
+    "topic": "tense",
+    "promptNl": "Vertel met de voltooide tijd dat je gisteren naar de markt bent gegaan. Leg de nadruk op het gaan. Spreek over jezelf (ik).",
+    "promptEnglish": "Report in the perfect that you went to the market yesterday, focusing on going there. Speak about yourself using I.",
+    "answers": [
+      "Ik ben gisteren naar de markt gegaan."
+    ],
+    "english": "I went to the market yesterday.",
+    "explanation": "Gaan uses zijn here: ben ... gegaan. Geweest belongs to zijn and focuses on having been there.",
+    "tense": "perfect"
+  },
+  {
+    "id": "lab-tense-04",
+    "topic": "tense",
+    "promptNl": "Iemand vraagt welke plaats je gisteren hebt bezocht. Zeg met geweest dat je op de markt bent geweest. Spreek over jezelf (ik).",
+    "promptEnglish": "Someone asks which place you visited yesterday. Use geweest to say you have been to the market. Speak about yourself using I.",
+    "answers": [
+      "Ik ben gisteren op de markt geweest."
+    ],
+    "english": "I was at the market yesterday.",
+    "explanation": "Geweest is the participle of zijn. Op de markt describes being at the market; it is not the participle of gaan.",
+    "tense": "perfect"
+  },
+  {
+    "id": "lab-tense-05",
+    "topic": "tense",
+    "promptNl": "Je zit nu op de bank. Beschrijf je positie. Spreek over jezelf (ik).",
+    "promptEnglish": "You are sitting on the sofa now. Describe your position. Speak about yourself using I.",
+    "answers": [
+      "Ik zit op de bank."
+    ],
+    "english": "I am sitting on the sofa.",
+    "explanation": "Zit is the finite verb. It describes the seated position, not the movement of sitting down.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tense-06",
+    "topic": "tense",
+    "promptNl": "Je hebt gisteren een uur op de bank gezeten. Vertel dit met de voltooide tijd. Spreek over jezelf (ik).",
+    "promptEnglish": "You spent an hour sitting on the sofa yesterday. Report this in the perfect. Speak about yourself using I.",
+    "answers": [
+      "Ik heb gisteren een uur op de bank gezeten."
+    ],
+    "english": "I sat on the sofa for an hour yesterday.",
+    "explanation": "Zitten takes hebben: heb ... gezeten. The duration describes the seated state.",
+    "tense": "perfect"
+  },
+  {
+    "id": "lab-tense-07",
+    "topic": "tense",
+    "promptNl": "Je hebt net plaatsgenomen op de bank. Gebruik gaan zitten in de voltooide tijd. Spreek over jezelf (ik).",
+    "promptEnglish": "You have just sat down on the sofa. Use gaan zitten in the perfect. Speak about yourself using I.",
+    "answers": [
+      "Ik ben op de bank gaan zitten."
+    ],
+    "english": "I sat down on the sofa.",
+    "explanation": "Gaan zitten focuses on taking a seat. The perfect uses ben ... gaan zitten with a double infinitive, not gegaan zitten.",
+    "tense": "perfect"
+  },
+  {
+    "id": "lab-tense-08",
+    "topic": "tense",
+    "promptNl": "Je probeert nu een nieuw gerecht. Beschrijf wat je doet. Spreek over jezelf (ik).",
+    "promptEnglish": "You are trying a new dish now. Say what you are doing. Speak about yourself using I.",
+    "answers": [
+      "Ik probeer een nieuw gerecht."
+    ],
+    "english": "I am trying a new dish.",
+    "explanation": "Probeer is already the finite present verb. Nieuw describes a singular indefinite het-word, gerecht.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tense-09",
+    "topic": "tense",
+    "promptNl": "Je vertelt over je etentje van gisteren. Gebruik probeerde voor het nieuwe gerecht. Spreek over jezelf (ik).",
+    "promptEnglish": "Tell a story about yesterday's meal. Use probeerde to describe trying a new dish. Speak about yourself using I.",
+    "answers": [
+      "Ik probeerde een nieuw gerecht."
+    ],
+    "english": "I tried a new dish.",
+    "explanation": "Probeerde is singular simple past; probeerden is plural.",
+    "tense": "past"
+  },
+  {
+    "id": "lab-tense-10",
+    "topic": "tense",
+    "promptNl": "Jullie hebben een nieuw gerecht geprobeerd. Vertel met de voltooide tijd wat jullie hebben gedaan.",
+    "promptEnglish": "Your group tried a new dish. Report it using geprobeerd.",
+    "answers": [
+      "We hebben een nieuw gerecht geprobeerd."
+    ],
+    "english": "We tried a new dish.",
+    "explanation": "Plural we takes hebben. Geprobeerd is the past participle and remains unchanged.",
+    "tense": "perfect"
+  },
+  {
+    "id": "lab-tense-11",
+    "topic": "tense",
+    "promptNl": "Je wilt morgen gaan slapen om tien uur. Zeg wat je van plan bent. Spreek over jezelf (ik).",
+    "promptEnglish": "You intend to go to sleep at ten tomorrow. Say what you plan to do. Speak about yourself using I.",
+    "answers": [
+      "Ik ben van plan morgen om tien uur te gaan slapen."
+    ],
+    "english": "I intend to go to sleep at ten tomorrow.",
+    "explanation": "Van plan zijn expresses intention. Te precedes gaan; slapen is the activity after gaan.",
+    "tense": "intention"
+  },
+  {
+    "id": "lab-tense-12",
+    "topic": "tense",
+    "promptNl": "Jullie kiezen nu data en een bestemming voor een gezamenlijke vakantie. Spreek voor de groep.",
+    "promptEnglish": "Your group is choosing dates and a destination for a shared holiday. Speak for everyone.",
+    "answers": [
+      "We plannen onze vakantie."
+    ],
+    "english": "We are planning our holiday.",
+    "explanation": "Plannen means organising the arrangements. Onze is used with singular de vakantie.",
+    "tense": "present"
+  },
+  {
+    "id": "lab-tense-13",
+    "topic": "tense",
+    "promptNl": "Je hebt alle mogelijkheden al bekeken voordat je beslist. Gebruik overwogen. Spreek over jezelf (ik).",
+    "promptEnglish": "You have already considered all your options before deciding. Use overwogen. Speak about yourself using I.",
+    "answers": [
+      "Ik heb al mijn opties al overwogen."
+    ],
+    "english": "I have already considered all my options.",
+    "explanation": "The first al belongs to al mijn opties, all my options; the second means already. Overwogen has no ge-.",
+    "tense": "perfect"
+  },
+  {
+    "id": "lab-tense-14",
+    "topic": "tense",
+    "promptNl": "Een collega gaf gisteren toestemming voor je voorstel. Zeg met ingestemd dat zij het heeft aanvaard.",
+    "promptEnglish": "A female colleague accepted your proposal yesterday. Use ingestemd to report her agreement to it.",
+    "answers": [
+      "Zij heeft daarmee ingestemd."
+    ],
+    "english": "She agreed to that.",
+    "explanation": "Instemmen is separable: stemt ... in, heeft ... ingestemd. This expresses acceptance; het eens zijn often expresses sharing an opinion.",
+    "tense": "perfect"
+  },
+  {
+    "id": "lab-verb-1-1",
+    "topic": "verbs",
+    "verb": "proberen",
+    "tense": "present",
+    "promptEnglish": "You are trying a new dish at a restaurant. Speak as I, using proberen in the present.",
+    "promptNl": "Je probeert nu een nieuw gerecht in een restaurant. Spreek over jezelf (ik) en gebruik proberen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik probeer een nieuw gerecht."
+    ],
+    "english": "I am trying a new dish.",
+    "explanation": "The long ee in probeer becomes one e in the open syllable of proberen. Here the subject is ik and the required present form is probeer. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-1-2",
+    "topic": "verbs",
+    "verb": "proberen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you tried a new dish at a restaurant. Tell the story. Speak as I, using proberen in the simple past.",
+    "promptNl": "Gisteren probeerde je een nieuw gerecht in een restaurant. Spreek over jezelf (ik) en gebruik proberen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik probeerde een nieuw gerecht."
+    ],
+    "english": "I tried a new dish.",
+    "explanation": "The long ee in probeer becomes one e in the open syllable of proberen. Here the subject is ik and the required past form is probeerde. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-1-3",
+    "topic": "verbs",
+    "verb": "proberen",
+    "tense": "perfect",
+    "promptEnglish": "You tried a new dish on your last restaurant visit. Report the experience. Speak as I, using proberen in the perfect.",
+    "promptNl": "Je hebt bij je laatste restaurantbezoek een nieuw gerecht geprobeerd. Spreek over jezelf (ik) en gebruik proberen in de voltooide tijd.",
+    "answers": [
+      "Ik heb een nieuw gerecht geprobeerd."
+    ],
+    "english": "I have tried a new dish.",
+    "explanation": "The long ee in probeer becomes one e in the open syllable of proberen. Here the subject is ik and the required perfect form is heb geprobeerd. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-2-1",
+    "topic": "verbs",
+    "verb": "overwegen",
+    "tense": "present",
+    "promptEnglish": "You are weighing up every option. Speak as I, using overwegen in the present.",
+    "promptNl": "Je neemt nu alle opties in overweging. Spreek over jezelf (ik) en gebruik overwegen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik overweeg alle opties."
+    ],
+    "english": "I am considering all options.",
+    "explanation": "Overwegen is inseparable in this meaning. Overwogen is an irregular participle without ge-. Here the subject is ik and the required present form is overweeg. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-2-2",
+    "topic": "verbs",
+    "verb": "overwegen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you weighed up every option. Tell the story. Speak as I, using overwegen in the simple past.",
+    "promptNl": "Gisteren nam je alle opties in overweging. Spreek over jezelf (ik) en gebruik overwegen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik overwoog alle opties."
+    ],
+    "english": "I considered all options.",
+    "explanation": "Overwegen is inseparable in this meaning. Overwogen is an irregular participle without ge-. Here the subject is ik and the required past form is overwoog. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-2-3",
+    "topic": "verbs",
+    "verb": "overwegen",
+    "tense": "perfect",
+    "promptEnglish": "You have finished considering every option. Report what you have done. Speak as I, using overwegen in the perfect.",
+    "promptNl": "Je afweging van alle opties is klaar. Spreek over jezelf (ik) en gebruik overwegen in de voltooide tijd.",
+    "answers": [
+      "Ik heb alle opties overwogen."
+    ],
+    "english": "I have considered all options.",
+    "explanation": "Overwegen is inseparable in this meaning. Overwogen is an irregular participle without ge-. Here the subject is ik and the required perfect form is heb overwogen. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-3-1",
+    "topic": "verbs",
+    "verb": "kopen",
+    "tense": "present",
+    "promptEnglish": "You are purchasing new sneakers. Speak as I, using kopen in the present.",
+    "promptNl": "Je koopt nu nieuwe sneakers. Spreek over jezelf (ik) en gebruik kopen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik koop nieuwe sneakers."
+    ],
+    "english": "I am buying new sneakers.",
+    "explanation": "Kopen has irregular past kocht and participle gekocht. Here the subject is ik and the required present form is koop. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-3-2",
+    "topic": "verbs",
+    "verb": "kopen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you purchased new sneakers. Tell the story. Speak as I, using kopen in the simple past.",
+    "promptNl": "Gisteren kocht je nieuwe sneakers. Spreek over jezelf (ik) en gebruik kopen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik kocht nieuwe sneakers."
+    ],
+    "english": "I bought new sneakers.",
+    "explanation": "Kopen has irregular past kocht and participle gekocht. Here the subject is ik and the required past form is kocht. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-3-3",
+    "topic": "verbs",
+    "verb": "kopen",
+    "tense": "perfect",
+    "promptEnglish": "You have returned from the shop with new sneakers. Say what you bought. Speak as I, using kopen in the perfect.",
+    "promptNl": "Je bent terug van de winkel met de nieuwe sneakers die je hebt gekocht. Spreek over jezelf (ik) en gebruik kopen in de voltooide tijd.",
+    "answers": [
+      "Ik heb nieuwe sneakers gekocht."
+    ],
+    "english": "I have bought new sneakers.",
+    "explanation": "Kopen has irregular past kocht and participle gekocht. Here the subject is ik and the required perfect form is heb gekocht. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-4-1",
+    "topic": "verbs",
+    "verb": "kiezen",
+    "tense": "present",
+    "promptEnglish": "You are selecting a study programme. Speak as I, using kiezen in the present.",
+    "promptNl": "Je kiest nu een opleiding. Spreek over jezelf (ik) en gebruik kiezen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik kies een opleiding."
+    ],
+    "english": "I am choosing a study programme.",
+    "explanation": "Kiezen changes its vowel: kies, koos, gekozen. Here the subject is ik and the required present form is kies. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-4-2",
+    "topic": "verbs",
+    "verb": "kiezen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you selected a study programme. Tell the story. Speak as I, using kiezen in the simple past.",
+    "promptNl": "Gisteren koos je een opleiding. Spreek over jezelf (ik) en gebruik kiezen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik koos een opleiding."
+    ],
+    "english": "I chose a study programme.",
+    "explanation": "Kiezen changes its vowel: kies, koos, gekozen. Here the subject is ik and the required past form is koos. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-4-3",
+    "topic": "verbs",
+    "verb": "kiezen",
+    "tense": "perfect",
+    "promptEnglish": "You have selected a study programme. Report the completed choice. Speak as I, using kiezen in the perfect.",
+    "promptNl": "Je keuze voor een opleiding is gemaakt. Spreek over jezelf (ik) en gebruik kiezen in de voltooide tijd.",
+    "answers": [
+      "Ik heb een opleiding gekozen."
+    ],
+    "english": "I have chosen a study programme.",
+    "explanation": "Kiezen changes its vowel: kies, koos, gekozen. Here the subject is ik and the required perfect form is heb gekozen. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-5-1",
+    "topic": "verbs",
+    "verb": "leren",
+    "tense": "present",
+    "promptEnglish": "You are learning something you did not know before. Speak as I, using leren in the present.",
+    "promptNl": "Je leert tijdens het studeren iets wat je nog niet wist. Spreek over jezelf (ik) en gebruik leren in de tegenwoordige tijd.",
+    "answers": [
+      "Ik leer iets nieuws."
+    ],
+    "english": "I am learning something new.",
+    "explanation": "After iets, the adjective nieuw receives -s: iets nieuws. Here the subject is ik and the required present form is leer. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-5-2",
+    "topic": "verbs",
+    "verb": "leren",
+    "tense": "past",
+    "promptEnglish": "During yesterday's study you learned something new. Tell the story. Speak as I, using leren in the simple past.",
+    "promptNl": "Gisteren leerde je iets wat je nog niet wist. Spreek over jezelf (ik) en gebruik leren in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik leerde iets nieuws."
+    ],
+    "english": "I learned something new.",
+    "explanation": "After iets, the adjective nieuw receives -s: iets nieuws. Here the subject is ik and the required past form is leerde. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-5-3",
+    "topic": "verbs",
+    "verb": "leren",
+    "tense": "perfect",
+    "promptEnglish": "You have finished studying and learned something new. Report that experience. Speak as I, using leren in the perfect.",
+    "promptNl": "Je studiesessie is voorbij en je hebt iets nieuws geleerd. Spreek over jezelf (ik) en gebruik leren in de voltooide tijd.",
+    "answers": [
+      "Ik heb iets nieuws geleerd."
+    ],
+    "english": "I have learned something new.",
+    "explanation": "After iets, the adjective nieuw receives -s: iets nieuws. Here the subject is ik and the required perfect form is heb geleerd. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-6-1",
+    "topic": "verbs",
+    "verb": "werken",
+    "tense": "present",
+    "promptEnglish": "You are working from home. Speak as I, using werken in the present.",
+    "promptNl": "Je doet je werk nu thuis. Spreek over jezelf (ik) en gebruik werken in de tegenwoordige tijd.",
+    "answers": [
+      "Ik werk thuis."
+    ],
+    "english": "I work from home.",
+    "explanation": "The past suffix is -te; the participle ends in -t: gewerkt. Here the subject is ik and the required present form is werk. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-6-2",
+    "topic": "verbs",
+    "verb": "werken",
+    "tense": "past",
+    "promptEnglish": "Yesterday you worked from home. Tell the story. Speak as I, using werken in the simple past.",
+    "promptNl": "Gisteren deed je je werk thuis. Spreek over jezelf (ik) en gebruik werken in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik werkte thuis."
+    ],
+    "english": "I worked from home.",
+    "explanation": "The past suffix is -te; the participle ends in -t: gewerkt. Here the subject is ik and the required past form is werkte. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-6-3",
+    "topic": "verbs",
+    "verb": "werken",
+    "tense": "perfect",
+    "promptEnglish": "You have finished a day working from home. Report where you worked. Speak as I, using werken in the perfect.",
+    "promptNl": "Je werkdag thuis is voorbij. Spreek over jezelf (ik) en gebruik werken in de voltooide tijd.",
+    "answers": [
+      "Ik heb thuis gewerkt."
+    ],
+    "english": "I have worked from home.",
+    "explanation": "The past suffix is -te; the participle ends in -t: gewerkt. Here the subject is ik and the required perfect form is heb gewerkt. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-7-1",
+    "topic": "verbs",
+    "verb": "plannen",
+    "tense": "present",
+    "promptEnglish": "You are arranging dates and a destination for your own holiday. Speak as I, using plannen in the present.",
+    "promptNl": "Je kiest nu data en een bestemming voor je eigen vakantie. Spreek over jezelf (ik) en gebruik plannen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik plan mijn vakantie."
+    ],
+    "english": "I am planning my holiday.",
+    "explanation": "Plannen means arranging a plan. Van plan zijn expresses an intention and is a separate structure. Here the subject is ik and the required present form is plan. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-7-2",
+    "topic": "verbs",
+    "verb": "plannen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you planned your own holiday. Tell the story. Speak as I, using plannen in the simple past.",
+    "promptNl": "Gisteren koos je data en een bestemming voor je eigen vakantie. Spreek over jezelf (ik) en gebruik plannen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik plande mijn vakantie."
+    ],
+    "english": "I planned my holiday.",
+    "explanation": "Plannen means arranging a plan. Van plan zijn expresses an intention and is a separate structure. Here the subject is ik and the required past form is plande. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-7-3",
+    "topic": "verbs",
+    "verb": "plannen",
+    "tense": "perfect",
+    "promptEnglish": "Your own holiday planning is complete. Report what you have done. Speak as I, using plannen in the perfect.",
+    "promptNl": "De planning van je eigen vakantie is klaar. Spreek over jezelf (ik) en gebruik plannen in de voltooide tijd.",
+    "answers": [
+      "Ik heb mijn vakantie gepland."
+    ],
+    "english": "I have planned my holiday.",
+    "explanation": "Plannen means arranging a plan. Van plan zijn expresses an intention and is a separate structure. Here the subject is ik and the required perfect form is heb gepland. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-8-1",
+    "topic": "verbs",
+    "verb": "koken",
+    "tense": "present",
+    "promptEnglish": "You are preparing food for your friends. Speak as I, using koken in the present.",
+    "promptNl": "Je bereidt nu eten voor je vrienden. Spreek over jezelf (ik) en gebruik koken in de tegenwoordige tijd.",
+    "answers": [
+      "Ik kook voor mijn vrienden."
+    ],
+    "english": "I am cooking for my friends.",
+    "explanation": "Koken becomes kook for ik; the past and participle use -t. Here the subject is ik and the required present form is kook. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-8-2",
+    "topic": "verbs",
+    "verb": "koken",
+    "tense": "past",
+    "promptEnglish": "Yesterday you prepared food for your friends. Tell the story. Speak as I, using koken in the simple past.",
+    "promptNl": "Gisteren bereidde je eten voor je vrienden. Spreek over jezelf (ik) en gebruik koken in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik kookte voor mijn vrienden."
+    ],
+    "english": "I cooked for my friends.",
+    "explanation": "Koken becomes kook for ik; the past and participle use -t. Here the subject is ik and the required past form is kookte. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-8-3",
+    "topic": "verbs",
+    "verb": "koken",
+    "tense": "perfect",
+    "promptEnglish": "The food you prepared for your friends is ready. Report the cooking you did. Speak as I, using koken in the perfect.",
+    "promptNl": "Het eten dat je voor je vrienden hebt bereid is klaar. Spreek over jezelf (ik) en gebruik koken in de voltooide tijd.",
+    "answers": [
+      "Ik heb voor mijn vrienden gekookt."
+    ],
+    "english": "I have cooked for my friends.",
+    "explanation": "Koken becomes kook for ik; the past and participle use -t. Here the subject is ik and the required perfect form is heb gekookt. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-9-1",
+    "topic": "verbs",
+    "verb": "roepen",
+    "tense": "present",
+    "promptEnglish": "You are calling out to the doctor. Speak as I, using roepen in the present.",
+    "promptNl": "Je roept nu de dokter om aandacht te krijgen. Spreek over jezelf (ik) en gebruik roepen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik roep de dokter."
+    ],
+    "english": "I am calling the doctor.",
+    "explanation": "Roepen is calling out, not making a telephone call. The past is riep. Here the subject is ik and the required present form is roep. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-9-2",
+    "topic": "verbs",
+    "verb": "roepen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you called out to the doctor. Tell the story. Speak as I, using roepen in the simple past.",
+    "promptNl": "Gisteren riep je de dokter om aandacht te krijgen. Spreek over jezelf (ik) en gebruik roepen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik riep de dokter."
+    ],
+    "english": "I called the doctor.",
+    "explanation": "Roepen is calling out, not making a telephone call. The past is riep. Here the subject is ik and the required past form is riep. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-9-3",
+    "topic": "verbs",
+    "verb": "roepen",
+    "tense": "perfect",
+    "promptEnglish": "You have just called out to the doctor. Report that action. Speak as I, using roepen in the perfect.",
+    "promptNl": "Je hebt de dokter net geroepen. Spreek over jezelf (ik) en gebruik roepen in de voltooide tijd.",
+    "answers": [
+      "Ik heb de dokter geroepen."
+    ],
+    "english": "I have called the doctor.",
+    "explanation": "Roepen is calling out, not making a telephone call. The past is riep. Here the subject is ik and the required perfect form is heb geroepen. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-10-1",
+    "topic": "verbs",
+    "verb": "zitten",
+    "tense": "present",
+    "promptEnglish": "You are now seated on the sofa. Speak as I, using zitten in the present.",
+    "promptNl": "Je bent nu op de bank in een zittende positie. Spreek over jezelf (ik) en gebruik zitten in de tegenwoordige tijd.",
+    "answers": [
+      "Ik zit op de bank."
+    ],
+    "english": "I am sitting on the sofa.",
+    "explanation": "Zitten describes a position and uses hebben. Taking a seat is gaan zitten. Here the subject is ik and the required present form is zit. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-10-2",
+    "topic": "verbs",
+    "verb": "zitten",
+    "tense": "past",
+    "promptEnglish": "Yesterday you were seated on the sofa. Describe that state. Speak as I, using zitten in the simple past.",
+    "promptNl": "Gisteren was je op de bank in een zittende positie. Spreek over jezelf (ik) en gebruik zitten in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik zat op de bank."
+    ],
+    "english": "I was sitting on the sofa.",
+    "explanation": "Zitten describes a position and uses hebben. Taking a seat is gaan zitten. Here the subject is ik and the required past form is zat. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-10-3",
+    "topic": "verbs",
+    "verb": "zitten",
+    "tense": "perfect",
+    "promptEnglish": "You spent some time seated on the sofa. Report that past period. Speak as I, using zitten in the perfect.",
+    "promptNl": "Je hebt een tijdje op de bank gezeten. Spreek over jezelf (ik) en gebruik zitten in de voltooide tijd.",
+    "answers": [
+      "Ik heb op de bank gezeten."
+    ],
+    "english": "I have sat on the sofa.",
+    "explanation": "Zitten describes a position and uses hebben. Taking a seat is gaan zitten. Here the subject is ik and the required perfect form is heb gezeten. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-11-1",
+    "topic": "verbs",
+    "verb": "verkopen",
+    "tense": "present",
+    "promptEnglish": "You are selling your own car to Zoë. Speak as I, using verkopen in the present.",
+    "promptNl": "Je verkoopt nu je eigen auto aan Zoë. Spreek over jezelf (ik) en gebruik verkopen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik verkoop mijn auto aan Zoë."
+    ],
+    "english": "I am selling my car to Zoë.",
+    "explanation": "Verkopen is inseparable; ver- does not take ge-. Aan introduces the buyer. Here the subject is ik and the required present form is verkoop. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-11-2",
+    "topic": "verbs",
+    "verb": "verkopen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you sold your own car to Zoë. Tell the story. Speak as I, using verkopen in the simple past.",
+    "promptNl": "Gisteren verkocht je je eigen auto aan Zoë. Spreek over jezelf (ik) en gebruik verkopen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik verkocht mijn auto aan Zoë."
+    ],
+    "english": "I sold my car to Zoë.",
+    "explanation": "Verkopen is inseparable; ver- does not take ge-. Aan introduces the buyer. Here the subject is ik and the required past form is verkocht. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-11-3",
+    "topic": "verbs",
+    "verb": "verkopen",
+    "tense": "perfect",
+    "promptEnglish": "The sale of your own car to Zoë is complete. Report the sale. Speak as I, using verkopen in the perfect.",
+    "promptNl": "De verkoop van je eigen auto aan Zoë is afgerond. Spreek over jezelf (ik) en gebruik verkopen in de voltooide tijd.",
+    "answers": [
+      "Ik heb mijn auto aan Zoë verkocht."
+    ],
+    "english": "I have sold my car to Zoë.",
+    "explanation": "Verkopen is inseparable; ver- does not take ge-. Aan introduces the buyer. Here the subject is ik and the required perfect form is heb verkocht. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-12-1",
+    "topic": "verbs",
+    "verb": "begrijpen",
+    "tense": "present",
+    "promptEnglish": "The question makes sense to you now. Speak as I, using begrijpen in the present.",
+    "promptNl": "De vraag is nu duidelijk voor jou. Spreek over jezelf (ik) en gebruik begrijpen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik begrijp de vraag."
+    ],
+    "english": "I understand the question.",
+    "explanation": "Begrijpen is irregular and its participle begrepen has no ge- before be-. Here the subject is ik and the required present form is begrijp. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-12-2",
+    "topic": "verbs",
+    "verb": "begrijpen",
+    "tense": "past",
+    "promptEnglish": "The question made sense to you yesterday. Describe that state. Speak as I, using begrijpen in the simple past.",
+    "promptNl": "De vraag was gisteren duidelijk voor jou. Spreek over jezelf (ik) en gebruik begrijpen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik begreep de vraag."
+    ],
+    "english": "I understood the question.",
+    "explanation": "Begrijpen is irregular and its participle begrepen has no ge- before be-. Here the subject is ik and the required past form is begreep. The finite verb follows ik; do not put ben before it."
+  },
+  {
+    "id": "lab-verb-12-3",
+    "topic": "verbs",
+    "verb": "begrijpen",
+    "tense": "perfect",
+    "promptEnglish": "After an explanation you have understood the question. Tell the other person. Speak as I, using begrijpen in the perfect.",
+    "promptNl": "Na uitleg heb je de vraag begrepen. Spreek over jezelf (ik) en gebruik begrijpen in de voltooide tijd.",
+    "answers": [
+      "Ik heb de vraag begrepen."
+    ],
+    "english": "I have understood the question.",
+    "explanation": "Begrijpen is irregular and its participle begrepen has no ge- before be-. Here the subject is ik and the required perfect form is heb begrepen. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-13-1",
+    "topic": "separable",
+    "verb": "opsturen",
+    "tense": "present",
+    "promptEnglish": "You are sending the report. Speak as I, using opsturen in the present.",
+    "promptNl": "Je bent het verslag nu aan het versturen. Spreek over jezelf (ik) en gebruik opsturen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik stuur het verslag op."
+    ],
+    "english": "I am sending the report.",
+    "explanation": "Opsturen splits when finite: stuur ... op. After a modal it stays together: kan opsturen. Here the subject is ik and the required present form is stuur op. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-13-2",
+    "topic": "separable",
+    "verb": "opsturen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you sent the report. Tell the story. Speak as I, using opsturen in the simple past.",
+    "promptNl": "Gisteren verstuurde je het verslag. Spreek over jezelf (ik) en gebruik opsturen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik stuurde het verslag op."
+    ],
+    "english": "I sent the report.",
+    "explanation": "Opsturen splits when finite: stuur ... op. After a modal it stays together: kan opsturen. Here the subject is ik and the required past form is stuurde op. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-13-3",
+    "topic": "separable",
+    "verb": "opsturen",
+    "tense": "perfect",
+    "promptEnglish": "You have finished sending the report. Report the completed action. Speak as I, using opsturen in the perfect.",
+    "promptNl": "Het verslag is door jou verstuurd. Spreek over jezelf (ik) en gebruik opsturen in de voltooide tijd.",
+    "answers": [
+      "Ik heb het verslag opgestuurd."
+    ],
+    "english": "I have sent the report.",
+    "explanation": "Opsturen splits when finite: stuur ... op. After a modal it stays together: kan opsturen. Here the subject is ik and the required perfect form is heb opgestuurd. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-14-1",
+    "topic": "separable",
+    "verb": "invullen",
+    "tense": "present",
+    "promptEnglish": "You are entering details in the form's empty fields. Speak as I, using invullen in the present.",
+    "promptNl": "Je schrijft nu gegevens in de lege vakjes van het formulier. Spreek over jezelf (ik) en gebruik invullen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik vul het formulier in."
+    ],
+    "english": "I am filling in the form.",
+    "explanation": "Invullen splits as vul ... in; with te it becomes in te vullen. Here the subject is ik and the required present form is vul in. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-14-2",
+    "topic": "separable",
+    "verb": "invullen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you filled in the form. Tell the story. Speak as I, using invullen in the simple past.",
+    "promptNl": "Gisteren schreef je gegevens in de lege vakjes van het formulier. Spreek over jezelf (ik) en gebruik invullen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik vulde het formulier in."
+    ],
+    "english": "I filled in the form.",
+    "explanation": "Invullen splits as vul ... in; with te it becomes in te vullen. Here the subject is ik and the required past form is vulde in. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-14-3",
+    "topic": "separable",
+    "verb": "invullen",
+    "tense": "perfect",
+    "promptEnglish": "You have finished entering the details in the form. Report the completed action. Speak as I, using invullen in the perfect.",
+    "promptNl": "Alle gegevens staan in het formulier en je bent klaar met invullen. Spreek over jezelf (ik) en gebruik invullen in de voltooide tijd.",
+    "answers": [
+      "Ik heb het formulier ingevuld."
+    ],
+    "english": "I have filled in the form.",
+    "explanation": "Invullen splits as vul ... in; with te it becomes in te vullen. Here the subject is ik and the required perfect form is heb ingevuld. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-15-1",
+    "topic": "separable",
+    "verb": "aanvragen",
+    "tense": "present",
+    "promptEnglish": "You are making an official request for a permit. Speak as I, using aanvragen in the present.",
+    "promptNl": "Je doet nu een officieel verzoek om een vergunning te krijgen. Spreek over jezelf (ik) en gebruik aanvragen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik vraag een vergunning aan."
+    ],
+    "english": "I am applying for a permit.",
+    "explanation": "Aanvragen has irregular finite past vroeg aan, but its participle is aangevraagd. Here the subject is ik and the required present form is vraag aan. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-15-2",
+    "topic": "separable",
+    "verb": "aanvragen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you applied for a permit. Tell the story. Speak as I, using aanvragen in the simple past.",
+    "promptNl": "Gisteren deed je een officieel verzoek om een vergunning te krijgen. Spreek over jezelf (ik) en gebruik aanvragen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik vroeg een vergunning aan."
+    ],
+    "english": "I applied for a permit.",
+    "explanation": "Aanvragen has irregular finite past vroeg aan, but its participle is aangevraagd. Here the subject is ik and the required past form is vroeg aan. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-15-3",
+    "topic": "separable",
+    "verb": "aanvragen",
+    "tense": "perfect",
+    "promptEnglish": "Your official request for a permit has been submitted. Report that action. Speak as I, using aanvragen in the perfect.",
+    "promptNl": "Je officiële verzoek om een vergunning is ingediend. Spreek over jezelf (ik) en gebruik aanvragen in de voltooide tijd.",
+    "answers": [
+      "Ik heb een vergunning aangevraagd."
+    ],
+    "english": "I have applied for a permit.",
+    "explanation": "Aanvragen has irregular finite past vroeg aan, but its participle is aangevraagd. Here the subject is ik and the required perfect form is heb aangevraagd. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-16-1",
+    "topic": "separable",
+    "verb": "opruimen",
+    "tense": "present",
+    "promptEnglish": "You are putting your desk back in order. Speak as I, using opruimen in the present.",
+    "promptNl": "Je legt nu de spullen op je bureau op hun plaats. Spreek over jezelf (ik) en gebruik opruimen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik ruim mijn bureau op."
+    ],
+    "english": "I am tidying my desk.",
+    "explanation": "Opruimen means putting things in order. Schoonmaken means cleaning away dirt. Here the subject is ik and the required present form is ruim op. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-16-2",
+    "topic": "separable",
+    "verb": "opruimen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you tidied your desk. Tell the story. Speak as I, using opruimen in the simple past.",
+    "promptNl": "Gisteren legde je de spullen op je bureau op hun plaats. Spreek over jezelf (ik) en gebruik opruimen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik ruimde mijn bureau op."
+    ],
+    "english": "I tidied my desk.",
+    "explanation": "Opruimen means putting things in order. Schoonmaken means cleaning away dirt. Here the subject is ik and the required past form is ruimde op. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-16-3",
+    "topic": "separable",
+    "verb": "opruimen",
+    "tense": "perfect",
+    "promptEnglish": "Your desk is tidy after you put things away. Report the completed tidying. Speak as I, using opruimen in the perfect.",
+    "promptNl": "Je bureau is netjes nadat jij alles op zijn plaats hebt gelegd. Spreek over jezelf (ik) en gebruik opruimen in de voltooide tijd.",
+    "answers": [
+      "Ik heb mijn bureau opgeruimd."
+    ],
+    "english": "I have tidied my desk.",
+    "explanation": "Opruimen means putting things in order. Schoonmaken means cleaning away dirt. Here the subject is ik and the required perfect form is heb opgeruimd. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-17-1",
+    "topic": "separable",
+    "verb": "afmaken",
+    "tense": "present",
+    "promptEnglish": "You are finishing the last part of your assignment. Speak as I, using afmaken in the present.",
+    "promptNl": "Je rondt nu het laatste deel van je opdracht af. Spreek over jezelf (ik) en gebruik afmaken in de tegenwoordige tijd.",
+    "answers": [
+      "Ik maak mijn opdracht af."
+    ],
+    "english": "I am finishing my assignment.",
+    "explanation": "Afmaken splits as maak ... af. The perfect places ge- between af and maakt. Here the subject is ik and the required present form is maak af. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-17-2",
+    "topic": "separable",
+    "verb": "afmaken",
+    "tense": "past",
+    "promptEnglish": "Yesterday you finished your assignment. Tell the story. Speak as I, using afmaken in the simple past.",
+    "promptNl": "Gisteren rondde je het laatste deel van je opdracht af. Spreek over jezelf (ik) en gebruik afmaken in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik maakte mijn opdracht af."
+    ],
+    "english": "I finished my assignment.",
+    "explanation": "Afmaken splits as maak ... af. The perfect places ge- between af and maakt. Here the subject is ik and the required past form is maakte af. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-17-3",
+    "topic": "separable",
+    "verb": "afmaken",
+    "tense": "perfect",
+    "promptEnglish": "Your assignment is completely finished. Report what you did. Speak as I, using afmaken in the perfect.",
+    "promptNl": "Je opdracht is helemaal klaar. Spreek over jezelf (ik) en gebruik afmaken in de voltooide tijd.",
+    "answers": [
+      "Ik heb mijn opdracht afgemaakt."
+    ],
+    "english": "I have finished my assignment.",
+    "explanation": "Afmaken splits as maak ... af. The perfect places ge- between af and maakt. Here the subject is ik and the required perfect form is heb afgemaakt. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-18-1",
+    "topic": "separable",
+    "verb": "inloggen",
+    "tense": "present",
+    "promptEnglish": "You are signing in again. Speak as I, using inloggen in the present.",
+    "promptNl": "Je voert nu opnieuw je gebruikersnaam en wachtwoord in om toegang te krijgen. Spreek over jezelf (ik) en gebruik inloggen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik log opnieuw in."
+    ],
+    "english": "I am signing in again.",
+    "explanation": "Inloggen is separable. The stem log takes -de in the past and -d in ingelogd. Here the subject is ik and the required present form is log in. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-18-2",
+    "topic": "separable",
+    "verb": "inloggen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you signed in again. Tell the story. Speak as I, using inloggen in the simple past.",
+    "promptNl": "Gisteren meldde je je opnieuw aan met je gebruikersnaam en wachtwoord. Spreek over jezelf (ik) en gebruik inloggen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik logde opnieuw in."
+    ],
+    "english": "I signed in again.",
+    "explanation": "Inloggen is separable. The stem log takes -de in the past and -d in ingelogd. Here the subject is ik and the required past form is logde in. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-18-3",
+    "topic": "separable",
+    "verb": "inloggen",
+    "tense": "perfect",
+    "promptEnglish": "You have signed in again and now have access. Report that action. Speak as I, using inloggen in the perfect.",
+    "promptNl": "Je hebt opnieuw toegang nadat je je gebruikersnaam en wachtwoord hebt ingevoerd. Spreek over jezelf (ik) en gebruik inloggen in de voltooide tijd.",
+    "answers": [
+      "Ik heb opnieuw ingelogd."
+    ],
+    "english": "I have signed in again.",
+    "explanation": "Inloggen is separable. The stem log takes -de in the past and -d in ingelogd. Here the subject is ik and the required perfect form is heb ingelogd. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-19-1",
+    "topic": "separable",
+    "verb": "aankomen",
+    "tense": "present",
+    "promptEnglish": "You are reaching the office now. Speak as I, using aankomen in the present.",
+    "promptNl": "Je bereikt nu het kantoor. Spreek over jezelf (ik) en gebruik aankomen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik kom op kantoor aan."
+    ],
+    "english": "I am arriving at the office.",
+    "explanation": "Aankomen uses zijn for arrival. Its participle is aangekomen, not aangekoomd. Here the subject is ik and the required present form is kom aan. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-19-2",
+    "topic": "separable",
+    "verb": "aankomen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you arrived at the office. Tell the story. Speak as I, using aankomen in the simple past.",
+    "promptNl": "Gisteren bereikte je het kantoor. Spreek over jezelf (ik) en gebruik aankomen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik kwam op kantoor aan."
+    ],
+    "english": "I arrived at the office.",
+    "explanation": "Aankomen uses zijn for arrival. Its participle is aangekomen, not aangekoomd. Here the subject is ik and the required past form is kwam aan. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-19-3",
+    "topic": "separable",
+    "verb": "aankomen",
+    "tense": "perfect",
+    "promptEnglish": "You have just arrived at the office. Tell someone. Speak as I, using aankomen in the perfect.",
+    "promptNl": "Je bent net op kantoor aangekomen. Spreek over jezelf (ik) en gebruik aankomen in de voltooide tijd.",
+    "answers": [
+      "Ik ben op kantoor aangekomen."
+    ],
+    "english": "I have arrived at the office.",
+    "explanation": "Aankomen uses zijn for arrival. Its participle is aangekomen, not aangekoomd. Here the subject is ik and the required perfect form is ben aangekomen. The auxiliary is finite and the participle follows the rest of this clause."
+  },
+  {
+    "id": "lab-verb-20-1",
+    "topic": "separable",
+    "verb": "meenemen",
+    "tense": "present",
+    "promptEnglish": "You are taking your laptop along. Speak as I, using meenemen in the present.",
+    "promptNl": "Je gaat nu weg en neemt je laptop mee. Spreek over jezelf (ik) en gebruik meenemen in de tegenwoordige tijd.",
+    "answers": [
+      "Ik neem mijn laptop mee."
+    ],
+    "english": "I am taking my laptop along.",
+    "explanation": "Meenemen has irregular nam and meegenomen. Mee stays separate from the finite main verb. Here the subject is ik and the required present form is neem mee. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-20-2",
+    "topic": "separable",
+    "verb": "meenemen",
+    "tense": "past",
+    "promptEnglish": "Yesterday you took your laptop along. Tell the story. Speak as I, using meenemen in the simple past.",
+    "promptNl": "Gisteren ging je weg en nam je je laptop mee. Spreek over jezelf (ik) en gebruik meenemen in de onvoltooid verleden tijd.",
+    "answers": [
+      "Ik nam mijn laptop mee."
+    ],
+    "english": "I took my laptop along.",
+    "explanation": "Meenemen has irregular nam and meegenomen. Mee stays separate from the finite main verb. Here the subject is ik and the required past form is nam mee. The finite part follows ik; the separable particle closes this main clause."
+  },
+  {
+    "id": "lab-verb-20-3",
+    "topic": "separable",
+    "verb": "meenemen",
+    "tense": "perfect",
+    "promptEnglish": "Your laptop is with you because you took it along. Report that action. Speak as I, using meenemen in the perfect.",
+    "promptNl": "Je laptop is bij je omdat je hem hebt meegenomen. Spreek over jezelf (ik) en gebruik meenemen in de voltooide tijd.",
+    "answers": [
+      "Ik heb mijn laptop meegenomen."
+    ],
+    "english": "I have taken my laptop along.",
+    "explanation": "Meenemen has irregular nam and meegenomen. Mee stays separate from the finite main verb. Here the subject is ik and the required perfect form is heb meegenomen. The auxiliary is finite and the participle follows the rest of this clause."
+  }
+]

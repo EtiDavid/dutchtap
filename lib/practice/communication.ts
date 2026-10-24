@@ -1,5 +1,6 @@
 import workplace from "@/data/workplace-communication.json";
 import catalogue from "@/data/dutch-communication.json";
+import corrections from "@/data/editorial/communication-corrections.json";
 import type { Lang } from "@/lib/lang";
 import {
   sentenceTokens,
@@ -20,7 +21,56 @@ export type PracticeSentence = {
   scenario: string;
   lang: Lang;
 };
-const tasks = { ...catalogue, ...workplace } as Record<string, CommunicationTask>;
+const tasks: Record<string, CommunicationTask> = Object.fromEntries(
+  Object.entries({ ...catalogue, ...workplace }).map(([text, task]) => [
+    text,
+    { ...task, answers: task.answers.map((answer) => ({ ...answer })) },
+  ]),
+);
+// Keep every historic answer ID resolvable. Editorial patches replace metadata and
+// append meaningful alternatives, never silently reassign a saved model's text.
+for (const [text, patch] of Object.entries(corrections)) {
+  const task = tasks[text];
+  if (!task) continue;
+  if (patch.scenario) task.scenario = patch.scenario;
+  if (patch.explanation)
+    task.answers[0] = { ...task.answers[0], explanation: patch.explanation };
+  for (const answer of patch.answers)
+    if (!task.answers.some((a) => a.text === answer.text))
+      task.answers.push(answer);
+}
+const minorForm = (text: string) =>
+  text
+    .toLocaleLowerCase("nl")
+    .replace(/[.,!?]/g, "")
+    .split(/\s+/)
+    .map(
+      (w) =>
+        ({
+          zij: "ze",
+          wij: "we",
+          jij: "je",
+          jouw: "je",
+          jou: "je",
+          mij: "me",
+          kunt: "kan",
+          kun: "kan",
+          hebt: "heeft",
+          houd: "hou",
+          zul: "zal",
+        })[w] ?? w,
+    )
+    .join(" ");
+/** Pronoun/inflection variants remain valid but are teaching notes, not new quiz models. */
+export function principalAnswers(task: CommunicationTask) {
+  const seen = new Set<string>();
+  return task.answers.filter((a) => {
+    const key = minorForm(a.text);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
 /** Exact authored text is the key. French and legacy records keep their single model. */
 export function communicationFor(card: PracticeSentence): CommunicationTask {
   return card.lang === "nl" && tasks[card.text]

@@ -7,6 +7,7 @@ import { MasteryDots } from "@/components/ui/MasteryDots";
 import { ScoreBar } from "./ScoreBar";
 import { QuestionCard } from "./QuestionCard";
 import { SessionSummary } from "./SessionSummary";
+import { FeedbackSettings } from '@/components/practice/QuizFeedback';
 
 export function GameScreen({ mode }: { mode: RouteMode }) {
   const {
@@ -44,6 +45,7 @@ export function GameScreen({ mode }: { mode: RouteMode }) {
       />
 
       <main className="flex flex-1 flex-col items-center justify-center gap-8 px-6 pb-10">
+        <FeedbackSettings />
         {current ? (
           <QuestionCard
             question={current.question}

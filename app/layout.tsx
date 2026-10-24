@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
+import { QuizFeedback } from "@/components/practice/QuizFeedback";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DutchTap",
-  description: "A tiny, polished Dutch grammar memory trainer — de/het, deze/dit/die/dat, and adjective endings.",
+  description: "Practise Dutch through real-life situations, flashcards, verb forms, sentence structure and grammar games.",
   manifest: "/manifest.webmanifest",
   icons: {
     icon: [
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
         <ServiceWorkerRegister />
+        <QuizFeedback />
       </body>
     </html>
   );

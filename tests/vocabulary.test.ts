@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { CARDS } from '@/lib/flashcards/engine';
-import { filterVocabulary, VOCABULARY, vocabularyExamples, wordsForCard } from '@/lib/vocabulary';
+import { filterVocabulary, VOCABULARY, vocabularyExamples, vocabularyLessons, wordsForCard } from '@/lib/vocabulary';
 
 describe('sentence vocabulary', () => {
   it('has unique headwords and traces every example to an actual sentence', () => {
     expect(new Set(VOCABULARY.map(entry => entry.id)).size).toBe(VOCABULARY.length);
     for (const entry of VOCABULARY) {
-      expect(entry.occurrences.length).toBeGreaterThan(0);
+      expect(entry.occurrences.length + vocabularyLessons(entry).length).toBeGreaterThan(0);
       expect(vocabularyExamples(entry)).toHaveLength(entry.occurrences.length);
       for (const occurrence of entry.occurrences) {
         const card = CARDS.find(card => card.id === occurrence.cardId)!;

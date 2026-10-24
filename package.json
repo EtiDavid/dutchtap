@@ -20,7 +20,11 @@
     "test:flashcards": "playwright test --config playwright.flashcards.config.ts",
     "test:prod": "playwright test --config playwright.prod.config.ts",
     "test:sessions-db": "TEST_MONGODB_URI=mongodb://127.0.0.1:27018 vitest run tests/sessions.mongo.test.ts",
-    "content:workplace": "python3 scripts/assemble-workplace.py --check"
+    "content:workplace": "python3 scripts/assemble-workplace.py --check",
+    "content:learning-words": "node scripts/sync-learning-vocabulary.mjs",
+    "content:learning-check": "node scripts/sync-learning-vocabulary.mjs --check",
+    "audio:export": "node scripts/export-learning-audio.mjs",
+    "content:audit": "node scripts/audit-learning-content.mjs"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

@@ -87,7 +87,10 @@ describe('complete Dutch at Work publication',()=>{
     }
     for(const original of originalVocabulary){
       const merged=VOCABULARY.find(v=>v.id===original.id)!;
-      expect({...merged,occurrences:original.occurrences}).toEqual(original);
+      const { lessonIds: _lessons, learningDetails: _details, ...preserved } = merged;
+      expect(_lessons === undefined || Array.isArray(_lessons)).toBe(true);
+      expect(_details === undefined || typeof _details === 'string').toBe(true);
+      expect({...preserved,occurrences:original.occurrences}).toEqual(original);
       expect(merged.occurrences.slice(0,original.occurrences.length)).toEqual(original.occurrences);
     }
   });

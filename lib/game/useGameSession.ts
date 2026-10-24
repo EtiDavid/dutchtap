@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { celebrateCorrect } from '@/lib/practice/celebrate';
 import { NOUNS } from "@/data/nouns";
 import { ADJECTIVES } from "@/data/adjectives";
 import nounImageIds from "@/data/noun-image-ids.json";
@@ -235,6 +236,7 @@ export function useGameSession(mode: GameMode | "weak-review") {
       if (!current || !progress || feedback !== "idle") return;
 
       const isCorrect = choice === current.question.correctAnswer;
+      if (isCorrect) celebrateCorrect();
       setSelectedAnswer(choice);
       setFeedback(isCorrect ? "correct" : "wrong");
       setStreak((s) => (isCorrect ? s + 1 : 0));

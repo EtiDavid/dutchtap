@@ -82,7 +82,14 @@
   "We overwegen alle opties.": {
     "scenario": "Your group has not chosen a solution yet. Speaking for the group, explain that you are considering every option.",
     "explanation": "We takes plural overwegen, which is also the infinitive form in isolation. Overwegen meaning consider is inseparable: not wegen ... over. Alle opties means all options; with a possessive use al onze opties. Do not add zijn before finite overwegen.",
-    "answers": []
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "We denken na over alle opties.",
+        "english": "We are considering all the options.",
+        "explanation": "Nadenken over means thinking carefully about something. Finite nadenken splits: we denken ... na; over alle opties names the topic and can follow na. Inseparable overwegen expresses the same consideration without splitting over from wegen. Neither says a decision has been made."
+      }
+    ]
   },
   "Dit formulier is snel in te vullen.": {
     "scenario": "This form takes very little time to complete. Tell someone that filling it in can be done quickly.",
@@ -153,6 +160,66 @@
         "text": "Verkoop hem je oude auto.",
         "english": "Sell him your old car.",
         "explanation": "The recipient is an indirect object without aan, before the item being sold. This keeps the instruction, owner, buyer and item unchanged."
+      }
+    ]
+  },
+  "Ik zal de agenda voorbereiden.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "Ik bereid de agenda voor.",
+        "english": "I'll prepare the agenda.",
+        "explanation": "In this offer, the present expresses the next action you commit to. Bereid is finite for ik; separable voorbereiden splits as bereid ... voor. After zal, voorbereiden stays together as an infinitive. Both offer to prepare the same meeting agenda."
+      }
+    ]
+  },
+  "We bespraken veel dingen.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "We hebben veel dingen besproken.",
+        "english": "We discussed many things.",
+        "explanation": "Hebben ... besproken is the perfect and reports the same completed discussion. Bespraken is plural simple past; besproken is the participle after finite hebben. Bespreken takes a direct object, so veel dingen needs no over."
+      }
+    ]
+  },
+  "Ik heb mijn training voltooid.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "Ik ben klaar met mijn training.",
+        "english": "I have finished my training.",
+        "explanation": "Klaar zijn met iets means being finished with it. Ben agrees with ik; met introduces the completed activity. The context says the training is completed. Contrast klaar voor mijn training, which means ready to begin it."
+      }
+    ]
+  },
+  "Zij legde de route uit.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "Zij heeft de route uitgelegd.",
+        "english": "She explained the route.",
+        "explanation": "The perfect uses heeft ... uitgelegd. The particle joins the participle: uit + ge + legd. Legde ... uit is simple past. Both report the same woman's earlier explanation of the route."
+      }
+    ]
+  },
+  "We hebben het voor haar gekocht.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "We kochten het voor haar.",
+        "english": "We bought it for her.",
+        "explanation": "Kochten is plural simple past of kopen and agrees with we. Het remains the purchased item and voor haar the beneficiary. Hebben ... gekocht and this simple past can both report the completed purchase."
+      }
+    ]
+  },
+  "Ik ben aan het bellen.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "Ik bel nu.",
+        "english": "I'm making a phone call now.",
+        "explanation": "Bel is finite present for ik. Dutch present can describe an action happening now; nu makes that timing explicit. Ben aan het bellen foregrounds the ongoing activity. Both describe the same current call."
       }
     ]
   }

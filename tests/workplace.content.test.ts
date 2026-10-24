@@ -4,6 +4,8 @@ import { describe, expect, it } from 'vitest';
 import workplace from '@/data/workplace-cards.json';
 import counts from '@/docs/workplace/content-counts.json';
 import baseline from '@/docs/workplace/baseline.json';
+import editorialBaseline from '@/docs/learning/preservation.json';
+import { protectedEditorialDigest } from './helpers/editorialPreservation';
 import originalVocabulary from '@/data/vocabulary.json';
 import originalCommunication from '@/data/dutch-communication.json';
 import originalNotes from '@/data/grammar-notes.json';
@@ -110,7 +112,14 @@ describe('complete Dutch at Work publication',()=>{
     expect(ids('career-meetings-041')).toContain('career-afspreken-agreement');expect(ids('career-meetings-053')).toContain('afspreken');
   });
   it('preserves protected data, all 1,200 existing media files and the French-only deck',()=>{
-    for(const [path,digest] of Object.entries({...baseline.files,...baseline.assets}))expect(hash(path),path).toBe(digest);
+    // Only explanation/scenario metadata is editable in these three files.
+    // The original sentences, historical answers and related examples remain frozen.
+    for(const [path,digest] of Object.entries({...baseline.files,...baseline.assets})) {
+      const contract = editorialBaseline.files[path as keyof typeof editorialBaseline.files];
+      if (contract) {
+        expect(protectedEditorialDigest(path, JSON.parse(readFileSync(path, 'utf8')), editorialBaseline.addedRawAnswerIds), path).toBe(contract);
+      } else expect(hash(path),path).toBe(digest);
+    }
     expect(cardsFor('fr')).toHaveLength(600);
     for(const c of workplace){expect(cardFor('fr',c.id)).toBeUndefined();expect(syncSchema.safeParse({lang:'fr',records:[newReview(c.id)]}).success).toBe(false);}
     expect(syncSchema.safeParse({records:[newReview(workplace[0].id)]}).success).toBe(true);

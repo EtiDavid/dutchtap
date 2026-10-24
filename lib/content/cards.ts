@@ -1,5 +1,5 @@
 import { CARDS, type Card } from "@/lib/flashcards/engine";
-import { scenarioFor } from "@/lib/practice/communication";
+import { meaningFor, scenarioFor } from "@/lib/practice/communication";
 import frCards from "@/data/fr/cards.json";
 import { DEFAULT_LANG, type Lang } from "@/lib/lang";
 
@@ -66,7 +66,7 @@ function dutchCard(card: Card): LCard {
     collection: card.collection ?? "everyday",
     category: card.category,
     text: card.dutch,
-    english: card.english,
+    english: meaningFor(card.dutch, card.english),
     scenario: scenarioFor(card.dutch, card.scenario),
     cue: card.cue,
     variation: card.variation,

@@ -15,6 +15,12 @@ export type ModelAnswer = {
   explanation: string;
 };
 export type CommunicationTask = { scenario: string; answers: ModelAnswer[] };
+type EditorialCorrection = {
+  scenario?: string;
+  explanation?: string;
+  english?: string;
+  answers: ModelAnswer[];
+};
 export type PracticeSentence = {
   text: string;
   english: string;
@@ -29,12 +35,14 @@ const tasks: Record<string, CommunicationTask> = Object.fromEntries(
 );
 // Keep every historic answer ID resolvable. Editorial patches replace metadata and
 // append meaningful alternatives, never silently reassign a saved model's text.
-for (const [text, patch] of Object.entries(corrections)) {
+for (const [text, patch] of Object.entries(corrections as Record<string, EditorialCorrection>)) {
   const task = tasks[text];
   if (!task) continue;
   if (patch.scenario) task.scenario = patch.scenario;
   if (patch.explanation)
     task.answers[0] = { ...task.answers[0], explanation: patch.explanation };
+  if (patch.english)
+    task.answers[0] = { ...task.answers[0], english: patch.english };
   for (const answer of patch.answers)
     if (!task.answers.some((a) => a.text === answer.text))
       task.answers.push(answer);
@@ -89,6 +97,8 @@ export function communicationFor(card: PracticeSentence): CommunicationTask {
 }
 export const scenarioFor = (text: string, fallback: string) =>
   tasks[text]?.scenario ?? fallback;
+export const meaningFor = (text: string, fallback: string) =>
+  tasks[text]?.answers[0]?.english ?? fallback;
 export const modelFor = (card: PracticeSentence, id?: string) =>
   communicationFor(card).answers.find((a) => a.id === (id ?? "model"));
 const normalize = (text: string, lang: Lang) =>

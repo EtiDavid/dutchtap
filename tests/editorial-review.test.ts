@@ -4,6 +4,7 @@ import { cardFor } from "@/lib/content/cards";
 import { communicationFor, principalAnswers } from "@/lib/practice/communication";
 import { breakdownFor } from "@/lib/grammarBreakdowns";
 import { notesFor } from "@/lib/grammarNotes";
+import { FAMILIES } from "@/lib/variations/content";
 import { protectedEditorialDigest } from "./helpers/editorialPreservation";
 
 describe("editorial review integrity", () => {
@@ -44,6 +45,28 @@ describe("editorial review integrity", () => {
 });
 
 describe("specific Dutch teaching corrections", () => {
+  it("shows the infinitival hebben explanation for the future need variation", () => {
+    const variants = Object.values(FAMILIES).flat().filter((v) => v.text === "Ik zal morgen mijn laptop nodig hebben.");
+    expect(variants.length).toBeGreaterThan(0);
+    for (const variant of variants) {
+      expect(variant.explanation).toMatch(/Zal is the finite verb/);
+      expect(variant.explanation).toMatch(/Hebben remains an infinitive/);
+      expect(variant.explanation).not.toMatch(/Hebben is finite and agrees/);
+    }
+  });
+
+  it("distinguishes finding a solution, resolving a conflict and finishing an activity", () => {
+    const solution = communicationFor(cardFor("nl", "work-327")!);
+    expect(solution.scenario).toMatch(/without claiming that it has already been implemented/);
+    const manager = communicationFor(cardFor("nl", "work-223")!);
+    expect(manager.scenario).toMatch(/manager's involvement/);
+    expect(manager.answers[0].explanation).toMatch(/does not specify.*alone/);
+    expect(breakdownFor("work-05")?.practiceGuide).toMatch(/being busy does not mean being finished/);
+    expect(breakdownFor("work-03")?.forms).toMatch(/not a rule that every singular past ends in -de/);
+    expect(breakdownFor("conversation-16")?.mistake.alternative).toBe(true);
+    const uncertain = communicationFor(cardFor("nl", "work-165")!);
+    expect(principalAnswers(uncertain).map((a) => a.text)).toContain("Dat weet ik niet zeker.");
+  });
   it("does not teach the inversion rule backwards or remove a stem-final t", () => {
     for (const entry of editorialCorpus().communication)
       for (const answer of entry.answers) expect(answer.explanation).not.toMatch(/drops after je/);

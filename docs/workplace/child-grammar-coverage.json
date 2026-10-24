@@ -1523,7 +1523,7 @@
   {
     "area": "incidents",
     "situation": "status",
-    "pattern": "present",
+    "pattern": "modal",
     "text": "De meeste gebruikers kunnen weer werken.",
     "verbs": [
       "kunnen",
@@ -3736,7 +3736,7 @@
   {
     "area": "priorities",
     "situation": "assistance",
-    "pattern": "negation",
+    "pattern": "present",
     "text": "De verantwoordelijkheid blijft bij mij.",
     "verbs": [
       "blijven"
@@ -4299,7 +4299,7 @@
   {
     "area": "problems",
     "situation": "people",
-    "pattern": "present",
+    "pattern": "modal",
     "text": "De boekhouding kan de facturen niet openen.",
     "verbs": [
       "kunnen",
@@ -5497,7 +5497,7 @@
   {
     "area": "remote",
     "situation": "coordinate-remote",
-    "pattern": "present",
+    "pattern": "subordinate",
     "text": "De agenda toont wanneer ik tijd voor overleg heb.",
     "verbs": [
       "tonen",
@@ -5641,7 +5641,7 @@
   {
     "area": "support",
     "situation": "intake",
-    "pattern": "yes-no",
+    "pattern": "choice-question",
     "text": "Gaat het om een nieuwe vraag of om een bestaand ticket?",
     "verbs": [
       "gaan"
@@ -5698,7 +5698,7 @@
   {
     "area": "support",
     "situation": "details",
-    "pattern": "yes-no",
+    "pattern": "choice-question",
     "text": "Gebruikt u een bedrijfscomputer of een ander toestel?",
     "verbs": [
       "gebruiken"
@@ -6186,7 +6186,7 @@
   {
     "area": "support",
     "situation": "closure",
-    "pattern": "present",
+    "pattern": "subordinate",
     "text": "De gebruiker bevestigt dat de taak weer lukt.",
     "verbs": [
       "bevestigen",

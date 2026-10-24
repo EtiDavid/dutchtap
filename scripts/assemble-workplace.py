@@ -32,7 +32,10 @@ def construct(row):
  title,rule,compare=patterns[pattern]
  first=parts[0]['text'];subject=next((p['text'] for p in parts if p['label'].startswith('subject')),None)
  if pattern=='imperative':order=(f'The instruction starts with {finite["text"]}; the addressed person is understood. ' if parts[0] is finite else f'After the introductory phrase {first}, the instruction uses {finite["text"]} with the addressed person understood. ')+rule
- elif pattern in ['yes-no','modal-question','polite']:order=f'The finite verb {finite["text"]} comes before subject {subject or "the addressed person"}. '+rule
+ elif pattern in ['yes-no','choice-question','modal-question','polite']:order=f'The finite verb {finite["text"]} comes before subject {subject or "the addressed person"}. '+rule
+ elif subject and parts[0]['label'].startswith('subject') and pattern=='question':order=f'{first} is itself the question subject and is followed by finite {finite["text"]}; no extra subject is inserted. '+rule
+ elif pattern=='proposal':order='Laten we starts the joint proposal; this is not ordinary declarative subject-first order. '+rule
+ elif pattern=='past-question' and parts[0] is finite:order=f'The finite past verb {finite["text"]} starts the yes/no question before subject {subject}. '+rule
  elif pattern in ['question','past-question']:order=f'The first question constituent is {first}; {finite["text"]} is the finite verb. '+rule
  else:order=f'The first constituent is {first}; {finite["text"]} is the finite (conjugated) verb'+(f' and {subject} is its subject.' if subject else '.')+' In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. '+rule
  detail=note+' '+formtext
@@ -41,7 +44,7 @@ def construct(row):
  if pattern=='imperative':wrong='Wij '+text[0].lower()+text[1:];why='This situation calls for an instruction. Do not add subject Wij to a singular imperative stem; a statement with wij would need a plural finite form.'
  else:
   past=finite['label'] in ['finite verb (past)','finite verb (past auxiliary)']
-  replacement=(v[4] if bare==v[3].split()[0] else v[3]) if past else (lemma if bare!=lemma else v[0])
+  replacement=(v[4] if bare==v[3].split()[0] else v[3]) if past else (v[2] if bare!=v[2].split()[0] else v[0])
   # For separable finite verbs, the lexicon's first word is the finite piece.
   replacement=replacement.split()[0]
   if replacement.lower()==bare:replacement='zijn' if bare!='zijn' else 'is'
@@ -50,6 +53,12 @@ def construct(row):
   wrong=' '.join(p['text'] for p in wrongparts)
   why=f'The stated subject and tense require the finite form {old} here. {replacement} is not the matching finite form for this sentence; an infinitive is not automatically a finite verb.'
  mistake={'wrong':wrong,'right':text,'why':why}
+ if pattern=='polite' and subject=='we':
+  mistake.update(alternative=True,why='Zouden we makes a tentative, polite request here. Zullen we can form a grammatical question about future possibility, but changes the tone and time perspective; do not treat it as a universal agreement error.')
+ if text=='Welke rechten heeft dit testaccount nodig?':
+  mistake.update(alternative=True,why='The intended subject is singular dit testaccount, with welke rechten as the object. A plural hebben could instead make rechten the subject and the account the object, changing who needs what; it does not express this scenario.')
+ if subject=='Geen nieuwe meldingen':
+  mistake.update(alternative=True,why='This model treats the absence of new reports as one situation, with singular betekent. Plural agreement can follow a literal plural reading of meldingen; do not treat betekenen as impossible in every context. The point here is that silence does not prove recovery.')
  if subject and subject.lower()=='wie':
   mistake.update(alternative=True,why='Wie can ask about one person or several people. Compare the number intended here and the published agreement; a different finite number is not automatically ungrammatical in every possible reading of a wie question.')
  if subject and subject.lower() in ['ze','zij']:

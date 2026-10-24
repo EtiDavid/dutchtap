@@ -1,4 +1,4 @@
-import { scenarioFor } from "@/lib/practice/communication";
+import { communicationFor, scenarioFor } from "@/lib/practice/communication";
 import workplaceFamilies from "@/data/workplace-families.json";
 import workplaceBank from "@/data/workplace-practice-bank.json";
 import references from "@/data/dutch-variations.json";
@@ -39,7 +39,9 @@ const everydayFamilies: Record<string, Variation[]> = Object.fromEntries(
           english,
           scenario: scenarioFor(text, "Describe the situation in Dutch."),
           focus: pattern.focus,
-          explanation: pattern.hint,
+          explanation:
+            communicationFor({ text, english, scenario: "", lang: "nl" })
+              .answers[0]?.explanation || pattern.hint,
           example: { text: exampleText, english: exampleEnglish },
         };
       }),

@@ -719,7 +719,7 @@
     "id": "career-clarification-008",
     "area": "clarification",
     "situation": "repeat",
-    "pattern": "past-question",
+    "pattern": "choice-question",
     "verbs": [
       "zeggen"
     ],
@@ -827,7 +827,7 @@
     "id": "career-clarification-018",
     "area": "clarification",
     "situation": "meaning",
-    "pattern": "yes-no",
+    "pattern": "choice-question",
     "verbs": [
       "bedoelen"
     ],
@@ -1014,7 +1014,7 @@
     "id": "career-clarification-035",
     "area": "clarification",
     "situation": "details",
-    "pattern": "yes-no",
+    "pattern": "choice-question",
     "verbs": [
       "gaan"
     ],
@@ -1453,7 +1453,7 @@
     "id": "career-incidents-015",
     "area": "incidents",
     "situation": "status",
-    "pattern": "future",
+    "pattern": "present",
     "verbs": [
       "komen"
     ],
@@ -1463,7 +1463,7 @@
     "id": "career-incidents-016",
     "area": "incidents",
     "situation": "status",
-    "pattern": "negation",
+    "pattern": "perfect",
     "verbs": [
       "hebben",
       "verhelpen"
@@ -2121,7 +2121,7 @@
     "id": "career-meetings-017",
     "area": "meetings",
     "situation": "completed",
-    "pattern": "negation",
+    "pattern": "present",
     "verbs": [
       "zijn",
       "lopen"
@@ -2946,7 +2946,7 @@
     "situation": "breaks",
     "pattern": "subordinate",
     "verbs": [
-      "komen",
+      "terugkomen",
       "zijn"
     ],
     "review": "AI editorial review of literal authored row; no independent native certification"
@@ -4021,7 +4021,7 @@
     "id": "career-problems-017",
     "area": "problems",
     "situation": "people",
-    "pattern": "question",
+    "pattern": "past-question",
     "verbs": [
       "beginnen"
     ],
@@ -5281,7 +5281,7 @@
     "id": "career-support-015",
     "area": "support",
     "situation": "details",
-    "pattern": "yes-no",
+    "pattern": "choice-question",
     "verbs": [
       "werken"
     ],
@@ -5315,8 +5315,7 @@
     "situation": "details",
     "pattern": "present",
     "verbs": [
-      "hebben",
-      "zijn"
+      "hebben"
     ],
     "review": "AI editorial review of literal authored row; no independent native certification"
   },
@@ -5516,7 +5515,7 @@
     "id": "career-support-037",
     "area": "support",
     "situation": "remotehelp",
-    "pattern": "present",
+    "pattern": "modal",
     "verbs": [
       "kunnen",
       "stoppen"
@@ -5615,7 +5614,8 @@
     "situation": "expectations",
     "pattern": "modal-question",
     "verbs": [
-      "kunnen"
+      "kunnen",
+      "verderwerken"
     ],
     "review": "AI editorial review of literal authored row; no independent native certification"
   },
@@ -5701,7 +5701,7 @@
     "id": "career-support-054",
     "area": "support",
     "situation": "closure",
-    "pattern": "present",
+    "pattern": "subordinate",
     "verbs": [
       "blijven",
       "hebben",

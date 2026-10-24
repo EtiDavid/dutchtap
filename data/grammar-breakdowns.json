@@ -189,7 +189,7 @@
    "alternative": true
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "shopping-07": {
   "meaning": "Politely asking for the receipt.",
@@ -1623,12 +1623,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (maakt) second (verb-second order).",
-  "forms": "The reflexive pronoun matches the subject: ik maak me, jij maakt je, hij maakt zich, wij maken ons. Het verliezen is an infinitive used as a noun.",
+  "forms": "Zich zorgen maken over means worry about. Match the reflexive to the person worrying: ik maak me, jij maakt je, hij maakt zich, wij maken ons. Here hij is worried about losing his own keys. Het verliezen names an activity as a noun; van zijn sleutels says what he might lose. Zijn means his before sleutels, not the verb be.",
   "compare": "English says \"He worries about losing\"; Dutch uses zich zorgen maken over.",
   "mistake": {
    "wrong": "Hij maakt me zorgen over zijn sleutels.",
    "right": "Hij maakt zich zorgen over zijn sleutels.",
-   "why": "The reflexive pronoun must match the subject (hij ... zich)."
+   "why": "The intended person worrying is hij, so the reflexive is zich. Me refers to the speaker instead and would not express his own worry. Keep over het verliezen van zijn sleutels for what worries him."
   },
   "practiceFocus": "Reflexive pronouns refer to the subject",
   "practiceGuide": "Match the reflexive to the subject: ik/me, jij/je, hij-zij/zich, wij/ons, jullie/je, zij plural/zich. A question can contain two je forms: Voel je je beter? The first is the subject, the second reflexive. The reflexive belongs to the Dutch expression even if natural English does not say myself. In an embedded clause the verb group normally closes the clause."
@@ -1931,7 +1931,7 @@
    "wrong": "Ze waren zoeken een flat.",
    "right": "Ze waren op zoek naar een flat.",
    "why": "Op zoek zijn naar is an idiom meaning be looking for. Dutch also has the ordinary verb zoeken: Ze zochten een flat. The issue in the first phrase is using a bare infinitive after waren.",
-   "alternative": true
+   "alternative": false
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -1949,12 +1949,12 @@
    }
   ],
   "order": "In a normal main clause the subject (De vergadering) comes first and the finite verb (eindigde) second (verb-second order).",
-  "forms": "Regular past tense: stem plus -de (eindigen becomes eindigde); the plural ends in -den.",
+  "forms": "Eindigen has stem eindig. Singular simple past adds -de: de vergadering eindigde. Plural adds -den: de vergaderingen eindigden. These are forms of this verb, not a rule that every singular past ends in -de; other regular verbs use -te, and irregular verbs have their own forms.",
   "compare": "English \"The meeting ended\" works the same way.",
   "mistake": {
    "wrong": "De vergadering eindigden.",
    "right": "De vergadering eindigde.",
-   "why": "A singular subject takes -de."
+   "why": "This subject is one meeting, so eindigen takes singular past eindigde here. With plural de vergaderingen use eindigden. Do not generalise -de to every singular past verb."
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -1980,7 +1980,7 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (hebben) second (verb-second order). The other verb parts are not conjugated: the participle (gepraat) normally occurs toward the end.",
-  "forms": "Praten: gepraat. Dutch often uses the perfect for a finished event where English uses the simple past.",
+  "forms": "This perfect uses hebben: we hebben urenlang gepraat. Hebben is finite and agrees with plural we; gepraat is the participle of praten. The perfect can use zijn with other verbs/meanings, such as we zijn vertrokken. Compare simple past we praatten, with double t, and present we praten. Urenlang means for hours.",
   "compare": "English says \"We talked\" (simple past); Dutch says \"We have talked\".",
   "mistake": {
    "wrong": "We hebben gepraat urenlang.",
@@ -2108,7 +2108,7 @@
    "why": "To be finished with is klaar zijn met in Dutch."
   },
   "practiceFocus": "Bezig met: a noun or an activity",
-  "practiceGuide": "Bezig met introduces what occupies someone: a noun (de was) or an infinitive used as an activity noun (het wassen). Infinitives used as nouns take het, not de: het koken. Met het schoonmaken van de ramen is a noun-like phrase; compare the verbal progressive de ramen aan het schoonmaken. Bezig can also introduce te + infinitive, with different word order."
+  "practiceGuide": "Klaar met means finished with; bezig met means busy with. Both can introduce a noun-like activity: het lezen van het rapport. Compare Hij is klaar met lezen (finished reading) and Hij is bezig met lezen (still occupied with reading). The related examples practise naming activities and this contrast; being busy does not mean being finished."
  },
  "conversation-16": {
   "meaning": "Asking if someone will need help.",
@@ -2135,12 +2135,13 @@
    }
   ],
   "order": "This is a yes/no question. With no question word, it begins with the finite verb (Zul), and the subject (je) follows it. The other verb parts are not conjugated: the infinitive (hebben) normally occurs toward the end.",
-  "forms": "Zullen with je: the -t drops (zult becomes zul). Hulp nodig hebben means to need help.",
+  "forms": "Zul je and zal je are both standard future questions. Compare je zult with zul je, where subject je follows the finite verb and the added -t is omitted. Hulp nodig hebben means need help: hebben remains an infinitive after zul/zal, with hulp nodig between the finite verb and infinitive.",
   "compare": "English \"Will you need help?\" has the same inversion.",
   "mistake": {
    "wrong": "Je zult hulp nodig hebben?",
    "right": "Zul je hulp nodig hebben?",
-   "why": "Start a yes/no question with the finite verb."
+   "why": "Je zult hulp nodig hebben? can be a confirmation question with questioning intonation. For the neutral question here, use Zul je hulp nodig hebben? or Zal je hulp nodig hebben? The model is not a rule that statement-order confirmation questions are impossible.",
+   "alternative": true
   },
   "practiceFocus": "Questions with a modal verb",
   "practiceGuide": "In a yes/no question the finite modal comes before the subject, and the other verb remains an infinitive: Kun je het raam openen? With subject je/jij AFTER the finite verb, the usual second-person -t drops (kun je); u retains its form. With u, both kunt u and kan u are possible; both hebt u and heeft u are standard. A bare noun request can leave an understood action unspoken: Mag ik de bon?"
@@ -2256,7 +2257,7 @@
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (ben) second (verb-second order). The other verb parts are not conjugated: the participle (vergeten) normally occurs toward the end.",
   "forms": "Ik ben vergeten is a perfect with zijn. Vergeten can also use hebben in appropriate contexts. Je before naam is possessive your, not the subject pronoun you.",
-  "compare": "English says \"I have forgotten\"; Dutch usually says \"I am forgotten (your name)\".",
+  "compare": "English uses have in I have forgotten your name. Dutch commonly uses zijn here: ik ben je naam vergeten. Ben is a perfect auxiliary in this sentence, not a passive meaning that someone has forgotten the speaker.",
   "mistake": {
    "wrong": "Ik heb je naam vergeten.",
    "right": "Ik ben je naam vergeten.",
@@ -2413,7 +2414,7 @@
   "mistake": {
    "wrong": "Hij heeft een uur geleden vertrokken.",
    "right": "Hij is een uur geleden vertrokken.",
-   "why": "Verbs of leaving use zijn."
+   "why": "Vertrekken takes zijn in this departure sense: hij is vertrokken. Learn auxiliary choice with the particular verb; a different verb such as verlaten uses hebben: hij heeft het gebouw verlaten."
   },
   "practiceFocus": "Perfect tense and the verb bracket",
   "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
@@ -2439,7 +2440,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (blijf) second (verb-second order).",
-  "forms": "Liever is the comparative of graag.",
+  "forms": "Blijven: ik blijf, ik bleef, ik ben gebleven. Liever is the comparative of graag and expresses a preference. Ik blijf liever thuis means I would rather stay home; liever does not itself mark a past or conditional tense. In this model it follows finite blijf, but adverb position depends on the rest of the clause.",
   "compare": "English says \"would rather\"; Dutch just uses liever.",
   "mistake": {
    "wrong": "Ik blijf meer graag thuis.",
@@ -2501,7 +2502,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Het) comes first and the finite verb (klonk) second (verb-second order).",
-  "forms": "Klinken has an irregular past: klonk. After klinken the adjective takes no -e.",
+  "forms": "Klinken: het klinkt; simple past het klonk, plural klonken; perfect het heeft geklonken. Enigszins means somewhat and is fairly formal. Vreemd describes how it sounded: it is a predicate adjective after linking klonk and has no attributive -e. Compare a noun phrase with an adjective: een vreemd geluid, het vreemde geluid.",
   "compare": "English \"It sounded somewhat strange\" is the same.",
   "mistake": {
    "wrong": "Het klonk enigszins vreemde.",
@@ -2540,7 +2541,7 @@
    "why": "Nodig goes after the object."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "conversation-20": {
   "meaning": "Asking someone to say if they need anything.",
@@ -2712,7 +2713,7 @@
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (ben) second (verb-second order). Eens normally occurs toward the end of the clause.",
   "forms": "Het eens zijn met means agree with. Met becomes mee in a pronominal adverb: daar + mee = daarmee. Ik ben het daarmee eens means I agree with that.",
-  "compare": "English says \"I agree with that\"; Dutch says ik ben het ermee eens (literally \"I am it with-that agreed\").",
+  "compare": "The whole expression het eens zijn met corresponds to English agree with. Daarmee refers to with that; ermee refers to with it. Het remains a fixed part of the Dutch expression. Do not interpret the English word agree as a word-for-word translation of ben or eens alone.",
   "mistake": {
    "wrong": "Ik ben eens daarmee.",
    "right": "Ik ben het daarmee eens.",
@@ -2858,7 +2859,7 @@
    }
   ],
   "order": "This is a yes/no question. With no question word, it begins with the finite verb (Kunnen), and the subject (we) follows it. The other verb parts are not conjugated: the infinitive (samenwerken) normally occurs toward the end.",
-  "forms": "Hieraan is hier plus aan: on this.",
+  "forms": "Samenwerken aan een taak or project uses aan; hieraan means aan dit in this model. Samenwerken remains a joined infinitive after kunnen.",
   "compare": "English says \"work together on this\"; the order is similar.",
   "mistake": {
    "wrong": "Kunnen we samenwerken hieraan?",
@@ -3161,7 +3162,7 @@
    }
   ],
   "order": "This is a question. The question word or phrase (Wanneer) takes the first position, so the finite verb (is) comes second and the subject (de deadline) follows it: question word + finite verb + subject.",
-  "forms": "Deadline is a de-word.",
+  "forms": "Deadline is a de-word: de deadline, een nieuwe deadline. Wanneer asks for a time or date; finite is comes before subject de deadline in this direct question.",
   "compare": "English \"When is the deadline?\" has a similar order; Dutch also puts the finite verb straight after the question word.",
   "mistake": {
    "wrong": "Wanneer de deadline is?",
@@ -3192,7 +3193,7 @@
    }
   ],
   "order": "Laten we is the fixed way to make a suggestion: the verb comes first, then we, and the infinitive normally occurs toward the end. The other verb parts are not conjugated: the infinitive (plannen) normally occurs toward the end.",
-  "forms": "Laten we means let us.",
+  "forms": "Laten we introduces a suggestion shared by speaker and listener. Plannen remains an infinitive after laten we; een follow-up is its object. Compare present we plannen and simple past we planden.",
   "compare": "English \"Let's schedule a follow-up\" uses let's plus a bare verb; Dutch uses laten we plus an infinitive at the end.",
   "mistake": {
    "wrong": "Laten we plannen een follow-up.",
@@ -3290,8 +3291,8 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (ben) second (verb-second order). The other verb parts are not conjugated: the te phrase (te werken) closes the sentence.",
-  "forms": "Gewend zijn te. Lange takes -e before plural.",
-  "compare": "English \"I am used to working long hours.\" uses \"to\" or an -ing form; Dutch needs te (usually om ... te) before the infinitive.",
+  "forms": "Gewend zijn + te-infinitive describes an activity that is familiar: ik ben gewend lange uren te werken. Om is also possible: ik ben gewend om lange uren te werken. Lange has -e before plural uren; te werken remains an infinitive, not a second finite verb.",
+  "compare": "English be used to takes an -ing form here: working. Dutch uses a te-infinitive, optionally introduced by om. This is a current familiar activity, not English used to work meaning a former habit.",
   "mistake": {
    "wrong": "Ik ben gewend werken lange uren.",
    "right": "Ik ben gewend lange uren te werken.",
@@ -3498,8 +3499,12 @@
     "text": "hadden"
    },
    {
+    "label": "adverb",
+    "text": "al"
+   },
+   {
     "label": "object",
-    "text": "al een keuze"
+    "text": "een keuze"
    },
    {
     "label": "participle",
@@ -3530,15 +3535,16 @@
    }
   ],
   "order": "This is a noun phrase with no verb: a number, the unit dozijn (which stays singular after a number) and the thing counted.",
-  "forms": "After a number, dozijn stays singular. Ei is a het-word with an irregular plural: eieren.",
-  "compare": "English says \"two dozen eggs\" with dozen in the plural; Dutch keeps dozijn singular after a number: twee dozijn eieren.",
+  "forms": "As a counting unit here, dozijn stays singular after twee. Het ei has irregular plural eieren. The noun after a unit need not always be plural: compare twee dozijn eieren with drie liter melk.",
+  "compare": "Both languages keep the counting unit singular here: English two dozen eggs, Dutch twee dozijn eieren. English dozens of eggs is a different construction.",
   "mistake": {
    "wrong": "Twee dozijnen eieren.",
    "right": "Twee dozijn eieren.",
-   "why": "After a number, dozijn stays singular."
+   "why": "Twee dozijn is the ordinary counting-unit form. A plural such as dozijnen can emphasise separate groups or quantities in an appropriate context. Practise the neutral purchase phrase without claiming the plural is impossible everywhere.",
+   "alternative": true
   },
   "practiceFocus": "Short expressions and their intended meaning",
-  "practiceGuide": "Some useful expressions are fragments rather than full subject-plus-verb clauses: Hartelijk dank, Graag gedaan. Do not invent V2 inversion for a phrase with no finite verb. Learn what the expression does in the conversation, and compare related full sentences. A polite formula can have several natural English equivalents."
+  "practiceGuide": "The related bank practises short conversational expressions rather than only quantities. The measure examples use number + unit + item: twee kilo appels, drie liter melk. Appels is countable plural; melk is a mass noun. Thank-you examples practise a separate social formula, not a quantity rule."
  },
  "work-14": {
   "meaning": "Suggesting that you set a new deadline.",
@@ -3592,7 +3598,7 @@
    }
   ],
   "order": "Laat plus object plus infinitive means have it done. The infinitive normally occurs toward the end.",
-  "forms": "Laten here means to have something done. Opsturen stays whole.",
+  "forms": "Laat is an imperative of laten: ask the listener to arrange the sending, possibly by a third person. Het is the item sent. Naar me gives its destination/recipient. Opsturen stays joined as an infinitive after laat; a direct command to send it yourself is Stuur het naar me op.",
   "compare": "English says \"Have it sent to me\"; Dutch uses the infinitive opsturen.",
   "mistake": {
    "wrong": "Laat het opsturen naar me.",
@@ -3601,7 +3607,7 @@
    "alternative": true
   },
   "practiceFocus": "Commands and separable particles",
-  "practiceGuide": "A normal imperative uses the verb's stem without a spoken subject: Verkoop de printer. Je in Verkoop je auto means YOUR, not YOU. A separable prefix normally goes later: Ruim je kamer op. Pronouns naming recipients occur early (Geef het me); aan can explicitly identify the recipient/buyer. A command is not an ordinary subject-first statement."
+  "practiceGuide": "The related examples practise commands, including separable verbs and recipients. The parent is a causative command: Laat het naar me opsturen asks the listener to arrange for it to be sent. This differs from directly instructing the listener Stuur het me op. Both use an imperative, but the person carrying out the sending need not be the same."
  },
  "food-06": {
   "meaning": "Saying you feel like eating.",
@@ -3683,7 +3689,7 @@
    }
   ],
   "order": "This is a yes/no question. With no question word, it begins with the finite verb (Kent), and the subject (u) follows it.",
-  "forms": "Kennen: u kent. Use kennen for people and places; weten for facts.",
+  "forms": "Kennen: u kent; ik ken; past kende/kenden; perfect heb/heeft gekend. Here kennen means being familiar with a neighbourhood. Weten typically concerns information, as in Weet u waar het station is? Kennen is not limited to people and places: ik ken dit gevoel means I know this feeling.",
   "compare": "English says \"Do you know this neighbourhood?\"; Dutch just inverts.",
   "mistake": {
    "wrong": "U kent deze buurt?",
@@ -3781,12 +3787,12 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (kijken) second (verb-second order). The other verb parts are not conjugated: the separable particle (uit) normally occurs toward the end while the verb itself stays second.",
-  "forms": "Uitkijken naar splits: we kijken ... uit naar.",
-  "compare": "English \"We are looking forward to\" is a phrasal verb; Dutch splits its separable verb.",
+  "forms": "Uitkijken naar means look forward to: we kijken uit naar de vakantie. Kijken is finite, uit is its separable particle, and naar introduces what is anticipated. A full naar-phrase may follow uit, so uit need not be the last word. Perfect: we hebben naar de vakantie uitgekeken.",
+  "compare": "English look forward to and Dutch uitkijken naar are whole expressions with different particles/prepositions. The Dutch finite verb is kijken, followed here by uit and the full phrase naar de vakantie.",
   "mistake": {
    "wrong": "We uitkijken naar de vakantie.",
    "right": "We kijken uit naar de vakantie.",
-   "why": "A separable verb splits in a main clause: the verb stays second and the particle goes to the end."
+   "why": "In this ordinary main clause, finite kijken follows subject we and the particle uit comes later. Naar de vakantie may follow uit as a full prepositional phrase; the particle need not be the final word."
   },
   "practiceFocus": "Separable verbs in different forms",
   "practiceGuide": "In a main clause a separable verb's finite part and particle separate: ik ruim ... op. With a modal, the infinitive stays together: ik moet opruimen. A participle normally puts ge between prefix and stem (opgeruimd), but stems beginning with unstressed be-/ver-/ont-/her- may not add ge. With te, split around te: op te ruimen. Learn the whole expression and its meaning."
@@ -3817,7 +3823,7 @@
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (had) second (verb-second order). The other verb parts are not conjugated: the participle (uitgedaan) normally occurs toward the end.",
   "forms": "Uitdoen: ik doe ... uit, ik deed ... uit, ik heb uitgedaan. In the participle, ge goes between the separable prefix uit and the stem: uit + ge + daan.",
-  "compare": "English \"turned off\" has a particle after the object; Dutch keeps it inside the participle.",
+  "compare": "English can say turned off the lights or turned the lights off. Dutch keeps uit inside the participle uitgedaan after had; it does not separate gedaan uit.",
   "mistake": {
    "wrong": "Ik had de lichten al gedaan uit.",
    "right": "Ik had de lichten al uitgedaan.",
@@ -3906,7 +3912,8 @@
   "mistake": {
    "wrong": "Er is gratis wifi?",
    "right": "Is er gratis wifi?",
-   "why": "Start with the verb to ask the question."
+   "why": "Er is gratis wifi? can ask for confirmation with questioning intonation. The neutral yes/no question starts with finite is: Is er gratis wifi?",
+   "alternative": true
   },
   "practiceFocus": "Er and position verbs",
   "practiceGuide": "Existential er introduces something present or available: er is/zijn, er ligt/staat/hangt. The verb agrees with the noun introduced (er is een boek, er zijn boeken). Ligt/staat/hangt is already the finite verb, so do not add another is. Position verbs make the physical arrangement explicit. If a place phrase comes first, normal V2 still applies."
@@ -4146,8 +4153,8 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (leek) second (verb-second order).",
-  "forms": "Lijken: leek (irregular past). No -e after lijken.",
-  "compare": "English \"He seemed very happy.\" has the same basic pattern; in Dutch the adjective takes no ending after a form of zijn or worden.",
+  "forms": "Lijken has irregular past leek (singular) and leken (plural). Here it is a linking verb meaning seem. Blij describes hij and has no attributive -e; heel means very. Compare the noun phrase een blije man.",
+  "compare": "English He seemed very happy and Dutch Hij leek heel blij both describe an apparent state. Dutch uses past leek and predicate adjective blij; no extra was is needed.",
   "mistake": {
    "wrong": "Hij leek heel blije.",
    "right": "Hij leek heel blij.",
@@ -4204,7 +4211,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (heb) second (verb-second order). The other verb parts are not conjugated: the participle (betaald) normally occurs toward the end.",
-  "forms": "Betalen: betaald. English uses the simple past here.",
+  "forms": "Betalen uses hebben in the perfect: ik heb betaald. The unstressed prefix be- prevents an extra ge-: betaald, not gebetaald. Rekening is a de-word and names the bill here.",
   "compare": "English says \"I paid the bill\"; Dutch uses the perfect.",
   "mistake": {
    "wrong": "Ik heb betaald de rekening.",
@@ -4212,7 +4219,7 @@
    "why": "The participle goes to the end."
   },
   "practiceFocus": "Perfect tense and the verb bracket",
-  "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
+  "practiceGuide": "These examples practise hebben + participle and objects before the participle. Dutch betalen can take what is paid for directly: het eten betalen means pay for the food. In Ik heb de taxi betaald, the intended meaning is paying the taxi fare/driver, not buying a taxi. Auxiliary choice is learned with the verb; this verb uses hebben."
  },
  "leisure-05": {
   "meaning": "Asking how often someone trains.",
@@ -4266,7 +4273,7 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (zullen) second (verb-second order). The other verb parts are not conjugated: the infinitive (bespreken) normally occurs toward the end.",
-  "forms": "Zullen: wij zullen.",
+  "forms": "We takes plural zullen. Het is the unstressed object it and comes before dan in this model. Bespreken means discuss and takes a direct object without over. After zullen it remains an infinitive without te.",
   "compare": "English \"We will discuss it then\" keeps discuss next to will.",
   "mistake": {
    "wrong": "We zullen bespreken het dan.",
@@ -4332,7 +4339,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (is) second (verb-second order). The other verb parts are not conjugated: the te phrase (te sluiten) closes the sentence.",
-  "forms": "Bezig zijn te plus infinitive.",
+  "forms": "Bezig zijn + te-infinitive describes an activity in progress: hij is bezig de winkel te sluiten. The object de winkel comes before te sluiten. Compare bezig met het sluiten van de winkel, which names the activity as a noun-like phrase.",
   "compare": "English \"He is busy closing the shop\" is similar.",
   "mistake": {
    "wrong": "Hij is bezig sluiten de winkel.",
@@ -4340,7 +4347,7 @@
    "why": "Put te before the infinitive at the end."
   },
   "practiceFocus": "Bezig met: a noun or an activity",
-  "practiceGuide": "Bezig met introduces what occupies someone: a noun (de was) or an infinitive used as an activity noun (het wassen). Infinitives used as nouns take het, not de: het koken. Met het schoonmaken van de ramen is a noun-like phrase; compare the verbal progressive de ramen aan het schoonmaken. Bezig can also introduce te + infinitive, with different word order."
+  "practiceGuide": "The shared examples compare being occupied with an activity and having finished one. Bezig zijn met/te describes work in progress; klaar zijn met describes completion. Hij is klaar met het lezen van het boek does not mean he is still reading. The parent uses bezig + object + te-infinitive rather than met + noun-like activity."
  },
  "work-18": {
   "meaning": "Saying you are thinking about opening a shop.",
@@ -4363,8 +4370,8 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (denken) second (verb-second order). The other verb parts are not conjugated: the om te phrase (om een winkel te openen) closes the sentence.",
-  "forms": "Er plus over becomes erover. After te comes an infinitive.",
-  "compare": "English \"We are thinking about opening a shop\" uses -ing.",
+  "forms": "Denken over iets means consider something. In we denken erover om een winkel te openen, erover points ahead to the proposed activity. Om introduces that infinitive clause and te stands immediately before openen. This reports consideration, not a settled plan.",
+  "compare": "English thinking about opening uses an -ing form. Dutch uses erover plus an om ... te clause here. Denken aan can instead mean think of or remember; do not treat every combination of aan/over as the same expression.",
   "mistake": {
    "wrong": "We denken erover om een winkel openen.",
    "right": "We denken erover om een winkel te openen.",
@@ -4430,7 +4437,7 @@
   ],
   "order": "This is a yes/no question. With no question word, it begins with the finite verb (Kunnen), and the subject (we) follows it. The other verb parts are not conjugated: the infinitive (afspreken) normally occurs toward the end.",
   "forms": "Days have no article here. Afspreken stays whole after a modal.",
-  "compare": "English \"Can we meet on Tuesday?\" is the same order.",
+  "compare": "Both languages start with a modal and subject. Dutch places the time dinsdag before final afspreken; English places on Tuesday after meet. Both dinsdag and op dinsdag can name the day.",
   "mistake": {
    "wrong": "We kunnen dinsdag afspreken?",
    "right": "Kunnen we dinsdag afspreken?",
@@ -4465,7 +4472,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (voelde) second (verb-second order).",
-  "forms": "Zich voelen: ik voelde me.",
+  "forms": "For how you feel, use zich voelen: ik voelde me, zij voelde zich, wij voelden ons. Voelde is singular simple past; een beetje softens moe. Voelen is not always reflexive: ik voelde de stof means I felt the fabric.",
   "compare": "English \"I felt a little tired\" has no reflexive pronoun; Dutch zich voelen needs one: ik voelde me.",
   "mistake": {
    "wrong": "Ik voelde een beetje moe.",
@@ -4692,7 +4699,7 @@
    }
   ],
   "order": "This is a yes/no question. With no question word, it begins with the finite verb (Kunnen), and the subject (we) follows it. The other verb parts are not conjugated: the infinitive (verzetten) normally occurs toward the end.",
-  "forms": "Verzetten here means to reschedule.",
+  "forms": "Verzetten means reschedule in this appointment context, without specifying whether the new time is earlier or later. Uitstellen means postpone to a later time. Dit stands alone for the arrangement; it is not attached to an omitted noun whose article you must guess.",
   "compare": "English \"Can we reschedule this?\" also starts with the verb; Dutch likewise puts the finite verb first, then the subject.",
   "mistake": {
    "wrong": "Kunnen we verzetten dit?",
@@ -4700,7 +4707,7 @@
    "why": "The infinitive goes to the end."
   },
   "practiceFocus": "Questions with a modal verb",
-  "practiceGuide": "In a yes/no question the finite modal comes before the subject, and the other verb remains an infinitive: Kun je het raam openen? With subject je/jij AFTER the finite verb, the usual second-person -t drops (kun je); u retains its form. With u, both kunt u and kan u are possible; both hebt u and heeft u are standard. A bare noun request can leave an understood action unspoken: Mag ik de bon?"
+  "practiceGuide": "The bank practises modal questions with an infinitive. Related examples can change the situation: dit uitstellen and dit later doen explicitly move something later, while verzetten alone only changes the time. Keep that distinction when using a related example for a new situation."
  },
  "conversation-39": {
   "meaning": "Saying he hid something from us.",
@@ -4727,7 +4734,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (heeft) second (verb-second order). The other verb parts are not conjugated: the participle (verborgen) normally occurs toward the end.",
-  "forms": "Verbergen: verborgen.",
+  "forms": "Verbergen: verbergt, verborg/verborgen, heeft verborgen. The unstressed prefix ver- does not add ge-. Voor ons in iets voor ons verbergen means from us, not for our benefit. Compare voor jou bewaren, where voor does name a beneficiary.",
   "compare": "English \"He hid it from us.\" uses the simple past; Dutch often uses the perfect (auxiliary plus participle) for a finished event, with the participle (verborgen) at the end.",
   "mistake": {
    "wrong": "Hij heeft verborgen het voor ons.",
@@ -4754,7 +4761,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Zij) comes first and the finite verb (droeg) second (verb-second order).",
-  "forms": "Dragen: droeg (irregular).",
+  "forms": "Dragen has irregular past droeg (singular), droegen (plural), and participle gedragen. Here it means wear clothing, so droeg can naturally be English was wearing. The same Dutch verb can mean carry in another context.",
   "compare": "English \"She wore a scarf\" is the same simple past; the Dutch verb dragen has an irregular past: droeg.",
   "mistake": {
    "wrong": "Zij dragde een sjaal.",
@@ -4855,15 +4862,15 @@
    }
   ],
   "order": "The main clause has the verb second. After tot the clause is subordinate, so the verb normally occurs toward the end.",
-  "forms": "Gaan zitten means to sit down.",
-  "compare": "English \"until the doctor calls them\" keeps calls near doctor.",
+  "forms": "Gaan zitten means sit down or take a seat; plural ze takes gaan. The first ze is subject they. In tot de dokter ze roept, de dokter is the subject and the second ze is object them. Roept is singular because it agrees with de dokter, not with ze.",
+  "compare": "English until the doctor calls them puts calls before them. Dutch tot de dokter ze roept puts object ze before final roept. The sitting begins after gaan zitten; the English will sit conveys this next action.",
   "mistake": {
    "wrong": "... tot de dokter roept ze.",
    "right": "... tot de dokter ze roept.",
    "why": "After tot the verb goes to the end."
   },
   "practiceFocus": "Posture, movement and activity",
-  "practiceGuide": "Zitten/staan/liggen describe a position: ik zit op de stoel. Gaan zitten expresses moving into sitting: ik ga zitten. Its perfect is ik ben gaan zitten, with gaan as an infinitive in the verb cluster. A posture verb can describe an ongoing action with te: ik sta te wachten. These differ from bare is + infinitive, which is not the progressive."
+  "practiceGuide": "These examples practise posture and movement into a posture. Gaan zitten and gaan staan mean sit down and stand up; zitten and staan alone describe the state. In the example Ze gaan staan tot de bus komt, they get up and remain standing until the bus comes. A tot-clause has its own final finite verb."
  },
  "conversation-41": {
   "meaning": "Saying she is happy about the chance.",
@@ -4944,12 +4951,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Het) comes first and the finite verb (werkte) second (verb-second order).",
-  "forms": "Werken: werkte.",
-  "compare": "English \"It did not work\" needs \"did\"; Dutch has no helper verb: het werkte ... niet.",
+  "forms": "Werken has stem werk, so singular simple past is werk + te = werkte, not werken + te. De eerste keer means the first time. Niet negates working successfully in that instance.",
+  "compare": "English It did not work needs did plus bare work. Dutch puts the past directly in werkte and adds niet. Dutch needs no counterpart of did here.",
   "mistake": {
    "wrong": "Het niet werkte de eerste keer.",
    "right": "Het werkte de eerste keer niet.",
-   "why": "Niet comes after the time phrase."
+   "why": "Keep finite werkte second after subject het. The model places niet after de eerste keer for ordinary sentence negation. The displayed alternative wrongly puts niet before the finite verb; it is not evidence that niet must always follow every time phrase."
   },
   "practiceFocus": "Niet and geen with the right scope",
   "practiceGuide": "Geen negates an indefinite noun: geen tijd, geen koffie. Niet can negate a predicate, action or more specific constituent: niet moe, de vraag niet begrijpen. Its location depends on what is negated, not on an absolute rule 'always at the end'. With a second verb the final verb bracket stays after niet. Dutch niet hoeven te means not having to; niet mogen means not being allowed to."
@@ -5015,7 +5022,8 @@
   "mistake": {
    "wrong": "Je hebt het voor me gekocht?",
    "right": "Heb je het voor me gekocht?",
-   "why": "A yes/no question starts with the auxiliary, before the subject."
+   "why": "The statement order can ask for confirmation with questioning intonation. For the neutral question/request here, put the finite verb first. When subject je follows it, the ordinary added second-person -t is omitted.",
+   "alternative": true
   },
   "practiceFocus": "Perfect tense and the verb bracket",
   "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
@@ -5134,7 +5142,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (heb) second (verb-second order).",
-  "forms": "Nodig hebben. Kaart is a de-word.",
+  "forms": "Iets nodig hebben means need something: ik heb een kaart nodig. Heb is a present finite verb, not a perfect auxiliary here. Kaart means a map in this navigation scenario; in another context it can mean a card or ticket.",
   "compare": "English \"I need a map\" is one verb; Dutch splits ik heb ... nodig around the object.",
   "mistake": {
    "wrong": "Ik heb nodig een kaart.",
@@ -5142,7 +5150,7 @@
    "why": "Nodig goes after the object."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "leisure-07": {
   "meaning": "Saying you are here to play.",
@@ -5196,7 +5204,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (was) second (verb-second order).",
-  "forms": "Wassen: ik was, jij wast.",
+  "forms": "Here was is present of wassen, not past of zijn: ik was mijn handen means I wash my hands. Compare jij/hij wast, wij wassen; past waste/wasten; perfect heb gewassen. Voor elke maaltijd means before every meal. Mijn is possessive my before plural handen.",
   "compare": "English \"I wash my hands before every meal.\" has the same basic order: subject, then verb, then the rest.",
   "mistake": {
    "wrong": "Ik was handen mijn voor elke maaltijd.",
@@ -5227,7 +5235,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (ben) second (verb-second order). The other verb parts are not conjugated: the om te phrase (om te gaan) closes the sentence.",
-  "forms": "Klaar zijn om te.",
+  "forms": "Klaar zijn om te + infinitive means be ready to act: ik ben klaar om te gaan. This describes readiness, not completed departure. Compare klaar met eten (finished eating) and klaar om te eten (ready to eat).",
   "compare": "English \"I am ready to go\" uses to; Dutch needs om te: klaar om te gaan.",
   "mistake": {
    "wrong": "Ik ben klaar gaan.",
@@ -5262,7 +5270,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (komt) second (verb-second order).",
-  "forms": "Te laat komen means to arrive late.",
+  "forms": "Te laat komen means arrive late. Te modifies laat (too/late), not a following infinitive. Soms means sometimes. Door het verkeer gives the cause, with het because verkeer is a het-word.",
   "compare": "English \"He sometimes arrives late because of traffic.\" has the same basic order: subject, then verb, then the rest.",
   "mistake": {
    "wrong": "Hij komt soms te laat door de verkeer.",
@@ -5288,13 +5296,13 @@
     "text": "naar een groter huis"
    },
    {
-    "label": "infinitive (separable verb)",
+    "label": "infinitive (inseparable verb)",
     "text": "verhuizen"
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (wilden) second (verb-second order). The other verb parts are not conjugated: the infinitive (verhuizen) normally occurs toward the end.",
-  "forms": "Willen: ze wilden (past plural). Groter huis: no -e after een with a het-word.",
-  "compare": "English \"They wanted to move to a bigger house\".",
+  "forms": "Wilden is plural past of willen. Verhuizen is inseparable: ik verhuis, not ik huis ver. It stays an infinitive without te after wilden. Huis is a singular het-word, so use een groter huis; compare het grotere huis.",
+  "compare": "English wanted to move uses to. Dutch wilden takes the bare infinitive verhuizen, with naar een groter huis before it. This describes a wish, not proof that the move happened.",
   "mistake": {
    "wrong": "Ze wilden naar een grotere huis verhuizen.",
    "right": "Ze wilden naar een groter huis verhuizen.",
@@ -5351,12 +5359,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (wordt) second (verb-second order).",
-  "forms": "Worden: ze wordt. Geweldige takes -e before the de-word dokter.",
-  "compare": "English \"She will be a great doctor\" uses will.",
+  "forms": "Wordt agrees with singular ze. Op een dag points to the future, so present wordt means will become here. The model uses the ordinary inflected adjective een geweldige dokter. Some adjectives before person or profession nouns can also be uninflected when describing that role; do not turn the model into a universal ban on such forms.",
+  "compare": "English uses will be for the future prediction. Dutch can use present wordt with future op een dag. Worden emphasises becoming a doctor, while zijn describes being one.",
   "mistake": {
    "wrong": "Ze wordt op een dag een geweldig dokter.",
    "right": "Ze wordt op een dag een geweldige dokter.",
-   "why": "After een, a de-word takes -e."
+   "why": "Een geweldige dokter is the ordinary inflected model. An uninflected adjective can also occur before a person or profession noun when assessing the person in that role. The missing -e is therefore not automatically an error in every such phrase.",
+   "alternative": true
   },
   "practiceFocus": "Zijn/worden and descriptions",
   "practiceGuide": "Zijn describes a state; worden describes becoming/changing: het is koud versus het wordt koud. Use one finite verb for the main clause, not is wordt. The predicate adjective normally stays uninflected: het huis is mooi. A noun complement keeps its own article/possessive, and the finite verb agrees with its subject (de kamers zijn)."
@@ -5409,12 +5418,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (gebruikten) second (verb-second order).",
-  "forms": "Gebruiken: gebruikten (plural).",
+  "forms": "Ze means they here, so the past form is plural gebruikten, from stem gebruik + ten. Singular ze gebruikte would mean she used and is valid in a different situation. Voor de presentatie gives the purpose of using the room.",
   "compare": "English \"They used the meeting room for the presentation\".",
   "mistake": {
    "wrong": "Ze gebruikte de vergaderruimte voor de presentatie.",
    "right": "Ze gebruikten de vergaderruimte voor de presentatie.",
-   "why": "A plural subject takes -den/-ten."
+   "why": "Ze gebruikte is grammatical for she used. This scenario concerns several people, so subject ze means they and requires plural gebruikten. The difference is the intended person/number, not a universal ban on gebruikte.",
+   "alternative": true
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -5541,7 +5551,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Wij) comes first and the finite verb (zullen) second (verb-second order). The other verb parts are not conjugated: the infinitive (helpen) normally occurs toward the end.",
-  "forms": "Zullen: wij zullen.",
+  "forms": "Wij takes plural zullen, and helpen remains an infinitive. Je is an object meaning you and comes before helpen in this model, not after it. This je is neither the subject nor possessive your.",
   "compare": "English \"We will help you\" uses will; Dutch uses zullen with the infinitive helpen at the end.",
   "mistake": {
    "wrong": "Wij zullen helpen je.",
@@ -5658,12 +5668,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Het) comes first and the finite verb (is) second (verb-second order).",
-  "forms": "After zijn the adjective takes no -e.",
+  "forms": "Vies is a predicate adjective here and takes no agreement -e after is. Before an appropriate noun the spelling changes to vieze, with z: de vieze keuken. Viese is not the correct inflected spelling.",
   "compare": "English \"It is very dirty\" has the same pattern; in Dutch the adjective takes no ending after is.",
   "mistake": {
    "wrong": "Het is erg viese.",
    "right": "Het is erg vies.",
-   "why": "After zijn the adjective takes no -e ending."
+   "why": "Use predicate vies after is, without -e. The corresponding adjective before a noun is spelled vieze, as in de vieze keuken; viese is also misspelled."
   },
   "practiceFocus": "Adjective endings and noun type",
   "practiceGuide": "Before a noun an adjective usually has -e: de rode tas, het rode boek. The main beginner exception is a singular indefinite het-word: een rood boek, een nieuw gerecht. Possessives/demonstratives make that het-noun definite: ons nieuwe huis. A predicate adjective after zijn normally has no agreement -e: het huis is mooi. Comparative forms have their own spelling; do not form every ending by simply appending e."
@@ -5685,7 +5695,7 @@
    }
   ],
   "order": "An imperative (a command or request) begins with the verb (Geef) and leaves out the subject.",
-  "forms": "Geven: geef (the stem).",
+  "forms": "Geef is the ordinary imperative stem of geven. Its spelling changes from the infinitive: long ee is written in closed geef, and v becomes f. The irregular past is gaf/gaven and the participle is gegeven. Het is the thing and me the recipient in Geef het me.",
   "compare": "English \"Give it to me\" uses to; Dutch puts the person straight after the object: geef het me.",
   "mistake": {
    "wrong": "Geven het me.",
@@ -5867,12 +5877,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Het) comes first and the finite verb (is) second (verb-second order). The other verb parts are not conjugated: the om te phrase (om te helpen) closes the sentence.",
-  "forms": "Het is plus adjective plus om te plus infinitive.",
-  "compare": "English \"It is difficult to help.\" uses \"to\" or an -ing form; Dutch needs te (usually om ... te) before the infinitive.",
+  "forms": "Is is finite with subject het; helpen remains infinitive in om te helpen. Here om introduces the activity judged difficult, not a purpose. In this construction om can be omitted: Het is moeilijk te helpen.",
+  "compare": "The model uses an infinitive clause (om) te helpen for the activity judged difficult. Om is optional in this construction; this is not a claim that all Dutch infinitives after adjectives need te.",
   "mistake": {
-   "wrong": "Het is moeilijk helpen.",
+   "wrong": "Het is moeilijk om te helpt.",
    "right": "Het is moeilijk om te helpen.",
-   "why": "Add om te before the infinitive."
+   "why": "After te in this infinitive clause, use the infinitive helpen. Helpt is a finite present form and does not fit after om te.",
+   "alternative": false
   },
   "practiceFocus": "Te-infinitives and separable verbs",
   "practiceGuide": "Some verbs/expressions introduce te + infinitive: proberen te slapen, klaar zijn om te gaan. Om ... te often introduces purpose or an infinitive clause, not a recipient. With a separable verb, te occurs between prefix and verb: af te maken, deel te nemen. A preceding modal does not erase the te required by proberen: Ik zal proberen te bellen."
@@ -5925,12 +5936,12 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (keken) second (verb-second order).",
-  "forms": "Kijken naar. Past: keek, keken.",
+  "forms": "Kijken has irregular past keek/keken and participle gekeken. For looking at the sunset use kijken naar de zonsondergang. This is not a claim that every use of kijken requires naar: een film kijken is also possible.",
   "compare": "English \"We watched the sunset.\" is also a simple past; Dutch forms it with -de/-te (regular) or a changed stem (irregular), and the plural ends in -den/-ten or -en.",
   "mistake": {
    "wrong": "We keken de zonsondergang.",
    "right": "We keken naar de zonsondergang.",
-   "why": "Kijken needs naar before what you look at."
+   "why": "Use kijken naar for looking at this sunset. Kijken can take some objects directly in other expressions, such as een film kijken, so naar is not compulsory after every instance of kijken."
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -5959,13 +5970,14 @@
     "text": "op"
    }
   ],
-  "order": "This is a yes/no question. With no question word, it begins with the finite verb (Stuur), and the subject (je) follows it. The other verb parts are not conjugated: the separable particle (op) normally occurs toward the end while the verb itself stays second.",
-  "forms": "Opsturen splits: stuur je ... op. The -t drops when subject je/jij follows the finite verb.",
+  "order": "This yes/no question starts with finite stuur, followed by subject je. Het is the thing sent and me the recipient. The separable particle op comes later; the finite verb is first here, not second.",
+  "forms": "Opsturen separates in this finite question: stuur je ... op. Compare statement je stuurt, where the added -t appears, with question stuur je. The present can make a request about the next action, naturally translated Will you send it to me?",
   "compare": "English \"Will you send it to me?\" also starts with the verb; Dutch likewise puts the finite verb first, then the subject.",
   "mistake": {
    "wrong": "Je stuurt het me op?",
    "right": "Stuur je het me op?",
-   "why": "Start with the verb to ask."
+   "why": "The statement order can ask for confirmation with questioning intonation. For the neutral question/request here, put the finite verb first. When subject je follows it, the ordinary added second-person -t is omitted.",
+   "alternative": true
   },
   "practiceFocus": "Yes/no questions and agreement",
   "practiceGuide": "A yes/no question begins with the finite verb: Je hebt tijd → Heb je tijd? Put the subject after that verb. If je/jij is the subject following the verb, a present-tense -t usually disappears: jij werkt → werk jij. This does not mean that every written je removes -t: possessive je inside je broer is not the subject pronoun."
@@ -6018,7 +6030,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (ontving) second (verb-second order).",
-  "forms": "Ontvangen: ontving (irregular past).",
+  "forms": "Ontvangen has singular past ontving, plural ontvingen, and participle ontvangen. The unstressed prefix ont- prevents extra ge-. Ze is she here. Voor haar werk gives the reason for the award; haar means her before werk.",
   "compare": "English \"She received an award for her work.\" is also a simple past; Dutch forms it with -de/-te (regular) or a changed stem (irregular), and the plural ends in -den/-ten or -en.",
   "mistake": {
    "wrong": "Ze ontvangde een prijs.",
@@ -6177,7 +6189,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (stond) second (verb-second order). The other verb parts are not conjugated: the infinitive (te wachten) normally occurs toward the end.",
-  "forms": "Staan te plus infinitive describes an ongoing action.",
+  "forms": "Stond is singular past of staan; plural is stonden. Staan te wachten describes waiting while standing. The full location phrase bij de bushalte can follow te wachten, so the infinitive need not be the final word.",
   "compare": "English \"I was waiting\"; Dutch says stond te wachten.",
   "mistake": {
    "wrong": "Ik stond wachten bij de bushalte.",
@@ -6212,12 +6224,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (heeft) second (verb-second order). The other verb parts are not conjugated: the participle (gedronken) normally occurs toward the end.",
-  "forms": "Drinken: gedronken.",
+  "forms": "Drinken has irregular past dronk/dronken and participle gedronken. Ze is she here and takes heeft. Haar koffie is the object; niet before gedronken negates drinking that coffee in the intended situation.",
   "compare": "English \"She did not drink her coffee\" uses did not.",
   "mistake": {
    "wrong": "Ze heeft niet haar koffie gedronken.",
    "right": "Ze heeft haar koffie niet gedronken.",
-   "why": "Niet comes after the object, before the participle."
+   "why": "Niet haar koffie can contrast her coffee with something else that she drank. To negate drinking her coffee as a whole in this situation, put niet after haar koffie: Ze heeft haar koffie niet gedronken.",
+   "alternative": true
   },
   "practiceFocus": "Perfect tense and the verb bracket",
   "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
@@ -6244,7 +6257,8 @@
   "mistake": {
    "wrong": "Je slaapt nu?",
    "right": "Slaap je nu?",
-   "why": "Start with the verb; -t drops when subject je/jij follows the finite verb."
+   "why": "The statement order can ask for confirmation with questioning intonation. For the neutral question/request here, put the finite verb first. When subject je follows it, the ordinary added second-person -t is omitted.",
+   "alternative": true
   },
   "practiceFocus": "Yes/no questions and agreement",
   "practiceGuide": "A yes/no question begins with the finite verb: Je hebt tijd → Heb je tijd? Put the subject after that verb. If je/jij is the subject following the verb, a present-tense -t usually disappears: jij werkt → werk jij. This does not mean that every written je removes -t: possessive je inside je broer is not the subject pronoun."
@@ -6297,7 +6311,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (praten) second (verb-second order).",
-  "forms": "Praten over.",
+  "forms": "Praten over introduces the topic: ze praten over de details. Praten agrees with plural ze. The complete over-phrase can move with context; its final position here is not a universal rule.",
   "compare": "English \"They are talking about the details\" is a progressive; Dutch uses the simple present: ze praten over de details.",
   "mistake": {
    "wrong": "Ze praten de details over.",
@@ -6335,7 +6349,7 @@
   "practiceGuide": "A question word or complete question phrase comes first, then the finite verb and usually the subject: Hoe laat komt de trein? Hoe laat is ONE constituent despite being two words. Subject questions are different: Wie komt? already has wie as its subject. Other infinitives/participles usually close the clause's verb bracket."
  },
  "conversation-53": {
-  "meaning": "Telling someone to give it back to you.",
+  "meaning": "Asking the listener to give something back to the speaker and their group.",
   "parts": [
    {
     "label": "imperative verb",
@@ -6355,7 +6369,7 @@
    }
   ],
   "order": "An imperative (a command or request) begins with the verb (Geef) and leaves out the subject. The other verb parts are not conjugated: the separable particle (terug) normally occurs toward the end while the imperative verb comes first.",
-  "forms": "Teruggeven splits: geef ... terug.",
+  "forms": "Teruggeven is separable: geef het ons terug. Het is the thing returned; ons means to us, including the speaker. Compare geef me mijn boek terug: a full noun object follows the short recipient pronoun.",
   "compare": "English \"Give it back to us\" keeps back after the verb; Dutch puts terug in the final verb bracket: geef het ons terug.",
   "mistake": {
    "wrong": "Terug geef het ons.",
@@ -6425,7 +6439,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (kan) second (verb-second order). The other verb parts are not conjugated: the infinitive (vertellen) normally occurs toward the end.",
-  "forms": "Kunnen: ik kan. Nog niet means not yet.",
+  "forms": "Kunnen: ik kan. Het names the information and je names the listener receiving it. Nog niet means not yet; vertellen is an infinitive without te after kan. Ik kan het je vertellen means I can tell you; nog niet postpones that possibility.",
   "compare": "English \"I cannot tell you yet.\" keeps the second verb next to the modal; Dutch sends the infinitive (vertellen) to the end of the clause.",
   "mistake": {
    "wrong": "Ik kan het je vertellen nog niet.",
@@ -6510,7 +6524,7 @@
    }
   ],
   "order": "This is a yes/no question. With no question word, it begins with the finite verb (Spreekt), and the subject (u) follows it.",
-  "forms": "Spreken: u spreekt.",
+  "forms": "Spreken has regular-looking present forms ik spreek, u spreekt and wij spreken, but irregular past sprak/spraken and participle gesproken. U retains spreekt in this polite question. Engels names the language without an article here.",
   "compare": "English \"Do you speak English?\" needs \"do\" to form the question; Dutch just starts with the finite verb (Spreekt).",
   "mistake": {
    "wrong": "U spreekt Engels?",
@@ -6542,12 +6556,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (maakten) second (verb-second order).",
-  "forms": "Maken: maakte, maakten.",
+  "forms": "Maken: maakte in the singular, maakten in the plural. Ze means they in this scenario and requires maakten. Ze maakte is valid for she made. Voor het weekend identifies the weekend being planned for.",
   "compare": "English \"They made plans\" is the same simple past; Dutch maken is regular: maakten in the plural.",
   "mistake": {
    "wrong": "Ze maakte plannen voor het weekend.",
    "right": "Ze maakten plannen voor het weekend.",
-   "why": "A plural subject takes -den/-ten."
+   "why": "Ze maakte is grammatical for she made. This scenario concerns a group, so use plural ze maakten. The distinction is the intended referent, not an impossible verb form.",
+   "alternative": true
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -6596,12 +6611,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Zij) comes first and the finite verb (keken) second (verb-second order).",
-  "forms": "Kijken naar.",
+  "forms": "Kijken has irregular past keek/keken and participle gekeken. Kijken naar is the model for watching this match. Kijken can also take a direct object in media contexts, as in een film kijken or voetbal kijken; naar is not compulsory in every use.",
   "compare": "English \"They were watching the match\" is a past progressive; Dutch uses the simple past keken, followed by naar.",
   "mistake": {
    "wrong": "Zij keken de wedstrijd.",
    "right": "Zij keken naar de wedstrijd.",
-   "why": "Kijken needs naar before what you look at."
+   "why": "Kijken naar is the neutral model taught here. Watching media or sport also allows direct-object kijken, such as een film kijken and voetbal kijken. Zij keken de wedstrijd can therefore describe watching the match, especially as a broadcast; it is not categorically ungrammatical.",
+   "alternative": true
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -6654,7 +6670,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Het) comes first and the finite verb (is) second (verb-second order).",
-  "forms": "After zijn no -e.",
+  "forms": "Schoon describes the condition of the thing, so it is a predicate adjective without agreement -e: het is schoon. Before a noun compare een schoon raam and het schone raam. The absence of -e is about this adjective function, not every word after zijn.",
   "compare": "English \"It is clean\" has the same pattern; in Dutch schoon takes no ending after is.",
   "mistake": {
    "wrong": "Het is schone.",
@@ -6712,7 +6728,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Dit) comes first and the finite verb (is) second (verb-second order).",
-  "forms": "Mijn does not change.",
+  "forms": "Dit is introduces an identification, even with a de-word: dit is mijn tas. It does not mean tas is a het-word. Before the noun itself use deze tas. Mijn means my before either a de-word or a het-word.",
   "compare": "English \"This is my bag\" is the same pattern; Dutch uses mijn for both de-words and het-words.",
   "mistake": {
    "wrong": "Dit is tas mijn.",
@@ -6743,12 +6759,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (vroegen) second (verb-second order). The other verb parts are not conjugated: the om te phrase (om vroeg te komen) closes the sentence.",
-  "forms": "Vragen om te plus infinitive.",
+  "forms": "Vragen has past vroeg/vroegen and participle gevraagd. Ze means they here; ons is the group asked to come. Om vroeg te komen names their requested action. Om is optional in this complement: Ze vroegen ons vroeg te komen is also possible; te is retained.",
   "compare": "English \"They asked us to come early.\" uses \"to\" or an -ing form; Dutch needs te (usually om ... te) before the infinitive.",
   "mistake": {
    "wrong": "Ze vroegen ons vroeg komen.",
    "right": "Ze vroegen ons om vroeg te komen.",
-   "why": "After vragen the infinitive needs om ... te around the rest of the clause."
+   "why": "The displayed phrase omits te and does not fit this request complement. Use om vroeg te komen or vroeg te komen; om can be left out, but te is retained."
   },
   "practiceFocus": "Te-infinitives and separable verbs",
   "practiceGuide": "Some verbs/expressions introduce te + infinitive: proberen te slapen, klaar zijn om te gaan. Om ... te often introduces purpose or an infinitive clause, not a recipient. With a separable verb, te occurs between prefix and verb: af te maken, deel te nemen. A preceding modal does not erase the te required by proberen: Ik zal proberen te bellen."
@@ -6770,7 +6786,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Wij) comes first and the finite verb (passeerden) second (verb-second order).",
-  "forms": "Passeren: passeerde, passeerden.",
+  "forms": "Passeren has regular past passeerde/passeerden and participle gepasseerd, with ge-. It does not have an unstressed prefix that blocks ge-. Wij takes plural passeerden. Here de bank is the bank passed on the route.",
   "compare": "English \"We passed the bank\" has the same simple past; Dutch passeerden has the plural ending -den.",
   "mistake": {
    "wrong": "Wij passeerde de bank.",
@@ -6805,7 +6821,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Je) comes first and the finite verb (hebt) second (verb-second order). The other verb parts are not conjugated: the participle (verloren) normally occurs toward the end.",
-  "forms": "Verliezen: verloren.",
+  "forms": "Verliezen: ik verlies; past verloor/verloren; perfect heb verloren. The model uses auxiliary hebt with subject je. Niet before verloren negates losing this match; other negation positions can change the contrast.",
   "compare": "English \"You did not lose the match\" uses \"did not\"; Dutch uses the perfect with niet before the participle: hebt ... niet verloren.",
   "mistake": {
    "wrong": "Je hebt niet de wedstrijd verloren.",
@@ -6837,12 +6853,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (betaalden) second (verb-second order).",
-  "forms": "Betalen: betaalden.",
+  "forms": "Betalen has past betaalde/betaalden and participle betaald without extra ge- because of unstressed be-. Ze means they here and takes betaalden; ze betaalde would mean she paid. Contant describes payment in cash. Meubels is plural in Dutch; English furniture is normally uncountable.",
   "compare": "English \"They paid cash for the furniture.\" is also a simple past; Dutch forms it with -de/-te (regular) or a changed stem (irregular), and the plural ends in -den/-ten or -en.",
   "mistake": {
    "wrong": "Ze betaalde contant voor de meubels.",
    "right": "Ze betaalden contant voor de meubels.",
-   "why": "A plural subject takes -den."
+   "why": "Ze betaalde means she paid and is grammatical for one woman. The intended subject here is they, requiring plural betaalden.",
+   "alternative": true
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -6934,15 +6951,15 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (vind) second (verb-second order).",
-  "forms": "Vinden plus adjective gives an opinion.",
+  "forms": "Vinden + object + adjective expresses an opinion: ik vind zijn auto leuk. Zijn is possessive his before auto, not the verb be. Leuk describes the object and stays uninflected. Compare the attributive adjective in zijn leuke auto.",
   "compare": "English \"I like his car\" uses like; Dutch uses ik vind ... leuk (I find ... nice), with the adjective last.",
   "mistake": {
    "wrong": "Ik vind leuk zijn auto.",
    "right": "Ik vind zijn auto leuk.",
    "why": "The adjective goes after the object."
   },
-  "practiceFocus": "Zijn/worden and descriptions",
-  "practiceGuide": "Zijn describes a state; worden describes becoming/changing: het is koud versus het wordt koud. Use one finite verb for the main clause, not is wordt. The predicate adjective normally stays uninflected: het huis is mooi. A noun complement keeps its own article/possessive, and the finite verb agrees with its subject (de kamers zijn)."
+  "practiceFocus": "Giving an opinion with vinden",
+  "practiceGuide": "Use a finite form of vinden, then the thing assessed and an adjective: Ik vind dit boek mooi. The adjective describes the object and normally has no agreement -e in this construction. Contrast een mooi boek and het mooie boek, where the adjective is attached to the noun."
  },
  "leisure-16": {
   "meaning": "Saying you used to go to the park.",
@@ -7110,7 +7127,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (is) second (verb-second order).",
-  "forms": "After zijn no -e.",
+  "forms": "Lang means tall for a person and long for a length. Here erg modifies lang (very tall). Lang is a predicate adjective without agreement -e; compare een lange man, where the adjective modifies a noun.",
   "compare": "English \"He is very tall\" is the same pattern; Dutch lang means both long and tall.",
   "mistake": {
    "wrong": "Hij is erg lange.",
@@ -7141,8 +7158,8 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (wast) second (verb-second order).",
-  "forms": "Wassen: hij wast.",
-  "compare": "English \"He washes his clothes at the laundrette\" has the same pattern; Dutch wassen is irregular in the present: hij wast.",
+  "forms": "The present of wassen follows the ordinary pattern: ik was, jij/hij wast, wij wassen. The spelling removes one s in closed-syllable was; wast adds the ordinary -t. The past waste/wasten is regular, while the participle gewassen is irregular. Zijn means his before kleren.",
+  "compare": "English He washes his clothes at the laundrette uses present washes. Dutch uses present wast, with zijn kleren before the location in de wasserette.",
   "mistake": {
    "wrong": "Hij wast kleren zijn in de wasserette.",
    "right": "Hij wast zijn kleren in de wasserette.",
@@ -7179,7 +7196,7 @@
   "practiceGuide": "An infinitive can name an activity and function like a noun: het lezen, het schoonmaken. A whole activity phrase can be the subject: De hond uitlaten is mijn taak. Its finite verb still follows that entire first constituent. Infinitives used as nouns normally take het; de was is a separate noun meaning laundry. Do not confuse the activity noun with a conjugated verb."
  },
  "conversation-61": {
-  "meaning": "Saying he called you this morning.",
+  "meaning": "Saying that a man called the speaker this morning.",
   "parts": [
    {
     "label": "subject",
@@ -7199,12 +7216,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (belde) second (verb-second order).",
-  "forms": "Bellen: belde. Me is the object form of ik.",
-  "compare": "English \"He called me this morning.\" is also a simple past; Dutch forms it with -de/-te (regular) or a changed stem (irregular), and the plural ends in -den/-ten or -en.",
+  "forms": "Bellen has regular past belde/belden and participle gebeld. Me (or stressed mij) is the object meaning me; hij is the subject. Vanmorgen means this morning and can refer to the earlier call.",
+  "compare": "English uses called; Dutch uses belde directly, without an auxiliary equivalent to did. The short object me comes before vanmorgen in this neutral model.",
   "mistake": {
    "wrong": "Hij belde ik vanmorgen.",
    "right": "Hij belde me vanmorgen.",
-   "why": "After a verb the pronoun takes its object form: me, not ik."
+   "why": "The person receiving the call is an object, so use me or stressed mij. Ik is a subject form. Pronoun choice depends on its grammatical role, not simply being after any verb."
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -7230,7 +7247,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (ben) second (verb-second order).",
-  "forms": "Zo here means in a moment.",
+  "forms": "Zo means in a moment in ik ben zo terug; terug means back. This present-tense promise naturally corresponds to English I will be right back.",
   "compare": "English \"I will be right back\" uses will; Dutch uses the present: ik ben zo terug.",
   "mistake": {
    "wrong": "Ik ben terug zo.",
@@ -7561,7 +7578,7 @@
   "practiceGuide": "Zitten/staan/liggen describe a position: ik zit op de stoel. Gaan zitten expresses moving into sitting: ik ga zitten. Its perfect is ik ben gaan zitten, with gaan as an infinitive in the verb cluster. A posture verb can describe an ongoing action with te: ik sta te wachten. These differ from bare is + infinitive, which is not the progressive."
  },
  "conversation-65": {
-  "meaning": "Saying he gave you good advice.",
+  "meaning": "Saying that a man gave the speaker good advice.",
   "parts": [
    {
     "label": "subject",
@@ -7581,12 +7598,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (gaf) second (verb-second order).",
-  "forms": "Geven: gaf. Advies is a het-word, so goed has no -e.",
+  "forms": "Geven has past gaf/gaven and participle gegeven. Me is the recipient and goed advies is the thing given. Advies is singular neuter and indefinite here, so use goed. Compare definite het goede advies and plural goede adviezen; a het-word does not forbid -e in every phrase.",
   "compare": "English \"He gave me good advice.\" is also a simple past; Dutch forms it with -de/-te (regular) or a changed stem (irregular), and the plural ends in -den/-ten or -en.",
   "mistake": {
    "wrong": "Hij gaf me goede advies.",
    "right": "Hij gaf me goed advies.",
-   "why": "Advies is a het-word: no -e after goed."
+   "why": "Use goed with singular indefinite neuter advies here. Definite het goede advies and plural goede adviezen do take -e; the rule depends on the whole noun phrase."
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -7608,7 +7625,7 @@
    }
   ],
   "order": "This is a question. The question word or phrase (Waar) takes the first position, so the finite verb (werk) comes second and the subject (je) follows it: question word + finite verb + subject.",
-  "forms": "The -t drops when subject je/jij follows the finite verb: werk je.",
+  "forms": "Waar is the question word; werk is finite and subject je follows it. Omit the added second-person -t: je werkt becomes werk je. An embedded question has different order: Ik vraag waar je werkt.",
   "compare": "English \"Where do you work?\" needs do; Dutch just inverts: waar werk je?",
   "mistake": {
    "wrong": "Waar je werkt?",
@@ -7670,12 +7687,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Het) comes first and the finite verb (is) second (verb-second order). The other verb parts are not conjugated: the om te phrase (om te helpen) closes the sentence.",
-  "forms": "Beter is the comparative of goed.",
+  "forms": "Beter is the comparative of goed. The model uses an infinitive clause with om te helpen. Om can be omitted: Het is beter te helpen. Bare-infinitive evaluative expressions also exist, so learn this clause pattern without declaring every adjective plus infinitive invalid.",
   "compare": "English \"It is better to help.\" uses \"to\" or an -ing form; Dutch needs te (usually om ... te) before the infinitive.",
   "mistake": {
    "wrong": "Het is beter helpen.",
    "right": "Het is beter om te helpen.",
-   "why": "Add om te before the infinitive after this adjective."
+   "why": "The model uses the ordinary infinitive clause (om) te helpen. Dutch also has evaluative bare-infinitive expressions, so do not treat every adjective followed by a bare infinitive as automatically impossible. Practise the model for this neutral advice.",
+   "alternative": true
   },
   "practiceFocus": "Te-infinitives and separable verbs",
   "practiceGuide": "Some verbs/expressions introduce te + infinitive: proberen te slapen, klaar zijn om te gaan. Om ... te often introduces purpose or an infinitive clause, not a recipient. With a separable verb, te occurs between prefix and verb: af te maken, deel te nemen. A preceding modal does not erase the te required by proberen: Ik zal proberen te bellen."
@@ -7698,7 +7716,7 @@
   ],
   "order": "This is a question. The question word or phrase (Wat voor weer) takes the first position, so the finite verb (is) comes second and the subject (het) follows it: question word + finite verb + subject.",
   "forms": "Wat voor asks what kind of.",
-  "compare": "English \"What is the weather like?\" has a similar order; Dutch also puts the finite verb straight after the question word.",
+  "compare": "English What is the weather like? and Dutch Wat voor weer is het? use different question phrases. Wat voor weer is one complete first constituent; finite is follows that whole phrase, not merely the first word.",
   "mistake": {
    "wrong": "Wat voor weer het is?",
    "right": "Wat voor weer is het?",
@@ -7736,7 +7754,7 @@
   "practiceGuide": "A yes/no question begins with the finite verb: Je hebt tijd → Heb je tijd? Put the subject after that verb. If je/jij is the subject following the verb, a present-tense -t usually disappears: jij werkt → werk jij. This does not mean that every written je removes -t: possessive je inside je broer is not the subject pronoun."
  },
  "school-18": {
-  "meaning": "Saying she explained it to you.",
+  "meaning": "Saying that a woman explained something to the speaker.",
   "parts": [
    {
     "label": "subject",
@@ -7760,12 +7778,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Zij) comes first and the finite verb (heeft) second (verb-second order). The other verb parts are not conjugated: the participle (uitgelegd) normally occurs toward the end.",
-  "forms": "Uitleggen: uitgelegd.",
+  "forms": "This perfect uses hebben: zij heeft het mij uitgelegd. Uitleggen is separable: ze legt het uit; participle uit + ge + legd. Het is the thing explained and mij is the recipient. Compare unstressed me. Other perfects can use zijn, so hebben is not universal.",
   "compare": "English \"She explained it to me.\" uses the simple past; Dutch often uses the perfect (auxiliary plus participle) for a finished event, with the participle (uitgelegd) at the end.",
   "mistake": {
    "wrong": "Zij heeft uitgelegd het mij.",
    "right": "Zij heeft het mij uitgelegd.",
-   "why": "The participle goes to the end."
+   "why": "Keep the short object het and recipient mij before the participle in this neutral clause. Uitgelegd closes the verb bracket. This is not a ban on full prepositional phrases after participles in other sentences."
   },
   "practiceFocus": "Perfect tense and the verb bracket",
   "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
@@ -7787,12 +7805,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (keek) second (verb-second order).",
-  "forms": "Kijken naar.",
+  "forms": "Kijken has past keek/keken and participle gekeken. For looking at the sky, use kijken naar de lucht. Some media expressions instead allow a direct object, such as een film kijken; this does not license ze keek de lucht.",
   "compare": "English \"She was looking at the sky\" is a past progressive; Dutch uses the simple past keek, followed by naar.",
   "mistake": {
    "wrong": "Ze keek de lucht.",
    "right": "Ze keek naar de lucht.",
-   "why": "Kijken needs naar before what you look at."
+   "why": "For looking at the sky use naar de lucht. Kijken can have a direct object in certain media expressions such as een film kijken, but de lucht does not fit that pattern."
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -7889,7 +7907,7 @@
    }
   ],
   "order": "The main clause has the verb second. After zodra the clause is subordinate, so the verb normally occurs toward the end.",
-  "forms": "Zich voordoen means to arise (reflexive).",
+  "forms": "Oplossen splits in the main clause: we lossen problemen op. Zodra introduces the subordinate clause ze zich voordoen. Ze refers to the plural problems; zich is reflexive. Voordoen is a finite plural present here, not an infinitive despite the identical spelling. The separable verb stays joined at the end of this subordinate clause.",
   "compare": "English \"as soon as they arise\" keeps the verb near the subject.",
   "mistake": {
    "wrong": "... zodra ze doen zich voor.",
@@ -7943,7 +7961,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (volgt) second (verb-second order).",
-  "forms": "Dieet is a het-word, so gezond has no -e.",
+  "forms": "Volgen has present ik volg, hij volgt, wij volgen. In een gezond dieet, dieet is a singular het-word after indefinite een, so gezond has no -e. Compare het gezonde dieet.",
   "compare": "English \"He follows a healthy diet.\" has the same basic order: subject, then verb, then the rest.",
   "mistake": {
    "wrong": "Hij volgt een gezonde dieet.",
@@ -8013,7 +8031,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (verlies) second (verb-second order). After als the clause is subordinate, so its finite verb (zijn) comes toward the end of its subordinate clause.",
-  "forms": "Verliezen: ik verlies.",
+  "forms": "Verliezen: ik verlies; past verloor/verloren; perfect heb verloren. Geduld is a het-word. Als introduces the situation triggering the reaction; plural mensen takes zijn at the end.",
   "compare": "English \"when people are rude\" keeps are near people.",
   "mistake": {
    "wrong": "... als mensen zijn onbeleefd.",
@@ -8044,12 +8062,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (ben) second (verb-second order).",
-  "forms": "Bang zijn voor.",
+  "forms": "Bang zijn voor means be afraid of. Bang van also occurs and is particularly common in Belgium; do not reject it categorically. In the model voor de toekomst identifies what the speaker fears. Bang is a predicate adjective without agreement -e.",
   "compare": "English \"afraid of\" uses of; Dutch uses bang voor (afraid for).",
   "mistake": {
    "wrong": "Ik ben bang van de toekomst.",
    "right": "Ik ben bang voor de toekomst.",
-   "why": "Bang zijn voor means to be afraid of: the preposition is voor."
+   "why": "Bang van is also accepted and is especially common in Belgium. Bang voor is the model here and more usual in the Netherlands. Do not treat the alternative preposition as a universal error.",
+   "alternative": true
   },
   "practiceFocus": "Zijn/worden and descriptions",
   "practiceGuide": "Zijn describes a state; worden describes becoming/changing: het is koud versus het wordt koud. Use one finite verb for the main clause, not is wordt. The predicate adjective normally stays uninflected: het huis is mooi. A noun complement keeps its own article/possessive, and the finite verb agrees with its subject (de kamers zijn)."
@@ -8137,8 +8156,8 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (gaat) second (verb-second order). The other verb parts are not conjugated: the infinitive (vinden) normally occurs toward the end. Gaan plus an infinitive expresses a plan or something about to happen.",
-  "forms": "Nieuwe takes -e before the de-word baan.",
-  "compare": "English \"She is going to find a new job soon\".",
+  "forms": "Gaat is finite with singular ze; vinden remains an infinitive without te. Gaan + infinitive can predict an event as well as express an intention. The model predicts finding a job soon, not merely looking for one. Baan is a de-word, so use een nieuwe baan.",
+  "compare": "English is going to find corresponds to gaat ... vinden. Binnenkort means soon; neither tense form proves that the future event is guaranteed.",
   "mistake": {
    "wrong": "Ze gaat binnenkort vinden een nieuwe baan.",
    "right": "Ze gaat binnenkort een nieuwe baan vinden.",
@@ -8172,12 +8191,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Zij) comes first and the finite verb (is) second (verb-second order). The other verb parts are not conjugated: the participle (gegaan) normally occurs toward the end.",
-  "forms": "Gaan uses zijn: is gegaan.",
+  "forms": "Gaan uses zijn in this perfect: zij is naar school gegaan. Niet negates that attendance. School has no article in the expression naar school gaan. Learn the auxiliary with this verb; not every movement activity uses zijn.",
   "compare": "English \"She did not go to school\" uses \"did not\"; Dutch uses the perfect with zijn and niet: is niet naar school gegaan.",
   "mistake": {
    "wrong": "Zij heeft niet naar school gegaan.",
    "right": "Zij is niet naar school gegaan.",
-   "why": "Gaan is a verb of movement, so its perfect uses zijn."
+   "why": "Gaan takes zijn in this perfect: zij is gegaan. Auxiliary choice follows the particular verb and use, not a universal rule that all movement uses zijn."
   },
   "practiceFocus": "Perfect tense and the verb bracket",
   "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
@@ -8207,12 +8226,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Wij) comes first and the finite verb (gingen) second (verb-second order).",
-  "forms": "Gaan: gingen.",
+  "forms": "Gaan has past ging/gingen. Wij takes gingen, and vroeger elke zomer describes a repeated past habit. Vroeger can also mean earlier in a different context, so the word does not itself force one past tense in every sentence.",
   "compare": "English \"We used to go\" uses used to; Dutch uses the simple past gingen with vroeger.",
   "mistake": {
    "wrong": "Wij gaan vroeger elke zomer naar het strand.",
    "right": "Wij gingen vroeger elke zomer naar het strand.",
-   "why": "With vroeger Dutch uses the simple past: gingen."
+   "why": "This scenario describes a repeated habit in the past, so use plural past gingen. Vroeger can mean earlier in another context; its presence alone does not force a particular tense everywhere."
   },
   "practiceFocus": "Simple past and subject agreement",
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
@@ -8238,12 +8257,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Het) comes first and the finite verb (is) second (verb-second order). The other verb parts are not conjugated: the te phrase (te zeggen) closes the sentence.",
-  "forms": "Adjective plus te plus infinitive.",
-  "compare": "English \"It is hard to say\" has the same shape; Dutch needs te before the infinitive.",
+  "forms": "Is is finite and zeggen is infinitive after te. This model can also include om: Het is moeilijk om te zeggen. It expresses difficulty rather than reporting an act of speaking as completed.",
+  "compare": "The model te zeggen is an infinitive clause, corresponding to English to say. This teaches this neutral expression of difficulty rather than a universal ban on other Dutch constructions.",
   "mistake": {
-   "wrong": "Het is moeilijk zeggen.",
+   "wrong": "Het is moeilijk te zegt.",
    "right": "Het is moeilijk te zeggen.",
-   "why": "Put te before the infinitive after this adjective."
+   "why": "This te-clause requires infinitive zeggen, not finite present zegt. Keep the finite is in the main clause and the infinitive after te.",
+   "alternative": false
   },
   "practiceFocus": "Te-infinitives and separable verbs",
   "practiceGuide": "Some verbs/expressions introduce te + infinitive: proberen te slapen, klaar zijn om te gaan. Om ... te often introduces purpose or an infinitive clause, not a recipient. With a separable verb, te occurs between prefix and verb: af te maken, deel te nemen. A preceding modal does not erase the te required by proberen: Ik zal proberen te bellen."
@@ -8273,7 +8293,7 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (hadden) second (verb-second order). The other verb parts are not conjugated: the participle (schoongemaakt) normally occurs toward the end.",
-  "forms": "Schoonmaken: schoongemaakt (one word).",
+  "forms": "Schoonmaken is separable: we maken het huis schoon. Its participle is schoongemaakt, with ge between schoon and maakt. Hadden + participle places the completed cleaning before another past reference point; al means already.",
   "compare": "English \"We had already cleaned the house.\" also uses an auxiliary plus a participle, but keeps the participle next to the auxiliary; Dutch puts the participle (schoongemaakt) in the final verb bracket.",
   "mistake": {
    "wrong": "We hadden schoongemaakt het huis al.",
@@ -8308,7 +8328,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (had) second (verb-second order). The other verb parts are not conjugated: the participle (gecontroleerd) normally occurs toward the end.",
-  "forms": "Controleren: gecontroleerd.",
+  "forms": "Controleren has participle gecontroleerd, with ge-. Had + gecontroleerd is past perfect: the checking was already complete before a past reference point. De tijd is what was checked; al means already.",
   "compare": "English \"I had already checked the time.\" also uses an auxiliary plus a participle, but keeps the participle next to the auxiliary; Dutch puts the participle (gecontroleerd) in the final verb bracket.",
   "mistake": {
    "wrong": "Ik had gecontroleerd de tijd al.",
@@ -8335,12 +8355,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Dat) comes first and the finite verb (lijkt) second (verb-second order).",
-  "forms": "Lijken op means to look like.",
-  "compare": "English \"That looks like gold\" uses like; Dutch uses lijken op.",
+  "forms": "Lijken op means resemble: dat lijkt op goud. Lijken has past leek/leken and participle geleken. Here op belongs to the resemblance expression; compare linking lijken with an adjective in hij lijkt moe, without op.",
+  "compare": "English looks like gold means resembles gold, not proof of its material. Dutch uses lijken op here; Dat lijkt goud te zijn instead means That seems to be gold.",
   "mistake": {
    "wrong": "Dat lijkt goud.",
    "right": "Dat lijkt op goud.",
-   "why": "Lijken op means to look like: the preposition op is required."
+   "why": "For resemblance in this model use lijken op goud. Lijken also has other patterns, such as Dat lijkt goud te zijn; op is not required after every occurrence of lijken."
   },
   "practiceFocus": "Zijn/worden and descriptions",
   "practiceGuide": "Zijn describes a state; worden describes becoming/changing: het is koud versus het wordt koud. Use one finite verb for the main clause, not is wordt. The predicate adjective normally stays uninflected: het huis is mooi. A noun complement keeps its own article/possessive, and the finite verb agrees with its subject (de kamers zijn)."
@@ -8361,8 +8381,8 @@
     "text": "mijn taak"
    }
   ],
-  "order": "In a normal main clause the subject (De hond uitlaten) comes first and the finite verb (is) second (verb-second order). An infinitive can be the whole subject.",
-  "forms": "Uitlaten stays whole at the end of the phrase.",
+  "order": "De hond uitlaten is one entire subject constituent naming the activity. Finite is follows that whole phrase in second position, with mijn taak as its complement. De hond alone is not the subject of is.",
+  "forms": "Uitlaten stays joined as an infinitive within the subject phrase. Compare finite ik laat de hond uit. Mijn identifies the speaker whose task it is; it has the same form before de- and het-words.",
   "compare": "English \"Walking the dog\" uses an -ing noun; Dutch uses the infinitive phrase de hond uitlaten.",
   "mistake": {
    "wrong": "De hond uitlaten is taak mijn.",
@@ -8393,7 +8413,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (beginnen) second (verb-second order).",
-  "forms": "Beginnen met. Nieuwe takes -e after het with the article.",
+  "forms": "Ze means they here and takes beginnen. Volgende maand gives future reference despite the present tense. Met de bouw van het nieuwe gebouw names the activity being started; it is not the grammatical subject. Gebouw is a het-word with definite het, so use nieuwe.",
   "compare": "English \"They will start constructing\" uses will; Dutch uses the present tense for a plan: ze beginnen volgende maand.",
   "mistake": {
    "wrong": "Ze beginnen volgende maand de bouw.",
@@ -8465,12 +8485,12 @@
    }
   ],
   "order": "This is a yes/no question. With no question word, it begins with the finite verb (Voel), and the subject (je) follows it.",
-  "forms": "Zich voelen: the reflexive je is repeated after the subject je.",
+  "forms": "Voel is finite. The first je is the subject and the second je is reflexive, referring to that person feeling better. The ordinary present -t of je voelt is omitted before following subject je. Voelen is reflexive for personal well-being here, not in every possible meaning.",
   "compare": "English \"Do you feel better?\" uses do and no reflexive; Dutch repeats je: voel je je beter?",
   "mistake": {
    "wrong": "Voel je beter?",
    "right": "Voel je je beter?",
-   "why": "Voelen needs the reflexive pronoun."
+   "why": "For this question about personal well-being, use zich voelen and keep both je forms: subject je and reflexive je. Other meanings of voelen need no reflexive, such as ik voel de stof."
   },
   "practiceFocus": "Reflexive pronouns refer to the subject",
   "practiceGuide": "Match the reflexive to the subject: ik/me, jij/je, hij-zij/zich, wij/ons, jullie/je, zij plural/zich. A question can contain two je forms: Voel je je beter? The first is the subject, the second reflexive. The reflexive belongs to the Dutch expression even if natural English does not say myself. In an embedded clause the verb group normally closes the clause."
@@ -8499,13 +8519,13 @@
     "text": "na de training"
    }
   ],
-  "order": "In a normal main clause the subject (Ze) comes first and the finite verb (zullen) second (verb-second order). The other verb parts are not conjugated: the infinitive (begrijpen) normally occurs toward the end.",
-  "forms": "Zullen: ze zullen.",
+  "order": "Ze is the subject and plural zullen is finite in second position. De regels is the object before infinitive begrijpen. The complete time phrase na de training follows begrijpen here; the infinitive need not be the last word.",
+  "forms": "Zullen expresses the prediction; begrijpen remains an infinitive without te. Regels is plural of de regel. Na de training means after the training, and can also stand before begrijpen.",
   "compare": "English \"They will understand the rules after the training\".",
   "mistake": {
    "wrong": "Ze zullen begrijpen de regels na de training.",
    "right": "Ze zullen de regels begrijpen na de training.",
-   "why": "The object comes before the infinitive."
+   "why": "The direct object de regels belongs before begrijpen in this neutral clause. The full time phrase na de training may follow the infinitive, as it does in the model."
   },
   "practiceFocus": "Modal verbs and final infinitives",
   "practiceGuide": "A modal such as kunnen, moeten, willen, mogen or zullen is the finite verb. The action verb stays an infinitive, normally at the end of the main clause: Ik wil de soep proberen. No te directly after these modals. If the infinitive itself requires te, that separate relationship remains: Ik zal proberen te slapen. English to has no single Dutch translation."
@@ -8527,7 +8547,7 @@
    }
   ],
   "order": "This is a question. The question word or phrase (Wat) takes the first position, so the finite verb (is) comes second and the subject (de wachttijd) follows it: question word + finite verb + subject.",
-  "forms": "Wachttijd is a de-word.",
+  "forms": "Wachttijd is a de-word meaning waiting time. Wat asks for that duration; finite is precedes subject de wachttijd. An embedded question uses different order: Ik vraag wat de wachttijd is.",
   "compare": "English \"How long is the wait?\" has a similar order; Dutch also puts the finite verb straight after the question word.",
   "mistake": {
    "wrong": "Wat de wachttijd is?",
@@ -8554,7 +8574,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (heb) second (verb-second order).",
-  "forms": "Dorst hebben means to be thirsty.",
+  "forms": "Dorst hebben means be thirsty: ik heb dorst. Heb is present, not a perfect auxiliary here. Dorst is a noun without an article in this expression. Compare honger hebben, be hungry, and dorstig zijn, with the adjective dorstig.",
   "compare": "English \"I am thirsty\" uses am; Dutch uses have.",
   "mistake": {
    "wrong": "Ik ben dorst.",
@@ -8624,7 +8644,7 @@
    "why": "Nodig goes after the object."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "food-18": {
   "meaning": "Saying they had no water.",
@@ -8643,12 +8663,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (hadden) second (verb-second order).",
-  "forms": "Hebben: hadden (plural).",
+  "forms": "Hadden is plural past of hebben and agrees with ze meaning they. Geen water negates an unspecified amount of water. Geen is usual with an indefinite or bare noun phrase here, not a replacement for niet before every noun.",
   "compare": "English \"They did not have any water\" needs \"did not\"; Dutch simply says ze hadden geen water.",
   "mistake": {
    "wrong": "Ze hadden niet water.",
    "right": "Ze hadden geen water.",
-   "why": "Use geen instead of niet before a noun."
+   "why": "Geen water is the ordinary negative for an indefinite amount. Niet water can create a contrast such as not water but wine; it is not the neutral meaning intended here.",
+   "alternative": true
   },
   "practiceFocus": "Niet and geen with the right scope",
   "practiceGuide": "Geen negates an indefinite noun: geen tijd, geen koffie. Niet can negate a predicate, action or more specific constituent: niet moe, de vraag niet begrijpen. Its location depends on what is negated, not on an absolute rule 'always at the end'. With a second verb the final verb bracket stays after niet. Dutch niet hoeven te means not having to; niet mogen means not being allowed to."
@@ -8678,7 +8699,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (hangen) second (verb-second order). The other verb parts are not conjugated: the separable particle (op) normally occurs toward the end while the verb itself stays second.",
-  "forms": "Ophangen splits.",
+  "forms": "Ophangen is separable: ze hangen de versieringen op. Plural hangen agrees with ze. Vanmiddag means this afternoon and gives future reference in this plan. Compare perfect ze hebben de versieringen opgehangen.",
   "compare": "English \"They will hang up the decorations\" keeps up beside the verb; Dutch splits ophangen: ze hangen ... op.",
   "mistake": {
    "wrong": "Ze ophangen vanmiddag de versieringen.",
@@ -8744,12 +8765,13 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (gaat) second (verb-second order). The other verb parts are not conjugated: the infinitive (vliegen) normally occurs toward the end. Gaan plus an infinitive expresses a plan or something about to happen.",
-  "forms": "Gaan: ze gaat.",
+  "forms": "Gaat agrees with ze meaning she; vliegen stays an infinitive without te after gaan. Volgende zomer identifies next summer and naar Londen gives the destination. Gaan + infinitive can express an intention or a prediction; here it describes a planned flight.",
   "compare": "English \"She is going to fly\" uses going to; Dutch uses gaan plus an infinitive at the end: ze gaat ... vliegen.",
   "mistake": {
    "wrong": "Ze gaat vliegen volgende zomer naar Londen.",
    "right": "Ze gaat volgende zomer naar Londen vliegen.",
-   "why": "The infinitive goes to the end."
+   "why": "The model uses neutral time-and-destination placement before vliegen. A full prepositional phrase can also follow the verb bracket, and spoken afterthoughts can add information. Do not interpret this contrast as a universal ban on words after the infinitive.",
+   "alternative": true
   },
   "practiceFocus": "Modal verbs and final infinitives",
   "practiceGuide": "A modal such as kunnen, moeten, willen, mogen or zullen is the finite verb. The action verb stays an infinitive, normally at the end of the main clause: Ik wil de soep proberen. No te directly after these modals. If the infinitive itself requires te, that separate relationship remains: Ik zal proberen te slapen. English to has no single Dutch translation."
@@ -8823,8 +8845,8 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (schrijven) second (verb-second order).",
-  "forms": "Schrijven: wij schrijven.",
-  "compare": "English \"We write reports every week\" has the same pattern; Dutch puts the time phrase before the object.",
+  "forms": "Schrijven: ik schrijf, wij schrijven; past schreef/schreven; perfect heb geschreven. We takes plural schrijven. Elke week describes the frequency and rapporten is plural of het rapport.",
+  "compare": "The model puts elke week before indefinite rapporten. Other orders can be possible with a different information structure; do not infer that every time phrase must precede every Dutch object.",
   "mistake": {
    "wrong": "We schrijf elke week rapporten.",
    "right": "We schrijven elke week rapporten.",
@@ -8951,12 +8973,12 @@
    }
   ],
   "order": "This is a question. The question word or phrase (Waar) takes the first position, so the finite verb (zijn) comes second and the subject (ze) follows it: question word + finite verb + subject. The other verb parts are not conjugated: the participle (gegaan) normally occurs toward the end.",
-  "forms": "Gaan uses zijn.",
+  "forms": "Gaan uses zijn in the perfect: ze zijn gegaan. Waar ... heen asks about the destination. Plural zijn agrees with ze meaning they. Do not infer that every movement verb always uses zijn; ik heb gefietst describes cycling as an activity.",
   "compare": "English \"Where did they go?\" uses did; Dutch uses the perfect with zijn: waar zijn ze heen gegaan?",
   "mistake": {
    "wrong": "Waar hebben ze heen gegaan?",
    "right": "Waar zijn ze heen gegaan?",
-   "why": "Gaan is a verb of movement, so its perfect uses zijn."
+   "why": "The perfect of gaan uses zijn: waar zijn ze heen gegaan? Learn this verb-specific auxiliary choice rather than assuming every movement activity uses zijn."
   },
   "practiceFocus": "Perfect tense and the verb bracket",
   "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
@@ -8993,8 +9015,8 @@
     "text": "weggaat"
    }
   ],
-  "order": "The main clause uses gaan plus an infinitive. After voordat the verb normally occurs toward the end.",
-  "forms": "Weggaan is one word when the verb is at the end.",
+  "order": "Je gaat je kamer opruimen is the main clause: first je is its subject, gaat is finite, je kamer is its object, and opruimen remains an infinitive. Voordat introduces je weggaat, where finite weggaat closes that subordinate clause.",
+  "forms": "The je before kamer is possessive your; the other two je forms are subjects meaning you. Opruimen stays joined after gaat. In the subordinate clause weggaan stays joined as finite weggaat; compare the main clause je gaat weg.",
   "compare": "English \"before you leave\" keeps the verb in the middle; Dutch sends it to the end: voordat je weggaat.",
   "mistake": {
    "wrong": "... voordat je gaat weg.",
@@ -9021,8 +9043,8 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (leek) second (verb-second order).",
-  "forms": "Lijken: leek.",
-  "compare": "English \"She seemed confused.\" has the same basic pattern; in Dutch the adjective takes no ending after a form of zijn or worden.",
+  "forms": "Lijken has past leek/leken. Singular ze leek means she seemed. Verward is a predicate adjective describing her and takes no agreement -e. Compare de verwarde vrouw, where the adjective modifies a noun.",
+  "compare": "English She seemed confused uses a linking verb plus an adjective. Dutch leek has the same function here; it is a form of lijken, not zijn or worden.",
   "mistake": {
    "wrong": "Ze leek verwarde.",
    "right": "Ze leek verward.",
@@ -9052,7 +9074,7 @@
    }
   ],
   "order": "In a normal main clause the subject (We) comes first and the finite verb (kweken) second (verb-second order).",
-  "forms": "Eigen after a possessive.",
+  "forms": "Kweken: ik kweek, wij kweken; past kweekte/kweekten; perfect heb gekweekt. Onze goes with plural groenten. Eigen follows the possessive and means own; it stays eigen here rather than acquiring an extra -e.",
   "compare": "English \"our own vegetables\" puts own after our; Dutch does the same: onze eigen groenten.",
   "mistake": {
    "wrong": "We kweken eigen onze groenten.",
@@ -9087,7 +9109,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (heb) second (verb-second order). The other verb parts are not conjugated: the participle (verkocht) normally occurs toward the end.",
-  "forms": "Verkopen: verkocht. Oude takes -e before the de-word auto.",
+  "forms": "Verkopen is inseparable: ik verkoop, past verkocht/verkochten, perfect heb verkocht. Its unstressed ver- prevents extra ge-. Mijn oude auto takes oude with -e; auto is a de-word. Vorige maand gives the completed sale a past time; Dutch perfect can be used with it.",
   "compare": "English \"I sold my old car\" is a simple past; Dutch uses the perfect: ik heb ... verkocht.",
   "mistake": {
    "wrong": "Ik heb vorige maand mijn oud auto verkocht.",
@@ -9146,7 +9168,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ze) comes first and the finite verb (kwamen) second (verb-second order).",
-  "forms": "Komen: kwam, kwamen.",
+  "forms": "Komen has past kwam/kwamen and participle gekomen. Plural ze takes kwamen. In te laat, te modifies laat; it is not an infinitive marker. Te laat komen means arrive late.",
   "compare": "English \"They arrived late\" is one verb; Dutch says kwamen te laat (came too late).",
   "mistake": {
    "wrong": "Ze kamen te laat.",
@@ -9181,7 +9203,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (had) second (verb-second order). The other verb parts are not conjugated: the participle (gedaan) normally occurs toward the end.",
-  "forms": "Boodschappen doen means to do the shopping.",
+  "forms": "De boodschappen doen means do the shopping. Had is the finite past auxiliary and gedaan the irregular participle of doen. Al means already. The past perfect places completion before another past reference point.",
   "compare": "English \"I had already done the shopping.\" also uses an auxiliary plus a participle, but keeps the participle next to the auxiliary; Dutch puts the participle (gedaan) in the final verb bracket.",
   "mistake": {
    "wrong": "Ik had gedaan de boodschappen al.",
@@ -9216,7 +9238,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (zal) second (verb-second order). The other verb parts are not conjugated: the infinitive (repareren) normally occurs toward the end.",
-  "forms": "Zullen: ik zal.",
+  "forms": "Zal is finite with ik; repareren stays an infinitive without te. Het is the item repaired, and voor je names the person benefiting. This je is an object after a preposition, not possessive your or the subject.",
   "compare": "English \"I will repair it for you.\" keeps the second verb next to the modal; Dutch sends the infinitive (repareren) to the end of the clause.",
   "mistake": {
    "wrong": "Ik zal repareren het voor je.",
@@ -9275,7 +9297,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Hij) comes first and the finite verb (staat) second (verb-second order).",
-  "forms": "Staan: hij staat.",
+  "forms": "Staan has present hij staat; past stond/stonden; perfect heeft gestaan. Achter de toonbank gives the position and in de bakkerij identifies the bakery. Achter precedes the noun phrase in this location expression; this does not ban all Dutch postpositions.",
   "compare": "English \"He stands behind the counter in the bakery.\" has the same basic order: subject, then verb, then the rest.",
   "mistake": {
    "wrong": "Hij staat de toonbank achter.",
@@ -9306,12 +9328,12 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (begin) second (verb-second order).",
-  "forms": "Beginnen met plus infinitive.",
+  "forms": "Beginnen met werken names the activity started after met. Beginnen te werken is another standard pattern; met is not universally required. Om acht uur gives the clock time; the fixed morning expression means in the morning.",
   "compare": "English \"I start work at eight in the morning.\" has the same basic order: subject, then verb, then the rest.",
   "mistake": {
    "wrong": "Ik begin om acht uur 's ochtends werken.",
    "right": "Ik begin om acht uur 's ochtends met werken.",
-   "why": "Beginnen needs met before the activity that starts."
+   "why": "The displayed bare werken does not fit this standard sentence. Use met werken, or the alternative construction te werken: Ik begin om acht uur te werken. Met is not required in every construction with beginnen."
   },
   "practiceFocus": "Present tense and agreement",
   "practiceGuide": "The finite verb changes with the subject: ik werk, hij werkt, wij werken. In an ordinary statement it follows the subject; a complete time/place phrase can occupy first position instead. Dutch simple present can also describe what is happening now; English often uses an -ing form. Do not put is before an unrelated infinitive."
@@ -9329,12 +9351,12 @@
    }
   ],
   "order": "A fixed expression with no finite verb: an adverb followed by a participle (short for ik heb het graag gedaan).",
-  "forms": "Short for ik heb het graag gedaan.",
+  "forms": "Graag gedaan is a conventional reply to thanks, literally gladly done. Gedaan is the participle of doen. The short formula has no finite verb; a full explanation is ik heb het graag gedaan. Related expressions can perform different conversational roles.",
   "compare": "English \"You're welcome\" is a different phrase; Dutch graag gedaan literally means \"gladly done\".",
   "mistake": {
    "wrong": "Graag gedaan het.",
    "right": "Graag gedaan.",
-   "why": "Graag gedaan is a fixed phrase with nothing added."
+   "why": "Graag gedaan is the conventional short reply. To add an object, form a full clause such as Ik heb het graag gedaan; simply appending het to the short formula does not work."
   },
   "practiceFocus": "Short expressions and their intended meaning",
   "practiceGuide": "Some useful expressions are fragments rather than full subject-plus-verb clauses: Hartelijk dank, Graag gedaan. Do not invent V2 inversion for a phrase with no finite verb. Learn what the expression does in the conversation, and compare related full sentences. A polite formula can have several natural English equivalents."
@@ -9364,7 +9386,7 @@
    }
   ],
   "order": "In a normal main clause the subject (Ik) comes first and the finite verb (maak) second (verb-second order). The other verb parts are not conjugated: the separable particle (op) normally occurs toward the end while the verb itself stays second.",
-  "forms": "Opmaken splits: ik maak ... op.",
+  "forms": "Het bed opmaken means make the bed: ik maak mijn bed op. Opmaken is separable; perfect ik heb mijn bed opgemaakt. Elke ochtend gives the recurring time and follows finite maak in this model, not immediately the subject.",
   "compare": "English \"I make my bed\" has no particle; Dutch opmaken splits: ik maak ... op.",
   "mistake": {
    "wrong": "Ik opmaak elke ochtend mijn bed.",
@@ -9580,7 +9602,7 @@
   "practiceGuide": "Laten we + infinitive means let's do something together. Laten introduces the suggestion; we names the people included, and the action verb remains an infinitive. With two action verbs, both can be infinitives: Laten we koffie gaan drinken. This is a suggestion, not the normal declarative wij laten pattern."
  },
  "work-37": {
-  "meaning": "We met each other yesterday morning. You tell a colleague when you and another person first met.",
+  "meaning": "Reporting that the speaker and another person met yesterday morning; the sentence alone does not say it was their first meeting.",
   "parts": [
    {
     "label": "subject",
@@ -9600,7 +9622,7 @@
    }
   ],
   "order": "We precedes the finite past verb ontmoetten. Elkaar identifies the reciprocal participants; the time phrase is placed after it.",
-  "forms": "Ontmoetten is plural simple past; it has the same spelling as the infinitive but is finite here. Elkaar means each other; it differs from reflexive onszelf.",
+  "forms": "Ontmoeten has present wij ontmoeten, with one t between the vowels, but past wij ontmoetten with double t: stem ontmoet + ten. Singular past is ontmoette and participle ontmoet, without extra ge- after ont-. Elkaar means each other, not reflexive ourselves.",
   "compare": "English can simply say we met, but each other preserves the explicit Dutch reciprocal meaning. Gisterochtend is yesterday morning, not last night.",
   "mistake": {
    "wrong": "We ontmoette elkaar.",
@@ -9728,7 +9750,7 @@
    "why": "Use hebben ... nodig."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "work-42": {
   "meaning": "Give him his report. You ask a colleague to hand a manager the report that belongs to him.",
@@ -9789,7 +9811,7 @@
   "practiceGuide": "The simple past places an action/state in a past situation. Regular verbs use -de/-te in the singular and -den/-ten in the plural; irregular forms must be learned. Compare ik probeerde and wij probeerden. The finite past verb still follows main-clause V2, or comes first in a yes/no question. A past-time expression does not require one particular past tense in every context."
  },
  "work-44": {
-  "meaning": "We bought it for her. You explain that a gift was bought on behalf of a female colleague.",
+  "meaning": "Reporting that the speaker and their group bought an item for a woman. In this gift situation she is the beneficiary; it does not necessarily mean she commissioned the purchase.",
   "parts": [
    {
     "label": "subject",
@@ -10012,7 +10034,7 @@
   ],
   "order": "Leg is second. Uitleggen splits in the main clause, and uit appears after het later.",
   "forms": "Leg is present tense, but later and the promise context give future reference. Het is the object it, not an article before a noun here.",
-  "compare": "English naturally uses I'll explain for this promise. The Dutch present is not a past tense merely because the English uses will.",
+  "compare": "English naturally uses I will explain for this promise. Dutch uses present leg with future time later; neither the English will nor the Dutch present makes it a past event.",
   "mistake": {
    "wrong": "Ik uitleg het later.",
    "right": "Ik leg het later uit.",
@@ -10096,7 +10118,7 @@
    }
   ],
   "order": "Kunt starts the yes/no request; u follows. Afhandelen remains one final infinitive after the modal.",
-  "forms": "Afhandelen means deal with and bring to completion, especially a request or case. Kunt u is neutral polite written Dutch; kan u is also used in Belgian speech.",
+  "forms": "Afhandelen means deal with and bring to completion, especially a request or case. Kunt u and kan u are both standard with polite u; kan u is particularly common in Belgium. Afhandelen stays joined as an infinitive after the modal.",
   "compare": "Take care of this expresses the practical request. Could is politeness in English here, not a literal Dutch past conditional.",
   "mistake": {
    "wrong": "Kunt u dit af handelt?",
@@ -10224,7 +10246,7 @@
    "why": "Include the finite verb heeft."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "work-58": {
   "meaning": "I'm selling my old laptop. You show a colleague the old laptop you are offering for sale.",
@@ -10555,7 +10577,7 @@
   ],
   "order": "Moet starts the yes/no question. Vertellen is the final infinitive; the pronouns and time phrase fit between them.",
   "forms": "Moeten expresses necessity, not permission. The accent on vóór emphasizes before rather than for. Dat is the object that, not a subordinator introducing a clause.",
-  "compare": "Do you have to ... is natural English for a necessity question. Restore that, omitted by the video English; do not replace must with may.",
+  "compare": "English Do you have to tell me that before the meeting? keeps that for object dat. Do you have to asks about necessity; May you would instead ask about permission.",
   "mistake": {
    "wrong": "Moet je me dat vertelt?",
    "right": "Moet je me dat vertellen?",
@@ -10597,7 +10619,7 @@
    "why": "Use quantitative er when referring to one of the mentioned forms; daar would introduce a location."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "work-70": {
   "meaning": "Intervene. A discussion is turning into a quarrel, and you ask the team leader to intervene.",
@@ -10702,7 +10724,8 @@
   "mistake": {
    "wrong": "Ze is weg.",
    "right": "Ze zijn weg.",
-   "why": "Use zijn when ze refers to multiple visitors."
+   "why": "Ze is weg is grammatical for one woman, meaning she is gone. The intended subject here is several visitors, so plural ze requires zijn.",
+   "alternative": true
   },
   "practiceFocus": "Zijn/worden and descriptions",
   "practiceGuide": "Zijn describes a state; worden describes becoming/changing: het is koud versus het wordt koud. Use one finite verb for the main clause, not is wordt. The predicate adjective normally stays uninflected: het huis is mooi. A noun complement keeps its own article/possessive, and the finite verb agrees with its subject (de kamers zijn)."
@@ -10764,7 +10787,7 @@
   ],
   "order": "Hebben is second and aangeboden closes the perfect bracket. The recipient haar comes before the full object noun phrase onze diensten.",
   "forms": "Aanbieden has participle aangeboden, with ge between aan and boden. Onze agrees with plural diensten. Wij can emphasize our team.",
-  "compare": "English offered her our services has the same recipient/full-object sequence here. The original ze did not identify what was offered.",
+  "compare": "English offered her our services has the same recipient-before-full-object sequence as Dutch haar onze diensten. The object onze diensten explicitly identifies what was offered.",
   "mistake": {
    "wrong": "Wij hebben haar ons diensten aangeboden.",
    "right": "Wij hebben haar onze diensten aangeboden.",
@@ -11387,7 +11410,7 @@
    "why": "Singular het product takes heeft."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "work-96": {
   "meaning": "I'll take care of it. A colleague needs a meeting room booked, and you volunteer to arrange it.",
@@ -11782,7 +11805,7 @@
    "why": "Nodig is an adjective in this construction, not an infinitive."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "work-109": {
   "meaning": "They're talking about the price. Two colleagues compare the quoted cost of a piece of equipment while looking at it together.",
@@ -11806,7 +11829,8 @@
   "mistake": {
    "wrong": "Ze praat over de prijs.",
    "right": "Ze praten over de prijs.",
-   "why": "For they, the finite verb must be plural."
+   "why": "Ze praat is grammatical for she talks. In this situation ze refers to two colleagues, so use plural praten for they are talking.",
+   "alternative": true
   },
   "practiceFocus": "Present tense and agreement",
   "practiceGuide": "The finite verb changes with the subject: ik werk, hij werkt, wij werken. In an ordinary statement it follows the subject; a complete time/place phrase can occupy first position instead. Dutch simple present can also describe what is happening now; English often uses an -ing form. Do not put is before an unrelated infinitive."
@@ -12219,7 +12243,7 @@
    "why": "Use possessive hun before the noun input."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "work-124": {
   "meaning": "I'm waiting for a phone call. You keep your mobile nearby while waiting for a customer to call you back.",
@@ -12738,7 +12762,7 @@
   ],
   "order": "The whole phrase Zijn tijd is the subject; is is second and gekomen closes the perfect bracket.",
   "forms": "Zijn is possessive before tijd, not an infinitive. In this personal scenario it means his. Komen uses zijn in the perfect: is gekomen. The expression signals that a person’s opportunity has arrived; other contexts can give it a more ominous meaning.",
-  "compare": "English has come uses have; Dutch is gekomen uses zijn. Source its is possible for an inanimate antecedent, but his matches this explicit person scenario.",
+  "compare": "English His time has come uses have as the perfect auxiliary, while Dutch uses zijn: zijn tijd is gekomen. Possessive zijn refers to the man in this opportunity scenario.",
   "mistake": {
    "wrong": "Zijn tijd heeft gekomen.",
    "right": "Zijn tijd is gekomen.",
@@ -12957,7 +12981,7 @@
   "practiceGuide": "A question word or complete question phrase comes first, then the finite verb and usually the subject: Hoe laat komt de trein? Hoe laat is ONE constituent despite being two words. Subject questions are different: Wie komt? already has wie as its subject. Other infinitives/participles usually close the clause's verb bracket."
  },
  "work-149": {
-  "meaning": "We're late. You and a colleague arrive as the scheduled meeting is already starting.",
+  "meaning": "Reporting that the speaker and their group arrive after the meeting has begun and are late.",
   "parts": [
    {
     "label": "subject",
@@ -13578,8 +13602,8 @@
   "mistake": {
    "wrong": "Wat is goeder: repareren of vervangen?",
    "right": "Wat is beter: repareren of vervangen?",
-   "why": "This statement order can be used as an echo or confirmation question, with questioning intonation. For an ordinary neutral yes/no question, put the finite verb before the subject, as in the model.",
-   "alternative": true
+   "why": "The comparative of goed is beter, not goeder. The problem here is the comparative form, not statement-order confirmation questions.",
+   "alternative": false
   },
   "practiceFocus": "Question-word phrases and inversion",
   "practiceGuide": "A question word or complete question phrase comes first, then the finite verb and usually the subject: Hoe laat komt de trein? Hoe laat is ONE constituent despite being two words. Subject questions are different: Wie komt? already has wie as its subject. Other infinitives/participles usually close the clause's verb bracket."
@@ -14253,7 +14277,7 @@
   "mistake": {
    "wrong": "Dit zijn mijn verantwoordelijkheid.",
    "right": "Dit is mijn verantwoordelijkheid.",
-   "why": "Independent singular dit takes is."
+   "why": "The singular complement mijn verantwoordelijkheid takes is in this identification. Dit can also introduce a plural identification, such as Dit zijn onze taken; dit does not always require is."
   },
   "practiceFocus": "Zijn/worden and descriptions",
   "practiceGuide": "Zijn describes a state; worden describes becoming/changing: het is koud versus het wordt koud. Use one finite verb for the main clause, not is wordt. The predicate adjective normally stays uninflected: het huis is mooi. A noun complement keeps its own article/possessive, and the finite verb agrees with its subject (de kamers zijn)."
@@ -15407,7 +15431,7 @@
   ],
   "order": "In a main clause the finite verb is in second position, after one first constituent. The other verb normally occurs toward the end. De klant is first and heeft second; the object precedes final goedgekeurd.",
   "forms": "Goedkeuren is separable: keurt goed; its participle is goedgekeurd. Ontwerp is a het-word, but after definite het the adjective receives -e: definitieve. The perfect presents completed approval.",
-  "compare": "English has approved and Dutch heeft goedgekeurd both describe completed acceptance. Removing the unexplained possessive avoids guessing whose design it was.",
+  "compare": "English has approved and Dutch heeft goedgekeurd both describe completed acceptance of the final design.",
   "mistake": {
    "wrong": "De klant heeft het definitieve ontwerp gegoedkeurd.",
    "right": "De klant heeft het definitieve ontwerp goedgekeurd.",
@@ -15937,7 +15961,7 @@
   ],
   "order": "An instruction starts with the verb. Breng starts the instruction; the object precedes the destination naar het laboratorium.",
   "forms": "Brengen has stem breng and irregular participle gebracht. Monsters means test samples here, not mythical creatures. Laboratorium is a het-word. Naar marks the destination.",
-  "compare": "English take the samples to and Dutch breng de monsters naar specify transport to a destination, avoiding the unexplained to yourself in the source.",
+  "compare": "English take the samples to and Dutch breng de monsters naar describe transporting the samples to the laboratory. Naar names the destination.",
   "mistake": {
    "wrong": "Breng de monsters naar de laboratorium.",
    "right": "Breng de monsters naar het laboratorium.",
@@ -16843,7 +16867,7 @@
   ],
   "order": "In a main clause the finite verb is in second position, after one first constituent. The other verb normally occurs toward the end. Ik is first and ben second. The intended activity follows van plan and ends with te blijven wonen.",
   "forms": "Van plan zijn takes a te-infinitive, optionally introduced by om. Blijven wonen expresses continued residence; wonen follows blijven without another te. België uses a diaeresis. This is intention, not seeking an opportunity.",
-  "compare": "English planning to continue living preserves van plan and blijven; source looking to stay could obscure the intention.",
+  "compare": "English planning to continue living preserves both the intention in van plan and the continuation in blijven.",
   "mistake": {
    "wrong": "Ik ben van plan in België te blijven te wonen.",
    "right": "Ik ben van plan in België te blijven wonen.",
@@ -17033,7 +17057,7 @@
   ],
   "order": "In a main clause the finite verb is in second position, after one first constituent. Ik is first and ben second; bang takes its fear object with voor.",
   "forms": "Bang voor is a fixed adjective-preposition combination. Bang is predicative without -e. Abstract mislukking can refer to failure generally without an article. A particular failed attempt would be een mislukking.",
-  "compare": "English afraid of uses of; Dutch bang voor uses voor, not van.",
+  "compare": "English afraid of corresponds to bang voor in this model. Bang van is also accepted, especially in Belgian Dutch; do not treat van as universally incorrect.",
   "mistake": {
    "wrong": "Ik zijn bang voor mislukking.",
    "right": "Ik ben bang voor mislukking.",
@@ -17054,7 +17078,7 @@
     "text": "is"
    },
    {
-    "label": "predicate adjective",
+    "label": "noun complement",
     "text": "mijn grootste uitdaging"
    },
    {
@@ -17486,7 +17510,8 @@
   "mistake": {
    "wrong": "Ze was niet in de kamer.",
    "right": "Ze waren niet in de kamer.",
-   "why": "They requires plural waren."
+   "why": "Ze was is grammatical for she was. This scenario concerns two colleagues, so use plural waren for they were.",
+   "alternative": true
   },
   "practiceFocus": "Niet and geen with the right scope",
   "practiceGuide": "Geen negates an indefinite noun: geen tijd, geen koffie. Niet can negate a predicate, action or more specific constituent: niet moe, de vraag niet begrijpen. Its location depends on what is negated, not on an absolute rule 'always at the end'. With a second verb the final verb bracket stays after niet. Dutch niet hoeven te means not having to; niet mogen means not being allowed to."
@@ -17592,7 +17617,7 @@
     "text": "is"
    },
    {
-    "label": "predicate adjective",
+    "label": "noun complement",
     "text": "tijd"
    },
    {
@@ -17658,7 +17683,7 @@
     "text": "hier"
    },
    {
-    "label": "om te phrase",
+    "label": "purpose preposition phrase",
     "text": "voor de rondleiding"
    }
   ],
@@ -17668,7 +17693,8 @@
   "mistake": {
    "wrong": "Ze is hier voor de rondleiding.",
    "right": "Ze zijn hier voor de rondleiding.",
-   "why": "They requires zijn."
+   "why": "Ze is is grammatical for she is. This scenario concerns several visitors, so use plural zijn for they are.",
+   "alternative": true
   },
   "practiceFocus": "Zijn/worden and descriptions",
   "practiceGuide": "Zijn describes a state; worden describes becoming/changing: het is koud versus het wordt koud. Use one finite verb for the main clause, not is wordt. The predicate adjective normally stays uninflected: het huis is mooi. A noun complement keeps its own article/possessive, and the finite verb agrees with its subject (de kamers zijn)."
@@ -17801,11 +17827,11 @@
     "text": "is"
    },
    {
-    "label": "predicate adjective",
+    "label": "noun complement",
     "text": "genoeg verf"
    },
    {
-    "label": "om te phrase",
+    "label": "purpose preposition phrase",
     "text": "voor deze muur"
    }
   ],
@@ -18005,7 +18031,8 @@
   "mistake": {
    "wrong": "Zij hebben de verf voor ons gekocht.",
    "right": "Zij heeft de verf voor ons gekocht.",
-   "why": "She requires singular heeft; hebben would mean they."
+   "why": "Zij hebben is grammatical for they have. This scenario concerns one woman, so use singular heeft for she has.",
+   "alternative": true
   },
   "practiceFocus": "Perfect tense and the verb bracket",
   "practiceGuide": "Use a finite auxiliary (heb/heeft/hebben or ben/is/zijn) and a past participle. The auxiliary occupies the main clause's finite-verb position; the participle usually closes its verb bracket. Unstressed object pronouns normally occur early: Ik heb het gisteren gedaan. Auxiliary choice depends on the verb and meaning: an activity such as cycling uses hebben, directed movement can use zijn. Perfect and simple past overlap; neither is selected only by 'today' versus 'yesterday'."
@@ -18070,7 +18097,7 @@
    "why": "Nodig is not an infinitive."
   },
   "practiceFocus": "Nodig hebben: needing a thing",
-  "practiceGuide": "In iets nodig hebben, hebben is the finite verb and nodig is a predicative word, not a participle. Ik heb een pen nodig is present, not perfect just because it contains heb. Contrast ik had een pen nodig (past) and ik zal een pen nodig hebben (future/modal). Geen negates an indefinite needed item: ik heb geen pen nodig."
+  "practiceGuide": "In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig."
  },
  "work-318": {
   "meaning": "Will you be free next week to move house? You ask a friend whether their schedule allows them to move house next week, beside packed boxes.",
@@ -18251,7 +18278,7 @@
     "text": "dat"
    },
    {
-    "label": "predicate adjective",
+    "label": "noun complement",
     "text": "je definitieve antwoord op de uitnodiging"
    }
   ],
@@ -18321,8 +18348,8 @@
    "right": "Het onderhoud van deze machine is belangrijk.",
    "why": "Predicate belangrijk has no -e."
   },
-  "practiceFocus": "An infinitive used to name an activity",
-  "practiceGuide": "An infinitive can name an activity and function like a noun: het lezen, het schoonmaken. A whole activity phrase can be the subject: De hond uitlaten is mijn taak. Its finite verb still follows that entire first constituent. Infinitives used as nouns normally take het; de was is a separate noun meaning laundry. Do not confuse the activity noun with a conjugated verb."
+  "practiceFocus": "Activity nouns and infinitives as subjects",
+  "practiceGuide": "Onderhoud is an ordinary noun meaning maintenance, not the infinitive onderhouden. The full noun phrase het onderhoud van deze machine is the singular subject of is. The related examples practise the closely related construction with an infinitive naming an activity, such as Het schoonmaken van de keuken kost tijd. Both constructions can name an activity as the subject, but their word forms differ."
  },
  "work-326": {
   "meaning": "I'll call the dentist back after work. You check a missed call from the dental practice while leaving work and plan to return it afterward.",
@@ -18360,7 +18387,7 @@
   "practiceGuide": "In a main clause a separable verb's finite part and particle separate: ik ruim ... op. With a modal, the infinitive stays together: ik moet opruimen. A participle normally puts ge between prefix and stem (opgeruimd), but stems beginning with unstressed be-/ver-/ont-/her- may not add ge. With te, split around te: op te ruimen. Learn the whole expression and its meaning."
  },
  "work-327": {
-  "meaning": "We have found a solution to the storage problem. A team shows newly fitted shelves that solve the shortage of storage space in their room.",
+  "meaning": "We have found a solution to the storage problem. Your group has identified a solution after investigating a shortage of storage space; the sentence does not by itself say that it has already been implemented.",
   "parts": [
    {
     "label": "subject",

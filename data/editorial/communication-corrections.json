@@ -1,4 +1,43 @@
 {
+  "We hebben onze manager nodig om dit conflict op te lossen.": {
+    "scenario": "Your group cannot resolve a conflict without the manager's involvement. Explain that you need your manager to help bring about a resolution.",
+    "explanation": "We takes plural hebben. Onze manager is the person needed, and nodig completes iets nodig hebben. Manager is a de-word, so use onze. Om dit conflict op te lossen gives the purpose of needing the manager: resolving the conflict. It does not specify that the manager must do every part alone. Oplossen is separable, with te between op and lossen; conflict is a het-word, so use dit.",
+    "answers": []
+  },
+  "We hebben een oplossing voor het opslagprobleem gevonden.": {
+    "scenario": "After investigating a storage problem, your group has identified a solution. Announce that you have found a solution, without claiming that it has already been implemented.",
+    "answers": []
+  },
+  "Ik ben daar niet zeker van.": {
+    "answers": [
+      {
+        "id": "review-20261024c-1",
+        "text": "Dat weet ik niet zeker.",
+        "english": "I'm not sure about that.",
+        "explanation": "Dat refers to the claim and is fronted as the object. Finite weet comes next, before subject ik. Niet zeker weten expresses uncertainty about that claim. The original uses zeker zijn van with split daar ... van; both withhold certainty without saying the claim is false."
+      }
+    ]
+  },
+  "Ze oefenen geduld.": {
+    "answers": [
+      {
+        "id": "review-20261024c-1",
+        "text": "Ze zijn geduldig.",
+        "english": "They are being patient.",
+        "explanation": "Zijn agrees with plural ze; geduldig is a predicate adjective without an agreement ending. In this situation the people are waiting patiently now, so zijn geduldig describes the same behaviour as the idiom geduld oefenen. It does not say they are practising a separate training exercise."
+      }
+    ]
+  },
+  "We zitten boven ons budget.": {
+    "answers": [
+      {
+        "id": "review-20261024c-1",
+        "text": "We hebben ons budget overschreden.",
+        "english": "We have exceeded our budget.",
+        "explanation": "The scenario explicitly says the group has spent beyond its budget. Hebben ... overschreden reports passing that limit; zitten boven ons budget describes the resulting financial position. Budget is a singular het-word, so use ons. Overschrijden is inseparable in this sense; its participle is overschreden."
+      }
+    ]
+  },
   "Mag ik even iets vragen?": {
     "english": "May I ask a quick question?",
     "answers": []
@@ -82,7 +121,14 @@
   "We overwegen alle opties.": {
     "scenario": "Your group has not chosen a solution yet. Speaking for the group, explain that you are considering every option.",
     "explanation": "We takes plural overwegen, which is also the infinitive form in isolation. Overwegen meaning consider is inseparable: not wegen ... over. Alle opties means all options; with a possessive use al onze opties. Do not add zijn before finite overwegen.",
-    "answers": []
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "We denken na over alle opties.",
+        "english": "We are considering all the options.",
+        "explanation": "Nadenken over means thinking carefully about something. Finite nadenken splits: we denken ... na; over alle opties names the topic and can follow na. Inseparable overwegen expresses the same consideration without splitting over from wegen. Neither says a decision has been made."
+      }
+    ]
   },
   "Dit formulier is snel in te vullen.": {
     "scenario": "This form takes very little time to complete. Tell someone that filling it in can be done quickly.",
@@ -98,7 +144,7 @@
   },
   "Ik ben op de bank gaan zitten.": {
     "scenario": "You have just taken a seat on the sofa. Describe the action of sitting down, rather than only your current seated position.",
-    "explanation": "Gaan zitten means taking a seat. The perfect uses zijn and the double infinitive gaan zitten: ben ... gaan zitten, not ben ... gegaan zitten. Ik zit describes being seated now; ik heb gezeten describes a past seated state.",
+    "explanation": "Ben is the perfect auxiliary for this change into sitting. Gaan is a replacement infinitive before zitten, rather than participle gegaan. Op de bank identifies the sofa. The sentence reports taking a seat, not just being seated.",
     "answers": [
       {
         "id": "review-20261024-1",
@@ -146,13 +192,1890 @@
   },
   "Verkoop je oude auto aan hem.": {
     "scenario": "A man wants to buy your friend's old car. Tell your friend directly to sell their old car to him, addressing the friend as you and referring to the buyer as him.",
-    "explanation": "Verkoop is the imperative of inseparable verkopen. The item is the object. Aan introduces the buyer; it is not naar, which would express a destination. In je oude auto, je is possessive your, while in Verkoop je de oude auto? je would be the subject of a question.",
+    "explanation": "Verkoop is the imperative stem of inseparable verkopen; the listener is the understood subject. Je means your before oude auto, and aan hem identifies the buyer. Hem can instead occur as an indirect object: Verkoop hem je oude auto. These keep the same seller, owner and buyer.",
     "answers": [
       {
         "id": "review-20261024-1",
         "text": "Verkoop hem je oude auto.",
         "english": "Sell him your old car.",
         "explanation": "The recipient is an indirect object without aan, before the item being sold. This keeps the instruction, owner, buyer and item unchanged."
+      }
+    ]
+  },
+  "Ik zal de agenda voorbereiden.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "Ik bereid de agenda voor.",
+        "english": "I'll prepare the agenda.",
+        "explanation": "In this offer, the present expresses the next action you commit to. Bereid is finite for ik; separable voorbereiden splits as bereid ... voor. After zal, voorbereiden stays together as an infinitive. Both offer to prepare the same meeting agenda."
+      }
+    ]
+  },
+  "We bespraken veel dingen.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "We hebben veel dingen besproken.",
+        "english": "We discussed many things.",
+        "explanation": "Hebben ... besproken is the perfect and reports the same completed discussion. Bespraken is plural simple past; besproken is the participle after finite hebben. Bespreken takes a direct object, so veel dingen needs no over."
+      }
+    ]
+  },
+  "Ik heb mijn training voltooid.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "Ik ben klaar met mijn training.",
+        "english": "I have finished my training.",
+        "explanation": "Klaar zijn met iets means being finished with it. Ben agrees with ik; met introduces the completed activity. The context says the training is completed. Contrast klaar voor mijn training, which means ready to begin it."
+      }
+    ]
+  },
+  "Zij legde de route uit.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "Zij heeft de route uitgelegd.",
+        "english": "She explained the route.",
+        "explanation": "The perfect uses heeft ... uitgelegd. The particle joins the participle: uit + ge + legd. Legde ... uit is simple past. Both report the same woman's earlier explanation of the route."
+      }
+    ]
+  },
+  "We hebben het voor haar gekocht.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "We kochten het voor haar.",
+        "english": "We bought it for her.",
+        "explanation": "Kochten is plural simple past of kopen and agrees with we. Het remains the purchased item and voor haar the beneficiary. Hebben ... gekocht and this simple past can both report the completed purchase."
+      }
+    ]
+  },
+  "Ik ben aan het bellen.": {
+    "answers": [
+      {
+        "id": "review-20261024b-1",
+        "text": "Ik bel nu.",
+        "english": "I'm making a phone call now.",
+        "explanation": "Bel is finite present for ik. Dutch present can describe an action happening now; nu makes that timing explicit. Ben aan het bellen foregrounds the ongoing activity. Both describe the same current call."
+      }
+    ]
+  },
+  "Ik werk vandaag thuis.": {
+    "answers": [],
+    "explanation": "Ik takes present werk. Vandaag means today and thuis means at home; the Dutch present can describe today’s ongoing work without an extra ben. With vandaag first, use Vandaag werk ik thuis."
+  },
+  "Mijn broer woont in Gent.": {
+    "answers": [],
+    "explanation": "The whole subject is mijn broer, singular, so wonen becomes woont. Mijn is possessive my. In Gent names his place of residence; Gent is Ghent in English."
+  },
+  "Wij leren elke dag Nederlands.": {
+    "answers": [],
+    "explanation": "Wij is plural and takes leren. Elke dag means every day, so this describes a routine. Nederlands names the language and has no article in this expression."
+  },
+  "Ik controleer de bestelling.": {
+    "answers": [],
+    "explanation": "Controleer is the finite present for ik; do not add ben before it. Controleren means check here, rather than take control of. De bestelling is the order being checked."
+  },
+  "De les begint om negen uur.": {
+    "answers": [],
+    "explanation": "De les is singular, so beginnen becomes begint. Om negen uur gives the starting time: at nine o’clock. Beginnen is inseparable; the initial be- does not split off."
+  },
+  "Mijn collega schreef gisteren een verslag.": {
+    "answers": [],
+    "explanation": "Schreef is the irregular singular simple past of schrijven; plural is schreven and the participle is geschreven. Mijn collega is singular. Gisteren gives yesterday, and een verslag is the report written."
+  },
+  "Ik zocht gisteren mijn sleutels.": {
+    "answers": [],
+    "explanation": "Zocht is singular simple past of zoeken; plural is zochten and perfect is heb gezocht. Zoeken takes the thing sought directly: mijn sleutels, without a word corresponding to English for. Searching does not assert that the keys were found."
+  },
+  "Hij betaalde met zijn kaart.": {
+    "answers": [],
+    "explanation": "Betaalde is singular simple past of betalen, with -de. Met introduces the payment method. Zijn before kaart means his, not the verb be. This says he used his card, without specifying debit versus credit."
+  },
+  "De kinderen spelen in de tuin.": {
+    "answers": [],
+    "explanation": "De kinderen is a plural subject, so use spelen. In de tuin gives the location. The Dutch present can describe what is happening now: English are playing needs no extra zijn in this model."
+  },
+  "Ik begrijp deze uitleg.": {
+    "answers": [],
+    "explanation": "Begrijp is first-person present of begrijpen, meaning understand. Uitleg is a de-word, so deze means this before it. This describes understanding the explanation, rather than merely hearing it."
+  },
+  "Wij probeerden een nieuw restaurant.": {
+    "answers": [],
+    "explanation": "Wij takes plural past probeerden; singular would be probeerde. Restaurant is a het-word, so the adjective after indefinite een is nieuw. Trying a restaurant here means eating there to experience it, not attempting to build one."
+  },
+  "Hij werkte gisteren thuis.": {
+    "answers": [],
+    "explanation": "Werken has stem werk ending in k, so singular simple past adds -te: werkte. Hij is singular; gisteren means yesterday and thuis means at home. Gisteren does not universally require simple past; Hij heeft gisteren thuis gewerkt is also possible."
+  },
+  "Zij belde haar moeder.": {
+    "answers": [],
+    "explanation": "Belde is singular simple past of bellen. Zij refers to the woman, and haar moeder is the person she called. Bellen takes this person as a direct object, without a preposition."
+  },
+  "Wij woonden vroeger in Gent.": {
+    "answers": [],
+    "explanation": "Wonen has stem woon; plural simple past is woon + den = woonden. Wij names the household as a group. Vroeger means in the past or formerly, so the natural English meaning here is used to live."
+  },
+  "Ik danste met mijn vrouw.": {
+    "answers": [],
+    "explanation": "Dansen has stem dans ending in s, so simple past is danste and the participle is gedanst. Met mijn vrouw identifies the dance partner. Ik is singular; the plural past would be dansten."
+  },
+  "De vergadering eindigde om vijf uur.": {
+    "answers": [],
+    "explanation": "De vergadering is singular, so use eindigde; plural meetings would eindigden. Om vijf uur gives the ending time. Eindigen has stem eindig and takes -de in the singular past."
+  },
+  "Mijn collega controleerde de voorraad.": {
+    "answers": [],
+    "explanation": "Mijn collega is one person, so the regular simple past is controleerde. De voorraad means the stock or inventory checked. The present first-person form is controleer; the perfect participle is gecontroleerd."
+  },
+  "Ik las gisteren een boek.": {
+    "answers": [],
+    "explanation": "Las is singular simple past of lezen; plural is lazen and the participle is gelezen. Gisteren means yesterday. Een boek is what was read; the sentence does not explicitly say every page was finished."
+  },
+  "Zij kocht een nieuwe jas.": {
+    "answers": [],
+    "explanation": "Kocht is singular simple past of kopen; plural is kochten and the participle is gekocht. Zij means she here. Jas is a de-word, so use een nieuwe jas, with an adjective ending in -e even after een."
+  },
+  "We maakten plannen voor het weekend.": {
+    "answers": [],
+    "explanation": "Maken has stem maak ending in k, so plural simple past is maakten with -ten. Plannen is a plural noun here, not the verb plannen. Voor het weekend gives the time the plans concern."
+  },
+  "Ik heb een nieuw recept geprobeerd.": {
+    "answers": [],
+    "explanation": "Heb is finite and agrees with ik; geprobeerd is the regular participle of proberen. Recept is a het-word, so after een use nieuw without -e. The recipe was tried; this does not guarantee a successful result."
+  },
+  "Wij hebben de soep geproefd.": {
+    "answers": [],
+    "explanation": "Wij takes plural hebben; geproefd is the participle of proeven. The stem proef ends in f, but proeven has v before -en, so the participle ends in -d. De soep is what was tasted, without claiming it was cooked or completely eaten."
+  },
+  "Hij heeft de bestelling gecontroleerd.": {
+    "answers": [],
+    "explanation": "Hij takes singular heeft; gecontroleerd is the participle of controleren. De bestelling is the object checked, placed before the participle. This reports the completed check without claiming the order contained no errors."
+  },
+  "Ik heb mijn kamer opgeruimd.": {
+    "answers": [],
+    "explanation": "Opruimen means tidy up, such as putting possessions away. Its participle is op + ge + ruim + d = opgeruimd. Heb agrees with ik; mijn kamer is the room tidied. Tidying does not necessarily mean removing dirt."
+  },
+  "Zij heeft de ramen schoongemaakt.": {
+    "answers": [],
+    "explanation": "Schoonmaken means clean away dirt. Its participle is schoon + ge + maak + t = schoongemaakt. Zij takes singular heeft here. De ramen is plural windows and comes before the participle."
+  },
+  "Wij hebben twee uur gefietst.": {
+    "answers": [],
+    "explanation": "This describes cycling as an activity, so its perfect uses hebben. Twee uur measures its duration and needs no voor in this expression. A destination changes the construction: Wij zijn naar huis gefietst describes cycling home."
+  },
+  "Ik ben naar huis gefietst.": {
+    "answers": [],
+    "explanation": "The destination naar huis makes this directed movement, so the perfect uses zijn: ik ben gefietst. Compare ik heb twee uur gefietst for a cycling activity measured by duration. Naar huis means homeward; thuis instead means at home."
+  },
+  "Hij is vroeg vertrokken.": {
+    "answers": [],
+    "explanation": "Vertrekken uses zijn for departure: hij is vertrokken. Vroeg means early. The irregular simple past is vertrok (singular), vertrokken (plural); the participle is also vertrokken."
+  },
+  "Zij heeft haar moeder gebeld.": {
+    "answers": [],
+    "explanation": "Zij is singular she here and takes heeft. Gebeld is the regular participle of bellen. Haar moeder is her mother, the direct object identifying the person called; it is not the subject."
+  },
+  "We hebben over het probleem gesproken.": {
+    "answers": [],
+    "explanation": "We takes plural hebben; gesproken is the irregular participle of spreken. Over het probleem names the topic. This full prepositional phrase may also follow gesproken, as in the alternate model."
+  },
+  "Ik heb het gisteren afgemaakt.": {
+    "answers": [],
+    "explanation": "Afmaken forms participle afgemaakt, with ge between af and maak. Heb agrees with ik. Unstressed object het occurs early, before gisteren and afgemaakt; it refers to the task already mentioned."
+  },
+  "De trein is op tijd aangekomen.": {
+    "answers": [],
+    "explanation": "Aankomen uses zijn in this arrival sense. Aangekomen contains the separable particle aan before ge + komen. De trein is singular, so use is. Op tijd means on time, not merely early."
+  },
+  "Ik had de soep al gemaakt.": {
+    "answers": [],
+    "explanation": "Had is the past form of auxiliary hebben for ik. With gemaakt it forms the past perfect: the soup was made before the later arrival. Al means already and comes before the participle."
+  },
+  "Wij hadden het rapport al gelezen.": {
+    "answers": [],
+    "explanation": "Wij takes plural hadden. Gelezen is the irregular participle of lezen. Hadden ... gelezen places the reading before the recalled meeting; al means already. Het rapport is the item read."
+  },
+  "Zij had de brief al geschreven.": {
+    "answers": [],
+    "explanation": "Zij means she in this situation, so use singular had. Geschreven is the participle of schrijven. Al marks that the letter had already been written before the later request."
+  },
+  "Ik had mijn huiswerk al gemaakt.": {
+    "answers": [],
+    "explanation": "Had ... gemaakt is past perfect: completion precedes the recalled request. Huiswerk maken means do homework, not manufacture it. Mijn is possessive my; al means already."
+  },
+  "Hij was al naar huis gegaan.": {
+    "answers": [],
+    "explanation": "Gaan uses zijn for this movement, so its past perfect is was ... gegaan, not had gegaan. Hij is singular. Al naar huis gegaan means he had already gone home before the speaker arrived."
+  },
+  "We waren vroeg vertrokken.": {
+    "answers": [],
+    "explanation": "We takes plural waren, the past form of zijn. Vertrekken uses zijn for departure, so waren vertrokken is past perfect. Vroeg means early and the departure precedes the later past moment in the story."
+  },
+  "Ik had de deur al op slot gedaan.": {
+    "answers": [],
+    "explanation": "De deur op slot doen means lock the door. Doen has participle gedaan and uses hebben here; had ... gedaan places the locking before the reminder. Op slot remains a separate phrase rather than joining gedaan."
+  },
+  "Zij had het nieuws al gehoord.": {
+    "answers": [],
+    "explanation": "Zij refers to one woman and takes had. Gehoord is the participle of horen; had ... gehoord places hearing before the later conversation. Het nieuws means the news and is not a plural noun here."
+  },
+  "Wij hadden de rekening al betaald.": {
+    "answers": [],
+    "explanation": "Wij takes plural hadden. Betalen forms betaald without extra ge- because of unstressed be-. Hadden ... betaald places paying before the waiter’s later request; al means already."
+  },
+  "Ik had de kamer opgeruimd voordat zij kwam.": {
+    "answers": [],
+    "explanation": "Had ... opgeruimd describes tidying completed before her arrival. Opruimen forms participle opgeruimd. Voordat introduces its own subordinate clause: zij is its subject and kwam, singular past of komen, closes that clause."
+  },
+  "De trein was al vertrokken toen ik aankwam.": {
+    "answers": [],
+    "explanation": "The train’s departure uses past perfect was ... vertrokken because vertrekken takes zijn. Toen introduces the later past event, with its own subject ik and final finite verb aankwam. Aankomen stays joined in that subordinate clause; a main clause would say ik kwam aan."
+  },
+  "Hij had het probleem al opgelost.": {
+    "answers": [],
+    "explanation": "Had ... opgelost places solving before the later discussion. Oplossen forms participle op + ge + los + t. Hij is the person who solved it, and het probleem is the object. Al means already."
+  },
+  "Ik wil de soep proberen.": {
+    "answers": [],
+    "explanation": "Wil is finite for ik; proberen remains an infinitive without te directly after wil. De soep is its object. This means trying the soup itself. Compare Ik wil proberen de soep te maken, where proberen introduces a separate te-infinitive."
+  },
+  "Wij moeten de deur sluiten.": {
+    "answers": [],
+    "explanation": "Wij takes plural moeten; sluiten remains an infinitive after that modal. De deur is the direct object. Moeten expresses the group’s obligation to close it, rather than merely its ability."
+  },
+  "Hij kan morgen niet komen.": {
+    "answers": [],
+    "explanation": "Kan is singular present of kunnen, and komen remains an infinitive. Morgen supplies tomorrow; niet negates his ability to come. The Dutch present modal can refer to tomorrow without an extra zal."
+  },
+  "Ik zal proberen te slapen.": {
+    "answers": [],
+    "explanation": "Zal is finite for ik and takes infinitive proberen without te. Proberen itself requires te before slapen. This preserves both relationships: zal proberen, proberen te slapen. The promise concerns trying; it does not guarantee sleep."
+  },
+  "We zullen proberen het lek te repareren.": {
+    "answers": [],
+    "explanation": "We takes plural zullen. Proberen remains an infinitive after zullen, but introduces its own te-infinitive repareren. Het lek is the object of repareren and comes before te repareren. The group commits to trying rather than guaranteeing success."
+  },
+  "Zij mag hier parkeren.": {
+    "answers": [],
+    "explanation": "Zij means she here, so mogen becomes singular mag. Parkeren stays an infinitive without te after mag. Hier gives the permitted location. This expresses permission, not a prediction that she will park."
+  },
+  "Je moet het morgen afmaken.": {
+    "answers": [],
+    "explanation": "Je is the subject and takes moet. Het is the task, placed before morgen and infinitive afmaken. Afmaken stays joined after the modal. This is an obligation to finish tomorrow, not a claim the task is already done."
+  },
+  "Wil je deze soep proberen?": {
+    "answers": [],
+    "explanation": "Wil is finite before subject je; proberen remains a bare infinitive. Soep is a de-word, so deze means this before it. This question offers a taste without asserting that the listener wants one."
+  },
+  "Mag ik dit gerecht proberen?": {
+    "answers": [],
+    "explanation": "Mag is finite for ik and asks permission. Gerecht is a het-word, so use dit before it; compare deze soep. Proberen remains an infinitive without te after mag."
+  },
+  "Moet je het morgen afmaken?": {
+    "answers": [],
+    "explanation": "Moet starts this neutral yes/no question before subject je. Het is the task, morgen the proposed completion day, and afmaken the final infinitive. This asks about obligation; Heb je het al afgemaakt? instead asks about completed work."
+  },
+  "Mag ik met de kaart betalen?": {
+    "answers": [],
+    "explanation": "Mag ik asks permission and betalen remains an infinitive. Met de kaart names the payment method. Kaart is a de-word; the context means bank card, without specifying credit versus debit."
+  },
+  "Kan ik de jas passen?": {
+    "answers": [],
+    "explanation": "Kan is finite for ik. Passen is an infinitive and means try on the coat in this shopping context. It can mean fit in another construction: De jas past mij means The coat fits me."
+  },
+  "Wil je de deur sluiten?": {
+    "answers": [],
+    "explanation": "Wil before je asks about willingness or desire in this scenario; sluiten remains an infinitive. The same wording can serve as a request to close the door in another context, so English Do you want to...? is not its only possible use."
+  },
+  "Waar woont je broer?": {
+    "answers": [],
+    "explanation": "Waar asks for location. The subject is the whole phrase je broer, meaning your brother. Je is possessive here, so woont retains its -t; it is not the subject-je inversion pattern woon je."
+  },
+  "Wie heeft de deur gesloten?": {
+    "answers": [],
+    "explanation": "Wie is itself the subject who; no additional subject follows heeft. Heeft is the finite auxiliary and gesloten the irregular participle of sluiten. De deur is the object, placed before the participle."
+  },
+  "Heb je het al afgemaakt?": {
+    "answers": [],
+    "explanation": "Compare statement je hebt with question heb je: subject je follows the finite auxiliary, so the added -t is omitted. Het is the task, al means already/yet in this question, and afgemaakt is the participle of separable afmaken."
+  },
+  "Verkoop je de oude auto aan Zoë?": {
+    "answers": [],
+    "explanation": "Verkoop is finite and je is subject you in this yes/no question. Aan Zoë identifies the buyer. Compare the command Verkoop je oude auto aan Zoë, where je means your before oude auto and no subject is stated."
+  },
+  "Probeer dit gerecht eens!": {
+    "answers": [],
+    "explanation": "Probeer is the imperative stem of proberen; no subject is stated. Dit agrees with het gerecht. Eens softens this encouragement, roughly give it a try, rather than requiring exactly one tasting."
+  },
+  "Ruim je kamer op.": {
+    "answers": [],
+    "explanation": "Opruimen separates in this command: ruim ... op. Je means your before kamer, not subject you. The instruction is to put things away; removing dirt would instead be schoonmaken."
+  },
+  "Maak de ramen schoon.": {
+    "answers": [],
+    "explanation": "Schoonmaken separates into imperative maak and particle schoon. De ramen is the object, between them. This means cleaning away dirt, not merely putting objects away."
+  },
+  "Lees de brief voor.": {
+    "answers": [],
+    "explanation": "Voorlezen means read aloud and separates in this command: lees ... voor. De brief is what is read. Voor is the verb’s particle here, not a preposition needing another noun after it."
+  },
+  "Geef het boek aan je broer.": {
+    "answers": [],
+    "explanation": "Geef is the imperative stem of geven. Het boek is the thing given, and aan je broer identifies the recipient. Je before broer is possessive your. The recipient may also precede the object without aan: Geef je broer het boek."
+  },
+  "Stuur het me op.": {
+    "answers": [],
+    "explanation": "Opsturen separates into imperative stuur and particle op. Het is the thing and me the recipient; both precede op. Naar me/mij can also identify the destination/recipient explicitly in the alternate models."
+  },
+  "Kom morgen op tijd.": {
+    "answers": [],
+    "explanation": "Kom is the imperative of komen and leaves out the subject. Morgen means tomorrow. Op tijd means on time; op is part of that phrase here, not a particle of a separable verb opkomen."
+  },
+  "Bel de tandarts terug.": {
+    "answers": [],
+    "explanation": "Terugbellen means call back and separates into imperative bel and particle terug. De tandarts is the person to call. The instruction concerns returning the call, not merely calling an unrelated person."
+  },
+  "Doe de deur op slot.": {
+    "answers": [],
+    "explanation": "Doe is the imperative of doen. De deur is the object and op slot means locked. The whole expression de deur op slot doen means lock the door; op slot stays a separate phrase."
+  },
+  "Laten we een nieuw restaurant proberen.": {
+    "answers": [],
+    "explanation": "Laten we introduces the shared suggestion and proberen stays an infinitive. Restaurant is a singular het-word, so indefinite een takes nieuw without -e. The group proposes eating there to try it."
+  },
+  "Laten we de vergadering verzetten.": {
+    "answers": [],
+    "explanation": "Laten we makes a shared suggestion and verzetten remains an infinitive. Verzetten means reschedule this meeting; it does not specify an earlier or later time. Uitstellen would explicitly mean postpone."
+  },
+  "Laten we het raam openmaken.": {
+    "answers": [],
+    "explanation": "After laten we, openmaken stays joined as an infinitive without te. Compare a direct imperative Maak het raam open, which separates maak and open. Het raam is the window the group proposes opening."
+  },
+  "Laten we onze vakantie plannen.": {
+    "answers": [],
+    "explanation": "Laten we proposes the shared activity. Onze agrees with de vakantie, even though vakantie is singular. Plannen is the final infinitive; this suggests arranging the holiday rather than reporting that plans already exist."
+  },
+  "Laten we het probleem bespreken.": {
+    "answers": [],
+    "explanation": "Laten we makes a shared suggestion and bespreken remains an infinitive. Bespreken takes the topic directly as object het probleem, without over. Compare praten over het probleem, which does require over."
+  },
+  "Laten we morgen verdergaan.": {
+    "answers": [],
+    "explanation": "Laten we proposes a shared action. Verdergaan remains an infinitive without te and stays joined after laten; compare finite we gaan verder. Morgen places the proposed continuation tomorrow."
+  },
+  "Hij is aan het koken.": {
+    "answers": [],
+    "explanation": "Hij takes singular is. Aan het koken marks cooking as ongoing; koken remains an infinitive. Hij kookt can describe the same current activity without an explicit progressive."
+  },
+  "Ik ben de soep aan het maken.": {
+    "answers": [],
+    "explanation": "Ik takes ben. De soep is what the speaker is making and precedes aan het maken. Maken stays an infinitive; English uses making. This describes work in progress, not a finished soup."
+  },
+  "Wij zijn Nederlands aan het leren.": {
+    "answers": [],
+    "explanation": "Plural wij takes zijn. Nederlands is the language being learned and comes before aan het leren. Leren stays an infinitive. Wij leren Nederlands can also describe the ongoing learning."
+  },
+  "Zij is een boek aan het lezen.": {
+    "answers": [],
+    "explanation": "Singular is identifies zij as she here. Een boek is the object before aan het lezen. Lezen stays an infinitive; zij leest een boek can describe the same current reading."
+  },
+  "Hij is de ramen aan het schoonmaken.": {
+    "answers": [],
+    "explanation": "Is agrees with hij, and de ramen is the object. Schoonmaken remains joined after aan het; de ramen schoon aan het maken is also standard. In the simple present it splits: hij maakt de ramen schoon."
+  },
+  "Mijn manager is ons aan het bellen.": {
+    "answers": [],
+    "explanation": "Mijn manager is one person, so use is. Ons is the object, the group receiving the call, and precedes aan het bellen. Bellen stays an infinitive. Mijn manager belt ons describes the same ongoing call."
+  },
+  "Ik was mijn kamer aan het opruimen.": {
+    "answers": [],
+    "explanation": "Was is past of zijn here, not the verb wassen. Mijn kamer is the object of opruimen, before aan het. This describes tidying in progress at a past moment and does not claim the room was finished."
+  },
+  "Wij waren op de trein aan het wachten.": {
+    "answers": [],
+    "explanation": "Wij takes plural past waren. Wachten op means wait for, so op de trein names what the group awaited; it does not mean on board the train here. Aan het wachten is the ongoing activity."
+  },
+  "Hij is zijn kleren aan het wassen.": {
+    "answers": [],
+    "explanation": "Hij takes is. Zijn before kleren means his, while wassen is the infinitive for washing. The object zijn kleren precedes aan het wassen. Hij wast zijn kleren is the corresponding simple present."
+  },
+  "Zij was een verslag aan het schrijven.": {
+    "answers": [],
+    "explanation": "Zij means she here and takes singular past was. Een verslag is the report being written and comes before aan het schrijven. This past progressive does not establish that she completed the report."
+  },
+  "We zijn de tafel aan het dekken.": {
+    "answers": [],
+    "explanation": "Plural we takes zijn. De tafel dekken means set the table for a meal; dekken is the infinitive in aan het dekken. The object de tafel precedes that progressive phrase. We dekken de tafel is also possible."
+  },
+  "Hij is bezig met koken.": {
+    "answers": [],
+    "explanation": "Hij takes is. Bezig met introduces what occupies him; koken names the cooking activity. Both met koken and met het koken are possible. If an article is used for this nominalised infinitive, use het, not de."
+  },
+  "Hij is bezig met de was.": {
+    "answers": [],
+    "explanation": "Hij takes is. De was is a noun meaning the laundry, not a finite form of wassen here. Bezig met describes being occupied with that laundry. It can include several laundry tasks without specifying a single washing action."
+  },
+  "Zij is bezig met het schoonmaken van de ramen.": {
+    "answers": [],
+    "explanation": "Zij means she and takes is. Het schoonmaken names the cleaning activity as a noun; van de ramen identifies what is cleaned. With a verbal te-clause instead say Zij is bezig de ramen schoon te maken, splitting schoonmaken around te."
+  },
+  "Ik ben bezig met het schrijven van een brief.": {
+    "answers": [],
+    "explanation": "Ik takes ben. Het schrijven is a nominalised infinitive after met; van een brief identifies what is being written. The verbal alternative puts that object before te schrijven: Ik ben bezig een brief te schrijven."
+  },
+  "Wij zijn bezig met het plannen van onze vakantie.": {
+    "answers": [],
+    "explanation": "Wij takes plural zijn. Het plannen names the planning activity after met. Van onze vakantie identifies what is planned; vakantie is a de-word, so our is onze. This describes ongoing arrangements, not a completed booking."
+  },
+  "Hij was bezig met het opruimen van zijn kamer.": {
+    "answers": [],
+    "explanation": "Was is past of zijn and agrees with hij. Het opruimen names tidying after met, and van zijn kamer identifies the room. Zijn before kamer means his. Being busy tidying does not imply the task was completed."
+  },
+  "Zij was bezig met koken.": {
+    "answers": [],
+    "explanation": "Singular was identifies zij as she here and places the activity in the past. Koken names the activity after bezig met; het koken is also possible. This says she was occupied with cooking, without claiming completion."
+  },
+  "Ik ben met mijn huiswerk bezig.": {
+    "answers": [],
+    "explanation": "Ik takes ben. Met mijn huiswerk identifies what occupies the speaker and precedes bezig in this model. Ik ben bezig met mijn huiswerk is also possible. Huiswerk is a noun, not an infinitive; no te is needed."
+  },
+  "Wij zijn bezig met het lezen van het verslag.": {
+    "answers": [],
+    "explanation": "Plural wij takes zijn. Het lezen names the reading activity after met; van het verslag identifies the report. Verslag is a het-word. This describes reading in progress rather than having finished the report."
+  },
+  "Hij is klaar met het lezen van het boek.": {
+    "answers": [],
+    "explanation": "Klaar met means finished with, unlike bezig met, which means busy with. Het lezen names the reading activity; van het boek identifies what was read. Klaar om te lezen would mean ready to start reading, a different situation."
+  },
+  "Zij is verantwoordelijk voor het opruimen.": {
+    "answers": [],
+    "explanation": "Singular is identifies zij as she. Verantwoordelijk voor means responsible for; het opruimen names the assigned tidying activity. Responsibility does not establish that she is tidying right now or has already finished."
+  },
+  "Ik probeer te slapen.": {
+    "answers": [],
+    "explanation": "Ik takes present probeer. Proberen introduces te + infinitive: te slapen. The statement reports an effort to sleep, not success. Compare past ik probeerde and perfect ik heb geprobeerd."
+  },
+  "Hij probeert Nederlands te leren.": {
+    "answers": [],
+    "explanation": "Hij takes probeert, with the ordinary present -t. Nederlands is the language and precedes te leren. Proberen requires te before this infinitive; the sentence describes an effort, not proven proficiency."
+  },
+  "Wij probeerden de deur te openen.": {
+    "answers": [],
+    "explanation": "Wij takes plural past probeerden. De deur is the object of openen, before te openen. Proberen introduces the te-infinitive, and its past tense locates the attempt earlier without saying the door opened."
+  },
+  "Ik zal proberen te bellen.": {
+    "answers": [],
+    "explanation": "Zal is finite and agrees with ik. Proberen remains a bare infinitive after zal, but proberen in turn requires te before bellen. This promises an attempt to call rather than guaranteeing a successful call."
+  },
+  "Ik ben hier om je te helpen.": {
+    "answers": [],
+    "explanation": "Ben agrees with ik and hier gives the location. Om je te helpen is a purpose clause: je is the listener receiving help, before te helpen. Om does not identify the recipient; object je does."
+  },
+  "Zij is klaar om te vertrekken.": {
+    "answers": [],
+    "explanation": "Zij means she and takes is. Klaar om te vertrekken describes readiness to leave, not a completed departure. Vertrekken is inseparable and remains an infinitive after te. Compare separable weg te gaan, which can express the same intended departure."
+  },
+  "Het is belangrijk om op tijd te komen.": {
+    "answers": [],
+    "explanation": "Belangrijk evaluates the infinitive clause and has no agreement -e. Op tijd means on time and precedes te komen. Om may be omitted here, but te remains: Het is belangrijk op tijd te komen."
+  },
+  "Ik heb tijd om het af te maken.": {
+    "answers": [],
+    "explanation": "Heb is present of hebben, meaning have time here rather than a perfect auxiliary. Het names the task. Afmaken is separable, so its te-infinitive is af te maken; om introduces the activity there is time for and can be omitted."
+  },
+  "Wij zijn van plan om deel te nemen.": {
+    "answers": [],
+    "explanation": "Wij takes plural zijn. Van plan zijn means intend or plan; it does not report participation already completed. Deelnemen is separable: deel te nemen with te between deel and nemen. Om introduces the intended action."
+  },
+  "Hij vraagt me om terug te bellen.": {
+    "answers": [],
+    "explanation": "Vraagt is singular present with hij. Me is the person asked and the understood caller in the infinitive clause. Terugbellen means call back and splits around te: terug te bellen. Om is optional in this request complement."
+  },
+  "Ik heb zin om naar buiten te gaan.": {
+    "answers": [],
+    "explanation": "Zin hebben om expresses feeling like doing something. Heb is finite with ik. Naar buiten gives the direction and te gaan is the infinitive. This expresses inclination, not a claim that the speaker already went outside."
+  },
+  "Het is moeilijk om dat uit te leggen.": {
+    "answers": [],
+    "explanation": "Moeilijk evaluates the explaining activity. Dat is the matter to explain, before uit te leggen. Uitleggen is separable, so te occurs between uit and leggen. Om may be omitted in this infinitive clause."
+  },
+  "Hij maakt de ramen schoon.": {
+    "answers": [],
+    "explanation": "Schoonmaken means clean dirt away. Its finite present splits into maakt with singular hij and particle schoon after object de ramen. Compare infinitive schoonmaken and perfect heeft schoongemaakt. This scenario describes his usual task."
+  },
+  "Wij bellen de klant terug.": {
+    "answers": [],
+    "explanation": "Terugbellen is separable: plural wij takes bellen and terug comes after de klant. The customer receives the return call. The present can describe the next intended action as well as a regular practice; no completed call is claimed here."
+  },
+  "Zij heeft de keuken schoongemaakt.": {
+    "answers": [],
+    "explanation": "Singular heeft identifies zij as she here. Schoongemaakt is the participle of separable schoonmaken, with ge between schoon and maakt. De keuken is the object before the participle. The perfect reports the completed cleaning."
+  },
+  "Wij nemen water mee.": {
+    "answers": [],
+    "explanation": "Meenemen means take along. Wij takes plural nemen; mee separates and follows object water. Water is normally a mass noun here without an article. The present describes the water your group takes on the outing."
+  },
+  "Hij heeft een boek meegenomen.": {
+    "answers": [],
+    "explanation": "Hij takes heeft in this perfect. Meegenomen is the participle of meenemen: mee + genomen, with the irregular participle of nemen. Een boek is what he brought along, before the participle. This reports completed bringing."
+  },
+  "Ik heb tijd om de kamer op te ruimen.": {
+    "answers": [],
+    "explanation": "Heb means have in the expression tijd hebben. Opruimen means tidy up, not necessarily wash away dirt. Its te-infinitive is op te ruimen; de kamer is its object. Om can be omitted in this infinitive complement."
+  },
+  "Zij woonde de vergadering bij.": {
+    "answers": [],
+    "explanation": "Bijwonen means attend and is separable: woonde ... bij. Singular past woonde identifies zij as she. De vergadering is the event attended, a direct object without a preposition. This differs from wonen meaning reside and does not mean she organised the meeting."
+  },
+  "We nemen deel aan de cursus.": {
+    "answers": [],
+    "explanation": "Deelnemen aan means participate in. Plural we takes nemen; deel separates and aan introduces the activity, de cursus. Compare infinitive deelnemen and te-infinitive deel te nemen. Deel is not the object meaning one share here."
+  },
+  "Ik voel me vandaag goed.": {
+    "answers": [],
+    "explanation": "For how someone feels use zich voelen. Ik takes voel and reflexive me, which refers back to the speaker. Vandaag gives the time and goed describes the feeling. English normally omits myself in this meaning."
+  },
+  "Hij voelt zich moe.": {
+    "answers": [],
+    "explanation": "Hij takes voelt and reflexive zich. Moe describes how he feels and has no agreement -e. The reflexive belongs to zich voelen in this sense; compare non-reflexive ik voel de stof, where someone feels a fabric."
+  },
+  "Wij voelen ons welkom.": {
+    "answers": [],
+    "explanation": "Plural wij takes voelen, and ons is the reflexive referring to the same group. Welkom describes their feeling of being accepted and has no attributive ending. Natural English says We feel welcome without ourselves."
+  },
+  "Zij maakte zich zorgen.": {
+    "answers": [],
+    "explanation": "Zich zorgen maken means worry. Singular past maakte identifies zij as she here; zich refers back to her. Zorgen is part of this idiom. This reports past worry, not making physical objects called worries."
+  },
+  "Ik vraag me af waar hij is.": {
+    "answers": [],
+    "explanation": "Zich afvragen means wonder: ik vraag me af. Me refers to ik and af separates from finite vraag. Waar hij is is an embedded question, with is at its end. A direct question instead has Waar is hij?"
+  },
+  "Wij vragen ons af wanneer de trein komt.": {
+    "answers": [],
+    "explanation": "Wij takes plural vragen and reflexive ons. Af is the separable particle of afvragen. The embedded question wanneer de trein komt has finite komt after its subject. Present komt can refer to the anticipated arrival; no zullen is required."
+  },
+  "Hij herinnert zich mijn naam.": {
+    "answers": [],
+    "explanation": "Zich herinneren means remember. Hij takes herinnert and reflexive zich; mijn naam is what he remembers. Mijn refers to the speaker, not the man. The unstressed prefix her- stays attached in this finite verb."
+  },
+  "Ik herinner me die dag.": {
+    "answers": [],
+    "explanation": "Ik takes herinner and reflexive me in zich herinneren. Die modifies singular de-word dag and points to a day already mentioned. The remembering is present even though the remembered day is in the past."
+  },
+  "Jullie haasten je.": {
+    "answers": [],
+    "explanation": "Jullie is the plural subject and takes haasten. Je is the reflexive referring back to that same group, not a singular subject or possessive here. Zich haasten means hurry; English needs no yourselves."
+  },
+  "Zij stelt zich voor.": {
+    "answers": [],
+    "explanation": "Zich voorstellen means introduce oneself in this scenario. Singular stelt identifies zij as she, zich refers to her, and voor is the separable particle. The same Dutch expression can mean imagine in other contexts, so the introduction scenario determines the meaning."
+  },
+  "Ik weet dat hij zich goed voelt.": {
+    "answers": [],
+    "explanation": "Weet is finite with ik in the main clause. Dat introduces the embedded statement hij zich goed voelt. Zich refers to hij, and finite voelt follows goed at the end of that clause. The speaker claims knowledge of his well-being."
+  },
+  "Ik blijf thuis omdat ik ziek ben.": {
+    "answers": [],
+    "explanation": "Blijf is finite with ik in the main clause; thuis means at home. Omdat gives the reason and introduces ik ziek ben, with ben at the end. It is written as one word. The sentence explains staying home because of illness."
+  },
+  "Ik weet dat hij morgen komt.": {
+    "answers": [],
+    "explanation": "Ik weet states knowledge. Dat introduces the embedded clause hij morgen komt, with finite komt at its end. Morgen makes the visit future even though komt has present form. English naturally uses is coming for the scheduled visit."
+  },
+  "Als ik tijd heb, oefen ik Nederlands.": {
+    "answers": [],
+    "explanation": "Als introduces a condition, with heb at the end of ik tijd heb. That whole clause occupies first position, so finite oefen follows it before main-clause subject ik. Nederlands is the language practised. Compare Ik oefen Nederlands als ik tijd heb."
+  },
+  "Toen ik thuiskwam, was ik moe.": {
+    "answers": [],
+    "explanation": "Toen introduces this past event; thuiskwam is past of thuiskomen and stays joined at the end of the subordinate clause. That whole clause comes first, so main-clause was precedes ik. Moe describes how the speaker felt when arriving home."
+  },
+  "Hij leest terwijl ik kook.": {
+    "answers": [],
+    "explanation": "Leest agrees with hij in the main clause. Terwijl expresses the overlap and introduces ik kook; kook is finite with ik at the end of that clause. Both verbs have present form. English while connects the same simultaneous activities."
+  },
+  "Ik bel je zodra ik thuis ben.": {
+    "answers": [],
+    "explanation": "Bel is present with ik but makes a promise about the next call here. Je is the listener receiving it. Zodra means as soon as and introduces ik thuis ben, with ben at the end. Thuis means at home; no future auxiliary is needed."
+  },
+  "Ik blijf hier totdat de trein komt.": {
+    "answers": [],
+    "explanation": "Blijf is finite with ik. Hier is where the speaker stays. Totdat means until and introduces de trein komt, with singular finite komt at the end. The train arriving is the endpoint of the wait, not the reason for it."
+  },
+  "Ik vraag me af of zij thuis is.": {
+    "answers": [],
+    "explanation": "Zich afvragen means wonder: ik vraag me af. Me refers to ik; af separates from finite vraag. Of means whether in the embedded yes/no question zij thuis is, whose finite is comes at the end. It is not the coordinating or in this use."
+  },
+  "Omdat het regent, blijven we binnen.": {
+    "answers": [],
+    "explanation": "Omdat introduces the reason: het regent. That whole reason clause occupies first position, so main-clause finite blijven comes before subject we. Binnen means indoors. Compare We blijven binnen omdat het regent, with the reason clause later."
+  },
+  "Ik denk dat hij het kan uitleggen.": {
+    "answers": [],
+    "explanation": "Denk is finite with ik. Dat introduces the speaker's belief, not a claim of certainty. Hij is the embedded subject; het is the thing explained. Kan uitleggen is the embedded verb group; uitleggen stays an infinitive without te after kan."
+  },
+  "Ik was niet thuis toen je belde.": {
+    "answers": [],
+    "explanation": "Was is singular past of zijn here. Niet thuis means not at home. Toen introduces the particular past occasion je belde; belde is past of bellen. Je is the caller in that clause, not the person receiving the call."
+  },
+  "Zij zegt dat ze morgen moet werken.": {
+    "answers": [],
+    "explanation": "Zegt agrees with singular zij. Dat introduces what she says: ze morgen moet werken. In this scenario both pronouns refer to the woman. Moet is finite and werken remains an infinitive without te. Morgen gives the future work date despite the present verb forms."
+  },
+  "Vandaag drink ik koffie.": {
+    "answers": [],
+    "explanation": "Vandaag is the first constituent. Finite drink follows it before subject ik; koffie is the object. Dutch present can describe what the speaker drinks today. Compare subject-first Ik drink vandaag koffie, with the same event and time."
+  },
+  "Morgen werk ik thuis.": {
+    "answers": [],
+    "explanation": "Morgen occupies first position, so finite werk comes next before ik. Thuis means at home. Present werk refers to tomorrow's planned work here; a future auxiliary is not needed. Ik werk morgen thuis is the subject-first alternative."
+  },
+  "Sinds vorig jaar woon ik in Roeselare.": {
+    "answers": [],
+    "explanation": "Sinds vorig jaar gives the starting point of a situation that continues now. The whole phrase is first, then finite woon and subject ik. Dutch uses present woon; English naturally uses have lived. In Roeselare identifies the city of residence."
+  },
+  "Op tafel ligt een boek.": {
+    "answers": [],
+    "explanation": "Op tafel is one complete first constituent. Ligt is finite in second position and singular een boek is the subject after it. Ligt describes the book as lying there; no extra is is needed. Er ligt een boek op tafel introduces the same book with existential er."
+  },
+  "Elke ochtend hoor ik de vogels zingen.": {
+    "answers": [],
+    "explanation": "Elke ochtend is one time constituent before finite hoor and subject ik. De vogels is the object of horen and the understood subject of singing. Zingen remains an infinitive without te after this perception verb. The sentence describes a recurring morning experience."
+  },
+  "Gisteren probeerde ik een nieuwe soep.": {
+    "answers": [],
+    "explanation": "Gisteren gives past time and occupies first position. Singular past probeerde follows it before ik. Soep is a de-word, so use een nieuwe soep. Proberen takes the dish directly here; there is no second action requiring te. A perfect retelling is also possible."
+  },
+  "Na de les hebben we samen geoefend.": {
+    "answers": [],
+    "explanation": "Na de les is one time constituent before finite hebben and subject we. Geoefend is the participle of oefenen and closes the perfect verb bracket. Samen means together. The practice happened after the lesson; it is not an activity still in progress during it."
+  },
+  "Hier kun je een ticket kopen.": {
+    "answers": [],
+    "explanation": "Hier gives the first location constituent. Finite kun precedes subject je, and kopen is a bare infinitive at the end. Compare subject-first je kunt or je kan. Een ticket is what can be bought; the statement identifies the place offering that possibility."
+  },
+  "Een glas water heb ik gedronken.": {
+    "answers": [],
+    "explanation": "The complete object een glas water is fronted for focus. Heb follows it before subject ik, and gedronken is the participle of drinken. Glas stays singular because this is one glass; water is a mass noun. Ik heb een glas water gedronken is the neutral subject-first order."
+  },
+  "Dat zie ik ook.": {
+    "answers": [],
+    "explanation": "Dat is the object placed first, not the subject. Finite zie follows it before subject ik. Ook means too or also. Ik zie dat ook keeps the same participants and meaning with subject-first order; there is no change of tense."
+  },
+  "Volgende week gaan we naar Gent.": {
+    "answers": [],
+    "explanation": "Volgende week is one complete time constituent, followed by finite gaan and subject we. Naar Gent gives the destination. Gaan is present but describes the planned trip next week. We gaan volgende week naar Gent is the subject-first alternative."
+  },
+  "Er ligt een boek op tafel.": {
+    "answers": [],
+    "explanation": "Er introduces a previously unspecified book. Een boek is singular, so finite ligt is singular; it describes the book lying on the table. No extra is is needed. Op tafel ligt een boek introduces the same situation with the location first."
+  },
+  "Er staan twee kopjes op mijn bureau.": {
+    "answers": [],
+    "explanation": "Er introduces the cups. Twee kopjes is plural, so use plural staan, not staat. Op mijn bureau gives their location, and mijn means my. Staan describes the cups standing on the desk; it already serves as the finite verb."
+  },
+  "Er is melk in de koelkast.": {
+    "answers": [],
+    "explanation": "Er introduces the available milk. Melk is a mass noun and takes singular is here. In de koelkast gives its location. A position verb such as staat can describe its container, but is is also grammatical and sufficient for availability."
+  },
+  "Er zijn geen wolken.": {
+    "answers": [],
+    "explanation": "Er introduces what is absent from the sky. Wolken is plural, so use zijn. Geen negates this indefinite plural noun phrase: no clouds. Do not use singular is just because er is the first word."
+  },
+  "Op mijn bureau staat een kop koffie.": {
+    "answers": [],
+    "explanation": "Op mijn bureau is the complete first constituent. Finite staat comes next before subject een kop koffie. Agreement follows singular kop, not coffee as a separate item. This is a location-first presentation without er, and staat describes the cup's position."
+  },
+  "Er hangt een foto aan de muur.": {
+    "answers": [],
+    "explanation": "Er introduces a photo. Singular een foto takes hangt, describing its hanging position. Aan de muur means on the wall in this attachment context. Hangt is already the finite verb; adding is before it would not form this sentence."
+  },
+  "Er zat een kat op de stoel.": {
+    "answers": [],
+    "explanation": "Er introduces a cat in the past scene. Zat is singular past of zitten and agrees with een kat. Op de stoel gives the location. Zat already expresses the sitting position, so no extra was is needed."
+  },
+  "Er is een aardbeving geweest.": {
+    "answers": [],
+    "explanation": "Er introduces the past event. Geweest is the participle of zijn and uses auxiliary is in this perfect. Een aardbeving is singular. This reports that an earthquake occurred; unlike a simple location statement, it genuinely contains an auxiliary plus a participle."
+  },
+  "Er zijn nog drie plaatsen vrij.": {
+    "answers": [],
+    "explanation": "Plural drie plaatsen takes zijn. Er presents available seats, nog means still, and vrij is a predicate adjective without agreement -e. Plaatsen can mean places generally, but this seating scenario selects seats. The sentence says three remain available."
+  },
+  "In deze straat is er een bakker.": {
+    "answers": [],
+    "explanation": "In deze straat is one first constituent; finite is follows it. Er introduces een bakker. Bakker literally means baker, but in this shopping context it commonly refers to a baker's shop or bakery. Straat is a de-word, so use deze straat."
+  },
+  "Ik heb geen tijd.": {
+    "answers": [],
+    "explanation": "Heb is present with ik and means have, not a perfect auxiliary here. Tijd is a bare mass-like noun phrase, so geen gives the ordinary negative: no time. The statement explains lack of available time without an infinitive or participle."
+  },
+  "Zij drinkt geen koffie.": {
+    "answers": [],
+    "explanation": "Singular drinkt identifies zij as she. Geen negates the unspecified coffee, expressing her non-coffee-drinking habit in this scenario. It is not a ban on another person drinking coffee. Ze drinkt geen koffie uses the unstressed subject form."
+  },
+  "Hij is niet moe.": {
+    "answers": [],
+    "explanation": "Hij takes singular is. Moe is a predicate adjective without agreement -e, and niet negates being tired. Geen is used with indefinite noun phrases; it cannot simply replace niet before this adjective."
+  },
+  "Wij kunnen vandaag niet komen.": {
+    "answers": [],
+    "explanation": "Wij takes plural finite kunnen. Komen remains an infinitive without te. Vandaag gives today's time, and niet before komen negates the group's ability to attend then. The sentence says cannot, rather than do not have to or are forbidden to."
+  },
+  "Ik heb de brief niet gelezen.": {
+    "answers": [],
+    "explanation": "Heb is the finite perfect auxiliary and gelezen is the irregular participle of lezen. De brief is a definite object. Niet after that object gives ordinary sentence negation of reading the letter; geen would change the noun phrase rather than fit this same construction."
+  },
+  "Zij heeft haar koffie niet gedronken.": {
+    "answers": [],
+    "explanation": "Singular heeft identifies zij as she. Haar before koffie means her, and gedronken is the participle of drinken. Niet after haar koffie negates drinking her coffee. Putting niet before haar koffie could instead contrast her coffee with something else."
+  },
+  "Je hoeft morgen niet te werken.": {
+    "answers": [],
+    "explanation": "Hoeft agrees with je. Niet hoeven te means not having to; the person has no obligation to work tomorrow. Werken remains an infinitive after te. This does not forbid working: Je mag niet werken would express a prohibition."
+  },
+  "Je mag hier niet parkeren.": {
+    "answers": [],
+    "explanation": "Mag is finite with je and parkeren stays an infinitive without te. Niet mogen expresses lack of permission, so the sentence prohibits parking here. It does not mean there is no obligation to park. Hier identifies the prohibited location."
+  },
+  "Ik wil geen thee drinken.": {
+    "answers": [],
+    "explanation": "Wil is finite with ik. Drinken remains an infinitive without te after this modal. Geen negates indefinite thee in the speaker's wish. This expresses not wanting to drink tea, without stating a general rule that the speaker never drinks it."
+  },
+  "Wij hebben geen zak nodig.": {
+    "answers": [],
+    "explanation": "Wij takes plural hebben. Geen zak is the indefinite item the group does not need, and nodig completes iets nodig hebben. This is present need, not perfect tense: nodig is an adjective, not a participle."
+  },
+  "Onze auto staat buiten.": {
+    "answers": [],
+    "explanation": "Auto is a singular de-word, so our is onze. Singular auto takes staat. Buiten means outside and staan naturally describes the car's parked location. The form onze is determined by the noun, not by how many people own it."
+  },
+  "Ons huis is klein.": {
+    "answers": [],
+    "explanation": "Huis is a singular het-word, so our is ons. Singular huis takes is. Klein is a predicate adjective and has no agreement -e; compare ons kleine huis, where kleine is attached to the noun."
+  },
+  "Wij controleren onze budgetten.": {
+    "answers": [],
+    "explanation": "Wij takes plural controleren. Budgetten is plural, so our is onze even though singular het budget takes ons. The simple present describes checking in progress here. It does not by itself claim the budgets have already been approved."
+  },
+  "Dat is jouw kopje.": {
+    "answers": [],
+    "explanation": "Dat points to the cup as the subject of this identification. Jouw is possessive your before kopje; je is its unstressed alternative. The diminutive kopje is a het-word, but jouw does not change with de- versus het-words."
+  },
+  "Zij heeft haar boek meegenomen.": {
+    "answers": [],
+    "explanation": "Singular heeft identifies zij as she. Haar is possessive her before boek. Meegenomen is the irregular participle of separable meenemen, from mee + genomen. This perfect reports bringing the book along; it is not merely a future plan to bring it."
+  },
+  "Zijn vergadering begint straks.": {
+    "answers": [],
+    "explanation": "Zijn before vergadering means his, not the verb be. The complete singular subject zijn vergadering takes begint. Straks means shortly or later on in this context and gives future reference to the present verb begint."
+  },
+  "Onze kinderen leren Nederlands.": {
+    "answers": [],
+    "explanation": "Kinderen is plural, so our is onze and the verb is plural leren. Nederlands is the language, without an article here. Dutch simple present can describe their ongoing learning; it need not be converted into aan het leren."
+  },
+  "Ik heb ons verslag gelezen.": {
+    "answers": [],
+    "explanation": "Verslag is a singular het-word, so our is ons. Heb is the finite perfect auxiliary with ik; gelezen is the irregular participle of lezen. Ons verslag is the object before that participle. The speaker read the group's report."
+  },
+  "Is dit haar voorstel?": {
+    "answers": [],
+    "explanation": "The neutral yes/no question begins with finite is, then subject dit. Haar is possessive her before voorstel, rather than an object meaning her on its own. Dit introduces an identification. The question asks about authorship or ownership, without claiming approval of the proposal."
+  },
+  "Ik probeer een nieuw gerecht.": {
+    "answers": [],
+    "explanation": "Ik takes present probeer. Gerecht is a singular het-word after indefinite een, so nieuw has no -e. Proberen takes the dish directly in this tasting context; trying to perform an action instead takes te plus an infinitive. This describes the current attempt, not past probeerde."
+  },
+  "Het nieuwe gerecht is lekker.": {
+    "answers": [],
+    "explanation": "Het gerecht is definite and neuter, so the attached adjective is nieuwe with -e. Lekker is a predicate adjective after is and has no agreement ending. The whole subject het nieuwe gerecht is one constituent before finite is."
+  },
+  "Dat is een rood boek.": {
+    "answers": [],
+    "explanation": "Dat is the subject of an identification. Boek is a singular het-word after indefinite een, so use rood without -e. Compare het rode boek, where definite het brings the adjective ending back. Rood describes colour, not the book's ownership."
+  },
+  "De rode tas is duur.": {
+    "answers": [],
+    "explanation": "Tas is a singular de-word. Rode modifies tas before the noun and takes -e. The whole noun phrase de rode tas is the subject; finite is follows it. Duur describes that subject as a predicate adjective without agreement -e."
+  },
+  "Ons nieuwe huis is groot.": {
+    "answers": [],
+    "explanation": "Huis is a singular het-word, so use possessive ons. The adjective after that possessive is nieuwe with -e; compare indefinite een nieuw huis. Groot describes the house after is and has no agreement ending."
+  },
+  "Dit is een groot bedrijf.": {
+    "answers": [],
+    "explanation": "Dit introduces an identification and is the subject. Bedrijf is a singular het-word after indefinite een, so groot has no -e. Compare het grote bedrijf or ons grote bedrijf. The sentence identifies the company as large."
+  },
+  "Het kantoor is rustig.": {
+    "answers": [],
+    "explanation": "Het kantoor is the singular subject before is. Rustig is a predicate adjective describing the office's atmosphere and takes no agreement -e. Compare het rustige kantoor, with an adjective attached before the noun."
+  },
+  "Ik zoek een kleinere maat.": {
+    "answers": [],
+    "explanation": "Zoek is finite with ik. Klein has comparative kleiner; with singular de-word maat after een, add -e: een kleinere maat. Zoeken takes the desired size as a direct object here, without a preposition."
+  },
+  "Zij kocht een mooie jas.": {
+    "answers": [],
+    "explanation": "Singular past kocht identifies zij as she; plural would be kochten. Kopen has irregular past kocht/kochten and participle gekocht. Jas is a de-word, so mooi takes -e in een mooie jas. This reports the earlier purchase."
+  },
+  "Wij hebben lekkere broodjes gegeten.": {
+    "answers": [],
+    "explanation": "Wij takes plural auxiliary hebben. Gegeten is the irregular participle of eten. Broodjes is plural, so the adjective is lekkere with -e even though singular het broodje is neuter. The perfect reports the group's completed eating."
+  },
+  "Dit is de vrouw die in Gent woont.": {
+    "answers": [],
+    "explanation": "Dit introduces an identification. Vrouw is a singular de-word, so relative die introduces its description. Die is the subject inside die in Gent woont, with singular finite woont at the end. In Gent gives where the woman lives."
+  },
+  "Ik lees het boek dat je me gaf.": {
+    "answers": [],
+    "explanation": "Lees is finite with ik in the main clause. Relative dat refers to singular het boek and is the object of gaf in the relative clause. Je is the giver and me the recipient; gaf is singular past of geven at that clause's end. The reading is current and the gift was earlier."
+  },
+  "De mensen die buiten staan, wachten op de bus.": {
+    "answers": [],
+    "explanation": "The complete subject de mensen die buiten staan comes before finite wachten. Relative die refers to plural mensen; staan closes the relative clause. Wachten op means wait for, so op de bus names what they await, rather than being on board the bus."
+  },
+  "Ik luister naar nummers die ik leuk vind.": {
+    "answers": [],
+    "explanation": "Luisteren naar means listen to. Nummers is plural, so relative die introduces the description of those songs. Inside die ik leuk vind, ik is the subject and die the object; finite vind comes at the end. Leuk describes what the speaker thinks of the songs."
+  },
+  "Dat is het huis dat naast het park staat.": {
+    "answers": [],
+    "explanation": "The first dat is the subject meaning that. The second dat is a relative pronoun referring to singular het huis, and is subject of staat in its clause. Naast het park gives the location; staat is finite at the end and describes where the house stands."
+  },
+  "Ik zoek de pen die op tafel lag.": {
+    "answers": [],
+    "explanation": "Zoek is present with ik: the search is happening now. Pen is a singular de-word, so use relative die. Die is the subject of lag, singular past of liggen. The pen was on the table earlier; the sentence does not say it is still there."
+  },
+  "Hij draagt de jas die hij gisteren kocht.": {
+    "answers": [],
+    "explanation": "Draagt is present of dragen and describes current wearing. Relative die refers to singular de jas and is the object of kocht. Hij is the subject in both clauses. Gisteren locates the purchase in the past; kocht is past of kopen at the relative clause's end."
+  },
+  "Dit is het gerecht dat ik heb geprobeerd.": {
+    "answers": [],
+    "explanation": "Dit introduces an identification. Relative dat refers to singular het gerecht and is the object of proberen in the relative clause. Ik is that clause's subject; heb geprobeerd is its final perfect verb group. The tasting happened earlier, while the pointing out is now."
+  },
+  "De collega die ons helpt, spreekt Nederlands.": {
+    "answers": [],
+    "explanation": "The full subject de collega die ons helpt occupies one first constituent before finite spreekt. Die refers to singular de collega and is subject of helpt; ons is the group receiving help. Nederlands names the language without an article. No gender of the colleague is specified."
+  },
+  "Waar is het formulier dat ik moet invullen?": {
+    "answers": [],
+    "explanation": "Waar asks for location and precedes finite is. The complete subject is het formulier dat ik moet invullen. Relative dat refers to singular het formulier and is the object of invullen. Moet invullen is the embedded verb group; separable invullen stays joined as a bare infinitive after moet."
+  },
+  "Zij kent de man die daar werkt.": {
+    "answers": [],
+    "explanation": "Kent agrees with zij meaning she. Kennen means being familiar with this person. Relative die refers to singular de man and is the subject of werkt at the end of the relative clause. Daar gives the man's workplace location."
+  },
+  "Ik heb de sleutels gevonden die ik zocht.": {
+    "answers": [],
+    "explanation": "Heb gevonden is the perfect of vinden, reporting the successful finding. The relative clause die ik zocht follows gevonden and describes plural de sleutels; die is its object and ik its subject. Zocht is past of zoeken. A relative clause can follow the main verb bracket, so the participle is not always the final word."
+  },
+  "Ik verkoop de printer aan mijn collega.": {
+    "answers": [],
+    "explanation": "Verkoop is present with ik; verkopen is inseparable, so ver- stays attached. De printer is the item sold, and aan mijn collega introduces the buyer. Mijn is possessive my. The current sale is not described as already completed."
+  },
+  "Ik luister naar mijn moeder.": {
+    "answers": [],
+    "explanation": "Luister agrees with ik. Luisteren naar names the person being listened to through a naar-phrase. Mijn before moeder means my. Naar does not express physical movement in this expression; its use depends on luisteren."
+  },
+  "Hij wacht op de trein.": {
+    "answers": [],
+    "explanation": "Hij takes wacht; the stem already ends in t, so no second t is written. Wachten op means wait for, making de trein what he awaits. Op does not mean he is aboard the train here. The simple present describes his current waiting."
+  },
+  "Zij houdt van lezen.": {
+    "answers": [],
+    "explanation": "Singular houdt identifies zij as she. Houden van means love or like; van introduces the reading activity. Lezen is an infinitive naming an activity after the preposition, not a second finite verb. No te is added in this expression."
+  },
+  "Wij praten over de vergadering.": {
+    "answers": [],
+    "explanation": "Wij takes plural praten. Praten over means talk about, so over de vergadering identifies the topic. This describes discussing the meeting, rather than merely being at it. The simple present can express the ongoing conversation."
+  },
+  "Ik dans op de bruiloft.": {
+    "answers": [],
+    "explanation": "Dans is present with ik. Op de bruiloft identifies the wedding event at which the dancing takes place. Op here does not mean physically on top of a wedding; learn the event expression as a whole. This says nothing about whether the speaker is the bride or groom."
+  },
+  "Ik ben op kantoor.": {
+    "answers": [],
+    "explanation": "Ben is present of zijn with ik. Op kantoor is the conventional location expression at the office, without an article here. The sentence gives the speaker's current location; naar kantoor would instead express direction to the office."
+  },
+  "Morgen ga ik naar kantoor.": {
+    "answers": [],
+    "explanation": "Morgen is the first constituent, followed by finite ga and subject ik. Naar kantoor gives the destination, while op kantoor would give a location. Present ga describes tomorrow's intended journey; no extra future verb is needed."
+  },
+  "Na het werk ga ik naar huis.": {
+    "answers": [],
+    "explanation": "Na het werk is a complete first time constituent: after work. Finite ga follows it before subject ik. Naar huis is the destination home, without an article. Distinguish time preposition na from direction preposition naar."
+  },
+  "De foto hangt aan de muur.": {
+    "answers": [],
+    "explanation": "De foto is the singular subject and takes hangt. Hangen describes its hanging position and aan de muur identifies the attachment location. Hangt already is the finite verb, so no extra is is needed to translate English hangs."
+  },
+  "Hij zit in de kamer.": {
+    "answers": [],
+    "explanation": "Hij takes singular zit. Zitten describes sitting and in de kamer gives the room containing him. Dutch simple present naturally corresponds to English is sitting; bare hij is zitten would not form this description."
+  },
+  "Ik vraag mijn collega om hulp.": {
+    "answers": [],
+    "explanation": "Vraag is finite with ik. Mijn collega is the person asked and om hulp states what is requested. Hulp is a noun, so this om is a preposition meaning for, not the start of an om ... te infinitive clause."
+  },
+  "Lezen is mijn hobby.": {
+    "answers": [],
+    "explanation": "Lezen is an infinitive naming the reading activity and functions as a singular subject. Finite is follows it; mijn hobby identifies that activity as the speaker's hobby. English uses reading rather than a finite reads for this subject."
+  },
+  "Het schoonmaken van de keuken kost tijd.": {
+    "answers": [],
+    "explanation": "Het schoonmaken is a nominalised infinitive, with van de keuken specifying what is cleaned. That whole phrase is one singular subject before finite kost. Tijd is what the activity takes. Kosten has stem kost; the existing stem-final t is retained, not doubled."
+  },
+  "Nederlands leren is belangrijk voor mij.": {
+    "answers": [],
+    "explanation": "The complete activity Nederlands leren is one singular subject; finite is follows that phrase. Belangrijk is a predicate adjective without agreement -e. Voor mij identifies the person to whom the learning matters. Mij can be emphasised; me is the unstressed alternative."
+  },
+  "Samen koken is leuk.": {
+    "answers": [],
+    "explanation": "Samen koken is an infinitive phrase naming cooking together and functions as a singular subject. Finite is follows the whole phrase. Leuk describes the activity and has no attributive -e here. Samen identifies joint cooking, not cooking alone for somebody else."
+  },
+  "Ik hou van lezen in de buitenlucht.": {
+    "answers": [],
+    "explanation": "Ik hou and ik houd are both standard present forms of houden. Van introduces the loved activity lezen. In de buitenlucht specifies reading outdoors and can follow lezen. Lezen is an activity infinitive here, without te, not a second finite verb."
+  },
+  "Hij is bezig met het wassen van de ramen.": {
+    "answers": [],
+    "explanation": "Hij takes is. Bezig met names what occupies him, using nominalised het wassen. Van de ramen identifies the windows being washed. Wassen is not finite here, and de was is a separate noun for laundry. The sentence does not report completed washing."
+  },
+  "Aan jou denken maakt me blij.": {
+    "answers": [],
+    "explanation": "The entire activity phrase aan jou denken is one singular subject before finite maakt. Denken aan means think of, and jou refers to the person addressed. Me is the object experiencing the happiness; blij describes that object. It is not a second subject."
+  },
+  "Het plannen van de reis is gemakkelijk.": {
+    "answers": [],
+    "explanation": "Het plannen is a nominalised infinitive; van de reis says what is planned. The complete activity phrase is singular and takes is. Gemakkelijk is a predicate adjective without agreement -e and means easy; makkelijk is a natural synonym here."
+  },
+  "Zingen was haar passie.": {
+    "answers": [],
+    "explanation": "Zingen names the activity as a singular subject. Was is past of zijn and describes the earlier state. Haar before passie is possessive her. The sentence does not itself establish that she no longer enjoys singing now."
+  },
+  "Het opruimen van mijn kamer duurde een uur.": {
+    "answers": [],
+    "explanation": "The entire phrase het opruimen van mijn kamer is one singular subject. Duurde is past of duren, meaning took or lasted here. Een uur is the duration, without a preposition. Opruimen means tidying; it does not necessarily mean cleaning dirt away."
+  },
+  "De kamers zijn schoon.": {
+    "answers": [],
+    "explanation": "Plural de kamers takes zijn. Schoon is a predicate adjective and keeps its base form even with a plural subject. Compare de schone kamers, where schone modifies the noun directly. This describes the rooms' clean condition."
+  },
+  "Dit is mijn huis.": {
+    "answers": [],
+    "explanation": "Dit is the standalone subject introducing an identification, and is is finite. Mijn before huis means my and replaces an article. A standalone dit does not mechanically copy noun gender; before a noun use dit huis but deze tas."
+  },
+  "Dat is een goed idee.": {
+    "answers": [],
+    "explanation": "Dat is the subject of this judgement. Idee is a singular het-word after indefinite een, so attributive goed has no -e. Compare het goede idee. Goed is inside the noun phrase een goed idee here, rather than being a separate predicate adjective."
+  },
+  "Zij werd een goede dokter.": {
+    "answers": [],
+    "explanation": "Singular past werd identifies zij as she and expresses becoming, rather than already being, a doctor. Een goede dokter is the ordinary inflected noun phrase. Some profession descriptions also allow an uninflected adjective in a suitable reading; the model is not a universal ban on that alternative."
+  },
+  "Morgen wordt het een drukke dag.": {
+    "answers": [],
+    "explanation": "Morgen is the first time constituent, so finite wordt follows it before subject het. Present wordt predicts tomorrow's situation. Een drukke dag identifies that situation; dag is a de-word, so druk takes -e in this noun phrase."
+  },
+  "Heb je het afgemaakt?": {
+    "answers": [],
+    "explanation": "Heb starts the neutral yes/no question before subject je; compare je hebt. Het is the task as an object, before participle afgemaakt. Afmaken is separable, with participle af + ge + maakt. This asks about completion, not whether the listener must finish it later."
+  },
+  "Ik geef het aan hem.": {
+    "answers": [],
+    "explanation": "Ik is the subject and geef is finite. Het is the item given; aan hem is the recipient phrase, using object form hem after the preposition. Ik geef het hem is also possible with a bare indirect object, preserving the giver, recipient and item."
+  },
+  "Ik kan het je niet vertellen.": {
+    "answers": [],
+    "explanation": "Kan is finite with ik and vertellen stays an infinitive without te. Het refers to the information and je is the listener receiving it. Niet negates the ability to tell; it does not say that je is the subject or that the information is necessarily false."
+  },
+  "Hij heeft me gisteren gebeld.": {
+    "answers": [],
+    "explanation": "Hij takes finite auxiliary heeft; gebeld is the participle of bellen. Me is the speaker receiving the call and comes before gisteren in this neutral clause. Gisteren supplies the past time. Dutch perfect can report that completed event where English uses called."
+  },
+  "We sturen het morgen op.": {
+    "answers": [],
+    "explanation": "Opsturen is separable: plural we takes sturen, with op after object het and time morgen. Het means the item, not an article here. Present sturen describes tomorrow's planned sending."
+  },
+  "Ik heb je boek meegenomen.": {
+    "answers": [],
+    "explanation": "Heb is finite with ik and meegenomen is the participle of meenemen. Je before boek is possessive your, not the subject you. The object je boek precedes the participle; the bringing is completed."
+  },
+  "Zij gaf ons goed advies.": {
+    "answers": [],
+    "explanation": "Gaf is singular past of geven, identifying zij as she. Ons is the recipient group and goed advies the thing given. Advies is singular indefinite neuter here, so goed has no -e; compare het goede advies."
+  },
+  "Ik wil het je uitleggen.": {
+    "answers": [],
+    "explanation": "Wil is finite with ik. Het is what is explained and je is the recipient. Uitleggen stays joined as an infinitive without te after wil; compare finite ik leg het je uit."
+  },
+  "Heb je dit gerecht al geprobeerd?": {
+    "answers": [],
+    "explanation": "Heb starts the perfect question before subject je; compare je hebt. Gerecht is a singular het-word and takes dit. Al means already or yet in this question. Geprobeerd is the participle of proberen, with hebben as auxiliary."
+  },
+  "Morgen probeer ik een ander gerecht.": {
+    "answers": [],
+    "explanation": "Morgen is the first constituent, followed by finite probeer and subject ik. Present probeer refers to tomorrow's plan. Gerecht is a singular het-word after een, so ander has no -e. The dish is tried directly, without a te-clause."
+  },
+  "Ik zal proberen de soep te maken.": {
+    "answers": [],
+    "explanation": "Zal is finite with ik. Proberen stays a bare infinitive after zal, but requires te before its own following action maken. De soep is the object of maken. The sentence promises an attempt, not success."
+  },
+  "Zij probeert de saus.": {
+    "answers": [],
+    "explanation": "Singular probeert identifies zij as she. De saus is the thing tried directly; this tasting context gives proberen its food-testing meaning. No te is needed without a second action verb. Ze is the unstressed subject alternative."
+  },
+  "We hebben een andere aanpak geprobeerd.": {
+    "answers": [],
+    "explanation": "Plural we takes hebben; geprobeerd is the participle of proberen. Aanpak is a de-word, so use een andere aanpak. This reports testing a different method, without claiming that it worked."
+  },
+  "Ik woon sinds vorig jaar in Roeselare.": {
+    "answers": [],
+    "explanation": "Woon is present with ik for residence still continuing now. Sinds vorig jaar gives its starting point, not a completed duration. English naturally uses have lived. In Roeselare identifies the city; the starting phrase can also be fronted."
+  },
+  "Sinds september werk ik in Brussel.": {
+    "answers": [],
+    "explanation": "Sinds september is one first time constituent, so finite werk precedes subject ik. Dutch uses present for the employment still continuing now; English naturally uses have worked. In Brussel names where the work takes place."
+  },
+  "Hij leert sinds januari Nederlands.": {
+    "answers": [],
+    "explanation": "Leert agrees with hij. Sinds januari gives the starting point of continuing learning, so Dutch present naturally matches English has been learning. Nederlands names the language without an article. Januari is written lowercase."
+  },
+  "Ik heb twee uur gefietst.": {
+    "answers": [],
+    "explanation": "Heb is the perfect auxiliary and gefietst the participle of fietsen. Twee uur gives duration, with uur singular as a measure after the number. Cycling as an activity uses hebben here; a completed directional journey can use zijn."
+  },
+  "Wij hebben tien minuten gewacht.": {
+    "answers": [],
+    "explanation": "Wij takes plural auxiliary hebben. Gewacht is the participle of wachten; tien minuten gives the completed wait's duration without a preposition. The countable unit minuut has ordinary plural minuten in this phrase."
+  },
+  "De les begint om half zes.": {
+    "answers": [],
+    "explanation": "Singular de les takes begint. Om introduces the starting clock time. Dutch half zes means half an hour before six: 5:30, not 6:30. English instead calls 5:30 half past five."
+  },
+  "Wij werken drie dagen per week.": {
+    "answers": [],
+    "explanation": "Wij takes plural werken. Drie dagen per week gives a recurring schedule, not one continuous three-day activity. Dagen is plural of dag, and per week means each week. The present describes the regular work pattern."
+  },
+  "De trein heeft tien minuten vertraging.": {
+    "answers": [],
+    "explanation": "Vertraging hebben means be delayed. Heeft is present with singular de trein, not a perfect auxiliary here. Tien minuten measures how far behind schedule the train runs. English naturally says ten minutes late."
+  },
+  "Ik ben hier al een uur.": {
+    "answers": [],
+    "explanation": "Ben is present of zijn with ik. Hier gives the location and al een uur the duration continuing up to now. English uses have been; Dutch needs no perfect for this continuing stay. Al conveys already or by now."
+  },
+  "De vergadering wordt geannuleerd.": {
+    "answers": [],
+    "explanation": "De vergadering is the singular subject receiving cancellation. Wordt plus participle geannuleerd forms the present passive; the agent can remain unnamed. In this scenario the cancellation is happening now, unlike completed is geannuleerd."
+  },
+  "Het formulier wordt ingevuld.": {
+    "answers": [],
+    "explanation": "Het formulier is the singular subject receiving the action. Wordt ingevuld is present passive. Invullen is separable, with participle in + ge + vuld. The sentence describes filling in progress without identifying the person doing it."
+  },
+  "Het formulier is ingevuld.": {
+    "answers": [],
+    "explanation": "Is plus participle ingevuld reports completed filling or its resulting completed state. Het formulier is the subject receiving that action. Compare wordt ingevuld for filling now; heeft ingevuld would normally require the person doing it as subject."
+  },
+  "De ramen worden schoongemaakt.": {
+    "answers": [],
+    "explanation": "Plural de ramen takes worden. Schoongemaakt is the participle of separable schoonmaken. This present passive describes the windows receiving cleaning now; it leaves the cleaner unnamed. Compare singular het raam wordt schoongemaakt."
+  },
+  "De deur werd gesloten.": {
+    "answers": [],
+    "explanation": "Werd is singular past of worden, forming a past passive with gesloten, participle of sluiten. De deur receives the closing action. The scenario reports an earlier event, not merely a door's current condition."
+  },
+  "Het voorstel werd geaccepteerd.": {
+    "answers": [],
+    "explanation": "Singular het voorstel takes past passive auxiliary werd. Geaccepteerd is the participle of accepteren. The proposal receives acceptance; the person deciding can remain unnamed. This reports the earlier decision rather than a future promise."
+  },
+  "De bestelling is bevestigd.": {
+    "answers": [],
+    "explanation": "Singular de bestelling takes is. Bevestigd is the participle of bevestigen, without extra ge- after unstressed be-. The completed passive reports that the order's confirmation is done; wordt bevestigd would describe confirmation in progress."
+  },
+  "De tickets worden gecontroleerd.": {
+    "answers": [],
+    "explanation": "Tickets is plural, so the present passive uses worden. Gecontroleerd is the participle of controleren. The tickets receive the checking action; the inspectors are understood from context but are not grammatical subjects in this sentence."
+  },
+  "Het probleem is opgelost.": {
+    "answers": [],
+    "explanation": "Het probleem is singular and takes is. Opgelost is the participle of separable oplossen, with ge inside the compound. This reports a solved problem or its resulting resolved state, rather than ongoing attempts to solve it."
+  },
+  "De brief werd gisteren verstuurd.": {
+    "answers": [],
+    "explanation": "De brief is the singular subject receiving the sending action. Werd + verstuurd forms a past passive; gisteren gives when it happened. Versturen is inseparable and its participle has no extra ge- after ver-."
+  },
+  "Ik hoor de vogels zingen.": {
+    "answers": [],
+    "explanation": "Hoor is finite with ik. De vogels is the object of horen and the understood subject of singing. Zingen is a bare infinitive without te in this perception construction; it is not plural agreement with ik."
+  },
+  "Zij hoort de kinderen spelen.": {
+    "answers": [],
+    "explanation": "Hoort is finite with singular zij meaning she. De kinderen is what she hears and who is playing. Spelen remains an infinitive without te after this perception verb. Ze can replace zij without changing the woman referred to."
+  },
+  "We zien de trein aankomen.": {
+    "answers": [],
+    "explanation": "Plural we takes finite zien. De trein is the object seen and the understood subject of aankomen. That separable verb stays joined as a bare infinitive without te. The model describes seeing the train arrive now."
+  },
+  "Ik zag hem naar buiten gaan.": {
+    "answers": [],
+    "explanation": "Zag is singular past of zien. Hem is the man seen, using an object form; he is the understood subject of gaan. Naar buiten gives his direction. Gaan remains an infinitive without te after the perception verb."
+  },
+  "Hij hoorde iemand bellen.": {
+    "answers": [],
+    "explanation": "Hoorde is singular past of horen. Iemand names the person heard and understood to be making a call in this scenario. Bellen remains a bare infinitive without te. The English calling here means phoning, rather than necessarily calling out loudly."
+  },
+  "Wij horen haar Nederlands spreken.": {
+    "answers": [],
+    "explanation": "Plural wij takes horen. Haar is the woman being heard, using an object form rather than possessive her before a noun. Nederlands is what she speaks. Spreken stays a bare infinitive without te in this perception construction."
+  },
+  "Ik zie de kinderen dansen.": {
+    "answers": [],
+    "explanation": "Zie is finite with ik. De kinderen is the object seen and the group performing the dancing. Dansen stays an infinitive without te; it is not a second finite verb conjugated for ik."
+  },
+  "Zij zag de kat weglopen.": {
+    "answers": [],
+    "explanation": "Zag is singular past of zien, identifying zij as she. De kat is what she saw and the understood subject of weglopen. The separable action verb stays joined as an infinitive after zag, without te."
+  },
+  "Ik hoor mijn buurman lachen.": {
+    "answers": [],
+    "explanation": "Hoor is finite with ik. Mijn buurman is the object heard and the person laughing; mijn is possessive my. Lachen stays a bare infinitive without te in this perception construction. English naturally uses laughing."
+  },
+  "We zagen de bus vertrekken.": {
+    "answers": [],
+    "explanation": "We takes plural past zagen from zien. De bus is the object seen and the understood subject of vertrekken. Vertrekken stays an infinitive without te. The sentence reports witnessing the departure, not merely knowing that the bus left."
+  },
+  "Hij hoort de hond blaffen.": {
+    "answers": [],
+    "explanation": "Hoort is finite with hij. De hond is the object heard and the animal performing the barking. Blaffen stays a bare infinitive without te after the perception verb. No extra is is needed to translate barking."
+  },
+  "Ik zag haar de deur sluiten.": {
+    "answers": [],
+    "explanation": "Zag is singular past of zien. Haar is the woman seen and understood to perform sluiten; de deur is the object of sluiten. The action verb stays a bare infinitive without te. The speaker witnessed her closing the door."
+  },
+  "Ik heb een pen nodig.": {
+    "answers": [],
+    "explanation": "Heb is present with ik in iets nodig hebben. Een pen is the thing needed before predicate nodig. This is not a perfect tense: nodig is an adjective, not a participle. Pen is a singular de-word."
+  },
+  "Wij hebben meer tijd nodig.": {
+    "answers": [],
+    "explanation": "Wij takes plural finite hebben. Meer tijd is the greater amount needed and precedes nodig. Tijd needs no indefinite article in this quantity expression. The sentence states a current need, not that extra time has already been granted."
+  },
+  "Hij heeft zijn paspoort nodig.": {
+    "answers": [],
+    "explanation": "Heeft is present with hij in the need expression. Zijn before paspoort means his, not the verb be. Zijn paspoort is the item needed before nodig. The sentence does not claim the man already has the passport with him."
+  },
+  "Zij had hulp nodig.": {
+    "answers": [],
+    "explanation": "Had is singular past of hebben and identifies zij as she here. Hulp is the unspecified help needed; nodig completes the expression. This is simple past, not past perfect: there is no participle. Ze is the unstressed subject alternative."
+  },
+  "We hadden geen kaart nodig.": {
+    "answers": [],
+    "explanation": "We takes plural past hadden. Geen kaart negates the indefinite needed item. Kaart means map in this travel scenario, though it can mean card elsewhere. Nodig is an adjective, not a past participle."
+  },
+  "Ik zal morgen mijn laptop nodig hebben.": {
+    "answers": [],
+    "explanation": "Zal is the finite verb with ik. Hebben remains an infinitive after zal in the future need expression; nodig is an adjective, not another verb. Morgen gives the future time and mijn laptop is the item needed."
+  },
+  "Heb je een ticket nodig?": {
+    "answers": [],
+    "explanation": "Heb begins the neutral yes/no question before subject je; compare je hebt. Een ticket is the item possibly needed, before adjective nodig. This is present need, not a perfect question about a completed action."
+  },
+  "Wij hebben een oplossing nodig.": {
+    "answers": [],
+    "explanation": "Wij takes plural finite hebben. Een oplossing is the indefinite thing needed and precedes adjective nodig. The statement expresses a need for a solution; it does not claim that one has already been found or implemented."
+  },
+  "Hij heeft goed advies nodig.": {
+    "answers": [],
+    "explanation": "Hij takes finite heeft. Advies is singular indefinite neuter here, so use goed without -e; compare het goede advies. Nodig completes the need expression. English advice is normally uncountable and does not take an indefinite article here."
+  },
+  "Ik heb wat water nodig.": {
+    "answers": [],
+    "explanation": "Heb is finite with ik. Wat before water means some, not a question word. Water is a mass noun, and wat water is what is needed before adjective nodig. This is a present need statement."
+  },
+  "Ik zit op de stoel.": {
+    "answers": [],
+    "explanation": "Zit is present of zitten with ik. It already expresses the seated position, naturally translated am sitting. Op de stoel gives the location. Bare ik ben zitten would not form this posture statement."
+  },
+  "Ik ga op de bank zitten.": {
+    "answers": [],
+    "explanation": "Ga is finite with ik and zitten stays a bare infinitive. Gaan zitten means take a seat, describing a change into sitting. Op de bank identifies the sofa; this is different from simply ik zit op de bank, already being seated."
+  },
+  "Hij staat bij de bushalte.": {
+    "answers": [],
+    "explanation": "Staat agrees with hij and describes his standing position. Bij de bushalte gives the location near or at the bus stop. Dutch simple present naturally translates as is standing; no extra is precedes staat."
+  },
+  "Zij lag op het bed.": {
+    "answers": [],
+    "explanation": "Lag is singular past of liggen, identifying zij as she. Op het bed gives the place where she was lying. English uses was lying here; Dutch expresses the past directly in lag. This is not leggen, which means lay or put something down."
+  },
+  "Ik sta op de bus te wachten.": {
+    "answers": [],
+    "explanation": "Sta is finite with ik. Staan te wachten describes ongoing waiting while standing in this situation. Op de bus belongs to wachten op, meaning wait for the bus; it does not mean aboard the bus. Wachten stays an infinitive after te."
+  },
+  "Hij stond bij de ingang te wachten.": {
+    "answers": [],
+    "explanation": "Stond is singular past of staan with hij. Staan te wachten describes waiting while standing; bij de ingang gives the location. Wachten remains an infinitive after te even though stond places the activity in the past."
+  },
+  "Zij zit een boek te lezen.": {
+    "answers": [],
+    "explanation": "Singular zit identifies zij as she. Zitten te lezen describes reading while seated. Een boek is the object before te lezen; lezen stays an infinitive. English can simply say is reading, while this Dutch model also indicates posture."
+  },
+  "Wij blijven hier staan.": {
+    "answers": [],
+    "explanation": "Wij takes plural finite blijven. Staan remains a bare infinitive without te after blijven. Hier gives the location where the group remains standing. This expresses maintaining that position, rather than newly sitting down or departing."
+  },
+  "De auto staat buiten.": {
+    "answers": [],
+    "explanation": "De auto is singular and takes staat. Staan naturally describes a car's parked position; buiten means outside. The sentence describes a location and state, rather than an action performed by the car."
+  },
+  "Ik heb een uur zitten wachten.": {
+    "answers": [],
+    "explanation": "Heb is finite with ik. Een uur gives the completed duration. Zitten is a replacement infinitive before wachten in this perfect verb group, not participle gezeten. In this scenario the speaker waited while seated; no te appears in the final double infinitive."
+  },
+  "Goed gedaan!": {
+    "answers": [],
+    "explanation": "Goed gedaan is a conventional praise fragment without a finite verb. Gedaan is the irregular participle of doen, and goed describes how the task was done. Dat heb je goed gedaan is a full clause praising the same completed action."
+  },
+  "Een kop koffie, alstublieft.": {
+    "answers": [],
+    "explanation": "This café order is a noun phrase, with no finite verb requiring V2. Kop is the cup unit and koffie its contents. Alstublieft makes the request polite. Mag ik een kop koffie, alstublieft? is a fuller question serving the same order."
+  },
+  "Twee broodjes, alstublieft.": {
+    "answers": [],
+    "explanation": "Broodjes is the plural diminutive of brood and means bread rolls here. Twee gives the requested number. This is a polite noun-phrase order without a finite verb; alstublieft adds please. A full request can begin Ik wil graag."
+  },
+  "Tot morgen!": {
+    "answers": [],
+    "explanation": "Tot morgen is a conventional farewell anticipating seeing someone tomorrow. Tot literally sets an until endpoint, but natural English is See you tomorrow. It is a fragment without a finite verb, not a statement requiring a subject."
+  },
+  "Veel succes!": {
+    "answers": [],
+    "explanation": "Veel succes is a conventional wish before someone's attempt, naturally Good luck. Succes is a noun and veel expresses an amount. The phrase wishes future success; it does not praise a task already completed as Goed gedaan does."
+  },
+  "Geen probleem.": {
+    "answers": [],
+    "explanation": "Geen negates indefinite probleem in this short reassurance. There is no finite verb in the fragment. Dat is geen probleem supplies a full subject and verb while reassuring the person about the same small request."
+  },
+  "Dat is vriendelijk van je.": {
+    "answers": [],
+    "explanation": "Dat refers to the kind gesture and is the subject before finite is. Vriendelijk is a predicate adjective without agreement -e. Van je identifies the person showing kindness; je is an object after the preposition, not possessive your here."
+  },
+  "Sorry voor de vertraging.": {
+    "answers": [],
+    "explanation": "This is an apology fragment without a finite verb. Voor introduces what the speaker apologises for: de vertraging, the delay. It does not ask the other person to wait longer or mean thanks for waiting."
+  },
+  "Fijn weekend!": {
+    "answers": [],
+    "explanation": "Fijn weekend is a conventional wish for the coming weekend. Weekend is a singular het-word in this indefinite phrase, so fijn has no -e. Een fijn weekend gewenst is a fuller conventional wish, also without an ordinary finite verb."
+  },
+  "Dit boek is interessant.": {
+    "answers": [],
+    "explanation": "Boek is a singular het-word, so the attached nearby demonstrative is dit. The complete subject dit boek precedes finite is. Interessant is a predicate adjective without agreement -e; it does not take an ending to match the noun."
+  },
+  "Deze tas is duur.": {
+    "answers": [],
+    "explanation": "Tas is a singular de-word, so nearby this is deze. Deze tas is the whole subject before is. Duur is a predicate adjective without agreement -e and means expensive here; compare de dure tas with an adjective before the noun."
+  },
+  "Dat huis is groot.": {
+    "answers": [],
+    "explanation": "Huis is a singular het-word, so farther-away that is dat when attached before it. Dat huis is the subject before is. Groot is a predicate adjective without agreement -e, describing the house's size."
+  },
+  "Die auto staat buiten.": {
+    "answers": [],
+    "explanation": "Auto is a singular de-word, so farther-away that is die. Die auto is singular and takes staat. Buiten gives the location, and staan naturally describes the car parked there. The demonstrative is attached to auto, not standing alone."
+  },
+  "Deze boeken zijn nieuw.": {
+    "answers": [],
+    "explanation": "Boeken is plural, so nearby these is deze even though singular boek takes het. The plural subject takes zijn. Nieuw is a predicate adjective and stays uninflected; compare de nieuwe boeken with an adjective before the noun."
+  },
+  "Die mensen wonen hier.": {
+    "answers": [],
+    "explanation": "Mensen is plural, so those is die and the finite verb is plural wonen. Hier gives the people's place of residence. Die points out the people being discussed; it does not require that their homes be far away."
+  },
+  "Ik wil dit brood.": {
+    "answers": [],
+    "explanation": "Wil is finite with ik and directly takes the desired item here. Brood is a singular het-word or mass noun, so use dit brood. No second action verb is required when stating that you want the bread."
+  },
+  "Ik neem deze jas.": {
+    "answers": [],
+    "explanation": "Neem is present of nemen with ik. In this shopping context it expresses choosing the coat now, naturally I will take it. Jas is a singular de-word, so nearby this is deze. The model is not a completed purchase in the past."
+  },
+  "Heb je dat gerecht geprobeerd?": {
+    "answers": [],
+    "explanation": "Heb begins the perfect question before subject je. Gerecht is a singular het-word, so farther-away or previously mentioned that is dat. Geprobeerd is the participle of proberen. The question asks about an earlier experience of trying the dish."
+  },
+  "Dat is onze auto.": {
+    "answers": [],
+    "explanation": "Dat stands alone as the subject of an identification. Onze is the possessive before singular de-word auto. The standalone dat does not have to agree with auto as an attached demonstrative would: compare die auto. It identifies the car as belonging to the speaker's group."
+  },
+  "Het account heeft te veel rechten voor deze taak.": {
+    "explanation": "Het account is the singular subject, so hebben becomes heeft. Te veel means too many here: rechten are system permissions. Voor deze taak limits the comparison to this task; taak is a de-word, so use deze.",
+    "answers": []
+  },
+  "Wie keurt deze toegang goed?": {
+    "explanation": "Wie asks which person approves access and is itself the subject. Keurt is the finite part of separable goedkeuren; goed follows the object deze toegang. Toegang is a de-word, so use deze.",
+    "answers": []
+  },
+  "Ik kan me aanmelden, maar de map niet openen.": {
+    "explanation": "Kan is the finite modal with ik. Aanmelden and openen remain infinitives without te. Me refers back to the speaker in zich aanmelden, meaning sign in. The second clause omits repeated ik kan: maar ik kan de map niet openen. Niet negates opening the folder.",
+    "answers": []
+  },
+  "We hebben de oude rechten nog niet ingetrokken.": {
+    "explanation": "We takes plural hebben, followed later by participle ingetrokken from separable intrekken. Nog niet means not yet: the old permissions remain in effect for now. Oude has -e before the definite plural noun rechten.",
+    "answers": []
+  },
+  "Deze rol geeft alleen toegang tot de rapporten.": {
+    "explanation": "Deze rol is the singular subject and takes geeft, from geven. Rol is a de-word, so use deze. Toegang tot names what can be accessed. Alleen restricts access to the reports in this situation.",
+    "answers": []
+  },
+  "Mag de stagiair dit testaccount gebruiken?": {
+    "explanation": "This permission question starts with finite mag, followed by subject de stagiair. Gebruiken stays an infinitive without te after mogen. Testaccount is a het-word, so use dit. Mag asks whether use is permitted, rather than whether the intern knows how.",
+    "answers": []
+  },
+  "Ik vraag waarom extra schrijfrechten nodig zijn.": {
+    "explanation": "Ik vraag has ordinary main-clause order. Waarom introduces an embedded why-question, with subject extra schrijfrechten before final zijn. The subject is plural, so use zijn rather than is. Nodig is a predicate adjective, without -e. Schrijfrechten means permissions to write or modify data.",
+    "answers": []
+  },
+  "De toegang van gisteren is niet meer geldig.": {
+    "explanation": "De toegang is singular, so use is. Van gisteren identifies the access from yesterday. Niet meer means no longer, indicating that it was valid before. Geldig describes the access after is and takes no adjective ending.",
+    "answers": []
+  },
+  "De eigenaar heeft de aanvraag goedgekeurd.": {
+    "explanation": "The singular subject de eigenaar takes heeft. Goedgekeurd is the participle of separable goedkeuren: goed + ge + keurd. The object de aanvraag comes before the final participle. This reports completed approval, rather than merely a request for approval.",
+    "answers": []
+  },
+  "Tot wanneer blijft de tijdelijke rol actief?": {
+    "explanation": "Tot wanneer is one question phrase meaning until when. Finite blijft follows it, then subject de tijdelijke rol. Blijven means remain here. Tijdelijke has -e before the definite de-word rol; actief is a predicate adjective and has no -e.",
+    "answers": []
+  },
+  "Controleer de rechten na de rolwijziging.": {
+    "explanation": "Controleer is the imperative stem of controleren. De rechten is the object; na de rolwijziging specifies when to check them. Na means after here, not to or during.",
+    "answers": []
+  },
+  "Als de opdracht eindigt, trekken we de extra toegang in.": {
+    "explanation": "The entire als-clause is the first constituent, followed by main finite trekken and subject we. Inside it, de opdracht precedes singular eindigt. Intrekken splits into trekken ... in in the main clause. Als describes the point when the assignment ends here.",
+    "answers": []
+  },
+  "Mag ik uw sessie voor deze test onderbreken?": {
+    "explanation": "Mag comes before ik in this permission question. Onderbreken remains an infinitive without te after mogen. Uw is the polite possessive before sessie. Voor deze test names the purpose of interrupting the session.",
+    "answers": []
+  },
+  "De goedkeuring betreft alleen de geplande handeling.": {
+    "explanation": "The singular subject de goedkeuring takes betreft, from betreffen, meaning concerns or applies to. Alleen limits approval to the planned action. Geplande has -e before the definite de-word handeling.",
+    "answers": []
+  },
+  "De beheerder heeft de uitbreiding niet goedgekeurd.": {
+    "explanation": "Singular de beheerder takes heeft. The object de uitbreiding precedes niet and final participle goedgekeurd, from goedkeuren. Niet negates approval of this extension; it does not mean that no extension exists.",
+    "answers": []
+  },
+  "Waar staat de toestemming geregistreerd?": {
+    "explanation": "Waar asks for the location of the record. Finite staat follows waar and precedes subject de toestemming. Geregistreerd is the participle used with staan to describe the recorded status; the question does not ask where someone is standing.",
+    "answers": []
+  },
+  "We moeten de nieuwe scope opnieuw voorleggen.": {
+    "explanation": "Plural we takes moeten, expressing necessity. Voorleggen stays together as an infinitive without te after moeten; as a finite main verb it splits: we leggen de scope voor. Opnieuw means again. Nieuwe has -e before de scope.",
+    "answers": []
+  },
+  "Ik heb voor de test expliciet toestemming gevraagd.": {
+    "explanation": "Heb is the finite perfect auxiliary, and gevraagd is the participle of vragen. Toestemming vragen means ask permission; asking does not itself establish that permission was granted. In this scenario voor de test means before the test. The same words can mean for the test in a different context.",
+    "answers": [],
+    "scenario": "You are discussing a workplace test that has already taken place. State that you explicitly asked permission before the test, without claiming that permission was granted."
+  },
+  "De eigenaar vraagt welke gegevens we bekijken.": {
+    "explanation": "The main clause has singular vraagt after de eigenaar. Welke gegevens is the object question phrase introducing an embedded question; it is not a conjunction. Subject we precedes final bekijken. Gegevens is plural, so use welke.",
+    "answers": []
+  },
+  "Technische toegang is geen vervanging voor toestemming.": {
+    "explanation": "Technische toegang is a singular subject, followed by is. Geen negates the indefinite noun phrase een vervanging. Vervanging voor means substitute for; technical access alone does not supply the intended permission.",
+    "answers": []
+  },
+  "Kun je het akkoord bij de aanvraag voegen?": {
+    "explanation": "Kun precedes informal subject je in this request. Voegen remains an infinitive without te after kunnen. Iets bij iets voegen means add or attach one item to another: here het akkoord is added to de aanvraag.",
+    "answers": []
+  },
+  "Als de toestemming vervalt, stoppen we de test.": {
+    "explanation": "The whole if-clause comes first; main finite stoppen then precedes subject we. Inside the als-clause, singular toestemming takes final vervalt, from vervallen, meaning expire or cease to apply. De test is the object of stoppen.",
+    "answers": []
+  },
+  "Voor deze stap is een apart akkoord nodig.": {
+    "explanation": "Voor deze stap is the first constituent, followed by finite is and subject een apart akkoord. Nodig is a predicate adjective. Akkoord is a het-word, so the adjective after indefinite een is apart without -e. Stap is a de-word, so use deze.",
+    "answers": []
+  },
+  "Bevestig eerst het afgesproken tijdvenster.": {
+    "explanation": "Bevestig is the imperative stem of bevestigen; the addressed person is understood. Eerst means first, before proceeding. Afgesproken is the participle of afspreken used before het tijdvenster and describes the window already agreed upon.",
+    "answers": []
+  },
+  "We hebben een afzonderlijke testmap aangemaakt.": {
+    "explanation": "We takes plural perfect auxiliary hebben. Aangemaakt is the participle of separable aanmaken: aan + ge + maakt. Testmap takes de, so the adjective after een has -e: afzonderlijke. The sentence reports completed creation.",
+    "answers": []
+  },
+  "Wat verwachten we na de eerste stap?": {
+    "explanation": "Wat is the object question word asking for the expected outcome. Finite verwachten comes next, before subject we. Na de eerste stap means after the first step; eerste is the ordinal adjective, rather than the quantity one.",
+    "answers": []
+  },
+  "De test moet zonder echte klantgegevens verlopen.": {
+    "explanation": "The singular subject de test takes moet. Verlopen is an infinitive without te after moeten and means proceed or run in this context. Zonder introduces what must be absent. Echte has -e before plural klantgegevens.",
+    "answers": []
+  },
+  "De voorbereiding is niet hetzelfde als een geslaagde test.": {
+    "explanation": "De voorbereiding is singular and takes is. Niet negates hetzelfde, meaning the same thing. Hetzelfde als compares preparation with a successful test. Geslaagde describes the de-word test and therefore has -e after een.",
+    "answers": []
+  },
+  "Ik zet de controlelijst voor de collega klaar.": {
+    "explanation": "Ik takes finite zet. Klaarzetten is separable: zet comes second and klaar follows the object and beneficiary phrase. Voor de collega identifies whom the checklist is prepared for; it does not specify that the colleague prepares it.",
+    "answers": []
+  },
+  "We spreken af wie de resultaten noteert.": {
+    "explanation": "Afspreken splits into main finite spreken and particle af. The following embedded question states what is agreed. Wie is itself its subject, so singular noteert follows de resultaten at the end; de resultaten is the object, not the subject.",
+    "answers": []
+  },
+  "Controleer de versie voordat je test.": {
+    "explanation": "Controleer is the imperative stem of controleren, with the addressed person understood. Voordat introduces the before-clause: subject je precedes final test. Test ends in the stem letter t, so je test has only one written t.",
+    "answers": []
+  },
+  "De eigenaar heeft de testscope bevestigd.": {
+    "explanation": "Singular de eigenaar takes heeft; the object de testscope comes before participle bevestigd. Bevestigen has inseparable be- and therefore no extra ge- in its participle. The perfect reports completed confirmation.",
+    "answers": []
+  },
+  "Welke stappen zijn veilig terug te draaien?": {
+    "explanation": "Welke stappen is the question subject, followed by plural zijn. Veilig describes reversing the steps safely. Terugdraaien is separable: te goes between terug and draaien. This construction asks which steps can be reversed, not which steps reverse themselves.",
+    "answers": []
+  },
+  "We kunnen de proef na de reservekopie starten.": {
+    "explanation": "We takes plural kunnen. Starten stays an infinitive without te after kunnen. Na de reservekopie places the start after making the backup. Kunnen describes practical possibility here; it does not by itself grant approval.",
+    "answers": []
+  },
+  "De oorspronkelijke waarden staan in het ticket.": {
+    "explanation": "De oorspronkelijke waarden is the plural subject and takes staan. Staan describes where written information is recorded, rather than physical standing. Oorspronkelijke has -e before the definite plural noun waarden; in het ticket locates the record.",
+    "answers": []
+  },
+  "Als de voorbereiding niet compleet is, stellen we de proef uit.": {
+    "explanation": "The complete als-clause comes first, then main finite stellen and subject we. In the if-clause, is follows niet compleet. Uitstellen is separable: stellen ... uit means postpone. Niet negates completeness, not the existence of preparation.",
+    "answers": []
+  },
+  "De eerste drie controles zijn geslaagd.": {
+    "explanation": "The plural subject de eerste drie controles takes zijn. Slagen in the succeed/pass sense uses zijn in the perfect: zijn geslaagd. Eerste identifies the first three checks; success on these checks does not establish that every later check has passed.",
+    "answers": []
+  },
+  "De foutmelding is niet verdwenen na de wijziging.": {
+    "explanation": "Verdwijnen uses zijn in the perfect: is verdwenen, with no added ge-. Niet negates disappearance. Na de wijziging is a full time preposition phrase after the participle; such a phrase can follow the verb bracket.",
+    "answers": []
+  },
+  "Wat wijkt precies van de verwachting af?": {
+    "explanation": "Wat is itself the subject of this question. Wijkt is finite; af is the separated particle of afwijken. Afwijken van means differ from or deviate from. Precies asks for the exact difference.",
+    "answers": []
+  },
+  "Het bestand blijft na het opslaan leesbaar.": {
+    "explanation": "Het bestand is singular and takes blijft. Leesbaar is a predicate adjective without -e, describing a property that continues after saving. Het opslaan is an infinitive used as an activity noun after na; it stays joined as opslaan.",
+    "answers": []
+  },
+  "We hebben de meetwaarden in de testlijst gezet.": {
+    "explanation": "We takes plural auxiliary hebben. De meetwaarden is the object, in de testlijst gives its recorded location, and gezet is the participle of zetten. The sentence reports completed recording of the measurements.",
+    "answers": []
+  },
+  "Deze uitslag kan de afwijking nog niet verklaren.": {
+    "explanation": "Deze uitslag is singular and takes kan. Uitslag is a de-word, so use deze. Verklaren remains an infinitive without te after kunnen. Nog niet means not yet: the result does not currently explain the deviation.",
+    "answers": []
+  },
+  "Ik noteer dat de laatste stap niet is uitgevoerd.": {
+    "explanation": "Ik noteer has main-clause order. Dat introduces the recorded statement, with subject de laatste stap and final passive group is uitgevoerd. Uitgevoerd is the participle of uitvoeren. Niet negates carrying out that step; uitgevoerd is is also a possible final cluster order.",
+    "answers": []
+  },
+  "De nieuwe weergave is duidelijker dan de oude.": {
+    "explanation": "De nieuwe weergave is singular and takes is. Duidelijker is the comparative of duidelijk, without -e as a predicate adjective. Dan introduces the comparison. De oude stands for de oude weergave, with the repeated noun understood.",
+    "answers": []
+  },
+  "Eén goed resultaat is geen volledige goedkeuring.": {
+    "explanation": "Eén stresses the quantity one. Resultaat is a singular het-word, so goed has no -e after this indefinite quantity. Geen negates the noun phrase volledige goedkeuring. Volledige has -e before the de-word goedkeuring.",
+    "answers": []
+  },
+  "Welke voorwaarde was bij deze poging anders?": {
+    "explanation": "Welke voorwaarde is the question subject and takes singular past was. Voorwaarde is a de-word, so use welke. Bij deze poging means in this attempt. Anders is an adverbial/predicate description meaning different, rather than another condition.",
+    "answers": []
+  },
+  "De gebruiker heeft het verwachte gedrag bevestigd.": {
+    "explanation": "Singular de gebruiker takes heeft. Bevestigd is the participle of inseparable bevestigen, without extra ge-. Gedrag is a het-word; definite het requires verwachte with -e. Verwachte identifies the behaviour that was expected.",
+    "answers": []
+  },
+  "Als de resultaten compleet zijn, bespreken we de volgende stap.": {
+    "explanation": "The whole als-clause is first, then main finite bespreken and subject we. Inside it, plural de resultaten takes final zijn. Compleet is a predicate adjective without -e. The present bespreken describes the planned discussion once the results are complete.",
+    "answers": []
+  },
+  "De afspraak geldt voor de avondploeg.": {
+    "explanation": "De afspraak is singular and takes geldt, from gelden, meaning apply or be valid. Voor de avondploeg identifies the group covered, not a deadline. An afspraak here is an agreed arrangement; it need not be a medical appointment.",
+    "answers": []
+  },
+  "Kun je de geplande duur in het bericht zetten?": {
+    "explanation": "Kun comes before informal subject je in this request. Zetten stays an infinitive without te. De geplande duur is the duration to include, and in het bericht names where to put that information. Geplande has -e before de duur.",
+    "answers": []
+  },
+  "De test vervangt de nacontrole niet.": {
+    "explanation": "De test is singular and takes vervangt. De nacontrole is a definite object, so niet negates replacing it. Nacontrole is the later check after the change in this context; a successful test does not remove that check.",
+    "answers": []
+  },
+  "We hebben de onderbreking met de receptie afgestemd.": {
+    "explanation": "We takes hebben; afgestemd is the participle of separable afstemmen. Met de receptie identifies whom the interruption was coordinated with. The perfect reports completed coordination, rather than claiming that the interruption has already happened.",
+    "answers": []
+  },
+  "Hoeveel tijd blijft voor herstel over?": {
+    "explanation": "Hoeveel tijd is the question subject and takes singular blijft. Overblijven splits into blijft ... over and means remain. Voor herstel names the purpose of the remaining time, not a deadline. Herstel is recovery in this context.",
+    "answers": []
+  },
+  "De eigenaar moet het tijdstip nog bevestigen.": {
+    "explanation": "Singular de eigenaar takes moet. Bevestigen is an infinitive without te after moeten. Nog means the confirmation still remains to be done. Het tijdstip is the particular scheduled time, rather than a duration.",
+    "answers": []
+  },
+  "Ik meld het als we later beginnen.": {
+    "explanation": "Ik meld has main-clause order; het refers to the late start being reported. Als introduces an if-clause with subject we before final beginnen. Later compares the start with the planned time. The Dutch present expresses a future communication commitment here.",
+    "answers": []
+  },
+  "De communicatie gaat een dag vooraf uit.": {
+    "explanation": "Singular de communicatie takes gaat. Uitgaan splits into gaat ... uit; here the notice goes out or is distributed. Een dag vooraf means one day in advance of the scheduled change. Vooraf is a time adverb, separate from particle uit.",
+    "answers": []
+  },
+  "Tijdens de vergadering voeren we de wijziging niet uit.": {
+    "explanation": "Tijdens de vergadering is one first constituent. Finite voeren follows it before subject we. Uitvoeren splits into voeren ... uit, with object de wijziging and negation niet between them. Tijdens means during the meeting, not after it.",
+    "answers": []
+  },
+  "Mogen we de afspraak nu vastleggen?": {
+    "explanation": "Mogen comes first in this permission question, followed by plural subject we. Vastleggen stays joined as an infinitive without te. Here it means formally record or fix the arrangement; the question seeks permission and does not report completion.",
+    "answers": []
+  },
+  "De betrokken teams hebben het onderhoudsvenster bevestigd.": {
+    "explanation": "Plural de betrokken teams takes hebben. Betrokken means involved or affected here. Bevestigd is the participle of bevestigen without added ge-. Onderhoudsvenster is a compound het-word naming the maintenance time window.",
+    "answers": []
+  },
+  "Voordat het venster begint, controleren we de bereikbaarheid.": {
+    "explanation": "The before-clause is the first constituent; main finite controleren then precedes we. Inside it, singular het venster takes final begint. Bereikbaarheid means being reachable or contactable here: the check concerns whether the relevant people can be contacted.",
+    "answers": []
+  },
+  "We kunnen de vorige versie met deze kopie herstellen.": {
+    "explanation": "We takes plural kunnen, followed later by infinitive herstellen without te. De vorige versie is what can be restored; met deze kopie identifies the means. Kopie is a de-word, so use deze. This states a recovery capability, not completed recovery.",
+    "answers": []
+  },
+  "Het herstelplan is nog niet getest.": {
+    "explanation": "The singular subject het herstelplan takes is. Getest is the participle in a completed passive: the plan has not been tested. Nog niet means not yet; it does not assert that the plan has failed a test.",
+    "answers": []
+  },
+  "Wie geeft het definitieve akkoord?": {
+    "explanation": "Wie is the subject question word, immediately followed by finite geeft. Het definitieve akkoord is the object: final approval. Akkoord is a het-word; after definite het the adjective is definitieve with -e.",
+    "answers": []
+  },
+  "De nacontrole heeft een afwijking aangetoond.": {
+    "explanation": "Singular de nacontrole takes heeft. Aantonen is separable, with participle aangetoond: aan + ge + toond. Een afwijking is what the check revealed. This reports evidence of a deviation, rather than merely the possibility of one.",
+    "answers": []
+  },
+  "Zolang de oorzaak onduidelijk is, sluiten we het onderzoek niet af.": {
+    "explanation": "The zolang-clause comes first, then main finite sluiten and subject we. Its is comes after onduidelijk. Afsluiten splits into sluiten ... af; niet negates closing the investigation. Zolang means as long as the stated condition continues.",
+    "answers": []
+  },
+  "De oude instelling staat weer actief.": {
+    "explanation": "The historical model uses finite staat after singular subject de oude instelling. For a neutral statement of the restored state, use De oude instelling is weer actief. Weer means again, and actief is a predicate adjective without -e.",
+    "answers": [
+      {
+        "id": "a-3cb896ce6fd2",
+        "text": "De oude instelling is weer actief.",
+        "english": "The old setting is active again.",
+        "explanation": "Is is the neutral copula for the restored state. Weer means again and actief remains a predicate adjective without -e. This reports the same old setting as active again."
+      }
+    ]
+  },
+  "Kun je het herstel bij de gebruiker bevestigen?": {
+    "explanation": "Kun precedes informal je in the request. Bevestigen stays an infinitive without te after kunnen. Het herstel is the recovery to verify; bij de gebruiker identifies the person with whom it is checked, rather than the person asked to carry out a new repair.",
+    "answers": []
+  },
+  "De toestemming voor gisteren geldt niet automatisch voor vandaag.": {
+    "explanation": "De toestemming voor gisteren is one singular subject and takes geldt. Voor yesterday or today specifies the day covered by permission. Niet automatisch denies automatic carry-over; it does not rule out separate permission for today.",
+    "answers": [],
+    "scenario": "You are reviewing permission for a workplace change. Explain that permission covering yesterday does not automatically cover today, without claiming that separate approval for today is impossible."
+  },
+  "We hebben de wijziging binnen het tijdvenster teruggedraaid.": {
+    "explanation": "We takes plural hebben. Teruggedraaid is the participle of separable terugdraaien. Binnen het tijdvenster means within the allowed period. The Dutch perfect reports the completed rollback, naturally rendered by English rolled back here.",
+    "answers": []
+  },
+  "Welke controle bevestigt dat de oude toestand hersteld is?": {
+    "explanation": "Welke controle is the question subject and takes singular bevestigt. Dat introduces the content confirmed, with subject de oude toestand before final hersteld is. This is a completed passive; is hersteld is also possible as the final verb-group order.",
+    "answers": []
+  },
+  "Het ticket bevat het akkoord en de uitgevoerde stappen.": {
+    "explanation": "Het ticket is singular and takes bevat, from bevatten, meaning contain. The coordinated objects are het akkoord and de uitgevoerde stappen. Uitgevoerde is a participle used before plural stappen, with -e, and identifies the steps that were performed.",
+    "answers": []
+  },
+  "Ik meld dat de wijziging niet is doorgevoerd.": {
+    "explanation": "Ik meld has ordinary main-clause order. Dat introduces the report with subject de wijziging and final passive group is doorgevoerd. Doorgevoerd is the participle of separable doorvoeren. Niet negates implementation; doorgevoerd is is also a possible final cluster order.",
+    "answers": []
+  },
+  "Kun je de naam van het programma nog eens herhalen?": {
+    "explanation": "Kun comes before informal subject je; herhalen remains an infinitive without te. De naam van het programma is the object. Nog eens means again and requests repetition of the same name, not a different name or program.",
+    "answers": []
+  },
+  "Ik heb het laatste deel van je vraag niet verstaan.": {
+    "explanation": "Ik takes perfect auxiliary heb. The object het laatste deel van je vraag precedes niet and final verstaan. Verstaan is an inseparable verb whose participle also has the form verstaan. Here it means catch or hear the spoken wording clearly.",
+    "answers": []
+  },
+  "Herhaal de volgorde van de controles alstublieft.": {
+    "explanation": "Herhaal is the imperative stem of herhalen, with no subject pronoun expressed. De volgorde is what should be repeated; van de controles specifies whose order. Alstublieft adds polite tone. The request is to repeat the order verbally, rather than perform the checks again.",
+    "answers": []
+  },
+  "Zei je dat de afspraak morgen is?": {
+    "explanation": "Zei is the irregular singular past of zeggen and starts the yes/no question before subject je. Dat introduces the content being checked, with de afspraak before final is. Morgen is future relative to the current discussion; past zei refers to what was said.",
+    "answers": []
+  },
+  "Het geluid valt soms weg wanneer je spreekt.": {
+    "explanation": "Singular het geluid takes valt. Wegvallen is separable: valt ... weg means drop out. Soms means sometimes, rather than constantly. Wanneer introduces the circumstance, with subject je before final spreekt, which keeps its -t.",
+    "answers": []
+  },
+  "Zou u het referentienummer wat langzamer kunnen herhalen?": {
+    "explanation": "Zou starts this polite request before formal subject u. Kunnen herhalen is a final pair of infinitives without te. Wat means a little before comparative langzamer; it softens the request. Referentienummer is a het-word.",
+    "answers": []
+  },
+  "Ik hoor de laatste cijfers niet goed.": {
+    "explanation": "Ik takes finite hoor. De laatste cijfers is the object, followed by niet goed, meaning not clearly or not well. Cijfers means the individual digits here. The sentence describes hearing quality and does not say that the digits themselves are wrong.",
+    "answers": []
+  },
+  "Bij het tweede cijfer onderbrak de verbinding het gesprek.": {
+    "explanation": "Bij het tweede cijfer is one first constituent. Singular past onderbrak follows it, then subject de verbinding and object het gesprek. Onderbreken is inseparable and means interrupt. The time phrase identifies the second digit as the interruption point.",
+    "answers": []
+  },
+  "Laten we de instructies één voor één herhalen.": {
+    "explanation": "Laten we starts a shared suggestion. Herhalen is the action infinitive without te, following object de instructies and manner phrase één voor één. That phrase means one at a time. The proposal is to repeat the instructions, rather than necessarily carry them out.",
+    "answers": []
+  },
+  "Ik zal het nummer noteren terwijl u het herhaalt.": {
+    "explanation": "Ik takes finite zal; noteren is an infinitive without te. Terwijl introduces the simultaneous action: subject u precedes object het and final herhaalt. Het refers back to het nummer. The speaker plans to write while the other person repeats it.",
+    "answers": []
+  },
+  "Welk woord heb je na de naam van de toepassing gebruikt?": {
+    "explanation": "Welk woord is the object question phrase. Woord is a het-word, so use welk without -e. Heb precedes subject je; gebruikt is the participle of inseparable gebruiken, without added ge-. Na identifies the position of the word in the earlier sentence.",
+    "answers": []
+  },
+  "Na elke stap herhaal ik de instructie kort.": {
+    "explanation": "Na elke stap is one first constituent, followed by finite herhaal and subject ik. De instructie is the object. Kort describes briefly repeating it, without an adjective -e. The present describes the speaker's routine here.",
+    "answers": []
+  },
+  "Wat betekent dit pictogram in deze toepassing?": {
+    "explanation": "Wat asks for the meaning and is the object question word. Finite betekent precedes subject dit pictogram. Pictogram is a het-word, so use dit; toepassing is a de-word, so use deze. The question concerns meaning, not where the icon is located.",
+    "answers": []
+  },
+  "Bedoel je dat ik alleen de testgegevens moet verwijderen?": {
+    "explanation": "Bedoel starts the question before informal subject je, without the added second-person -t. Dat introduces its content: ik precedes final moet verwijderen. Moet is finite and verwijderen is an infinitive without te. Alleen restricts deletion to the test data in this scenario.",
+    "answers": []
+  },
+  "Ik ken de afkorting wel, maar ik weet niet waar ze voor staat.": {
+    "explanation": "Kennen expresses familiarity with the abbreviation; weten introduces knowledge of its meaning. Wel contrasts recognition with not knowing. Ze refers to de afkorting, not a woman. Waar ... voor stands for what in ergens voor staan, with final finite staat in the embedded question.",
+    "answers": []
+  },
+  "Kun je dat begrip met een eenvoudig voorbeeld uitleggen?": {
+    "explanation": "Kun comes before informal je. Uitleggen stays joined as an infinitive without te after kunnen. Dat matches the het-word begrip. Voorbeeld is also a het-word; after indefinite een the adjective is eenvoudig without -e. Met introduces the example used to explain it.",
+    "answers": []
+  },
+  "Ik weet niet of dit een waarschuwing of een fout is.": {
+    "explanation": "Ik weet has main-clause order. The first of means whether and introduces an embedded question, with subject dit before final is. The second of means or and joins the two possibilities. Niet negates knowing which interpretation is correct.",
+    "answers": []
+  },
+  "Gisteren begrepen we die term anders.": {
+    "explanation": "Gisteren is one first constituent, followed by finite begrepen and subject we. Begrepen is the plural simple past of begrijpen here, not a participle missing an auxiliary. Die term is the object; anders means that the group interpreted it differently.",
+    "answers": []
+  },
+  "Noem een concreet voorbeeld van een mislukte aanmelding.": {
+    "explanation": "Noem is the imperative stem of noemen. Voorbeeld is a het-word, so concreet has no -e after indefinite een. Van een mislukte aanmelding specifies the failed sign-in to illustrate; mislukte has -e before the de-word aanmelding. This requests an example, not a new failure.",
+    "answers": []
+  },
+  "Een waarschuwing is niet hetzelfde als een storing.": {
+    "explanation": "Een waarschuwing is the singular subject and takes is. Niet negates hetzelfde, meaning the same thing; als introduces the comparison. Waarschuwing means warning and storing means disruption or fault. The sentence distinguishes them without claiming that a warning is harmless.",
+    "answers": []
+  },
+  "Welke betekenis heeft het woord rechten in dit scherm?": {
+    "explanation": "Welke betekenis is the object question phrase. The singular subject is het woord rechten, so use heeft: rechten names the word being discussed and does not determine verb number. Betekenis is a de-word and takes welke; scherm is a het-word and takes dit.",
+    "answers": [],
+    "scenario": "An unfamiliar screen uses the Dutch word rechten. Ask a colleague what that word means in this interface."
+  },
+  "Ik heb het verschil tussen afsluiten en verwijderen begrepen.": {
+    "explanation": "Ik takes perfect auxiliary heb. Begrepen is the irregular participle of inseparable begrijpen, without extra ge-. Tussen links the two activities being distinguished: closing and deleting. The sentence reports achieved understanding of their difference.",
+    "answers": []
+  },
+  "Als u zegt dat het account nieuw is, bedoelt u dat het pas is aangemaakt?": {
+    "explanation": "The initial als-clause contains u zegt and an embedded dat-clause ending in nieuw is. The main question then has finite bedoelt before polite subject u. Its second dat-clause ends in is aangemaakt, a completed passive. Pas means recently here; aangemaakt is the participle of separable aanmaken.",
+    "answers": []
+  },
+  "Ik begrijp de term, maar ik zie er nog geen praktisch voorbeeld van.": {
+    "explanation": "Maar joins two main clauses, each with subject ik and its own finite verb. Split er ... van refers to the term: an example of it. Nog geen means not yet having an example. Voorbeeld is a het-word, so the adjective is praktisch without -e in this indefinite phrase.",
+    "answers": []
+  },
+  "Kun je voordoen hoe je een nieuw ticket opent?": {
+    "explanation": "Kun precedes informal je. Voordoen remains a joined infinitive without te and requests a demonstration. Hoe introduces an embedded how-question with je before final opent. Ticket is a het-word, so use nieuw without -e after een.",
+    "answers": []
+  },
+  "Ik volg eerst jouw voorbeeld en probeer het daarna zelf.": {
+    "explanation": "Ik is the shared subject of finite volg and probeer. Eerst and daarna order the two actions; the present expresses the upcoming plan. Jouw is possessive, while het refers back to het voorbeeld or the demonstrated task. Zelf means that the speaker will make the later attempt personally.",
+    "answers": []
+  },
+  "Toon me alstublieft waar u de instellingen opent.": {
+    "explanation": "Toon is the imperative stem of tonen. Me is the recipient of the demonstration, and alstublieft adds polite tone. Waar introduces an embedded location question with subject u and object de instellingen before final opent. U refers to the person demonstrating.",
+    "answers": []
+  },
+  "Ik ben de stappen uit jouw demonstratie aan het noteren.": {
+    "explanation": "Ben is finite, with de stappen uit jouw demonstratie as the object before aan het noteren. Aan het plus infinitive describes the current activity, not completed notes. Uit identifies the demonstration as the source; jouw is the possessive form.",
+    "answers": []
+  },
+  "Kan ik deze oefening eerst in de testomgeving doen?": {
+    "explanation": "Kan starts the question before ik. Doen is an infinitive without te after kunnen. Deze agrees with the de-word oefening. Eerst asks about a practice stage in the test environment; it does not establish permission for later production work.",
+    "answers": []
+  },
+  "Tijdens de demonstratie zag ik een ander menu.": {
+    "explanation": "Tijdens de demonstratie is one first constituent, followed by singular past zag and subject ik. Zag is the irregular past of zien. Menu is a het-word, so ander has no -e after een. A different menu is reported without judging which one is correct.",
+    "answers": []
+  },
+  "Ik begrijp de stap beter als ik die zelf uitvoer.": {
+    "explanation": "Ik begrijp has main-clause order. Beter is the comparative of goed. Als introduces the learning circumstance, with ik before final uitvoer from separable uitvoeren. Die refers to the de-word stap; zelf emphasises personally carrying it out.",
+    "answers": []
+  },
+  "Zou u dezelfde handeling nog een keer kunnen voordoen?": {
+    "explanation": "Zou precedes formal u in this polite request. Kunnen voordoen is a final pair of infinitives without te. Dezelfde agrees with de handeling; nog een keer means once more. The request preserves the same action rather than asking for another procedure.",
+    "answers": []
+  },
+  "Ik heb de stappen van de demonstratie in mijn notities opgeslagen.": {
+    "explanation": "Ik takes perfect auxiliary heb. Opgeslagen is the irregular participle of separable opslaan: op + ge + slagen. De stappen is what was saved, and in mijn notities gives its location. Saving the notes does not itself establish mastery.",
+    "answers": []
+  },
+  "Laten we de twee schermen eerst vergelijken.": {
+    "explanation": "Laten we introduces a shared proposal. Vergelijken is an infinitive without te; its object de twee schermen and time word eerst come before it. Eerst puts comparing before continuing, without asserting that the cause of the difference is known.",
+    "answers": []
+  },
+  "Welke stap komt na het openen van de instellingen?": {
+    "explanation": "Welke stap is the question subject and takes singular komt. Na introduces what precedes the next step. Het openen is an infinitive used as an activity noun; van de instellingen names what is opened. There is no extra subject after komt.",
+    "answers": []
+  },
+  "Ik maak een korte checklist om de demonstratie later te kunnen herhalen.": {
+    "explanation": "Ik takes finite maak. Korte has -e before the de-word checklist after een. Om introduces the purpose phrase: object de demonstratie and later precede te kunnen herhalen. Te belongs before kunnen; herhalen stays bare after kunnen.",
+    "answers": []
+  },
+  "Welke omgeving bedoelt u precies?": {
+    "explanation": "Welke omgeving is the object question phrase. Finite bedoelt precedes polite subject u, which retains -t. Omgeving is a de-word and takes welke. Precies means exactly and asks for the particular environment intended.",
+    "answers": []
+  },
+  "Kun je de volledige fouttekst noemen?": {
+    "explanation": "Kun precedes informal je; noemen stays an infinitive without te. Volledige has -e before definite de fouttekst and requests the complete error wording. Noemen here means give or state that wording, rather than invent a name for the error.",
+    "answers": []
+  },
+  "Ik heb nog niet genoeg informatie over de gewenste wijziging.": {
+    "explanation": "Heb is the finite main verb meaning have here, not a perfect auxiliary. Nog niet genoeg means not enough yet, rather than none at all. Informatie is uncountable. Over de gewenste wijziging identifies the topic; gewenste has -e before de wijziging.",
+    "answers": []
+  },
+  "Ik weet niet welk van de twee schermen u bedoelt.": {
+    "explanation": "Ik weet has main-clause order. Welk introduces an embedded object question and refers to one het scherm, even though two screens are compared. Polite subject u precedes final bedoelt. Niet negates knowing which screen is intended.",
+    "answers": []
+  },
+  "Geef bij elk voorbeeld ook de datum.": {
+    "explanation": "Geef is the imperative stem of geven. Bij elk voorbeeld says where the date should be included; de datum is the direct object. Voorbeeld is a singular het-word, so use elk. Ook adds the date alongside the example itself.",
+    "answers": []
+  },
+  "Ik heb de ontbrekende versiegegevens opgevraagd.": {
+    "explanation": "Ik takes perfect auxiliary heb. Opgevraagd is the participle of separable opvragen. Ontbrekende has -e before plural versiegegevens and describes the missing information. The perfect reports that it was requested, without claiming it has arrived.",
+    "answers": []
+  },
+  "Om welke gebruiker gaat het in uw voorbeeld?": {
+    "explanation": "Om welke gebruiker is the complete question phrase, followed by finite gaat and subject het. Het gaat om means concerns or is about. Om is part of that expression, not a purpose marker before an infinitive. Uw is polite possessive before voorbeeld.",
+    "answers": []
+  },
+  "Bedoelde je de testomgeving of de productieomgeving?": {
+    "explanation": "Bedoelde is singular past of bedoelen and comes before subject je. Of joins two alternative objects here; it does not introduce a subordinate whether-question. The question checks an earlier meaning and distinguishes test from production.",
+    "answers": []
+  },
+  "Ik heb vooral de exacte tijd van het probleem nodig.": {
+    "explanation": "Ik takes finite heb in iets nodig hebben; nodig is an adjective, not a participle. Vooral means particularly and prioritises this detail. Exacte has -e before de tijd. Van het probleem identifies the event whose time is needed.",
+    "answers": []
+  },
+  "Zou u de omschrijving met één concreet geval kunnen aanvullen?": {
+    "explanation": "Zou precedes polite u. Kunnen aanvullen is a pair of infinitives without te; aanvullen stays joined. Aanvullen met means add material to something. Geval is a het-word, so concreet has no -e after één. The accent stresses one specific case.",
+    "answers": []
+  },
+  "Zonder het exacte tijdstip kan ik de melding niet terugvinden.": {
+    "explanation": "Zonder het exacte tijdstip is one first constituent, then finite kan and subject ik. Terugvinden stays an infinitive without te after kunnen. Niet negates finding this particular report. Exacte has -e after definite het tijdstip.",
+    "answers": []
+  },
+  "Als er iets ontbreekt, vraag ik dat apart na.": {
+    "explanation": "The complete als-clause comes first, followed by finite vraag and subject ik. Within it, existential er introduces singular subject iets before final ontbreekt. Navragen splits into vraag ... na. Dat refers to the missing detail; apart means separately.",
+    "answers": []
+  },
+  "Begrijp ik goed dat de wijziging alleen voor nieuwe accounts geldt?": {
+    "explanation": "Begrijp starts the question before ik; goed means correctly here. Dat introduces the content being checked, with singular de wijziging before final geldt. Alleen voor nieuwe accounts restricts the scope; nieuwe has -e before plural accounts.",
+    "answers": []
+  },
+  "Ik vat de afspraak even samen.": {
+    "explanation": "Ik takes finite vat. Samenvatten splits into vat ... samen around object de afspraak and even. Even softens the announcement and suggests a brief summary. The Dutch present expresses the immediate intention to summarise the agreement.",
+    "answers": []
+  },
+  "Ik controleer of ik de juiste volgorde heb genoteerd.": {
+    "explanation": "Ik controleer has main-clause order. Of introduces an embedded whether-question, with ik and object de juiste volgorde before final perfect group heb genoteerd. Genoteerd heb is also possible there. Juiste has -e before definite de volgorde.",
+    "answers": []
+  },
+  "Kun je bevestigen dat ik het juiste account heb gekozen?": {
+    "explanation": "Kun precedes informal je; bevestigen is an infinitive without te. Dat introduces what should be confirmed, ending in perfect group heb gekozen; gekozen is the irregular participle of kiezen. Juiste has -e after definite het account. The request checks selection rather than granting broader permission.",
+    "answers": []
+  },
+  "Ik heb uw instructie als een voorstel begrepen.": {
+    "explanation": "Ik takes perfect auxiliary heb, with final irregular participle begrepen. Uw is polite possessive before instructie. Als een voorstel describes how the speaker interpreted the instruction. It does not establish that the person giving it intended a proposal.",
+    "answers": []
+  },
+  "Dat betekent niet dat de storing al is opgelost.": {
+    "explanation": "The first dat is a demonstrative subject, followed by singular betekent. The second dat introduces the inference being denied by niet. Its clause ends in is opgelost, a completed passive from separable oplossen. Al means already; the sentence withholds the conclusion that resolution is complete.",
+    "answers": []
+  },
+  "Welke stap heb ik volgens jou overgeslagen?": {
+    "explanation": "Welke stap is the object question phrase. Finite heb precedes subject ik, with final participle overgeslagen from separable overslaan. Volgens jou means according to you and attributes the judgement to the colleague, rather than accepting it as established fact.",
+    "answers": []
+  },
+  "Zeg het gerust als mijn samenvatting niet klopt.": {
+    "explanation": "Zeg is the imperative stem of zeggen. Gerust reassures the listener that speaking up is welcome. Als introduces the condition, with singular mijn samenvatting before final klopt. Niet klopt means is not correct in this context.",
+    "answers": []
+  },
+  "Daarnet ging ik van een andere afspraak uit.": {
+    "explanation": "Daarnet is the first constituent, followed by singular past ging and subject ik. Uitgaan van means assume or take as a starting point. The particle uit follows the assumption phrase. Andere has -e before the de-word afspraak; the assumption belongs to the recent past.",
+    "answers": []
+  },
+  "Laten we de twee interpretaties naast elkaar leggen.": {
+    "explanation": "Laten we introduces a shared suggestion; leggen stays an infinitive without te. De twee interpretaties is the object and naast elkaar means side by side. This is a figurative comparison of interpretations, without deciding which one is correct.",
+    "answers": []
+  },
+  "Wanneer volgt de volgende beoordeling?": {
+    "english": "When is the next assessment?",
+    "answers": []
+  },
+  "Ik verwacht dat de controle vanmiddag klaar is.": {
+    "english": "I expect the check to be finished this afternoon.",
+    "answers": []
+  },
+  "Laat mij de zin even afmaken.": {
+    "english": "Let me finish the sentence.",
+    "answers": []
+  },
+  "Vraag de receptionist naar een bezoekerspas.": {
+    "english": "Ask the receptionist about a visitor pass.",
+    "answers": []
+  },
+  "Ik ga nog niet met de uitvoering akkoord.": {
+    "english": "I do not agree to carrying this out yet.",
+    "answers": []
+  },
+  "Ik heb mijn bereikbaarheid in de agenda gezet.": {
+    "english": "I have put the times when I can be reached in the calendar.",
+    "answers": []
+  },
+  "Ik zal u voor het einde van de dag bijwerken over de voortgang.": {
+    "explanation": "Zal is finite and bijwerken is a bare infinitive before the over-phrase. The intended meaning is a progress update before the day ends, not a promised fix. Updating a person with bijwerken is awkward Dutch here; for normal wording use informeren over or op de hoogte brengen van, as in the alternative.",
+    "answers": [
+      {
+        "id": "a-8ec5bc3d261b",
+        "text": "Ik zal u voor het einde van de dag op de hoogte brengen van de voortgang.",
+        "english": "I will update you on progress before the end of the day.",
+        "explanation": "Op de hoogte brengen van means inform someone about. Zal is finite; u is the person informed, van de voortgang is the topic, and voor het einde van de dag retains the same deadline. Brengen remains infinitive after zal."
       }
     ]
   }

@@ -1857,7 +1857,7 @@
     "english": "Did you say Monday or Tuesday?",
     "scenario": "A customer has just given a date, but you are unsure which weekday you heard. Ask formally whether they said Monday or Tuesday. Address the other person politely with u/uw.",
     "cue": "A customer has just given a date, but you are unsure which weekday you heard. Ask formally whether they said Monday or Tuesday. Address the other person politely with u/uw.",
-    "grammar": "Past question. The finite past verb Zei starts the yes/no question before subject u. The finite past verb and subject invert in this question. A question phrase, when present, precedes the finite verb. Keep the particular past event distinct from a present repeated problem. Zei checks what was said in the completed exchange. Of presents two possible days rather than confirming either one.",
+    "grammar": "Alternative question. The finite verb Zei comes before subject u. The finite verb precedes the subject. Of links the alternatives the listener is asked to distinguish; this question asks which alternative applies. Zei checks what was said in the completed exchange. Of presents two possible days rather than confirming either one. This alternative question asks the listener to choose between the two days; a bare yes would not identify the day.",
     "variation": "Zou u het referentienummer wat langzamer kunnen herhalen?",
     "image": "",
     "audio": "",
@@ -1872,7 +1872,7 @@
       "status": "ai-editorially-reviewed",
       "independentHumanReview": false,
       "batch": "clarification",
-      "focus": "past-question"
+      "focus": "choice-question"
     }
   },
   {
@@ -1910,7 +1910,7 @@
     "english": "I am writing down the instruction so I can repeat it correctly.",
     "scenario": "A colleague asks why you are taking notes during an explanation. Say that you are writing the instruction down so you can repeat it accurately.",
     "cue": "A colleague asks why you are taking notes during an explanation. Say that you are writing the instruction down so you can repeat it accurately.",
-    "grammar": "Purpose or intended action. The first constituent is Ik; schrijf is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Om introduces an infinitive phrase with te. Its object can come before the infinitive; with a separable verb te stands between its particle and verb. This is not a second finite clause. Opschrijven splits as schrijf ... op. Ze refers to de instructie; om te kunnen herhalen gives the purpose.",
+    "grammar": "Purpose or intended action. The first constituent is Ik; schrijf is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Om introduces an infinitive phrase with te. Its object can come before the infinitive; with a separable verb te stands between its particle and verb. This is not a second finite clause. Opschrijven splits as schrijf ... op. Ze refers to de instructie; om te kunnen herhalen gives the purpose. In the final group te goes before kunnen; herhalen follows kunnen without its own te. The understood subject of this purpose phrase is ik.",
     "variation": "Bij het tweede cijfer onderbrak de verbinding het gesprek.",
     "image": "",
     "audio": "",
@@ -2130,7 +2130,7 @@
     "english": "Do you mean technical access or the owner's permission?",
     "scenario": "A colleague says access is needed, but the requirement is ambiguous. Ask whether they mean the technical capability or the owner's authorisation. Use informal je/jij for your colleague.",
     "cue": "A colleague says access is needed, but the requirement is ambiguous. Ask whether they mean the technical capability or the owner's authorisation. Use informal je/jij for your colleague.",
-    "grammar": "Yes/no question. The finite verb Bedoel comes before subject je. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Of offers two different requirements. Being technically able to open something does not by itself imply permission.",
+    "grammar": "Alternative question. The finite verb Bedoel comes before subject je. The finite verb precedes the subject. Of links the alternatives the listener is asked to distinguish; this question asks which alternative applies. Of offers two different requirements. Being technically able to open something does not by itself imply permission. This is an alternative question asking which meaning was intended, rather than merely inviting yes or no.",
     "variation": "Gisteren begrepen we die term anders.",
     "image": "",
     "audio": "",
@@ -2148,7 +2148,7 @@
       "status": "ai-editorially-reviewed",
       "independentHumanReview": false,
       "batch": "clarification",
-      "focus": "yes-no"
+      "focus": "choice-question"
     }
   },
   {
@@ -2186,7 +2186,7 @@
     "english": "When you say close, do you mean the ticket will be kept?",
     "scenario": "A colleague tells you to close a ticket. Check informally that closing it will preserve the record rather than delete it. Use informal je/jij for your colleague.",
     "cue": "A colleague tells you to close a ticket. Check informally that closing it will preserve the record rather than delete it. Use informal je/jij for your colleague.",
-    "grammar": "Fronted subordinate clause. The first constituent is Als je afsluiten zegt,; bedoel is the finite (conjugated) verb and je is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end. The first clause quotes the action being discussed. Bewaard blijft describes retention; the question does not instruct deletion.",
+    "grammar": "Fronted subordinate clause. The first constituent is Als je afsluiten zegt,; bedoel is the finite (conjugated) verb and je is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end. The first clause quotes the action being discussed. Bewaard blijft describes retention; the question does not instruct deletion. Dan belongs to the main question; dat introduces the embedded proposition. Blijft closes that clause, with bewaard describing the retained state.",
     "variation": "Een waarschuwing is niet hetzelfde als een storing.",
     "image": "",
     "audio": "",
@@ -2433,7 +2433,7 @@
     "english": "Can you point out the component you mean?",
     "scenario": "A colleague refers to a component during a demonstration, but you cannot identify it. Ask informally for them to point it out. Use informal je/jij for your colleague.",
     "cue": "A colleague refers to a component during a demonstration, but you cannot identify it. Ask informally for them to point it out. Use informal je/jij for your colleague.",
-    "grammar": "Modal request or permission question. The finite verb Kun comes before subject je. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Dat je bedoelt is a relative clause modifying het onderdeel; dat is not a demonstrative object here.",
+    "grammar": "Modal request or permission question. The finite verb Kun comes before subject je. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Dat je bedoelt is a relative clause modifying het onderdeel; dat is not a demonstrative object here. Dat is the object of bedoelt inside the relative clause; je is its subject. The whole noun phrase remains the object of aanwijzen.",
     "variation": "Ik begrijp de stap beter als ik die zelf uitvoer.",
     "image": "",
     "audio": "",
@@ -2600,7 +2600,7 @@
     "english": "Does this concern one workstation or the entire team?",
     "scenario": "A colleague gives a vague description of an issue's scope. Ask whether one workstation or the whole team is involved.",
     "cue": "A colleague gives a vague description of an issue's scope. Ask whether one workstation or the whole team is involved.",
-    "grammar": "Yes/no question. The finite verb Gaat comes before subject het. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Gaat het om is a yes/no-style concern question, not a question-word phrase. Eén contrasts one workstation with the larger team.",
+    "grammar": "Alternative question. The finite verb Gaat comes before subject het. The finite verb precedes the subject. Of links the alternatives the listener is asked to distinguish; this question asks which alternative applies. Het gaat om means this concerns/is about, not physical movement. This alternative question contrasts one workstation with the whole team; of means or.",
     "variation": "Ik heb nog niet genoeg informatie over de gewenste wijziging.",
     "image": "",
     "audio": "",
@@ -2616,7 +2616,7 @@
       "status": "ai-editorially-reviewed",
       "independentHumanReview": false,
       "batch": "clarification",
-      "focus": "yes-no"
+      "focus": "choice-question"
     }
   },
   {
@@ -3184,7 +3184,7 @@
     "english": "I can hear the words, but I do not yet understand the intention.",
     "scenario": "A colleague has repeated an instruction clearly, but its purpose is still unclear to you. Explain the difference between hearing the words and understanding the intention.",
     "cue": "A colleague has repeated an instruction clearly, but its purpose is still unclear to you. Explain the difference between hearing the words and understanding the intention.",
-    "grammar": "Present statement. The first constituent is Ik; versta is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Verstaan concerns the spoken wording here; begrijpen concerns meaning. Nog niet leaves open later understanding.",
+    "grammar": "Present statement. The first constituent is Ik; versta is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Verstaan concerns the spoken wording here; begrijpen concerns meaning. Nog niet leaves open later understanding. Maar coordinates two main clauses, so the second clause keeps ik begrijp rather than moving begrijp to the end.",
     "variation": "Hoe spreek je de naam van deze toepassing uit?",
     "image": "",
     "audio": "",

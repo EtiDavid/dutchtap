@@ -32,7 +32,7 @@ def construct(row):
  title,rule,compare=patterns[pattern]
  first=parts[0]['text'];subject=next((p['text'] for p in parts if p['label'].startswith('subject')),None)
  if pattern=='imperative':order=(f'The instruction starts with {finite["text"]}; the addressed person is understood. ' if parts[0] is finite else f'After the introductory phrase {first}, the instruction uses {finite["text"]} with the addressed person understood. ')+rule
- elif pattern in ['yes-no','modal-question','polite']:order=f'The finite verb {finite["text"]} comes before subject {subject or "the addressed person"}. '+rule
+ elif pattern in ['yes-no','choice-question','modal-question','polite']:order=f'The finite verb {finite["text"]} comes before subject {subject or "the addressed person"}. '+rule
  elif subject and parts[0]['label'].startswith('subject') and pattern=='question':order=f'{first} is itself the question subject and is followed by finite {finite["text"]}; no extra subject is inserted. '+rule
  elif pattern=='proposal':order='Laten we starts the joint proposal; this is not ordinary declarative subject-first order. '+rule
  elif pattern=='past-question' and parts[0] is finite:order=f'The finite past verb {finite["text"]} starts the yes/no question before subject {subject}. '+rule

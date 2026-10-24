@@ -329,6 +329,17 @@ for item in b.values():
 # The main card uses an activity noun; its related bank practises activity infinitives.
 b['work-325']['practiceFocus']='Activity nouns and infinitives as subjects'
 b['work-325']['practiceGuide']='Onderhoud is an ordinary noun meaning maintenance, not the infinitive onderhouden. The full noun phrase het onderhoud van deze machine is the singular subject of is. The related examples practise the closely related construction with an infinitive naming an activity, such as Het schoonmaken van de keuken kost tijd. Both constructions can name an activity as the subject, but their word forms differ.'
+# Resolve the remaining old contrasts without treating every bare infinitive as an error.
+b['conversation-49']['compare']='The model uses an infinitive clause (om) te helpen for the activity judged difficult. Om is optional in this construction; this is not a claim that all Dutch infinitives after adjectives need te.'
+b['conversation-49']['forms']='Is is finite with subject het; helpen remains infinitive in om te helpen. Here om introduces the activity judged difficult, not a purpose. In this construction om can be omitted: Het is moeilijk te helpen.'
+b['conversation-49']['mistake'].update(wrong='Het is moeilijk om te helpt.',why='After te in this infinitive clause, use the infinitive helpen. Helpt is a finite present form and does not fit after om te.',alternative=False)
+notes['conversation-49']['rule']=b['conversation-49']['order']+' '+b['conversation-49']['forms']+' Moeilijk is a predicate adjective after is and has no -e.'
+b['conversation-72']['compare']='The model te zeggen is an infinitive clause, corresponding to English to say. This teaches this neutral expression of difficulty rather than a universal ban on other Dutch constructions.'
+b['conversation-72']['forms']='Is is finite and zeggen is infinitive after te. This model can also include om: Het is moeilijk om te zeggen. It expresses difficulty rather than reporting an act of speaking as completed.'
+b['conversation-72']['mistake'].update(wrong='Het is moeilijk te zegt.',why='This te-clause requires infinitive zeggen, not finite present zegt. Keep the finite is in the main clause and the infinitive after te.',alternative=False)
+notes['conversation-72']['rule']=b['conversation-72']['order']+' '+b['conversation-72']['forms']+' Moeilijk has no -e after is.'
+b['work-10']['forms']='Samenwerken aan een taak or project uses aan; hieraan means aan dit in this model. Samenwerken remains a joined infinitive after kunnen.'
+notes['work-10']['rule']=b['work-10']['order']+' '+b['work-10']['forms']+' Example context: in Kunnen we hierop samenwerken?, take hierop as op dit gedeelde digitale bord, meaning on this shared digital board. This is the place or tool for collaboration, not the project being worked on. For on this project, use hieraan. Hierover praten means talk about this; daarna afspreken means meet afterwards.'
 for n,data in [('grammar-breakdowns.json',b),('grammar-notes.json',notes)]:
  (root/'data'/n).write_text(json.dumps(data,ensure_ascii=False,indent=1)+'\n')
 print('Applied targeted editorial corrections to the 600-record everyday collection; this is not a complete semantic review.')

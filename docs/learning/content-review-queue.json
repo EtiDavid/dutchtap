@@ -2,25 +2,25 @@
   "version": 2,
   "mainCards": 1200,
   "distinctCommunicationTasks": 2260,
-  "revisedTasks": 26,
-  "pendingSemanticReview": 1660,
+  "revisedTasks": 101,
+  "pendingSemanticReview": 1560,
   "newLessonTasks": 110,
   "independentNativeReview": false,
   "inspections": {
     "communication": {
       "total": 2260,
-      "reviewedCurrent": 600,
-      "pendingOrChanged": 1660
+      "reviewedCurrent": 700,
+      "pendingOrChanged": 1560
     },
     "grammar": {
       "total": 1200,
-      "reviewedCurrent": 99,
-      "pendingOrChanged": 1101
+      "reviewedCurrent": 198,
+      "pendingOrChanged": 1002
     },
     "examples": {
       "total": 2480,
-      "reviewedCurrent": 520,
-      "pendingOrChanged": 1960
+      "reviewedCurrent": 825,
+      "pendingOrChanged": 1655
     }
   },
   "reviewComplete": false,
@@ -5441,460 +5441,364 @@
     {
       "text": "Ik werk vandaag thuis.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Mijn broer woont in Gent.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wij leren elke dag Nederlands.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Zij kookt graag voor haar vrienden.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": true,
       "flags": []
     },
     {
       "text": "Ik controleer de bestelling.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "De les begint om negen uur.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wij plannen onze vakantie.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": true,
       "flags": []
     },
     {
       "text": "Mijn collega schreef gisteren een verslag.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik zocht gisteren mijn sleutels.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Hij betaalde met zijn kaart.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "De kinderen spelen in de tuin.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik begrijp deze uitleg.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik probeerde een nieuwe soep.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": true,
       "flags": []
     },
     {
       "text": "Wij probeerden een nieuw restaurant.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Hij werkte gisteren thuis.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Zij belde haar moeder.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wij woonden vroeger in Gent.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik danste met mijn vrouw.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "De vergadering eindigde om vijf uur.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Mijn collega controleerde de voorraad.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik las gisteren een boek.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Zij kocht een nieuwe jas.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "We maakten plannen voor het weekend.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik heb een nieuw recept geprobeerd.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wij hebben de soep geproefd.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Hij heeft de bestelling gecontroleerd.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik heb mijn kamer opgeruimd.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Zij heeft de ramen schoongemaakt.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wij hebben twee uur gefietst.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik ben naar huis gefietst.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Hij is vroeg vertrokken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Zij heeft haar moeder gebeld.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "We hebben over het probleem gesproken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik heb het gisteren afgemaakt.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "De trein is op tijd aangekomen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik had de soep al gemaakt.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wij hadden het rapport al gelezen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Zij had de brief al geschreven.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik had mijn huiswerk al gemaakt.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Hij was al naar huis gegaan.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "We waren vroeg vertrokken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik had de deur al op slot gedaan.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Zij had het nieuws al gehoord.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wij hadden de rekening al betaald.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik had de kamer opgeruimd voordat zij kwam.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "De trein was al vertrokken toen ik aankwam.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Hij had het probleem al opgelost.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ik wil de soep proberen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wij moeten de deur sluiten.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Hij kan morgen niet komen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Zij mag hier parkeren.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "We zullen je morgen bellen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -5903,7 +5807,7 @@
     {
       "text": "Wij willen samen oefenen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -5912,7 +5816,7 @@
     {
       "text": "Hij wil een nieuwe baan vinden.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -5921,52 +5825,42 @@
     {
       "text": "Ik zal proberen te slapen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "We zullen proberen het lek te repareren.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Je moet het morgen afmaken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wil je deze soep proberen?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Mag ik dit gerecht proberen?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Kunt u mij helpen?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -5975,7 +5869,7 @@
     {
       "text": "Zullen we morgen afspreken?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -5984,43 +5878,35 @@
     {
       "text": "Moet je het morgen afmaken?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Mag ik met de kaart betalen?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Kan ik de jas passen?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Wil je de deur sluiten?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Waar kan ik brood kopen?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6029,7 +5915,7 @@
     {
       "text": "Hoe laat begint de les?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6038,7 +5924,7 @@
     {
       "text": "Hoeveel kost deze jas?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6047,16 +5933,14 @@
     {
       "text": "Waar woont je broer?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Waarom ben je te laat?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6065,7 +5949,7 @@
     {
       "text": "Wat wil je drinken?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6074,16 +5958,14 @@
     {
       "text": "Wie heeft de deur gesloten?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Werk je vandaag thuis?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6092,7 +5974,7 @@
     {
       "text": "Woont hij in Gent?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6101,7 +5983,7 @@
     {
       "text": "Heeft u een kleinere maat?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6110,7 +5992,7 @@
     {
       "text": "Hebt u een afspraak?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6119,25 +6001,21 @@
     {
       "text": "Heb je het al afgemaakt?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Verkoop je de oude auto aan Zoë?",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Is de winkel op maandag open?",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6146,95 +6024,77 @@
     {
       "text": "Verkoop je oude auto aan Zoë.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": true,
       "flags": []
     },
     {
       "text": "Probeer dit gerecht eens!",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Ruim je kamer op.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Maak de ramen schoon.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Lees de brief voor.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Geef het boek aan je broer.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Stuur het me op.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Kom morgen op tijd.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Bel de tandarts terug.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Doe de deur op slot.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Laten we samen oefenen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6243,7 +6103,7 @@
     {
       "text": "Laten we een kop koffie drinken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6252,25 +6112,21 @@
     {
       "text": "Laten we een nieuw restaurant proberen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Laten we de vergadering verzetten.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Laten we een afspraak maken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6279,7 +6135,7 @@
     {
       "text": "Laten we de prijzen vergelijken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6288,7 +6144,7 @@
     {
       "text": "Laten we naar huis gaan.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6297,16 +6153,14 @@
     {
       "text": "Laten we het raam openmaken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Laten we een wandeling maken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
+      "status": "inspected-current-content",
       "revised": false,
       "flags": [
         "repeated-explanation-needs-specific-review"
@@ -6315,20 +6169,16 @@
     {
       "text": "Laten we onze vakantie plannen.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Laten we het probleem bespreken.",
       "parentIds": [],
-      "status": "pending-semantic-review",
-      "revised": false,
-      "flags": [
-        "repeated-explanation-needs-specific-review"
-      ]
+      "status": "inspected-current-content",
+      "revised": true,
+      "flags": []
     },
     {
       "text": "Laten we morgen verdergaan.",

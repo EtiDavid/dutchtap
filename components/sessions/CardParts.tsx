@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { recordingFor } from '@/lib/speech/recordings';
 import Link from "next/link";
 import { wordsForCard } from "@/lib/vocabulary";
 import type { LCard } from "@/lib/content/cards";
@@ -52,9 +53,10 @@ export function AudioControls({
   stop: () => void;
 }) {
   const item = speakable(card);
+  const hasRecording = !!(recordingFor(card.text, card.lang) ?? card.audio);
   return (
     <>
-      {card.audioStatus === "awaiting-recording" ? (
+      {card.audioStatus === "awaiting-recording" && !hasRecording ? (
         <p className="mt-4 text-sm text-muted">
           Diederik recording awaiting installation.
         </p>
@@ -84,8 +86,8 @@ export function AudioControls({
           </button>
         </div>
       )}
-      {card.audioStatus === "device" && card.lang === "nl" && <p className="mt-2 text-xs text-muted">Spoken by your device’s Dutch voice.</p>}
-      {card.lang === "fr" && (
+      {card.audioStatus === "device" && card.lang === "nl" && !hasRecording && <p className="mt-2 text-xs text-muted">Spoken by your device’s Dutch voice.</p>}
+      {card.lang === "fr" && !hasRecording && (
         <p className="mt-2 text-xs text-muted">
           Spoken by your device’s French voice (synthetic speech, not a
           recording).
@@ -96,7 +98,7 @@ export function AudioControls({
           {sound}
         </p>
       )}
-      {!card.audio && <VoicePicker lang={card.lang} />}
+      {!hasRecording && <VoicePicker lang={card.lang} />}
     </>
   );
 }

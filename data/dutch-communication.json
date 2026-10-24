@@ -129,7 +129,7 @@
   ]
  },
  "Ik neem deze, bedankt.": {
-  "scenario": "You have chosen an item in a shop. Tell the assistant you will take this one, and thank them.",
+  "scenario": "You are choosing between bags in a shop and point to one bag (de tas). Tell the assistant you will take this one, and thank them.",
   "answers": [
    {
     "id": "model",
@@ -191,7 +191,7 @@
     "id": "model",
     "text": "Mag ik even iets vragen?",
     "english": "May I ask something quickly?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Mag), and the subject (ik) follows it. The other verb parts are not conjugated: the infinitive (vragen) normally occurs toward the end. Mogen: ik mag. Even softens the request (\"for a moment\")."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Mag), and the subject (ik) follows it. The other verb parts are not conjugated: the infinitive (vragen) normally occurs toward the end. Mag is the first-person singular of mogen. Iets means something and vragen is the infinitive. Even softens the request and suggests taking a moment; it does not demand that the question be spoken at high speed."
    }
   ]
  },
@@ -202,7 +202,7 @@
     "id": "model",
     "text": "Ik heb mijn huiswerk al gemaakt.",
     "english": "I have already done my homework.",
-    "explanation": "In the perfect tense the auxiliary is the finite verb in second position and the participle normally occurs toward the end. Perfect = hebben plus participle: ik heb gemaakt. Mijn does not change."
+    "explanation": "In the perfect tense the auxiliary is the finite verb in second position and the participle normally occurs toward the end. This perfect uses hebben: ik heb mijn huiswerk gemaakt. Heb is finite and gemaakt is the participle of maken. Al means already. Mijn is possessive my and stays the same before de- and het-words. The perfect does not always use hebben: some verbs and meanings use zijn, as in ik ben vertrokken."
    }
   ]
  },
@@ -303,7 +303,7 @@
     "id": "model",
     "text": "Moet ik hier overstappen?",
     "english": "Do I need to change trains here?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Moet), and the subject (ik) follows it. The other verb parts are not conjugated: the infinitive (overstappen) normally occurs toward the end. Moeten: ik moet. In a main clause overstappen would split: ik stap over."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Moet), and the subject (ik) follows it. The other verb parts are not conjugated: the infinitive (overstappen) normally occurs toward the end. Moeten: ik moet. Here moet is finite, so overstappen stays together as an infinitive. When overstappen itself is finite in a main clause, it splits: ik stap over. Perfect: ik ben overgestapt. Overstappen means transferring from one vehicle or connection to another, not necessarily only trains."
    }
   ]
  },
@@ -397,7 +397,7 @@
     "id": "model",
     "text": "Kunt u mij helpen met mijn bagage?",
     "english": "Can you help me with my luggage?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Kunt), and the subject (u) follows it. The other verb parts are not conjugated: the infinitive (helpen) normally occurs toward the end. Kunnen with u: u kunt. Mij is the object form of ik (me)."
+    "explanation": "Kunt is the finite modal and starts this polite yes/no question, followed by subject u. Mij is the person receiving help. Helpen stays an infinitive after kunt. The full prepositional phrase met mijn bagage naturally follows helpen here; closing the verb bracket does not mean being the last word of the sentence. Kunnen: u kunt or u kan; both are standard. Mij means me, while mijn means my. Helpen met iets means help with something. Kunt u mij met mijn bagage helpen? is another natural order."
    },
    {
     "id": "alt-aa546e283cae",
@@ -448,7 +448,7 @@
     "id": "model",
     "text": "Heb je de deur op slot gedaan?",
     "english": "Have you locked the door?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Heb), and the subject (je) follows it. The other verb parts are not conjugated: the participle (gedaan) normally occurs toward the end. Perfect: heb je gedaan. De deur op slot doen means to lock the door."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Heb), and the subject (je) follows it. The other verb parts are not conjugated: the participle (gedaan) normally occurs toward the end. This perfect uses hebben: heb je ... gedaan? Doen has participle gedaan. Compare statement je hebt and question heb je: subject je follows the auxiliary, so the ordinary added -t is omitted. De deur op slot doen means lock the door. Other perfects may use zijn, depending on verb and meaning."
    },
    {
     "id": "alt-67d37ecee5ba",
@@ -476,7 +476,7 @@
     "id": "model",
     "text": "Kun je het raam openmaken?",
     "english": "Can you open the window?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Kun), and the subject (je) follows it. The other verb parts are not conjugated: the infinitive (openmaken) normally occurs toward the end. Kunnen with je: kun je (the -t drops after je). Raam is a het-word."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Kun), and the subject (je) follows it. The other verb parts are not conjugated: the infinitive (openmaken) normally occurs toward the end. Kunnen with je: kun je (the -t drops when subject je/jij follows the finite verb). Raam is a het-word."
    },
    {
     "id": "alt-372ebfd248b3",
@@ -505,7 +505,7 @@
     "id": "model",
     "text": "Dit is jouw kopje.",
     "english": "This is your cup.",
-    "explanation": "In a normal main clause the subject (Dit) comes first and the finite verb (is) second (verb-second order). Zijn: dit is. Dit points to a het-word or to something in general."
+    "explanation": "In a normal main clause the subject (Dit) comes first and the finite verb (is) second (verb-second order). Dit is a standalone demonstrative introducing an identification: dit is jouw kopje. It is not an adjective attached to kopje. Dutch can also say Dit is jouw tas even though tas is a de-word. Before a noun directly, use dit kopje but deze tas. Jouw/je means your; jou is the object form you."
    },
    {
     "id": "alt-e24f71257f9b",
@@ -539,7 +539,7 @@
     "id": "model",
     "text": "Er staat melk in de koelkast.",
     "english": "There is milk in the fridge.",
-    "explanation": "Er comes first, the verb second, then the real subject. Dutch uses staat for things standing or placed somewhere. Staan: er staat. For plural things: Er staan appels in de koelkast."
+    "explanation": "Er comes first, the verb second, then the real subject. Dutch uses staat for things standing or placed somewhere. Staan: singular er staat, plural er staan. Milk is understood through its container here, such as a standing carton or bottle. Compare Er staan twee pakken melk in de koelkast. Er is melk is also grammatical and simply states availability."
    },
    {
     "id": "alt-962aebbcac3b",
@@ -590,7 +590,7 @@
     "id": "model",
     "text": "Ik spreek een beetje Nederlands.",
     "english": "I speak a little Dutch.",
-    "explanation": "In a normal main clause the subject (Ik) comes first and the finite verb (spreek) second (verb-second order). Spreken: ik spreek, jij spreekt. A language name has no article."
+    "explanation": "In a normal main clause the subject (Ik) comes first and the finite verb (spreek) second (verb-second order). Spreken: ik spreek, jij/hij spreekt, wij spreken; simple past sprak/spraken; perfect heb/heeft gesproken. Een beetje means a little. The language name has no article in een beetje Nederlands spreken. An article is possible in other constructions, such as het Nederlands van vandaag (the Dutch of today)."
    }
   ]
  },
@@ -601,7 +601,7 @@
     "id": "model",
     "text": "Kun je wat langzamer spreken?",
     "english": "Can you speak a little more slowly?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Kun), and the subject (je) follows it. The other verb parts are not conjugated: the infinitive (spreken) normally occurs toward the end. Kun je: the -t drops after je. Langzamer is the comparative of langzaam."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Kun), and the subject (je) follows it. The other verb parts are not conjugated: the infinitive (spreken) normally occurs toward the end. Kun je: the -t drops when subject je/jij follows the finite verb. Langzamer is the comparative of langzaam."
    },
    {
     "id": "alt-1afcf42b0a77",
@@ -641,7 +641,7 @@
     "id": "model",
     "text": "Ik woon in Roeselare.",
     "english": "I live in Roeselare.",
-    "explanation": "In a normal main clause the subject (Ik) comes first and the finite verb (woon) second (verb-second order). Wonen: ik woon. Use in with towns."
+    "explanation": "In a normal main clause the subject (Ik) comes first and the finite verb (woon) second (verb-second order). Wonen: ik woon, jij woont, wij wonen; past woonde/woonden; perfect heb gewoond. With this city name use in Roeselare. Also in Gent and in België. This is not a claim that every geographical name always takes in."
    }
   ]
  },
@@ -669,7 +669,7 @@
     "id": "model",
     "text": "Heb je morgen tijd?",
     "english": "Do you have time tomorrow?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Heb), and the subject (je) follows it. Heb je: the -t of hebt drops after je."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Heb), and the subject (je) follows it. Heb je: the -t of hebt drops when subject je/jij follows the finite verb."
    },
    {
     "id": "alt-f7f0f83ea48e",
@@ -1242,7 +1242,13 @@
     "id": "model",
     "text": "Ze is druk bezig met het schrijven van een e-mail.",
     "english": "She is busy writing an email.",
-    "explanation": "In a normal main clause the subject (Ze) comes first and the finite verb (is) second (verb-second order). Bezig zijn met means to be busy with. Het schrijven is an infinitive used as a noun."
+    "explanation": "Ze is the subject, meaning she in this situation; is is the finite form of zijn. Druk bezig describes being occupied. Met introduces the noun-like activity het schrijven van een e-mail. An infinitive used as an activity noun takes het: het schrijven, not de schrijven. Van een e-mail names what is being written. Compare the verbal progressive Ze is druk een e-mail aan het schrijven: aan het takes the infinitive schrijven, with een e-mail as its object."
+   },
+   {
+    "id": "alt-002f4a209bd8",
+    "text": "Ze is druk een e-mail aan het schrijven.",
+    "english": "She is busy writing an email.",
+    "explanation": "Is ... aan het schrijven describes the writing in progress. Druk retains the sense of being busy. In bezig met het schrijven van een e-mail, schrijven is used as an activity noun; in this alternative een e-mail is the object of the infinitive schrijven."
    },
    {
     "id": "alt-0469e098cbfa",
@@ -1467,7 +1473,7 @@
     "id": "model",
     "text": "Blijf proberen totdat je het snapt.",
     "english": "Keep trying until you understand it.",
-    "explanation": "An imperative (a command or request) begins with the verb (Blijf) and leaves out the subject. After totdat the clause is subordinate, so its finite verb (snapt) moves to the very end. Blijven plus an infinitive means to keep on doing. Snappen: je snapt."
+    "explanation": "An imperative (a command or request) begins with the verb (Blijf) and leaves out the subject. After totdat the clause is subordinate, so its finite verb (snapt) comes toward the end of its subordinate clause. Blijven plus an infinitive means to keep on doing. Snappen: je snapt."
    },
    {
     "id": "alt-8f22cce15115",
@@ -2182,7 +2188,7 @@
     "id": "model",
     "text": "Hij zal terugbellen.",
     "english": "He will call back.",
-    "explanation": "In a normal main clause the subject (Hij) comes first and the finite verb (zal) second (verb-second order). The other verb parts are not conjugated: the infinitive (terugbellen) normally occurs toward the end. In a main clause terugbellen would split: hij belt terug."
+    "explanation": "In a normal main clause the subject (Hij) comes first and the finite verb (zal) second (verb-second order). The other verb parts are not conjugated: the infinitive (terugbellen) normally occurs toward the end. Terugbellen means call back. Here zal is finite and terugbellen stays together as an infinitive. When terugbellen itself is the finite verb in a main clause, it splits: hij belt terug. Perfect: hij heeft teruggebeld."
    }
   ]
  },
@@ -2346,7 +2352,7 @@
     "id": "model",
     "text": "Waar is de zak met eten?",
     "english": "Where is the bag of food?",
-    "explanation": "This is a question. The question word or phrase (Waar) takes the first position, so the finite verb (is) comes second and the subject (de zak) follows it: question word + finite verb + subject. Met links a container to its contents."
+    "explanation": "Waar is the first question constituent, followed by finite is. The complete subject is de zak met eten: met eten describes what the bag contains, so it belongs inside the noun phrase. Met links a container to its contents."
    }
   ]
  },
@@ -2391,7 +2397,7 @@
     "id": "model",
     "text": "Heb je het voor me gekocht?",
     "english": "Did you buy it for me?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Heb), and the subject (je) follows it. The other verb parts are not conjugated: the participle (gekocht) normally occurs toward the end. Heb je: the -t drops after je."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Heb), and the subject (je) follows it. The other verb parts are not conjugated: the participle (gekocht) normally occurs toward the end. Heb je: the -t drops when subject je/jij follows the finite verb."
    },
    {
     "id": "alt-27851332f6da",
@@ -2882,7 +2888,7 @@
     "id": "model",
     "text": "Stuur je het me op?",
     "english": "Will you send it to me?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Stuur), and the subject (je) follows it. The other verb parts are not conjugated: the separable particle (op) normally occurs toward the end while the verb itself stays second. Opsturen splits: stuur je ... op. The -t drops after je."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Stuur), and the subject (je) follows it. The other verb parts are not conjugated: the separable particle (op) normally occurs toward the end while the verb itself stays second. Opsturen splits: stuur je ... op. The -t drops when subject je/jij follows the finite verb."
    },
    {
     "id": "alt-f7e8643b1e75",
@@ -3005,7 +3011,7 @@
     "id": "model",
     "text": "Slaap je nu?",
     "english": "Are you sleeping now?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Slaap), and the subject (je) follows it. Slapen: je slaapt, but the -t drops after je."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Slaap), and the subject (je) follows it. Slapen: je slaapt, but the -t drops when subject je/jij follows the finite verb."
    },
    {
     "id": "alt-c8f83dee4ae7",
@@ -3242,7 +3248,7 @@
     "id": "model",
     "text": "Wie is daar nu?",
     "english": "Who is there now?",
-    "explanation": "This is a question. The question word or phrase (Wie) takes the first position, so the finite verb (is) comes second: question word + finite verb + subject. Wie is a singular question word."
+    "explanation": "Wie is itself the subject in this question, meaning who. Is is the finite verb; daar says where and nu says when. There is no extra subject after is. Contrast Waar is de dokter?, where waar asks about place and de dokter is the subject. The model uses singular is when asking who is there. Wie does not inherently mean exactly one person: plural agreement is possible in suitable contexts, as in Wie zijn dat? Learn the whole question rather than a rule that wie is always singular."
    }
   ]
  },
@@ -3382,7 +3388,7 @@
     "id": "model",
     "text": "Ik leer elke dag iets nieuws.",
     "english": "I learn something new every day.",
-    "explanation": "In a normal main clause the subject (Ik) comes first and the finite verb (leer) second (verb-second order). After iets an adjective takes -s: iets nieuws."
+    "explanation": "In a normal main clause the subject (Ik) comes first and the finite verb (leer) second (verb-second order). Leren: ik leer, ik leerde, ik heb geleerd. In iets nieuws, iets means something and nieuw is an adjective used with the ending -s. This is something new; the separate noun het nieuws means the news. The -s here is not a plural ending. Compare iets leuks (something nice), niets nieuws (nothing new), and een nieuw boek (a new book, without that -s)."
    },
    {
     "id": "alt-5b7014a5c791",
@@ -3416,7 +3422,7 @@
     "id": "model",
     "text": "Ze werd wakker en voelde zich veel beter.",
     "english": "She woke up and felt much better.",
-    "explanation": "Two main clauses joined by en; each verb is second or follows its subject. Wakker worden: werd wakker. Zich voelen: voelde zich."
+    "explanation": "Ze is the shared subject of two coordinated actions: werd wakker and voelde zich veel beter. En joins them. The second action leaves out the repeated subject ze; voelde still agrees with that same woman. Werd and voelde are both finite past verbs, not an infinitive pair. Wakker worden: werd wakker. Zich voelen: voelde zich."
    },
    {
     "id": "alt-3aac76c04d83",
@@ -3602,7 +3608,7 @@
     "id": "model",
     "text": "Laat je het me zien?",
     "english": "Will you show it to me?",
-    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Laat), and the subject (je) follows it. The other verb parts are not conjugated: the infinitive (zien) normally occurs toward the end. Laten zien means to show. The -t drops after je."
+    "explanation": "This is a yes/no question. With no question word, it begins with the finite verb (Laat), and the subject (je) follows it. The other verb parts are not conjugated: the infinitive (zien) normally occurs toward the end. Laten zien means show: je laat het me zien, and Laat je het me zien? with question order. Laat is the stem of laten. Its t stays when subject je/jij follows: laat je, never la je. Only an added second-person -t is omitted in inversion; a stem-final t is retained. Zien remains an infinitive after finite laat."
    },
    {
     "id": "alt-55236b6c3e51",
@@ -3653,7 +3659,7 @@
     "id": "model",
     "text": "Ze heeft een uur in het restaurant zitten wachten.",
     "english": "She waited in the restaurant for an hour.",
-    "explanation": "In a normal main clause the subject (Ze) comes first and the finite verb (heeft) second (verb-second order). The other verb parts are not conjugated: the infinitive (zitten) normally occurs toward the end; the infinitive (wachten) normally occurs toward the end. Zitten wachten means to wait (while sitting)."
+    "explanation": "In a normal main clause the subject (Ze) comes first and the finite verb (heeft) second (verb-second order). The other verb parts are not conjugated: the infinitive (zitten) normally occurs toward the end; the infinitive (wachten) normally occurs toward the end. Zitten te wachten describes waiting while seated. In the perfect, zitten appears as a replacement infinitive before wachten: ze heeft zitten wachten, not ze heeft gezeten wachten. Heeft is finite; zitten and wachten are infinitives. Een uur gives the duration. The literal seated posture is part of this situation, although posture verbs can also emphasise an ongoing activity."
    },
    {
     "id": "alt-3c47318508ed",
@@ -3676,7 +3682,7 @@
     "id": "alt-d99b87109753",
     "text": "Hij heeft me goed advies gegeven.",
     "english": "He gave me good advice.",
-    "explanation": "Geven has irregular simple past gaf and participle gegeven. Advice is uncountable: goed advies, without an indefinite article."
+    "explanation": "Geven has irregular simple past gaf and participle gegeven. Goed advies refers to advice generally here. Dutch also allows een goed advies for one piece of advice; English advice itself does not take an indefinite article."
    }
   ]
  },
@@ -3687,7 +3693,7 @@
     "id": "model",
     "text": "Waar werk je?",
     "english": "Where do you work?",
-    "explanation": "This is a question. The question word or phrase (Waar) takes the first position, so the finite verb (werk) comes second and the subject (je) follows it: question word + finite verb + subject. The -t drops after je: werk je."
+    "explanation": "This is a question. The question word or phrase (Waar) takes the first position, so the finite verb (werk) comes second and the subject (je) follows it: question word + finite verb + subject. The -t drops when subject je/jij follows the finite verb: werk je."
    },
    {
     "id": "alt-e5396b08632f",
@@ -3884,7 +3890,7 @@
     "id": "model",
     "text": "Ik verlies mijn geduld als mensen onbeleefd zijn.",
     "english": "I lose my patience when people are rude.",
-    "explanation": "In a normal main clause the subject (Ik) comes first and the finite verb (verlies) second (verb-second order). After als the clause is subordinate, so its finite verb (zijn) moves to the very end. Verliezen: ik verlies."
+    "explanation": "In a normal main clause the subject (Ik) comes first and the finite verb (verlies) second (verb-second order). After als the clause is subordinate, so its finite verb (zijn) comes toward the end of its subordinate clause. Verliezen: ik verlies."
    }
   ]
  },

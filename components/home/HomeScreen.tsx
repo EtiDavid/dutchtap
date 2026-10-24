@@ -12,6 +12,7 @@ import { chooseLanguage, useSavedLanguage } from "@/lib/lang/useLanguage";
 import { DEFAULT_LANG, withLang } from "@/lib/lang";
 import { LanguageChooser } from "@/components/lang/LanguageChooser";
 import { LanguageSwitch } from "@/components/lang/LanguageSwitch";
+import { FeedbackSettings } from '@/components/practice/QuizFeedback';
 
 export function HomeScreen() {
   const { account, loading: accountLoading, logout } = useAccount();
@@ -82,10 +83,17 @@ export function HomeScreen() {
       <StreakBadge streak={streak} practisedToday={practisedToday} />
 
       <div className="flex flex-col gap-3">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-muted">Remember & communicate</h2>
         <ModeCard href={withLang("/flashcards", lang)} title="Flashcards" subtitle="Study a fixed set, say it from memory, then quiz it." example={dutch ? "Kan ik met de kaart betalen?" : "Puis-je payer par carte ?"} />
         <ModeCard href={withLang("/quiz", lang)} title="Quiz" subtitle="Put the words of your session sentences in order." example={dutch ? "kaart · betalen · ik · kan" : "carte · payer · je · puis"} />
         <ModeCard href={withLang("/vocabulary", lang)} title="Vocabulary" subtitle="Words and expressions from your sentence cards." example={dutch ? "op slot doen · to lock" : "payer · to pay"} />
         {dutch ? <>
+          <h2 className="mt-5 text-sm font-semibold uppercase tracking-wide text-muted">Build your own Dutch</h2>
+          <ModeCard href="/learn" title="Sentence Builder" subtitle="Practise omdat, dat, als, tot, toen and Dutch word order." example="Als ik hulp nodig heb, bel ik mijn collega." />
+          <ModeCard href="/learn?topic=verbs" title="Verb Lab" subtitle="Present, past and perfect forms, with a separable-verbs topic." example="ik stuur op · ik heb opgestuurd" />
+          <ModeCard href="/learn?topic=tense" title="Tense Lab" subtitle="Tell the situation in the present or past." example="ik ga · ik ging · ik ben gegaan" />
+          <ModeCard href="/learn?topic=mixed" title="Think in Dutch" subtitle="Mixed Dutch situations. Speak first; use English help when needed." example="Wat doe je als je hulp nodig hebt?" />
+          <h2 className="mt-5 text-sm font-semibold uppercase tracking-wide text-muted">Quick grammar games</h2>
           <ModeCard href="/game/article" title="De or Het" subtitle="Learn the article." example="het kantoor" />
           <ModeCard
             href="/game/demonstrative"
@@ -101,6 +109,7 @@ export function HomeScreen() {
           />
         </> : <p className="rounded-2xl border border-dashed border-border px-4 py-3 text-sm text-muted" data-testid="dutch-games-note">The de/het, deze/dit and adjective-ending games are Dutch-only. Switch to Nederlands to play them.</p>}
       </div>
+      {dutch && <FeedbackSettings />}
 
       {dutch && stats && stats.weakConcepts > 0 && (
         <Link

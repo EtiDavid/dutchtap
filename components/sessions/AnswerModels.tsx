@@ -1,6 +1,6 @@
 "use client";
 import type { LCard } from "@/lib/content/cards";
-import { communicationFor, modelFor } from "@/lib/practice/communication";
+import { communicationFor, modelFor, principalAnswers } from "@/lib/practice/communication";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { deckCard } from "@/lib/sessions/engine";
 import { parentFor, variationsFor } from "@/lib/variations/content";
@@ -17,7 +17,9 @@ export function AnswerModels({
   if (card.lang !== "nl") return null;
   const task = communicationFor(card),
     active = modelFor(card, activeId) ?? task.answers[0];
-  const others = task.answers.filter((a) => a.id !== active.id);
+  const principal = principalAnswers(task);
+  const others = principal.filter((a) => a.id !== active.id && a.text !== active.text);
+  const minor = task.answers.filter(a => !principal.includes(a) && a.id !== active.id);
   return (
     <section
       className="mt-5 border-t border-border pt-4"
@@ -67,6 +69,7 @@ export function AnswerModels({
           </ul>
         </details>
       )}
+      {minor.length > 0 && <details className="mt-4"><summary className="cursor-pointer text-sm text-muted">Pronoun & form notes</summary>{minor.map(a => <p key={a.id} className="mt-2 text-sm"><span lang="nl" className="font-medium">{a.text}</span><br />{a.explanation}</p>)}</details>}
       <p className="mt-3 text-xs leading-relaxed text-muted">
         These are model answers, not every possible response. In Speaking, judge
         whether your own Dutch conveys this situation. In Quiz, use this round’s

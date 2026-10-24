@@ -1,5 +1,6 @@
 import {
   communicationFor,
+  principalAnswers,
   modelFor,
   matchAnswer,
   type ModelAnswer,
@@ -533,7 +534,7 @@ function openQuizAttempt(
     const p = isVariation(cardId)
       ? (s.childProgress[cardId] ??= emptyProgress())
       : (s.cards[cardId] ??= emptyProgress());
-    const ids = communicationFor(card).answers.map((a) => a.id);
+    const ids = principalAnswers(communicationFor(card)).map((a) => a.id);
     const previous = p.quizAnswerRotation;
     let remaining = (previous?.remaining ?? []).filter((id) =>
       ids.includes(id),

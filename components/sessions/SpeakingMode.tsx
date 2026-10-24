@@ -191,6 +191,9 @@ export function SpeakingMode({
           {!current.revealed ? (
             <>
               <p className="text-lg leading-snug">{card.scenario}</p>
+              <button type="button" className={`${button} mt-3`} onClick={() => void listen({text:card.scenario,lang:'en'})}>Listen to situation (English)</button>
+              <button type="button" className={`${button} ml-2 mt-3`} onClick={stop}>Stop</button>
+              {sound && <p role="status" className="mt-2 text-sm text-muted">{sound}</p>}
               <p className="mt-4 text-xl font-bold text-accent">
                 How do you say it?
               </p>

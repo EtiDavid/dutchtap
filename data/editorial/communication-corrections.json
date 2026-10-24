@@ -1,0 +1,159 @@
+{
+  "Mag ik even iets vragen?": {
+    "english": "May I ask a quick question?",
+    "answers": []
+  },
+  "Mijn trein heeft tien minuten vertraging.": {
+    "english": "My train is delayed by ten minutes.",
+    "answers": []
+  },
+  "Zij kookt graag voor haar vrienden.": {
+    "scenario": "A woman regularly enjoys preparing meals for her friends. Tell someone what she enjoys doing; refer to her as she and her friends as a group.",
+    "explanation": "Kookt is the present verb for singular zij/ze. Graag expresses enjoying the activity, so kookt graag means likes cooking. Voor haar vrienden names the people she cooks for; vrienden is plural. Dutch needs no is before kookt.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Zij vindt het leuk om voor haar vrienden te koken.",
+        "english": "She enjoys cooking for her friends.",
+        "explanation": "Vindt agrees with zij. Het leuk vinden expresses enjoyment. Om ... te introduces the activity; koken is an infinitive, with voor haar vrienden inside that phrase. This is a different structure for the same enjoyment, not just a pronoun swap."
+      }
+    ]
+  },
+  "Ze kookt graag voor haar vrienden.": {
+    "scenario": "A woman regularly enjoys preparing meals for her friends. Tell someone what she enjoys doing; refer to her as she and her friends as a group.",
+    "explanation": "Kookt is the present verb for singular zij/ze. Graag expresses enjoying the activity, so kookt graag means likes cooking. Voor haar vrienden names the people she cooks for; vrienden is plural. Dutch needs no is before kookt.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Zij vindt het leuk om voor haar vrienden te koken.",
+        "english": "She enjoys cooking for her friends.",
+        "explanation": "Vindt agrees with zij. Het leuk vinden expresses enjoyment. Om ... te introduces the activity; koken is an infinitive, with voor haar vrienden inside that phrase. This is a different structure for the same enjoyment, not just a pronoun swap."
+      }
+    ]
+  },
+  "Wij plannen onze vakantie.": {
+    "scenario": "You and your friends are choosing dates and a destination for a shared holiday. Speaking for the whole group, tell someone what you are doing together.",
+    "explanation": "Wij is plural, so the finite verb is plannen. Onze agrees with de vakantie, even though vakantie is singular: the possessive ending follows the thing possessed, not the number of owners. Plannen describes arranging the holiday; van plan zijn op vakantie te gaan describes the intention to go.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "We zijn onze vakantie aan het plannen.",
+        "english": "We are planning our holiday.",
+        "explanation": "Zijn agrees with plural we. Aan het + infinitive highlights the ongoing planning activity. Onze vakantie comes before aan het plannen; the scenario explicitly describes planning in progress."
+      }
+    ]
+  },
+  "Ik probeerde een nieuw gerecht.": {
+    "scenario": "Yesterday you tried a new dish at a restaurant. Tell a friend what you tried during that visit; it was new to you, without specifying whether you already knew about it.",
+    "explanation": "Probeerde is the simple past of proberen with ik; plural would be probeerden. Een nieuw gerecht has no adjective -e because gerecht is a singular indefinite het-word. Nieuw means new; onbekend would mean unknown or unfamiliar. The object een nieuw gerecht follows the finite verb.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Ik heb een nieuw gerecht geprobeerd.",
+        "english": "I tried a new dish.",
+        "explanation": "Heb is the perfect auxiliary for ik. Geprobeerd is the participle, at the end of this clause; trying the dish is the same completed event. Simple past fits recounting the visit; perfect commonly reports the experience."
+      }
+    ]
+  },
+  "Ik probeerde een nieuwe soep.": {
+    "scenario": "At an earlier meal you tried a new soup. Tell a friend what you tried, referring to yourself in the past.",
+    "explanation": "Probeerde is singular simple past. Soep is a de-word, so an adjective before it takes -e even after een: een nieuwe soep. Compare een nieuw gerecht, because gerecht is a het-word.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Ik heb een nieuwe soep geprobeerd.",
+        "english": "I tried a new soup.",
+        "explanation": "The perfect reports the same completed trial: heb is finite and geprobeerd is the participle. Nieuwe keeps -e because soep is a de-word."
+      }
+    ]
+  },
+  "Ik ben het daarmee eens.": {
+    "scenario": "Someone has just expressed an opinion. Say that you share that opinion, referring back to what they said.",
+    "explanation": "The expression is het eens zijn met iets. Ben is finite for ik; het is a fixed part of the expression. Daarmee means with that: met becomes mee in this pronominal combination. Daarmee comes before eens in the neutral order.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Daar ben ik het mee eens.",
+        "english": "I agree with that.",
+        "explanation": "Daar starts the main clause, so finite ben comes before ik. Daar ... mee refers to the opinion and het remains part of het eens zijn."
+      }
+    ]
+  },
+  "We overwegen alle opties.": {
+    "scenario": "Your group has not chosen a solution yet. Speaking for the group, explain that you are considering every option.",
+    "explanation": "We takes plural overwegen, which is also the infinitive form in isolation. Overwegen meaning consider is inseparable: not wegen ... over. Alle opties means all options; with a possessive use al onze opties. Do not add zijn before finite overwegen.",
+    "answers": []
+  },
+  "Dit formulier is snel in te vullen.": {
+    "scenario": "This form takes very little time to complete. Tell someone that filling it in can be done quickly.",
+    "explanation": "Dit refers to singular het formulier. In is ... te + infinitive, the subject is the thing that can be acted on. Invullen is separable, so te comes between in and vullen. Snel describes the time needed; makkelijk would describe ease.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Je kunt dit formulier snel invullen.",
+        "english": "You can fill in this form quickly.",
+        "explanation": "Je is the generic person completing the form. Kunt is finite; invullen stays together as an infinitive after the modal. Both describe how quickly this particular form can be completed."
+      }
+    ]
+  },
+  "Ik ben op de bank gaan zitten.": {
+    "scenario": "You have just taken a seat on the sofa. Describe the action of sitting down, rather than only your current seated position.",
+    "explanation": "Gaan zitten means taking a seat. The perfect uses zijn and the double infinitive gaan zitten: ben ... gaan zitten, not ben ... gegaan zitten. Ik zit describes being seated now; ik heb gezeten describes a past seated state.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Ik ging op de bank zitten.",
+        "english": "I sat down on the sofa.",
+        "explanation": "Ging is the simple past of gaan. Zitten stays an infinitive after ging. This can describe the same past action in a narrative, although the perfect is common when reporting what just happened."
+      }
+    ]
+  },
+  "Ze gaan in de wachtkamer zitten tot de dokter ze roept.": {
+    "scenario": "Several patients take seats in the waiting room and wait for one doctor to call them. Describe what the patients do and when their waiting ends.",
+    "explanation": "The first ze means they and takes plural gaan. Gaan zitten means take a seat; in de wachtkamer says where. Tot introduces until. In de dokter ze roept, the subject is singular de dokter, so roept is singular; the second ze means them and is the object.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Ze nemen plaats in de wachtkamer tot de dokter ze roept.",
+        "english": "They take seats in the waiting room until the doctor calls them.",
+        "explanation": "Plaatsnemen means take a seat and splits as nemen plaats. The same patients, place and waiting endpoint are retained. Nemen is plural for ze; roept still agrees with the single doctor."
+      }
+    ]
+  },
+  "Verkoop de oude printer aan hem.": {
+    "scenario": "A man wants to buy an old printer that your colleague owns. Tell your colleague directly to sell the old printer to that man, referring to the buyer as him.",
+    "explanation": "Verkoop is the imperative of inseparable verkopen. The item is the object. Aan introduces the buyer; it is not naar, which would express a destination. In je oude auto, je is possessive your, while in Verkoop je de oude auto? je would be the subject of a question.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Verkoop hem de oude printer.",
+        "english": "Sell him the old printer.",
+        "explanation": "The recipient is an indirect object without aan, before the item being sold. This keeps the instruction, owner, buyer and item unchanged."
+      }
+    ]
+  },
+  "Verkoop je oude auto aan Zoë.": {
+    "scenario": "Your friend owns an old car and Zoë wants to buy it. Give your friend a direct instruction to sell their old car to Zoë; address the friend as you.",
+    "explanation": "Verkoop is the imperative of inseparable verkopen. The item is the object. Aan introduces the buyer; it is not naar, which would express a destination. In je oude auto, je is possessive your, while in Verkoop je de oude auto? je would be the subject of a question.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Verkoop Zoë je oude auto.",
+        "english": "Sell Zoë your old car.",
+        "explanation": "The recipient is an indirect object without aan, before the item being sold. This keeps the instruction, owner, buyer and item unchanged."
+      }
+    ]
+  },
+  "Verkoop je oude auto aan hem.": {
+    "scenario": "A man wants to buy your friend's old car. Tell your friend directly to sell their old car to him, addressing the friend as you and referring to the buyer as him.",
+    "explanation": "Verkoop is the imperative of inseparable verkopen. The item is the object. Aan introduces the buyer; it is not naar, which would express a destination. In je oude auto, je is possessive your, while in Verkoop je de oude auto? je would be the subject of a question.",
+    "answers": [
+      {
+        "id": "review-20261024-1",
+        "text": "Verkoop hem je oude auto.",
+        "english": "Sell him your old car.",
+        "explanation": "The recipient is an indirect object without aan, before the item being sold. This keeps the instruction, owner, buyer and item unchanged."
+      }
+    ]
+  }
+}

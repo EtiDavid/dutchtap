@@ -1,24 +1,40 @@
-'use client';
-import { useSyncExternalStore } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { SESSIONS_CHANGED, SUMMARY_KEY } from '@/lib/sessions/store';
-import { DEFAULT_LANG, withLang, type Lang } from '@/lib/lang';
-import { useSavedLanguage } from '@/lib/lang/useLanguage';
+"use client";
+import { useSyncExternalStore } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { SESSIONS_CHANGED, SUMMARY_KEY } from "@/lib/sessions/store";
+import { DEFAULT_LANG, withLang, type Lang } from "@/lib/lang";
+import { useSavedLanguage } from "@/lib/lang/useLanguage";
 
 const TABS = [
-  { href: '/', label: 'Home', icon: '🏠', session: null },
-  { href: '/flashcards', label: 'Flashcards', icon: '🃏', session: 'flashcards' },
-  { href: '/quiz', label: 'Quiz', icon: '✏️', session: 'quiz' },
-  { href: '/vocabulary', label: 'Words', icon: '📖', session: null },
+  { href: "/", label: "Home", icon: "🏠", session: null },
+  {
+    href: "/flashcards",
+    label: "Flashcards",
+    icon: "🃏",
+    session: "flashcards",
+  },
+  { href: "/quiz", label: "Quiz", icon: "✏️", session: "quiz" },
+  { href: "/learn", label: "Learn", icon: "🧠", session: null },
+  { href: "/vocabulary", label: "Words", icon: "📖", session: null },
 ] as const;
 
 function hasActiveSessions(): boolean {
-  try { return (JSON.parse(localStorage.getItem(SUMMARY_KEY) || 'null')?.active ?? 0) > 0; } catch { return false; }
+  try {
+    return (
+      (JSON.parse(localStorage.getItem(SUMMARY_KEY) || "null")?.active ?? 0) > 0
+    );
+  } catch {
+    return false;
+  }
 }
 function subscribe(listener: () => void) {
-  window.addEventListener('storage', listener); window.addEventListener(SESSIONS_CHANGED, listener);
-  return () => { window.removeEventListener('storage', listener); window.removeEventListener(SESSIONS_CHANGED, listener); };
+  window.addEventListener("storage", listener);
+  window.addEventListener(SESSIONS_CHANGED, listener);
+  return () => {
+    window.removeEventListener("storage", listener);
+    window.removeEventListener(SESSIONS_CHANGED, listener);
+  };
 }
 
 /**
@@ -31,22 +47,56 @@ export function AppNav({ lang }: { lang?: Lang } = {}) {
   const saved = useSavedLanguage().lang;
   const effective = lang ?? saved ?? DEFAULT_LANG;
   // Re-read on every render (route changes re-render this component) and whenever sessions change in this or another tab.
-  const waiting = useSyncExternalStore(subscribe, hasActiveSessions, () => false);
+  const waiting = useSyncExternalStore(
+    subscribe,
+    hasActiveSessions,
+    () => false,
+  );
 
-  const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`));
-  return <nav aria-label="Main" className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-white/95 backdrop-blur">
-    <ul className="mx-auto grid max-w-lg grid-cols-4">
-      {TABS.map(tab => {
-        const active = isActive(tab.href);
-        const resumable = !!tab.session && waiting && !active;
-        return <li key={tab.href}>
-          <Link href={tab.href === '/' ? tab.href : withLang(tab.href, effective)} aria-current={active ? 'page' : undefined} className={`relative flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs font-semibold focus-visible:outline-2 focus-visible:outline-accent ${active ? 'text-accent' : 'text-muted'}`}>
-            <span aria-hidden className="text-lg">{tab.icon}</span>
-            {tab.label}
-            {resumable && <><span aria-hidden className="absolute right-[28%] top-2 h-2.5 w-2.5 rounded-full bg-accent" /><span className="sr-only">, session in progress</span></>}
-          </Link>
-        </li>;
-      })}
-    </ul>
-  </nav>;
+  const isActive = (href: string) =>
+    href === "/"
+      ? pathname === "/"
+      : pathname === href || pathname.startsWith(`${href}/`);
+  return (
+    <nav
+      aria-label="Main"
+      className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-white/95 backdrop-blur"
+    >
+      <ul
+        className={`mx-auto grid max-w-lg ${effective === "nl" ? "grid-cols-5" : "grid-cols-4"}`}
+      >
+        {TABS.filter((tab) => effective === "nl" || tab.href !== "/learn").map(
+          (tab) => {
+            const active = isActive(tab.href);
+            const resumable = !!tab.session && waiting && !active;
+            return (
+              <li key={tab.href}>
+                <Link
+                  href={
+                    tab.href === "/" ? tab.href : withLang(tab.href, effective)
+                  }
+                  aria-current={active ? "page" : undefined}
+                  className={`relative flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs font-semibold focus-visible:outline-2 focus-visible:outline-accent ${active ? "text-accent" : "text-muted"}`}
+                >
+                  <span aria-hidden className="text-lg">
+                    {tab.icon}
+                  </span>
+                  {tab.label}
+                  {resumable && (
+                    <>
+                      <span
+                        aria-hidden
+                        className="absolute right-[28%] top-2 h-2.5 w-2.5 rounded-full bg-accent"
+                      />
+                      <span className="sr-only">, session in progress</span>
+                    </>
+                  )}
+                </Link>
+              </li>
+            );
+          },
+        )}
+      </ul>
+    </nav>
+  );
 }

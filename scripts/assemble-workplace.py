@@ -53,6 +53,8 @@ def construct(row):
   wrong=' '.join(p['text'] for p in wrongparts)
   why=f'The stated subject and tense require the finite form {old} here. {replacement} is not the matching finite form for this sentence; an infinitive is not automatically a finite verb.'
  mistake={'wrong':wrong,'right':text,'why':why}
+ if pattern=='polite' and subject=='we':
+  mistake.update(alternative=True,why='Zouden we makes a tentative, polite request here. Zullen we can form a grammatical question about future possibility, but changes the tone and time perspective; do not treat it as a universal agreement error.')
  if text=='Welke rechten heeft dit testaccount nodig?':
   mistake.update(alternative=True,why='The intended subject is singular dit testaccount, with welke rechten as the object. A plural hebben could instead make rechten the subject and the account the object, changing who needs what; it does not express this scenario.')
  if subject=='Geen nieuwe meldingen':

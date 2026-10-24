@@ -2067,5 +2067,16 @@
   "Ik heb mijn bereikbaarheid in de agenda gezet.": {
     "english": "I have put the times when I can be reached in the calendar.",
     "answers": []
+  },
+  "Ik zal u voor het einde van de dag bijwerken over de voortgang.": {
+    "explanation": "Zal is finite and bijwerken is a bare infinitive before the over-phrase. The intended meaning is a progress update before the day ends, not a promised fix. Updating a person with bijwerken is awkward Dutch here; for normal wording use informeren over or op de hoogte brengen van, as in the alternative.",
+    "answers": [
+      {
+        "id": "a-8ec5bc3d261b",
+        "text": "Ik zal u voor het einde van de dag op de hoogte brengen van de voortgang.",
+        "english": "I will update you on progress before the end of the day.",
+        "explanation": "Op de hoogte brengen van means inform someone about. Zal is finite; u is the person informed, van de voortgang is the topic, and voor het einde van de dag retains the same deadline. Brengen remains infinitive after zal."
+      }
+    ]
   }
 }

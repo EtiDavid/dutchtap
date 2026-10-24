@@ -5281,7 +5281,7 @@
     "id": "career-support-015",
     "area": "support",
     "situation": "details",
-    "pattern": "yes-no",
+    "pattern": "choice-question",
     "verbs": [
       "werken"
     ],
@@ -5315,8 +5315,7 @@
     "situation": "details",
     "pattern": "present",
     "verbs": [
-      "hebben",
-      "zijn"
+      "hebben"
     ],
     "review": "AI editorial review of literal authored row; no independent native certification"
   },
@@ -5516,7 +5515,7 @@
     "id": "career-support-037",
     "area": "support",
     "situation": "remotehelp",
-    "pattern": "present",
+    "pattern": "modal",
     "verbs": [
       "kunnen",
       "stoppen"
@@ -5615,7 +5614,8 @@
     "situation": "expectations",
     "pattern": "modal-question",
     "verbs": [
-      "kunnen"
+      "kunnen",
+      "verderwerken"
     ],
     "review": "AI editorial review of literal authored row; no independent native certification"
   },
@@ -5701,7 +5701,7 @@
     "id": "career-support-054",
     "area": "support",
     "situation": "closure",
-    "pattern": "present",
+    "pattern": "subordinate",
     "verbs": [
       "blijven",
       "hebben",

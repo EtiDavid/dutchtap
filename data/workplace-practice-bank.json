@@ -3744,7 +3744,7 @@
         "text": "Daarnet meldde een collega hetzelfde probleem.",
         "english": "A colleague reported the same problem a moment ago.",
         "scenario": "A user describes an issue that someone else reported moments earlier. Explain this observation without asserting that the causes are identical.",
-        "explanation": "Simple past. The first constituent is Daarnet; meldde is the finite (conjugated) verb and een collega is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Dezelfde links the reported symptom; it does not establish a shared root cause. Meldde is singular past."
+        "explanation": "Simple past. The first constituent is Daarnet; meldde is the finite (conjugated) verb and een collega is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Hetzelfde matches singular het probleem and links the reported symptom; it does not establish a shared root cause. Meldde is singular past."
       },
       {
         "text": "Ik controleer of uw vraag al geregistreerd is.",
@@ -3762,7 +3762,7 @@
         "text": "Gaat het om een nieuwe vraag of om een bestaand ticket?",
         "english": "Is this a new request or an existing ticket?",
         "scenario": "Someone contacts support without saying whether this is a follow-up. Ask whether they have a new request or an existing ticket.",
-        "explanation": "Yes/no question. The finite verb Gaat comes before subject het. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Het gaat om is a fixed concern expression. New refers to a new request, not unfamiliarity with an existing one."
+        "explanation": "Alternative question. The finite verb Gaat comes before subject het. The finite verb precedes the subject. Of links the alternatives the listener is asked to distinguish; this question asks which alternative applies. Het gaat om is a fixed concern expression. New refers to a new request, not unfamiliarity with an existing one."
       },
       {
         "text": "Ik gebruik het ticketnummer om uw eerdere melding terug te vinden.",
@@ -3803,7 +3803,7 @@
         "text": "Gebruikt u een bedrijfscomputer of een ander toestel?",
         "english": "Are you using a company computer or another device?",
         "scenario": "You need to know the device context of a support request. Address the user formally and ask whether the device belongs to the company. Address the other person politely with u/uw.",
-        "explanation": "Yes/no question. The finite verb Gebruikt comes before subject u. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. The two options identify the device context without assuming that a non-company device is authorised."
+        "explanation": "Alternative question. The finite verb Gebruikt comes before subject u. The finite verb precedes the subject. Of links the alternatives the listener is asked to distinguish; this question asks which alternative applies. The two options identify the device context without assuming that a non-company device is authorised."
       },
       {
         "text": "Laat persoonlijke gegevens die niet nodig zijn alstublieft weg.",
@@ -3839,7 +3839,7 @@
         "text": "Bij deze melding ontbreekt nog het tijdstip.",
         "english": "The time is still missing from this report.",
         "scenario": "You are reviewing a support report with a colleague. Point out that the report still lacks the time of the event.",
-        "explanation": "Fronted phrase and V2. The first constituent is Bij deze melding; ontbreekt is the finite (conjugated) verb and nog het tijdstip. is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete time, place or object phrase is one first constituent. The finite verb follows it, then the subject: second position means a constituent, not the second written word. The report phrase is first; ontbreekt agrees with singular het tijdstip. Nog marks a detail still to be supplied."
+        "explanation": "Fronted phrase and V2. The first constituent is Bij deze melding; ontbreekt is the finite (conjugated) verb and het tijdstip. is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete time, place or object phrase is one first constituent. The finite verb follows it, then the subject: second position means a constituent, not the second written word. The report phrase is first; ontbreekt agrees with singular het tijdstip. Nog marks a detail still to be supplied."
       },
       {
         "text": "De volledige fouttekst is nuttiger dan alleen een samenvatting.",
@@ -3916,7 +3916,7 @@
         "text": "Welk tijdstip heeft uw voorkeur voor een videogesprek?",
         "english": "What time would you prefer for a video call?",
         "scenario": "A customer can choose among several support-call times. Ask formally which time they prefer. Address the other person politely with u/uw.",
-        "explanation": "Question word and inversion. The first question constituent is Welk tijdstip; heeft is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Voorkeur expresses preference rather than permission or a fixed requirement. Welk modifies singular het tijdstip."
+        "explanation": "Question word and inversion. Welk tijdstip is itself the question subject and is followed by finite heeft; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Welk tijdstip is the singular question subject of heeft; uw voorkeur is the object in the expression de voorkeur hebben. The question asks a preference, not a fixed appointment or permission."
       },
       {
         "text": "Ik stuur een herinnering om de afspraak opnieuw te bevestigen.",
@@ -4022,7 +4022,7 @@
         "text": "Ik zal u voor het einde van de dag bijwerken over de voortgang.",
         "english": "I will update you on progress before the end of the day.",
         "scenario": "A customer needs a follow-up while the issue is investigated. Commit formally to providing a progress update before the day ends. Address the other person politely with u/uw.",
-        "explanation": "Future intention or commitment. The first constituent is Ik; zal is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work. This promises an update, not necessarily a completed fix. Bijwerken with a person is less natural than op de hoogte brengen and will be reviewed."
+        "explanation": "Future intention or commitment. The first constituent is Ik; zal is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work. The intended commitment is to inform the customer before the day ends, not to finish the repair. Bijwerken normally updates a record or information; using a person as its object is awkward here. Prefer informeren over or op de hoogte brengen van for informing someone. Zal is finite, and bijwerken is a bare infinitive before the following over-phrase."
       },
       {
         "text": "Ik laat u weten zodra er nieuwe informatie is.",
@@ -4057,8 +4057,8 @@
       {
         "text": "We spraken een update na de eerste controle af.",
         "english": "We agreed on an update after the first check.",
-        "scenario": "A colleague asks what follow-up was promised to the customer. Report that an update was agreed after the first check.",
-        "explanation": "Simple past. The first constituent is We; spraken is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Spraken af is plural past. An agreed update is not the same as a promised resolution."
+        "scenario": "During planning, your team agreed that an update would follow the first check. Tell a colleague about that follow-up arrangement.",
+        "explanation": "Simple past. The first constituent is We; spraken is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Spraken ... af is plural past of afspreken. In this scenario, na de eerste controle specifies when the update is due, not when the agreement was made. The commitment is an update, not resolution."
       },
       {
         "text": "Een duidelijke tussenstand is nuttiger dan een onbevestigde belofte.",
@@ -4123,7 +4123,7 @@
         "text": "De gebruiker bevestigt dat de taak weer lukt.",
         "english": "The user confirms that the task works again.",
         "scenario": "A colleague asks what the user reported after a check. Say that the user confirms they can perform the task again.",
-        "explanation": "Present statement. The first constituent is De gebruiker; bevestigt is the finite (conjugated) verb and De gebruiker is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. The statement attributes the outcome to the user's confirmation, rather than making an unsupported universal guarantee."
+        "explanation": "Main and subordinate clause. The first constituent is De gebruiker; bevestigt is the finite (conjugated) verb and De gebruiker is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. The statement attributes the outcome to the user's confirmation, rather than making an unsupported universal guarantee. Dat introduces the reported content and ends in lukt; weer means again."
       },
       {
         "text": "Na het laatste gesprek sloot ik de melding af.",
@@ -4164,73 +4164,73 @@
         "text": "Bekijk de naam van het actieve netwerk.",
         "english": "Look at the name of the active network.",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Ask for inspection of the active network's name.",
-        "explanation": "Spoken instruction. The instruction starts with Bekijk; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Spoken instruction. The instruction starts with Bekijk; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Bekijk is the imperative stem. De naam van het actieve netwerk is the object to inspect, not an instruction to change the active network."
       },
       {
         "text": "Staat de juiste uitvoermap in het veld?",
         "english": "Is the correct output folder in the field?",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Check the output-folder field.",
-        "explanation": "Yes/no question. The finite verb Staat comes before subject de juiste uitvoermap. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Yes/no question. The finite verb Staat comes before subject de juiste uitvoermap. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Staat begins the yes/no question with subject de juiste uitvoermap. In het veld locates the displayed folder path."
       },
       {
         "text": "De helderheid staat op de laagste stand.",
         "english": "The brightness is set to the lowest level.",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Describe the current brightness value.",
-        "explanation": "Present statement. The first constituent is De helderheid; staat is the finite (conjugated) verb and De helderheid is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Present statement. The first constituent is De helderheid; staat is the finite (conjugated) verb and De helderheid is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Staat describes a setting, with op de laagste stand as its selected level. Laagste is the superlative of laag."
       },
       {
         "text": "Kunnen we de waarden met de handleiding vergelijken?",
         "english": "Can we compare the values with the manual?",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Suggest comparing settings with the manual.",
-        "explanation": "Modal request or permission question. The finite verb Kunnen comes before subject we. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Modal request or permission question. The finite verb Kunnen comes before subject we. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Kunnen takes bare infinitive vergelijken. Met de handleiding means comparing the displayed values against those specified in the manual."
       },
       {
         "text": "Noteer het nummer naast de apparaatnaam.",
         "english": "Note the number next to the device name.",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Ask for the number beside the device name.",
-        "explanation": "Spoken instruction. The instruction starts with Noteer; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Spoken instruction. The instruction starts with Noteer; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Noteer is an imperative. Naast de apparaatnaam identifies which number is needed, rather than asking for a security code."
       },
       {
         "text": "De energiebesparing is niet actief.",
         "english": "Power saving is not active.",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Report the current power-saving state.",
-        "explanation": "Niet, geen and scope. The first constituent is De energiebesparing; is is the finite (conjugated) verb and De energiebesparing is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Niet, geen and scope. The first constituent is De energiebesparing; is is the finite (conjugated) verb and De energiebesparing is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Is takes adjective actief for the current state. Niet denies active power saving, without saying the feature is unavailable."
       },
       {
         "text": "Deze optie geldt alleen voor nieuwe documenten.",
         "english": "This option only applies to new documents.",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Limit the setting's scope to new documents.",
-        "explanation": "Present statement. The first constituent is Deze optie; geldt is the finite (conjugated) verb and Deze optie is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Present statement. The first constituent is Deze optie; geldt is the finite (conjugated) verb and Deze optie is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Geldt retains the stem-final d before added t. Alleen voor nieuwe documenten limits the setting to new documents, not existing ones."
       },
       {
         "text": "Welke waarde zie je bij de schaalinstelling?",
         "english": "Which value do you see for the scaling setting?",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Ask for the displayed scaling value. Use informal je/jij for your colleague.",
-        "explanation": "Question word and inversion. The first question constituent is Welke waarde; zie is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Question word and inversion. The first question constituent is Welke waarde; zie is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Welke waarde is the question object. Zie precedes informal subject je; bij de schaalinstelling identifies the relevant control."
       },
       {
         "text": "Ik heb de standaardwaarden nog niet hersteld.",
         "english": "I have not restored the defaults yet.",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Make clear that restoration has not happened.",
-        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Heb hersteld is perfect with no extra ge- after her-. Nog niet denies restoration so far, not an inability to restore later."
       },
       {
         "text": "Sluit het instellingenvenster zonder wijzigingen.",
         "english": "Close the settings window without changes.",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Ask the colleague to exit without changing values.",
-        "explanation": "Spoken instruction. The instruction starts with Sluit; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Spoken instruction. The instruction starts with Sluit; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Sluit is an imperative retaining its stem-final t. Zonder wijzigingen asks for closing without making changes to values."
       },
       {
         "text": "We controleren of beide apparaten dezelfde tijdzone gebruiken.",
         "english": "We check whether both devices use the same time zone.",
         "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Describe a comparison of both time-zone settings.",
-        "explanation": "Main and subordinate clause. The first constituent is We; controleren is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "explanation": "Main and subordinate clause. The first constituent is We; controleren is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Of introduces whether and ends in plural gebruiken with beide apparaten. Dezelfde tijdzone is the shared value being checked."
       },
       {
         "text": "De instelling is zichtbaar, maar niet bewerkbaar.",
         "english": "The setting is visible, but not editable.",
-        "scenario": "You are guiding a colleague through a diagnostic check, describing the next observation rather than promising a fix. Distinguish viewing a setting from being allowed to edit it.",
-        "explanation": "Present statement. The first constituent is De instelling; is is the finite (conjugated) verb and De instelling is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Check settings before changing them. Welke selects a specified setting, terwijl contrasts observations."
+        "scenario": "A setting can be viewed but cannot be edited in this situation. Describe that contrast without guessing its cause.",
+        "explanation": "Present statement. The first constituent is De instelling; is is the finite (conjugated) verb and De instelling is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Zichtbaar and bewerkbaar are adjective complements after is. Maar niet contrasts seeing a setting with being able to edit it; this alone does not establish the cause."
       }
     ]
   },
@@ -4241,73 +4241,73 @@
         "text": "Herhaal de handeling één keer met hetzelfde bestand.",
         "english": "Repeat the action once with the same file.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Ask for a single repeat with unchanged input.",
-        "explanation": "Spoken instruction. The instruction starts with Herhaal; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Spoken instruction. The instruction starts with Herhaal; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Herhaal is an imperative. Eén keer requests a single repetition, while met hetzelfde bestand keeps the input unchanged."
       },
       {
         "text": "Wat gebeurt na de tweede klik?",
         "english": "What happens after the second click?",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Ask about the result of the second click.",
-        "explanation": "Question word and inversion. Wat is itself the question subject and is followed by finite gebeurt; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Question word and inversion. Wat is itself the question subject and is followed by finite gebeurt; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Wat is the singular question subject of gebeurt. Na de tweede klik asks about the next event, not a proven cause."
       },
       {
         "text": "De foutcode verschijnt alleen bij deze volgorde.",
         "english": "The error code appears only with this sequence.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Report a sequence-specific failure.",
-        "explanation": "Present statement. The first constituent is De foutcode; verschijnt is the finite (conjugated) verb and De foutcode is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Present statement. The first constituent is De foutcode; verschijnt is the finite (conjugated) verb and De foutcode is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Alleen limits the appearance to deze volgorde. Bij names the sequence condition, not a physical location."
       },
       {
         "text": "Ik heb de stappen allemaal genoteerd.",
         "english": "I have noted down all the steps.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Confirm that every step has been recorded.",
-        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Heb genoteerd is perfect. Allemaal refers to all de stappen and is not a time expression."
       },
       {
         "text": "We kunnen de test morgen onder dezelfde omstandigheden herhalen.",
         "english": "We can repeat the test tomorrow under the same conditions.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Suggest a repeat under unchanged conditions tomorrow.",
-        "explanation": "Modal and final infinitive. The first constituent is We; kunnen is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Modal and final infinitive. The first constituent is We; kunnen is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Kunnen takes bare infinitive herhalen. Morgen gives the repeat time and onder dezelfde omstandigheden keeps the conditions matched."
       },
       {
         "text": "Deze poging bewijst de oorzaak niet.",
         "english": "This attempt does not prove the cause.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Limit what can be concluded from the attempt.",
-        "explanation": "Niet, geen and scope. The first constituent is Deze poging; bewijst is the finite (conjugated) verb and Deze poging is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Niet, geen and scope. The first constituent is Deze poging; bewijst is the finite (conjugated) verb and Deze poging is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Bewijst agrees with deze poging. Niet limits what this attempt establishes; it does not say the proposed cause has been disproved."
       },
       {
         "text": "Wacht tot het document volledig geladen is.",
         "english": "Wait until the document has fully loaded.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Ask the colleague to wait before continuing.",
-        "explanation": "Spoken instruction. The instruction starts with Wacht; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Spoken instruction. The instruction starts with Wacht; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Wacht is an imperative retaining stem-final t. Tot introduces an until-clause ending in geladen is; wait for loading to finish before continuing."
       },
       {
         "text": "Krijg je hetzelfde resultaat zonder aangesloten printer?",
         "english": "Do you get the same result without a connected printer?",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Check the result with the printer disconnected. Use informal je/jij for your colleague.",
-        "explanation": "Yes/no question. The finite verb Krijg comes before subject je. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Yes/no question. The finite verb Krijg comes before subject je. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Krijg precedes informal je without added -t. Zonder aangesloten printer changes the test condition while asking whether the result stays the same."
       },
       {
         "text": "Bij mijn eerste poging verscheen de melding niet.",
         "english": "On my first attempt, the message did not appear.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Describe the first attempt's different result.",
-        "explanation": "Simple past. The first constituent is Bij mijn eerste poging; verscheen is the finite (conjugated) verb and Bij mijn eerste poging is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Simple past. The first constituent is Bij mijn eerste poging; verscheen is the finite (conjugated) verb and de melding is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Bij mijn eerste poging is fronted before past verscheen. De melding is the singular subject; niet denies its appearance on that first attempt."
       },
       {
         "text": "Het kleine testbestand opent wel normaal.",
         "english": "The small test file does open normally.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Contrast the test file with the failing file.",
-        "explanation": "Present statement. The first constituent is Het kleine testbestand; opent is the finite (conjugated) verb and Het kleine testbestand is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Present statement. The first constituent is Het kleine testbestand; opent is the finite (conjugated) verb and Het kleine testbestand is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Opent is singular with het kleine testbestand. Wel contrasts normal opening of the test file with the failing file already discussed."
       },
       {
         "text": "Ik noteer welke stappen nodig zijn om de fout te herhalen.",
         "english": "I note which steps are needed to reproduce the error.",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Describe recording the required reproduction steps.",
-        "explanation": "Main and subordinate clause. The first constituent is Ik; noteer is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Main and subordinate clause. The first constituent is Ik; noteer is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Welke stappen is an embedded plural subject with nodig zijn. Om de fout te herhalen gives the purpose for which those steps are required."
       },
       {
         "text": "Is de volgorde belangrijk voor deze fout?",
         "english": "Is the sequence important for this error?",
         "scenario": "You are investigating a reproducible workplace fault with a colleague, asking for the exact sequence and conditions. Ask whether the sequence matters.",
-        "explanation": "Yes/no question. The finite verb Is comes before subject de volgorde. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Proberen is attempting, herhalen repeating and onderzoeken investigating. None of these alone claims discovery or resolution."
+        "explanation": "Yes/no question. The finite verb Is comes before subject de volgorde. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Is precedes subject de volgorde. Belangrijk voor deze fout asks about sequence relevance, without already claiming it matters."
       }
     ]
   },
@@ -4318,73 +4318,73 @@
         "text": "Maak eerst een kopie van het testbestand.",
         "english": "Make a copy of the test file first.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Instruct the user to preserve a test copy.",
-        "explanation": "Spoken instruction. The instruction starts with Maak; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Spoken instruction. The instruction starts with Maak; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Maak is an imperative. Eerst puts making a copy before later changes; van het testbestand identifies what to copy."
       },
       {
         "text": "Kunnen we nu een korte onderbreking plannen?",
         "english": "Can we schedule a short interruption now?",
-        "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Ask to arrange an interruption.",
-        "explanation": "Modal request or permission question. The finite verb Kunnen comes before subject we. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "scenario": "During planning, ask whether you can now schedule a brief interruption for a diagnostic check.",
+        "explanation": "Modal request or permission question. The finite verb Kunnen comes before subject we. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Kunnen takes infinitive plannen. Nu concerns arranging a short interruption at this planning stage, rather than claiming one has already occurred."
       },
       {
         "text": "Laat het apparaat tijdens deze controle aangesloten.",
         "english": "Leave the device connected during this check.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Specify that the connection must remain in place.",
-        "explanation": "Spoken instruction. The instruction starts with Laat; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Spoken instruction. The instruction starts with Laat; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Laat is an imperative with het apparaat as object and aangesloten as the state to maintain during the check."
       },
       {
         "text": "Deze stap raakt uw opgeslagen documenten niet.",
         "english": "This step does not affect your saved documents.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Explain the limited scope of this step. Address the other person politely with u/uw.",
-        "explanation": "Present statement. The first constituent is Deze stap; raakt is the finite (conjugated) verb and Deze stap is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Present statement. The first constituent is Deze stap; raakt is the finite (conjugated) verb and Deze stap is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Raakt agrees with deze stap. Niet denies an effect on the saved documents in this step, not every possible operation."
       },
       {
         "text": "Voordat je verdergaat, controleer je de reservekopie.",
         "english": "Before you continue, you check the backup.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Describe the backup check before continuing. Use informal je/jij for your colleague.",
-        "explanation": "Fronted subordinate clause. The first constituent is Voordat je verdergaat,; controleer is the finite (conjugated) verb and je is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Fronted subordinate clause. The first constituent is Voordat je verdergaat,; controleer is the finite (conjugated) verb and je is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end. Voordat introduces the before-clause ending in joined verdergaat. Main controleer je follows it, without added -t after informal je; this is a procedural statement, not an unspoken-subject imperative."
       },
       {
         "text": "Noteer de huidige instelling voor de wijziging.",
         "english": "Note the current setting before the change.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Ask for a record of the value before changing it.",
-        "explanation": "Spoken instruction. The instruction starts with Noteer; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Spoken instruction. The instruction starts with Noteer; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Noteer is an imperative. Voor de wijziging means before the change here, so the recorded value is the current one."
       },
       {
         "text": "Ik wil uw werk niet onnodig onderbreken.",
         "english": "I do not want to interrupt your work unnecessarily.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Explain why you seek a suitable moment. Address the other person politely with u/uw.",
-        "explanation": "Modal and final infinitive. The first constituent is Ik; wil is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Modal and final infinitive. The first constituent is Ik; wil is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Wil takes bare infinitive onderbreken. Niet onnodig avoids unnecessary interruption, without rejecting every possible interruption."
       },
       {
         "text": "Wacht met de herstart tot na de vergadering.",
         "english": "Wait until after the meeting to restart.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Postpone the restart until the meeting ends.",
-        "explanation": "Spoken instruction. The instruction starts with Wacht; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Spoken instruction. The instruction starts with Wacht; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Wacht met names the action deferred. Tot na de vergadering sets the restart after the meeting, not during it."
       },
       {
         "text": "Heb je alle wijzigingen opgeslagen?",
         "english": "Have you saved all changes?",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Check that changes have been saved before continuing. Use informal je/jij for your colleague.",
-        "explanation": "Yes/no question. The finite verb Heb comes before subject je. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Yes/no question. The finite verb Heb comes before subject je. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Heb precedes informal je in the perfect question; opgeslagen is the participle of opslaan. Alle wijzigingen asks whether every change was saved."
       },
       {
         "text": "De controle vereist geen nieuwe installatie.",
         "english": "The check does not require a new installation.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Clarify that no installation is needed.",
-        "explanation": "Niet, geen and scope. The first constituent is De controle; vereist is the finite (conjugated) verb and De controle is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Niet, geen and scope. The first constituent is De controle; vereist is the finite (conjugated) verb and De controle is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Vereist agrees with de controle. Geen nieuwe installatie denies an installation requirement for this check, without banning installation in other contexts."
       },
       {
         "text": "Sluit alleen het lege testvenster.",
         "english": "Close only the empty test window.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. Limit closure to the empty test window.",
-        "explanation": "Spoken instruction. The instruction starts with Sluit; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Spoken instruction. The instruction starts with Sluit; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Sluit is an imperative. Alleen het lege testvenster limits closure to that one empty window."
       },
       {
         "text": "Ik wacht tot u toestemming geeft.",
         "english": "I wait until you give permission.",
         "scenario": "You are giving careful diagnostic instructions to a colleague and checking consent before actions that interrupt work. State you wait for the formally addressed user's permission. Address the other person politely with u/uw.",
-        "explanation": "Main and subordinate clause. The first constituent is Ik; wacht is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Imperatives omit the subject. Eerst and daarna order steps, while voordat introduces a condition before an action."
+        "explanation": "Main and subordinate clause. The first constituent is Ik; wacht is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Tot introduces an until-clause with formal u and final geeft. Wacht reports waiting for permission rather than assuming it has already been given."
       }
     ]
   },
@@ -4395,73 +4395,73 @@
         "text": "De reactietijd is twee keer zo lang als gisteren.",
         "english": "The response time is twice as long as yesterday.",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Quantify the response-time comparison.",
-        "explanation": "Comparison or quantity. The first constituent is De reactietijd; is is the finite (conjugated) verb and De reactietijd is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The comparison/quantity phrase names the relevant degree or amount. A Dutch comparative commonly uses dan for the comparison, while the positive equality pattern uses even ... als. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Comparison or quantity. The first constituent is De reactietijd; is is the finite (conjugated) verb and De reactietijd is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The comparison/quantity phrase names the relevant degree or amount. A Dutch comparative commonly uses dan for the comparison, while the positive equality pattern uses even ... als. Twee keer zo lang ... als expresses twice the duration. Als gisteren supplies the comparison; this is not twice as fast."
       },
       {
         "text": "Het verschil zit in de gekozen map.",
         "english": "The difference lies in the selected folder.",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Identify the differing folder choice.",
-        "explanation": "Present statement. The first constituent is Het verschil; zit is the finite (conjugated) verb and Het verschil is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Present statement. The first constituent is Het verschil; zit is the finite (conjugated) verb and Het verschil is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Zit describes a figurative location of the difference. In de gekozen map identifies the differing folder choice, not physical posture."
       },
       {
         "text": "Welke browser gebruikt de andere collega?",
         "english": "Which browser does the other colleague use?",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Ask which browser the comparison colleague uses.",
-        "explanation": "Question word and inversion. The first question constituent is Welke browser; gebruikt is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Question word and inversion. The first question constituent is Welke browser; gebruikt is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Welke browser is the question object and de andere collega the singular subject of gebruikt. The question asks which browser that colleague uses."
       },
       {
         "text": "Ik heb dezelfde instellingen op beide toestellen gekozen.",
         "english": "I have selected the same settings on both devices.",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Confirm matched settings.",
-        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Perfect and verb bracket. The first constituent is Ik; heb is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Heb gekozen is perfect with irregular gekozen. Dezelfde instellingen are the matched settings selected on both devices, not a claim that all other conditions match."
       },
       {
         "text": "De fouttekst is niet precies dezelfde.",
         "english": "The error text is not exactly the same.",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Report a difference in wording.",
-        "explanation": "Niet, geen and scope. The first constituent is De fouttekst; is is the finite (conjugated) verb and De fouttekst is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Niet, geen and scope. The first constituent is De fouttekst; is is the finite (conjugated) verb and De fouttekst is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Niet precies limits sameness: the texts are not exactly identical. Dezelfde stands for de fouttekst already understood."
       },
       {
         "text": "Bij de tweede gebruiker ontbreekt de waarschuwing.",
         "english": "For the second user, the warning is absent.",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Describe the second user's different display.",
-        "explanation": "Present statement. The first constituent is Bij de tweede gebruiker; ontbreekt is the finite (conjugated) verb and de waarschuwing. is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Present statement. The first constituent is Bij de tweede gebruiker; ontbreekt is the finite (conjugated) verb and de waarschuwing. is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Bij de tweede gebruiker is fronted before ontbreekt de waarschuwing. The warning is the singular subject and is absent for that second user."
       },
       {
         "text": "We moeten ook de tijdstippen vergelijken.",
         "english": "We also need to compare the times.",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Add timestamps to the comparison.",
-        "explanation": "Modal and final infinitive. The first constituent is We; moeten is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Modal and final infinitive. The first constituent is We; moeten is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Moeten takes bare infinitive vergelijken. Ook adds the timestamps to other items already being compared."
       },
       {
         "text": "Is de bestandsgrootte op beide toestellen gelijk?",
         "english": "Is the file size the same on both devices?",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Check whether the input sizes match.",
-        "explanation": "Yes/no question. The finite verb Is comes before subject de bestandsgrootte. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Yes/no question. The finite verb Is comes before subject de bestandsgrootte. The finite verb starts a neutral yes/no question, followed by the subject. When subject je/jij follows a present verb, the ordinary added second-person -t is omitted; a t belonging to the stem stays (laat je). Formal u does not follow that inversion rule. Is begins the yes/no question with subject de bestandsgrootte. Op beide toestellen gives the two locations for checking equality."
       },
       {
         "text": "De testomgeving gebruikt een oudere versie.",
         "english": "The test environment uses an older version.",
-        "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Identify the older version in the test environment.",
-        "explanation": "Present statement. The first constituent is De testomgeving; gebruikt is the finite (conjugated) verb and De testomgeving is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "scenario": "The test environment uses an older version than your normal workplace environment. Identify that difference to your colleague.",
+        "explanation": "Present statement. The first constituent is De testomgeving; gebruikt is the finite (conjugated) verb and De testomgeving is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Gebruikt agrees with de testomgeving. Een oudere versie is comparative: an older version than the other environment in this scenario."
       },
       {
         "text": "We noteren welke verschillen blijven bestaan.",
         "english": "We note which differences persist.",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Say you record persistent differences.",
-        "explanation": "Main and subordinate clause. The first constituent is We; noteren is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Main and subordinate clause. The first constituent is We; noteren is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Welke verschillen is the embedded plural subject of blijven bestaan. Both verb forms make the final cluster for differences that continue to exist."
       },
       {
         "text": "De bekabelde verbinding was stabieler.",
         "english": "The wired connection was more stable.",
-        "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Compare earlier wired-connection stability.",
-        "explanation": "Simple past. The first constituent is De bekabelde verbinding; was is the finite (conjugated) verb and De bekabelde verbinding is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "scenario": "Earlier tests showed that the wired connection was more stable than the wireless connection. Report that comparison.",
+        "explanation": "Simple past. The first constituent is De bekabelde verbinding; was is the finite (conjugated) verb and De bekabelde verbinding is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite past form occupies the ordinary main-clause verb position. Its number agrees with the subject. The past event belongs to the context supplied, not automatically to every repeated or present situation. Was is singular past with de bekabelde verbinding. Stabieler compares the wired connection with the wireless one in this scenario."
       },
       {
         "text": "Een verschil is niet automatisch de oorzaak.",
         "english": "A difference is not automatically the cause.",
         "scenario": "You are comparing diagnostic observations across devices and sessions, describing differences without assuming their cause. Avoid treating any difference as proof of causation.",
-        "explanation": "Niet, geen and scope. The first constituent is Een verschil; is is the finite (conjugated) verb and Een verschil is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Vergelijken met gives the comparison target. Dezelfde means the same, whereas een andere marks a difference."
+        "explanation": "Niet, geen and scope. The first constituent is Een verschil; is is the finite (conjugated) verb and Een verschil is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. De oorzaak is a complement after is. Niet automatisch denies that any observed difference by itself proves causation."
       }
     ]
   },
@@ -4472,73 +4472,73 @@
         "text": "Er zijn nog twee mogelijke oorzaken.",
         "english": "There are still two possible causes.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Report the remaining number of hypotheses.",
-        "explanation": "Present statement. The first constituent is Er; zijn is the finite (conjugated) verb and nog twee mogelijke oorzaken. is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence. Er introduces the existence or occurrence, rather than being the grammatical subject. The following noun phrase is the subject and controls finite-verb agreement."
+        "explanation": "Present statement. The first constituent is Er; zijn is the finite (conjugated) verb and twee mogelijke oorzaken. is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Er introduces the remaining possibilities. Twee mogelijke oorzaken is plural with zijn; nog counts hypotheses still under consideration."
       },
       {
         "text": "De fout kan met de instellingen samenhangen.",
         "english": "The error may be related to the settings.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Suggest a possible settings connection.",
-        "explanation": "Modal and final infinitive. The first constituent is De fout; kan is the finite (conjugated) verb and De fout is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Modal and final infinitive. The first constituent is De fout; kan is the finite (conjugated) verb and De fout is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Kan expresses possibility and takes joined infinitive samenhangen. Met de instellingen names the possible relation, not an established diagnosis."
       },
       {
         "text": "We controleren of de schijf vol is.",
         "english": "We check whether the disk is full.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. State the next storage-related hypothesis check.",
-        "explanation": "Main and subordinate clause. The first constituent is We; controleren is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Main and subordinate clause. The first constituent is We; controleren is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Of introduces whether and ends in is. Vol is an adjective describing disk capacity; checking it does not assert the disk is full."
       },
       {
         "text": "Het logbestand geeft nog geen sluitend antwoord.",
         "english": "The log file does not yet give a conclusive answer.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Qualify inconclusive log evidence.",
-        "explanation": "Niet, geen and scope. The first constituent is Het logbestand; geeft is the finite (conjugated) verb and Het logbestand is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Niet, geen and scope. The first constituent is Het logbestand; geeft is the finite (conjugated) verb and Het logbestand is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Nog geen sluitend antwoord means no conclusive answer yet. The log may contain evidence without settling the question."
       },
       {
         "text": "We hebben een defecte kabel uitgesloten.",
         "english": "We have ruled out a faulty cable.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Report a cause already ruled out.",
-        "explanation": "Perfect and verb bracket. The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Perfect and verb bracket. The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Hebben uitgesloten is perfect of separable uitsluiten. Een defecte kabel is a cause already ruled out, not one still asserted as possible."
       },
       {
         "text": "Waarop baseer je dat vermoeden?",
         "english": "What do you base that suspicion on?",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Ask what supports the suspicion. Use informal je/jij for your colleague.",
-        "explanation": "Question word and inversion. The first question constituent is Waarop; baseer is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Question word and inversion. The first question constituent is Waarop; baseer is the finite verb. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Waarop combines waar and op for the basis of the suspicion. Baseer precedes informal je; dat vermoeden is the object being supported."
       },
       {
         "text": "De melding wijst op een mogelijk rechtenprobleem.",
         "english": "The message points to a possible permissions problem.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Describe a clue without presenting certainty.",
-        "explanation": "Present statement. The first constituent is De melding; wijst is the finite (conjugated) verb and De melding is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Present statement. The first constituent is De melding; wijst is the finite (conjugated) verb and De melding is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Wijzen op means point to or indicate. Mogelijk limits the permissions issue to a possible explanation, rather than proof."
       },
       {
         "text": "Hoewel de test slaagt, blijft de oorzaak onduidelijk.",
         "english": "Although the test succeeds, the cause remains unclear.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Explain that a passed test does not explain the cause.",
-        "explanation": "Fronted subordinate clause. The first constituent is Hoewel de test slaagt,; blijft is the finite (conjugated) verb and de oorzaak is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Fronted subordinate clause. The first constituent is Hoewel de test slaagt,; blijft is the finite (conjugated) verb and de oorzaak is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The complete subordinate clause counts as the first constituent of the main clause. The main finite verb follows it, then the main subject. Inside the subordinate clause its own verb/group comes toward the end. Hoewel introduces a concession and ends in slaagt. Main blijft de oorzaak onduidelijk follows it; a passed test has not clarified the cause."
       },
       {
         "text": "We moeten deze aanname eerst controleren.",
         "english": "We must check this assumption first.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Request verification before relying on an assumption.",
-        "explanation": "Modal and final infinitive. The first constituent is We; moeten is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Modal and final infinitive. The first constituent is We; moeten is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Moeten takes bare infinitive controleren. Eerst puts verification before relying on deze aanname, the assumption."
       },
       {
         "text": "Dat is een mogelijkheid, geen vastgestelde oorzaak.",
         "english": "That is a possibility, not an established cause.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Distinguish a possibility from an established cause.",
-        "explanation": "Present statement. The first constituent is Dat; is is the finite (conjugated) verb and Dat is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Present statement. The first constituent is Dat; is is the finite (conjugated) verb and Dat is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Een mogelijkheid and geen vastgestelde oorzaak are noun complements after is. The contrast withholds confirmation, without proving the possibility false."
       },
       {
         "text": "De extra test heeft ons vermoeden niet bevestigd.",
         "english": "The additional test has not confirmed our suspicion.",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Report a hypothesis not confirmed by testing.",
-        "explanation": "Perfect and verb bracket. The first constituent is De extra test; heeft is the finite (conjugated) verb and De extra test is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Perfect and verb bracket. The first constituent is De extra test; heeft is the finite (conjugated) verb and De extra test is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Heeft bevestigd is perfect. Niet denies confirmation from the additional test, without automatically disproving the suspicion."
       },
       {
         "text": "Welke informatie ontbreekt om verder te kunnen?",
         "english": "What information is missing so we can proceed?",
         "scenario": "You are narrowing down possible causes of a workplace problem, distinguishing a hypothesis from an established explanation. Ask what evidence is still needed.",
-        "explanation": "Question word and inversion. Welke informatie is itself the question subject and is followed by finite ontbreekt; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Misschien and mogelijk signal uncertainty. Omdat gives a reason, terwijl and hoewel can contrast evidence."
+        "explanation": "Question word and inversion. Welke informatie is itself the question subject and is followed by finite ontbreekt; no extra subject is inserted. A question word/phrase comes first, then the finite verb and subject. In a subject question the question phrase itself is the subject, so no extra subject is needed. Welke informatie is the singular question subject of ontbreekt. Om verder te kunnen gives the purpose of proceeding; te belongs before modal kunnen in this infinitive phrase."
       }
     ]
   },
@@ -4549,67 +4549,67 @@
         "text": "We zullen de waarnemingen vanmiddag bespreken.",
         "english": "We will discuss the observations this afternoon.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Announce the afternoon review.",
-        "explanation": "Future intention or commitment. The first constituent is We; zullen is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Future intention or commitment. The first constituent is We; zullen is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite future/intention verb occupies the main-clause verb position; the intended action is a bare infinitive. A future commitment is not a report of completed work. Zullen takes bare infinitive bespreken. Vanmiddag locates the promised discussion this afternoon; it does not report completed review."
       },
       {
         "text": "Stuur alleen de relevante regels uit het logbestand.",
         "english": "Send only the relevant lines from the log file.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Limit the requested log extract.",
-        "explanation": "Spoken instruction. The instruction starts with Stuur; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Spoken instruction. The instruction starts with Stuur; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Stuur is an imperative. Alleen de relevante regels limits the requested log extract to relevant lines."
       },
       {
         "text": "Ik kan de uitslag na de controle toelichten.",
         "english": "I can explain the result after the check.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Offer an explanation once the check finishes.",
-        "explanation": "Modal and final infinitive. The first constituent is Ik; kan is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Modal and final infinitive. The first constituent is Ik; kan is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The modal is finite and occupies the main-clause verb position. The other action is an infinitive without te, normally toward the end of its clause. Kan takes joined infinitive toelichten. Na de controle puts the possible explanation after the check, not before its results exist."
       },
       {
         "text": "We hebben nog geen reden om gegevens te verwijderen.",
         "english": "We do not yet have a reason to delete data.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. State that deletion is not justified.",
-        "explanation": "Niet, geen and scope. The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Niet, geen and scope. The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. Geen negates an indefinite noun phrase or an uncountable amount. Niet negates a verb/state or another specific constituent. Nog niet means not yet; niet meer means no longer. The position depends on the intended scope. Nog geen reden denies a present justification. Om gegevens te verwijderen complements reden, naming the action needing justification."
       },
       {
         "text": "De volgende stap is een controle van de vrije ruimte.",
         "english": "The next step is a check of the free space.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Name the next storage check.",
-        "explanation": "Present statement. The first constituent is De volgende stap; is is the finite (conjugated) verb and De volgende stap is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Present statement. The first constituent is De volgende stap; is is the finite (conjugated) verb and De volgende stap is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Een controle van de vrije ruimte is a complement after is. The sentence identifies the next check, not an already-proven lack of space."
       },
       {
         "text": "Ik noteer wat we al hebben uitgesloten.",
         "english": "I note what we have already ruled out.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Describe keeping track of excluded causes.",
-        "explanation": "Main and subordinate clause. The first constituent is Ik; noteer is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Main and subordinate clause. The first constituent is Ik; noteer is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Wat introduces an embedded object clause ending in hebben uitgesloten. Al marks causes already ruled out and noteer records them."
       },
       {
         "text": "Kun je tijdens de test de tijd bijhouden?",
         "english": "Can you keep track of the time during the test?",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Ask your colleague to time the test. Use informal je/jij for your colleague.",
-        "explanation": "Modal request or permission question. The finite verb Kun comes before subject je. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Modal request or permission question. The finite verb Kun comes before subject je. The finite modal comes before the subject. The requested action stays an infinitive without te. Whether this asks about ability, permission or willingness depends on the actual modal and context. Kun takes joined infinitive bijhouden. Tijdens de test gives the timing period; de tijd is what the colleague should track."
       },
       {
         "text": "We hebben voor deze controle een testaccount klaargezet.",
         "english": "We have prepared a test account for this check.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Report preparation of a test account.",
-        "explanation": "Perfect and verb bracket. The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Perfect and verb bracket. The first constituent is We; hebben is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The finite auxiliary is in the main-clause verb position. Its object, pronouns and other phrases can stand before the participle that closes the bracket. Auxiliary choice depends on the actual verb and meaning. Hebben klaargezet is perfect of klaarzetten. Voor deze controle gives purpose, not a deadline before it; the prepared item is a test account."
       },
       {
         "text": "Vraag advies als de waarschuwing terugkomt.",
         "english": "Ask for advice if the warning returns.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Give a condition for seeking advice.",
-        "explanation": "Spoken instruction. The instruction starts with Vraag; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Spoken instruction. The instruction starts with Vraag; the addressed person is understood. A normal spoken imperative starts with the verb stem and usually leaves the addressed subject unspoken. Objects and other phrases follow; a separable particle goes later in the main clause. Vraag is an imperative. Als introduces the condition ending in terugkomt; the return of the warning is conditional, not predicted."
       },
       {
         "text": "Ik houd de gebruiker op de hoogte van de controle.",
         "english": "I keep the user informed about the check.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Describe keeping the user informed.",
-        "explanation": "Present statement. The first constituent is Ik; houd is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Present statement. The first constituent is Ik; houd is the finite (conjugated) verb and Ik is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. A normal declarative main clause has one first constituent and then its finite verb. The subject can be that first constituent. Other phrases can appear inside the verb bracket. Houd takes direct object de gebruiker and the state phrase op de hoogte. Van de controle names the topic; this means keeping the person informed."
       },
       {
         "text": "We bespreken welke conclusie de gegevens toelaten.",
         "english": "We discuss which conclusion the data allows.",
         "scenario": "You are explaining the next diagnostic step to a colleague, setting an observation or review point without promising success. Describe reviewing what the evidence supports.",
-        "explanation": "Main and subordinate clause. The first constituent is We; bespreken is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Gaan/zullen plus a bare infinitive can announce the next action. Bezig zijn met names an ongoing task, not its completion."
+        "explanation": "Main and subordinate clause. The first constituent is We; bespreken is the finite (conjugated) verb and We is its subject. In a declarative main clause, the finite verb is second in constituents, not necessarily second in individual words. The main clause keeps its own finite-verb position. A conjunction or embedded question word/phrase introduces the dependent clause. Its subject and other material normally precede the final finite verb or verb group; identify the actual introducer and its meaning in each sentence. Welke conclusie is the embedded object and de gegevens the plural subject of toelaten. The team discusses what the evidence permits, not a predetermined diagnosis."
       },
       {
         "text": "Ik ben bezig de fout stap voor stap te onderzoeken.",

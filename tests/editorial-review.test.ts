@@ -4,6 +4,7 @@ import { cardFor } from "@/lib/content/cards";
 import { communicationFor, principalAnswers } from "@/lib/practice/communication";
 import { breakdownFor } from "@/lib/grammarBreakdowns";
 import { notesFor } from "@/lib/grammarNotes";
+import { FAMILIES } from "@/lib/variations/content";
 import { protectedEditorialDigest } from "./helpers/editorialPreservation";
 
 describe("editorial review integrity", () => {
@@ -44,6 +45,16 @@ describe("editorial review integrity", () => {
 });
 
 describe("specific Dutch teaching corrections", () => {
+  it("shows the infinitival hebben explanation for the future need variation", () => {
+    const variants = Object.values(FAMILIES).flat().filter((v) => v.text === "Ik zal morgen mijn laptop nodig hebben.");
+    expect(variants.length).toBeGreaterThan(0);
+    for (const variant of variants) {
+      expect(variant.explanation).toMatch(/Zal is the finite verb/);
+      expect(variant.explanation).toMatch(/Hebben remains an infinitive/);
+      expect(variant.explanation).not.toMatch(/Hebben is finite and agrees/);
+    }
+  });
+
   it("distinguishes finding a solution, resolving a conflict and finishing an activity", () => {
     const solution = communicationFor(cardFor("nl", "work-327")!);
     expect(solution.scenario).toMatch(/without claiming that it has already been implemented/);

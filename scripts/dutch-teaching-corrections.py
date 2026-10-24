@@ -241,6 +241,13 @@ fixes.update({
 })
 b['work-73']['mistake'].update(alternative=True,why='Ze is weg is grammatical for one woman, meaning she is gone. The intended subject here is several visitors, so plural ze requires zijn.')
 
+# Inspected grammar positions 360–419.
+fixes.update({
+ 'work-141':{'compare':'English His time has come uses have as the perfect auxiliary, while Dutch uses zijn: zijn tijd is gekomen. Possessive zijn refers to the man in this opportunity scenario.'},
+ 'work-149':{'meaning':'Reporting that the speaker and their group arrive after the meeting has begun and are late.'}
+})
+b['work-109']['mistake'].update(alternative=True,why='Ze praat is grammatical for she talks. In this situation ze refers to two colleagues, so use plural praten for they are talking.')
+
 for key,changes in fixes.items():b[key].update(changes)
 b['shopping-13']['mistake'].update(alternative=True,why='Twee dozijn is the ordinary counting-unit form. A plural such as dozijnen can emphasise separate groups or quantities in an appropriate context. Practise the neutral purchase phrase without claiming the plural is impossible everywhere.')
 b['health-06']['mistake'].update(alternative=True,why='Een geweldige dokter is the ordinary inflected model. An uninflected adjective can also occur before a person or profession noun when assessing the person in that role. The missing -e is therefore not automatically an error in every such phrase.')
@@ -288,6 +295,10 @@ notes['administration-05']['rule']+=' Example meaning: Wat is de openingstijd? a
 notes['home-36']['rule']+=' Example caution: Ik maak mijn kamer op is not the ordinary way to say I tidy my room. Use Ik ruim mijn kamer op for tidying; learn opmaken with het bed for making a bed.'
 notes['work-27']['rule']+=' Met de bouw van het nieuwe gebouw identifies the activity, while ze is the grammatical subject.'
 notes['conversation-79']['rule']+=' Dank u wel in the related examples expresses thanks; it is not a reply meaning You are welcome.'
+# Preserve the historical bank while clarifying its grammar guide in editable metadata.
+for item in b.values():
+ if item.get('practiceFocus') == 'Nodig hebben: needing a thing':
+  item['practiceGuide']='In a direct need statement such as ik heb een pen nodig, hebben is finite and nodig is an adjective, not a participle. With zal, hebben instead remains an infinitive: ik zal een pen nodig hebben. Compare past ik had een pen nodig. Geen negates an indefinite needed item: ik heb geen pen nodig.'
 for n,data in [('grammar-breakdowns.json',b),('grammar-notes.json',notes)]:
  (root/'data'/n).write_text(json.dumps(data,ensure_ascii=False,indent=1)+'\n')
 print('Applied targeted editorial corrections to the 600-record everyday collection; this is not a complete semantic review.')

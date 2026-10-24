@@ -55,6 +55,8 @@ def construct(row):
  mistake={'wrong':wrong,'right':text,'why':why}
  if text=='Welke rechten heeft dit testaccount nodig?':
   mistake.update(alternative=True,why='The intended subject is singular dit testaccount, with welke rechten as the object. A plural hebben could instead make rechten the subject and the account the object, changing who needs what; it does not express this scenario.')
+ if subject=='Geen nieuwe meldingen':
+  mistake.update(alternative=True,why='This model treats the absence of new reports as one situation, with singular betekent. Plural agreement can follow a literal plural reading of meldingen; do not treat betekenen as impossible in every context. The point here is that silence does not prove recovery.')
  if subject and subject.lower()=='wie':
   mistake.update(alternative=True,why='Wie can ask about one person or several people. Compare the number intended here and the published agreement; a different finite number is not automatically ungrammatical in every possible reading of a wie question.')
  if subject and subject.lower() in ['ze','zij']:

@@ -61,6 +61,31 @@ for i, row in enumerate(expansion):
         'examples': examples,
     }
 assert len(expansion) == 58 and len(cards) == 254, f"Unexpected grammar card count: {len(cards)}"
+# New time conjunction topics, extending but not renumbering the original or ALS card IDs.
+more = J('data/editorial/grammar-new-time-patterns.json')
+by_topic = collections.OrderedDict()
+for row in more:
+    by_topic.setdefault(row['topic'], []).append(row)
+for topic, group in by_topic.items():
+    assert len(group) >= 12, f"Need >=12 per topic for unique example notes: {topic}"
+    for i, row in enumerate(group):
+        cid = f"pat-{topic}-{i+1:02d}"
+        cards.append({
+            'id': cid, 'category': topic, 'collection': 'grammar',
+            'dutch': row['dutch'], 'english': row['english'],
+            'scenario': row['scenario'], 'scenarioNl': row['scenarioNl'],
+            'cue': row['scenario'], 'grammar': row['why'],
+            'variation': group[(i+1)%len(group)]['dutch'],
+            'image': '', 'audio': '', 'quizMode': 'order',
+            'imageStatus': 'not-applicable', 'audioStatus': 'device',
+            'difficulty': 'intermediate', 'vocabularyIds': [], 'review': row['review'],
+        })
+        notes[cid] = {
+            'rule': row['why'],
+            'examples': [{'dutch': group[(i+j+2)%len(group)]['dutch'],
+                          'english': group[(i+j+2)%len(group)]['english']} for j in range(10)],
+        }
+assert len(more) == 50 and len(cards) == 304, f"Unexpected number of cards: {len(cards)}"
 assert len({c['dutch'].lower() for c in cards}) == len(cards), 'Duplicate grammar sentence'
 (ROOT / 'data/grammar-pattern-cards.json').write_text(json.dumps(cards, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 (ROOT / 'data/grammar-pattern-notes.json').write_text(json.dumps(notes, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')

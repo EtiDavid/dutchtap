@@ -624,5 +624,263 @@
       }
     ],
     "sources": []
+  },
+  "wanneer": {
+    "title": "WANNEER — time, direct & indirect questions",
+    "goal": "Speak about time and clause relationships with accurate subordinate and main-clause word order.",
+    "overview": "Wanneer can introduce a subordinate time clause (when), but it can also be an interrogative word in a direct question or an embedded indirect question. These three forms use different word orders.",
+    "formulas": [
+      {
+        "label": "Time subordinate clause",
+        "pattern": "Ik bel je | wanneer ik thuis ben.",
+        "why": "Ben ends the time clause."
+      },
+      {
+        "label": "Fronted time clause",
+        "pattern": "Wanneer ik thuis ben, | bel ik je.",
+        "why": "Bel ik is the inverted main clause."
+      },
+      {
+        "label": "Direct question",
+        "pattern": "Wanneer | vertrekt | de bus?",
+        "why": "The finite verb vertrekt comes immediately after the question word."
+      },
+      {
+        "label": "Indirect question",
+        "pattern": "Ik weet niet | wanneer de bus vertrekt.",
+        "why": "Vertrekt is last in the embedded question."
+      }
+    ],
+    "sections": [
+      {
+        "title": "When this pattern is used",
+        "body": "Wanneer can introduce a subordinate time clause (when), but it can also be an interrogative word in a direct question or an embedded indirect question. These three forms use different word orders.",
+        "examples": [
+          {
+            "nl": "Wanneer komt hij?",
+            "en": "When is he coming?"
+          },
+          {
+            "nl": "Ik weet niet wanneer hij komt.",
+            "en": "I don't know when he is coming."
+          },
+          {
+            "nl": "Ik bel je wanneer ik klaar ben.",
+            "en": "I'll call you when I'm ready."
+          }
+        ]
+      },
+      {
+        "title": "How the clauses connect",
+        "body": "With one finite subordinate verb, it normally follows the other elements. With longer verb clusters, check the whole construction. A fronted subordinate clause counts as position one, triggering inversion in the following main clause.",
+        "examples": [
+          {
+            "nl": "Ik bel je wanneer ik thuis ben.",
+            "en": "I'll call you when I'm home."
+          },
+          {
+            "nl": "Wanneer ik klaar ben, stuur ik het document.",
+            "en": "When I'm ready, I'll send the document."
+          },
+          {
+            "nl": "De les begint wanneer de docent binnenkomt.",
+            "en": "The lesson begins when the teacher comes in."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Ik weet niet wanneer begint de bus.",
+        "right": "Ik weet niet wanneer de bus vertrekt.",
+        "why": "An indirect question uses subordinate word order."
+      }
+    ],
+    "sources": [],
+    "revision": "0.8",
+    "status": "Foundational topic lesson, AI-edited; more comparisons and native review pending."
+  },
+  "terwijl": {
+    "title": "TERWIJL — overlapping events",
+    "goal": "Speak about time and clause relationships with accurate subordinate and main-clause word order.",
+    "overview": "Terwijl means while; it introduces a subordinate clause for actions that happen at the same time.",
+    "formulas": [
+      {
+        "label": "While clause second",
+        "pattern": "Ik kook | terwijl mijn broer de tafel dekt.",
+        "why": "Dekt ends the clause."
+      },
+      {
+        "label": "While clause first",
+        "pattern": "Terwijl ik kook, | dekt mijn broer de tafel.",
+        "why": "Dekt precedes its subject through V2 inversion."
+      }
+    ],
+    "sections": [
+      {
+        "title": "When this pattern is used",
+        "body": "Terwijl means while; it introduces a subordinate clause for actions that happen at the same time.",
+        "examples": [
+          {
+            "nl": "Ik lees terwijl zij kookt.",
+            "en": "I read while she cooks."
+          },
+          {
+            "nl": "Terwijl ik werk, praat mijn collega.",
+            "en": "While I work, my colleague talks."
+          }
+        ]
+      },
+      {
+        "title": "How the clauses connect",
+        "body": "With one finite subordinate verb, it normally follows the other elements. With longer verb clusters, check the whole construction. A fronted subordinate clause counts as position one, triggering inversion in the following main clause.",
+        "examples": [
+          {
+            "nl": "Ik kook terwijl mijn broer de tafel dekt.",
+            "en": "I cook while my brother sets the table."
+          },
+          {
+            "nl": "Terwijl ik studeer, luistert Zoë naar muziek.",
+            "en": "While I study, Zoë listens to music."
+          },
+          {
+            "nl": "De computer werkt terwijl de update wordt gedownload.",
+            "en": "The computer works while the update is downloaded."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Terwijl ik ben aan het koken, luistert zij.",
+        "right": "Terwijl ik aan het koken ben, luistert zij.",
+        "why": "The progressive ben belongs at the end of this simple subordinate clause."
+      }
+    ],
+    "sources": [],
+    "revision": "0.8",
+    "status": "Foundational topic lesson, AI-edited; more comparisons and native review pending."
+  },
+  "voordat": {
+    "title": "VOORDAT — before",
+    "goal": "Speak about time and clause relationships with accurate subordinate and main-clause word order.",
+    "overview": "Voordat introduces a subordinate clause describing the later event. Contrast the preposition voor + noun with voordat + clause.",
+    "formulas": [
+      {
+        "label": "Before clause second",
+        "pattern": "Ik bel je | voordat ik vertrek.",
+        "why": "Vertrek closes the subordinate clause."
+      },
+      {
+        "label": "Before clause first",
+        "pattern": "Voordat ik vertrek, | bel ik je.",
+        "why": "Bel ik follows through inversion."
+      }
+    ],
+    "sections": [
+      {
+        "title": "When this pattern is used",
+        "body": "Voordat introduces a subordinate clause describing the later event. Contrast the preposition voor + noun with voordat + clause.",
+        "examples": [
+          {
+            "nl": "Ik bel je voor de vergadering.",
+            "en": "I'll call you before the meeting."
+          },
+          {
+            "nl": "Ik bel je voordat de vergadering begint.",
+            "en": "I'll call you before the meeting begins."
+          }
+        ]
+      },
+      {
+        "title": "How the clauses connect",
+        "body": "With one finite subordinate verb, it normally follows the other elements. With longer verb clusters, check the whole construction. A fronted subordinate clause counts as position one, triggering inversion in the following main clause.",
+        "examples": [
+          {
+            "nl": "Ik controleer het verslag voordat ik het verstuur.",
+            "en": "I check the report before sending it."
+          },
+          {
+            "nl": "Voordat ik vertrek, zet ik het licht uit.",
+            "en": "Before I leave, I turn off the light."
+          },
+          {
+            "nl": "We maken een back-up voordat we de update installeren.",
+            "en": "We make a backup before installing the update."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Voordat ik ga weg, bel ik je.",
+        "right": "Voordat ik wegga, bel ik je.",
+        "why": "Weggaan stays joined in a simple subordinate clause."
+      }
+    ],
+    "sources": [],
+    "revision": "0.8",
+    "status": "Foundational topic lesson, AI-edited; more comparisons and native review pending."
+  },
+  "nadat": {
+    "title": "NADAT — after",
+    "goal": "Speak about time and clause relationships with accurate subordinate and main-clause word order.",
+    "overview": "Nadat introduces the earlier event. With completed actions, its clause often uses a perfect or past-perfect verb group; the full time context determines tense.",
+    "formulas": [
+      {
+        "label": "Earlier completed action",
+        "pattern": "Nadat ik heb gegeten, | ga ik wandelen.",
+        "why": "Heb gegeten is the perfect subordinate cluster; ga ik is inverted."
+      },
+      {
+        "label": "Past perfect narrative",
+        "pattern": "Nadat ik had gegeten, | ging ik wandelen.",
+        "why": "Had gegeten establishes an earlier event in a past narrative."
+      }
+    ],
+    "sections": [
+      {
+        "title": "When this pattern is used",
+        "body": "Nadat introduces the earlier event. With completed actions, its clause often uses a perfect or past-perfect verb group; the full time context determines tense.",
+        "examples": [
+          {
+            "nl": "Nadat we hebben gegeten, gaan we wandelen.",
+            "en": "After we have eaten, we go walking."
+          },
+          {
+            "nl": "Nadat zij was vertrokken, werd het stil.",
+            "en": "After she had left, it became quiet."
+          }
+        ]
+      },
+      {
+        "title": "How the clauses connect",
+        "body": "With one finite subordinate verb, it normally follows the other elements. With longer verb clusters, check the whole construction. A fronted subordinate clause counts as position one, triggering inversion in the following main clause.",
+        "examples": [
+          {
+            "nl": "Nadat ik heb gegeten, maak ik de keuken schoon.",
+            "en": "After eating, I clean the kitchen."
+          },
+          {
+            "nl": "Ik bel je nadat de vergadering is afgelopen.",
+            "en": "I'll call you after the meeting finishes."
+          },
+          {
+            "nl": "Nadat we de back-up hebben gemaakt, starten we de update.",
+            "en": "After we've made the backup, we start the update."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Nadat ik heb gegeten, ik ga wandelen.",
+        "right": "Nadat ik heb gegeten, ga ik wandelen.",
+        "why": "A fronted subordinate clause triggers inversion in the main clause."
+      }
+    ],
+    "sources": [],
+    "revision": "0.8",
+    "status": "Foundational topic lesson, AI-edited; more comparisons and native review pending."
   }
 }

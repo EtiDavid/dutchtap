@@ -6,6 +6,7 @@ import { LANG_INFO, type Lang } from '@/lib/lang';
 import { checkCreation, createSession, defaultSessionName, levelAvailability, levelCounts } from '@/lib/sessions/engine';
 import { MAX_ACTIVE_SESSIONS, MAX_SESSION_CARDS, type Session } from '@/lib/sessions/types';
 import { Modal } from '../ui/Modal';
+import { GrammarTopicLesson } from './GrammarTopicLesson';
 import { button, primary } from '../flashcards/styles';
 
 const COUNTS = [10, 20, 30, 50] as const;
@@ -60,6 +61,8 @@ export function CreateSessionDialog({ lang, reviews, activeCount, initial, onCre
           {Object.entries(topics).map(([id, label]) => <option key={id} value={id}>{label}</option>)}
         </select>
       </label>
+
+      {lang === 'nl' && collection === 'grammar' && <GrammarTopicLesson key={topic} topic={topic} />}
 
       <fieldset>
         <legend className="text-sm font-semibold">How many cards?</legend>

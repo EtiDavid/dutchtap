@@ -1,0 +1,628 @@
+{
+  "als": {
+    "title": "ALS — if, when and whenever",
+    "goal": "Choose als in a real situation and put finite verbs in the correct clauses without first translating word-for-word from English.",
+    "overview": "ALS is a subordinating conjunction (onderschikkend voegwoord). It introduces a subordinate clause (bijzin) for a condition (if), a future time (when), or a habitual event (whenever). The rest of the sentence still follows main-clause V2.",
+    "status": "Detailed first-release lesson, AI-edited; not independent native-speaker certification.",
+    "revision": "1.0",
+    "formulas": [
+      {
+        "label": "Main clause then subordinate clause",
+        "pattern": "Ik bel je | als ik thuis ben.",
+        "why": "The finite verb bel follows ik in the main clause; ben closes the simple subordinate clause."
+      },
+      {
+        "label": "Subordinate clause first",
+        "pattern": "Als ik thuis ben, | bel ik je.",
+        "why": "The whole als-clause fills position one. Bel therefore precedes subject ik in the main clause (inversion)."
+      },
+      {
+        "label": "Multiple verbs",
+        "pattern": "Als ik het verslag heb afgemaakt, | stuur ik het op.",
+        "why": "A subordinate clause can finish with a verb cluster (heb afgemaakt). Don't insist that the finite verb always be the single last word."
+      }
+    ],
+    "sections": [
+      {
+        "title": "1. What does ALS mean?",
+        "body": "ALS covers a condition (if), a future time (when) and repeated situations (whenever). Meaning comes from the situation, not from a word-by-word rule.",
+        "examples": [
+          {
+            "nl": "Als ik tijd heb, help ik je.",
+            "en": "If I have time, I will help you."
+          },
+          {
+            "nl": "Ik bel je als ik thuis ben.",
+            "en": "I will call you when I am home."
+          },
+          {
+            "nl": "Als ik moe ben, drink ik vaak thee.",
+            "en": "Whenever I am tired, I often drink tea."
+          }
+        ]
+      },
+      {
+        "title": "2. What changes inside the subordinate clause?",
+        "body": "Compare ik ben thuis with als ik thuis ben. In a one-verb subordinate clause the finite verb normally follows the other elements. With multi-verb constructions, the final verb cluster has its own ordering rules.",
+        "examples": [
+          {
+            "nl": "Ik ben klaar.",
+            "en": "I am ready."
+          },
+          {
+            "nl": "Als ik klaar ben, bel ik je.",
+            "en": "When I am ready, I will call you."
+          },
+          {
+            "nl": "Als ik het werk kan afmaken, stuur ik je een bericht.",
+            "en": "If I can finish the work, I will send you a message."
+          }
+        ]
+      },
+      {
+        "title": "3. Why does inversion happen?",
+        "body": "When the complete als-clause comes first, that entire clause is one constituent occupying position one. Dutch main-clause V2 puts the conjugated main verb immediately afterwards, before its subject.",
+        "examples": [
+          {
+            "nl": "Ik help je als ik klaar ben.",
+            "en": "I will help you when I am ready."
+          },
+          {
+            "nl": "Als ik klaar ben, help ik je.",
+            "en": "When I am ready, I will help you."
+          },
+          {
+            "nl": "Als de test slaagt, starten we de applicatie.",
+            "en": "If the test succeeds, we start the application."
+          }
+        ]
+      },
+      {
+        "title": "4. Future conditions and recurring situations in the past",
+        "body": "Future contexts normally use a present-tense verb inside the als-clause. Repeated past habits can use als with a past tense; a single particular past event or period often uses toen.",
+        "examples": [
+          {
+            "nl": "Als je morgen komt, maken we eten.",
+            "en": "When you come tomorrow, we will cook."
+          },
+          {
+            "nl": "Als ik vroeger vrij was, ging ik fietsen.",
+            "en": "Whenever I was free in the past, I went cycling."
+          },
+          {
+            "nl": "Toen ik gisteren thuiskwam, was ik moe.",
+            "en": "When I got home yesterday, I was tired."
+          }
+        ]
+      },
+      {
+        "title": "5. Als vs wanneer vs toen",
+        "body": "Wanneer also expresses 'when' and can introduce conditions in a more formal register. In a direct question, wanneer is an interrogative word; in an indirect question, it introduces subordinate order. Toen usually refers to a specific past occasion or period.",
+        "examples": [
+          {
+            "nl": "Wanneer begint de vergadering?",
+            "en": "When does the meeting start?"
+          },
+          {
+            "nl": "Ik weet niet wanneer de vergadering begint.",
+            "en": "I don't know when the meeting begins."
+          },
+          {
+            "nl": "Toen ik aankwam, was de winkel dicht.",
+            "en": "When I arrived, the shop was closed."
+          }
+        ]
+      },
+      {
+        "title": "6. Modal verbs, perfect tense and verb clusters",
+        "body": "Dutch subordinate clauses often contain a group of verbs near the end. The internal order can vary with the construction and sometimes by regional preference. Learn common natural clusters rather than forcing a universal finite-verb-last formula.",
+        "examples": [
+          {
+            "nl": "Als ik kan komen, bel ik je.",
+            "en": "If I can come, I will call you."
+          },
+          {
+            "nl": "Als ik het verslag heb geschreven, stuur ik het door.",
+            "en": "When I have written the report, I forward it."
+          },
+          {
+            "nl": "Ik kom langs als ik de fout kan herstellen.",
+            "en": "I will come by if I can fix the error."
+          }
+        ]
+      },
+      {
+        "title": "7. Separable verbs inside an als-clause",
+        "body": "In ordinary main clauses a finite separable verb splits (de server valt uit); in a simple subordinate clause, the finite form rejoins (als de server uitvalt). The main clause after a fronted subordinate clause still requires inversion.",
+        "examples": [
+          {
+            "nl": "De server valt uit.",
+            "en": "The server goes down."
+          },
+          {
+            "nl": "Als de server uitvalt, controleer ik de logs.",
+            "en": "If the server goes down, I check the logs."
+          },
+          {
+            "nl": "Als ik het formulier invul, controleer ik mijn gegevens.",
+            "en": "When I fill in the form, I check my details."
+          }
+        ]
+      },
+      {
+        "title": "8. Recognise meaning rather than relying on hints",
+        "body": "A reason uses omdat, a one-time past event often uses toen, a condition or repeated occasion often uses als. In independent practice, decide which construction is appropriate before seeing the model sentence.",
+        "examples": [
+          {
+            "nl": "Ik blijf thuis omdat ik ziek ben.",
+            "en": "I stay home because I am sick."
+          },
+          {
+            "nl": "Als ik ziek ben, blijf ik thuis.",
+            "en": "If I am sick, I stay home."
+          },
+          {
+            "nl": "Toen ik ziek was, bleef ik thuis.",
+            "en": "When I was sick, I stayed home."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Als ik ben moe, blijf ik thuis.",
+        "right": "Als ik moe ben, blijf ik thuis.",
+        "why": "Ben follows moe in this simple subordinate clause."
+      },
+      {
+        "wrong": "Als het klaar is, ik stuur het.",
+        "right": "Als het klaar is, stuur ik het.",
+        "why": "The fronted als-clause is position one: the following finite verb precedes subject ik."
+      },
+      {
+        "wrong": "Als ik gisteren aankwam, belde ik haar.",
+        "right": "Toen ik gisteren aankwam, belde ik haar.",
+        "why": "A single, specific completed past arrival normally uses toen; als is natural for repeated past or hypothetical contexts."
+      }
+    ],
+    "sources": [
+      [
+        "Als / wanneer / indien — Onze Taal",
+        "https://onzetaal.nl/taalloket/als-wanneer-indien"
+      ],
+      [
+        "Toen / als — Vlaanderen Taaladvies",
+        "https://www.vlaanderen.be/team-taaladvies/taaladviezen/toen-als"
+      ]
+    ]
+  },
+  "separable": {
+    "title": "Separable verbs — scheidbare werkwoorden",
+    "goal": "Choose correctly among stuur ... op, opsturen, opgestuurd, opstuurt and op te sturen, and understand why.",
+    "overview": "A separable verb combines a particle with a verb. Its parts can separate when the lexical verb is finite in an ordinary main clause, but form a single word as an infinitive, participle, or single finite verb at a subordinate-clause end.",
+    "status": "Detailed first-release lesson, AI-edited; independent review pending.",
+    "revision": "1.0",
+    "formulas": [
+      {
+        "label": "Present main clause",
+        "pattern": "Ik stuur het verslag op.",
+        "why": "Stuur is the finite V2 verb and op comes later."
+      },
+      {
+        "label": "Simple past",
+        "pattern": "Ik stuurde het verslag op.",
+        "why": "The particle remains separate in this finite main clause."
+      },
+      {
+        "label": "Perfect tense",
+        "pattern": "Ik heb het verslag opgestuurd.",
+        "why": "For opsturen, the participle is op + ge + stuurd; the auxiliary is heb."
+      },
+      {
+        "label": "Modal + infinitive",
+        "pattern": "Ik moet het verslag opsturen.",
+        "why": "The infinitive opsturen remains joined."
+      },
+      {
+        "label": "Subordinate clause",
+        "pattern": "Ik weet dat hij het verslag opstuurt.",
+        "why": "The single finite form appears joined at the end of the subordinate clause."
+      },
+      {
+        "label": "Te-infinitive",
+        "pattern": "Ik probeer het verslag op te sturen.",
+        "why": "Te goes between the particle and the verb."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Why do separable verbs split?",
+        "body": "A main-clause finite verb occupies the V2 slot; the separable particle remains later. Not all prefixed verbs are separable: verkopen and begrijpen are inseparable. Learn the individual verb.",
+        "examples": [
+          {
+            "nl": "Ik sta vroeg op.",
+            "en": "I get up early."
+          },
+          {
+            "nl": "Wij vullen het formulier in.",
+            "en": "We fill in the form."
+          },
+          {
+            "nl": "Ik begrijp het probleem.",
+            "en": "I understand the problem."
+          }
+        ]
+      },
+      {
+        "title": "Finite present and past",
+        "body": "Conjugate the core according to subject and tense. The particle stays separate in a main clause.",
+        "examples": [
+          {
+            "nl": "Ik bel je terug.",
+            "en": "I call you back."
+          },
+          {
+            "nl": "Gisteren belde ik je terug.",
+            "en": "Yesterday I called you back."
+          },
+          {
+            "nl": "Hij ruimt zijn bureau op.",
+            "en": "He tidies up his desk."
+          }
+        ]
+      },
+      {
+        "title": "Perfect, modal and subordinate constructions",
+        "body": "Many participles place ge- after the particle, but some are irregular; choose hebben or zijn correctly. After a modal the infinitive remains whole; a simple subordinate finite form rejoins.",
+        "examples": [
+          {
+            "nl": "We hebben het formulier ingevuld.",
+            "en": "We have filled in the form."
+          },
+          {
+            "nl": "De trein is aangekomen.",
+            "en": "The train has arrived."
+          },
+          {
+            "nl": "Ik moet de server opnieuw opstarten.",
+            "en": "I must restart the server."
+          },
+          {
+            "nl": "Ik weet dat hij mij terugbelt.",
+            "en": "I know he will call me back."
+          }
+        ]
+      },
+      {
+        "title": "Te-infinitive and imperative",
+        "body": "The te-infinitive places te between the particle and the infinitive. The imperative commonly splits.",
+        "examples": [
+          {
+            "nl": "Ik probeer de bestanden op te slaan.",
+            "en": "I try to save the files."
+          },
+          {
+            "nl": "Vul het formulier in!",
+            "en": "Fill in the form!"
+          },
+          {
+            "nl": "Ik neem deel aan de vergadering.",
+            "en": "I participate in the meeting."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Ik opstuur het verslag.",
+        "right": "Ik stuur het verslag op.",
+        "why": "Finite main-clause separable verbs split."
+      },
+      {
+        "wrong": "Ik heb het verslag gestuurd op.",
+        "right": "Ik heb het verslag opgestuurd.",
+        "why": "The participle stays joined."
+      },
+      {
+        "wrong": "Ik probeer te opsturen het verslag.",
+        "right": "Ik probeer het verslag op te sturen.",
+        "why": "Te separates the particle from the infinitive."
+      }
+    ],
+    "sources": []
+  },
+  "inversion": {
+    "title": "Verb second and inversion",
+    "goal": "Recognise position two as the finite verb in a Dutch main clause.",
+    "overview": "A whole first constituent can be a time phrase, object or preceding subordinate clause; the subject follows the finite verb when another constituent comes first.",
+    "status": "Introductory reference only; full module expansion pending.",
+    "revision": "0.2",
+    "formulas": [
+      {
+        "label": "Core structure",
+        "pattern": "Om negen uur | begint | de vergadering.",
+        "why": "A whole first constituent can be a time phrase, object or preceding subordinate clause; the subject follows the finite verb when another constituent comes first."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Recognise the pattern",
+        "body": "A whole first constituent can be a time phrase, object or preceding subordinate clause; the subject follows the finite verb when another constituent comes first.",
+        "examples": [
+          {
+            "nl": "Vandaag werk ik thuis.",
+            "en": "Today I work from home."
+          },
+          {
+            "nl": "Als ik klaar ben, bel ik je.",
+            "en": "When I am ready, I'll call you."
+          },
+          {
+            "nl": "Op tafel staat een kop koffie.",
+            "en": "There is a cup of coffee on the table."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Vandaag ik werk thuis.",
+        "right": "Vandaag werk ik thuis.",
+        "why": "Vandaag occupies the first position, so werk must come next."
+      }
+    ],
+    "sources": []
+  },
+  "omdat": {
+    "title": "Omdat — because",
+    "goal": "Explain a reason with subordinate word order.",
+    "overview": "Omdat introduces a reason in a bijzin. Want coordinates independent main clauses; daarom is an adverb and triggers main-clause inversion when fronted.",
+    "status": "Introductory reference only; full module expansion pending.",
+    "revision": "0.2",
+    "formulas": [
+      {
+        "label": "Core structure",
+        "pattern": "Ik werk thuis | omdat de trein niet rijdt.",
+        "why": "Omdat introduces a reason in a bijzin. Want coordinates independent main clauses; daarom is an adverb and triggers main-clause inversion when fronted."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Recognise the pattern",
+        "body": "Omdat introduces a reason in a bijzin. Want coordinates independent main clauses; daarom is an adverb and triggers main-clause inversion when fronted.",
+        "examples": [
+          {
+            "nl": "Omdat ik ziek ben, blijf ik thuis.",
+            "en": "Because I am sick, I stay home."
+          },
+          {
+            "nl": "Ik blijf thuis, want ik ben ziek.",
+            "en": "I stay home because I am sick."
+          },
+          {
+            "nl": "Ik ben ziek. Daarom blijf ik thuis.",
+            "en": "I am sick. Therefore I stay home."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Omdat ik ben ziek, blijf ik thuis.",
+        "right": "Omdat ik ziek ben, blijf ik thuis.",
+        "why": "The finite verb belongs at the end of this simple subordinate clause."
+      }
+    ],
+    "sources": []
+  },
+  "dat": {
+    "title": "Dat — that",
+    "goal": "Report ideas, knowledge and facts.",
+    "overview": "Conjunction dat introduces the content of thoughts or reports and triggers subordinate order; distinguish relative or demonstrative dat.",
+    "status": "Introductory reference only; full module expansion pending.",
+    "revision": "0.2",
+    "formulas": [
+      {
+        "label": "Core structure",
+        "pattern": "Ik denk | dat de server werkt.",
+        "why": "Conjunction dat introduces the content of thoughts or reports and triggers subordinate order; distinguish relative or demonstrative dat."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Recognise the pattern",
+        "body": "Conjunction dat introduces the content of thoughts or reports and triggers subordinate order; distinguish relative or demonstrative dat.",
+        "examples": [
+          {
+            "nl": "Ik weet dat hij morgen komt.",
+            "en": "I know that he is coming tomorrow."
+          },
+          {
+            "nl": "Zij zegt dat het probleem is opgelost.",
+            "en": "She says that the problem has been solved."
+          },
+          {
+            "nl": "Dat boek is interessant.",
+            "en": "That book is interesting."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Ik denk dat hij komt morgen.",
+        "right": "Ik denk dat hij morgen komt.",
+        "why": "The time phrase precedes the single finite subordinate verb."
+      }
+    ],
+    "sources": []
+  },
+  "toen": {
+    "title": "Toen — a past occasion",
+    "goal": "Describe a particular event or period in the past.",
+    "overview": "Toen introduces a past occasion or period. Repeated past occasions often use als instead; 'then' toen in a main clause has a different role.",
+    "status": "Introductory reference only; full module expansion pending.",
+    "revision": "0.2",
+    "formulas": [
+      {
+        "label": "Core structure",
+        "pattern": "Toen ik thuiskwam, | belde ik Zoë.",
+        "why": "Toen introduces a past occasion or period. Repeated past occasions often use als instead; 'then' toen in a main clause has a different role."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Recognise the pattern",
+        "body": "Toen introduces a past occasion or period. Repeated past occasions often use als instead; 'then' toen in a main clause has a different role.",
+        "examples": [
+          {
+            "nl": "Toen de server uitviel, belde ik mijn collega.",
+            "en": "When the server failed, I called my colleague."
+          },
+          {
+            "nl": "Toen ik jong was, speelde ik voetbal.",
+            "en": "When I was young, I played football."
+          },
+          {
+            "nl": "Als ik vroeger vrij was, ging ik fietsen.",
+            "en": "Whenever I was free in the past, I went cycling."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Toen ik kwam thuis, belde ik.",
+        "right": "Toen ik thuiskwam, belde ik.",
+        "why": "The separable verb thuiskomen stays joined as a simple subordinate finite verb."
+      }
+    ],
+    "sources": []
+  },
+  "tot": {
+    "title": "Tot / totdat — until",
+    "goal": "Explain when an activity stops.",
+    "overview": "Tot and totdat can introduce a time-endpoint subordinate clause. Tot vrijdag is instead a prepositional time phrase.",
+    "status": "Introductory reference only; full module expansion pending.",
+    "revision": "0.2",
+    "formulas": [
+      {
+        "label": "Core structure",
+        "pattern": "Ik wacht | totdat de dokter me roept.",
+        "why": "Tot and totdat can introduce a time-endpoint subordinate clause. Tot vrijdag is instead a prepositional time phrase."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Recognise the pattern",
+        "body": "Tot and totdat can introduce a time-endpoint subordinate clause. Tot vrijdag is instead a prepositional time phrase.",
+        "examples": [
+          {
+            "nl": "Ik wacht tot je klaar bent.",
+            "en": "I wait until you are ready."
+          },
+          {
+            "nl": "We blijven hier totdat de vergadering begint.",
+            "en": "We stay here until the meeting begins."
+          },
+          {
+            "nl": "Ik werk tot vrijdag.",
+            "en": "I work until Friday."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Ik wacht totdat hij is klaar.",
+        "right": "Ik wacht totdat hij klaar is.",
+        "why": "The single subordinate finite verb follows the predicate klaar."
+      }
+    ],
+    "sources": []
+  },
+  "verbs": {
+    "title": "Verbs in context",
+    "goal": "Use a correct finite verb and auxiliary.",
+    "overview": "Dutch verb form changes by subject, tense and construction. A finite present verb does not need an extra form of zijn.",
+    "status": "Introductory reference only; full module expansion pending.",
+    "revision": "0.2",
+    "formulas": [
+      {
+        "label": "Core structure",
+        "pattern": "Ik probeer | Ik probeerde | Ik heb geprobeerd.",
+        "why": "Dutch verb form changes by subject, tense and construction. A finite present verb does not need an extra form of zijn."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Recognise the pattern",
+        "body": "Dutch verb form changes by subject, tense and construction. A finite present verb does not need an extra form of zijn.",
+        "examples": [
+          {
+            "nl": "Wij proberen het.",
+            "en": "We try it."
+          },
+          {
+            "nl": "Wij probeerden het.",
+            "en": "We tried it."
+          },
+          {
+            "nl": "Wij hebben het geprobeerd.",
+            "en": "We have tried it."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Ik ben probeer het.",
+        "right": "Ik probeer het.",
+        "why": "Do not add ben before a finite present action verb."
+      }
+    ],
+    "sources": []
+  },
+  "tense": {
+    "title": "Present, past and perfect",
+    "goal": "Choose a tense that expresses the intended event.",
+    "overview": "Present describes current habits and many scheduled futures; past often narrates events; perfect often reports completed events. Actual choice depends on the context.",
+    "status": "Introductory reference only; full module expansion pending.",
+    "revision": "0.2",
+    "formulas": [
+      {
+        "label": "Core structure",
+        "pattern": "Ik ga | Ik ging | Ik ben gegaan.",
+        "why": "Present describes current habits and many scheduled futures; past often narrates events; perfect often reports completed events. Actual choice depends on the context."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Recognise the pattern",
+        "body": "Present describes current habits and many scheduled futures; past often narrates events; perfect often reports completed events. Actual choice depends on the context.",
+        "examples": [
+          {
+            "nl": "Ik werk vandaag thuis.",
+            "en": "Today I work from home."
+          },
+          {
+            "nl": "Ik werkte gisteren thuis.",
+            "en": "I worked from home yesterday."
+          },
+          {
+            "nl": "Ik heb gisteren thuis gewerkt.",
+            "en": "I worked from home yesterday."
+          }
+        ]
+      }
+    ],
+    "mistakes": [
+      {
+        "wrong": "Ik heb gewerk.",
+        "right": "Ik heb gewerkt.",
+        "why": "The past participle of werken is gewerkt."
+      }
+    ],
+    "sources": []
+  }
+}

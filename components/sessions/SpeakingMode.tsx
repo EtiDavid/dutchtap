@@ -25,6 +25,7 @@ import { AnswerModels, FamilyExamples } from "./AnswerModels";
 import { copy } from "@/lib/lang/copy";
 import { button, primary } from "../flashcards/styles";
 import { GrammarNotes } from "../flashcards/GrammarNotes";
+import { GrammarScenarioPrompt } from "./GrammarScenarioPrompt";
 import { AudioControls, CardImage, VocabLinks } from "./CardParts";
 import type { ModeProps } from "./modeTypes";
 
@@ -190,10 +191,12 @@ export function SpeakingMode({
         <div className="p-6">
           {!current.revealed ? (
             <>
-              <p className="text-lg leading-snug">{card.scenario}</p>
-              <button type="button" className={`${button} mt-3`} onClick={() => void listen({text:card.scenario,lang:'en'})}>Listen to situation (English)</button>
+              {session.collection === "grammar" && session.lang === "nl" ? <GrammarScenarioPrompt key={card.id} scenario={card.scenario} scenarioNl={card.scenarioNl} /> : <p className="text-lg leading-snug">{card.scenario}</p>}
+              {session.collection !== "grammar" && <>
+                <button type="button" className={`${button} mt-3`} onClick={() => void listen({text:card.scenario,lang:'en'})}>Listen to situation (English)</button>
               <button type="button" className={`${button} ml-2 mt-3`} onClick={stop}>Stop</button>
               {sound && <p role="status" className="mt-2 text-sm text-muted">{sound}</p>}
+              </>}
               <p className="mt-4 text-xl font-bold text-accent">
                 How do you say it?
               </p>

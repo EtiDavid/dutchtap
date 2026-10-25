@@ -17,6 +17,7 @@ export type LCard = {
   text: string;
   english: string;
   scenario: string;
+  scenarioNl?: string;
   cue: string;
   variation: string;
   /** The English meaning of the variation (French cards). */
@@ -68,6 +69,7 @@ function dutchCard(card: Card): LCard {
     text: card.dutch,
     english: meaningFor(card.dutch, card.english),
     scenario: scenarioFor(card.dutch, card.scenario),
+    scenarioNl: card.scenarioNl,
     cue: card.cue,
     variation: card.variation,
     difficulty: card.difficulty ?? "beginner",

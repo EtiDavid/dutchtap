@@ -13,6 +13,7 @@ export type Card = typeof rawCards[number] & {
   audioStatus?: string;
   adapted?: boolean;
   originCardId?: string;
+  scenarioNl?: string;
   quizMode?: string;
   quizBlank?: { index: number; acceptedAnswers: string[]; distractors: string[] };
 };

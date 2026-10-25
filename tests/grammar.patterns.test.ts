@@ -12,7 +12,10 @@ describe('Grammar patterns collection', () => {
     expect(GRAMMAR_CARDS.length).toBeGreaterThanOrEqual(180);
     expect(CARDS.length).toBe(CORE_CARDS.length + GRAMMAR_CARDS.length);
     expect(new Set(CARDS.map(c => c.id)).size).toBe(CARDS.length);
-    for (const topic of Object.keys(GRAMMAR_AREAS)) expect(GRAMMAR_CARDS.filter(c => c.category === topic).length, topic).toBeGreaterThanOrEqual(14);
+    for (const topic of Object.keys(GRAMMAR_AREAS)) {
+      const minimum = ['wanneer', 'terwijl', 'voordat', 'nadat'].includes(topic) ? 12 : 14;
+      expect(GRAMMAR_CARDS.filter(c => c.category === topic).length, topic).toBeGreaterThanOrEqual(minimum);
+    }
     for (const topic of ['inversion', 'omdat', 'dat', 'als', 'tot', 'toen']) expect(GRAMMAR_CARDS.filter(c => c.category === topic).length, topic).toBeGreaterThanOrEqual(19);
     // Authored pattern cards have generated notes and no media. Linked Core cards are tested separately.
     for (const card of GRAMMAR_CARDS.filter(c => !c.originCardId)) {

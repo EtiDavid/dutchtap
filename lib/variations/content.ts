@@ -1,5 +1,6 @@
 import { communicationFor, scenarioFor } from "@/lib/practice/communication";
 import workplaceFamilies from "@/data/workplace-families.json";
+import grammarVariationFamilies from "@/data/grammar-variation-families.json";
 import workplaceBank from "@/data/workplace-practice-bank.json";
 import references from "@/data/dutch-variations.json";
 import practiceBank from "@/data/dutch-practice-bank.json";
@@ -12,6 +13,7 @@ export type Variation = {
   text: string;
   english: string;
   scenario: string;
+  scenarioNl?: string;
   explanation: string;
   example: { text: string; english: string };
   focus: string;
@@ -58,7 +60,7 @@ const careerFamilies: Record<string, Variation[]> = Object.fromEntries(Object.en
       example: { text: next.text, english: next.english }, focus: group.focus };
   })];
 }));
-export const FAMILIES: Record<string, Variation[]> = { ...everydayFamilies, ...careerFamilies };
+export const FAMILIES: Record<string, Variation[]> = { ...everydayFamilies, ...careerFamilies, ...(grammarVariationFamilies as Record<string, Variation[]>) };
 const byId = new Map(
   Object.values(FAMILIES)
     .flat()
@@ -81,13 +83,14 @@ export function variationCard(id: string): LCard | undefined {
         text: v.text,
         english: v.english,
         scenario: v.scenario,
+        scenarioNl: v.scenarioNl,
         cue: v.scenario,
         variation: v.example.text,
         difficulty: "beginner",
         vocabularyIds: [],
         image: "",
         audio: undefined,
-        ...(p.collection === "workplace" ? { audioStatus: "device", imageStatus: "not-applicable" } : {}),
+        ...(p.collection !== "everyday" ? { audioStatus: "device", imageStatus: "not-applicable" } : {}),
       }
     : undefined;
 }

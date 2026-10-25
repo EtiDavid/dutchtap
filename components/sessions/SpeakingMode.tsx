@@ -229,6 +229,7 @@ export function SpeakingMode({
                   variation={card.variation}
                 />
               )}
+              {isVariation(card.id) && variationFor(card.id) && <div className="mt-4 rounded-xl bg-surface-2 p-3 text-sm" data-testid="grammar-variation-explanation"><h3 className="font-semibold">Why this variation works</h3><p className="mt-1 leading-relaxed">{variationFor(card.id)?.explanation}</p></div>}
               {!isVariation(card.id) && <VocabLinks card={card} />}
             </>
           )}

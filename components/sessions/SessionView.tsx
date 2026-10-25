@@ -14,6 +14,7 @@ import { Icon } from '../ui/Icon';
 import { CompletionSummary } from './CompletionSummary';
 import { QuizMode } from './QuizMode';
 import { GrammarTopicLesson } from './GrammarTopicLesson';
+import { GrammarErrorRepair } from './GrammarErrorRepair';
 import { SpeakingMode } from './SpeakingMode';
 import { StudyMode } from './StudyMode';
 import { SyncStatus } from './SyncStatus';
@@ -72,7 +73,7 @@ export function SessionView({ sessionId, lang, store, snapshot, reviews, reviews
       </button>)}
     </nav>
 
-    {session.collection === 'grammar' && session.lang === 'nl' && <GrammarTopicLesson topic={session.topic} />}
+    {session.collection === 'grammar' && session.lang === 'nl' && <><GrammarTopicLesson topic={session.topic} /><GrammarErrorRepair topic={session.topic} /></>}
 
     {session.status === 'archived' && <CompletionSummary session={session} onAgain={again} againDisabled={activeCount >= MAX_ACTIVE_SESSIONS} againMessage={`You already have ${MAX_ACTIVE_SESSIONS} active sessions, so finish or delete one first.`} />}
 

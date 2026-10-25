@@ -1,2 +1,4 @@
-export const button = 'min-h-12 rounded-xl border border-border px-4 py-3 text-sm font-semibold transition active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-accent';
-export const primary = `${button} bg-accent text-white border-accent`;
+/** Shared button looks (defined in globals.css so utility classes always win): `button` is the quiet one, `primary` the one main action on a screen. */
+export const button = 'btn';
+export const primary = 'btn btn-primary';
+export const ghost = 'btn btn-ghost';

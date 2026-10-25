@@ -11,10 +11,12 @@ import { AppNav } from '../nav/AppNav';
 import { LanguageChooser } from '../lang/LanguageChooser';
 import { SessionsDashboard } from './SessionsDashboard';
 import { SessionView } from './SessionView';
+import { PageHeader } from '../ui/PageHeader';
 
 /** Flashcards: the session dashboard, or one session when the URL says ?session=ID. A session always opens in its own language. */
 export function FlashcardsApp() {
-  const sessionId = useSearchParams().get('session');
+  const searchParams = useSearchParams();
+  const sessionId = searchParams.get('session');
   const { store, snapshot, account } = useSessions();
   const language = useLearningLanguage();
   // The language in use: a session's own language when one is open (it never changes), otherwise the learner's chosen language.
@@ -39,12 +41,12 @@ export function FlashcardsApp() {
   if (!lang && !sessionId) return <LanguageChooser onChoose={language.choose} />;
 
   const ready = !!store && snapshot.ready && reviewsApi.ready && !!lang;
-  return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-5 px-5 pb-28 pt-6">
-    <div><h1 className="text-3xl font-bold tracking-tight">Flashcards</h1><p className="mt-1 text-sm text-muted">Study a fixed set of sentences, say them from memory, then quiz yourself on the same set.</p></div>
+  return <main className="page-pad mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pt-6">
+    {!sessionId && <PageHeader eyebrow="Sessions" title="Practise" subtitle="Each session is a fixed set of sentences: study them, say them from memory, then quiz yourself on the same set." />}
     {!ready || !store || !lang ? <p className="text-muted" role="status">Loading your sessions…</p>
       : sessionId
         ? <SessionView sessionId={sessionId} lang={lang} store={store} snapshot={snapshot} reviews={reviewsApi.reviews} reviewsReady={reviewsApi.ready} signedIn={!!account} onPractised={record} celebration={celebration} onDismissCelebration={() => setCelebration('')} />
-        : <SessionsDashboard lang={lang} store={store} snapshot={snapshot} reviews={reviewsApi.reviews} signedIn={!!account} streak={{ streak, practisedToday }} levelsStatus={reviewsApi.status} guestLevelsAvailable={reviewsApi.guestAvailable} onCopyGuestLevels={reviewsApi.copyGuest}
+        : <SessionsDashboard key={searchParams.get('new') ?? ''} lang={lang} store={store} snapshot={snapshot} reviews={reviewsApi.reviews} signedIn={!!account} streak={{ streak, practisedToday }}
           onSwitchLanguage={language.choose} />}
     <AppNav lang={lang ?? undefined} />
   </main>;

@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useAccount } from "@/lib/auth/useAccount";
 import { clearLocalProgress, loadLocalProgress } from "@/lib/sync/localProgress";
 import { TextField } from "@/components/ui/TextField";
+import { AppNav } from "@/components/nav/AppNav";
 import { RecoveryCodeReveal } from "./RecoveryCodeReveal";
 
 type View = "login" | "register" | "forgot";
@@ -53,7 +54,7 @@ export function AccountScreen() {
 
   if (account) {
     return (
-      <div className="mx-auto flex min-h-dvh w-full max-w-sm flex-col gap-6 px-6 py-8">
+      <main className="page-pad mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pt-6">
         <Link href="/" className="text-sm text-muted">
           ← Back
         </Link>
@@ -75,7 +76,7 @@ export function AccountScreen() {
               setSubmitting(false);
             }
           }}
-          className="h-12 w-full rounded-xl border border-border text-sm font-medium text-foreground"
+          className="btn w-full"
         >
           Regenerate recovery code
         </button>
@@ -86,21 +87,22 @@ export function AccountScreen() {
             await logout();
             router.push("/");
           }}
-          className="h-12 w-full rounded-xl border border-border text-sm font-medium text-foreground"
+          className="btn w-full"
         >
           Log out
         </button>
-      </div>
+        <AppNav />
+      </main>
     );
   }
 
   return (
-    <div className="mx-auto flex min-h-dvh w-full max-w-sm flex-col gap-6 px-6 py-8">
+    <main className="page-pad mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pt-6">
       <Link href="/" className="text-sm text-muted">
         ← Back
       </Link>
 
-      <div className="flex rounded-xl border border-border p-1 text-sm font-medium">
+      <div className="flex rounded-2xl bg-surface-2 p-1 text-sm font-semibold">
         {(["login", "register", "forgot"] as View[]).map((v) => (
           <button
             key={v}
@@ -110,7 +112,7 @@ export function AccountScreen() {
               setError(null);
               setForgotSuccess(false);
             }}
-            className={`flex-1 rounded-lg py-2 ${view === v ? "bg-accent text-accent-foreground" : "text-muted"}`}
+            className={`flex-1 rounded-xl py-2.5 transition-colors ${view === v ? "bg-surface text-accent shadow-sm" : "text-muted"}`}
           >
             {v === "login" ? "Log In" : v === "register" ? "Create Account" : "Forgot"}
           </button>
@@ -184,7 +186,8 @@ export function AccountScreen() {
             onReset={() => setForgotSuccess(true)}
           />
         ))}
-    </div>
+      <AppNav />
+    </main>
   );
 }
 

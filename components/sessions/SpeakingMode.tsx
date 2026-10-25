@@ -77,7 +77,7 @@ export function SpeakingMode({
     return (
       <section
         aria-label="Speaking"
-        className="flex flex-col gap-4 rounded-2xl border border-border bg-surface p-6 text-center"
+        className="flex flex-col gap-4 card p-6 text-center"
         data-testid="speaking-complete"
       >
         <span aria-hidden className="text-4xl">
@@ -174,7 +174,7 @@ export function SpeakingMode({
       </div>
       <article
         key={current.attemptId}
-        className="flashcard-enter overflow-hidden rounded-3xl border border-border bg-white shadow-sm"
+        className="flashcard-enter overflow-hidden card !rounded-[1.75rem]"
       >
         {!isVariation(card.id) && (
           <CardImage

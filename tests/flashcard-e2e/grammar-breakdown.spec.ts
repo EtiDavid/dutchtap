@@ -35,7 +35,7 @@ test.describe('sentence breakdown', () => {
     await expect(notes.getByTestId('breakdown')).toBeHidden(); // collapsed by default: the main card stays short
     await notes.getByText('Grammar rule & similar examples').click();
     await expect(notes.getByTestId('breakdown')).toBeVisible();
-    await expect(notes.getByText(breakdownFor(card.id)!.order)).toBeVisible();
+    await expect(notes.getByText(breakdownFor(card.id)!.order).first()).toBeVisible();
     const { width, viewport } = await page.evaluate(() => ({ width: document.documentElement.scrollWidth, viewport: innerWidth }));
     expect(width).toBeLessThanOrEqual(viewport);
     await notes.getByText('Grammar rule & similar examples').click();

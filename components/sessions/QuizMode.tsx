@@ -82,7 +82,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
     return (
       <section
         aria-label="Quiz"
-        className="flex flex-col gap-4 rounded-2xl border border-border bg-surface p-6 text-center"
+        className="flex flex-col gap-4 card p-6 text-center"
         data-testid="quiz-complete"
       >
         <span aria-hidden className="text-4xl">
@@ -200,7 +200,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
       <article
         key={current.attemptId}
         data-answer-id={current.answerId ?? "model"}
-        className="flashcard-enter overflow-hidden rounded-3xl border border-border bg-white shadow-sm"
+        className="flashcard-enter overflow-hidden card !rounded-[1.75rem]"
       >
         {!isVariation(card.id) && <CardImage card={card} alt={card.scenario} />}
         {isVariation(card.id) && (

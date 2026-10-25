@@ -9,6 +9,7 @@ import { LanguageSwitch } from '../lang/LanguageSwitch';
 import { LANG_INFO, withLang, type Lang } from '@/lib/lang';
 import { button, primary } from '../flashcards/styles';
 import { SyncStatus } from './SyncStatus';
+import { PageHeader } from '../ui/PageHeader';
 
 /** The Quiz tab: pick which session to quiz on. The quiz always uses that session's fixed sentences. */
 export function QuizChooser() {
@@ -22,8 +23,8 @@ function Chooser({ lang, onSwitchLanguage }: { lang: Lang; onSwitchLanguage: (la
   const elsewhere = everyActive.length - active.length;
   const last = snapshot.lastOpened && active.find(s => s.id === snapshot.lastOpened!.id);
   const ready = !!store && snapshot.ready;
-  return <main className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-5 px-5 pb-28 pt-6">
-    <div><div className="flex items-center justify-between gap-3"><h1 className="text-3xl font-bold tracking-tight">Quiz</h1><LanguageSwitch lang={lang} onSwitch={onSwitchLanguage} /></div><p className="mt-1 text-sm text-muted">Tap the words of a sentence back into order. Choose a session: the quiz only uses that session’s sentences, so it matches what you studied.</p></div>
+  return <main className="page-pad mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pt-6">
+    <PageHeader eyebrow="Practise" title="Quiz" subtitle="Tap the words of a sentence back into order. Choose a session: the quiz only uses that session’s sentences, so it matches what you studied." action={<LanguageSwitch lang={lang} onSwitch={onSwitchLanguage} />} />
     {!ready ? <p className="text-muted" role="status">Loading your sessions…</p> : <>
       {store && <SyncStatus snapshot={snapshot} guest={!account} onRetry={() => void store.sync()} />}
       {last && <Link href={sessionUrl(last.id, 'quiz')} className={`${primary} block text-center`} data-testid="continue-quiz">Continue quiz: {last.name}</Link>}
@@ -32,7 +33,7 @@ function Chooser({ lang, onSwitchLanguage }: { lang: Lang; onSwitchLanguage: (la
           <p className="text-sm text-muted">You need a session first. A session is a fixed set of sentences that you study, say from memory, and quiz yourself on.</p>
           <Link href={withLang('/flashcards', lang)} className={`${primary} block`}>{lang === 'nl' ? 'Create a session' : `Create a ${LANG_INFO[lang].english} session`}</Link>
         </section>
-        : <ul className="flex flex-col gap-3">{active.map(session => <li key={session.id} className="rounded-2xl border border-border bg-surface p-4" data-testid="quiz-session">
+        : <ul className="flex flex-col gap-3">{active.map(session => <li key={session.id} className="card p-4" data-testid="quiz-session">
           <h2 className="font-bold">{session.name}</h2>
           <p className="mt-1 text-xs text-muted">Quiz: {retired(session, 'quiz')} of {session.cardIds.length} cards retired · {session.quiz.points} points{session.quiz.done ? ' · completed' : ''}</p>
           <Link href={sessionUrl(session.id, 'quiz')} className={`${button} mt-3 block text-center`}>{session.quiz.done ? 'Open (quiz completed)' : 'Start or continue quiz'}</Link>

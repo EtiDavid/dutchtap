@@ -47,7 +47,7 @@ export function StudyMode({ session, store, onPractised }: ModeProps) {
       />
       <article
         key={`${round}-${pos}`}
-        className="flashcard-enter overflow-hidden rounded-3xl border border-border bg-white shadow-sm"
+        className="flashcard-enter overflow-hidden card !rounded-[1.75rem]"
       >
         <CardImage card={card} alt={card.cue} />
         <div className="p-6">

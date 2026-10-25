@@ -2,8 +2,9 @@ import rawCards from '@/data/flashcards.json';
 import additions from '@/data/flashcard-additions.json';
 import moreAdditions from '@/data/flashcard-additions-2.json';
 import workplace from '@/data/workplace-cards.json';
+import grammarPatterns from '@/data/grammar-pattern-cards.json';
 export type Card = typeof rawCards[number] & {
-  collection?: "everyday" | "workplace";
+  collection?: "everyday" | "workplace" | "grammar";
   difficulty?: string;
   source?: { videoId: string; timestampSeconds: number };
   vocabularyIds?: string[];
@@ -14,7 +15,10 @@ export type Card = typeof rawCards[number] & {
   quizBlank?: { index: number; acceptedAnswers: string[]; distractors: string[] };
 };
 export const EVERYDAY_CARDS: Card[] = [...rawCards, ...additions, ...moreAdditions];
-export const CARDS: Card[] = [...EVERYDAY_CARDS, ...workplace] as Card[];
+/** Everyday plus Dutch at Work: the 1,200 sentences that have breakdowns, families and model answers. */
+export const CORE_CARDS: Card[] = [...EVERYDAY_CARDS, ...workplace] as Card[];
+export const GRAMMAR_CARDS: Card[] = grammarPatterns as Card[];
+export const CARDS: Card[] = [...CORE_CARDS, ...GRAMMAR_CARDS];
 export const CATEGORIES = { shopping: 'Shopping', school: 'School', transport: 'Train & transport', home: 'Home', conversation: 'Conversation', administration: 'Administration', weather: 'Weather', food: 'Food & cafés', work: 'Work', health: 'Health', leisure: 'Leisure' };
 
 // How well the learner knows a card. New cards start as "difficult".

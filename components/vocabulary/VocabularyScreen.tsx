@@ -4,6 +4,8 @@ import Link from "next/link";
 import { WORK_AREAS } from "@/lib/content/collections";
 import { CATEGORIES } from "@/lib/flashcards/engine";
 import { AppNav } from "../nav/AppNav";
+import { Icon } from "../ui/Icon";
+import { PageHeader, Section } from "../ui/PageHeader";
 import { BackButton } from "../nav/BackButton";
 import { LanguageGate } from "../lang/LanguageGate";
 import { LanguageSwitch } from "../lang/LanguageSwitch";
@@ -49,27 +51,36 @@ function VocabularyView({
   const [type, setType] = useState("all");
   const entries = filterVocabulary(query, category, type, cardId, lang);
   const field =
-    "mt-2 w-full rounded-xl border border-border bg-white p-3 text-base";
+    "mt-2 w-full field";
   const all = vocabularyFor(lang);
 
   return (
     <main
-      className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pb-28 pt-6"
+      className="page-pad mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pt-6"
       data-lang={lang}
     >
-      <header className="flex items-center justify-between gap-3 text-sm">
-        <BackButton fallback={withLang(DASHBOARD_URL, lang)}>
-          {cardId ? "Back to where you were" : "Back"}
-        </BackButton>
-        <LanguageSwitch lang={lang} onSwitch={onSwitchLanguage} />
-      </header>
-      <div>
-        <h1 className="text-3xl font-bold tracking-tight">Vocabulary</h1>
-        <p className="mt-2 text-muted">
-          Useful {LANG_INFO[lang].english} words and expressions from your
-          sentence cards.
-        </p>
-      </div>
+      <PageHeader
+        eyebrow="Words"
+        title="Vocabulary"
+        subtitle={<>Useful {LANG_INFO[lang].english} words and expressions from your sentence cards.</>}
+        action={<LanguageSwitch lang={lang} onSwitch={onSwitchLanguage} />}
+      />
+      {cardId && (
+        <BackButton fallback={withLang(DASHBOARD_URL, lang)}>Back to where you were</BackButton>
+      )}
+      {lang === "nl" && !cardId && (
+        <Section title="Quick grammar games" label="Quick grammar games">
+          <div className="grid grid-cols-3 gap-3">
+            {([["De or Het", "/game/article", "de · het"], ["Deze · Dit · Die · Dat", "/game/demonstrative", "dit · die"], ["Adjective Ending", "/game/adjective", "-e · –"]] as const).map(([title, href, hint]) => (
+              <Link key={href} href={href} className="card tap tap-hover flex flex-col gap-2 p-3.5">
+                <span aria-hidden className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent-soft text-accent"><Icon name="spark" className="h-[1.125rem] w-[1.125rem]" /></span>
+                <span className="text-[0.8125rem] font-semibold leading-snug">{title}</span>
+                <span className="font-mono text-xs text-accent">{hint}</span>
+              </Link>
+            ))}
+          </div>
+        </Section>
+      )}
       {cardId && (
         <p className="text-sm text-muted">
           Words from this sentence.{" "}
@@ -151,7 +162,7 @@ function VocabularyView({
           <article
             key={entry.id}
             id={entry.id}
-            className="scroll-mt-6 rounded-2xl border border-border bg-surface p-5"
+            className="scroll-mt-6 card p-5"
           >
             <h2 lang={lang} className="text-xl font-bold">
               {entry.article ? `${entry.article} ` : ""}
@@ -160,7 +171,7 @@ function VocabularyView({
             <div className="mt-2 flex gap-2">
               <button
                 type="button"
-                className="min-h-10 rounded-xl border border-border px-3 text-sm"
+                className="btn !min-h-10 !px-3"
                 onClick={() =>
                   void listen({
                     text: `${entry.article ? `${entry.article} ` : ""}${entry.headword}`,
@@ -172,7 +183,7 @@ function VocabularyView({
               </button>
               <button
                 type="button"
-                className="min-h-10 rounded-xl border border-border px-3 text-sm"
+                className="btn !min-h-10 !px-3"
                 onClick={stop}
               >
                 Stop

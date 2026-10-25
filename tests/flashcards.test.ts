@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CARDS, EVERYDAY_CARDS, countByLevel, drawCard, flashcardWeight, mergeReviews, newReview, pickCardSet, quizWeight, rateLevel, recordQuiz, type Reviews } from '@/lib/flashcards/engine';
+import { CORE_CARDS, EVERYDAY_CARDS, countByLevel, drawCard, flashcardWeight, mergeReviews, newReview, pickCardSet, quizWeight, rateLevel, recordQuiz, type Reviews } from '@/lib/flashcards/engine';
 import { reviewsSchema } from '@/lib/flashcards/validation';
 
 const now = new Date('2026-10-08T10:00:00Z');
@@ -8,8 +8,8 @@ const withLevel = (id: string, level: 'difficult' | 'medium' | 'easy' | 'mastere
 
 describe('flashcard deck', () => {
   it('preserves 600 everyday cards and adds 600 unique workplace text cards, each with a situation that is not the answer', () => {
-    expect(EVERYDAY_CARDS).toHaveLength(600); expect(CARDS).toHaveLength(1200); expect(new Set(CARDS.map(c => c.id)).size).toBe(1200);
-    for (const c of CARDS) {
+    expect(EVERYDAY_CARDS).toHaveLength(600); expect(CORE_CARDS).toHaveLength(1200); expect(new Set(CORE_CARDS.map(c => c.id)).size).toBe(1200);
+    for (const c of CORE_CARDS) {
       for (const key of ['dutch', 'english', 'cue', 'scenario', 'grammar', 'variation'] as const) expect(c[key].length).toBeGreaterThan(4);
       if (c.collection !== 'workplace') { expect(c.image.length).toBeGreaterThan(4); expect(c.audio.length).toBeGreaterThan(4); }
       expect(c.scenario.toLowerCase()).not.toContain(c.dutch.toLowerCase().replace(/[.?!]/g, ''));
@@ -26,8 +26,8 @@ describe('levels', () => {
   });
   it('counts cards by level, treating unseen cards as difficult', () => {
     const reviews: Reviews = { 'shopping-01': withLevel('shopping-01', 'mastered') };
-    const counts = countByLevel(CARDS, reviews);
-    expect(counts.mastered).toBe(1); expect(counts.difficult).toBe(CARDS.length - 1);
+    const counts = countByLevel(CORE_CARDS, reviews);
+    expect(counts.mastered).toBe(1); expect(counts.difficult).toBe(CORE_CARDS.length - 1);
   });
   it('shows difficult most, then medium, easy, mastered, and mastered-many-times least', () => {
     const w = (level: 'difficult' | 'medium' | 'easy' | 'mastered', n = 0) => flashcardWeight(withLevel('x', level, n));
@@ -51,9 +51,9 @@ describe('drawing cards', () => {
     expect(drawCard(['a'], {}, flashcardWeight, rand, 'a')).toBe('a');
   });
   it('picks a set of distinct cards that favours difficult ones, or all cards for unlimited', () => {
-    const all = CARDS.map(c => c.id);
+    const all = CORE_CARDS.map(c => c.id);
     const reviews: Reviews = Object.fromEntries(all.slice(0, 25).map(id => [id, withLevel(id, 'mastered', 10)]));
-    expect(pickCardSet(all, reviews, null)).toHaveLength(CARDS.length);
+    expect(pickCardSet(all, reviews, null)).toHaveLength(CORE_CARDS.length);
     let masteredPicked = 0;
     for (let seed = 1; seed <= 40; seed++) {
       const set = pickCardSet(all, reviews, 10, seededRand(seed));

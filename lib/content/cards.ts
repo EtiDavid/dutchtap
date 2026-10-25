@@ -9,7 +9,7 @@ import { DEFAULT_LANG, type Lang } from "@/lib/lang";
  * (Study, Speaking, Quiz, sentence pages, notes, vocabulary, speech) resolves cards here, so none of it hard-codes a language.
  */
 export type LCard = {
-  collection: "everyday" | "workplace";
+  collection: "everyday" | "workplace" | "grammar";
   id: string;
   lang: Lang;
   category: string;

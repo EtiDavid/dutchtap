@@ -23,7 +23,7 @@ test('the worker registers, replaces old caches, and keeps visited pages and ses
   await context.setOffline(true);
 
   await page.goto('/flashcards');
-  await expect(page.getByRole('heading', { name: 'Flashcards' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Practise', exact: true })).toBeVisible();
   await page.goto('/quiz');
   await expect(page.getByRole('heading', { name: 'Quiz', exact: true })).toBeVisible();
 
@@ -39,7 +39,7 @@ test('the worker registers, replaces old caches, and keeps visited pages and ses
 
   // a page that was never visited falls back to the saved dashboard instead of failing blankly
   await page.goto('/sentences/shopping-01');
-  await expect(page.getByRole('heading', { name: 'Flashcards' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Practise', exact: true })).toBeVisible();
   await context.setOffline(false);
 });
 

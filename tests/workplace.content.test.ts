@@ -9,7 +9,7 @@ import { protectedEditorialDigest } from './helpers/editorialPreservation';
 import originalVocabulary from '@/data/vocabulary.json';
 import originalCommunication from '@/data/dutch-communication.json';
 import originalNotes from '@/data/grammar-notes.json';
-import { CARDS, EVERYDAY_CARDS, newReview } from '@/lib/flashcards/engine';
+import { CORE_CARDS, EVERYDAY_CARDS, newReview } from '@/lib/flashcards/engine';
 import { WORK_AREAS } from '@/lib/content/collections';
 import { cardFor, cardsFor } from '@/lib/content/cards';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
@@ -23,9 +23,9 @@ const hash=(path:string)=>createHash('sha256').update(readFileSync(path)).digest
 
 describe('complete Dutch at Work publication',()=>{
   it('adds exactly 60 stable IDs in each of ten areas, preserving the original deck',()=>{
-    expect(workplace).toHaveLength(600);expect(CARDS).toHaveLength(1200);expect(EVERYDAY_CARDS).toHaveLength(600);
-    expect(new Set(CARDS.map(c=>c.id)).size).toBe(1200);
-    expect(CARDS.slice(0,600)).toEqual(EVERYDAY_CARDS);
+    expect(workplace).toHaveLength(600);expect(CORE_CARDS).toHaveLength(1200);expect(EVERYDAY_CARDS).toHaveLength(600);
+    expect(new Set(CORE_CARDS.map(c=>c.id)).size).toBe(1200);
+    expect(CORE_CARDS.slice(0,600)).toEqual(EVERYDAY_CARDS);
     for(const area of Object.keys(WORK_AREAS)){
       const batch=workplace.filter(c=>c.category===area);
       expect(batch.map(c=>c.id)).toEqual(Array.from({length:60},(_,i)=>`career-${area}-${String(i+1).padStart(3,'0')}`));

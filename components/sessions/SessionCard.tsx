@@ -7,6 +7,7 @@ import { sessionUrl } from '@/lib/sessions/nav';
 import type { Session } from '@/lib/sessions/types';
 import { LANG_INFO } from '@/lib/lang';
 import { button } from '../flashcards/styles';
+import { Icon } from '../ui/Icon';
 
 /** One session in the list: its fixed set, separate progress per mode, and the Study / Speaking / Quiz actions. */
 export function SessionCard({ session, refused, highlight, onRename, onDelete, onRetry, onAgain, againDisabled }: {
@@ -15,26 +16,27 @@ export function SessionCard({ session, refused, highlight, onRename, onDelete, o
   const stats = sessionStats(session);
   const total = session.cardIds.length;
   const done = session.status === 'archived';
-  return <article data-testid="session-card" data-session={session.id} className={`flex flex-col gap-3 rounded-2xl border bg-surface p-4 ${highlight ? 'border-accent' : 'border-border'}`}>
+  const modeIcon = { study: 'book', speaking: 'mic', quiz: 'puzzle' } as const;
+  return <article data-testid="session-card" data-session={session.id} className={`card flex flex-col gap-4 p-5 ${highlight ? '!border-accent ring-2 ring-accent/15' : ''}`}>
     <header className="flex items-start justify-between gap-3">
-      <div>
-        <h3 className="text-lg font-bold leading-snug">{session.name}</h3>
-        <p className="text-xs text-muted"><span data-testid="session-card-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {session.collection === 'workplace' ? `${COLLECTION_LABELS.workplace} · ` : ''}{topicLabel(session.topic)} · {total} {total === 1 ? 'card' : 'cards'} · started with {LEVEL_LABELS[session.startingLevel]}{done ? ' · completed' : ''}</p>
+      <div className="min-w-0">
+        <h3 className="text-lg font-bold leading-snug tracking-tight">{session.name}</h3>
+        <p className="mt-1 text-xs text-muted"><span data-testid="session-card-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {session.collection !== 'everyday' ? `${COLLECTION_LABELS[session.collection]} · ` : ''}{topicLabel(session.topic)} · {total} {total === 1 ? 'card' : 'cards'} · started with {LEVEL_LABELS[session.startingLevel]}{done ? ' · completed' : ''}</p>
       </div>
-      {done && <span className="rounded-full bg-success/20 px-2 py-1 text-xs font-semibold">Completed</span>}
+      {done && <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-success-soft px-2.5 py-1 text-xs font-semibold text-success"><Icon name="check" className="h-3.5 w-3.5" />Completed</span>}
     </header>
-    <div className="grid gap-2 text-sm">
-      <div><div className="flex justify-between"><span>Speaking{session.speaking.done ? ' ✓' : ''}</span><span data-testid="card-speaking">{retired(session, 'speaking')} / {total}</span></div><progress aria-label="Speaking progress" max={total} value={retired(session, 'speaking')} className="flash-progress mt-1 h-1.5 w-full" /></div>
-      <div><div className="flex justify-between"><span>Quiz{session.quiz.done ? ' ✓' : ''}</span><span data-testid="card-quiz">{retired(session, 'quiz')} / {total} · {stats.quizPoints} pts</span></div><progress aria-label="Quiz progress" max={total} value={retired(session, 'quiz')} className="flash-progress mt-1 h-1.5 w-full" /></div>
+    <div className="grid gap-3 text-sm">
+      <div><div className="flex justify-between font-medium"><span>Speaking{session.speaking.done ? ' ✓' : ''}</span><span className="text-muted" data-testid="card-speaking">{retired(session, 'speaking')} / {total}</span></div><progress aria-label="Speaking progress" max={total} value={retired(session, 'speaking')} className="flash-progress mt-1.5 h-2 w-full" /></div>
+      <div><div className="flex justify-between font-medium"><span>Quiz{session.quiz.done ? ' ✓' : ''}</span><span className="text-muted" data-testid="card-quiz">{retired(session, 'quiz')} / {total} · {stats.quizPoints} pts</span></div><progress aria-label="Quiz progress" max={total} value={retired(session, 'quiz')} className="flash-progress mt-1.5 h-2 w-full" /></div>
       <p className="text-xs text-muted">Study: round {stats.studyRound}, sentence {stats.studyPosition} of {total}</p>
     </div>
-    {refused && <p role="alert" className="rounded-xl bg-accent/10 p-3 text-xs">{refused} <button type="button" onClick={onRetry} className="font-semibold underline">Retry</button></p>}
+    {refused && <p role="alert" className="rounded-xl bg-accent-soft p-3 text-xs">{refused} <button type="button" onClick={onRetry} className="font-semibold underline">Retry</button></p>}
     <div className="grid grid-cols-3 gap-2">
-      {(['study', 'speaking', 'quiz'] as const).map(mode => <Link key={mode} href={sessionUrl(session.id, mode)} className={`${button} text-center capitalize`}>{mode}</Link>)}
+      {(['study', 'speaking', 'quiz'] as const).map(mode => <Link key={mode} href={sessionUrl(session.id, mode)} className={`${button} flex-col !gap-1 !py-2.5 text-center capitalize`}><Icon name={modeIcon[mode]} className="h-[1.125rem] w-[1.125rem] text-accent" />{mode}</Link>)}
     </div>
-    <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
-      <div className="flex gap-4"><button type="button" className="underline" onClick={onRename}>Rename</button><button type="button" className="text-accent underline" onClick={onDelete}>Delete</button></div>
-      {done && <button type="button" className="font-semibold text-accent underline disabled:opacity-50" disabled={againDisabled} onClick={onAgain}>Practise this set again</button>}
+    <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border pt-3 text-sm">
+      <div className="flex gap-4"><button type="button" className="font-medium text-muted hover:text-foreground" onClick={onRename}>Rename</button><button type="button" className="font-medium text-accent" onClick={onDelete}>Delete</button></div>
+      {done && <button type="button" className="font-semibold text-accent disabled:opacity-50" disabled={againDisabled} onClick={onAgain}>Practise this set again</button>}
     </div>
   </article>;
 }

@@ -28,8 +28,8 @@ export function Modal({ title, onClose, children }: { title: string; onClose: ()
     return () => { document.removeEventListener('keydown', onKey, true); previous?.focus?.(); };
   }, []);
 
-  return <div className="fixed inset-0 z-30 flex items-end justify-center bg-black/40 p-4 sm:items-center" onMouseDown={event => { if (event.target === event.currentTarget) onClose(); }}>
-    <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} className="max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-2xl bg-white p-6 shadow-lg">
+  return <div className="fixed inset-0 z-30 flex items-end justify-center bg-ink/55 p-4 backdrop-blur-sm sm:items-center" onMouseDown={event => { if (event.target === event.currentTarget) onClose(); }}>
+    <div ref={panel} role="dialog" aria-modal="true" aria-labelledby={titleId} tabIndex={-1} className="max-h-[90dvh] w-full max-w-md overflow-y-auto rounded-3xl bg-surface p-6 shadow-2xl">
       <h2 id={titleId} className="text-xl font-bold">{title}</h2>
       {children}
     </div>

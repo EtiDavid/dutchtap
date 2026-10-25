@@ -18,12 +18,11 @@ test.afterEach(async ({page}) => {
   expect(runtimeErrors.get(page)).toEqual([]);
 });
 
-test("home exposes the new labs, a tile quiz survives refresh, and correct feedback does not replay", async ({
+test("the labs open, a tile quiz survives refresh, and correct feedback does not replay", async ({
   page,
 }, info) => {
   await asGuest(page);
-  await page.goto("/");
-  await page.getByRole("link", { name: /Sentence Builder/ }).click();
+  await page.goto("/learn");
   await expect(
     page.getByRole("heading", { name: "Think, build, speak" }),
   ).toBeVisible();

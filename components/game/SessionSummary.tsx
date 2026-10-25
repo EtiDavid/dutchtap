@@ -18,7 +18,7 @@ export function SessionSummary({ summary }: { summary: SessionSummaryData }) {
         <p className="mt-2 text-4xl font-bold text-accent">+{summary.pointsEarned}</p>
       </div>
 
-      <div className="rounded-2xl border border-border bg-surface px-4 py-1">
+      <div className="card px-4 py-1">
         <Row label="Questions answered" value={summary.questionsAnswered} />
         <Row label="Correct" value={summary.correct} />
         <Row label="Wrong" value={summary.wrong} />

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { CARDS } from "@/lib/flashcards/engine";
+import { CORE_CARDS } from "@/lib/flashcards/engine";
 import {
   FAMILIES,
   variationsFor,
@@ -56,7 +56,7 @@ function rate(
 describe("Dutch family content", () => {
   it("covers all 1,200 parents with ten distinct related sentences, translations and teaching examples", () => {
     expect(Object.keys(FAMILIES)).toHaveLength(1200);
-    for (const card of CARDS) {
+    for (const card of CORE_CARDS) {
       const vs = variationsFor(card.id);
       expect(vs).toHaveLength(10);
       expect(new Set(vs.map((v) => v.text))).toHaveProperty("size", 10);

@@ -14,7 +14,8 @@ describe('Grammar patterns collection', () => {
     expect(new Set(CARDS.map(c => c.id)).size).toBe(CARDS.length);
     for (const topic of Object.keys(GRAMMAR_AREAS)) expect(GRAMMAR_CARDS.filter(c => c.category === topic).length, topic).toBeGreaterThanOrEqual(14);
     for (const topic of ['inversion', 'omdat', 'dat', 'als', 'tot', 'toen']) expect(GRAMMAR_CARDS.filter(c => c.category === topic).length, topic).toBeGreaterThanOrEqual(19);
-    for (const card of GRAMMAR_CARDS) {
+    // Authored pattern cards have generated notes and no media. Linked Core cards are tested separately.
+    for (const card of GRAMMAR_CARDS.filter(c => !c.originCardId)) {
       expect(card.collection).toBe('grammar');
       expect(card.id).toMatch(/^pat-[a-z]+-\d\d$/);
       expect(card.scenario.length, card.id).toBeGreaterThan(20);

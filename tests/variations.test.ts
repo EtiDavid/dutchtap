@@ -55,7 +55,8 @@ function rate(
 }
 describe("Dutch family content", () => {
   it("covers all 1,200 parents with ten distinct related sentences, translations and teaching examples", () => {
-    expect(Object.keys(FAMILIES)).toHaveLength(1200);
+    expect(CORE_CARDS.filter(card => !!FAMILIES[card.id])).toHaveLength(1200);
+    expect(Object.keys(FAMILIES).filter(id => id.startsWith('pat-als-'))).toHaveLength(3);
     for (const card of CORE_CARDS) {
       const vs = variationsFor(card.id);
       expect(vs).toHaveLength(10);

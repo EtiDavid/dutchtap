@@ -37,6 +37,31 @@ for topic, items in rows.items():
             'review': {'status': 'ai-editorially-reviewed', 'independentHumanReview': False, 'batch': 'grammar-patterns', 'focus': topic},
         })
         notes[cid] = {'rule': f"{item['why']} Pattern: {topics[topic]['rule']}", 'examples': [{'dutch': o['dutch'], 'english': o['english']} for o in others]}
+# Add reviewed expansion after all legacy grammar cards, preserving original IDs and order.
+# The canonical added rows are stored in data/editorial/grammar-als-expansion.json.
+expansion = J('data/editorial/grammar-als-expansion.json')
+for i, row in enumerate(expansion):
+    cid = f"pat-als-{19+i+1:02d}"
+    cards.append({
+        'id': cid, 'category': 'als', 'collection': 'grammar',
+        'dutch': row['dutch'], 'english': row['english'],
+        'scenario': row['scenario'], 'scenarioNl': row['scenarioNl'],
+        'cue': row['scenario'], 'grammar': row['why'],
+        'variation': expansion[(i+1)%len(expansion)]['dutch'],
+        'image': '', 'audio': '', 'quizMode': 'order',
+        'imageStatus': 'not-applicable', 'audioStatus': 'device',
+        'difficulty': 'intermediate', 'vocabularyIds': [], 'review': row['review'],
+    })
+    examples = []
+    for j in range(10):
+        other = expansion[(i+j+2)%len(expansion)]
+        examples.append({'dutch': other['dutch'], 'english': other['english']})
+    notes[cid] = {
+        'rule': row['why'] + ' Pattern: Als introduces a conditional or repeated-time subordinate clause. Learn the verb group and main-clause inversion where appropriate.',
+        'examples': examples,
+    }
+assert len(expansion) == 58 and len(cards) == 254, f"Unexpected grammar card count: {len(cards)}"
+assert len({c['dutch'].lower() for c in cards}) == len(cards), 'Duplicate grammar sentence'
 (ROOT / 'data/grammar-pattern-cards.json').write_text(json.dumps(cards, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 (ROOT / 'data/grammar-pattern-notes.json').write_text(json.dumps(notes, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 print(len(cards), 'cards;', {t: len(v) for t, v in rows.items()})

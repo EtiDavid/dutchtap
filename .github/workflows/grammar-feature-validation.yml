@@ -1,0 +1,31 @@
+name: Grammar feature validation
+
+on:
+  push:
+    branches:
+      - 'feat/grammar-mastery-phase1'
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Check source data regeneration is deterministic
+        run: |
+          python3 scripts/build-grammar-patterns.py
+          git diff --exit-code -- data/grammar-pattern-cards.json data/grammar-pattern-notes.json
+      - run: npm run lint
+      - run: npx tsc --noEmit
+      - run: npm test
+      - run: npm run content:learning-check
+      - run: npm run build

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { CARDS, CORE_CARDS, GRAMMAR_CARDS, GRAMMAR_REUSED_CARDS } from "@/lib/flashcards/engine";
+import { CARDS, CORE_CARDS, GRAMMAR_CARDS, GRAMMAR_REUSED_CARDS, newReview } from "@/lib/flashcards/engine";
+import type { Reviews } from "@/lib/flashcards/engine";
 import { breakdownFor } from "@/lib/grammarBreakdowns";
 import { notesFor } from "@/lib/grammarNotes";
 import { cardFor } from "@/lib/content/cards";
@@ -26,8 +27,8 @@ describe("grammar reuse links", () => {
     expect(new Set(CARDS.map(c=>c.id)).size).toBe(CARDS.length);
     const aliases = GRAMMAR_REUSED_CARDS.filter(c=>c.category==="als");
     expect(aliases.length).toBe(23);
-    const ratedCore: Record<string,any> = {};
-    for (const c of aliases) ratedCore[c.originCardId!] = {id:c.originCardId!,level:"mastered"};
+    const ratedCore: Reviews = {};
+    for (const c of aliases) ratedCore[c.originCardId!] = {...newReview(c.originCardId!),level:"mastered"};
     const ids=eligibleIds("als","difficult",ratedCore,"nl","grammar");
     for(const alias of aliases) expect(ids).toContain(alias.id);
     const s=createSession({topic:"als",collection:"grammar",lang:"nl",count:10,level:"difficult",reviews:ratedCore,rand:()=>0.37});

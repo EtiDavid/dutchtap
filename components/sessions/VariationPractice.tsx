@@ -43,7 +43,7 @@ export function VariationControls({
   ).length;
   return (
     <section
-      className="rounded-2xl border border-border bg-surface p-4"
+      className="card p-4"
       aria-label="Variation practice"
     >
       <label className="flex min-h-10 items-center gap-3 font-semibold text-sm">

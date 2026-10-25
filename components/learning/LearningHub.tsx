@@ -27,11 +27,9 @@ import {
   type LabAttempt,
 } from "@/lib/learning/progress";
 
-const button =
-  "min-h-11 rounded-xl border border-border bg-white px-4 py-2 font-semibold disabled:opacity-40";
-const primary = `${button} !bg-accent text-white`;
-const select =
-  "mt-1 min-h-11 w-full rounded-xl border border-border bg-white p-2 font-normal";
+const button = "btn !min-h-11 disabled:opacity-40";
+const primary = "btn btn-primary !min-h-11 disabled:opacity-40";
+const select = "field mt-1 w-full !min-h-11 !p-2 font-normal";
 
 export function LearningHub() {
   return (
@@ -40,7 +38,7 @@ export function LearningHub() {
         lang === "nl" ? (
           <DutchLearning />
         ) : (
-          <main className="mx-auto max-w-xl px-5 py-8 pb-28">
+          <main className="page-pad mx-auto max-w-lg px-5 pt-6">
             <Link href="/">← Home</Link>
             <h1 className="mt-6 text-3xl font-bold">Dutch practice labs</h1>
             <p className="mt-4">
@@ -103,17 +101,18 @@ function DutchLearning() {
     remember({ topic: id, verb: "all", tense: "all" });
   };
   return (
-    <main className="mx-auto flex min-h-dvh max-w-2xl flex-col gap-5 px-5 pb-28 pt-6">
+    <main className="page-pad mx-auto flex min-h-dvh max-w-lg flex-col gap-5 px-5 pt-6">
       <header>
-        <Link href="/" className="text-accent underline">
-          ← Home
+        <Link href="/flashcards" className="inline-flex items-center gap-1 text-sm font-semibold text-accent">
+          ← Practise
         </Link>
-        <h1 className="mt-4 text-3xl font-bold">Think, build, speak</h1>
+        <p className="eyebrow mt-4">Skill labs</p>
+        <h1 className="mt-1 text-[1.75rem] font-bold leading-tight tracking-tight">Think, build, speak</h1>
         <p className="mt-2 text-muted">
           Practise a Dutch pattern, then express it in a new situation.
         </p>
       </header>
-      <div className="rounded-2xl border border-border bg-surface p-4">
+      <div className="card p-4">
         <label className="text-sm font-semibold">
           Choose your focus
           <select
@@ -255,6 +254,12 @@ function DutchLearning() {
             {rule.example}
           </p>
         </details>
+      )}
+      {rule && (
+        <Link href={`/flashcards?new=grammar:${rule.id}`} className="card tap tap-hover flex items-center gap-3 p-4 text-sm" data-testid="pattern-session-link">
+          <span className="min-w-0 flex-1"><span className="block font-semibold">Practise {rule.title} as a full session</span><span className="block text-muted">Many more sentences, with explanations, situations to speak from, word order and levels.</span></span>
+          <span aria-hidden className="text-accent">→</span>
+        </Link>
       )}
       {(topic === "verbs" || topic === "separable") && (
         <VerbReference selected={verb} separable={topic === "separable"} />

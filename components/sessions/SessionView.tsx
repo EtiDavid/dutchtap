@@ -10,6 +10,7 @@ import { MAX_ACTIVE_SESSIONS, type Mode } from '@/lib/sessions/types';
 import { LANG_INFO, withLang, type Lang } from '@/lib/lang';
 import { button, primary } from '../flashcards/styles';
 import { Modal } from '../ui/Modal';
+import { Icon } from '../ui/Icon';
 import { CompletionSummary } from './CompletionSummary';
 import { QuizMode } from './QuizMode';
 import { SpeakingMode } from './SpeakingMode';
@@ -31,7 +32,7 @@ export function SessionView({ sessionId, lang, store, snapshot, reviews, reviews
 
   useEffect(() => { if (session) store.setLastOpened(session.id, mode); }, [store, session, mode]);
 
-  if (!session) return <section className="flex flex-col gap-4 rounded-2xl border border-border bg-surface p-6 text-center" data-testid="session-missing">
+  if (!session) return <section className="flex flex-col gap-4 card p-6 text-center" data-testid="session-missing">
     <h2 className="text-xl font-bold">Session not found</h2>
     <p className="text-sm text-muted">It may have been deleted, possibly on another device. Your card levels are unchanged.</p>
     <Link href={withLang(DASHBOARD_URL, lang)} className={`${primary} block`}>Back to sessions</Link>
@@ -53,19 +54,19 @@ export function SessionView({ sessionId, lang, store, snapshot, reviews, reviews
 
   return <div className="flex flex-col gap-5">
     <div className="flex items-center justify-between gap-3">
-      <Link href={withLang(DASHBOARD_URL, session.lang)} className="text-sm font-semibold text-accent underline" data-testid="back-to-sessions">← Back to sessions</Link>
+      <Link href={withLang(DASHBOARD_URL, session.lang)} className="inline-flex items-center gap-1 text-sm font-semibold text-accent" data-testid="back-to-sessions"><Icon name="back" className="h-4 w-4" />Back to sessions</Link>
       <button type="button" className="text-sm text-muted underline" onClick={() => { setName(session.name); setRenaming(true); }}>Rename</button>
     </div>
-    <div><h2 className="text-2xl font-bold leading-snug" data-testid="session-name">{session.name}</h2><p className="text-xs text-muted"><span data-testid="session-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {total} fixed {total === 1 ? 'sentence' : 'sentences'} · the same set in every mode</p></div>
+    <div><h2 className="text-2xl font-bold leading-snug tracking-tight" data-testid="session-name">{session.name}</h2><p className="text-xs text-muted"><span data-testid="session-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {total} fixed {total === 1 ? 'sentence' : 'sentences'} · the same set in every mode</p></div>
     <SyncStatus snapshot={snapshot} guest={!signedIn} onRetry={() => void store.sync()} />
-    {snapshot.refused[session.id] && <p role="alert" className="rounded-xl bg-accent/10 p-3 text-xs">{snapshot.refused[session.id]} <button type="button" onClick={() => store.retryRefused(session.id)} className="font-semibold underline">Retry</button></p>}
-    {notice && <p role="status" className="rounded-xl bg-accent/10 p-3 text-sm">{notice}</p>}
+    {snapshot.refused[session.id] && <p role="alert" className="rounded-xl bg-accent-soft p-3 text-xs">{snapshot.refused[session.id]} <button type="button" onClick={() => store.retryRefused(session.id)} className="font-semibold underline">Retry</button></p>}
+    {notice && <p role="status" className="rounded-xl bg-accent-soft p-3 text-sm">{notice}</p>}
     {celebration && <p role="status" data-testid="milestone" className="flex items-start justify-between gap-3 rounded-2xl bg-success/15 px-4 py-3 text-sm font-semibold"><span>🏆 {celebration}</span><button type="button" aria-label="Dismiss" className="text-muted" onClick={onDismissCelebration}>✕</button></p>}
 
-    <nav aria-label="Session mode" className="grid grid-cols-3 gap-2">
+    <nav aria-label="Session mode" className="grid grid-cols-3 gap-1 rounded-2xl bg-surface-2 p-1">
       {tabs.map(tab => <button key={tab.mode} type="button" aria-current={mode === tab.mode ? 'page' : undefined} data-mode={tab.mode}
         onClick={() => navigateTo(sessionUrl(session.id, tab.mode), true)}
-        className={`${button} flex flex-col items-center px-1 py-2 leading-tight ${mode === tab.mode ? 'border-accent bg-accent text-white' : ''}`}>
+        className={`${button} flex flex-col items-center !gap-0 px-1 py-2 leading-tight !shadow-none ${mode === tab.mode ? '!border-transparent !bg-surface !text-accent shadow-sm' : '!border-transparent !bg-transparent !text-muted'}`}>
         <span>{tab.label}{tab.done ? ' ✓' : ''}</span><span className="text-[11px] font-normal">{tab.detail}</span>
       </button>)}
     </nav>
@@ -78,7 +79,7 @@ export function SessionView({ sessionId, lang, store, snapshot, reviews, reviews
 
     {renaming && <Modal title="Rename session" onClose={() => setRenaming(false)}>
       <form className="mt-4 flex flex-col gap-4" onSubmit={event => { event.preventDefault(); if (name.trim()) { store.rename(session.id, name); setRenaming(false); } }}>
-        <label className="text-sm font-semibold">Session name<input data-autofocus value={name} maxLength={80} onChange={event => setName(event.target.value)} className="mt-2 w-full rounded-xl border border-border bg-white p-3 text-base" /></label>
+        <label className="text-sm font-semibold">Session name<input data-autofocus value={name} maxLength={80} onChange={event => setName(event.target.value)} className="mt-2 w-full field" /></label>
         <div className="grid grid-cols-2 gap-2"><button type="button" className={button} onClick={() => setRenaming(false)}>Cancel</button><button type="submit" className={primary} disabled={!name.trim()}>Save</button></div>
       </form>
     </Modal>}

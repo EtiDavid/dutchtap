@@ -111,3 +111,20 @@ not just the `.vercel.app` URL.
       `dutchtap.vercel.app` and `dutchtap.davideti.dev`
 - [x] `dutchtap.davideti.dev` resolves and serves over HTTPS
 - [x] No secrets visible in the deployed page source or API responses
+
+## Releasing: tags only
+
+Nothing deploys when you push or merge a branch, including `main`: `vercel.json` turns Vercel's Git deployments off for every branch.
+Production is deployed only by `.github/workflows/deploy-production.yml`, which runs when a tag starting with `v` is pushed.
+
+```bash
+git switch main && git pull
+git tag v1.4.0
+git push origin v1.4.0
+```
+
+The workflow refuses a tag that is not on `main`, runs lint and the unit tests, then builds and deploys with the Vercel CLI.
+One-time setup in GitHub → Settings → Secrets and variables → Actions: add `VERCEL_TOKEN` (a Vercel access token),
+`VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` (both are in `.vercel/project.json` after running `npx vercel link` locally).
+The environment variables in section 2 stay in the Vercel project (Production), where `vercel pull` reads them.
+To roll back, push a new tag on the earlier commit, or promote an earlier deployment in the Vercel dashboard.

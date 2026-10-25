@@ -1,11 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --surface: #f7f6f4;
-  --foreground: #1b2430;
-  --muted: #6b7280;
-  --border: #e5e7eb;
+  --background: #f6f5f2;
+  --surface: #ffffff;
+  --surface-2: #efede8;
+  --foreground: #121722;
+  --muted: #586070;
+  --border: #e3e0d8;
+  --ink: #101828;
+  --ink-foreground: #ffffff;
+  --accent-soft: #fdeee3;
+  --success-soft: #e4f3e8;
   /* Deeper than a pure Tailwind orange-500 on purpose: #f97316 against
      white/as a white-text button fill only reaches ~2.8:1 contrast,
      failing WCAG AA. This shade holds ~5.2:1 while still reading warm. */
@@ -22,6 +27,11 @@
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-accent-soft: var(--accent-soft);
+  --color-success-soft: var(--success-soft);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-border: var(--border);
@@ -42,7 +52,19 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  font-feature-settings: "cv11", "ss01";
+  text-rendering: optimizeLegibility;
 }
+
+/* Shared surfaces. Everything that looks like a card uses these so the app reads as one system. */
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 1.25rem; box-shadow: 0 1px 2px rgb(16 24 40 / .04), 0 6px 18px rgb(16 24 40 / .05); }
+.card-flat { background: var(--surface); border: 1px solid var(--border); border-radius: 1.25rem; }
+.card-ink { background: linear-gradient(155deg, #101828 0%, #1d2a44 100%); color: var(--ink-foreground); border-radius: 1.5rem; box-shadow: 0 10px 30px rgb(16 24 40 / .22); }
+.eyebrow { font-size: .6875rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.page-pad { padding-bottom: calc(6.5rem + env(safe-area-inset-bottom)); }
+.tap { transition: transform 120ms ease, box-shadow 160ms ease, border-color 160ms ease, background-color 160ms ease; }
+.tap:active { transform: scale(.98); }
+@media (hover: hover) { .tap-hover:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); box-shadow: 0 2px 4px rgb(16 24 40 / .05), 0 10px 24px rgb(16 24 40 / .08); } }
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -64,3 +86,21 @@ body {
 @keyframes quiz-confetti-fall { to { translate: 0 min(70vh, 600px); rotate: 280deg; opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .quiz-confetti { display: none; } }
 @keyframes flashcard-arrive { from { opacity: .4; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Buttons live in the components layer so utility classes (selected states, widths, padding) always win over them. */
+@layer components {
+  .btn { display: inline-flex; min-height: 3rem; align-items: center; justify-content: center; gap: .5rem; border-radius: .875rem; border: 1px solid var(--border); background: var(--surface); color: var(--foreground); padding: .75rem 1rem; font-size: .875rem; font-weight: 600; line-height: 1.25; box-shadow: 0 1px 2px rgb(16 24 40 / .05); transition: transform 120ms ease, box-shadow 160ms ease, border-color 160ms ease, background-color 160ms ease; }
+  .btn:active { transform: scale(.98); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .btn:disabled, .btn[aria-disabled="true"] { cursor: not-allowed; }
+  @media (hover: hover) { .btn:not(:disabled):hover { border-color: color-mix(in srgb, var(--foreground) 28%, var(--border)); } }
+  .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 6px 16px rgb(194 65 12 / .28); }
+  @media (hover: hover) { .btn-primary:not(:disabled):hover { filter: brightness(1.08); border-color: var(--accent); } }
+  .btn-primary:disabled { opacity: .5; box-shadow: none; }
+  .btn-ghost { background: transparent; border-color: transparent; box-shadow: none; color: var(--muted); min-height: 2.5rem; }
+}
+
+@layer components {
+  .field { border: 1px solid var(--border); background: var(--surface); border-radius: .875rem; padding: .8rem .9rem; font-size: 1rem; min-height: 3rem; color: var(--foreground); box-shadow: inset 0 1px 2px rgb(16 24 40 / .04); }
+  .field:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+}

@@ -10,7 +10,7 @@ export function LevelBar({ counts }: { counts: Record<Level, number> }) {
   const total = LEVELS.reduce((sum, l) => sum + counts[l], 0) || 1;
   const summary = LEVELS.map(l => `${LEVEL_LABELS[l]} ${counts[l]}`).join(' · ');
   const next = nextMilestone(counts.mastered);
-  return <section aria-label="Your cards by level" className="rounded-2xl border border-border bg-surface p-4">
+  return <section aria-label="Your cards by level" className="card p-4">
     <div className="flex items-baseline justify-between"><h2 className="text-sm font-semibold">Your progress</h2><span className="text-xs text-muted">{counts.mastered} of {total} mastered</span></div>
     <div role="img" aria-label={summary} className="mt-3 flex h-3 w-full overflow-hidden rounded-full bg-border">
       {LEVELS.map(l => counts[l] > 0 && <div key={l} data-level={l} className={`${COLOURS[l]} transition-all duration-500`} style={{ width: `${(counts[l] / total) * 100}%` }} />)}

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { CARDS } from "@/lib/flashcards/engine";
+import { CORE_CARDS } from "@/lib/flashcards/engine";
 import { cardFor } from "@/lib/content/cards";
 import {
   communicationFor,
@@ -72,7 +72,7 @@ function next(s: ReturnType<typeof fresh>) {
 describe("authored Dutch communication content", () => {
   it("provides an explicit situation and complete model explanations for every main card and every released or locked child", () => {
     const cards = [
-      ...CARDS.map((c) => cardFor("nl", c.id)!),
+      ...CORE_CARDS.map((c) => cardFor("nl", c.id)!),
       ...Object.values(FAMILIES)
         .flat()
         .map((v) => variationCard(v.id)!),
@@ -110,7 +110,7 @@ describe("authored Dutch communication content", () => {
     expect(communicationFor(cardFor("nl", "work-70")!).answers).toHaveLength(1);
   });
   it("does not publish invalid al-fronting or split the phrase uiterlijk maandag", () => {
-    for (const c of CARDS) {
+    for (const c of CORE_CARDS) {
       for (const a of communicationFor(cardFor("nl", c.id)!).answers)
         expect(a.text).not.toMatch(/^Al had/);
     }

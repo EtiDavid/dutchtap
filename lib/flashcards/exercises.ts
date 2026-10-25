@@ -83,8 +83,8 @@ export function buildBlank(card: Card, seed: string): BlankExercise | null {
 
 export function buildOrder(card: Card, seed: string): OrderExercise | null {
   const answer = card.dutch.split(' ').map(core).filter(Boolean);
-  const minimum = card.collection === 'workplace' || card.source ? 2 : 4;
-  const maximum = card.collection === 'workplace' ? 40 : card.source ? 18 : 9;
+  const minimum = card.collection === 'workplace' || card.collection === 'grammar' || card.source ? 2 : 4;
+  const maximum = card.collection === 'workplace' || card.collection === 'grammar' ? 40 : card.source ? 18 : 9;
   if (answer.length < minimum || answer.length > maximum) return null;
   answer[0] = answer[0][0].toLowerCase() + answer[0].slice(1);
   const rand = seeded(`${card.id}:order:${seed}`);

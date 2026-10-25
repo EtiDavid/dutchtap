@@ -1,15 +1,15 @@
 import { describe, expect, it } from 'vitest';
-import { CARDS } from '@/lib/flashcards/engine';
+import { CORE_CARDS } from '@/lib/flashcards/engine';
 import { BREAKDOWNS, breakdownFor, hasForms, patternOf } from '@/lib/grammarBreakdowns';
 
 const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}' ]/gu, ' ').replace(/’/g, "'").split(/\s+/).filter(Boolean);
 
 describe('sentence breakdowns', () => {
   it('has exactly one breakdown for every sentence', () => {
-    expect(Object.keys(BREAKDOWNS).sort()).toEqual(CARDS.map(c => c.id).sort());
+    expect(Object.keys(BREAKDOWNS).sort()).toEqual(CORE_CARDS.map(c => c.id).sort());
   });
   it('cuts each sentence into labelled parts that rebuild exactly that sentence, in order', () => {
-    for (const card of CARDS) {
+    for (const card of CORE_CARDS) {
       const breakdown = breakdownFor(card.id)!;
       expect(breakdown.parts.length, card.id).toBeGreaterThanOrEqual(2);
       expect(words(breakdown.parts.map(p => p.text).join(' ')), card.id).toEqual(words(card.dutch));
@@ -17,7 +17,7 @@ describe('sentence breakdowns', () => {
     }
   });
   it('explains meaning, order, English comparison and a common mistake for every sentence', () => {
-    for (const card of CARDS) {
+    for (const card of CORE_CARDS) {
       const b = breakdownFor(card.id)!;
       expect(b.meaning.length, card.id).toBeGreaterThan(10);
       expect(b.order.length, card.id).toBeGreaterThan(60);
@@ -46,7 +46,7 @@ describe('sentence breakdowns', () => {
   });
   it('keeps the shorter rule and examples alongside it (nothing was removed)', async () => {
     const { GRAMMAR_NOTES } = await import('@/lib/grammarNotes');
-    for (const card of CARDS) expect(GRAMMAR_NOTES[card.id], card.id).toBeDefined();
+    for (const card of CORE_CARDS) expect(GRAMMAR_NOTES[card.id], card.id).toBeDefined();
   });
   it('contains no leftover drafting markers', () => {
     expect(JSON.stringify(BREAKDOWNS)).not.toMatch(/TODO|\?\?\?|see note/i);
@@ -69,6 +69,6 @@ describe('why the word order is what it is', () => {
     expect(orderOf('transport-05')).toMatch(/Hoe laat/); // a two-word question phrase is still ONE first constituent
   });
   it('gives every sentence a real reason rather than only a list of positions', () => {
-    for (const card of CARDS) expect(orderOf(card.id), card.id).toMatch(/verb|question|imperative|phrase|subject|noun|comes first|clause|auxiliary|participle|infinitive|particle/i);
+    for (const card of CORE_CARDS) expect(orderOf(card.id), card.id).toMatch(/verb|question|imperative|phrase|subject|noun|comes first|clause|auxiliary|participle|infinitive|particle/i);
   });
 });

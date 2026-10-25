@@ -1,15 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { CARDS } from "@/lib/flashcards/engine";
+import { CORE_CARDS } from "@/lib/flashcards/engine";
 import { GRAMMAR_NOTES, notesFor } from "@/lib/grammarNotes";
 
 describe("grammar notes", () => {
   it("has exactly one note for every sentence", () => {
-    expect(Object.keys(GRAMMAR_NOTES).sort()).toEqual(
-      CARDS.map((c) => c.id).sort(),
+    expect(Object.keys(GRAMMAR_NOTES).filter((id) => !id.startsWith('pat-')).sort()).toEqual(
+      CORE_CARDS.map((c) => c.id).sort(),
     );
   });
   it("gives each sentence a rule and at least ten related examples with English", () => {
-    for (const card of CARDS) {
+    for (const card of CORE_CARDS) {
       const note = notesFor(card.id)!;
       expect(note.rule.length, card.id).toBeGreaterThan(30);
       expect(note.examples.length, card.id).toBeGreaterThanOrEqual(2);
@@ -21,7 +21,7 @@ describe("grammar notes", () => {
     }
   });
   it("does not repeat the sentence itself or the variation as an example, and has no duplicate examples", () => {
-    for (const card of CARDS) {
+    for (const card of CORE_CARDS) {
       const dutch = notesFor(card.id)!.examples.map((e) => e.dutch);
       expect(dutch, card.id).not.toContain(card.dutch);
       expect(dutch, card.id).not.toContain(card.variation);

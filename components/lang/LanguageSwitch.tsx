@@ -12,7 +12,7 @@ export function LanguageSwitch({ lang, onSwitch }: { lang: Lang; onSwitch: (lang
   const [open, setOpen] = useState(false);
   return <>
     <button type="button" onClick={() => setOpen(true)} data-testid="language-switch" aria-haspopup="dialog"
-      className="inline-flex min-h-10 items-center gap-2 rounded-full border border-border px-3 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-accent">
+      className="btn !min-h-10 !rounded-full !px-3">
       <span aria-hidden>{LANG_INFO[lang].flag}</span><span lang={lang}>{LANG_INFO[lang].native}</span><span className="sr-only">: change learning language</span>
     </button>
     {open && <Modal title="Learning language" onClose={() => setOpen(false)}>

@@ -47,7 +47,7 @@ import {
   shuffledTokenOrder,
 } from "./wordOrder";
 
-import { WORK_AREAS, collectionAvailable, validTopic, type Collection } from "@/lib/content/collections";
+import { GRAMMAR_AREAS, WORK_AREAS, collectionAvailable, validTopic, type Collection } from "@/lib/content/collections";
 
 type Rand = () => number;
 /** The card in the session's own language (undefined if that language has no content for it). */
@@ -73,7 +73,7 @@ export const progressOf = (session: Session, id: string): CardProgress =>
 export const topicLabel = (topic: string) =>
   topic === "all"
     ? "All places"
-    : (CATEGORIES[topic as keyof typeof CATEGORIES] ?? WORK_AREAS[topic as keyof typeof WORK_AREAS] ?? topic);
+    : (CATEGORIES[topic as keyof typeof CATEGORIES] ?? WORK_AREAS[topic as keyof typeof WORK_AREAS] ?? GRAMMAR_AREAS[topic as keyof typeof GRAMMAR_AREAS] ?? topic);
 export const levelOf = (reviews: Reviews, id: string): Level =>
   reviews[id]?.level ?? DEFAULT_LEVEL;
 

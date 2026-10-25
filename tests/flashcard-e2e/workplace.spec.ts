@@ -48,7 +48,7 @@ for(const width of [390,1280])test(`pictureless workplace rotation, refresh, his
   const errors:string[]=[];const assets:string[]=[];page.on('pageerror',e=>errors.push(e.message));
   page.on('request',r=>{if(/\/(illustrations\/cards|audio\/flashcards)\//.test(r.url()))assets.push(r.url());});
   await seed(page);
-  await expect(page.getByRole('heading',{name:'Flashcards',exact:true})).toBeVisible();
+  await expect(page.getByTestId('session-name')).toBeVisible();
   const choices=communicationFor(cardFor('nl','career-office-007')!).answers;const seen:string[]=[];
   for(let i=0;i<2;i++){
     await expect(page.getByTestId('quiz-situation')).toBeVisible();await expect(page.getByTestId('quiz-english')).toHaveCount(0);

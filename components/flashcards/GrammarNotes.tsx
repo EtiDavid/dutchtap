@@ -10,7 +10,7 @@ const ADAPTED = new Set(
   CARDS.filter((card) => card.adapted).map((card) => card.id),
 );
 
-const heading = "mt-4 text-xs font-semibold uppercase tracking-wide text-muted";
+const heading = "eyebrow mt-6 border-t border-border pt-4";
 const HEADINGS: Record<
   Lang,
   { order: string; forms: string; deviceVoice: string }
@@ -54,11 +54,11 @@ export function GrammarNotes({
       onToggle={(e) => {
         if (!e.currentTarget.open) stop();
       }}
-      className="mt-5 border-t border-border pt-4"
+      className="group mt-6 rounded-2xl bg-surface-2/70 p-4 open:bg-surface-2/70"
       data-testid="grammar-notes"
       data-lang={lang}
     >
-      <summary className="cursor-pointer text-sm font-semibold">
+      <summary className="cursor-pointer select-none text-sm font-bold tracking-tight marker:text-accent">
         Grammar rule &amp; similar examples
       </summary>
 
@@ -93,7 +93,7 @@ export function GrammarNotes({
             {breakdown.parts.map((part, index) => (
               <li
                 key={index}
-                className="rounded-xl border border-border bg-surface px-3 py-2"
+                className="rounded-xl border border-border bg-surface px-3 py-2 shadow-[0_1px_2px_rgb(16_24_40/.04)]"
               >
                 <span className="block text-[11px] leading-tight text-muted">
                   {part.label}
@@ -211,7 +211,7 @@ export function GrammarNotes({
                   type="button"
                   aria-label={`Listen to: ${example.text}`}
                   onClick={() => void listen({ text: example.text, lang })}
-                  className="min-h-10 shrink-0 rounded-xl border border-border px-3 text-sm focus-visible:outline-2 focus-visible:outline-accent"
+                  className="btn !min-h-10 shrink-0 !px-3"
                 >
                   🔊
                 </button>

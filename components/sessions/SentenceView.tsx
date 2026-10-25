@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { AppNav } from "../nav/AppNav";
 import { BackButton } from "../nav/BackButton";
+import { PageHeader } from "../ui/PageHeader";
 import { GrammarNotes } from "../flashcards/GrammarNotes";
 import { LanguageGate } from "../lang/LanguageGate";
 import { LanguageSwitch } from "../lang/LanguageSwitch";
@@ -37,22 +38,16 @@ function Sentence({
   const words = wordsForCard(id, lang);
   return (
     <main
-      className="mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pb-28 pt-6"
+      className="page-pad mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pt-6"
       data-lang={lang}
     >
-      <header className="flex items-center justify-between gap-3 text-sm">
-        <BackButton fallback={withLang("/vocabulary", lang)}>Back</BackButton>
-        <div className="flex items-center gap-3">
-          <Link
-            href={withLang("/flashcards", lang)}
-            className="font-semibold text-accent underline"
-          >
-            Continue flashcards
-          </Link>
-          <LanguageSwitch lang={lang} onSwitch={onSwitchLanguage} />
-        </div>
-      </header>
-      <h1 className="text-3xl font-bold">Sentence example</h1>
+      <BackButton fallback={withLang("/vocabulary", lang)}>Back</BackButton>
+      <PageHeader
+        eyebrow="Sentence"
+        title="Sentence example"
+        action={<LanguageSwitch lang={lang} onSwitch={onSwitchLanguage} />}
+        subtitle={<Link href={withLang("/flashcards", lang)} className="font-semibold text-accent">Continue flashcards →</Link>}
+      />
       {!card ? (
         <p
           role="status"
@@ -69,7 +64,7 @@ function Sentence({
           </Link>
         </p>
       ) : (
-        <article className="overflow-hidden rounded-3xl border border-border bg-white">
+        <article className="card overflow-hidden !rounded-[1.75rem]">
           <CardImage card={card} alt={card.cue} />
           <div className="p-6">
             <p lang={lang} className="text-2xl font-semibold">

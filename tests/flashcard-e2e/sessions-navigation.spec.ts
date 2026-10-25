@@ -22,13 +22,15 @@ test.describe("navigation", () => {
     page,
   }) => {
     for (const [path, tab] of [
-      ["/flashcards", "Flashcards"],
-      ["/quiz", "Quiz"],
+      ["/", "Today"],
+      ["/flashcards", "Practise"],
+      ["/quiz", "Practise"],
       ["/vocabulary", "Words"],
-      ["/sentences/shopping-01", null],
+      ["/stats", "Progress"],
+      ["/sentences/shopping-01", "Practise"],
     ] as const) {
       await page.goto(path);
-      for (const name of ["Home", "Flashcards", "Quiz", "Words"])
+      for (const name of ["Today", "Practise", "Words", "Progress"])
         await expect(
           nav(page).getByRole("link", { name: new RegExp(name) }),
         ).toBeVisible();
@@ -39,7 +41,7 @@ test.describe("navigation", () => {
     }
   });
 
-  test("the Quiz tab opens a session chooser (never an unrelated deck), and its links open that session's quiz", async ({
+  test("the quiz page opens a session chooser (never an unrelated deck), and its links open that session's quiz", async ({
     page,
   }) => {
     await page.goto("/quiz");
@@ -51,7 +53,7 @@ test.describe("navigation", () => {
     ).toBeVisible();
     await createSession(page, { count: 10, name: "Alpha" });
     await createSession(page, { count: 10, name: "Beta" });
-    await nav(page).getByRole("link", { name: /Quiz/ }).click();
+    await page.goto("/quiz");
     await expect(
       page.getByRole("heading", { name: "Quiz", exact: true }),
     ).toBeVisible();
@@ -82,7 +84,7 @@ test.describe("navigation", () => {
     await expect(
       page.getByRole("heading", { name: "Vocabulary", exact: true }),
     ).toBeVisible();
-    const back = nav(page).getByRole("link", { name: /Flashcards/ });
+    const back = nav(page).getByRole("link", { name: /Practise/ });
     await expect(back).toContainText("session in progress"); // the dot
     await back.click();
     await expect(page.getByTestId("continue")).toContainText("speaking");
@@ -159,7 +161,7 @@ test.describe("encouragement and explanations still work with sessions", () => {
     await expect(page.getByTestId("streak")).toContainText(
       "You practised today. Nice start!",
     );
-    await nav(page).getByRole("link", { name: /Quiz/ }).click();
+    await page.goto("/quiz");
     await page.goto("/");
     await expect(page.getByTestId("streak")).toContainText(
       "You practised today",

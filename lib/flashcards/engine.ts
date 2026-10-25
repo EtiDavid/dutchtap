@@ -3,6 +3,7 @@ import additions from '@/data/flashcard-additions.json';
 import moreAdditions from '@/data/flashcard-additions-2.json';
 import workplace from '@/data/workplace-cards.json';
 import grammarPatterns from '@/data/grammar-pattern-cards.json';
+import grammarReuseLinks from '@/data/grammar-reuse-links.json';
 export type Card = typeof rawCards[number] & {
   collection?: "everyday" | "workplace" | "grammar";
   difficulty?: string;
@@ -11,13 +12,34 @@ export type Card = typeof rawCards[number] & {
   imageStatus?: string;
   audioStatus?: string;
   adapted?: boolean;
+  originCardId?: string;
   quizMode?: string;
   quizBlank?: { index: number; acceptedAnswers: string[]; distractors: string[] };
 };
 export const EVERYDAY_CARDS: Card[] = [...rawCards, ...additions, ...moreAdditions];
 /** Everyday plus Dutch at Work: the 1,200 sentences that have breakdowns, families and model answers. */
 export const CORE_CARDS: Card[] = [...EVERYDAY_CARDS, ...workplace] as Card[];
-export const GRAMMAR_CARDS: Card[] = grammarPatterns as Card[];
+/** Explicit, editorially checked cross-collection grammar links.
+ * Each alias resolves its content from ONE original card; there is no second
+ * copy of the translated sentence/audio/image in a generated content file.
+ * The alias has a separate grammar-learning rating so Everyday mastery does
+ * not falsely imply mastery of the subordinate-clause pattern.
+ */
+const coreById = new Map(CORE_CARDS.map(c => [c.id,c]));
+export const GRAMMAR_REUSED_CARDS: Card[] = grammarReuseLinks.map(link => {
+  const source = coreById.get(link.sourceId);
+  if (!source) throw new Error("Missing grammar reuse source: " + link.sourceId);
+  return {
+    ...source,
+    id: `pat-${link.topic}-reuse-${source.id}`,
+    collection: "grammar",
+    category: link.topic,
+    originCardId: source.id,
+    imageStatus: source.imageStatus ?? (source.image ? undefined : "not-applicable"),
+    audioStatus: source.audioStatus ?? (source.audio ? undefined : "device")
+  } as Card;
+});
+export const GRAMMAR_CARDS: Card[] = [...grammarPatterns, ...GRAMMAR_REUSED_CARDS] as Card[];
 export const CARDS: Card[] = [...CORE_CARDS, ...GRAMMAR_CARDS];
 export const CATEGORIES = { shopping: 'Shopping', school: 'School', transport: 'Train & transport', home: 'Home', conversation: 'Conversation', administration: 'Administration', weather: 'Weather', food: 'Food & cafés', work: 'Work', health: 'Health', leisure: 'Leisure' };
 

@@ -86,6 +86,27 @@ for topic, group in by_topic.items():
                           'english': group[(i+j+2)%len(group)]['english']} for j in range(10)],
         }
 assert len(more) == 50 and len(cards) == 304, f"Unexpected number of cards: {len(cards)}"
+# Expanded separable verbs: forms are authored and reviewed individually.
+more_separable = J('data/editorial/grammar-separable-cards.json')
+for i, row in enumerate(more_separable):
+    cid = f"pat-separable-{25+i:02d}"
+    cards.append({
+        'id':cid,'category':'separable','collection':'grammar',
+        'dutch':row['dutch'],'english':row['english'],'scenario':row['scenario'],
+        'scenarioNl':row['scenarioNl'],'cue':row['scenario'],'grammar':row['why'],
+        'variation':more_separable[(i+1)%len(more_separable)]['dutch'],
+        'image':'','audio':'','quizMode':'order','imageStatus':'not-applicable','audioStatus':'device',
+        'difficulty':'intermediate','vocabularyIds':[],'review':row['review'],
+    })
+    related=[]
+    for step in range(1,100):
+        other=more_separable[(i+step*3+1)%len(more_separable)]
+        if other['dutch'] != row['dutch'] and other['dutch'] != more_separable[(i+1)%len(more_separable)]['dutch'] and all(x['dutch']!=other['dutch'] for x in related):
+            related.append({'dutch':other['dutch'],'english':other['english']})
+        if len(related)==10: break
+    assert len(related)==10, cid
+    notes[cid]={'rule':row['why']+' Focus on the lexical verb and the particle\'s position, not just the tense.','examples':related}
+assert len(more_separable)==128 and len(cards)==432, f"Expected 432 generated grammar cards, got {len(cards)}"
 assert len({c['dutch'].lower() for c in cards}) == len(cards), 'Duplicate grammar sentence'
 (ROOT / 'data/grammar-pattern-cards.json').write_text(json.dumps(cards, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 (ROOT / 'data/grammar-pattern-notes.json').write_text(json.dumps(notes, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')

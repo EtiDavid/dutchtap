@@ -11,10 +11,10 @@ DutchTap is a **Dutch and French sentence-learning app**, with real-world situat
 | --- | --- | --- |
 | Dutch Core and French | 600 Everyday + 600 Dutch at Work + 600 separate French Everyday cards | Preserve all IDs, assets, progress and independent language state |
 | Existing sessions and games | Fixed-card sessions, Study/Speaking/Quiz, de/het and demonstrative/adjective games | Full migration, offline and account-sync regression testing |
-| Grammar base cards | **432 authored + 53 reviewed source aliases = 485 playable grammar base cards across 13 topics** | Larger meaningful topic coverage, complete review and advanced topics |
+| Grammar base cards | **503 authored + 53 reviewed source aliases = 556 playable grammar base cards across 13 topics** | Larger meaningful topic coverage, complete review and advanced topics |
 | Topic-wide lessons | Five expanded v1.0 guides, the Als guide at v1.1, four foundational v0.8, three introductory v0.2 | Complete all lessons with accurate, accessible reasons and examples |
 | Individual sentence explanations | Initial grammar notes and limited ALS clause view | Bespoke, validated full structured word-order analysis for all grammar base cards |
-| Dutch-first speaking | **236/432** authored grammar cards include Dutch prompts | Remaining 196 authored and 53 aliases need real Dutch-first scenarios; uncued mixed retrieval |
+| Dutch-first speaking | **307/503** authored grammar cards include Dutch prompts | Remaining 196 authored and 53 aliases need real Dutch-first scenarios; uncued mixed retrieval |
 | Recognised alternatives | 58 new ALS authored cards provide two clause-order models | Explicit semantic validation and alternatives throughout other topics |
 | Extra grammar variations | **100** children across ten ALS parent families | Author and validate meaningful independent children where pedagogically justified |
 | Separable verbs | **52** distinct verb records; **152** practice cards | At least eight additional verified verbs and complete representative form coverage |

@@ -4,6 +4,24 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-26 — Claude Code continuation: P2 Omdat to 100 base cards with per-sentence analysis
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- Generator: `scripts/build-grammar-patterns.py` now reads one file per topic, `data/editorial/grammar-p2-<topic>.json`, and appends new ids after the topic's existing ones (never renumbering). Output stays deterministic.
+- Omdat: 71 new sentences (`data/editorial/grammar-p2-omdat.json`): 34 reason-first, 24 reason-after, 8 `want` contrast cards (two main clauses, tagged as contrast on purpose), 5 further varied cards. With the 20 legacy and 9 linked sentences that makes 100 base cards. Every card has a hand-authored analysis in `data/grammar-omdat-analysis.json` and a Dutch-first situation without a conjunction cue; the 20 legacy cards also got `situationEn` rewrites because their English scenario said "Explain using omdat".
+- Analysis infrastructure generalised: `lib/grammarAnalysis.ts` loads every topic file; records carry `sense` ("omdat = because", "want = for/because (coordinating)") and an optional `pattern: "coordinate"` for contrast cards. The clause map shows a generic sense chip (`topic-sense`).
+- Tests: `tests/grammar.analysis-topics.test.ts` (7 per topic, parameterised; coverage test requires every Omdat base card to have an analysis), `tests/flashcard-e2e/grammar-omdat-analysis.spec.ts`.
+
+**Evidence:** `npx tsc --noEmit` clean; `npx vitest run` (with local Mongo) 51 files, 386 tests passed; targeted browser specs (Omdat, ALS analysis, patterns) 9 passed. Full browser suite NOT re-run after this batch.
+
+**Counts:** Omdat parents 100 (20 legacy + 71 new + 9 linked); grammar cards 503 authored + 53 aliases = 556 playable; analysed sentences ALS 100 + Omdat 100; no interactive children for Omdat yet.
+
+**Known issues / open:** no native review; the 8 want cards repeat facts from legacy omdat cards by design (contrast pairs); one record carries an open question (pronoun 'hij' for 'de fout'); Omdat has no children; the Omdat lesson (v1.0) has not been re-fact-checked against sources as the Als lesson was.
+
+**Next specific task:** Dat to 100 (39 now), then Toen, Wanneer, V2/inversion, each with the same per-card analysis standard.
+
 ## 2026-10-26 — Claude Code continuation: P1 ALS per-sentence analysis (A03), lesson fact-check (A02), Dutch-first prompts (A05)
 
 **Branch / base:** `feat/grammar-mastery-completion` from `main` at `3c18067` (PR #16 merged; PR #15 already on main). Nothing pushed, merged, tagged or deployed.

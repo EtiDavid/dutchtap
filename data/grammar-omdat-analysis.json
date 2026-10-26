@@ -6203,6 +6203,1585 @@
         "english": "We take the bus because it is raining.",
         "note": "With omdat the clause becomes dependent; it looks identical here, but 'omdat het hard regent' would move the verb to the end."
       }
+    },
+    "pat-omdat-81": {
+      "status": "ai-editorial-checked",
+      "pattern": "coordinate",
+      "sense": {
+        "label": "want = for/because (coordinating)",
+        "why": "Want adds the reason as a second main clause: the speaker states the decision first, then the ground for it."
+      },
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik controleer de logs",
+          "subject": "Ik",
+          "finite": "controleer",
+          "why": "Ik is the first constituent, so the finite verb 'controleer' is second; 'de logs' is the object."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "want de server reageert niet",
+          "subject": "de server",
+          "finite": "reageert",
+          "why": "After 'want' the clause keeps verb-second order: the subject 'de server' is first and 'reageert' is second. 'Niet' follows the verb, it does not stand before it."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "controleer"
+        },
+        {
+          "label": "object",
+          "text": "de logs"
+        },
+        {
+          "label": "conjunction (coordinating)",
+          "text": "want"
+        },
+        {
+          "label": "subject",
+          "text": "de server"
+        },
+        {
+          "label": "finite verb",
+          "text": "reageert"
+        },
+        {
+          "label": "negation",
+          "text": "niet"
+        }
+      ],
+      "meaning": "You say that you are checking the logs and add why: the server does not respond.",
+      "order": "Compare this with 'omdat de server niet reageert': after omdat the verb 'reageert' moves behind 'niet'; after want it stays second and 'niet' follows it. One clause, two conjunctions, two orders.",
+      "forms": "controleren: ik controleer. reageren: de server reageert. Want needs a comma in front of it in writing. The negation 'niet' comes after the verb in a main clause.",
+      "compare": "English uses 'for' or 'because' without any change in word order. Dutch changes the order with omdat but not with want, so the learner has to choose the conjunction before the verb position is known.",
+      "mistakes": [
+        {
+          "wrong": "Ik controleer de logs, want de server niet reageert.",
+          "right": "Ik controleer de logs, want de server reageert niet.",
+          "why": "Want joins two main clauses, so 'reageert' stays second; 'niet reageert' is the pattern after omdat."
+        },
+        {
+          "wrong": "Ik controleer de logs, want reageert de server niet.",
+          "right": "Ik controleer de logs, want de server reageert niet.",
+          "why": "Nothing is fronted after want, so the subject comes first."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat de server niet reageert, controleer ik de logs.",
+        "english": "Because the server is not responding, I am checking the logs.",
+        "note": "With omdat in front, the dependent clause ends with 'reageert', and the main clause inverts to 'controleer ik'."
+      }
+    },
+    "pat-omdat-82": {
+      "status": "ai-editorial-checked",
+      "pattern": "coordinate",
+      "sense": {
+        "label": "want = for/because (coordinating)",
+        "why": "Want explains her tiredness in a second main clause with a perfect tense."
+      },
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Zij is moe",
+          "subject": "Zij",
+          "finite": "is",
+          "why": "Zij is first, so 'is' is second; the predicate 'moe' follows."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "want ze heeft weinig geslapen",
+          "subject": "ze",
+          "finite": "heeft",
+          "why": "After 'want' the order is normal: 'ze' first, 'heeft' second, and the participle 'geslapen' last. After omdat it would read 'ze weinig heeft geslapen'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Zij"
+        },
+        {
+          "label": "finite verb",
+          "text": "is"
+        },
+        {
+          "label": "predicate",
+          "text": "moe"
+        },
+        {
+          "label": "conjunction (coordinating)",
+          "text": "want"
+        },
+        {
+          "label": "subject",
+          "text": "ze"
+        },
+        {
+          "label": "finite verb (auxiliary)",
+          "text": "heeft"
+        },
+        {
+          "label": "adverb",
+          "text": "weinig"
+        },
+        {
+          "label": "past participle",
+          "text": "geslapen"
+        }
+      ],
+      "meaning": "You say that she is tired and add the reason: she slept little.",
+      "order": "The auxiliary 'heeft' is in position two of the second main clause and the participle 'geslapen' ends it, with 'weinig' in between. After want the clause has the same shape as a free-standing sentence.",
+      "forms": "slapen > geslapen (hebben). 'Heeft weinig geslapen' = slept little. 'Ze' and 'zij' are the same pronoun in two strengths.",
+      "compare": "English has 'for she slept little' in a literary register; Dutch 'want' is ordinary. In Dutch the verb positions tell you which conjunction was used.",
+      "mistakes": [
+        {
+          "wrong": "Zij is moe, want ze weinig heeft geslapen.",
+          "right": "Zij is moe, want ze heeft weinig geslapen.",
+          "why": "After want the finite verb stays in position two; the end-position order belongs to omdat."
+        },
+        {
+          "wrong": "Zij is moe, want heeft ze weinig geslapen.",
+          "right": "Zij is moe, want ze heeft weinig geslapen.",
+          "why": "Want does not front anything, so the subject 'ze' comes before the verb."
+        }
+      ],
+      "contrast": {
+        "dutch": "Zij is moe omdat ze weinig heeft geslapen.",
+        "english": "She is tired because she slept little.",
+        "note": "With omdat the dependent clause ends with the group 'heeft geslapen'."
+      }
+    },
+    "pat-omdat-83": {
+      "status": "ai-editorial-checked",
+      "pattern": "coordinate",
+      "sense": {
+        "label": "want = for/because (coordinating)",
+        "why": "Want gives the reason as a second main clause that contains a modal."
+      },
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Hij komt later",
+          "subject": "Hij",
+          "finite": "komt",
+          "why": "Hij is the first constituent, so the finite verb 'komt' is second; 'later' follows it."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "want hij moet nog werken",
+          "subject": "hij",
+          "finite": "moet",
+          "why": "After 'want' the modal 'moet' is second and the infinitive 'werken' closes the clause, with 'nog' between them. After omdat it would be 'hij nog moet werken'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Hij"
+        },
+        {
+          "label": "finite verb",
+          "text": "komt"
+        },
+        {
+          "label": "time adverb",
+          "text": "later"
+        },
+        {
+          "label": "conjunction (coordinating)",
+          "text": "want"
+        },
+        {
+          "label": "subject",
+          "text": "hij"
+        },
+        {
+          "label": "finite verb (modal)",
+          "text": "moet"
+        },
+        {
+          "label": "adverb",
+          "text": "nog"
+        },
+        {
+          "label": "infinitive",
+          "text": "werken"
+        }
+      ],
+      "meaning": "You say that he is coming later and add that he still has to work.",
+      "order": "Both clauses are main clauses with their own verb in position two. The second one, 'hij moet nog werken', shows modal plus infinitive in the normal main-clause order: the modal second, the infinitive last.",
+      "forms": "moeten: hij moet. werken: infinitive. 'Nog' = still. 'Want hij moet nog werken' versus 'omdat hij nog moet werken'.",
+      "compare": "English 'for he still has to work' uses 'has to'. Dutch uses the modal 'moet'. The English clause order never changes; Dutch moves the modal after omdat but not after want.",
+      "mistakes": [
+        {
+          "wrong": "Hij komt later, want hij nog moet werken.",
+          "right": "Hij komt later, want hij moet nog werken.",
+          "why": "After want the modal 'moet' stays in position two."
+        },
+        {
+          "wrong": "Hij komt later, want moet hij nog werken.",
+          "right": "Hij komt later, want hij moet nog werken.",
+          "why": "Nothing precedes the subject after want, so there is no inversion."
+        }
+      ],
+      "contrast": {
+        "dutch": "Hij komt later omdat hij nog moet werken.",
+        "english": "He is coming later because he still has to work.",
+        "note": "With omdat the modal group 'moet werken' moves to the end of the dependent clause."
+      }
+    },
+    "pat-omdat-84": {
+      "status": "ai-editorial-checked",
+      "pattern": "coordinate",
+      "sense": {
+        "label": "want = for/because (coordinating)",
+        "why": "Want supplies the reason you cannot talk now, as a spoken second sentence part."
+      },
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik bel je terug",
+          "subject": "Ik",
+          "finite": "bel",
+          "why": "Terugbellen is separable: 'bel ... terug' around the object 'je'."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "want ik zit nu in een vergadering",
+          "subject": "ik",
+          "finite": "zit",
+          "why": "After 'want' the order is subject first and 'zit' second; 'nu' and 'in een vergadering' follow the verb. After omdat the verb 'zit' would be last."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "bel"
+        },
+        {
+          "label": "object",
+          "text": "je"
+        },
+        {
+          "label": "separable particle",
+          "text": "terug"
+        },
+        {
+          "label": "conjunction (coordinating)",
+          "text": "want"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "zit"
+        },
+        {
+          "label": "time adverb",
+          "text": "nu"
+        },
+        {
+          "label": "place phrase",
+          "text": "in een vergadering"
+        }
+      ],
+      "meaning": "You say that you will call back, because you are in a meeting right now.",
+      "order": "The first clause splits the separable verb: bel ... terug. The second clause keeps 'zit' in position two. This is how a speaker quickly gives a reason on the phone.",
+      "forms": "terugbellen = terug + bellen. zitten: ik zit (to sit; 'in een vergadering zitten' = to be in a meeting). 'Nu' = now.",
+      "compare": "English 'I will call you back, as I am in a meeting' keeps the verb after the subject. In Dutch the position tells which conjunction you chose.",
+      "mistakes": [
+        {
+          "wrong": "Ik bel je terug, want ik nu in een vergadering zit.",
+          "right": "Ik bel je terug, want ik zit nu in een vergadering.",
+          "why": "After want the verb stays second; the verb-last order belongs to omdat."
+        },
+        {
+          "wrong": "Ik terugbel je, want ik zit nu in een vergadering.",
+          "right": "Ik bel je terug, want ik zit nu in een vergadering.",
+          "why": "A separable verb splits in a main clause: 'bel' second, 'terug' last."
+        }
+      ],
+      "contrast": {
+        "dutch": "Ik bel je terug omdat ik nu in een vergadering zit.",
+        "english": "I will call you back because I am in a meeting now.",
+        "note": "With omdat the dependent clause ends with 'zit', behind 'nu in een vergadering'."
+      }
+    },
+    "pat-omdat-85": {
+      "status": "ai-editorial-checked",
+      "pattern": "coordinate",
+      "sense": {
+        "label": "want = for/because (coordinating)",
+        "why": "Want explains the closed shop with a short second main clause."
+      },
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "De winkel is dicht",
+          "subject": "De winkel",
+          "finite": "is",
+          "why": "The subject comes first, so 'is' is second; 'dicht' is the predicate."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "want het is feestdag",
+          "subject": "het",
+          "finite": "is",
+          "why": "After 'want' the clause keeps 'het is feestdag' in verb-second order. After omdat it would be 'het feestdag is'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "De winkel"
+        },
+        {
+          "label": "finite verb",
+          "text": "is"
+        },
+        {
+          "label": "predicate",
+          "text": "dicht"
+        },
+        {
+          "label": "conjunction (coordinating)",
+          "text": "want"
+        },
+        {
+          "label": "subject (empty)",
+          "text": "het"
+        },
+        {
+          "label": "finite verb",
+          "text": "is"
+        },
+        {
+          "label": "predicate noun",
+          "text": "feestdag"
+        }
+      ],
+      "meaning": "You say that the shop is closed, and add: it is a public holiday.",
+      "order": "Both clauses have 'is' in position two. This pair is the easiest way to see what 'want' does: nothing. The second clause could stand alone as a sentence. The same words with omdat have 'is' last.",
+      "forms": "zijn: is in both clauses. 'Feestdag' is the predicate noun after 'is', without an article. 'Dicht' = closed.",
+      "compare": "English 'the shop is closed, for it is a holiday' does not change anything between the clauses. In Dutch the two 'is' forms keep the same position, which is exactly what marks 'want'.",
+      "mistakes": [
+        {
+          "wrong": "De winkel is dicht, want het feestdag is.",
+          "right": "De winkel is dicht, want het is feestdag.",
+          "why": "After want the verb stays second; it moves to the end only after omdat."
+        },
+        {
+          "wrong": "De winkel is dicht, want is het feestdag.",
+          "right": "De winkel is dicht, want het is feestdag.",
+          "why": "No fronting after want: the subject 'het' comes first."
+        }
+      ],
+      "contrast": {
+        "dutch": "De winkel is dicht omdat het feestdag is.",
+        "english": "The shop is closed because it is a public holiday.",
+        "note": "With omdat the dependent clause has 'is' at the end."
+      }
+    },
+    "pat-omdat-86": {
+      "status": "ai-editorial-checked",
+      "pattern": "coordinate",
+      "sense": {
+        "label": "want = for/because (coordinating)",
+        "why": "Want gives the reason for the wait in a clause that keeps main-clause order."
+      },
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "We wachten even",
+          "subject": "We",
+          "finite": "wachten",
+          "why": "We is first, so 'wachten' is second; 'even' (for a moment) follows."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "want de dokter is nog bezig",
+          "subject": "de dokter",
+          "finite": "is",
+          "why": "After 'want' the order is subject, then 'is' in second place, then 'nog bezig'. After omdat the verb 'is' would close the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "We"
+        },
+        {
+          "label": "finite verb",
+          "text": "wachten"
+        },
+        {
+          "label": "adverb",
+          "text": "even"
+        },
+        {
+          "label": "conjunction (coordinating)",
+          "text": "want"
+        },
+        {
+          "label": "subject",
+          "text": "de dokter"
+        },
+        {
+          "label": "finite verb",
+          "text": "is"
+        },
+        {
+          "label": "adverb",
+          "text": "nog"
+        },
+        {
+          "label": "predicate",
+          "text": "bezig"
+        }
+      ],
+      "meaning": "You say that you are waiting a moment, because the doctor is still busy.",
+      "order": "The second clause is a normal statement. Compare 'omdat de dokter nog bezig is': there the whole group 'nog bezig is' is at the end. With want, 'is' stays directly after the subject.",
+      "forms": "wachten: wij wachten. zijn: de dokter is. 'Even' = for a moment. 'Bezig zijn' = to be busy.",
+      "compare": "English 'for the doctor is still busy' keeps order. Dutch 'want' also keeps order, whereas 'omdat' changes it.",
+      "mistakes": [
+        {
+          "wrong": "We wachten even, want de dokter nog bezig is.",
+          "right": "We wachten even, want de dokter is nog bezig.",
+          "why": "After want the finite verb 'is' stays in position two; omdat would send it to the end."
+        },
+        {
+          "wrong": "We wachten even, want is de dokter nog bezig.",
+          "right": "We wachten even, want de dokter is nog bezig.",
+          "why": "No inversion after want: the subject comes first."
+        }
+      ],
+      "contrast": {
+        "dutch": "We wachten even omdat de dokter nog bezig is.",
+        "english": "We are waiting a moment because the doctor is still busy.",
+        "note": "With omdat the verb 'is' moves to the end of the dependent clause."
+      }
+    },
+    "pat-omdat-87": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The passed test is the condition-turned-cause that lets installation start."
+      },
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Omdat de test is geslaagd",
+          "subject": "de test",
+          "finite": "is",
+          "why": "'Is geslaagd' is the group (zijn plus participle) at the end. Slagen forms its perfect with zijn."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "kan de installatie beginnen",
+          "subject": "de installatie",
+          "finite": "kan",
+          "why": "The omdat-clause is position one, so the modal 'kan' comes before its noun-phrase subject 'de installatie'. The infinitive 'beginnen' closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Omdat"
+        },
+        {
+          "label": "subject",
+          "text": "de test"
+        },
+        {
+          "label": "finite verb (auxiliary)",
+          "text": "is"
+        },
+        {
+          "label": "past participle",
+          "text": "geslaagd"
+        },
+        {
+          "label": "finite verb (modal)",
+          "text": "kan"
+        },
+        {
+          "label": "subject",
+          "text": "de installatie"
+        },
+        {
+          "label": "infinitive",
+          "text": "beginnen"
+        }
+      ],
+      "meaning": "You say that the installation can now start, because the test has passed.",
+      "order": "After the fronted reason the modal comes second, before the whole subject phrase 'de installatie', and the infinitive ends the sentence. The structure 'kan + noun phrase + infinitive' is typical of inversion with a modal.",
+      "forms": "slagen > geslaagd (zijn). kunnen: de installatie kan. beginnen: infinitive after the modal. 'Geslaagd' also means 'succeeded'.",
+      "compare": "English 'the installation can begin' keeps the subject before 'can'; Dutch has 'kan de installatie beginnen' after the front clause.",
+      "mistakes": [
+        {
+          "wrong": "Omdat de test is geslaagd, de installatie kan beginnen.",
+          "right": "Omdat de test is geslaagd, kan de installatie beginnen.",
+          "why": "Behind the fronted test clause the modal 'kan' must precede the noun phrase 'de installatie'."
+        },
+        {
+          "wrong": "Omdat de test heeft geslaagd, kan de installatie beginnen.",
+          "right": "Omdat de test is geslaagd, kan de installatie beginnen.",
+          "why": "Slagen forms its perfect tense with zijn, so the auxiliary is 'is'; 'heeft geslaagd' is not used."
+        }
+      ],
+      "contrast": {
+        "dutch": "De installatie kan beginnen omdat de test is geslaagd.",
+        "english": "The installation can begin because the test has passed.",
+        "note": "Main clause first: the noun-phrase subject opens the sentence, so the modal 'kan' is simply second."
+      }
+    },
+    "pat-omdat-88": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The recent move is the reason you do not know the area."
+      },
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Omdat ik net verhuisd ben",
+          "subject": "ik",
+          "finite": "ben",
+          "why": "'Net' (just) stands before the participle 'verhuisd', and 'ben' closes the clause. Verhuizen takes zijn."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "ken ik de buurt nog niet goed",
+          "subject": "ik",
+          "finite": "ken",
+          "why": "The omdat-clause is position one, so 'ken' precedes 'ik'. 'Nog niet goed' (not yet well) follows the object 'de buurt'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Omdat"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "adverb",
+          "text": "net"
+        },
+        {
+          "label": "past participle",
+          "text": "verhuisd"
+        },
+        {
+          "label": "finite verb (auxiliary)",
+          "text": "ben"
+        },
+        {
+          "label": "finite verb",
+          "text": "ken"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object",
+          "text": "de buurt"
+        },
+        {
+          "label": "adverb phrase",
+          "text": "nog niet goed"
+        }
+      ],
+      "meaning": "You say that you do not know the neighbourhood well yet, because you have only just moved.",
+      "order": "The recent past ('net verhuisd ben') comes first as the reason. The main clause inverts to 'ken ik' and ends with the adverb phrase 'nog niet goed'.",
+      "forms": "verhuizen > verhuisd (zijn). kennen: ik ken. 'De buurt' = the neighbourhood. 'Net' (just) marks something that happened a moment ago.",
+      "compare": "English 'because I have only just moved' uses 'only just'; Dutch uses 'net'. English 'I do not know' needs 'do not'; Dutch puts 'nog niet goed' after the object.",
+      "mistakes": [
+        {
+          "wrong": "Omdat ik net verhuisd ben, ik ken de buurt nog niet goed.",
+          "right": "Omdat ik net verhuisd ben, ken ik de buurt nog niet goed.",
+          "why": "The main verb is second after the fronted clause."
+        },
+        {
+          "wrong": "Omdat ik net ben verhuisd, ken ik de buurt nog niet goed.",
+          "right": "Omdat ik net verhuisd ben, ken ik de buurt nog niet goed.",
+          "why": "This card keeps the participle before the auxiliary; both orders are heard in practice, but not 'ben' before 'net'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Ik ken de buurt nog niet goed omdat ik net verhuisd ben.",
+        "english": "I do not know the neighbourhood well yet because I have only just moved.",
+        "note": "Main clause first: subject-first 'Ik ken'."
+      }
+    },
+    "pat-omdat-89": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The accident is the cause of the new route."
+      },
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "We gebruiken een andere route",
+          "subject": "We",
+          "finite": "gebruiken",
+          "why": "We is first, so 'gebruiken' is second; 'een andere route' is the object."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat er een ongeluk is gebeurd",
+          "subject": "een ongeluk",
+          "finite": "is",
+          "why": "'Er' introduces the indefinite subject 'een ongeluk' (an accident). The perfect group 'is gebeurd' closes the clause; gebeuren takes zijn."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "We"
+        },
+        {
+          "label": "finite verb",
+          "text": "gebruiken"
+        },
+        {
+          "label": "object",
+          "text": "een andere route"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "placeholder subject",
+          "text": "er"
+        },
+        {
+          "label": "subject",
+          "text": "een ongeluk"
+        },
+        {
+          "label": "finite verb (auxiliary)",
+          "text": "is"
+        },
+        {
+          "label": "past participle",
+          "text": "gebeurd"
+        }
+      ],
+      "meaning": "You explain that you are taking another route, because there has been an accident.",
+      "order": "The dependent clause begins with 'er' and the real subject follows. The group 'is gebeurd' ends the clause, so the finite 'is' is not last.",
+      "forms": "gebeuren > gebeurd (zijn). 'Een ongeluk' is a het-word: een ongeluk. 'Een andere route': 'andere' with -e before a de-word. 'Er' is the placeholder subject.",
+      "compare": "English 'because there has been an accident' uses 'there has been'; Dutch 'er is ... gebeurd' uses the same placeholder. English keeps 'has been' next to 'there'; Dutch moves the group to the end.",
+      "mistakes": [
+        {
+          "wrong": "We gebruiken een andere route omdat er is een ongeluk gebeurd.",
+          "right": "We gebruiken een andere route omdat er een ongeluk is gebeurd.",
+          "why": "In the dependent clause the subject comes before the verb group."
+        },
+        {
+          "wrong": "We gebruiken een andere route omdat er een ongeluk heeft gebeurd.",
+          "right": "We gebruiken een andere route omdat er een ongeluk is gebeurd.",
+          "why": "Gebeuren forms its perfect with zijn, so 'is gebeurd' is the correct group."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat er een ongeluk is gebeurd, gebruiken we een andere route.",
+        "english": "Because there has been an accident, we are using another route.",
+        "note": "Reason first: the main clause inverts to 'gebruiken we een andere route'."
+      }
+    },
+    "pat-omdat-90": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The lack of space is the reason you had to wait outside, told in the past."
+      },
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Omdat er geen plaats meer was",
+          "subject": "geen plaats",
+          "finite": "was",
+          "why": "'Er' introduces the negated subject 'geen plaats meer' (no room left); the past verb 'was' closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "moesten we buiten wachten",
+          "subject": "we",
+          "finite": "moesten",
+          "why": "The omdat-clause is position one, so the past modal 'moesten' precedes 'we'. 'Buiten' (outside) comes before the infinitive 'wachten', which closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Omdat"
+        },
+        {
+          "label": "placeholder subject",
+          "text": "er"
+        },
+        {
+          "label": "negated subject",
+          "text": "geen plaats"
+        },
+        {
+          "label": "adverb",
+          "text": "meer"
+        },
+        {
+          "label": "finite verb",
+          "text": "was"
+        },
+        {
+          "label": "finite verb (modal)",
+          "text": "moesten"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "place adverb",
+          "text": "buiten"
+        },
+        {
+          "label": "infinitive",
+          "text": "wachten"
+        }
+      ],
+      "meaning": "You say that you had to wait outside, because there was no room left.",
+      "order": "The past reason uses 'er ... was'. The main clause inverts with a past modal: 'moesten we', and the infinitive 'wachten' ends it after 'buiten'.",
+      "forms": "moeten, past plural: moesten. zijn, past: was. 'Geen plaats meer' = no room any more. 'Er was' = there was.",
+      "compare": "English 'we had to wait' uses 'had to'. Dutch uses the past modal 'moesten'. English 'there was no room' uses 'there'; Dutch uses 'er' as well.",
+      "mistakes": [
+        {
+          "wrong": "Omdat er geen plaats meer was, we moesten buiten wachten.",
+          "right": "Omdat er geen plaats meer was, moesten we buiten wachten.",
+          "why": "Position one is taken by the whole reason clause, so 'moesten' stands before 'we' in the main clause."
+        },
+        {
+          "wrong": "Omdat er geen plaats meer was, moesten we wachten buiten.",
+          "right": "Omdat er geen plaats meer was, moesten we buiten wachten.",
+          "why": "The infinitive 'wachten' ends the main clause; 'buiten' comes before it."
+        }
+      ],
+      "contrast": {
+        "dutch": "We moesten buiten wachten omdat er geen plaats meer was.",
+        "english": "We had to wait outside because there was no room left.",
+        "note": "Main clause first: subject-first 'We moesten ... wachten'."
+      }
+    },
+    "pat-omdat-91": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "Being in a meeting now is why the call is postponed."
+      },
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik zal later bellen",
+          "subject": "Ik",
+          "finite": "zal",
+          "why": "The modal 'zal' (will) is second; 'later' follows and the infinitive 'bellen' closes the main clause."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat ik nu in een vergadering zit",
+          "subject": "ik",
+          "finite": "zit",
+          "why": "'Nu' and 'in een vergadering' stand before the finite verb 'zit', which closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb (modal)",
+          "text": "zal"
+        },
+        {
+          "label": "time adverb",
+          "text": "later"
+        },
+        {
+          "label": "infinitive",
+          "text": "bellen"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "time adverb",
+          "text": "nu"
+        },
+        {
+          "label": "place phrase",
+          "text": "in een vergadering"
+        },
+        {
+          "label": "finite verb",
+          "text": "zit"
+        }
+      ],
+      "meaning": "You say that you will phone later because you are in a meeting right now.",
+      "order": "The main clause uses 'zal' with an infinitive for a promise. The dependent clause puts 'nu in een vergadering' in front of 'zit'. The sentence contrasts 'later' and 'nu'.",
+      "forms": "zullen: ik zal. bellen: infinitive. zitten: ik zit. 'In een vergadering zitten' = to be in a meeting.",
+      "compare": "English 'I will call later' uses 'will'; Dutch 'ik zal later bellen' can also be 'ik bel later'. English 'I am in a meeting' keeps 'am' second; Dutch ends with 'zit'.",
+      "mistakes": [
+        {
+          "wrong": "Ik zal later bellen omdat ik zit nu in een vergadering.",
+          "right": "Ik zal later bellen omdat ik nu in een vergadering zit.",
+          "why": "After omdat the finite verb goes behind 'nu in een vergadering'."
+        },
+        {
+          "wrong": "Ik zal bellen later omdat ik nu in een vergadering zit.",
+          "right": "Ik zal later bellen omdat ik nu in een vergadering zit.",
+          "why": "The infinitive 'bellen' closes the main clause; 'later' comes before it."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat ik nu in een vergadering zit, zal ik later bellen.",
+        "english": "Because I am in a meeting now, I will call later.",
+        "note": "Reason first: the main clause inverts to 'zal ik later bellen'."
+      }
+    },
+    "pat-omdat-reuse-career-meetings-023": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "Missing data is the cause of the delay in the schedule."
+      },
+      "situationNl": "Een project loopt achter op de planning. Je teamleider vraagt je wat de oorzaak is. Geef een korte uitleg.",
+      "situationEn": "A project is behind schedule and your team leader asks you what the cause is. Give a short explanation.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "De planning loopt uit",
+          "subject": "De planning",
+          "finite": "loopt",
+          "why": "The subject comes first, so 'loopt' is second. Uitlopen (to overrun) is separable: the particle 'uit' closes the main clause."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat de gegevens ontbreken",
+          "subject": "de gegevens",
+          "finite": "ontbreken",
+          "why": "'Gegevens' is plural, so the verb is 'ontbreken', and it closes the sentence."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "De planning"
+        },
+        {
+          "label": "finite verb",
+          "text": "loopt"
+        },
+        {
+          "label": "separable particle",
+          "text": "uit"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "subject",
+          "text": "de gegevens"
+        },
+        {
+          "label": "finite verb",
+          "text": "ontbreken"
+        }
+      ],
+      "meaning": "You explain that the schedule is slipping because the data is missing.",
+      "order": "The main clause splits uitlopen: 'loopt ... uit' (here with no words between). The dependent clause has only a subject and a verb, with 'ontbreken' last.",
+      "forms": "uitlopen = uit + lopen: de planning loopt uit. ontbreken is inseparable (ont-). 'Gegevens' is a plural-only noun.",
+      "compare": "English 'the schedule is slipping' uses a different verb. Dutch uses 'uitlopen', which also means a meeting going over time. English 'the data is missing' treats data as singular; Dutch has a plural verb.",
+      "mistakes": [
+        {
+          "wrong": "De planning uitloopt omdat de gegevens ontbreken.",
+          "right": "De planning loopt uit omdat de gegevens ontbreken.",
+          "why": "A separable verb splits in a main clause: 'loopt' second, 'uit' last."
+        },
+        {
+          "wrong": "De planning loopt uit omdat de gegevens ontbreekt.",
+          "right": "De planning loopt uit omdat de gegevens ontbreken.",
+          "why": "The plural subject 'gegevens' needs the plural verb."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat de gegevens ontbreken, loopt de planning uit.",
+        "english": "Because the data is missing, the schedule is slipping.",
+        "note": "Reason first: the main clause inverts to 'loopt de planning uit'."
+      }
+    },
+    "pat-omdat-reuse-career-office-053": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The newcomer's need for guidance is the reason for coming to the office."
+      },
+      "situationNl": "Je werkt meestal van thuis uit, maar morgen kom je naar kantoor. Een collega vraagt wat de aanleiding is.",
+      "situationEn": "You usually work from home but will come to the office tomorrow, and a colleague asks what the occasion is.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik kom morgen naar kantoor",
+          "subject": "Ik",
+          "finite": "kom",
+          "why": "Ik is first, so 'kom' is second. 'Morgen' and 'naar kantoor' follow."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat de nieuwe medewerker begeleiding nodig heeft",
+          "subject": "de nieuwe medewerker",
+          "finite": "heeft",
+          "why": "'Begeleiding nodig hebben' (to need guidance): the object and 'nodig' stand before the finite verb 'heeft', which closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "kom"
+        },
+        {
+          "label": "time adverb",
+          "text": "morgen"
+        },
+        {
+          "label": "direction",
+          "text": "naar kantoor"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "subject",
+          "text": "de nieuwe medewerker"
+        },
+        {
+          "label": "object",
+          "text": "begeleiding"
+        },
+        {
+          "label": "predicate",
+          "text": "nodig"
+        },
+        {
+          "label": "finite verb",
+          "text": "heeft"
+        }
+      ],
+      "meaning": "You say that you are coming to the office tomorrow because the new employee needs guidance.",
+      "order": "The main clause has two adverbials after the verb. The dependent clause has a longer subject with an adjective, and then the pair 'begeleiding nodig' before 'heeft'.",
+      "forms": "komen: ik kom. 'Naar kantoor' (no article) = to the office. 'Nodig hebben' = to need. 'De nieuwe medewerker': -e on the adjective after 'de'.",
+      "compare": "English 'needs guidance' is one verb; Dutch 'begeleiding nodig heeft' uses two words and the verb 'hebben'. English says 'to the office' with 'the'; Dutch 'naar kantoor' drops the article.",
+      "mistakes": [
+        {
+          "wrong": "Ik kom morgen naar kantoor omdat de nieuwe medewerker heeft begeleiding nodig.",
+          "right": "Ik kom morgen naar kantoor omdat de nieuwe medewerker begeleiding nodig heeft.",
+          "why": "After omdat 'heeft' goes behind the object and 'nodig'."
+        },
+        {
+          "wrong": "Ik kom morgen naar het kantoor omdat de nieuwe medewerker begeleiding nodig heeft.",
+          "right": "Ik kom morgen naar kantoor omdat de nieuwe medewerker begeleiding nodig heeft.",
+          "why": "'Naar kantoor' is the usual way to say you are going to work at the office."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat de nieuwe medewerker begeleiding nodig heeft, kom ik morgen naar kantoor.",
+        "english": "Because the new employee needs guidance, I am coming to the office tomorrow.",
+        "note": "Reason first: the main clause inverts to 'kom ik morgen naar kantoor'."
+      }
+    },
+    "pat-omdat-reuse-career-priorities-007": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "Several blocked teams justify tackling this problem first: the reason supports a priority decision."
+      },
+      "situationNl": "Verschillende teams komen niet verder. Je legt aan je manager uit waarom jullie dit probleem eerst oplossen.",
+      "situationEn": "Several teams are stuck. You explain to your manager why you are tackling this problem first.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Omdat meerdere teams vastzitten",
+          "subject": "meerdere teams",
+          "finite": "vastzitten",
+          "why": "Vastzitten (to be stuck) is separable, but in a dependent clause it is joined: 'vastzitten' with a plural subject. It closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "pakken we dit probleem eerst aan",
+          "subject": "we",
+          "finite": "pakken",
+          "why": "The omdat-clause is position one, so 'pakken' precedes 'we'. Aanpakken (to tackle) is separable: the particle 'aan' closes the clause, behind 'dit probleem eerst'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Omdat"
+        },
+        {
+          "label": "subject",
+          "text": "meerdere teams"
+        },
+        {
+          "label": "finite verb (joined)",
+          "text": "vastzitten"
+        },
+        {
+          "label": "finite verb",
+          "text": "pakken"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "object",
+          "text": "dit probleem"
+        },
+        {
+          "label": "adverb",
+          "text": "eerst"
+        },
+        {
+          "label": "separable particle",
+          "text": "aan"
+        }
+      ],
+      "meaning": "You say that, since several teams are stuck, you tackle this problem first.",
+      "order": "Two separable verbs, one in each clause: joined in the dependent clause ('vastzitten'), split in the main clause ('pakken ... aan'). The main verb inverts because the dependent clause is in front.",
+      "forms": "vastzitten = vast + zitten: de teams zitten vast / ... vastzitten. aanpakken = aan + pakken: wij pakken aan. 'Meerdere' = several. 'Dit probleem' (het-word: dit).",
+      "compare": "English 'are stuck' and 'tackle' have no splitting. Dutch has to decide for each verb whether it is split or joined: split in main clauses, joined in dependent ones.",
+      "mistakes": [
+        {
+          "wrong": "Omdat meerdere teams zitten vast, pakken we dit probleem eerst aan.",
+          "right": "Omdat meerdere teams vastzitten, pakken we dit probleem eerst aan.",
+          "why": "In the dependent clause the separable verb is one word."
+        },
+        {
+          "wrong": "Omdat meerdere teams vastzitten, aanpakken we dit probleem eerst.",
+          "right": "Omdat meerdere teams vastzitten, pakken we dit probleem eerst aan.",
+          "why": "In the main clause the separable verb splits: 'pakken' second, 'aan' last."
+        }
+      ],
+      "contrast": {
+        "dutch": "We pakken dit probleem eerst aan omdat meerdere teams vastzitten.",
+        "english": "We are tackling this problem first because several teams are stuck.",
+        "note": "Main clause first: subject-first 'We pakken ... aan', and the joined 'vastzitten' ends the sentence."
+      }
+    },
+    "pat-omdat-reuse-career-priorities-025": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "Not knowing the application is the reason you ask for advice."
+      },
+      "situationNl": "Je moet met een nieuw programma werken en je weet niet goed hoe. Zeg tegen een collega wat je doet en wat daar de reden voor is.",
+      "situationEn": "You have to work with a new program and do not know how. Tell a colleague what you do and the reason.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik vraag advies",
+          "subject": "Ik",
+          "finite": "vraag",
+          "why": "Ik is first, so 'vraag' is second; 'advies' (advice) is the object."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat ik deze toepassing nog niet ken",
+          "subject": "ik",
+          "finite": "ken",
+          "why": "The object 'deze toepassing' and 'nog niet' stand before the finite verb 'ken', which closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "vraag"
+        },
+        {
+          "label": "object",
+          "text": "advies"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object",
+          "text": "deze toepassing"
+        },
+        {
+          "label": "adverb",
+          "text": "nog"
+        },
+        {
+          "label": "negation",
+          "text": "niet"
+        },
+        {
+          "label": "finite verb",
+          "text": "ken"
+        }
+      ],
+      "meaning": "You say that you ask for advice because you do not know this application yet.",
+      "order": "A short main clause, then a dependent clause that ends with 'ken' after the object and 'nog niet'. 'Deze' is the demonstrative for a de-word.",
+      "forms": "vragen: ik vraag. kennen: ik ken (to know something or someone). 'Toepassing' is a de-word, so 'deze'. 'Nog niet' = not yet.",
+      "compare": "English 'because I do not know this application yet' uses 'do not'; Dutch puts 'nog niet' before the verb. 'Know' (kennen) is used for things you are familiar with; 'weten' for facts.",
+      "mistakes": [
+        {
+          "wrong": "Ik vraag advies omdat ik ken deze toepassing nog niet.",
+          "right": "Ik vraag advies omdat ik deze toepassing nog niet ken.",
+          "why": "After omdat the object and 'nog niet' come before the verb."
+        },
+        {
+          "wrong": "Ik vraag advies omdat ik deze toepassing nog niet weet.",
+          "right": "Ik vraag advies omdat ik deze toepassing nog niet ken.",
+          "why": "Dutch uses 'kennen' for being familiar with a thing; 'weten' is for facts."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat ik deze toepassing nog niet ken, vraag ik advies.",
+        "english": "Because I do not know this application yet, I am asking for advice.",
+        "note": "Reason first: the main clause inverts to 'vraag ik advies'."
+      }
+    },
+    "pat-omdat-reuse-career-priorities-032": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "Incomplete data is the cause of the longer duration of the check."
+      },
+      "situationNl": "Een controle neemt meer tijd in beslag dan gepland. Een collega vraagt hoe dat komt. Geef de oorzaak.",
+      "situationEn": "A check is taking longer than planned and a colleague asks why. Give the cause.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "De controle duurt langer",
+          "subject": "De controle",
+          "finite": "duurt",
+          "why": "The subject comes first, so 'duurt' is second; 'langer' (longer) follows."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat de gegevens onvolledig zijn",
+          "subject": "de gegevens",
+          "finite": "zijn",
+          "why": "'Gegevens' is plural, so the verb is 'zijn'. The predicate 'onvolledig' stands before it, and 'zijn' closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "De controle"
+        },
+        {
+          "label": "finite verb",
+          "text": "duurt"
+        },
+        {
+          "label": "adverb (comparative)",
+          "text": "langer"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "subject",
+          "text": "de gegevens"
+        },
+        {
+          "label": "predicate",
+          "text": "onvolledig"
+        },
+        {
+          "label": "finite verb",
+          "text": "zijn"
+        }
+      ],
+      "meaning": "You say that the check is taking longer, because the data is incomplete.",
+      "order": "A statement with a comparative, then a dependent clause that ends in the plural 'zijn' behind 'onvolledig'. The pattern is subject, predicate, finite verb.",
+      "forms": "duren: de controle duurt. 'Langer' is the comparative of lang (longer). zijn: de gegevens zijn. 'Onvolledig' = incomplete.",
+      "compare": "English 'is taking longer' uses 'take'; Dutch uses 'duren' (to last). English 'data is' uses a singular verb; Dutch 'gegevens zijn' uses the plural.",
+      "mistakes": [
+        {
+          "wrong": "De controle duurt langer omdat de gegevens zijn onvolledig.",
+          "right": "De controle duurt langer omdat de gegevens onvolledig zijn.",
+          "why": "The predicate 'onvolledig' belongs in front of 'zijn' once omdat has turned the clause into a dependent one."
+        },
+        {
+          "wrong": "De controle duurt langer omdat de gegevens onvolledig is.",
+          "right": "De controle duurt langer omdat de gegevens onvolledig zijn.",
+          "why": "'Gegevens' is plural, so it takes 'zijn'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat de gegevens onvolledig zijn, duurt de controle langer.",
+        "english": "Because the data is incomplete, the check is taking longer.",
+        "note": "Reason first: the main clause inverts to 'duurt de controle langer'."
+      }
+    },
+    "pat-omdat-reuse-career-problems-038": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The irregular occurrence of the error is the reason it cannot be reproduced on demand."
+      },
+      "situationNl": "Een fout komt maar soms voor en je collega vraagt of je hem kunt tonen. Leg uit wat het probleem is bij het reproduceren.",
+      "situationEn": "An error appears only occasionally and a colleague asks you to demonstrate it. Explain what the difficulty is with reproducing it.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik kan de fout niet altijd herhalen",
+          "subject": "Ik",
+          "finite": "kan",
+          "why": "The modal 'kan' is second. 'De fout niet altijd' stands before the infinitive 'herhalen', which closes the main clause."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat hij onregelmatig optreedt",
+          "subject": "hij",
+          "finite": "optreedt",
+          "why": "Optreden (to occur) is separable, but it joins in a dependent clause: 'optreedt'. The adverb 'onregelmatig' stands before it. 'Hij' refers to the masculine noun 'de fout'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb (modal)",
+          "text": "kan"
+        },
+        {
+          "label": "object",
+          "text": "de fout"
+        },
+        {
+          "label": "negation",
+          "text": "niet"
+        },
+        {
+          "label": "adverb",
+          "text": "altijd"
+        },
+        {
+          "label": "infinitive",
+          "text": "herhalen"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "subject (pronoun)",
+          "text": "hij"
+        },
+        {
+          "label": "adverb",
+          "text": "onregelmatig"
+        },
+        {
+          "label": "finite verb (joined)",
+          "text": "optreedt"
+        }
+      ],
+      "meaning": "You say that you cannot always reproduce the error, because it occurs irregularly.",
+      "order": "The main clause has a modal and an infinitive, with 'niet altijd' between the object and the infinitive. The dependent clause is short: pronoun, adverb, and the joined verb 'optreedt'.",
+      "forms": "optreden = op + treden: de fout treedt op / ... optreedt. herhalen: infinitive after the modal. 'Hij' refers to 'de fout' (a de-word); Dutch uses 'hij' for masculine and common-gender nouns referring to things in the standard language.",
+      "compare": "English 'it occurs irregularly' uses 'it'; Dutch 'hij' reflects the gender of 'fout' in some speech. English 'cannot always' is one block; Dutch splits 'kan', 'niet altijd' and the infinitive.",
+      "openQuestions": [
+        "Whether 'hij' (rather than 'het') is the most natural pronoun for 'de fout' in Belgian Dutch: confirm with a native reviewer."
+      ],
+      "mistakes": [
+        {
+          "wrong": "Ik kan de fout niet altijd herhalen omdat hij onregelmatig treedt op.",
+          "right": "Ik kan de fout niet altijd herhalen omdat hij onregelmatig optreedt.",
+          "why": "In the dependent clause the separable verb joins."
+        },
+        {
+          "wrong": "Ik kan niet de fout altijd herhalen omdat hij onregelmatig optreedt.",
+          "right": "Ik kan de fout niet altijd herhalen omdat hij onregelmatig optreedt.",
+          "why": "'Niet altijd' stands after the object and before the infinitive."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat hij onregelmatig optreedt, kan ik de fout niet altijd herhalen.",
+        "english": "Because it occurs irregularly, I cannot always reproduce the error.",
+        "note": "Reason first: the main clause inverts to 'kan ik de fout niet altijd herhalen'."
+      }
+    },
+    "pat-omdat-reuse-career-troubleshooting-046": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The fact that only one account is affected is the reason for looking at permissions next."
+      },
+      "situationNl": "Een storing treft maar één gebruiker. Je legt aan een collega uit welke controle jullie nu doen en wat die keuze rechtvaardigt.",
+      "situationEn": "A fault affects only one user. You explain to a colleague which check you will do next and what justifies the choice.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Omdat slechts één account getroffen is",
+          "subject": "slechts één account",
+          "finite": "is",
+          "why": "'Slechts één account' (only one account) is the subject; 'getroffen' (affected) is the participle before 'is', which closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "bekijken we de rechten",
+          "subject": "we",
+          "finite": "bekijken",
+          "why": "The omdat-clause is position one, so 'bekijken' precedes 'we'. 'De rechten' (the permissions) is the object."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Omdat"
+        },
+        {
+          "label": "subject",
+          "text": "slechts één account"
+        },
+        {
+          "label": "past participle",
+          "text": "getroffen"
+        },
+        {
+          "label": "finite verb (auxiliary)",
+          "text": "is"
+        },
+        {
+          "label": "finite verb",
+          "text": "bekijken"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "object",
+          "text": "de rechten"
+        }
+      ],
+      "meaning": "You say that, since only one account is affected, you look at the permissions.",
+      "order": "The dependent clause ends with the group 'getroffen is'. It fills position one, so 'bekijken' is second and 'we' third. 'Slechts' (only) is attached to 'één account' and stays in front of the subject.",
+      "forms": "treffen > getroffen (the account is affected). bekijken: wij bekijken (inseparable prefix be-). 'De rechten' = the permissions (plural of het recht).",
+      "compare": "English 'only one account is affected' keeps 'is' second; Dutch ends with 'getroffen is'. English 'we look at the permissions' needs 'at'; Dutch 'bekijken' takes the object directly.",
+      "mistakes": [
+        {
+          "wrong": "Omdat slechts één account is getroffen, we bekijken de rechten.",
+          "right": "Omdat slechts één account getroffen is, bekijken we de rechten.",
+          "why": "After the fronted dependent clause, 'bekijken' has to be the second element, so it stands before 'we'."
+        },
+        {
+          "wrong": "Omdat slechts één account getroffen is, bekijken we naar de rechten.",
+          "right": "Omdat slechts één account getroffen is, bekijken we de rechten.",
+          "why": "'Bekijken' takes a direct object and no preposition."
+        }
+      ],
+      "contrast": {
+        "dutch": "We bekijken de rechten omdat slechts één account getroffen is.",
+        "english": "We are looking at the permissions because only one account is affected.",
+        "note": "Main clause first: subject-first 'We bekijken'."
+      }
+    },
+    "pat-omdat-reuse-school-09": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The delay explains the lateness, given to a teacher or colleague as an apology."
+      },
+      "situationNl": "Je komt de klas binnen en de les is al gestart. Je leraar kijkt je vragend aan. Geef je verklaring.",
+      "situationEn": "You enter class after the lesson has started and your teacher looks at you questioningly. Give your explanation.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik ben te laat",
+          "subject": "Ik",
+          "finite": "ben",
+          "why": "Ik is first, so 'ben' is second; 'te laat' (too late) is the predicate."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat mijn trein vertraging heeft",
+          "subject": "mijn trein",
+          "finite": "heeft",
+          "why": "'Vertraging hebben' puts the noun before the finite verb 'heeft', which closes the sentence."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "ben"
+        },
+        {
+          "label": "predicate",
+          "text": "te laat"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "subject",
+          "text": "mijn trein"
+        },
+        {
+          "label": "object",
+          "text": "vertraging"
+        },
+        {
+          "label": "finite verb",
+          "text": "heeft"
+        }
+      ],
+      "meaning": "You apologise for being late and give the reason: your train is delayed.",
+      "order": "Here the omdat clause is attached after the main clause. The main clause has 'ben' in second position, and the dependent clause ends with 'heeft'. The same words in the reverse order would start with 'Omdat mijn trein vertraging heeft, ben ik te laat'.",
+      "forms": "zijn: ik ben. hebben: mijn trein heeft. 'Te laat' = too late, a fixed adverbial phrase. 'Vertraging hebben' = to be delayed.",
+      "compare": "English 'my train is delayed' uses a participle; Dutch 'vertraging heeft' uses a noun and a verb. English keeps 'is' second; Dutch moves 'heeft' to the end.",
+      "mistakes": [
+        {
+          "wrong": "Ik ben te laat omdat mijn trein heeft vertraging.",
+          "right": "Ik ben te laat omdat mijn trein vertraging heeft.",
+          "why": "The finite verb goes behind its object in a dependent clause."
+        },
+        {
+          "wrong": "Ik ben laat te omdat mijn trein vertraging heeft.",
+          "right": "Ik ben te laat omdat mijn trein vertraging heeft.",
+          "why": "'Te' stands before 'laat' in the phrase 'te laat'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat mijn trein vertraging heeft, ben ik te laat.",
+        "english": "Because my train is delayed, I am late.",
+        "note": "Reason first: the main clause inverts to 'ben ik te laat'."
+      }
+    },
+    "pat-omdat-reuse-work-212": {
+      "status": "ai-editorial-checked",
+      "sense": {
+        "label": "omdat = because",
+        "why": "The cancelled train is the reason for the early departure, told as a past event."
+      },
+      "situationNl": "Een collega verlaat het kantoor eerder dan normaal. Je legt aan een derde persoon uit wat er gebeurd was met zijn treinverbinding.",
+      "situationEn": "A colleague left the office earlier than usual. You tell a third person what had gone wrong with his train connection.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Hij vertrok vroeg",
+          "subject": "Hij",
+          "finite": "vertrok",
+          "why": "Hij is first, so the past verb 'vertrok' is second; 'vroeg' follows."
+        },
+        {
+          "kind": "bijzin",
+          "text": "omdat de trein uitviel",
+          "subject": "de trein",
+          "finite": "uitviel",
+          "why": "Uitvallen (to be cancelled, to fail) is separable, but in a dependent clause its parts join: 'uitviel'. The verb closes the sentence."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Hij"
+        },
+        {
+          "label": "finite verb",
+          "text": "vertrok"
+        },
+        {
+          "label": "adverb",
+          "text": "vroeg"
+        },
+        {
+          "label": "conjunction",
+          "text": "omdat"
+        },
+        {
+          "label": "subject",
+          "text": "de trein"
+        },
+        {
+          "label": "finite verb (joined)",
+          "text": "uitviel"
+        }
+      ],
+      "meaning": "You say that he left early because the train was cancelled.",
+      "order": "Both clauses are in the simple past. In the main clause 'vertrok' stands second. In the dependent clause the separable verb 'uitvallen' appears as one word, 'uitviel', at the end.",
+      "forms": "vertrekken, past: vertrok. uitvallen, past: viel uit (main) / uitviel (dependent). 'Uitvallen' is also the word for a service or train that does not run.",
+      "compare": "English 'was cancelled' uses a passive; Dutch has the intransitive verb 'uitviel' (literally fell out). English keeps 'was cancelled' as two words; Dutch writes one.",
+      "mistakes": [
+        {
+          "wrong": "Hij vertrok vroeg omdat de trein viel uit.",
+          "right": "Hij vertrok vroeg omdat de trein uitviel.",
+          "why": "In the dependent clause the separable verb joins: uitviel."
+        },
+        {
+          "wrong": "Hij vertrekte vroeg omdat de trein uitviel.",
+          "right": "Hij vertrok vroeg omdat de trein uitviel.",
+          "why": "'Vertrekken' is a strong verb: the past is 'vertrok', not 'vertrekte'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Omdat de trein uitviel, vertrok hij vroeg.",
+        "english": "Because the train was cancelled, he left early.",
+        "note": "Reason first: the main clause inverts to 'vertrok hij vroeg'."
+      }
     }
   }
 }

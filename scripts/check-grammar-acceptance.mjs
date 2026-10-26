@@ -10,7 +10,7 @@
  */
 import { readFileSync } from "node:fs";
 const doc = readFileSync(new URL("../docs/GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md", import.meta.url), "utf8");
-const rows = [...doc.matchAll(/^\| \*\*(A\d{2})\*\* \| \*\*(?:[^*]+)\*\* \| \*\*(VERIFIED|PARTIAL|BLOCKED)(?:[^*]*)\*\* \|/gm)];
+const rows = [...doc.matchAll(/^\|\s*\*\*(A\d{2})\*\*[^|]*\|\s*\*\*(VERIFIED|PARTIAL|BLOCKED)[^*]*\*\*\s*\|/gm)];
 const statuses = new Map(rows.map((m) => [m[1], m[2]]));
 const invalid = [];
 for (let i = 1; i <= 25; i++) {

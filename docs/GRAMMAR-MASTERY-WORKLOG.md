@@ -4,6 +4,21 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: Toen and Wanneer lessons rewritten together, full browser run
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- `data/grammar-topic-lessons.json`: the Toen lesson (was v0.2, one section) and the Wanneer lesson (was v0.8, two sections) are rewritten as v1.1 with eight sections each, four formulas and five mistakes each. Toen covers single occasion or closed period, verb last, both clause orders, toen as the adverb "then", tenses including the past perfect, toen versus als/wanneer, modals/negation/questions, and the three uses. Wanneer covers the three jobs (time clause, direct question, indirect question), inversion, longer verb groups, wanneer versus als versus toen, and `pas wanneer` plus fixed endings.
+- Fact-check: the Flemish language advice treats toen as correct only for one past occasion or period and recommends wanneer for repetition, while Dutch sources also accept als; in Belgium toen is the only correct conjunction for a single past event. These statements are in both lessons and are checked against the Taaladvies sources already listed on the Als lesson (re-checked 27 October 2026 by search summary, not by re-reading every page). Everything else in the lessons is unreviewed AI editing.
+- Docs: lesson version counts changed to 5 v1.0, 3 v1.1 (Als, Toen, Wanneer), 3 v0.8, 2 v0.2 in the audit and README.
+
+**Evidence:** `npx vitest run` (with local Mongo) 414 passed (one run had one timeout in `tests/variations.test.ts` that passed on re-run). Full browser suite (`playwright.flashcards.config.ts`, local test Mongo, port 3100): 106 passed, 1 failed: `sessions-navigation.spec.ts` "a vocabulary link returns to the same session, mode and card" (Back button not found). Re-run three times: 2 passed, 1 failed, so it looks flaky and depends on the random shopping card; I did not investigate it and cannot say it is unrelated to this branch.
+
+**Open:** the flaky vocabulary-Back test; no native review; lessons for Terwijl, Voordat, Nadat, Tot, Verbs-by-tense still at v0.2/v0.8; no interactive children for Omdat/Dat/Toen/Wanneer/Inversion.
+
+**Next specific task:** investigate the flaky vocabulary-Back test (check on `main`), then either take Terwijl/Voordat/Nadat/Tot to 100 cards or start P3 with the owner's choice.
+
 ## 2026-10-26 — Claude Code continuation: P2 V2/inversion to 100 base cards with per-sentence analysis
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

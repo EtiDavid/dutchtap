@@ -1,25 +1,52 @@
-# Grammar patterns
+# Grammar Patterns — scope, implementation and teaching
 
-The grammar section works like the flashcards. Each pattern from the old labs (Verb second, Omdat, Dat, Als, Tot, Toen, Verbs, Separable verbs,
-Past & perfect) is a set of real sentences in its own collection, **Grammar patterns**, so a pattern session has everything a flashcard session has:
+> **Status: PARTIALLY COMPLETE on `feat/grammar-mastery-phase1`.** The release on `main` retains the original nine-pattern deck (196 authored cards). The expansion and counts below are from the unmerged draft [PR #15](https://github.com/EtiDavid/dutchtap/pull/15), not necessarily what users see on the live domain. See the [acceptance audit](GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md) and [approved master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).
 
-* **Study**: the sentence, its meaning, an explanation of why the word order or form is right, and ten similar examples with a Listen button.
-* **Say it** (Speaking): an English situation tells you what to express; you say it, check the Dutch, then rate it Difficult / Medium / Easy / Mastered.
-* **Word order** (Quiz): the same sentences as tiles, scored per answer.
-* **Levels, streaks, five-session limit, sync and offline** all work as for any session. Levels belong to the sentence, as always.
+## Learner experience on the development branch
 
-Sessions are created from Practise → Grammar patterns, or from Create session → Collection → Grammar patterns → a pattern.
-A pattern tile opens the form already pointed at that pattern (`/flashcards?new=grammar:als`).
+- The **Practise → Grammar Patterns** tile grid selects a topic and opens a prefilled creation dialog (`/flashcards?new=grammar:als`). The base selection stays fixed between Study, Speaking and word-order Quiz; card levels start Difficult.
+- **Learn the rule:** a topic-level collapsible guide in session creation and practice. Six topics have expanded first-release guides (ALS, separable, inversion, omdat, dat, verbs). Seven others remain short/foundational. Study begins with the topic guide expanded; Speaking and Quiz keep it collapsed by default.
+- **Study:** read, listen to device Dutch speech, read English meaning, inspect an individual rule and ten **passive** related examples. **Limitation:** original 432 authored grammar cards still lack the full structured per-card breakdown chips found in the Everyday/Workplace decks; reused core cards inherit source breakdowns. An ALS-specific clause view exists but is not a complete sentence parser.
+- **Speaking:** answer a situational prompt aloud, reveal Dutch, then **self-rate**. No automatic speech-to-text or pronunciation scoring. An optional English-help toggle is available **only for the 236 authored grammar cards that include a Dutch-first prompt**; other cards fall back to English until authored and checked.
+- **Word-order Quiz:** reconstruct a model sentence with word tiles. The 58 new ALS sentences form 29 clause-order contrast pairs with a second saved and recognisable model. A broader set of alternative answers and optional typed/uncued mixed grammar inside the flashcard session are **not** finished. The older `/learn` lab has additional typed and mixed exercises.
+- **Find and fix a mistake:** each current topic lesson has a non-scoring optional correction exercise. Its response check compares one stored model; another grammatical correction may be valid even if not matched.
+- **Extra interactive variations:** just **three ALS base cards** have ten separately tracked child questions each (**30 total**); the other grammar parents have no ready ten-child family. The ten passive examples displayed in notes are **not** independently scored questions.
+- **Progress:** each reused core reference receives a grammar-specific alias ID and level; the original card's level is unchanged. This does not yet implement full skill-by-topic mastery or multi-topic tagging.
 
-## Content
-196 sentences: the 110 original lab tasks plus 86 new ones (84 for the six structure patterns, 6 for tenses) written as AI-editorial work; no
-native-speaker review. Source: `data/learning-tasks.json` + `data/editorial/grammar-pattern-extra.tsv`.
-Rebuild with `python3 scripts/build-grammar-patterns.py` (writes `data/grammar-pattern-cards.json` and `data/grammar-pattern-notes.json`).
-Ids look like `pat-als-07`. Cards are pictureless and spoken by the Dutch device voice. They are not French (the collection is Dutch-only).
+## Exact branch inventory (26 October 2026)
 
-## What they deliberately do not have
-No sentence breakdown chips, no ten related "child" practice sentences and no alternative model answers: the explanation, the ten similar
-examples in the note and the pattern itself take that role. `CORE_CARDS` (Everyday + Dutch at Work, 1,200 sentences) is the set that must have
-breakdowns, families and answer models; `GRAMMAR_CARDS` is separate.
+Counts below represent **playable base cards**, NOT passive examples or optional children.
 
-The older labs (`/learn`, "Think in Dutch" and the verb tables) remain for mixed practice and typing answers.
+| Topic ID | Authored cards | Reused original cards | Playable total | Topic lesson |
+| --- | ---: | ---: | ---: | --- |
+| `inversion` | 20 | 0 | 20 | Expanded v1 |
+| `als` | 77 | 23 | **100** | Expanded v1 |
+| `omdat` | 20 | 9 | 29 | Expanded v1 |
+| `dat` | 20 | 19 | 39 | Expanded v1 |
+| `toen` | 20 | 2 | 22 | Introductory |
+| `wanneer` | 14 | 0 | 14 | Foundational |
+| `terwijl` | 12 | 0 | 12 | Foundational |
+| `voordat` | 12 | 0 | 12 | Foundational |
+| `nadat` | 12 | 0 | 12 | Foundational |
+| `tot` | 20 | 0 | 20 | Introductory |
+| `verbs` | 36 | 0 | 36 | Expanded v1 |
+| `separable` | 152 | 0 | **152** | Expanded v1 |
+| `tense` | 17 | 0 | 17 | Introductory |
+| **TOTAL** | **432** | **53** | **485** | **13 topics** |
+
+There are also **52 authored separable-verb lemmas** (below the 60–100 target; **not** independently native-verified), 30 interactive child variations on three ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
+
+## Authoring and safety
+
+- Canonical grammar-generation inputs: `data/learning-tasks.json`, `data/editorial/grammar-pattern-extra.tsv`, `data/editorial/grammar-als-expansion.json`, `data/editorial/grammar-new-time-patterns.json`, `data/editorial/grammar-separable-cards.json`, `data/editorial/grammar-separable-verbs.json`; the deterministic generator is `scripts/build-grammar-patterns.py`. Never edit just the generated JSON.
+- `data/grammar-reuse-links.json` explicitly lists 53 source IDs; `lib/flashcards/engine.ts` materializes runtime grammar aliases and preserves the originals.
+- `data/grammar-topic-lessons.json` holds lesson-wide explanations and optional mistake-repair prompts, not per-card certified linguistic analyses.
+- `data/grammar-variation-families.json` holds the three initial ALS ten-child families. Device Dutch speech is used; no paid grammar audio or new pictures are required.
+- Full grammar tagging, new interactive variations for other parents, additional topic coverage, cross-device migration/restore tests, independent content QA, accessibility tests and production release must follow the [master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).
+- **Do not claim a pass in one Playwright subset or all structural tests is proof of natural Dutch quality.** The branch's content is AI-edited, not independently native-certified.
+
+## Tests and deployment
+
+Relevant tests: `tests/grammar.*.test.ts`, `tests/flashcard-e2e/grammar-mastery.spec.ts`, `tests/flashcard-e2e/grammar-patterns.spec.ts`, and `.github/workflows/grammar-feature-validation.yml`.
+
+The scoped CI run 40361591866 passed 343 Vitest tests (7 optional database tests skipped) and 4 Chromium browser tests. This is a **subset** of the required final acceptance/migration tests. The branch is not merged, and production releases require a version tag on `main`; see [deployment instructions](DEPLOYMENT.md).

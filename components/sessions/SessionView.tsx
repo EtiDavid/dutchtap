@@ -13,6 +13,8 @@ import { Modal } from '../ui/Modal';
 import { Icon } from '../ui/Icon';
 import { CompletionSummary } from './CompletionSummary';
 import { QuizMode } from './QuizMode';
+import { GrammarTopicLesson } from './GrammarTopicLesson';
+import { GrammarErrorRepair } from './GrammarErrorRepair';
 import { SpeakingMode } from './SpeakingMode';
 import { StudyMode } from './StudyMode';
 import { SyncStatus } from './SyncStatus';
@@ -70,6 +72,8 @@ export function SessionView({ sessionId, lang, store, snapshot, reviews, reviews
         <span>{tab.label}{tab.done ? ' ✓' : ''}</span><span className="text-[11px] font-normal">{tab.detail}</span>
       </button>)}
     </nav>
+
+    {session.collection === 'grammar' && session.lang === 'nl' && <><GrammarTopicLesson key={`${session.id}-${mode}`} topic={session.topic} defaultOpen={mode === "study"} /><GrammarErrorRepair topic={session.topic} /></>}
 
     {session.status === 'archived' && <CompletionSummary session={session} onAgain={again} againDisabled={activeCount >= MAX_ACTIVE_SESSIONS} againMessage={`You already have ${MAX_ACTIVE_SESSIONS} active sessions, so finish or delete one first.`} />}
 

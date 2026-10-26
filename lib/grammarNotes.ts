@@ -36,7 +36,7 @@ export function notesFor(
 ): GrammarNote | LNote | undefined {
   if (lang === undefined) return GRAMMAR_NOTES[cardId];
   if (lang === "fr") return FRENCH_NOTES[cardId];
-  const note = GRAMMAR_NOTES[cardId];
+  const note = GRAMMAR_NOTES[cardId] ?? (cardId.startsWith('pat-') && cardId.includes('-reuse-') ? GRAMMAR_NOTES[cardId.split('-reuse-').slice(1).join('-reuse-')] : undefined);
   return (
     note && {
       rule: note.rule,

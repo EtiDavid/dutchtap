@@ -6,7 +6,7 @@ import {
   modelFor,
   matchAnswer,
 } from "@/lib/practice/communication";
-import { FAMILIES, variationCard } from "@/lib/variations/content";
+import { FAMILIES, variationsFor, variationCard } from "@/lib/variations/content";
 import {
   applyAction,
   createSessionFromIds,
@@ -73,8 +73,7 @@ describe("authored Dutch communication content", () => {
   it("provides an explicit situation and complete model explanations for every main card and every released or locked child", () => {
     const cards = [
       ...CORE_CARDS.map((c) => cardFor("nl", c.id)!),
-      ...Object.values(FAMILIES)
-        .flat()
+      ...CORE_CARDS.flatMap(c => variationsFor(c.id))
         .map((v) => variationCard(v.id)!),
     ];
     expect(cards).toHaveLength(13200);

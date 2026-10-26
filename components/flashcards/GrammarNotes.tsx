@@ -5,6 +5,7 @@ import { breakdownFor, hasForms, patternOf } from "@/lib/grammarBreakdowns";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { CARDS } from "@/lib/flashcards/engine";
 import { cardFor } from "@/lib/content/cards";
+import { GrammarAlsAnalysis } from "./GrammarAlsAnalysis";
 
 const ADAPTED = new Set(
   CARDS.filter((card) => card.adapted).map((card) => card.id),
@@ -61,6 +62,8 @@ export function GrammarNotes({
       <summary className="cursor-pointer select-none text-sm font-bold tracking-tight marker:text-accent">
         Grammar rule &amp; similar examples
       </summary>
+
+      {lang === "nl" && cardId.startsWith("pat-als-") && <GrammarAlsAnalysis cardId={cardId} />}
 
       {breakdown && (
         <section aria-label="Sentence breakdown" data-testid="breakdown">

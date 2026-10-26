@@ -25,6 +25,7 @@ import {
 } from "@/lib/sessions/wordOrder";
 import { button, primary } from "../flashcards/styles";
 import { GrammarNotes } from "../flashcards/GrammarNotes";
+import { GrammarScenarioPrompt } from "./GrammarScenarioPrompt";
 import { AudioControls, CardImage, VocabLinks } from "./CardParts";
 import type { ModeProps } from "./modeTypes";
 
@@ -210,12 +211,9 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
         )}
         <div className="p-6">
           {session.lang === "nl" ? (
-            <p
-              className="text-base leading-relaxed"
-              data-testid="quiz-situation"
-            >
-              {card.scenario}
-            </p>
+            session.collection === "grammar"
+              ? <GrammarScenarioPrompt key={card.id} scenario={card.scenario} scenarioNl={card.scenarioNl} />
+              : <p className="text-base leading-relaxed" data-testid="quiz-situation">{card.scenario}</p>
           ) : (
             <>
               <p className="text-base text-muted" data-testid="quiz-english">
@@ -226,7 +224,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
               </p>
             </>
           )}
-          {!outcome && <div className="mt-3 flex flex-wrap gap-2"><button type="button" className={button} onClick={() => void listen({text:card.scenario,lang:'en'})}>Listen to situation (English)</button><button type="button" className={button} onClick={stop}>Stop prompt</button>{sound && <p role="status" className="w-full text-sm text-muted">{sound}</p>}</div>}
+          {!outcome && session.collection !== 'grammar' && <div className="mt-3 flex flex-wrap gap-2"><button type="button" className={button} onClick={() => void listen({text:card.scenario,lang:'en'})}>Listen to situation (English)</button><button type="button" className={button} onClick={stop}>Stop prompt</button>{sound && <p role="status" className="w-full text-sm text-muted">{sound}</p>}</div>}
           {!outcome ? (
             <>
               <p className="mt-3 text-sm text-muted">
@@ -358,6 +356,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
                   defaultOpen={!outcome.correct}
                 />
               )}
+              {isVariation(card.id) && variationFor(card.id) && <div className="mt-4 rounded-xl bg-surface-2 p-3 text-sm" data-testid="grammar-variation-explanation"><h3 className="font-semibold">Why this variation works</h3><p className="mt-1 leading-relaxed">{variationFor(card.id)?.explanation}</p></div>}
               {!isVariation(card.id) && <VocabLinks card={card} />}
             </>
           )}

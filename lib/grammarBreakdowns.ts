@@ -29,7 +29,10 @@ export const breakdownFor = (
   cardId: string,
   lang: Lang = "nl",
 ): Breakdown | undefined =>
-  (lang === "fr" ? FRENCH_BREAKDOWNS : BREAKDOWNS)[cardId];
+  (lang === "fr" ? FRENCH_BREAKDOWNS : BREAKDOWNS)[cardId] ??
+  (lang === "nl" && cardId.startsWith("pat-") && cardId.includes("-reuse-")
+    ? BREAKDOWNS[cardId.split("-reuse-").slice(1).join("-reuse-")]
+    : undefined);
 
 /** The abstract pattern, e.g. "time phrase + finite verb + subject + direction". Position, not word count, defines the order. */
 export const patternOf = (breakdown: Breakdown): string =>

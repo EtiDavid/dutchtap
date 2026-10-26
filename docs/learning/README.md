@@ -1,5 +1,7 @@
 # Dutch learning upgrade — first implementation
 
+> **Historical first-release snapshot:** inspection counts and outstanding review positions below describe the first Learning Hub implementation, not the latest 26 October 2026 Grammar Mastery branch. Current Grammar Mastery scope, incomplete targets and proof-backed release status are recorded in [Grammar Mastery Acceptance Audit](../GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md). Do not use this older note as evidence that the whole new grammar curriculum has been implemented.
+
 This branch contains a working first release of the learning labs and an editorial review queue. It does **not** claim that all existing language content has been individually rechecked.
 
 ## What is available

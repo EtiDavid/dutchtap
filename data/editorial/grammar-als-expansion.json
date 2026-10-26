@@ -1,0 +1,814 @@
+[
+  {
+    "dutch": "Als ik morgen vroeg klaar ben, ga ik naar de bibliotheek.",
+    "english": "If I finish early tomorrow, I'll go to the library.",
+    "scenario": "Tomorrow you might finish early. Tell a friend what you will do then.",
+    "scenarioNl": "Morgen ben je misschien vroeg klaar. Vertel een vriend wat je daarna doet.",
+    "why": "Klaar ben closes the subordinate condition; ga ik is main-clause inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik ga naar de bibliotheek als ik morgen vroeg klaar ben.",
+    "english": "If I finish early tomorrow, I'll go to the library.",
+    "scenario": "Tomorrow you might finish early. Tell a friend what you will do then.",
+    "scenarioNl": "Morgen ben je misschien vroeg klaar. Vertel een vriend wat je daarna doet.",
+    "why": "Klaar ben closes the subordinate condition; ga ik is main-clause inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als mijn fiets kapot is, ga ik te voet.",
+    "english": "If my bike is broken, I go on foot.",
+    "scenario": "Your bicycle is unreliable. Explain how you'll travel without it.",
+    "scenarioNl": "Je fiets werkt niet altijd. Beschrijf je alternatief.",
+    "why": "Kapot is belongs to the condition; ga ik follows after inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik ga te voet als mijn fiets kapot is.",
+    "english": "If my bike is broken, I go on foot.",
+    "scenario": "Your bicycle is unreliable. Explain how you'll travel without it.",
+    "scenarioNl": "Je fiets werkt niet altijd. Beschrijf je alternatief.",
+    "why": "Kapot is belongs to the condition; ga ik follows after inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als Zoë tijd heeft, koken we samen.",
+    "english": "If Zoë has time, we cook together.",
+    "scenario": "You want to cook together depending on her schedule.",
+    "scenarioNl": "Je wilt samen koken, afhankelijk van de agenda van Zoë.",
+    "why": "Heeft closes the condition; koken we starts the following main clause.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "We koken samen als Zoë tijd heeft.",
+    "english": "If Zoë has time, we cook together.",
+    "scenario": "You want to cook together depending on her schedule.",
+    "scenarioNl": "Je wilt samen koken, afhankelijk van de agenda van Zoë.",
+    "why": "Heeft closes the condition; koken we starts the following main clause. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik de afwas doe, luister ik naar een podcast.",
+    "english": "When I do the dishes, I listen to a podcast.",
+    "scenario": "Describe what you listen to while doing chores.",
+    "scenarioNl": "Je luistert graag tijdens huishoudelijk werk. Beschrijf je gewoonte.",
+    "why": "Doe finishes the subordinate time clause and luister ik shows main-clause inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik luister naar een podcast als ik de afwas doe.",
+    "english": "When I do the dishes, I listen to a podcast.",
+    "scenario": "Describe what you listen to while doing chores.",
+    "scenarioNl": "Je luistert graag tijdens huishoudelijk werk. Beschrijf je gewoonte.",
+    "why": "Doe finishes the subordinate time clause and luister ik shows main-clause inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als het druk is in de supermarkt, kom ik later terug.",
+    "english": "If the supermarket is busy, I'll return later.",
+    "scenario": "You avoid shopping in crowds. Describe your backup plan.",
+    "scenarioNl": "Je houdt niet van drukke winkels. Leg uit wat je dan doet.",
+    "why": "The subordinate verb is normally clause-final, though the place phrase may follow the predicate; kom ik is inverted.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik kom later terug als het druk is in de supermarkt.",
+    "english": "If the supermarket is busy, I'll return later.",
+    "scenario": "You avoid shopping in crowds. Describe your backup plan.",
+    "scenarioNl": "Je houdt niet van drukke winkels. Leg uit wat je dan doet.",
+    "why": "The subordinate verb is normally clause-final, though the place phrase may follow the predicate; kom ik is inverted. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als het licht groen wordt, steken we de straat over.",
+    "english": "When the light turns green, we cross the street.",
+    "scenario": "Explain when you cross at a traffic light.",
+    "scenarioNl": "Leg uit wanneer je bij een verkeerslicht de straat oversteekt.",
+    "why": "Wordt finishes the subordinate clause; steken ... over is a separated main-clause verb.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "We steken de straat over als het licht groen wordt.",
+    "english": "When the light turns green, we cross the street.",
+    "scenario": "Explain when you cross at a traffic light.",
+    "scenarioNl": "Leg uit wanneer je bij een verkeerslicht de straat oversteekt.",
+    "why": "Wordt finishes the subordinate clause; steken ... over is a separated main-clause verb. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik nieuwe woorden leer, schrijf ik ze op.",
+    "english": "When I learn new words, I write them down.",
+    "scenario": "Describe how you remember new vocabulary.",
+    "scenarioNl": "Je wilt nieuwe woorden onthouden. Leg je methode uit.",
+    "why": "Leer closes the subordinate time clause; schrijf ... op splits the separable verb.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik schrijf nieuwe woorden op als ik ze leer.",
+    "english": "When I learn new words, I write them down.",
+    "scenario": "Describe how you remember new vocabulary.",
+    "scenarioNl": "Je wilt nieuwe woorden onthouden. Leg je methode uit.",
+    "why": "Leer closes the subordinate time clause; schrijf ... op splits the separable verb. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als mijn moeder belt, neem ik meteen op.",
+    "english": "When my mother calls, I pick up immediately.",
+    "scenario": "You answer your mother's calls quickly. Describe your habit.",
+    "scenarioNl": "Je neemt de telefoon snel op wanneer je moeder belt. Beschrijf je gewoonte.",
+    "why": "Belt is subordinate-final, and neem ... op is a split separable main verb.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik neem meteen op als mijn moeder belt.",
+    "english": "When my mother calls, I pick up immediately.",
+    "scenario": "You answer your mother's calls quickly. Describe your habit.",
+    "scenarioNl": "Je neemt de telefoon snel op wanneer je moeder belt. Beschrijf je gewoonte.",
+    "why": "Belt is subordinate-final, and neem ... op is a split separable main verb. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als het buiten koud wordt, zet ik de verwarming aan.",
+    "english": "When it gets cold outside, I turn on the heating.",
+    "scenario": "Explain when you turn the heating on.",
+    "scenarioNl": "Wanneer zet je de verwarming aan? Leg je gewoonte uit.",
+    "why": "Wordt ends the time clause; zet ... aan splits aanzetten in the main clause.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik zet de verwarming aan als het buiten koud wordt.",
+    "english": "When it gets cold outside, I turn on the heating.",
+    "scenario": "Explain when you turn the heating on.",
+    "scenarioNl": "Wanneer zet je de verwarming aan? Leg je gewoonte uit.",
+    "why": "Wordt ends the time clause; zet ... aan splits aanzetten in the main clause. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik de trein hoor, kijk ik uit het raam.",
+    "english": "When I hear the train, I look out of the window.",
+    "scenario": "The sound of a train makes you look outside. Explain this habit.",
+    "scenarioNl": "Je hoort vaak een trein voorbijrijden. Vertel hoe je reageert.",
+    "why": "Hoor closes the subordinate clause; kijk ik is V2 inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik kijk uit het raam als ik de trein hoor.",
+    "english": "When I hear the train, I look out of the window.",
+    "scenario": "The sound of a train makes you look outside. Explain this habit.",
+    "scenarioNl": "Je hoort vaak een trein voorbijrijden. Vertel hoe je reageert.",
+    "why": "Hoor closes the subordinate clause; kijk ik is V2 inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als mijn telefoon leeg is, gebruik ik de oplader.",
+    "english": "If my phone is empty, I use the charger.",
+    "scenario": "Describe your response to a phone with an empty battery.",
+    "scenarioNl": "Je telefoon heeft soms geen batterij meer. Beschrijf wat je doet.",
+    "why": "Leeg is forms the predicate in the condition; gebruik ik is inverted.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik gebruik de oplader als mijn telefoon leeg is.",
+    "english": "If my phone is empty, I use the charger.",
+    "scenario": "Describe your response to a phone with an empty battery.",
+    "scenarioNl": "Je telefoon heeft soms geen batterij meer. Beschrijf wat je doet.",
+    "why": "Leeg is forms the predicate in the condition; gebruik ik is inverted. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik niet kan slapen, lees ik een boek.",
+    "english": "When I can't sleep, I read a book.",
+    "scenario": "You sometimes read when you cannot sleep. Describe the habit.",
+    "scenarioNl": "Je kunt soms niet slapen. Vertel wat je dan doet.",
+    "why": "Kan slapen forms a verb cluster at the subordinate end; lees ik is V2 inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik lees een boek als ik niet kan slapen.",
+    "english": "When I can't sleep, I read a book.",
+    "scenario": "You sometimes read when you cannot sleep. Describe the habit.",
+    "scenarioNl": "Je kunt soms niet slapen. Vertel wat je dan doet.",
+    "why": "Kan slapen forms a verb cluster at the subordinate end; lees ik is V2 inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als een collega afwezig is, neem ik zijn taken tijdelijk over.",
+    "english": "If a colleague is absent, I temporarily take over his tasks.",
+    "scenario": "Your team covers colleagues who are absent. Explain your contribution.",
+    "scenarioNl": "Een collega is soms afwezig. Vertel hoe jij helpt.",
+    "why": "Is closes the condition; neem ... over splits overnemen after inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik neem zijn taken tijdelijk over als een collega afwezig is.",
+    "english": "If a colleague is absent, I temporarily take over his tasks.",
+    "scenario": "Your team covers colleagues who are absent. Explain your contribution.",
+    "scenarioNl": "Een collega is soms afwezig. Vertel hoe jij helpt.",
+    "why": "Is closes the condition; neem ... over splits overnemen after inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als de verbinding wegvalt, probeer ik het opnieuw.",
+    "english": "If the connection drops, I try again.",
+    "scenario": "An internet connection occasionally drops. Explain your response.",
+    "scenarioNl": "De netwerkverbinding valt soms weg. Vertel wat je daarna doet.",
+    "why": "Wegvalt stays joined at the subordinate end; probeer ik shows main-clause inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik probeer het opnieuw als de verbinding wegvalt.",
+    "english": "If the connection drops, I try again.",
+    "scenario": "An internet connection occasionally drops. Explain your response.",
+    "scenarioNl": "De netwerkverbinding valt soms weg. Vertel wat je daarna doet.",
+    "why": "Wegvalt stays joined at the subordinate end; probeer ik shows main-clause inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als de test mislukt, draaien we de wijziging terug.",
+    "english": "If the test fails, we roll back the change.",
+    "scenario": "You're describing a rollback policy to colleagues.",
+    "scenarioNl": "Je legt uit wat het team doet wanneer een test mislukt.",
+    "why": "Mislukt ends the condition; draaien ... terug splits terugdraaien in the main clause.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "We draaien de wijziging terug als de test mislukt.",
+    "english": "If the test fails, we roll back the change.",
+    "scenario": "You're describing a rollback policy to colleagues.",
+    "scenarioNl": "Je legt uit wat het team doet wanneer een test mislukt.",
+    "why": "Mislukt ends the condition; draaien ... terug splits terugdraaien in the main clause. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als de vergadering uitloopt, stuur ik een bericht naar mijn team.",
+    "english": "If the meeting runs late, I send a message to my team.",
+    "scenario": "You want colleagues to know when a meeting runs late.",
+    "scenarioNl": "Je collega's moeten op de hoogte blijven als een vergadering langer duurt.",
+    "why": "Uitloopt joins its particle in the subordinate clause; stuur ik is inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik stuur een bericht naar mijn team als de vergadering uitloopt.",
+    "english": "If the meeting runs late, I send a message to my team.",
+    "scenario": "You want colleagues to know when a meeting runs late.",
+    "scenarioNl": "Je collega's moeten op de hoogte blijven als een vergadering langer duurt.",
+    "why": "Uitloopt joins its particle in the subordinate clause; stuur ik is inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als de printer geen papier heeft, vul ik de lade bij.",
+    "english": "If the printer has no paper, I refill the tray.",
+    "scenario": "The office printer occasionally needs more paper. Describe the response.",
+    "scenarioNl": "De kantoorprinter heeft soms geen papier. Vertel wat je doet.",
+    "why": "Heeft ends the condition; vul ... bij splits bijvullen in the main clause.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik vul de lade bij als de printer geen papier heeft.",
+    "english": "If the printer has no paper, I refill the tray.",
+    "scenario": "The office printer occasionally needs more paper. Describe the response.",
+    "scenarioNl": "De kantoorprinter heeft soms geen papier. Vertel wat je doet.",
+    "why": "Heeft ends the condition; vul ... bij splits bijvullen in the main clause. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik een fout maak, verbeter ik die meteen.",
+    "english": "When I make a mistake, I correct it immediately.",
+    "scenario": "Explain your response when you make mistakes at work.",
+    "scenarioNl": "Je maakt soms een fout op je werk. Beschrijf je reactie.",
+    "why": "Maak ends the time clause; verbeter ik is main-clause inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik verbeter die meteen als ik een fout maak.",
+    "english": "When I make a mistake, I correct it immediately.",
+    "scenario": "Explain your response when you make mistakes at work.",
+    "scenarioNl": "Je maakt soms een fout op je werk. Beschrijf je reactie.",
+    "why": "Maak ends the time clause; verbeter ik is main-clause inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik het antwoord niet weet, stel ik een vraag.",
+    "english": "If I don't know the answer, I ask a question.",
+    "scenario": "You're uncertain in class or a team meeting. Explain what you do.",
+    "scenarioNl": "Je weet soms het antwoord niet. Vertel wat je dan doet.",
+    "why": "Weet comes after negation niet in the subordinate clause; stel ik is inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik stel een vraag als ik het antwoord niet weet.",
+    "english": "If I don't know the answer, I ask a question.",
+    "scenario": "You're uncertain in class or a team meeting. Explain what you do.",
+    "scenarioNl": "Je weet soms het antwoord niet. Vertel wat je dan doet.",
+    "why": "Weet comes after negation niet in the subordinate clause; stel ik is inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als de gebruiker toestemming geeft, delen we het scherm.",
+    "english": "If the user gives permission, we share the screen.",
+    "scenario": "You require permission before sharing a screen. Explain the condition.",
+    "scenarioNl": "Je mag alleen een scherm delen met toestemming. Leg je werkwijze uit.",
+    "why": "Geeft ends the subordinate condition; delen we follows the fronted clause.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "We delen het scherm als de gebruiker toestemming geeft.",
+    "english": "If the user gives permission, we share the screen.",
+    "scenario": "You require permission before sharing a screen. Explain the condition.",
+    "scenarioNl": "Je mag alleen een scherm delen met toestemming. Leg je werkwijze uit.",
+    "why": "Geeft ends the subordinate condition; delen we follows the fronted clause. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik morgen geen internet heb, werk ik offline verder.",
+    "english": "If I have no internet tomorrow, I'll continue working offline.",
+    "scenario": "Your connection may be unavailable tomorrow. Tell someone your plan.",
+    "scenarioNl": "Je hebt morgen misschien geen internet. Leg je alternatieve plan uit.",
+    "why": "Heb ends the future condition; werk ik shows main-clause inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik werk offline verder als ik morgen geen internet heb.",
+    "english": "If I have no internet tomorrow, I'll continue working offline.",
+    "scenario": "Your connection may be unavailable tomorrow. Tell someone your plan.",
+    "scenarioNl": "Je hebt morgen misschien geen internet. Leg je alternatieve plan uit.",
+    "why": "Heb ends the future condition; werk ik shows main-clause inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik de instructies goed lees, maak ik minder fouten.",
+    "english": "If I read the instructions carefully, I make fewer mistakes.",
+    "scenario": "Explain why you read instructions carefully.",
+    "scenarioNl": "Je leest de instructies aandachtig en maakt daardoor minder fouten. Vertel over dit verband.",
+    "why": "Lees is at the end of the subordinate condition; maak ik is inverted.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik maak minder fouten als ik de instructies goed lees.",
+    "english": "If I read the instructions carefully, I make fewer mistakes.",
+    "scenario": "Explain why you read instructions carefully.",
+    "scenarioNl": "Je leest de instructies aandachtig en maakt daardoor minder fouten. Vertel over dit verband.",
+    "why": "Lees is at the end of the subordinate condition; maak ik is inverted. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik de zin begrijp, probeer ik hem hardop te zeggen.",
+    "english": "When I understand the sentence, I try to say it aloud.",
+    "scenario": "Describe how you practise speaking after understanding a sentence.",
+    "scenarioNl": "Je begrijpt een nieuwe zin en wilt hem daarna uitspreken. Vertel over je aanpak.",
+    "why": "Begrijp closes the subordinate clause; probeer ik is inversion and te zeggen ends an infinitive construction.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik probeer hem hardop te zeggen als ik de zin begrijp.",
+    "english": "When I understand the sentence, I try to say it aloud.",
+    "scenario": "Describe how you practise speaking after understanding a sentence.",
+    "scenarioNl": "Je begrijpt een nieuwe zin en wilt hem daarna uitspreken. Vertel over je aanpak.",
+    "why": "Begrijp closes the subordinate clause; probeer ik is inversion and te zeggen ends an infinitive construction. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik mijn woorden niet kan vinden, spreek ik langzamer.",
+    "english": "When I can't find the right words, I speak more slowly.",
+    "scenario": "You struggle sometimes to speak Dutch fluently. Explain your coping strategy.",
+    "scenarioNl": "Je vindt soms niet meteen de juiste Nederlandse woorden. Vertel wat je doet.",
+    "why": "Kan vinden is a subordinate verb cluster; spreek ik is inverted main-clause V2.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik spreek langzamer als ik mijn woorden niet kan vinden.",
+    "english": "When I can't find the right words, I speak more slowly.",
+    "scenario": "You struggle sometimes to speak Dutch fluently. Explain your coping strategy.",
+    "scenarioNl": "Je vindt soms niet meteen de juiste Nederlandse woorden. Vertel wat je doet.",
+    "why": "Kan vinden is a subordinate verb cluster; spreek ik is inverted main-clause V2. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik het verslag heb gecontroleerd, stuur ik het naar de klant.",
+    "english": "Once I've checked the report, I send it to the customer.",
+    "scenario": "A report must be checked before it is sent. Explain your order of work.",
+    "scenarioNl": "Je moet eerst een verslag controleren en het daarna verzenden. Leg de volgorde uit.",
+    "why": "Heb gecontroleerd is a subordinate perfect verb group; stuur ik follows with inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik stuur het verslag naar de klant als ik het heb gecontroleerd.",
+    "english": "Once I've checked the report, I send it to the customer.",
+    "scenario": "A report must be checked before it is sent. Explain your order of work.",
+    "scenarioNl": "Je moet eerst een verslag controleren en het daarna verzenden. Leg de volgorde uit.",
+    "why": "Heb gecontroleerd is a subordinate perfect verb group; stuur ik follows with inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als we de back-up hebben gemaakt, kunnen we de update installeren.",
+    "english": "Once we have made the backup, we can install the update.",
+    "scenario": "Your team must finish the backup before installing an update.",
+    "scenarioNl": "Je team moet eerst een back-up maken. Leg uit wanneer de update mogelijk is.",
+    "why": "Hebben gemaakt forms the subordinate perfect cluster; kunnen we is main-clause inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "We kunnen de update installeren als we de back-up hebben gemaakt.",
+    "english": "Once we have made the backup, we can install the update.",
+    "scenario": "Your team must finish the backup before installing an update.",
+    "scenarioNl": "Je team moet eerst een back-up maken. Leg uit wanneer de update mogelijk is.",
+    "why": "Hebben gemaakt forms the subordinate perfect cluster; kunnen we is main-clause inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik vroeger vrij was, ging ik fietsen.",
+    "english": "Whenever I was free in the past, I went cycling.",
+    "scenario": "Describe your old habit of cycling on free days.",
+    "scenarioNl": "Vroeger ging je vaak fietsen op vrije dagen. Beschrijf die gewoonte.",
+    "why": "Was ends the past subordinate clause; ging ik is inverted past V2. Repeated past can use als.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik ging fietsen als ik vroeger vrij was.",
+    "english": "Whenever I was free in the past, I went cycling.",
+    "scenario": "Describe your old habit of cycling on free days.",
+    "scenarioNl": "Vroeger ging je vaak fietsen op vrije dagen. Beschrijf die gewoonte.",
+    "why": "Was ends the past subordinate clause; ging ik is inverted past V2. Repeated past can use als. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als de les afgelopen was, ging ik meteen naar huis.",
+    "english": "Whenever class was over, I went straight home.",
+    "scenario": "Describe what you regularly did after lessons in the past.",
+    "scenarioNl": "Vroeger ging je altijd direct na de les naar huis. Vertel over die gewoonte.",
+    "why": "Was closes a past time clause; ging ik is main-clause inversion.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik ging meteen naar huis als de les afgelopen was.",
+    "english": "Whenever class was over, I went straight home.",
+    "scenario": "Describe what you regularly did after lessons in the past.",
+    "scenarioNl": "Vroeger ging je altijd direct na de les naar huis. Vertel over die gewoonte.",
+    "why": "Was closes a past time clause; ging ik is main-clause inversion. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  },
+  {
+    "dutch": "Als ik de fout heb gevonden, maak ik een nieuwe afspraak.",
+    "english": "Once I have found the error, I schedule another appointment.",
+    "scenario": "You're troubleshooting before arranging another appointment. Explain when you'll schedule it.",
+    "scenarioNl": "Je zoekt eerst de oorzaak van de fout. Vertel wanneer je weer afspreekt.",
+    "why": "Heb gevonden is the subordinate perfect cluster; maak ik is inverted main-clause V2.",
+    "focus": "fronted-condition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "fronted-condition"
+    }
+  },
+  {
+    "dutch": "Ik maak een nieuwe afspraak als ik de fout heb gevonden.",
+    "english": "Once I have found the error, I schedule another appointment.",
+    "scenario": "You're troubleshooting before arranging another appointment. Explain when you'll schedule it.",
+    "scenarioNl": "Je zoekt eerst de oorzaak van de fout. Vertel wanneer je weer afspreekt.",
+    "why": "Heb gevonden is the subordinate perfect cluster; maak ik is inverted main-clause V2. The main clause now comes first, and the subordinate verb group stays at its end.",
+    "focus": "main-first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "als-expansion-v1",
+      "focus": "main-first"
+    }
+  }
+]

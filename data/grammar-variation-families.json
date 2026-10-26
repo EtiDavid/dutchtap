@@ -1,0 +1,428 @@
+{
+  "pat-als-01": [
+    {
+      "id": "pat-als-01~v01",
+      "parentId": "pat-als-01",
+      "text": "Als ik een foutmelding zie, vraag ik mijn collega om hulp.",
+      "english": "If I see an error message, I ask my colleague for help.",
+      "scenario": "An error message appears and you need advice. Explain your next step.",
+      "scenarioNl": "Je ziet een foutmelding en hebt advies nodig. Vertel wat je doet.",
+      "explanation": "Zie ends the subordinate clause; vraag ik shows inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik vraag om hulp als ik de opdracht niet begrijp.",
+        "english": "I ask for help if I do not understand the assignment."
+      }
+    },
+    {
+      "id": "pat-als-01~v02",
+      "parentId": "pat-als-01",
+      "text": "Ik vraag om hulp als ik de opdracht niet begrijp.",
+      "english": "I ask for help if I do not understand the assignment.",
+      "scenario": "An assignment is unclear. Say when you ask for help.",
+      "scenarioNl": "Een opdracht is niet duidelijk. Leg uit wanneer je hulp vraagt.",
+      "explanation": "Begrijp is the single subordinate finite verb after niet.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als mijn collega tijd heeft, bekijken we het probleem samen.",
+        "english": "If my colleague has time, we examine the problem together."
+      }
+    },
+    {
+      "id": "pat-als-01~v03",
+      "parentId": "pat-als-01",
+      "text": "Als mijn collega tijd heeft, bekijken we het probleem samen.",
+      "english": "If my colleague has time, we examine the problem together.",
+      "scenario": "Your colleague might be available to look at a problem. Explain your plan.",
+      "scenarioNl": "Een collega kan misschien helpen bij een probleem. Vertel je plan.",
+      "explanation": "Heeft ends the subordinate; bekijken we shows inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de uitleg te snel gaat, vraag ik om herhaling.",
+        "english": "When the explanation is too fast, I ask for repetition."
+      }
+    },
+    {
+      "id": "pat-als-01~v04",
+      "parentId": "pat-als-01",
+      "text": "Als de uitleg te snel gaat, vraag ik om herhaling.",
+      "english": "When the explanation is too fast, I ask for repetition.",
+      "scenario": "A colleague sometimes speaks too quickly. Say what you do.",
+      "scenarioNl": "Een collega praat soms te snel. Vertel hoe je reageert.",
+      "explanation": "Gaat closes the subordinate time clause; vraag ik is inverted.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik stuur een bericht als ik extra informatie nodig heb.",
+        "english": "I send a message when I need more information."
+      }
+    },
+    {
+      "id": "pat-als-01~v05",
+      "parentId": "pat-als-01",
+      "text": "Ik stuur een bericht als ik extra informatie nodig heb.",
+      "english": "I send a message when I need more information.",
+      "scenario": "You sometimes need more details before continuing. Explain your response.",
+      "scenarioNl": "Je hebt soms meer gegevens nodig. Vertel wat je doet.",
+      "explanation": "Heb closes the subordinate phrase nodig heb.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik de fout niet kan vinden, bel ik de beheerder.",
+        "english": "If I cannot find the error, I call the administrator."
+      }
+    },
+    {
+      "id": "pat-als-01~v06",
+      "parentId": "pat-als-01",
+      "text": "Als ik de fout niet kan vinden, bel ik de beheerder.",
+      "english": "If I cannot find the error, I call the administrator.",
+      "scenario": "You cannot locate an error. Describe your fallback.",
+      "scenarioNl": "Je kunt een fout niet vinden. Leg je volgende stap uit.",
+      "explanation": "Kan vinden is a final subordinate verb group; bel ik is inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik de gegevens heb gecontroleerd, vraag ik om bevestiging.",
+        "english": "Once I have checked the information, I ask for confirmation."
+      }
+    },
+    {
+      "id": "pat-als-01~v07",
+      "parentId": "pat-als-01",
+      "text": "Als ik de gegevens heb gecontroleerd, vraag ik om bevestiging.",
+      "english": "Once I have checked the information, I ask for confirmation.",
+      "scenario": "You must check details before requesting confirmation.",
+      "scenarioNl": "Je controleert eerst de gegevens en vraagt daarna om bevestiging.",
+      "explanation": "Heb gecontroleerd forms the subordinate perfect cluster.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de vraag dringend is, zoek ik meteen hulp.",
+        "english": "If the question is urgent, I immediately look for help."
+      }
+    },
+    {
+      "id": "pat-als-01~v08",
+      "parentId": "pat-als-01",
+      "text": "Als de vraag dringend is, zoek ik meteen hulp.",
+      "english": "If the question is urgent, I immediately look for help.",
+      "scenario": "An urgent question needs attention. Explain your response.",
+      "scenarioNl": "Een dringende vraag vraagt om hulp. Vertel hoe je reageert.",
+      "explanation": "Is follows dringend in the subordinate clause; zoek ik is inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik vroeger iets niet begreep, vroeg ik altijd om hulp.",
+        "english": "Whenever I did not understand something in the past, I always asked for help."
+      }
+    },
+    {
+      "id": "pat-als-01~v09",
+      "parentId": "pat-als-01",
+      "text": "Als ik vroeger iets niet begreep, vroeg ik altijd om hulp.",
+      "english": "Whenever I did not understand something in the past, I always asked for help.",
+      "scenario": "Describe how you regularly sought help when you were younger.",
+      "scenarioNl": "Vroeger vroeg je altijd om hulp wanneer je iets niet begreep. Beschrijf dat.",
+      "explanation": "Begreep is past subordinate-final; vroeg ik shows inverted past main clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik vraag het opnieuw als het antwoord onduidelijk is.",
+        "english": "I ask again if the answer is unclear."
+      }
+    },
+    {
+      "id": "pat-als-01~v10",
+      "parentId": "pat-als-01",
+      "text": "Ik vraag het opnieuw als het antwoord onduidelijk is.",
+      "english": "I ask again if the answer is unclear.",
+      "scenario": "Someone's answer is confusing. Explain when you repeat your question.",
+      "scenarioNl": "Een antwoord is soms onduidelijk. Leg uit wat je dan doet.",
+      "explanation": "Is ends the subordinate; vraag is finite in the main clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik een foutmelding zie, vraag ik mijn collega om hulp.",
+        "english": "If I see an error message, I ask my colleague for help."
+      }
+    }
+  ],
+  "pat-als-02": [
+    {
+      "id": "pat-als-02~v01",
+      "parentId": "pat-als-02",
+      "text": "Als de server niet reageert, controleer ik de status.",
+      "english": "If the server does not respond, I check its status.",
+      "scenario": "A server is unresponsive. Explain your first check.",
+      "scenarioNl": "Een server reageert niet. Vertel welke controle je eerst uitvoert.",
+      "explanation": "Reageert ends the negative subordinate clause; controleer ik is inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik bekijk de logs als de applicatie vastloopt.",
+        "english": "I examine the logs if the application freezes."
+      }
+    },
+    {
+      "id": "pat-als-02~v02",
+      "parentId": "pat-als-02",
+      "text": "Ik bekijk de logs als de applicatie vastloopt.",
+      "english": "I examine the logs if the application freezes.",
+      "scenario": "An application sometimes freezes. Explain your diagnosis.",
+      "scenarioNl": "Een applicatie loopt soms vast. Leg je controle uit.",
+      "explanation": "Vastloopt joins the separable verb at the subordinate end.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de CPU-belasting hoog is, controleer ik de processen.",
+        "english": "If CPU usage is high, I check the processes."
+      }
+    },
+    {
+      "id": "pat-als-02~v03",
+      "parentId": "pat-als-02",
+      "text": "Als de CPU-belasting hoog is, controleer ik de processen.",
+      "english": "If CPU usage is high, I check the processes.",
+      "scenario": "CPU usage rises. Explain which data you inspect.",
+      "scenarioNl": "Het CPU-gebruik is hoog. Vertel wat je controleert.",
+      "explanation": "Hoog is precedes the finite subordinate verb is.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik meld de storing als de verbinding wegvalt.",
+        "english": "I report the outage if the connection drops."
+      }
+    },
+    {
+      "id": "pat-als-02~v04",
+      "parentId": "pat-als-02",
+      "text": "Ik meld de storing als de verbinding wegvalt.",
+      "english": "I report the outage if the connection drops.",
+      "scenario": "The network may disconnect. Explain when you file an outage report.",
+      "scenarioNl": "De netwerkverbinding kan uitvallen. Vertel wanneer je de storing meldt.",
+      "explanation": "Wegvalt joins the particle in the subordinate clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de back-up mislukt, stuur ik een waarschuwing.",
+        "english": "If the backup fails, I send a warning."
+      }
+    },
+    {
+      "id": "pat-als-02~v05",
+      "parentId": "pat-als-02",
+      "text": "Als de back-up mislukt, stuur ik een waarschuwing.",
+      "english": "If the backup fails, I send a warning.",
+      "scenario": "A backup job fails. Explain how you notify colleagues.",
+      "scenarioNl": "De back-up is mislukt. Vertel hoe je collega's waarschuwt.",
+      "explanation": "Mislukt is final in the simple subordinate clause; stuur ik is inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "We draaien de wijziging terug als de test faalt.",
+        "english": "We roll back the change if the test fails."
+      }
+    },
+    {
+      "id": "pat-als-02~v06",
+      "parentId": "pat-als-02",
+      "text": "We draaien de wijziging terug als de test faalt.",
+      "english": "We roll back the change if the test fails.",
+      "scenario": "A change is under test. Explain the rollback condition.",
+      "scenarioNl": "Een wijziging wordt getest. Leg uit wanneer je die terugdraait.",
+      "explanation": "Draaien ... terug splits the main separable verb; faalt closes the condition.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het probleem is opgelost, informeer ik het team.",
+        "english": "Once the problem has been solved, I inform the team."
+      }
+    },
+    {
+      "id": "pat-als-02~v07",
+      "parentId": "pat-als-02",
+      "text": "Als het probleem is opgelost, informeer ik het team.",
+      "english": "Once the problem has been solved, I inform the team.",
+      "scenario": "An issue is resolved. Tell your team what you do next.",
+      "scenarioNl": "Een probleem is opgelost. Vertel hoe je het team informeert.",
+      "explanation": "Is opgelost finishes the subordinate passive/perfect-like result; informeer ik is inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik kan de dienst herstarten als ik toestemming krijg.",
+        "english": "I can restart the service if I get permission."
+      }
+    },
+    {
+      "id": "pat-als-02~v08",
+      "parentId": "pat-als-02",
+      "text": "Ik kan de dienst herstarten als ik toestemming krijg.",
+      "english": "I can restart the service if I get permission.",
+      "scenario": "You need permission to restart a service. Explain the condition.",
+      "scenarioNl": "Je hebt toestemming nodig voor een herstart. Leg uit wanneer dat kan.",
+      "explanation": "Kan is the finite main modal; herstarten is the infinitive; krijg ends the subordinate clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de gebruiker geen toegang heeft, controleer ik de rechten.",
+        "english": "If the user has no access, I check the permissions."
+      }
+    },
+    {
+      "id": "pat-als-02~v09",
+      "parentId": "pat-als-02",
+      "text": "Als de gebruiker geen toegang heeft, controleer ik de rechten.",
+      "english": "If the user has no access, I check the permissions.",
+      "scenario": "A user cannot access a folder. Explain your first diagnostic step.",
+      "scenarioNl": "Een gebruiker krijgt geen toegang tot een map. Beschrijf je eerste controle.",
+      "explanation": "Heeft is subordinate-final; controleer ik follows with inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de server vroeger uitviel, kreeg ik een melding.",
+        "english": "Whenever the server went down in the past, I received an alert."
+      }
+    },
+    {
+      "id": "pat-als-02~v10",
+      "parentId": "pat-als-02",
+      "text": "Als de server vroeger uitviel, kreeg ik een melding.",
+      "english": "Whenever the server went down in the past, I received an alert.",
+      "scenario": "Describe how alerts used to work whenever a server failed.",
+      "scenarioNl": "Vroeger kreeg je een melding bij een serverstoring. Vertel over die gewoonte.",
+      "explanation": "Vroeger establishes repeated past; uitviel and kreeg are past finite forms.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de server niet reageert, controleer ik de status.",
+        "english": "If the server does not respond, I check its status."
+      }
+    }
+  ],
+  "pat-als-03": [
+    {
+      "id": "pat-als-03~v01",
+      "parentId": "pat-als-03",
+      "text": "Als het sneeuwt, neem ik de trein.",
+      "english": "If it snows, I take the train.",
+      "scenario": "Snow changes how you travel. Explain your transport choice.",
+      "scenarioNl": "Bij sneeuw kies je ander vervoer. Vertel wat je doet.",
+      "explanation": "Sneeuwt closes the condition; neem ik is inverted.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik ga naar het park als de zon schijnt.",
+        "english": "I go to the park when the sun shines."
+      }
+    },
+    {
+      "id": "pat-als-03~v02",
+      "parentId": "pat-als-03",
+      "text": "Ik ga naar het park als de zon schijnt.",
+      "english": "I go to the park when the sun shines.",
+      "scenario": "You visit a park in sunny weather. Describe your habit.",
+      "scenarioNl": "Bij mooi weer bezoek je graag het park. Vertel wanneer je gaat.",
+      "explanation": "Schijnt is subordinate-final; ga is main-clause finite.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het hard waait, sluit ik de ramen.",
+        "english": "When it is very windy, I close the windows."
+      }
+    },
+    {
+      "id": "pat-als-03~v03",
+      "parentId": "pat-als-03",
+      "text": "Als het hard waait, sluit ik de ramen.",
+      "english": "When it is very windy, I close the windows.",
+      "scenario": "Strong wind makes you shut windows. Explain your routine.",
+      "scenarioNl": "Bij harde wind doe je de ramen dicht. Vertel wat je doet.",
+      "explanation": "Waait ends the time clause; sluit ik shows inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het morgen droog is, ga ik fietsen.",
+        "english": "If it is dry tomorrow, I will go cycling."
+      }
+    },
+    {
+      "id": "pat-als-03~v04",
+      "parentId": "pat-als-03",
+      "text": "Als het morgen droog is, ga ik fietsen.",
+      "english": "If it is dry tomorrow, I will go cycling.",
+      "scenario": "You want to cycle tomorrow depending on the weather.",
+      "scenarioNl": "Je wilt morgen fietsen, maar het weer is onzeker. Vertel je plan.",
+      "explanation": "Is closes the future condition; ga ik is inverted.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik blijf binnen als het onweert.",
+        "english": "I stay inside when there is a thunderstorm."
+      }
+    },
+    {
+      "id": "pat-als-03~v05",
+      "parentId": "pat-als-03",
+      "text": "Ik blijf binnen als het onweert.",
+      "english": "I stay inside when there is a thunderstorm.",
+      "scenario": "You prefer to stay indoors during thunderstorms.",
+      "scenarioNl": "Bij onweer blijf je liever binnen. Leg uit wanneer.",
+      "explanation": "Onweert ends the subordinate clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het koud wordt, trek ik een jas aan.",
+        "english": "When it gets cold, I put on a jacket."
+      }
+    },
+    {
+      "id": "pat-als-03~v06",
+      "parentId": "pat-als-03",
+      "text": "Als het koud wordt, trek ik een jas aan.",
+      "english": "When it gets cold, I put on a jacket.",
+      "scenario": "You put on a jacket when the temperature falls.",
+      "scenarioNl": "Het wordt soms koud. Vertel wat je dan aantrekt.",
+      "explanation": "Wordt ends the subordinate clause; trek ... aan separates aantrekken.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het volgende week regent, neem ik een paraplu mee.",
+        "english": "If it rains next week, I'll bring an umbrella."
+      }
+    },
+    {
+      "id": "pat-als-03~v07",
+      "parentId": "pat-als-03",
+      "text": "Als het volgende week regent, neem ik een paraplu mee.",
+      "english": "If it rains next week, I'll bring an umbrella.",
+      "scenario": "You might need rain protection next week. Explain the condition.",
+      "scenarioNl": "Volgende week kan het regenen. Vertel wat je dan meeneemt.",
+      "explanation": "Regent closes the future condition; neem ... mee splits meenemen.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik neem water mee als het erg warm is.",
+        "english": "I take water along when it is very hot."
+      }
+    },
+    {
+      "id": "pat-als-03~v08",
+      "parentId": "pat-als-03",
+      "text": "Ik neem water mee als het erg warm is.",
+      "english": "I take water along when it is very hot.",
+      "scenario": "You carry drinking water on hot days. Describe your habit.",
+      "scenarioNl": "Op warme dagen neem je graag water mee. Leg uit wanneer.",
+      "explanation": "Neem ... mee separates the main finite verb; is is subordinate-final.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het vroeger sneeuwde, bouwden we een sneeuwpop.",
+        "english": "Whenever it snowed in the past, we built a snowman."
+      }
+    },
+    {
+      "id": "pat-als-03~v09",
+      "parentId": "pat-als-03",
+      "text": "Als het vroeger sneeuwde, bouwden we een sneeuwpop.",
+      "english": "Whenever it snowed in the past, we built a snowman.",
+      "scenario": "Describe a recurring childhood winter activity.",
+      "scenarioNl": "Vroeger maakte je bij sneeuw vaak een sneeuwpop. Vertel daarover.",
+      "explanation": "Sneeuwde is past subordinate-final; bouwden we is inverted past V2.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de regen stopt, gaan we naar buiten.",
+        "english": "When the rain stops, we go outside."
+      }
+    },
+    {
+      "id": "pat-als-03~v10",
+      "parentId": "pat-als-03",
+      "text": "Als de regen stopt, gaan we naar buiten.",
+      "english": "When the rain stops, we go outside.",
+      "scenario": "You wait for rain to stop before going outside.",
+      "scenarioNl": "Je wilt naar buiten maar het regent nog. Leg uit wanneer je vertrekt.",
+      "explanation": "Stopt closes the subordinate clause and gaan we is inverted main clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het sneeuwt, neem ik de trein.",
+        "english": "If it snows, I take the train."
+      }
+    }
+  ]
+}

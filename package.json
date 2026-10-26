@@ -25,7 +25,8 @@
     "content:learning-check": "node scripts/sync-learning-vocabulary.mjs --check",
     "audio:export": "node scripts/export-learning-audio.mjs",
     "content:audit": "node scripts/audit-learning-content.mjs",
-    "content:review-check": "node scripts/audit-learning-content.mjs --require-complete"
+    "content:review-check": "node scripts/audit-learning-content.mjs --require-complete",
+    "grammar:release-gate": "node scripts/check-grammar-acceptance.mjs"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

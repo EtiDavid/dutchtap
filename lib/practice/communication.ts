@@ -1,6 +1,7 @@
 import workplace from "@/data/workplace-communication.json";
 import catalogue from "@/data/dutch-communication.json";
 import corrections from "@/data/editorial/communication-corrections.json";
+import alsExpansion from "@/data/editorial/grammar-als-expansion.json";
 import type { Lang } from "@/lib/lang";
 import {
   sentenceTokens,
@@ -46,6 +47,25 @@ for (const [text, patch] of Object.entries(corrections as Record<string, Editori
   for (const answer of patch.answers)
     if (!task.answers.some((a) => a.text === answer.text))
       task.answers.push(answer);
+}
+// Each contrast pair has two grammatical clause orders with the same situation.
+ // The original “model” stays stable for any saved attempt, while a separately
+ // identified alternative is recognised and may rotate into the word-order quiz.
+ // This applies to new ALS exercises only and never changes old Core answers.
+for (let i = 0; i < alsExpansion.length; i += 2) {
+  const first = alsExpansion[i], second = alsExpansion[i + 1];
+  if (!second || first.english !== second.english)
+    throw new Error("Broken ALS answer pair " + i);
+  for (const [primary, alternative] of [[first,second],[second,first]]) {
+    tasks[primary.dutch] = {
+      scenario: primary.scenario,
+      answers: [
+        {id:"model",text:primary.dutch,english:primary.english,explanation:primary.why},
+        {id:"clause-order",text:alternative.dutch,english:alternative.english,
+         explanation:"Both clauses convey the same situation. The subordinate verb placement remains; when the ALS clause comes first, the following main clause uses V2 inversion."}
+      ]
+    };
+  }
 }
 const minorForm = (text: string) =>
   text

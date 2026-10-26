@@ -1,17 +1,18 @@
 import { expect, test } from '@playwright/test';
 import { asGuest, savedGuestSessions, switchMode } from './helpers';
+import { GRAMMAR_AREAS } from '../../lib/content/collections';
 
 test.beforeEach(async ({ page }) => { await asGuest(page); });
 
 test.describe('Grammar patterns work like flashcards', () => {
   test('a pattern tile opens Create session on that pattern, and the session has examples, a situation to speak from and a word-order quiz', async ({ page }) => {
     await page.goto('/flashcards');
-    await expect(page.getByTestId('pattern-tiles').getByRole('link')).toHaveCount(9);
+    await expect(page.getByTestId('pattern-tiles').getByRole('link')).toHaveCount(Object.keys(GRAMMAR_AREAS).length);
     await page.getByRole('link', { name: /^Als · conditions/ }).click();
     const dialog = page.getByRole('dialog', { name: 'Create a session' });
     await expect(dialog.locator('select').first()).toHaveValue('grammar');
     await expect(dialog.locator('select').nth(1)).toHaveValue('als');
-    await expect(dialog.getByRole('radio', { name: /Difficult/ })).toContainText('19 cards');
+    await expect(dialog.getByRole('radio', { name: /Difficult/ })).toContainText('100 cards');
     await dialog.getByRole('button', { name: 'Create session', exact: true }).click();
 
     const session = (await savedGuestSessions(page))[0] as unknown as { collection: string; topic: string; cardIds: string[] };
@@ -36,7 +37,7 @@ test.describe('Grammar patterns work like flashcards', () => {
 
     // Word order: tiles for the same sentences.
     await switchMode(page, 'quiz');
-    await expect(page.getByTestId('quiz-situation')).toBeVisible();
+    await expect(page.getByTestId('grammar-scenario-prompt')).toBeVisible();
     expect(await page.locator('article img').count()).toBe(0);
   });
 

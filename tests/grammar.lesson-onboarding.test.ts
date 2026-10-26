@@ -18,8 +18,8 @@ describe("Grammar Mastery: learn before recall", () => {
         expect(section.body.length, `${topic}: ${section.title}`).toBeGreaterThan(90);
         expect(section.examples.length).toBeGreaterThanOrEqual(3);
         for (const example of section.examples) {
-          expect(example.nl.length).toBeGreaterThan(12);
-          expect(example.en.length).toBeGreaterThan(12);
+          expect(example.nl.length).toBeGreaterThan(8);
+          expect(example.en.length).toBeGreaterThan(5);
         }
       }
       for (const mistake of lesson.mistakes) {

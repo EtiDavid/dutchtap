@@ -1,0 +1,732 @@
+{
+  "version": 1,
+  "note": "Canonical, hand-authored per-sentence analysis for the ALS topic. Status 'ai-editorial-checked' means the sentence, English, spans, finite verbs and corrections were each examined by an AI editor; it is NOT native-speaker review. Do not generate these by pattern matching.",
+  "cards": {
+    "pat-als-02": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "Not one fixed moment but a rule you follow every time the server fails, so 'if' (or 'whenever') fits; the Dutch als covers both.",
+      "situationNl": "Je werkt in de IT. Soms stopt een server plotseling met werken en je hebt meteen hulp nodig. Vertel wat jij dan het eerst doet.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als de server uitvalt",
+          "subject": "de server",
+          "finite": "uitvalt",
+          "why": "Uitvallen (to go down, to fail) is a separable verb: uit + vallen. As an independent sentence it would split: 'De server valt uit.' Inside an als-clause the finite verb moves to the end and the particle joins it again, so you get one word: uitvalt."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "bel ik mijn collega",
+          "subject": "ik",
+          "finite": "bel",
+          "why": "The whole als-clause is the first constituent of the main sentence. The finite verb must come directly after it (verb-second), so 'bel' stands before its subject 'ik'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "de server"
+        },
+        {
+          "label": "finite verb (joined)",
+          "text": "uitvalt"
+        },
+        {
+          "label": "finite verb",
+          "text": "bel"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object",
+          "text": "mijn collega"
+        }
+      ],
+      "meaning": "You state your standard reaction to an outage: when the server goes down, you call a colleague.",
+      "order": "Als de server uitvalt is a dependent clause (bijzin), so its finite verb 'uitvalt' stands last. Because this whole clause stands in front, it takes position one of the main sentence, and Dutch main clauses keep their finite verb in position two: bel, then ik. Compare the main-clause-first version, where 'Ik bel' keeps the ordinary subject-first order.",
+      "forms": "uitvallen (uit + vallen), separable. Main clause: ik val uit, de server valt uit. In a bijzin the parts join: ... als de server uitvalt. bellen is regular: ik bel, jij belt.",
+      "compare": "English keeps 'I call' after 'If the server goes down,'. Dutch must flip to 'bel ik'. English also keeps 'goes down' as two words; Dutch writes the finite verb as one word at the end of the clause.",
+      "mistakes": [
+        {
+          "wrong": "Als de server valt uit, bel ik mijn collega.",
+          "right": "Als de server uitvalt, bel ik mijn collega.",
+          "why": "'De server valt uit' is main-clause order. After als the finite verb goes last and the particle joins it: uitvalt."
+        },
+        {
+          "wrong": "Als de server uitvalt, ik bel mijn collega.",
+          "right": "Als de server uitvalt, bel ik mijn collega.",
+          "why": "The als-clause already fills position one, so the finite verb 'bel' has to come before 'ik'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Ik bel mijn collega als de server uitvalt.",
+        "english": "I call my colleague if the server goes down.",
+        "note": "Same meaning with the main clause first: ordinary 'Ik bel' (subject first), and the bijzin keeps 'uitvalt' at its end."
+      }
+    },
+    "pat-als-07": {
+      "status": "ai-editorial-checked",
+      "alsSense": "when",
+      "alsSenseWhy": "A particular future moment (arriving home), so 'when' fits better than 'if'.",
+      "situationNl": "Een vriend wil je vanavond spreken, maar je bent nog onderweg naar huis. Beloof hem een telefoontje op het moment dat je binnen bent.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik bel je",
+          "subject": "Ik",
+          "finite": "bel",
+          "why": "Ik is the first constituent, so the finite verb 'bel' is simply second: ordinary subject-first order."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als ik thuis ben",
+          "subject": "ik",
+          "finite": "ben",
+          "why": "In an independent sentence you would say 'Ik ben thuis'. After als, 'ben' moves to the end of its clause: als ik thuis ben."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "bel"
+        },
+        {
+          "label": "object",
+          "text": "je"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "predicate",
+          "text": "thuis"
+        },
+        {
+          "label": "finite verb",
+          "text": "ben"
+        }
+      ],
+      "meaning": "You promise to phone a friend at the moment you arrive home.",
+      "order": "The main clause comes first and starts with its subject: Ik bel je. Nothing is in front of the subject, so there is no reason to invert. The als-clause that follows is a bijzin: its finite verb 'ben' moves behind 'thuis' (als ik thuis ben), not 'als ik ben thuis'.",
+      "forms": "zijn: ik ben, jij bent, hij is. The present tense does the work of the English future: 'I'll call you when I'm home' becomes 'Ik bel je als ik thuis ben', with no 'zal'.",
+      "compare": "English uses will in the main clause ('I'll call') and the present in the when-clause ('I'm home'). Dutch uses the plain present in both. The Dutch als-clause also puts 'ben' after 'thuis', where English keeps 'I'm home'.",
+      "mistakes": [
+        {
+          "wrong": "Ik bel je als ik ben thuis.",
+          "right": "Ik bel je als ik thuis ben.",
+          "why": "'Ik ben thuis' is main-clause order. In the dependent als-clause the finite verb goes after 'thuis'."
+        },
+        {
+          "wrong": "Bel ik je als ik thuis ben.",
+          "right": "Ik bel je als ik thuis ben.",
+          "why": "Inversion is only needed when something other than the subject fills position one. Here the subject Ik is first, so the verb simply follows it."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als ik thuis ben, bel ik je.",
+        "english": "When I'm home, I'll call you.",
+        "note": "With the als-clause in front, the clause fills position one and the main verb inverts: bel ik."
+      }
+    },
+    "pat-als-72": {
+      "status": "ai-editorial-checked",
+      "alsSense": "whenever",
+      "alsSenseWhy": "A repeated situation in the past ('whenever I was free'), which is what als expresses in the past. A single past occasion would use toen.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als ik vroeger vrij was",
+          "subject": "ik",
+          "finite": "was",
+          "why": "'Ik was vrij' is main-clause order. In the als-clause the finite verb 'was' stands after the predicate 'vrij'. Vroeger (in the past, in earlier days) marks the past habit."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "ging ik fietsen",
+          "subject": "ik",
+          "finite": "ging",
+          "why": "The als-clause is position one, so the finite verb 'ging' comes before 'ik'. 'Fietsen' is a bare infinitive after gaan (to go cycling) and stands at the end."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "time adverb",
+          "text": "vroeger"
+        },
+        {
+          "label": "predicate",
+          "text": "vrij"
+        },
+        {
+          "label": "finite verb",
+          "text": "was"
+        },
+        {
+          "label": "finite verb",
+          "text": "ging"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "infinitive",
+          "text": "fietsen"
+        }
+      ],
+      "meaning": "You describe an old habit: every time you had free time, you went cycling.",
+      "order": "The bijzin is Als ik vroeger vrij was, with the finite verb 'was' last. As the front clause it fills position one, so the main verb 'ging' precedes its subject: ging ik fietsen. The infinitive 'fietsen' closes the main clause.",
+      "forms": "zijn, simple past: ik was. gaan is irregular: ga, ging, gegaan. After gaan a bare infinitive says what you go and do: ik ging fietsen (no 'te').",
+      "compare": "English needs 'whenever' or 'used to' to show the habit. Dutch shows it with the simple past plus als and the word vroeger. English 'I went cycling' keeps subject-first order; Dutch must say 'ging ik fietsen' after the front clause.",
+      "mistakes": [
+        {
+          "wrong": "Als ik vroeger vrij was, ik ging fietsen.",
+          "right": "Als ik vroeger vrij was, ging ik fietsen.",
+          "why": "The als-clause fills position one, so the finite verb 'ging' must come before the subject."
+        },
+        {
+          "wrong": "Als ik vroeger vrij ging, was ik fietsen.",
+          "right": "Als ik vroeger vrij was, ging ik fietsen.",
+          "why": "The verbs swapped places: 'was' (zijn) belongs with the predicate vrij, 'ging' (gaan) with fietsen."
+        }
+      ],
+      "contrast": {
+        "dutch": "Toen ik gisteren vrij was, ging ik fietsen.",
+        "english": "When I was free yesterday, I went cycling.",
+        "note": "Toen names one specific past occasion (gisteren). Als is the choice for a repeated past situation ('whenever')."
+      }
+    },
+    "pat-als-68": {
+      "status": "ai-editorial-checked",
+      "alsSense": "when",
+      "alsSenseWhy": "A sequence of two steps: first the report is checked, then it is sent. 'Once' or 'when' fits better than 'if'.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als ik het verslag heb gecontroleerd",
+          "subject": "ik",
+          "finite": "heb",
+          "why": "Perfect tense = auxiliary 'heb' + participle 'gecontroleerd'. In a bijzin the whole verb group closes the clause, with the participle last. The finite verb is 'heb', but it is not the very last word: 'heb gecontroleerd' is a verb cluster."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "stuur ik het naar de klant",
+          "subject": "ik",
+          "finite": "stuur",
+          "why": "The whole als-clause is position one, so the finite verb 'stuur' comes before 'ik'. 'Naar de klant' says where it goes."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object",
+          "text": "het verslag"
+        },
+        {
+          "label": "finite verb (auxiliary)",
+          "text": "heb"
+        },
+        {
+          "label": "past participle",
+          "text": "gecontroleerd"
+        },
+        {
+          "label": "finite verb",
+          "text": "stuur"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object",
+          "text": "het"
+        },
+        {
+          "label": "destination",
+          "text": "naar de klant"
+        }
+      ],
+      "meaning": "You explain your order of work: first check the report, and only then send it to the customer.",
+      "order": "Inside the bijzin the object comes before the verb group: ik het verslag heb gecontroleerd. The finite verb 'heb' sits directly in front of the participle, and together they end the clause. Because the als-clause is in front, the main clause inverts: stuur ik.",
+      "forms": "Perfect: heb + participle. Controleren is not separable and its stress is on -le-, so the participle is gecontroleerd (ge- + controleer + d) and not 'ge-' with a particle. Standard Dutch accepts both 'heb gecontroleerd' and 'gecontroleerd heb' in a bijzin; Flemish speakers often prefer the participle first. This card uses 'heb gecontroleerd'.",
+      "compare": "English 'Once I've checked the report' also uses a perfect, but its order (have + participle) never changes. Dutch keeps the object in front of the whole verb group and puts the group at the end of the clause.",
+      "mistakes": [
+        {
+          "wrong": "Als ik heb het verslag gecontroleerd, stuur ik het naar de klant.",
+          "right": "Als ik het verslag heb gecontroleerd, stuur ik het naar de klant.",
+          "why": "In a bijzin the verb group stands after the object. 'Heb' cannot sit directly after 'ik' as it does in 'Ik heb het verslag gecontroleerd'."
+        },
+        {
+          "wrong": "Als ik het verslag gecontroleerd, stuur ik het naar de klant.",
+          "right": "Als ik het verslag heb gecontroleerd, stuur ik het naar de klant.",
+          "why": "A participle alone has no tense. The finite auxiliary 'heb' must be in the clause."
+        }
+      ],
+      "contrast": {
+        "dutch": "Ik stuur het verslag naar de klant als ik het heb gecontroleerd.",
+        "english": "I send the report to the customer once I've checked it.",
+        "note": "Main clause first: ordinary 'Ik stuur'. The bijzin keeps its verb group 'heb gecontroleerd' at the end."
+      },
+      "openQuestions": [
+        "Confirm with a native or Taaladvies source how strongly Flemish usage prefers 'gecontroleerd heb' over 'heb gecontroleerd' before stating a regional preference as fact."
+      ]
+    },
+    "pat-als-14": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "Possible but not certain: the colleague may or may not have questions, so 'if'.",
+      "situationNl": "Een nieuwe collega durft je niets te vragen. Laat hem weten dat hij je kan bellen bij twijfel.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als je vragen hebt",
+          "subject": "je",
+          "finite": "hebt",
+          "why": "'Je hebt vragen' is main-clause order. After als the finite verb 'hebt' goes to the end of its clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "kun je me bellen",
+          "subject": "je",
+          "finite": "kun",
+          "why": "The finite verb is the modal 'kun' and it takes position two, before 'je'. The infinitive 'bellen' belongs to it and stands at the end of the main clause, after the object 'me'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "je"
+        },
+        {
+          "label": "object",
+          "text": "vragen"
+        },
+        {
+          "label": "finite verb",
+          "text": "hebt"
+        },
+        {
+          "label": "finite verb (modal)",
+          "text": "kun"
+        },
+        {
+          "label": "subject",
+          "text": "je"
+        },
+        {
+          "label": "object",
+          "text": "me"
+        },
+        {
+          "label": "infinitive",
+          "text": "bellen"
+        }
+      ],
+      "meaning": "You tell a colleague that they are welcome to phone you whenever they have a question.",
+      "order": "The als-clause ends with 'hebt'. It fills position one of the main sentence, so the finite verb (here the modal 'kun') comes next and the subject 'je' follows it. The infinitive 'bellen' always travels to the end of the main clause with a modal: kun je me bellen.",
+      "forms": "kunnen: je kunt, but kun je after inversion (the -t drops when je follows the verb). hebben: je hebt, so 'als je vragen hebt'. A modal takes a bare infinitive without te: kun je bellen.",
+      "compare": "English 'you can call me' is the same in both sentence orders. Dutch changes the order: 'je kunt me bellen' becomes 'kun je me bellen' after the front clause. English never moves the infinitive; Dutch puts it last.",
+      "mistakes": [
+        {
+          "wrong": "Als je vragen hebt, je kunt me bellen.",
+          "right": "Als je vragen hebt, kun je me bellen.",
+          "why": "The als-clause fills position one, so the modal 'kun' has to come before the subject."
+        },
+        {
+          "wrong": "Als je vragen hebt, kun je bellen me.",
+          "right": "Als je vragen hebt, kun je me bellen.",
+          "why": "The infinitive 'bellen' closes the main clause; the object 'me' stands before it."
+        }
+      ],
+      "contrast": {
+        "dutch": "Je kunt me bellen als je vragen hebt.",
+        "english": "You can call me if you have questions.",
+        "note": "Main clause first: subject-first 'Je kunt' with -t, because je now comes before the verb."
+      }
+    },
+    "pat-als-33": {
+      "status": "ai-editorial-checked",
+      "alsSense": "whenever",
+      "alsSenseWhy": "A habit: each time you learn new words you write them down, so 'whenever' or 'when' fits.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik schrijf nieuwe woorden op",
+          "subject": "Ik",
+          "finite": "schrijf",
+          "why": "Subject-first order, so 'schrijf' is second. Opschrijven is separable: the particle 'op' leaves the verb and stands at the end of the main clause, after the object."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als ik ze leer",
+          "subject": "ik",
+          "finite": "leer",
+          "why": "'Ze' (them) is the object pronoun for 'nieuwe woorden' and stands before the verb. The finite verb 'leer' closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "schrijf"
+        },
+        {
+          "label": "object",
+          "text": "nieuwe woorden"
+        },
+        {
+          "label": "separable particle",
+          "text": "op"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object pronoun",
+          "text": "ze"
+        },
+        {
+          "label": "finite verb",
+          "text": "leer"
+        }
+      ],
+      "meaning": "You explain your method for remembering vocabulary: every time you learn new words, you write them down.",
+      "order": "The main clause is split around its object: schrijf (position two) ... nieuwe woorden ... op (the particle comes last). The bijzin 'als ik ze leer' has the finite verb at the end. Nothing stands in front of Ik, so no inversion is needed.",
+      "forms": "opschrijven = op + schrijven. Present: ik schrijf op. Perfect: ik heb opgeschreven. The particle only travels away from the verb in a main clause; here the verb stays attached to nothing, because 'leer' (leren) is not separable.",
+      "compare": "English 'write down' can be 'write them down' or 'write down the words', with the particle straight after the verb or after the object. Dutch always puts the particle at the end of the main clause: 'schrijf ... op'.",
+      "mistakes": [
+        {
+          "wrong": "Ik opschrijf nieuwe woorden als ik ze leer.",
+          "right": "Ik schrijf nieuwe woorden op als ik ze leer.",
+          "why": "In a main clause a separable verb splits: the finite verb stays in position two and the particle moves to the end."
+        },
+        {
+          "wrong": "Ik schrijf op nieuwe woorden als ik ze leer.",
+          "right": "Ik schrijf nieuwe woorden op als ik ze leer.",
+          "why": "The particle is not placed right after the verb, as English 'write down' allows. It comes after the object, at the end of the main clause."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als ik nieuwe woorden leer, schrijf ik ze op.",
+        "english": "When I learn new words, I write them down.",
+        "note": "Fronted als-clause: main clause inverts (schrijf ik), and 'ze' replaces 'nieuwe woorden' because the words were already named. The particle 'op' is still last."
+      }
+    },
+    "pat-als-60": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "It is uncertain whether the internet will fail tomorrow, so the clause is a real condition: 'if'.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als ik morgen geen internet heb",
+          "subject": "ik",
+          "finite": "heb",
+          "why": "'Morgen' (tomorrow) and the negated noun phrase 'geen internet' come before the finite verb, and 'heb' closes the clause. 'Ik heb morgen geen internet' would be the independent sentence."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "werk ik offline verder",
+          "subject": "ik",
+          "finite": "werk",
+          "why": "The als-clause is position one, so 'werk' comes before 'ik'. Verderwerken (to continue working) is separable, so the particle 'verder' stands at the end."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "time phrase",
+          "text": "morgen"
+        },
+        {
+          "label": "negated object",
+          "text": "geen internet"
+        },
+        {
+          "label": "finite verb",
+          "text": "heb"
+        },
+        {
+          "label": "finite verb",
+          "text": "werk"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "manner",
+          "text": "offline"
+        },
+        {
+          "label": "separable particle",
+          "text": "verder"
+        }
+      ],
+      "meaning": "You tell someone your fallback plan: if there is no internet tomorrow, you will carry on working offline.",
+      "order": "Als ik morgen geen internet heb ends with the finite verb 'heb'. This front clause is the first constituent of the main sentence, so 'werk' (finite) comes before 'ik'. The particle 'verder' of verderwerken goes to the very end: werk ik offline verder.",
+      "forms": "Geen is the negation of 'een' or of a noun without article: geen internet (no internet), not 'niet internet'. Verderwerken: ik werk verder, ik heb verder gewerkt. The present tense covers the future in both clauses.",
+      "compare": "English says 'I'll continue' with will; Dutch uses the present tense, 'werk ik ... verder'. English 'If I don't have internet' uses do-support; Dutch simply negates the noun with geen.",
+      "mistakes": [
+        {
+          "wrong": "Als ik morgen niet internet heb, werk ik offline verder.",
+          "right": "Als ik morgen geen internet heb, werk ik offline verder.",
+          "why": "A noun without an article is negated with 'geen', not with 'niet'."
+        },
+        {
+          "wrong": "Als ik morgen geen internet heb, ik werk offline verder.",
+          "right": "Als ik morgen geen internet heb, werk ik offline verder.",
+          "why": "The als-clause fills position one, so the finite verb 'werk' must precede 'ik'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Ik werk offline verder als ik morgen geen internet heb.",
+        "english": "I'll continue working offline if I have no internet tomorrow.",
+        "note": "Main clause first: no inversion, 'Ik werk ... verder', and the bijzin keeps 'heb' at its end."
+      }
+    },
+    "pat-als-05": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "It is not certain that the problem will come back, so the clause is a real condition: 'if'.",
+      "situationNl": "Je collega gaat naar huis, maar je weet niet zeker of de storing echt weg is. Vraag hem je te bellen, maar alleen bij een nieuwe storing.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Bel me",
+          "subject": "(jij, niet uitgesproken)",
+          "finite": "Bel",
+          "why": "A command (imperative) starts with the verb and leaves the subject unspoken. 'Bel' is the verb stem of bellen; 'me' is the unstressed form of 'mij'."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als het probleem terugkomt",
+          "subject": "het probleem",
+          "finite": "terugkomt",
+          "why": "Terugkomen (to come back) is separable: 'Het probleem komt terug.' In an als-clause the parts join again at the end: terugkomt."
+        }
+      ],
+      "parts": [
+        {
+          "label": "imperative verb",
+          "text": "Bel"
+        },
+        {
+          "label": "object",
+          "text": "me"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "het probleem"
+        },
+        {
+          "label": "finite verb (joined)",
+          "text": "terugkomt"
+        }
+      ],
+      "meaning": "You ask a colleague to phone you if the problem comes back.",
+      "order": "The command comes first and begins with the verb, so no subject is needed. After it, the dependent als-clause has its finite verb at the end: terugkomt. The two parts of the separable verb are joined because they now stand together at the end of a bijzin.",
+      "forms": "Imperative of bellen: bel (no -t). me/mij: 'me' is the unstressed object pronoun. terugkomen: main clause 'komt terug', bijzin 'terugkomt'.",
+      "compare": "English says 'comes back' in two words, often with an unstressed 'comes' before. Dutch writes the finite verb as one word at the end of the als-clause. English also needs 'you' in some imperatives of politeness; Dutch just uses the stem.",
+      "mistakes": [
+        {
+          "wrong": "Bel me als het probleem komt terug.",
+          "right": "Bel me als het probleem terugkomt.",
+          "why": "'Komt terug' is main-clause order. In the dependent als-clause the particle and verb join at the end."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als het probleem terugkomt, bel me dan.",
+        "english": "If the problem comes back, call me then.",
+        "note": "With the als-clause in front, an instruction often adds 'dan' (then). The imperative keeps the verb first in its own part."
+      }
+    },
+    "pat-als-reuse-career-troubleshooting-029": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "An unexpected event you want to guard against: a real condition, so 'if'.",
+      "situationNl": "Je begeleidt een collega bij een belangrijke test. Hij moet de test onderbreken bij een vreemd bericht op het scherm. Geef hem de instructie.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Stop de test",
+          "subject": "(jij, niet uitgesproken)",
+          "finite": "Stop",
+          "why": "An instruction (imperative): the verb stem 'stop' comes first and the subject is left out."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als er een onverwachte waarschuwing verschijnt",
+          "subject": "een onverwachte waarschuwing",
+          "finite": "verschijnt",
+          "why": "With an indefinite subject ('a warning') Dutch usually adds 'er' right after the conjunction. The real subject is 'een onverwachte waarschuwing'; the finite verb 'verschijnt' closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "imperative verb",
+          "text": "Stop"
+        },
+        {
+          "label": "object",
+          "text": "de test"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "placeholder subject",
+          "text": "er"
+        },
+        {
+          "label": "subject",
+          "text": "een onverwachte waarschuwing"
+        },
+        {
+          "label": "finite verb",
+          "text": "verschijnt"
+        }
+      ],
+      "meaning": "You give a clear stop rule: if a warning you did not expect shows up, halt the test.",
+      "order": "The imperative 'Stop de test' stands first, so no inversion question arises. In the als-clause the order is conjunction + er + subject + finite verb: the verb 'verschijnt' is last. As an independent sentence it would read 'Er verschijnt een onverwachte waarschuwing', with the verb second.",
+      "forms": "Er introduces a new, indefinite subject (a warning, not the warning). Waarschuwing is a de-word, so the adjective takes -e after 'een': een onverwachte waarschuwing (a het-word would give 'een onverwacht bericht'). Imperative of stoppen: stop.",
+      "compare": "English says 'if an unexpected warning appears' without any extra word. Dutch usually adds 'er' before an indefinite subject, and it keeps 'verschijnt' at the end instead of right after the subject.",
+      "mistakes": [
+        {
+          "wrong": "Stop de test als er verschijnt een onverwachte waarschuwing.",
+          "right": "Stop de test als er een onverwachte waarschuwing verschijnt.",
+          "why": "'Er verschijnt een waarschuwing' is main-clause order. After als, the subject comes first and the finite verb last."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als er een onverwachte waarschuwing verschijnt, stop dan de test.",
+        "english": "If an unexpected warning appears, stop the test then.",
+        "note": "Fronted als-clause; the instruction keeps its verb first and usually adds 'dan'."
+      }
+    },
+    "pat-als-reuse-career-priorities-051": {
+      "status": "ai-editorial-checked",
+      "alsSense": "only-when",
+      "alsSenseWhy": "'Pas als' means 'not until' / 'only when': access working is a prerequisite that must be met first.",
+      "situationNl": "Je team wil beginnen met een controle, maar de aanmelding werkt nog niet. Leg uit wat jullie voorwaarde is voor de controle.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Pas als de toegang werkt",
+          "subject": "de toegang",
+          "finite": "werkt",
+          "why": "'Pas' (not until, only) belongs to the conjunction: it stresses that the condition must be met first. The finite verb 'werkt' still closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "beginnen we met de controle",
+          "subject": "we",
+          "finite": "beginnen",
+          "why": "The whole 'Pas als ...' clause is position one, so the finite verb 'beginnen' comes before 'we'. 'Met de controle' completes the verb: beginnen met (to start with)."
+        }
+      ],
+      "parts": [
+        {
+          "label": "focus adverb",
+          "text": "Pas"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "de toegang"
+        },
+        {
+          "label": "finite verb",
+          "text": "werkt"
+        },
+        {
+          "label": "finite verb",
+          "text": "beginnen"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "prepositional phrase",
+          "text": "met de controle"
+        }
+      ],
+      "meaning": "You tell colleagues that the check can only start once access works.",
+      "order": "Pas als de toegang werkt is a dependent clause with the finite verb last. It counts as one constituent in position one, so the main clause continues with its finite verb 'beginnen' and then the subject 'we'. Dutch does this after any front clause; it is not special to 'pas als'.",
+      "forms": "beginnen met + noun (to begin with something). werken here means 'to function' (de toegang werkt = access works). 'We beginnen' with -en because we is plural.",
+      "compare": "English 'Only when access works do we start the check' also inverts after 'only when', but only in that restrictive case. Dutch inverts after every fronted element, including a plain 'Als ... , ...'.",
+      "mistakes": [
+        {
+          "wrong": "Pas als de toegang werkt, we beginnen met de controle.",
+          "right": "Pas als de toegang werkt, beginnen we met de controle.",
+          "why": "The whole front clause is position one, so the finite verb 'beginnen' must stand before the subject 'we'."
+        }
+      ],
+      "contrast": {
+        "dutch": "We beginnen pas met de controle als de toegang werkt.",
+        "english": "We only start the check once access works.",
+        "note": "Main clause first, with pas moved next to the part it limits: 'pas met de controle'. No inversion because We is first."
+      }
+    }
+  }
+}

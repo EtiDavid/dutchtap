@@ -4,6 +4,23 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-26 — Claude Code continuation: P2 Dat to 100 base cards with per-sentence analysis
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- Dat: 44 new sentences (`data/editorial/grammar-p2-dat.json`, ids `pat-dat-21..64`): 24 report-verb-first, 6 time/attitude-fronted, 4 negated-opinion (`ik denk niet dat`), 3 yes/no questions, 7 relative-clause (`dat`/`die`) cards. Together with 20 legacy cards and 36 linked source sentences (19 earlier + 17 new in `data/grammar-reuse-links.json`) that is 100 base cards.
+- All 100 have a hand-authored record in `data/grammar-dat-analysis.json`. Because `dat` is not always a conjunction, three pattern types exist: subordinate (report/question/negated), `relative` (main clause cut in two by a relative clause; the finite verb of the main clause is checked across both halves) and `demonstrative` (13 linked cards such as "Dat is een goed punt", one main clause, no subordinate clause). The record's `sense` names which use of `dat` it is.
+- Dutch-first situations (`situationNl`) written for all 36 linked cards (they had none) and for every card whose original prompt contained the word `dat`; the conjunction is never cued.
+- Tests: generic per-topic suite now also covers Dat (14 tests per run); relaxed one check to accept both clause orders and `bijzin+hoofdzin+bijzin`; `tests/flashcard-e2e/grammar-dat-analysis.spec.ts` (3 scenarios).
+- Docs counts updated in audit, GRAMMAR-PATTERNS and README (547 authored + 70 aliases = 617; 351/547 Dutch prompts).
+
+**Evidence:** `npx tsc --noEmit` clean; eslint clean; `npx vitest run` (with local Mongo) 51 files, 393 tests passed; targeted browser spec for Dat 3 passed. Full browser suite NOT re-run after this batch.
+
+**Known issues / open:** no native review; several Dat mistakes were rewritten because the first draft contained valid Dutch; Dat has no interactive children; the Dat lesson (v1.0) has not been re-fact-checked against sources; the 13 demonstrative cards are alias sentences and teach `dat` as a pointing word only.
+
+**Next specific task:** P2 Toen (22 → 100), then Wanneer (14 → 100) and V2/inversion (20 → 100), each with analyses, Dutch-first prompts and lesson fact-check; Toen/Wanneer must keep the single-past-event vs repeated-event distinction (Taaladvies; Belgium uses toen only).
+
 ## 2026-10-26 — Claude Code continuation: P2 Omdat to 100 base cards with per-sentence analysis
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

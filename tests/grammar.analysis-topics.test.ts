@@ -2,20 +2,21 @@ import { describe, expect, it } from 'vitest';
 import { GRAMMAR_CARDS } from '@/lib/flashcards/engine';
 import { cardFor } from '@/lib/content/cards';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
-import { GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
+import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
 
 const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}' ]/gu, ' ').replace(/’/g, "'").split(/\s+/).filter(Boolean);
 const GENERIC = [/because it is (a )?subordinate\b/i, /^dutch uses inversion\.?$/i, /\bthis is correct grammar\b/i, /^the verb goes to the end\.?$/i, /^op is a separable prefix\.?$/i, /subject and verb switch\.?$/i];
 const ALL_CONJ = /\b(als|wanneer|zodra|toen|omdat|want|daarom|dus|terwijl|voordat|nadat|totdat)\b/i;
 
-type TopicConfig = { topic: string; records: Record<string, AnalysisRecord>; conj: string; target: number };
+type TopicConfig = { topic: string; records: Record<string, AnalysisRecord>; conj: string[]; target: number; leak?: RegExp };
 const TOPICS: TopicConfig[] = [
-  { topic: 'omdat', records: OMDAT_ANALYSIS, conj: 'omdat', target: 100 },
+  { topic: 'omdat', records: OMDAT_ANALYSIS, conj: ['omdat'], target: 100 },
+  { topic: 'dat', records: DAT_ANALYSIS, conj: ['dat', 'die'], target: 100, leak: /\bdat\b/i },
 ];
 
 const seenText = new Map<string, string>();
 
-for (const { topic, records, conj, target } of TOPICS) {
+for (const { topic, records, conj, target, leak } of TOPICS) {
   const ids = Object.keys(records);
   describe(`${topic}: per-sentence analysis (hand-authored, reviewed spans)`, () => {
     it('belongs to real grammar cards of this topic, by their exact ids', () => {
@@ -39,20 +40,32 @@ for (const { topic, records, conj, target } of TOPICS) {
     it('names a real finite verb and subject per clause and puts the topic word where the pattern says', () => {
       for (const id of ids) {
         const record = records[id];
-        const kinds = record.clauses.map(c => c.kind).sort().join('+');
+        const kinds = record.clauses.map(c => c.kind).join('+');
+        const dependent = (clause: (typeof record.clauses)[number], starts: string[]) => {
+          expect(words(clause.text).slice(0, 2).some(w => starts.includes(w)), `${id}: dependent clause starts with ${starts.join('/')}`).toBe(true);
+          const spoken = words(clause.text);
+          const after = clause.afterFinite ? words(clause.afterFinite).length : 0;
+          expect(spoken.length - after - spoken.indexOf(words(clause.finite)[0]), `${id}: finite verb is near the end`).toBeLessThanOrEqual(2);
+        };
         if (record.pattern === 'coordinate') {
           expect(kinds, id).toBe('hoofdzin+hoofdzin');
-          expect(words(record.clauses[1].text)[0], `${id}: second main clause`).not.toBe(conj);
+          expect(words(record.clauses[1].text)[0], `${id}: second main clause`).not.toBe(conj[0]);
+        } else if (record.pattern === 'demonstrative') {
+          expect(kinds, id).toBe('hoofdzin');
+          expect(words(record.clauses[0].text).some(w => conj.includes(w)), `${id}: the pointing word is in the clause`).toBe(true);
+        } else if (record.pattern === 'relative') {
+          expect(['hoofdzin+bijzin', 'hoofdzin+bijzin+hoofdzin'], id).toContain(kinds);
+          dependent(record.clauses.find(c => c.kind === 'bijzin')!, conj);
         } else {
-          expect(kinds, id).toBe('bijzin+hoofdzin');
-          const bijzin = record.clauses.find(c => c.kind === 'bijzin')!;
-          expect(words(bijzin.text).slice(0, 2).includes(conj), `${id}: bijzin starts with ${conj}`).toBe(true);
-          const spoken = words(bijzin.text);
-          const after = bijzin.afterFinite ? words(bijzin.afterFinite).length : 0;
-          expect(spoken.length - after - spoken.indexOf(words(bijzin.finite)[0]), `${id}: finite verb is near the end`).toBeLessThanOrEqual(2);
+          expect(['bijzin+hoofdzin', 'hoofdzin+bijzin', 'bijzin+hoofdzin+bijzin'], id).toContain(kinds);
+          const bijzin = record.clauses.filter(c => c.kind === 'bijzin').find(c => words(c.text).slice(0, 2).some(w => conj.includes(w))) ?? record.clauses.find(c => c.kind === 'bijzin')!;
+          dependent(bijzin, conj);
         }
         for (const clause of record.clauses) {
-          expect(words(clause.text), `${id}: finite ${clause.finite}`).toContain(words(clause.finite)[0]);
+          // a main clause cut in two by a relative clause carries its finite verb in the second half
+          const split = record.pattern === 'relative' && record.clauses.length === 3 && clause.kind === 'hoofdzin';
+          const finiteIn = split ? `${record.clauses[0].text} ${record.clauses[2].text}` : clause.text;
+          expect(words(finiteIn), `${id}: finite ${clause.finite}`).toContain(words(clause.finite)[0]);
           if (!clause.subject.startsWith('(')) expect(words(clause.text).join(' '), `${id}: subject ${clause.subject}`).toContain(words(clause.subject).join(' '));
           expect(clause.why.toLowerCase(), `${id}: why names ${clause.finite}`).toContain(clause.finite.toLowerCase());
           expect(clause.why.length, id).toBeGreaterThan(60);
@@ -96,10 +109,11 @@ for (const { topic, records, conj, target } of TOPICS) {
         const card = cardFor('nl', id)!;
         expect(card.scenarioNl, id).toBeTruthy();
         expect(card.scenarioNl!, id).not.toMatch(ALL_CONJ);
+        if (leak) expect(card.scenarioNl!, id).not.toMatch(leak);
         expect(card.scenarioNl!.toLowerCase(), id).not.toContain(words(card.text).join(' '));
         expect(card.scenarioNl!.length, id).toBeGreaterThan(40);
         const breakdown = breakdownFor(id)!;
-        expect(breakdown.clauses?.length, id).toBe(2);
+        expect(breakdown.clauses?.length, id).toBe(records[id].clauses.length);
         expect(breakdown.sense, id).toBeDefined();
       }
     });

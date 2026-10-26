@@ -42,7 +42,7 @@ describe('Grammar patterns collection', () => {
       expect(bad.map(c => c.dutch), topic).toEqual([]);
     }
     const dat = GRAMMAR_CARDS.filter(c => c.category === 'dat');
-    expect(dat.filter(c => !/\bdat\b/i.test(c.dutch)).map(c => c.dutch)).toEqual([]);
+    expect(dat.filter(c => !/\b(dat|die)\b/i.test(c.dutch)).map(c => c.dutch)).toEqual([]);
   });
   it('is a Dutch-only collection with its own patterns, and French sessions can never include it', () => {
     expect(collectionAvailable('fr', 'grammar')).toBe(false);

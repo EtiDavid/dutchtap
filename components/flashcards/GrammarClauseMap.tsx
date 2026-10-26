@@ -38,7 +38,7 @@ export function GrammarClauseMap({ breakdown }: { breakdown: Breakdown }) {
         {breakdown.clauses.map((clause, index) => (
           <div key={index} className="rounded-xl border border-border bg-surface p-3" data-clause={clause.kind}>
             <p className="text-[11px] font-bold uppercase tracking-wide text-accent">
-              {KIND[clause.kind].dutch} · {KIND[clause.kind].english}
+              {KIND[clause.kind].dutch} · {clause.role ?? KIND[clause.kind].english}
             </p>
             <p lang="nl" className="mt-1 text-base font-semibold leading-snug">
               <Highlighted text={clause.text} finite={clause.finite} />

@@ -27,7 +27,7 @@ export type Breakdown = {
   /** The same plan expressed another way (for example main clause first), with why it differs. */
   contrast?: { dutch: string; english: string; note: string };
   /** Authored clause spans: which part is the main clause and which the subordinate clause, with each finite verb and why. */
-  clauses?: { kind: "hoofdzin" | "bijzin"; text: string; subject: string; finite: string; why: string; afterFinite?: string }[];
+  clauses?: { kind: "hoofdzin" | "bijzin"; text: string; subject: string; finite: string; why: string; afterFinite?: string; role?: string }[];
   /** The meaning or function of the key word in this sentence, for example "als = if" or "omdat = because", and why. */
   sense?: { label: string; why: string };
 };

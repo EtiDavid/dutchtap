@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import rawLessons from "@/data/grammar-topic-lessons.json";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { button } from "../flashcards/styles";
@@ -8,9 +9,10 @@ const lessons = rawLessons as Record<string,Lesson>;
 /** Topic-wide teaching remains independent from a session's current question and answer. */
 export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; defaultOpen?: boolean}) {
   const lesson = lessons[topic];
+  const [opened, setOpened] = useState(defaultOpen);
   const {listen,stop,sound} = useCardAudio();
   if (!lesson) return null;
-  return <details defaultOpen={defaultOpen} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
+  return <details open={opened} onToggle={event => setOpened(event.currentTarget.open)} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
     <summary className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">
       📖 Learn the rule · {lesson.title}
       <span className="mt-1 block text-xs font-normal text-muted">Tap to expand the complete topic guide; close it when speaking.</span>

@@ -3,8 +3,8 @@
     "title": "ALS — if, when and whenever",
     "goal": "Choose als in a real situation and put finite verbs in the correct clauses without first translating word-for-word from English.",
     "overview": "ALS is a subordinating conjunction (onderschikkend voegwoord). It introduces a subordinate clause (bijzin) for a condition (if), a future time (when), or a habitual event (whenever). The rest of the sentence still follows main-clause V2.",
-    "status": "Detailed first-release lesson, AI-edited; not independent native-speaker certification.",
-    "revision": "1.0",
+    "status": "Detailed lesson, AI-edited. The toen / als / wanneer and the wanneer register statements were checked against two Taaladvies.net pages on 26 October 2026; the rest is not independently reviewed and there is no native-speaker certification.",
+    "revision": "1.1",
     "formulas": [
       {
         "label": "Main clause then subordinate clause",
@@ -79,7 +79,7 @@
       },
       {
         "title": "4. Future conditions and recurring situations in the past",
-        "body": "Future contexts normally use a present-tense verb inside the als-clause. Repeated past habits can use als with a past tense; a single particular past event or period often uses toen.",
+        "body": "Future contexts normally use a present-tense verb inside the als-clause. A repeated past habit uses als (or the more formal wanneer) with a past tense, often with 'telkens' or 'vroeger'. A single particular past occasion uses toen. In Belgium, als or wanneer for one single past event is not standard: toen is the correct conjunction there.",
         "examples": [
           {
             "nl": "Als je morgen komt, maken we eten.",
@@ -97,7 +97,7 @@
       },
       {
         "title": "5. Als vs wanneer vs toen",
-        "body": "Wanneer also expresses 'when' and can introduce conditions in a more formal register. In a direct question, wanneer is an interrogative word; in an indirect question, it introduces subordinate order. Toen usually refers to a specific past occasion or period.",
+        "body": "Als and wanneer can both express a moment in time or a condition, and in practice they are usually interchangeable with the present or future. Wanneer is the more formal, written choice; als is the neutral one. Context can tip the reading: 'als' is easily heard as 'if', 'wanneer' as 'when'. In a direct question wanneer is the question word; in an indirect question it introduces subordinate order. Toen refers to one specific past occasion or period.",
         "examples": [
           {
             "nl": "Wanneer begint de vergadering?",
@@ -166,6 +166,60 @@
             "en": "When I was sick, I stayed home."
           }
         ]
+      },
+      {
+        "title": "9. Als with dan, and pas als",
+        "body": "After a fronted als-clause Dutch often adds 'dan' (then) to pick the condition up again. It changes nothing about the order: the finite verb still follows immediately, so you hear 'dan blijf ik', never 'dan ik blijf'. With 'pas als' (only when, not until) the same holds: the whole clause counts as position one and the main verb comes next.",
+        "examples": [
+          {
+            "nl": "Als het regent, dan blijf ik thuis.",
+            "en": "If it rains, then I stay at home."
+          },
+          {
+            "nl": "Als je vragen hebt, bel me dan.",
+            "en": "If you have questions, call me then."
+          },
+          {
+            "nl": "Pas als de toegang werkt, beginnen we met de controle.",
+            "en": "Only when access works do we start the check."
+          }
+        ]
+      },
+      {
+        "title": "10. Negation, 'er' and the verb group inside an als-clause",
+        "body": "'Niet' normally stands in front of the final verb or verb group of the als-clause, and 'geen' replaces 'niet een' before a noun without article. When the subject is indefinite ('a warning', 'unsaved work'), Dutch often places 'er' directly after als; the real subject follows and the finite verb closes the clause.",
+        "examples": [
+          {
+            "nl": "Als ik niet kan slapen, lees ik een boek.",
+            "en": "When I can't sleep, I read a book."
+          },
+          {
+            "nl": "Als je de weg niet weet, vraag het aan iemand.",
+            "en": "If you don't know the way, ask someone."
+          },
+          {
+            "nl": "Stop de test als er een onverwachte waarschuwing verschijnt.",
+            "en": "Stop the test if an unexpected warning appears."
+          }
+        ]
+      },
+      {
+        "title": "11. Not every 'als' opens a clause",
+        "body": "The conjunction als is followed by its own subject and finite verb. When only a noun or pronoun follows, als means 'as' or 'like' (a role or a comparison) and the verb-final order does not apply, because there is no clause. Check for a subject plus a conjugated verb before you apply the rule.",
+        "examples": [
+          {
+            "nl": "Ik werk als systeembeheerder.",
+            "en": "I work as a system administrator."
+          },
+          {
+            "nl": "Dat klinkt als een goed plan.",
+            "en": "That sounds like a good plan."
+          },
+          {
+            "nl": "Mijn zus is net zo lang als ik.",
+            "en": "My sister is just as tall as I am."
+          }
+        ]
       }
     ],
     "mistakes": [
@@ -183,6 +237,16 @@
         "wrong": "Als ik gisteren aankwam, belde ik haar.",
         "right": "Toen ik gisteren aankwam, belde ik haar.",
         "why": "A single, specific completed past arrival normally uses toen; als is natural for repeated past or hypothetical contexts."
+      },
+      {
+        "wrong": "Als het regent, dan ik blijf thuis.",
+        "right": "Als het regent, dan blijf ik thuis.",
+        "why": "Even with 'dan', the finite verb comes directly after it and before the subject: 'dan blijf ik'."
+      },
+      {
+        "wrong": "Ik werk als ik systeembeheerder ben, elke dag.",
+        "right": "Ik werk als systeembeheerder.",
+        "why": "Here als means 'as' (a role), not a conjunction; adding a clause 'als ik ... ben' changes the meaning to a condition."
       }
     ],
     "sources": [
@@ -193,6 +257,14 @@
       [
         "Toen / als — Vlaanderen Taaladvies",
         "https://www.vlaanderen.be/team-taaladvies/taaladviezen/toen-als"
+      ],
+      [
+        "Toen of als of wanneer en verleden tijd — Taaladvies.net",
+        "https://taaladvies.net/toen-of-als-of-wanneer-en-verleden-tijd/"
+      ],
+      [
+        "Wanneer of als en tegenwoordige of toekomende tijd — Taaladvies.net",
+        "https://taaladvies.net/wanneer-of-als-en-tegenwoordige-of-toekomende-tijd/"
       ]
     ]
   },

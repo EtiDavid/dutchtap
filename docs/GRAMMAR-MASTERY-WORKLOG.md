@@ -4,6 +4,36 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-26 — Claude Code continuation: P1 ALS per-sentence analysis (A03), lesson fact-check (A02), Dutch-first prompts (A05)
+
+**Branch / base:** `feat/grammar-mastery-completion` from `main` at `3c18067` (PR #16 merged; PR #15 already on main). Nothing pushed, merged, tagged or deployed.
+
+**Done**
+- Schema decision: an additive, hand-authored overlay `data/grammar-als-analysis.json` keyed by existing card id (including `pat-als-reuse-*` aliases). Typed access in `lib/grammarAnalysis.ts`; `breakdownFor` returns it for Dutch grammar cards, so the existing breakdown view shows meaning, parts, order, forms, compare and mistake, plus new optional fields (`clauses`, `extraMistakes`, `contrast`, `alsSense`) added to `Breakdown`. Card ids, sentences, progress and the CORE breakdown files are untouched (core alias breakdowns remain for the original ids).
+- Authored all 100 ALS base cards in batches (10 diverse first, then 15, 12, 11, 16, 17, 12, 9). Each has clause spans with subject, finite verb and a clause-specific why, parts that rebuild the sentence, order/forms/compare, 1–2 real mistakes with their own reason, a contrast sentence, the meaning of als and why, and an AI-editorial status.
+- Replaced the regex `GrammarAlsAnalysis.tsx` with `GrammarClauseMap.tsx`; a card without an authored analysis shows no invented map.
+- Dutch-first situations for the 42 ALS cards that had none; replaced 7 that gave the conjunction away ("als", "wanneer") and 1 English scenario that quoted the answer (`situationNl`/`situationEn` overlay, applied in `lib/content/cards.ts`).
+- ALS lesson v1.1: checked the toen/als/wanneer and wanneer-register statements against two Taaladvies.net pages (Belgium: toen is the only correct conjunction for one past event), added sections on dan/pas als, negation/er/verb groups and non-conjunction als, two mistakes and two sources. Honest `status` text.
+- Tests: `tests/grammar.als-analysis.test.ts` (14), `tests/flashcard-e2e/grammar-als-analysis.spec.ts` (5, at 320/390/1280 px). Audit rows A02–A05 and the P1 section updated; counts of lesson versions corrected.
+
+**Evidence (command → result)**
+- `npx tsc --noEmit` → clean; `npx eslint lib components tests` → clean.
+- `TEST_MONGODB_URI=mongodb://127.0.0.1:27018 npx vitest run` → 49 files, 368 tests passed (before the final doc edits; re-run below).
+- `E2E_PORT=3100 npm run test:flashcards` → 90 passed, 1 failed. The failure was a stale assumption in `grammar-patterns.spec.ts` (no image in a pattern session) that no longer holds because ALS sessions can contain linked Everyday sentences with pictures; assertion corrected to at most one image.
+- NOT RUN: `npm run grammar:release-gate` (expected to fail), `npm run content:review-check`, `npm run test:e2e` (touches Atlas), `npm audit` triage, production offline/prod specs, account two-device sync.
+
+**Counts:** ALS parents 100 (77 authored + 23 linked) = 71 distinct tasks (29 pairs); analyses 100/100; Dutch-first 100/100; interactive children 30 on 3 parents; other topics unchanged (V2 20, Omdat 29, Dat 39, Toen 22, Wanneer 14, Terwijl 12, Voordat/Nadat 24, Tot 20, Verbs 36, Separable 152, Past/perfect 17).
+
+**Open review questions recorded in the data (`openQuestions`):** Flemish participle-first order in 'heb gecontroleerd' (pat-als-68); Flemish order 'niet slapen kan' (pat-als-42, pat-als-66); 'hem' vs 'ze' for 'de zin' (pat-als-64); the pronoun 'die' in main-first 'Ik verbeter die meteen' (pat-als-55); primary gloss of 'Als je afsluiten zegt' (career-clarification-020).
+
+**Known issues / still open for P1**
+- [ ] Interactive child variations for the other 97 ALS parents (documented exception until authored; do not fill with templates).
+- [ ] End-to-end ALS journey test including variation toggle, refresh, guest/account sync, offline; viewport/keyboard checks beyond the sentence page.
+- [ ] Lesson mini self-check; independent native-speaker review of the 100 analyses and prompts.
+- [ ] The 29 paired cards inflate the 100-count; consider more distinct tasks before claiming content coverage.
+
+**Next specific task:** build the ALS end-to-end session test (10 cards → Study clause map → Speaking Dutch-first prompt with English toggle and reveal → Quiz → variations toggle → reload), then author interactive children for further ALS parents in reviewed batches of 5.
+
 ## 2026-10-26 — Learning-first lesson expansion and review PR
 
 **Scope:** Improve four priority learning topics so learners can study the rules *before* being asked to speak. Continue on the existing `feat/grammar-mastery-phase1` branch, with no change to the main production deployment.

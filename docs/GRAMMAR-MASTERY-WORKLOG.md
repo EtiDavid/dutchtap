@@ -100,3 +100,13 @@ The earlier [full feature CI run #40361591866](https://github.com/EtiDavid/dutch
 **Repository status seen at handover:** old PR #15 was closed and not merged; source branch `feat/grammar-mastery-phase1` exists, must be fetched/preserved. It is NOT a production-release instruction. The prior A01–A25 acceptance audit remains 21 partial, 3 blocked, one narrowly verified; prior last scope test run was 347 Vitest pass / seven skipped and five focused Playwright pass, not all final tests.
 
 **Next actionable agent work:** Preserve current branch/worktree; create a clean continuation branch; implement reviewable ALS card-specific grammatical data and corresponding UI/testing for 10 diverse actual ALS cards; then complete all 100 in editorial batches and verify the full P1 learning journey before expanding P2–P7. Update audit and worklog after each batch with actual results. Do not promise background activity outside the running Claude Code process.
+
+## 2026-10-26 — Git status reconciliation after handover
+
+**Correction to the immediately previous entry:** GitHub now confirms PR #15 **MERGED into main** at 17:35 UTC (merge commit `892b5303429b1f945fbda40539fa7a76396c4880`). It was initially shown as closed without merge during a short tool-state transition. The old PR's **48 commits are already on main**, but the implementation remains **PARTIALLY COMPLETE** under the A01–A25 audit; a GitHub merge is not pedagogical, editorial or production acceptance.
+
+**Current split:** `main` contains the PR #15 partial Grammar Mastery application foundation. `feat/grammar-mastery-phase1` has additional **documentation-only** commits (Claude handover, worked examples, CLAUDE.md, README, status audit/worklog corrections) not yet in main. A separate docs PR should reconcile this delta, without reapplying already-merged app-code changes. There is no verified version-tag production release for this grammar merge.
+
+**Verified handover:** both long-form docs are accessible on the feature branch; the root CLAUDE.md contains instructions to load them, and the README links them. The next Claude Code agent must fetch fresh Git refs, preserve uncommitted user changes and start a clean continuation branch from main + these handover documents. No further grammar implementation has been claimed in this documentation session.
+
+**Next:** open a documentation-only, non-draft PR for the handover; owner can review/merge this without invoking Vercel because only version tags trigger production. Implementation must still follow P1 → P7 gates.

@@ -22,7 +22,7 @@ DutchTap is a **Dutch and French sentence-learning app**, with real-world situat
 
 **Audit and status:** [Grammar Mastery acceptance audit](docs/GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md), [master implementation plan](docs/GRAMMAR-MASTERY-MASTER-PLAN.md), [development work log](docs/GRAMMAR-MASTERY-WORKLOG.md), and [Grammar Patterns guide](docs/GRAMMAR-PATTERNS.md). The master plan's dated `NOT STARTED` heading is the original frozen baseline, **not the live implementation status**. The acceptance audit is the current evidence-based status.
 
-**Release status:** Grammar Mastery is **PARTIALLY COMPLETE**. [PR #15](https://github.com/EtiDavid/dutchtap/pull/15) was merged into main, but that Git merge is NOT a full-spec acceptance or production deployment. Missing topic depth, card analyses, Dutch prompts, variations, independent review, compatibility testing and security triage remain explicitly open. Do not represent five passing focused Chromium tests as the complete browser suite.
+**Release status:** Grammar Mastery is **PARTIALLY COMPLETE**. [PR #15](https://github.com/EtiDavid/dutchtap/pull/15) was merged into main, but that Git merge is NOT a full-spec acceptance or production deployment. Missing topic depth, card analyses, Dutch prompts, variations, independent review, compatibility testing and security triage remain explicitly open. Further incomplete Grammar Mastery changes are not approved to merge or tag for production without the remaining acceptance gates. Do not represent five passing focused Chromium tests as the complete browser suite.
 
 ## Claude Code continuation and teaching-quality instructions
 

@@ -4,6 +4,19 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: flaky test check and per-sentence repair exercise
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- Flaky test: I checked out `main` (`3c18067`) and ran `sessions-navigation.spec.ts` "a vocabulary link returns to the same session, mode and card" eight times: 7 passed, 1 failed with the same missing Back button. The test is flaky on `main` too, so it is not caused by this branch. It still needs its own fix.
+- P2 item "mixed word-order identification and repair": the optional repair exercise (`components/sessions/GrammarErrorRepair.tsx`) used only the five mistakes of the topic lesson. It now starts with the wrong/right/why mistakes authored for the sentences of the current session (about 200 for a ten-card Als/Omdat/Dat/Toen/Wanneer/Inversion session), then continues with the lesson's general mistakes, and labels each as coming from a session sentence or from the lesson. Still unscored, still never touches mastery. This gives mixed, uncued repair across the clause types in a session; it is not yet the cross-topic mixed practice of A16.
+- `tests/flashcard-e2e/grammar-error-repair.spec.ts` (1 scenario).
+
+**Evidence:** tsc and eslint clean; vitest and the new browser scenario passed (see the final report of this session for counts).
+
+**Open:** no repair items yet for topics without authored analyses (Terwijl, Voordat, Nadat, Tot, Verbs, Separable, Tense); the other P2 items (target-level tests for multi-verb order, review/prerequisite logic) and A16 are not started.
+
 ## 2026-10-27 — Claude Code continuation: Toen and Wanneer lessons rewritten together, full browser run
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

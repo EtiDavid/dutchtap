@@ -73,7 +73,7 @@ export function SessionView({ sessionId, lang, store, snapshot, reviews, reviews
       </button>)}
     </nav>
 
-    {session.collection === 'grammar' && session.lang === 'nl' && <><GrammarTopicLesson key={`${session.id}-${mode}`} topic={session.topic} defaultOpen={mode === "study"} /><GrammarErrorRepair topic={session.topic} /></>}
+    {session.collection === 'grammar' && session.lang === 'nl' && <><GrammarTopicLesson key={`${session.id}-${mode}`} topic={session.topic} defaultOpen={mode === "study"} /><GrammarErrorRepair topic={session.topic} cardIds={session.cardIds} /></>}
 
     {session.status === 'archived' && <CompletionSummary session={session} onAgain={again} againDisabled={activeCount >= MAX_ACTIVE_SESSIONS} againMessage={`You already have ${MAX_ACTIVE_SESSIONS} active sessions, so finish or delete one first.`} />}
 

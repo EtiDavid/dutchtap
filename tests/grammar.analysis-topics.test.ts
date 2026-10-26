@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { GRAMMAR_CARDS } from '@/lib/flashcards/engine';
 import { cardFor } from '@/lib/content/cards';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
-import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
+import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
 
 const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}' ]/gu, ' ').replace(/’/g, "'").split(/\s+/).filter(Boolean);
 const GENERIC = [/because it is (a )?subordinate\b/i, /^dutch uses inversion\.?$/i, /\bthis is correct grammar\b/i, /^the verb goes to the end\.?$/i, /^op is a separable prefix\.?$/i, /subject and verb switch\.?$/i];
@@ -14,6 +14,7 @@ const TOPICS: TopicConfig[] = [
   { topic: 'dat', records: DAT_ANALYSIS, conj: ['dat', 'die'], target: 100, leak: /\bdat\b/i },
   { topic: 'toen', records: TOEN_ANALYSIS, conj: ['toen'], target: 100 },
   { topic: 'wanneer', records: WANNEER_ANALYSIS, conj: ['wanneer'], target: 100 },
+  { topic: 'inversion', records: INVERSION_ANALYSIS, conj: [], target: 100 },
 ];
 
 const seenText = new Map<string, string>();
@@ -52,6 +53,14 @@ for (const { topic, records, conj, target, leak } of TOPICS) {
         if (record.pattern === 'coordinate') {
           expect(kinds, id).toBe('hoofdzin+hoofdzin');
           expect(words(record.clauses[1].text)[0], `${id}: second main clause`).not.toBe(conj[0]);
+        } else if (record.pattern === 'inverted') {
+          expect(kinds, id).toBe('hoofdzin');
+          const spoken = words(record.clauses[0].text);
+          const verbAt = spoken.indexOf(words(record.clauses[0].finite)[0]);
+          const subjectAt = spoken.indexOf(words(record.clauses[0].subject)[0], verbAt + 1);
+          expect(verbAt, `${id}: a fronted element precedes the finite verb`).toBeGreaterThan(0);
+          expect(subjectAt, `${id}: the subject follows the finite verb`).toBeGreaterThan(verbAt);
+          expect(record.parts[0].label.toLowerCase(), `${id}: first part is labelled fronted`).toContain('fronted');
         } else if (record.pattern === 'demonstrative') {
           expect(kinds, id).toBe('hoofdzin');
           expect(words(record.clauses[0].text).some(w => conj.includes(w)), `${id}: the pointing word is in the clause`).toBe(true);

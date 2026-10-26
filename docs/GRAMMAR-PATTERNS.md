@@ -19,7 +19,7 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 
 | Topic ID | Authored cards | Reused original cards | Playable total | Topic lesson |
 | --- | ---: | ---: | ---: | --- |
-| `inversion` | 20 | 0 | 20 | Expanded v1 |
+| `inversion` | 62 | 38 | **100** | Expanded v1 |
 | `als` | 77 | 23 | **100** | Expanded v1 |
 | `omdat` | 91 | 9 | **100** | Expanded v1 |
 | `dat` | 64 | 36 | **100** | Expanded v1 |
@@ -32,14 +32,14 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 | `verbs` | 36 | 0 | 36 | Expanded v1 |
 | `separable` | 152 | 0 | **152** | Expanded v1 |
 | `tense` | 17 | 0 | 17 | Introductory |
-| **TOTAL** | **699** | **82** | **781** | **13 topics** |
+| **TOTAL** | **741** | **120** | **861** | **13 topics** |
 
 There are also **52 authored separable-verb lemmas** (below the 60–100 target; **not** independently native-verified), 100 interactive child variations on ten ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
 
 ## Authoring and safety
 
 - Canonical grammar-generation inputs: `data/learning-tasks.json`, `data/editorial/grammar-pattern-extra.tsv`, `data/editorial/grammar-als-expansion.json`, `data/editorial/grammar-new-time-patterns.json`, `data/editorial/grammar-separable-cards.json`, `data/editorial/grammar-separable-verbs.json`; the deterministic generator is `scripts/build-grammar-patterns.py`. Never edit just the generated JSON.
-- `data/grammar-reuse-links.json` explicitly lists 82 source IDs; `lib/flashcards/engine.ts` materializes runtime grammar aliases and preserves the originals.
+- `data/grammar-reuse-links.json` explicitly lists 120 source IDs; `lib/flashcards/engine.ts` materializes runtime grammar aliases and preserves the originals.
 - `data/grammar-topic-lessons.json` holds lesson-wide explanations and optional mistake-repair prompts, not per-card certified linguistic analyses.
 - `data/grammar-variation-families.json` holds the three initial ALS ten-child families. Device Dutch speech is used; no paid grammar audio or new pictures are required.
 - Full grammar tagging, new interactive variations for other parents, additional topic coverage, cross-device migration/restore tests, independent content QA, accessibility tests and production release must follow the [master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).

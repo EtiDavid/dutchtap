@@ -4,6 +4,24 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-26 — Claude Code continuation: P2 V2/inversion to 100 base cards with per-sentence analysis
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- Inversion has no conjunction to anchor on, so the topic is built from single main clauses with a fronted element. 42 new cards (`data/editorial/grammar-p2-inversion.json`, ids `pat-inversion-21..62`): fronted time, place, frequency, attitude adverbs, fronted objects (6), a fronted predicate, and fronted prepositional phrases; 38 core sentences with a fronted adverbial or phrase are linked as aliases. Fronted subordinate clauses are left to Als/Omdat/Toen/Wanneer so no sentence is counted twice.
+- All 100 have a hand-authored record in `data/grammar-inversion-analysis.json`, with a new pattern type `inverted`. A new generic test rule checks for every such record: single main clause, a fronted element before the finite verb, the subject after the finite verb, and a first part labelled "fronted".
+- The 20 legacy cards had no Dutch prompt; they now carry `situationNl`. New and linked prompts avoid conjunctions and name the structure ("zet de tijd vooraan") rather than the word.
+- Tests: Inversion added to the generic per-topic suite; `tests/flashcard-e2e/grammar-inversion-analysis.spec.ts` (2 scenarios). Docs counts updated (741 authored + 120 aliases = 861; 545/741 Dutch prompts).
+
+**Evidence:** `npx tsc --noEmit` clean; eslint clean; `npx vitest run` (with local Mongo) 414 tests passed; browser spec for Inversion 2 passed. Full browser suite NOT re-run.
+
+**Known issues / open:** no native review; inversion with modals, questions and verb clusters beyond the main-clause cases is not covered by these cards; the inversion lesson (v1.0) has not been re-fact-checked; no interactive children for the topic; many first-draft explanations were too short or repeated and were rewritten per card after the checks flagged them.
+
+**P2 status:** all five planned topics (V2/inversion, Omdat, Dat, Toen, Wanneer) are now at 100 base cards each with per-card analyses. Remaining P2 gaps: Terwijl, Voordat/Nadat, Tot, Verbs, Past & perfect still below target.
+
+**Next specific task:** upgrade the Toen and Wanneer lessons together (including the Belgian rule) and run the full browser suite; then decide with the owner whether to continue with the remaining topics at 100 or start P3.
+
 ## 2026-10-26 — Claude Code continuation: P2 Wanneer to 100 base cards with per-sentence analysis
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

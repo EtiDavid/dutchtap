@@ -1,0 +1,632 @@
+[
+  {
+    "topic": "inversion",
+    "dutch": "Gisteravond heb ik de hele film gezien.",
+    "english": "Last night I watched the whole film.",
+    "scenario": "Say what you did last night.",
+    "scenarioNl": "Een collega vraagt wat je gisteren hebt gedaan na het eten. Vertel dat je een film hebt afgekeken en zet de tijdsaanduiding vooraan.",
+    "why": "The time word Gisteravond takes the first slot, so the auxiliary heb is second and ik follows; gezien ends the clause.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Volgende maand verhuist ons team naar een ander gebouw.",
+    "english": "Next month our team is moving to another building.",
+    "scenario": "Announce that your team will move house.",
+    "scenarioNl": "Je kondigt een verhuizing van de afdeling aan. Zet de tijdsaanduiding vooraan en noem waar het team heen gaat.",
+    "why": "Volgende maand is one phrase in first position; verhuist is second and ons team follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Elke ochtend drink ik eerst een kop thee.",
+    "english": "Every morning I first drink a cup of tea.",
+    "scenario": "Describe your morning habit.",
+    "scenarioNl": "Een nieuwe kamergenoot vraagt naar je ochtendritueel. Begin met het vaste moment van de dag.",
+    "why": "Elke ochtend is the opening phrase; drink is second and ik follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Om half twee heb ik een afspraak met de tandarts.",
+    "english": "At half past one I have an appointment with the dentist.",
+    "scenario": "Tell when your appointment is.",
+    "scenarioNl": "Een collega wil je spreken, maar je agenda zit vol. Noem eerst het tijdstip waarop je weg moet.",
+    "why": "Om half twee is one opening phrase; heb is second and ik follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Vanaf vrijdag werkt de printer weer.",
+    "english": "From Friday the printer works again.",
+    "scenario": "Report that a device will be fixed.",
+    "scenarioNl": "Een storing op de afdeling is bijna verholpen. Vertel vanaf welke dag het apparaat weer bruikbaar is en zet die vooraan.",
+    "why": "Vanaf vrijdag is one opening phrase; werkt is second and de printer follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Tijdens de lunch lees ik mijn berichten.",
+    "english": "During lunch I read my messages.",
+    "scenario": "Say when you check your messages.",
+    "scenarioNl": "Een collega vraagt op welk moment je tijd hebt voor je inbox. Begin met het moment van de dag.",
+    "why": "Tijdens de lunch is one opening phrase; lees is second and ik follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "In de keuken staat een nieuwe koffiemachine.",
+    "english": "There is a new coffee machine in the kitchen.",
+    "scenario": "Tell a colleague where the new machine is.",
+    "scenarioNl": "Een collega zoekt het nieuwe apparaat voor koffie. Wijs de plek aan en zet die vooraan.",
+    "why": "In de keuken is one opening phrase; staat is second and the indefinite subject een nieuwe koffiemachine follows.",
+    "focus": "place",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "place"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Achter het huis ligt een kleine tuin.",
+    "english": "Behind the house there is a small garden.",
+    "scenario": "Describe the back of a property.",
+    "scenarioNl": "Je laat een kennis een woning zien. Beschrijf wat er aan de achterkant te vinden is, met de plaats vooraan.",
+    "why": "Achter het huis is one opening phrase; ligt is second and the subject follows.",
+    "focus": "place",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "place"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Eerst controleer ik de gegevens.",
+    "english": "First I check the data.",
+    "scenario": "Describe your first step.",
+    "scenarioNl": "Een collega vraagt hoe jij een nieuwe aanvraag aanpakt. Noem de allereerste stap en zet de volgorde vooraan.",
+    "why": "Eerst fills the first slot; controleer is second and ik follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Waarschijnlijk komt de monteur pas morgen.",
+    "english": "The technician will probably only come tomorrow.",
+    "scenario": "Give a cautious estimate.",
+    "scenarioNl": "Een klant vraagt of de reparatie vandaag nog lukt. Geef een voorzichtige schatting en laat je inschatting vooropgaan.",
+    "why": "Waarschijnlijk is the opening adverb; komt is second and de monteur follows.",
+    "focus": "attitude",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "attitude"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Helaas kunnen wij uw verzoek niet goedkeuren.",
+    "english": "Unfortunately we cannot approve your request.",
+    "scenario": "Decline a customer request politely.",
+    "scenarioNl": "Een klant heeft een aanvraag ingediend die niet kan worden toegewezen. Wijs af en laat je spijt vooropgaan.",
+    "why": "Helaas is the opening adverb; the modal kunnen is second and wij follows.",
+    "focus": "attitude",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "attitude"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Gelukkig heeft niemand de fout gezien.",
+    "english": "Luckily nobody saw the mistake.",
+    "scenario": "Express relief about a mistake.",
+    "scenarioNl": "Een fout is bijna ontdekt maar niemand lijkt het te hebben gemerkt. Zeg wat je opgelucht stelt en begin met je gevoel.",
+    "why": "Gelukkig is the opening adverb; heeft is second and niemand follows.",
+    "focus": "attitude",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "attitude"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Nog steeds werkt de koppeling niet.",
+    "english": "The connection still does not work.",
+    "scenario": "Report an ongoing fault.",
+    "scenarioNl": "De verbinding tussen twee systemen is nog altijd niet hersteld. Geef de stand van zaken en zet de duur vooraan.",
+    "why": "Nog steeds is one opening phrase; werkt is second and de koppeling follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Eindelijk begint de nieuwe cursus.",
+    "english": "At last the new course starts.",
+    "scenario": "Share long-awaited news.",
+    "scenarioNl": "Je hebt maanden gewacht op een opleiding. Vertel dat het zover is en begin met je opluchting over de tijd.",
+    "why": "Eindelijk is the opening adverb; begint is second and de nieuwe cursus follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Altijd neemt hij de trein van zeven uur.",
+    "english": "He always takes the seven o'clock train.",
+    "scenario": "Describe a colleague's habit.",
+    "scenarioNl": "Je vertelt een stagiair over de vaste gewoonte van een collega. Zet de frequentie vooraan.",
+    "why": "Altijd is the opening adverb; neemt is second and hij follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Meestal begin ik om negen uur.",
+    "english": "Usually I start at nine.",
+    "scenario": "Describe your normal start.",
+    "scenarioNl": "Een nieuwe collega vraagt hoe laat je gewoonlijk begint. Begin met hoe vaak het zo is.",
+    "why": "Meestal is the opening adverb; begin is second and ik follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Normaal gesproken duurt de installatie een uur.",
+    "english": "Normally the installation takes an hour.",
+    "scenario": "Explain the normal duration.",
+    "scenarioNl": "Een klant vraagt hoe lang de installatie meestal duurt. Zet de gebruikelijke situatie vooraan.",
+    "why": "Normaal gesproken is one opening phrase; duurt is second and de installatie follows.",
+    "focus": "attitude",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "attitude"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Op dit moment ben ik niet beschikbaar.",
+    "english": "At the moment I am not available.",
+    "scenario": "Say you are busy right now.",
+    "scenarioNl": "Iemand belt je midden in een klus. Zeg beleefd hoe de situatie nu is en zet het tijdstip vooraan.",
+    "why": "Op dit moment is one opening phrase; ben is second and ik follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Aan het einde van de week bespreken we de planning.",
+    "english": "At the end of the week we discuss the planning.",
+    "scenario": "Say when the planning meeting is.",
+    "scenarioNl": "Je team plant een vast overleg. Noem eerst het moment van de week.",
+    "why": "Aan het einde van de week is one long opening phrase; bespreken is second and we follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Over een paar minuten start de presentatie.",
+    "english": "In a few minutes the presentation starts.",
+    "scenario": "Announce an imminent start.",
+    "scenarioNl": "Het publiek loopt nog binnen. Kondig aan hoe snel het begint en zet de tijd vooraan.",
+    "why": "Over een paar minuten is one opening phrase; start is second and de presentatie follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Dit boek heb ik vorige zomer gelezen.",
+    "english": "I read this book last summer.",
+    "scenario": "Emphasise the object.",
+    "scenarioNl": "Een vriend wijst op een bestseller. Zeg dat je dit boek al kent door het voorwerp vooraan te zetten.",
+    "why": "The object Dit boek is fronted; heb is second and ik follows, the participle gelezen ends the clause.",
+    "focus": "object",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "object"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Deze taak neemt Sanne over.",
+    "english": "Sanne takes over this task.",
+    "scenario": "Say who handles a task.",
+    "scenarioNl": "Een taak ligt nog open en iedereen kijkt rond. Zeg wie het overneemt en zet het voorwerp vooraan.",
+    "why": "The object Deze taak is fronted; neemt is second, Sanne follows and the particle over ends the clause.",
+    "focus": "object",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "object"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Het rapport stuurt de manager morgen door.",
+    "english": "The manager forwards the report tomorrow.",
+    "scenario": "Say what the manager will do.",
+    "scenarioNl": "Het rapport ligt klaar voor de directie. Zeg wat de manager er morgen mee doet en zet het voorwerp vooraan.",
+    "why": "The object Het rapport is fronted; stuurt is second, de manager follows and the particle door ends the clause.",
+    "focus": "object",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "object"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Mijn wachtwoord ben ik helaas vergeten.",
+    "english": "Unfortunately I have forgotten my password.",
+    "scenario": "Admit forgetting something.",
+    "scenarioNl": "Je kunt niet inloggen. Zeg wat je kwijt bent en zet het voorwerp vooraan.",
+    "why": "The object Mijn wachtwoord is fronted; ben is second and ik follows; vergeten ends the clause.",
+    "focus": "object",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "object"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Die opmerking vond ik erg nuttig.",
+    "english": "I found that remark very useful.",
+    "scenario": "Give an opinion on a remark.",
+    "scenarioNl": "Een collega deed in de vergadering een bijdrage waar je iets van vond. Zet het onderwerp van je oordeel vooraan.",
+    "why": "The object Die opmerking is fronted; vond is second and ik follows.",
+    "focus": "object",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "object"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Zulke fouten maken we bijna nooit.",
+    "english": "We almost never make such mistakes.",
+    "scenario": "Say what rarely happens.",
+    "scenarioNl": "Een klant vraagt naar de betrouwbaarheid van jullie werk. Zet het soort fouten vooraan en noem hoe zelden het gebeurt.",
+    "why": "The object Zulke fouten is fronted; maken is second and we follows.",
+    "focus": "object",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "object"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Erg blij was hij niet met het resultaat.",
+    "english": "He was not very happy with the result.",
+    "scenario": "Describe a colleague's disappointed reaction.",
+    "scenarioNl": "Een collega vertelt je over het verloop van een gesprek. Zeg dat de ander niet tevreden was en zet de gradatie vooraan.",
+    "why": "The phrase Erg blij is fronted; was is second and hij follows.",
+    "focus": "predicate",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "predicate"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Zonder bril kan hij de tekst niet lezen.",
+    "english": "Without glasses he cannot read the text.",
+    "scenario": "Explain why he struggles.",
+    "scenarioNl": "Een collega kijkt met moeite naar het scherm. Leg uit wat er ontbreekt en zet dat vooraan.",
+    "why": "Zonder bril is one opening phrase; the modal kan is second and hij follows.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Met de fiets ben ik naar kantoor gekomen.",
+    "english": "I came to the office by bike.",
+    "scenario": "Say how you travelled.",
+    "scenarioNl": "Een collega vraagt hoe je vanochtend op je werk kwam. Zet het vervoermiddel vooraan.",
+    "why": "Met de fiets is one opening phrase; ben is second and ik follows.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Door de sneeuw reden de treinen niet.",
+    "english": "Because of the snow the trains did not run.",
+    "scenario": "Explain a disruption.",
+    "scenarioNl": "Een reiziger vraagt waarom het verkeer stilstond. Noem eerst de oorzaak.",
+    "why": "Door de sneeuw is one opening phrase; reden is second and de treinen follows.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Voor mijn verjaardag kreeg ik een nieuwe laptop.",
+    "english": "For my birthday I got a new laptop.",
+    "scenario": "Tell what you got as a birthday gift.",
+    "scenarioNl": "Een vriend ziet je nieuwe computer. Vertel de aanleiding en zet die vooraan.",
+    "why": "Voor mijn verjaardag is one opening phrase; kreeg is second and ik follows.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Sinds vorige week gebruiken wij een nieuw systeem.",
+    "english": "Since last week we use a new system.",
+    "scenario": "Report a change of system since last week.",
+    "scenarioNl": "Een klant ziet een andere inlogpagina. Leg uit sinds welk moment er iets is veranderd, met de periode vooraan.",
+    "why": "Sinds vorige week is one opening phrase; gebruiken is second and wij follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Bij ons op kantoor eten we samen.",
+    "english": "At our office we eat together.",
+    "scenario": "Describe office culture.",
+    "scenarioNl": "Een sollicitant vraagt naar de sfeer op de werkvloer. Zet de plek vooraan.",
+    "why": "Bij ons op kantoor is one opening phrase; eten is second and we follows.",
+    "focus": "place",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "place"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Ondanks de regen gingen we wandelen.",
+    "english": "Despite the rain we went for a walk.",
+    "scenario": "Tell about a walk in bad weather.",
+    "scenarioNl": "Je vertelt over een zaterdag met slecht weer. Zet het contrast vooraan.",
+    "why": "Ondanks de regen is one opening phrase; gingen is second and we follows.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "In plaats van een telefoontje stuurde ik een bericht.",
+    "english": "Instead of a phone call I sent a message.",
+    "scenario": "Explain why you wrote instead of calling.",
+    "scenarioNl": "Een collega vraagt waarom je niet gebeld hebt. Noem het alternatief dat je liet vallen eerst.",
+    "why": "In plaats van een telefoontje is one opening phrase; stuurde is second and ik follows.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Dankzij jouw hulp is het gelukt.",
+    "english": "Thanks to your help it worked out.",
+    "scenario": "Thank a colleague for helping with a task.",
+    "scenarioNl": "Een lastige klus is geslaagd. Bedank je collega en zet de reden vooraan.",
+    "why": "Dankzij jouw hulp is one opening phrase; is is second and het follows.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Na de storing hebben we alles gecontroleerd.",
+    "english": "After the outage we checked everything.",
+    "scenario": "Describe the follow-up.",
+    "scenarioNl": "Een manager vraagt wat er na het incident is gedaan. Zet het moment vooraan.",
+    "why": "Na de storing is one opening phrase; hebben is second and we follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Na afloop spraken we nog even.",
+    "english": "Afterwards we talked a little longer.",
+    "scenario": "Describe the end of an event.",
+    "scenarioNl": "Je vertelt over een bijeenkomst. Zeg wat er gebeurde bij het einde en zet dat moment vooraan.",
+    "why": "Na afloop is one opening phrase; spraken is second and we follows.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Even later kwam de klant binnen.",
+    "english": "A little later the customer came in.",
+    "scenario": "Continue a story about a busy day.",
+    "scenarioNl": "Je vertelt een anekdote over een drukke dag. Zeg wat er kort daarna gebeurde en zet de tijd vooraan.",
+    "why": "Even later is one opening phrase; kwam is second, de klant follows and binnen ends the clause.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Op de achtergrond speelt zachte muziek.",
+    "english": "Soft music plays in the background.",
+    "scenario": "Describe the atmosphere.",
+    "scenarioNl": "Je beschrijft de sfeer in een restaurant. Zet de plek van het geluid vooraan.",
+    "why": "Op de achtergrond is one opening phrase; speelt is second and zachte muziek follows.",
+    "focus": "place",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "place"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Vorige week heeft de leverancier ons gebeld.",
+    "english": "Last week the supplier called us.",
+    "scenario": "Report a recent call from a supplier.",
+    "scenarioNl": "Een collega mist een telefoontje van een bedrijf. Vertel wie er heeft gebeld en zet het moment vooraan.",
+    "why": "Vorige week is one opening phrase; heeft is second and de leverancier follows, gebeld ends the clause.",
+    "focus": "time",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "time"
+    }
+  },
+  {
+    "topic": "inversion",
+    "dutch": "Boven de ingang hangt een groot bord.",
+    "english": "Above the entrance hangs a large sign.",
+    "scenario": "Describe what visitors see at the door.",
+    "scenarioNl": "Een bezoeker zoekt de juiste deur. Beschrijf wat hij kan zien en zet de plek vooraan.",
+    "why": "Boven de ingang is one opening phrase; hangt is second and een groot bord follows.",
+    "focus": "place",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-inversion-v1",
+      "focus": "place"
+    }
+  }
+]

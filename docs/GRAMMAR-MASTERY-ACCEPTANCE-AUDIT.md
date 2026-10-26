@@ -1,8 +1,8 @@
 # Grammar Mastery — requirement-by-requirement acceptance audit
 
-**Status: PARTIALLY COMPLETE — NOT MERGE/RELEASE APPROVED**  
+**Status: PARTIALLY COMPLETE — NOT MERGE/RELEASE APPROVED for further feature changes or production**  
 **Audit performed:** 26 October 2026  
-**Branch/PR:** `feat/grammar-mastery-phase1`, [draft PR #15](https://github.com/EtiDavid/dutchtap/pull/15) against `main`  
+**Git state:** [PR #15](https://github.com/EtiDavid/dutchtap/pull/15) MERGED into main at 2026-10-26 17:35 UTC (merge SHA 892b5303) despite this *partial* acceptance status. Subsequent Claude Code handover docs are on `feat/grammar-mastery-phase1` until merged separately. **Production release not verified.**  
 **Baseline:** [DUTCHTAP-GRAMMAR-PLAN-001 v1.0](GRAMMAR-MASTERY-MASTER-PLAN.md), §12, remains frozen and authoritative. The baseline's `NOT STARTED` header reflects when it was authored, not the current implementation. **This audit does not change or mark complete the frozen source checklist.**
 
 **Evidence level:** Source/file/structural tests and four browser scenarios were checked in GitHub Actions; this is not a complete human/native-speaker grammar review, full cross-browser evaluation, account-sync migration test, or live production smoke test. Items marked *PARTIAL* may contain working code but are **not acceptance complete**. **VERIFIED** is restricted to narrow facts supported by source/test evidence.
@@ -82,7 +82,7 @@ Most volume targets are unmet. Multitopic skill index and intelligent uncued mix
 First scoped mobile browser checks pass; full device/keyboard/accessible audio/offline compatibility not verified.
 
 ### P7 — independent audit and release: BLOCKED
-25-item independent acceptance, native-language review, security audit, rollout/recovery checks and full test suite are open. **Do not merge to `main` or push a production `v*` tag.**
+25-item independent acceptance, native-language review, security audit, rollout/recovery checks and full test suite are open. **PR #15 was merged, but it did not satisfy full acceptance. Do not merge further incomplete implementation work or push a production `v*` tag without the required sign-offs.**
 
 ## Tests and deployment evidence
 
@@ -90,7 +90,7 @@ First scoped mobile browser checks pass; full device/keyboard/accessible audio/o
 - New documentation-only commits are not substitutes for fresh CI on the latest head. Current exact build/CI status belongs to PR #15.
 - Historical `npm run content:review-check` is an additional editorial gate and not equivalent to `content:learning-check`; don't claim it passed without command output.
 - An earlier `npm ci` run reported eight dependency audit vulnerabilities (three moderate, four high, one critical). **Root cause/production applicability/mitigation not yet verified.** Investigate before release; do not run a blind `npm audit fix --force`.
-- No `main` merge, production tag, production release or successful live smoke test for the new grammar branch has been made.
+- **GitHub merge already occurred:** PR #15 was merged into `main` on 26 October 2026; this is NOT evidence of A01–A25 completion. No production tag/release or successful live smoke test for this grammar foundation was verified during this audit. Edit this paragraph after verifying new deployment evidence.
 
 ## Next acceptance tasks, in priority order
 

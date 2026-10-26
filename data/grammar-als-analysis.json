@@ -5816,6 +5816,787 @@
         "note": "Condition first: after 'heb gevonden' the main clause inverts to 'maak ik een nieuwe afspraak', so the appointment is the last thing named."
       }
     },
+    "pat-als-reuse-career-changes-048": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "The work may or may not overrun; the sentence states the rule for that case, so 'if'.",
+      "situationNl": "Je team heeft een afgesproken eindtijd voor een onderhoudsklus. Leg uit wat jullie regel is bij een klus die langer duurt dan gepland.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als het werk uitloopt",
+          "subject": "het werk",
+          "finite": "uitloopt",
+          "why": "Uitlopen (to overrun) is separable: 'Het werk loopt uit.' In the dependent clause its parts join: uitloopt."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "stoppen we op het afgesproken moment",
+          "subject": "we",
+          "finite": "stoppen",
+          "why": "The als-clause is position one, so 'stoppen' precedes 'we'. 'Op het afgesproken moment' says when to stop: at the agreed time."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "het werk"
+        },
+        {
+          "label": "finite verb (joined)",
+          "text": "uitloopt"
+        },
+        {
+          "label": "finite verb",
+          "text": "stoppen"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "time phrase",
+          "text": "op het afgesproken moment"
+        }
+      ],
+      "meaning": "You state the stopping rule: even if the work overruns, the team stops at the agreed moment.",
+      "order": "The dependent clause is one subject plus the joined verb 'uitloopt'. It takes position one, so the main clause starts with 'stoppen', then 'we'. The time phrase 'op het afgesproken moment' closes the sentence.",
+      "forms": "uitlopen: het werk loopt uit; dependent: uitloopt. stoppen: wij stoppen. 'Afgesproken' is the participle of afspreken used as an adjective; it stays unchanged before the het-word 'moment' after 'het'.",
+      "compare": "English 'if the work overruns' uses a single verb; Dutch splits it in main clauses but joins it here. English 'at the agreed time' uses 'at'; Dutch uses 'op' with 'het afgesproken moment'.",
+      "mistakes": [
+        {
+          "wrong": "Als het werk loopt uit, stoppen we op het afgesproken moment.",
+          "right": "Als het werk uitloopt, stoppen we op het afgesproken moment.",
+          "why": "'Loopt uit' is main-clause order. In the dependent clause the separable verb joins."
+        },
+        {
+          "wrong": "Als het werk uitloopt, we stoppen op het afgesproken moment.",
+          "right": "Als het werk uitloopt, stoppen we op het afgesproken moment.",
+          "why": "A fronted dependent clause counts as the first constituent, so the finite verb 'stoppen' comes second."
+        }
+      ],
+      "contrast": {
+        "dutch": "We stoppen op het afgesproken moment als het werk uitloopt.",
+        "english": "We stop at the agreed time if the work overruns.",
+        "note": "Main clause first: subject-first 'We stoppen'."
+      }
+    },
+    "pat-als-reuse-career-changes-056": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "A failing check is a possible outcome you plan for: 'if'.",
+      "situationNl": "Na een wijziging doet je team een controle. Leg uit wat jullie voorzien voor het geval de uitkomst slecht is.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als de controle mislukt",
+          "subject": "de controle",
+          "finite": "mislukt",
+          "why": "'Mislukken' is inseparable, so the finite verb 'mislukt' stands alone at the end of the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "herstellen we de vorige instelling",
+          "subject": "we",
+          "finite": "herstellen",
+          "why": "The als-clause is position one, so 'herstellen' precedes 'we'. 'Herstellen' (to restore) is also inseparable: the 'her-' is a fixed prefix, so the verb never splits."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "de controle"
+        },
+        {
+          "label": "finite verb",
+          "text": "mislukt"
+        },
+        {
+          "label": "finite verb",
+          "text": "herstellen"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "object",
+          "text": "de vorige instelling"
+        }
+      ],
+      "meaning": "You state the fallback: if the check fails, the team restores the earlier setting.",
+      "order": "Both verbs are inseparable, so no particle gets left behind. The first clause ends with 'mislukt'; as position one it pushes 'herstellen' in front of 'we'. The object 'de vorige instelling' completes the sentence.",
+      "forms": "herstellen: ik herstel, wij herstellen; participle hersteld (no ge-). mislukken: participle mislukt. 'Vorige' is the adjective before the de-word 'instelling'. Compare separable 'terugdraaien', which would split.",
+      "compare": "English 'restore' is one word as well, so there is no difference in the verb itself. The word order differs: Dutch has 'herstellen we', English keeps 'we restore' in subject-first order.",
+      "mistakes": [
+        {
+          "wrong": "Als de controle mislukt, stellen we de vorige instelling her.",
+          "right": "Als de controle mislukt, herstellen we de vorige instelling.",
+          "why": "'Herstellen' is not separable, so the prefix 'her' never moves to the end."
+        },
+        {
+          "wrong": "Als de controle mislukt, we herstellen de vorige instelling.",
+          "right": "Als de controle mislukt, herstellen we de vorige instelling.",
+          "why": "The finite verb must be second after a fronted dependent clause."
+        }
+      ],
+      "contrast": {
+        "dutch": "We herstellen de vorige instelling als de controle mislukt.",
+        "english": "We restore the previous setting if the check fails.",
+        "note": "Main clause first: subject-first 'We herstellen'."
+      }
+    },
+    "pat-als-reuse-career-clarification-020": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "You test what a word means whenever someone uses it, which is 'if you say close' rather than a time.",
+      "situationNl": "Een collega geeft je een instructie over een ticket waarvan je de betekenis niet zeker weet. Je wilt zeker zijn dat het dossier niet verdwijnt. Stel hem een controlevraag.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als je afsluiten zegt",
+          "subject": "je",
+          "finite": "zegt",
+          "why": "The quoted word 'afsluiten' (the term the colleague uses) is the object of 'zegt'. The finite verb 'zegt' closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "bedoel je dan dat het ticket bewaard blijft",
+          "subject": "je",
+          "finite": "bedoel",
+          "why": "After the fronted als-clause the finite verb 'bedoel' comes second, before 'je'. Since a verb before the subject is also how a yes/no question starts, the final question mark makes it a question. The clause contains a further dependent clause: 'dat het ticket bewaard blijft', with 'blijft' at the end."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "je"
+        },
+        {
+          "label": "object (quoted word)",
+          "text": "afsluiten"
+        },
+        {
+          "label": "finite verb",
+          "text": "zegt"
+        },
+        {
+          "label": "finite verb",
+          "text": "bedoel"
+        },
+        {
+          "label": "subject",
+          "text": "je"
+        },
+        {
+          "label": "particle",
+          "text": "dan"
+        },
+        {
+          "label": "conjunction (dat)",
+          "text": "dat"
+        },
+        {
+          "label": "subject",
+          "text": "het ticket"
+        },
+        {
+          "label": "past participle",
+          "text": "bewaard"
+        },
+        {
+          "label": "finite verb",
+          "text": "blijft"
+        }
+      ],
+      "meaning": "You check informally what a colleague means by 'close': that the ticket will be kept rather than deleted.",
+      "order": "Two layers are nested here. First, the als-clause is position one, so the question begins 'bedoel je'. Second, 'dat het ticket bewaard blijft' is a dependent clause inside the main clause, so its verbs end it: 'bewaard blijft', participle first, finite verb last.",
+      "forms": "zeggen: je zegt. bedoelen: ik bedoel, je bedoelt; in inversion with 'je' the -t drops: bedoel je. 'Bewaard blijven' = to remain stored; 'blijft' is the finite verb. 'Dan' here means 'in that case'.",
+      "compare": "English 'When you say close, do you mean the ticket will be kept?' starts the question with 'do'. Dutch uses plain inversion 'bedoel je'. English leaves 'will be kept' in main-clause order; Dutch puts 'bewaard blijft' last.",
+      "openQuestions": [
+        "The authored sense 'if' is a teaching choice; the card's English says 'When you say close'. Confirm with a native reviewer which gloss the learner should treat as primary."
+      ],
+      "mistakes": [
+        {
+          "wrong": "Als je afsluiten zegt, je bedoelt dan dat het ticket bewaard blijft?",
+          "right": "Als je afsluiten zegt, bedoel je dan dat het ticket bewaard blijft?",
+          "why": "After the fronted dependent clause the finite verb must come second: 'bedoel je', with no -t after the verb."
+        },
+        {
+          "wrong": "Als je afsluiten zegt, bedoel je dan dat het ticket blijft bewaard?",
+          "right": "Als je afsluiten zegt, bedoel je dan dat het ticket bewaard blijft?",
+          "why": "In the dat-clause the participle 'bewaard' stands before the finite verb 'blijft', and the group closes the clause."
+        }
+      ],
+      "contrast": {
+        "dutch": "Bedoel je dat het ticket bewaard blijft als je afsluiten zegt?",
+        "english": "Do you mean the ticket is kept when you say close?",
+        "note": "Main question first: the verb opens the sentence, with 'als je afsluiten zegt' as a closing dependent clause."
+      }
+    },
+    "pat-als-reuse-career-clarification-058": {
+      "status": "ai-editorial-checked",
+      "alsSense": "whenever",
+      "alsSenseWhy": "A learning habit that works every time you apply it, so 'whenever' (or 'when').",
+      "situationNl": "Een collega vraagt hoe je nieuwe vaktermen onthoudt. Beschrijf wat jou helpt en wat je daarbij doet.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik onthoud de term beter",
+          "subject": "Ik",
+          "finite": "onthoud",
+          "why": "Ik is first, so 'onthoud' (of onthouden, to remember) is second. 'Beter' is the comparative of 'goed': you remember it better."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als ik er een voorbeeld bij noteer",
+          "subject": "ik",
+          "finite": "noteer",
+          "why": "'Er ... bij' belongs together as 'with it'; the object 'een voorbeeld' stands between its two halves. The finite verb 'noteer' closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "onthoud"
+        },
+        {
+          "label": "object",
+          "text": "de term"
+        },
+        {
+          "label": "adverb (comparative)",
+          "text": "beter"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "pronoun (er)",
+          "text": "er"
+        },
+        {
+          "label": "object",
+          "text": "een voorbeeld"
+        },
+        {
+          "label": "preposition (bij)",
+          "text": "bij"
+        },
+        {
+          "label": "finite verb",
+          "text": "noteer"
+        }
+      ],
+      "meaning": "You explain that writing an example next to a term makes you remember it better.",
+      "order": "The main clause comes first and starts with the subject: no inversion. In the dependent clause the little word 'er' refers to the term; the matching preposition 'bij' follows the object and comes just before the verb: er een voorbeeld bij noteer.",
+      "forms": "onthouden: inseparable, ik onthoud. noteren: ik noteer. 'Er ... bij' = with it/to it; 'er' replaces 'de term', and the preposition 'bij' moves away from it, towards the verb. Beter = better.",
+      "compare": "English says 'write down an example with it', with 'with it' at the end. Dutch splits the pronoun and its preposition around the object: 'er een voorbeeld bij'. English 'better' comes after 'remember'; Dutch 'beter' too.",
+      "mistakes": [
+        {
+          "wrong": "Ik onthoud de term beter als ik noteer er een voorbeeld bij.",
+          "right": "Ik onthoud de term beter als ik er een voorbeeld bij noteer.",
+          "why": "In the dependent clause the finite verb 'noteer' goes last."
+        },
+        {
+          "wrong": "Ik onthoud de term beter als ik er een voorbeeld noteer bij.",
+          "right": "Ik onthoud de term beter als ik er een voorbeeld bij noteer.",
+          "why": "The preposition 'bij' stands before the verb, not after it."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als ik er een voorbeeld bij noteer, onthoud ik de term beter.",
+        "english": "When I write down an example with it, I remember the term better.",
+        "note": "Condition first: the main clause inverts to 'onthoud ik'; 'er' now refers forward to 'de term'."
+      }
+    },
+    "pat-als-reuse-career-incidents-060": {
+      "status": "ai-editorial-checked",
+      "alsSense": "when",
+      "alsSenseWhy": "It names a moment (the service being restored) and says what does not change at that moment, so 'when' or 'once'.",
+      "situationNl": "Een storing is opgelost, maar er zijn nog taken over. Een collega denkt dat het werk nu klaar is. Leg uit waarom dat niet zo is.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "De verantwoordelijkheid verdwijnt niet",
+          "subject": "De verantwoordelijkheid",
+          "finite": "verdwijnt",
+          "why": "The subject comes first, so 'verdwijnt' is second. 'Niet' stands after the verb and negates the whole statement."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als de dienst hersteld is",
+          "subject": "de dienst",
+          "finite": "is",
+          "why": "'Hersteld' (restored) is a participle used as the predicate, and the finite verb 'is' follows it at the end. Dutch also accepts the order 'als de dienst is hersteld'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "De verantwoordelijkheid"
+        },
+        {
+          "label": "finite verb",
+          "text": "verdwijnt"
+        },
+        {
+          "label": "negation",
+          "text": "niet"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "de dienst"
+        },
+        {
+          "label": "past participle",
+          "text": "hersteld"
+        },
+        {
+          "label": "finite verb",
+          "text": "is"
+        }
+      ],
+      "meaning": "You explain that responsibility does not end the moment the service works again.",
+      "order": "The main clause keeps the subject first and puts 'niet' after the finite verb. The dependent clause then contains a participle and 'is': the state 'hersteld is' (is restored). Nothing precedes the subject of the main clause, so no inversion occurs.",
+      "forms": "verdwijnen: het verdwijnt. 'Hersteld' = the participle of herstellen (no ge-). 'Hersteld is' and 'is hersteld' are both used; this card keeps the participle before 'is'. De verantwoordelijkheid is a long de-word with the ending -heid.",
+      "compare": "English 'does not disappear' uses do-support; Dutch just places 'niet' after the verb: 'verdwijnt niet'. English 'when the service is restored' keeps 'is restored' together after the subject.",
+      "mistakes": [
+        {
+          "wrong": "De verantwoordelijkheid niet verdwijnt als de dienst hersteld is.",
+          "right": "De verantwoordelijkheid verdwijnt niet als de dienst hersteld is.",
+          "why": "In a main clause the finite verb stays in position two; 'niet' comes after it."
+        },
+        {
+          "wrong": "De verantwoordelijkheid verdwijnt niet als de dienst hersteld.",
+          "right": "De verantwoordelijkheid verdwijnt niet als de dienst hersteld is.",
+          "why": "The participle 'hersteld' needs its finite verb 'is' in the clause."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als de dienst hersteld is, verdwijnt de verantwoordelijkheid niet.",
+        "english": "When the service is restored, the responsibility does not disappear.",
+        "note": "Condition first: the main clause inverts to 'verdwijnt de verantwoordelijkheid niet'; 'niet' keeps its place after the subject."
+      }
+    },
+    "pat-als-reuse-career-meetings-050": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "The agreement is recorded only on the condition that everyone agrees: 'if'.",
+      "situationNl": "Jullie werkgroep wil een afspraak definitief maken. Leg uit onder welke voorwaarde dat gebeurt.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als iedereen akkoord is",
+          "subject": "iedereen",
+          "finite": "is",
+          "why": "'Iedereen' (everyone) is grammatically singular, so the verb is 'is'. 'Akkoord zijn' (to be in agreement) puts 'akkoord' before the finite verb."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "leggen we de afspraak vast",
+          "subject": "we",
+          "finite": "leggen",
+          "why": "The als-clause is position one, so 'leggen' precedes 'we'. Vastleggen (to record, to fix) is separable, so the particle 'vast' closes the clause after the object 'de afspraak'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "iedereen"
+        },
+        {
+          "label": "predicate",
+          "text": "akkoord"
+        },
+        {
+          "label": "finite verb",
+          "text": "is"
+        },
+        {
+          "label": "finite verb",
+          "text": "leggen"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "object",
+          "text": "de afspraak"
+        },
+        {
+          "label": "separable particle",
+          "text": "vast"
+        }
+      ],
+      "meaning": "You state the condition for recording the agreement: everyone must agree.",
+      "order": "The condition keeps the predicate 'akkoord' in front of 'is'. The clause is position one of the sentence, so 'leggen' comes second and 'we' third. The object 'de afspraak' is followed by the particle 'vast'.",
+      "forms": "vastleggen = vast + leggen: wij leggen vast, perfect: wij hebben vastgelegd. 'Iedereen' takes a singular verb even though it means many people. 'Akkoord' stays unchanged.",
+      "compare": "English 'record the agreement' has no particle; Dutch 'vastleggen' splits. English 'everyone agrees' uses a verb; Dutch says 'iedereen akkoord is' (is in agreement).",
+      "mistakes": [
+        {
+          "wrong": "Als iedereen akkoord zijn, leggen we de afspraak vast.",
+          "right": "Als iedereen akkoord is, leggen we de afspraak vast.",
+          "why": "'Iedereen' (everyone) takes a singular verb, so the clause needs 'is', not the plural 'zijn'."
+        },
+        {
+          "wrong": "Als iedereen akkoord is, vastleggen we de afspraak.",
+          "right": "Als iedereen akkoord is, leggen we de afspraak vast.",
+          "why": "In a main clause the separable verb splits; 'leggen' is second and 'vast' last."
+        }
+      ],
+      "contrast": {
+        "dutch": "We leggen de afspraak vast als iedereen akkoord is.",
+        "english": "We record the agreement if everyone agrees.",
+        "note": "Main clause first: subject-first 'We leggen ... vast'."
+      }
+    },
+    "pat-als-reuse-career-office-027": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "A change in availability may or may not happen: 'if'.",
+      "situationNl": "Je hebt net met een collega je werkdagen afgesproken. Beloof hem op de hoogte te houden bij een wijziging van je planning.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik laat het je weten",
+          "subject": "Ik",
+          "finite": "laat",
+          "why": "Ik is first, so 'laat' is second. The pronouns follow in a fixed order, 'het' then 'je', and the infinitive 'weten' ends the main clause."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als mijn beschikbaarheid verandert",
+          "subject": "mijn beschikbaarheid",
+          "finite": "verandert",
+          "why": "The finite verb 'verandert' follows the subject directly and closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "laat"
+        },
+        {
+          "label": "direct object",
+          "text": "het"
+        },
+        {
+          "label": "indirect object",
+          "text": "je"
+        },
+        {
+          "label": "infinitive",
+          "text": "weten"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "mijn beschikbaarheid"
+        },
+        {
+          "label": "finite verb",
+          "text": "verandert"
+        }
+      ],
+      "meaning": "You promise to tell a colleague if your availability changes.",
+      "order": "In the main clause 'laat' is second, but its partner 'weten' goes to the end, with 'het je' in between: laat ... weten. The dependent clause is short, so its finite verb 'verandert' is the last word of the sentence.",
+      "forms": "laten weten = let know; the infinitive stays at the end. veranderen: mijn beschikbaarheid verandert (-t for a singular subject). Beschikbaarheid is a de-word.",
+      "compare": "English 'I will let you know' keeps 'know' next to 'let you'. Dutch separates 'laat' and 'weten' with the pronouns. English 'if my availability changes' is nearly identical in order; the verb 'verandert' stays last in Dutch.",
+      "mistakes": [
+        {
+          "wrong": "Ik laat weten het je als mijn beschikbaarheid verandert.",
+          "right": "Ik laat het je weten als mijn beschikbaarheid verandert.",
+          "why": "The infinitive 'weten' stays at the end of the main clause, after the pronouns."
+        },
+        {
+          "wrong": "Ik laat het je weten als mijn beschikbaarheid veranderd.",
+          "right": "Ik laat het je weten als mijn beschikbaarheid verandert.",
+          "why": "The dependent clause needs a finite verb, not a participle."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als mijn beschikbaarheid verandert, laat ik het je weten.",
+        "english": "If my availability changes, I will let you know.",
+        "note": "Condition first: the main clause inverts to 'laat ik het je weten'."
+      }
+    },
+    "pat-als-reuse-career-office-060": {
+      "status": "ai-editorial-checked",
+      "alsSense": "whenever",
+      "alsSenseWhy": "A routine you follow on every change of work location, so 'whenever'.",
+      "situationNl": "Een teamgenoot wil weten hoe hij kan zien waar je werkt. Leg je vaste werkwijze uit bij een verhuizing van je werkplek.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als ik van locatie verander",
+          "subject": "ik",
+          "finite": "verander",
+          "why": "'Van locatie veranderen' (to change location) uses the preposition 'van'. The phrase 'van locatie' stands before the finite verb 'verander', which closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "werk ik mijn bereikbaarheid in de agenda bij",
+          "subject": "ik",
+          "finite": "werk",
+          "why": "The als-clause is position one, so 'werk' precedes 'ik'. Bijwerken (to update) is separable: the particle 'bij' ends the clause, after the object and the place phrase 'in de agenda'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "prepositional phrase",
+          "text": "van locatie"
+        },
+        {
+          "label": "finite verb",
+          "text": "verander"
+        },
+        {
+          "label": "finite verb",
+          "text": "werk"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object",
+          "text": "mijn bereikbaarheid"
+        },
+        {
+          "label": "place",
+          "text": "in de agenda"
+        },
+        {
+          "label": "separable particle",
+          "text": "bij"
+        }
+      ],
+      "meaning": "You explain your routine: whenever you move to another location, you update your availability in the calendar.",
+      "order": "The condition ends with 'verander' after 'van locatie'. As the first constituent it puts 'werk' before 'ik'. The main clause is long: object, place, and finally the particle 'bij', which is the last word.",
+      "forms": "bijwerken = bij + werken: ik werk bij, perfect: ik heb bijgewerkt. veranderen: ik verander. 'Bereikbaarheid' is a de-word; 'de agenda' is the calendar.",
+      "compare": "English 'when I change location' has the verb right after 'I'; Dutch puts 'verander' behind 'van locatie'. English 'update my availability' has no particle; Dutch 'bijwerken' ends with 'bij'.",
+      "mistakes": [
+        {
+          "wrong": "Als ik verander van locatie, werk ik mijn bereikbaarheid in de agenda bij.",
+          "right": "Als ik van locatie verander, werk ik mijn bereikbaarheid in de agenda bij.",
+          "why": "In the dependent clause the finite verb goes after its phrase 'van locatie'."
+        },
+        {
+          "wrong": "Als ik van locatie verander, bijwerk ik mijn bereikbaarheid in de agenda.",
+          "right": "Als ik van locatie verander, werk ik mijn bereikbaarheid in de agenda bij.",
+          "why": "A separable verb splits in a main clause: 'werk' second and 'bij' last."
+        }
+      ],
+      "contrast": {
+        "dutch": "Ik werk mijn bereikbaarheid in de agenda bij als ik van locatie verander.",
+        "english": "I update my availability in the calendar when I change location.",
+        "note": "Main clause first: subject-first 'Ik werk ... bij', with 'bij' still last in the main clause."
+      }
+    },
+    "pat-als-reuse-career-priorities-014": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "Complete data is a condition that may or may not be met: 'if' (or 'once').",
+      "situationNl": "Je moet inschatten hoe lang een taak duurt, maar je ziet nog niet alles. Leg uit wat jou helpt om een betere schatting te maken.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik kan de duur beter inschatten",
+          "subject": "Ik",
+          "finite": "kan",
+          "why": "Ik is first, so the modal 'kan' is second. The infinitive 'inschatten' (to estimate) stands at the end of the main clause, after 'de duur beter'."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als de gegevens compleet zijn",
+          "subject": "de gegevens",
+          "finite": "zijn",
+          "why": "'Gegevens' (data) is a plural noun, so the finite verb is 'zijn'. The predicate 'compleet' stands before it."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb (modal)",
+          "text": "kan"
+        },
+        {
+          "label": "object",
+          "text": "de duur"
+        },
+        {
+          "label": "adverb (comparative)",
+          "text": "beter"
+        },
+        {
+          "label": "infinitive (separable, joined)",
+          "text": "inschatten"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "de gegevens"
+        },
+        {
+          "label": "predicate",
+          "text": "compleet"
+        },
+        {
+          "label": "finite verb",
+          "text": "zijn"
+        }
+      ],
+      "meaning": "You explain that you can judge a task's duration more accurately once all the data is available.",
+      "order": "A modal and an infinitive split the main clause: 'kan' is second and 'inschatten' last. After a modal the separable verb is joined as an infinitive: inschatten, not 'schatten in'. The dependent clause ends with 'zijn' after 'compleet'.",
+      "forms": "kunnen: ik kan. inschatten = in + schatten, joined as an infinitive. 'De gegevens' is plural, hence 'zijn' (in Dutch 'data' is treated as a plural noun here). 'Beter' = better.",
+      "compare": "English 'estimate' has no particle; Dutch 'inschatten' keeps 'in' attached after a modal. English 'the data is complete' often takes 'is'; Dutch 'gegevens' needs 'zijn'.",
+      "mistakes": [
+        {
+          "wrong": "Ik kan de duur beter schatten in als de gegevens compleet zijn.",
+          "right": "Ik kan de duur beter inschatten als de gegevens compleet zijn.",
+          "why": "After a modal the separable verb stays joined: inschatten."
+        },
+        {
+          "wrong": "Ik kan de duur beter inschatten als de gegevens compleet is.",
+          "right": "Ik kan de duur beter inschatten als de gegevens compleet zijn.",
+          "why": "'Gegevens' (data) is a plural noun in Dutch, so the clause needs 'zijn', not the singular 'is'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als de gegevens compleet zijn, kan ik de duur beter inschatten.",
+        "english": "When the data is complete, I can estimate the duration better.",
+        "note": "Condition first: the modal inverts to 'kan ik', and 'inschatten' still ends the main clause."
+      }
+    },
+    "pat-als-reuse-career-priorities-030": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "A proposal that depends on what the colleague does, so 'if'.",
+      "situationNl": "Jij en een collega willen de taken verdelen bij een lopend probleem. Stel een werkverdeling voor waarbij hij de klant spreekt en jij de administratie doet.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als jij de gebruiker belt",
+          "subject": "jij",
+          "finite": "belt",
+          "why": "'Jij' is stressed here, contrasting you with me. With jij the finite verb takes -t: belt. 'De gebruiker' (the user) is the object."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "werk ik het ticket bij",
+          "subject": "ik",
+          "finite": "werk",
+          "why": "The als-clause is position one, so 'werk' precedes 'ik'. Bijwerken (to update) is separable: the particle 'bij' ends the clause after the object 'het ticket'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject (stressed)",
+          "text": "jij"
+        },
+        {
+          "label": "object",
+          "text": "de gebruiker"
+        },
+        {
+          "label": "finite verb",
+          "text": "belt"
+        },
+        {
+          "label": "finite verb",
+          "text": "werk"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object",
+          "text": "het ticket"
+        },
+        {
+          "label": "separable particle",
+          "text": "bij"
+        }
+      ],
+      "meaning": "You propose splitting the work: you call the user, and I update the ticket.",
+      "order": "The condition names who does the first job: 'jij ... belt', with the verb last. The main clause names who does the second: 'werk ik ... bij'. The sentence therefore contrasts 'jij' and 'ik', each with its own verb.",
+      "forms": "bellen: jij belt. bijwerken: ik werk bij. Ticket is a het-word: het ticket. 'Jij' (stressed) is used instead of 'je' to show the contrast between the two people.",
+      "compare": "English 'If you call the user, I will update the ticket' marks the contrast with the voice; Dutch can show it with the stressed pronoun 'jij'. English keeps 'I will update' in order; Dutch inverts to 'werk ik ... bij'.",
+      "mistakes": [
+        {
+          "wrong": "Als jij de gebruiker bel, werk ik het ticket bij.",
+          "right": "Als jij de gebruiker belt, werk ik het ticket bij.",
+          "why": "With the subject 'jij' the finite verb takes -t: jij belt. The bare stem 'bel' is for 'ik'."
+        },
+        {
+          "wrong": "Als jij de gebruiker belt, ik werk het ticket bij.",
+          "right": "Als jij de gebruiker belt, werk ik het ticket bij.",
+          "why": "The front clause is position one, so 'werk' has to be second."
+        }
+      ],
+      "contrast": {
+        "dutch": "Ik werk het ticket bij als jij de gebruiker belt.",
+        "english": "I update the ticket if you call the user.",
+        "note": "Main clause first: subject-first 'Ik werk ... bij'."
+      }
+    },
     "pat-als-reuse-career-priorities-051": {
       "status": "ai-editorial-checked",
       "alsSense": "only-when",
@@ -5946,6 +6727,160 @@
         "dutch": "Als er een onverwachte waarschuwing verschijnt, stop dan de test.",
         "english": "If an unexpected warning appears, stop the test then.",
         "note": "Fronted als-clause; the instruction keeps its verb first and usually adds 'dan'."
+      }
+    },
+    "pat-als-reuse-conversation-20": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "The guest may or may not need something: a real condition, so 'if'.",
+      "situationNl": "Een gast zit bij jou thuis en durft niets te vragen. Maak hem duidelijk dat hij je altijd mag aanspreken.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Laat het me weten",
+          "subject": "(jij, niet uitgesproken)",
+          "finite": "Laat",
+          "why": "A request (imperative): the verb stem 'laat' comes first, the subject is not spoken. The infinitive 'weten' goes to the end of the main clause: laat ... weten (let ... know)."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als je iets nodig hebt",
+          "subject": "je",
+          "finite": "hebt",
+          "why": "'Iets nodig hebben' means to need something. 'Iets' and 'nodig' stand before the finite verb 'hebt', which closes the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "imperative verb",
+          "text": "Laat"
+        },
+        {
+          "label": "direct object",
+          "text": "het"
+        },
+        {
+          "label": "indirect object",
+          "text": "me"
+        },
+        {
+          "label": "infinitive",
+          "text": "weten"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "je"
+        },
+        {
+          "label": "object",
+          "text": "iets"
+        },
+        {
+          "label": "predicate",
+          "text": "nodig"
+        },
+        {
+          "label": "finite verb",
+          "text": "hebt"
+        }
+      ],
+      "meaning": "You invite a guest to tell you if they need anything.",
+      "order": "The command starts with its verb and keeps the infinitive 'weten' at the end of its clause, with the two pronouns in between: first 'het', then 'me'. The dependent clause that follows gathers 'iets nodig' in front of 'hebt', which ends the sentence.",
+      "forms": "laten weten = to let someone know; the imperative is 'laat ... weten'. 'Het me' puts the thing before the person. 'Je hebt' becomes 'je ... hebt' with -t because je is second person singular. Iets nodig hebben = to need something.",
+      "compare": "English 'Let me know' is a short phrase; Dutch 'Laat het me weten' adds 'het' and puts 'weten' last. English 'if you need anything' uses 'need' directly after 'you'; Dutch uses 'nodig hebt' with 'hebt' last.",
+      "mistakes": [
+        {
+          "wrong": "Laat weten het me als je iets nodig hebt.",
+          "right": "Laat het me weten als je iets nodig hebt.",
+          "why": "The infinitive 'weten' stays at the end of the command; the pronouns stand in front of it."
+        },
+        {
+          "wrong": "Laat het me weten als je hebt iets nodig.",
+          "right": "Laat het me weten als je iets nodig hebt.",
+          "why": "In the dependent clause the finite verb 'hebt' goes behind 'iets nodig'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als je iets nodig hebt, laat het me weten.",
+        "english": "If you need anything, let me know.",
+        "note": "Fronted als-clause: an instruction keeps its verb first and needs no inversion. A short 'dan' may be added: 'laat het me dan weten'."
+      }
+    },
+    "pat-als-reuse-conversation-69": {
+      "status": "ai-editorial-checked",
+      "alsSense": "whenever",
+      "alsSenseWhy": "This describes a reaction that happens every time people behave rudely, so 'whenever'.",
+      "situationNl": "Een collega vraagt wat jou echt stoort in het contact met klanten. Leg uit hoe je dan reageert.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik verlies mijn geduld",
+          "subject": "Ik",
+          "finite": "verlies",
+          "why": "Ik is first, so 'verlies' is second. 'Mijn geduld verliezen' means to lose one's patience; the object follows the verb."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als mensen onbeleefd zijn",
+          "subject": "mensen",
+          "finite": "zijn",
+          "why": "'Mensen' is plural, so the finite verb is 'zijn', not 'is'. The predicate 'onbeleefd' (rude) stands before it, and 'zijn' closes the sentence."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "verlies"
+        },
+        {
+          "label": "object",
+          "text": "mijn geduld"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "mensen"
+        },
+        {
+          "label": "predicate",
+          "text": "onbeleefd"
+        },
+        {
+          "label": "finite verb",
+          "text": "zijn"
+        }
+      ],
+      "meaning": "You say that rude behaviour makes you lose your patience.",
+      "order": "The main clause is a plain subject-first statement, so no inversion applies. The dependent clause then puts the predicate 'onbeleefd' in front of the finite verb 'zijn'. The two clauses are joined by als, which here means 'whenever'.",
+      "forms": "verliezen: ik verlies. zijn: mensen zijn (plural). 'Mensen' is the plural of 'mens' and always takes plural verb forms. Geduld is a het-word: mijn geduld.",
+      "compare": "English 'when people are rude' keeps 'are' before 'rude'; Dutch moves 'zijn' to the end. English 'lose my patience' is the same idiom; Dutch uses 'verliezen' with 'mijn geduld'.",
+      "mistakes": [
+        {
+          "wrong": "Ik verlies mijn geduld als mensen onbeleefd is.",
+          "right": "Ik verlies mijn geduld als mensen onbeleefd zijn.",
+          "why": "The subject 'mensen' is plural; the verb must be 'zijn'."
+        },
+        {
+          "wrong": "Ik verlies mijn geduld als mensen zijn onbeleefd.",
+          "right": "Ik verlies mijn geduld als mensen onbeleefd zijn.",
+          "why": "In the dependent clause 'zijn' goes behind the predicate."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als mensen onbeleefd zijn, verlies ik mijn geduld.",
+        "english": "When people are rude, I lose my patience.",
+        "note": "Condition first: the main clause inverts to 'verlies ik', with the idiom 'mijn geduld' closing the sentence."
       }
     }
   }

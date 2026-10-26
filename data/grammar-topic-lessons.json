@@ -332,34 +332,121 @@
     "sources": []
   },
   "inversion": {
-    "title": "Verb second and inversion",
-    "goal": "Recognise position two as the finite verb in a Dutch main clause.",
-    "overview": "A whole first constituent can be a time phrase, object or preceding subordinate clause; the subject follows the finite verb when another constituent comes first.",
-    "status": "Introductory reference only; full module expansion pending.",
-    "revision": "0.2",
+    "title": "Verb second & inversion — de persoonsvorm op plaats twee",
+    "goal": "Build Dutch statements without translating English word order: identify the first whole phrase, put the conjugated verb second, then place the subject.",
+    "overview": "In an ordinary Dutch statement, the finite verb (persoonsvorm) is the second sentence constituent—not necessarily the second word. If a time phrase, place phrase or entire subordinate clause comes first, the subject usually follows the finite verb. This is inversion (inversie).",
+    "status": "Expanded teaching module (AI-edited, not independently reviewed by a native speaker); broader course and exercise review pending.",
+    "revision": "1.0",
     "formulas": [
       {
-        "label": "Core structure",
-        "pattern": "Om negen uur | begint | de vergadering.",
-        "why": "A whole first constituent can be a time phrase, object or preceding subordinate clause; the subject follows the finite verb when another constituent comes first."
+        "label": "Subject first",
+        "pattern": "Ik | werk | vandaag thuis.",
+        "why": "Ik is the first constituent; werk is the finite verb in position two."
+      },
+      {
+        "label": "Time first — inversion",
+        "pattern": "Vandaag | werk | ik thuis.",
+        "why": "Vandaag takes the first position, so werk follows before subject ik."
+      },
+      {
+        "label": "Subordinate clause first — inversion",
+        "pattern": "Als ik thuis ben, | bel | ik je.",
+        "why": "The whole als-clause is one first constituent. Bel is therefore in the second position of the main clause; ik comes after it."
+      },
+      {
+        "label": "Modal and perfect forms",
+        "pattern": "Morgen | moet | ik werken. / Gisteren | heb | ik gewerkt.",
+        "why": "Only the conjugated part (moet/heb) occupies V2. The infinitive or participle usually stays later."
       }
     ],
     "sections": [
       {
-        "title": "Recognise the pattern",
-        "body": "A whole first constituent can be a time phrase, object or preceding subordinate clause; the subject follows the finite verb when another constituent comes first.",
+        "title": "1. Why does Dutch invert the subject?",
+        "body": "English normally keeps 'I work' after today; Dutch treats Vandaag as the first sentence constituent and puts the finite verb directly after it. A constituent can contain several words: Na het werk is still just one opening phrase.",
         "examples": [
           {
-            "nl": "Vandaag werk ik thuis.",
-            "en": "Today I work from home."
+            "nl": "Ik ga na het werk naar huis.",
+            "en": "I go home after work."
           },
           {
-            "nl": "Als ik klaar ben, bel ik je.",
-            "en": "When I am ready, I'll call you."
+            "nl": "Na het werk ga ik naar huis.",
+            "en": "After work I go home."
           },
           {
-            "nl": "Op tafel staat een kop koffie.",
-            "en": "There is a cup of coffee on the table."
+            "nl": "Om negen uur begint de vergadering.",
+            "en": "The meeting starts at nine o'clock."
+          }
+        ]
+      },
+      {
+        "title": "2. What counts as position one?",
+        "body": "Count phrases, not individual words. A place phrase, object or entire subordinate clause can occupy position one. Find the finite verb first; then identify the subject.",
+        "examples": [
+          {
+            "nl": "Op tafel ligt een boek.",
+            "en": "There is a book lying on the table."
+          },
+          {
+            "nl": "Dat boek heb ik al gelezen.",
+            "en": "I've already read that book."
+          },
+          {
+            "nl": "Als ik tijd heb, help ik je.",
+            "en": "If I have time, I'll help you."
+          }
+        ]
+      },
+      {
+        "title": "3. One conjugated verb; other verbs stay elsewhere",
+        "body": "With a modal, perfect tense or a separable verb, the finite verb still goes into position two. A non-finite verb or separable particle belongs later in the main clause.",
+        "examples": [
+          {
+            "nl": "Morgen moet ik vroeg opstaan.",
+            "en": "Tomorrow I have to get up early."
+          },
+          {
+            "nl": "Gisteren heb ik de printer gerepareerd.",
+            "en": "Yesterday I repaired the printer."
+          },
+          {
+            "nl": "Na het werk ruim ik de keuken op.",
+            "en": "After work I tidy the kitchen."
+          }
+        ]
+      },
+      {
+        "title": "4. Why do questions look different?",
+        "body": "The V2 rule discussed here applies to ordinary statements. Yes/no questions often begin with the finite verb; commands can begin with an imperative. Don't mechanically force every Dutch sentence into subject-first V2.",
+        "examples": [
+          {
+            "nl": "Werk je vandaag thuis?",
+            "en": "Are you working from home today?"
+          },
+          {
+            "nl": "Wanneer begint de vergadering?",
+            "en": "When does the meeting start?"
+          },
+          {
+            "nl": "Kom morgen terug!",
+            "en": "Come back tomorrow!"
+          }
+        ]
+      },
+      {
+        "title": "5. Say it without translating",
+        "body": "Choose your opening first (Vandaag, Na het werk, Als ik klaar ben), locate the conjugated verb, then say the subject. A common mistake is translating 'Today I work' as Vandaag ik werk.",
+        "examples": [
+          {
+            "nl": "Vandaag leer ik Nederlands.",
+            "en": "Today I am learning Dutch."
+          },
+          {
+            "nl": "Als de printer klaar is, haal ik het document op.",
+            "en": "When the printer is finished, I collect the document."
+          },
+          {
+            "nl": "Daarom bel ik je later.",
+            "en": "That's why I'll call you later."
           }
         ]
       }
@@ -368,82 +455,266 @@
       {
         "wrong": "Vandaag ik werk thuis.",
         "right": "Vandaag werk ik thuis.",
-        "why": "Vandaag occupies the first position, so werk must come next."
+        "why": "Vandaag takes position one and finite werk must immediately follow it; ik moves behind werk."
+      },
+      {
+        "wrong": "Als ik klaar ben, ik bel je.",
+        "right": "Als ik klaar ben, bel ik je.",
+        "why": "The fronted subordinate clause counts as position one of the main clause, so bel comes before subject ik."
+      },
+      {
+        "wrong": "Morgen ik moet vroeg opstaan.",
+        "right": "Morgen moet ik vroeg opstaan.",
+        "why": "Morgen is first; modal verb moet is finite and takes V2, while infinitive opstaan stays later."
       }
     ],
     "sources": []
   },
   "omdat": {
-    "title": "Omdat — because",
-    "goal": "Explain a reason with subordinate word order.",
-    "overview": "Omdat introduces a reason in a bijzin. Want coordinates independent main clauses; daarom is an adverb and triggers main-clause inversion when fronted.",
-    "status": "Introductory reference only; full module expansion pending.",
-    "revision": "0.2",
+    "title": "Omdat — giving a reason",
+    "goal": "Explain why something happens, place the verb group correctly, and choose between omdat, want and daarom.",
+    "overview": "Omdat means 'because' and introduces a subordinate clause (bijzin). The verb or verb cluster normally occurs toward the end of that clause. But want connects two main clauses, and daarom ('therefore') is an adverb in a main clause.",
+    "status": "Expanded teaching module (AI-edited, not independently reviewed by a native speaker); broader course and exercise review pending.",
+    "revision": "1.0",
     "formulas": [
       {
-        "label": "Core structure",
-        "pattern": "Ik werk thuis | omdat de trein niet rijdt.",
-        "why": "Omdat introduces a reason in a bijzin. Want coordinates independent main clauses; daarom is an adverb and triggers main-clause inversion when fronted."
+        "label": "Reason comes second",
+        "pattern": "Ik blijf thuis | omdat ik ziek ben.",
+        "why": "Blijf is the finite main-clause verb; ben moves to the end of the simple omdat-clause."
+      },
+      {
+        "label": "Reason comes first",
+        "pattern": "Omdat ik ziek ben, | blijf ik thuis.",
+        "why": "The whole reason-clause occupies position one, so the main-clause verb blijf comes before ik."
+      },
+      {
+        "label": "Compare WANT and DAAROM",
+        "pattern": "Ik blijf thuis, want ik ben ziek. / Ik ben ziek. Daarom blijf ik thuis.",
+        "why": "Want connects a main clause with another main clause (ik ben ziek); daarom begins a main clause and triggers V2 inversion."
       }
     ],
     "sections": [
       {
-        "title": "Recognise the pattern",
-        "body": "Omdat introduces a reason in a bijzin. Want coordinates independent main clauses; daarom is an adverb and triggers main-clause inversion when fronted.",
+        "title": "1. What question does omdat answer?",
+        "body": "Use omdat to answer waarom (why?). It gives the reason for a fact, decision or action. Translate the relationship, not English word order.",
         "examples": [
           {
-            "nl": "Omdat ik ziek ben, blijf ik thuis.",
-            "en": "Because I am sick, I stay home."
+            "nl": "Ik leer Nederlands omdat ik in België woon.",
+            "en": "I am learning Dutch because I live in Belgium."
           },
           {
-            "nl": "Ik blijf thuis, want ik ben ziek.",
-            "en": "I stay home because I am sick."
+            "nl": "De vergadering begint later omdat de trein vertraging heeft.",
+            "en": "The meeting starts later because the train is delayed."
           },
           {
-            "nl": "Ik ben ziek. Daarom blijf ik thuis.",
-            "en": "I am sick. Therefore I stay home."
+            "nl": "Ik bel de helpdesk omdat mijn computer niet werkt.",
+            "en": "I'm calling the help desk because my computer isn't working."
+          }
+        ]
+      },
+      {
+        "title": "2. Why does the verb move?",
+        "body": "Omdat introduces a subordinate clause. Compare the independent statement 'Ik ben ziek' with 'omdat ik ziek ben'. With multiple verbs, a verb cluster forms toward the end; don't claim the finite verb is always the absolute final word.",
+        "examples": [
+          {
+            "nl": "Ik ben ziek.",
+            "en": "I am ill."
+          },
+          {
+            "nl": "Ik blijf thuis omdat ik ziek ben.",
+            "en": "I stay home because I am ill."
+          },
+          {
+            "nl": "Ik blijf thuis omdat ik morgen moet werken.",
+            "en": "I stay home because I have to work tomorrow."
+          }
+        ]
+      },
+      {
+        "title": "3. Reason first → inversion in the main clause",
+        "body": "If you begin with the entire omdat-clause, it fills the first position of the main clause. The main finite verb must come directly afterward, before its subject.",
+        "examples": [
+          {
+            "nl": "Omdat het regent, neem ik de bus.",
+            "en": "Because it's raining, I'm taking the bus."
+          },
+          {
+            "nl": "Omdat de server niet reageert, controleer ik de logs.",
+            "en": "Because the server isn't responding, I check the logs."
+          },
+          {
+            "nl": "Omdat ik geen tijd heb, kom ik morgen terug.",
+            "en": "Because I don't have time, I'll come back tomorrow."
+          }
+        ]
+      },
+      {
+        "title": "4. Omdat versus want versus daarom",
+        "body": "Omdat begins a subordinate reason clause. Want joins main clauses without moving the second clause's finite verb to the end. Daarom states a result and must respect main-clause V2. These aren't interchangeable word for word.",
+        "examples": [
+          {
+            "nl": "Ik ga naar huis omdat ik moe ben.",
+            "en": "I'm going home because I'm tired."
+          },
+          {
+            "nl": "Ik ga naar huis, want ik ben moe.",
+            "en": "I'm going home, because I'm tired."
+          },
+          {
+            "nl": "Ik ben moe. Daarom ga ik naar huis.",
+            "en": "I'm tired. That's why I'm going home."
+          }
+        ]
+      },
+      {
+        "title": "5. Don't confuse a reason with a condition",
+        "body": "Omdat means the reason is presented as true. Als expresses a condition or recurring time: the second sentence does not assert that you're ill right now.",
+        "examples": [
+          {
+            "nl": "Ik blijf thuis omdat ik ziek ben.",
+            "en": "I'm staying home because I'm ill."
+          },
+          {
+            "nl": "Als ik ziek ben, blijf ik thuis.",
+            "en": "If I'm ill, I stay home."
+          },
+          {
+            "nl": "Als de test mislukt, stoppen we.",
+            "en": "If the test fails, we'll stop."
           }
         ]
       }
     ],
     "mistakes": [
       {
-        "wrong": "Omdat ik ben ziek, blijf ik thuis.",
-        "right": "Omdat ik ziek ben, blijf ik thuis.",
-        "why": "The finite verb belongs at the end of this simple subordinate clause."
+        "wrong": "Ik blijf thuis omdat ik ben ziek.",
+        "right": "Ik blijf thuis omdat ik ziek ben.",
+        "why": "In this simple subordinate clause, predicate ziek comes before finite ben."
+      },
+      {
+        "wrong": "Omdat het regent, ik neem de bus.",
+        "right": "Omdat het regent, neem ik de bus.",
+        "why": "The complete omdat-clause fills the first main-clause position; finite neem therefore precedes ik."
+      },
+      {
+        "wrong": "Ik ben moe, daarom ik ga naar huis.",
+        "right": "Ik ben moe, daarom ga ik naar huis.",
+        "why": "Daarom is the first element of its main clause, so V2 requires ga ik."
       }
     ],
     "sources": []
   },
   "dat": {
-    "title": "Dat — that",
-    "goal": "Report ideas, knowledge and facts.",
-    "overview": "Conjunction dat introduces the content of thoughts or reports and triggers subordinate order; distinguish relative or demonstrative dat.",
-    "status": "Introductory reference only; full module expansion pending.",
-    "revision": "0.2",
+    "title": "Dat — reporting what someone thinks or says",
+    "goal": "Use dat for embedded statements, distinguish it from 'that' as a demonstrative or relative pronoun, and put verbs correctly.",
+    "overview": "After verbs such as denken, zeggen, weten and hopen, dat often introduces what a person thinks, says or knows. This subordinate clause places its verb group toward the end. The word dat also has other functions, so recognise the sentence structure.",
+    "status": "Expanded teaching module (AI-edited, not independently reviewed by a native speaker); broader course and exercise review pending.",
+    "revision": "1.0",
     "formulas": [
       {
-        "label": "Core structure",
-        "pattern": "Ik denk | dat de server werkt.",
-        "why": "Conjunction dat introduces the content of thoughts or reports and triggers subordinate order; distinguish relative or demonstrative dat."
+        "label": "Report an idea",
+        "pattern": "Ik denk | dat hij morgen komt.",
+        "why": "The main clause has finite denk; the subordinate statement has finite komt at the end."
+      },
+      {
+        "label": "Verb group in a reported statement",
+        "pattern": "Ze zegt | dat ze morgen moet werken.",
+        "why": "Moet werken forms a final verb group in the dat-clause."
+      },
+      {
+        "label": "Another DAT (demonstrative)",
+        "pattern": "Dat boek is van mij.",
+        "why": "Here dat points to a het-word noun ('that book'); it does not introduce a reported clause."
       }
     ],
     "sections": [
       {
-        "title": "Recognise the pattern",
-        "body": "Conjunction dat introduces the content of thoughts or reports and triggers subordinate order; distinguish relative or demonstrative dat.",
+        "title": "1. Why use dat after denken or zeggen?",
+        "body": "One clause introduces the speaker's thought or report, and the dat-clause says what the thought or message is. English may omit 'that', but Dutch often includes dat, especially in clear reported statements.",
         "examples": [
+          {
+            "nl": "Ik denk dat hij thuis is.",
+            "en": "I think that he is at home."
+          },
+          {
+            "nl": "Ze zegt dat de printer kapot is.",
+            "en": "She says that the printer is broken."
+          },
+          {
+            "nl": "Ik hoop dat je morgen komt.",
+            "en": "I hope you come tomorrow."
+          }
+        ]
+      },
+      {
+        "title": "2. Main clause versus subordinate clause",
+        "body": "Compare 'Hij komt morgen' with 'dat hij morgen komt'. In a basic dat-clause the finite verb moves behind most other elements. With modals and perfect tenses the final group can contain several verbs.",
+        "examples": [
+          {
+            "nl": "Hij komt morgen.",
+            "en": "He is coming tomorrow."
+          },
           {
             "nl": "Ik weet dat hij morgen komt.",
             "en": "I know that he is coming tomorrow."
           },
           {
-            "nl": "Zij zegt dat het probleem is opgelost.",
-            "en": "She says that the problem has been solved."
+            "nl": "Ik denk dat hij de fout kan oplossen.",
+            "en": "I think he can fix the error."
+          }
+        ]
+      },
+      {
+        "title": "3. Dat with perfect tense and separable verbs",
+        "body": "The subordinate clause can end in a verb cluster. With a simple finite separable verb, the prefix rejoins the verb in the dat-clause.",
+        "examples": [
+          {
+            "nl": "Ik weet dat ze het verslag heeft verstuurd.",
+            "en": "I know that she has sent the report."
           },
           {
-            "nl": "Dat boek is interessant.",
-            "en": "That book is interesting."
+            "nl": "Ze zegt dat de server uitvalt.",
+            "en": "She says that the server is going down."
+          },
+          {
+            "nl": "Ik denk dat hij het formulier heeft ingevuld.",
+            "en": "I think that he has filled in the form."
+          }
+        ]
+      },
+      {
+        "title": "4. DAT is not always a conjunction",
+        "body": "Dat can mean 'that' before a het-word (demonstrative), or introduce a relative clause after a het-word. Do not tag every occurrence of the letters dat as a reported statement.",
+        "examples": [
+          {
+            "nl": "Dat document ligt op de printer.",
+            "en": "That document is lying on the printer."
+          },
+          {
+            "nl": "Het document dat ik lees, is interessant.",
+            "en": "The document that I'm reading is interesting."
+          },
+          {
+            "nl": "Ik denk dat het document klaar is.",
+            "en": "I think the document is ready."
+          }
+        ]
+      },
+      {
+        "title": "5. Report without translating word by word",
+        "body": "Before answering, decide whether you're making your own statement or reporting someone's knowledge. For a report: main clause + dat + subordinate clause; keep the finite verb in the correct group.",
+        "examples": [
+          {
+            "nl": "Ik weet dat je vandaag werkt.",
+            "en": "I know you're working today."
+          },
+          {
+            "nl": "Mijn collega zegt dat hij later belt.",
+            "en": "My colleague says he'll call later."
+          },
+          {
+            "nl": "Ik geloof dat we genoeg tijd hebben.",
+            "en": "I believe we have enough time."
           }
         ]
       }
@@ -452,7 +723,17 @@
       {
         "wrong": "Ik denk dat hij komt morgen.",
         "right": "Ik denk dat hij morgen komt.",
-        "why": "The time phrase precedes the single finite subordinate verb."
+        "why": "In the basic reported dat-clause, morgen comes before finite komt."
+      },
+      {
+        "wrong": "Ze zegt dat ze moet morgen werken.",
+        "right": "Ze zegt dat ze morgen moet werken.",
+        "why": "A modal verb group usually closes this subordinate clause: morgen comes before moet werken."
+      },
+      {
+        "wrong": "Ik weet dat hij is ziek.",
+        "right": "Ik weet dat hij ziek is.",
+        "why": "The simple subordinate clause places predicate ziek before finite is."
       }
     ],
     "sources": []
@@ -542,43 +823,163 @@
     "sources": []
   },
   "verbs": {
-    "title": "Verbs in context",
-    "goal": "Use a correct finite verb and auxiliary.",
-    "overview": "Dutch verb form changes by subject, tense and construction. A finite present verb does not need an extra form of zijn.",
-    "status": "Introductory reference only; full module expansion pending.",
-    "revision": "0.2",
+    "title": "Verbs in context — hebben, moeten, hoeven, proberen",
+    "goal": "Choose the right verb and construct present, past, perfect and obligation sentences without translating 'have to' as hebben.",
+    "overview": "Dutch uses hebben to possess something or as a perfect-tense auxiliary; moeten expresses 'have to/must'; hoeven in negative contexts means 'need to' and normally takes te + infinitive. The conjugated verb carries tense and person; other verbs keep their required infinitive or participle form.",
+    "status": "Expanded teaching module (AI-edited, not independently reviewed by a native speaker); broader course and exercise review pending.",
+    "revision": "1.0",
     "formulas": [
       {
-        "label": "Core structure",
-        "pattern": "Ik probeer | Ik probeerde | Ik heb geprobeerd.",
-        "why": "Dutch verb form changes by subject, tense and construction. A finite present verb does not need an extra form of zijn."
+        "label": "Possession: hebben",
+        "pattern": "Ik | heb | werk.",
+        "why": "Heb means 'have'; werk is a noun, not an infinitive."
+      },
+      {
+        "label": "Necessity: moeten + infinitive",
+        "pattern": "Ik | moet | werken.",
+        "why": "English 'I have to work' is Dutch 'Ik moet werken', not 'Ik heb werken'."
+      },
+      {
+        "label": "No necessity: niet/geen/niets hoeven te",
+        "pattern": "Ik | hoef | niets meer te doen.",
+        "why": "Use hoef ... te + infinitive for 'I don't have to do anything anymore'."
+      },
+      {
+        "label": "Completed action: hebben + participle",
+        "pattern": "Ik | heb | het werk gedaan.",
+        "why": "Heb is now an auxiliary; gedaan is the past participle of doen."
+      },
+      {
+        "label": "Try to: proberen + te",
+        "pattern": "Ik | probeer | Nederlands te spreken.",
+        "why": "Proberen often combines with te + infinitive, not with a second finite verb."
       }
     ],
     "sections": [
       {
-        "title": "Recognise the pattern",
-        "body": "Dutch verb form changes by subject, tense and construction. A finite present verb does not need an extra form of zijn.",
+        "title": "1. Hebben means to have something",
+        "body": "If a noun follows, hebben can mean possession, ownership or a situation you experience. This is not the same as English 'have to + verb'.",
         "examples": [
           {
-            "nl": "Wij proberen het.",
-            "en": "We try it."
+            "nl": "Ik heb vandaag veel werk.",
+            "en": "I have a lot of work today."
           },
           {
-            "nl": "Wij probeerden het.",
-            "en": "We tried it."
+            "nl": "Heb je morgen tijd?",
+            "en": "Do you have time tomorrow?"
           },
           {
-            "nl": "Wij hebben het geprobeerd.",
-            "en": "We have tried it."
+            "nl": "Ik heb een afspraak bij de tandarts.",
+            "en": "I have a dentist appointment."
+          }
+        ]
+      },
+      {
+        "title": "2. Why 'I have to work' is MOETEN",
+        "body": "English uses have to for necessity. Dutch uses the modal moeten plus the bare infinitive. The modal itself changes with the subject: ik moet, jij moet, wij moeten.",
+        "examples": [
+          {
+            "nl": "Ik moet vandaag werken.",
+            "en": "I have to work today."
+          },
+          {
+            "nl": "Zij moet het formulier invullen.",
+            "en": "She has to fill in the form."
+          },
+          {
+            "nl": "Morgen moeten we vroeg vertrekken.",
+            "en": "Tomorrow we have to leave early."
+          }
+        ]
+      },
+      {
+        "title": "3. Don't have to: hoeven + te + infinitive",
+        "body": "In negative or restrictive contexts, hoeven says that something is not necessary. 'Ik hoef niet te werken' is unambiguously 'I don't have to work'. 'Ik moet niet werken' is common in some contexts, but may suggest an instruction not to work; hoeven is the safer choice when you mean no obligation.",
+        "examples": [
+          {
+            "nl": "Ik hoef morgen niet te werken.",
+            "en": "I don't have to work tomorrow."
+          },
+          {
+            "nl": "Als het document klaar is, hoef ik niets meer te doen.",
+            "en": "Once the document is ready, I don't need to do anything else."
+          },
+          {
+            "nl": "Je hoeft vandaag geen afspraak te maken.",
+            "en": "You don't need to make an appointment today."
+          }
+        ]
+      },
+      {
+        "title": "4. Hebben as an auxiliary in the perfect tense",
+        "body": "When hebben is followed by a past participle, it can build the perfect. Compare 'Ik doe het' (present) and 'Ik heb het gedaan' (completed). Some other verbs form their perfect with zijn, not hebben.",
+        "examples": [
+          {
+            "nl": "Ik doe de afwas.",
+            "en": "I'm doing the dishes."
+          },
+          {
+            "nl": "Ik heb de afwas gedaan.",
+            "en": "I've done the dishes."
+          },
+          {
+            "nl": "Ik ben naar huis gegaan.",
+            "en": "I went home / I've gone home."
+          }
+        ]
+      },
+      {
+        "title": "5. Proberen, and why te stays",
+        "body": "Proberen often takes 'te + infinitive' for trying to do an action. A modal such as moeten normally takes a bare infinitive instead. Don't use two conjugated verbs next to each other in a simple main clause.",
+        "examples": [
+          {
+            "nl": "Ik probeer Nederlands te spreken.",
+            "en": "I'm trying to speak Dutch."
+          },
+          {
+            "nl": "Gisteren probeerde ik je te bellen.",
+            "en": "Yesterday I tried to call you."
+          },
+          {
+            "nl": "Ik heb geprobeerd het probleem op te lossen.",
+            "en": "I've tried to solve the problem."
+          }
+        ]
+      },
+      {
+        "title": "6. Choose the meaning before the word order",
+        "body": "Ask yourself: possession (hebben + noun), necessity (moeten + infinitive), no necessity (hoeven + te), completed action (auxiliary + participle), or intention/attempt (proberen + te)? Then put the conjugated verb in main-clause V2.",
+        "examples": [
+          {
+            "nl": "Ik heb werk, maar ik hoef nu niets te doen.",
+            "en": "I have work, but I don't need to do anything now."
+          },
+          {
+            "nl": "Als ik morgen moet werken, sta ik vroeg op.",
+            "en": "If I have to work tomorrow, I get up early."
+          },
+          {
+            "nl": "Ik weet dat ik het nog moet doen.",
+            "en": "I know that I still have to do it."
           }
         ]
       }
     ],
     "mistakes": [
       {
-        "wrong": "Ik ben probeer het.",
-        "right": "Ik probeer het.",
-        "why": "Do not add ben before a finite present action verb."
+        "wrong": "Ik heb niets doen.",
+        "right": "Ik hoef niets te doen.",
+        "why": "To say 'I don't have to do anything', use hoeven with te + infinitive. 'Heb ... gedaan' would mean 'have done', a different time and meaning."
+      },
+      {
+        "wrong": "Morgen heb ik werken.",
+        "right": "Morgen moet ik werken.",
+        "why": "English 'have to work' uses the Dutch modal moeten, not possession verb hebben."
+      },
+      {
+        "wrong": "Ik ben probeer Nederlands.",
+        "right": "Ik probeer Nederlands te spreken.",
+        "why": "Probeer is already the finite present verb; don't add ben before it. Add a complete infinitive phrase for what you are trying to do."
       }
     ],
     "sources": []

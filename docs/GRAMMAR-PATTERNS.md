@@ -10,7 +10,7 @@
 - **Speaking:** answer a situational prompt aloud, reveal Dutch, then **self-rate**. No automatic speech-to-text or pronunciation scoring. An optional English-help toggle is available **only for the 236 authored grammar cards that include a Dutch-first prompt**; other cards fall back to English until authored and checked.
 - **Word-order Quiz:** reconstruct a model sentence with word tiles. The 58 new ALS sentences form 29 clause-order contrast pairs with a second saved and recognisable model. A broader set of alternative answers and optional typed/uncued mixed grammar inside the flashcard session are **not** finished. The older `/learn` lab has additional typed and mixed exercises.
 - **Find and fix a mistake:** each current topic lesson has a non-scoring optional correction exercise. Its response check compares one stored model; another grammatical correction may be valid even if not matched.
-- **Extra interactive variations:** just **three ALS base cards** have ten separately tracked child questions each (**30 total**); the other grammar parents have no ready ten-child family. The ten passive examples displayed in notes are **not** independently scored questions.
+- **Extra interactive variations:** only **ten ALS base cards** have ten separately tracked child questions each (**100 total**); the other grammar parents have no ready ten-child family. The ten passive examples displayed in notes are **not** independently scored questions.
 - **Progress:** each reused core reference receives a grammar-specific alias ID and level; the original card's level is unchanged. This does not yet implement full skill-by-topic mastery or multi-topic tagging.
 
 ## Exact merged-feature inventory (26 October 2026)
@@ -34,7 +34,7 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 | `tense` | 17 | 0 | 17 | Introductory |
 | **TOTAL** | **432** | **53** | **485** | **13 topics** |
 
-There are also **52 authored separable-verb lemmas** (below the 60–100 target; **not** independently native-verified), 30 interactive child variations on three ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
+There are also **52 authored separable-verb lemmas** (below the 60–100 target; **not** independently native-verified), 100 interactive child variations on ten ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
 
 ## Authoring and safety
 

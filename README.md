@@ -16,7 +16,7 @@ DutchTap is a **Dutch and French sentence-learning app**, with real-world situat
 | Individual sentence explanations | Initial grammar notes and limited ALS clause view | Bespoke, validated full structured word-order analysis for all grammar base cards |
 | Dutch-first speaking | **236/432** authored grammar cards include Dutch prompts | Remaining 196 authored and 53 aliases need real Dutch-first scenarios; uncued mixed retrieval |
 | Recognised alternatives | 58 new ALS authored cards provide two clause-order models | Explicit semantic validation and alternatives throughout other topics |
-| Extra grammar variations | **30** children across only three ALS parent families | Author and validate meaningful independent children where pedagogically justified |
+| Extra grammar variations | **100** children across ten ALS parent families | Author and validate meaningful independent children where pedagogically justified |
 | Separable verbs | **52** distinct verb records; **152** practice cards | At least eight additional verified verbs and complete representative form coverage |
 | Mastery and complete release | Legacy/grammar level records and focused tests | Multi-topic skill tracking, full acceptance A01–A25, content QA, security and release checks |
 

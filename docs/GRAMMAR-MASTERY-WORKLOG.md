@@ -14,25 +14,26 @@ Source material is AI-edited and is **not** independently certified by a native 
 - Replaced the regex `GrammarAlsAnalysis.tsx` with `GrammarClauseMap.tsx`; a card without an authored analysis shows no invented map.
 - Dutch-first situations for the 42 ALS cards that had none; replaced 7 that gave the conjunction away ("als", "wanneer") and 1 English scenario that quoted the answer (`situationNl`/`situationEn` overlay, applied in `lib/content/cards.ts`).
 - ALS lesson v1.1: checked the toen/als/wanneer and wanneer-register statements against two Taaladvies.net pages (Belgium: toen is the only correct conjunction for one past event), added sections on dan/pas als, negation/er/verb groups and non-conjunction als, two mistakes and two sources. Honest `status` text.
-- Tests: `tests/grammar.als-analysis.test.ts` (14), `tests/flashcard-e2e/grammar-als-analysis.spec.ts` (5, at 320/390/1280 px). Audit rows A02–A05 and the P1 section updated; counts of lesson versions corrected.
+- Interactive children: rewrote the explanations of the 30 existing ALS children (ids and sentences unchanged, so progress is preserved) and replaced 9 Dutch prompts that cued the conjunction; authored 70 new children for seven more parents (pat-als-07, 14, 33, 60, 68, 72 and the linked IT sentence career-troubleshooting-029), each with its own Dutch-first situation and a specific explanation. Result: 100 children on 10 parents.
+- Tests: `tests/grammar.als-analysis.test.ts` (14), `tests/grammar.als-children.test.ts` (4), `tests/flashcard-e2e/grammar-als-analysis.spec.ts` (5, at 320/390/1280 px), `tests/flashcard-e2e/grammar-als-journey.spec.ts` (full ALS journey, repeated 8× with random card sets). Audit rows A02–A05, A08 and the P1 section updated; counts of lesson versions corrected.
 
 **Evidence (command → result)**
 - `npx tsc --noEmit` → clean; `npx eslint lib components tests` → clean.
-- `TEST_MONGODB_URI=mongodb://127.0.0.1:27018 npx vitest run` → 49 files, 368 tests passed (before the final doc edits; re-run below).
-- `E2E_PORT=3100 npm run test:flashcards` → 90 passed, 1 failed. The failure was a stale assumption in `grammar-patterns.spec.ts` (no image in a pattern session) that no longer holds because ALS sessions can contain linked Everyday sentences with pictures; assertion corrected to at most one image.
+- `TEST_MONGODB_URI=mongodb://127.0.0.1:27018 npx vitest run` → 50 files, 379 tests passed.
+- `E2E_PORT=3100 npm run test:flashcards` → 92 passed. An earlier run had one failure: a stale assumption in `grammar-patterns.spec.ts` (no image in a pattern session) that no longer holds because ALS sessions can contain linked Everyday sentences with pictures; assertion corrected to at most one image.
 - NOT RUN: `npm run grammar:release-gate` (expected to fail), `npm run content:review-check`, `npm run test:e2e` (touches Atlas), `npm audit` triage, production offline/prod specs, account two-device sync.
 
-**Counts:** ALS parents 100 (77 authored + 23 linked) = 71 distinct tasks (29 pairs); analyses 100/100; Dutch-first 100/100; interactive children 30 on 3 parents; other topics unchanged (V2 20, Omdat 29, Dat 39, Toen 22, Wanneer 14, Terwijl 12, Voordat/Nadat 24, Tot 20, Verbs 36, Separable 152, Past/perfect 17).
+**Counts:** ALS parents 100 (77 authored + 23 linked) = 71 distinct tasks (29 pairs); analyses 100/100; Dutch-first 100/100; interactive children 100 on 10 parents; other topics unchanged (V2 20, Omdat 29, Dat 39, Toen 22, Wanneer 14, Terwijl 12, Voordat/Nadat 24, Tot 20, Verbs 36, Separable 152, Past/perfect 17).
 
 **Open review questions recorded in the data (`openQuestions`):** Flemish participle-first order in 'heb gecontroleerd' (pat-als-68); Flemish order 'niet slapen kan' (pat-als-42, pat-als-66); 'hem' vs 'ze' for 'de zin' (pat-als-64); the pronoun 'die' in main-first 'Ik verbeter die meteen' (pat-als-55); primary gloss of 'Als je afsluiten zegt' (career-clarification-020).
 
 **Known issues / still open for P1**
-- [ ] Interactive child variations for the other 97 ALS parents (documented exception until authored; do not fill with templates).
-- [ ] End-to-end ALS journey test including variation toggle, refresh, guest/account sync, offline; viewport/keyboard checks beyond the sentence page.
+- [ ] Interactive child variations for the other 90 ALS parents (documented exception until authored; do not fill with templates).
+- [ ] ALS journey test extended with a variation toggle on a card that has children, guest/account sync and offline; viewport/keyboard checks beyond the sentence page.
 - [ ] Lesson mini self-check; independent native-speaker review of the 100 analyses and prompts.
 - [ ] The 29 paired cards inflate the 100-count; consider more distinct tasks before claiming content coverage.
 
-**Next specific task:** build the ALS end-to-end session test (10 cards → Study clause map → Speaking Dutch-first prompt with English toggle and reveal → Quiz → variations toggle → reload), then author interactive children for further ALS parents in reviewed batches of 5.
+**Next specific task:** extend the ALS journey with the variation toggle and account/offline legs, run the 320/375/430 px and keyboard pass on Study/Speaking/Quiz, then decide with the owner whether to continue ALS children (90 parents left) or start P2 (V2/inversion, Omdat, Dat, Toen, Wanneer to 100 cards each with the same per-card analysis standard).
 
 ## 2026-10-26 — Learning-first lesson expansion and review PR
 

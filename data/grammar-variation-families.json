@@ -7,7 +7,7 @@
       "english": "If I see an error message, I ask my colleague for help.",
       "scenario": "An error message appears and you need advice. Explain your next step.",
       "scenarioNl": "Je ziet een foutmelding en hebt advies nodig. Vertel wat je doet.",
-      "explanation": "Zie ends the subordinate clause; vraag ik shows inversion.",
+      "explanation": "In 'Als ik een foutmelding zie' the object 'een foutmelding' stands before the finite verb 'zie', which ends the dependent clause. That clause fills position one, so the main verb comes second: vraag ik mijn collega om hulp.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik vraag om hulp als ik de opdracht niet begrijp.",
@@ -20,8 +20,8 @@
       "text": "Ik vraag om hulp als ik de opdracht niet begrijp.",
       "english": "I ask for help if I do not understand the assignment.",
       "scenario": "An assignment is unclear. Say when you ask for help.",
-      "scenarioNl": "Een opdracht is niet duidelijk. Leg uit wanneer je hulp vraagt.",
-      "explanation": "Begrijp is the single subordinate finite verb after niet.",
+      "scenarioNl": "Een opdracht is niet duidelijk. Leg uit in welk geval je hulp vraagt.",
+      "explanation": "The main clause comes first (Ik vraag), so there is no inversion. In the als-clause 'niet' stands before the finite verb: als ik de opdracht niet begrijp. Begrijpen is inseparable and keeps its form.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als mijn collega tijd heeft, bekijken we het probleem samen.",
@@ -35,7 +35,7 @@
       "english": "If my colleague has time, we examine the problem together.",
       "scenario": "Your colleague might be available to look at a problem. Explain your plan.",
       "scenarioNl": "Een collega kan misschien helpen bij een probleem. Vertel je plan.",
-      "explanation": "Heeft ends the subordinate; bekijken we shows inversion.",
+      "explanation": "In 'Als mijn collega tijd heeft' the noun 'tijd' stands before 'heeft', which closes the clause. With that clause in front, the main verb 'bekijken' comes before 'we'. The verb is plural because the subject is 'we'.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als de uitleg te snel gaat, vraag ik om herhaling.",
@@ -49,7 +49,7 @@
       "english": "When the explanation is too fast, I ask for repetition.",
       "scenario": "A colleague sometimes speaks too quickly. Say what you do.",
       "scenarioNl": "Een collega praat soms te snel. Vertel hoe je reageert.",
-      "explanation": "Gaat closes the subordinate time clause; vraag ik is inverted.",
+      "explanation": "'Te snel gaat' puts the phrase 'te snel' before the finite verb 'gaat'. The clause is position one, so 'vraag' precedes 'ik'. 'Vragen om' means to ask for something: vraag ik om herhaling.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik stuur een bericht als ik extra informatie nodig heb.",
@@ -63,7 +63,7 @@
       "english": "I send a message when I need more information.",
       "scenario": "You sometimes need more details before continuing. Explain your response.",
       "scenarioNl": "Je hebt soms meer gegevens nodig. Vertel wat je doet.",
-      "explanation": "Heb closes the subordinate phrase nodig heb.",
+      "explanation": "The main clause comes first: Ik stuur een bericht. In the als-clause the object 'extra informatie' and the predicate 'nodig' stand before the finite verb 'heb', which ends the sentence.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als ik de fout niet kan vinden, bel ik de beheerder.",
@@ -77,7 +77,7 @@
       "english": "If I cannot find the error, I call the administrator.",
       "scenario": "You cannot locate an error. Describe your fallback.",
       "scenarioNl": "Je kunt een fout niet vinden. Leg je volgende stap uit.",
-      "explanation": "Kan vinden is a final subordinate verb group; bel ik is inversion.",
+      "explanation": "'Kan vinden' is a verb group: the modal 'kan' and the infinitive 'vinden' close the clause behind the object and 'niet'. After the front clause the main verb inverts: bel ik de beheerder.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als ik de gegevens heb gecontroleerd, vraag ik om bevestiging.",
@@ -91,7 +91,7 @@
       "english": "Once I have checked the information, I ask for confirmation.",
       "scenario": "You must check details before requesting confirmation.",
       "scenarioNl": "Je controleert eerst de gegevens en vraagt daarna om bevestiging.",
-      "explanation": "Heb gecontroleerd forms the subordinate perfect cluster.",
+      "explanation": "The perfect 'heb gecontroleerd' (auxiliary plus participle) closes the clause behind the object 'de gegevens'. Controleren is inseparable, so the participle has no extra ge-. The main clause then inverts: vraag ik om bevestiging.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als de vraag dringend is, zoek ik meteen hulp.",
@@ -105,7 +105,7 @@
       "english": "If the question is urgent, I immediately look for help.",
       "scenario": "An urgent question needs attention. Explain your response.",
       "scenarioNl": "Een dringende vraag vraagt om hulp. Vertel hoe je reageert.",
-      "explanation": "Is follows dringend in the subordinate clause; zoek ik is inversion.",
+      "explanation": "'Dringend' (urgent) is the predicate and stands before 'is', which ends the clause. After the front clause the main verb comes second: zoek ik meteen hulp. 'Hulp zoeken' means to look for help.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als ik vroeger iets niet begreep, vroeg ik altijd om hulp.",
@@ -118,8 +118,8 @@
       "text": "Als ik vroeger iets niet begreep, vroeg ik altijd om hulp.",
       "english": "Whenever I did not understand something in the past, I always asked for help.",
       "scenario": "Describe how you regularly sought help when you were younger.",
-      "scenarioNl": "Vroeger vroeg je altijd om hulp wanneer je iets niet begreep. Beschrijf dat.",
-      "explanation": "Begreep is past subordinate-final; vroeg ik shows inverted past main clause.",
+      "scenarioNl": "Vroeger vroeg je altijd om hulp bij iets onduidelijks. Beschrijf die gewoonte.",
+      "explanation": "A repeated past habit: als with the simple past ('begreep') and the word 'vroeger'. The als-clause is position one, so 'vroeg' comes before 'ik'. One single past event would use toen instead.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik vraag het opnieuw als het antwoord onduidelijk is.",
@@ -133,7 +133,7 @@
       "english": "I ask again if the answer is unclear.",
       "scenario": "Someone's answer is confusing. Explain when you repeat your question.",
       "scenarioNl": "Een antwoord is soms onduidelijk. Leg uit wat je dan doet.",
-      "explanation": "Is ends the subordinate; vraag is finite in the main clause.",
+      "explanation": "The main clause comes first (Ik vraag het opnieuw), so no inversion. In the als-clause the predicate 'onduidelijk' stands before 'is'. 'Opnieuw' is the adverb for 'again'.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als ik een foutmelding zie, vraag ik mijn collega om hulp.",
@@ -149,7 +149,7 @@
       "english": "If the server does not respond, I check its status.",
       "scenario": "A server is unresponsive. Explain your first check.",
       "scenarioNl": "Een server reageert niet. Vertel welke controle je eerst uitvoert.",
-      "explanation": "Reageert ends the negative subordinate clause; controleer ik is inversion.",
+      "explanation": "'Niet' stands before the finite verb 'reageert', which ends the als-clause. The clause is position one, so 'controleer' precedes 'ik'. 'De status controleren' means to check its status.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik bekijk de logs als de applicatie vastloopt.",
@@ -162,8 +162,8 @@
       "text": "Ik bekijk de logs als de applicatie vastloopt.",
       "english": "I examine the logs if the application freezes.",
       "scenario": "An application sometimes freezes. Explain your diagnosis.",
-      "scenarioNl": "Een applicatie loopt soms vast. Leg je controle uit.",
-      "explanation": "Vastloopt joins the separable verb at the subordinate end.",
+      "scenarioNl": "Een programma reageert soms niet meer. Leg uit wat je dan bekijkt.",
+      "explanation": "Vastlopen (to freeze) is separable: 'de applicatie loopt vast'. In the als-clause its parts join: vastloopt. The main clause comes first, so 'Ik bekijk' keeps its normal order.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als de CPU-belasting hoog is, controleer ik de processen.",
@@ -177,7 +177,7 @@
       "english": "If CPU usage is high, I check the processes.",
       "scenario": "CPU usage rises. Explain which data you inspect.",
       "scenarioNl": "Het CPU-gebruik is hoog. Vertel wat je controleert.",
-      "explanation": "Hoog is precedes the finite subordinate verb is.",
+      "explanation": "'Hoog is': the predicate 'hoog' stands before the finite verb 'is'. 'CPU-belasting' is a de-word. After the front clause the main verb comes second: controleer ik de processen.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik meld de storing als de verbinding wegvalt.",
@@ -190,8 +190,8 @@
       "text": "Ik meld de storing als de verbinding wegvalt.",
       "english": "I report the outage if the connection drops.",
       "scenario": "The network may disconnect. Explain when you file an outage report.",
-      "scenarioNl": "De netwerkverbinding kan uitvallen. Vertel wanneer je de storing meldt.",
-      "explanation": "Wegvalt joins the particle in the subordinate clause.",
+      "scenarioNl": "De netwerkverbinding kan uitvallen. Vertel in welk geval je de storing meldt.",
+      "explanation": "The main clause comes first (Ik meld de storing), so no inversion. In the als-clause the separable verb wegvallen joins into 'wegvalt'. 'Een storing melden' means to report an outage.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als de back-up mislukt, stuur ik een waarschuwing.",
@@ -205,7 +205,7 @@
       "english": "If the backup fails, I send a warning.",
       "scenario": "A backup job fails. Explain how you notify colleagues.",
       "scenarioNl": "De back-up is mislukt. Vertel hoe je collega's waarschuwt.",
-      "explanation": "Mislukt is final in the simple subordinate clause; stuur ik is inversion.",
+      "explanation": "Mislukken is inseparable, so 'mislukt' is one word at the end of the clause. The front clause is position one, so 'stuur' precedes 'ik'. 'Een waarschuwing sturen' means to send a warning.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "We draaien de wijziging terug als de test faalt.",
@@ -218,8 +218,8 @@
       "text": "We draaien de wijziging terug als de test faalt.",
       "english": "We roll back the change if the test fails.",
       "scenario": "A change is under test. Explain the rollback condition.",
-      "scenarioNl": "Een wijziging wordt getest. Leg uit wanneer je die terugdraait.",
-      "explanation": "Draaien ... terug splits the main separable verb; faalt closes the condition.",
+      "scenarioNl": "Een wijziging wordt getest. Leg uit in welk geval je die ongedaan maakt.",
+      "explanation": "Terugdraaien is separable: the main clause splits it, so 'We draaien de wijziging terug' ends with the particle. In the dependent clause 'faalt' (fails) is the only verb and stands last.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als het probleem is opgelost, informeer ik het team.",
@@ -233,7 +233,7 @@
       "english": "Once the problem has been solved, I inform the team.",
       "scenario": "An issue is resolved. Tell your team what you do next.",
       "scenarioNl": "Een probleem is opgelost. Vertel hoe je het team informeert.",
-      "explanation": "Is opgelost finishes the subordinate passive/perfect-like result; informeer ik is inversion.",
+      "explanation": "'Is opgelost' is a result state: the participle 'opgelost' stands before 'is'. The als-clause is position one, so 'informeer' precedes 'ik'. Informeren is inseparable.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik kan de dienst herstarten als ik toestemming krijg.",
@@ -246,8 +246,8 @@
       "text": "Ik kan de dienst herstarten als ik toestemming krijg.",
       "english": "I can restart the service if I get permission.",
       "scenario": "You need permission to restart a service. Explain the condition.",
-      "scenarioNl": "Je hebt toestemming nodig voor een herstart. Leg uit wanneer dat kan.",
-      "explanation": "Kan is the finite main modal; herstarten is the infinitive; krijg ends the subordinate clause.",
+      "scenarioNl": "Je hebt toestemming nodig voor een herstart. Leg uit onder welke voorwaarde dat kan.",
+      "explanation": "'Kan' is the finite modal of the main clause and the infinitive 'herstarten' stands at its end. In the dependent clause the object 'toestemming' stands before 'krijg', which closes the sentence.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als de gebruiker geen toegang heeft, controleer ik de rechten.",
@@ -261,7 +261,7 @@
       "english": "If the user has no access, I check the permissions.",
       "scenario": "A user cannot access a folder. Explain your first diagnostic step.",
       "scenarioNl": "Een gebruiker krijgt geen toegang tot een map. Beschrijf je eerste controle.",
-      "explanation": "Heeft is subordinate-final; controleer ik follows with inversion.",
+      "explanation": "'Geen toegang heeft': 'geen' negates the noun 'toegang', which stands before 'heeft'. After the front clause 'controleer' comes before 'ik'. 'De rechten controleren' means to check the permissions.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als de server vroeger uitviel, kreeg ik een melding.",
@@ -275,7 +275,7 @@
       "english": "Whenever the server went down in the past, I received an alert.",
       "scenario": "Describe how alerts used to work whenever a server failed.",
       "scenarioNl": "Vroeger kreeg je een melding bij een serverstoring. Vertel over die gewoonte.",
-      "explanation": "Vroeger establishes repeated past; uitviel and kreeg are past finite forms.",
+      "explanation": "A past habit: 'uitviel' (past of uitvallen, joined in a dependent clause) and 'kreeg' (past of krijgen). 'Vroeger' signals repetition, which is why als is right and not toen. The main clause inverts: kreeg ik een melding.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als de server niet reageert, controleer ik de status.",
@@ -291,7 +291,7 @@
       "english": "If it snows, I take the train.",
       "scenario": "Snow changes how you travel. Explain your transport choice.",
       "scenarioNl": "Bij sneeuw kies je ander vervoer. Vertel wat je doet.",
-      "explanation": "Sneeuwt closes the condition; neem ik is inverted.",
+      "explanation": "'Sneeuwt' is the only verb and closes the clause; 'het' is the empty weather subject. The clause is position one, so 'neem' precedes 'ik'.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik ga naar het park als de zon schijnt.",
@@ -304,8 +304,8 @@
       "text": "Ik ga naar het park als de zon schijnt.",
       "english": "I go to the park when the sun shines.",
       "scenario": "You visit a park in sunny weather. Describe your habit.",
-      "scenarioNl": "Bij mooi weer bezoek je graag het park. Vertel wanneer je gaat.",
-      "explanation": "Schijnt is subordinate-final; ga is main-clause finite.",
+      "scenarioNl": "Bij mooi weer bezoek je graag het park. Vertel in welk geval je gaat.",
+      "explanation": "The main clause comes first: Ik ga naar het park, with no inversion. In the dependent clause 'de zon schijnt' the verb stands last.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als het hard waait, sluit ik de ramen.",
@@ -319,7 +319,7 @@
       "english": "When it is very windy, I close the windows.",
       "scenario": "Strong wind makes you shut windows. Explain your routine.",
       "scenarioNl": "Bij harde wind doe je de ramen dicht. Vertel wat je doet.",
-      "explanation": "Waait ends the time clause; sluit ik shows inversion.",
+      "explanation": "'Hard waait': the adverb 'hard' stands before the verb 'waait'. The whole clause fills position one, so 'sluit' precedes 'ik'. 'De ramen sluiten' means to close the windows.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als het morgen droog is, ga ik fietsen.",
@@ -333,7 +333,7 @@
       "english": "If it is dry tomorrow, I will go cycling.",
       "scenario": "You want to cycle tomorrow depending on the weather.",
       "scenarioNl": "Je wilt morgen fietsen, maar het weer is onzeker. Vertel je plan.",
-      "explanation": "Is closes the future condition; ga ik is inverted.",
+      "explanation": "'Droog is': the predicate comes before the verb, and 'morgen' sits inside the condition. After the front clause 'ga' precedes 'ik'; the infinitive 'fietsen' follows 'gaan' at the end.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik blijf binnen als het onweert.",
@@ -346,8 +346,8 @@
       "text": "Ik blijf binnen als het onweert.",
       "english": "I stay inside when there is a thunderstorm.",
       "scenario": "You prefer to stay indoors during thunderstorms.",
-      "scenarioNl": "Bij onweer blijf je liever binnen. Leg uit wanneer.",
-      "explanation": "Onweert ends the subordinate clause.",
+      "scenarioNl": "Bij onweer blijf je liever binnen. Leg uit in welk geval.",
+      "explanation": "The main clause comes first: Ik blijf binnen. In 'als het onweert' the weather subject 'het' is followed directly by the verb, which closes the clause.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als het koud wordt, trek ik een jas aan.",
@@ -361,7 +361,7 @@
       "english": "When it gets cold, I put on a jacket.",
       "scenario": "You put on a jacket when the temperature falls.",
       "scenarioNl": "Het wordt soms koud. Vertel wat je dan aantrekt.",
-      "explanation": "Wordt ends the subordinate clause; trek ... aan separates aantrekken.",
+      "explanation": "'Koud wordt' is predicate plus finite verb. The main clause inverts to 'trek ik een jas aan'. Aantrekken (to put on) is separable, so the particle 'aan' ends the clause.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als het volgende week regent, neem ik een paraplu mee.",
@@ -375,7 +375,7 @@
       "english": "If it rains next week, I'll bring an umbrella.",
       "scenario": "You might need rain protection next week. Explain the condition.",
       "scenarioNl": "Volgende week kan het regenen. Vertel wat je dan meeneemt.",
-      "explanation": "Regent closes the future condition; neem ... mee splits meenemen.",
+      "explanation": "'Volgende week regent': a time phrase and then the verb that ends the dependent clause. Meenemen is separable: neem ... mee, so 'mee' stands last in the main clause.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Ik neem water mee als het erg warm is.",
@@ -388,8 +388,8 @@
       "text": "Ik neem water mee als het erg warm is.",
       "english": "I take water along when it is very hot.",
       "scenario": "You carry drinking water on hot days. Describe your habit.",
-      "scenarioNl": "Op warme dagen neem je graag water mee. Leg uit wanneer.",
-      "explanation": "Neem ... mee separates the main finite verb; is is subordinate-final.",
+      "scenarioNl": "Op warme dagen neem je graag water mee. Vertel in welk geval je dat doet.",
+      "explanation": "The main clause comes first: 'Ik neem water mee', with the particle 'mee' at the end. In the als-clause 'erg warm' (very hot) stands before 'is'.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als het vroeger sneeuwde, bouwden we een sneeuwpop.",
@@ -403,7 +403,7 @@
       "english": "Whenever it snowed in the past, we built a snowman.",
       "scenario": "Describe a recurring childhood winter activity.",
       "scenarioNl": "Vroeger maakte je bij sneeuw vaak een sneeuwpop. Vertel daarover.",
-      "explanation": "Sneeuwde is past subordinate-final; bouwden we is inverted past V2.",
+      "explanation": "A past habit: 'sneeuwde' and 'bouwden' are simple past forms, and 'vroeger' marks repetition, hence als. The als-clause is position one, so 'bouwden' precedes 'we'.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als de regen stopt, gaan we naar buiten.",
@@ -416,12 +416,1006 @@
       "text": "Als de regen stopt, gaan we naar buiten.",
       "english": "When the rain stops, we go outside.",
       "scenario": "You wait for rain to stop before going outside.",
-      "scenarioNl": "Je wilt naar buiten maar het regent nog. Leg uit wanneer je vertrekt.",
-      "explanation": "Stopt closes the subordinate clause and gaan we is inverted main clause.",
+      "scenarioNl": "Je wilt naar buiten, maar het regent nog. Leg uit op welk moment je vertrekt.",
+      "explanation": "'De regen stopt' is subject plus verb, closing the clause. The main clause inverts to 'gaan we naar buiten'; 'naar buiten' is a direction.",
       "focus": "ALS · subordinate clauses and V2",
       "example": {
         "text": "Als het sneeuwt, neem ik de trein.",
         "english": "If it snows, I take the train."
+      }
+    }
+  ],
+  "pat-als-07": [
+    {
+      "id": "pat-als-07~v01",
+      "parentId": "pat-als-07",
+      "text": "Als ik thuis ben, schrijf ik je een bericht.",
+      "english": "When I am home, I will write you a message.",
+      "scenario": "A friend is waiting for news and you are still travelling. Promise a message.",
+      "scenarioNl": "Een vriend wacht op nieuws van jou, maar je bent nog onderweg. Beloof hem een bericht.",
+      "explanation": "'Als ik thuis ben' is the same clause as in the parent card, now in front: 'ben' stands last. The clause fills position one, so 'schrijf' precedes 'ik'. 'Je' is the person who gets the message.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik bel je niet als ik te laat thuis ben.",
+        "english": "I do not call you if I get home too late."
+      }
+    },
+    {
+      "id": "pat-als-07~v02",
+      "parentId": "pat-als-07",
+      "text": "Ik bel je niet als ik te laat thuis ben.",
+      "english": "I do not call you if I get home too late.",
+      "scenario": "Explain that you only call if you are home at a reasonable time.",
+      "scenarioNl": "Je vriend vraagt of je altijd belt. Leg uit dat het afhangt van het uur waarop je binnenkomt.",
+      "explanation": "In the main clause 'niet' stands after the object 'je': Ik bel je niet. 'Te laat thuis ben' keeps 'te laat' and 'thuis' before the finite verb 'ben', which closes the sentence.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Wij bellen je als wij thuis zijn.",
+        "english": "We will call you when we are home."
+      }
+    },
+    {
+      "id": "pat-als-07~v03",
+      "parentId": "pat-als-07",
+      "text": "Wij bellen je als wij thuis zijn.",
+      "english": "We will call you when we are home.",
+      "scenario": "You and your partner promise a call after you arrive.",
+      "scenarioNl": "Jij en je partner beloven een kennis een telefoontje na jullie aankomst.",
+      "explanation": "With a plural subject the verb is 'bellen' and 'zijn', not 'bel' and 'ben'. The main clause starts with the subject, so no inversion; 'zijn' closes the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik belde je altijd als ik thuis was.",
+        "english": "I always called you when I was home."
+      }
+    },
+    {
+      "id": "pat-als-07~v04",
+      "parentId": "pat-als-07",
+      "text": "Ik belde je altijd als ik thuis was.",
+      "english": "I always called you when I was home.",
+      "scenario": "Describe an old habit of calling a friend after work.",
+      "scenarioNl": "Vroeger belde je een vriend na elke werkdag. Vertel hoe dat ging.",
+      "explanation": "A repeated past habit: simple past 'belde' and 'was', with als and the word 'altijd'. One single past evening would use toen. 'Was' stands last in the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik kan je bellen als ik thuis ben.",
+        "english": "I can call you when I am home."
+      }
+    },
+    {
+      "id": "pat-als-07~v05",
+      "parentId": "pat-als-07",
+      "text": "Ik kan je bellen als ik thuis ben.",
+      "english": "I can call you when I am home.",
+      "scenario": "A friend asks if a talk tonight is possible.",
+      "scenarioNl": "Een vriend vraagt of praten vanavond lukt. Zeg dat het mogelijk is na je aankomst thuis.",
+      "explanation": "'Kan' is the finite modal in position two and its infinitive 'bellen' ends the main clause: Ik kan je bellen. The als-clause then follows with 'ben' last.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik bel je terug als ik thuis ben.",
+        "english": "I will call you back when I am home."
+      }
+    },
+    {
+      "id": "pat-als-07~v06",
+      "parentId": "pat-als-07",
+      "text": "Ik bel je terug als ik thuis ben.",
+      "english": "I will call you back when I am home.",
+      "scenario": "You missed a call at work and promise to answer it later.",
+      "scenarioNl": "Je miste een telefoontje van een vriend op je werk. Beloof dat je zijn gemiste oproep beantwoordt.",
+      "explanation": "Terugbellen is separable: 'bel ... terug', with the particle at the end of the main clause, in front of the als-clause. 'Ik' opens the sentence, so no inversion.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik bel je als ik thuis ben aangekomen.",
+        "english": "I will call you once I have arrived home."
+      }
+    },
+    {
+      "id": "pat-als-07~v07",
+      "parentId": "pat-als-07",
+      "text": "Ik bel je als ik thuis ben aangekomen.",
+      "english": "I will call you once I have arrived home.",
+      "scenario": "You are on your way home and promise a call after arriving.",
+      "scenarioNl": "Je bent onderweg naar huis. Beloof je vriend een telefoontje na je aankomst.",
+      "explanation": "'Ben aangekomen' is a perfect with zijn: the auxiliary 'ben' and the joined participle 'aangekomen' (aankomen) close the clause. Verbs of arriving take zijn, not hebben.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als jij thuis bent, bel ik je.",
+        "english": "When you are home, I will call you."
+      }
+    },
+    {
+      "id": "pat-als-07~v08",
+      "parentId": "pat-als-07",
+      "text": "Als jij thuis bent, bel ik je.",
+      "english": "When you are home, I will call you.",
+      "scenario": "Your friend is hard to reach. Say that you take the first step when he is in.",
+      "scenarioNl": "Je vriend is vaak niet thuis. Zeg dat jij de eerste stap zet op het moment dat hij er is.",
+      "explanation": "The subject changes to 'jij', so the verb is 'bent', placed last. The als-clause is position one, so the main verb 'bel' comes before 'ik'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik bel u als ik thuis ben.",
+        "english": "I will call you (formal) when I am home."
+      }
+    },
+    {
+      "id": "pat-als-07~v09",
+      "parentId": "pat-als-07",
+      "text": "Ik bel u als ik thuis ben.",
+      "english": "I will call you (formal) when I am home.",
+      "scenario": "You promise a customer a call and address them formally.",
+      "scenarioNl": "Je belt een klant van het bedrijf. Beloof hem formeel een telefoontje na je thuiskomst.",
+      "explanation": "'U' is the formal 'you' and takes the same word order as 'je'. The structure is unchanged: main clause first, 'ben' last in the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik bel je meteen als ik thuis ben.",
+        "english": "I will call you straight away when I am home."
+      }
+    },
+    {
+      "id": "pat-als-07~v10",
+      "parentId": "pat-als-07",
+      "text": "Ik bel je meteen als ik thuis ben.",
+      "english": "I will call you straight away when I am home.",
+      "scenario": "A friend is waiting impatiently for your call. Promise to ring the moment you are home.",
+      "scenarioNl": "Een vriend wacht ongeduldig. Beloof dat je direct na aankomst contact opneemt.",
+      "explanation": "'Meteen' (immediately) stands in the main clause after the object 'je'. It does not move the finite verb: Ik bel je meteen, and 'ben' still closes the als-clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik thuis ben, schrijf ik je een bericht.",
+        "english": "When I am home, I will write you a message."
+      }
+    }
+  ],
+  "pat-als-14": [
+    {
+      "id": "pat-als-14~v01",
+      "parentId": "pat-als-14",
+      "text": "Als je vragen hebt, mag je me altijd bellen.",
+      "english": "If you have questions, you may always call me.",
+      "scenario": "Reassure a colleague that calling is allowed at any time.",
+      "scenarioNl": "Een collega vraagt of hij je mag storen. Stel hem gerust dat het altijd kan.",
+      "explanation": "'Mag' (may, is allowed to) is the finite modal after the front clause, so it stands before 'je'. The infinitive 'bellen' ends the main clause, after 'altijd'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Je kunt me bellen als je vragen hebt.",
+        "english": "You can call me if you have questions."
+      }
+    },
+    {
+      "id": "pat-als-14~v02",
+      "parentId": "pat-als-14",
+      "text": "Je kunt me bellen als je vragen hebt.",
+      "english": "You can call me if you have questions.",
+      "scenario": "Give your number to a colleague and say when to use it.",
+      "scenarioNl": "Je geeft je nummer aan een collega. Zeg bij welke situatie hij het mag gebruiken.",
+      "explanation": "The main clause comes first with the subject 'je', so the modal gets its normal -t: je kunt. 'Bellen' ends the main clause, and 'hebt' ends the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als u vragen heeft, kunt u mij bellen.",
+        "english": "If you have questions, you can call me."
+      }
+    },
+    {
+      "id": "pat-als-14~v03",
+      "parentId": "pat-als-14",
+      "text": "Als u vragen heeft, kunt u mij bellen.",
+      "english": "If you have questions, you can call me.",
+      "scenario": "You are speaking formally to a customer who may have questions. Tell them they can call you.",
+      "scenarioNl": "Je spreekt een klant formeel toe. Zeg dat hij je mag opbellen bij onduidelijkheden.",
+      "explanation": "Formal 'u' takes 'heeft' and 'kunt'. After the front clause the modal inverts: kunt u. 'Mij' is the stressed form of 'me'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als je geen vragen hebt, hoef je me niet te bellen.",
+        "english": "If you have no questions, you do not need to call me."
+      }
+    },
+    {
+      "id": "pat-als-14~v04",
+      "parentId": "pat-als-14",
+      "text": "Als je geen vragen hebt, hoef je me niet te bellen.",
+      "english": "If you have no questions, you do not need to call me.",
+      "scenario": "Tell a colleague that calling is not necessary.",
+      "scenarioNl": "Een collega is onzeker. Zeg dat bellen niet nodig is bij het ontbreken van vragen.",
+      "explanation": "'Geen vragen' negates the noun. In the main clause 'hoeven' needs 'te' before its infinitive: hoef je me niet te bellen, with 'niet' in front of 'te bellen'. 'Hoeven' expresses 'not necessary'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als jullie vragen hebben, kunnen jullie me bellen.",
+        "english": "If you (plural) have questions, you can call me."
+      }
+    },
+    {
+      "id": "pat-als-14~v05",
+      "parentId": "pat-als-14",
+      "text": "Als jullie vragen hebben, kunnen jullie me bellen.",
+      "english": "If you (plural) have questions, you can call me.",
+      "scenario": "You are speaking to a group of colleagues. Tell them how to reach you if they have questions.",
+      "scenarioNl": "Je spreekt een groep collega's toe. Geef aan hoe ze je kunnen bereiken bij vragen.",
+      "explanation": "With the plural 'jullie' the verbs are 'hebben' and 'kunnen'. The dependent clause ends with 'hebben', and after it 'kunnen' comes before 'jullie'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als je een vraag hebt, kun je ook een bericht sturen.",
+        "english": "If you have a question, you can also send a message."
+      }
+    },
+    {
+      "id": "pat-als-14~v06",
+      "parentId": "pat-als-14",
+      "text": "Als je een vraag hebt, kun je ook een bericht sturen.",
+      "english": "If you have a question, you can also send a message.",
+      "scenario": "You are often in meetings. Offer a written alternative to calling when someone has a question.",
+      "scenarioNl": "Je bent vaak in vergadering. Zeg dat een geschreven vraag ook mogelijk is.",
+      "explanation": "'Een vraag hebt' keeps the object before the verb. 'Kun je' inverts after the front clause, and the infinitive 'sturen' ends the main clause behind 'ook een bericht'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als je mijn nummer niet hebt, kun je het aan mijn collega vragen.",
+        "english": "If you do not have my number, you can ask my colleague for it."
+      }
+    },
+    {
+      "id": "pat-als-14~v07",
+      "parentId": "pat-als-14",
+      "text": "Als je mijn nummer niet hebt, kun je het aan mijn collega vragen.",
+      "english": "If you do not have my number, you can ask my colleague for it.",
+      "scenario": "A colleague does not have your phone number. Tell them where they can get it.",
+      "scenarioNl": "Iemand heeft je nummer niet. Zeg waar hij het kan krijgen.",
+      "explanation": "'Niet' stands before 'hebt' at the end of the dependent clause. The main clause inverts: kun je. The infinitive 'vragen' is last, after 'het aan mijn collega'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als je vragen had, kon je me altijd bellen.",
+        "english": "If you had questions, you could always call me."
+      }
+    },
+    {
+      "id": "pat-als-14~v08",
+      "parentId": "pat-als-14",
+      "text": "Als je vragen had, kon je me altijd bellen.",
+      "english": "If you had questions, you could always call me.",
+      "scenario": "Remind a former trainee of an old arrangement.",
+      "scenarioNl": "Een voormalige stagiair herinnert zich je niet meer. Zeg wat vroeger gold bij vragen.",
+      "explanation": "A past habit: simple past 'had' in the dependent clause and 'kon' in the main clause. After the front clause 'kon' comes before 'je'; the infinitive 'bellen' is last.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Je kunt me beter morgen bellen als je vragen hebt.",
+        "english": "You had better call me tomorrow if you have questions."
+      }
+    },
+    {
+      "id": "pat-als-14~v09",
+      "parentId": "pat-als-14",
+      "text": "Je kunt me beter morgen bellen als je vragen hebt.",
+      "english": "You had better call me tomorrow if you have questions.",
+      "scenario": "You are busy today. Tell a colleague with questions that calling tomorrow is better.",
+      "scenarioNl": "Je hebt vandaag geen tijd. Stuur een collega met vragen door naar morgen.",
+      "explanation": "The main clause comes first and starts with the subject 'je', so the modal keeps its -t: je kunt. 'Beter' and 'morgen' stand between 'me' and the infinitive 'bellen', which ends the main clause; 'hebt' closes the als-clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als je vragen hebt, kun je me opbellen.",
+        "english": "If you have questions, you can call me up."
+      }
+    },
+    {
+      "id": "pat-als-14~v10",
+      "parentId": "pat-als-14",
+      "text": "Als je vragen hebt, kun je me opbellen.",
+      "english": "If you have questions, you can call me up.",
+      "scenario": "You want a colleague to be able to reach you by phone. Invite them to ring you up.",
+      "scenarioNl": "Je nodigt een collega uit om je telefonisch te contacteren bij onduidelijkheden.",
+      "explanation": "'Opbellen' is separable, but after a modal the infinitive stays joined: kun je me opbellen. In a main clause without a modal it would split: ik bel je op.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als je vragen hebt, mag je me altijd bellen.",
+        "english": "If you have questions, you may always call me."
+      }
+    }
+  ],
+  "pat-als-33": [
+    {
+      "id": "pat-als-33~v01",
+      "parentId": "pat-als-33",
+      "text": "Als ik een nieuw woord hoor, schrijf ik het op.",
+      "english": "When I hear a new word, I write it down.",
+      "scenario": "Describe what you do when you hear an unknown word.",
+      "scenarioNl": "Je hoort in een gesprek een woord dat je niet kent. Vertel wat je doet.",
+      "explanation": "'Een nieuw woord hoor': object, then the finite verb 'hoor' last. The clause is position one, so 'schrijf' precedes 'ik', and the pronoun 'het' replaces 'het woord'. 'Op' closes the sentence.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik schrijf het telefoonnummer op als de klant het zegt.",
+        "english": "I write the phone number down when the customer says it."
+      }
+    },
+    {
+      "id": "pat-als-33~v02",
+      "parentId": "pat-als-33",
+      "text": "Ik schrijf het telefoonnummer op als de klant het zegt.",
+      "english": "I write the phone number down when the customer says it.",
+      "scenario": "Describe how you handle a number given on the phone.",
+      "scenarioNl": "Een klant geeft aan de telefoon een nummer. Vertel wat je tijdens het gesprek doet.",
+      "explanation": "The main clause comes first and splits opschrijven around the object: schrijf het telefoonnummer op. 'Het' in the dependent clause stands for the number; 'zegt' closes it.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik wil nieuwe woorden opschrijven als ik ze leer.",
+        "english": "I want to write down new words when I learn them."
+      }
+    },
+    {
+      "id": "pat-als-33~v03",
+      "parentId": "pat-als-33",
+      "text": "Ik wil nieuwe woorden opschrijven als ik ze leer.",
+      "english": "I want to write down new words when I learn them.",
+      "scenario": "You are explaining your learning plan: what you want to do with new words you learn.",
+      "scenarioNl": "Je legt uit wat je voornemen is bij het studeren van woorden.",
+      "explanation": "'Wil' is the finite modal in position two, so 'opschrijven' appears as one joined infinitive at the end of the main clause. The separable verb splits only when it is the finite verb.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik probeer ze op te schrijven als ik ze hoor.",
+        "english": "I try to write them down when I hear them."
+      }
+    },
+    {
+      "id": "pat-als-33~v04",
+      "parentId": "pat-als-33",
+      "text": "Ik probeer ze op te schrijven als ik ze hoor.",
+      "english": "I try to write them down when I hear them.",
+      "scenario": "You hear many new words during a lecture. Describe what you try to do with them.",
+      "scenarioNl": "Tijdens een uitleg hoor je veel nieuwe woorden. Vertel wat je probeert te doen.",
+      "explanation": "After proberen the infinitive needs 'te', and the particle stays in front of it: op te schrijven. 'Hoor' closes the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik ze niet opschrijf, vergeet ik ze snel.",
+        "english": "If I do not write them down, I forget them quickly."
+      }
+    },
+    {
+      "id": "pat-als-33~v05",
+      "parentId": "pat-als-33",
+      "text": "Als ik ze niet opschrijf, vergeet ik ze snel.",
+      "english": "If I do not write them down, I forget them quickly.",
+      "scenario": "Explain to a friend what happens to new words when you do not write them down.",
+      "scenarioNl": "Je vertelt een vriend wat er gebeurt met nieuwe woorden zonder notities.",
+      "explanation": "In the dependent clause the separable verb is joined: 'opschrijf' stands last, with 'niet' before it. The main clause inverts: vergeet ik ze snel.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Mijn collega schrijft nieuwe woorden op als hij ze leert.",
+        "english": "My colleague writes new words down when he learns them."
+      }
+    },
+    {
+      "id": "pat-als-33~v06",
+      "parentId": "pat-als-33",
+      "text": "Mijn collega schrijft nieuwe woorden op als hij ze leert.",
+      "english": "My colleague writes new words down when he learns them.",
+      "scenario": "Describe how a colleague of yours deals with new words, speaking about him or her.",
+      "scenarioNl": "Je beschrijft de studiemethode van een collega.",
+      "explanation": "With a third-person subject the verbs take -t: 'schrijft ... op' in the main clause and 'leert' in the dependent clause. The particle 'op' stays at the end of the main clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Vroeger schreef ik nieuwe woorden op als ik ze leerde.",
+        "english": "In the past I wrote new words down when I learned them."
+      }
+    },
+    {
+      "id": "pat-als-33~v07",
+      "parentId": "pat-als-33",
+      "text": "Vroeger schreef ik nieuwe woorden op als ik ze leerde.",
+      "english": "In the past I wrote new words down when I learned them.",
+      "scenario": "Describe how you used to study new words when you were at school.",
+      "scenarioNl": "Tijdens je schooltijd had je een vaste studiemethode. Vertel wat je deed.",
+      "explanation": "'Vroeger' is the first constituent, so the finite verb 'schreef' comes second and 'ik' third. The particle 'op' is last in the main clause; 'leerde' closes the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Schrijf nieuwe woorden op als je ze leert.",
+        "english": "Write new words down when you learn them."
+      }
+    },
+    {
+      "id": "pat-als-33~v08",
+      "parentId": "pat-als-33",
+      "text": "Schrijf nieuwe woorden op als je ze leert.",
+      "english": "Write new words down when you learn them.",
+      "scenario": "A fellow learner asks for advice. Tell them what to do with new words.",
+      "scenarioNl": "Een medeleerling vraagt je raad over het onthouden van woorden.",
+      "explanation": "An instruction: the imperative 'schrijf' comes first, the subject is not spoken, and the particle 'op' ends the main clause. The als-clause follows with 'leert' last.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Wij schrijven nieuwe woorden op als wij ze leren.",
+        "english": "We write new words down when we learn them."
+      }
+    },
+    {
+      "id": "pat-als-33~v09",
+      "parentId": "pat-als-33",
+      "text": "Wij schrijven nieuwe woorden op als wij ze leren.",
+      "english": "We write new words down when we learn them.",
+      "scenario": "Describe the routine of your whole class when new words come up.",
+      "scenarioNl": "Je vertelt over de werkwijze van je hele cursusgroep.",
+      "explanation": "A plural subject needs 'schrijven' and 'leren'. The split verb works as before: 'schrijven' second, 'op' last, and 'leren' closes the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik een nieuw woord leer, zet ik het in mijn schrift.",
+        "english": "When I learn a new word, I put it in my notebook."
+      }
+    },
+    {
+      "id": "pat-als-33~v10",
+      "parentId": "pat-als-33",
+      "text": "Als ik een nieuw woord leer, zet ik het in mijn schrift.",
+      "english": "When I learn a new word, I put it in my notebook.",
+      "scenario": "A friend asks where you keep new words. Say what you do when you learn one.",
+      "scenarioNl": "Een vriend vraagt waar je nieuwe woorden bewaart.",
+      "explanation": "'Zetten' is not separable, so there is no particle: the main clause inverts to 'zet ik het in mijn schrift'. 'Een nieuw woord leer' ends with the finite verb of the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik een nieuw woord hoor, schrijf ik het op.",
+        "english": "When I hear a new word, I write it down."
+      }
+    }
+  ],
+  "pat-als-60": [
+    {
+      "id": "pat-als-60~v01",
+      "parentId": "pat-als-60",
+      "text": "Ik werk offline verder als ik geen verbinding heb.",
+      "english": "I continue working offline if I have no connection.",
+      "scenario": "Explain your fallback in a power or network cut.",
+      "scenarioNl": "Het netwerk valt soms uit op kantoor. Leg uit hoe je dan je werk voortzet.",
+      "explanation": "The main clause comes first and splits verderwerken: werk ... verder. 'Geen verbinding' negates the noun and stands before the finite verb 'heb', which ends the sentence.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als er morgen geen internet is, werk ik offline verder.",
+        "english": "If there is no internet tomorrow, I continue working offline."
+      }
+    },
+    {
+      "id": "pat-als-60~v02",
+      "parentId": "pat-als-60",
+      "text": "Als er morgen geen internet is, werk ik offline verder.",
+      "english": "If there is no internet tomorrow, I continue working offline.",
+      "scenario": "Your office internet will probably be down.",
+      "scenarioNl": "Morgen wordt het internet op kantoor onderhouden. Leg je plan voor die dag uit.",
+      "explanation": "'Er' introduces the indefinite subject 'geen internet', and 'is' closes the dependent clause. The main clause inverts to 'werk ik offline verder'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik morgen geen internet heb, kan ik offline verderwerken.",
+        "english": "If I have no internet tomorrow, I can keep working offline."
+      }
+    },
+    {
+      "id": "pat-als-60~v03",
+      "parentId": "pat-als-60",
+      "text": "Als ik morgen geen internet heb, kan ik offline verderwerken.",
+      "english": "If I have no internet tomorrow, I can keep working offline.",
+      "scenario": "Say that working offline is still possible if you have no internet tomorrow.",
+      "scenarioNl": "Je vraagt je af of je morgen kunt blijven werken zonder verbinding. Leg uit hoe dat gaat.",
+      "explanation": "The modal 'kan' is the finite verb after the front clause, so 'kan ik'. The infinitive 'verderwerken' stays joined and closes the main clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het internet morgen uitvalt, werk ik offline verder.",
+        "english": "If the internet goes down tomorrow, I continue working offline."
+      }
+    },
+    {
+      "id": "pat-als-60~v04",
+      "parentId": "pat-als-60",
+      "text": "Als het internet morgen uitvalt, werk ik offline verder.",
+      "english": "If the internet goes down tomorrow, I continue working offline.",
+      "scenario": "You expect the internet may break down tomorrow. Explain your plan for that outage.",
+      "scenarioNl": "Morgen kan het internet plots wegvallen. Leg je plan uit.",
+      "explanation": "Uitvallen is separable: 'het internet valt uit', but in the dependent clause it joins to 'uitvalt'. 'Morgen' stands before the finite verb. The main clause inverts: werk ik ... verder.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik morgen geen internet heb, probeer ik offline verder te werken.",
+        "english": "If I have no internet tomorrow, I try to keep working offline."
+      }
+    },
+    {
+      "id": "pat-als-60~v05",
+      "parentId": "pat-als-60",
+      "text": "Als ik morgen geen internet heb, probeer ik offline verder te werken.",
+      "english": "If I have no internet tomorrow, I try to keep working offline.",
+      "scenario": "Without a connection you will not give up. Say what you will try to do.",
+      "scenarioNl": "Zonder verbinding is werken lastig. Vertel hoe je het toch probeert.",
+      "explanation": "After proberen the infinitive needs 'te', and the particle stays in front of the verb: verder te werken. 'Probeer ik' inverts after the front clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als wij morgen geen internet hebben, werken wij offline verder.",
+        "english": "If we have no internet tomorrow, we continue working offline."
+      }
+    },
+    {
+      "id": "pat-als-60~v06",
+      "parentId": "pat-als-60",
+      "text": "Als wij morgen geen internet hebben, werken wij offline verder.",
+      "english": "If we have no internet tomorrow, we continue working offline.",
+      "scenario": "You speak for your whole team about tomorrow's possible lack of internet.",
+      "scenarioNl": "Je team heeft morgen mogelijk geen verbinding. Leg het teamplan uit.",
+      "explanation": "Plural subject: 'hebben' ends the dependent clause and 'werken' the main verb. 'Verder' still comes last in the main clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik vroeger geen internet had, werkte ik offline verder.",
+        "english": "Whenever I had no internet in the past, I carried on working offline."
+      }
+    },
+    {
+      "id": "pat-als-60~v07",
+      "parentId": "pat-als-60",
+      "text": "Als ik vroeger geen internet had, werkte ik offline verder.",
+      "english": "Whenever I had no internet in the past, I carried on working offline.",
+      "scenario": "Years ago the internet was unreliable. Describe how you used to work back then.",
+      "scenarioNl": "Tien jaar geleden was internet nog onbetrouwbaar. Vertel hoe je destijds werkte.",
+      "explanation": "A past habit: 'had' ends the dependent clause and 'werkte' is the past main verb. 'Vroeger' marks repetition. The particle 'verder' still ends the main clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik niet kan inloggen, werk ik offline verder.",
+        "english": "If I cannot log in, I continue working offline."
+      }
+    },
+    {
+      "id": "pat-als-60~v08",
+      "parentId": "pat-als-60",
+      "text": "Als ik niet kan inloggen, werk ik offline verder.",
+      "english": "If I cannot log in, I continue working offline.",
+      "scenario": "A login to the system sometimes fails. Explain what you do in that case.",
+      "scenarioNl": "Je aanmelding op het systeem mislukt soms. Leg je alternatief uit.",
+      "explanation": "'Niet kan inloggen' is a verb group: the modal 'kan' and the joined infinitive 'inloggen' close the clause behind 'niet'. The main clause inverts: werk ik ... verder.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als je morgen geen internet hebt, kun je offline verderwerken.",
+        "english": "If you have no internet tomorrow, you can carry on offline."
+      }
+    },
+    {
+      "id": "pat-als-60~v09",
+      "parentId": "pat-als-60",
+      "text": "Als je morgen geen internet hebt, kun je offline verderwerken.",
+      "english": "If you have no internet tomorrow, you can carry on offline.",
+      "scenario": "A colleague fears a day without a connection. Advise them, using the informal you.",
+      "scenarioNl": "Een collega vreest een dag zonder verbinding. Geef hem een tip.",
+      "explanation": "With 'je' the verb is 'hebt' (with -t) at the end of the dependent clause. The main clause starts with the modal 'kun' (no -t after inversion); 'verderwerken' is joined.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Werk offline verder als je geen internet hebt.",
+        "english": "Carry on working offline if you do not have internet."
+      }
+    },
+    {
+      "id": "pat-als-60~v10",
+      "parentId": "pat-als-60",
+      "text": "Werk offline verder als je geen internet hebt.",
+      "english": "Carry on working offline if you do not have internet.",
+      "scenario": "Give a colleague a short instruction for the case that there is no internet.",
+      "scenarioNl": "Je geeft een korte instructie aan een collega bij een storing.",
+      "explanation": "An imperative: 'werk' first, the subject unspoken, and the particle 'verder' at the end. The dependent clause follows with 'hebt' last.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik werk offline verder als ik geen verbinding heb.",
+        "english": "I continue working offline if I have no connection."
+      }
+    }
+  ],
+  "pat-als-68": [
+    {
+      "id": "pat-als-68~v01",
+      "parentId": "pat-als-68",
+      "text": "Als ik de gegevens heb ingevoerd, controleer ik de totalen.",
+      "english": "Once I have entered the data, I check the totals.",
+      "scenario": "You enter figures into a system. Describe the step that follows once they are in.",
+      "scenarioNl": "Je voert cijfers in een systeem in. Vertel welke stap daarna komt.",
+      "explanation": "'Heb ingevoerd' (perfect of invoeren) closes the clause behind the object 'de gegevens'; the participle is joined. The clause is position one, so 'controleer' precedes 'ik'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik sluit het programma af als ik de wijzigingen heb opgeslagen.",
+        "english": "I close the program once I have saved the changes."
+      }
+    },
+    {
+      "id": "pat-als-68~v02",
+      "parentId": "pat-als-68",
+      "text": "Ik sluit het programma af als ik de wijzigingen heb opgeslagen.",
+      "english": "I close the program once I have saved the changes.",
+      "scenario": "A program may only be closed after a particular step. Explain when you shut it down.",
+      "scenarioNl": "Je werkt in een programma dat je pas mag sluiten na een bepaalde stap. Leg uit welke.",
+      "explanation": "Afsluiten is separable: 'sluit ... af' with the particle last in the main clause. The dependent clause ends with the group 'heb opgeslagen'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als we het formulier hebben ingevuld, sturen we het op.",
+        "english": "Once we have filled in the form, we send it off."
+      }
+    },
+    {
+      "id": "pat-als-68~v03",
+      "parentId": "pat-als-68",
+      "text": "Als we het formulier hebben ingevuld, sturen we het op.",
+      "english": "Once we have filled in the form, we send it off.",
+      "scenario": "A form must be completed before it is sent. Describe the two steps in order.",
+      "scenarioNl": "Jullie moeten een formulier eerst compleet maken en dan versturen. Leg de volgorde uit.",
+      "explanation": "'Hebben ingevuld' ends the clause (plural auxiliary plus the joined participle of invullen). After it 'sturen' comes before 'we', and opsturen leaves the particle 'op' at the end.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de test is geslaagd, starten we de installatie.",
+        "english": "Once the test has passed, we start the installation."
+      }
+    },
+    {
+      "id": "pat-als-68~v04",
+      "parentId": "pat-als-68",
+      "text": "Als de test is geslaagd, starten we de installatie.",
+      "english": "Once the test has passed, we start the installation.",
+      "scenario": "A test must succeed before the next step.",
+      "scenarioNl": "Je team wacht op een positief testresultaat. Leg uit wat er dan gebeurt.",
+      "explanation": "Slagen forms its perfect with zijn: 'is geslaagd' closes the dependent clause. The main clause inverts to 'starten we de installatie'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik de fout niet heb gevonden, vraag ik hulp.",
+        "english": "If I have not found the error, I ask for help."
+      }
+    },
+    {
+      "id": "pat-als-68~v05",
+      "parentId": "pat-als-68",
+      "text": "Als ik de fout niet heb gevonden, vraag ik hulp.",
+      "english": "If I have not found the error, I ask for help.",
+      "scenario": "You cannot find a fault yet. Explain what you do if the search has not succeeded.",
+      "scenarioNl": "Je zoekt een fout zonder resultaat. Leg uit wat je dan doet.",
+      "explanation": "'Niet' stands before the verb group 'heb gevonden'. After the front clause 'vraag' precedes 'ik'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als je het bestand hebt gedownload, kun je het openen.",
+        "english": "Once you have downloaded the file, you can open it."
+      }
+    },
+    {
+      "id": "pat-als-68~v06",
+      "parentId": "pat-als-68",
+      "text": "Als je het bestand hebt gedownload, kun je het openen.",
+      "english": "Once you have downloaded the file, you can open it.",
+      "scenario": "A colleague does not know what to do with a file. Guide them step by step.",
+      "scenarioNl": "Een collega weet niet wat hij met een bestand moet doen. Geef de volgende stap.",
+      "explanation": "'Hebt gedownload' is second person perfect. The modal 'kun' is second in the main clause after the front clause, and the infinitive 'openen' ends it.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik kan de update installeren als ik de back-up heb gemaakt.",
+        "english": "I can install the update once I have made the backup."
+      }
+    },
+    {
+      "id": "pat-als-68~v07",
+      "parentId": "pat-als-68",
+      "text": "Ik kan de update installeren als ik de back-up heb gemaakt.",
+      "english": "I can install the update once I have made the backup.",
+      "scenario": "You may only update after a safety step. State what you need to do first.",
+      "scenarioNl": "Je mag pas updaten na een veiligheidsstap. Leg uit welke.",
+      "explanation": "The main clause comes first with the modal 'kan' and the infinitive 'installeren' at its end. The dependent clause then ends with the verb group 'heb gemaakt'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de klant heeft betaald, versturen we de bestelling.",
+        "english": "Once the customer has paid, we send the order."
+      }
+    },
+    {
+      "id": "pat-als-68~v08",
+      "parentId": "pat-als-68",
+      "text": "Als de klant heeft betaald, versturen we de bestelling.",
+      "english": "Once the customer has paid, we send the order.",
+      "scenario": "A web shop ships only after a certain step. Describe that process.",
+      "scenarioNl": "Een webwinkel verstuurt pas na een bepaalde stap. Leg die stap uit.",
+      "explanation": "'Heeft betaald' closes the clause. Versturen is inseparable (ver-), so it never splits: 'versturen we de bestelling'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik de handleiding heb gelezen, probeer ik het zelf.",
+        "english": "Once I have read the manual, I try it myself."
+      }
+    },
+    {
+      "id": "pat-als-68~v09",
+      "parentId": "pat-als-68",
+      "text": "Als ik de handleiding heb gelezen, probeer ik het zelf.",
+      "english": "Once I have read the manual, I try it myself.",
+      "scenario": "You get a new tool. Describe how you learn it, starting with the manual.",
+      "scenarioNl": "Je krijgt een nieuw hulpmiddel. Vertel hoe je het onder de knie krijgt.",
+      "explanation": "'Heb gelezen' (perfect of lezen) ends the clause behind the object. The main clause inverts: probeer ik het zelf, with 'zelf' as the closing adverb.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik het verslag heb gecontroleerd, wil ik het eerst aan mijn manager laten zien.",
+        "english": "Once I have checked the report, I want to show it to my manager first."
+      }
+    },
+    {
+      "id": "pat-als-68~v10",
+      "parentId": "pat-als-68",
+      "text": "Als ik het verslag heb gecontroleerd, wil ik het eerst aan mijn manager laten zien.",
+      "english": "Once I have checked the report, I want to show it to my manager first.",
+      "scenario": "Explain what you want to do before sending.",
+      "scenarioNl": "Je wilt een verslag laten goedkeuren voor het naar de klant gaat. Leg uit hoe je te werk gaat.",
+      "explanation": "After the front clause the modal 'wil' comes before 'ik', and the verb group 'laten zien' closes the main clause behind 'het eerst aan mijn manager'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik de gegevens heb ingevoerd, controleer ik de totalen.",
+        "english": "Once I have entered the data, I check the totals."
+      }
+    }
+  ],
+  "pat-als-72": [
+    {
+      "id": "pat-als-72~v01",
+      "parentId": "pat-als-72",
+      "text": "Ik ging vaak naar het strand als het vroeger warm was.",
+      "english": "I often went to the beach when it was warm in the past.",
+      "scenario": "As a child you often went somewhere on warm days. Describe that childhood habit.",
+      "scenarioNl": "In je kindertijd ging je op warme dagen vaak ergens heen. Vertel waarheen.",
+      "explanation": "The main clause comes first in the simple past: Ik ging. In the dependent clause 'warm' stands before 'was', which ends the sentence. 'Vroeger' marks the repetition.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als mijn broer vroeger op bezoek kwam, speelden we samen.",
+        "english": "Whenever my brother visited in the past, we played together."
+      }
+    },
+    {
+      "id": "pat-als-72~v02",
+      "parentId": "pat-als-72",
+      "text": "Als mijn broer vroeger op bezoek kwam, speelden we samen.",
+      "english": "Whenever my brother visited in the past, we played together.",
+      "scenario": "Your brother lived far away. Tell what you did together during his visits.",
+      "scenarioNl": "Je broer woonde ver weg. Vertel wat jullie deden bij zijn bezoeken.",
+      "explanation": "A past habit. 'Op bezoek kwam' puts 'op bezoek' before the finite verb 'kwam'. The main clause inverts: speelden we samen.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik vroeger laat thuiskwam, sliep mijn zus al.",
+        "english": "Whenever I came home late in the past, my sister was already asleep."
+      }
+    },
+    {
+      "id": "pat-als-72~v03",
+      "parentId": "pat-als-72",
+      "text": "Als ik vroeger laat thuiskwam, sliep mijn zus al.",
+      "english": "Whenever I came home late in the past, my sister was already asleep.",
+      "scenario": "You shared a house with your sister. Describe what you noticed after a late evening.",
+      "scenarioNl": "Je woonde met je zus samen. Vertel wat je merkte na een late avond.",
+      "explanation": "Thuiskomen is separable but joins in the dependent clause: 'thuiskwam'. The main clause inverts with a noun subject: sliep mijn zus al.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als het vroeger regende, bleven we binnen.",
+        "english": "Whenever it rained in the past, we stayed inside."
+      }
+    },
+    {
+      "id": "pat-als-72~v04",
+      "parentId": "pat-als-72",
+      "text": "Als het vroeger regende, bleven we binnen.",
+      "english": "Whenever it rained in the past, we stayed inside.",
+      "scenario": "Your family always did the same thing on rainy days. Describe that habit.",
+      "scenarioNl": "Op slechte weerdagen deed jullie gezin altijd hetzelfde. Vertel wat.",
+      "explanation": "'Regende' closes the dependent clause and the weather subject is 'het'. After the front clause 'bleven' comes before 'we', so the habit reads: bleven we binnen.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als de les vroeger uitviel, gingen we naar de bibliotheek.",
+        "english": "Whenever the lesson was cancelled in the past, we went to the library."
+      }
+    },
+    {
+      "id": "pat-als-72~v05",
+      "parentId": "pat-als-72",
+      "text": "Als de les vroeger uitviel, gingen we naar de bibliotheek.",
+      "english": "Whenever the lesson was cancelled in the past, we went to the library.",
+      "scenario": "At school a lesson sometimes fell away. Describe what you did instead.",
+      "scenarioNl": "Op school viel soms een uur weg. Vertel wat jullie dan deden.",
+      "explanation": "Uitvallen is joined in the dependent clause: 'uitviel'. The main clause is inverted past: gingen we naar de bibliotheek.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik vroeger geen zin had, bleef ik thuis.",
+        "english": "Whenever I did not feel like it in the past, I stayed at home."
+      }
+    },
+    {
+      "id": "pat-als-72~v06",
+      "parentId": "pat-als-72",
+      "text": "Als ik vroeger geen zin had, bleef ik thuis.",
+      "english": "Whenever I did not feel like it in the past, I stayed at home.",
+      "scenario": "Describe how you used to skip activities.",
+      "scenarioNl": "Bij een activiteit waar je geen zin in had, deed je vroeger altijd hetzelfde. Vertel wat.",
+      "explanation": "'Geen zin hebben' (not to feel like it): 'geen zin' stands before the finite verb 'had'. After the front clause 'bleef' comes before 'ik'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Vroeger belde ik mijn moeder op als ik een probleem had.",
+        "english": "In the past I phoned my mother whenever I had a problem."
+      }
+    },
+    {
+      "id": "pat-als-72~v07",
+      "parentId": "pat-als-72",
+      "text": "Vroeger belde ik mijn moeder op als ik een probleem had.",
+      "english": "In the past I phoned my mother whenever I had a problem.",
+      "scenario": "When you had problems you turned to someone. Describe who and how.",
+      "scenarioNl": "Bij problemen zocht je steun bij iemand. Vertel bij wie en hoe.",
+      "explanation": "'Vroeger' is the first constituent, so 'belde' is second and 'ik' third. Opbellen splits in the main clause, leaving 'op' at the end; 'had' closes the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als wij vroeger vakantie hadden, reisden wij naar de kust.",
+        "english": "Whenever we had a holiday in the past, we travelled to the coast."
+      }
+    },
+    {
+      "id": "pat-als-72~v08",
+      "parentId": "pat-als-72",
+      "text": "Als wij vroeger vakantie hadden, reisden wij naar de kust.",
+      "english": "Whenever we had a holiday in the past, we travelled to the coast.",
+      "scenario": "As a family you went on holiday somewhere. Describe where you travelled to.",
+      "scenarioNl": "Met je gezin ging je op vakantie. Vertel waar naartoe.",
+      "explanation": "'Vakantie hadden': object before the plural past 'hadden'. The main clause inverts with the plural verb: reisden wij naar de kust.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik vroeger moe was, nam ik een dutje.",
+        "english": "Whenever I was tired in the past, I took a nap."
+      }
+    },
+    {
+      "id": "pat-als-72~v09",
+      "parentId": "pat-als-72",
+      "text": "Als ik vroeger moe was, nam ik een dutje.",
+      "english": "Whenever I was tired in the past, I took a nap.",
+      "scenario": "You rested in a particular way when tired. Describe what you did.",
+      "scenarioNl": "Vroeger rustte je op een vaste manier uit. Vertel hoe.",
+      "explanation": "'Moe was' ends the dependent clause; 'nam ik een dutje' is the inverted main clause. 'Een dutje nemen' is the fixed way to say to take a nap.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als ik vroeger vrij was, ging ik meestal fietsen.",
+        "english": "Whenever I was free in the past, I usually went cycling."
+      }
+    },
+    {
+      "id": "pat-als-72~v10",
+      "parentId": "pat-als-72",
+      "text": "Als ik vroeger vrij was, ging ik meestal fietsen.",
+      "english": "Whenever I was free in the past, I usually went cycling.",
+      "scenario": "You usually did the same activity in your free time. Describe that usual habit.",
+      "scenarioNl": "Je had vroeger meestal dezelfde bezigheid in je vrije tijd. Vertel welke.",
+      "explanation": "'Meestal' (usually) stands after the subject in the inverted main clause: ging ik meestal fietsen. The infinitive 'fietsen' ends it, as after any form of gaan.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik ging vaak naar het strand als het vroeger warm was.",
+        "english": "I often went to the beach when it was warm in the past."
+      }
+    }
+  ],
+  "pat-als-reuse-career-troubleshooting-029": [
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v01",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Als er een foutmelding verschijnt, stop dan de test.",
+      "english": "If an error message appears, stop the test then.",
+      "scenario": "Give a clear instruction with the condition first.",
+      "scenarioNl": "Je beschrijft een testprocedure. Welke regel geldt bij een foutbericht? Noem de voorwaarde eerst.",
+      "explanation": "'Er' follows the conjunction, the real subject 'een foutmelding' comes next and 'verschijnt' ends the clause. After a front clause an instruction often adds 'dan'; the imperative 'stop' keeps its verb first.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Sluit het programma af als er een fout optreedt.",
+        "english": "Close the program if an error occurs."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v02",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Sluit het programma af als er een fout optreedt.",
+      "english": "Close the program if an error occurs.",
+      "scenario": "Tell a colleague what to do in case of an error.",
+      "scenarioNl": "Een collega gebruikt een gevoelige toepassing. Geef de regel voor een fout.",
+      "explanation": "'Sluit ... af' (afsluiten) splits in the imperative: the particle is last in the main clause. 'Optreedt' (optreden, to occur) joins in the dependent clause and ends it.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Bel mij als er een probleem is.",
+        "english": "Call me if there is a problem."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v03",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Bel mij als er een probleem is.",
+      "english": "Call me if there is a problem.",
+      "scenario": "Tell a colleague to ring in case of trouble.",
+      "scenarioNl": "Je laat een collega alleen aan het werk. Zeg wat hij moet doen bij moeilijkheden.",
+      "explanation": "The imperative 'bel' starts the main clause. In 'als er een probleem is' the subject 'een probleem' follows 'er' and 'is' closes the clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Meld het meteen als er iets vreemds gebeurt.",
+        "english": "Report it immediately if anything strange happens."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v04",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Meld het meteen als er iets vreemds gebeurt.",
+      "english": "Report it immediately if anything strange happens.",
+      "scenario": "You want a colleague to report anything unusual immediately. Give the rule.",
+      "scenarioNl": "Je wilt dat een collega ongewone dingen direct doorgeeft. Geef de regel.",
+      "explanation": "'Iets vreemds' (something strange) is an indefinite subject that follows 'er'. 'Gebeurt' ends the dependent clause. 'Meteen' stands after the object 'het' in the imperative.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Schakel de computer niet uit als er niet-opgeslagen werk is.",
+        "english": "Do not switch off the computer if there is unsaved work."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v05",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Schakel de computer niet uit als er niet-opgeslagen werk is.",
+      "english": "Do not switch off the computer if there is unsaved work.",
+      "scenario": "A colleague wants to go home. Warn them not to switch off the computer in one case.",
+      "scenarioNl": "Een collega wil naar huis gaan. Waarschuw hem voor een risico bij het afsluiten.",
+      "explanation": "Uitschakelen is separable: 'schakel ... uit', with 'niet' before the particle. 'Er' plus the noun 'niet-opgeslagen werk' introduces the dependent clause, which ends with 'is'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Ik stop de test als er een onverwachte waarschuwing verschijnt.",
+        "english": "I stop the test if an unexpected warning appears."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v06",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Ik stop de test als er een onverwachte waarschuwing verschijnt.",
+      "english": "I stop the test if an unexpected warning appears.",
+      "scenario": "State your own rule instead of giving an instruction.",
+      "scenarioNl": "Een collega vraagt hoe jij met onverwachte meldingen omgaat. Vertel jouw regel.",
+      "explanation": "A statement: 'Ik stop' keeps subject-first order, with no inversion. The dependent clause is the same as in the instruction: er + subject + 'verschijnt' last.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "We moeten de test stoppen als er een onverwachte waarschuwing verschijnt.",
+        "english": "We have to stop the test if an unexpected warning appears."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v07",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "We moeten de test stoppen als er een onverwachte waarschuwing verschijnt.",
+      "english": "We have to stop the test if an unexpected warning appears.",
+      "scenario": "The protocol demands a stop in one case. Describe that obligation, speaking as we.",
+      "scenarioNl": "Het protocol schrijft iets voor bij een onverwachte melding. Leg die plicht uit.",
+      "explanation": "'Moeten' is the finite modal in position two, so the infinitive 'stoppen' ends the main clause. 'We' is the subject; the als-clause comes last.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als er een onverwachte waarschuwing verscheen, stopte ik de test.",
+        "english": "Whenever an unexpected warning appeared, I stopped the test."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v08",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Als er een onverwachte waarschuwing verscheen, stopte ik de test.",
+      "english": "Whenever an unexpected warning appeared, I stopped the test.",
+      "scenario": "In earlier tests you always used the same rule. Describe what you did in the past.",
+      "scenarioNl": "Bij vorige tests gebruikte je altijd dezelfde regel. Vertel wat je deed.",
+      "explanation": "A past habit: 'verscheen' ends the dependent clause and 'stopte' is the past main verb, which stands before 'ik' after the front clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Stop de test niet als er alleen een melding verschijnt.",
+        "english": "Do not stop the test if there is only a notice."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v09",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Stop de test niet als er alleen een melding verschijnt.",
+      "english": "Do not stop the test if there is only a notice.",
+      "scenario": "Not every notice is dangerous. Tell a colleague not to stop for a mere notice.",
+      "scenarioNl": "Niet elke melding is gevaarlijk. Zeg in welk geval een collega moet doorwerken.",
+      "explanation": "'Niet' stands after the object 'de test' in the imperative. 'Alleen een melding' narrows the subject, and 'verschijnt' closes the dependent clause.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als er geen waarschuwing verschijnt, ga dan door met de test.",
+        "english": "If no warning appears, carry on with the test then."
+      }
+    },
+    {
+      "id": "pat-als-reuse-career-troubleshooting-029~v10",
+      "parentId": "pat-als-reuse-career-troubleshooting-029",
+      "text": "Als er geen waarschuwing verschijnt, ga dan door met de test.",
+      "english": "If no warning appears, carry on with the test then.",
+      "scenario": "The test is going well. Tell a colleague they can simply carry on if nothing appears.",
+      "scenarioNl": "De test loopt goed. Zeg een collega dat hij gewoon kan voortgaan.",
+      "explanation": "'Geen waarschuwing' negates the noun after 'er'. In the imperative 'ga ... door met' the separable verb doorgaan splits: 'ga' first and the particle 'door' before 'met de test'.",
+      "focus": "ALS · subordinate clauses and V2",
+      "example": {
+        "text": "Als er een foutmelding verschijnt, stop dan de test.",
+        "english": "If an error message appears, stop the test then."
       }
     }
   ]

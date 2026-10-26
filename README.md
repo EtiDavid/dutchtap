@@ -24,6 +24,12 @@ DutchTap is a **Dutch and French sentence-learning app**, with real-world situat
 
 **Release status:** Grammar Mastery is **PARTIALLY COMPLETE**. Draft [PR #15](https://github.com/EtiDavid/dutchtap/pull/15) is not approved to merge or tag. Missing topics, lesson depth, per-card grammar analyses, Dutch-first prompts, variations, cross-topic skills, linguistic review, extensive compatibility testing and security review are explicitly tracked. Do not represent the four passing focused Chromium tests as the complete browser test suite.
 
+## Claude Code continuation and teaching-quality instructions
+
+The project owner may delegate further implementation to Claude Code instead of using a long interactive ChatGPT session. **Read the full [Claude Code implementation handover](docs/CLAUDE-CODE-GRAMMAR-MASTERY-HANDOVER.md) and [worked teaching exemplars](docs/CLAUDE-GRAMMAR-TEACHING-EXEMPLARS.md)** before editing content. The root [CLAUDE.md](CLAUDE.md) automatically directs Claude Code to the approved plan, pedagogy contract and living acceptance audit. The closed unmerged PR #15 feature branch contains work that must be preserved; current Git state must be checked afresh.
+
+These instructions enforce detailed, non-generic why-first explanations, realistic Dutch-first scenarios, sentence-specific analysis, answer alternatives, review provenance, test evidence, stable progress and no production deployment without owner approval.
+
 ## How to start learning on the current live app
 
 1. Open https://dutchtap.davideti.dev and choose Nederlands. Guest progress stays on that device; a registered account can sync supported session progress.

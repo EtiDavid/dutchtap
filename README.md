@@ -67,6 +67,7 @@ Open http://localhost:3001. The image uses Next.js standalone output. Stop it wi
 | `npm run content:workplace` | Check generated Dutch at Work content |
 | `npm run content:learning-check` | Validate Learning Hub content |
 | `npm run content:audit` / `npm run content:review-check` | Inventory the existing editorial review queue; **the latter is an independent gate**, not covered by normal CI |
+| `npm run grammar:release-gate` | **Expected to FAIL while A01–A25 are incomplete.** Reads the audit matrix and blocks any claim that the feature is release-approved |
 | `python3 scripts/build-grammar-patterns.py` | Regenerate grammar-pattern cards and notes from canonical sources |
 | `npm run assets:flashcards -- --complete` | Check pictures and recordings for the original Everyday deck |
 

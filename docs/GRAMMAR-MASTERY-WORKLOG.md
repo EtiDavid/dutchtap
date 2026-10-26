@@ -55,3 +55,35 @@ Source material is AI-edited and is **not** independently certified by a native 
 2. Extend Playwright coverage beyond the four passing tests: variation toggles, account sync, cross-device and real mobile/responsive behavior.
 3. Review ALS grammar scenarios, 30 new children, separable forms, and the added lessons against authoritative sources, recording any corrections.
 4. Complete P1 scoped sign-off; only then decide a tested, explicitly scoped learning release versus continued feature expansion.
+
+## 2026-10-26 — Full README/spec audit and honest release-blocking status
+
+**Status: PARTIAL — NOT ACCEPTED FOR MERGE OR PRODUCTION.** The attached master document `DUTCHTAP-GRAMMAR-PLAN-001 v1.0` is the immutable acceptance baseline. The corresponding **25 acceptance rows** are now tracked, with individual evidence and blockers, in `docs/GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md`. That audit currently records **21 PARTIAL, 3 BLOCKED and one narrowly VERIFIED** (Academy frozen-curriculum diff only). Every mandatory required feature is **not** implemented, so a production-ready claim would be false.
+
+### README and documentation corrections
+
+- Replaced the root `README.md` so users and developers can distinguish what already exists on `main` from the unmerged Grammar Mastery branch; documented setup, test limits and tag-only release safety.
+- Updated `docs/GRAMMAR-PATTERNS.md` with true playable counts by topic, practice UX, Dutch-first coverage and explicit missing features. Clearly separated 10 passive note examples from 30 tracked children.
+- Labeled `docs/GRAMMAR-SOURCE-AUDIT.md` as an initial P0 snapshot, not the current 13-topic inventory. Labeled `docs/learning/README.md` as historical first-release editorial documentation.
+- Created the acceptance audit mapping **A01–A25**, P0–P7, numeric shortfalls and release gates with concrete file/test paths. Never adjust the frozen plan's baseline checkboxes to make the app appear finished.
+
+### Code/tests added
+
+- `scripts/check-grammar-acceptance.mjs` + `npm run grammar:release-gate`: **fail closed** unless all 25 acceptance rows have verified status, the report no longer declares itself partial/unapproved, and the table is complete. The command is **expected to exit 1 now**; it is a release-signoff check, not a passing development-CI test. It is not a substitute for independent manual/source evidence.
+- `tests/grammar.acceptance-audit.test.ts`: validates 25 audit rows and checks public documentation claims against canonical JSON counts and topic lesson versions.
+- `tests/flashcard-e2e/grammar-variation-persistence.spec.ts`: added a focused guest-browser scenario for an ALS one-card session with optional variation toggle, reload, disable/re-enable behavior and preserved parent membership.
+- Extended `.github/workflows/grammar-feature-validation.yml` to include the new focused Playwright scenario alongside the previous four.
+
+### Actual data counts cross-checked
+
+- 1,200 original Core cards protected; 432 authored grammar cards + 53 referenced Core aliases = **485** unique grammar base IDs. 1,685 total card IDs across app collections.
+- 236/432 authored grammar cards have Dutch-first prompts; 196 do not; 53 Core aliases also lack new Dutch-prompt metadata.
+- 30 interactive children on only three ALS parents. 52 distinct separable verb lemmas (below the approved 60–100 target).
+- 13 topic lessons: six version 1.0, four version 0.8 and three version 0.2.
+- Major open gap: authored grammar cards do not have the structured sentence-level `BREAKDOWNS` that the approved plan demands.
+
+### Verification, limitations and next work
+
+The earlier [full feature CI run #40361591866](https://github.com/EtiDavid/dutchtap/actions/runs/40361591866) passed 343 Vitest tests (7 skipped) and 4 Chromium browser tests, but **that run predates these added documentation and tests**. Check PR #15's current HEAD before reporting the new browser test as passed. The new `grammar:release-gate` is expected to fail while acceptance is incomplete.
+
+**Still required:** complete P1 per-card ALS analyses, language/alternative/variation QA and guest/account/mobile tests; expand all missing targets without cloned filler; multi-topic tagging and uncued mixed retrieval; full security assessment (8 npm audit findings), independent language review, complete regression/migration tests, sign-off and authorized main/tag release. **No merge or production tag performed in this audit.**

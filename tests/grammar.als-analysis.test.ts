@@ -44,9 +44,12 @@ describe('ALS per-sentence analysis (hand-authored, reviewed spans)', () => {
       }
       const bijzin = clauses.find(c => c.kind === 'bijzin')!;
       expect(words(bijzin.text).slice(0, 2).includes('als'), `${id}: bijzin starts with als`).toBe(true);
-      // The finite verb of a simple dependent clause is last; with a verb group it is one of the last two words.
+      // The finite verb closes a simple dependent clause; with a verb group it is one of the last two words. A phrase after the verb
+      // (for example a place phrase) is allowed only when the record names it explicitly.
       const spoken = words(bijzin.text);
-      expect(spoken.length - spoken.indexOf(words(bijzin.finite)[0]), id).toBeLessThanOrEqual(2);
+      const after = bijzin.afterFinite ? words(bijzin.afterFinite).length : 0;
+      if (bijzin.afterFinite) expect(words(bijzin.text).join(' '), id).toMatch(new RegExp(`${words(bijzin.finite)[0]} ${words(bijzin.afterFinite).join(' ')}$`));
+      expect(spoken.length - after - spoken.indexOf(words(bijzin.finite)[0]), id).toBeLessThanOrEqual(2);
     }
   });
 
@@ -98,9 +101,18 @@ describe('ALS per-sentence analysis (hand-authored, reviewed spans)', () => {
     for (const id of ids) {
       const card = cardFor('nl', id)!;
       expect(card.scenarioNl, `${id} has a Dutch-first situation`).toBeTruthy();
-      expect(card.scenarioNl!, id).not.toMatch(/\bals\b/i);
+      expect(card.scenarioNl!, id).not.toMatch(/\b(als|wanneer|zodra|toen)\b/i);
       expect(card.scenarioNl!.toLowerCase(), id).not.toContain(words(card.text).join(' '));
       expect(card.scenarioNl!.length, id).toBeGreaterThan(40);
+    }
+  });
+
+  it('rewrites an English situation only where the original gave the Dutch answer away, and the rewrite does not', () => {
+    for (const id of ids.filter(i => analysisFor(i)!.situationEn)) {
+      const card = cardFor('nl', id)!;
+      expect(card.scenario, id).toBe(analysisFor(id)!.situationEn);
+      expect(card.scenario.toLowerCase(), id).not.toContain(words(card.text).slice(0, 3).join(' '));
+      expect(card.scenario, id).not.toMatch(/\bals\b/i);
     }
   });
 

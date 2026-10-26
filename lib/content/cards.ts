@@ -2,7 +2,7 @@ import { CARDS, type Card } from "@/lib/flashcards/engine";
 import { meaningFor, scenarioFor } from "@/lib/practice/communication";
 import frCards from "@/data/fr/cards.json";
 import { DEFAULT_LANG, type Lang } from "@/lib/lang";
-import { situationNlFor } from "@/lib/grammarAnalysis";
+import { situationEnFor, situationNlFor } from "@/lib/grammarAnalysis";
 
 /**
  * One sentence card as the learner sees it in a given language. The situation (id, topic, picture, scenario and cue) is shared;
@@ -69,9 +69,10 @@ function dutchCard(card: Card): LCard {
     category: card.category,
     text: card.dutch,
     english: meaningFor(card.dutch, card.english),
-    scenario: scenarioFor(card.dutch, card.scenario),
-    scenarioNl: card.scenarioNl ?? situationNlFor(card.id),
-    cue: card.cue,
+    scenario: situationEnFor(card.id) ?? scenarioFor(card.dutch, card.scenario),
+    // An authored Dutch-first situation wins over an older one that gave the conjunction away.
+    scenarioNl: situationNlFor(card.id) ?? card.scenarioNl,
+    cue: situationEnFor(card.id) ?? card.cue,
     variation: card.variation,
     difficulty: card.difficulty ?? "beginner",
     vocabularyIds: card.vocabularyIds ?? [],

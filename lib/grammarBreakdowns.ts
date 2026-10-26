@@ -27,7 +27,7 @@ export type Breakdown = {
   /** The same plan expressed another way (for example main clause first), with why it differs. */
   contrast?: { dutch: string; english: string; note: string };
   /** Authored clause spans: which part is the main clause and which the subordinate clause, with each finite verb and why. */
-  clauses?: { kind: "hoofdzin" | "bijzin"; text: string; subject: string; finite: string; why: string }[];
+  clauses?: { kind: "hoofdzin" | "bijzin"; text: string; subject: string; finite: string; why: string; afterFinite?: string }[];
   /** Which meaning of "als" this sentence uses, and why. */
   alsSense?: { sense: string; why: string };
 };

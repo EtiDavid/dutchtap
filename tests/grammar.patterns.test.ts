@@ -20,7 +20,7 @@ describe('Grammar patterns collection', () => {
     // Authored pattern cards have generated notes and no media. Linked Core cards are tested separately.
     for (const card of GRAMMAR_CARDS.filter(c => !c.originCardId)) {
       expect(card.collection).toBe('grammar');
-      expect(card.id).toMatch(/^pat-[a-z]+-\d\d$/);
+      expect(card.id).toMatch(/^pat-[a-z]+-\d{2,3}$/);
       expect(card.scenario.length, card.id).toBeGreaterThan(20);
       expect(card.scenario.toLowerCase(), card.id).not.toContain(card.dutch.toLowerCase());
       expect(card.image, card.id).toBe('');

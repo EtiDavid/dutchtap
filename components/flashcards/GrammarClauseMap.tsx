@@ -5,9 +5,9 @@ const KIND = {
   bijzin: { dutch: "bijzin", english: "subordinate clause" },
 } as const;
 
-/** Highlights the finite verb inside its clause. The clause text and verb are authored, so the match is a literal word, never a guess. */
+/** Highlights the finite verb inside its clause (first whole-word match, ignoring case). The clause text and verb are authored; a test requires the verb to occur once in a clause, so the match is never ambiguous. */
 function Highlighted({ text, finite }: { text: string; finite: string }) {
-  const at = text.search(new RegExp(`(^|\\s)${finite.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=\\s|$)`));
+  const at = text.search(new RegExp(`(^|\\s)${finite.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=\\s|$)`, "i"));
   if (at < 0) return <>{text}</>;
   const start = text[at] === " " ? at + 1 : at;
   return (

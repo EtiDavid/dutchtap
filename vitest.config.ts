@@ -9,6 +9,8 @@ export default defineConfig({
   },
   test: {
     environment: "node",
+    // The suite imports ~2,000 cards and several large data files; under parallel load the default 5 s caused intermittent timeouts.
+    testTimeout: 20000,
     include: ["tests/**/*.test.ts", "tests/**/*.test.mjs"],
   },
 });

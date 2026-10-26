@@ -56,7 +56,14 @@ export const situationEnFor = (cardId: string): string | undefined => GRAMMAR_AN
 export const situationNlFor = (cardId: string): string | undefined => GRAMMAR_ANALYSIS[cardId]?.situationNl;
 
 /** The analysis in the shape the existing sentence-breakdown view already renders, plus the extra authored fields. */
+const BREAKDOWN_CACHE = new Map<string, Breakdown | undefined>();
 export function analysisBreakdown(cardId: string): Breakdown | undefined {
+  if (BREAKDOWN_CACHE.has(cardId)) return BREAKDOWN_CACHE.get(cardId);
+  const built = buildBreakdown(cardId);
+  BREAKDOWN_CACHE.set(cardId, built);
+  return built;
+}
+function buildBreakdown(cardId: string): Breakdown | undefined {
   const record = GRAMMAR_ANALYSIS[cardId];
   if (!record) return undefined;
   const [first, ...rest] = record.mistakes;

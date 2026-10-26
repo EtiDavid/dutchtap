@@ -37,12 +37,18 @@ export const FRENCH_BREAKDOWNS = frBreakdowns as Record<string, Breakdown>;
 export const breakdownFor = (
   cardId: string,
   lang: Lang = "nl",
-): Breakdown | undefined =>
-  (lang === "nl" ? analysisBreakdown(cardId) : undefined) ??
-  (lang === "fr" ? FRENCH_BREAKDOWNS : BREAKDOWNS)[cardId] ??
-  (lang === "nl" && cardId.startsWith("pat-") && cardId.includes("-reuse-")
-    ? BREAKDOWNS[cardId.split("-reuse-").slice(1).join("-reuse-")]
-    : undefined);
+): Breakdown | undefined => {
+  const earlier =
+    (lang === "fr" ? FRENCH_BREAKDOWNS : BREAKDOWNS)[cardId] ??
+    (lang === "nl" && cardId.startsWith("pat-") && cardId.includes("-reuse-")
+      ? BREAKDOWNS[cardId.split("-reuse-").slice(1).join("-reuse-")]
+      : undefined);
+  const analysed = lang === "nl" ? analysisBreakdown(cardId) : undefined;
+  if (!analysed) return earlier;
+  // The authored analysis wins, but guidance that only the linked source breakdown has (for example practiceGuide) is kept.
+  const { help, practiceFocus, practiceGuide } = earlier ?? {};
+  return { ...(help ? { help } : {}), ...(practiceFocus ? { practiceFocus } : {}), ...(practiceGuide ? { practiceGuide } : {}), ...analysed };
+};
 
 /** The abstract pattern, e.g. "time phrase + finite verb + subject + direction". Position, not word count, defines the order. */
 export const patternOf = (breakdown: Breakdown): string =>

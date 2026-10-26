@@ -1,5 +1,5 @@
 "use client";
-import {useState} from "react";
+import {useMemo,useState} from "react";
 import rawLessons from "@/data/grammar-topic-lessons.json";
 import {analysisFor} from "@/lib/grammarAnalysis";
 import {button,primary} from "../flashcards/styles";
@@ -13,10 +13,16 @@ const normal=(s:string)=>s.normalize("NFC").toLocaleLowerCase("nl").replace(/[.,
  */
 export function GrammarErrorRepair({topic,cardIds=[]}:{topic:string;cardIds?:string[]}){
  // Mistakes written for the sentences of this session come first, then the topic lesson's general ones.
- const own:Mistake[]=[];
- for(const id of cardIds)for(const m of analysisFor(id)?.mistakes??[])own.push({...m,own:true});
- const mistakes=[...own,...(lessons[topic]?.mistakes??[])];
- const [index,setIndex]=useState(0);
+ const key=`${topic}|${cardIds.join(",")}`;
+ const mistakes=useMemo(()=>{
+  const own:Mistake[]=[];
+  for(const id of cardIds)for(const m of analysisFor(id)?.mistakes??[])own.push({...m,own:true});
+  return [...own,...(lessons[topic]?.mistakes??[])];
+ // eslint-disable-next-line react-hooks/exhaustive-deps
+ },[key]);
+ const [state,setState]=useState({key,index:0});
+ const index=state.key===key?state.index:0;
+ const setIndex=(f:(i:number)=>number)=>setState({key,index:f(index)});
  const [draft,setDraft]=useState("");
  const [checked,setChecked]=useState(false);
  const [showAnswer,setShowAnswer]=useState(false);

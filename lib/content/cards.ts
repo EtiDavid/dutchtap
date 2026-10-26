@@ -72,7 +72,7 @@ function dutchCard(card: Card): LCard {
     scenario: situationEnFor(card.id) ?? scenarioFor(card.dutch, card.scenario),
     // An authored Dutch-first situation wins over an older one that gave the conjunction away.
     scenarioNl: situationNlFor(card.id) ?? card.scenarioNl,
-    cue: situationEnFor(card.id) ?? card.cue,
+    cue: card.cue === card.scenario ? (situationEnFor(card.id) ?? card.cue) : card.cue,
     variation: card.variation,
     difficulty: card.difficulty ?? "beginner",
     vocabularyIds: card.vocabularyIds ?? [],

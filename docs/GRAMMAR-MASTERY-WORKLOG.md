@@ -4,6 +4,10 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code review of the P2 branch (before P3)
+
+A seven-finding review of the code changes (not the content) found and fixed: analysed linked cards lost `practiceGuide` from their source breakdown (24 cards; now merged and tested in `tests/grammar.breakdown-merge.test.ts`); `cue` was overwritten by `situationEn` (now only when it equalled the scenario); the finite-verb highlighter was case-sensitive (pat-toen-82 never highlighted; now case-insensitive, with a test that the verb occurs at most once per clause); the repair exercise rebuilt its list on every keystroke and kept a stale index (memoised and keyed on session); `analysisBreakdown` is cached; the generator now rejects a new P2 sentence that repeats an unlinked core sentence. Not fixed: all analysis JSON is imported through `lib/content/cards.ts`, so it is bundled for every consumer (a split into a small situations index is a later optimisation). `vitest.config.ts` now sets `testTimeout: 20000` because heavy tests timed out intermittently at the 5 s default. Pre-existing and left alone: `pat-verbs-02` repeats core card `food-07`. Vitest 417 passed; 11 targeted browser scenarios passed.
+
 ## 2026-10-27 — Claude Code continuation: flaky test check and per-sentence repair exercise
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

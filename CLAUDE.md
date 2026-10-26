@@ -15,7 +15,7 @@ Also inspect `README.md`, `docs/ARCHITECTURE.md`, `docs/STAGE-1-HANDOVER.md`, `d
 **Mission:** Complete the already approved Grammar Mastery scope in quality-checked phases. Prioritize genuine spontaneous Dutch thinking, not translation-based filler or generic "the verb goes to the end" explanations. Use the seven worked examples as the minimum pedagogy standard. Start with **P1 ALS individual structured analyses**; complete the 100 base cards and the whole ALS learning journey before widening scope.
 
 **Current safety conditions:**
-- PR #15 was **closed without merge** when the handover was written; `feat/grammar-mastery-phase1` contains valuable work. Always inspect current refs and preserve it before branching.
+- PR #15 **merged into main on 26 October 2026** (merge 892b5303), bringing in a **partial**, not complete, Grammar Mastery implementation. The feature branch has extra handover documentation commits not yet merged to main. Re-check refs and reconcile only the docs delta rather than reapplying 48 already-merged commits.
 - Do not directly change `main`, rewrite old card IDs/progress, use live Atlas for tests, silently edit the frozen Academy curriculum, merge, push a version tag, or deploy without explicit owner approval.
 - CI green ≠ all grammar content correct; `npm run grammar:release-gate` is EXPECTED TO FAIL while the audit remains incomplete.
 - Keep distinct verified/partial/blocked statuses; update worklog and evidence after each slice.

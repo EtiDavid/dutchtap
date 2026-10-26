@@ -3736,7 +3736,7 @@
           "text": "als de vergadering uitloopt",
           "subject": "de vergadering",
           "finite": "uitloopt",
-          "why": "The verb is written as one word and closes the sentence."
+          "why": "Uitlopen is separable ('de vergadering loopt uit'), but inside the dependent clause its parts join into the one word 'uitloopt', which closes the sentence."
         }
       ],
       "parts": [
@@ -4184,14 +4184,14 @@
           "text": "Ik stel een vraag",
           "subject": "Ik",
           "finite": "stel",
-          "why": "Ik is first, so 'stel' is second; 'een vraag' is the object."
+          "why": "Ik is the first constituent, so the finite verb 'stel' is simply second; 'een vraag' is its object."
         },
         {
           "kind": "bijzin",
           "text": "als ik het antwoord niet weet",
           "subject": "ik",
           "finite": "weet",
-          "why": "'Niet' stands directly in front of the final verb 'weet'."
+          "why": "'Niet' stands directly in front of the final verb 'weet', after the object 'het antwoord'."
         }
       ],
       "parts": [

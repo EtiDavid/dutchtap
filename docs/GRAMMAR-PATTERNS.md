@@ -23,7 +23,7 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 | `als` | 77 | 23 | **100** | Expanded v1 |
 | `omdat` | 91 | 9 | **100** | Expanded v1 |
 | `dat` | 64 | 36 | **100** | Expanded v1 |
-| `toen` | 20 | 2 | 22 | Introductory |
+| `toen` | 98 | 2 | **100** | Introductory |
 | `wanneer` | 14 | 0 | 14 | Foundational |
 | `terwijl` | 12 | 0 | 12 | Foundational |
 | `voordat` | 12 | 0 | 12 | Foundational |
@@ -32,7 +32,7 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 | `verbs` | 36 | 0 | 36 | Expanded v1 |
 | `separable` | 152 | 0 | **152** | Expanded v1 |
 | `tense` | 17 | 0 | 17 | Introductory |
-| **TOTAL** | **547** | **70** | **617** | **13 topics** |
+| **TOTAL** | **625** | **70** | **695** | **13 topics** |
 
 There are also **52 authored separable-verb lemmas** (below the 60–100 target; **not** independently native-verified), 100 interactive child variations on ten ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
 

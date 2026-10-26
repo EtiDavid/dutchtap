@@ -4,6 +4,22 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-26 — Claude Code continuation: P2 Toen to 100 base cards with per-sentence analysis
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- Only two core sentences use the conjunction `toen` (already linked), so Toen gets 78 new authored cards (`data/editorial/grammar-p2-toen.json`, ids `pat-toen-21..98`): 20 toen-first, 14 main-clause-first, 8 past perfect in the main clause, 8 perfect tense (spoken style), 8 `toen` as the adverb "then", 8 questions containing a toen-clause, 6 whole periods, 6 negated/modal. With the 20 legacy and 2 linked cards that makes 100.
+- All 100 have a hand-authored record in `data/grammar-toen-analysis.json`. Adverb `toen` (= then) is analysed as one main clause (pattern `demonstrative`, which now also covers adverbs) so it is never shown as a subordinate clause; periods are told apart from single occasions in the sense text and in contrast notes (`als` for repeated).
+- The 20 legacy cards had no Dutch prompt and an English scenario saying "Start with Toen"; they now carry `situationNl` and a rewritten `situationEn`. All 78 new prompts avoid the conjunction cue.
+- Tests: Toen added to the generic per-topic suite; `tests/flashcard-e2e/grammar-toen-analysis.spec.ts` (2 scenarios). Docs counts updated (625 authored + 70 aliases = 695; 429/625 Dutch prompts).
+
+**Evidence:** `npx tsc --noEmit` clean; eslint clean; `npx vitest run` (with local Mongo) 400 tests passed; targeted browser specs for Dat and Toen 5 passed. Full browser suite NOT re-run.
+
+**Known issues / open:** no native review; the Toen lesson (v0.2) is still introductory and has not been expanded or fact-checked beyond the Taaladvies distinction; Belgian usage (toen is the only correct conjunction for one past event) appears in this log but not yet in the lesson text; the first drafts of several analyses had repeated or too-short explanations and were rewritten per card; Toen has no interactive children.
+
+**Next specific task:** P2 Wanneer (14 → 100), then V2/inversion (20 → 100); then upgrade the Toen and Wanneer lessons together because the two topics define each other.
+
 ## 2026-10-26 — Claude Code continuation: P2 Dat to 100 base cards with per-sentence analysis
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

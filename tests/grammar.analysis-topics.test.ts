@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { GRAMMAR_CARDS } from '@/lib/flashcards/engine';
 import { cardFor } from '@/lib/content/cards';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
-import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
+import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
 
 const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}' ]/gu, ' ').replace(/’/g, "'").split(/\s+/).filter(Boolean);
 const GENERIC = [/because it is (a )?subordinate\b/i, /^dutch uses inversion\.?$/i, /\bthis is correct grammar\b/i, /^the verb goes to the end\.?$/i, /^op is a separable prefix\.?$/i, /subject and verb switch\.?$/i];
@@ -12,6 +12,7 @@ type TopicConfig = { topic: string; records: Record<string, AnalysisRecord>; con
 const TOPICS: TopicConfig[] = [
   { topic: 'omdat', records: OMDAT_ANALYSIS, conj: ['omdat'], target: 100 },
   { topic: 'dat', records: DAT_ANALYSIS, conj: ['dat', 'die'], target: 100, leak: /\bdat\b/i },
+  { topic: 'toen', records: TOEN_ANALYSIS, conj: ['toen'], target: 100 },
 ];
 
 const seenText = new Map<string, string>();

@@ -1,6 +1,7 @@
 import analysis from "@/data/grammar-als-analysis.json";
 import omdatAnalysis from "@/data/grammar-omdat-analysis.json";
 import datAnalysis from "@/data/grammar-dat-analysis.json";
+import toenAnalysis from "@/data/grammar-toen-analysis.json";
 import type { Breakdown } from "@/lib/grammarBreakdowns";
 
 /**
@@ -21,7 +22,7 @@ export type AnalysisRecord = {
   alsSenseWhy?: string;
   /** Other topics: the meaning or function of the key word in this sentence (for example "omdat = because"). */
   sense?: { label: string; why: string };
-  /** Default "subordinate". "coordinate" marks a contrast made of two main clauses (for example want); "demonstrative" a single main clause where the key word is a pointing word; "relative" a relative clause inside or after a main clause. */
+  /** Default "subordinate". "coordinate" marks a contrast made of two main clauses (for example want); "demonstrative" a single main clause where the key word is a pointing word or an adverb (toen = then); "relative" a relative clause inside or after a main clause. */
   pattern?: "subordinate" | "coordinate" | "demonstrative" | "relative";
   situationNl?: string;
   /** English help for the situation, written where the original English scenario gave the answer away. */
@@ -42,8 +43,9 @@ const SENSE: Record<string, string> = { if: "if", when: "when", whenever: "whene
 export const ALS_ANALYSIS = analysis.cards as unknown as Record<string, AnalysisRecord>;
 export const OMDAT_ANALYSIS = omdatAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const DAT_ANALYSIS = datAnalysis.cards as unknown as Record<string, AnalysisRecord>;
+export const TOEN_ANALYSIS = toenAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 /** Every authored sentence analysis, whatever its topic. Ids are unique across topics. */
-export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS };
+export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS };
 export const analysisFor = (cardId: string): AnalysisRecord | undefined => GRAMMAR_ANALYSIS[cardId];
 /** A Dutch-first situation for cards that were written before Dutch prompts existed (including linked Everyday/Work sentences). */
 export const situationEnFor = (cardId: string): string | undefined => GRAMMAR_ANALYSIS[cardId]?.situationEn;

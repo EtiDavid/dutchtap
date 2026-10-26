@@ -80,7 +80,7 @@ describe('ALS per-sentence analysis (hand-authored, reviewed spans)', () => {
     const seen = new Map<string, string>();
     for (const id of ids) {
       const record = analysisFor(id)!;
-      const texts = [record.meaning, record.order, record.forms, record.compare, record.alsSenseWhy, record.contrast.note, ...record.mistakes.map(m => m.why), ...record.clauses.map(c => c.why)];
+      const texts = [record.meaning, record.order, record.forms, record.compare, record.alsSenseWhy!, record.contrast.note, ...record.mistakes.map(m => m.why), ...record.clauses.map(c => c.why)];
       for (const text of texts) {
         for (const pattern of GENERIC) expect(text, id).not.toMatch(pattern);
         expect(seen.get(text), `${id} repeats text from ${seen.get(text)}`).toBeUndefined();
@@ -121,7 +121,7 @@ describe('ALS per-sentence analysis (hand-authored, reviewed spans)', () => {
       const breakdown = breakdownFor(id)!;
       expect(breakdown.clauses?.length, id).toBe(2);
       expect(breakdown.contrast, id).toBeDefined();
-      expect(breakdown.alsSense, id).toBeDefined();
+      expect(breakdown.sense, id).toBeDefined();
       expect(breakdown.mistake.right, id).toBeTruthy();
     }
   });

@@ -1,0 +1,1067 @@
+[
+ {
+  "topic": "omdat",
+  "dutch": "Omdat het regent, blijf ik thuis.",
+  "english": "Because it is raining, I stay at home.",
+  "scenario": "Explain why you are staying in today.",
+  "scenarioNl": "Het weer is slecht en je vrienden vragen waarom je niet buiten bent. Geef je reden.",
+  "why": "Regent closes the omdat-clause; blijf ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de trein vertraging heeft, kom ik later.",
+  "english": "Because the train is delayed, I will be later.",
+  "scenario": "Tell a colleague why you will arrive late.",
+  "scenarioNl": "Je zit in een trein die niet rijdt zoals gepland. Leg aan een collega je reden voor de vertraging uit.",
+  "why": "Heeft closes the clause; kom ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat ik ziek ben, werk ik vandaag thuis.",
+  "english": "Because I am ill, I am working from home today.",
+  "scenario": "Say why you work from home today.",
+  "scenarioNl": "Je hebt koorts en blijft vandaag in je woning. Vertel je team wat je daarom doet en waarom.",
+  "why": "Ben closes the omdat-clause; werk ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de server niet reageert, controleer ik de logs.",
+  "english": "Because the server is not responding, I am checking the logs.",
+  "scenario": "Explain to a colleague why you are checking the logs.",
+  "scenarioNl": "Een server geeft geen antwoord meer en je collega ziet je in de logbestanden kijken. Leg je handeling uit.",
+  "why": "Reageert closes the clause after niet; controleer ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat het formulier onvolledig is, vraag ik extra gegevens.",
+  "english": "Because the form is incomplete, I am asking for extra information.",
+  "scenario": "Explain why you ask for more details.",
+  "scenarioNl": "Een klant heeft een formulier ingestuurd waar velden ontbreken. Zeg wat je nu doet en wat de oorzaak is.",
+  "why": "Is closes the clause after onvolledig; vraag ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat mijn wachtwoord is verlopen, kan ik niet inloggen.",
+  "english": "Because my password has expired, I cannot log in.",
+  "scenario": "Explain why you cannot sign in.",
+  "scenarioNl": "Je probeert in te loggen, maar het systeem weigert je. Vertel aan de helpdesk wat het probleem is.",
+  "why": "Is verlopen is the verb group; kan ik is modal inversion with inloggen at the end.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de winkel dicht is, gaan we naar de markt.",
+  "english": "Because the shop is closed, we are going to the market.",
+  "scenario": "Say why your plan changes.",
+  "scenarioNl": "Jullie wilden naar de supermarkt, maar die is gesloten. Vertel waar jullie heen gaan en waarom.",
+  "why": "Is closes the clause after dicht; gaan we is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat ik de bus heb gemist, kom ik te laat.",
+  "english": "Because I missed the bus, I will be late.",
+  "scenario": "Apologise and give your reason.",
+  "scenarioNl": "Je belt je afspraak om te zeggen dat je later bent. Geef kort je reden voor de vertraging.",
+  "why": "Heb gemist is the perfect group; kom ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat mijn collega ziek is, neem ik zijn taken over.",
+  "english": "Because my colleague is ill, I am taking over his tasks.",
+  "scenario": "Explain why you cover for a colleague.",
+  "scenarioNl": "Een collega ligt met griep in bed. Vertel wat je daardoor op je werk doet.",
+  "why": "Is closes the clause; neem ik ... over is inversion with a separable verb.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de printer geen papier meer heeft, vul ik de lade bij.",
+  "english": "Because the printer has run out of paper, I am refilling the tray.",
+  "scenario": "Explain what you are doing at the printer.",
+  "scenarioNl": "Een collega ziet je bij de printer bezig. Leg uit wat je doet en wat daarvoor de aanleiding is.",
+  "why": "Heeft closes the clause after geen papier meer; vul ik ... bij is inversion with a separable verb.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat ik morgen vroeg moet opstaan, ga ik vroeg slapen.",
+  "english": "Because I have to get up early tomorrow, I am going to bed early.",
+  "scenario": "Explain why you are going to bed early.",
+  "scenarioNl": "Je hebt morgen een vroege afspraak. Vertel waarom je vanavond niet laat opblijft.",
+  "why": "Moet opstaan is a modal verb group; ga ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat we weinig tijd hebben, kiezen we de snelste oplossing.",
+  "english": "Because we have little time, we choose the fastest solution.",
+  "scenario": "Justify a quick decision to your team.",
+  "scenarioNl": "Het team moet snel een keuze maken. Verdedig kort de keuze voor de snelste weg.",
+  "why": "Hebben closes the clause after weinig tijd; kiezen we is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de update mislukt is, draaien we de wijziging terug.",
+  "english": "Because the update failed, we are rolling back the change.",
+  "scenario": "Explain why you roll back.",
+  "scenarioNl": "Een softwarewijziging is niet goed uitgerold. Vertel je team wat jullie doen en de reden.",
+  "why": "Mislukt is is the group (participle before is); draaien we ... terug is inversion with a separable verb.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat ik de uitleg niet begrijp, stel ik een vraag.",
+  "english": "Because I do not understand the explanation, I am asking a question.",
+  "scenario": "Explain why you ask a question.",
+  "scenarioNl": "In een training volg je de uitleg niet. Zeg wat je doet en wat daarvan de reden is.",
+  "why": "Begrijp closes the clause after niet; stel ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de verbinding traag was, heb ik het bestand later verstuurd.",
+  "english": "Because the connection was slow, I sent the file later.",
+  "scenario": "Explain why a file arrived late.",
+  "scenarioNl": "Een collega wacht op een bestand dat laat binnenkwam. Leg uit waarom je het later verstuurde.",
+  "why": "Was closes the past clause; heb ik ... verstuurd is perfect with inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat het gisteren zo druk was, ben ik vroeg naar huis gegaan.",
+  "english": "Because it was so busy yesterday, I went home early.",
+  "scenario": "Explain why you left early yesterday.",
+  "scenarioNl": "Gisteren was het hectisch op je werk. Vertel waarom je eerder dan normaal vertrok.",
+  "why": "Was closes the clause; ben ik ... gegaan is perfect with zijn and inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat zij haar sleutels vergeten was, belde ze haar buurman.",
+  "english": "Because she had forgotten her keys, she called her neighbour.",
+  "scenario": "Explain why she called a neighbour.",
+  "scenarioNl": "Een kennis stond voor een gesloten deur. Vertel wie ze belde en wat het probleem was.",
+  "why": "Vergeten was is a verb group (zijn with vergeten); belde ze is past inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat het internet weg was, werkten we offline.",
+  "english": "Because the internet was down, we worked offline.",
+  "scenario": "Explain how you worked during an outage.",
+  "scenarioNl": "Het netwerk lag urenlang plat. Vertel wat jullie toen deden en wat de reden was.",
+  "why": "Was closes the clause after weg; werkten we is past inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat ik geen tijd heb, kan ik niet komen.",
+  "english": "Because I do not have time, I cannot come.",
+  "scenario": "Decline an invitation politely.",
+  "scenarioNl": "Een vriend nodigt je uit voor vanavond. Zeg dat het niet lukt en geef je reden.",
+  "why": "Heb closes the clause after geen tijd; kan ik niet komen is inversion with the infinitive at the end.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat zij Nederlands wil leren, volgt ze een cursus.",
+  "english": "Because she wants to learn Dutch, she is taking a course.",
+  "scenario": "Explain why a friend takes a course.",
+  "scenarioNl": "Je vriendin schrijft zich in voor lessen. Vertel wat ze doet en haar reden daarvoor.",
+  "why": "Wil leren is a modal group; volgt ze is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de bus niet kwam, nam ik de trein.",
+  "english": "Because the bus did not come, I took the train.",
+  "scenario": "Tell what happened on your way.",
+  "scenarioNl": "Je vertelt over een vertraagd ochtendtraject. Zeg wat je deed en waarom.",
+  "why": "Kwam closes the past clause after niet; nam ik is past inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat mijn telefoon leeg is, kan ik je niet bellen.",
+  "english": "Because my phone is flat, I cannot call you.",
+  "scenario": "Explain why you cannot ring.",
+  "scenarioNl": "Je wilt iemand opbellen, maar het toestel doet het niet. Zeg waarom het nu niet lukt.",
+  "why": "Is closes the clause after leeg; kan ik je niet bellen is modal inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat hij nieuw is, helpen we hem bij zijn eerste taak.",
+  "english": "Because he is new, we are helping him with his first task.",
+  "scenario": "Explain why the team supports a newcomer.",
+  "scenarioNl": "Er is een nieuwe collega gestart. Vertel hoe het team reageert en waarom.",
+  "why": "Is closes the clause after nieuw; helpen we is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat het project vertraging heeft, plannen we een extra vergadering in.",
+  "english": "Because the project is delayed, we are scheduling an extra meeting.",
+  "scenario": "Explain why you add a meeting.",
+  "scenarioNl": "Een project loopt achter op schema. Vertel wat het team inplant en de reden.",
+  "why": "Heeft closes the clause after vertraging; plannen we ... in is inversion with a separable verb.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat jij de beste uitleg kent, mag jij het team inlichten.",
+  "english": "Because you know the best explanation, you may inform the team.",
+  "scenario": "Tell a colleague why he is the right person to inform the team.",
+  "scenarioNl": "Een collega kan het probleem het best uitleggen. Zeg hem dat hij het team mag inlichten en waarom hij het doet.",
+  "why": "Kent closes the clause; mag jij ... inlichten is modal inversion with a joined infinitive.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de kinderen slapen, zijn we stil.",
+  "english": "Because the children are asleep, we are quiet.",
+  "scenario": "Explain why you keep the noise down.",
+  "scenarioNl": "Het is laat in de avond bij jou thuis. Zeg je gast waarom jullie zacht praten.",
+  "why": "Slapen closes the clause; zijn we is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de gegevens nog niet compleet zijn, kunnen we geen conclusie trekken.",
+  "english": "Because the data is not yet complete, we cannot draw a conclusion.",
+  "scenario": "Explain why a conclusion has to wait.",
+  "scenarioNl": "Een analyse is nog niet af. Zeg je team waarom jullie nog niets kunnen besluiten.",
+  "why": "Zijn closes the clause after niet compleet; kunnen we ... trekken is modal inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat ik verhuisd ben, zoek ik een nieuwe huisarts.",
+  "english": "Because I have moved, I am looking for a new GP.",
+  "scenario": "Explain why you need a new doctor.",
+  "scenarioNl": "Je woont sinds kort in een andere stad. Vertel wat je daardoor zoekt.",
+  "why": "Verhuisd ben is a perfect with zijn; zoek ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat zij vaak reist, heeft ze een grote koffer.",
+  "english": "Because she travels a lot, she has a big suitcase.",
+  "scenario": "Explain why a friend has a big suitcase.",
+  "scenarioNl": "Je vriendin heeft altijd veel bagage. Vertel waarom.",
+  "why": "Reist closes the clause; heeft ze is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat het zondag is, zijn de meeste winkels gesloten.",
+  "english": "Because it is Sunday, most shops are closed.",
+  "scenario": "Explain why you cannot shop today.",
+  "scenarioNl": "Een toerist vindt overal gesloten deuren. Leg uit wat er aan de hand is.",
+  "why": "Is closes the clause after zondag; zijn de meeste winkels gesloten is inversion with a noun subject.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat ik nog niet klaar ben, kan ik je niet helpen.",
+  "english": "Because I am not finished yet, I cannot help you.",
+  "scenario": "Say why you cannot help yet.",
+  "scenarioNl": "Een collega vraagt hulp op een druk moment. Zeg dat het nu niet kan en waarom.",
+  "why": "Ben closes the clause after nog niet klaar; kan ik je niet helpen is modal inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat jullie te laat zijn, beginnen we zonder jullie.",
+  "english": "Because you are late, we are starting without you.",
+  "scenario": "Tell latecomers why you started.",
+  "scenarioNl": "Een groep komt na de afgesproken tijd aan. Zeg wat jullie hebben gedaan en waarom.",
+  "why": "Zijn closes the clause after te laat; beginnen we is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de gebruiker het wachtwoord vergeten is, stuur ik een nieuwe link.",
+  "english": "Because the user has forgotten the password, I am sending a new link.",
+  "scenario": "Explain why you send a link.",
+  "scenarioNl": "Een klant komt niet meer in zijn account. Vertel wat je voor hem doet en waarom.",
+  "why": "Vergeten is is the group; stuur ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat mijn vader jarig is, bel ik hem vanavond op.",
+  "english": "Because it is my father's birthday, I am calling him tonight.",
+  "scenario": "Explain why you will ring your father.",
+  "scenarioNl": "Het is een speciale dag in je familie. Zeg wat je vanavond doet en waarom.",
+  "why": "Is closes the clause after jarig; bel ik ... op is inversion with a separable verb.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik neem de trein omdat de weg afgesloten is.",
+  "english": "I am taking the train because the road is closed.",
+  "scenario": "Explain why you take the train.",
+  "scenarioNl": "Je gaat vandaag niet met de auto. Vertel hoe je reist en wat daarvan de reden is.",
+  "why": "Afgesloten is is the group; the main clause comes first with ordinary Ik neem.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Hij komt niet omdat hij griep heeft.",
+  "english": "He is not coming because he has the flu.",
+  "scenario": "Explain why a colleague is absent.",
+  "scenarioNl": "Een collega ontbreekt op de vergadering. Vertel de reden van zijn afwezigheid.",
+  "why": "Heeft closes the clause after griep; the main clause keeps subject-first order.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Wij sluiten de computer af omdat het onderhoud begint.",
+  "english": "We shut the computer down because maintenance is starting.",
+  "scenario": "Explain why you shut down.",
+  "scenarioNl": "Het systeem moet nu uit. Leg uit wat jullie doen en wat de aanleiding is.",
+  "why": "Begint closes the clause; sluiten ... af splits a separable verb in the main clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Zij heeft een nieuwe baan omdat ze meer wil verdienen.",
+  "english": "She has a new job because she wants to earn more.",
+  "scenario": "Explain why a friend changed jobs.",
+  "scenarioNl": "Je vriendin werkt niet meer bij haar oude werkgever. Vertel waarom.",
+  "why": "Wil verdienen is a modal group at the end of the clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "We kunnen niet beginnen omdat de gegevens ontbreken.",
+  "english": "We cannot start because the data is missing.",
+  "scenario": "Explain why you cannot start.",
+  "scenarioNl": "Een project kan nog niet van start. Zeg wat ervoor nodig is.",
+  "why": "Ontbreken closes the clause; kunnen ... beginnen is a modal with the infinitive at the end.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik bel mijn manager omdat ik een probleem niet kan oplossen.",
+  "english": "I am calling my manager because I cannot solve a problem.",
+  "scenario": "Explain why you call your manager.",
+  "scenarioNl": "Je zit vast met een taak. Vertel aan een collega wie je belt en waarom.",
+  "why": "Niet kan oplossen is a modal group at the end of the clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "De vergadering is uitgesteld omdat de directeur ziek is.",
+  "english": "The meeting has been postponed because the director is ill.",
+  "scenario": "Explain why a meeting moved.",
+  "scenarioNl": "Een afspraak in je agenda vervalt. Zeg een collega wat er gebeurd is.",
+  "why": "Is closes the clause after ziek; is uitgesteld is a perfect passive in the main clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik sta vroeg op omdat de eerste trein om zes uur vertrekt.",
+  "english": "I get up early because the first train leaves at six.",
+  "scenario": "Explain why you get up early.",
+  "scenarioNl": "Je begint je dag veel vroeger dan je collega's. Zeg hoe dat komt.",
+  "why": "Vertrekt closes the clause; sta ... op splits a separable verb in the main clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Hij is naar huis gegaan omdat hij zich niet goed voelde.",
+  "english": "He went home because he did not feel well.",
+  "scenario": "Explain why he left.",
+  "scenarioNl": "Een collega is niet meer op kantoor. Vertel wat er aan de hand was.",
+  "why": "Voelde closes the clause after zich niet goed; is gegaan is perfect with zijn.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik schrijf alles op omdat ik snel vergeet.",
+  "english": "I write everything down because I forget quickly.",
+  "scenario": "Explain your note-taking habit.",
+  "scenarioNl": "Een collega ziet je altijd schrijven. Vertel je methode en waarom je ze volgt.",
+  "why": "Vergeet closes the clause; schrijf ... op splits a separable verb.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ze zet de verwarming aan omdat het in de kamer koud is.",
+  "english": "She turns the heating on because it is cold in the room.",
+  "scenario": "Explain why she turns on the heating.",
+  "scenarioNl": "In het huis wordt het frisjes. Vertel wat je zus doet en waarom.",
+  "why": "Is closes the clause after koud; zet ... aan splits a separable verb.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Wij hebben de afspraak verplaatst omdat de klant niet kon komen.",
+  "english": "We moved the appointment because the customer could not come.",
+  "scenario": "Explain why you moved an appointment.",
+  "scenarioNl": "Een afspraak staat op een andere datum. Zeg de reden aan een collega.",
+  "why": "Kon komen is a past modal group; hebben ... verplaatst is a perfect in the main clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik maak een back-up omdat ik de update morgen wil installeren.",
+  "english": "I am making a backup because I want to install the update tomorrow.",
+  "scenario": "Explain why you make a backup.",
+  "scenarioNl": "Je bereidt een systeemwijziging voor. Leg uit welke stap je nu zet en waarom.",
+  "why": "Wil installeren is a modal group at the end of the clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "De klant is boos omdat zijn bestelling te laat is aangekomen.",
+  "english": "The customer is angry because his order arrived too late.",
+  "scenario": "Explain why the customer is upset.",
+  "scenarioNl": "Een klant belt kwaad naar de winkel. Vertel wat de oorzaak is.",
+  "why": "Is aangekomen is a perfect with zijn and a joined participle.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik help mijn buurman omdat hij een zware doos moet dragen.",
+  "english": "I am helping my neighbour because he has to carry a heavy box.",
+  "scenario": "Explain why you help your neighbour.",
+  "scenarioNl": "Je staat bij de deur van de buurman. Zeg waarom je meehelpt.",
+  "why": "Moet dragen is a modal group at the end of the clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Jij mag de beslissing nemen omdat jij de verantwoordelijke bent.",
+  "english": "You may take the decision because you are the one responsible.",
+  "scenario": "Explain why a colleague decides.",
+  "scenarioNl": "Iemand twijfelt wie moet kiezen. Zeg wie dat is en waarom.",
+  "why": "Bent closes the clause after de verantwoordelijke; mag ... nemen is a modal with the infinitive at the end.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "We bellen de beheerder omdat de toegang geblokkeerd is.",
+  "english": "We are calling the administrator because access is blocked.",
+  "scenario": "Explain why you ring the administrator.",
+  "scenarioNl": "Een account werkt niet meer. Zeg wie je contacteert en waarom.",
+  "why": "Geblokkeerd is is the group at the end of the clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik ga niet mee omdat ik morgen moet werken.",
+  "english": "I am not coming along because I have to work tomorrow.",
+  "scenario": "Decline an outing.",
+  "scenarioNl": "Vrienden willen vanavond samen weg. Zeg dat je niet meegaat en waarom.",
+  "why": "Moet werken is a modal group; ga ... mee splits a separable verb.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Zij leert Frans omdat haar man uit Wallonië komt.",
+  "english": "She is learning French because her husband comes from Wallonia.",
+  "scenario": "Explain why she studies French.",
+  "scenarioNl": "Een buurvrouw volgt Franse les. Vertel haar motief.",
+  "why": "Komt closes the clause after uit Wallonië; the main clause is subject-first.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "De les begint later omdat de leraar in de file staat.",
+  "english": "The lesson starts later because the teacher is stuck in traffic.",
+  "scenario": "Explain why class begins late.",
+  "scenarioNl": "De klas wacht nog. Vertel waarom het uur niet begint.",
+  "why": "Staat closes the clause after in de file; begint later is the main clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik vertrouw haar omdat zij altijd eerlijk is.",
+  "english": "I trust her because she is always honest.",
+  "scenario": "Explain why you trust a colleague.",
+  "scenarioNl": "Iemand vraagt of hij haar mag geloven. Geef je mening en je grond.",
+  "why": "Is closes the clause after altijd eerlijk; the main clause is subject-first.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Hij neemt een paracetamol omdat hij hoofdpijn heeft.",
+  "english": "He is taking a paracetamol because he has a headache.",
+  "scenario": "Explain why he takes a pill.",
+  "scenarioNl": "Een collega drukt zijn hand tegen zijn voorhoofd. Vertel wat hij neemt en waarom.",
+  "why": "Heeft closes the clause after hoofdpijn; the main clause is subject-first.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "We vragen een offerte aan omdat we een nieuwe server nodig hebben.",
+  "english": "We are requesting a quote because we need a new server.",
+  "scenario": "Explain why you request a quote.",
+  "scenarioNl": "Het team moet nieuwe hardware kopen. Leg uit wat jullie aanvragen en waarom.",
+  "why": "Nodig hebben closes the clause; vragen ... aan splits a separable verb.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik controleer de instellingen omdat de applicatie plots is gestopt.",
+  "english": "I am checking the settings because the application suddenly stopped.",
+  "scenario": "Explain why you check the settings.",
+  "scenarioNl": "Een programma is zonder reden uitgevallen. Vertel wat je eerst bekijkt en de reden.",
+  "why": "Is gestopt is the group at the end of the clause; the main clause is subject-first.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik blijf thuis, want ik ben ziek.",
+  "english": "I am staying at home, for I am ill.",
+  "scenario": "Give a reason with a second statement.",
+  "scenarioNl": "Je blijft vandaag in bed. Leg dat uit met een tweede korte zin die de reden geeft.",
+  "why": "Want joins two main clauses: the second keeps normal order, ik ben.",
+  "focus": "want",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "want"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "We nemen de bus, want het regent.",
+  "english": "We are taking the bus, for it is raining.",
+  "scenario": "Give a reason with a second statement.",
+  "scenarioNl": "Je hebt je fiets laten staan. Zeg hoe jullie reizen en de reden in een tweede zin.",
+  "why": "Want joins two main clauses: het regent keeps subject-first order.",
+  "focus": "want",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "want"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik controleer de logs, want de server reageert niet.",
+  "english": "I am checking the logs, for the server is not responding.",
+  "scenario": "Give a reason with a second statement.",
+  "scenarioNl": "Een server reageert niet. Zeg wat je bekijkt en de reden als tweede zin.",
+  "why": "Want is a coordinating word: de server reageert keeps verb-second order.",
+  "focus": "want",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "want"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Zij is moe, want ze heeft weinig geslapen.",
+  "english": "She is tired, for she slept little.",
+  "scenario": "Give a reason with a second statement.",
+  "scenarioNl": "Je vriendin kijkt slaperig. Zeg hoe ze zich voelt en de reden als tweede zin.",
+  "why": "Want joins two main clauses: ze heeft weinig geslapen keeps normal verb-second order.",
+  "focus": "want",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "want"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Hij komt later, want hij moet nog werken.",
+  "english": "He is coming later, for he still has to work.",
+  "scenario": "Give a reason with a second statement.",
+  "scenarioNl": "Een vriend is er nog niet. Zeg wanneer hij komt en geef de reden als tweede zin.",
+  "why": "Want is coordinating: hij moet nog werken keeps verb-second order, modal first.",
+  "focus": "want",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "want"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik bel je terug, want ik zit nu in een vergadering.",
+  "english": "I will call you back, for I am in a meeting now.",
+  "scenario": "Give a reason with a second statement.",
+  "scenarioNl": "Je kunt nu niet praten. Zeg dat je later belt en leg uit waarom.",
+  "why": "Want joins two main clauses: ik zit keeps verb-second order.",
+  "focus": "want",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "want"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "De winkel is dicht, want het is feestdag.",
+  "english": "The shop is closed, for it is a public holiday.",
+  "scenario": "Give a reason with a second statement.",
+  "scenarioNl": "Je staat voor een gesloten deur. Zeg wat je ziet en geef een tweede zin met de reden.",
+  "why": "Want is coordinating: het is feestdag keeps verb-second order.",
+  "focus": "want",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "want"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "We wachten even, want de dokter is nog bezig.",
+  "english": "We are waiting a moment, for the doctor is still busy.",
+  "scenario": "Give a reason with a second statement.",
+  "scenarioNl": "Je zit in de wachtkamer. Zeg wat jullie doen en geef de reden in een tweede zin.",
+  "why": "Want joins two main clauses: de dokter is keeps verb-second order.",
+  "focus": "want",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "want"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat de test is geslaagd, kan de installatie beginnen.",
+  "english": "Because the test has passed, the installation can begin.",
+  "scenario": "Explain why installation may start.",
+  "scenarioNl": "Een test geeft groen licht. Vertel wat nu mag gebeuren en de grond daarvoor.",
+  "why": "Is geslaagd is the group; kan de installatie beginnen is modal inversion with a noun subject.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat ik net verhuisd ben, ken ik de buurt nog niet goed.",
+  "english": "Because I have only just moved, I do not know the neighbourhood well yet.",
+  "scenario": "Explain why you do not know the area.",
+  "scenarioNl": "Een nieuwe buur vraagt je een tip over de straat. Zeg dat je het nog niet weet en waarom.",
+  "why": "Verhuisd ben is a perfect with zijn; ken ik is inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "We gebruiken een andere route omdat er een ongeluk is gebeurd.",
+  "english": "We are taking another route because there has been an accident.",
+  "scenario": "Explain why you changed route.",
+  "scenarioNl": "Een weg is afgesloten. Vertel hoe jullie nu rijden en waarom.",
+  "why": "Er is gebeurd is a perfect with the placeholder er; the main clause is subject-first.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Omdat er geen plaats meer was, moesten we buiten wachten.",
+  "english": "Because there was no room left, we had to wait outside.",
+  "scenario": "Explain why you waited outside.",
+  "scenarioNl": "Een restaurant zat vol. Vertel wat jullie moesten doen en waarom.",
+  "why": "Was closes the clause after er geen plaats meer; moesten we buiten wachten is past modal inversion.",
+  "focus": "fronted",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "fronted"
+  }
+ },
+ {
+  "topic": "omdat",
+  "dutch": "Ik zal later bellen omdat ik nu in een vergadering zit.",
+  "english": "I will call later because I am in a meeting now.",
+  "scenario": "Explain why you will call later.",
+  "scenarioNl": "Je kunt niet praten op dit moment. Zeg wanneer je belt en waarom.",
+  "why": "Zit closes the clause after in een vergadering; zal bellen is a modal group in the main clause.",
+  "focus": "main",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p2-omdat-v1",
+   "focus": "main"
+  }
+ }
+]

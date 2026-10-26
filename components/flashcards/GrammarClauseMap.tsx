@@ -4,7 +4,6 @@ const KIND = {
   hoofdzin: { dutch: "hoofdzin", english: "main clause" },
   bijzin: { dutch: "bijzin", english: "subordinate clause" },
 } as const;
-const SENSE: Record<string, string> = { if: "if", when: "when", whenever: "whenever", "only-when": "only when (not until)" };
 
 /** Highlights the finite verb inside its clause. The clause text and verb are authored, so the match is a literal word, never a guess. */
 function Highlighted({ text, finite }: { text: string; finite: string }) {
@@ -29,10 +28,10 @@ export function GrammarClauseMap({ breakdown }: { breakdown: Breakdown }) {
   return (
     <section className="mt-4 space-y-3" aria-label="Clause map" data-testid="clause-map">
       <h3 className="eyebrow">Clause map</h3>
-      {breakdown.alsSense && (
-        <p className="text-sm" data-testid="als-sense">
-          <span className="rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent">als = {SENSE[breakdown.alsSense.sense] ?? breakdown.alsSense.sense}</span>{" "}
-          <span className="text-muted">{breakdown.alsSense.why}</span>
+      {breakdown.sense && (
+        <p className="text-sm" data-testid="topic-sense">
+          <span className="rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent">{breakdown.sense.label}</span>{" "}
+          <span className="text-muted">{breakdown.sense.why}</span>
         </p>
       )}
       <div className="grid gap-2">

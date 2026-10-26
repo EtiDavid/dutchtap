@@ -15,7 +15,7 @@ test.describe('ALS sentence analysis', () => {
       await expect(map.locator('[data-clause="bijzin"] mark')).toHaveText('uitvalt');
       await expect(map.locator('[data-clause="hoofdzin"]')).toContainText('bel ik mijn collega');
       await expect(map.locator('[data-clause="hoofdzin"] mark')).toHaveText('bel');
-      await expect(page.getByTestId('als-sense')).toContainText('als = if');
+      await expect(page.getByTestId('topic-sense')).toContainText('als = if');
       // Two different mistakes, each with its own reason, and the main-clause-first version.
       await expect(page.getByTestId('breakdown').getByText('Als de server valt uit, bel ik mijn collega.')).toBeVisible();
       await expect(page.getByTestId('extra-mistake')).toHaveCount(1);
@@ -34,7 +34,7 @@ test.describe('ALS sentence analysis', () => {
   test('a linked Everyday sentence gets the ALS analysis, not a regex guess, and keeps its own breakdown elsewhere', async ({ page }) => {
     await page.goto('/sentences/pat-als-reuse-career-priorities-051');
     await expect(page.getByTestId('clause-map').locator('[data-clause="bijzin"]')).toContainText('Pas als de toegang werkt');
-    await expect(page.getByTestId('als-sense')).toContainText('only when');
+    await expect(page.getByTestId('topic-sense')).toContainText('only when');
     await page.goto('/sentences/career-priorities-051');
     await expect(page.getByTestId('clause-map')).toHaveCount(0); // the original card is unchanged
   });

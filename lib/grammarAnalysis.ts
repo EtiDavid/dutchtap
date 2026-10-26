@@ -1,4 +1,5 @@
 import analysis from "@/data/grammar-als-analysis.json";
+import omdatAnalysis from "@/data/grammar-omdat-analysis.json";
 import type { Breakdown } from "@/lib/grammarBreakdowns";
 
 /**
@@ -12,8 +13,13 @@ export type AnalysisClause = {
 };
 export type AnalysisRecord = {
   status: "ai-editorial-checked";
-  alsSense: "if" | "when" | "whenever" | "only-when";
-  alsSenseWhy: string;
+  /** Als only: which meaning of als the sentence uses. */
+  alsSense?: "if" | "when" | "whenever" | "only-when";
+  alsSenseWhy?: string;
+  /** Other topics: the meaning or function of the key word in this sentence (for example "omdat = because"). */
+  sense?: { label: string; why: string };
+  /** Default "subordinate". "coordinate" marks a contrast sentence (for example want) made of two main clauses. */
+  pattern?: "subordinate" | "coordinate";
   situationNl?: string;
   /** English help for the situation, written where the original English scenario gave the answer away. */
   situationEn?: string;
@@ -29,15 +35,19 @@ export type AnalysisRecord = {
   openQuestions?: string[];
 };
 
-export const ALS_ANALYSIS = analysis.cards as Record<string, AnalysisRecord>;
-export const analysisFor = (cardId: string): AnalysisRecord | undefined => ALS_ANALYSIS[cardId];
+const SENSE: Record<string, string> = { if: "if", when: "when", whenever: "whenever", "only-when": "only when (not until)" };
+export const ALS_ANALYSIS = analysis.cards as unknown as Record<string, AnalysisRecord>;
+export const OMDAT_ANALYSIS = omdatAnalysis.cards as unknown as Record<string, AnalysisRecord>;
+/** Every authored sentence analysis, whatever its topic. Ids are unique across topics. */
+export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS };
+export const analysisFor = (cardId: string): AnalysisRecord | undefined => GRAMMAR_ANALYSIS[cardId];
 /** A Dutch-first situation for cards that were written before Dutch prompts existed (including linked Everyday/Work sentences). */
-export const situationEnFor = (cardId: string): string | undefined => ALS_ANALYSIS[cardId]?.situationEn;
-export const situationNlFor = (cardId: string): string | undefined => ALS_ANALYSIS[cardId]?.situationNl;
+export const situationEnFor = (cardId: string): string | undefined => GRAMMAR_ANALYSIS[cardId]?.situationEn;
+export const situationNlFor = (cardId: string): string | undefined => GRAMMAR_ANALYSIS[cardId]?.situationNl;
 
 /** The analysis in the shape the existing sentence-breakdown view already renders, plus the extra authored fields. */
 export function analysisBreakdown(cardId: string): Breakdown | undefined {
-  const record = ALS_ANALYSIS[cardId];
+  const record = GRAMMAR_ANALYSIS[cardId];
   if (!record) return undefined;
   const [first, ...rest] = record.mistakes;
   return {
@@ -50,6 +60,6 @@ export function analysisBreakdown(cardId: string): Breakdown | undefined {
     extraMistakes: rest,
     contrast: record.contrast,
     clauses: record.clauses,
-    alsSense: { sense: record.alsSense, why: record.alsSenseWhy },
+    sense: record.sense ?? (record.alsSense ? { label: `als = ${SENSE[record.alsSense]}`, why: record.alsSenseWhy ?? "" } : undefined),
   };
 }

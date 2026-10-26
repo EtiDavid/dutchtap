@@ -27,8 +27,8 @@ The learner wants:
 As inspected on 26 October 2026:
 - Repository: EtiDavid/dutchtap.
 - Work-in-progress branch: feat/grammar-mastery-phase1. It contains the existing Grammar Mastery implementation and audit docs. Preserve it.
-- Previous PR #15: **CLOSED WITHOUT MERGE** (its branch/content still exists). Do not assume the PR is open, merged, or deployable. Decide whether a new branch/PR should supersede it based on a fresh GitHub fetch.
-- Existing production/main does not have the full Grammar Mastery implementation. Vercel Git deployments are disabled via vercel.json; prod deploy workflow triggers only on a pushed version tag pointing to a main ancestor.
+- Previous PR #15: **MERGED INTO MAIN on 26 October 2026** (merge commit 892b5303429b1f945fbda40539fa7a76396c4880). This merged the *partial* Grammar Mastery foundation, NOT the full P0–P7 plan and NOT a production release. The feature branch has additional handover-only commits not yet in main. Re-check refs because Git can change.
+- Current main already includes the **partial** Grammar Mastery foundation from PR #15, but it does NOT meet the full Grammar Mastery plan and does not automatically update production. Vercel Git deployments are disabled via vercel.json; prod deploy workflow triggers only on a pushed version tag pointing to a main ancestor.
 - Master plan is FROZEN. Its original header says "NOT STARTED" because it was authored before implementation; do not change that baseline retrospectively. The living truth is docs/GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md and docs/GRAMMAR-MASTERY-WORKLOG.md.
 - **No direct push to main, merge, version tag, Vercel deployment, destructive migration, removal of source progress or production DB writes without explicit owner approval.** Changes may be committed to a clean feature/work branch, with reviewed PRs.
 
@@ -47,8 +47,8 @@ git show-ref --verify refs/remotes/origin/feat/grammar-mastery-phase1
 ~~~
 
 - If worktree is dirty: preserve EVERYTHING and inspect. Do not use reset --hard, clean -fd, force-push or overwrite another agent's changes.
-- Create a dedicated worktree/branch from the newest surviving feature-branch commit (e.g. feat/grammar-mastery-completion). Do not accidentally start from main and lose the 48-commit PR #15 foundation.
-- Check current PRs/branch state: #15 was CLOSED unmerged when this handover was written, and could change after that. Never rely on this snapshot alone.
+- Create a dedicated worktree/branch with all the partial Grammar Mastery implementation and new teaching/handover documentation (e.g. feat/grammar-mastery-completion). PR #15 is ALREADY on main; the feature branch is only **5 documentation commits ahead and one merge commit behind** main at this snapshot. Prefer merging/reconciling the small documentation-only delta into a fresh branch based on current main, or open a separate documentation PR and continue from it; do not cherry-pick all 48 already-merged feature commits again.
+- Check current PRs/branch state: #15 merged at 2026-10-26 17:35 UTC, SHA 892b5303. Re-check on every run; do not create duplicate implementation PRs from commits already on main.
 - Read package.json (Next.js 16 / React 19); read AGENTS.md; **read the relevant installed node_modules/next/dist/docs/** before modifying Next.js code, per repo convention.
 - Read these documents COMPLETELY: master plan, this handover, exemplars, acceptance audit, work log, architecture, stage-1 handover, French handover, grammar reuse decision, deployment, learning first-release notes. Inspect all actual files before editing them.
 - Baseline snapshot: command outputs, exact SHA, current CI, counts, review debt, known security advisories. Add a dated entry to the work log at the start of your first implementation session.
@@ -337,7 +337,7 @@ NEXT SMALLEST IMPLEMENTATION STEP:
 
 **P1 / A03 is the first critical blocker.**
 
-Work in a clean feature branch/worktree derived from the existing Grammar Mastery branch. Begin with 10 diverse ALS parents: fronted single finite, main-first conditional, habitual past, perfect/end-cluster, modal, separable, negative, imperative edge case, complex IT example, and linked Core alias. Choose actual published IDs by inspecting the source rather than inventing them. Define *reviewable* clause/constituent analysis schema and runtime display aligned with the gold-standard teaching examples, then author thoroughly individual analyses for these ten and add tests verifying literal spans, finite roles, specific why/error notes, scenario fidelity and UI rendering.
+Work in a clean feature branch/worktree based on current main, incorporating the handover-only documentation delta from feat/grammar-mastery-phase1 without replaying its already-merged implementation history. Begin with 10 diverse ALS parents: fronted single finite, main-first conditional, habitual past, perfect/end-cluster, modal, separable, negative, imperative edge case, complex IT example, and linked Core alias. Choose actual published IDs by inspecting the source rather than inventing them. Define *reviewable* clause/constituent analysis schema and runtime display aligned with the gold-standard teaching examples, then author thoroughly individual analyses for these ten and add tests verifying literal spans, finite roles, specific why/error notes, scenario fidelity and UI rendering.
 
 Only after these ten pass realistic pedagogical and structural checks, extend to all 100 ALS parents by editorial batches of 10–20; never auto-fill with uniform why strings. Check any saved session/alias compatibility. Continue through other approved P1 items, then progress to P2–P7.
 

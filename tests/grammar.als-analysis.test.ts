@@ -134,3 +134,33 @@ describe('ALS per-sentence analysis (hand-authored, reviewed spans)', () => {
     expect(alsCards.length).toBe(100);
   });
 });
+
+describe('ALS coverage', () => {
+  it('has an authored analysis for every one of the 100 ALS base cards, and no analysis for any other card', () => {
+    const missing = alsCards.filter(c => !ALS_ANALYSIS[c.id]).map(c => c.id);
+    expect(missing).toEqual([]);
+    expect(ids.filter(id => !alsCards.some(c => c.id === id))).toEqual([]);
+    expect(ids).toHaveLength(100);
+  });
+  it('covers the planned variety: fronted and main-first, imperative, modal, perfect cluster, separable, negation, past habit, er, pas als', () => {
+    const records = ids.map(id => ({ id, record: analysisFor(id)!, text: cardFor('nl', id)!.text }));
+    const some = (predicate: (r: (typeof records)[number]) => boolean) => records.filter(predicate).length;
+    expect(some(r => r.record.clauses[0].kind === 'bijzin')).toBeGreaterThanOrEqual(30);
+    expect(some(r => r.record.clauses[0].kind === 'hoofdzin')).toBeGreaterThanOrEqual(30);
+    expect(some(r => r.record.clauses.some(c => c.subject.startsWith('(')))).toBeGreaterThanOrEqual(5); // imperatives
+    expect(some(r => r.record.parts.some(p => /modal/.test(p.label)))).toBeGreaterThanOrEqual(5);
+    expect(some(r => r.record.parts.some(p => /past participle/.test(p.label)))).toBeGreaterThanOrEqual(5);
+    expect(some(r => r.record.parts.some(p => /separable|joined/.test(p.label)))).toBeGreaterThanOrEqual(25);
+    expect(some(r => r.record.parts.some(p => /negat|geen|niet/.test(p.label + p.text)))).toBeGreaterThanOrEqual(10);
+    expect(some(r => r.record.alsSense === 'whenever')).toBeGreaterThanOrEqual(10);
+    expect(some(r => r.record.alsSense === 'only-when')).toBeGreaterThanOrEqual(1);
+    expect(some(r => /\ber\b/.test(r.text.toLowerCase()))).toBeGreaterThanOrEqual(1);
+  });
+  it('gives every ALS card a Dutch-first situation that does not leak a conjunction', () => {
+    for (const card of alsCards) {
+      const lcard = cardFor('nl', card.id)!;
+      expect(lcard.scenarioNl, card.id).toBeTruthy();
+      expect(lcard.scenarioNl!, card.id).not.toMatch(/\b(als|wanneer|zodra|toen)\b/i);
+    }
+  });
+});

@@ -6597,6 +6597,79 @@
         "note": "Main clause first: subject-first 'Ik werk ... bij'."
       }
     },
+    "pat-als-reuse-career-priorities-050": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "A trade-off that only takes effect if one task gets priority: 'if'.",
+      "situationNl": "Je overleg gaat over twee taken die niet tegelijk kunnen. Leg uit wat er met de tweede gebeurt bij voorrang voor de eerste.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als dit voorrang krijgt",
+          "subject": "dit",
+          "finite": "krijgt",
+          "why": "'Voorrang krijgen' (to get priority) puts the noun 'voorrang' before the finite verb 'krijgt'. 'Dit' (this) is a pronoun pointing at the task just discussed."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "schuift de andere taak op",
+          "subject": "de andere taak",
+          "finite": "schuift",
+          "why": "The als-clause is position one, so 'schuift' comes before its subject 'de andere taak', here a full noun phrase. Opschuiven (to move back, to shift along) is separable: the particle 'op' ends the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "dit"
+        },
+        {
+          "label": "object",
+          "text": "voorrang"
+        },
+        {
+          "label": "finite verb",
+          "text": "krijgt"
+        },
+        {
+          "label": "finite verb",
+          "text": "schuift"
+        },
+        {
+          "label": "subject",
+          "text": "de andere taak"
+        },
+        {
+          "label": "separable particle",
+          "text": "op"
+        }
+      ],
+      "meaning": "You say that giving priority to one item pushes the other task back.",
+      "order": "The dependent clause ends with 'krijgt' after the noun 'voorrang'. As position one of the sentence, it puts the main verb 'schuift' ahead of the subject 'de andere taak'. Inversion works the same with a noun phrase as with a pronoun. The particle 'op' closes the sentence.",
+      "forms": "voorrang krijgen = to get priority. opschuiven = op + schuiven: de taak schuift op. 'De andere taak' (the other task): andere is the adjective before the de-word 'taak'. Third person singular takes -t: schuift.",
+      "compare": "English 'moves back' uses 'back'; Dutch 'opschuiven' uses 'op' for moving along or up in a queue. English keeps 'the other task moves' in subject-first order; Dutch inverts to 'schuift de andere taak op'.",
+      "mistakes": [
+        {
+          "wrong": "Als dit voorrang krijgt, de andere taak schuift op.",
+          "right": "Als dit voorrang krijgt, schuift de andere taak op.",
+          "why": "The first clause is position one, so the main verb must be second, even before a noun phrase subject."
+        },
+        {
+          "wrong": "Als dit krijgt voorrang, schuift de andere taak op.",
+          "right": "Als dit voorrang krijgt, schuift de andere taak op.",
+          "why": "In the dependent clause 'krijgt' goes behind 'voorrang'."
+        }
+      ],
+      "contrast": {
+        "dutch": "De andere taak schuift op als dit voorrang krijgt.",
+        "english": "The other task moves back if this gets priority.",
+        "note": "Main clause first: the subject 'De andere taak' comes first, so 'schuift' is simply second, and the particle ends the main clause."
+      }
+    },
     "pat-als-reuse-career-priorities-051": {
       "status": "ai-editorial-checked",
       "alsSense": "only-when",
@@ -6665,6 +6738,533 @@
         "note": "Main clause first, with pas moved next to the part it limits: 'pas met de controle'. No inversion because We is first."
       }
     },
+    "pat-als-reuse-career-problems-032": {
+      "status": "ai-editorial-checked",
+      "alsSense": "whenever",
+      "alsSenseWhy": "It names the repeated trigger of a fault (every time you open an attachment), so 'whenever'.",
+      "situationNl": "Een collega van de helpdesk vraagt wat er precies misgaat met je computer. Beschrijf wat telkens hetzelfde gebeurt.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als ik een bijlage open",
+          "subject": "ik",
+          "finite": "open",
+          "why": "'Een bijlage openen' (to open an attachment): the object 'een bijlage' stands before the finite verb 'open', which closes the clause. Here 'open' is the first-person verb form, not the adjective."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "loopt het programma vast",
+          "subject": "het programma",
+          "finite": "loopt",
+          "why": "The als-clause is position one, so 'loopt' comes before 'het programma'. Vastlopen (to freeze, to hang) is separable, so the particle 'vast' ends the clause."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "object",
+          "text": "een bijlage"
+        },
+        {
+          "label": "finite verb",
+          "text": "open"
+        },
+        {
+          "label": "finite verb",
+          "text": "loopt"
+        },
+        {
+          "label": "subject",
+          "text": "het programma"
+        },
+        {
+          "label": "separable particle",
+          "text": "vast"
+        }
+      ],
+      "meaning": "You describe a repeatable fault: each time you open an attachment, the program freezes.",
+      "order": "In the dependent clause the object comes before the verb: een bijlage open. The clause as a whole fills position one, so the main verb 'loopt' precedes its subject 'het programma', and the particle 'vast' is last. Naming the trigger first and the effect second also mirrors the real order of events.",
+      "forms": "openen: ik open (the -e- drops in the first person). vastlopen = vast + lopen: het programma loopt vast; perfect: het programma is vastgelopen (with zijn). Programma is a het-word.",
+      "compare": "English 'freezes' is a single verb; Dutch uses 'vastlopen' with a particle at the end. English 'when I open an attachment' puts 'open' before its object; Dutch puts the verb after it.",
+      "mistakes": [
+        {
+          "wrong": "Als ik open een bijlage, loopt het programma vast.",
+          "right": "Als ik een bijlage open, loopt het programma vast.",
+          "why": "After als the finite verb goes behind the object."
+        },
+        {
+          "wrong": "Als ik een bijlage open, het programma loopt vast.",
+          "right": "Als ik een bijlage open, loopt het programma vast.",
+          "why": "The dependent clause fills position one, so the finite verb 'loopt' has to come second."
+        }
+      ],
+      "contrast": {
+        "dutch": "Het programma loopt vast als ik een bijlage open.",
+        "english": "The program freezes when I open an attachment.",
+        "note": "Main clause first: the subject 'Het programma' opens the sentence, so 'loopt' is second and 'vast' ends the main clause."
+      }
+    },
+    "pat-als-reuse-career-remote-018": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "The first link may or may not work: a real condition, so 'if'.",
+      "situationNl": "Je organiseert een online gesprek met een collega. Zeg dat je een vervangende verbinding doorgeeft voor het geval de eerste faalt.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Ik stuur een nieuwe koppeling",
+          "subject": "Ik",
+          "finite": "stuur",
+          "why": "Ik is first, so 'stuur' is second. 'Een nieuwe koppeling' is the object; 'koppeling' is a de-word, so the adjective takes -e: nieuwe."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als deze niet werkt",
+          "subject": "deze",
+          "finite": "werkt",
+          "why": "'Deze' (this one) refers back to the earlier link, a de-word. 'Niet' stands before the finite verb 'werkt', which ends the sentence."
+        }
+      ],
+      "parts": [
+        {
+          "label": "subject",
+          "text": "Ik"
+        },
+        {
+          "label": "finite verb",
+          "text": "stuur"
+        },
+        {
+          "label": "object",
+          "text": "een nieuwe koppeling"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject (pronoun)",
+          "text": "deze"
+        },
+        {
+          "label": "negation",
+          "text": "niet"
+        },
+        {
+          "label": "finite verb",
+          "text": "werkt"
+        }
+      ],
+      "meaning": "You offer a replacement link in case the current one fails.",
+      "order": "The main clause comes first and starts with its subject: no inversion. The als-clause that follows is short: subject, the negation 'niet', and the finite verb 'werkt' as the last word.",
+      "forms": "sturen: ik stuur. werken (here: to function): deze werkt. 'Koppeling' is the Dutch word for link, and is a de-word, which makes the demonstrative 'deze' and the adjective form 'nieuwe' necessary. Het-words would give 'dit' and 'nieuw'.",
+      "compare": "English 'if this one doesn't work' contracts the negation and uses do-support. Dutch simply puts 'niet' before the verb. English 'send a new link' is the same word order in Dutch.",
+      "mistakes": [
+        {
+          "wrong": "Ik stuur een nieuwe koppeling als deze werkt niet.",
+          "right": "Ik stuur een nieuwe koppeling als deze niet werkt.",
+          "why": "In the dependent clause the negation comes before the finite verb, which closes it."
+        },
+        {
+          "wrong": "Ik stuur een nieuw koppeling als deze niet werkt.",
+          "right": "Ik stuur een nieuwe koppeling als deze niet werkt.",
+          "why": "Koppeling is a de-word, so the adjective after 'een' needs -e: nieuwe."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als deze niet werkt, stuur ik een nieuwe koppeling.",
+        "english": "If this one does not work, I will send a new link.",
+        "note": "Condition first: the main clause inverts to 'stuur ik een nieuwe koppeling', and 'deze' now points forward to a link that has not yet been named."
+      }
+    },
+    "pat-als-reuse-career-remote-043": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "It is not certain that the colleague needs extra time: 'if'.",
+      "situationNl": "Je vraagt een collega om een antwoord en geeft een redelijke termijn. Vraag hem je te verwittigen bij een tekort aan tijd.",
+      "clauses": [
+        {
+          "kind": "hoofdzin",
+          "text": "Laat mij weten",
+          "subject": "(jij, niet uitgesproken)",
+          "finite": "Laat",
+          "why": "An imperative: 'laat' comes first and the subject is unspoken. The infinitive 'weten' closes the main clause, with 'mij' in between."
+        },
+        {
+          "kind": "bijzin",
+          "text": "als je meer tijd nodig hebt",
+          "subject": "je",
+          "finite": "hebt",
+          "why": "'Meer tijd nodig hebben' (to need more time): 'meer tijd' and 'nodig' stand before the finite verb 'hebt', which closes the sentence."
+        }
+      ],
+      "parts": [
+        {
+          "label": "imperative verb",
+          "text": "Laat"
+        },
+        {
+          "label": "indirect object (stressed)",
+          "text": "mij"
+        },
+        {
+          "label": "infinitive",
+          "text": "weten"
+        },
+        {
+          "label": "conjunction",
+          "text": "als"
+        },
+        {
+          "label": "subject",
+          "text": "je"
+        },
+        {
+          "label": "object",
+          "text": "meer tijd"
+        },
+        {
+          "label": "predicate",
+          "text": "nodig"
+        },
+        {
+          "label": "finite verb",
+          "text": "hebt"
+        }
+      ],
+      "meaning": "You ask a colleague to tell you if they need more time.",
+      "order": "The request is short and keeps its verb first; 'weten' waits at the end of that part. The dependent clause then collects 'meer tijd nodig' before 'hebt'. The two clauses are independent in their word order and joined by als.",
+      "forms": "laten weten: laat mij weten (stressed 'mij', compared with unstressed 'me'). Tijd is a de-word without an article here. 'Meer' = more. Je hebt with -t because je is second person singular.",
+      "compare": "English 'Let me know if you need more time' puts 'need' right after 'you'. Dutch builds 'nodig hebben' with 'hebt' last. English contains 'know' next to 'me'; Dutch 'weten' is the last word of the first clause.",
+      "mistakes": [
+        {
+          "wrong": "Laat mij weten als je hebt meer tijd nodig.",
+          "right": "Laat mij weten als je meer tijd nodig hebt.",
+          "why": "In the dependent clause the finite verb 'hebt' goes behind the rest of the verb phrase."
+        },
+        {
+          "wrong": "Laat weten mij als je meer tijd nodig hebt.",
+          "right": "Laat mij weten als je meer tijd nodig hebt.",
+          "why": "The infinitive 'weten' stays at the end of its clause, after the object 'mij'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Als je meer tijd nodig hebt, laat het mij weten.",
+        "english": "If you need more time, let me know.",
+        "note": "Fronted als-clause: the request keeps its verb first and often adds 'het': 'laat het mij weten'."
+      }
+    },
+    "pat-als-reuse-career-remote-049": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "The colleague may or may not be the right contact: 'if'.",
+      "situationNl": "Je schrijft een collega met een vraag, maar je weet niet zeker of hij de juiste persoon is. Vraag hem vriendelijk om je door te sturen naar de juiste persoon.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als je niet de juiste contactpersoon bent",
+          "subject": "je",
+          "finite": "bent",
+          "why": "Here 'niet' stands before the whole noun phrase 'de juiste contactpersoon' because it denies that specific identity; the finite verb 'bent' closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "verwijs me dan door",
+          "subject": "(jij, niet uitgesproken)",
+          "finite": "verwijs",
+          "why": "An instruction: the imperative 'verwijs' comes first. 'Dan' (then) picks up the condition. Doorverwijzen (to refer on) is separable, so the particle 'door' is last."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "je"
+        },
+        {
+          "label": "negation",
+          "text": "niet"
+        },
+        {
+          "label": "predicate noun phrase",
+          "text": "de juiste contactpersoon"
+        },
+        {
+          "label": "finite verb",
+          "text": "bent"
+        },
+        {
+          "label": "imperative verb",
+          "text": "verwijs"
+        },
+        {
+          "label": "object",
+          "text": "me"
+        },
+        {
+          "label": "particle (dan)",
+          "text": "dan"
+        },
+        {
+          "label": "separable particle",
+          "text": "door"
+        }
+      ],
+      "meaning": "You politely ask a colleague to send you on to the right person if they are not the right contact.",
+      "order": "The dependent clause has a predicate noun phrase 'de juiste contactpersoon' before the finite verb 'bent'. Because a clause stands in front, the instruction usually gains 'dan'. The imperative 'verwijs' remains first in its part and the particle 'door' closes it.",
+      "forms": "doorverwijzen = door + verwijzen: verwijs ... door (imperative). zijn: je bent. 'De juiste contactpersoon' is a de-word with -e on the adjective. 'Niet' before a definite noun phrase negates the identity, not the verb.",
+      "compare": "English 'refer me on' places 'on' directly after the pronoun; Dutch ends with 'door'. English 'If you are not the right contact person' puts 'are' second; Dutch puts 'bent' last.",
+      "mistakes": [
+        {
+          "wrong": "Als je niet bent de juiste contactpersoon, verwijs me dan door.",
+          "right": "Als je niet de juiste contactpersoon bent, verwijs me dan door.",
+          "why": "'Bent' goes behind the predicate noun phrase in the dependent clause."
+        },
+        {
+          "wrong": "Als je niet de juiste contactpersoon bent, doorverwijs me dan.",
+          "right": "Als je niet de juiste contactpersoon bent, verwijs me dan door.",
+          "why": "A separable verb splits in an imperative: 'verwijs' first, 'door' last."
+        }
+      ],
+      "contrast": {
+        "dutch": "Verwijs me door als je niet de juiste contactpersoon bent.",
+        "english": "Refer me on if you are not the right contact person.",
+        "note": "Instruction first: the imperative opens the sentence and the particle 'door' stands before the als-clause. 'Dan' is dropped because no fronted condition needs picking up."
+      }
+    },
+    "pat-als-reuse-career-remote-060": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "A backup arrangement for the case that you cannot be reached: 'if'.",
+      "situationNl": "Je werkt op afstand met je team en wilt iedereen gerust stellen. Leg uit wie jouw taken opvangt bij jouw afwezigheid.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als ik niet bereikbaar ben",
+          "subject": "ik",
+          "finite": "ben",
+          "why": "'Bereikbaar zijn' (to be reachable) with the negation 'niet' in front of the predicate. The finite verb 'ben' closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "neemt mijn collega de opvolging over",
+          "subject": "mijn collega",
+          "finite": "neemt",
+          "why": "The als-clause is position one, so 'neemt' precedes the noun-phrase subject 'mijn collega'. Overnemen (to take over) is separable, so the particle 'over' ends the clause behind the object 'de opvolging'."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "ik"
+        },
+        {
+          "label": "negation",
+          "text": "niet"
+        },
+        {
+          "label": "predicate",
+          "text": "bereikbaar"
+        },
+        {
+          "label": "finite verb",
+          "text": "ben"
+        },
+        {
+          "label": "finite verb",
+          "text": "neemt"
+        },
+        {
+          "label": "subject",
+          "text": "mijn collega"
+        },
+        {
+          "label": "object",
+          "text": "de opvolging"
+        },
+        {
+          "label": "separable particle",
+          "text": "over"
+        }
+      ],
+      "meaning": "You name your backup: if you cannot be reached, a colleague takes over the follow-up.",
+      "order": "'Niet bereikbaar ben' puts the negation and predicate before 'ben'. The clause is first constituent, so the main verb 'neemt' comes before the subject 'mijn collega'. The object 'de opvolging' and the particle 'over' fill the end.",
+      "forms": "overnemen: de collega neemt over, perfect: heeft overgenomen. zijn: ik ben. 'Opvolging' = follow-up, a de-word. 'Bereikbaar' is an adjective and does not change after 'ben'.",
+      "compare": "English 'takes over the follow-up' has 'over' next to the verb; Dutch has it last. English 'If I am unreachable' puts 'am' before 'unreachable'; Dutch puts 'ben' last.",
+      "mistakes": [
+        {
+          "wrong": "Als ik niet ben bereikbaar, neemt mijn collega de opvolging over.",
+          "right": "Als ik niet bereikbaar ben, neemt mijn collega de opvolging over.",
+          "why": "'Ik ben bereikbaar' is main-clause order. After als the finite verb goes last."
+        },
+        {
+          "wrong": "Als ik niet bereikbaar ben, mijn collega neemt de opvolging over.",
+          "right": "Als ik niet bereikbaar ben, neemt mijn collega de opvolging over.",
+          "why": "The fronted dependent clause counts as the first constituent, so the finite verb comes before the subject."
+        }
+      ],
+      "contrast": {
+        "dutch": "Mijn collega neemt de opvolging over als ik niet bereikbaar ben.",
+        "english": "My colleague takes over the follow-up if I am not reachable.",
+        "note": "Main clause first: the noun phrase 'Mijn collega' opens the sentence, so 'neemt' is simply second."
+      }
+    },
+    "pat-als-reuse-career-support-057": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "The problem may or may not return, so a real condition: 'if'.",
+      "situationNl": "Je helpt een klant en wilt voorkomen dat hij een nieuw dossier opent. Zeg hem wat hij moet doen bij een herhaling van de klacht.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als het probleem terugkomt",
+          "subject": "het probleem",
+          "finite": "terugkomt",
+          "why": "Terugkomen (to come back) is separable: 'Het probleem komt terug.' In the dependent clause its parts join into 'terugkomt'."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "verwijs dan naar dit ticket",
+          "subject": "(u of jij, niet uitgesproken)",
+          "finite": "verwijs",
+          "why": "An instruction: the imperative 'verwijs' begins the clause after the fronted als-clause, usually with 'dan' (then). Verwijzen takes 'naar': refer to 'dit ticket'. The imperative form is the same for a formal and an informal reader."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "het probleem"
+        },
+        {
+          "label": "finite verb (joined)",
+          "text": "terugkomt"
+        },
+        {
+          "label": "imperative verb",
+          "text": "verwijs"
+        },
+        {
+          "label": "particle (dan)",
+          "text": "dan"
+        },
+        {
+          "label": "prepositional phrase",
+          "text": "naar dit ticket"
+        }
+      ],
+      "meaning": "You tell a customer to refer to this ticket if the same problem occurs again.",
+      "order": "The condition ends with the joined verb 'terugkomt'. The instruction that follows starts with its verb 'verwijs', and the little word 'dan' links it to the condition. 'Naar dit ticket' closes the sentence.",
+      "forms": "verwijzen naar = to refer to: the preposition 'naar' is part of the verb. 'Dit ticket': ticket is a het-word, so 'dit' (this) rather than 'deze'. terugkomen: terugkomt in a dependent clause.",
+      "compare": "English 'refer to this ticket' uses 'to'; Dutch uses 'naar'. English 'comes back' stays in two words; Dutch writes 'terugkomt' as one word at the end of the als-clause.",
+      "mistakes": [
+        {
+          "wrong": "Als het probleem komt terug, verwijs dan naar dit ticket.",
+          "right": "Als het probleem terugkomt, verwijs dan naar dit ticket.",
+          "why": "'Komt terug' is main-clause order. After als the verb and particle join."
+        },
+        {
+          "wrong": "Als het probleem terugkomt, verwijs dan aan dit ticket.",
+          "right": "Als het probleem terugkomt, verwijs dan naar dit ticket.",
+          "why": "Verwijzen takes the preposition 'naar', not 'aan'."
+        }
+      ],
+      "contrast": {
+        "dutch": "Verwijs naar dit ticket als het probleem terugkomt.",
+        "english": "Refer to this ticket if the problem comes back.",
+        "note": "Instruction first: the imperative opens the sentence, and the als-clause follows with 'terugkomt' last. 'Dan' is not needed here."
+      }
+    },
+    "pat-als-reuse-career-troubleshooting-024": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "Whether there is unsaved work is something you have to check, so a condition: 'if'.",
+      "situationNl": "Je helpt een collega bij een storing en jullie willen niets verliezen. Zeg wat jullie doen bij werk dat nog niet bewaard is.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als er niet-opgeslagen werk is",
+          "subject": "niet-opgeslagen werk",
+          "finite": "is",
+          "why": "'Er is ...' (there is) introduces the indefinite subject 'niet-opgeslagen werk' (unsaved work). 'Er' comes right after the conjunction, the subject follows, and 'is' closes the clause."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "wachten we nog even",
+          "subject": "we",
+          "finite": "wachten",
+          "why": "The als-clause is position one, so 'wachten' precedes 'we'. 'Nog even' means a little longer."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "placeholder subject",
+          "text": "er"
+        },
+        {
+          "label": "subject",
+          "text": "niet-opgeslagen werk"
+        },
+        {
+          "label": "finite verb",
+          "text": "is"
+        },
+        {
+          "label": "finite verb",
+          "text": "wachten"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "adverbial phrase",
+          "text": "nog even"
+        }
+      ],
+      "meaning": "You say that if there is still unsaved work, the team waits a little longer.",
+      "order": "In the dependent clause 'er' stands directly after 'als' and the real subject follows; the finite verb 'is' is last. The whole clause takes position one, so 'wachten' is second and 'we' third.",
+      "forms": "'Niet-opgeslagen' is a hyphenated adjective built from 'niet' and the participle 'opgeslagen' (of opslaan). Werk has no article because it is uncountable. wachten: wij wachten. 'Nog even' = for a little while longer.",
+      "compare": "English 'if there is unsaved work' keeps 'is' before the subject; Dutch puts the subject first and 'is' last. English 'we wait a little longer' keeps subject-first order; Dutch inverts after the fronted clause.",
+      "mistakes": [
+        {
+          "wrong": "Als er is niet-opgeslagen werk, wachten we nog even.",
+          "right": "Als er niet-opgeslagen werk is, wachten we nog even.",
+          "why": "In the dependent clause the subject comes before the finite verb 'is', which closes the clause."
+        },
+        {
+          "wrong": "Als er niet-opgeslagen werk is, we wachten nog even.",
+          "right": "Als er niet-opgeslagen werk is, wachten we nog even.",
+          "why": "The first clause fills position one, so the finite verb 'wachten' must be second."
+        }
+      ],
+      "contrast": {
+        "dutch": "We wachten nog even als er niet-opgeslagen werk is.",
+        "english": "We wait a little longer if there is unsaved work.",
+        "note": "Main clause first: subject-first 'We wachten', with 'nog even' following it."
+      }
+    },
     "pat-als-reuse-career-troubleshooting-029": {
       "status": "ai-editorial-checked",
       "alsSense": "if",
@@ -6727,6 +7327,79 @@
         "dutch": "Als er een onverwachte waarschuwing verschijnt, stop dan de test.",
         "english": "If an unexpected warning appears, stop the test then.",
         "note": "Fronted als-clause; the instruction keeps its verb first and usually adds 'dan'."
+      }
+    },
+    "pat-als-reuse-career-troubleshooting-060": {
+      "status": "ai-editorial-checked",
+      "alsSense": "if",
+      "alsSenseWhy": "The test may or may not produce anything, so the fallback is conditional: 'if'.",
+      "situationNl": "Je loopt met een collega een diagnose door. Leg uit wat jullie volgende stap is bij een controle zonder resultaat.",
+      "clauses": [
+        {
+          "kind": "bijzin",
+          "text": "Als deze test niets oplevert",
+          "subject": "deze test",
+          "finite": "oplevert",
+          "why": "Opleveren (to yield, to produce) is separable: 'Deze test levert niets op.' In the dependent clause it is joined: oplevert. 'Niets' (nothing) is its object, before the verb."
+        },
+        {
+          "kind": "hoofdzin",
+          "text": "vragen we extra hulp",
+          "subject": "we",
+          "finite": "vragen",
+          "why": "The als-clause is position one, so 'vragen' precedes 'we'. 'Hulp vragen' means to ask for help; 'extra hulp' has no article."
+        }
+      ],
+      "parts": [
+        {
+          "label": "conjunction",
+          "text": "Als"
+        },
+        {
+          "label": "subject",
+          "text": "deze test"
+        },
+        {
+          "label": "object",
+          "text": "niets"
+        },
+        {
+          "label": "finite verb (joined)",
+          "text": "oplevert"
+        },
+        {
+          "label": "finite verb",
+          "text": "vragen"
+        },
+        {
+          "label": "subject",
+          "text": "we"
+        },
+        {
+          "label": "object",
+          "text": "extra hulp"
+        }
+      ],
+      "meaning": "You explain the next step if the test does not give a result: ask for more help.",
+      "order": "The dependent clause puts 'niets' in front of the joined verb 'oplevert'. It fills position one, so 'vragen' is second and 'we' third. The object 'extra hulp' completes the sentence.",
+      "forms": "opleveren = op + leveren: de test levert op; dependent: oplevert. vragen: wij vragen. 'Hulp vragen' (ask for help) can also be 'om hulp vragen'; this card uses the shorter form. 'Deze test' because test is a de-word.",
+      "compare": "English 'yields nothing' has the verb first; Dutch has 'niets oplevert'. English 'ask for extra help' needs 'for'; Dutch 'hulp vragen' does not.",
+      "mistakes": [
+        {
+          "wrong": "Als deze test niets levert op, vragen we extra hulp.",
+          "right": "Als deze test niets oplevert, vragen we extra hulp.",
+          "why": "'Levert op' is main-clause order. In the dependent clause the separable verb joins."
+        },
+        {
+          "wrong": "Als deze test niets oplevert, we vragen extra hulp.",
+          "right": "Als deze test niets oplevert, vragen we extra hulp.",
+          "why": "The first clause fills position one, so the finite verb must be second."
+        }
+      ],
+      "contrast": {
+        "dutch": "We vragen extra hulp als deze test niets oplevert.",
+        "english": "We ask for extra help if this test yields nothing.",
+        "note": "Main clause first: subject-first 'We vragen'."
       }
     },
     "pat-als-reuse-conversation-20": {

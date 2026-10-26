@@ -6,11 +6,11 @@ type Example = {nl:string;en:string};
 type Lesson = {title:string;goal:string;overview:string;status:string;revision:string;formulas:{label:string;pattern:string;why:string}[];sections:{title:string;body:string;examples:Example[]}[];mistakes:{wrong:string;right:string;why:string}[];sources:string[][]};
 const lessons = rawLessons as Record<string,Lesson>;
 /** Topic-wide teaching remains independent from a session's current question and answer. */
-export function GrammarTopicLesson({topic}: {topic:string}) {
+export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; defaultOpen?: boolean}) {
   const lesson = lessons[topic];
   const {listen,stop,sound} = useCardAudio();
   if (!lesson) return null;
-  return <details className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
+  return <details defaultOpen={defaultOpen} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
     <summary className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">
       📖 Learn the rule · {lesson.title}
       <span className="mt-1 block text-xs font-normal text-muted">Tap to expand the complete topic guide; close it when speaking.</span>

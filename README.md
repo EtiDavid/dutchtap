@@ -3,26 +3,32 @@
 DutchTap is a **Dutch and French sentence-learning app**, with real-world situations, persistent flashcard sessions and quick Dutch grammar games. Learn through **Study → Speaking (self-rated) → Word-order Quiz**, or use the older Dutch Learning Hub for sentence building, verb forms and typed exercises. New cards start Difficult; sessions keep a fixed selection across modes.
 
 **App:** https://dutchtap.davideti.dev  
-**Important:** The Grammar Mastery expansion below is on a **development branch**, **not the production app**. Do not assume a GitHub PR or green CI check means new features are live.
+**Important:** PR #15 **merged into main on 26 October 2026** with a *partial* Grammar Mastery foundation, not the completed curriculum. It did NOT automatically deploy: production requires a separate version-tagged release. Handover documentation currently lives on the continuation feature branch until a separate documentation PR is merged.
 
-## What is in `main` versus development?
+## What was merged into `main` vs what is still unfinished?
 
-| Feature | Already on `main` | `feat/grammar-mastery-phase1` (draft PR #15) |
+| Feature | On `main` after merged PR #15 | Outstanding Grammar Mastery work |
 | --- | --- | --- |
-| Dutch sentence collections | 600 Everyday + 600 Dutch at Work | Preserved without replacing originals |
-| French learning | 600 French Everyday cards, device speech; separate progress | Preserved |
-| Sessions | 1–100 fixed base cards; Study, Speaking, Quiz; up to 5 active sessions | Reused unchanged |
-| Dutch grammar games | de/het; deze/dit/die/dat; adjective endings | Preserved |
-| Grammar Patterns | 196 authored cards across 9 topics | **432 authored + 53 core references = 485 playable grammar base cards across 13 topics** |
-| Grammar guides | Short explanations and passive examples | Detailed v1 guides for **ALS, separable verbs, V2/inversion, omdat, dat and verbs**; other guides remain foundational/introductory |
-| Speaking | Situational prompts, user rates own recall; **no pronunciation scoring** | Dutch-first prompts for **236/432 authored grammar cards**; remaining authored cards and reused references may fall back to English |
-| Alternate answers | Established Everyday/Workplace answer handling | 58 newly authored ALS base cards offer alternative clause ordering; broad alternative coverage remains missing |
-| Interactive variations | Families for existing Everyday/Workplace cards | **30 grammar child questions on just 3 ALS parents**; not all 485 grammar parents |
-| Extended grammar curriculum | Existing Learning Hub | A limited initial expansion, **not** the full master plan |
+| Dutch Core and French | 600 Everyday + 600 Dutch at Work + 600 separate French Everyday cards | Preserve all IDs, assets, progress and independent language state |
+| Existing sessions and games | Fixed-card sessions, Study/Speaking/Quiz, de/het and demonstrative/adjective games | Full migration, offline and account-sync regression testing |
+| Grammar base cards | **432 authored + 53 reviewed source aliases = 485 playable grammar base cards across 13 topics** | Larger meaningful topic coverage, complete review and advanced topics |
+| Topic-wide lessons | Six expanded v1 guides, four foundational v0.8, three introductory v0.2 | Complete all lessons with accurate, accessible reasons and examples |
+| Individual sentence explanations | Initial grammar notes and limited ALS clause view | Bespoke, validated full structured word-order analysis for all grammar base cards |
+| Dutch-first speaking | **236/432** authored grammar cards include Dutch prompts | Remaining 196 authored and 53 aliases need real Dutch-first scenarios; uncued mixed retrieval |
+| Recognised alternatives | 58 new ALS authored cards provide two clause-order models | Explicit semantic validation and alternatives throughout other topics |
+| Extra grammar variations | **30** children across only three ALS parent families | Author and validate meaningful independent children where pedagogically justified |
+| Separable verbs | **52** distinct verb records; **152** practice cards | At least eight additional verified verbs and complete representative form coverage |
+| Mastery and complete release | Legacy/grammar level records and focused tests | Multi-topic skill tracking, full acceptance A01–A25, content QA, security and release checks |
 
 **Audit and status:** [Grammar Mastery acceptance audit](docs/GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md), [master implementation plan](docs/GRAMMAR-MASTERY-MASTER-PLAN.md), [development work log](docs/GRAMMAR-MASTERY-WORKLOG.md), and [Grammar Patterns guide](docs/GRAMMAR-PATTERNS.md). The master plan's dated `NOT STARTED` heading is the original frozen baseline, **not the live implementation status**. The acceptance audit is the current evidence-based status.
 
-**Release status:** Grammar Mastery is **PARTIALLY COMPLETE**. Draft [PR #15](https://github.com/EtiDavid/dutchtap/pull/15) is not approved to merge or tag. Missing topics, lesson depth, per-card grammar analyses, Dutch-first prompts, variations, cross-topic skills, linguistic review, extensive compatibility testing and security review are explicitly tracked. Do not represent the four passing focused Chromium tests as the complete browser test suite.
+**Release status:** Grammar Mastery is **PARTIALLY COMPLETE**. [PR #15](https://github.com/EtiDavid/dutchtap/pull/15) was merged into main, but that Git merge is NOT a full-spec acceptance or production deployment. Missing topic depth, card analyses, Dutch prompts, variations, independent review, compatibility testing and security triage remain explicitly open. Further incomplete Grammar Mastery changes are not approved to merge or tag for production without the remaining acceptance gates. Do not represent five passing focused Chromium tests as the complete browser suite.
+
+## Claude Code continuation and teaching-quality instructions
+
+The project owner may delegate further implementation to Claude Code instead of using a long interactive ChatGPT session. **Read the full [Claude Code implementation handover](docs/CLAUDE-CODE-GRAMMAR-MASTERY-HANDOVER.md) and [worked teaching exemplars](docs/CLAUDE-GRAMMAR-TEACHING-EXEMPLARS.md)** before editing content. The root [CLAUDE.md](CLAUDE.md) automatically directs Claude Code to the approved plan, pedagogy contract and living acceptance audit. PR #15 is merged; the continuation feature branch contains additional handover documentation not yet in main, which must be reconciled without duplicating already-merged implementation changes.
+
+These instructions enforce detailed, non-generic why-first explanations, realistic Dutch-first scenarios, sentence-specific analysis, answer alternatives, review provenance, test evidence, stable progress and no production deployment without owner approval.
 
 ## How to start learning on the current live app
 

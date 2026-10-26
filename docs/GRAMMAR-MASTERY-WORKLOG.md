@@ -87,3 +87,26 @@ Source material is AI-edited and is **not** independently certified by a native 
 The earlier [full feature CI run #40361591866](https://github.com/EtiDavid/dutchtap/actions/runs/40361591866) passed 343 Vitest tests (7 skipped) and 4 Chromium browser tests, but **that run predates these added documentation and tests**. Check PR #15's current HEAD before reporting the new browser test as passed. The new `grammar:release-gate` is expected to fail while acceptance is incomplete.
 
 **Still required:** complete P1 per-card ALS analyses, language/alternative/variation QA and guest/account/mobile tests; expand all missing targets without cloned filler; multi-topic tagging and uncued mixed retrieval; full security assessment (8 npm audit findings), independent language review, complete regression/migration tests, sign-off and authorized main/tag release. **No merge or production tag performed in this audit.**
+
+## 2026-10-26 — Claude Code implementation handover (documentation only)
+
+**Scope:** Delegate long-form P0–P7 execution to Claude Code while protecting learner pedagogy and existing runtime/session data. No grammar code was newly implemented, no release sign-off occurred and no production deployment was attempted by this handover.
+
+**New files:**
+- `docs/CLAUDE-CODE-GRAMMAR-MASTERY-HANDOVER.md`: comprehensive implementation, architectural, Git safety, data/source/typed-schema, test, content-review, session/migration, release and phase-by-phase working contract, with the immediate P1 ALS batch as the first job.
+- `docs/CLAUDE-GRAMMAR-TEACHING-EXEMPLARS.md`: mandatory gold-standard explanations for ALS fronted/main-first, omdat/want/daarom, hebben/moeten/hoeven, separable opsturen, toen/als/wanneer, and dat in multiple grammatical functions; no generic explanations.
+- Updated root `CLAUDE.md` to make the agent discover and read the approved master plan, exemplars, living A01–A25 audit and work log before edits. Updated README links.
+
+**Repository status seen at handover:** old PR #15 was closed and not merged; source branch `feat/grammar-mastery-phase1` exists, must be fetched/preserved. It is NOT a production-release instruction. The prior A01–A25 acceptance audit remains 21 partial, 3 blocked, one narrowly verified; prior last scope test run was 347 Vitest pass / seven skipped and five focused Playwright pass, not all final tests.
+
+**Next actionable agent work:** Preserve current branch/worktree; create a clean continuation branch; implement reviewable ALS card-specific grammatical data and corresponding UI/testing for 10 diverse actual ALS cards; then complete all 100 in editorial batches and verify the full P1 learning journey before expanding P2–P7. Update audit and worklog after each batch with actual results. Do not promise background activity outside the running Claude Code process.
+
+## 2026-10-26 — Git status reconciliation after handover
+
+**Correction to the immediately previous entry:** GitHub now confirms PR #15 **MERGED into main** at 17:35 UTC (merge commit `892b5303429b1f945fbda40539fa7a76396c4880`). It was initially shown as closed without merge during a short tool-state transition. The old PR's **48 commits are already on main**, but the implementation remains **PARTIALLY COMPLETE** under the A01–A25 audit; a GitHub merge is not pedagogical, editorial or production acceptance.
+
+**Current split:** `main` contains the PR #15 partial Grammar Mastery application foundation. `feat/grammar-mastery-phase1` has additional **documentation-only** commits (Claude handover, worked examples, CLAUDE.md, README, status audit/worklog corrections) not yet in main. A separate docs PR should reconcile this delta, without reapplying already-merged app-code changes. There is no verified version-tag production release for this grammar merge.
+
+**Verified handover:** both long-form docs are accessible on the feature branch; the root CLAUDE.md contains instructions to load them, and the README links them. The next Claude Code agent must fetch fresh Git refs, preserve uncommitted user changes and start a clean continuation branch from main + these handover documents. No further grammar implementation has been claimed in this documentation session.
+
+**Next:** open a documentation-only, non-draft PR for the handover; owner can review/merge this without invoking Vercel because only version tags trigger production. Implementation must still follow P1 → P7 gates.

@@ -1,5 +1,7 @@
 # Grammar mastery source audit — phase P0 (initial)
 
+> **Historical initial-scan snapshot, not the current inventory.** This report measured the first ALS-focused implementation before the new separable-verb and conjunction expansions. Its nine-topic breakdown, 196 legacy-card table, and initial lesson count are **not current branch totals**. For the verified current 13-topic counts (432 authored + 53 linked = 485 grammar base cards), missing requirements and release status, see [Grammar Mastery Acceptance Audit](GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md) and [Grammar Patterns Guide](GRAMMAR-PATTERNS.md). Raw keyword matches below remain **unreviewed candidates**, not approved grammar tags.
+
 **Repository:** `EtiDavid/dutchtap`  
 **Audited branch:** `feat/grammar-mastery-phase1`  
 **Baseline main SHA:** `75d5b30def8da560351d060415a89934c03d6264`  

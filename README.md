@@ -71,7 +71,7 @@ Open http://localhost:3001. The image uses Next.js standalone output. Stop it wi
 | `python3 scripts/build-grammar-patterns.py` | Regenerate grammar-pattern cards and notes from canonical sources |
 | `npm run assets:flashcards -- --complete` | Check pictures and recordings for the original Everyday deck |
 
-**Last scoped CI evidence:** [Grammar feature validation run 40361591866](https://github.com/EtiDavid/dutchtap/actions/runs/40361591866) passed 343 Vitest tests (seven skipped) and four focused Chromium tests. This does **not** establish a completed 25-item master-plan audit or production readiness. Use the latest PR checks for the current head SHA.
+**Last scoped CI evidence:** [Grammar feature validation run 40367520391](https://github.com/EtiDavid/dutchtap/actions/runs/40367520391) passed 346 Vitest tests (seven skipped) and five focused Chromium tests, including a guest-session variation toggle and reload scenario. This does **not** establish a completed 25-item master-plan audit or production readiness. Use the latest PR checks for the current head SHA.
 
 ## Account and deployment safety
 

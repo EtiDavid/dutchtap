@@ -1,8 +1,8 @@
 # Grammar Patterns — scope, implementation and teaching
 
-> **Status: PARTIALLY COMPLETE on `feat/grammar-mastery-phase1`.** The release on `main` retains the original nine-pattern deck (196 authored cards). The expansion and counts below are from the unmerged draft [PR #15](https://github.com/EtiDavid/dutchtap/pull/15), not necessarily what users see on the live domain. See the [acceptance audit](GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md) and [approved master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).
+> **Status: PARTIALLY COMPLETE.** [PR #15](https://github.com/EtiDavid/dutchtap/pull/15) was MERGED into `main` on 26 October 2026, carrying the 13-topic / 485-base-card partial Grammar Mastery foundation. This merge did **not** automatically deploy (production is tag-only) or satisfy the full acceptance plan. The live site may still serve an older release. See the [acceptance audit](GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md) and [approved master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).
 
-## Learner experience on the development branch
+## Learner experience in the merged partial implementation
 
 - The **Practise → Grammar Patterns** tile grid selects a topic and opens a prefilled creation dialog (`/flashcards?new=grammar:als`). The base selection stays fixed between Study, Speaking and word-order Quiz; card levels start Difficult.
 - **Learn the rule:** a topic-level collapsible guide in session creation and practice. Six topics have expanded first-release guides (ALS, separable, inversion, omdat, dat, verbs). Seven others remain short/foundational. Study begins with the topic guide expanded; Speaking and Quiz keep it collapsed by default.
@@ -13,7 +13,7 @@
 - **Extra interactive variations:** just **three ALS base cards** have ten separately tracked child questions each (**30 total**); the other grammar parents have no ready ten-child family. The ten passive examples displayed in notes are **not** independently scored questions.
 - **Progress:** each reused core reference receives a grammar-specific alias ID and level; the original card's level is unchanged. This does not yet implement full skill-by-topic mastery or multi-topic tagging.
 
-## Exact branch inventory (26 October 2026)
+## Exact merged-feature inventory (26 October 2026)
 
 Counts below represent **playable base cards**, NOT passive examples or optional children.
 
@@ -49,4 +49,4 @@ There are also **52 authored separable-verb lemmas** (below the 60–100 target;
 
 Relevant tests: `tests/grammar.*.test.ts`, `tests/flashcard-e2e/grammar-mastery.spec.ts`, `tests/flashcard-e2e/grammar-patterns.spec.ts`, and `.github/workflows/grammar-feature-validation.yml`.
 
-The scoped [CI run 40367520391](https://github.com/EtiDavid/dutchtap/actions/runs/40367520391) passed 346 Vitest tests (7 optional database tests skipped) and 5 Chromium browser tests, including ALS variation-toggle persistence. This is a **subset** of the required final acceptance/migration tests. The branch is not merged, and production releases require a version tag on `main`; see [deployment instructions](DEPLOYMENT.md).
+The scoped [CI run 40367520391](https://github.com/EtiDavid/dutchtap/actions/runs/40367520391) passed 346 Vitest tests (7 optional database tests skipped) and 5 Chromium browser tests, including ALS variation-toggle persistence. This is a **subset** of the required final acceptance/migration tests. PR #15 is merged into `main`, but release to production requires an authorized version tag and full release checks; see [deployment instructions](DEPLOYMENT.md).

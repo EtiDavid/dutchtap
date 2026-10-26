@@ -49,4 +49,4 @@ There are also **52 authored separable-verb lemmas** (below the 60–100 target;
 
 Relevant tests: `tests/grammar.*.test.ts`, `tests/flashcard-e2e/grammar-mastery.spec.ts`, `tests/flashcard-e2e/grammar-patterns.spec.ts`, and `.github/workflows/grammar-feature-validation.yml`.
 
-The scoped CI run 40361591866 passed 343 Vitest tests (7 optional database tests skipped) and 4 Chromium browser tests. This is a **subset** of the required final acceptance/migration tests. The branch is not merged, and production releases require a version tag on `main`; see [deployment instructions](DEPLOYMENT.md).
+The scoped [CI run 40367520391](https://github.com/EtiDavid/dutchtap/actions/runs/40367520391) passed 346 Vitest tests (7 optional database tests skipped) and 5 Chromium browser tests, including ALS variation-toggle persistence. This is a **subset** of the required final acceptance/migration tests. The branch is not merged, and production releases require a version tag on `main`; see [deployment instructions](DEPLOYMENT.md).

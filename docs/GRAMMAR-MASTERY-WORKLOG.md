@@ -32,10 +32,13 @@ Source material is AI-edited and is **not** independently certified by a native 
 ### Validation
 
 - **First PR #15 workflow:** deterministic content generation PASS; lint PASS; Next.js type generation PASS; TypeScript FAIL because React `<details>` does not support `defaultOpen`.
-- **Fix committed:** switch to `open={opened}` with a React state and `onToggle`; re-check via CI required. This is *not* evidence of a passing follow-up run.
+- **Fix committed:** switched to `open={opened}` with a React state and `onToggle`; the follow-up workflow passed TypeScript.
+- **GitHub Actions run #40361591866 on commit `764ad2bb`:** deterministic source regeneration PASS, ESLint PASS, Next.js type generation PASS, TypeScript PASS, `npm run content:learning-check` PASS, production build PASS (1,706 static pages).
+- **Vitest:** 343 passed; seven optional integration tests skipped (CI did not provide the test database).
+- **Chromium Playwright:** 4 passed in GitHub Actions (expanded lesson selection, Study→Speaking→Quiz onboarding, reload persistence, original grammar tile regression and French isolation).
 - Test thresholds updated to allow naturally concise correct examples.
 - New module references are published in the lesson source.
-- **Browser and manual responsive validation:** NOT DONE in this work session.
+- **Full responsive/manual/cross-device coverage:** NOT DONE in this work session; one mobile-width Playwright check passed, not full cross-browser verification.
 - **Independent native speaker review:** NOT DONE.
 - **Account/session migration, cross-device, Vercel live checks:** NOT DONE.
 - Package installation on CI reported 8 dependency vulnerabilities (3 moderate, 4 high, 1 critical); investigate `npm audit` before release rather than running a blind `npm audit fix --force`.
@@ -48,7 +51,7 @@ Source material is AI-edited and is **not** independently certified by a native 
 
 ### Next priority
 
-1. Confirm PR #15 workflow passes TypeScript, unit tests, deterministic generation, learning-content check and build.
-2. Fix failing checks; add real Playwright coverage for Study → Speaking → Quiz, variation toggle and refresh/resume.
+1. Recheck CI after any additional edits; the full required checks passed at commit `764ad2bb`.
+2. Extend Playwright coverage beyond the four passing tests: variation toggles, account sync, cross-device and real mobile/responsive behavior.
 3. Review ALS grammar scenarios, 30 new children, separable forms, and the added lessons against authoritative sources, recording any corrections.
 4. Complete P1 scoped sign-off; only then decide a tested, explicitly scoped learning release versus continued feature expansion.

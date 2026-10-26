@@ -65,3 +65,29 @@ test('ALS journey: lesson → study with the clause map → Dutch-first speaking
   await expect(page.getByTestId('quiz-feedback')).toContainText('Correct. +10 points');
   await expect(page.getByTestId('quiz-points')).toHaveText('10');
 });
+
+for (const width of [320, 375, 430]) {
+  test(`ALS study, speaking and quiz stay readable at ${width}px and the analysis opens from the keyboard`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/flashcards?new=grammar:als');
+    await page.getByRole('dialog', { name: 'Create a session' }).getByRole('button', { name: 'Create session', exact: true }).click();
+    const noOverflow = async () => {
+      const { scroll, inner } = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, inner: innerWidth }));
+      expect(scroll).toBeLessThanOrEqual(inner);
+    };
+    // Keyboard: focus the disclosure and open it with Enter.
+    const summary = page.getByText('Grammar rule & similar examples');
+    await summary.focus();
+    await page.keyboard.press('Enter');
+    await expect(page.getByTestId('clause-map')).toBeVisible();
+    await noOverflow();
+    await page.getByTestId('grammar-topic-lesson').locator('summary').focus();
+    await page.keyboard.press('Enter'); // collapse the lesson again
+    await switchMode(page, 'speaking');
+    await expect(page.getByTestId('grammar-scenario-prompt')).toBeVisible();
+    await noOverflow();
+    await switchMode(page, 'quiz');
+    await expect(page.getByTestId('grammar-scenario-prompt')).toBeVisible();
+    await noOverflow();
+  });
+}

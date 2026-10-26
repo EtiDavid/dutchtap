@@ -4,6 +4,23 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-26 — Claude Code continuation: P2 Wanneer to 100 base cards with per-sentence analysis
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- Wanneer had 14 cards and 12 core sentences that use it (now linked as aliases). 74 new authored cards (`data/editorial/grammar-p2-wanneer.json`, ids `pat-wanneer-15..88`): 16 wanneer-first, 14 main-clause-first, 16 direct questions, 14 indirect questions, 8 repeated-past (`wanneer` for habits, with `toen` shown as the wrong choice for a repeated pattern), 6 with perfect, passive or modal chains.
+- All 100 have a hand-authored record in `data/grammar-wanneer-analysis.json`. Direct questions are analysed as one main clause (question word, finite verb second); indirect questions and time clauses as main + subordinate clause. The sense label says which of the uses applies.
+- The 14 older cards got rewritten Dutch prompts where the old prompt contained the conjunction or was too short; the 12 linked cards got new ones.
+- Tests: Wanneer added to the generic per-topic suite; `tests/flashcard-e2e/grammar-wanneer-analysis.spec.ts` (3 scenarios). Docs counts updated (699 authored + 82 aliases = 781; 503/699 Dutch prompts).
+- Process fix: while writing, two cards (77, 79) were first built with the clause kinds swapped; the generic test caught it and both were corrected.
+
+**Evidence:** `npx tsc --noEmit` clean; eslint clean; `npx vitest run` (with local Mongo) 407 tests passed; browser specs for Wanneer 3 passed (Dat and Toen passed in the previous batch). Full browser suite NOT re-run.
+
+**Known issues / open:** no native review; the Wanneer lesson (v0.8) has not been re-fact-checked; Toen and Wanneer lessons still need to be rewritten together; several first-draft mistakes were valid Dutch and were replaced; Wanneer has no interactive children.
+
+**Next specific task:** P2 V2/inversion (20 → 100), then the joint Toen/Wanneer lesson upgrade and a full browser-suite run.
+
 ## 2026-10-26 — Claude Code continuation: P2 Toen to 100 base cards with per-sentence analysis
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

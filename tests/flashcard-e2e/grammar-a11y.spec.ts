@@ -72,7 +72,7 @@ test('no axe violations in Speaking (answer shown) and Quiz for a grammar sessio
 test('nothing scrolls sideways at 320, 375, 430 and 768 px', async ({ page }) => {
   for (const width of [320, 375, 430, 768]) {
     await page.setViewportSize({ width, height: 800 });
-    for (const path of ['/flashcards', '/grammar/mixed', '/sentences/pat-connectors-01', '/sentences/pat-exceptions-04']) {
+    for (const path of ['/', '/flashcards', '/grammar/mixed', '/sentences/pat-connectors-01', '/sentences/pat-exceptions-04']) {
       await page.goto(path); await page.waitForLoadState('networkidle');
       expect(await overflow(page), `${path} at ${width}px`).toBeLessThanOrEqual(0);
     }
@@ -128,3 +128,4 @@ test('a new grammar sentence says it is read by the device voice and never promi
   await expect(page.getByText('Spoken by your device’s Dutch voice.')).toBeVisible();
   await expect(page.getByText(/recording awaiting/i)).toHaveCount(0);
 });
+

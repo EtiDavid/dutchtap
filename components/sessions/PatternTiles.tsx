@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { GRAMMAR_AREAS } from '@/lib/content/collections';
 import { CARDS } from '@/lib/flashcards/engine';
 import { Icon } from '../ui/Icon';
+import type { Reviews } from '@/lib/flashcards/engine';
+import { progressSummary, topicProgress } from '@/lib/grammarProgress';
 
 /** Short names for the tiles; the full names appear in the Create session form. */
 const SHORT: Record<keyof typeof GRAMMAR_AREAS, { title: string; hint: string }> = {
@@ -41,7 +43,7 @@ const GROUPS: { title: string; ids: AreaId[] }[] = [
 ];
 
 /** Each grammar pattern is a set of real sentences: choose one to start a session (Study, Say it, Word order, with levels). */
-export function PatternTiles() {
+export function PatternTiles({ reviews }: { reviews?: Reviews }) {
   const grouped = new Set(GROUPS.flatMap(g => g.ids));
   const rest = (Object.keys(GRAMMAR_AREAS) as AreaId[]).filter(id => !grouped.has(id));
   const groups = rest.length ? [...GROUPS, { title: 'More patterns', ids: rest }] : GROUPS;
@@ -49,15 +51,21 @@ export function PatternTiles() {
     {groups.map(group => <section key={group.title} aria-label={group.title} data-testid="pattern-group">
       <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">{group.title}</h3>
       <div className="grid grid-cols-3 gap-3">
-        {group.ids.map(id =>
-          <Link key={id} href={`/flashcards?new=grammar:${id}`} aria-label={`${GRAMMAR_AREAS[id]}: ${counts.get(id) ?? 0} sentences`} className="card tap tap-hover flex min-h-[7.25rem] flex-col justify-between gap-2 p-3.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
+        {group.ids.map(id => {
+          const progress = reviews ? topicProgress(id, reviews) : null;
+          const started = !!progress && progress.practised > 0;
+          const share = progress && progress.total ? Math.round((progress.mastered / progress.total) * 100) : 0;
+          return <Link key={id} href={`/flashcards?new=grammar:${id}`} aria-label={`${GRAMMAR_AREAS[id]}: ${progress ? progressSummary(progress) : `${counts.get(id) ?? 0} sentences`}`} data-testid={`pattern-tile-${id}`} className="card tap tap-hover flex min-h-[7.25rem] flex-col justify-between gap-2 p-3.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">
             <span aria-hidden className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent-soft text-accent"><Icon name="layers" className="h-[1.125rem] w-[1.125rem]" /></span>
             <span>
               <span className="block text-[0.8125rem] font-semibold leading-snug">{SHORT[id].title}</span>
-              <span className="mt-0.5 block text-xs text-muted">{counts.get(id) ?? 0} sentences</span>
+              <span className="mt-0.5 block text-xs text-muted" data-testid="tile-progress">{started ? `${progress.mastered} of ${progress.total} mastered` : `${counts.get(id) ?? 0} sentences`}</span>
+              {started && <span aria-hidden className="mt-1.5 block h-1 overflow-hidden rounded-full bg-surface-2"><span className="block h-full rounded-full bg-accent" style={{ width: `${Math.max(share, progress.practised ? 4 : 0)}%` }} /></span>}
             </span>
-          </Link>)}
+          </Link>;
+        })}
       </div>
     </section>)}
+    {reviews && <p className="text-xs leading-relaxed text-muted" data-testid="pattern-progress-note">Progress counts the pattern sentences you rated Mastered. They have their own ratings, separate from Everyday and Dutch at Work. All pattern content is AI-edited and has not yet been reviewed by a native speaker.</p>}
   </div>;
 }

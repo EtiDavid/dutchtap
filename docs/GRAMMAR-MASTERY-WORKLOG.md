@@ -4,6 +4,16 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P6 topic progress indicators on the hub
+
+**Done:** each pattern tile on Home and on the Practise dashboard now shows the learner's own progress for that topic: "N sentences" until something is rated, then "M of N mastered" with a thin bar and a screen-reader label ("40 sentences, 12 practised, 3 mastered"). One short note under the tiles says what the numbers mean and that all pattern content is AI-edited and not yet reviewed by a native speaker. Calculation in `lib/grammarProgress.ts`: only ratings of the pattern sentences count (a grammar alias has its own rating, so Everyday or Dutch at Work mastery never appears here); only an explicit Mastered rating is mastered; any rating means practised; nothing is inferred; a sentence aliased into the topic twice is counted once. Home now loads the learner's levels (`useReviews`), so a signed-in learner's Home makes one extra request for them.
+
+**A pre-existing layout bug found on the way:** at 320 px the Home header (logo, language switch and Log in) overflowed the page by 68 px, with or without this change (checked by stashing the change). The header now wraps. The overflow test also covers Home at 320/375/430/768 px.
+
+**Tests:** `tests/grammar.progress.test.ts` (6) and `tests/flashcard-e2e/grammar-progress.spec.ts` (5): a new learner sees counts and no invented progress; ratings show on their own tile only, on both screens; an Everyday rating does not count for its alias; account levels drive the numbers; axe-clean and no sideways scroll with progress shown at 320 px on the dashboard and Home. `tsc` and `eslint` clean; Vitest 563 passed (13 skipped); the full Chromium flashcards suite 177 passed (5.7 min).
+
+**Not done:** review status per topic is a single global note, not a per-topic indicator, because every topic is at the same level (AI-edited, no native review); a topic-level "lesson read" marker was not added; no human screen-reader check.
+
 ## 2026-10-27 — Claude Code continuation: P6 accessibility, offline and voice
 
 **Measured first, then fixed.** An axe-core scan (WCAG 2.0/2.1 A and AA plus best practice) of the grammar screens at 320 and 390 px found: `heading-order` on sentence pages and in session views (the sections jumped from h1 to h3), `color-contrast` on the lesson formula boxes (the accent colour `#c2410c` on the `--surface-2` panels reached only 4.43:1, below 4.5:1) and `page-has-heading-one` on the session page (its title was an h2). Fixes: "Why this answer works" is now an h2, the topic guide opens with a screen-reader-only h2, the session name is an h1, and `--accent` is `#b93c09` (about 4.8:1 on `--surface-2`, 5.7:1 on white; the primary button text on it improves too). Nothing scrolled sideways at 320/375/430/768 px, the hub and mixed grammar had no violations, and there is no dark theme to check.

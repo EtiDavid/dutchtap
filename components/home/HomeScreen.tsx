@@ -9,6 +9,7 @@ import { useSessions } from "@/lib/sessions/useSessions";
 import { sessionUrl } from "@/lib/sessions/nav";
 import { ModeCard, Tile } from "./ModeCard";
 import { PatternTiles } from "@/components/sessions/PatternTiles";
+import { useReviews } from "@/lib/flashcards/useReviews";
 import { usePracticeStreak } from "@/lib/practice/usePracticeStreak";
 import { streakMessage } from "@/lib/practice/streak";
 import { chooseLanguage, useSavedLanguage } from "@/lib/lang/useLanguage";
@@ -26,6 +27,7 @@ export function HomeScreen() {
   const lang = saved ?? DEFAULT_LANG;
   const { streak, practisedToday } = usePracticeStreak(lang);
   const { snapshot } = useSessions();
+  const { reviews } = useReviews(lang);
   const [guestProgress, setGuestProgress] = useState<LocalProgressState | null>(null);
   const [accountStats, setAccountStats] = useState<OverviewStats | null>(null);
 
@@ -67,7 +69,7 @@ export function HomeScreen() {
 
   return (
     <main className="page-pad mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-7 px-5 pt-6" data-lang={lang}>
-      <header className="flex items-center justify-between gap-3">
+      <header className="flex flex-wrap items-center justify-between gap-3">
         <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="DutchTap home">
           <span aria-hidden className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-lg font-black text-white shadow-[0_6px_14px_rgb(194_65_12/.3)]">D</span>
           <span className="text-lg font-bold tracking-tight">DutchTap</span>
@@ -145,7 +147,7 @@ export function HomeScreen() {
       {dutch ? (
         <>
           <Section title="Grammar patterns">
-            <PatternTiles />
+            <PatternTiles reviews={reviews} />
             <ModeCard href="/grammar/mixed" icon="puzzle" title="Mixed grammar" subtitle="Read a Dutch situation and choose the sentence that fits. No hints about the word you need." />
             <ModeCard href="/learn?topic=mixed" icon="mic" title="Think in Dutch" subtitle="Mixed situations. Speak first; use English help when needed." />
           </Section>

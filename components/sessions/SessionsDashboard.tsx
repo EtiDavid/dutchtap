@@ -143,7 +143,7 @@ export function SessionsDashboard({ lang, onSwitchLanguage, store, snapshot, rev
 
     {lang === 'nl' && <Section title="Grammar patterns" label="Grammar patterns">
       <p className="-mt-1 text-sm text-muted">Pick a pattern for a set of sentences with explanations, then say them and build them, with levels like any other session.</p>
-      <PatternTiles />
+      <PatternTiles reviews={reviews} />
       <Link href="/learn?topic=mixed" className="card tap tap-hover flex items-center gap-4 p-4"><span aria-hidden className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-soft text-accent"><Icon name="mic" className="h-5 w-5" /></span><span className="min-w-0 flex-1"><span className="block font-semibold">Think in Dutch</span><span className="block text-sm text-muted">Mixed situations: speak first, use English help when needed.</span></span><Icon name="chevron" className="h-4 w-4 text-muted" /></Link>
     </Section>}
 

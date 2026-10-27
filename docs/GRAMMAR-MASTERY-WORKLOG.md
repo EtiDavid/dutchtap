@@ -4,6 +4,20 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P5 first slice, uncued mixed grammar (A16)
+
+**Plan check:** P5 asks for mixed practice with Dutch-first prompts and optional English help, weakness weighting that never hides mastered items, the required mixed combinations, and a gate where the learner selects the form without seeing the target conjunction. This slice delivers the uncued construction-choice exercise; corpus tagging (one card in several topic inventories) and account sync are not started.
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- `data/grammar-mixed-challenges.json`: 31 hand-authored challenges. Each has a Dutch situation that does not contain the construction word of the correct answer (checked by a test), an English hint on request, three sentences with exactly one that fits, and a reason for every option. Distractors are either valid Dutch with the wrong meaning (e.g. `voordat` for `tot`) or a real word-order error.
+- `lib/grammarMixed.ts`: weakness-weighted rounds (new 3, last wrong 4, streak 1 gets 2, streak 2 gets 1, mastered 0.25, never 0), no repeated primary topic back-to-back, no repeated challenge in a round, per-topic accuracy.
+- `/grammar/mixed` page and component (client-only, answers in `localStorage` key `dutchtap:grammar-mixed:v1`), a Home tile next to Think in Dutch, and the Practise tab highlights on `/grammar`.
+- Tests: `tests/grammar.mixed.test.ts` (7), `tests/flashcard-e2e/grammar-mixed.spec.ts` (3).
+
+**Not done / honest limits:** progress is device-only and not tied to the four card levels, sessions or accounts; 31 challenges is a seed set; no prerequisite gating by completed lessons; the corpus-wide source-card tagging (Everyday, Work and Grammar cards in several topics, with manual review of uncertain matches) is still open; distractors are authored, not generated.
+
 ## 2026-10-27 — Claude Code continuation: P4 Relative clauses (new topic, 100 cards), lesson v1.1 — P4 content complete
 
 **Plan check:** P4 asks for relative clauses at 100 (`die`, `dat`, `wie`, `wat`, `waar`) and contrasts with indirect questions and demonstratives. Topic id `relative`, tile "Relative clauses". The 9 relative-clause cards that already live in the Dat topic remain there.

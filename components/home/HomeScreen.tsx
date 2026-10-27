@@ -146,6 +146,7 @@ export function HomeScreen() {
         <>
           <Section title="Grammar patterns">
             <PatternTiles />
+            <ModeCard href="/grammar/mixed" icon="puzzle" title="Mixed grammar" subtitle="Read a Dutch situation and choose the sentence that fits. No hints about the word you need." />
             <ModeCard href="/learn?topic=mixed" icon="mic" title="Think in Dutch" subtitle="Mixed situations. Speak first; use English help when needed." />
           </Section>
           <Section title="Quick grammar games">

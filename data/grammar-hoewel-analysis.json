@@ -1,0 +1,4660 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for Hoewel, ook al, maar and tenzij. AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-hoewel-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "The rain is the obstacle; 'hoewel' opens it in first position, so the main clause inverts."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'regent' closes the short clause. The clause is \"Hoewel het regent\"."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "gaan we wandelen",
+     "subject": "we",
+     "finite": "gaan",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'gaan' comes first, then the subject 'we' and the infinitive 'wandelen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    }
+   ],
+   "meaning": "Although it rains, we are going for a walk.",
+   "order": "The hoewel-clause fills position one, so the main clause inverts to 'gaan we wandelen'. The plan holds in spite of the weather.",
+   "forms": "regenen: het regent. gaan: wij gaan. wandelen: infinitive.",
+   "compare": "English 'Although it rains, we go' keeps 'we go'. Dutch inverts to 'gaan we'.",
+   "mistakes": [
+    {
+     "wrong": "Hoewel het regent, we gaan wandelen.",
+     "right": "Hoewel het regent, gaan we wandelen.",
+     "why": "After the hoewel-clause the main clause starts with the verb: 'gaan we'."
+    },
+    {
+     "wrong": "Hoewel regent het, gaan we wandelen.",
+     "right": "Hoewel het regent, gaan we wandelen.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Hoewel regent het, gaan we wandelen.\", but \"Hoewel het regent, gaan we wandelen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Het regent, maar we gaan wandelen.",
+    "english": "It's raining, but we're going for a walk.",
+    "note": "With 'maar' both parts stay main clauses and neither verb moves."
+   }
+  },
+  "pat-hoewel-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "The same concession with the main clause first: no inversion, and the verb of the hoewel-clause is last."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We gaan wandelen",
+     "subject": "We",
+     "finite": "gaan",
+     "role": "main clause (what happens anyway)",
+     "why": "We is first, so the plural 'gaan' is second and the infinitive 'wandelen' ends the main clause. The clause is \"We gaan wandelen\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'regent' closes the short clause. The clause is \"hoewel het regent\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    }
+   ],
+   "meaning": "We are going for a walk, although it rains.",
+   "order": "A comma separates the two clauses. The hoewel-clause names the obstacle and ends in its verb. Read it as \"We gaan wandelen, hoewel het regent\".",
+   "forms": "gaan: wij gaan. regenen: het regent.",
+   "compare": "English 'although it rains' keeps 'rains' next to 'it'. Dutch ends the clause with 'regent'.",
+   "mistakes": [
+    {
+     "wrong": "We gaan wandelen hoewel regent het.",
+     "right": "We gaan wandelen, hoewel het regent.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"We gaan wandelen hoewel regent het.\", but \"We gaan wandelen, hoewel het regent.\")"
+    },
+    {
+     "wrong": "We gaan wandelen hoewel het regenen.",
+     "right": "We gaan wandelen, hoewel het regent.",
+     "why": "The dummy subject 'het' needs 'regent'. (not \"We gaan wandelen hoewel het regenen.\", but \"We gaan wandelen, hoewel het regent.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel het regent, gaan we wandelen.",
+    "english": "Although it rains, we're going for a walk.",
+    "note": "The hoewel-clause first inverts the main clause."
+   }
+  },
+  "pat-hoewel-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "His illness is the obstacle; the clause 'hoewel hij ziek is' ends with 'is'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij werkt door",
+     "subject": "Hij",
+     "finite": "werkt",
+     "role": "main clause (what happens anyway)",
+     "why": "Hij is first, so 'werkt' is second; the particle 'door' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel hij ziek is",
+     "subject": "hij",
+     "finite": "is",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'hij' comes first, the predicate 'ziek' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "werkt"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "ziek"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "He keeps working, although he is ill.",
+   "order": "'Doorwerken' splits as 'werkt ... door'. The predicate 'ziek' stands before 'is'. Read it as \"Hij werkt door, hoewel hij ziek is\".",
+   "forms": "doorwerken: werkt ... door. zijn: hij is.",
+   "compare": "English 'although he is ill' keeps 'is' before 'ill'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Hij werkt door hoewel hij is ziek.",
+     "right": "Hij werkt door, hoewel hij ziek is.",
+     "why": "The finite verb 'is' goes behind the predicate 'ziek'."
+    },
+    {
+     "wrong": "Hij doorwerkt, hoewel hij ziek is.",
+     "right": "Hij werkt door, hoewel hij ziek is.",
+     "why": "In a main clause 'doorwerken' splits: 'werkt ... door'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij is ziek, maar hij werkt door.",
+    "english": "He is ill, but he keeps working.",
+    "note": "With 'maar' the two main clauses stay in normal order."
+   }
+  },
+  "pat-hoewel-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Tiredness is the obstacle for staying; the main clause then inverts to 'blijf ik'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel ik moe ben",
+     "subject": "ik",
+     "finite": "ben",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'ik' comes first, the predicate 'moe' follows, and the finite verb 'ben' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijf ik tot het einde",
+     "subject": "ik",
+     "finite": "blijf",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'blijf' comes first, then the subject 'ik' and the phrase 'tot het einde'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "predicate",
+     "text": "moe"
+    },
+    {
+     "label": "finite verb",
+     "text": "ben"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "phrase",
+     "text": "tot het einde"
+    }
+   ],
+   "meaning": "Although I'm tired, I stay until the end.",
+   "order": "Both clauses have the same subject 'ik'. The main clause inverts after the fronted hoewel-clause. Read it as \"Hoewel ik moe ben, blijf ik tot het einde\".",
+   "forms": "zijn: ik ben. blijven: ik blijf.",
+   "compare": "English 'Although I'm tired, I stay' keeps 'I stay'. Dutch inverts to 'blijf ik'.",
+   "mistakes": [
+    {
+     "wrong": "Hoewel ik moe ben, ik blijf tot het einde.",
+     "right": "Hoewel ik moe ben, blijf ik tot het einde.",
+     "why": "The main clause starts with the verb: 'blijf ik'. (not \"Hoewel ik moe ben, ik blijf tot het einde.\", but \"Hoewel ik moe ben, blijf ik tot het einde.\")"
+    },
+    {
+     "wrong": "Hoewel ik moe bent, blijf ik tot het einde.",
+     "right": "Hoewel ik moe ben, blijf ik tot het einde.",
+     "why": "With 'ik' the verb is 'ben'. (not \"Hoewel ik moe bent, blijf ik tot het einde.\", but \"Hoewel ik moe ben, blijf ik tot het einde.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik blijf tot het einde, hoewel ik moe ben.",
+    "english": "I stay until the end, although I'm tired.",
+    "note": "With the main clause first there is no inversion. Compare: Ik blijf tot het einde, hoewel ik moe ben."
+   }
+  },
+  "pat-hoewel-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "The coat was expensive but she bought it anyway; both clauses use the simple past."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij kocht de jas",
+     "subject": "Zij",
+     "finite": "kocht",
+     "role": "main clause (what happens anyway)",
+     "why": "Zij is first, so the past form 'kocht' is second and the object 'de jas' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel hij duur was",
+     "subject": "hij",
+     "finite": "was",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'hij' (the coat) comes first, the predicate 'duur' follows, and the past form 'was' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kocht"
+    },
+    {
+     "label": "object",
+     "text": "de jas"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "duur"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    }
+   ],
+   "meaning": "She bought the coat, although it was expensive.",
+   "order": "'Hij' refers back to 'de jas', a 'de' word. 'Kopen' has the irregular past 'kocht'. Read it as \"Zij kocht de jas, hoewel hij duur was\".",
+   "forms": "kopen: zij kocht. zijn: hij was.",
+   "compare": "English 'although it was expensive' uses 'it'. Dutch uses 'hij' for a 'de' noun.",
+   "mistakes": [
+    {
+     "wrong": "Zij kocht de jas hoewel hij was duur.",
+     "right": "Zij kocht de jas, hoewel hij duur was.",
+     "why": "The finite verb 'was' goes behind the predicate 'duur'."
+    },
+    {
+     "wrong": "Zij kocht de jas hoewel het duur was.",
+     "right": "Zij kocht de jas, hoewel hij duur was.",
+     "why": "'De jas' is a 'de' noun, so the pronoun is 'hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel hij duur was, kocht zij de jas.",
+    "english": "Although it was expensive, she bought the coat.",
+    "note": "The hoewel-clause first inverts the main clause to 'kocht zij'."
+   }
+  },
+  "pat-hoewel-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "The delay did not prevent the arrival; the main clause has the split 'aankomen'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel de trein te laat was",
+     "subject": "de trein",
+     "finite": "was",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'de trein' comes first, the predicate 'te laat' follows, and the past form 'was' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kwamen we op tijd aan",
+     "subject": "we",
+     "finite": "kwamen",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'kwamen' comes first, then the subject 'we' and the phrase 'op tijd'; the particle 'aan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "de trein"
+    },
+    {
+     "label": "predicate",
+     "text": "te laat"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "kwamen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "phrase",
+     "text": "op tijd"
+    },
+    {
+     "label": "particle",
+     "text": "aan"
+    }
+   ],
+   "meaning": "Although the train was late, we arrived on time.",
+   "order": "'Aankomen' splits as 'kwamen ... aan'. The main clause inverts after the fronted clause. Read it as \"Hoewel de trein te laat was, kwamen we op tijd aan\".",
+   "forms": "zijn: de trein was. aankomen: kwamen ... aan.",
+   "compare": "English 'arrived on time' has no particle. Dutch uses 'aankomen'. For this card: \"Hoewel de trein te laat was, kwamen we op tijd aan\".",
+   "mistakes": [
+    {
+     "wrong": "Hoewel de trein te laat was, we kwamen op tijd aan.",
+     "right": "Hoewel de trein te laat was, kwamen we op tijd aan.",
+     "why": "The main clause starts with the verb: 'kwamen we'."
+    },
+    {
+     "wrong": "Hoewel de trein te laat was, kwamen we aan op tijd.",
+     "right": "Hoewel de trein te laat was, kwamen we op tijd aan.",
+     "why": "The particle 'aan' goes to the end. (not \"Hoewel de trein te laat was, kwamen we aan op tijd.\", but \"Hoewel de trein te laat was, kwamen we op tijd aan.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We kwamen op tijd aan, hoewel de trein te laat was.",
+    "english": "We arrived on time, although the train was late.",
+    "note": "With the main clause first there is no inversion. Compare: We kwamen op tijd aan, hoewel de trein te laat was."
+   }
+  },
+  "pat-hoewel-07": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Not knowing anyone is the obstacle; 'ken' closes the clause behind the negative object."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ga naar het feest",
+     "subject": "Ik",
+     "finite": "ga",
+     "role": "main clause (what happens anyway)",
+     "why": "Ik is first, so 'ga' is second and the direction 'naar het feest' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel ik niemand ken",
+     "subject": "ik",
+     "finite": "ken",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'ik' comes first, then the object 'niemand', and the finite verb 'ken' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "ga"
+    },
+    {
+     "label": "direction",
+     "text": "naar het feest"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "niemand"
+    },
+    {
+     "label": "finite verb",
+     "text": "ken"
+    }
+   ],
+   "meaning": "I'm going to the party, although I don't know anyone.",
+   "order": "'Niemand' is a negative object that stands before the final verb. Read it as \"Ik ga naar het feest, hoewel ik niemand ken\".",
+   "forms": "gaan: ik ga. kennen: ik ken.",
+   "compare": "English 'although I don't know anyone' needs 'don't' and 'anyone'. Dutch uses 'niemand'.",
+   "mistakes": [
+    {
+     "wrong": "Ik ga naar het feest hoewel ik ken niemand.",
+     "right": "Ik ga naar het feest, hoewel ik niemand ken.",
+     "why": "The finite verb goes behind the object 'niemand'."
+    },
+    {
+     "wrong": "Ik ga naar het feest hoewel ik niemand kent.",
+     "right": "Ik ga naar het feest, hoewel ik niemand ken.",
+     "why": "With 'ik' the verb is 'ken'. (not \"Ik ga naar het feest hoewel ik niemand kent.\", but \"Ik ga naar het feest, hoewel ik niemand ken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel ik niemand ken, ga ik naar het feest.",
+    "english": "Although I don't know anyone, I'm going to the party.",
+    "note": "The hoewel-clause first inverts the main clause to 'ga ik'."
+   }
+  },
+  "pat-hoewel-08": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "His effort is the expectation, the failed test the surprise; the perfect closes the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel hij hard heeft gewerkt",
+     "subject": "hij",
+     "finite": "heeft",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'hij' comes first, the adverb 'hard' follows, and the perfect group 'heeft gewerkt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "haalde hij de toets niet",
+     "subject": "hij",
+     "finite": "haalde",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'haalde' comes first, then the subject 'hij', the object 'de toets' and the negation 'niet'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "hard"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heeft"
+    },
+    {
+     "label": "past participle",
+     "text": "gewerkt"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "haalde"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "de toets"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    }
+   ],
+   "meaning": "Although he worked hard, he did not pass the test.",
+   "order": "The clause uses the perfect and the main clause the simple past. 'De toets halen' means to pass the test. Read it as \"Hoewel hij hard heeft gewerkt, haalde hij de toets niet\".",
+   "forms": "werken: heeft gewerkt. halen: hij haalde.",
+   "compare": "English 'Although he worked hard' uses the simple past. Dutch often uses the perfect for the first.",
+   "mistakes": [
+    {
+     "wrong": "Hoewel hij heeft hard gewerkt, haalde hij de toets niet.",
+     "right": "Hoewel hij hard heeft gewerkt, haalde hij de toets niet.",
+     "why": "The perfect group goes behind the adverb."
+    },
+    {
+     "wrong": "Hoewel hij hard heeft gewerkt, hij haalde de toets niet.",
+     "right": "Hoewel hij hard heeft gewerkt, haalde hij de toets niet.",
+     "why": "The main clause starts with the verb: 'haalde hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij heeft hard gewerkt, maar hij haalde de toets niet.",
+    "english": "He worked hard, but he didn't pass the test.",
+    "note": "With 'maar' the two parts stay main clauses."
+   }
+  },
+  "pat-hoewel-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Anger would suggest a reaction; she stayed calm anyway. Both clauses are in the simple past."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze bleef rustig",
+     "subject": "Ze",
+     "finite": "bleef",
+     "role": "main clause (what happens anyway)",
+     "why": "Ze is first, so the past form 'bleef' is second and the predicate 'rustig' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel ze erg boos was",
+     "subject": "ze",
+     "finite": "was",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'ze' comes first, then 'erg boos', and the past form 'was' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "bleef"
+    },
+    {
+     "label": "predicate",
+     "text": "rustig"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "adverb",
+     "text": "erg"
+    },
+    {
+     "label": "predicate",
+     "text": "boos"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    }
+   ],
+   "meaning": "She stayed calm, although she was very angry.",
+   "order": "'Blijven' has the strong past 'bleef'. The predicate stands before the final 'was'. Read it as \"Ze bleef rustig, hoewel ze erg boos was\".",
+   "forms": "blijven: ze bleef. zijn: ze was.",
+   "compare": "English 'stayed calm although she was very angry' has the same logic. For this card: \"Ze bleef rustig, hoewel ze erg boos was\".",
+   "mistakes": [
+    {
+     "wrong": "Ze bleef rustig hoewel ze was erg boos.",
+     "right": "Ze bleef rustig, hoewel ze erg boos was.",
+     "why": "The finite verb 'was' goes behind the predicate 'boos'."
+    },
+    {
+     "wrong": "Ze bleef rustig hoewel ze erg boos is.",
+     "right": "Ze bleef rustig, hoewel ze erg boos was.",
+     "why": "A past story needs a past form: 'was'. (not \"Ze bleef rustig hoewel ze erg boos is.\", but \"Ze bleef rustig, hoewel ze erg boos was.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel ze erg boos was, bleef ze rustig.",
+    "english": "Although she was very angry, she stayed calm.",
+    "note": "The hoewel-clause first inverts the main clause to 'bleef ze'."
+   }
+  },
+  "pat-hoewel-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "The late hour is the obstacle; the modal 'wil' opens the inverted main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel het al laat is",
+     "subject": "het",
+     "finite": "is",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The dummy subject 'het' comes first, then 'al laat', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "wil ik nog even doorwerken",
+     "subject": "ik",
+     "finite": "wil",
+     "role": "main clause (what happens anyway)",
+     "why": "The modal 'wil' comes first, then the subject 'ik' and the adverbs; the joined infinitive 'doorwerken' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "al"
+    },
+    {
+     "label": "predicate",
+     "text": "laat"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "wil"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "nog even"
+    },
+    {
+     "label": "infinitive (joined)",
+     "text": "doorwerken"
+    }
+   ],
+   "meaning": "Although it is already late, I want to keep working a bit longer.",
+   "order": "The main clause inverts to 'wil ik'. The infinitive 'doorwerken' stays whole at the end. Read it as \"Hoewel het al laat is, wil ik nog even doorwerken\".",
+   "forms": "zijn: het is. willen: ik wil. doorwerken: infinitive.",
+   "compare": "English 'I want to keep working' needs 'keep'. Dutch uses 'doorwerken'.",
+   "mistakes": [
+    {
+     "wrong": "Hoewel het al laat is, ik wil nog even doorwerken.",
+     "right": "Hoewel het al laat is, wil ik nog even doorwerken.",
+     "why": "The main clause starts with the modal: 'wil ik'."
+    },
+    {
+     "wrong": "Hoewel het al is laat, wil ik nog even doorwerken.",
+     "right": "Hoewel het al laat is, wil ik nog even doorwerken.",
+     "why": "The finite verb 'is' goes behind the predicate 'laat'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik wil nog even doorwerken, hoewel het al laat is.",
+    "english": "I want to keep working a bit longer, although it's already late.",
+    "note": "With the main clause first the modal stays after the subject. Compare: Ik wil nog even doorwerken, hoewel het al laat is."
+   }
+  },
+  "pat-hoewel-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "A rule broken: the modal 'mag' closes the hoewel-clause with the verb understood."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij rijdt door rood",
+     "subject": "Hij",
+     "finite": "rijdt",
+     "role": "main clause (what happens anyway)",
+     "why": "Hij is first, so 'rijdt' is second; the phrase 'door rood' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel hij dat niet mag",
+     "subject": "hij",
+     "finite": "mag",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'hij' comes first, then the object 'dat' and the negation 'niet', and the modal 'mag' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "rijdt"
+    },
+    {
+     "label": "phrase",
+     "text": "door rood"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "dat"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "mag"
+    }
+   ],
+   "meaning": "He drives through a red light, although he isn't allowed to.",
+   "order": "After 'mag' the verb 'doen' is understood: 'dat niet mag' means he is not allowed to do that. Read it as \"Hij rijdt door rood, hoewel hij dat niet mag\".",
+   "forms": "rijden: hij rijdt. mogen: hij mag.",
+   "compare": "English 'although he isn't allowed to' also drops the verb. For this card: \"Hij rijdt door rood, hoewel hij dat niet mag\".",
+   "mistakes": [
+    {
+     "wrong": "Hij rijdt door rood hoewel hij mag dat niet.",
+     "right": "Hij rijdt door rood, hoewel hij dat niet mag.",
+     "why": "The modal goes to the end of the clause. (not \"Hij rijdt door rood hoewel hij mag dat niet.\", but \"Hij rijdt door rood, hoewel hij dat niet mag.\")"
+    },
+    {
+     "wrong": "Hij rijdt door rood hoewel hij dat niet mogen.",
+     "right": "Hij rijdt door rood, hoewel hij dat niet mag.",
+     "why": "With 'hij' the modal is 'mag'. (not \"Hij rijdt door rood hoewel hij dat niet mogen.\", but \"Hij rijdt door rood, hoewel hij dat niet mag.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij rijdt door rood, maar hij mag dat niet.",
+    "english": "He drives through red, but he isn't allowed to.",
+    "note": "With 'maar' both parts keep normal order."
+   }
+  },
+  "pat-hoewel-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "The complaint is the obstacle; both clauses are in the simple past."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel de klant klaagde",
+     "subject": "de klant",
+     "finite": "klaagde",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'de klant' comes first and the past form 'klaagde' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "bleef de medewerker vriendelijk",
+     "subject": "de medewerker",
+     "finite": "bleef",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'bleef' comes first, then the subject 'de medewerker' and the predicate 'vriendelijk'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "de klant"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "klaagde"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "bleef"
+    },
+    {
+     "label": "subject",
+     "text": "de medewerker"
+    },
+    {
+     "label": "predicate",
+     "text": "vriendelijk"
+    }
+   ],
+   "meaning": "Although the customer complained, the employee stayed friendly.",
+   "order": "A past story. The main clause inverts to 'bleef de medewerker'. Read it as \"Hoewel de klant klaagde, bleef de medewerker vriendelijk\".",
+   "forms": "klagen: de klant klaagde. blijven: de medewerker bleef.",
+   "compare": "English 'Although the customer complained, the employee stayed friendly' keeps 'the employee stayed'. Dutch inverts.",
+   "mistakes": [
+    {
+     "wrong": "Hoewel de klant klaagde, de medewerker bleef vriendelijk.",
+     "right": "Hoewel de klant klaagde, bleef de medewerker vriendelijk.",
+     "why": "The main clause starts with the verb: 'bleef de medewerker'."
+    },
+    {
+     "wrong": "Hoewel de klant klaagt, bleef de medewerker vriendelijk.",
+     "right": "Hoewel de klant klaagde, bleef de medewerker vriendelijk.",
+     "why": "A past story needs a past form: 'klaagde'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De medewerker bleef vriendelijk, hoewel de klant klaagde.",
+    "english": "The employee stayed friendly, although the customer complained.",
+    "note": "With the main clause first there is no inversion. Compare: De medewerker bleef vriendelijk, hoewel de klant klaagde."
+   }
+  },
+  "pat-hoewel-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Few customers is the obstacle; 'er komen weinig klanten' is turned into a clause with 'er'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij blijven open",
+     "subject": "Wij",
+     "finite": "blijven",
+     "role": "main clause (what happens anyway)",
+     "why": "Wij is first, so the plural 'blijven' is second and the predicate 'open' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel er weinig klanten komen",
+     "subject": "klanten",
+     "finite": "komen",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The introducing 'er' comes first, then 'weinig klanten', and the plural verb 'komen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijven"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "dummy",
+     "text": "er"
+    },
+    {
+     "label": "subject",
+     "text": "weinig klanten"
+    },
+    {
+     "label": "finite verb",
+     "text": "komen"
+    }
+   ],
+   "meaning": "We stay open, although few customers come.",
+   "order": "'Er' introduces the plural subject 'weinig klanten'. The verb agrees with the plural noun. Read it as \"Wij blijven open, hoewel er weinig klanten komen\".",
+   "forms": "blijven: wij blijven. komen: klanten komen.",
+   "compare": "English 'although few customers come' has no 'there'. Dutch adds 'er'. For this card: \"Wij blijven open, hoewel er weinig klanten komen\".",
+   "mistakes": [
+    {
+     "wrong": "Wij blijven open hoewel er komen weinig klanten.",
+     "right": "Wij blijven open, hoewel er weinig klanten komen.",
+     "why": "The finite verb goes behind the subject. (not \"Wij blijven open hoewel er komen weinig klanten.\", but \"Wij blijven open, hoewel er weinig klanten komen.\")"
+    },
+    {
+     "wrong": "Wij blijven open hoewel er weinig klanten komt.",
+     "right": "Wij blijven open, hoewel er weinig klanten komen.",
+     "why": "The plural noun needs 'komen'. (not \"Wij blijven open hoewel er weinig klanten komt.\", but \"Wij blijven open, hoewel er weinig klanten komen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Er komen weinig klanten, maar wij blijven open.",
+    "english": "Few customers come, but we stay open.",
+    "note": "With 'maar' the parts become two main clauses."
+   }
+  },
+  "pat-hoewel-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Knowing the way contrasts with checking the phone; 'toch' in the main clause underlines the contrast."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel zij de weg kent",
+     "subject": "zij",
+     "finite": "kent",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'zij' comes first, then the object 'de weg', and the finite verb 'kent' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kijkt ze toch op haar telefoon",
+     "subject": "ze",
+     "finite": "kijkt",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'kijkt' comes first, then the subject 'ze' and the adverb 'toch'; the phrase 'op haar telefoon' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "object",
+     "text": "de weg"
+    },
+    {
+     "label": "finite verb",
+     "text": "kent"
+    },
+    {
+     "label": "finite verb",
+     "text": "kijkt"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "adverb",
+     "text": "toch"
+    },
+    {
+     "label": "phrase",
+     "text": "op haar telefoon"
+    }
+   ],
+   "meaning": "Although she knows the way, she still looks at her phone.",
+   "order": "The adverb 'toch' (still, all the same) often reinforces a concession. It does not change the order. Read it as \"Hoewel zij de weg kent, kijkt ze toch op haar telefoon\".",
+   "forms": "kennen: zij kent. kijken: ze kijkt.",
+   "compare": "English 'she still looks' puts 'still' before the verb. Dutch puts 'toch' after the subject.",
+   "mistakes": [
+    {
+     "wrong": "Hoewel zij de weg kent, ze kijkt toch op haar telefoon.",
+     "right": "Hoewel zij de weg kent, kijkt ze toch op haar telefoon.",
+     "why": "The main clause starts with the verb: 'kijkt ze'."
+    },
+    {
+     "wrong": "Hoewel zij kent de weg, kijkt ze toch op haar telefoon.",
+     "right": "Hoewel zij de weg kent, kijkt ze toch op haar telefoon.",
+     "why": "The finite verb goes behind the object. (not \"Hoewel zij kent de weg, kijkt ze toch op haar telefoon.\", but \"Hoewel zij de weg kent, kijkt ze toch op haar telefoon.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij kent de weg, maar ze kijkt toch op haar telefoon.",
+    "english": "She knows the way, but she still looks at her phone.",
+    "note": "With 'maar' both parts stay main clauses."
+   }
+  },
+  "pat-hoewel-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "A surprising win: the expectation of nobody is the obstacle; the perfect 'heeft gewonnen' stands in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij heeft gewonnen",
+     "subject": "Hij",
+     "finite": "heeft",
+     "role": "main clause (what happens anyway)",
+     "why": "Hij is first, so the auxiliary 'heeft' is second and the participle 'gewonnen' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel niemand het verwachtte",
+     "subject": "niemand",
+     "finite": "verwachtte",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'niemand' comes first, then the object 'het', and the past form 'verwachtte' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heeft"
+    },
+    {
+     "label": "past participle",
+     "text": "gewonnen"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "niemand"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "verwachtte"
+    }
+   ],
+   "meaning": "He has won, although nobody expected it.",
+   "order": "'Niemand' is singular and takes the past 'verwachtte'. The object 'het' stands before the verb. Read it as \"Hij heeft gewonnen, hoewel niemand het verwachtte\".",
+   "forms": "winnen: heeft gewonnen. verwachten: niemand verwachtte.",
+   "compare": "English 'although nobody expected it' keeps 'expected' before 'it'. Dutch puts 'verwachtte' last.",
+   "mistakes": [
+    {
+     "wrong": "Hij heeft gewonnen hoewel niemand verwachtte het.",
+     "right": "Hij heeft gewonnen, hoewel niemand het verwachtte.",
+     "why": "The finite verb goes behind the object 'het'. (not \"Hij heeft gewonnen hoewel niemand verwachtte het.\", but \"Hij heeft gewonnen, hoewel niemand het verwachtte.\")"
+    },
+    {
+     "wrong": "Hij heeft gewonnen hoewel niemand het verwachten.",
+     "right": "Hij heeft gewonnen, hoewel niemand het verwachtte.",
+     "why": "'Niemand' takes the past 'verwachtte'. (not \"Hij heeft gewonnen hoewel niemand het verwachten.\", but \"Hij heeft gewonnen, hoewel niemand het verwachtte.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Niemand verwachtte het, maar hij heeft gewonnen.",
+    "english": "Nobody expected it, but he has won.",
+    "note": "With 'maar' both parts stay main clauses. Compare: Niemand verwachtte het, maar hij heeft gewonnen."
+   }
+  },
+  "pat-hoewel-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "The update was done but the fault stays; the perfect passive closes the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel het systeem is bijgewerkt",
+     "subject": "het systeem",
+     "finite": "is",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'het systeem' comes first and the group 'is bijgewerkt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijft de fout bestaan",
+     "subject": "de fout",
+     "finite": "blijft",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'blijft' comes first, then the subject 'de fout'; the infinitive 'bestaan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "het systeem"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "bijgewerkt"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "de fout"
+    },
+    {
+     "label": "infinitive",
+     "text": "bestaan"
+    }
+   ],
+   "meaning": "Although the system has been updated, the error persists.",
+   "order": "'Bijwerken' is separable, so its participle is one word. 'Blijven bestaan' means to continue to exist. Read it as \"Hoewel het systeem is bijgewerkt, blijft de fout bestaan\".",
+   "forms": "bijwerken: is bijgewerkt. blijven: de fout blijft. bestaan: infinitive.",
+   "compare": "English 'persists' is one verb. Dutch uses 'blijven bestaan'. For this card: \"Hoewel het systeem is bijgewerkt, blijft de fout bestaan\".",
+   "mistakes": [
+    {
+     "wrong": "Hoewel het systeem is bijgewerkt, de fout blijft bestaan.",
+     "right": "Hoewel het systeem is bijgewerkt, blijft de fout bestaan.",
+     "why": "The main clause starts with the verb: 'blijft de fout'."
+    },
+    {
+     "wrong": "Hoewel het systeem is gewerkt bij, blijft de fout bestaan.",
+     "right": "Hoewel het systeem is bijgewerkt, blijft de fout bestaan.",
+     "why": "The participle of a separable verb is one word: 'bijgewerkt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De fout blijft bestaan, hoewel het systeem is bijgewerkt.",
+    "english": "The error persists, although the system has been updated.",
+    "note": "With the main clause first there is no inversion. Compare: De fout blijft bestaan, hoewel het systeem is bijgewerkt."
+   }
+  },
+  "pat-hoewel-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Being busy is the obstacle for answering; the main clause has the adverb 'altijd'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik antwoord altijd",
+     "subject": "Ik",
+     "finite": "antwoord",
+     "role": "main clause (what happens anyway)",
+     "why": "Ik is first, so 'antwoord' is second and the adverb 'altijd' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel ik het druk heb",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'ik' comes first, then 'het druk', and the finite verb 'heb' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "antwoord"
+    },
+    {
+     "label": "adverb",
+     "text": "altijd"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "druk"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    }
+   ],
+   "meaning": "I always reply, although I'm busy.",
+   "order": "'Het druk hebben' is the fixed phrase for being busy. The object and the predicate stand before 'heb'. Read it as \"Ik antwoord altijd, hoewel ik het druk heb\".",
+   "forms": "antwoorden: ik antwoord. hebben: ik heb.",
+   "compare": "English 'although I'm busy' uses 'be'. Dutch uses 'het druk hebben'. For this card: \"Ik antwoord altijd, hoewel ik het druk heb\".",
+   "mistakes": [
+    {
+     "wrong": "Ik antwoord altijd hoewel ik heb het druk.",
+     "right": "Ik antwoord altijd, hoewel ik het druk heb.",
+     "why": "The finite verb goes behind 'het druk'. (not \"Ik antwoord altijd hoewel ik heb het druk.\", but \"Ik antwoord altijd, hoewel ik het druk heb.\")"
+    },
+    {
+     "wrong": "Ik antwoord altijd hoewel ik het druk hebt.",
+     "right": "Ik antwoord altijd, hoewel ik het druk heb.",
+     "why": "With 'ik' the verb is 'heb'. (not \"Ik antwoord altijd hoewel ik het druk hebt.\", but \"Ik antwoord altijd, hoewel ik het druk heb.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel ik het druk heb, antwoord ik altijd.",
+    "english": "Although I'm busy, I always reply.",
+    "note": "The hoewel-clause first inverts the main clause to 'antwoord ik'."
+   }
+  },
+  "pat-hoewel-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Dislike does not cancel the obligation; the modal 'moet' opens the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel jij het niet leuk vindt",
+     "subject": "jij",
+     "finite": "vindt",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'jij' comes first, then 'het' and 'niet leuk', and the finite verb 'vindt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "moet je meedoen",
+     "subject": "je",
+     "finite": "moet",
+     "role": "main clause (what happens anyway)",
+     "why": "The modal 'moet' comes first, then the subject 'je'; the joined separable infinitive 'meedoen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "predicate",
+     "text": "leuk"
+    },
+    {
+     "label": "finite verb",
+     "text": "vindt"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moet"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "infinitive (joined)",
+     "text": "meedoen"
+    }
+   ],
+   "meaning": "Although you don't like it, you have to take part.",
+   "order": "'Iets leuk vinden' means to like something. The main clause inverts to 'moet je meedoen'. Read it as \"Hoewel jij het niet leuk vindt, moet je meedoen\".",
+   "forms": "vinden: jij vindt. moeten: je moet. meedoen: infinitive.",
+   "compare": "English 'Although you don't like it' uses 'like'. Dutch uses 'leuk vinden'.",
+   "mistakes": [
+    {
+     "wrong": "Hoewel jij het niet leuk vindt, je moet meedoen.",
+     "right": "Hoewel jij het niet leuk vindt, moet je meedoen.",
+     "why": "The main clause starts with the modal: 'moet je'."
+    },
+    {
+     "wrong": "Hoewel jij het niet leuk vind, moet je meedoen.",
+     "right": "Hoewel jij het niet leuk vindt, moet je meedoen.",
+     "why": "With 'jij' the verb needs -t: 'vindt'. (not \"Hoewel jij het niet leuk vind, moet je meedoen.\", but \"Hoewel jij het niet leuk vindt, moet je meedoen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je moet meedoen, hoewel jij het niet leuk vindt.",
+    "english": "You have to take part, although you don't like it.",
+    "note": "With the main clause first the modal stays after the subject. Compare: Je moet meedoen, hoewel jij het niet leuk vindt."
+   }
+  },
+  "pat-hoewel-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "A public holiday would suggest closing; the clause 'hoewel het feestdag is' says why it is surprising."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De winkel is open",
+     "subject": "De winkel",
+     "finite": "is",
+     "role": "main clause (what happens anyway)",
+     "why": "'De winkel' is first, so 'is' is second and the predicate 'open' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel het feestdag is",
+     "subject": "het",
+     "finite": "is",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The dummy subject 'het' comes first, the predicate 'feestdag' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De winkel"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "feestdag"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "The shop is open, although it's a public holiday.",
+   "order": "Both clauses end in 'is' but with different subjects. 'Het is feestdag' is the usual way to say it is a holiday.",
+   "forms": "zijn: de winkel is. zijn: het is.",
+   "compare": "English 'it's a public holiday' needs 'a'. Dutch uses 'feestdag' without article.",
+   "mistakes": [
+    {
+     "wrong": "De winkel is open hoewel het is feestdag.",
+     "right": "De winkel is open, hoewel het feestdag is.",
+     "why": "The finite verb 'is' goes behind the predicate 'feestdag'."
+    },
+    {
+     "wrong": "De winkel is open hoewel het feestdag zijn.",
+     "right": "De winkel is open, hoewel het feestdag is.",
+     "why": "The dummy subject 'het' takes 'is'. (not \"De winkel is open hoewel het feestdag zijn.\", but \"De winkel is open, hoewel het feestdag is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Het is feestdag, maar de winkel is open.",
+    "english": "It's a public holiday, but the shop is open.",
+    "note": "With 'maar' the parts stay main clauses. Compare: Het is feestdag, maar de winkel is open."
+   }
+  },
+  "pat-hoewel-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Youth contrasts with knowledge; 'weet ze' is the inverted main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel ze jong is",
+     "subject": "ze",
+     "finite": "is",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'ze' comes first, the predicate 'jong' follows, and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "weet ze veel van computers",
+     "subject": "ze",
+     "finite": "weet",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'weet' comes first, then the subject 'ze' and the object 'veel'; the phrase 'van computers' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "predicate",
+     "text": "jong"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "veel"
+    },
+    {
+     "label": "phrase",
+     "text": "van computers"
+    }
+   ],
+   "meaning": "Although she is young, she knows a lot about computers.",
+   "order": "'Veel weten van' means to know a lot about. The main clause inverts to 'weet ze'. Read it as \"Hoewel ze jong is, weet ze veel van computers\".",
+   "forms": "zijn: ze is. weten: ze weet.",
+   "compare": "English 'she knows a lot about' uses 'about'. Dutch uses 'van'. For this card: \"Hoewel ze jong is, weet ze veel van computers\".",
+   "mistakes": [
+    {
+     "wrong": "Hoewel ze jong is, ze weet veel van computers.",
+     "right": "Hoewel ze jong is, weet ze veel van computers.",
+     "why": "The main clause starts with the verb: 'weet ze'."
+    },
+    {
+     "wrong": "Hoewel ze is jong, weet ze veel van computers.",
+     "right": "Hoewel ze jong is, weet ze veel van computers.",
+     "why": "The finite verb 'is' goes behind the predicate 'jong'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze is jong, maar ze weet veel van computers.",
+    "english": "She is young, but she knows a lot about computers.",
+    "note": "With 'maar' the parts stay main clauses. Compare: Ze is jong, maar ze weet veel van computers."
+   }
+  },
+  "pat-hoewel-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Nobody can hear them: the modal 'kan' and the object 'hen' stand before the infinitive 'horen'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij praten zacht",
+     "subject": "Zij",
+     "finite": "praten",
+     "role": "main clause (what happens anyway)",
+     "why": "Zij is first, so the plural 'praten' is second and the adverb 'zacht' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel niemand hen kan horen",
+     "subject": "niemand",
+     "finite": "kan",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'niemand' comes first, then the object 'hen', and the modal 'kan' stands before the infinitive 'horen', which closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "praten"
+    },
+    {
+     "label": "adverb",
+     "text": "zacht"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "niemand"
+    },
+    {
+     "label": "object",
+     "text": "hen"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "infinitive",
+     "text": "horen"
+    }
+   ],
+   "meaning": "They talk quietly, although nobody can hear them.",
+   "order": "A modal chain closes the clause: 'kan horen'. The object 'hen' stands before it. Read it as \"Zij praten zacht, hoewel niemand hen kan horen\".",
+   "forms": "praten: zij praten. kunnen: niemand kan. horen: infinitive.",
+   "compare": "English 'although nobody can hear them' keeps the chain together too. For this card: \"Zij praten zacht, hoewel niemand hen kan horen\".",
+   "mistakes": [
+    {
+     "wrong": "Zij praten zacht hoewel niemand kan hen horen.",
+     "right": "Zij praten zacht, hoewel niemand hen kan horen.",
+     "why": "The object 'hen' stands before the modal."
+    },
+    {
+     "wrong": "Zij praten zacht hoewel niemand hen kunnen horen.",
+     "right": "Zij praten zacht, hoewel niemand hen kan horen.",
+     "why": "'Niemand' takes 'kan'. (not \"Zij praten zacht hoewel niemand hen kunnen horen.\", but \"Zij praten zacht, hoewel niemand hen kan horen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Niemand kan hen horen, maar zij praten zacht.",
+    "english": "Nobody can hear them, but they talk quietly.",
+    "note": "With 'maar' both parts stay main clauses. Compare: Niemand kan hen horen, maar zij praten zacht."
+   }
+  },
+  "pat-hoewel-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "The heating stayed on although they had left; 'waren vertrokken' is the past perfect with 'zijn'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel we waren vertrokken",
+     "subject": "we",
+     "finite": "waren",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'we' comes first and the group 'waren vertrokken' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stond de verwarming nog aan",
+     "subject": "de verwarming",
+     "finite": "stond",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'stond' comes first, then the subject 'de verwarming' and the adverb 'nog'; the particle 'aan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "waren"
+    },
+    {
+     "label": "past participle",
+     "text": "vertrokken"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "stond"
+    },
+    {
+     "label": "subject",
+     "text": "de verwarming"
+    },
+    {
+     "label": "adverb",
+     "text": "nog"
+    },
+    {
+     "label": "particle",
+     "text": "aan"
+    }
+   ],
+   "meaning": "Although we had left, the heating was still on.",
+   "order": "'Aanstaan' (to be on) splits as 'stond ... aan'. 'Vertrekken' takes 'zijn'. Read it as \"Hoewel we waren vertrokken, stond de verwarming nog aan\".",
+   "forms": "vertrekken: waren vertrokken. aanstaan: stond ... aan.",
+   "compare": "English 'was still on' uses 'on'. Dutch uses 'aanstaan'. For this card: \"Hoewel we waren vertrokken, stond de verwarming nog aan\".",
+   "mistakes": [
+    {
+     "wrong": "Hoewel we hadden vertrokken, stond de verwarming nog aan.",
+     "right": "Hoewel we waren vertrokken, stond de verwarming nog aan.",
+     "why": "'Vertrekken' takes 'zijn': 'waren vertrokken'. (not \"Hoewel we hadden vertrokken, stond de verwarming nog aan.\", but \"Hoewel we waren vertrokken, stond de verwarming nog aan.\")"
+    },
+    {
+     "wrong": "Hoewel we waren vertrokken, de verwarming stond nog aan.",
+     "right": "Hoewel we waren vertrokken, stond de verwarming nog aan.",
+     "why": "The main clause starts with the verb: 'stond de verwarming'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De verwarming stond nog aan, hoewel we waren vertrokken.",
+    "english": "The heating was still on, although we had left.",
+    "note": "With the main clause first there is no inversion. Compare: De verwarming stond nog aan, hoewel we waren vertrokken."
+   }
+  },
+  "pat-hoewel-23": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Never having studied makes passing surprising; the past perfect 'had gestudeerd' closes the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel hij nooit had gestudeerd",
+     "subject": "hij",
+     "finite": "had",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'hij' comes first, the adverb 'nooit' follows, and the past perfect 'had gestudeerd' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "slaagde hij voor het examen",
+     "subject": "hij",
+     "finite": "slaagde",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'slaagde' comes first, then the subject 'hij' and the phrase 'voor het examen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "nooit"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gestudeerd"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "slaagde"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "phrase",
+     "text": "voor het examen"
+    }
+   ],
+   "meaning": "Although he had never studied, he passed the exam.",
+   "order": "'Slagen voor' means to pass. The past perfect shows that the studying never happened before the exam. Read it as \"Hoewel hij nooit had gestudeerd, slaagde hij voor het examen\".",
+   "forms": "studeren: had gestudeerd. slagen: hij slaagde.",
+   "compare": "English 'had never studied' is the same tense. For this card: \"Hoewel hij nooit had gestudeerd, slaagde hij voor het examen\".",
+   "mistakes": [
+    {
+     "wrong": "Hoewel hij nooit had gestudeerd, hij slaagde voor het examen.",
+     "right": "Hoewel hij nooit had gestudeerd, slaagde hij voor het examen.",
+     "why": "The main clause starts with the verb: 'slaagde hij'."
+    },
+    {
+     "wrong": "Hoewel hij nooit gestudeerd, slaagde hij voor het examen.",
+     "right": "Hoewel hij nooit had gestudeerd, slaagde hij voor het examen.",
+     "why": "The auxiliary 'had' is missing. (not \"Hoewel hij nooit gestudeerd, slaagde hij voor het examen.\", but \"Hoewel hij nooit had gestudeerd, slaagde hij voor het examen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij slaagde voor het examen, hoewel hij nooit had gestudeerd.",
+    "english": "He passed the exam, although he had never studied.",
+    "note": "With the main clause first there is no inversion. Compare: Hij slaagde voor het examen, hoewel hij nooit had gestudeerd."
+   }
+  },
+  "pat-hoewel-24": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "An imperative with a concession: the late hour does not forbid the call."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Bel me",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Bel",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Bel' stands first and the object 'me' follows. The clause is \"Bel me\". (2) (3)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel het laat is",
+     "subject": "het",
+     "finite": "is",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The dummy subject 'het' comes first, the predicate 'laat' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Bel"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "laat"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "Call me, although it's late.",
+   "order": "A short command followed by a concession. The imperative has no spoken subject. Read it as \"Bel me, hoewel het laat is\".",
+   "forms": "bellen: imperative bel. zijn: het is.",
+   "compare": "English 'Call me, although it's late' has the same shape. For this card: \"Bel me, hoewel het laat is\".",
+   "mistakes": [
+    {
+     "wrong": "Bel me hoewel het is laat.",
+     "right": "Bel me, hoewel het laat is.",
+     "why": "The finite verb 'is' goes behind the predicate 'laat'. (not \"Bel me hoewel het is laat.\", but \"Bel me, hoewel het laat is.\")"
+    },
+    {
+     "wrong": "Bel me hoewel het laat zijn.",
+     "right": "Bel me, hoewel het laat is.",
+     "why": "The dummy subject 'het' takes 'is'. (not \"Bel me hoewel het laat zijn.\", but \"Bel me, hoewel het laat is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel het laat is, bel je me.",
+    "english": "Although it's late, you call me.",
+    "note": "The hoewel-clause first inverts the main clause to 'bel je me'."
+   }
+  },
+  "pat-hoewel-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "An invitation despite the closed door; 'toch' reinforces it and 'binnen' is the particle of 'binnenkomen'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Kom toch binnen",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Kom",
+     "role": "main clause (the invitation)",
+     "why": "An imperative: 'Kom' stands first, then 'toch'; the particle 'binnen' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel we niet open zijn",
+     "subject": "we",
+     "finite": "zijn",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'we' comes first, then 'niet open', and the plural 'zijn' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb (split separable)",
+     "text": "Kom"
+    },
+    {
+     "label": "adverb",
+     "text": "toch"
+    },
+    {
+     "label": "particle",
+     "text": "binnen"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "finite verb",
+     "text": "zijn"
+    }
+   ],
+   "meaning": "Come in anyway, although we aren't open.",
+   "order": "'Binnenkomen' splits as 'kom ... binnen'. The adverb 'toch' means anyway. Read it as \"Kom toch binnen, hoewel we niet open zijn\".",
+   "forms": "binnenkomen: kom ... binnen. zijn: wij zijn.",
+   "compare": "English 'Come in anyway' has the same particle at the end. For this card: \"Kom toch binnen, hoewel we niet open zijn\".",
+   "mistakes": [
+    {
+     "wrong": "Kom toch binnen hoewel we zijn niet open.",
+     "right": "Kom toch binnen, hoewel we niet open zijn.",
+     "why": "The finite verb 'zijn' goes behind 'niet open'."
+    },
+    {
+     "wrong": "Kom toch binnen hoewel we niet open is.",
+     "right": "Kom toch binnen, hoewel we niet open zijn.",
+     "why": "The plural 'we' needs 'zijn'. (not \"Kom toch binnen hoewel we niet open is.\", but \"Kom toch binnen, hoewel we niet open zijn.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel we niet open zijn, kom je toch binnen.",
+    "english": "Although we aren't open, you come in anyway.",
+    "note": "The hoewel-clause first inverts the main clause. Compare: Hoewel we niet open zijn, kom je toch binnen."
+   }
+  },
+  "pat-hoewel-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "A question about feelings despite a loss; the perfect 'hebt gewonnen' closes the hoewel-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ben je tevreden",
+     "subject": "je",
+     "finite": "Ben",
+     "role": "main clause (the question)",
+     "why": "A yes/no question starts with the finite verb 'Ben', then the subject 'je' and the predicate 'tevreden'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "hoewel je niet hebt gewonnen",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The subject 'je' comes first, the negation 'niet' follows, and the perfect group 'hebt gewonnen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb",
+     "text": "Ben"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "predicate",
+     "text": "tevreden"
+    },
+    {
+     "label": "conjunction (although)",
+     "text": "hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebt"
+    },
+    {
+     "label": "past participle",
+     "text": "gewonnen"
+    }
+   ],
+   "meaning": "Are you satisfied, although you didn't win?",
+   "order": "In a question the verb opens the sentence. The hoewel-clause adds the surprising fact. Read it as \"Ben je tevreden, hoewel je niet hebt gewonnen\".",
+   "forms": "zijn: ben je. winnen: hebt gewonnen.",
+   "compare": "English 'Are you satisfied although you didn't win?' needs 'didn't'. Dutch uses the perfect.",
+   "mistakes": [
+    {
+     "wrong": "Je bent tevreden hoewel je niet hebt gewonnen?",
+     "right": "Ben je tevreden, hoewel je niet hebt gewonnen?",
+     "why": "A question inverts the verb and the subject: 'Ben je'."
+    },
+    {
+     "wrong": "Ben je tevreden hoewel je niet gewonnen?",
+     "right": "Ben je tevreden, hoewel je niet hebt gewonnen?",
+     "why": "The auxiliary 'hebt' is missing. (not \"Ben je tevreden hoewel je niet gewonnen?\", but \"Ben je tevreden, hoewel je niet hebt gewonnen?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je bent tevreden, hoewel je niet hebt gewonnen.",
+    "english": "You are satisfied, although you didn't win.",
+    "note": "A statement has the subject first. Compare: Je bent tevreden, hoewel je niet hebt gewonnen."
+   }
+  },
+  "pat-hoewel-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "'Alhoewel' is a formal variant of 'hoewel' with the same verb-final order."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Alhoewel de regels streng zijn",
+     "subject": "de regels",
+     "finite": "zijn",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The plural subject 'de regels' comes first, the predicate 'streng' follows, and the plural 'zijn' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "zijn er uitzonderingen",
+     "subject": "uitzonderingen",
+     "finite": "zijn",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'zijn' comes first, then the introducing 'er' and the subject 'uitzonderingen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although, formal)",
+     "text": "Alhoewel"
+    },
+    {
+     "label": "subject",
+     "text": "de regels"
+    },
+    {
+     "label": "predicate",
+     "text": "streng"
+    },
+    {
+     "label": "finite verb",
+     "text": "zijn"
+    },
+    {
+     "label": "finite verb",
+     "text": "zijn"
+    },
+    {
+     "label": "dummy",
+     "text": "er"
+    },
+    {
+     "label": "subject",
+     "text": "uitzonderingen"
+    }
+   ],
+   "meaning": "Although the rules are strict, there are exceptions.",
+   "order": "'Alhoewel' belongs to a formal register but behaves exactly like 'hoewel'. The main clause inverts to 'zijn er uitzonderingen'.",
+   "forms": "zijn: de regels zijn. zijn: er zijn uitzonderingen.",
+   "compare": "English 'although' has no formal variant like this. Dutch can use 'alhoewel' or 'ofschoon'.",
+   "mistakes": [
+    {
+     "wrong": "Alhoewel de regels zijn streng, zijn er uitzonderingen.",
+     "right": "Alhoewel de regels streng zijn, zijn er uitzonderingen.",
+     "why": "The finite verb 'zijn' goes behind the predicate 'streng'."
+    },
+    {
+     "wrong": "Alhoewel de regels streng zijn, er zijn uitzonderingen.",
+     "right": "Alhoewel de regels streng zijn, zijn er uitzonderingen.",
+     "why": "The main clause starts with the verb: 'zijn er'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Er zijn uitzonderingen, alhoewel de regels streng zijn.",
+    "english": "There are exceptions, although the rules are strict.",
+    "note": "With the main clause first there is no inversion. Compare: Er zijn uitzonderingen, alhoewel de regels streng zijn."
+   }
+  },
+  "pat-hoewel-28": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "hoewel = although (concession)",
+    "why": "Double-checking is not necessary but done: the object 'alles' stands before the adverbial in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Hoewel het niet nodig is",
+     "subject": "het",
+     "finite": "is",
+     "role": "hoewel-clause (the obstacle)",
+     "why": "The dummy subject 'het' comes first, then 'niet nodig', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "controleer ik alles twee keer",
+     "subject": "ik",
+     "finite": "controleer",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'controleer' comes first, then the subject 'ik', the object 'alles' and the phrase 'twee keer'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (although)",
+     "text": "Hoewel"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "predicate",
+     "text": "nodig"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "alles"
+    },
+    {
+     "label": "phrase",
+     "text": "twee keer"
+    }
+   ],
+   "meaning": "Although it isn't necessary, I check everything twice.",
+   "order": "'Twee keer' means twice. The main clause inverts to 'controleer ik'. Read it as \"Hoewel het niet nodig is, controleer ik alles twee keer\".",
+   "forms": "zijn: het is. controleren: ik controleer.",
+   "compare": "English 'I check everything twice' keeps 'I check'. Dutch inverts after the fronted clause.",
+   "mistakes": [
+    {
+     "wrong": "Hoewel het niet nodig is, ik controleer alles twee keer.",
+     "right": "Hoewel het niet nodig is, controleer ik alles twee keer.",
+     "why": "The main clause starts with the verb: 'controleer ik'. (not \"Hoewel het niet nodig is, ik controleer alles twee keer.\", but \"Hoewel het niet nodig is, controleer ik alles twee keer.\")"
+    },
+    {
+     "wrong": "Hoewel het niet is nodig, controleer ik alles twee keer.",
+     "right": "Hoewel het niet nodig is, controleer ik alles twee keer.",
+     "why": "The finite verb 'is' goes behind the predicate 'nodig'. (not \"Hoewel het niet is nodig, controleer ik alles twee keer.\", but \"Hoewel het niet nodig is, controleer ik alles twee keer.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik controleer alles twee keer, hoewel het niet nodig is.",
+    "english": "I check everything twice, although it isn't necessary.",
+    "note": "With the main clause first there is no inversion. Compare: Ik controleer alles twee keer, hoewel het niet nodig is."
+   }
+  },
+  "pat-hoewel-29": {
+   "status": "ai-editorial-checked",
+   "pattern": "coordinate",
+   "sense": {
+    "label": "maar = but (coordinating, no change of word order)",
+    "why": "Maar joins two main clauses: no verb moves, unlike hoewel."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het regent",
+     "subject": "Het",
+     "finite": "regent",
+     "role": "first main clause",
+     "why": "'Het' is first and 'regent' is second in the first main clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "maar we gaan wandelen",
+     "subject": "we",
+     "finite": "gaan",
+     "role": "second main clause (maar)",
+     "why": "After 'maar' the second main clause keeps normal order: the subject 'we' and then 'gaan', with the infinitive 'wandelen' at the end."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    },
+    {
+     "label": "conjunction (but)",
+     "text": "maar"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    }
+   ],
+   "meaning": "It's raining, but we are going for a walk.",
+   "order": "'Maar' is a coordinating conjunction: it does not occupy position one and does not send a verb to the end. Read it as \"Het regent, maar we gaan wandelen\".",
+   "forms": "regenen: het regent. gaan: wij gaan. wandelen: infinitive. Card: \"Het regent, maar we gaan wandelen\".",
+   "compare": "English 'but' works the same way. Dutch 'hoewel' differs because it makes the clause subordinate.",
+   "mistakes": [
+    {
+     "wrong": "Het regent, maar gaan we wandelen.",
+     "right": "Het regent, maar we gaan wandelen.",
+     "why": "After 'maar' the subject stays in front of the verb: 'we gaan'."
+    },
+    {
+     "wrong": "Het regent, maar we wandelen gaan.",
+     "right": "Het regent, maar we gaan wandelen.",
+     "why": "The finite verb 'gaan' stays second and the infinitive goes last."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel het regent, gaan we wandelen.",
+    "english": "Although it rains, we go for a walk.",
+    "note": "With 'hoewel' the first clause is subordinate and the verb moves to the end."
+   }
+  },
+  "pat-hoewel-30": {
+   "status": "ai-editorial-checked",
+   "pattern": "coordinate",
+   "sense": {
+    "label": "maar = but (coordinating, no change of word order)",
+    "why": "Maar sets the illness against the working without changing the order of either clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij is ziek",
+     "subject": "Hij",
+     "finite": "is",
+     "role": "first main clause",
+     "why": "'Hij' is first and 'is' is second in the first main clause. The clause is \"Hij is ziek\"."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "maar hij werkt door",
+     "subject": "hij",
+     "finite": "werkt",
+     "role": "second main clause (maar)",
+     "why": "After 'maar' the second main clause keeps normal order: 'hij werkt', with the particle 'door' at the end."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "ziek"
+    },
+    {
+     "label": "conjunction (but)",
+     "text": "maar"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "werkt"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    }
+   ],
+   "meaning": "He is ill, but he keeps working.",
+   "order": "Two complete main clauses. 'Doorwerken' splits as 'werkt ... door'. Read it as \"Hij is ziek, maar hij werkt door\".",
+   "forms": "zijn: hij is. doorwerken: werkt ... door.",
+   "compare": "English 'He is ill, but he keeps working' has the same structure. For this card: \"Hij is ziek, maar hij werkt door\".",
+   "mistakes": [
+    {
+     "wrong": "Hij is ziek, maar werkt hij door.",
+     "right": "Hij is ziek, maar hij werkt door.",
+     "why": "After 'maar' the subject stays in front of the verb: 'hij werkt'."
+    },
+    {
+     "wrong": "Hij is ziek, maar hij doorwerkt.",
+     "right": "Hij is ziek, maar hij werkt door.",
+     "why": "In a main clause 'doorwerken' splits: 'werkt ... door'. (not \"Hij is ziek, maar hij doorwerkt.\", but \"Hij is ziek, maar hij werkt door.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij werkt door, hoewel hij ziek is.",
+    "english": "He keeps working, although he is ill.",
+    "note": "With 'hoewel' the verb 'is' goes to the end of its clause."
+   }
+  },
+  "pat-hoewel-31": {
+   "status": "ai-editorial-checked",
+   "pattern": "coordinate",
+   "sense": {
+    "label": "maar = but (coordinating, no change of word order)",
+    "why": "Maar contrasts youth with knowledge; both clauses keep their normal order."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze is jong",
+     "subject": "Ze",
+     "finite": "is",
+     "role": "first main clause",
+     "why": "'Ze' is first and 'is' is second in the first main clause. The clause is \"Ze is jong\"."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "maar ze weet veel van computers",
+     "subject": "ze",
+     "finite": "weet",
+     "role": "second main clause (maar)",
+     "why": "After 'maar' the second main clause keeps normal order: 'ze weet', then the object 'veel' and the phrase 'van computers'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "jong"
+    },
+    {
+     "label": "conjunction (but)",
+     "text": "maar"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "object",
+     "text": "veel"
+    },
+    {
+     "label": "phrase",
+     "text": "van computers"
+    }
+   ],
+   "meaning": "She is young, but she knows a lot about computers.",
+   "order": "Two main clauses, each with the finite verb second. 'Maar' stands outside the clause order. Read it as \"Ze is jong, maar ze weet veel van computers\".",
+   "forms": "zijn: ze is. weten: ze weet. Card: \"Ze is jong, maar ze weet veel van computers\".",
+   "compare": "English 'She is young, but she knows a lot' has the same structure. For this card: \"Ze is jong, maar ze weet veel van computers\".",
+   "mistakes": [
+    {
+     "wrong": "Ze is jong, maar weet ze veel van computers.",
+     "right": "Ze is jong, maar ze weet veel van computers.",
+     "why": "After 'maar' the subject stays in front of the verb: 'ze weet'."
+    },
+    {
+     "wrong": "Ze is jong, maar ze veel weet van computers.",
+     "right": "Ze is jong, maar ze weet veel van computers.",
+     "why": "The finite verb 'weet' stays second. (not \"Ze is jong, maar ze veel weet van computers.\", but \"Ze is jong, maar ze weet veel van computers.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoewel ze jong is, weet ze veel van computers.",
+    "english": "Although she is young, she knows a lot about computers.",
+    "note": "With 'hoewel' the first clause moves its verb to the end."
+   }
+  },
+  "pat-hoewel-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "The rain is the obstacle; 'ook al' puts the verb right behind 'al'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We gaan wandelen",
+     "subject": "We",
+     "finite": "gaan",
+     "role": "main clause (what happens anyway)",
+     "why": "We is first, so the plural 'gaan' is second and the infinitive 'wandelen' ends the main clause. The clause is \"We gaan wandelen\". (2) (3)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al regent het",
+     "subject": "het",
+     "finite": "regent",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'regent' follows directly, then the dummy subject 'het'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    }
+   ],
+   "meaning": "We are going for a walk, even though it rains.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'het' follows the verb 'regent'.",
+   "forms": "gaan: wij gaan. regenen: het regent. Card: \"We gaan wandelen, ook al regent het\".",
+   "compare": "English 'even though it rains' keeps 'it' before 'rains'. Dutch with 'ook al' puts 'regent' first.",
+   "mistakes": [
+    {
+     "wrong": "We gaan wandelen, ook al het regent.",
+     "right": "We gaan wandelen, ook al regent het.",
+     "why": "With 'ook al' the finite verb follows 'al' directly: 'ook al regent het'."
+    },
+    {
+     "wrong": "We gaan wandelen, ook al regenen het.",
+     "right": "We gaan wandelen, ook al regent het.",
+     "why": "The dummy subject 'het' needs 'regent'. (not \"We gaan wandelen, ook al regenen het.\", but \"We gaan wandelen, ook al regent het.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We gaan wandelen, hoewel het regent.",
+    "english": "We are going for a walk, although it rains.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest."
+   }
+  },
+  "pat-hoewel-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "The late hour is the obstacle for staying."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik blijf",
+     "subject": "Ik",
+     "finite": "blijf",
+     "role": "main clause (what happens anyway)",
+     "why": "Ik is first, so 'blijf' is second and the main clause is complete."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al is het laat",
+     "subject": "het",
+     "finite": "is",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'is' follows directly, then the dummy subject 'het' and the predicate 'laat'.",
+     "afterFinite": "laat"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "laat"
+    }
+   ],
+   "meaning": "I stay, even though it is late.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'het' follows the verb 'is'.",
+   "forms": "blijven: ik blijf. zijn: het is. Card: \"Ik blijf, ook al is het laat\".",
+   "compare": "English 'even though it is late' keeps 'it is'. Dutch with 'ook al' says 'is het'.",
+   "mistakes": [
+    {
+     "wrong": "Ik blijf, ook al het is laat.",
+     "right": "Ik blijf, ook al is het laat.",
+     "why": "With 'ook al' the finite verb follows 'al' directly: 'ook al is het laat'."
+    },
+    {
+     "wrong": "Ik blijf, ook al is laat het.",
+     "right": "Ik blijf, ook al is het laat.",
+     "why": "The predicate 'laat' comes after the subject 'het'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik blijf, hoewel het laat is.",
+    "english": "I stay, although it is late.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: Ik blijf, hoewel het laat is."
+   }
+  },
+  "pat-hoewel-34": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "Illness is the obstacle for working; the verb 'is' stands before the subject 'hij'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij werkt door",
+     "subject": "Hij",
+     "finite": "werkt",
+     "role": "main clause (what happens anyway)",
+     "why": "Hij is first, so 'werkt' is second; the particle 'door' ends the main clause. The clause is \"Hij werkt door\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al is hij ziek",
+     "subject": "hij",
+     "finite": "is",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'is' follows directly, then the subject 'hij' and the predicate 'ziek'.",
+     "afterFinite": "ziek"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "werkt"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "ziek"
+    }
+   ],
+   "meaning": "He keeps working, even though he is ill.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'hij' follows the verb 'is'.",
+   "forms": "doorwerken: werkt ... door. zijn: hij is. Card: \"Hij werkt door, ook al is hij ziek\".",
+   "compare": "English 'even though he is ill' keeps 'he is'. Dutch with 'ook al' says 'is hij'.",
+   "mistakes": [
+    {
+     "wrong": "Hij werkt door, ook al hij is ziek.",
+     "right": "Hij werkt door, ook al is hij ziek.",
+     "why": "With 'ook al' the finite verb follows 'al' directly: 'ook al is hij ziek'."
+    },
+    {
+     "wrong": "Hij doorwerkt, ook al is hij ziek.",
+     "right": "Hij werkt door, ook al is hij ziek.",
+     "why": "In a main clause 'doorwerken' splits: 'werkt ... door'. (not \"Hij doorwerkt, ook al is hij ziek.\", but \"Hij werkt door, ook al is hij ziek.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij werkt door, hoewel hij ziek is.",
+    "english": "He keeps working, although he is ill.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: Hij werkt door, hoewel hij ziek is."
+   }
+  },
+  "pat-hoewel-35": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "The price is the obstacle; 'hij' stands for the coat, a 'de' noun."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze koopt de jas",
+     "subject": "Ze",
+     "finite": "koopt",
+     "role": "main clause (what happens anyway)",
+     "why": "Ze is first, so 'koopt' is second and the object 'de jas' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al is hij duur",
+     "subject": "hij",
+     "finite": "is",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'is' follows directly, then the subject 'hij' (the coat) and the predicate 'duur'.",
+     "afterFinite": "duur"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "koopt"
+    },
+    {
+     "label": "object",
+     "text": "de jas"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "duur"
+    }
+   ],
+   "meaning": "She buys the coat, even though it is expensive.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'hij' follows the verb 'is'. Read it as \"Ze koopt de jas, ook al is hij duur\".",
+   "forms": "kopen: ze koopt. zijn: hij is.",
+   "compare": "English 'even though it is expensive' uses 'it'. Dutch uses 'hij' for a 'de' noun.",
+   "mistakes": [
+    {
+     "wrong": "Ze koopt de jas, ook al hij is duur.",
+     "right": "Ze koopt de jas, ook al is hij duur.",
+     "why": "With 'ook al' the finite verb follows 'al' directly."
+    },
+    {
+     "wrong": "Ze koopt de jas, ook al is het duur.",
+     "right": "Ze koopt de jas, ook al is hij duur.",
+     "why": "'De jas' is a 'de' word, so the pronoun is 'hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze koopt de jas, hoewel hij duur is.",
+    "english": "She buys the coat, although it is expensive.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: Ze koopt de jas, hoewel hij duur is."
+   }
+  },
+  "pat-hoewel-36": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "Knowing nobody is the obstacle; the verb 'ken' stands before the subject 'ik'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ga naar het feest",
+     "subject": "Ik",
+     "finite": "ga",
+     "role": "main clause (what happens anyway)",
+     "why": "Ik is first, so 'ga' is second and the direction 'naar het feest' follows. The clause is \"Ik ga naar het feest\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al ken ik niemand",
+     "subject": "ik",
+     "finite": "ken",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'ken' follows directly, then the subject 'ik' and the object 'niemand'.",
+     "afterFinite": "niemand"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "ga"
+    },
+    {
+     "label": "direction",
+     "text": "naar het feest"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "ken"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "niemand"
+    }
+   ],
+   "meaning": "I'm going to the party, even though I don't know anyone.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'ik' follows the verb 'ken'.",
+   "forms": "gaan: ik ga. kennen: ik ken. Card: \"Ik ga naar het feest, ook al ken ik niemand\".",
+   "compare": "English 'even though I don't know anyone' keeps 'I' first. Dutch with 'ook al' says 'ken ik'.",
+   "mistakes": [
+    {
+     "wrong": "Ik ga naar het feest, ook al ik ken niemand.",
+     "right": "Ik ga naar het feest, ook al ken ik niemand.",
+     "why": "With 'ook al' the finite verb follows 'al' directly: 'ook al ken ik'."
+    },
+    {
+     "wrong": "Ik ga naar het feest, ook al ken niemand ik.",
+     "right": "Ik ga naar het feest, ook al ken ik niemand.",
+     "why": "The subject 'ik' stands right after the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik ga naar het feest, hoewel ik niemand ken.",
+    "english": "I'm going to the party, although I don't know anyone.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: Ik ga naar het feest, hoewel ik niemand ken."
+   }
+  },
+  "pat-hoewel-37": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "Anger is the obstacle for staying calm."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze blijft rustig",
+     "subject": "Ze",
+     "finite": "blijft",
+     "role": "main clause (what happens anyway)",
+     "why": "Ze is first, so 'blijft' is second and the predicate 'rustig' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al is ze erg boos",
+     "subject": "ze",
+     "finite": "is",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'is' follows directly, then the subject 'ze' and 'erg boos'.",
+     "afterFinite": "erg boos"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "predicate",
+     "text": "rustig"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "adverb",
+     "text": "erg"
+    },
+    {
+     "label": "predicate",
+     "text": "boos"
+    }
+   ],
+   "meaning": "She stays calm, even though she is very angry.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'ze' follows the verb 'is'.",
+   "forms": "blijven: ze blijft. zijn: ze is.",
+   "compare": "English 'even though she is very angry' keeps 'she is'. Dutch with 'ook al' says 'is ze'.",
+   "mistakes": [
+    {
+     "wrong": "Ze blijft rustig, ook al ze is erg boos.",
+     "right": "Ze blijft rustig, ook al is ze erg boos.",
+     "why": "With 'ook al' the finite verb follows 'al' directly. (not \"Ze blijft rustig, ook al ze is erg boos.\", but \"Ze blijft rustig, ook al is ze erg boos.\")"
+    },
+    {
+     "wrong": "Ze blijft rustig, ook al is erg ze boos.",
+     "right": "Ze blijft rustig, ook al is ze erg boos.",
+     "why": "The subject 'ze' comes before 'erg boos'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze blijft rustig, hoewel ze erg boos is.",
+    "english": "She stays calm, although she is very angry.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: Ze blijft rustig, hoewel ze erg boos is."
+   }
+  },
+  "pat-hoewel-38": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "Being busy is the obstacle for always answering."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik antwoord altijd",
+     "subject": "Ik",
+     "finite": "antwoord",
+     "role": "main clause (what happens anyway)",
+     "why": "Ik is first, so 'antwoord' is second and the adverb 'altijd' follows. The clause is \"Ik antwoord altijd\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al heb ik het druk",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'heb' follows directly, then the subject 'ik' and 'het druk'.",
+     "afterFinite": "het druk"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "antwoord"
+    },
+    {
+     "label": "adverb",
+     "text": "altijd"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "druk"
+    }
+   ],
+   "meaning": "I always reply, even though I'm busy.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'ik' follows the verb 'heb'.",
+   "forms": "antwoorden: ik antwoord. hebben: ik heb. Card: \"Ik antwoord altijd, ook al heb ik het druk\".",
+   "compare": "English 'even though I'm busy' uses 'be'. Dutch uses 'het druk hebben'.",
+   "mistakes": [
+    {
+     "wrong": "Ik antwoord altijd, ook al ik heb het druk.",
+     "right": "Ik antwoord altijd, ook al heb ik het druk.",
+     "why": "With 'ook al' the finite verb follows 'al' directly: 'ook al heb ik'."
+    },
+    {
+     "wrong": "Ik antwoord altijd, ook al heb ik druk het.",
+     "right": "Ik antwoord altijd, ook al heb ik het druk.",
+     "why": "The object 'het' comes before the predicate 'druk'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik antwoord altijd, hoewel ik het druk heb.",
+    "english": "I always reply, although I'm busy.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: Ik antwoord altijd, hoewel ik het druk heb."
+   }
+  },
+  "pat-hoewel-39": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "A public holiday is the obstacle for opening."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De winkel is open",
+     "subject": "De winkel",
+     "finite": "is",
+     "role": "main clause (what happens anyway)",
+     "why": "'De winkel' is first, so 'is' is second and the predicate 'open' follows. The clause is \"De winkel is open\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al is het feestdag",
+     "subject": "het",
+     "finite": "is",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'is' follows directly, then the dummy subject 'het' and the predicate 'feestdag'.",
+     "afterFinite": "feestdag"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De winkel"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "feestdag"
+    }
+   ],
+   "meaning": "The shop is open, even though it's a public holiday.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'het' follows the verb 'is'. Read it as \"De winkel is open, ook al is het feestdag\".",
+   "forms": "zijn: de winkel is. zijn: het is. Card: \"De winkel is open, ook al is het feestdag\".",
+   "compare": "English 'even though it's a public holiday' keeps 'it is'. Dutch with 'ook al' says 'is het'.",
+   "mistakes": [
+    {
+     "wrong": "De winkel is open, ook al het is feestdag.",
+     "right": "De winkel is open, ook al is het feestdag.",
+     "why": "With 'ook al' the finite verb follows 'al' directly. (not \"De winkel is open, ook al het is feestdag.\", but \"De winkel is open, ook al is het feestdag.\")"
+    },
+    {
+     "wrong": "De winkel is open, ook al is feestdag het.",
+     "right": "De winkel is open, ook al is het feestdag.",
+     "why": "The subject 'het' comes before the predicate."
+    }
+   ],
+   "contrast": {
+    "dutch": "De winkel is open, hoewel het feestdag is.",
+    "english": "The shop is open, although it's a public holiday.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: De winkel is open, hoewel het feestdag is."
+   }
+  },
+  "pat-hoewel-40": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "Having no money left is the obstacle for carrying on."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij gaan door",
+     "subject": "Wij",
+     "finite": "gaan",
+     "role": "main clause (what happens anyway)",
+     "why": "Wij is first, so the plural 'gaan' is second; the particle 'door' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al hebben we geen geld meer",
+     "subject": "we",
+     "finite": "hebben",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'hebben' follows directly, then the subject 'we' and the object 'geen geld meer'.",
+     "afterFinite": "geen geld meer"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "gaan"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebben"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "geen geld meer"
+    }
+   ],
+   "meaning": "We carry on, even though we have no money left.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'we' follows the verb 'hebben'.",
+   "forms": "doorgaan: gaan ... door. hebben: wij hebben.",
+   "compare": "English 'even though we have no money left' keeps 'we have'. Dutch with 'ook al' says 'hebben we'.",
+   "mistakes": [
+    {
+     "wrong": "Wij gaan door, ook al we hebben geen geld meer.",
+     "right": "Wij gaan door, ook al hebben we geen geld meer.",
+     "why": "With 'ook al' the finite verb follows 'al' directly: 'ook al hebben we'."
+    },
+    {
+     "wrong": "Wij gaan door, ook al heeft we geen geld meer.",
+     "right": "Wij gaan door, ook al hebben we geen geld meer.",
+     "why": "The plural 'we' needs 'hebben'. (not \"Wij gaan door, ook al heeft we geen geld meer.\", but \"Wij gaan door, ook al hebben we geen geld meer.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij gaan door, hoewel we geen geld meer hebben.",
+    "english": "We carry on, although we have no money left.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: Wij gaan door, hoewel we geen geld meer hebben."
+   }
+  },
+  "pat-hoewel-41": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "Nobody being able to hear her is the obstacle; the modal 'kan' follows 'al' directly."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij praat zacht",
+     "subject": "Zij",
+     "finite": "praat",
+     "role": "main clause (what happens anyway)",
+     "why": "Zij is first, so 'praat' is second and the adverb 'zacht' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al kan niemand haar horen",
+     "subject": "niemand",
+     "finite": "kan",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the modal 'kan' follows directly, then the subject 'niemand', the object 'haar' and the infinitive 'horen'.",
+     "afterFinite": "haar horen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "praat"
+    },
+    {
+     "label": "adverb",
+     "text": "zacht"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "subject",
+     "text": "niemand"
+    },
+    {
+     "label": "object",
+     "text": "haar"
+    },
+    {
+     "label": "infinitive",
+     "text": "horen"
+    }
+   ],
+   "meaning": "She talks quietly, even though nobody can hear her.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows, unlike 'hoewel', where the verb goes last. Here the subject 'niemand' follows the verb 'kan'.",
+   "forms": "praten: zij praat. kunnen: niemand kan. horen: infinitive.",
+   "compare": "English 'even though nobody can hear her' keeps 'nobody can'. Dutch with 'ook al' says 'kan niemand'.",
+   "mistakes": [
+    {
+     "wrong": "Zij praat zacht, ook al niemand kan haar horen.",
+     "right": "Zij praat zacht, ook al kan niemand haar horen.",
+     "why": "With 'ook al' the finite verb follows 'al' directly: 'ook al kan niemand'."
+    },
+    {
+     "wrong": "Zij praat zacht, ook al kan haar horen niemand.",
+     "right": "Zij praat zacht, ook al kan niemand haar horen.",
+     "why": "The infinitive 'horen' goes to the end. (not \"Zij praat zacht, ook al kan haar horen niemand.\", but \"Zij praat zacht, ook al kan niemand haar horen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij praat zacht, hoewel niemand haar kan horen.",
+    "english": "She talks quietly, although nobody can hear her.",
+    "note": "With 'hoewel' the verb of the clause goes to the end, behind the subject and the rest. Compare: Zij praat zacht, hoewel niemand haar kan horen."
+   }
+  },
+  "pat-hoewel-42": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "'Tenzij' names the one case in which the main clause does not hold; the verb of its clause is last."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kom morgen",
+     "subject": "Ik",
+     "finite": "kom",
+     "role": "main clause (the rule)",
+     "why": "Ik is first, so 'kom' is second and the adverb 'morgen' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "tenzij-clause (the exception)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'regent' closes the short clause. The clause is \"tenzij het regent\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "kom"
+    },
+    {
+     "label": "adverb",
+     "text": "morgen"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    }
+   ],
+   "meaning": "I'm coming tomorrow, unless it rains.",
+   "order": "'Tenzij' already contains the idea of negation: the main clause holds except in the case the tenzij-clause names. Its verb goes last.",
+   "forms": "komen: ik kom. regenen: het regent.",
+   "compare": "English 'unless it rains' keeps 'rains' next to 'it'. Dutch ends the clause with 'regent'.",
+   "mistakes": [
+    {
+     "wrong": "Ik kom morgen tenzij regent het.",
+     "right": "Ik kom morgen, tenzij het regent.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik kom morgen tenzij regent het.\", but \"Ik kom morgen, tenzij het regent.\")"
+    },
+    {
+     "wrong": "Ik kom morgen tenzij het regenen.",
+     "right": "Ik kom morgen, tenzij het regent.",
+     "why": "The dummy subject 'het' needs 'regent'. (not \"Ik kom morgen tenzij het regenen.\", but \"Ik kom morgen, tenzij het regent.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kom morgen, als het niet regent.",
+    "english": "I'm coming tomorrow if it doesn't rain.",
+    "note": "'Als ... niet' says the same with a condition; 'tenzij' states the exception directly."
+   }
+  },
+  "pat-hoewel-43": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "The exception comes first, so the main clause inverts to 'gaan we wandelen'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Tenzij het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "tenzij-clause (the exception)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'regent' closes the short clause. The clause is \"Tenzij het regent\"."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "gaan we wandelen",
+     "subject": "we",
+     "finite": "gaan",
+     "role": "main clause (the rule)",
+     "why": "The finite verb 'gaan' comes first, then the subject 'we' and the infinitive 'wandelen'. The clause is \"gaan we wandelen\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (unless)",
+     "text": "Tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    }
+   ],
+   "meaning": "Unless it rains, we are going for a walk.",
+   "order": "The tenzij-clause fills position one, so the main clause inverts. The plan holds except when it rains. Read it as \"Tenzij het regent, gaan we wandelen\".",
+   "forms": "regenen: het regent. gaan: wij gaan. wandelen: infinitive. Card: \"Tenzij het regent, gaan we wandelen\".",
+   "compare": "English 'Unless it rains, we are going' keeps 'we are going'. Dutch inverts to 'gaan we'.",
+   "mistakes": [
+    {
+     "wrong": "Tenzij het regent, we gaan wandelen.",
+     "right": "Tenzij het regent, gaan we wandelen.",
+     "why": "After the tenzij-clause the main clause starts with the verb: 'gaan we'."
+    },
+    {
+     "wrong": "Tenzij regent het, gaan we wandelen.",
+     "right": "Tenzij het regent, gaan we wandelen.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Tenzij regent het, gaan we wandelen.\", but \"Tenzij het regent, gaan we wandelen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We gaan wandelen, tenzij het regent.",
+    "english": "We are going for a walk, unless it rains.",
+    "note": "With the main clause first there is no inversion. Compare: We gaan wandelen, tenzij het regent."
+   }
+  },
+  "pat-hoewel-44": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "The train being late is the single exception to the departure time."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We vertrekken om acht uur",
+     "subject": "We",
+     "finite": "vertrekken",
+     "role": "main clause (the rule)",
+     "why": "We is first, so the plural 'vertrekken' is second and the time 'om acht uur' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij de trein te laat is",
+     "subject": "de trein",
+     "finite": "is",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'de trein' comes first, the predicate 'te laat' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "vertrekken"
+    },
+    {
+     "label": "time",
+     "text": "om acht uur"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "de trein"
+    },
+    {
+     "label": "predicate",
+     "text": "te laat"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "We leave at eight o'clock, unless the train is late.",
+   "order": "The predicate 'te laat' stands before 'is'. The tenzij-clause adds one condition for changing the plan. Read it as \"We vertrekken om acht uur, tenzij de trein te laat is\".",
+   "forms": "vertrekken: wij vertrekken. zijn: de trein is.",
+   "compare": "English 'unless the train is late' keeps 'is' before 'late'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "We vertrekken om acht uur tenzij de trein is te laat.",
+     "right": "We vertrekken om acht uur, tenzij de trein te laat is.",
+     "why": "The finite verb 'is' goes behind the predicate 'te laat'."
+    },
+    {
+     "wrong": "We vertrekken om acht uur tenzij de trein te laat zijn.",
+     "right": "We vertrekken om acht uur, tenzij de trein te laat is.",
+     "why": "The singular subject needs 'is'. (not \"We vertrekken om acht uur tenzij de trein te laat zijn.\", but \"We vertrekken om acht uur, tenzij de trein te laat is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tenzij de trein te laat is, vertrekken we om acht uur.",
+    "english": "Unless the train is late, we leave at eight o'clock.",
+    "note": "The tenzij-clause first inverts the main clause."
+   }
+  },
+  "pat-hoewel-45": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "Having a pass is the only way into the building."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je krijgt geen toegang",
+     "subject": "Je",
+     "finite": "krijgt",
+     "role": "main clause (the rule)",
+     "why": "'Je' is first, so 'krijgt' is second and the object 'geen toegang' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij je een pas hebt",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'je' comes first, then the object 'een pas', and the finite verb 'hebt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb",
+     "text": "krijgt"
+    },
+    {
+     "label": "object",
+     "text": "geen toegang"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "een pas"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebt"
+    }
+   ],
+   "meaning": "You get no access, unless you have a pass.",
+   "order": "'Geen toegang' in the main clause and 'een pas' in the tenzij-clause give the rule and its exception. Read it as \"Je krijgt geen toegang, tenzij je een pas hebt\".",
+   "forms": "krijgen: je krijgt. hebben: je hebt.",
+   "compare": "English 'unless you have a pass' keeps 'have' before the object. Dutch puts 'hebt' last.",
+   "mistakes": [
+    {
+     "wrong": "Je krijgt geen toegang tenzij je hebt een pas.",
+     "right": "Je krijgt geen toegang, tenzij je een pas hebt.",
+     "why": "The finite verb goes behind the object 'een pas'."
+    },
+    {
+     "wrong": "Je krijgt geen toegang tenzij je een pas heb.",
+     "right": "Je krijgt geen toegang, tenzij je een pas hebt.",
+     "why": "With 'je' the verb needs -t: 'hebt'. (not \"Je krijgt geen toegang tenzij je een pas heb.\", but \"Je krijgt geen toegang, tenzij je een pas hebt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je krijgt toegang als je een pas hebt.",
+    "english": "You get access if you have a pass.",
+    "note": "'Als' states the condition positively; 'tenzij' states the exception to a negative rule."
+   }
+  },
+  "pat-hoewel-46": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "Hearing otherwise is the exception to the standing appointment; 'blijven staan' is a verb chain."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Tenzij je anders hoort",
+     "subject": "je",
+     "finite": "hoort",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'je' comes first, the adverb 'anders' follows, and the finite verb 'hoort' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijft de afspraak staan",
+     "subject": "de afspraak",
+     "finite": "blijft",
+     "role": "main clause (the rule)",
+     "why": "The finite verb 'blijft' comes first, then the subject 'de afspraak'; the infinitive 'staan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (unless)",
+     "text": "Tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "anders"
+    },
+    {
+     "label": "finite verb",
+     "text": "hoort"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "de afspraak"
+    },
+    {
+     "label": "infinitive",
+     "text": "staan"
+    }
+   ],
+   "meaning": "Unless you hear otherwise, the appointment stands.",
+   "order": "'Blijven staan' means to remain in place. 'Anders horen' means to hear something different. Read it as \"Tenzij je anders hoort, blijft de afspraak staan\".",
+   "forms": "horen: je hoort. blijven: de afspraak blijft. staan: infinitive.",
+   "compare": "English 'Unless you hear otherwise' also ends with a verb of hearing. Dutch puts 'hoort' last.",
+   "mistakes": [
+    {
+     "wrong": "Tenzij je anders hoort, de afspraak blijft staan.",
+     "right": "Tenzij je anders hoort, blijft de afspraak staan.",
+     "why": "The main clause starts with the verb: 'blijft de afspraak'."
+    },
+    {
+     "wrong": "Tenzij je hoort anders, blijft de afspraak staan.",
+     "right": "Tenzij je anders hoort, blijft de afspraak staan.",
+     "why": "The finite verb 'hoort' goes behind the adverb 'anders'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De afspraak blijft staan, tenzij je anders hoort.",
+    "english": "The appointment stands, unless you hear otherwise.",
+    "note": "With the main clause first there is no inversion. Compare: De afspraak blijft staan, tenzij je anders hoort."
+   }
+  },
+  "pat-hoewel-47": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "Urgency is the only reason to call; the predicate 'dringend' stands before 'is'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik bel niet",
+     "subject": "Ik",
+     "finite": "bel",
+     "role": "main clause (the rule)",
+     "why": "Ik is first, so 'bel' is second and the negation 'niet' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij het dringend is",
+     "subject": "het",
+     "finite": "is",
+     "role": "tenzij-clause (the exception)",
+     "why": "The dummy subject 'het' comes first, the predicate 'dringend' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "bel"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "dringend"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I don't call, unless it is urgent.",
+   "order": "The negation belongs to the main clause. The tenzij-clause names the exception. Read it as \"Ik bel niet, tenzij het dringend is\".",
+   "forms": "bellen: ik bel. zijn: het is.",
+   "compare": "English 'unless it is urgent' keeps 'is' before 'urgent'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik bel niet tenzij het is dringend.",
+     "right": "Ik bel niet, tenzij het dringend is.",
+     "why": "The finite verb 'is' goes behind the predicate 'dringend'."
+    },
+    {
+     "wrong": "Ik bel niet tenzij het dringend zijn.",
+     "right": "Ik bel niet, tenzij het dringend is.",
+     "why": "The dummy subject 'het' takes 'is'. (not \"Ik bel niet tenzij het dringend zijn.\", but \"Ik bel niet, tenzij het dringend is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik bel alleen als het dringend is.",
+    "english": "I only call if it is urgent.",
+    "note": "'Alleen als' says the same positively. Compare: Ik bel alleen als het dringend is."
+   }
+  },
+  "pat-hoewel-48": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "An invitation is the condition for his coming; 'uitnodigt' is a plain verb with an inseparable prefix."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij komt niet",
+     "subject": "Hij",
+     "finite": "komt",
+     "role": "main clause (the rule)",
+     "why": "Hij is first, so 'komt' is second and the negation 'niet' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij je hem uitnodigt",
+     "subject": "je",
+     "finite": "uitnodigt",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'je' comes first, then the object 'hem', and the finite verb 'uitnodigt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "hem"
+    },
+    {
+     "label": "finite verb",
+     "text": "uitnodigt"
+    }
+   ],
+   "meaning": "He doesn't come, unless you invite him.",
+   "order": "'Uitnodigen' is written as one word in every clause. The object 'hem' stands before the verb. Read it as \"Hij komt niet, tenzij je hem uitnodigt\".",
+   "forms": "komen: hij komt. uitnodigen: je nodigt uit / uitnodigt.",
+   "compare": "English 'unless you invite him' keeps 'invite' before 'him'. Dutch puts 'uitnodigt' last.",
+   "mistakes": [
+    {
+     "wrong": "Hij komt niet tenzij je nodigt hem uit.",
+     "right": "Hij komt niet, tenzij je hem uitnodigt.",
+     "why": "In the dependent clause the verb goes last."
+    },
+    {
+     "wrong": "Hij komt niet tenzij je hem uitnodig.",
+     "right": "Hij komt niet, tenzij je hem uitnodigt.",
+     "why": "With 'je' the verb needs -t: 'uitnodigt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij komt alleen als je hem uitnodigt.",
+    "english": "He only comes if you invite him.",
+    "note": "'Alleen als' says the same positively. Compare: Hij komt alleen als je hem uitnodigt."
+   }
+  },
+  "pat-hoewel-49": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "The customer closing the ticket is the one exception to its staying open."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het ticket blijft open",
+     "subject": "Het ticket",
+     "finite": "blijft",
+     "role": "main clause (the rule)",
+     "why": "'Het ticket' is first, so 'blijft' is second and the predicate 'open' follows. The clause is \"Het ticket blijft open\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij de klant het sluit",
+     "subject": "de klant",
+     "finite": "sluit",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'de klant' comes first, then the object 'het', and the finite verb 'sluit' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het ticket"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "de klant"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "sluit"
+    }
+   ],
+   "meaning": "The ticket stays open, unless the customer closes it.",
+   "order": "The pronoun 'het' stands for the ticket. The verb 'sluit' goes last. Read it as \"Het ticket blijft open, tenzij de klant het sluit\".",
+   "forms": "blijven: het ticket blijft. sluiten: de klant sluit.",
+   "compare": "English 'unless the customer closes it' keeps 'closes' before 'it'. Dutch puts 'sluit' last.",
+   "mistakes": [
+    {
+     "wrong": "Het ticket blijft open tenzij de klant sluit het.",
+     "right": "Het ticket blijft open, tenzij de klant het sluit.",
+     "why": "The finite verb goes behind the object 'het'. (not \"Het ticket blijft open tenzij de klant sluit het.\", but \"Het ticket blijft open, tenzij de klant het sluit.\")"
+    },
+    {
+     "wrong": "Het ticket blijft open tenzij de klant het sluiten.",
+     "right": "Het ticket blijft open, tenzij de klant het sluit.",
+     "why": "The singular subject needs 'sluit'. (not \"Het ticket blijft open tenzij de klant het sluiten.\", but \"Het ticket blijft open, tenzij de klant het sluit.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tenzij de klant het sluit, blijft het ticket open.",
+    "english": "Unless the customer closes it, the ticket stays open.",
+    "note": "The tenzij-clause first inverts the main clause. Compare: Tenzij de klant het sluit, blijft het ticket open."
+   }
+  },
+  "pat-hoewel-50": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "The default start time holds unless the speaker says otherwise; the main clause inverts after the fronted clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Tenzij ik iets anders zeg",
+     "subject": "ik",
+     "finite": "zeg",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'ik' comes first, then the object 'iets anders', and the finite verb 'zeg' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "beginnen we om negen uur",
+     "subject": "we",
+     "finite": "beginnen",
+     "role": "main clause (the rule)",
+     "why": "The finite verb 'beginnen' comes first, then the subject 'we' and the time 'om negen uur'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (unless)",
+     "text": "Tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "iets anders"
+    },
+    {
+     "label": "finite verb",
+     "text": "zeg"
+    },
+    {
+     "label": "finite verb",
+     "text": "beginnen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "time",
+     "text": "om negen uur"
+    }
+   ],
+   "meaning": "Unless I say otherwise, we start at nine o'clock.",
+   "order": "The default plan is in the main clause, the only possible change in the tenzij-clause. The main clause inverts to 'beginnen we'.",
+   "forms": "zeggen: ik zeg. beginnen: wij beginnen.",
+   "compare": "English 'Unless I say otherwise' keeps 'say' before 'otherwise'. Dutch puts 'zeg' last.",
+   "mistakes": [
+    {
+     "wrong": "Tenzij ik zeg iets anders, beginnen we om negen uur.",
+     "right": "Tenzij ik iets anders zeg, beginnen we om negen uur.",
+     "why": "The finite verb goes behind the object 'iets anders'."
+    },
+    {
+     "wrong": "Tenzij ik iets anders zeg, we beginnen om negen uur.",
+     "right": "Tenzij ik iets anders zeg, beginnen we om negen uur.",
+     "why": "The main clause starts with the verb: 'beginnen we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We beginnen om negen uur, tenzij ik iets anders zeg.",
+    "english": "We start at nine o'clock, unless I say otherwise.",
+    "note": "With the main clause first there is no inversion. Compare: We beginnen om negen uur, tenzij ik iets anders zeg."
+   }
+  },
+  "pat-hoewel-51": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "Someone picking me up is the one condition for coming along; 'ophaalt' is joined."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ga niet mee",
+     "subject": "Ik",
+     "finite": "ga",
+     "role": "main clause (the rule)",
+     "why": "Ik is first, so 'ga' is second; the negation 'niet' and the particle 'mee' follow."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij iemand me ophaalt",
+     "subject": "iemand",
+     "finite": "ophaalt",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'iemand' comes first, then the object 'me', and the joined separable verb 'ophaalt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "ga"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "particle",
+     "text": "mee"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "iemand"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "ophaalt"
+    }
+   ],
+   "meaning": "I'm not coming along, unless someone picks me up.",
+   "order": "'Meegaan' splits as 'ga ... mee'; 'ophalen' is written together in the tenzij-clause. Read it as \"Ik ga niet mee, tenzij iemand me ophaalt\".",
+   "forms": "meegaan: ga ... mee. ophalen: haalt op / ophaalt.",
+   "compare": "English 'unless someone picks me up' is a phrasal verb. Dutch uses the separable 'ophalen'.",
+   "mistakes": [
+    {
+     "wrong": "Ik ga niet mee tenzij iemand haalt me op.",
+     "right": "Ik ga niet mee, tenzij iemand me ophaalt.",
+     "why": "In a dependent clause the separable verb is written together. (not \"Ik ga niet mee tenzij iemand haalt me op.\", but \"Ik ga niet mee, tenzij iemand me ophaalt.\")"
+    },
+    {
+     "wrong": "Ik meega niet tenzij iemand me ophaalt.",
+     "right": "Ik ga niet mee, tenzij iemand me ophaalt.",
+     "why": "In a main clause 'meegaan' splits: 'ga ... mee'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik ga alleen mee als iemand me ophaalt.",
+    "english": "I only come along if someone picks me up.",
+    "note": "'Alleen als' says the same positively. Compare: Ik ga alleen mee als iemand me ophaalt."
+   }
+  },
+  "pat-hoewel-52": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "Leaving the text unchanged is the default; a mistake in it is the exception."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We laten het zo",
+     "subject": "We",
+     "finite": "laten",
+     "role": "main clause (the rule)",
+     "why": "We is first, so the plural 'laten' is second; the object 'het' and the adverb 'zo' follow."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij er een fout in zit",
+     "subject": "fout",
+     "finite": "zit",
+     "role": "tenzij-clause (the exception)",
+     "why": "The introducing 'er' comes first, then the subject 'een fout', the adverb 'in', and the finite verb 'zit' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "laten"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "zo"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "dummy",
+     "text": "er"
+    },
+    {
+     "label": "subject",
+     "text": "een fout"
+    },
+    {
+     "label": "adverb",
+     "text": "in"
+    },
+    {
+     "label": "finite verb",
+     "text": "zit"
+    }
+   ],
+   "meaning": "We leave it as it is, unless there's a mistake in it.",
+   "order": "'Er zit een fout in' is the idiomatic way to say that there is a mistake in it. The particle-like 'in' stands before 'zit'.",
+   "forms": "laten: wij laten. zitten: er zit.",
+   "compare": "English 'unless there's a mistake in it' contracts 'there is'. Dutch uses 'er zit ... in'.",
+   "mistakes": [
+    {
+     "wrong": "We laten het zo tenzij er zit een fout in.",
+     "right": "We laten het zo, tenzij er een fout in zit.",
+     "why": "The finite verb 'zit' goes to the end of the clause."
+    },
+    {
+     "wrong": "We laten het zo tenzij er een fout in zitten.",
+     "right": "We laten het zo, tenzij er een fout in zit.",
+     "why": "The singular subject 'een fout' needs 'zit'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tenzij er een fout in zit, laten we het zo.",
+    "english": "Unless there's a mistake in it, we leave it as it is.",
+    "note": "The tenzij-clause first inverts the main clause to 'laten we'."
+   }
+  },
+  "pat-hoewel-53": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "A meeting is the only reason the room is not free; the modal 'mag' is in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je mag de zaal gebruiken",
+     "subject": "Je",
+     "finite": "mag",
+     "role": "main clause (the rule)",
+     "why": "'Je' is first and the modal 'mag' is second; the object 'de zaal' comes before the infinitive 'gebruiken'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij er een vergadering is",
+     "subject": "vergadering",
+     "finite": "is",
+     "role": "tenzij-clause (the exception)",
+     "why": "The introducing 'er' comes first, then the subject 'een vergadering', and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "mag"
+    },
+    {
+     "label": "object",
+     "text": "de zaal"
+    },
+    {
+     "label": "infinitive",
+     "text": "gebruiken"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "dummy",
+     "text": "er"
+    },
+    {
+     "label": "subject",
+     "text": "een vergadering"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "You may use the room, unless there is a meeting.",
+   "order": "'Er is een vergadering' means there is a meeting. The permission in the main clause is the default. Read it as \"Je mag de zaal gebruiken, tenzij er een vergadering is\".",
+   "forms": "mogen: je mag. gebruiken: infinitive. zijn: er is.",
+   "compare": "English 'unless there is a meeting' keeps 'is' before 'a meeting'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Je mag de zaal gebruiken tenzij er is een vergadering.",
+     "right": "Je mag de zaal gebruiken, tenzij er een vergadering is.",
+     "why": "The finite verb 'is' goes to the end. (not \"Je mag de zaal gebruiken tenzij er is een vergadering.\", but \"Je mag de zaal gebruiken, tenzij er een vergadering is.\")"
+    },
+    {
+     "wrong": "Je mag gebruiken de zaal tenzij er een vergadering is.",
+     "right": "Je mag de zaal gebruiken, tenzij er een vergadering is.",
+     "why": "The infinitive 'gebruiken' goes to the end of the main clause. (not \"Je mag gebruiken de zaal tenzij er een vergadering is.\", but \"Je mag de zaal gebruiken, tenzij er een vergadering is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tenzij er een vergadering is, mag je de zaal gebruiken.",
+    "english": "Unless there is a meeting, you may use the room.",
+    "note": "The tenzij-clause first inverts the main clause to 'mag je'."
+   }
+  },
+  "pat-hoewel-54": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "Sunshine is the exception for staying inside; the main clause inverts to 'blijven de kinderen binnen'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Tenzij de zon schijnt",
+     "subject": "de zon",
+     "finite": "schijnt",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'de zon' comes first and the finite verb 'schijnt' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijven de kinderen binnen",
+     "subject": "de kinderen",
+     "finite": "blijven",
+     "role": "main clause (the rule)",
+     "why": "The finite verb 'blijven' comes first, then the subject 'de kinderen' and the adverb 'binnen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (unless)",
+     "text": "Tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "de zon"
+    },
+    {
+     "label": "finite verb",
+     "text": "schijnt"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijven"
+    },
+    {
+     "label": "subject",
+     "text": "de kinderen"
+    },
+    {
+     "label": "adverb",
+     "text": "binnen"
+    }
+   ],
+   "meaning": "Unless the sun shines, the children stay inside.",
+   "order": "The default (staying inside) is in the main clause, the exception in the tenzij-clause. Read it as \"Tenzij de zon schijnt, blijven de kinderen binnen\".",
+   "forms": "schijnen: de zon schijnt. blijven: de kinderen blijven.",
+   "compare": "English 'Unless the sun shines' also ends with the verb. Dutch main clause inverts.",
+   "mistakes": [
+    {
+     "wrong": "Tenzij de zon schijnt, de kinderen blijven binnen.",
+     "right": "Tenzij de zon schijnt, blijven de kinderen binnen.",
+     "why": "The main clause starts with the verb: 'blijven de kinderen'."
+    },
+    {
+     "wrong": "Tenzij de zon schijnen, blijven de kinderen binnen.",
+     "right": "Tenzij de zon schijnt, blijven de kinderen binnen.",
+     "why": "The singular subject needs 'schijnt'. (not \"Tenzij de zon schijnen, blijven de kinderen binnen.\", but \"Tenzij de zon schijnt, blijven de kinderen binnen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De kinderen blijven binnen, tenzij de zon schijnt.",
+    "english": "The children stay inside, unless the sun shines.",
+    "note": "With the main clause first there is no inversion. Compare: De kinderen blijven binnen, tenzij de zon schijnt."
+   }
+  },
+  "pat-hoewel-55": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "Being asked is the only reason he speaks; 'men' is an impersonal subject."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij zegt niets",
+     "subject": "Hij",
+     "finite": "zegt",
+     "role": "main clause (the rule)",
+     "why": "Hij is first, so 'zegt' is second and the object 'niets' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij men hem iets vraagt",
+     "subject": "men",
+     "finite": "vraagt",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'men' comes first, then the objects 'hem' and 'iets', and the finite verb 'vraagt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "zegt"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "men"
+    },
+    {
+     "label": "object",
+     "text": "hem"
+    },
+    {
+     "label": "object",
+     "text": "iets"
+    },
+    {
+     "label": "finite verb",
+     "text": "vraagt"
+    }
+   ],
+   "meaning": "He says nothing, unless someone asks him something.",
+   "order": "'Men' means one or people in general and takes a singular verb. Two objects stand before the verb. Read it as \"Hij zegt niets, tenzij men hem iets vraagt\".",
+   "forms": "zeggen: hij zegt. vragen: men vraagt.",
+   "compare": "English 'unless someone asks him something' uses 'someone'. Dutch can use the impersonal 'men'.",
+   "mistakes": [
+    {
+     "wrong": "Hij zegt niets tenzij men vraagt hem iets.",
+     "right": "Hij zegt niets, tenzij men hem iets vraagt.",
+     "why": "The finite verb goes behind both objects."
+    },
+    {
+     "wrong": "Hij zegt niets tenzij men hem iets vragen.",
+     "right": "Hij zegt niets, tenzij men hem iets vraagt.",
+     "why": "'Men' takes the singular 'vraagt'. (not \"Hij zegt niets tenzij men hem iets vragen.\", but \"Hij zegt niets, tenzij men hem iets vraagt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij zegt alleen iets als men hem iets vraagt.",
+    "english": "He only says something if one asks him something.",
+    "note": "'Alleen als' says the same positively. Compare: Hij zegt alleen iets als men hem iets vraagt."
+   }
+  },
+  "pat-hoewel-56": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "The discount is the exception to the payment rule; 'een korting hebben' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je moet betalen",
+     "subject": "Je",
+     "finite": "moet",
+     "role": "main clause (the rule)",
+     "why": "'Je' is first and the modal 'moet' is second; the infinitive 'betalen' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij je een korting hebt",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'je' comes first, then the object 'een korting', and the finite verb 'hebt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moet"
+    },
+    {
+     "label": "infinitive",
+     "text": "betalen"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "een korting"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebt"
+    }
+   ],
+   "meaning": "You have to pay, unless you have a discount.",
+   "order": "The modal chain 'moet betalen' stands in the main clause; the tenzij-clause names the one case without payment.",
+   "forms": "moeten: je moet. betalen: infinitive. hebben: je hebt.",
+   "compare": "English 'unless you have a discount' keeps 'have' before the object. Dutch puts 'hebt' last.",
+   "mistakes": [
+    {
+     "wrong": "Je moet betalen tenzij je hebt een korting.",
+     "right": "Je moet betalen, tenzij je een korting hebt.",
+     "why": "The finite verb goes behind the object 'een korting'."
+    },
+    {
+     "wrong": "Je moet betalen tenzij je een korting heb.",
+     "right": "Je moet betalen, tenzij je een korting hebt.",
+     "why": "With 'je' the verb needs -t: 'hebt'. (not \"Je moet betalen tenzij je een korting heb.\", but \"Je moet betalen, tenzij je een korting hebt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tenzij je een korting hebt, moet je betalen.",
+    "english": "Unless you have a discount, you have to pay.",
+    "note": "The tenzij-clause first inverts the main clause to 'moet je'."
+   }
+  },
+  "pat-hoewel-57": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "Great tiredness is the only reason for coffee; the adverb 'heel' strengthens 'moe'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik drink geen koffie",
+     "subject": "Ik",
+     "finite": "drink",
+     "role": "main clause (the rule)",
+     "why": "Ik is first, so 'drink' is second and the object 'geen koffie' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij ik heel moe ben",
+     "subject": "ik",
+     "finite": "ben",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'ik' comes first, then 'heel moe', and the finite verb 'ben' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "drink"
+    },
+    {
+     "label": "object",
+     "text": "geen koffie"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "heel"
+    },
+    {
+     "label": "predicate",
+     "text": "moe"
+    },
+    {
+     "label": "finite verb",
+     "text": "ben"
+    }
+   ],
+   "meaning": "I don't drink coffee, unless I'm very tired.",
+   "order": "The adverb 'heel' (very) stands before the predicate 'moe'. 'Geen' negates the noun in the main clause. Read it as \"Ik drink geen koffie, tenzij ik heel moe ben\".",
+   "forms": "drinken: ik drink. zijn: ik ben.",
+   "compare": "English 'unless I'm very tired' contracts 'I am'. Dutch puts 'ben' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik drink geen koffie tenzij ik ben heel moe.",
+     "right": "Ik drink geen koffie, tenzij ik heel moe ben.",
+     "why": "The finite verb 'ben' goes behind the predicate 'moe'."
+    },
+    {
+     "wrong": "Ik drink geen koffie tenzij ik heel moe bent.",
+     "right": "Ik drink geen koffie, tenzij ik heel moe ben.",
+     "why": "With 'ik' the verb is 'ben'. (not \"Ik drink geen koffie tenzij ik heel moe bent.\", but \"Ik drink geen koffie, tenzij ik heel moe ben.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tenzij ik heel moe ben, drink ik geen koffie.",
+    "english": "Unless I'm very tired, I don't drink coffee.",
+    "note": "The tenzij-clause first inverts the main clause to 'drink ik'."
+   }
+  },
+  "pat-hoewel-58": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "A police request is the single exception to staying open; 'het vraagt' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij sluiten niet",
+     "subject": "Wij",
+     "finite": "sluiten",
+     "role": "main clause (the rule)",
+     "why": "Wij is first, so the plural 'sluiten' is second and the negation 'niet' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij de politie het vraagt",
+     "subject": "de politie",
+     "finite": "vraagt",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'de politie' comes first, then the object 'het', and the finite verb 'vraagt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "sluiten"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "de politie"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "vraagt"
+    }
+   ],
+   "meaning": "We don't close, unless the police ask for it.",
+   "order": "'De politie' is grammatically singular and takes 'vraagt'. The pronoun 'het' stands for the closing. Read it as \"Wij sluiten niet, tenzij de politie het vraagt\".",
+   "forms": "sluiten: wij sluiten. vragen: de politie vraagt.",
+   "compare": "English 'unless the police ask for it' uses a plural 'police'. Dutch 'de politie' is singular.",
+   "mistakes": [
+    {
+     "wrong": "Wij sluiten niet tenzij de politie vraagt het.",
+     "right": "Wij sluiten niet, tenzij de politie het vraagt.",
+     "why": "The finite verb goes behind the object 'het'. (not \"Wij sluiten niet tenzij de politie vraagt het.\", but \"Wij sluiten niet, tenzij de politie het vraagt.\")"
+    },
+    {
+     "wrong": "Wij sluiten niet tenzij de politie het vragen.",
+     "right": "Wij sluiten niet, tenzij de politie het vraagt.",
+     "why": "'De politie' takes 'vraagt'. (not \"Wij sluiten niet tenzij de politie het vragen.\", but \"Wij sluiten niet, tenzij de politie het vraagt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tenzij de politie het vraagt, sluiten wij niet.",
+    "english": "Unless the police ask for it, we don't close.",
+    "note": "The tenzij-clause first inverts the main clause to 'sluiten wij'."
+   }
+  },
+  "pat-hoewel-59": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tenzij = unless (the exception)",
+    "why": "An imperative with an exception: the message is not needed if the person is already travelling."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Stuur me een bericht",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Stuur",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Stuur' stands first, then the objects 'me' and 'een bericht'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tenzij je al onderweg bent",
+     "subject": "je",
+     "finite": "bent",
+     "role": "tenzij-clause (the exception)",
+     "why": "The subject 'je' comes first, then 'al onderweg', and the finite verb 'bent' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Stuur"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "object",
+     "text": "een bericht"
+    },
+    {
+     "label": "conjunction (unless)",
+     "text": "tenzij"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "al"
+    },
+    {
+     "label": "predicate",
+     "text": "onderweg"
+    },
+    {
+     "label": "finite verb",
+     "text": "bent"
+    }
+   ],
+   "meaning": "Send me a message, unless you are already on your way.",
+   "order": "The imperative has no spoken subject. 'Onderweg zijn' means to be on the way. Read it as \"Stuur me een bericht, tenzij je al onderweg bent\".",
+   "forms": "sturen: imperative stuur. zijn: je bent.",
+   "compare": "English 'unless you are already on your way' keeps 'are' before the predicate. Dutch puts 'bent' last.",
+   "mistakes": [
+    {
+     "wrong": "Stuur me een bericht tenzij je bent al onderweg.",
+     "right": "Stuur me een bericht, tenzij je al onderweg bent.",
+     "why": "The finite verb 'bent' goes behind the predicate 'onderweg'."
+    },
+    {
+     "wrong": "Stuur me een bericht tenzij je al onderweg ben.",
+     "right": "Stuur me een bericht, tenzij je al onderweg bent.",
+     "why": "With 'je' the verb is 'bent'. (not \"Stuur me een bericht tenzij je al onderweg ben.\", but \"Stuur me een bericht, tenzij je al onderweg bent.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tenzij je al onderweg bent, stuur je me een bericht.",
+    "english": "Unless you are already on your way, you send me a message.",
+    "note": "The tenzij-clause first inverts the main clause to 'stuur je'."
+   }
+  },
+  "pat-hoewel-reuse-career-problems-052": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ook al = even though (the verb follows al)",
+    "why": "The slow network is an obstacle that does not stop the phone; after 'ook al' the verb follows 'al' directly."
+   },
+   "situationNl": "Het internet is traag en toch kun je nog bellen. Een klant vraagt of de lijn werkt. Zeg wat nog werkt en wat tegenzit.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De telefoon werkt nog",
+     "subject": "De telefoon",
+     "finite": "werkt",
+     "role": "main clause (what happens anyway)",
+     "why": "'De telefoon' is first, so 'werkt' is second; the adverb 'nog' (still) follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ook al is het netwerk traag",
+     "subject": "het netwerk",
+     "finite": "is",
+     "role": "ook al-clause (the obstacle)",
+     "why": "After 'ook al' the finite verb 'is' follows directly, then the subject 'het netwerk' and the predicate 'traag'.",
+     "afterFinite": "het netwerk traag"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De telefoon"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    },
+    {
+     "label": "adverb",
+     "text": "nog"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ook al"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "het netwerk"
+    },
+    {
+     "label": "predicate",
+     "text": "traag"
+    }
+   ],
+   "meaning": "The telephone still works, even though the network is slow.",
+   "order": "With 'ook al' the finite verb comes right after 'al' and the subject follows it, unlike 'hoewel', where the verb goes last.",
+   "forms": "werken: de telefoon werkt. zijn: het netwerk is.",
+   "compare": "English 'even though the network is slow' keeps 'the network' before 'is'. Dutch with 'ook al' puts 'is' before it.",
+   "mistakes": [
+    {
+     "wrong": "De telefoon werkt nog, ook al het netwerk is traag.",
+     "right": "De telefoon werkt nog, ook al is het netwerk traag.",
+     "why": "With 'ook al' the finite verb follows 'al' directly: 'ook al is het netwerk'."
+    },
+    {
+     "wrong": "De telefoon werkt nog, ook al is traag het netwerk.",
+     "right": "De telefoon werkt nog, ook al is het netwerk traag.",
+     "why": "The subject 'het netwerk' comes before the predicate 'traag'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De telefoon werkt nog, hoewel het netwerk traag is.",
+    "english": "The telephone still works, although the network is slow.",
+    "note": "With 'hoewel' the verb 'is' goes to the end of the clause."
+   }
+  }
+ }
+}

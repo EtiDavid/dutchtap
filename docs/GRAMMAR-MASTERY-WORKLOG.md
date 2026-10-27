@@ -4,6 +4,21 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P4 Hoewel & tenzij (new topic, 60 cards incl. ook al and maar contrast), lesson v1.1
+
+**Plan check:** P4 asks for Hoewel/Tenzij at 60 combined with clear subskills and the contrasting `ook al` behaviour. Topic id `hoewel`, tile "Hoewel & tenzij".
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Source check (honest scope):** a web search (27 Oct 2026) returned two grammar references: KU Leuven's Nederlandse grammatica (soorten zinnen) stating that (ook) al takes the first position followed by the finite verb and then the subject, and UCLouvain's Gramlink stating that hoewel/alhoewel/ofschoon follow the normal subordinate order. These are cited as lesson sources. I did not find a Taaladvies/Onze Taal page on `ook al`, and the sources were read from search summaries, not as full pages, so this is not native review. To avoid disputed claims, all `ook al` and `of ... of niet` cards keep the main clause first.
+
+**Done**
+- 59 new cards (`pat-hoewel-01..59`, `data/editorial/grammar-p2-hoewel.json`: 28 hoewel/alhoewel, 3 maar contrast, 10 ook al, 18 tenzij) plus 1 core alias (`career-problems-052`, ook al); hand-authored records for all 60 in `data/grammar-hoewel-analysis.json`. Sense labels: `hoewel = although`, `maar = but (coordinating)`, `ook al = even though (the verb follows al)`, `tenzij = unless`. Maar cards use the `coordinate` pattern (two main clauses).
+- Hoewel & tenzij lesson v1.1 (8 sections, 5 mistakes, 2 sources).
+- Counts: 1,218 authored + 166 aliases = 1,384 playable across 16 topics; 1022/1218 with Dutch-first prompts; 3 lessons at v1.0, 13 at v1.1.
+
+**Open:** indirect questions with question words 100, relative clauses 100; no native review.
+
 ## 2026-10-27 — Claude Code continuation: P4 Of (whether / or / as if), new topic, 60 cards, lesson v1.1
 
 **Plan check:** P4 asks for `of` (whether) at 60 and contrast with `dat`; the master plan §5.2 also lists `dat/of` in the conjunction-selection contrasts. Topic id `of`, tile "Of", registered in `GRAMMAR_AREAS`, `PatternTiles` and the analysis config (with a prompt-leak check on the word `of`).

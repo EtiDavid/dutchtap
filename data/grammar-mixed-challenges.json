@@ -1790,6 +1790,96 @@
     }
    ],
    "rule": "Behalve dat = except that (or besides, when it adds a point)."
+  },
+  {
+   "id": "mx-zoals-clause",
+   "topics": [
+    "daar",
+    "dat"
+   ],
+   "mix": [
+    "zoals"
+   ],
+   "situationNl": "Je herinnert een collega aan iets wat hij al weet en geeft dan het tijdstip van het overleg. Begin met het geheugensteuntje.",
+   "hintEn": "You remind a colleague of something he already knows, then give the time of the meeting. Begin with the reminder.",
+   "options": [
+    {
+     "text": "Zoals je weet, begint de vergadering om negen uur.",
+     "correct": true,
+     "why": "The fronted clause is position one, so the main clause starts with its verb: \"begint de vergadering\"."
+    },
+    {
+     "text": "Zoals je weet, de vergadering begint om negen uur.",
+     "correct": false,
+     "why": "After a fronted clause the main clause must start with its verb."
+    },
+    {
+     "text": "Zoals weet je, begint de vergadering om negen uur.",
+     "correct": false,
+     "why": "In a clause with zoals the subject comes first and the verb last."
+    }
+   ],
+   "rule": "Fronted zoals-clause: the main clause starts with its verb."
+  },
+  {
+   "id": "mx-stel-dat",
+   "topics": [
+    "daar",
+    "als"
+   ],
+   "mix": [
+    "stel dat"
+   ],
+   "situationNl": "Je praat met een vriend over een denkbeeldig geval: een loterijwinst. Vraag wat hij dan zou doen. Begin met de veronderstelling.",
+   "hintEn": "You chat with a friend about an imaginary case: a lottery win. Ask what he would do. Begin with the supposition.",
+   "options": [
+    {
+     "text": "Stel dat je de loterij wint, wat zou je dan doen?",
+     "correct": true,
+     "why": "The supposition ends in its verb \"wint\"; the question follows with the conditional \"zou\"."
+    },
+    {
+     "text": "Stel dat je wint de loterij, wat zou je dan doen?",
+     "correct": false,
+     "why": "After \"dat\" the clause is subordinate, so the verb \"wint\" goes to the end."
+    },
+    {
+     "text": "Stel dat je de loterij wint, wat je zou dan doen?",
+     "correct": false,
+     "why": "In the question the verb follows the question word directly: \"wat zou je\"."
+    }
+   ],
+   "rule": "Stel dat / gesteld dat: a supposition with the verb last."
+  },
+  {
+   "id": "mx-daar-adverb",
+   "topics": [
+    "daar",
+    "omdat"
+   ],
+   "mix": [
+    "daar"
+   ],
+   "situationNl": "Je wijst op een huis in de verte en zegt wie er woont. Begin met de plaats. Het huis is van je oma.",
+   "hintEn": "You point at a house in the distance and say who lives in it. Begin with the place.",
+   "options": [
+    {
+     "text": "Daar woont mijn oma.",
+     "correct": true,
+     "why": "Here daar is an adverb of place in position one, so the verb \"woont\" is second."
+    },
+    {
+     "text": "Daar mijn oma woont.",
+     "correct": false,
+     "why": "This is a subordinate-clause order and would be a fragment; after the adverb the verb comes second."
+    },
+    {
+     "text": "Daar oma woont mijn.",
+     "correct": false,
+     "why": "The possessive stands before the noun, and the verb is second."
+    }
+   ],
+   "rule": "Daar + verb = there (adverb); daar + subject ... verb last = since (formal conjunction)."
   }
  ]
 }

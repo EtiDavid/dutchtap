@@ -1,0 +1,2243 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for daar (conjunction and adverb), gesteld dat, stel dat and zoals (clause, short phrase and examples). AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-daar-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "daar = since, because (formal, mostly written)",
+    "why": "Daar is a formal word for a reason; in everyday speech omdat would be used with the same word order."
+   },
+   "situationNl": "Je schrijft een officiële notitie over de afwezigheid van een collega. Begin met de reden en eindig met wat hij deed.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Daar hij ziek was",
+     "subject": "hij",
+     "finite": "was",
+     "role": "daar-clause (the reason)",
+     "why": "After 'daar' come the subject 'hij' and the predicate 'ziek', and the past form 'was' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "bleef hij thuis",
+     "subject": "hij",
+     "finite": "bleef",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'bleef' comes first, then the subject 'hij' and the place word 'thuis'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since, formal)",
+     "text": "Daar"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "ziek"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "bleef"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    }
+   ],
+   "meaning": "As he was ill, he stayed at home.",
+   "order": "The daar-clause fills position one, so the main clause inverts to 'bleef hij'. The conjunction daar must be told apart from the adverb daar (there).",
+   "forms": "zijn: hij was. blijven: hij bleef.",
+   "compare": "English 'as he was ill' is neutral. Dutch daar sounds formal, and omdat is the everyday equivalent.",
+   "mistakes": [
+    {
+     "wrong": "Daar hij was ziek, bleef hij thuis.",
+     "right": "Daar hij ziek was, bleef hij thuis.",
+     "why": "The finite verb 'was' goes to the end of the daar-clause."
+    },
+    {
+     "wrong": "Daar hij ziek was, hij bleef thuis.",
+     "right": "Daar hij ziek was, bleef hij thuis.",
+     "why": "After the fronted clause the main clause starts with its verb: 'bleef hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Omdat hij ziek was, bleef hij thuis.",
+    "english": "Because he was ill, he stayed at home.",
+    "note": "Omdat is the neutral word with the same order."
+   }
+  },
+  "pat-daar-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "daar = since, because (formal, mostly written)",
+    "why": "The late hour is a reason given in the formal register of minutes."
+   },
+   "situationNl": "Je schrijft de notulen van een lang overleg. Noem eerst de omstandigheid en dan het besluit van de groep.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Daar het al laat was",
+     "subject": "het",
+     "finite": "was",
+     "role": "daar-clause (the reason)",
+     "why": "After 'daar' come the dummy subject 'het' and 'al laat', and the past form 'was' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "besloten we de vergadering te sluiten",
+     "subject": "we",
+     "finite": "besloten",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'besloten' comes first, then the subject 'we' and the object 'de vergadering'; 'te sluiten' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since, formal)",
+     "text": "Daar"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "al laat"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "besloten"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de vergadering"
+    },
+    {
+     "label": "infinitive with te",
+     "text": "te sluiten"
+    }
+   ],
+   "meaning": "As it was already late, we decided to close the meeting.",
+   "order": "Besluiten takes a te-infinitive: 'besloten ... te sluiten'. The fronted clause makes the main clause start with 'besloten we'.",
+   "forms": "zijn: het was. besluiten: we besloten. sluiten: te sluiten.",
+   "compare": "English 'decided to close' also has an infinitive. Dutch adds 'te' directly before it.",
+   "mistakes": [
+    {
+     "wrong": "Daar het al laat was, besloten we de vergadering sluiten.",
+     "right": "Daar het al laat was, besloten we de vergadering te sluiten.",
+     "why": "After 'besluiten' the infinitive needs 'te': 'te sluiten'."
+    },
+    {
+     "wrong": "Daar het al was laat, besloten we de vergadering te sluiten.",
+     "right": "Daar het al laat was, besloten we de vergadering te sluiten.",
+     "why": "The finite verb 'was' goes to the end after 'al laat'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We besloten de vergadering te sluiten, omdat het al laat was.",
+    "english": "We decided to close the meeting, because it was already late.",
+    "note": "With the main clause first there is no inversion. Compare: We besloten de vergadering te sluiten, omdat het al laat was."
+   }
+  },
+  "pat-daar-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "daar = since, because (formal, mostly written)",
+    "why": "Being the only candidate is the reason for the quick outcome."
+   },
+   "situationNl": "Je legt in een formeel verslag uit waarom een sollicitatieprocedure snel klaar was. Begin met de omstandigheid en noem dan de uitkomst.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Daar zij de enige kandidaat was",
+     "subject": "zij",
+     "finite": "was",
+     "role": "daar-clause (the reason)",
+     "why": "After 'daar' come the subject 'zij' and the predicate 'de enige kandidaat', and the past form 'was' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kreeg zij de baan",
+     "subject": "zij",
+     "finite": "kreeg",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'kreeg' comes first, then the subject 'zij' and the object 'de baan'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since, formal)",
+     "text": "Daar"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "predicate",
+     "text": "de enige kandidaat"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kreeg"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "object",
+     "text": "de baan"
+    }
+   ],
+   "meaning": "As she was the only candidate, she got the job.",
+   "order": "The predicate 'de enige kandidaat' stands before the final verb 'was'. The main clause starts with 'kreeg zij'.",
+   "forms": "zijn: zij was. krijgen: zij kreeg.",
+   "compare": "English 'as she was' keeps 'was' next to the subject. Dutch puts it last.",
+   "mistakes": [
+    {
+     "wrong": "Daar zij was de enige kandidaat, kreeg zij de baan.",
+     "right": "Daar zij de enige kandidaat was, kreeg zij de baan.",
+     "why": "The finite verb 'was' goes to the end of the clause. (not \"Daar zij was de enige kandidaat, kreeg zij de baan.\", but \"Daar zij de enige kandidaat was, kreeg zij de baan.\")"
+    },
+    {
+     "wrong": "Daar zij de enige kandidaat was, zij kreeg de baan.",
+     "right": "Daar zij de enige kandidaat was, kreeg zij de baan.",
+     "why": "The main clause starts with the verb: 'kreeg zij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij kreeg de baan, omdat zij de enige kandidaat was.",
+    "english": "She got the job because she was the only candidate.",
+    "note": "With the main clause first there is no inversion. Compare: Zij kreeg de baan, omdat zij de enige kandidaat was."
+   }
+  },
+  "pat-daar-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "daar = since, because (formal, mostly written)",
+    "why": "The price rise is a reason in a formal report."
+   },
+   "situationNl": "Je meldt een besluit van een gemeentebestuur in officiële taal. Noem eerst de ontwikkeling en dan de maatregel.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Daar de prijzen sterk zijn gestegen",
+     "subject": "de prijzen",
+     "finite": "zijn",
+     "role": "daar-clause (the reason)",
+     "why": "After 'daar' come the subject 'de prijzen' and 'sterk', and the perfect group 'zijn gestegen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "heeft de gemeente het budget verhoogd",
+     "subject": "de gemeente",
+     "finite": "heeft",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'heeft' comes first, then the subject 'de gemeente' and the object 'het budget'; the participle 'verhoogd' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since, formal)",
+     "text": "Daar"
+    },
+    {
+     "label": "subject",
+     "text": "de prijzen"
+    },
+    {
+     "label": "adverb",
+     "text": "sterk"
+    },
+    {
+     "label": "finite verb",
+     "text": "zijn"
+    },
+    {
+     "label": "participle",
+     "text": "gestegen"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    },
+    {
+     "label": "subject",
+     "text": "de gemeente"
+    },
+    {
+     "label": "object",
+     "text": "het budget"
+    },
+    {
+     "label": "participle",
+     "text": "verhoogd"
+    }
+   ],
+   "meaning": "As prices have risen sharply, the council has raised the budget.",
+   "order": "Both clauses are in the perfect. Stijgen takes zijn (change of state), verhogen takes hebben. Read it as \"Daar de prijzen sterk zijn gestegen, heeft de gemeente het budget verhoogd\".",
+   "forms": "stijgen: zijn gestegen. verhogen: heeft verhoogd.",
+   "compare": "English 'prices have risen' is the same perfect. Dutch separates the auxiliary and the participle with other words.",
+   "mistakes": [
+    {
+     "wrong": "Daar de prijzen sterk hebben gestegen, heeft de gemeente het budget verhoogd.",
+     "right": "Daar de prijzen sterk zijn gestegen, heeft de gemeente het budget verhoogd.",
+     "why": "Stijgen takes zijn, not hebben. (not \"Daar de prijzen sterk hebben gestegen, heeft de gemeente het budget verhoogd.\", but \"Daar de prijzen sterk zijn gestegen, heeft de gemeente het budget verhoogd.\")"
+    },
+    {
+     "wrong": "Daar de prijzen sterk zijn gestegen, de gemeente heeft het budget verhoogd.",
+     "right": "Daar de prijzen sterk zijn gestegen, heeft de gemeente het budget verhoogd.",
+     "why": "The main clause starts with the verb: 'heeft de gemeente'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De gemeente heeft het budget verhoogd, omdat de prijzen sterk zijn gestegen.",
+    "english": "The council has raised the budget because prices have risen sharply.",
+    "note": "With the main clause first there is no inversion. Compare: De gemeente heeft het budget verhoogd, omdat de prijzen sterk zijn gestegen."
+   }
+  },
+  "pat-daar-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "daar = since, because (formal, mostly written)",
+    "why": "Absence is stated as the reason in formal legal writing."
+   },
+   "situationNl": "Je schrijft een officieel bericht aan iemand die niet op een zitting kwam. Noem eerst het feit en daarna het gevolg voor de zaak.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Daar u niet bent verschenen",
+     "subject": "u",
+     "finite": "bent",
+     "role": "daar-clause (the reason)",
+     "why": "After 'daar' come the subject 'u' and 'niet', and the perfect group 'bent verschenen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is de zaak uitgesteld",
+     "subject": "de zaak",
+     "finite": "is",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'is' comes first, then the subject 'de zaak'; the participle 'uitgesteld' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since, formal)",
+     "text": "Daar"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb",
+     "text": "bent"
+    },
+    {
+     "label": "participle",
+     "text": "verschenen"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "de zaak"
+    },
+    {
+     "label": "participle",
+     "text": "uitgesteld"
+    }
+   ],
+   "meaning": "As you did not appear, the case has been postponed.",
+   "order": "Verschijnen takes zijn. The main clause is a passive perfect: 'is uitgesteld'. Read it as \"Daar u niet bent verschenen, is de zaak uitgesteld\".",
+   "forms": "verschijnen: bent verschenen. uitstellen: is uitgesteld.",
+   "compare": "English 'did not appear' is a simple past; Dutch formal writing prefers the perfect 'bent verschenen'.",
+   "mistakes": [
+    {
+     "wrong": "Daar u niet bent verschenen, de zaak is uitgesteld.",
+     "right": "Daar u niet bent verschenen, is de zaak uitgesteld.",
+     "why": "The main clause starts with the verb: 'is de zaak'."
+    },
+    {
+     "wrong": "Daar u niet hebt verschenen, is de zaak uitgesteld.",
+     "right": "Daar u niet bent verschenen, is de zaak uitgesteld.",
+     "why": "Verschijnen takes zijn, not hebben. (not \"Daar u niet hebt verschenen, is de zaak uitgesteld.\", but \"Daar u niet bent verschenen, is de zaak uitgesteld.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De zaak is uitgesteld, omdat u niet bent verschenen.",
+    "english": "The case has been postponed because you did not appear.",
+    "note": "With the main clause first there is no inversion. Compare: De zaak is uitgesteld, omdat u niet bent verschenen."
+   }
+  },
+  "pat-daar-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "daar = since, because (formal, mostly written)",
+    "why": "The closed road is the reason, given formally."
+   },
+   "situationNl": "Je informeert reizigers in een officiële mededeling over een omleiding. Begin met de reden en eindig met wat jullie doen.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Daar de weg afgesloten is",
+     "subject": "de weg",
+     "finite": "is",
+     "role": "daar-clause (the reason)",
+     "why": "After 'daar' come the subject 'de weg' and the participle 'afgesloten', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "nemen wij een andere route",
+     "subject": "wij",
+     "finite": "nemen",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'nemen' comes first, then the subject 'wij' and the object 'een andere route'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since, formal)",
+     "text": "Daar"
+    },
+    {
+     "label": "subject",
+     "text": "de weg"
+    },
+    {
+     "label": "participle",
+     "text": "afgesloten"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "nemen"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "object",
+     "text": "een andere route"
+    }
+   ],
+   "meaning": "As the road is closed off, we take a different route.",
+   "order": "In the daar-clause the participle stands before the finite verb: 'afgesloten is'. The main clause starts with 'nemen wij'.",
+   "forms": "zijn: de weg is. afsluiten: afgesloten. nemen: wij nemen.",
+   "compare": "English 'is closed off' keeps the verb before the participle. In this clause Dutch puts the verb last.",
+   "mistakes": [
+    {
+     "wrong": "Daar de weg afgesloten, nemen wij een andere route.",
+     "right": "Daar de weg afgesloten is, nemen wij een andere route.",
+     "why": "The clause needs its finite verb 'is'. (not \"Daar de weg afgesloten, nemen wij een andere route.\", but \"Daar de weg afgesloten is, nemen wij een andere route.\")"
+    },
+    {
+     "wrong": "Daar de weg afgesloten is, wij nemen een andere route.",
+     "right": "Daar de weg afgesloten is, nemen wij een andere route.",
+     "why": "The main clause starts with the verb: 'nemen wij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij nemen een andere route, omdat de weg afgesloten is.",
+    "english": "We take a different route because the road is closed off.",
+    "note": "With the main clause first there is no inversion. Compare: Wij nemen een andere route, omdat de weg afgesloten is."
+   }
+  },
+  "pat-daar-07": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "daar as an adverb = there (place, position one)",
+    "why": "No second finite verb follows, so daar is the adverb and the sentence is a single main clause."
+   },
+   "situationNl": "Je wijst op een huis in de verte en zegt wie er woont, met de plaats vooraan.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Daar woont mijn oma",
+     "subject": "mijn oma",
+     "finite": "woont",
+     "role": "single main clause, adverb first",
+     "why": "The adverb 'daar' fills position one, so the finite verb 'woont' is second and the subject 'mijn oma' follows it."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted place",
+     "text": "Daar"
+    },
+    {
+     "label": "finite verb",
+     "text": "woont"
+    },
+    {
+     "label": "subject",
+     "text": "mijn oma"
+    }
+   ],
+   "meaning": "My grandmother lives there.",
+   "order": "As an adverb daar takes the first place and the verb stays second. As a conjunction it opens a clause and the verb goes last.",
+   "forms": "wonen: mijn oma woont.",
+   "compare": "English 'there lives my grandmother' sounds literary; Dutch uses it normally.",
+   "mistakes": [
+    {
+     "wrong": "Daar mijn oma woont.",
+     "right": "Daar woont mijn oma.",
+     "why": "Without a main clause this is a subordinate clause; the complete sentence is 'Daar woont mijn oma'."
+    },
+    {
+     "wrong": "Daar woont oma mijn.",
+     "right": "Daar woont mijn oma.",
+     "why": "The possessive stands before the noun: 'mijn oma'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Daar mijn oma in Utrecht woont, bezoeken wij haar vaak.",
+    "english": "As my grandmother lives in Utrecht, we visit her often.",
+    "note": "With the formal conjunction the verb 'woont' goes last."
+   }
+  },
+  "pat-daar-08": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "daar as an adverb = there (place, position one)",
+    "why": "'Daar' is followed directly by a main-clause verb, so it is the adverb of place."
+   },
+   "situationNl": "Je vertelt een verhaal over een plek en het moment van de eerste ontmoeting. Begin met de plaats.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Daar zag hij haar voor het eerst",
+     "subject": "hij",
+     "finite": "zag",
+     "role": "single main clause, adverb first",
+     "why": "The adverb 'daar' fills position one, so 'zag' is second and the subject 'hij' follows it, then 'haar' and the phrase 'voor het eerst'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted place",
+     "text": "Daar"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "zag"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "haar"
+    },
+    {
+     "label": "phrase",
+     "text": "voor het eerst"
+    }
+   ],
+   "meaning": "There he saw her for the first time.",
+   "order": "The adverb 'daar' stands in position one, so the subject follows the verb. A conjunction would send 'zag' to the end.",
+   "forms": "zien: hij zag.",
+   "compare": "English 'There he saw her' also inverts. The Dutch rule applies to every fronted element.",
+   "mistakes": [
+    {
+     "wrong": "Daar hij zag haar voor het eerst.",
+     "right": "Daar zag hij haar voor het eerst.",
+     "why": "After the fronted adverb the verb comes second: 'zag hij'."
+    },
+    {
+     "wrong": "Daar zag haar hij voor het eerst.",
+     "right": "Daar zag hij haar voor het eerst.",
+     "why": "The subject 'hij' directly follows the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Daar hij haar voor het eerst zag, werd hij zenuwachtig.",
+    "english": "As he saw her for the first time, he became nervous.",
+    "note": "With the formal conjunction daar the verb 'zag' goes last."
+   }
+  },
+  "pat-daar-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "gesteld dat = supposing that (a hypothesis, usually followed by a question or a consequence)",
+    "why": "The claim is taken as true for the sake of argument, which is what gesteld dat expresses."
+   },
+   "situationNl": "Een collega maakt bezwaar tegen jullie plan. Neem zijn bewering voorlopig aan en vraag wat daaruit volgt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Gesteld dat hij gelijk heeft",
+     "subject": "hij",
+     "finite": "heeft",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'gesteld dat' come the subject 'hij' and the object 'gelijk', and the finite verb 'heeft' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "wat doen we dan",
+     "subject": "we",
+     "finite": "doen",
+     "role": "main clause (the consequence or question)",
+     "why": "The question word 'wat' comes first, then the finite verb 'doen', the subject 'we' and the adverb 'dan'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (supposing that)",
+     "text": "Gesteld dat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "gelijk"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    },
+    {
+     "label": "question word",
+     "text": "wat"
+    },
+    {
+     "label": "finite verb",
+     "text": "doen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "adverb",
+     "text": "dan"
+    }
+   ],
+   "meaning": "Supposing he is right, what do we do then?",
+   "order": "The fronted hypothesis fills position one. The main clause is a direct question, so the question word is first and the verb second: 'wat doen we dan'.",
+   "forms": "hebben: hij heeft (gelijk hebben). doen: wij doen.",
+   "compare": "English 'supposing he is right' has no 'that'. Dutch keeps 'dat' and sends the verb to the end.",
+   "mistakes": [
+    {
+     "wrong": "Gesteld dat hij heeft gelijk, wat doen we dan?",
+     "right": "Gesteld dat hij gelijk heeft, wat doen we dan?",
+     "why": "The finite verb 'heeft' goes to the end of the clause, after 'gelijk'."
+    },
+    {
+     "wrong": "Gesteld hij gelijk heeft, wat doen we dan?",
+     "right": "Gesteld dat hij gelijk heeft, wat doen we dan?",
+     "why": "Gesteld must be followed by dat before a clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wat doen we dan, gesteld dat hij gelijk heeft?",
+    "english": "What do we do then, supposing he is right?",
+    "note": "With the question first the hypothesis follows and its verb stays last."
+   }
+  },
+  "pat-daar-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "gesteld dat = supposing that (a hypothesis, usually followed by a question or a consequence)",
+    "why": "The failure is only assumed, and the question asks about its consequence."
+   },
+   "situationNl": "In een planningsoverleg breng je een lastige vraag in over het risico. Neem aan dat de opdracht niet slaagt en vraag wie betaalt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Gesteld dat het project mislukt",
+     "subject": "het project",
+     "finite": "mislukt",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'gesteld dat' come the subject 'het project' and the finite verb 'mislukt', which closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "wie draagt dan de kosten",
+     "subject": "wie",
+     "finite": "draagt",
+     "role": "main clause (the consequence or question)",
+     "why": "The question word 'wie' is the subject and comes first, then the finite verb 'draagt', then 'dan' and the object 'de kosten'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (supposing that)",
+     "text": "Gesteld dat"
+    },
+    {
+     "label": "subject",
+     "text": "het project"
+    },
+    {
+     "label": "finite verb",
+     "text": "mislukt"
+    },
+    {
+     "label": "question word and subject",
+     "text": "wie"
+    },
+    {
+     "label": "finite verb",
+     "text": "draagt"
+    },
+    {
+     "label": "adverb",
+     "text": "dan"
+    },
+    {
+     "label": "object",
+     "text": "de kosten"
+    }
+   ],
+   "meaning": "Supposing the project fails, who then bears the costs?",
+   "order": "Because 'wie' is the subject, it stands in position one and the verb follows it directly. The clause with gesteld dat ends in 'mislukt'.",
+   "forms": "mislukken: het project mislukt. dragen: wie draagt.",
+   "compare": "English 'who then bears' has the same word order, but Dutch puts 'dan' behind the verb.",
+   "mistakes": [
+    {
+     "wrong": "Gesteld dat het project mislukt, wie dan draagt de kosten?",
+     "right": "Gesteld dat het project mislukt, wie draagt dan de kosten?",
+     "why": "The verb comes directly after the question word: 'wie draagt dan'."
+    },
+    {
+     "wrong": "Gesteld dat mislukt het project, wie draagt dan de kosten?",
+     "right": "Gesteld dat het project mislukt, wie draagt dan de kosten?",
+     "why": "The finite verb 'mislukt' goes to the end of the clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wie draagt de kosten als het project mislukt?",
+    "english": "Who bears the costs if the project fails?",
+    "note": "With 'als' the condition follows and the verb 'mislukt' stays last."
+   }
+  },
+  "pat-daar-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "gesteld dat = supposing that (a hypothesis, usually followed by a question or a consequence)",
+    "why": "Her arrival is only a possibility, and the main clause says what that would allow."
+   },
+   "situationNl": "Je plant een bijeenkomst en één deelnemer is onzeker. Neem haar komst voorlopig aan en zeg wat dan mogelijk is.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Gesteld dat zij vandaag nog komt",
+     "subject": "zij",
+     "finite": "komt",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'gesteld dat' come the subject 'zij' and 'vandaag nog', and the finite verb 'komt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kunnen we beginnen",
+     "subject": "we",
+     "finite": "kunnen",
+     "role": "main clause (the consequence or question)",
+     "why": "The modal 'kunnen' comes first, then the subject 'we', and the infinitive 'beginnen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (supposing that)",
+     "text": "Gesteld dat"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "time words",
+     "text": "vandaag nog"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    },
+    {
+     "label": "modal verb",
+     "text": "kunnen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "infinitive",
+     "text": "beginnen"
+    }
+   ],
+   "meaning": "Supposing she still comes today, we can begin.",
+   "order": "The fronted clause is position one, so the main clause starts with the modal. The infinitive 'beginnen' closes the sentence.",
+   "forms": "komen: zij komt. kunnen: wij kunnen. beginnen: infinitive.",
+   "compare": "English 'supposing she still comes today' is formal too. Dutch gesteld dat fits written or careful speech.",
+   "mistakes": [
+    {
+     "wrong": "Gesteld dat zij vandaag nog komt, we kunnen beginnen.",
+     "right": "Gesteld dat zij vandaag nog komt, kunnen we beginnen.",
+     "why": "The main clause starts with the modal: 'kunnen we'. (not \"Gesteld dat zij vandaag nog komt, we kunnen beginnen.\", but \"Gesteld dat zij vandaag nog komt, kunnen we beginnen.\")"
+    },
+    {
+     "wrong": "Gesteld dat zij komt vandaag nog, kunnen we beginnen.",
+     "right": "Gesteld dat zij vandaag nog komt, kunnen we beginnen.",
+     "why": "The finite verb 'komt' goes to the end of the clause. (not \"Gesteld dat zij komt vandaag nog, kunnen we beginnen.\", but \"Gesteld dat zij vandaag nog komt, kunnen we beginnen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We kunnen beginnen, gesteld dat zij vandaag nog komt.",
+    "english": "We can begin, supposing she still comes today.",
+    "note": "With the main clause first there is no inversion. Compare: We kunnen beginnen, gesteld dat zij vandaag nog komt."
+   }
+  },
+  "pat-daar-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "gesteld dat = supposing that (a hypothesis, usually followed by a question or a consequence)",
+    "why": "The plans going ahead is the assumption; the necessity to decide is the consequence."
+   },
+   "situationNl": "Een project gaat misschien wel of niet door. Neem de voortzetting aan en zeg wat de groep dan snel moet doen.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Gesteld dat de plannen doorgaan",
+     "subject": "de plannen",
+     "finite": "doorgaan",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'gesteld dat' come the plural subject 'de plannen' and the joined verb 'doorgaan', which closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "moeten we snel beslissen",
+     "subject": "we",
+     "finite": "moeten",
+     "role": "main clause (the consequence or question)",
+     "why": "The modal 'moeten' comes first, then the subject 'we', the adverb 'snel', and the infinitive 'beslissen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (supposing that)",
+     "text": "Gesteld dat"
+    },
+    {
+     "label": "subject",
+     "text": "de plannen"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "doorgaan"
+    },
+    {
+     "label": "modal verb",
+     "text": "moeten"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "adverb",
+     "text": "snel"
+    },
+    {
+     "label": "infinitive",
+     "text": "beslissen"
+    }
+   ],
+   "meaning": "Supposing the plans go ahead, we have to decide quickly.",
+   "order": "'Doorgaan' stays in one piece in the clause. The main clause starts with the modal 'moeten' and ends in the infinitive.",
+   "forms": "doorgaan: de plannen gaan door (joined: doorgaan). moeten: wij moeten. beslissen: infinitive.",
+   "compare": "English 'go ahead' has two words. Dutch 'doorgaan' is one word in a subordinate clause.",
+   "mistakes": [
+    {
+     "wrong": "Gesteld dat de plannen gaan door, moeten we snel beslissen.",
+     "right": "Gesteld dat de plannen doorgaan, moeten we snel beslissen.",
+     "why": "In a subordinate clause the separable verb is one word: 'doorgaan'."
+    },
+    {
+     "wrong": "Gesteld dat de plannen doorgaan, we moeten snel beslissen.",
+     "right": "Gesteld dat de plannen doorgaan, moeten we snel beslissen.",
+     "why": "The main clause starts with the verb: 'moeten we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We moeten snel beslissen, gesteld dat de plannen doorgaan.",
+    "english": "We have to decide quickly, supposing the plans go ahead.",
+    "note": "With the main clause first there is no inversion. Compare: We moeten snel beslissen, gesteld dat de plannen doorgaan."
+   }
+  },
+  "pat-daar-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "gesteld dat = supposing that (a hypothesis, usually followed by a question or a consequence)",
+    "why": "The longer outage is only assumed."
+   },
+   "situationNl": "Je bespreekt de voorbereiding op een systeemstoring die mogelijk lang duurt. Zeg wat nodig is en noem de aanname erbij.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We hebben een noodplan nodig",
+     "subject": "We",
+     "finite": "hebben",
+     "role": "main clause (the consequence or question)",
+     "why": "'We' is first and 'hebben' second; 'een noodplan' follows and the predicate 'nodig' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "gesteld dat de storing langer duurt",
+     "subject": "de storing",
+     "finite": "duurt",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'gesteld dat' come the subject 'de storing' and 'langer', and the finite verb 'duurt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebben"
+    },
+    {
+     "label": "object",
+     "text": "een noodplan"
+    },
+    {
+     "label": "predicate",
+     "text": "nodig"
+    },
+    {
+     "label": "conjunction (supposing that)",
+     "text": "gesteld dat"
+    },
+    {
+     "label": "subject",
+     "text": "de storing"
+    },
+    {
+     "label": "adverb",
+     "text": "langer"
+    },
+    {
+     "label": "finite verb",
+     "text": "duurt"
+    }
+   ],
+   "meaning": "We need an emergency plan, supposing the outage lasts longer.",
+   "order": "'Nodig hebben' means to need. The hypothesis clause follows the complete main clause and ends in 'duurt'. Read it as \"We hebben een noodplan nodig, gesteld dat de storing langer duurt\".",
+   "forms": "hebben: wij hebben (nodig hebben). duren: de storing duurt.",
+   "compare": "English 'need' is one verb. Dutch splits it into 'hebben ... nodig'. For this card: \"We hebben een noodplan nodig, gesteld dat de storing langer duurt\".",
+   "mistakes": [
+    {
+     "wrong": "We hebben een noodplan nodig, gesteld dat de storing duurt langer.",
+     "right": "We hebben een noodplan nodig, gesteld dat de storing langer duurt.",
+     "why": "The finite verb 'duurt' goes to the end after 'langer'."
+    },
+    {
+     "wrong": "We hebben nodig een noodplan, gesteld dat de storing langer duurt.",
+     "right": "We hebben een noodplan nodig, gesteld dat de storing langer duurt.",
+     "why": "The predicate 'nodig' stands after the object."
+    }
+   ],
+   "contrast": {
+    "dutch": "Gesteld dat de storing langer duurt, hebben we een noodplan nodig.",
+    "english": "Supposing the outage lasts longer, we need an emergency plan.",
+    "note": "With the hypothesis first the main clause starts with 'hebben we'."
+   }
+  },
+  "pat-daar-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "gesteld dat = supposing that (a hypothesis, usually followed by a question or a consequence)",
+    "why": "The speaker allows that they may be wrong, which makes the invitation polite."
+   },
+   "situationNl": "Je opent een gesprek op beleefde toon en nodigt anderen uit om je te corrigeren. Neem aan dat jouw standpunt niet klopt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Gesteld dat ik het mis heb",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'gesteld dat' come the subject 'ik', the object 'het' and 'mis', and the finite verb 'heb' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "wil ik het graag horen",
+     "subject": "ik",
+     "finite": "wil",
+     "role": "main clause (the consequence or question)",
+     "why": "The modal 'wil' comes first, then the subject 'ik', the object 'het' and 'graag'; the infinitive 'horen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (supposing that)",
+     "text": "Gesteld dat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "mis"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    },
+    {
+     "label": "modal verb",
+     "text": "wil"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "graag"
+    },
+    {
+     "label": "infinitive",
+     "text": "horen"
+    }
+   ],
+   "meaning": "Supposing I have got it wrong, I would like to hear it.",
+   "order": "'Het mis hebben' means to be wrong. In the clause the verb 'heb' stands last, and the main clause starts with the modal 'wil ik'.",
+   "forms": "hebben: ik heb (het mis hebben). willen: ik wil. horen: infinitive.",
+   "compare": "English 'I have got it wrong' uses the perfect. Dutch uses 'het mis hebben'.",
+   "mistakes": [
+    {
+     "wrong": "Gesteld dat ik het heb mis, wil ik het graag horen.",
+     "right": "Gesteld dat ik het mis heb, wil ik het graag horen.",
+     "why": "The finite verb 'heb' goes to the end after 'mis'."
+    },
+    {
+     "wrong": "Gesteld dat ik het mis heb, ik wil het graag horen.",
+     "right": "Gesteld dat ik het mis heb, wil ik het graag horen.",
+     "why": "The main clause starts with the verb: 'wil ik'. (not \"Gesteld dat ik het mis heb, ik wil het graag horen.\", but \"Gesteld dat ik het mis heb, wil ik het graag horen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik wil het graag horen, gesteld dat ik het mis heb.",
+    "english": "I would like to hear it, supposing I have got it wrong.",
+    "note": "With the main clause first there is no inversion. Compare: Ik wil het graag horen, gesteld dat ik het mis heb."
+   }
+  },
+  "pat-daar-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "stel dat = suppose that (everyday form of gesteld dat)",
+    "why": "The rain is a supposed case. 'Stel dat' works like a fixed opening, with the dat-clause behind it."
+   },
+   "situationNl": "Jullie plannen een uitstapje en je vraagt wat er gebeurt bij slecht weer. Neem die mogelijkheid voorlopig aan.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Stel dat het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'stel dat' come the dummy subject 'het' and the finite verb 'regent', which closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "wat doen we dan",
+     "subject": "we",
+     "finite": "doen",
+     "role": "main clause (the consequence or question)",
+     "why": "The question word 'wat' comes first, then the finite verb 'doen', the subject 'we' and the adverb 'dan'. The clause is \"wat doen we dan\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction group (suppose that)",
+     "text": "Stel dat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    },
+    {
+     "label": "question word",
+     "text": "wat"
+    },
+    {
+     "label": "finite verb",
+     "text": "doen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "adverb",
+     "text": "dan"
+    }
+   ],
+   "meaning": "Suppose it rains, what do we do then?",
+   "order": "'Stel' is the imperative of 'stellen' (to put forward), used as an opening for a supposition. The dat-clause behind it has the verb last.",
+   "forms": "regenen: het regent. doen: wij doen.",
+   "compare": "English 'suppose it rains' is the same idea; Dutch keeps the word 'dat'.",
+   "mistakes": [
+    {
+     "wrong": "Stel dat regent het, wat doen we dan?",
+     "right": "Stel dat het regent, wat doen we dan?",
+     "why": "The finite verb 'regent' goes to the end of the clause. (not \"Stel dat regent het, wat doen we dan?\", but \"Stel dat het regent, wat doen we dan?\")"
+    },
+    {
+     "wrong": "Stel dat het regent, wat we doen dan?",
+     "right": "Stel dat het regent, wat doen we dan?",
+     "why": "In the question the verb comes directly after the question word: 'wat doen we dan'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Gesteld dat het regent, wat doen we dan?",
+    "english": "Supposing it rains, what do we do then?",
+    "note": "Gesteld dat is the more formal wording with the same order."
+   }
+  },
+  "pat-daar-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "stel dat = suppose that (everyday form of gesteld dat)",
+    "why": "The lottery win is imagined, so the consequence is also hypothetical and uses 'zou'."
+   },
+   "situationNl": "Je praat met een vriend over een luchtkasteel en vraagt wat hij zou doen met een enorme geldprijs. Neem de gebeurtenis aan voor het gedachtespel.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Stel dat je de loterij wint",
+     "subject": "je",
+     "finite": "wint",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'stel dat' come the subject 'je' and the object 'de loterij', and the finite verb 'wint' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "wat zou je dan doen",
+     "subject": "je",
+     "finite": "zou",
+     "role": "main clause (the consequence or question)",
+     "why": "The question word 'wat' comes first, then the conditional 'zou', the subject 'je', the adverb 'dan', and the infinitive 'doen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction group (suppose that)",
+     "text": "Stel dat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "de loterij"
+    },
+    {
+     "label": "finite verb",
+     "text": "wint"
+    },
+    {
+     "label": "question word",
+     "text": "wat"
+    },
+    {
+     "label": "finite verb (conditional)",
+     "text": "zou"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "dan"
+    },
+    {
+     "label": "infinitive",
+     "text": "doen"
+    }
+   ],
+   "meaning": "Suppose you win the lottery, what would you do then?",
+   "order": "The main clause is a hypothetical question with 'zou'. The present 'wint' stays in the supposition itself. Read it as \"Stel dat je de loterij wint, wat zou je dan doen\".",
+   "forms": "winnen: je wint. zullen: zou. doen: infinitive.",
+   "compare": "English 'what would you do' uses 'would'. Dutch uses the conditional 'zou' with an infinitive.",
+   "mistakes": [
+    {
+     "wrong": "Stel dat je wint de loterij, wat zou je dan doen?",
+     "right": "Stel dat je de loterij wint, wat zou je dan doen?",
+     "why": "The finite verb 'wint' goes to the end after the object."
+    },
+    {
+     "wrong": "Stel dat je de loterij wint, wat je zou dan doen?",
+     "right": "Stel dat je de loterij wint, wat zou je dan doen?",
+     "why": "In the question the verb comes directly after the question word: 'wat zou je'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wat zou je doen als je de loterij won?",
+    "english": "What would you do if you won the lottery?",
+    "note": "With 'als' the past 'won' marks the unreal case."
+   }
+  },
+  "pat-daar-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "stel dat = suppose that (everyday form of gesteld dat)",
+    "why": "The rain is only imagined, so the umbrella is a precaution; 'stel dat' marks this informally."
+   },
+   "situationNl": "Je legt aan een vriend uit waarom je op een zonnige dag toch iets tegen nat weer meeneemt. Noem de mogelijke omstandigheid.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik neem een paraplu mee",
+     "subject": "Ik",
+     "finite": "neem",
+     "role": "main clause (the consequence or question)",
+     "why": "'Ik' is first and 'neem' second; the object 'een paraplu' follows and the particle 'mee' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "stel dat het gaat regenen",
+     "subject": "het",
+     "finite": "gaat",
+     "role": "gesteld dat-clause (the assumption)",
+     "why": "After 'stel dat' come the subject 'het' and the finite verb 'gaat', and the infinitive 'regenen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "neem"
+    },
+    {
+     "label": "object",
+     "text": "een paraplu"
+    },
+    {
+     "label": "particle",
+     "text": "mee"
+    },
+    {
+     "label": "conjunction group (suppose that)",
+     "text": "stel dat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    },
+    {
+     "label": "infinitive",
+     "text": "regenen"
+    }
+   ],
+   "meaning": "I am taking an umbrella, in case it starts to rain.",
+   "order": "'Meenemen' splits as 'neem ... mee'. The supposition has the finite verb 'gaat' before the infinitive 'regenen', and both end the clause.",
+   "forms": "meenemen: neem ... mee. gaan: het gaat. regenen: infinitive.",
+   "compare": "English 'just in case' is shorter. Dutch uses 'stel dat' plus a full clause.",
+   "mistakes": [
+    {
+     "wrong": "Ik neem mee een paraplu, stel dat het gaat regenen.",
+     "right": "Ik neem een paraplu mee, stel dat het gaat regenen.",
+     "why": "The particle 'mee' goes to the end of the main clause. (not \"Ik neem mee een paraplu, stel dat het gaat regenen.\", but \"Ik neem een paraplu mee, stel dat het gaat regenen.\")"
+    },
+    {
+     "wrong": "Ik neem een paraplu mee, stel dat het gaat regent.",
+     "right": "Ik neem een paraplu mee, stel dat het gaat regenen.",
+     "why": "After 'gaan' the verb is an infinitive: 'gaat regenen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik neem een paraplu mee voor het geval dat het gaat regenen.",
+    "english": "I am taking an umbrella in case it starts to rain.",
+    "note": "'Voor het geval dat' is the longer wording with the same order."
+   }
+  },
+  "pat-daar-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zoals = as, in the way that (a clause of manner)",
+    "why": "The mother's way is the model; the clause says how the soup was made."
+   },
+   "situationNl": "Je vertelt een vriend over een gerecht uit je jeugd en wie het vroeger op een bepaalde manier bereidde. Noem beide.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij maakte de soep",
+     "subject": "Hij",
+     "finite": "maakte",
+     "role": "main clause (what happens)",
+     "why": "'Hij' is first and 'maakte' second, followed by the object 'de soep'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zoals zijn moeder het vroeger deed",
+     "subject": "zijn moeder",
+     "finite": "deed",
+     "role": "zoals-clause (the way or the model)",
+     "why": "After 'zoals' come the subject 'zijn moeder', the object 'het' and the adverb 'vroeger', and the past form 'deed' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "maakte"
+    },
+    {
+     "label": "object",
+     "text": "de soep"
+    },
+    {
+     "label": "conjunction (as)",
+     "text": "zoals"
+    },
+    {
+     "label": "subject",
+     "text": "zijn moeder"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "vroeger"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "deed"
+    }
+   ],
+   "meaning": "He made the soup the way his mother used to do it.",
+   "order": "The main clause comes first and keeps its normal order. The zoals-clause is subordinate, so 'deed' goes to the end, behind 'het vroeger'.",
+   "forms": "maken: hij maakte. doen: zijn moeder deed.",
+   "compare": "English 'the way his mother used to do it' uses a modal. Dutch uses the simple past 'deed' with 'vroeger'.",
+   "mistakes": [
+    {
+     "wrong": "Hij maakte de soep zoals zijn moeder deed het vroeger.",
+     "right": "Hij maakte de soep zoals zijn moeder het vroeger deed.",
+     "why": "The finite verb 'deed' goes to the end of the zoals-clause."
+    },
+    {
+     "wrong": "Hij maakte de soep zoals deed zijn moeder het vroeger.",
+     "right": "Hij maakte de soep zoals zijn moeder het vroeger deed.",
+     "why": "In the zoals-clause the subject comes before the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zoals zijn moeder het vroeger deed, maakte hij de soep.",
+    "english": "The way his mother used to do it, he made the soup.",
+    "note": "With the zoals-clause first, the main clause inverts to 'maakte hij'."
+   }
+  },
+  "pat-daar-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zoals = as, in the way that (a clause of manner)",
+    "why": "The clause 'zoals je weet' refers to shared knowledge; it is a clause with its own verb."
+   },
+   "situationNl": "Je herinnert collega's aan iets wat zij al kennen, en je geeft daarna het tijdstip van het overleg.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zoals je weet",
+     "subject": "je",
+     "finite": "weet",
+     "role": "zoals-clause (the way or the model)",
+     "why": "After 'zoals' come the subject 'je' and the finite verb 'weet', which closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "begint de vergadering om negen uur",
+     "subject": "de vergadering",
+     "finite": "begint",
+     "role": "main clause (what happens)",
+     "why": "The finite verb 'begint' comes first, then the subject 'de vergadering' and the time phrase 'om negen uur'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as)",
+     "text": "Zoals"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    },
+    {
+     "label": "subject",
+     "text": "de vergadering"
+    },
+    {
+     "label": "time phrase",
+     "text": "om negen uur"
+    }
+   ],
+   "meaning": "As you know, the meeting starts at nine o'clock.",
+   "order": "The fronted zoals-clause is position one, so the main clause inverts to 'begint de vergadering'. The clause is only subject plus verb.",
+   "forms": "weten: je weet. beginnen: de vergadering begint.",
+   "compare": "English 'as you know' is identical in sense. Dutch inverts the main clause after it.",
+   "mistakes": [
+    {
+     "wrong": "Zoals je weet, de vergadering begint om negen uur.",
+     "right": "Zoals je weet, begint de vergadering om negen uur.",
+     "why": "The main clause starts with the verb: 'begint de vergadering'."
+    },
+    {
+     "wrong": "Zoals weet je, begint de vergadering om negen uur.",
+     "right": "Zoals je weet, begint de vergadering om negen uur.",
+     "why": "In a zoals-clause the subject comes first and the verb last."
+    }
+   ],
+   "contrast": {
+    "dutch": "De vergadering begint om negen uur, zoals je weet.",
+    "english": "The meeting starts at nine o'clock, as you know.",
+    "note": "With the main clause first there is no inversion. Compare: De vergadering begint om negen uur, zoals je weet."
+   }
+  },
+  "pat-daar-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zoals = as, in the way that (a clause of manner)",
+    "why": "The outcome is compared with an earlier expectation; the clause is in the past perfect."
+   },
+   "situationNl": "Je vertelt hoe een gebeurtenis is verlopen en vergelijkt het met jouw voorspelling.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het is gegaan",
+     "subject": "Het",
+     "finite": "is",
+     "role": "main clause (what happens)",
+     "why": "'Het' is first and 'is' second; the participle 'gegaan' closes the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zoals ik had verwacht",
+     "subject": "ik",
+     "finite": "had",
+     "role": "zoals-clause (the way or the model)",
+     "why": "After 'zoals' come the subject 'ik', and the past perfect group 'had verwacht' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "participle",
+     "text": "gegaan"
+    },
+    {
+     "label": "conjunction (as)",
+     "text": "zoals"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "had"
+    },
+    {
+     "label": "participle",
+     "text": "verwacht"
+    }
+   ],
+   "meaning": "It went the way I had expected.",
+   "order": "Both clauses use a perfect: 'is gegaan' in the main clause and 'had verwacht' in the zoals-clause, which places the expecting before the going.",
+   "forms": "gaan: is gegaan. hebben: ik had. verwachten: verwacht.",
+   "compare": "English 'the way I had expected' also uses the past perfect. Dutch puts both verbs at the end of the clause.",
+   "mistakes": [
+    {
+     "wrong": "Het is gegaan zoals ik had verwachten.",
+     "right": "Het is gegaan zoals ik had verwacht.",
+     "why": "The past perfect needs the participle 'verwacht', not the infinitive."
+    },
+    {
+     "wrong": "Het is gegaan zoals had ik verwacht.",
+     "right": "Het is gegaan zoals ik had verwacht.",
+     "why": "In the zoals-clause the subject comes before the verbs."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zoals ik had verwacht, is het gegaan.",
+    "english": "As I had expected, it went.",
+    "note": "With the zoals-clause first the main clause starts with 'is het gegaan'."
+   }
+  },
+  "pat-daar-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zoals = as, in the way that (a clause of manner)",
+    "why": "The clause refers to an earlier statement, so it is introduced by zoals and ends in 'zei'."
+   },
+   "situationNl": "Een collega vraagt voor de tweede keer naar de stand van zaken. Verwijs naar wat jij eerder zei en herhaal het.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zoals ik al zei",
+     "subject": "ik",
+     "finite": "zei",
+     "role": "zoals-clause (the way or the model)",
+     "why": "After 'zoals' come the subject 'ik' and the adverb 'al', and the past form 'zei' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is het systeem morgen klaar",
+     "subject": "het systeem",
+     "finite": "is",
+     "role": "main clause (what happens)",
+     "why": "The finite verb 'is' comes first, then the subject 'het systeem', the time word 'morgen' and the predicate 'klaar'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as)",
+     "text": "Zoals"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "al"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "zei"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "het systeem"
+    },
+    {
+     "label": "time word",
+     "text": "morgen"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    }
+   ],
+   "meaning": "As I already said, the system will be ready tomorrow.",
+   "order": "The fronted clause fills position one, so the main clause starts with 'is het systeem'. The little word 'al' means already.",
+   "forms": "zeggen: ik zei. zijn: het systeem is.",
+   "compare": "English 'as I already said' keeps 'said' next to the subject; Dutch puts 'al' before it.",
+   "mistakes": [
+    {
+     "wrong": "Zoals ik zei al, is het systeem morgen klaar.",
+     "right": "Zoals ik al zei, is het systeem morgen klaar.",
+     "why": "The adverb 'al' comes before the verb: 'al zei'."
+    },
+    {
+     "wrong": "Zoals ik al zei, het systeem is morgen klaar.",
+     "right": "Zoals ik al zei, is het systeem morgen klaar.",
+     "why": "The main clause starts with the verb: 'is het systeem'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het systeem is morgen klaar, zoals ik al zei.",
+    "english": "The system will be ready tomorrow, as I already said.",
+    "note": "With the main clause first there is no inversion. Compare: Het systeem is morgen klaar, zoals ik al zei."
+   }
+  },
+  "pat-daar-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zoals = as, in the way that (a clause of manner)",
+    "why": "The demonstration is the model for the action."
+   },
+   "situationNl": "Je leert een collega een handeling aan en vraagt hem jouw voorbeeld te volgen. Geef de opdracht.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Doe het",
+     "subject": "(jij)",
+     "finite": "Doe",
+     "role": "main clause (what happens)",
+     "why": "The imperative 'Doe' comes first, then the object 'het'; the subject 'jij' is not spoken."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zoals ik het je liet zien",
+     "subject": "ik",
+     "finite": "liet",
+     "role": "zoals-clause (the way or the model)",
+     "why": "After 'zoals' come the subject 'ik' and the objects 'het' and 'je', and the past form 'liet' stands before the infinitive 'zien' at the end."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Doe"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "conjunction (as)",
+     "text": "zoals"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "object",
+     "text": "je"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "liet"
+    },
+    {
+     "label": "infinitive",
+     "text": "zien"
+    }
+   ],
+   "meaning": "Do it the way I showed you.",
+   "order": "'Laten zien' means to show. In the clause the finite verb 'liet' stands before the infinitive 'zien', and both end the clause.",
+   "forms": "doen: doe. laten: liet. zien: infinitive (laten zien).",
+   "compare": "English 'the way I showed you' is a single verb. Dutch uses 'laten zien'.",
+   "mistakes": [
+    {
+     "wrong": "Doe het zoals ik het je zien liet.",
+     "right": "Doe het zoals ik het je liet zien.",
+     "why": "In this clause the finite verb stands before the infinitive: 'liet zien'."
+    },
+    {
+     "wrong": "Doe het zoals liet ik het je zien.",
+     "right": "Doe het zoals ik het je liet zien.",
+     "why": "In the zoals-clause the subject comes before the verbs. (not \"Doe het zoals liet ik het je zien.\", but \"Doe het zoals ik het je liet zien.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Doe het op de manier die ik je heb laten zien.",
+    "english": "Do it the way that I have shown you.",
+    "note": "A relative clause with 'die' says the same thing."
+   }
+  },
+  "pat-daar-23": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "zoals + adjective = as (usual), a short phrase without a finite verb",
+    "why": "'Gebruikelijk' is an adjective, so the phrase has no verb of its own and acts as one element in position one."
+   },
+   "situationNl": "Je beschrijft het vaste rooster van een school en het tijdstip van de eerste les, met een korte verwijzing naar de gewoonte.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zoals gebruikelijk begint de les om acht uur",
+     "subject": "de les",
+     "finite": "begint",
+     "role": "single main clause, short phrase first",
+     "why": "The phrase 'zoals gebruikelijk' fills position one, so the finite verb 'begint' is second and the subject 'de les' follows it, then 'om acht uur'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted phrase (as usual)",
+     "text": "Zoals gebruikelijk"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    },
+    {
+     "label": "subject",
+     "text": "de les"
+    },
+    {
+     "label": "time phrase",
+     "text": "om acht uur"
+    }
+   ],
+   "meaning": "As usual, the lesson starts at eight o'clock.",
+   "order": "A short zoals-phrase is one element, so it triggers inversion in the main clause but does not send any verb to the end.",
+   "forms": "beginnen: de les begint.",
+   "compare": "English 'as usual' is the same idea. Dutch needs no verb in the phrase.",
+   "mistakes": [
+    {
+     "wrong": "Zoals gebruikelijk de les begint om acht uur.",
+     "right": "Zoals gebruikelijk begint de les om acht uur.",
+     "why": "After a fronted phrase the verb comes second: 'begint de les'."
+    },
+    {
+     "wrong": "Zoals gebruikelijk is begint de les om acht uur.",
+     "right": "Zoals gebruikelijk begint de les om acht uur.",
+     "why": "A short phrase has no verb of its own; do not add 'is' there."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zoals het gebruikelijk is, begint de les om acht uur.",
+    "english": "As is usual, the lesson starts at eight o'clock.",
+    "note": "With a full clause 'is' goes to the end of the zoals-clause."
+   }
+  },
+  "pat-daar-24": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "zoals + participle = as (expected), a short phrase without a finite verb",
+    "why": "'Verwacht' is a participle used as an adjective, so the phrase has no finite verb and the main clause supplies it."
+   },
+   "situationNl": "Je vertelt een collega over de komst van iemand die bekendstaat om zijn slechte tijdsplanning. Verwijs naar wat te verwachten was.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zoals verwacht kwam hij te laat",
+     "subject": "hij",
+     "finite": "kwam",
+     "role": "single main clause, short phrase first",
+     "why": "The phrase 'zoals verwacht' fills position one, so the finite verb 'kwam' is second and the subject 'hij' follows it, then 'te laat'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted phrase (as expected)",
+     "text": "Zoals verwacht"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kwam"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "te laat"
+    }
+   ],
+   "meaning": "As expected, he came late.",
+   "order": "The short phrase is one element in position one. The main clause inverts, and 'te laat' closes it. Read it as \"Zoals verwacht kwam hij te laat\".",
+   "forms": "komen: hij kwam.",
+   "compare": "English 'as expected' reads the same. The Dutch main clause inverts after it.",
+   "mistakes": [
+    {
+     "wrong": "Zoals verwacht hij kwam te laat.",
+     "right": "Zoals verwacht kwam hij te laat.",
+     "why": "After a fronted phrase the verb comes second: 'kwam hij'."
+    },
+    {
+     "wrong": "Zoals verwacht kwam te laat hij.",
+     "right": "Zoals verwacht kwam hij te laat.",
+     "why": "The subject follows the verb directly. (not \"Zoals verwacht kwam te laat hij.\", but \"Zoals verwacht kwam hij te laat.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zoals we hadden verwacht, kwam hij te laat.",
+    "english": "As we had expected, he came late.",
+    "note": "With a full clause the verbs 'hadden verwacht' stand at the end of the zoals-clause."
+   }
+  },
+  "pat-daar-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zoals = as, in the way that (a clause of manner)",
+    "why": "The reaction is compared with what a normal person would predict."
+   },
+   "situationNl": "Je beschrijft hoe iemand op slecht nieuws reageerde en benadrukt dat het niet verrassend was.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze reageerde",
+     "subject": "Ze",
+     "finite": "reageerde",
+     "role": "main clause (what happens)",
+     "why": "'Ze' is first and 'reageerde' second; nothing else stands in the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zoals je kunt verwachten",
+     "subject": "je",
+     "finite": "kunt",
+     "role": "zoals-clause (the way or the model)",
+     "why": "After 'zoals' comes the subject 'je', and the modal group 'kunt verwachten' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "reageerde"
+    },
+    {
+     "label": "conjunction (as)",
+     "text": "zoals"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "modal verb",
+     "text": "kunt"
+    },
+    {
+     "label": "infinitive",
+     "text": "verwachten"
+    }
+   ],
+   "meaning": "She reacted the way you would expect.",
+   "order": "A short main clause is followed by the zoals-clause, which ends in the modal and its infinitive. Read it as \"Ze reageerde zoals je kunt verwachten\".",
+   "forms": "reageren: ze reageerde. kunnen: je kunt. verwachten: infinitive.",
+   "compare": "English 'the way you would expect' uses 'would'. Dutch uses 'kunt verwachten' with the present modal.",
+   "mistakes": [
+    {
+     "wrong": "Ze reageerde zoals je verwachten kunt.",
+     "right": "Ze reageerde zoals je kunt verwachten.",
+     "why": "In this clause the modal stands before the infinitive: 'kunt verwachten'."
+    },
+    {
+     "wrong": "Ze reageerde zoals kunt je verwachten.",
+     "right": "Ze reageerde zoals je kunt verwachten.",
+     "why": "In the zoals-clause the subject comes before the verbs. (not \"Ze reageerde zoals kunt je verwachten.\", but \"Ze reageerde zoals je kunt verwachten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zoals je kunt verwachten, reageerde ze boos.",
+    "english": "As you can expect, she reacted angrily.",
+    "note": "With the zoals-clause first the main clause starts with 'reageerde ze'."
+   }
+  },
+  "pat-daar-26": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "zoals = such as (introduces examples, no clause)",
+    "why": "The words after zoals are names, not a clause, so the sentence has a single finite verb."
+   },
+   "situationNl": "Je vertelt over de reisinteresses van een vriendin en noemt drie voorbeelden van de soort bestemming.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze bezoekt grote steden zoals Londen, Parijs en Rome",
+     "subject": "Ze",
+     "finite": "bezoekt",
+     "role": "single main clause with examples",
+     "why": "'Ze' is first and 'bezoekt' second, then the object 'grote steden' and the examples introduced by 'zoals'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "bezoekt"
+    },
+    {
+     "label": "object",
+     "text": "grote steden"
+    },
+    {
+     "label": "conjunction (such as)",
+     "text": "zoals"
+    },
+    {
+     "label": "examples",
+     "text": "Londen, Parijs en Rome"
+    }
+   ],
+   "meaning": "She visits big cities such as London, Paris and Rome.",
+   "order": "Zoals can introduce a list of examples. Then it is followed by nouns, not by a subject and a verb, so no verb moves.",
+   "forms": "bezoeken: ze bezoekt.",
+   "compare": "English 'such as' is the same idea. Dutch also allows 'als' without commas.",
+   "mistakes": [
+    {
+     "wrong": "Ze bezoekt grote steden zoals Londen, Parijs en Rome bezoekt.",
+     "right": "Ze bezoekt grote steden zoals Londen, Parijs en Rome.",
+     "why": "The examples are nouns; no second verb belongs at the end."
+    },
+    {
+     "wrong": "Ze grote steden bezoekt zoals Londen, Parijs en Rome.",
+     "right": "Ze bezoekt grote steden zoals Londen, Parijs en Rome.",
+     "why": "The finite verb is second: 'Ze bezoekt'. (not \"Ze grote steden bezoekt zoals Londen, Parijs en Rome.\", but \"Ze bezoekt grote steden zoals Londen, Parijs en Rome.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze bezoekt grote steden als Londen, Parijs en Rome.",
+    "english": "She visits big cities such as London, Paris and Rome.",
+    "note": "Without commas 'als' is also possible with the same meaning."
+   }
+  },
+  "pat-daar-27": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "zoals = such as (examples inside the subject, no clause)",
+    "why": "The words 'lelies en rozen' are nouns inside the subject, so there is no second clause."
+   },
+   "situationNl": "Je geeft een tuintip over een groep planten en noemt twee voorbeelden uit die groep. Zeg wat ze nodig hebben.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Bloemen zoals lelies en rozen hebben veel zon nodig",
+     "subject": "Bloemen zoals lelies en rozen",
+     "finite": "hebben",
+     "role": "single main clause with examples in the subject",
+     "why": "The subject 'bloemen zoals lelies en rozen' is one element, so the finite verb 'hebben' is second, followed by 'veel zon' and the predicate 'nodig'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Bloemen zoals lelies en rozen"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebben"
+    },
+    {
+     "label": "object",
+     "text": "veel zon"
+    },
+    {
+     "label": "predicate",
+     "text": "nodig"
+    }
+   ],
+   "meaning": "Flowers such as lilies and roses need a lot of sun.",
+   "order": "The whole group 'bloemen zoals lelies en rozen' counts as position one. 'Nodig hebben' splits as 'hebben ... nodig'.",
+   "forms": "hebben: bloemen hebben (nodig hebben).",
+   "compare": "English 'such as' behaves the same. Dutch 'nodig hebben' splits the verb and the predicate.",
+   "mistakes": [
+    {
+     "wrong": "Bloemen zoals lelies en rozen veel zon hebben nodig.",
+     "right": "Bloemen zoals lelies en rozen hebben veel zon nodig.",
+     "why": "The finite verb comes second: 'hebben veel zon nodig'."
+    },
+    {
+     "wrong": "Bloemen zoals lelies en rozen hebben nodig veel zon.",
+     "right": "Bloemen zoals lelies en rozen hebben veel zon nodig.",
+     "why": "The predicate 'nodig' goes to the end. (not \"Bloemen zoals lelies en rozen hebben nodig veel zon.\", but \"Bloemen zoals lelies en rozen hebben veel zon nodig.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Bloemen als lelies en rozen hebben veel zon nodig.",
+    "english": "Flowers such as lilies and roses need a lot of sun.",
+    "note": "Without commas 'als' can replace 'zoals' here."
+   }
+  },
+  "pat-daar-28": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "net zoals + time phrase = just like (a short comparison, no clause)",
+    "why": "'Vorig jaar' is a time phrase, not a clause, so the comparison has no verb of its own."
+   },
+   "situationNl": "Je plant een vakantie en vergelijkt de bestemming met die van het voorgaande jaar. Begin met de vergelijking.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Net zoals vorig jaar gaan we naar de kust",
+     "subject": "we",
+     "finite": "gaan",
+     "role": "single main clause, comparison phrase first",
+     "why": "The phrase 'net zoals vorig jaar' fills position one, so the finite verb 'gaan' is second and the subject 'we' follows it, then 'naar de kust'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted phrase (just like)",
+     "text": "Net zoals vorig jaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "phrase",
+     "text": "naar de kust"
+    }
+   ],
+   "meaning": "Just like last year, we are going to the coast.",
+   "order": "The comparison is one element, so the main clause inverts. Without a verb in the phrase, nothing moves to the end.",
+   "forms": "gaan: wij gaan.",
+   "compare": "English 'just like last year' is the same. Dutch inverts the main clause after it.",
+   "mistakes": [
+    {
+     "wrong": "Net zoals vorig jaar we gaan naar de kust.",
+     "right": "Net zoals vorig jaar gaan we naar de kust.",
+     "why": "After a fronted phrase the verb comes second: 'gaan we'."
+    },
+    {
+     "wrong": "Net zoals vorig jaar is gaan we naar de kust.",
+     "right": "Net zoals vorig jaar gaan we naar de kust.",
+     "why": "A short comparison phrase has no verb; do not add 'is'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Net zoals het vorig jaar was, gaan we naar de kust.",
+    "english": "Just like it was last year, we are going to the coast.",
+    "note": "With a full clause 'was' goes to the end of the zoals-clause."
+   }
+  },
+  "pat-daar-29": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zoals = as, in the way that (a clause of manner)",
+    "why": "The clause reports the person's own wording; 'zegt' ends it."
+   },
+   "situationNl": "Je citeert het oordeel van een collega over zijn eigen werk en geeft daarna de conclusie.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zoals hij het zelf zegt",
+     "subject": "hij",
+     "finite": "zegt",
+     "role": "zoals-clause (the way or the model)",
+     "why": "After 'zoals' come the subject 'hij', the object 'het' and 'zelf', and the finite verb 'zegt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is hij niet tevreden",
+     "subject": "hij",
+     "finite": "is",
+     "role": "main clause (what happens)",
+     "why": "The finite verb 'is' comes first, then the subject 'hij', the negation 'niet' and the predicate 'tevreden'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as)",
+     "text": "Zoals"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "zelf"
+    },
+    {
+     "label": "finite verb",
+     "text": "zegt"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "predicate",
+     "text": "tevreden"
+    }
+   ],
+   "meaning": "As he puts it himself, he is not satisfied.",
+   "order": "The fronted clause fills position one, so the main clause starts with 'is hij'. In the clause 'zelf' stands before the final verb.",
+   "forms": "zeggen: hij zegt. zijn: hij is.",
+   "compare": "English 'as he puts it himself' uses 'puts'. Dutch uses 'zegt' (says). For this card: \"Zoals hij het zelf zegt, is hij niet tevreden\".",
+   "mistakes": [
+    {
+     "wrong": "Zoals hij zegt het zelf, is hij niet tevreden.",
+     "right": "Zoals hij het zelf zegt, is hij niet tevreden.",
+     "why": "The finite verb 'zegt' goes to the end of the clause."
+    },
+    {
+     "wrong": "Zoals hij het zelf zegt, hij is niet tevreden.",
+     "right": "Zoals hij het zelf zegt, is hij niet tevreden.",
+     "why": "The main clause starts with the verb: 'is hij'. (not \"Zoals hij het zelf zegt, hij is niet tevreden.\", but \"Zoals hij het zelf zegt, is hij niet tevreden.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij is niet tevreden, zoals hij het zelf zegt.",
+    "english": "He is not satisfied, as he puts it himself.",
+    "note": "With the main clause first there is no inversion. Compare: Hij is niet tevreden, zoals hij het zelf zegt."
+   }
+  },
+  "pat-daar-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zoals = as, in the way that (a clause of manner)",
+    "why": "The outcome is compared with the plan; the clause is in the past perfect because the planning came first."
+   },
+   "situationNl": "Je meldt dat een projectweek goed verliep en vergelijkt het resultaat met het oorspronkelijke plan.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Alles verliep",
+     "subject": "Alles",
+     "finite": "verliep",
+     "role": "main clause (what happens)",
+     "why": "'Alles' is first and 'verliep' second; nothing else stands in the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zoals we hadden gepland",
+     "subject": "we",
+     "finite": "hadden",
+     "role": "zoals-clause (the way or the model)",
+     "why": "After 'zoals' comes the subject 'we', and the past perfect group 'hadden gepland' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Alles"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "verliep"
+    },
+    {
+     "label": "conjunction (as)",
+     "text": "zoals"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "hadden"
+    },
+    {
+     "label": "participle",
+     "text": "gepland"
+    }
+   ],
+   "meaning": "Everything went the way we had planned.",
+   "order": "The past perfect 'hadden gepland' places the planning before the going. Both verbs end the clause. Read it as \"Alles verliep zoals we hadden gepland\".",
+   "forms": "verlopen: verliep. hebben: we hadden. plannen: gepland.",
+   "compare": "English 'the way we had planned' also uses the past perfect. Dutch keeps the auxiliary before the participle at the end.",
+   "mistakes": [
+    {
+     "wrong": "Alles verliep zoals we hadden plannen.",
+     "right": "Alles verliep zoals we hadden gepland.",
+     "why": "The past perfect needs the participle 'gepland', not the infinitive."
+    },
+    {
+     "wrong": "Alles verliep zoals hadden we gepland.",
+     "right": "Alles verliep zoals we hadden gepland.",
+     "why": "In the zoals-clause the subject comes before the verbs. (not \"Alles verliep zoals hadden we gepland.\", but \"Alles verliep zoals we hadden gepland.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zoals we hadden gepland, verliep alles.",
+    "english": "As we had planned, everything went.",
+    "note": "With the zoals-clause first the main clause starts with 'verliep alles'."
+   }
+  }
+ }
+}

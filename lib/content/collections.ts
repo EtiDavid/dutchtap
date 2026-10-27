@@ -30,6 +30,7 @@ export const GRAMMAR_AREAS = {
   zodra: 'Zodra & zolang · as soon as, as long as',
   of: 'Of · whether, or, as if',
   hoewel: 'Hoewel & tenzij · although, unless',
+  daar: 'Daar, gesteld dat & zoals',
   exceptions: 'Ondanks dat, zonder dat, behalve dat',
   connectors: 'More conjunctions · sinds, nu, zodat, mits…',
   indirect: 'Indirect questions · wie, wat, waar, waarom, hoe',

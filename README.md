@@ -11,10 +11,10 @@ DutchTap is a **Dutch and French sentence-learning app**, with real-world situat
 | --- | --- | --- |
 | Dutch Core and French | 600 Everyday + 600 Dutch at Work + 600 separate French Everyday cards | Preserve all IDs, assets, progress and independent language state |
 | Existing sessions and games | Fixed-card sessions, Study/Speaking/Quiz, de/het and demonstrative/adjective games | Full migration, offline and account-sync regression testing |
-| Grammar base cards | **1476 authored + 184 reviewed source aliases = 1,660 playable grammar base cards across 20 topics** | Larger meaningful topic coverage, complete review and advanced topics |
-| Topic-wide lessons | Three expanded v1.0 guides, the Als, Toen, Wanneer, Separable, Past & perfect, Verbs, Tot, Terwijl, Voordat, Nadat, Zodra, Of, Hoewel, Indirect-question, Relative-clause, More-conjunctions and Ondanks/zonder/behalve guides at v1.1 | Complete all lessons with accurate, accessible reasons and examples |
+| Grammar base cards | **1506 authored + 184 reviewed source aliases = 1,690 playable grammar base cards across 21 topics** | Larger meaningful topic coverage, complete review and advanced topics |
+| Topic-wide lessons | Three expanded v1.0 guides, the Als, Toen, Wanneer, Separable, Past & perfect, Verbs, Tot, Terwijl, Voordat, Nadat, Zodra, Of, Hoewel, Indirect-question, Relative-clause, More-conjunctions and Ondanks/zonder/behalve and Daar/gesteld dat/zoals guides at v1.1 | Complete all lessons with accurate, accessible reasons and examples |
 | Individual sentence explanations | Initial grammar notes and limited ALS clause view | Bespoke, validated full structured word-order analysis for all grammar base cards |
-| Dutch-first speaking | **1280/1476** authored grammar cards include Dutch prompts | Remaining 196 authored and 184 aliases need real Dutch-first scenarios; uncued mixed retrieval |
+| Dutch-first speaking | **1310/1506** authored grammar cards include Dutch prompts | Remaining 196 authored and 184 aliases need real Dutch-first scenarios; uncued mixed retrieval |
 | Recognised alternatives | 58 new ALS authored cards provide two clause-order models | Explicit semantic validation and alternatives throughout other topics |
 | Extra grammar variations | **100** children across ten ALS parent families | Author and validate meaningful independent children where pedagogically justified |
 | Separable verbs | **68** distinct verb records with a forms table; **184** practice cards | Independent verification of every form and preposition; dedicated verb dictionary view |

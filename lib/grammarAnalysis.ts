@@ -14,6 +14,7 @@ import nadatAnalysis from "@/data/grammar-nadat-analysis.json";
 import zodraAnalysis from "@/data/grammar-zodra-analysis.json";
 import ofAnalysis from "@/data/grammar-of-analysis.json";
 import hoewelAnalysis from "@/data/grammar-hoewel-analysis.json";
+import indirectAnalysis from "@/data/grammar-indirect-analysis.json";
 import type { Breakdown } from "@/lib/grammarBreakdowns";
 
 /**
@@ -68,8 +69,9 @@ export const NADAT_ANALYSIS = nadatAnalysis.cards as unknown as Record<string, A
 export const ZODRA_ANALYSIS = zodraAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const OF_ANALYSIS = ofAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const HOEWEL_ANALYSIS = hoewelAnalysis.cards as unknown as Record<string, AnalysisRecord>;
+export const INDIRECT_ANALYSIS = indirectAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 /** Every authored sentence analysis, whatever its topic. Ids are unique across topics. */
-export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS, ...WANNEER_ANALYSIS, ...INVERSION_ANALYSIS, ...SEPARABLE_ANALYSIS, ...TENSE_ANALYSIS, ...VERBS_ANALYSIS, ...TOT_ANALYSIS, ...TERWIJL_ANALYSIS, ...VOORDAT_ANALYSIS, ...NADAT_ANALYSIS, ...ZODRA_ANALYSIS, ...OF_ANALYSIS, ...HOEWEL_ANALYSIS };
+export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS, ...WANNEER_ANALYSIS, ...INVERSION_ANALYSIS, ...SEPARABLE_ANALYSIS, ...TENSE_ANALYSIS, ...VERBS_ANALYSIS, ...TOT_ANALYSIS, ...TERWIJL_ANALYSIS, ...VOORDAT_ANALYSIS, ...NADAT_ANALYSIS, ...ZODRA_ANALYSIS, ...OF_ANALYSIS, ...HOEWEL_ANALYSIS, ...INDIRECT_ANALYSIS };
 export const analysisFor = (cardId: string): AnalysisRecord | undefined => GRAMMAR_ANALYSIS[cardId];
 /** A Dutch-first situation for cards that were written before Dutch prompts existed (including linked Everyday/Work sentences). */
 export const situationEnFor = (cardId: string): string | undefined => GRAMMAR_ANALYSIS[cardId]?.situationEn;

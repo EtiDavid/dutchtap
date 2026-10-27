@@ -4,6 +4,19 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P4 Indirect questions (new topic, 100 cards), lesson v1.1
+
+**Plan check:** P4 asks for embedded/indirect questions at 100 (and `of` at 60, done earlier). Topic id `indirect`, tile "Indirect questions".
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- 85 new cards (`pat-indirect-01..85`, `data/editorial/grammar-p2-indirect.json`) plus 15 core aliases (embedded questions after weten / uitleggen / begrijpen / niet weten); hand-authored records for all 100 in `data/grammar-indirect-analysis.json`. Coverage: wie (subject and object, with prepositions), wat, waar (place, destination, origin, split R-words `waar ... over/voor/mee/aan/op`), waarom, hoe, wanneer, welke/welk, hoeveel / hoe lang / hoe ver, joined R-words (`waarover`, `waarvoor`, `waarmee`, `waardoor`, `waarop`, `waarvan`), verb groups, tenses, imperatives and polite requests, two question words in one clause, and four direct-question contrast cards (single main clause).
+- Indirect-question lesson v1.1 (8 sections, 5 mistakes), with the choice between a question word, `of` and `dat`; no external source checked.
+- Counts: 1,303 authored + 181 aliases = 1,484 playable across 17 topics; 1107/1303 with Dutch-first prompts; 3 lessons at v1.0 and 14 at v1.1.
+
+**Open:** relative clauses 100 (die/dat/wie/wat/waar); no native review.
+
 ## 2026-10-27 — Claude Code continuation: P4 Hoewel & tenzij (new topic, 60 cards incl. ook al and maar contrast), lesson v1.1
 
 **Plan check:** P4 asks for Hoewel/Tenzij at 60 combined with clear subskills and the contrasting `ook al` behaviour. Topic id `hoewel`, tile "Hoewel & tenzij".

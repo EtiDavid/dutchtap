@@ -16,6 +16,7 @@ const SHORT: Record<keyof typeof GRAMMAR_AREAS, { title: string; hint: string }>
   zodra: { title: 'Zodra & zolang', hint: 'zodra ik thuis ben…' },
   of: { title: 'Of', hint: 'ik weet niet of…' },
   hoewel: { title: 'Hoewel & tenzij', hint: 'hoewel het regent…' },
+  indirect: { title: 'Indirect questions', hint: 'ik weet niet waar…' },
   tot: { title: 'Tot', hint: 'tot de bus komt' },
   toen: { title: 'Toen', hint: 'toen ik jong was' },
   verbs: { title: 'Verbs', hint: 'probeer · probeerde' },

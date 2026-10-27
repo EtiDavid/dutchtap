@@ -1,0 +1,707 @@
+[
+  {
+    "topic": "terwijl",
+    "dutch": "Ik was de auto terwijl ik naar de radio luister.",
+    "english": "I wash the car while I listen to the radio.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je maakt je auto schoon met muziek aan. Een buurman vraagt wat je tegelijk doet. Noem beide bezigheden.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl de pasta kookt, snijd ik de groenten.",
+    "english": "While the pasta cooks, I cut the vegetables.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Het eten is bijna klaar. Een huisgenoot wil weten hoe je de tijd gebruikt. Zeg wat je doet op het moment dat de pasta op het vuur staat.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Hij belt zijn moeder terwijl hij op de bus wacht.",
+    "english": "He calls his mother while he waits for the bus.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je ziet je broer bij de halte met zijn telefoon. Vertel wat hij tegelijk doet.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl wij eten, vertelt Daan over zijn reis.",
+    "english": "While we eat, Daan tells about his trip.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Jullie zitten met vrienden aan tafel. Beschrijf wie er praat tijdens de maaltijd.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Zij leest een boek terwijl de baby slaapt.",
+    "english": "She reads a book while the baby sleeps.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een vriendin heeft een rustig moment thuis. Vertel hoe zij haar tijd benut.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl de printer afdrukt, beantwoord ik mijn e-mails.",
+    "english": "While the printer prints, I answer my e-mails.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega ziet je achter je bureau op een moment dat de machine bezig is. Leg uit wat je doet in die minuten.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Je kunt koffie halen terwijl ik de zaal boek.",
+    "english": "You can get coffee while I book the room.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega wacht naast je bureau. Stel voor dat hij iets nuttigs doet tijdens jouw reservering.",
+    "why": "The modal verb comes last in the terwijl-clause or stands second in the main clause; the infinitive goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl ik de brief schrijf, kun je even koffie zetten.",
+    "english": "While I write the letter, you can make some coffee.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je zit midden in een belangrijk document. Vraag een collega iets te doen in die tijd.",
+    "why": "The modal verb comes last in the terwijl-clause or stands second in the main clause; the infinitive goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Ik heb gebeld terwijl jij in de vergadering zat.",
+    "english": "I called while you were in the meeting.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega komt terug en vraagt of er iets is gebeurd. Meld wat jij deed in zijn afwezigheid.",
+    "why": "Terwijl links two past events that were in progress together; the finite verb of the clause goes last.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl hij sliep, is de storm voorbijgetrokken.",
+    "english": "While he slept, the storm passed.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een buurman is wakker geworden en vraagt wat hij gemist heeft. Vertel wat er met het weer gebeurde.",
+    "why": "The terwijl-clause and the main clause can use different tenses; the auxiliary and participle stand at the end.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Ze lazen de krant terwijl ze op de trein wachtten.",
+    "english": "They read the paper while they waited for the train.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over twee reizigers op het perron van gisteren. Zeg wat ze deden.",
+    "why": "Terwijl links two past events that were in progress together; the finite verb of the clause goes last.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl we aan het ontbijten waren, ging de telefoon.",
+    "english": "While we were having breakfast, the phone rang.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over een rustige ochtend die werd onderbroken. Zeg wat er gebeurde.",
+    "why": "Terwijl links two past events that were in progress together; the finite verb of the clause goes last.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Zij ging door met werken terwijl haar collega's al waren vertrokken.",
+    "english": "She kept working while her colleagues had already left.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je ziet dat een collega nog aan haar bureau zit. Beschrijf de situatie van gisteravond.",
+    "why": "The terwijl-clause and the main clause can use different tenses; the auxiliary and participle stand at the end.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Ik ruim de kamer op terwijl jij de afwas afdroogt.",
+    "english": "I tidy the room while you dry the dishes.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Jullie verdelen de taken in huis. Zeg wie wat doet.",
+    "why": "A separable verb is written together in the terwijl-clause and splits in the main clause.",
+    "focus": "separable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "separable"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl zij de gasten opbelt, zet hij de tafel klaar.",
+    "english": "While she phones the guests, he sets the table.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Twee mensen bereiden een etentje voor. Vertel wat elk van beiden doet.",
+    "why": "A separable verb is written together in the terwijl-clause and splits in the main clause.",
+    "focus": "separable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "separable"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Hij schrijft de woorden op terwijl de docent ze uitspreekt.",
+    "english": "He writes the words down while the teacher pronounces them.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een leerling oefent uitspraak in de les. Beschrijf wat hij doet.",
+    "why": "A separable verb is written together in the terwijl-clause and splits in the main clause.",
+    "focus": "separable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "separable"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl ik de koffer inpak, kijkt mijn zus de route na.",
+    "english": "While I pack the suitcase, my sister checks the route.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Het gezin gaat op reis. Vertel hoe jullie je voorbereiden.",
+    "why": "A separable verb is written together in the terwijl-clause and splits in the main clause.",
+    "focus": "separable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "separable"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "De vloer wordt schoongemaakt terwijl de kinderen op school zijn.",
+    "english": "The floor is cleaned while the children are at school.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een ouder vraagt op welk moment de schoonmaak plaatsvindt. Leg uit op welk moment dat gebeurt.",
+    "why": "The passive group wordt + participle closes the terwijl-clause or the main clause.",
+    "focus": "passive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "passive"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl de nieuwe app wordt getest, blijft de oude actief.",
+    "english": "While the new app is being tested, the old one stays active.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een klant vraagt of hij nog kan inloggen. Geef uitleg over de overgangsperiode.",
+    "why": "The passive group wordt + participle closes the terwijl-clause or the main clause.",
+    "focus": "passive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "passive"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Mijn zus houdt van koffie, terwijl ik liever thee drink.",
+    "english": "My sister likes coffee, whereas I prefer tea.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vergelijkt je smaak met die van je zus. Zeg waarin jullie verschillen.",
+    "why": "Terwijl can also mean whereas: it contrasts two situations rather than linking them in time.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Hij werkt hard, terwijl zijn broer de hele dag op de bank ligt.",
+    "english": "He works hard, whereas his brother lies on the sofa all day.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vergelijkt twee broers. Beschrijf het verschil in hun dag.",
+    "why": "Terwijl can also mean whereas: it contrasts two situations rather than linking them in time.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl het in het noorden sneeuwt, is het in het zuiden zonnig.",
+    "english": "While it snows in the north, it is sunny in the south.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je geeft het weerbericht voor het hele land. Zet de twee gebieden naast elkaar.",
+    "why": "Terwijl can also mean whereas: it contrasts two situations rather than linking them in time.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "De winkel is vol, terwijl de straat verder leeg is.",
+    "english": "The shop is full, whereas the rest of the street is empty.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je loopt door een stille straat. Merk op wat opvalt aan die ene winkel.",
+    "why": "Terwijl can also mean whereas: it contrasts two situations rather than linking them in time.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Ik betaal veel huur, terwijl de flat erg klein is.",
+    "english": "I pay a lot of rent, even though the flat is very small.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een vriend vraagt wat je van je woning vindt. Klaag over de prijs in verhouding tot de ruimte.",
+    "why": "Terwijl can mean even though: the clause names a fact that does not fit the main clause.",
+    "focus": "concession",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "concession"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl wij de rekening betalen, krijgt hij de korting.",
+    "english": "While we pay the bill, he gets the discount.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een groepje collega's praat over een oneerlijke regeling. Zeg wat jullie opvalt.",
+    "why": "Terwijl can also mean whereas: it contrasts two situations rather than linking them in time.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Zij blijft thuis, terwijl ze eigenlijk naar de dokter moet.",
+    "english": "She stays at home, even though she really has to go to the doctor.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je maakt je zorgen om een vriendin. Zeg wat je tegenstrijdig vindt aan haar gedrag.",
+    "why": "Terwijl can mean even though: the clause names a fact that does not fit the main clause.",
+    "focus": "concession",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "concession"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Je zegt dat je tijd hebt, terwijl je je agenda net vol hebt gezet.",
+    "english": "You say you have time, even though you have just filled your diary.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega zegt dat hij vrij is, maar je weet beter. Wijs hem daarop.",
+    "why": "Terwijl can mean even though: the clause names a fact that does not fit the main clause.",
+    "focus": "concession",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "concession"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Wat doe je terwijl het systeem opstart?",
+    "english": "What do you do while the system starts up?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vraagt een nieuwe collega naar haar gewoonte op de ochtend. Stel een vraag over het wachten.",
+    "why": "A question with terwijl keeps question order in the main clause; the terwijl-clause has the verb last.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Kun je praten terwijl je loopt?",
+    "english": "Can you talk while you walk?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je belt een vriend die onderweg is. Vraag of hij ondertussen kan spreken.",
+    "why": "A question with terwijl keeps question order in the main clause; the terwijl-clause has the verb last.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Weet je wat hij doet terwijl wij vergaderen?",
+    "english": "Do you know what he does while we have our meeting?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega ontbreekt tijdens het overleg. Vraag een ander waar hij mee bezig is.",
+    "why": "A question with terwijl keeps question order in the main clause; the terwijl-clause has the verb last.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Waarom lach je terwijl ik serieus praat?",
+    "english": "Why are you laughing while I am talking seriously?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Iemand grinnikt in een belangrijk gesprek. Vraag hem naar de reden.",
+    "why": "A question with terwijl keeps question order in the main clause; the terwijl-clause has the verb last.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Ik kan niet slapen terwijl de buren feestvieren.",
+    "english": "I cannot sleep while the neighbours are partying.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je bent moe en het is laat. Leg aan een vriend uit wat je wakker houdt.",
+    "why": "Niet belongs to the main clause; the terwijl-clause sends its verb to the end.",
+    "focus": "negation",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "negation"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl hij niets zegt, kijkt iedereen naar hem.",
+    "english": "While he says nothing, everyone looks at him.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een spreker valt stil op het podium. Beschrijf de zaal.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Tijdens de les schrijft hij aantekeningen.",
+    "english": "During the lesson he takes notes.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je beschrijft een leerling. Zeg wat hij in de les doet, zonder een tweede werkwoord.",
+    "why": "Tijdens is a preposition: it takes a noun and no second verb, unlike terwijl.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Intussen kijkt de docent de huiswerkopdrachten na.",
+    "english": "Meanwhile the teacher marks the homework.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een groep leerlingen werkt zelfstandig. Zeg wat de docent in de tussentijd doet.",
+    "why": "Intussen and ondertussen are adverbs: they take position one and the verb follows directly.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Ondertussen wachten de klanten bij de balie.",
+    "english": "Meanwhile the customers wait at the counter.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een medewerker zoekt een formulier. Vertel wat er aan de andere kant gebeurt.",
+    "why": "Intussen and ondertussen are adverbs: they take position one and the verb follows directly.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Zet je telefoon uit terwijl we vergaderen.",
+    "english": "Turn your phone off while we are in the meeting.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een deelnemer zit steeds te appen. Geef een korte opdracht.",
+    "why": "An imperative main clause followed by a terwijl-clause with the verb last.",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "imperative"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Blijf kalm terwijl ik de situatie uitleg.",
+    "english": "Stay calm while I explain the situation.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een klant raakt in paniek. Zeg wat hij moet doen op het moment dat jij praat.",
+    "why": "An imperative main clause followed by a terwijl-clause with the verb last.",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "imperative"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Ik kijk naar het nieuws terwijl ik mijn bureau opruim.",
+    "english": "I watch the news while I tidy my desk.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega komt langs op vrijdagmiddag. Leg uit wat je doet.",
+    "why": "A separable verb is written together in the terwijl-clause and splits in the main clause.",
+    "focus": "separable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "separable"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "We lopen naar huis terwijl het begint te regenen.",
+    "english": "We walk home while it starts to rain.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over een wandeling die slecht afliep. Beschrijf het weer.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl hij aan het bellen was, brandde de soep aan.",
+    "english": "While he was on the phone, the soup burnt.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je legt uit waarom de keuken stinkt. Vertel wat er gebeurde.",
+    "why": "Terwijl links two past events that were in progress together; the finite verb of the clause goes last.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Zij zingt terwijl ze haar haar droogt.",
+    "english": "She sings while she dries her hair.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je hoort muziek uit de badkamer. Zeg wat je huisgenote doet.",
+    "why": "Terwijl joins two things that happen at the same time; the verb of the terwijl-clause goes to the end.",
+    "focus": "simul",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "simul"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl jullie vergaderen, houd ik de klant bezig.",
+    "english": "While you hold your meeting, I keep the customer busy.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega moet nog even overleggen. Vertel hoe jij het oplost.",
+    "why": "A separable verb is written together in the terwijl-clause and splits in the main clause.",
+    "focus": "separable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "separable"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "De monteur werkt terwijl de klant toekijkt.",
+    "english": "The mechanic works while the customer looks on.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een klant staat bij zijn auto. Beschrijf wat beide mensen doen.",
+    "why": "A separable verb is written together in the terwijl-clause and splits in the main clause.",
+    "focus": "separable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "separable"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Ik had mijn huiswerk gemaakt terwijl jij sliep.",
+    "english": "I had done my homework while you were sleeping.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een huisgenoot vraagt waarom je zo vroeg klaar bent. Leg uit op welk moment je het deed.",
+    "why": "The past perfect in the main clause sits next to a simple past in the terwijl-clause.",
+    "focus": "pastperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "pastperfect"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl de gasten binnenkwamen, stond de gastheer bij de deur.",
+    "english": "While the guests came in, the host stood at the door.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je beschrijft een feest van vorige week. Zeg waar de gastheer was.",
+    "why": "Terwijl links two past events that were in progress together; the finite verb of the clause goes last.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "terwijl",
+    "dutch": "Terwijl Anna graag reist, blijft Peter liever thuis.",
+    "english": "While Anna likes to travel, Peter prefers to stay at home.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over twee vrienden en hun vakanties. Zet hun voorkeuren naast elkaar.",
+    "why": "Terwijl can also mean whereas: it contrasts two situations rather than linking them in time.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-terwijl-v1",
+      "focus": "contrast"
+    }
+  }
+]

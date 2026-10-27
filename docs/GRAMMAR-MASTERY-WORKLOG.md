@@ -4,6 +4,21 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P4 Terwijl to 60 and lesson v1.1
+
+**Plan check:** P4 asks for Terwijl at 60–100. Done for Terwijl; Voordat/Nadat and the new advanced topics are still open.
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- 47 new Terwijl cards (`pat-terwijl-13..59`, `data/editorial/grammar-p2-terwijl.json`) plus the core alias `career-troubleshooting-036`; hand-authored records for all 60 in `data/grammar-terwijl-analysis.json`. Coverage: simultaneous action, terwijl-clause first/second, modal/past/perfect/passive/separable inside the clause, `aan het ... zijn`, `begint te regenen` (afterFinite), contrast (whereas), concession (even though), direct and indirect questions, imperatives, and `tijdens` (preposition) and `intussen`/`ondertussen` (adverbs) as single-clause contrast cards.
+- Sense labels distinguish `terwijl = while`, `whereas` and `even though`. Dutch-first prompts for the two legacy cards that leaked the conjunction (04, 12), for legacy 09 (too short) and for the alias.
+- Terwijl lesson raised to v1.1 (8 sections, 4 formulas, 5 mistakes), no external source checked and the status line says so.
+- Analysis test config accepts `tijdens`, `intussen`, `ondertussen` as pointing words for the single-clause cards; new e2e spec `grammar-terwijl-analysis.spec.ts`.
+- Counts: 996 authored + 132 aliases = 1,128 playable grammar cards; 800/996 with Dutch-first prompts; lessons 3 at v1.0, 8 at v1.1, 2 at v0.8.
+
+**Open:** Voordat/Nadat 24→100; zodra/zolang, `of`, indirect questions, hoewel/tenzij, relative clauses; no native review.
+
 ## 2026-10-27 — Claude Code continuation: P4 Tot/Totdat to 60 and lesson v1.1
 
 **Plan check:** P4 in the master plan asks for Tot/Totdat at 60–100 with correct preposition-versus-conjunction explanations. This slice does that for Tot only; Terwijl, Voordat/Nadat and the new advanced topics are still open.

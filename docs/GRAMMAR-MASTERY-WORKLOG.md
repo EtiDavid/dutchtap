@@ -4,6 +4,20 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P4 Voordat to 50 and lesson v1.1
+
+**Plan check:** P4 asks for Voordat/Nadat at 100 combined. Voordat now has 50; Nadat (12) is next.
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- 28 new Voordat cards (`pat-voordat-13..40`, `data/editorial/grammar-p2-voordat.json`) plus the 10 core aliases (`home-33`, `work-174`, `work-330`, `career-changes-030/052`, `career-clarification-048`, `career-priorities-060`, `career-support-032/039`, `career-troubleshooting-008`); hand-authored records for all 50 in `data/grammar-voordat-analysis.json`. Coverage: clause first/second, modals, separable verbs (split vs joined), past/perfect/past perfect, imperatives (informal and formal), questions, negation, `voor` as a preposition and `daarvoor`/`eerst` as adverbs.
+- Dutch-first prompts for the legacy cards whose prompt leaked the conjunction or was too short, and for all aliases.
+- Voordat lesson raised to v1.1 (8 sections, 5 mistakes); no external source checked.
+- Counts: 1,024 authored + 142 aliases = 1,166 playable; 828/1024 with Dutch-first prompts; lessons 9 at v1.1, 1 at v0.8.
+
+**Open:** Nadat 12→50; zodra/zolang, `of`, indirect questions, hoewel/tenzij, relative clauses; no native review.
+
 ## 2026-10-27 — Claude Code continuation: P4 Terwijl to 60 and lesson v1.1
 
 **Plan check:** P4 asks for Terwijl at 60–100. Done for Terwijl; Voordat/Nadat and the new advanced topics are still open.

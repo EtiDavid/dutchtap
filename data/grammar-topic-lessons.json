@@ -2263,65 +2263,207 @@
   "sources": []
  },
  "voordat": {
-  "title": "VOORDAT — before",
-  "goal": "Speak about time and clause relationships with accurate subordinate and main-clause word order.",
-  "overview": "Voordat introduces a subordinate clause describing the later event. Contrast the preposition voor + noun with voordat + clause.",
+  "title": "Voordat — before",
+  "goal": "Say what happens first and what follows, with the verb in the right place in both clauses.",
+  "overview": "Voordat is a subordinating conjunction: it introduces the clause that names the later event, so the main clause usually names what happens first. The verb of the voordat-clause goes to the end, and a voordat-clause in first position makes the main clause invert. Voor is the preposition (voor het eten), and daarvoor, eerst and daarna are adverbs; none of them sends a verb to the end.",
+  "status": "Detailed lesson, AI-edited. Not independently reviewed by a native speaker.",
+  "revision": "1.1",
   "formulas": [
    {
-    "label": "Before clause second",
-    "pattern": "Ik bel je | voordat ik vertrek.",
-    "why": "Vertrek closes the subordinate clause."
+    "label": "Main clause then voordat-clause",
+    "pattern": "Ik controleer het verslag | voordat ik het verstuur.",
+    "why": "The main clause keeps normal order; the voordat-clause sends verstuur behind the object."
    },
    {
-    "label": "Before clause first",
-    "pattern": "Voordat ik vertrek, | bel ik je.",
-    "why": "Bel ik follows through inversion."
+    "label": "Voordat-clause first",
+    "pattern": "Voordat ik vertrek, | zet ik het licht uit.",
+    "why": "The whole voordat-clause fills position one, so the main clause inverts to zet ik."
+   },
+   {
+    "label": "Preposition instead",
+    "pattern": "Voor het eten | was ik mijn handen.",
+    "why": "Voor takes a noun and no second verb, so the sentence is one main clause."
+   },
+   {
+    "label": "Adverb instead",
+    "pattern": "Eerst | lees ik de handleiding.",
+    "why": "Eerst fills position one and the verb follows directly; no verb goes to the end."
    }
   ],
   "sections": [
    {
-    "title": "When this pattern is used",
-    "body": "Voordat introduces a subordinate clause describing the later event. Contrast the preposition voor + noun with voordat + clause.",
+    "title": "1. What comes first, what comes later",
+    "body": "In 'Ik controleer het verslag voordat ik het verstuur' the checking happens first and the sending later. The voordat-clause names the later event. That is the opposite of nadat, whose clause names the earlier event. Say the order out loud before you choose the conjunction.",
     "examples": [
      {
-      "nl": "Ik bel je voor de vergadering.",
-      "en": "I'll call you before the meeting."
+      "nl": "Ik vraag toestemming voordat ik het scherm deel.",
+      "en": "I ask permission before I share the screen."
      },
      {
-      "nl": "Ik bel je voordat de vergadering begint.",
-      "en": "I'll call you before the meeting begins."
+      "nl": "We maken een back-up voordat we de update installeren.",
+      "en": "We make a backup before we install the update."
+     },
+     {
+      "nl": "De kok proeft de saus voordat hij hem serveert.",
+      "en": "The cook tastes the sauce before he serves it."
      }
     ]
    },
    {
-    "title": "How the clauses connect",
-    "body": "With one finite subordinate verb, it normally follows the other elements. With longer verb clusters, check the whole construction. A fronted subordinate clause counts as position one, triggering inversion in the following main clause.",
+    "title": "2. The voordat-clause first",
+    "body": "A voordat-clause in first position fills position one, so the main clause starts with its finite verb: 'Voordat de vergadering begint, lees ik de agenda'. Clause one ends in its verb, clause two begins with its verb, with the subject right after it.",
     "examples": [
      {
-      "nl": "Ik controleer het verslag voordat ik het verstuur.",
-      "en": "I check the report before sending it."
+      "nl": "Voordat de gasten komen, ruim ik de woonkamer op.",
+      "en": "Before the guests arrive, I tidy the living room."
      },
      {
-      "nl": "Voordat ik vertrek, zet ik het licht uit.",
-      "en": "Before I leave, I turn off the light."
+      "nl": "Voordat hij de deur opent, kijkt hij door het raam.",
+      "en": "Before he opens the door, he looks through the window."
      },
      {
-      "nl": "We maken een back-up voordat we de update installeren.",
-      "en": "We make a backup before installing the update."
+      "nl": "Voordat we beginnen, bevestigen we de stopcriteria.",
+      "en": "Before we begin, we confirm the stopping criteria."
+     }
+    ]
+   },
+   {
+    "title": "3. Modals and verb chains",
+    "body": "A modal stands second in the main clause and sends its infinitive to the end: 'Je moet je handen wassen voordat je gaat eten'. In the voordat-clause a chain like 'gaat eten' or 'moet weten' ends the clause as a group. After a fronted voordat-clause the modal opens the main clause: 'Voordat wij tekenen, willen we lezen'.",
+    "examples": [
+     {
+      "nl": "Je moet je handen wassen voordat je gaat eten.",
+      "en": "You must wash your hands before you go and eat."
+     },
+     {
+      "nl": "Voordat jullie de website publiceren, moeten jullie alles testen.",
+      "en": "Before you publish the website, you must test everything."
+     },
+     {
+      "nl": "Ik wil het weten voordat ik beslis.",
+      "en": "I want to know before I decide."
+     }
+    ]
+   },
+   {
+    "title": "4. Separable verbs",
+    "body": "Separable verbs split in the main clause and are written together in the voordat-clause: 'Ik zet het licht uit' but 'voordat ik het licht uitzet'. Compare 'We bellen de klant voordat we het voorstel opsturen' with the split 'we sturen het voorstel op'.",
+    "examples": [
+     {
+      "nl": "We bellen de klant voordat we het voorstel opsturen.",
+      "en": "We call the customer before we send off the proposal."
+     },
+     {
+      "nl": "De monteur controleert de motor voordat hij de auto teruggeeft.",
+      "en": "The mechanic checks the engine before he gives the car back."
+     },
+     {
+      "nl": "Voordat de les begint, zet de docent de laptop aan.",
+      "en": "Before the lesson begins, the teacher switches on the laptop."
+     }
+    ]
+   },
+   {
+    "title": "5. Past tenses",
+    "body": "For a story in the past, use the simple past in the voordat-clause: 'voordat het feest begon'. The main clause can use the simple past, the perfect ('Ik heb mijn tas gepakt') or the past perfect ('hadden we alle ramen gesloten') when the action was finished before another past moment.",
+    "examples": [
+     {
+      "nl": "Hij vertrok voordat het feest begon.",
+      "en": "He left before the party began."
+     },
+     {
+      "nl": "Ik heb mijn tas gepakt voordat de taxi kwam.",
+      "en": "I packed my bag before the taxi came."
+     },
+     {
+      "nl": "Voordat de storm kwam, hadden we alle ramen gesloten.",
+      "en": "Before the storm came, we had closed all the windows."
+     }
+    ]
+   },
+   {
+    "title": "6. Commands, questions and negation",
+    "body": "An imperative has no subject: 'Bel me voordat je naar huis gaat'. A direct question keeps question order: 'Wat doe je voordat je de computer uitzet?'. Negation belongs to the main clause: 'Ik kan niets zeggen voordat ik de feiten ken'.",
+    "examples": [
+     {
+      "nl": "Bel me voordat je naar huis gaat.",
+      "en": "Call me before you go home."
+     },
+     {
+      "nl": "Moet ik iets betalen voordat ik begin?",
+      "en": "Do I have to pay anything before I start?"
+     },
+     {
+      "nl": "Ik kan niets zeggen voordat ik de feiten ken.",
+      "en": "I can't say anything before I know the facts."
+     }
+    ]
+   },
+   {
+    "title": "7. Voor, daarvoor and eerst",
+    "body": "Voor is a preposition and needs a noun ('voor het eten'). Daarvoor refers back to an earlier moment ('Daarvoor controleerde ik de cijfers'), and eerst marks the first step ('Eerst lees ik de handleiding'). All of them fill position one and the verb follows directly, with the subject behind it.",
+    "examples": [
+     {
+      "nl": "Voor het eten was ik mijn handen.",
+      "en": "Before dinner I wash my hands."
+     },
+     {
+      "nl": "Daarvoor controleerde ik de cijfers.",
+      "en": "Before that I checked the figures."
+     },
+     {
+      "nl": "Eerst lees ik de handleiding.",
+      "en": "First I read the manual."
+     }
+    ]
+   },
+   {
+    "title": "8. Formal and workplace use",
+    "body": "Voordat is common in procedures: 'Voordat we iets wijzigen, maken we een schermafbeelding'. The formal 'u' takes the -t form: 'voordat u het scherm deelt'. Prerequisites with 'moeten' fit well: 'We moeten een herstelplan hebben voordat we beginnen'.",
+    "examples": [
+     {
+      "nl": "Sluit persoonlijke vensters alstublieft voordat u het scherm deelt.",
+      "en": "Please close personal windows before you share the screen."
+     },
+     {
+      "nl": "We moeten een herstelplan hebben voordat we beginnen.",
+      "en": "We must have a recovery plan before we begin."
+     },
+     {
+      "nl": "Voordat ik verlof neem, draag ik de openstaande taken over.",
+      "en": "Before I take leave, I hand over the outstanding tasks."
      }
     ]
    }
   ],
   "mistakes": [
    {
-    "wrong": "Voordat ik ga weg, bel ik je.",
-    "right": "Voordat ik wegga, bel ik je.",
-    "why": "Weggaan stays joined in a simple subordinate clause."
+    "wrong": "Ik controleer het verslag voordat ik verstuur het.",
+    "right": "Ik controleer het verslag voordat ik het verstuur.",
+    "why": "In a dependent clause the finite verb goes to the end, behind the object."
+   },
+   {
+    "wrong": "Voordat ik vertrek, ik zet het licht uit.",
+    "right": "Voordat ik vertrek, zet ik het licht uit.",
+    "why": "After a fronted voordat-clause the main clause starts with its finite verb: zet ik."
+   },
+   {
+    "wrong": "We bellen de klant voordat we sturen het voorstel op.",
+    "right": "We bellen de klant voordat we het voorstel opsturen.",
+    "why": "A separable verb is written together at the end of a dependent clause, not split."
+   },
+   {
+    "wrong": "Voordat het eten was ik mijn handen.",
+    "right": "Voor het eten was ik mijn handen.",
+    "why": "Voordat opens a clause with its own subject and verb. Before a plain noun like het eten you need the preposition voor."
+   },
+   {
+    "wrong": "Eerst ik lees de handleiding.",
+    "right": "Eerst lees ik de handleiding.",
+    "why": "Eerst is an adverb in first position, so the verb comes second and the subject follows."
    }
   ],
-  "sources": [],
-  "revision": "0.8",
-  "status": "Foundational topic lesson, AI-edited; more comparisons and native review pending."
+  "sources": []
  },
  "nadat": {
   "title": "NADAT — after",

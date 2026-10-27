@@ -54,8 +54,8 @@ All lessons, cards, analyses, mistakes and situations were written and checked b
 
 ## Deployment
 
-Branch only. `main` already contains the earlier, partial grammar foundation (PR #15) and the documentation PR #16. This branch has not been merged, tagged or deployed, and no live smoke test exists. **Security:** `npm audit` reports 8 vulnerabilities, 4 in production dependencies, including a critical set against the installed Next.js 16.3.5; this predates the branch and needs an owner decision on upgrading.
+Branch only. `main` already contains the earlier, partial grammar foundation (PR #15) and the documentation PR #16. This branch has not been merged, tagged or deployed, and no live smoke test exists. **Security:** `npm audit` reports 8 vulnerabilities, 4 in production dependencies, including a critical set against the installed Next.js 16.3.5; this predates the branch. The fix (Next.js 16.4.3) is on the unmerged branch `chore/nextjs-security-upgrade`, which needs owner review.
 
 ## Final verdict
 
-`PARTIALLY COMPLETE`. Do not call the Grammar Mastery scope complete, and do not merge this branch or push a production tag until the independent review, native review, a fresh CI run, the Next.js decision and the manual walk-throughs are done.
+`PARTIALLY COMPLETE`. Do not call the Grammar Mastery scope complete, and do not merge this branch or push a production tag until the independent review, native review, a fresh CI run, the merge of the Next.js upgrade branch and the manual walk-throughs are done.

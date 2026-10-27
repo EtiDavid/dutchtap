@@ -101,7 +101,7 @@ Run on 27 October 2026 on branch `feat/grammar-mastery-completion` at `cbc6a08` 
 | `npm run test:prod` (production build, service worker) | **4 passed** |
 | `npm run grammar:recount` | recount current, no integrity problem |
 | `npm run grammar:release-gate` | **exit 1, as designed**: 24 rows PARTIAL, A25 BLOCKED, release note declares the partial state |
-| `npm audit` | **8 vulnerabilities (3 moderate, 4 high, 1 critical); 4 in production dependencies.** The critical one is **Next.js 16.0.0–16.4.0** (installed: 16.3.5) (advisories including remote code execution in image optimization and cache poisoning). This predates the grammar work (this branch changed no dependency except adding `axe-core` as a dev dependency). Not fixed: it needs an owner decision on upgrading Next.js, whose APIs differ from earlier versions. Check the installed version and the advisories before any production release. |
+| `npm audit` | **Fixed on branch `chore/nextjs-security-upgrade` only (not merged):** Next.js 16.3.5 → 16.4.3 plus `sharp`, `source-map-js`, `zod`; `npm audit --omit=dev` reports 0 vulnerabilities and 3 moderate dev-only vitest advisories remain. On this branch (`feat/grammar-mastery-completion`) the critical Next.js 16.3.5 advisories are still present until that branch is merged. |
 
 Not run: `npm run test:e2e` (Atlas-backed account lifecycle and game fixtures, deliberately excluded); the manual browser scenarios of plan §10.2 as a person would walk them; any run against production.
 
@@ -111,7 +111,7 @@ Not run: `npm run test:e2e` (Atlas-backed account lifecycle and game fixtures, d
 ## Next acceptance tasks, in priority order
 
 1. **Independent review (A25) and native-speaker review** of the lessons, a stratified sample of cards (at least every topic and subpattern), the Dutch-first situations and the mistakes. Everything here is AI-edited.
-2. **Decide on the Next.js upgrade** (critical advisories in production dependencies) before any release.
+2. **Review and merge the Next.js upgrade branch** `chore/nextjs-security-upgrade` (critical advisories) before any release.
 3. Get a CI run of the final head; walk plan §10.2 scenarios by hand on a phone, with a screen reader and keyboard only.
 4. Add source checks for the 10 lessons that cite none, and for `daar`, `gesteld dat`, `zoals`, `nu`, `op voorwaarde dat`, `voor het geval dat`.
 5. Variations beyond ALS, tags for tense and verbs-in-context, tags feeding topic sessions, a per-pattern mastery model, ARCHITECTURE.md refresh, a rollback drill. Only then discuss merging or tagging.

@@ -30,9 +30,9 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 | `nadat` | 12 | 0 | 12 | Foundational |
 | `tot` | 20 | 0 | 20 | Introductory |
 | `verbs` | 36 | 0 | 36 | Expanded v1 |
-| `separable` | 176 | 0 | **176** | Expanded v1 |
+| `separable` | 184 | 0 | **184** | Expanded v1 |
 | `tense` | 17 | 0 | 17 | Introductory |
-| **TOTAL** | **765** | **120** | **885** | **13 topics** |
+| **TOTAL** | **773** | **120** | **893** | **13 topics** |
 
 There are also **68 authored separable-verb lemmas** (within the 60–100 target; **not** independently native-verified), 100 interactive child variations on ten ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
 

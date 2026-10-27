@@ -2278,5 +2278,125 @@
       "batch": "separable-p3-v1",
       "focus": "te"
     }
+  },
+  {
+    "dutch": "Stuur het verslag op!",
+    "english": "Send off the report!",
+    "scenario": "Tell someone what to do, using the imperative of opsturen.",
+    "scenarioNl": "Een collega vraagt wat hij met het klaargemaakte verslag moet doen. Geef hem een korte opdracht.",
+    "why": "The imperative is a main clause: the stem of opsturen comes first and the particle goes to the end.",
+    "lemma": "opsturen",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v2",
+      "focus": "imperative"
+    }
+  },
+  {
+    "dutch": "Bel je collega terug!",
+    "english": "Call your colleague back!",
+    "scenario": "Tell someone what to do, using the imperative of terugbellen.",
+    "scenarioNl": "Een stagiair heeft een gemiste oproep gezien en aarzelt. Zeg hem dat hij terug moet bellen.",
+    "why": "The imperative is a main clause: the stem of terugbellen comes first and the particle goes to the end.",
+    "lemma": "terugbellen",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v2",
+      "focus": "imperative"
+    }
+  },
+  {
+    "dutch": "Vul het formulier in!",
+    "english": "Fill in the form!",
+    "scenario": "Tell someone what to do, using the imperative of invullen.",
+    "scenarioNl": "Een klant staat ratelloos bij een balie met een papier. Zeg hem wat hij met de lege vakjes moet doen.",
+    "why": "The imperative is a main clause: the stem of invullen comes first and the particle goes to the end.",
+    "lemma": "invullen",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v2",
+      "focus": "imperative"
+    }
+  },
+  {
+    "dutch": "Schakel de server uit!",
+    "english": "Switch off the server!",
+    "scenario": "Tell someone what to do, using the imperative of uitschakelen.",
+    "scenarioNl": "Het onderhoud begint en de machine draait nog. Geef je collega de opdracht.",
+    "why": "The imperative is a main clause: the stem of uitschakelen comes first and the particle goes to the end.",
+    "lemma": "uitschakelen",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v2",
+      "focus": "imperative"
+    }
+  },
+  {
+    "dutch": "Meld je aan voor de cursus!",
+    "english": "Register for the course!",
+    "scenario": "Tell someone what to do, using the imperative of aanmelden.",
+    "scenarioNl": "Een vriend twijfelt of hij meedoet. Spoor hem aan om zich in te schrijven door aan te melden.",
+    "why": "The imperative is a main clause: the stem of aanmelden comes first and the particle goes to the end.",
+    "lemma": "aanmelden",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v2",
+      "focus": "imperative"
+    }
+  },
+  {
+    "dutch": "Sla het document op!",
+    "english": "Save the document!",
+    "scenario": "Tell someone what to do, using the imperative of opslaan.",
+    "scenarioNl": "Een collega staat op het punt zijn computer af te sluiten zonder zijn werk te bewaren. Waarschuw hem.",
+    "why": "The imperative is a main clause: the stem of opslaan comes first and the particle goes to the end.",
+    "lemma": "opslaan",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v2",
+      "focus": "imperative"
+    }
+  },
+  {
+    "dutch": "Neem de taak over!",
+    "english": "Take over the task!",
+    "scenario": "Tell someone what to do, using the imperative of overnemen.",
+    "scenarioNl": "Een collega is ziek en zijn taak ligt stil. Zeg een andere collega wat hij moet doen.",
+    "why": "The imperative is a main clause: the stem of overnemen comes first and the particle goes to the end.",
+    "lemma": "overnemen",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v2",
+      "focus": "imperative"
+    }
+  },
+  {
+    "dutch": "Doe je jas aan!",
+    "english": "Put on your coat!",
+    "scenario": "Tell someone what to do, using the imperative of aandoen.",
+    "scenarioNl": "Een kind staat in de gang en het is koud buiten. Zeg wat het moet doen.",
+    "why": "The imperative is a main clause: the stem of aandoen comes first and the particle goes to the end.",
+    "lemma": "aandoen",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v2",
+      "focus": "imperative"
+    }
   }
 ]

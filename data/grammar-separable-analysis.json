@@ -5430,6 +5430,165 @@
     "note": "After a modal there is no te. Compare with \"Ik besluit het antwoord af te wachten\"."
    }
   },
+  "pat-separable-177": {
+   "status": "ai-editorial-checked",
+   "pattern": "split",
+   "sense": {
+    "label": "opsturen = send off (particle 'op')",
+    "why": "opsturen is op + sturen; in \"Stuur het verslag op!\" the finite form is in second place and the particle 'op' is split off to the end of the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Stuur het verslag op",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Stuur",
+     "role": "single main clause (particle split off)",
+     "why": "The imperative starts with the stem 'Stuur', the subject is not spoken, and the particle 'op' is left at the end behind the object."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Stuur"
+    },
+    {
+     "label": "object",
+     "text": "het verslag"
+    },
+    {
+     "label": "particle (split off)",
+     "text": "op"
+    }
+   ],
+   "meaning": "Send off the report!",
+   "order": "An imperative is a main clause without a spoken subject. The stem 'stuur' takes the first place and 'op' closes the sentence, so the order is stem, object, particle.",
+   "forms": "This sentence uses: the split main-clause form (ik stuur … op). All forms of opsturen: main clause ik stuur … op; simple past ik stuurde … op; perfect ik heb … opgestuurd; with te op te sturen; dependent clause dat ik opstuur. Card: \"Stuur het verslag op\".",
+   "compare": "English 'Send off the report!' can put 'off' before or after the object. Dutch always puts 'op' last.",
+   "mistakes": [
+    {
+     "wrong": "Opstuur het verslag!",
+     "right": "Stuur het verslag op!",
+     "why": "The imperative of 'opsturen' splits too: 'Stuur ... op!'."
+    },
+    {
+     "wrong": "Stuur op het verslag!",
+     "right": "Stuur het verslag op!",
+     "why": "The particle 'op' stands behind the object 'het verslag'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik stuur het verslag op.",
+    "english": "I send off the report.",
+    "note": "The statement puts the subject 'ik' before the stem."
+   }
+  },
+  "pat-separable-178": {
+   "status": "ai-editorial-checked",
+   "pattern": "split",
+   "sense": {
+    "label": "terugbellen = call someone back (particle 'terug')",
+    "why": "terugbellen is terug + bellen; in \"Bel je collega terug!\" the finite form is in second place and the particle 'terug' is split off to the end of the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Bel je collega terug",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Bel",
+     "role": "single main clause (particle split off)",
+     "why": "The imperative starts with the stem 'Bel', the subject is not spoken, and the particle 'terug' ends the sentence behind the object."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Bel"
+    },
+    {
+     "label": "object",
+     "text": "je collega"
+    },
+    {
+     "label": "particle (split off)",
+     "text": "terug"
+    }
+   ],
+   "meaning": "Call your colleague back!",
+   "order": "The stem 'bel' comes first and the particle 'terug' last. The object 'je collega' stands between them. Read it as \"Bel je collega terug\".",
+   "forms": "This sentence uses: the split main-clause form (ik bel … terug). All forms of terugbellen: main clause ik bel … terug; simple past ik belde … terug; perfect ik heb … teruggebeld; with te terug te bellen; dependent clause dat ik terugbel. Card: \"Bel je collega terug\".",
+   "compare": "English 'Call your colleague back!' keeps 'back' at the end too. Dutch requires it there.",
+   "mistakes": [
+    {
+     "wrong": "Terugbel je collega!",
+     "right": "Bel je collega terug!",
+     "why": "The imperative of 'terugbellen' splits: 'Bel ... terug!'."
+    },
+    {
+     "wrong": "Bel terug je collega!",
+     "right": "Bel je collega terug!",
+     "why": "The particle 'terug' stands behind the object 'je collega'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik bel mijn collega terug.",
+    "english": "I call my colleague back.",
+    "note": "The statement puts the subject before the stem."
+   }
+  },
+  "pat-separable-179": {
+   "status": "ai-editorial-checked",
+   "pattern": "split",
+   "sense": {
+    "label": "invullen = fill in (particle 'in')",
+    "why": "invullen is in + vullen; in \"Vul het formulier in!\" the finite form is in second place and the particle 'in' is split off to the end of the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Vul het formulier in",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Vul",
+     "role": "single main clause (particle split off)",
+     "why": "The imperative starts with the stem 'Vul', the subject is not spoken, and the particle 'in' ends the sentence behind the object."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Vul"
+    },
+    {
+     "label": "object",
+     "text": "het formulier"
+    },
+    {
+     "label": "particle (split off)",
+     "text": "in"
+    }
+   ],
+   "meaning": "Fill in the form!",
+   "order": "The stem 'vul' comes first and 'in' last, around the object 'het formulier'. Read it as \"Vul het formulier in\".",
+   "forms": "This sentence uses: the split main-clause form (ik vul … in). All forms of invullen: main clause ik vul … in; simple past ik vulde … in; perfect ik heb … ingevuld; with te in te vullen; dependent clause dat ik invul. Card: \"Vul het formulier in\".",
+   "compare": "English 'Fill in the form!' can place 'in' next to the verb. Dutch puts it last.",
+   "mistakes": [
+    {
+     "wrong": "Invul het formulier!",
+     "right": "Vul het formulier in!",
+     "why": "The imperative of 'invullen' splits: 'Vul ... in!'."
+    },
+    {
+     "wrong": "Vul in het formulier!",
+     "right": "Vul het formulier in!",
+     "why": "The particle 'in' stands behind the object 'het formulier'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik vul het formulier in.",
+    "english": "I fill in the form.",
+    "note": "The statement puts the subject before the stem. Compare: Ik vul het formulier in."
+   }
+  },
   "pat-separable-18": {
    "status": "ai-editorial-checked",
    "pattern": "joined",
@@ -5486,6 +5645,275 @@
     "dutch": "Ik log opnieuw in.",
     "english": "I log in again.",
     "note": "The present splits the verb: 'log ... in'."
+   }
+  },
+  "pat-separable-180": {
+   "status": "ai-editorial-checked",
+   "pattern": "split",
+   "sense": {
+    "label": "uitschakelen = turn off or disable (particle 'uit')",
+    "why": "uitschakelen is uit + schakelen; in \"Schakel de server uit!\" the finite form is in second place and the particle 'uit' is split off to the end of the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Schakel de server uit",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Schakel",
+     "role": "single main clause (particle split off)",
+     "why": "The imperative starts with the stem 'Schakel', the subject is not spoken, and the particle 'uit' ends the sentence behind the object."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Schakel"
+    },
+    {
+     "label": "object",
+     "text": "de server"
+    },
+    {
+     "label": "particle (split off)",
+     "text": "uit"
+    }
+   ],
+   "meaning": "Switch off the server!",
+   "order": "The stem 'schakel' comes first and 'uit' last, around the object 'de server'. Read it as \"Schakel de server uit\".",
+   "forms": "This sentence uses: the split main-clause form (ik schakel … uit). All forms of uitschakelen: main clause ik schakel … uit; simple past ik schakelde … uit; perfect ik heb … uitgeschakeld; with te uit te schakelen; dependent clause dat ik uitschakel. Card: \"Schakel de server uit\".",
+   "compare": "English 'Switch off the server!' also has a particle. Dutch always puts 'uit' last.",
+   "mistakes": [
+    {
+     "wrong": "Uitschakel de server!",
+     "right": "Schakel de server uit!",
+     "why": "The imperative of 'uitschakelen' splits: 'Schakel ... uit!'."
+    },
+    {
+     "wrong": "Schakel uit de server!",
+     "right": "Schakel de server uit!",
+     "why": "The particle 'uit' stands behind the object 'de server'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik schakel de server uit.",
+    "english": "I switch off the server.",
+    "note": "The statement puts the subject before the stem. Compare: Ik schakel de server uit."
+   }
+  },
+  "pat-separable-181": {
+   "status": "ai-editorial-checked",
+   "pattern": "split",
+   "sense": {
+    "label": "aanmelden = register or sign up (particle 'aan')",
+    "why": "aanmelden is aan + melden; in \"Meld je aan voor de cursus!\" the finite form is in second place and the particle 'aan' is split off to the end of the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Meld je aan voor de cursus",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Meld",
+     "role": "single main clause (particle split off)",
+     "why": "The imperative starts with the stem 'Meld', then the reflexive 'je', and the particle 'aan' stands before the phrase 'voor de cursus'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Meld"
+    },
+    {
+     "label": "reflexive",
+     "text": "je"
+    },
+    {
+     "label": "particle (split off)",
+     "text": "aan"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "voor de cursus"
+    }
+   ],
+   "meaning": "Register for the course!",
+   "order": "'Zich aanmelden' keeps its reflexive in the imperative: 'meld je aan'. The particle 'aan' comes before the phrase with 'voor'.",
+   "forms": "This sentence uses: the split main-clause form (ik meld me … aan). All forms of aanmelden: main clause ik meld me … aan; simple past ik meldde me … aan; perfect ik heb me … aangemeld; with te aan te melden; dependent clause dat ik me aanmeld. Card: \"Meld je aan voor de cursus\".",
+   "compare": "English 'Register for the course!' has no reflexive. Dutch needs 'je'. For this card: \"Meld je aan voor de cursus\".",
+   "mistakes": [
+    {
+     "wrong": "Meld aan je voor de cursus!",
+     "right": "Meld je aan voor de cursus!",
+     "why": "The reflexive 'je' stands directly behind the stem: 'meld je aan'."
+    },
+    {
+     "wrong": "Aanmeld je voor de cursus!",
+     "right": "Meld je aan voor de cursus!",
+     "why": "The imperative splits: 'Meld je aan!'. (not \"Aanmeld je voor de cursus!\", but \"Meld je aan voor de cursus!\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik meld me aan voor de cursus.",
+    "english": "I register for the course.",
+    "note": "In the statement the reflexive is 'me'. Compare: Ik meld me aan voor de cursus."
+   }
+  },
+  "pat-separable-182": {
+   "status": "ai-editorial-checked",
+   "pattern": "split",
+   "sense": {
+    "label": "opslaan = save (particle 'op')",
+    "why": "opslaan is op + slaan; in \"Sla het document op!\" the finite form is in second place and the particle 'op' is split off to the end of the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Sla het document op",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Sla",
+     "role": "single main clause (particle split off)",
+     "why": "The imperative starts with the stem 'Sla', the subject is not spoken, and the particle 'op' ends the sentence behind the object."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Sla"
+    },
+    {
+     "label": "object",
+     "text": "het document"
+    },
+    {
+     "label": "particle (split off)",
+     "text": "op"
+    }
+   ],
+   "meaning": "Save the document!",
+   "order": "The stem 'sla' comes first and 'op' last. Without 'op' the sentence would be an order to hit the document. Read it as \"Sla het document op\".",
+   "forms": "This sentence uses: the split main-clause form (ik sla … op). All forms of opslaan: main clause ik sla … op; simple past ik sloeg … op; perfect ik heb … opgeslagen; with te op te slaan; dependent clause dat ik opsla. Card: \"Sla het document op\".",
+   "compare": "English 'Save the document!' has no particle. Dutch needs 'sla ... op'.",
+   "mistakes": [
+    {
+     "wrong": "Opsla het document!",
+     "right": "Sla het document op!",
+     "why": "The imperative of 'opslaan' splits: 'Sla ... op!'."
+    },
+    {
+     "wrong": "Sla het document!",
+     "right": "Sla het document op!",
+     "why": "Without the particle 'op' this means: hit the document."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik sla het document op.",
+    "english": "I save the document.",
+    "note": "The statement puts the subject before the stem. Compare: Ik sla het document op."
+   }
+  },
+  "pat-separable-183": {
+   "status": "ai-editorial-checked",
+   "pattern": "split",
+   "sense": {
+    "label": "overnemen = take over (particle 'over')",
+    "why": "overnemen is over + nemen; in \"Neem de taak over!\" the finite form is in second place and the particle 'over' is split off to the end of the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Neem de taak over",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Neem",
+     "role": "single main clause (particle split off)",
+     "why": "The imperative starts with the stem 'Neem', the subject is not spoken, and the particle 'over' ends the sentence behind the object."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Neem"
+    },
+    {
+     "label": "object",
+     "text": "de taak"
+    },
+    {
+     "label": "particle (split off)",
+     "text": "over"
+    }
+   ],
+   "meaning": "Take over the task!",
+   "order": "The stem 'neem' comes first and 'over' last, around the object 'de taak', so the order is stem, object, particle.",
+   "forms": "This sentence uses: the split main-clause form (ik neem … over). All forms of overnemen: main clause ik neem … over; simple past ik nam … over; perfect ik heb … overgenomen; with te over te nemen; dependent clause dat ik overneem. Card: \"Neem de taak over\".",
+   "compare": "English 'Take over the task!' separates the particle too. Dutch always puts 'over' last.",
+   "mistakes": [
+    {
+     "wrong": "Overneem de taak!",
+     "right": "Neem de taak over!",
+     "why": "The imperative of 'overnemen' splits: 'Neem ... over!'."
+    },
+    {
+     "wrong": "Neem over de taak!",
+     "right": "Neem de taak over!",
+     "why": "The particle 'over' stands behind the object 'de taak'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik neem de taak over.",
+    "english": "I take over the task.",
+    "note": "The statement puts the subject before the stem. Compare: Ik neem de taak over."
+   }
+  },
+  "pat-separable-184": {
+   "status": "ai-editorial-checked",
+   "pattern": "split",
+   "sense": {
+    "label": "aandoen = put on or turn on (particle 'aan')",
+    "why": "aandoen is aan + doen; in \"Doe je jas aan!\" the finite form is in second place and the particle 'aan' is split off to the end of the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Doe je jas aan",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Doe",
+     "role": "single main clause (particle split off)",
+     "why": "The imperative starts with the stem 'Doe', the subject is not spoken, and the particle 'aan' ends the sentence behind the object."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Doe"
+    },
+    {
+     "label": "object",
+     "text": "je jas"
+    },
+    {
+     "label": "particle (split off)",
+     "text": "aan"
+    }
+   ],
+   "meaning": "Put on your coat!",
+   "order": "The stem 'doe' comes first and 'aan' last, around the object 'je jas', so the order is stem, object, particle, with no subject spoken.",
+   "forms": "This sentence uses: the split main-clause form (ik doe … aan). All forms of aandoen: main clause ik doe … aan; simple past ik deed … aan; perfect ik heb … aangedaan; with te aan te doen; dependent clause dat ik aandoe. Card: \"Doe je jas aan\".",
+   "compare": "English 'Put on your coat!' uses a different verb. Dutch builds it from 'doen' + 'aan'.",
+   "mistakes": [
+    {
+     "wrong": "Aandoe je jas!",
+     "right": "Doe je jas aan!",
+     "why": "The imperative of 'aandoen' splits: 'Doe ... aan!'."
+    },
+    {
+     "wrong": "Doe aan je jas!",
+     "right": "Doe je jas aan!",
+     "why": "The particle 'aan' stands behind the object 'je jas'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik doe mijn jas aan.",
+    "english": "I put on my coat.",
+    "note": "The statement puts the subject before the stem. Compare: Ik doe mijn jas aan."
    }
   },
   "pat-separable-19": {

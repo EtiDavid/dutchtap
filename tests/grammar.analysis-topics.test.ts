@@ -16,7 +16,7 @@ const TOPICS: TopicConfig[] = [
   { topic: 'toen', records: TOEN_ANALYSIS, conj: ['toen'], target: 100 },
   { topic: 'wanneer', records: WANNEER_ANALYSIS, conj: ['wanneer'], target: 100 },
   { topic: 'inversion', records: INVERSION_ANALYSIS, conj: [], target: 100 },
-  { topic: 'separable', records: SEPARABLE_ANALYSIS, conj: ['dat'], target: 176 },
+  { topic: 'separable', records: SEPARABLE_ANALYSIS, conj: ['dat'], target: 184 },
 ];
 
 const seenText = new Map<string, string>();

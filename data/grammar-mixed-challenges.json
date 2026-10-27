@@ -1700,6 +1700,96 @@
     }
    ],
    "rule": "Precaution before a possible event: voor het geval dat."
+  },
+  {
+   "id": "mx-ondanks-dat",
+   "topics": [
+    "exceptions",
+    "hoewel"
+   ],
+   "mix": [
+    "ondanks dat"
+   ],
+   "situationNl": "Een collega voelde zich niet goed, maar kwam naar de bijeenkomst. Zeg dat hij er was en noem zijn gezondheid als obstakel. Begin met \"Hij kwam\".",
+   "hintEn": "A colleague felt unwell but came to the meeting. Say he came and name his health as the obstacle.",
+   "options": [
+    {
+     "text": "Hij kwam, ondanks dat hij ziek was.",
+     "correct": true,
+     "why": "Ondanks dat opens a concession clause; dat cannot be left out and the verb \"was\" goes to the end."
+    },
+    {
+     "text": "Hij kwam, ondanks hij ziek was.",
+     "correct": false,
+     "why": "As a conjunction ondanks needs dat; without it only a noun phrase can follow."
+    },
+    {
+     "text": "Hij kwam, omdat hij ziek was.",
+     "correct": false,
+     "why": "Omdat gives a reason that supports coming; illness is an obstacle, so a concession is needed."
+    }
+   ],
+   "rule": "Ondanks + noun; ondanks dat + clause (verb last)."
+  },
+  {
+   "id": "mx-zonder-dat",
+   "topics": [
+    "exceptions",
+    "indirect"
+   ],
+   "mix": [
+    "zonder dat"
+   ],
+   "situationNl": "Een collega verliet de zaal stilletjes. Niemand van de aanwezigen kreeg het in de gaten. Begin met \"Hij verliet de zaal\".",
+   "hintEn": "A colleague quietly left the room. Nobody present noticed. Begin with \"Hij verliet de zaal\".",
+   "options": [
+    {
+     "text": "Hij verliet de zaal zonder dat iemand het merkte.",
+     "correct": true,
+     "why": "The noticer is someone else, so a full clause with its own subject is needed, and the verb \"merkte\" goes last."
+    },
+    {
+     "text": "Hij verliet de zaal zonder het te merken.",
+     "correct": false,
+     "why": "A short phrase with te takes the main subject, so it would say that he himself did not notice something."
+    },
+    {
+     "text": "Hij verliet de zaal zonder dat iemand merkte het.",
+     "correct": false,
+     "why": "The finite verb \"merkte\" goes to the end of the clause, after \"het\"."
+    }
+   ],
+   "rule": "Same subject: zonder ... te; different subject: zonder dat + clause."
+  },
+  {
+   "id": "mx-behalve-dat",
+   "topics": [
+    "exceptions",
+    "hoewel"
+   ],
+   "mix": [
+    "behalve dat"
+   ],
+   "situationNl": "Je vat een uitstapje samen: het was heel gezellig. Eén ding viel tegen, namelijk het weer, dat de hele tijd nat was. Begin met \"Het was een fijne dag\".",
+   "hintEn": "You sum up a trip: it was very pleasant, and only the weather was a letdown. Begin with \"Het was een fijne dag\".",
+   "options": [
+    {
+     "text": "Het was een fijne dag, behalve dat het regende.",
+     "correct": true,
+     "why": "Behalve dat names the single exception to the verdict; the verb \"regende\" goes to the end of the clause."
+    },
+    {
+     "text": "Het was een fijne dag, behalve het regende.",
+     "correct": false,
+     "why": "Before a clause behalve needs dat; without it only a noun or pronoun can follow."
+    },
+    {
+     "text": "Het was een fijne dag, omdat het regende.",
+     "correct": false,
+     "why": "Omdat would make the rain the reason for the good day, which reverses the meaning."
+    }
+   ],
+   "rule": "Behalve dat = except that (or besides, when it adds a point)."
   }
  ]
 }

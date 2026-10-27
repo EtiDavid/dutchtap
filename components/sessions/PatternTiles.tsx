@@ -18,6 +18,7 @@ const SHORT: Record<keyof typeof GRAMMAR_AREAS, { title: string; hint: string }>
   hoewel: { title: 'Hoewel & tenzij', hint: 'hoewel het regent…' },
   indirect: { title: 'Indirect questions', hint: 'ik weet niet waar…' },
   relative: { title: 'Relative clauses', hint: 'de man die…' },
+  exceptions: { title: 'Ondanks, zonder, behalve', hint: 'zonder dat iemand…' },
   connectors: { title: 'More conjunctions', hint: 'sinds · zodat · mits' },
   tot: { title: 'Tot', hint: 'tot de bus komt' },
   toen: { title: 'Toen', hint: 'toen ik jong was' },
@@ -34,7 +35,7 @@ const GROUPS: { title: string; ids: AreaId[] }[] = [
   { title: 'Word order & verbs', ids: ['inversion', 'verbs', 'separable', 'tense'] },
   { title: 'Reasons & statements', ids: ['omdat', 'dat', 'of', 'indirect', 'relative'] },
   { title: 'Time', ids: ['als', 'wanneer', 'toen', 'terwijl', 'voordat', 'nadat', 'zodra', 'tot'] },
-  { title: 'Contrast & exceptions', ids: ['hoewel'] },
+  { title: 'Contrast & exceptions', ids: ['hoewel', 'exceptions'] },
   { title: 'Purpose, cause & conditions', ids: ['connectors'] },
 ];
 

@@ -1,0 +1,542 @@
+[
+ {
+  "topic": "exceptions",
+  "dutch": "Hij was aanwezig, ondanks dat hij ziek was.",
+  "english": "He was present, even though he was ill.",
+  "scenario": "A colleague attended an important meeting while unwell. Say that he came and what stood in his way.",
+  "scenarioNl": "Een collega kwam naar een belangrijke bijeenkomst en voelde zich niet goed. Zeg dat hij er was en wat hem eigenlijk tegenhield.",
+  "why": "Ondanks dat introduces an obstacle that did not stop the main action; its clause ends in 'was'.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ondanks dat het hard regende, fietsten we door.",
+  "english": "Even though it rained hard, we cycled on.",
+  "scenario": "Heavy rain starts during your bike tour. Say what the group does anyway.",
+  "scenarioNl": "Tijdens een fietstocht begint het stevig te gieten. Zeg wat de groep desondanks doet.",
+  "why": "A fronted ondanks dat-clause; the main clause inverts and 'doorfietsen' splits.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ze nam de baan aan, ondanks dat het salaris laag was.",
+  "english": "She accepted the job, even though the salary was low.",
+  "scenario": "A friend took a position that pays little. Say what she did and what spoke against it.",
+  "scenarioNl": "Een vriendin koos voor een functie met een bescheiden loon. Zeg wat zij deed en welk bezwaar er was.",
+  "why": "'Aannemen' splits in the main clause; 'was' closes the clause.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ondanks dat de bus vol was, stapte hij toch in.",
+  "english": "Even though the bus was full, he got on anyway.",
+  "scenario": "A commuter is in a hurry. Say what he does although the bus is crowded.",
+  "scenarioNl": "Een forens heeft haast en ziet een overvol voertuig aankomen. Zeg wat hij tóch doet.",
+  "why": "The fronted clause is the obstacle; the main clause inverts to 'stapte hij toch in'.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Wij gaan wandelen, ondanks het feit dat het regent.",
+  "english": "We are going for a walk, despite the fact that it is raining.",
+  "scenario": "You insist on your plan and stress that the weather does not change it.",
+  "scenarioNl": "Je houdt vast aan je plan en benadrukt dat het weer daar niets aan verandert. Gebruik een nadrukkelijke formulering.",
+  "why": "'Ondanks het feit dat' is the longer, more emphatic form; 'regent' closes the clause.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ondanks het feit dat hij hard heeft gewerkt, haalde hij de toets niet.",
+  "english": "Despite the fact that he worked hard, he did not pass the test.",
+  "scenario": "A student studied a lot and still failed. Start with the effort.",
+  "scenarioNl": "Een student heeft veel moeite gedaan en is toch gezakt. Begin met de inspanning en eindig met het resultaat.",
+  "why": "The perfect closes the long fronted clause; the main clause inverts to 'haalde hij'.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ondanks het slechte weer gingen we naar buiten.",
+  "english": "In spite of the bad weather we went outside.",
+  "scenario": "You describe a day out and name the weather that did not stop you, with a noun phrase and no clause.",
+  "scenarioNl": "Je vertelt over een dag in de open lucht en noemt het weer dat jullie niet tegenhield, met een zelfstandig naamwoord en niet met een bijzin.",
+  "why": "Before a noun 'ondanks' is a preposition: the phrase is position one and the verb stays second.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ondanks zijn ziekte was hij aanwezig.",
+  "english": "In spite of his illness he was present.",
+  "scenario": "You praise a colleague's commitment and name his difficulty with a noun.",
+  "scenarioNl": "Je prijst de inzet van een collega en noemt zijn probleem met één zelfstandig naamwoord, niet met een volledige bijzin.",
+  "why": "The preposition 'ondanks' plus a noun fronts the obstacle; the verb stays second.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ik help je, ondanks dat ik het druk heb.",
+  "english": "I will help you, even though I am busy.",
+  "scenario": "A colleague asks for help while you have a lot to do. Agree and mention your own workload.",
+  "scenarioNl": "Een collega vraagt om een gunst en jouw eigen werk stapelt zich op. Stem toe en noem je eigen drukte.",
+  "why": "'Het druk hebben' is a fixed expression; 'heb' closes the clause.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ondanks dat ze weinig geld hadden, kochten ze een huis.",
+  "english": "Even though they had little money, they bought a house.",
+  "scenario": "A young couple makes a big purchase. Start with their limited means.",
+  "scenarioNl": "Een jong stel doet een grote aankoop. Begin met hun beperkte middelen en zeg wat ze toch deden.",
+  "why": "The fronted clause names the limited means; the main clause inverts.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "We bleven tot het einde, ondanks dat de film saai was.",
+  "english": "We stayed until the end, even though the film was boring.",
+  "scenario": "You describe a cinema visit. Say that you stayed and what spoke against it.",
+  "scenarioNl": "Je vertelt over een bioscoopavond. Zeg dat jullie bleven en wat er eigenlijk tegen pleitte.",
+  "why": "'Tot het einde' is a phrase here; 'was' closes the clause.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Hij sliep goed, ondanks dat de buren feestten.",
+  "english": "He slept well, even though the neighbours were partying.",
+  "scenario": "You tell a friend about a night with noisy neighbours. Say how you slept and what was going on.",
+  "scenarioNl": "Je vertelt een vriend over een nacht met luidruchtige buren. Zeg hoe de nacht verliep voor degene die sliep.",
+  "why": "'Feestten' ends the clause, with the plural subject 'de buren'.",
+  "focus": "ondanks dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "ondanks dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Hij vertrok zonder dat iemand het merkte.",
+  "english": "He left without anyone noticing.",
+  "scenario": "A guest slips out of a party quietly. Say that he went and that nobody saw it.",
+  "scenarioNl": "Een gast verlaat een feest stilletjes. Zeg dat hij wegging en dat niemand van de aanwezigen het in de gaten kreeg.",
+  "why": "Zonder dat introduces something that did not happen; its subject differs from the main subject, so a full clause is needed.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Zonder dat Omar de handleiding las, installeerde hij het programma.",
+  "english": "Without Omar reading the manual, he installed the program.",
+  "scenario": "Describe how a colleague set up software: what he did not do first.",
+  "scenarioNl": "Beschrijf hoe een collega nieuwe software in gebruik nam. Begin met de handeling die hij oversloeg.",
+  "why": "A fronted clause with its own subject; the main clause inverts to 'installeerde hij'.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ze liep het kantoor binnen zonder dat de receptionist haar zag.",
+  "english": "She walked into the office without the receptionist seeing her.",
+  "scenario": "A visitor enters unnoticed. Say what she did and who did not see it.",
+  "scenarioNl": "Een bezoeker komt een gebouw in en niemand aan de balie ziet het. Zeg wat zij deed en wie het niet zag.",
+  "why": "'Binnenlopen' splits; the zonder dat-clause ends in 'zag'.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Je kunt de deur openen zonder dat het alarm afgaat.",
+  "english": "You can open the door without the alarm going off.",
+  "scenario": "You explain a new security system to a colleague. Say what is possible without a side effect.",
+  "scenarioNl": "Je legt een collega een nieuw beveiligingssysteem uit. Zeg welke handeling mogelijk is, met het gevolg dat uitblijft.",
+  "why": "'Afgaan' is written together in the clause: 'afgaat'.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Zonder dat ik het wist, had mijn collega alles geregeld.",
+  "english": "Without my knowing, my colleague had arranged everything.",
+  "scenario": "You find out that things were done behind your back. Start with your ignorance.",
+  "scenarioNl": "Je ontdekt dat iemand al klaar was met een klus waar jij niets van wist. Begin met je onwetendheid en zeg dan wat er gebeurd was.",
+  "why": "The fronted clause names the omission; the main clause inverts and uses the past perfect.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Hij werkte de hele dag door zonder dat hij pauze nam.",
+  "english": "He worked all day without taking a break.",
+  "scenario": "You tell a friend about a colleague's long working day.",
+  "scenarioNl": "Je vertelt een vriend over de lange dag van een collega. Zeg dat hij bleef werken en wat hij niet deed.",
+  "why": "'Doorwerken' splits; the clause ends in 'nam'.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "De tijd ging voorbij zonder dat we het merkten.",
+  "english": "Time passed without our noticing.",
+  "scenario": "You describe a lovely evening that felt very short.",
+  "scenarioNl": "Je vertelt over een gezellige avond die heel kort leek. Zeg wat er met de uren gebeurde en wat jullie daarvan niet opmerkten.",
+  "why": "'Voorbijgaan' splits; the clause ends in 'merkten'.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Zonder dat er iets is gezegd, zijn ze vertrokken.",
+  "english": "Without anything having been said, they left.",
+  "scenario": "A group broke up silently after a tense meeting. Start with what was not said.",
+  "scenarioNl": "Na een gespannen overleg ging iedereen weg. Begin met wat niemand uitsprak en zeg dan wat de groep deed.",
+  "why": "A passive perfect ends the fronted clause; the main clause inverts to 'zijn ze vertrokken'.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Hij vertrok zonder afscheid te nemen.",
+  "english": "He left without saying goodbye.",
+  "scenario": "You describe a rude exit: what he did and what he left out.",
+  "scenarioNl": "Je beschrijft een onbeleefd vertrek. Zeg wat de man deed en wat hij naliet, met dezelfde persoon in beide handelingen.",
+  "why": "A short clause with 'te' has no finite verb of its own; only 'vertrok' is finite.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Zonder de handleiding te lezen, installeerde Omar het programma.",
+  "english": "Without reading the manual, Omar installed the program.",
+  "scenario": "Describe how a colleague started a program: what he skipped first.",
+  "scenarioNl": "Beschrijf hoe een collega met een programma begon. Begin met de stap die hij oversloeg, met dezelfde persoon in beide handelingen.",
+  "why": "A fronted short clause with 'te'; the main clause inverts to 'installeerde Omar'.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ik ga niet weg zonder jou.",
+  "english": "I am not leaving without you.",
+  "scenario": "A friend wants to leave a party early. Say that you will not go without them.",
+  "scenarioNl": "Een vriend wil eerder vertrekken van een feest en jij wilt hem niet alleen laten. Zeg dat jij alleen samen met hem of haar vertrekt.",
+  "why": "Before a pronoun 'zonder' is a preposition; there is no clause and the particle 'weg' ends the sentence.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ze kan niet slapen zonder dat de lamp aan is.",
+  "english": "She cannot sleep without the lamp being on.",
+  "scenario": "You describe a friend's bedtime habit with the light.",
+  "scenarioNl": "Je vertelt over de slaapgewoonte van een vriendin. Zeg wat ze nodig heeft om in te slapen en welke voorwaarde dat stelt.",
+  "why": "'Zonder dat' states what must not be missing; 'is' closes the clause.",
+  "focus": "zonder dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "zonder dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Behalve dat je er kunt winkelen, kun je er ook verschillende sporten beoefenen.",
+  "english": "Besides being able to shop there, you can also do various sports there.",
+  "scenario": "You describe what a district offers visitors: one thing and then more.",
+  "scenarioNl": "Je vertelt een toerist wat een stadsdeel te bieden heeft: eerst één mogelijkheid, daarna nog meer. Begin met wat al vaststaat.",
+  "why": "Behalve dat adds a further point ('ook'); the main clause inverts to 'kun je'.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Buiten dat het park groot is, ligt het ook heel mooi aan het water.",
+  "english": "Besides being large, the park is also beautifully situated by the water.",
+  "scenario": "You recommend a park by naming one quality and a second one.",
+  "scenarioNl": "Je raadt een park aan met twee sterke punten. Begin met de eerste eigenschap en zeg wat er nog meer is.",
+  "why": "'Buiten dat' is the equivalent of 'behalve dat' here; 'is' closes the clause and 'ligt het' follows.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Het was een goede dag, behalve dat het de hele tijd regende.",
+  "english": "It was a good day, except that it rained the whole time.",
+  "scenario": "You sum up a day out and name the one thing that spoiled it.",
+  "scenarioNl": "Je vat een dag uit samen en noemt het ene ding dat de dag tegenzat. Begin met je oordeel.",
+  "why": "Here behalve dat names an exception to the verdict; 'regende' closes the clause.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Alles is geregeld, behalve dat de sleutels nog ontbreken.",
+  "english": "Everything is arranged, except that the keys are still missing.",
+  "scenario": "You report on preparations for a move: all is done except one thing.",
+  "scenarioNl": "Je geeft een tussenstand over een verhuizing: bijna alles is klaar, op één punt na. Noem het punt.",
+  "why": "The exception clause ends in 'ontbreken', with a plural subject.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Behalve dat hij hard werkt, is hij ook erg creatief.",
+  "english": "Besides working hard, he is also very creative.",
+  "scenario": "You compliment a colleague on two strengths.",
+  "scenarioNl": "Je maakt een collega een compliment over twee sterke kanten. Begin met de eerste, de inzet, en voeg de tweede toe.",
+  "why": "Addition: the inverted main clause 'is hij ook erg creatief' adds the second quality.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Ik weet niets over haar, behalve dat ze in Utrecht woont.",
+  "english": "I know nothing about her, except that she lives in Utrecht.",
+  "scenario": "A friend asks about a new acquaintance. Say how little you know, with the one fact you do know.",
+  "scenarioNl": "Een vriend vraagt wat je van een nieuwe kennis weet. Zeg dat het weinig is en noem het enige wat je wel kent.",
+  "why": "Behalve dat introduces the one fact that is the exception to 'niets'; 'woont' closes the clause.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "De film was prima, behalve dat het einde te snel kwam.",
+  "english": "The film was excellent, except that the ending came too fast.",
+  "scenario": "You review a film: praise it and name its one weakness.",
+  "scenarioNl": "Je beoordeelt een film voor een vriend. Geef een positief oordeel en noem het ene punt van kritiek.",
+  "why": "The exception clause ends in 'kwam' after 'te snel'.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Behalve dat de prijs hoog is, valt de kwaliteit tegen.",
+  "english": "Besides the price being high, the quality is disappointing.",
+  "scenario": "You evaluate a product that has two problems.",
+  "scenarioNl": "Je beoordeelt een product met twee nadelen. Begin met het eerste, de kosten, en voeg het tweede toe.",
+  "why": "Addition of a second drawback; 'tegenvallen' splits in the main clause.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Iedereen was er, behalve Sanne.",
+  "english": "Everyone was there, except Sanne.",
+  "scenario": "You report on attendance at a team meeting: all present but one person.",
+  "scenarioNl": "Je meldt de opkomst van een teamoverleg. Bijna het hele team was aanwezig; noem de enige die ontbrak.",
+  "why": "Before a name 'behalve' is a preposition: there is no clause and no second verb.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Behalve wijn dronken ze ook bier.",
+  "english": "Besides wine they also drank beer.",
+  "scenario": "You describe a party: one drink first, and one more drink added.",
+  "scenarioNl": "Je beschrijft een feest en noemt eerst één drank en voegt een tweede toe. Begin met de eerste, met alleen een zelfstandig naamwoord.",
+  "why": "'Behalve' plus a noun fronts the already-mentioned item; the verb stays second.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Hij is aardig, behalve dat hij soms te laat komt.",
+  "english": "He is nice, except that he sometimes comes too late.",
+  "scenario": "You describe a colleague: a positive trait and one flaw.",
+  "scenarioNl": "Je beschrijft een collega voor een nieuwkomer. Noem een prettige eigenschap en het ene minpunt.",
+  "why": "The exception clause ends in 'komt'; 'te laat komt' is the end of the clause.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ },
+ {
+  "topic": "exceptions",
+  "dutch": "Behalve dat zij de leiding heeft, doet ze ook het meeste werk.",
+  "english": "Besides being in charge, she also does most of the work.",
+  "scenario": "You describe a manager's double role.",
+  "scenarioNl": "Je beschrijft een leidinggevende met een dubbele rol. Begin met haar positie en voeg haar taak toe.",
+  "why": "Addition: the position is given and the work added; the main clause inverts to 'doet ze'.",
+  "focus": "behalve dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-exceptions-v1",
+   "focus": "behalve dat"
+  }
+ }
+]

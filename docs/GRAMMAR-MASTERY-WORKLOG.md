@@ -4,6 +4,14 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P5 tag detectors (inversion, relative clauses, new connector topics)
+
+**Done:** extended `scripts/tag-grammar-sources.py` and `data/grammar-source-tags.json` from 123 to 145 tags. Inversion: a heuristic detector (fronting word or first element, finite verb, personal-pronoun subject) found 45 core sentences; 38 were already aliases, 7 were read and tagged, 3 false positives recorded. Relative clauses: **0 new tags by design**: the 1,200 core sentences contain exactly three relative clauses and all are aliases; the other 49 sentences with die/dat/wie/wat/waar* are conjunctions, demonstratives or embedded questions. Two more embedded-question tags. Connectors (4) and exceptions (9) tags are mostly the preposition contrast (sinds/ondanks/zonder + noun), plus `zodat`, `zonder ... te` and `zonder dat` once each.
+
+**Tests:** `tests/grammar.source-tags.test.ts` now has four more cases: inversion tags show a fronted element, a finite verb and a pronoun subject; connectors/exceptions/indirect tags show their key word; the inversion detector leaves no hit unread (alias, tag or listed false positive); the 52 core sentences with relative-pronoun-like words are frozen as reviewed, so a new one fails until read. Two new Playwright cases on sentence pages.
+
+**Limits:** the inversion detector is a heuristic with a fixed word list: it can miss a fronted element that comes before a verb outside the list, and the test only proves that nothing it finds is left unread. Tenses and verbs-in-context are still untagged because a tense is not visible in a single word. Tags still do not add a sentence to a topic's own session. All AI-checked.
+
 ## 2026-10-27 — Claude Code continuation: P4 `daar` (daar, gesteld dat, zoals)
 
 **Done:** new topic `daar`, 30 authored cards with hand-written analyses: daar as a formal reason conjunction (6 cards) and as an adverb of place (2 contrast cards), gesteld dat (6) and the everyday stel dat (3), zoals as a manner or model clause (8), as a short phrase without a verb (`zoals gebruikelijk`, `zoals verwacht`, `net zoals vorig jaar`, 3) and as an introducer of examples (2). Lesson `daar` v1.1 (5 sections, 5 formulas, 5 mistakes). Three new mixed challenges (61 in total).

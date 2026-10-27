@@ -8,6 +8,16 @@ import { grammarTagsFor, grammarTopicsFor, originOf, taggedSourcesFor } from '@/
 import { eligibleIds, levelCounts, createSession } from '@/lib/sessions/engine';
 
 const core = new Map(CORE_CARDS.map(c => [c.id, c]));
+const FRONT_WORDS = new Set('na voor op in bij met door vanaf tijdens naast onder zonder over van uit aan om tegen tussen binnen buiten achter boven tot sinds vanuit vanwege dankzij volgens ondanks behalve per langs rond morgen vandaag gisteren soms daarna eerst helaas misschien later vanavond vanmorgen vanmiddag vroeger hier thuis meestal altijd vaak binnenkort straks eindelijk gelukkig natuurlijk waarschijnlijk normaal ondertussen intussen tegenwoordig uiteindelijk bovendien daarvoor daarover daarmee daarbij daarvan hierover hiervoor hieronder hierna vóór'.split(' '));
+const VERBS = new Set('heb hebt heeft hebben ben bent is zijn was waren kan kunt kunnen moet moeten wil wilt willen mag mogen ga gaat gaan zal zullen zou zouden doe doet doen kom komt komen werk werkt werken neem neemt nemen bel belt bellen maak maakt maken stuur stuurt kijk kijkt zie ziet zien zag zagen weet weten wordt worden blijf blijft blijven laat laten hoor hoort geef geeft geven vind vindt vinden denk denkt moest moesten wilde kon konden kwam ging gingen had hadden zit zitten staat staan ligt liggen'.split(' '));
+const SUBJECT = new Set('ik je jij u we wij ze zij hij men'.split(' '));
+const NOT_FIRST = new Set('als omdat dat of toen terwijl voordat nadat zodra hoewel tenzij want maar en dus die wie wat waar waarom hoe wanneer welke welk hoeveel ik je jij u we wij ze zij hij het men'.split(' '));
+/** A non-subject element opens the sentence, a finite verb comes within the first six words, and a personal pronoun subject follows it directly. */
+const frontedThenVerbThenSubject = (w: string[]) => {
+  if (w.length < 4 || NOT_FIRST.has(w[0])) return false;
+  const k = w.slice(0, 7).findIndex(x => VERBS.has(x));
+  return k > 0 && k + 1 < w.length && SUBJECT.has(w[k + 1]);
+};
 const toks = (s: string) => s.toLowerCase().match(/[\p{L}\p{N}'-]+/gu) ?? [];
 
 describe('Grammar source tags: one sentence, several topics, one rating', () => {
@@ -46,6 +56,47 @@ describe('Grammar source tags: one sentence, several topics, one rating', () => 
       const w = toks(core.get(t.id)!.dutch);
       expect((w as string[]).includes(t.topic), t.id).toBe(true);
     }
+  });
+  it('shows real evidence for every inversion tag: a non-subject element first, then a finite verb, then the subject', () => {
+    for (const t of tags.tags.filter(x => x.topic === 'inversion')) {
+      const w = toks(core.get(t.id)!.dutch) as string[];
+      expect(frontedThenVerbThenSubject(w), `${t.id} "${core.get(t.id)!.dutch}"`).toBe(true);
+      expect(t.evidence).toMatch(/^fronted /);
+    }
+  });
+  it('shows the key word for every connectors / exceptions / indirect tag', () => {
+    for (const t of tags.tags.filter(x => ['connectors', 'exceptions', 'indirect'].includes(x.topic))) {
+      const w = toks(core.get(t.id)!.dutch) as string[];
+      const word = t.evidence.split(/[ (]/)[0];
+      expect(w, `${t.id}: ${t.evidence}`).toContain(word);
+    }
+    const te = tags.tags.find(x => x.evidence === 'zonder ... te')!;
+    expect(core.get(te.id)!.dutch).toMatch(/zonder .+ te \w+/);
+  });
+  it('misses no inversion sentence the detector can find: every hit is an alias, a tag or a reviewed false positive', () => {
+    const aliased = new Set(links.filter(l => l.topic === 'inversion').map(l => l.sourceId));
+    const tagged = new Set(tags.tags.filter(x => x.topic === 'inversion').map(x => x.id));
+    // read and rejected: the subject comes first, the opening word is a gerund subject, or a clause (not one element) opens the sentence
+    const falsePositives = new Set(['conversation-26', 'career-changes-020', 'career-problems-015']);
+    const open: string[] = [];
+    for (const c of core.values()) {
+      if (c.dutch.trim().endsWith('?')) continue;
+      const w = toks(c.dutch) as string[];
+      const hit = (FRONT_WORDS.has(w[0]) && w.length >= 4) || frontedThenVerbThenSubject(w);
+      if (hit && !aliased.has(c.id) && !tagged.has(c.id) && !falsePositives.has(c.id)) open.push(c.id);
+    }
+    expect(open).toEqual([]);
+  });
+  it('records that the core corpus has no further relative clause to tag', () => {
+    const relativeAliases = links.filter(l => l.topic === 'relative').map(l => l.sourceId).sort();
+    expect(relativeAliases).toEqual(['career-clarification-029', 'career-clarification-053', 'career-support-034']);
+    // Every core sentence with die / dat / wie / wat / waar-words after its first word was read once (dat = that or demonstrative,
+    // wat = some or what, waar* and waarom = embedded questions). Only the three aliases above are relative clauses. A new core
+    // sentence with such a word must be read and added here, so the question is never silently skipped.
+    const REVIEWED = new Set(["school-01", "conversation-02", "food-02", "conversation-27", "shopping-19", "conversation-76", "conversation-78", "work-68", "work-131", "work-132", "work-138", "work-139", "work-206", "work-255", "work-323", "career-changes-020", "career-changes-039", "career-clarification-013", "career-clarification-015", "career-clarification-020", "career-clarification-022", "career-clarification-029", "career-clarification-040", "career-clarification-041", "career-clarification-042", "career-clarification-044", "career-clarification-045", "career-clarification-053", "career-clarification-055", "career-incidents-010", "career-incidents-030", "career-incidents-054", "career-meetings-007", "career-meetings-032", "career-meetings-033", "career-meetings-040", "career-meetings-055", "career-office-017", "career-office-020", "career-office-048", "career-priorities-010", "career-priorities-047", "career-problems-060", "career-remote-035", "career-remote-036", "career-remote-054", "career-support-034", "career-support-039", "career-support-050", "career-troubleshooting-040", "career-troubleshooting-054", "career-troubleshooting-057"]);
+    const REL = new Set('die dat wie wat waar waarin waarop waarmee waarvoor waarover waaraan waarom waardoor waarvan waarbij'.split(' '));
+    const found = [...core.values()].filter(c => (toks(c.dutch) as string[]).some((x, i) => i > 0 && REL.has(x))).map(c => c.id);
+    expect(found.filter(id => !REVIEWED.has(id))).toEqual([]);
   });
   it('answers for an original card and for its alias with the same topics', () => {
     const tagged = tags.tags.find(t => t.topic === 'separable')!;

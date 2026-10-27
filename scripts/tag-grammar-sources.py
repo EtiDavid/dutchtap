@@ -63,6 +63,22 @@ EXTRA = [
  ('career-problems-054', 'tot', 'toegang tot'),
  ('career-remote-036', 'indirect', 'wie = who (embedded)'), ('career-support-007', 'indirect', 'op welk nummer (embedded)'),
  ('career-support-039', 'indirect', 'wat = what (embedded)'), ('conversation-78', 'indirect', 'waarom = why (elliptical)'),
+ ('career-clarification-040', 'indirect', 'wat = what (embedded)'), ('career-office-017', 'indirect', 'waar = where (embedded)'),
+ # --- inversion: a non-subject element in position one, the finite verb second, the subject behind it. The 38 sentences that
+ # match this and are already explicit aliases need no tag; these 7 were read and accepted. Relative clauses: the core
+ # corpus has only 3 (career-clarification-029, -053, career-support-034), all already aliases, so there is nothing to tag.
+ ('career-clarification-028', 'inversion', 'fronted prepositional phrase'), ('career-clarification-040', 'inversion', 'fronted prepositional phrase'),
+ ('career-meetings-019', 'inversion', 'fronted prepositional phrase'), ('career-meetings-038', 'inversion', 'fronted prepositional phrase'),
+ ('career-meetings-035', 'inversion', 'fronted adverb (daarover)'), ('career-remote-001', 'inversion', 'fronted adverb (hieronder)'),
+ ('career-priorities-023', 'inversion', 'fronted object'),
+ # --- the newer connector topics (sinds, zodat; ondanks, zonder): mostly the preposition contrast, one real clause each
+ ('career-priorities-034', 'connectors', 'zodat'), ('career-meetings-010', 'connectors', 'sinds (preposition)'),
+ ('career-office-034', 'connectors', 'sinds (preposition)'), ('career-incidents-010', 'connectors', 'sinds (preposition)'),
+ ('work-164', 'exceptions', 'ondanks (preposition)'), ('work-282', 'exceptions', 'zonder (preposition)'),
+ ('career-changes-007', 'exceptions', 'zonder (preposition)'), ('career-meetings-028', 'exceptions', 'zonder (preposition)'),
+ ('career-meetings-022', 'exceptions', 'zonder (preposition)'), ('career-troubleshooting-018', 'exceptions', 'zonder (preposition)'),
+ ('career-clarification-040', 'exceptions', 'zonder (preposition)'), ('career-troubleshooting-028', 'exceptions', 'zonder ... te'),
+ ('career-changes-020', 'exceptions', 'zonder dat'),
 ]
 for i, topic, ev in EXTRA:
     assert i in by, i

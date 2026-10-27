@@ -31,6 +31,7 @@ export const GRAMMAR_AREAS = {
   of: 'Of · whether, or, as if',
   hoewel: 'Hoewel & tenzij · although, unless',
   indirect: 'Indirect questions · wie, wat, waar, waarom, hoe',
+  relative: 'Relative clauses · die, dat, wie, wat, waar',
   tot: 'Tot · until something happens',
   toen: 'Toen · one past occasion',
   verbs: 'Verbs in context',

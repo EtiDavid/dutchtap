@@ -4,6 +4,22 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P4 Relative clauses (new topic, 100 cards), lesson v1.1 — P4 content complete
+
+**Plan check:** P4 asks for relative clauses at 100 (`die`, `dat`, `wie`, `wat`, `waar`) and contrasts with indirect questions and demonstratives. Topic id `relative`, tile "Relative clauses". The 9 relative-clause cards that already live in the Dat topic remain there.
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- 97 new cards (`pat-relative-01..97`, `data/editorial/grammar-p2-relative.json`) plus 3 core aliases (`career-clarification-029`, `career-clarification-053`, `career-support-034`); hand-authored records for all 100 in `data/grammar-relative-analysis.json` using the `relative` pattern (main clause cut in two by the relative clause, or relative clause at the end). Coverage: `die` subject and object, `dat` subject and object, `wie` / `degene die`, `wat` (alles, iets, niets, het enige, whole clause), `waar` and R-words (`waarin`, `waarmee`, `waarop`, `waarvoor`, `waarover`, `waaraan`, `waarom`), preposition + `wie`, and eight contrast cards: demonstrative `die`/`dat` (single main clause), a `dat` pointing versus opening a relative clause, and the embedded question `wie die man is`.
+- Where Dutch usage varies I hedged instead of asserting (e.g. after `het enige` and `iets` both `wat` and `dat` occur; mistakes there use clear errors such as a missing finite verb). `alles die`, `niets die` are taught as non-standard against the standard `wat`.
+- Relative-clause lesson v1.1 (8 sections, 5 mistakes); no external source checked.
+- Counts: 1,400 authored + 184 aliases = 1,584 playable across 18 topics; 1204/1400 with Dutch-first prompts; 3 lessons at v1.0 and 15 at v1.1.
+
+**P4 status:** every P4 content bullet now has a topic with the target count (Tot 60, Terwijl 60, Voordat 50 + Nadat 50, Zodra & zolang 60, Of 60, Indirect questions 100, Hoewel & tenzij 60, Relative clauses 100). Not done under P4: "meaningful coverage of other advanced conjunctions" (e.g. `sinds`, `zodat`, `opdat`, `alsof` beyond what Of covers, `naargelang`) and the topic grouping/navigation update; both remain open.
+
+**Open:** other advanced conjunctions (§5.2), topic grouping/navigation, P5–P7, no native review.
+
 ## 2026-10-27 — Claude Code continuation: P4 Indirect questions (new topic, 100 cards), lesson v1.1
 
 **Plan check:** P4 asks for embedded/indirect questions at 100 (and `of` at 60, done earlier). Topic id `indirect`, tile "Indirect questions".

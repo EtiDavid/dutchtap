@@ -4,6 +4,25 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P3 Past & perfect to 100, separable lesson v1.1, imperatives (checked against the master plan)
+
+**Plan check:** I re-read `docs/DutchTap_Grammar_Master_Implementation_Plan_v1.0.md` (it is the same text as `GRAMMAR-MASTERY-MASTER-PLAN.md`, differing only in a trailing newline). §3, §4.3, §5.4, §6.1 and §7.4 match what these batches do. Gaps found against it, and handled or left open: §6.1 asks for inseparable contrasts and imperative forms (done: lesson sections 7 and 8, eight imperative cards); §4.2 asks for a "recognise the pattern" recap and a mini self-check in every lesson (still missing in all lessons, noted as open); §5.4 asks for combined `als/omdat/toen` + separable cards (deferred to P5 mixed practice as the plan itself places them).
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- Separable lesson rewritten as v1.1 (nine sections: why verbs split, particle movement across six places, ge- inside the participle and the rule for unstressed prefixes, te between particle and verb, dependent clause and imperative, reflexive verbs and fixed prepositions, inseparable verbs, stress-dependent lookalikes such as voorkomen, combining the rules).
+- Eight imperative separable cards (`pat-separable-177..184`) with analyses; separable is now 184 cards.
+- Past & perfect: 83 new cards (`pat-tense-21..103`, via `data/editorial/grammar-p2-tense.json`) and a hand-authored record for all 100 (`data/grammar-tense-analysis.json`, pattern `tense`): perfect with hebben, perfect with zijn, simple past weak and strong, simple past versus perfect, prefix verbs without ge-, modal perfect with two infinitives, perfect in dependent clauses, past perfect, perfect questions. The 17 older cards got a Dutch-first prompt. The generator now continues ids after the highest existing id of a topic (old tense ids were not contiguous and would have collided).
+- Past & perfect lesson rewritten as v1.1 (nine sections: tense choice, weak and strong past, hebben or zijn, participle and ge-, modal perfect, dependent clauses and questions, past perfect).
+- Counts: 856 authored + 120 aliases = 976 playable grammar cards; 660/856 with Dutch-first prompts; lessons 4 at v1.0, 5 at v1.1, 3 at v0.8, 1 at v0.2.
+
+**Evidence:** tsc and eslint clean; vitest 436 passed; browser scenarios for tense (2), separable analysis (2) and forms (2) passed. Full browser suite not re-run.
+
+**Known issues:** the same quality caveat as the separable batch (some texts are finished by appending the card's own sentence); one fact I got wrong while writing and corrected before merging (kopen/gekocht is irregular, not a 't kofschip case); the statements on hebben/zijn for position verbs in Flanders and on spoken preference for the perfect are hedged and not source-checked; no native review.
+
+**Open for P3:** Verbs in Context 36 -> 100 (including inseparable lookalikes); cross-pattern tests; lesson recap and mini self-check; independent verification of every form.
+
 ## 2026-10-27 — Claude Code continuation: P3 separable card analysis (176 cards)
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

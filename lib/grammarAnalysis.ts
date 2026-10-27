@@ -5,6 +5,7 @@ import toenAnalysis from "@/data/grammar-toen-analysis.json";
 import wanneerAnalysis from "@/data/grammar-wanneer-analysis.json";
 import inversionAnalysis from "@/data/grammar-inversion-analysis.json";
 import separableAnalysis from "@/data/grammar-separable-analysis.json";
+import tenseAnalysis from "@/data/grammar-tense-analysis.json";
 import type { Breakdown } from "@/lib/grammarBreakdowns";
 
 /**
@@ -25,8 +26,8 @@ export type AnalysisRecord = {
   alsSenseWhy?: string;
   /** Other topics: the meaning or function of the key word in this sentence (for example "omdat = because"). */
   sense?: { label: string; why: string };
-  /** Default "subordinate". "coordinate" marks a contrast made of two main clauses (for example want); "demonstrative" a single main clause where the key word is a pointing word, an adverb (toen = then) or a question word (wanneer = when); "inverted" a single main clause that begins with a fronted element so the finite verb stays second and the subject follows it; "split" a main clause where a separable verb is cut in two (finite verb second, particle later); "joined" a single main clause whose separable verb stays in one piece (participle, infinitive); "relative" a relative clause inside or after a main clause. */
-  pattern?: "subordinate" | "coordinate" | "demonstrative" | "relative" | "inverted" | "split" | "joined";
+  /** Default "subordinate". "coordinate" marks a contrast made of two main clauses (for example want); "demonstrative" a single main clause where the key word is a pointing word, an adverb (toen = then) or a question word (wanneer = when); "inverted" a single main clause that begins with a fronted element so the finite verb stays second and the subject follows it; "split" a main clause where a separable verb is cut in two (finite verb second, particle later); "joined" a single main clause whose separable verb stays in one piece (participle, infinitive); "tense" a single main clause whose tense, auxiliary (hebben or zijn) and participle are the point; "relative" a relative clause inside or after a main clause. */
+  pattern?: "subordinate" | "coordinate" | "demonstrative" | "relative" | "inverted" | "split" | "joined" | "tense";
   situationNl?: string;
   /** English help for the situation, written where the original English scenario gave the answer away. */
   situationEn?: string;
@@ -50,8 +51,9 @@ export const TOEN_ANALYSIS = toenAnalysis.cards as unknown as Record<string, Ana
 export const WANNEER_ANALYSIS = wanneerAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const INVERSION_ANALYSIS = inversionAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const SEPARABLE_ANALYSIS = separableAnalysis.cards as unknown as Record<string, AnalysisRecord>;
+export const TENSE_ANALYSIS = tenseAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 /** Every authored sentence analysis, whatever its topic. Ids are unique across topics. */
-export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS, ...WANNEER_ANALYSIS, ...INVERSION_ANALYSIS, ...SEPARABLE_ANALYSIS };
+export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS, ...WANNEER_ANALYSIS, ...INVERSION_ANALYSIS, ...SEPARABLE_ANALYSIS, ...TENSE_ANALYSIS };
 export const analysisFor = (cardId: string): AnalysisRecord | undefined => GRAMMAR_ANALYSIS[cardId];
 /** A Dutch-first situation for cards that were written before Dutch prompts existed (including linked Everyday/Work sentences). */
 export const situationEnFor = (cardId: string): string | undefined => GRAMMAR_ANALYSIS[cardId]?.situationEn;

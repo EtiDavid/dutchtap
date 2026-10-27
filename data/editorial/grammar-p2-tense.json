@@ -1,0 +1,1247 @@
+[
+  {
+    "topic": "tense",
+    "dutch": "Ik heb het rapport gelezen.",
+    "english": "I have read the report.",
+    "scenario": "Say that you have finished reading a report.",
+    "scenarioNl": "Je collega vraagt of je al op de hoogte bent van het nieuwe rapport. Meld dat je het hebt doorgenomen.",
+    "why": "Lezen is a transitive verb: the perfect uses hebben, and the participle gelezen ends the clause.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij heeft een nieuwe auto gekocht.",
+    "english": "She has bought a new car.",
+    "scenario": "Report a colleague's purchase.",
+    "scenarioNl": "Een collega komt in een nieuwe wagen op kantoor aan. Vertel wat zij heeft gedaan.",
+    "why": "Kopen is transitive: hebben plus the participle gekocht, which has -t because the stem ends in p.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "We hebben de lunch besteld.",
+    "english": "We have ordered the lunch.",
+    "scenario": "Say the order is placed.",
+    "scenarioNl": "Het team heeft honger voor een lange vergadering. Meld dat het eten al is geregeld.",
+    "why": "Bestellen is an inseparable verb: no ge- in besteld, and the auxiliary is hebben.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij heeft zijn wachtwoord gewijzigd.",
+    "english": "He has changed his password.",
+    "scenario": "Report an account change.",
+    "scenarioNl": "Een beheerder vraagt of de beveiliging is aangepast. Zeg wat je collega heeft gedaan.",
+    "why": "Wijzigen takes a direct object: heeft plus the participle gewijzigd.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik heb mijn moeder gebeld.",
+    "english": "I have phoned my mother.",
+    "scenario": "Say you made a call, choosing the right tense.",
+    "scenarioNl": "Een familielid vraagt of je al contact hebt gehad. Meld wat je hebt gedaan.",
+    "why": "Bellen with a direct object: heb plus gebeld.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ze hebben het contract getekend.",
+    "english": "They have signed the contract.",
+    "scenario": "Report a signed agreement.",
+    "scenarioNl": "De directie heeft vandaag een overeenkomst afgerond. Vertel wat de partijen hebben gedaan.",
+    "why": "Tekenen is transitive: hebben plus the strong participle getekend.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Jij hebt het bestand verwijderd.",
+    "english": "You have deleted the file.",
+    "scenario": "Tell a colleague what he did.",
+    "scenarioNl": "Een bestand ontbreekt en jij weet wie het deed. Spreek je collega aan.",
+    "why": "With jij the auxiliary is hebt; the participle verwijderd has no ge- because of the prefix ver-.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Mijn collega heeft de fout gevonden.",
+    "english": "My colleague has found the error.",
+    "scenario": "Report a discovery, choosing the right tense.",
+    "scenarioNl": "Een lastig probleem lijkt eindelijk opgelost. Vertel wat je collega heeft bereikt.",
+    "why": "Vinden has the strong participle gevonden and takes hebben.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Wij hebben de bestelling betaald.",
+    "english": "We have paid for the order.",
+    "scenario": "Say the order is paid.",
+    "scenarioNl": "De leverancier wacht op geld. Meld dat de rekening is voldaan.",
+    "why": "Betalen is inseparable: hebben plus betaald with no ge-.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "De klant heeft zijn account geblokkeerd.",
+    "english": "The customer has blocked his account.",
+    "scenario": "Report what the customer did.",
+    "scenarioNl": "Een gebruiker kan niet meer inloggen. Vertel wat de klant zelf heeft gedaan.",
+    "why": "Blokkeren is transitive: heeft plus geblokkeerd with no extra ge-.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik heb gisteren hard gewerkt.",
+    "english": "I worked hard yesterday.",
+    "scenario": "Say you worked hard, choosing the right tense.",
+    "scenarioNl": "Een collega vraagt waarom je zo moe bent. Vertel hoe je je dag hebt doorgebracht.",
+    "why": "Werken is intransitive but not a verb of movement or change, so it takes hebben.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij hebben de hele avond gepraat.",
+    "english": "They talked the whole evening.",
+    "scenario": "Report a long conversation.",
+    "scenarioNl": "Twee buren zaten tot laat bij elkaar. Vertel hoe de avond verliep.",
+    "why": "Praten takes hebben; de hele avond is a time phrase before the participle.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik ben vanochtend vroeg vertrokken.",
+    "english": "I left early this morning.",
+    "scenario": "Say when you left, choosing the right tense.",
+    "scenarioNl": "Een collega vraagt waarom je al weg was. Meld hoe laat je bent weggegaan.",
+    "why": "Vertrekken is a verb of movement: zijn plus vertrokken.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij is gisteren verhuisd.",
+    "english": "She moved yesterday.",
+    "scenario": "Report a move, choosing the right tense.",
+    "scenarioNl": "Een buurvrouw is plots weg uit de straat. Vertel wat er met haar gebeurde.",
+    "why": "Verhuizen expresses a change of place: zijn plus verhuisd.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "De trein is vertrokken.",
+    "english": "The train has left.",
+    "scenario": "Say the train is gone.",
+    "scenarioNl": "Je komt op het perron en ziet een leeg spoor. Meld wat er met de verbinding is gebeurd.",
+    "why": "Vertrekken with a thing as subject: zijn plus vertrokken.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij is plotseling ziek geworden.",
+    "english": "He suddenly became ill.",
+    "scenario": "Report a sudden illness.",
+    "scenarioNl": "Een collega is niet op zijn werk. Vertel wat er met hem gebeurde.",
+    "why": "Worden marks a change of state and takes zijn.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "We zijn lang in Brussel gebleven.",
+    "english": "We stayed in Brussels for a long time.",
+    "scenario": "Say how long you stayed.",
+    "scenarioNl": "Vrienden vragen naar jullie reis. Vertel hoe lang jullie in de hoofdstad waren.",
+    "why": "Blijven takes zijn, and the participle gebleven is strong.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Het water is bevroren.",
+    "english": "The water has frozen.",
+    "scenario": "Describe a change of state.",
+    "scenarioNl": "Een plas voor de deur is keihard. Beschrijf wat er is gebeurd.",
+    "why": "Bevriezen is a change of state: zijn plus bevroren.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik ben vanmiddag naar het station gelopen.",
+    "english": "I walked to the station this afternoon.",
+    "scenario": "Say how you got there.",
+    "scenarioNl": "Een vriend vraagt hoe je bij het station kwam. Vertel hoe je je verplaatste.",
+    "why": "Lopen with a destination is movement: zijn plus gelopen.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "De klant is niet gekomen.",
+    "english": "The customer did not come.",
+    "scenario": "Report an absence, choosing the right tense.",
+    "scenarioNl": "Een afspraak liep niet door. Meld wat de klant deed of niet deed.",
+    "why": "Komen is movement: zijn plus gekomen, with niet before the participle.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Mijn zus is gisteren in Parijs geweest.",
+    "english": "My sister was in Paris yesterday.",
+    "scenario": "Report a visit, choosing the right tense.",
+    "scenarioNl": "Een familielid vraagt waar je zus was. Vertel waar zij was.",
+    "why": "Zijn forms its own perfect with zijn: is geweest.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Het ijs is gesmolten.",
+    "english": "The ice has melted.",
+    "scenario": "Describe a change of state.",
+    "scenarioNl": "Een bevroren plas is verdwenen. Beschrijf wat er is gebeurd.",
+    "why": "Smelten is a change of state: zijn plus gesmolten.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik ben in slaap gevallen.",
+    "english": "I fell asleep.",
+    "scenario": "Say you dozed off, choosing the right tense.",
+    "scenarioNl": "Een collega ziet dat je tijdens de film wegdommelde. Vertel wat er gebeurde.",
+    "why": "Vallen is movement or change: zijn plus gevallen.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "De prijs is gestegen.",
+    "english": "The price has risen.",
+    "scenario": "Report a price rise, choosing the right tense.",
+    "scenarioNl": "Een klant merkt dat het product duurder is. Leg de verandering uit.",
+    "why": "Stijgen is a change of state: zijn plus gestegen.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Wij zijn drie dagen ziek geweest.",
+    "english": "We were ill for three days.",
+    "scenario": "Say how long you were ill.",
+    "scenarioNl": "Je collega vraagt waarom jullie weg waren. Vertel hoe lang het duurde.",
+    "why": "Zijn takes zijn in the perfect: zijn geweest.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij is dokter geworden.",
+    "english": "He became a doctor.",
+    "scenario": "Report a career outcome.",
+    "scenarioNl": "Een oude klasgenoot vraagt wat er van je broer is geworden. Vertel hoe zijn loopbaan verliep.",
+    "why": "Worden takes zijn: is geworden; the sentence tells the event in the perfect and the verb stays in second place.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik ben er nooit geweest.",
+    "english": "I have never been there.",
+    "scenario": "Say you have never visited.",
+    "scenarioNl": "Een vriend vraagt of je een bepaalde plek kent. Antwoord ontkennend over je bezoeken.",
+    "why": "Zijn takes zijn; nooit stands before the participle.",
+    "focus": "zijn",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "zijn"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ze heeft drie jaar in Brussel gewoond.",
+    "english": "She lived in Brussels for three years.",
+    "scenario": "Report how long she lived there.",
+    "scenarioNl": "Een collega vertelt over een kennis die nu elders woont. Vertel hoe lang zij in de hoofdstad verbleef.",
+    "why": "Wonen takes hebben; the perfect points to a completed period.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij heeft een uur op de trein gewacht.",
+    "english": "He waited for the train for an hour.",
+    "scenario": "Report a wait, choosing the right tense.",
+    "scenarioNl": "De trein had vertraging. Vertel hoe lang je collega moest wachten.",
+    "why": "Wachten takes hebben, and the phrase op de trein stands before the participle.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Het heeft de hele nacht geregend.",
+    "english": "It rained all night.",
+    "scenario": "Describe last night's weather.",
+    "scenarioNl": "Je wordt wakker en de straat is nat. Vertel hoe het weer was.",
+    "why": "Regenen takes hebben with the dummy subject het.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij werkte tot vijf uur.",
+    "english": "She worked until five.",
+    "scenario": "Say until when she worked.",
+    "scenarioNl": "Een klant belde na sluitingstijd en vroeg naar je collega. Vertel tot welk uur zij er was.",
+    "why": "The simple past werkte is weak: stem plus -te.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "We wachtten een uur op de bus.",
+    "english": "We waited an hour for the bus.",
+    "scenario": "Tell a story of waiting.",
+    "scenarioNl": "Op een koude ochtend liep het openbaar vervoer vertraging op. Vertel wat jullie meemaakten.",
+    "why": "Wachten is weak: wachtte, plural wachtten.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij speelde elke zaterdag voetbal.",
+    "english": "He played football every Saturday.",
+    "scenario": "Describe a past routine.",
+    "scenarioNl": "Je vertelt over de jeugd van een vriend. Beschrijf zijn vaste gewoonte.",
+    "why": "Spelen is weak: speelde; the habit is shown by elke zaterdag.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "De klant belde twee keer.",
+    "english": "The customer phoned twice.",
+    "scenario": "Report repeated calls.",
+    "scenarioNl": "Je team bekijkt de oproepen van gisteren. Vertel wat de klant deed.",
+    "why": "Bellen is weak: belde; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik woonde destijds in Antwerpen.",
+    "english": "I lived in Antwerp at the time.",
+    "scenario": "Describe an earlier home.",
+    "scenarioNl": "Een kennis vraagt waar je vroeger zat. Vertel over die periode.",
+    "why": "Wonen is weak: woonde; destijds marks the period.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij leerden snel Nederlands.",
+    "english": "They learned Dutch quickly.",
+    "scenario": "Describe fast learning.",
+    "scenarioNl": "Nieuwe collega's uit het buitenland begonnen met de taal. Vertel hoe het ging.",
+    "why": "Leren is weak: leerde, plural leerden; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Het regende de hele dag.",
+    "english": "It rained all day.",
+    "scenario": "Describe a rainy day.",
+    "scenarioNl": "Je vertelt hoe een uitstap verliep. Beschrijf het weer.",
+    "why": "Regenen is weak: regende; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "We luisterden naar de radio.",
+    "english": "We listened to the radio.",
+    "scenario": "Describe a past evening.",
+    "scenarioNl": "Je vertelt wat jullie deden op een rustige avond. Zeg waar jullie aandachtig naar zaten.",
+    "why": "Luisteren is weak: luisterde, plural luisterden.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik zag haar gisteren in de stad.",
+    "english": "I saw her in town yesterday.",
+    "scenario": "Report a sighting, choosing the right tense.",
+    "scenarioNl": "Een vriend vraagt of je iemand hebt gezien. Antwoord met wat je gisteren zag.",
+    "why": "Zien is strong: zag; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij nam de eerste trein.",
+    "english": "He took the first train.",
+    "scenario": "Tell how he travelled.",
+    "scenarioNl": "Je vertelt hoe een collega naar zijn werk ging. Vertel welke verbinding hij koos.",
+    "why": "Nemen is strong: nam; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "We gingen vroeg naar bed.",
+    "english": "We went to bed early.",
+    "scenario": "Tell about an early night.",
+    "scenarioNl": "Na een lange dag was iedereen moe. Vertel wat jullie deden.",
+    "why": "Gaan is irregular: ging, plural gingen; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij kwam te laat op kantoor.",
+    "english": "She arrived at the office too late.",
+    "scenario": "Report a late arrival.",
+    "scenarioNl": "Een collega mocht niet meer mee in het overleg. Vertel wat er gebeurde.",
+    "why": "Komen is strong: kwam; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik schreef hem een lange e-mail.",
+    "english": "I wrote him a long email.",
+    "scenario": "Say what you wrote, choosing the right tense.",
+    "scenarioNl": "Een klant wil weten wat je hem hebt laten weten. Vertel hoe je reageerde.",
+    "why": "Schrijven is strong: schreef; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "De baas gaf ons een dag vrij.",
+    "english": "The boss gave us a day off.",
+    "scenario": "Report a free day, choosing the right tense.",
+    "scenarioNl": "Het team had hard gewerkt. Vertel wat de leiding besliste.",
+    "why": "Geven is strong: gaf; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik bleef de hele avond thuis.",
+    "english": "I stayed at home all evening.",
+    "scenario": "Say you stayed in, choosing the right tense.",
+    "scenarioNl": "Een vriend vraagt waarom je niet op het feest was. Vertel wat je deed.",
+    "why": "Blijven is strong: bleef; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ze vond haar sleutels niet.",
+    "english": "She did not find her keys.",
+    "scenario": "Report a loss, choosing the right tense.",
+    "scenarioNl": "Een collega stond voor de deur te zoeken. Vertel wat er gebeurde.",
+    "why": "Vinden is strong: vond; niet stands after the object.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "We reden langs de kust.",
+    "english": "We drove along the coast.",
+    "scenario": "Tell about a drive, choosing the right tense.",
+    "scenarioNl": "Je vertelt over een uitstap in de zomer. Beschrijf waar de route liep.",
+    "why": "Rijden is strong: reed, plural reden; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij sprak lang met de manager.",
+    "english": "He spoke for a long time with the manager.",
+    "scenario": "Report a long talk, choosing the right tense.",
+    "scenarioNl": "Een collega was een uur weg uit zijn bureau. Vertel wat hij deed.",
+    "why": "Spreken is strong: sprak; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Gisteren ging alles goed.",
+    "english": "Everything went well yesterday.",
+    "scenario": "Report yesterday's outcome.",
+    "scenarioNl": "Een manager vraagt hoe het project gisteren verliep. Geef een kort oordeel.",
+    "why": "Narration of a finished day in the simple past: ging.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Vanochtend heb ik drie vergaderingen gehad.",
+    "english": "This morning I have had three meetings.",
+    "scenario": "Report a busy morning.",
+    "scenarioNl": "Een collega vraagt waarom je zo moe bent. Vertel hoe je ochtend was.",
+    "why": "Reporting a result that still matters uses the perfect: heb ... gehad.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Vroeger fietste ik elke dag naar school.",
+    "english": "I used to cycle to school every day.",
+    "scenario": "Describe a past routine.",
+    "scenarioNl": "Je vertelt kinderen hoe je vroeger naar school ging. Beschrijf je dagelijkse gewoonte.",
+    "why": "A habit in a closed period fits the simple past: fietste.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik heb deze week elke dag gefietst.",
+    "english": "I have cycled every day this week.",
+    "scenario": "Report this week's cycling.",
+    "scenarioNl": "Een collega vraagt of je nog sport. Vertel hoe vaak je deze week op de fiets zat.",
+    "why": "A period that is not finished yet takes the perfect: heb ... gefietst.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Het was heel druk op kantoor.",
+    "english": "It was very busy at the office.",
+    "scenario": "Describe a past atmosphere.",
+    "scenarioNl": "Je vertelt over de dag van de storing. Beschrijf hoe het op de werkvloer was.",
+    "why": "A state in the past uses the simple past of zijn: was.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Het is vandaag heel druk geweest op kantoor.",
+    "english": "It has been very busy at the office today.",
+    "scenario": "Describe today so far.",
+    "scenarioNl": "Je zit nog op kantoor en de dag is niet voorbij. Vertel hoe het tot nu toe ging.",
+    "why": "An unfinished day takes the perfect of zijn: is geweest.",
+    "focus": "contrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "contrast"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij heeft de lessen voorbereid.",
+    "english": "She has prepared the lessons.",
+    "scenario": "Report preparation, choosing the right tense.",
+    "scenarioNl": "Een leerling vraagt of de docent klaar is. Vertel wat zij heeft gedaan.",
+    "why": "Voorbereiden is separable: the participle voorbereid has no ge-.",
+    "focus": "prefix",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "prefix"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "De trein is te laat aangekomen.",
+    "english": "The train arrived late.",
+    "scenario": "Report a delay, choosing the right tense.",
+    "scenarioNl": "Reizigers klagen over de dienstregeling. Meld wat er met de verbinding was.",
+    "why": "Aankomen takes zijn: is aangekomen; the sentence tells the event in the perfect and the verb stays in second place.",
+    "focus": "prefix",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "prefix"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik heb de e-mail beantwoord.",
+    "english": "I have answered the email.",
+    "scenario": "Say you replied, choosing the right tense.",
+    "scenarioNl": "Een klant wacht op een reactie. Meld wat je al hebt verstuurd.",
+    "why": "Beantwoorden is inseparable: no ge- in beantwoord.",
+    "focus": "prefix",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "prefix"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij heeft de fout ontdekt.",
+    "english": "He has discovered the error.",
+    "scenario": "Report a discovery, choosing the right tense.",
+    "scenarioNl": "Een collega kwam een slordigheid op het spoor. Vertel wat hij heeft gedaan.",
+    "why": "Ontdekken is inseparable: no ge- in ontdekt.",
+    "focus": "prefix",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "prefix"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Wij hebben de auto verkocht.",
+    "english": "We have sold the car.",
+    "scenario": "Report a sale, choosing the right tense.",
+    "scenarioNl": "Een buurman vraagt waar jullie wagen is. Meld wat jullie deden.",
+    "why": "Verkopen is inseparable: hebben plus verkocht, no ge-.",
+    "focus": "prefix",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "prefix"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij heeft haar werk verloren.",
+    "english": "She has lost her job.",
+    "scenario": "Report a job loss, choosing the right tense.",
+    "scenarioNl": "Een oud-collega zit zonder baan. Vertel wat haar is overkomen.",
+    "why": "Verliezen has the strong participle verloren and no ge-.",
+    "focus": "prefix",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "prefix"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik heb het pakket ontvangen.",
+    "english": "I have received the parcel.",
+    "scenario": "Say the parcel arrived.",
+    "scenarioNl": "Een afzender wil weten of de levering is gelukt. Meld wat je hebt gedaan.",
+    "why": "Ontvangen is inseparable: no ge- in ontvangen.",
+    "focus": "prefix",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "prefix"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik heb de fout herkend.",
+    "english": "I have recognised the error.",
+    "scenario": "Say you recognised the problem.",
+    "scenarioNl": "Een collega toont een scherm met een bekende melding. Meld wat je herkende.",
+    "why": "Herkennen is inseparable: no ge- in herkend.",
+    "focus": "prefix",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "prefix"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik heb gisteren moeten werken.",
+    "english": "I had to work yesterday.",
+    "scenario": "Report an obligation.",
+    "scenarioNl": "Een vriend vraagt waarom je niet kon komen. Vertel wat je plicht was.",
+    "why": "With a modal in the perfect, two infinitives stand at the end: heb ... moeten werken.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij heeft niet kunnen komen.",
+    "english": "She could not come.",
+    "scenario": "Report an absence, choosing the right tense.",
+    "scenarioNl": "Een gast ontbrak op het feest. Vertel wat haar verhinderde.",
+    "why": "Modal perfect: heeft ... kunnen komen, niet before the verb group.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "We hebben lang moeten wachten.",
+    "english": "We had to wait a long time.",
+    "scenario": "Report a long wait, choosing the right tense.",
+    "scenarioNl": "De bus kwam niet. Vertel wat jullie ondergingen.",
+    "why": "Modal perfect: hebben ... moeten wachten.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij heeft het nog eens willen proberen.",
+    "english": "He wanted to try it once more.",
+    "scenario": "Report a retry, choosing the right tense.",
+    "scenarioNl": "Een collega gaf niet op. Vertel wat hij wilde.",
+    "why": "Modal perfect: heeft ... willen proberen with nog eens before the group.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik ben vanmiddag even gaan wandelen.",
+    "english": "I went for a short walk this afternoon.",
+    "scenario": "Report a break, choosing the right tense.",
+    "scenarioNl": "Een collega mist je aan je bureau. Vertel wat je deed.",
+    "why": "Gaan plus infinitive in the perfect takes zijn and two infinitives: ben ... gaan wandelen.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik weet dat hij het verslag heeft gelezen.",
+    "english": "I know that he has read the report.",
+    "scenario": "Report knowledge, choosing the right tense.",
+    "scenarioNl": "Een manager vraagt of het document is bekeken. Meld wat je weet over je collega.",
+    "why": "In a dependent clause the auxiliary stays before the participle at the end: heeft gelezen.",
+    "focus": "sub",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "sub"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik denk dat zij al is vertrokken.",
+    "english": "I think she has already left.",
+    "scenario": "Give a guess, choosing the right tense.",
+    "scenarioNl": "Een bezoeker zoekt iemand die niet meer in het gebouw is. Geef je vermoeden.",
+    "why": "In a dependent clause with zijn: is vertrokken at the end.",
+    "focus": "sub",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "sub"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik zie dat de klant niet is gekomen.",
+    "english": "I see that the customer has not come.",
+    "scenario": "Observe an absence, choosing the right tense.",
+    "scenarioNl": "Je zit in een lege wachtkamer. Zeg wat je ziet.",
+    "why": "Dependent clause: niet stands before is gekomen.",
+    "focus": "sub",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "sub"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Omdat het gisteren heeft geregend, bleef ik thuis.",
+    "english": "Because it rained yesterday, I stayed at home.",
+    "scenario": "Give a reason, choosing the right tense.",
+    "scenarioNl": "Een vriend vraagt waarom je niet kwam opdagen. Leg uit wat het weer deed.",
+    "why": "The omdat-clause ends with the verb group heeft geregend and the main clause inverts to bleef ik.",
+    "focus": "sub",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "sub"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik weet dat ze lang hebben gewacht.",
+    "english": "I know that they have waited a long time.",
+    "scenario": "Report knowledge, choosing the right tense.",
+    "scenarioNl": "Je bent op de hoogte van een lastige dag. Meld wat de anderen meemaakten.",
+    "why": "In a dependent clause with a plural subject: hebben gewacht at the end.",
+    "focus": "sub",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "sub"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik hoor dat de server is uitgevallen.",
+    "english": "I hear that the server has gone down.",
+    "scenario": "Report hearsay, choosing the right tense.",
+    "scenarioNl": "Een collega vertelt je iets over de infrastructuur. Meld wat je hebt gehoord.",
+    "why": "Dependent clause with zijn: is uitgevallen, the particle joined into the participle.",
+    "focus": "sub",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "sub"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ik had het rapport al gelezen.",
+    "english": "I had already read the report.",
+    "scenario": "Say you knew already.",
+    "scenarioNl": "Een collega wil je het rapport laten zien. Meld dat je voorop liep.",
+    "why": "The past perfect combines had with the participle: had ... gelezen.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Zij was al vertrokken.",
+    "english": "She had already left.",
+    "scenario": "Say she was gone, choosing the right tense.",
+    "scenarioNl": "Je zocht een collega maar kwam te laat. Meld wat er met haar was.",
+    "why": "The past perfect with zijn: was ... vertrokken.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "We hadden de bestelling al betaald.",
+    "english": "We had already paid for the order.",
+    "scenario": "Say payment was done.",
+    "scenarioNl": "De leverancier belt met een herinnering. Meld wat jullie al deden.",
+    "why": "The past perfect with hebben: hadden ... betaald.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "De trein was al weg.",
+    "english": "The train had already gone.",
+    "scenario": "Say you missed the train.",
+    "scenarioNl": "Je kwam te laat op het perron. Meld de toestand van de verbinding.",
+    "why": "Weg zijn is a state: was ... weg; the sentence tells the event in the past and the verb stays in second place.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hij had de brief nog niet gestuurd.",
+    "english": "He had not yet sent the letter.",
+    "scenario": "Say it was not done yet.",
+    "scenarioNl": "Een klant vraagt naar zijn post. Meld wat er nog niet gebeurd was.",
+    "why": "The past perfect with nog niet: had ... niet gestuurd.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Heb je de brief geschreven?",
+    "english": "Have you written the letter?",
+    "scenario": "Ask if it is done, choosing the right tense.",
+    "scenarioNl": "Een collega heeft een opdracht gekregen. Vraag of het werk klaar is.",
+    "why": "A yes/no question in the perfect puts the auxiliary first and the participle last.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Ben je gisteren naar Gent gereden?",
+    "english": "Did you drive to Ghent yesterday?",
+    "scenario": "Ask about a trip, choosing the right tense.",
+    "scenarioNl": "Een vriend zag een auto met jouw plaat. Vraag naar zijn reis.",
+    "why": "The auxiliary ben comes first, then je, then the time and destination, then gereden.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Wat heb je gisteren gedaan?",
+    "english": "What did you do yesterday?",
+    "scenario": "Ask about yesterday, choosing the right tense.",
+    "scenarioNl": "Een nieuwe collega vertelt weinig. Vraag naar zijn vorige dag.",
+    "why": "With a question word the auxiliary is second: wat heb je ... gedaan.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Waarom ben je zo laat gekomen?",
+    "english": "Why did you come so late?",
+    "scenario": "Ask for a reason, choosing the right tense.",
+    "scenarioNl": "Een afspraak begon zonder iemand. Vraag een collega naar de reden.",
+    "why": "Waarom opens, then ben je, with zo laat before the participle gekomen.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "tense",
+    "dutch": "Hebben jullie al gegeten?",
+    "english": "Have you eaten already?",
+    "scenario": "Ask about a meal, choosing the right tense.",
+    "scenarioNl": "Het team zit bij elkaar en de middag loopt. Informeer naar de lunch.",
+    "why": "A yes/no question: hebben first, jullie al, participle last.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-tense-v1",
+      "focus": "question"
+    }
+  }
+]

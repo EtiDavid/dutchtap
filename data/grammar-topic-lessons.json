@@ -1379,34 +1379,203 @@
   ]
  },
  "tense": {
-  "title": "Present, past and perfect",
-  "goal": "Choose a tense that expresses the intended event.",
-  "overview": "Present describes current habits and many scheduled futures; past often narrates events; perfect often reports completed events. Actual choice depends on the context.",
-  "status": "Introductory reference only; full module expansion pending.",
-  "revision": "0.2",
+  "title": "Past and perfect — verleden tijd en voltooid tegenwoordige tijd",
+  "goal": "Choose between simple past and perfect, pick hebben or zijn, form the participle correctly, and place the verbs in main clauses, dependent clauses and questions.",
+  "overview": "Dutch tells the past with two tenses. The simple past (ik werkte) narrates and describes; the perfect (ik heb gewerkt) reports a finished event and links it to now, and in speech it is the usual way to say that something happened. The perfect is built from an auxiliary (hebben or zijn) in the verb-second slot and a participle at the end, so the choice of auxiliary and the form of the participle are the two things to learn.",
+  "status": "Detailed lesson, AI-edited and aligned with the 100 analysed Past & perfect cards. The rules for 't kofschip, ge- and the choice of hebben or zijn are standard but have not been checked against an external source for this lesson; the statements about spoken preference are stated cautiously. No native-speaker review.",
+  "revision": "1.1",
   "formulas": [
    {
-    "label": "Core structure",
-    "pattern": "Ik ga | Ik ging | Ik ben gegaan.",
-    "why": "Present describes current habits and many scheduled futures; past often narrates events; perfect often reports completed events. Actual choice depends on the context."
+    "label": "Present",
+    "pattern": "Ik | werk | thuis.",
+    "why": "One finite verb in slot two."
+   },
+   {
+    "label": "Simple past",
+    "pattern": "Ik | werkte | thuis.",
+    "why": "Weak verbs add -te or -de, strong verbs change the stem vowel: werkte, nam, ging."
+   },
+   {
+    "label": "Perfect",
+    "pattern": "Ik | heb | thuis | gewerkt.",
+    "why": "The auxiliary takes slot two and the participle goes to the end of the clause."
+   },
+   {
+    "label": "Perfect with zijn",
+    "pattern": "Ik | ben | gisteren naar Gent | gegaan.",
+    "why": "Verbs of movement and change of state use zijn: ben gegaan, is vertrokken, is geworden."
+   },
+   {
+    "label": "Perfect in a dependent clause",
+    "pattern": "... dat hij het verslag | heeft gelezen.",
+    "why": "The verb group goes to the end of the dependent clause, the finite auxiliary first."
+   },
+   {
+    "label": "Past perfect",
+    "pattern": "Ik | had | het rapport al | gelezen.",
+    "why": "The auxiliary is in the simple past: had or was."
    }
   ],
   "sections": [
    {
-    "title": "Recognise the pattern",
-    "body": "Present describes current habits and many scheduled futures; past often narrates events; perfect often reports completed events. Actual choice depends on the context.",
+    "title": "1. Simple past or perfect?",
+    "body": "Use the simple past to narrate a story and to describe how things were: 'Gisteren ging alles goed', 'Het was druk'. Use the perfect to report that something has happened and matters now, or to speak about a period that is not over: 'Ik heb deze week elke dag gefietst'. In everyday speech the perfect is the usual choice for a finished event, so do not treat it as a second-class tense.",
     "examples": [
      {
-      "nl": "Ik werk vandaag thuis.",
-      "en": "Today I work from home."
+      "nl": "Gisteren ging alles goed.",
+      "en": "Yesterday everything went well."
      },
      {
-      "nl": "Ik werkte gisteren thuis.",
-      "en": "I worked from home yesterday."
+      "nl": "Vanochtend heb ik drie vergaderingen gehad.",
+      "en": "This morning I have had three meetings."
      },
      {
-      "nl": "Ik heb gisteren thuis gewerkt.",
-      "en": "I worked from home yesterday."
+      "nl": "Ik heb deze week elke dag gefietst.",
+      "en": "I have cycled every day this week."
+     }
+    ]
+   },
+   {
+    "title": "2. The simple past of weak verbs",
+    "body": "Weak verbs add -de or -te to the stem, and the plural adds -n: werkte, werkten; speelde, speelden. The choice depends on the last sound of the stem: after one of t, k, f, s, ch, p (the 't kofschip sounds) the ending is -te, otherwise -de. The participle follows the same rule: gewerkt, gespeeld.",
+    "examples": [
+     {
+      "nl": "Zij werkte tot vijf uur.",
+      "en": "She worked until five."
+     },
+     {
+      "nl": "Hij speelde elke zaterdag voetbal.",
+      "en": "He played football every Saturday."
+     },
+     {
+      "nl": "We wachtten een uur op de bus.",
+      "en": "We waited an hour for the bus."
+     }
+    ]
+   },
+   {
+    "title": "3. Strong and irregular verbs",
+    "body": "Strong verbs change their stem vowel and have no ending in the singular: zag, nam, schreef, vond, sprak. The plural often has a different vowel length: zagen, namen, schreven. Some verbs are irregular in other ways: gaan (ging), zijn (was), kopen (kocht). The participle usually ends in -en: gezien, genomen, geschreven. Learn the three forms of each strong verb together.",
+    "examples": [
+     {
+      "nl": "Ik zag haar gisteren in de stad.",
+      "en": "I saw her in town yesterday."
+     },
+     {
+      "nl": "Hij nam de eerste trein.",
+      "en": "He took the first train."
+     },
+     {
+      "nl": "We reden langs de kust.",
+      "en": "We drove along the coast."
+     }
+    ]
+   },
+   {
+    "title": "4. Hebben or zijn?",
+    "body": "Most verbs form the perfect with hebben, especially verbs with a direct object (lezen, kopen) and activities (werken, praten). Verbs that express movement from one place to another or a change of state take zijn: gaan, komen, vertrekken, verhuizen, worden, bevriezen, stijgen. Blijven and zijn also take zijn. Some verbs depend on meaning: lopen or rijden to a destination take zijn, as an activity hebben is also possible. In Flanders position verbs such as zitten and staan are also heard with zijn.",
+    "examples": [
+     {
+      "nl": "Ik heb het rapport gelezen.",
+      "en": "I have read the report."
+     },
+     {
+      "nl": "Ik ben gisteren naar de markt gegaan.",
+      "en": "I went to the market yesterday."
+     },
+     {
+      "nl": "Het ijs is gesmolten.",
+      "en": "The ice has melted."
+     }
+    ]
+   },
+   {
+    "title": "5. The participle and ge-",
+    "body": "The regular participle is ge- + stem + -d or -t: gewerkt, gebeld. Verbs that begin with an unstressed prefix get no ge-: be-, ge-, her-, ont-, ver-. So betaald, ontdekt, verkocht, herkend. Separable verbs put ge- between the particle and the stem: opgestuurd, aangekomen, uitgevallen. But a separable verb whose stem begins with an unstressed prefix gets none: voorbereid. Strong participles end in -en.",
+    "examples": [
+     {
+      "nl": "Wij hebben de bestelling betaald.",
+      "en": "We have paid for the order."
+     },
+     {
+      "nl": "Hij heeft de fout ontdekt.",
+      "en": "He has discovered the error."
+     },
+     {
+      "nl": "Zij heeft de lessen voorbereid.",
+      "en": "She has prepared the lessons."
+     }
+    ]
+   },
+   {
+    "title": "6. The perfect with a modal",
+    "body": "With a modal verb the perfect does not use a participle of the modal. Instead there are two infinitives at the end: 'Ik heb moeten werken', 'Zij heeft niet kunnen komen'. The auxiliary is hebben. With 'gaan' plus infinitive the auxiliary is zijn: 'Ik ben gaan wandelen'.",
+    "examples": [
+     {
+      "nl": "Ik heb gisteren moeten werken.",
+      "en": "I had to work yesterday."
+     },
+     {
+      "nl": "Zij heeft niet kunnen komen.",
+      "en": "She could not come."
+     },
+     {
+      "nl": "Ik ben vanmiddag even gaan wandelen.",
+      "en": "I went for a short walk this afternoon."
+     }
+    ]
+   },
+   {
+    "title": "7. Dependent clauses and questions",
+    "body": "In a dependent clause the verb group goes to the end, with the finite auxiliary first: 'dat hij het verslag heeft gelezen', 'dat zij al is vertrokken'. In a yes/no question the auxiliary opens the sentence and the participle stays at the end: 'Heb je de brief geschreven?'. With a question word the auxiliary is second: 'Wat heb je gisteren gedaan?'. With 'je' after the verb the -t of 'hebt' and 'bent' falls away.",
+    "examples": [
+     {
+      "nl": "Ik weet dat hij het verslag heeft gelezen.",
+      "en": "I know that he has read the report."
+     },
+     {
+      "nl": "Heb je de brief geschreven?",
+      "en": "Have you written the letter?"
+     },
+     {
+      "nl": "Waarom ben je zo laat gekomen?",
+      "en": "Why did you come so late?"
+     }
+    ]
+   },
+   {
+    "title": "8. The past perfect",
+    "body": "The past perfect puts an event before another moment in the past. It is the perfect with the auxiliary in the simple past: had gelezen, was vertrokken. 'Al' (already) and 'nog niet' (not yet) often accompany it. A state such as 'weg zijn' needs no participle: 'De trein was al weg'.",
+    "examples": [
+     {
+      "nl": "Ik had het rapport al gelezen.",
+      "en": "I had already read the report."
+     },
+     {
+      "nl": "Zij was al vertrokken.",
+      "en": "She had already left."
+     },
+     {
+      "nl": "Hij had de brief nog niet gestuurd.",
+      "en": "He had not yet sent the letter."
+     }
+    ]
+   },
+   {
+    "title": "9. Putting it together",
+    "body": "For any past sentence ask four questions: is it narration or a report; which auxiliary does the verb need; what is the participle; and which clause am I in. The answers decide the word order. 'Vorige week heb ik mijn tante gebeld' has a fronted time phrase, so the auxiliary comes before the subject. 'Omdat het gisteren heeft geregend, bleef ik thuis' has a dependent clause with the verb group at its end and a simple past in the main clause.",
+    "examples": [
+     {
+      "nl": "Vorige week heb ik mijn tante gebeld.",
+      "en": "Last week I phoned my aunt."
+     },
+     {
+      "nl": "Omdat het gisteren heeft geregend, bleef ik thuis.",
+      "en": "Because it rained yesterday, I stayed at home."
+     },
+     {
+      "nl": "Ik heb de e-mail beantwoord.",
+      "en": "I have answered the email."
      }
     ]
    }
@@ -1415,7 +1584,27 @@
    {
     "wrong": "Ik heb gewerk.",
     "right": "Ik heb gewerkt.",
-    "why": "The past participle of werken is gewerkt."
+    "why": "The participle of werken ends in -t after the stem sound k."
+   },
+   {
+    "wrong": "Ik heb gisteren naar de markt gegaan.",
+    "right": "Ik ben gisteren naar de markt gegaan.",
+    "why": "Gaan is a verb of movement and takes zijn, not hebben."
+   },
+   {
+    "wrong": "Ik heb de fout geontdekt.",
+    "right": "Ik heb de fout ontdekt.",
+    "why": "Ontdekken begins with the unstressed prefix ont-, so the participle has no ge-."
+   },
+   {
+    "wrong": "Ik heb gisteren gemoeten werken.",
+    "right": "Ik heb gisteren moeten werken.",
+    "why": "With a modal the perfect uses the infinitive, not a participle: heb ... moeten werken."
+   },
+   {
+    "wrong": "Ik weet dat hij heeft het verslag gelezen.",
+    "right": "Ik weet dat hij het verslag heeft gelezen.",
+    "why": "In a dependent clause the verb group goes to the end, behind the object."
    }
   ],
   "sources": []

@@ -3,7 +3,7 @@ import { GRAMMAR_CARDS } from '@/lib/flashcards/engine';
 import { cardFor } from '@/lib/content/cards';
 import { separableFormsFor } from '@/lib/separableForms';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
-import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, SEPARABLE_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
+import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, SEPARABLE_ANALYSIS, TENSE_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
 
 const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}' ]/gu, ' ').replace(/’/g, "'").split(/\s+/).filter(Boolean);
 const GENERIC = [/because it is (a )?subordinate\b/i, /^dutch uses inversion\.?$/i, /\bthis is correct grammar\b/i, /^the verb goes to the end\.?$/i, /^op is a separable prefix\.?$/i, /subject and verb switch\.?$/i];
@@ -17,6 +17,7 @@ const TOPICS: TopicConfig[] = [
   { topic: 'wanneer', records: WANNEER_ANALYSIS, conj: ['wanneer'], target: 100 },
   { topic: 'inversion', records: INVERSION_ANALYSIS, conj: [], target: 100 },
   { topic: 'separable', records: SEPARABLE_ANALYSIS, conj: ['dat'], target: 184 },
+  { topic: 'tense', records: TENSE_ANALYSIS, conj: ['dat', 'omdat'], target: 100 },
 ];
 
 const seenText = new Map<string, string>();
@@ -67,6 +68,9 @@ for (const { topic, records, conj, target, leak } of TOPICS) {
             const joined = [forms.participle, forms.lemma].some(w => spoken.includes(w)) || spoken.join(' ').includes(forms.teInfinitive);
             expect(joined, `${id}: the verb stays in one piece`).toBe(true);
           }
+        } else if (record.pattern === 'tense') {
+          expect(kinds, id).toBe('hoofdzin');
+          expect(record.parts.some(p => /participle|simple past|present|infinitive/.test(p.label)), `${id}: a part names the tense form`).toBe(true);
         } else if (record.pattern === 'inverted') {
           expect(kinds, id).toBe('hoofdzin');
           const spoken = words(record.clauses[0].text);

@@ -116,7 +116,8 @@ for path in sorted(glob.glob(str(ROOT / 'data/editorial/grammar-p2-*.json'))):
     topic = group[0]['topic']
     assert all(r['topic'] == topic for r in group), path
     assert len(group) >= 12, f'Need >=12 rows for unique example notes: {path}'
-    first = sum(1 for c in cards if c['category'] == topic)
+    # continue after the highest existing id of the topic (ids are not always contiguous)
+    first = max([int(c['id'].rsplit('-', 1)[1]) for c in cards if c['category'] == topic] or [0])
     for i, row in enumerate(group):
         cid = f'pat-{topic}-{first + i + 1:02d}'
         cards.append({

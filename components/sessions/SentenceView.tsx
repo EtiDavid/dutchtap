@@ -4,6 +4,7 @@ import { AppNav } from "../nav/AppNav";
 import { BackButton } from "../nav/BackButton";
 import { PageHeader } from "../ui/PageHeader";
 import { GrammarNotes } from "../flashcards/GrammarNotes";
+import { GrammarTopicsHere } from "./GrammarTopicsHere";
 import { LanguageGate } from "../lang/LanguageGate";
 import { LanguageSwitch } from "../lang/LanguageSwitch";
 import { AnswerModels } from "./AnswerModels";
@@ -84,6 +85,7 @@ function Sentence({
               variation={card.variation}
               defaultOpen
             />
+            {lang === "nl" && <GrammarTopicsHere card={card} />}
           </div>
         </article>
       )}

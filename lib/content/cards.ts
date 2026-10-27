@@ -31,6 +31,8 @@ export type LCard = {
   audio?: string;
   audioStatus?: string;
   adapted?: boolean;
+  /** For a grammar alias: the id of the one original sentence it points at. */
+  originCardId?: string;
   /** Where the sentence text came from, for the review table. */
   review?: FrenchReview;
 };
@@ -81,6 +83,7 @@ function dutchCard(card: Card): LCard {
     audio: card.audio || undefined,
     audioStatus: card.audioStatus,
     adapted: card.adapted,
+    originCardId: card.originCardId,
   };
 }
 function frenchCard(shared: Card, record: FrenchCardRecord): LCard {

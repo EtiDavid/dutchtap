@@ -4,6 +4,14 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P7 cross-check and recount
+
+**Done:** (1) `scripts/grammar-recount.mjs` recounts everything from the data files and writes `docs/GRAMMAR-MASTERY-RECOUNT.md`; a test fails if that file is stale or any duplicate or dangling reference appears. (2) `tests/fixtures/grammar-baseline.json` fingerprints the 1,200 protected cards and the 196 original grammar cards from commit `7b41335`; `tests/grammar.id-stability.test.ts` fails on any change or removal (checked by a deliberate mutation). (3) `tests/grammar.migration.test.ts`: sessions saved with baseline ids still validate, resolve and take actions (the session schema and reducer are unchanged since the baseline). (4) Ran every command of plan §10.3 and recorded exact results. (5) Rewrote audit rows A01, A03–A05, A08–A15, A17, A20, A22–A24 and the P0–P7 gates against the code and tests; wrote `docs/GRAMMAR-MASTERY-FINAL-REPORT.md`. (6) Sampling pass: 84 cards (4 per topic, fixed seed) re-read for Dutch, translation and mistakes.
+
+**Findings:** all §5.3 count targets are met (by count only); Dutch-first coverage is 1,690/1,690 once the analysis situations are counted (the audit had said 196 missing: stale); one "mistake" was acceptable colloquial Dutch (`pat-indirect-19`) and one English gloss was unnatural (`pat-inversion-52`), both fixed; ten lessons still cite no source. **Security:** `npm audit` shows a critical set against the installed Next.js 16.3.5 (production dependency), unrelated to this branch; not changed, needs an owner decision.
+
+**Verdict:** PARTIALLY COMPLETE. A25 stays BLOCKED: the author cannot be the independent reviewer.
+
 ## 2026-10-27 — Claude Code continuation: P6 topic progress indicators on the hub
 
 **Done:** each pattern tile on Home and on the Practise dashboard now shows the learner's own progress for that topic: "N sentences" until something is rated, then "M of N mastered" with a thin bar and a screen-reader label ("40 sentences, 12 practised, 3 mastered"). One short note under the tiles says what the numbers mean and that all pattern content is AI-edited and not yet reviewed by a native speaker. Calculation in `lib/grammarProgress.ts`: only ratings of the pattern sentences count (a grammar alias has its own rating, so Everyday or Dutch at Work mastery never appears here); only an explicit Mastered rating is mastered; any rating means practised; nothing is inferred; a sentence aliased into the topic twice is counted once. Home now loads the learner's levels (`useReviews`), so a signed-in learner's Home makes one extra request for them.

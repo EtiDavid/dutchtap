@@ -4,6 +4,21 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P3 separable card analysis (176 cards)
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- `data/grammar-separable-analysis.json`: a hand-authored record for each of the 176 separable cards (clause span, finite verb, parts, order explanation, two mistakes, a contrast, sense). Three patterns: `split` (present and simple past, finite verb second and particle split off), `joined` (perfect, modal and te-infinitive: the verb stays in one piece) and the dependent-clause form (`dat` + joined finite verb). The 24 original cards also got a Dutch-first `situationNl`, and 8 cards whose subject is not "you" (server, program, connection, customer, difference) got one that fits the subject; four prompts that contained a conjunction were rewritten.
+- Tests: `separable` added to the generic per-topic suite with two new rules (split: the particle is a separate word after the finite verb; joined: the participle, infinitive or te-infinitive occurs whole), checked against the forms table for each card; `tests/flashcard-e2e/grammar-separable-analysis.spec.ts` (2 scenarios).
+- The repair exercise now offers separable mistakes (two per card) for these sessions automatically.
+
+**Honest note on quality:** the structure of a separable-verb sentence is the same across verbs, so parts of the explanations are close variants of each other. To keep every text unique and long enough, a finalising step appends the card's own sentence or a before/after quote to texts that would otherwise repeat; the appended parts are specific but read formulaic, and some `order` and `compare` texts are short. A native or editorial pass should shorten these. A few first-draft "mistakes" were valid Dutch (for example particle position before a time phrase) and were replaced.
+
+**Evidence:** tsc and eslint clean; see the final report for the vitest count; four separable browser scenarios passed.
+
+**Open for P3:** inseparable lookalike contrast; visual particle movement in the lesson; Verbs in Context (36) and Past & Perfect (20) toward 100 with auxiliary rationale; cross-pattern tests beyond the forms table; independent verification of every form and preposition.
+
 ## 2026-10-27 — Claude Code continuation: P3 first slice, separable verb dictionary and forms
 
 **Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.

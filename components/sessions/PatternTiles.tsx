@@ -13,6 +13,7 @@ const SHORT: Record<keyof typeof GRAMMAR_AREAS, { title: string; hint: string }>
   terwijl: { title: 'Terwijl', hint: 'terwijl ik werk…' },
   voordat: { title: 'Voordat', hint: 'voordat ik vertrek…' },
   nadat: { title: 'Nadat', hint: 'nadat ik heb gegeten…' },
+  zodra: { title: 'Zodra & zolang', hint: 'zodra ik thuis ben…' },
   tot: { title: 'Tot', hint: 'tot de bus komt' },
   toen: { title: 'Toen', hint: 'toen ik jong was' },
   verbs: { title: 'Verbs', hint: 'probeer · probeerde' },

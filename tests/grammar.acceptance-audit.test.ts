@@ -5,6 +5,7 @@ import reused from '@/data/grammar-reuse-links.json';
 import variations from '@/data/grammar-variation-families.json';
 import verbs from '@/data/editorial/grammar-separable-verbs.json';
 import lessons from '@/data/grammar-topic-lessons.json';
+import { GRAMMAR_AREAS } from '@/lib/content/collections';
 
 const read = (name: string) => readFileSync(name, 'utf8');
 const audit = read('docs/GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md');
@@ -42,7 +43,7 @@ describe('Grammar Mastery release transparency', () => {
       acc[lesson.revision] = (acc[lesson.revision] ?? 0) + 1;
       return acc;
     }, {});
-    expect(sources).toHaveLength(13);
+    expect(sources).toHaveLength(Object.keys(GRAMMAR_AREAS).length);
     for(const [version,count] of Object.entries(versions)) {
       expect(audit).toContain(`**${count} v${version}**`);
     }

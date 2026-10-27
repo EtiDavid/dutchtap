@@ -27,6 +27,7 @@ export const GRAMMAR_AREAS = {
   terwijl: 'Terwijl · while',
   voordat: 'Voordat · before',
   nadat: 'Nadat · after',
+  zodra: 'Zodra & zolang · as soon as, as long as',
   tot: 'Tot · until something happens',
   toen: 'Toen · one past occasion',
   verbs: 'Verbs in context',

@@ -3,7 +3,7 @@ import { GRAMMAR_CARDS } from '@/lib/flashcards/engine';
 import { cardFor } from '@/lib/content/cards';
 import { separableFormsFor } from '@/lib/separableForms';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
-import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, SEPARABLE_ANALYSIS, TENSE_ANALYSIS, VERBS_ANALYSIS, TOT_ANALYSIS, TERWIJL_ANALYSIS, VOORDAT_ANALYSIS, NADAT_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
+import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, SEPARABLE_ANALYSIS, TENSE_ANALYSIS, VERBS_ANALYSIS, TOT_ANALYSIS, TERWIJL_ANALYSIS, VOORDAT_ANALYSIS, NADAT_ANALYSIS, ZODRA_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
 
 const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}' ]/gu, ' ').replace(/’/g, "'").split(/\s+/).filter(Boolean);
 const GENERIC = [/because it is (a )?subordinate\b/i, /^dutch uses inversion\.?$/i, /\bthis is correct grammar\b/i, /^the verb goes to the end\.?$/i, /^op is a separable prefix\.?$/i, /subject and verb switch\.?$/i];
@@ -23,6 +23,7 @@ const TOPICS: TopicConfig[] = [
   { topic: 'terwijl', records: TERWIJL_ANALYSIS, conj: ['terwijl', 'tijdens', 'intussen', 'ondertussen'], target: 60 },
   { topic: 'voordat', records: VOORDAT_ANALYSIS, conj: ['voordat', 'voor', 'daarvoor', 'eerst'], target: 50 },
   { topic: 'nadat', records: NADAT_ANALYSIS, conj: ['nadat', 'na', 'daarna', 'vervolgens'], target: 50 },
+  { topic: 'zodra', records: ZODRA_ANALYSIS, conj: ['zodra', 'zolang', 'zo', 'meteen', 'direct', 'voorlopig', 'tot'], target: 60 },
 ];
 
 const seenText = new Map<string, string>();

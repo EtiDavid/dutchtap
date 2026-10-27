@@ -4,6 +4,19 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P4 Zodra & zolang (first new topic, 60 cards) and lesson v1.1
+
+**Plan check:** P4 asks for Zodra/Zolang at 60 combined. This is the first brand-new topic of P4 (topic id `zodra`, tile "Zodra & zolang"), registered in `GRAMMAR_AREAS`, `PatternTiles` and the analysis test config; the lesson-count assertion now follows `GRAMMAR_AREAS` instead of a hard-coded 13.
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- 49 new cards (`pat-zodra-01..49`, `data/editorial/grammar-p2-zodra.json`: 25 zodra-focused, 24 zolang-focused) plus 11 core aliases (9 zodra, 2 zolang); hand-authored records for all 60 in `data/grammar-zodra-analysis.json`. Sense labels separate `zodra = as soon as`, `zolang = as long as`, and the neighbours `meteen`, `direct na`, `voorlopig`, `tot dan` (single-clause cards).
+- Zodra & zolang lesson v1.1 (8 sections, 5 mistakes); no external source checked.
+- Counts: 1,111 authored + 153 aliases = 1,264 playable across 14 topics; 915/1111 with Dutch-first prompts; 3 lessons at v1.0 and 11 at v1.1.
+
+**Open:** `of` 60, indirect questions 100, hoewel/tenzij 60, relative clauses 100; no native review.
+
 ## 2026-10-27 — Claude Code continuation: P4 Nadat to 50 and lesson v1.1 (Voordat/Nadat 100 combined)
 
 **Plan check:** P4 asks for Voordat/Nadat at 100 combined. Voordat 50 + Nadat 50 = 100. Zodra/zolang, `of`, indirect questions, hoewel/tenzij and relative clauses are the remaining P4 topics.

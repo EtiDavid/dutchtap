@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { MIXED_CHALLENGES, buildRound, recordAnswer, shuffledOptions, topicAccuracy, weightOf, statOf, type MixedProgress } from '@/lib/grammarMixed';
+import { MIXED_CHALLENGES, mergeMixed, changedMixed, cleanMixed, mixedSyncSchema, buildRound, recordAnswer, shuffledOptions, topicAccuracy, weightOf, statOf, type MixedProgress } from '@/lib/grammarMixed';
 import { GRAMMAR_AREAS } from '@/lib/content/collections';
 import { seededRandom } from '@/lib/sessions/wordOrder';
 
@@ -78,5 +78,49 @@ describe('Mixed grammar: uncued construction choice', () => {
     p = recordAnswer(p, 'mx-wanneer-embedded', true);
     const acc = topicAccuracy(p);
     expect(acc[0].topic).toBe('omdat');
+  });
+
+  describe('account sync', () => {
+    const a = MIXED_CHALLENGES[0].id, b = MIXED_CHALLENGES[1].id;
+    const at = (n: number) => new Date(Date.UTC(2026, 9, 27, 10, n));
+    it('records when each answer was given', () => {
+      expect(recordAnswer({}, a, true, at(1))[a].at).toBe(at(1).toISOString());
+    });
+    it('keeps the more recent answer per challenge and unions the rest, in either order', () => {
+      const phone = recordAnswer(recordAnswer({}, a, true, at(1)), b, false, at(2));
+      const laptop = recordAnswer(recordAnswer({}, a, true, at(5)), a, false, at(6));
+      const x = mergeMixed(phone, laptop), y = mergeMixed(laptop, phone);
+      expect(x).toEqual(y);
+      expect(x[a].lastWrong).toBe(true);
+      expect(x[b].seen).toBe(1);
+    });
+    it('lets a timed answer beat one saved before sync existed, and is idempotent', () => {
+      const old: MixedProgress = { [a]: { seen: 4, right: 4, streak: 4, lastWrong: false } };
+      const fresh = recordAnswer({}, a, false, at(1));
+      expect(mergeMixed(old, fresh)[a]).toEqual(fresh[a]);
+      expect(mergeMixed(fresh, old)[a]).toEqual(fresh[a]);
+      expect(mergeMixed(fresh, fresh)).toEqual(fresh);
+    });
+    it('sends only changed entries', () => {
+      const before = recordAnswer({}, a, true, at(1));
+      const after = recordAnswer(before, b, true, at(2));
+      expect(changedMixed(before, after)).toEqual([b]);
+      expect(changedMixed(after, after)).toEqual([]);
+    });
+    it('drops unknown ids and impossible counts from saved or server data', () => {
+      const cleaned = cleanMixed({ nope: { seen: 1, right: 1, streak: 1, lastWrong: false }, [a]: { seen: 1, right: 5, streak: 1, lastWrong: false }, [b]: { seen: 2, right: 1, streak: 1, lastWrong: false } });
+      expect(Object.keys(cleaned)).toEqual([b]);
+      expect(cleanMixed('x')).toEqual({});
+    });
+    it('only accepts timed records for the sync request', () => {
+      const ok = { id: a, stat: { seen: 1, right: 1, streak: 1, lastWrong: false, at: at(1).toISOString() } };
+      expect(mixedSyncSchema.safeParse({ records: [ok] }).success).toBe(true);
+      expect(mixedSyncSchema.safeParse({ records: [{ id: a, stat: { ...ok.stat, at: undefined } }] }).success).toBe(false);
+      expect(mixedSyncSchema.safeParse({ records: [{ ...ok, id: 'unknown' }] }).success).toBe(false);
+    });
+    it('never touches card levels: the module has no dependency on the flashcard engine', async () => {
+      const source = (await import('node:fs')).readFileSync('lib/grammarMixed.ts', 'utf8') + (await import('node:fs')).readFileSync('lib/useMixedProgress.ts', 'utf8');
+      expect(source).not.toMatch(/flashcards\/(engine|useReviews)/);
+    });
   });
 });

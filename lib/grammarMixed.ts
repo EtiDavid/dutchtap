@@ -1,8 +1,10 @@
+import { z } from "zod";
 import challenges from "@/data/grammar-mixed-challenges.json";
 
 export type MixedOption = { text: string; correct: boolean; why: string };
 export type MixedChallenge = { id: string; topics: string[]; mix: string[]; situationNl: string; hintEn: string; options: MixedOption[]; rule: string };
-export type MixedStat = { seen: number; right: number; streak: number; lastWrong: boolean };
+/** `at` is when the learner last answered it; answers saved before account sync have none. */
+export type MixedStat = { seen: number; right: number; streak: number; lastWrong: boolean; at?: string };
 export type MixedProgress = Record<string, MixedStat>;
 
 export const MIXED_CHALLENGES = challenges.items as MixedChallenge[];
@@ -21,10 +23,41 @@ export function weightOf(stat: MixedStat): number {
   return 0.25;
 }
 
-export function recordAnswer(progress: MixedProgress, id: string, right: boolean): MixedProgress {
+export function recordAnswer(progress: MixedProgress, id: string, right: boolean, at = new Date()): MixedProgress {
   const s = statOf(progress, id);
-  return { ...progress, [id]: { seen: s.seen + 1, right: s.right + (right ? 1 : 0), streak: right ? s.streak + 1 : 0, lastWrong: !right } };
+  return { ...progress, [id]: { seen: s.seen + 1, right: s.right + (right ? 1 : 0), streak: right ? s.streak + 1 : 0, lastWrong: !right, at: at.toISOString() } };
 }
+
+const ids = new Set(MIXED_CHALLENGES.map(c => c.id));
+const count = z.number().int().nonnegative().max(1_000_000);
+export const mixedStatSchema = z.object({ seen: count, right: count, streak: count, lastWrong: z.boolean(), at: z.iso.datetime().optional() })
+  .refine(s => s.right <= s.seen && s.streak <= s.right, "Counts are inconsistent");
+/** Saved progress as read from a device or the server: unknown challenge ids and malformed entries are dropped, never trusted. */
+export function cleanMixed(raw: unknown): MixedProgress {
+  const out: MixedProgress = {};
+  if (!raw || typeof raw !== "object") return out;
+  for (const [id, value] of Object.entries(raw)) {
+    const parsed = ids.has(id) ? mixedStatSchema.safeParse(value) : null;
+    if (parsed?.success) out[id] = parsed.data;
+  }
+  return out;
+}
+export const mixedSyncSchema = z.object({ records: z.array(z.object({ id: z.string().refine(id => ids.has(id)), stat: mixedStatSchema.refine(s => !!s.at, "Missing time") })).max(MIXED_CHALLENGES.length) });
+
+/** The more recent answer wins per challenge; an entry with no time (from before sync) loses to one with a time, and then the one with more answers wins. */
+export function mergeMixed(a: MixedProgress, b: MixedProgress): MixedProgress {
+  const out: MixedProgress = { ...a };
+  for (const [id, stat] of Object.entries(b)) {
+    const mine = out[id];
+    if (!mine) { out[id] = stat; continue; }
+    const ta = mine.at ?? "", tb = stat.at ?? "";
+    if (tb > ta || (tb === ta && stat.seen > mine.seen)) out[id] = stat;
+  }
+  return out;
+}
+
+/** Ids whose entry differs from `before`, i.e. what must be sent to the account. */
+export const changedMixed = (before: MixedProgress, after: MixedProgress) => Object.keys(after).filter(id => after[id].at && JSON.stringify(before[id]) !== JSON.stringify(after[id]));
 
 /** A round of distinct challenges: weighted by weakness, never the same primary topic twice in a row when avoidable. */
 export function buildRound(progress: MixedProgress, rand: () => number, size = ROUND_SIZE, pool: MixedChallenge[] = MIXED_CHALLENGES): MixedChallenge[] {

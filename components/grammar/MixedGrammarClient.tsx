@@ -5,12 +5,9 @@ import { AppNav } from "../nav/AppNav";
 import { PageHeader } from "../ui/PageHeader";
 import { button, primary } from "../flashcards/styles";
 import { GRAMMAR_AREAS } from "@/lib/content/collections";
-import { MIXED_STORAGE_KEY, ROUND_SIZE, buildRound, recordAnswer, shuffledOptions, topicAccuracy, type MixedChallenge, type MixedOption, type MixedProgress } from "@/lib/grammarMixed";
+import { useMixedProgress } from "@/lib/useMixedProgress";
+import { ROUND_SIZE, buildRound, recordAnswer, shuffledOptions, topicAccuracy, type MixedChallenge, type MixedOption, type MixedProgress } from "@/lib/grammarMixed";
 
-const read = (): MixedProgress => {
-  try { return JSON.parse(localStorage.getItem(MIXED_STORAGE_KEY) || "{}") as MixedProgress; } catch { return {}; }
-};
-const write = (progress: MixedProgress) => { try { localStorage.setItem(MIXED_STORAGE_KEY, JSON.stringify(progress)); } catch { /* private mode: practice still works for this visit */ } };
 const topicName = (id: string) => (GRAMMAR_AREAS as Record<string, string>)[id]?.split(" · ")[0] ?? id;
 
 type Step = { challenge: MixedChallenge; options: MixedOption[] };
@@ -19,14 +16,16 @@ const freshRound = (saved: MixedProgress): Step[] => buildRound(saved, Math.rand
 
 /** Uncued mixed grammar: a Dutch situation, no conjunction named, and the learner picks the construction that fits. Client-only: it reads this device's saved answers on first render. */
 export default function MixedGrammar() {
-  const [progress, setProgress] = useState<MixedProgress>(read);
-  const [steps, setSteps] = useState<Step[]>(() => freshRound(read()));
+  const { progress, ready, status, save, account, guestAvailable, copyGuest } = useMixedProgress();
+  const [steps, setSteps] = useState<Step[]>([]);
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [help, setHelp] = useState(false);
   const [score, setScore] = useState(0);
   const newRound = () => { setSteps(freshRound(progress)); setIndex(0); setPicked(null); setHelp(false); setScore(0); };
 
+  // The first round is drawn once this learner's saved answers (device or account) are loaded, so weak situations come first.
+  if (ready && steps.length === 0) setSteps(freshRound(progress));
   const step = steps[index];
   const done = steps.length > 0 && index >= steps.length;
   const weakest = useMemo(() => topicAccuracy(progress).filter(t => t.seen >= 2 && t.right / t.seen < 0.75).slice(0, 3), [progress]);
@@ -35,13 +34,14 @@ export default function MixedGrammar() {
     if (picked !== null || !step) return;
     const right = step.options[i].correct;
     const next = recordAnswer(progress, step.challenge.id, right);
-    setProgress(next); write(next); setPicked(i); if (right) setScore(s => s + 1);
+    void save(next); setPicked(i); if (right) setScore(s => s + 1);
   };
   const advance = () => { setIndex(i => i + 1); setPicked(null); setHelp(false); };
 
   return <main className="page-pad mx-auto flex min-h-dvh w-full max-w-lg flex-col gap-6 px-5 pt-6">
     <PageHeader eyebrow="Grammar" title="Mixed grammar" subtitle="Read the situation in Dutch and choose the sentence that fits. The situation never names the word you need." />
-        {step && <section aria-label="Challenge" className="flex flex-col gap-4" data-testid="mixed-challenge">
+    {!ready && <p className="text-sm text-muted" role="status">Loading your saved answers…</p>}
+    {step && <section aria-label="Challenge" className="flex flex-col gap-4" data-testid="mixed-challenge">
       <p className="text-xs text-muted" data-testid="mixed-progress">Question {index + 1} of {steps.length}</p>
       <p lang="nl" className="text-lg leading-relaxed" data-testid="mixed-situation">{step.challenge.situationNl}</p>
       <button type="button" className={button} aria-pressed={help} onClick={() => setHelp(!help)}>{help ? "Hide English help" : "Show English help"}</button>
@@ -66,12 +66,13 @@ export default function MixedGrammar() {
     {done && <section aria-label="Results" className="flex flex-col gap-4" data-testid="mixed-summary">
       <p className="text-lg font-semibold">You chose {score} of {steps.length} correctly.</p>
       {weakest.length > 0 && <div>
-        <p className="text-sm text-muted">Worth another look (on this device):</p>
+        <p className="text-sm text-muted">Worth another look (from your saved answers):</p>
         <ul className="mt-2 flex flex-col gap-2">{weakest.map(t => <li key={t.topic}><Link className="text-accent underline" href={`/flashcards?new=grammar:${t.topic}`}>{topicName(t.topic)} · {t.right} of {t.seen} right</Link></li>)}</ul>
       </div>}
       <button type="button" className={primary} onClick={newRound} data-testid="mixed-again">New round</button>
       <Link href="/learn?topic=mixed" className={`${button} block text-center`}>Think in Dutch · speak your own answer</Link>
-      <p className="text-xs text-muted">Your answers are saved on this device only. Weak situations come back more often; ones you get right repeatedly appear less, but never vanish.</p>
+      <p className="text-xs text-muted" data-testid="mixed-status">{status}. {account ? "Your answers follow your account on every device." : "Sign in to keep them across devices."} Weak situations come back more often; ones you get right repeatedly appear less, but never vanish. Mixed practice does not change your card levels.</p>
+      {guestAvailable && <button type="button" className={button} onClick={copyGuest} data-testid="mixed-copy-guest">Add answers from this device (as guest) to my account</button>}
     </section>}
     <AppNav lang="nl" />
   </main>;

@@ -4,6 +4,16 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P5 mixed-grammar progress and account sync
+
+**Done:** mixed-grammar answers now follow a signed-in account. Each saved answer carries a time (`at`); `mergeMixed` keeps the more recent answer per challenge (an entry saved before sync, with no time, loses to a timed one), so merging is order-independent and repeatable. New `GET/POST /api/grammar-mixed` (`app/api/grammar-mixed/route.ts`, collection `grammarMixedProgress`, unique `userId+id`, same "insert then update only if not older" rule as card levels; ids and counts validated, unknown ids dropped). `lib/useMixedProgress.ts` loads device + account, uploads answers that exist only on the device, and sends each new answer; a failed upload keeps the answer on the device and retries on the next visit. Guests keep the original key (`dutchtap:grammar-mixed:v1`), so nothing already saved is lost; accounts use `...:user:<name>`; guest answers are added to an account only through an explicit button and are never deleted.
+
+**Decision, not an omission:** mixed practice does NOT change the four card levels. A mixed challenge is a construction choice, not a card, and rating cards from it would let a multiple-choice answer mark a sentence Mastered. A unit test asserts the progress modules do not import the flashcard engine. It is shown to the learner on the page.
+
+**Tests:** 7 new Vitest cases (14 in `tests/grammar.mixed.test.ts`); 4 new Playwright specs `tests/flashcard-e2e/grammar-mixed-sync.spec.ts` (account save + second device, failed upload retried, guest copy button, guest makes no account calls) using an in-memory endpoint, not Atlas. `tsc`, `eslint` clean; Vitest 526 passed (7 skipped).
+
+**Not verified:** the new API route has not been run against a real MongoDB (it needs a session cookie); its logic mirrors `/api/flashcards` and is covered only through the in-memory stand-in. Not done: sessions integration, prerequisite gating, more than 31 challenges, native review.
+
 ## 2026-10-27 — Claude Code continuation: P5 source-card tagging (one sentence, several topics)
 
 **Plan check:** P5 asks to tag Everyday, Work and Grammar cards with manual review of uncertain matches, and to let one underlying card appear in several topic inventories without duplicate content or duplicate selection within a session. Done for the topics where a reliable detector exists; the rest is stated as open.

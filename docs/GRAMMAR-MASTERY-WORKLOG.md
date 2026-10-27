@@ -575,3 +575,13 @@ The earlier [full feature CI run #40361591866](https://github.com/EtiDavid/dutch
 **Verified handover:** both long-form docs are accessible on the feature branch; the root CLAUDE.md contains instructions to load them, and the README links them. The next Claude Code agent must fetch fresh Git refs, preserve uncommitted user changes and start a clean continuation branch from main + these handover documents. No further grammar implementation has been claimed in this documentation session.
 
 **Next:** open a documentation-only, non-draft PR for the handover; owner can review/merge this without invoking Vercel because only version tags trigger production. Implementation must still follow P1 → P7 gates.
+
+## 2026-10-28 — Next.js security upgrade (branch `chore/nextjs-security-upgrade`, not merged)
+
+**Done:** `next` and `eslint-config-next` 16.3.5 → 16.4.3 (same major, pinned exactly), plus `npm audit fix` for `sharp`, `source-map-js` and `zod`. `npm audit --omit=dev` now reports 0 vulnerabilities; 3 moderate dev-only advisories remain (vitest / @vitest/mocker / @vitest/coverage-v8, Windows path traversal in the dev test tooling), left alone.
+
+**Verification:** lint, `tsc`, build, `npm test` (570 passed, 13 skipped), `test:prod` (4 passed), `test:sessions-db` against the local test Mongo, `test:flashcards` (177 passed over repeated runs). The Atlas-backed `test:e2e` was not run.
+
+**What the upgrade exposed (tests only, no app change):** (1) `switchMode` in `tests/flashcard-e2e/helpers.ts` read the page right after the click, but in 16.4 the `history.replaceState` change reaches `useSearchParams` a moment later; it now waits for the tab's `aria-current`. This hit 7 session/quiz/variation tests. (2) The axe helper in `grammar-a11y.spec.ts` occasionally scanned a card that was still fading in and reported a false contrast failure; it now waits for animations to finish (5 consecutive clean runs).
+
+**Still needs the owner:** merging this branch (not done). A production release also still needs a person to smoke-test the live app on 16.4.3.

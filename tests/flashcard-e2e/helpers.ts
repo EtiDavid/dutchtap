@@ -139,8 +139,12 @@ export async function createSession(
   return new URL(page.url()).searchParams.get("session")!;
 }
 
-export const switchMode = (page: Page, mode: "study" | "speaking" | "quiz") =>
-  page.locator(`[data-mode="${mode}"]`).click();
+export const switchMode = async (page: Page, mode: "study" | "speaking" | "quiz") => {
+  const tab = page.locator(`[data-mode="${mode}"]`);
+  await tab.click();
+  // The URL change reaches useSearchParams asynchronously, so wait until the mode has really switched.
+  await expect(tab).toHaveAttribute("aria-current", "page");
+};
 
 /** Reads the saved guest sessions straight from the device. */
 export const savedGuestSessions = (page: Page) =>

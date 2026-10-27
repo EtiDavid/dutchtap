@@ -11,6 +11,8 @@ type Violation = { id: string; impact: string | null; nodes: { target: unknown[]
 
 async function violations(page: Page): Promise<string[]> {
   await page.addScriptTag({ path: AXE });
+  // A card that is still fading in has a blended colour and gives a false contrast failure, so let animations finish first.
+  await page.evaluate(() => Promise.all(document.getAnimations().map(a => a.finished.catch(() => undefined))));
   const found = await page.evaluate(async () => {
     const axe = (window as unknown as { axe: { run: (context: Document, options: object) => Promise<{ violations: Violation[] }> } }).axe;
     const result = await axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'best-practice'] } });

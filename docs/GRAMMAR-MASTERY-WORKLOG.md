@@ -4,6 +4,12 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: flaky vocabulary test fixed, cross-pattern tests, full browser run
+
+- Root cause of the flaky `sessions-navigation` vocabulary test (failed on `main` too): only sentences with linked words show "Vocabulary for this sentence" (which opens a page with a Back button); others show "Browse vocabulary" (no Back button), and the card is random. The test now moves to the next card until the link is the specific one. 10/10 repeated runs pass. This is a test fix, not an app change.
+- `tests/grammar.separable-cross.test.ts` (4 tests): dependent-clause finite verbs are joined and last; main-clause present, past and imperative cards are split and never joined; the auxiliary in each perfect card matches the verb's recorded hebben or zijn (one stated exception: "Ik ben uitgelogd" names a state); te-infinitive cards put te between particle and verb.
+- Full browser suite before the test fix: 115 passed, 1 failed (that flaky test). Vitest 447 passed.
+
 ## 2026-10-27 — Claude Code continuation: P3 Verbs in context to 100 and lesson v1.1
 
 **Plan check (again):** P3 in the master plan asks for Verbs in Context to 100, Past & Perfect to 100 with auxiliary rationale, inseparable contrasts, and cross-pattern tests. Past & Perfect, separable cards, forms and inseparable contrasts are done; this batch finishes Verbs in Context. Still open from P3: cross-pattern tests beyond the forms table, and the plan's recap and mini self-check in each lesson.

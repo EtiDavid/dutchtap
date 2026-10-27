@@ -4,6 +4,21 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P4 Nadat to 50 and lesson v1.1 (Voordat/Nadat 100 combined)
+
+**Plan check:** P4 asks for Voordat/Nadat at 100 combined. Voordat 50 + Nadat 50 = 100. Zodra/zolang, `of`, indirect questions, hoewel/tenzij and relative clauses are the remaining P4 topics.
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- 38 new Nadat cards (`pat-nadat-13..50`, `data/editorial/grammar-p2-nadat.json`); no core sentence uses `nadat`, so no aliases. Hand-authored records for all 50 in `data/grammar-nadat-analysis.json`: past perfect and perfect groups, hebben versus zijn, separable and `-eren` participles, clause first/second, modals, imperatives, questions, negation, te-infinitive, `na` (preposition), `daarna`/`vervolgens` (adverbs).
+- Dutch-first prompts for the legacy cards whose prompt leaked a conjunction or was too short (01, 02, 05, 06, 08, 10, 11, 12).
+- Nadat lesson raised to v1.1 (8 sections, 5 mistakes); no external source checked.
+- Counts: 1,062 authored + 142 aliases = 1,204 playable; 866/1062 with Dutch-first prompts; 13 topic lessons: 3 at v1.0 (inversion, omdat, dat) and 10 at v1.1 (als, toen, wanneer, separable, tense, verbs, tot, terwijl, voordat, nadat); none left at v0.2 or v0.8.
+- Repeated mistake explanations were de-duplicated against the other analysis files (2 clause/mistake texts) to satisfy the uniqueness test.
+
+**Open:** zodra/zolang 60, `of` 60, indirect questions 100, hoewel/tenzij 60, relative clauses 100 (these need new topic registry entries, tiles and lessons); no native review.
+
 ## 2026-10-27 — Claude Code continuation: P4 Voordat to 50 and lesson v1.1
 
 **Plan check:** P4 asks for Voordat/Nadat at 100 combined. Voordat now has 50; Nadat (12) is next.

@@ -10,6 +10,7 @@ import verbsAnalysis from "@/data/grammar-verbs-analysis.json";
 import totAnalysis from "@/data/grammar-tot-analysis.json";
 import terwijlAnalysis from "@/data/grammar-terwijl-analysis.json";
 import voordatAnalysis from "@/data/grammar-voordat-analysis.json";
+import nadatAnalysis from "@/data/grammar-nadat-analysis.json";
 import type { Breakdown } from "@/lib/grammarBreakdowns";
 
 /**
@@ -60,8 +61,9 @@ export const VERBS_ANALYSIS = verbsAnalysis.cards as unknown as Record<string, A
 export const TOT_ANALYSIS = totAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const TERWIJL_ANALYSIS = terwijlAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const VOORDAT_ANALYSIS = voordatAnalysis.cards as unknown as Record<string, AnalysisRecord>;
+export const NADAT_ANALYSIS = nadatAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 /** Every authored sentence analysis, whatever its topic. Ids are unique across topics. */
-export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS, ...WANNEER_ANALYSIS, ...INVERSION_ANALYSIS, ...SEPARABLE_ANALYSIS, ...TENSE_ANALYSIS, ...VERBS_ANALYSIS, ...TOT_ANALYSIS, ...TERWIJL_ANALYSIS, ...VOORDAT_ANALYSIS };
+export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS, ...WANNEER_ANALYSIS, ...INVERSION_ANALYSIS, ...SEPARABLE_ANALYSIS, ...TENSE_ANALYSIS, ...VERBS_ANALYSIS, ...TOT_ANALYSIS, ...TERWIJL_ANALYSIS, ...VOORDAT_ANALYSIS, ...NADAT_ANALYSIS };
 export const analysisFor = (cardId: string): AnalysisRecord | undefined => GRAMMAR_ANALYSIS[cardId];
 /** A Dutch-first situation for cards that were written before Dutch prompts existed (including linked Everyday/Work sentences). */
 export const situationEnFor = (cardId: string): string | undefined => GRAMMAR_ANALYSIS[cardId]?.situationEn;

@@ -2466,64 +2466,206 @@
   "sources": []
  },
  "nadat": {
-  "title": "NADAT — after",
-  "goal": "Speak about time and clause relationships with accurate subordinate and main-clause word order.",
-  "overview": "Nadat introduces the earlier event. With completed actions, its clause often uses a perfect or past-perfect verb group; the full time context determines tense.",
+  "title": "Nadat — after",
+  "goal": "Say what happened first with the right tense, and keep the verb group in the right place in both clauses.",
+  "overview": "Nadat is a subordinating conjunction: it introduces the clause that names the earlier event, so the main clause names what follows. Because the nadat-clause looks back, it usually has a perfect group (heb gegeten, is afgelopen) or, in a story, a past perfect (had gelezen, was vertrokken). The auxiliary and participle stand together at the end of the clause. Na is the preposition (na de les), and daarna and vervolgens are adverbs; none of them sends a verb to the end.",
+  "status": "Detailed lesson, AI-edited. Not independently reviewed by a native speaker.",
+  "revision": "1.1",
   "formulas": [
    {
-    "label": "Earlier completed action",
-    "pattern": "Nadat ik heb gegeten, | ga ik wandelen.",
-    "why": "Heb gegeten is the perfect subordinate cluster; ga ik is inverted."
+    "label": "Main clause then nadat-clause",
+    "pattern": "Ik stuur het document | nadat ik het heb gecontroleerd.",
+    "why": "The main clause keeps normal order; the nadat-clause ends in the perfect group heb gecontroleerd."
    },
    {
-    "label": "Past perfect narrative",
-    "pattern": "Nadat ik had gegeten, | ging ik wandelen.",
-    "why": "Had gegeten establishes an earlier event in a past narrative."
+    "label": "Nadat-clause first",
+    "pattern": "Nadat ik heb gegeten, | maak ik de keuken schoon.",
+    "why": "The whole nadat-clause fills position one, so the main clause inverts to maak ik."
+   },
+   {
+    "label": "Past story",
+    "pattern": "Nadat zij haar sleutels had gevonden, | vertrok ze naar school.",
+    "why": "The past perfect had gevonden marks the earlier event; the main clause uses the simple past."
+   },
+   {
+    "label": "Preposition or adverb instead",
+    "pattern": "Na de les | ga ik naar huis.",
+    "why": "Na takes a noun and no second verb, so the sentence is one main clause."
    }
   ],
   "sections": [
    {
-    "title": "When this pattern is used",
-    "body": "Nadat introduces the earlier event. With completed actions, its clause often uses a perfect or past-perfect verb group; the full time context determines tense.",
+    "title": "1. The earlier event goes in the nadat-clause",
+    "body": "In 'Ik stuur het document nadat ik het heb gecontroleerd' the checking happens first and the sending later. The nadat-clause names the earlier event, the opposite of voordat. Say the order out loud before choosing the conjunction: what is already finished when the main clause happens?",
     "examples": [
      {
-      "nl": "Nadat we hebben gegeten, gaan we wandelen.",
-      "en": "After we have eaten, we go walking."
+      "nl": "Ik bel je nadat de vergadering is afgelopen.",
+      "en": "I will call you after the meeting is over."
      },
      {
-      "nl": "Nadat zij was vertrokken, werd het stil.",
-      "en": "After she had left, it became quiet."
+      "nl": "Nadat ik de e-mail heb gelezen, antwoord ik meteen.",
+      "en": "After I have read the email, I reply immediately."
+     },
+     {
+      "nl": "Ik drink water nadat ik heb gesport.",
+      "en": "I drink water after I have exercised."
      }
     ]
    },
    {
-    "title": "How the clauses connect",
-    "body": "With one finite subordinate verb, it normally follows the other elements. With longer verb clusters, check the whole construction. A fronted subordinate clause counts as position one, triggering inversion in the following main clause.",
+    "title": "2. The perfect in the nadat-clause",
+    "body": "Dutch uses the perfect (hebben or zijn + participle) in the nadat-clause for the finished event, even when English uses a simple form: 'after I eat' becomes 'nadat ik heb gegeten'. Both parts of the group stand at the end, the auxiliary first, then the participle. The object comes before them.",
     "examples": [
      {
-      "nl": "Nadat ik heb gegeten, maak ik de keuken schoon.",
-      "en": "After eating, I clean the kitchen."
-     },
-     {
-      "nl": "Ik bel je nadat de vergadering is afgelopen.",
-      "en": "I'll call you after the meeting finishes."
-     },
-     {
       "nl": "Nadat we de back-up hebben gemaakt, starten we de update.",
-      "en": "After we've made the backup, we start the update."
+      "en": "After we have made the backup, we start the update."
+     },
+     {
+      "nl": "Nadat de klant het product heeft getest, geeft hij feedback.",
+      "en": "After the customer has tested the product, he gives feedback."
+     },
+     {
+      "nl": "Nadat jij me hebt gebeld, stuur ik de gegevens.",
+      "en": "After you have called me, I send the data."
+     }
+    ]
+   },
+   {
+    "title": "3. Hebben or zijn?",
+    "body": "Verbs of movement and change take zijn: 'nadat we thuis zijn gekomen', 'nadat de film is afgelopen', 'nadat de monteur was vertrokken'. Most other verbs take hebben: 'heb gesport', 'heeft getest'. Weather verbs such as sneeuwen take hebben too: 'nadat het had gesneeuwd'.",
+    "examples": [
+     {
+      "nl": "We drinken koffie nadat we thuis zijn gekomen.",
+      "en": "We drink coffee after we have come home."
+     },
+     {
+      "nl": "Ik ben gaan wandelen nadat ik was opgestaan.",
+      "en": "I went for a walk after I had got up."
+     },
+     {
+      "nl": "Nadat het had gesneeuwd, was de weg glad.",
+      "en": "After it had snowed, the road was slippery."
+     }
+    ]
+   },
+   {
+    "title": "4. Stories in the past",
+    "body": "For a past story put the earlier event in the past perfect (had/was + participle) and the later one in the simple past: 'Nadat zij haar sleutels had gevonden, vertrok ze naar school'. The main clause can also use the perfect when the whole story is told that way.",
+    "examples": [
+     {
+      "nl": "Nadat hij zijn rijbewijs had gehaald, kocht hij een auto.",
+      "en": "After he had got his driving licence, he bought a car."
+     },
+     {
+      "nl": "Hij bedankte ons nadat we hem hadden geholpen.",
+      "en": "He thanked us after we had helped him."
+     },
+     {
+      "nl": "Zij kreeg de baan nadat ze drie gesprekken had gevoerd.",
+      "en": "She got the job after she had had three interviews."
+     }
+    ]
+   },
+   {
+    "title": "5. Separable verbs and participles",
+    "body": "The participle of a separable verb is one word with ge in the middle: opgehaald, nagekeken, ingevuld. Inseparable verbs get no ge: gecontroleerd is regular, but verbs on -eren, such as installeren, give geïnstalleerd. In the main clause the separable verb itself still splits: 'ik log opnieuw in'.",
+    "examples": [
+     {
+      "nl": "Zij ging naar huis nadat ze de kinderen had opgehaald.",
+      "en": "She went home after she had picked up the children."
+     },
+     {
+      "nl": "De docent geeft het cijfer nadat hij de toets heeft nagekeken.",
+      "en": "The teacher gives the grade after he has marked the test."
+     },
+     {
+      "nl": "Nadat ik mijn wachtwoord heb gewijzigd, log ik opnieuw in.",
+      "en": "After I have changed my password, I log in again."
+     }
+    ]
+   },
+   {
+    "title": "6. The nadat-clause first",
+    "body": "A nadat-clause in first position fills position one, so the main clause starts with its finite verb: 'Nadat de fout was opgelost, kon iedereen weer werken'. Clause one ends in its participle, clause two begins with its verb, and the subject follows it.",
+    "examples": [
+     {
+      "nl": "Nadat de gasten waren vertrokken, ruimden we de tafel op.",
+      "en": "After the guests had left, we cleared the table."
+     },
+     {
+      "nl": "Nadat de brandweer was gearriveerd, kon niemand meer naar binnen.",
+      "en": "After the fire brigade had arrived, nobody could go in any more."
+     },
+     {
+      "nl": "Nadat het systeem is opgestart, kun je inloggen.",
+      "en": "After the system has started up, you can log in."
+     }
+    ]
+   },
+   {
+    "title": "7. Questions and commands",
+    "body": "A direct question keeps question order: 'Wat doe je nadat je bent thuisgekomen?'. A command has no subject: 'Bel me nadat je het rapport hebt gelezen'. Negation belongs to the main clause: 'Ik heb niets gegeten nadat ik ziek was geworden'.",
+    "examples": [
+     {
+      "nl": "Wat doe je nadat je bent thuisgekomen?",
+      "en": "What do you do after you have come home?"
+     },
+     {
+      "nl": "Bel me nadat je het rapport hebt gelezen.",
+      "en": "Call me after you have read the report."
+     },
+     {
+      "nl": "Kunnen we praten nadat de presentatie is afgelopen?",
+      "en": "Can we talk after the presentation is over?"
+     }
+    ]
+   },
+   {
+    "title": "8. Na, daarna and vervolgens",
+    "body": "Na is a preposition and needs a noun ('na de les'). Daarna points back to a step just mentioned, and vervolgens marks the next step. All three fill position one, so the verb follows directly and the subject comes after it. Only nadat opens a clause with a final verb group.",
+    "examples": [
+     {
+      "nl": "Na de les ga ik naar huis.",
+      "en": "After the lesson I go home."
+     },
+     {
+      "nl": "Daarna kijken we een film.",
+      "en": "After that we watch a film."
+     },
+     {
+      "nl": "Vervolgens stuur ik de factuur.",
+      "en": "Then I send the invoice."
      }
     ]
    }
   ],
   "mistakes": [
    {
-    "wrong": "Nadat ik heb gegeten, ik ga wandelen.",
-    "right": "Nadat ik heb gegeten, ga ik wandelen.",
-    "why": "A fronted subordinate clause triggers inversion in the main clause."
+    "wrong": "Ik stuur het document nadat ik heb het gecontroleerd.",
+    "right": "Ik stuur het document nadat ik het heb gecontroleerd.",
+    "why": "In a dependent clause the auxiliary and participle both go to the end, behind the object."
+   },
+   {
+    "wrong": "Nadat ik heb gegeten, ik maak de keuken schoon.",
+    "right": "Nadat ik heb gegeten, maak ik de keuken schoon.",
+    "why": "After a fronted nadat-clause the main clause starts with its finite verb: maak ik."
+   },
+   {
+    "wrong": "Nadat ik eet, maak ik de keuken schoon.",
+    "right": "Nadat ik heb gegeten, maak ik de keuken schoon.",
+    "why": "The nadat-clause names a finished event, so Dutch uses the perfect heb gegeten rather than a plain present."
+   },
+   {
+    "wrong": "Nadat de monteur had vertrokken, werkte het systeem weer.",
+    "right": "Nadat de monteur was vertrokken, werkte het systeem weer.",
+    "why": "Vertrekken is a verb of movement and takes zijn in the perfect tenses, so the past perfect is was vertrokken."
+   },
+   {
+    "wrong": "Nadat de les, ga ik naar huis.",
+    "right": "Na de les ga ik naar huis.",
+    "why": "Nadat needs a clause with its own subject and verb. Before a plain noun like de les you need the preposition na."
    }
   ],
-  "sources": [],
-  "revision": "0.8",
-  "status": "Foundational topic lesson, AI-edited; more comparisons and native review pending."
+  "sources": []
  }
 }

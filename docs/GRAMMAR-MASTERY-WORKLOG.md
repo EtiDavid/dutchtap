@@ -4,6 +4,12 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P5 mixed challenges 31 -> 51
+
+**Done:** 20 new hand-authored challenges in `data/grammar-mixed-challenges.json` (now 51): omdat vs want (verb position), tot vs terwijl, fronted terwijl, hoewel vs omdat, voordat/nadat/zodra each with a separable verb and inversion, of vs dat in an embedded question (perfect) and in reported speech, relative clauses after a preposition (met wie) and de/het (die/dat), embedded questions with a modal, with waarom and with wanneer + a separable verb, toen vs als for one arrival, dat + modal + separable, perfect of a separable verb, omdat + modal fronted, terwijl vs nadat for a phone ringing during sleep, tot with homework. Every wrong option is either valid Dutch with the wrong meaning or a real order error; I avoided distractors that are acceptable Dutch (for example both `heb gegeten` and `gegeten heb`, or `op moet bellen`). Situations do not contain the target word (checked by test). New test: every conjunction topic has at least three challenges and no option sentence is reused.
+
+**Still open:** advanced conjunctions (sinds, zodat, opdat, naargelang) have no challenges yet; no prerequisite gating; all AI-checked, no native review.
+
 ## 2026-10-27 — Claude Code continuation: P5 mixed-grammar progress and account sync
 
 **Done:** mixed-grammar answers now follow a signed-in account. Each saved answer carries a time (`at`); `mergeMixed` keeps the more recent answer per challenge (an entry saved before sync, with no time, loses to a timed one), so merging is order-independent and repeatable. New `GET/POST /api/grammar-mixed` (`app/api/grammar-mixed/route.ts`, collection `grammarMixedProgress`, unique `userId+id`, same "insert then update only if not older" rule as card levels; ids and counts validated, unknown ids dropped). `lib/useMixedProgress.ts` loads device + account, uploads answers that exist only on the device, and sends each new answer; a failed upload keeps the answer on the device and retries on the next visit. Guests keep the original key (`dutchtap:grammar-mixed:v1`), so nothing already saved is lost; accounts use `...:user:<name>`; guest answers are added to an account only through an explicit button and are never deleted.

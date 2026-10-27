@@ -36,6 +36,14 @@ describe('Mixed grammar: uncued construction choice', () => {
     const mixes = MIXED_CHALLENGES.map(c => c.mix.join('+'));
     for (const combo of ['als+separable+inversion', 'omdat+perfect', 'toen+past+inversion', 'dat+modal', 'indirect+perfect']) expect(mixes, combo).toContain(combo);
   });
+  it('has at least three challenges for every conjunction contrast topic, and uses every option as a distinct sentence across the set', () => {
+    for (const t of ['omdat', 'als', 'toen', 'wanneer', 'tot', 'terwijl', 'of', 'dat', 'hoewel', 'voordat', 'nadat', 'zodra', 'relative', 'indirect']) {
+      expect(MIXED_CHALLENGES.filter(c => c.topics.includes(t)).length, t).toBeGreaterThanOrEqual(3);
+    }
+    const texts = MIXED_CHALLENGES.flatMap(c => c.options.map(o => norm(o.text)));
+    expect(new Set(texts).size).toBe(texts.length);
+    expect(MIXED_CHALLENGES.length).toBeGreaterThanOrEqual(51);
+  });
   it('weights weak and new challenges up and mastered ones down, but never to zero', () => {
     const fresh = weightOf(statOf({}, 'x'));
     const wrong = weightOf({ seen: 2, right: 1, streak: 0, lastWrong: true });

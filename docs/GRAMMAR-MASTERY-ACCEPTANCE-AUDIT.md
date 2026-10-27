@@ -22,18 +22,18 @@
 | Nadat | 0 | 12 | 0 | **12** | Combined with Voordat: 24/100 |
 | Tot | 20 | 0 | 0 | **20** | Tot/totdat 60–100 combined target unmet |
 | Verbs | 36 | 0 | 0 | **36** | 64 short |
-| Separable verbs | 24 | 128 | 0 | **152** | Card count in target range; only 52/60–100 verb lemmas, not native-verified |
+| Separable verbs | 24 | 152 | 0 | **176** | Card count in target range; 68 verb lemmas in the dictionary (60–100 target met by count), each with an authored forms table; not native-verified |
 | Past & perfect | 17 | 0 | 0 | **17** | 83 short |
-| **Total** | **196** | **545** | **120** | **861** | **741 authored; 120 source aliases** |
+| **Total** | **196** | **569** | **120** | **885** | **765 authored; 120 source aliases** |
 
 Other planned sections (`zodra/zolang`, `of` meaning whether, `hoewel/tenzij`, relative clauses, indirect questions, other advanced connectors) are not yet independent complete topic collections. Their presence in existing core sentences or notes **does not count** as a released, tracked new topic.
 
-- **1,200 Core cards** remain in Everyday/Dutch at Work; the branch adds 861 grammar aliases/authored base cards for **2,061 total card IDs**.
-- **545 of 741** authored grammar cards include Dutch-first `scenarioNl`; **196 do not**. The **120** aliases inherit original English scenarios and do not yet add Dutch-first metadata.
-- **100** independent interactive grammar variations exist across **10** ALS parent families. **851 of 861** grammar parents currently have no complete ten-child variation family. Passive notes/examples do not count.
-- **52** separable verb lemma records, all explicitly marked AI-authored / independent review required.
+- **1,200 Core cards** remain in Everyday/Dutch at Work; the branch adds 885 grammar aliases/authored base cards for **2,085 total card IDs**.
+- **569 of 765** authored grammar cards include Dutch-first `scenarioNl`; **196 do not**. The **120** aliases inherit original English scenarios and do not yet add Dutch-first metadata.
+- **100** independent interactive grammar variations exist across **10** ALS parent families. **875 of 885** grammar parents currently have no complete ten-child variation family. Passive notes/examples do not count.
+- **68** separable verb lemma records, all explicitly marked AI-authored / independent review required.
 - Topic lesson versions: **5 v1.0** (`separable`, `inversion`, `omdat`, `dat`, `verbs`), **3 v1.1** (`als`, `toen`, `wanneer`), **3 v0.8** (`terwijl`, `voordat`, `nadat`), **2 v0.2** (`tot`, `tense`). A version label is not linguistic certification.
-- All 741 authored grammar sentence IDs and Dutch strings are unique within authored grammar JSON; full semantic duplication/translation naturalness audit is outstanding.
+- All 765 authored grammar sentence IDs and Dutch strings are unique within authored grammar JSON; full semantic duplication/translation naturalness audit is outstanding.
 
 **Structural evidence:** `data/grammar-pattern-cards.json`, `data/grammar-reuse-links.json`, `data/grammar-variation-families.json`, `data/editorial/grammar-separable-verbs.json`, `data/grammar-topic-lessons.json`. Counts are derived from the actual branch data rather than passive lesson examples.
 
@@ -52,9 +52,9 @@ Other planned sections (`zodra/zolang`, `of` meaning whether, `hoewel/tenzij`, r
 | **A09** Multi-topic referenced core cards | **PARTIAL** | 53 explicit aliases with stable source references and independent grammar rating, `tests/grammar.reuse.test.ts` | One source across several approved grammar tags, deduplicated topic index, cross-topic skill identity and comprehensive source tagging |
 | **A10** Fixed sessions / eligible count | **PARTIAL** | `lib/sessions/engine.ts` retains card IDs, levels, max 100 and max five sessions; unit tests and first browser scenarios | End-to-end linked Core selection, all modes, historical restore and cross-device account flow across full scope |
 | **A11** Accurate skill/child mastery | **PARTIAL** | Reference aliases have separate levels; child progress separate | Per-pattern/multi-topic mastery not yet modeled; prevent false cross-skill mastery awards |
-| **A12** Card targets | **PARTIAL** | ALS 100 and separable 152; all other exact shortfalls above | Expand/reuse only correctly targeted meaningful cards; major topic and advanced targets remain far short |
+| **A12** Card targets | **PARTIAL** | ALS 100 and separable 176; all other exact shortfalls above | Expand/reuse only correctly targeted meaningful cards; major topic and advanced targets remain far short |
 | **A13** Extended clauses and contrasts | **PARTIAL** | Added `wanneer`, `terwijl`, `voordat`, `nadat` small decks and lessons | `zodra`, `zolang`, indirect `of`, relative pronouns, `hoewel`, `tenzij`, `ook al`, broader causal/conditional contrasts not complete |
-| **A14** 60–100 separable verbs, 150–200 cards | **PARTIAL** | 52 authored lemma records + 152 base cards | At least eight more useful verified lemmas; individual form, preposition and natural-usage QA |
+| **A14** 60–100 separable verbs, 150–200 cards | **PARTIAL** | 68 authored lemma records (8 of them only had the original three-card sets before this batch) + 176 base cards; `data/grammar-separable-forms.json` has per-verb forms (infinitive, main clause, simple past, perfect with auxiliary, modal, te + infinitive, dependent clause, imperative, preposition) shown on the sentence page | At least eight more useful verified lemmas; individual form, preposition and natural-usage QA |
 | **A15** Full separable-form teaching | **PARTIAL** | Separable v1 lesson includes 6 formulas; `grammar-separable-cards.json` forms | Individually audit tense, auxiliary, `te`, modal, subordinate/imperative and inseparable contrasts across representative verbs |
 | **A16** Uncued mixed grammar | **BLOCKED** | Legacy `/learn` Think in Dutch remains; single-topic grammar tile drills exist | Progressive, uncued cross-topic retrieval in shared engine with prerequisite/review scheduling not delivered |
 | **A17** Natural Dutch and provenance | **PARTIAL** | Authored cards have AI-editorial `review` markers, source records say independent native review required | Per-card model/scenario/translation/alternative/child editorial verification, provenance hashes and independent review where claimed |

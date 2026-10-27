@@ -106,7 +106,7 @@ for i, row in enumerate(more_separable):
         if len(related)==10: break
     assert len(related)==10, cid
     notes[cid]={'rule':row['why']+' Focus on the lexical verb and the particle\'s position, not just the tense.','examples':related}
-assert len(more_separable)==128 and len(cards)==432, f"Expected 432 generated grammar cards, got {len(cards)}"
+assert len(more_separable)==152 and len(cards)==456, f"Expected 456 generated grammar cards, got {len(cards)}"
 # P2 expansions: one file per topic, data/editorial/grammar-p2-<topic>.json. New ids continue after the topic's existing ids
 # (they never renumber an earlier card), and the file order is the id order.
 import glob

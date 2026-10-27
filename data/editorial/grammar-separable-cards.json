@@ -1918,5 +1918,365 @@
       "batch": "separable-inventory-52",
       "focus": "perfect"
     }
+  },
+  {
+    "dutch": "Ik leg de regels uit.",
+    "english": "I explain the rules.",
+    "scenario": "You explain the rules to a new colleague. Speak as I, using uitleggen.",
+    "scenarioNl": "Vertel wat je nu doet. Een nieuwe collega kent de regels nog niet. Je helpt hem op weg.",
+    "why": "The finite form of uitleggen splits in a main clause: the particle moves to the end of the clause.",
+    "lemma": "uitleggen",
+    "focus": "present",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "present"
+    }
+  },
+  {
+    "dutch": "Ik heb de regels uitgelegd.",
+    "english": "I have explained the rules.",
+    "scenario": "You explain the rules to a new colleague. Speak as I, using uitleggen.",
+    "scenarioNl": "Vertel wat al klaar is. Een nieuwe collega kent de regels nog niet. Je helpt hem op weg.",
+    "why": "The participle of uitleggen is written as one word, with ge- between the particle and the stem.",
+    "lemma": "uitleggen",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "dutch": "Ik kan de regels uitleggen.",
+    "english": "I can explain the rules.",
+    "scenario": "You explain the rules to a new colleague. Speak as I, using uitleggen.",
+    "scenarioNl": "Zeg wat je kunt of moet doen. Een nieuwe collega kent de regels nog niet. Je helpt hem op weg.",
+    "why": "After a modal verb uitleggen is an infinitive and stays in one piece at the end.",
+    "lemma": "uitleggen",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "dutch": "Ik lever mijn werk in.",
+    "english": "I hand in my work.",
+    "scenario": "You hand in your work. Speak as I, using inleveren.",
+    "scenarioNl": "Vertel wat je nu doet. Je bent klaar met een opdracht en geeft die af bij de docent.",
+    "why": "The finite form of inleveren splits in a main clause: the particle moves to the end of the clause.",
+    "lemma": "inleveren",
+    "focus": "present",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "present"
+    }
+  },
+  {
+    "dutch": "Ik heb mijn werk ingeleverd.",
+    "english": "I have handed in my work.",
+    "scenario": "You hand in your work. Speak as I, using inleveren.",
+    "scenarioNl": "Vertel wat al klaar is. Je bent klaar met een opdracht en geeft die af bij de docent.",
+    "why": "The participle of inleveren is written as one word, with ge- between the particle and the stem.",
+    "lemma": "inleveren",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "dutch": "Ik probeer mijn werk op tijd in te leveren.",
+    "english": "I try to hand in my work on time.",
+    "scenario": "You hand in your work. Speak as I, using inleveren.",
+    "scenarioNl": "Zeg wat je probeert of besluit te doen. Je bent klaar met een opdracht en geeft die af bij de docent.",
+    "why": "With te the particle stays in front of te: the infinitive of inleveren is written as three words.",
+    "lemma": "inleveren",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "dutch": "Ik schrijf het adres op.",
+    "english": "I write down the address.",
+    "scenario": "You write down an address. Speak as I, using opschrijven.",
+    "scenarioNl": "Vertel wat je nu doet. Iemand noemt een adres en jij wilt het niet vergeten.",
+    "why": "The finite form of opschrijven splits in a main clause: the particle moves to the end of the clause.",
+    "lemma": "opschrijven",
+    "focus": "present",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "present"
+    }
+  },
+  {
+    "dutch": "Ik heb het adres opgeschreven.",
+    "english": "I have written down the address.",
+    "scenario": "You write down an address. Speak as I, using opschrijven.",
+    "scenarioNl": "Vertel wat al klaar is. Iemand noemt een adres en jij wilt het niet vergeten.",
+    "why": "The participle of opschrijven is written as one word, with ge- between the particle and the stem.",
+    "lemma": "opschrijven",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "dutch": "Ik weet dat zij het adres opschrijft.",
+    "english": "I know that she writes down the address.",
+    "scenario": "You write down an address. Speak as I, using opschrijven.",
+    "scenarioNl": "Zeg wat je weet of ziet. Iemand noemt een adres en jij wilt het niet vergeten.",
+    "why": "In a dependent clause the finite form of opschrijven is written as one word and goes to the end.",
+    "lemma": "opschrijven",
+    "focus": "subordinate",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "subordinate"
+    }
+  },
+  {
+    "dutch": "Ik geef het bericht door.",
+    "english": "I pass on the message.",
+    "scenario": "You pass on a message. Speak as I, using doorgeven.",
+    "scenarioNl": "Vertel wat je nu doet. Een collega is niet bereikbaar en jij zorgt dat het bericht hem bereikt.",
+    "why": "The finite form of doorgeven splits in a main clause: the particle moves to the end of the clause.",
+    "lemma": "doorgeven",
+    "focus": "present",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "present"
+    }
+  },
+  {
+    "dutch": "Ik heb het bericht doorgegeven.",
+    "english": "I have passed on the message.",
+    "scenario": "You pass on a message. Speak as I, using doorgeven.",
+    "scenarioNl": "Vertel wat al klaar is. Een collega is niet bereikbaar en jij zorgt dat het bericht hem bereikt.",
+    "why": "The participle of doorgeven is written as one word, with ge- between the particle and the stem.",
+    "lemma": "doorgeven",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "dutch": "Ik wil het bericht doorgeven.",
+    "english": "I want to pass on the message.",
+    "scenario": "You pass on a message. Speak as I, using doorgeven.",
+    "scenarioNl": "Zeg wat je kunt of moet doen. Een collega is niet bereikbaar en jij zorgt dat het bericht hem bereikt.",
+    "why": "After a modal verb doorgeven is an infinitive and stays in one piece at the end.",
+    "lemma": "doorgeven",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "dutch": "Ik breng een cadeau mee.",
+    "english": "I bring a gift along.",
+    "scenario": "You bring a gift to a party. Speak as I, using meebrengen.",
+    "scenarioNl": "Vertel wat je nu doet. Je bent uitgenodigd voor een feestje en neemt iets voor de gastheer mee.",
+    "why": "The finite form of meebrengen splits in a main clause: the particle moves to the end of the clause.",
+    "lemma": "meebrengen",
+    "focus": "present",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "present"
+    }
+  },
+  {
+    "dutch": "Ik heb een cadeau meegebracht.",
+    "english": "I have brought a gift along.",
+    "scenario": "You bring a gift to a party. Speak as I, using meebrengen.",
+    "scenarioNl": "Vertel wat al klaar is. Je bent uitgenodigd voor een feestje en neemt iets voor de gastheer mee.",
+    "why": "The participle of meebrengen is written as one word, with ge- between the particle and the stem.",
+    "lemma": "meebrengen",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "dutch": "Ik vergeet niet een cadeau mee te brengen.",
+    "english": "I do not forget to bring a gift along.",
+    "scenario": "You bring a gift to a party. Speak as I, using meebrengen.",
+    "scenarioNl": "Zeg wat je probeert of besluit te doen. Je bent uitgenodigd voor een feestje en neemt iets voor de gastheer mee.",
+    "why": "With te the particle stays in front of te: the infinitive of meebrengen is written as three words.",
+    "lemma": "meebrengen",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "dutch": "De klant komt binnen.",
+    "english": "The customer comes in.",
+    "scenario": "A customer enters the shop. Describe it, using binnenkomen.",
+    "scenarioNl": "Vertel wat je nu doet. Een klant stapt de winkel in terwijl jij aan de balie staat.",
+    "why": "The finite form of binnenkomen splits in a main clause: the particle moves to the end of the clause.",
+    "lemma": "binnenkomen",
+    "focus": "present",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "present"
+    }
+  },
+  {
+    "dutch": "De klant is binnengekomen.",
+    "english": "The customer has come in.",
+    "scenario": "A customer enters the shop. Describe it, using binnenkomen.",
+    "scenarioNl": "Vertel wat al klaar is. Een klant stapt de winkel in terwijl jij aan de balie staat.",
+    "why": "The participle of binnenkomen is written as one word, with ge- between the particle and the stem.",
+    "lemma": "binnenkomen",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "dutch": "Ik zie dat de klant binnenkomt.",
+    "english": "I see that the customer is coming in.",
+    "scenario": "A customer enters the shop. Describe it, using binnenkomen.",
+    "scenarioNl": "Zeg wat je weet of ziet. Een klant stapt de winkel in terwijl jij aan de balie staat.",
+    "why": "In a dependent clause the finite form of binnenkomen is written as one word and goes to the end.",
+    "lemma": "binnenkomen",
+    "focus": "subordinate",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "subordinate"
+    }
+  },
+  {
+    "dutch": "Ik sta om zeven uur op.",
+    "english": "I get up at seven o'clock.",
+    "scenario": "You get up early. Speak as I, using opstaan.",
+    "scenarioNl": "Vertel wat je nu doet. Je wekker gaat vroeg en je begint de dag.",
+    "why": "The finite form of opstaan splits in a main clause: the particle moves to the end of the clause.",
+    "lemma": "opstaan",
+    "focus": "present",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "present"
+    }
+  },
+  {
+    "dutch": "Ik ben om zeven uur opgestaan.",
+    "english": "I got up at seven o'clock.",
+    "scenario": "You get up early. Speak as I, using opstaan.",
+    "scenarioNl": "Vertel wat al klaar is. Je wekker gaat vroeg en je begint de dag.",
+    "why": "The participle of opstaan is written as one word, with ge- between the particle and the stem.",
+    "lemma": "opstaan",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "dutch": "Ik moet om zeven uur opstaan.",
+    "english": "I have to get up at seven o'clock.",
+    "scenario": "You get up early. Speak as I, using opstaan.",
+    "scenarioNl": "Zeg wat je kunt of moet doen. Je wekker gaat vroeg en je begint de dag.",
+    "why": "After a modal verb opstaan is an infinitive and stays in one piece at the end.",
+    "lemma": "opstaan",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "dutch": "Ik wacht het antwoord af.",
+    "english": "I wait for the answer.",
+    "scenario": "You wait for an answer. Speak as I, using afwachten.",
+    "scenarioNl": "Vertel wat je nu doet. Je hebt een vraag gesteld en moet nu geduld hebben.",
+    "why": "The finite form of afwachten splits in a main clause: the particle moves to the end of the clause.",
+    "lemma": "afwachten",
+    "focus": "present",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "present"
+    }
+  },
+  {
+    "dutch": "Ik heb het antwoord afgewacht.",
+    "english": "I have waited for the answer.",
+    "scenario": "You wait for an answer. Speak as I, using afwachten.",
+    "scenarioNl": "Vertel wat al klaar is. Je hebt een vraag gesteld en moet nu geduld hebben.",
+    "why": "The participle of afwachten is written as one word, with ge- between the particle and the stem.",
+    "lemma": "afwachten",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "dutch": "Ik besluit het antwoord af te wachten.",
+    "english": "I decide to wait for the answer.",
+    "scenario": "You wait for an answer. Speak as I, using afwachten.",
+    "scenarioNl": "Zeg wat je probeert of besluit te doen. Je hebt een vraag gesteld en moet nu geduld hebben.",
+    "why": "With te the particle stays in front of te: the infinitive of afwachten is written as three words.",
+    "lemma": "afwachten",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "separable-p3-v1",
+      "focus": "te"
+    }
   }
 ]

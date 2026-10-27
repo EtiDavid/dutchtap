@@ -6,6 +6,7 @@ import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { CARDS } from "@/lib/flashcards/engine";
 import { cardFor } from "@/lib/content/cards";
 import { GrammarClauseMap } from "./GrammarClauseMap";
+import { SeparableVerbForms } from "./SeparableVerbForms";
 
 const ADAPTED = new Set(
   CARDS.filter((card) => card.adapted).map((card) => card.id),
@@ -196,6 +197,8 @@ export function GrammarNotes({
           )}
         </section>
       )}
+
+      {lang === "nl" && <SeparableVerbForms cardId={cardId} />}
 
       {note && (
         <>

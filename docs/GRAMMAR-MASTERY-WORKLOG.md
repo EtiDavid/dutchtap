@@ -4,6 +4,21 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P3 first slice, separable verb dictionary and forms
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- Finding: the 52 lemma records did not include the eight verbs behind the original cards `pat-separable-01..24` (opsturen, invullen, aanvragen, opruimen, afmaken, inloggen, aankomen, meenemen). They are now in `data/editorial/grammar-separable-verbs.json`, and eight new verbs with 24 new cards (`pat-separable-153..176`) were added: uitleggen, inleveren, opschrijven, doorgeven, meebrengen, binnenkomen, opstaan, afwachten. Dictionary: 68 lemmas; separable cards: 176 (24 original + 152 editorial).
+- `scripts/build-separable-forms.py` → `data/grammar-separable-forms.json`: for every lemma the authored irregular facts (stem forms, past singular/plural, participle, hebben/zijn, usual preposition, reflexive) and the forms derived from them (main clause with split particle, simple past, perfect, modal, te + infinitive, dependent clause present/past, imperative).
+- `lib/separableForms.ts` and `components/flashcards/SeparableVerbForms.tsx`: the sentence page of a separable card now shows a forms table for its verb with the particle in bold (inside "Grammar rule & similar examples"). The card→verb mapping is by card id.
+- Tests: `tests/grammar.separable-forms.test.ts` (dictionary and forms agree; rule checks for ge-, te, particle position, auxiliary; every one of the 176 separable cards is matched to a verb whose forms occur in its sentence) and `tests/flashcard-e2e/grammar-separable-forms.spec.ts` (2 scenarios).
+- Docs counts: 765 authored + 120 aliases = 885; separable 176; 68 lemma records.
+
+**Evidence:** tsc and eslint clean; vitest 422 passed; the two new browser scenarios passed after waiting for hydration.
+
+**Open for P3:** forms are AI-authored and not natively checked; no inseparable lookalike contrast yet (verstaan/begrijpen types such as overnemen vs overtuigen); the separable lesson has no visual particle movement; separable cards have no per-sentence analysis and the 24 original ones have no Dutch-first prompt; Verbs in Context (36) and Past & Perfect (20+) are still far below 100; no cross-pattern tests for separable verbs in dependent clauses beyond the forms table.
+
 ## 2026-10-27 — Claude Code review of the P2 branch (before P3)
 
 A seven-finding review of the code changes (not the content) found and fixed: analysed linked cards lost `practiceGuide` from their source breakdown (24 cards; now merged and tested in `tests/grammar.breakdown-merge.test.ts`); `cue` was overwritten by `situationEn` (now only when it equalled the scenario); the finite-verb highlighter was case-sensitive (pat-toen-82 never highlighted; now case-insensitive, with a test that the verb occurs at most once per clause); the repair exercise rebuilt its list on every keystroke and kept a stale index (memoised and keyed on session); `analysisBreakdown` is cached; the generator now rejects a new P2 sentence that repeats an unlinked core sentence. Not fixed: all analysis JSON is imported through `lib/content/cards.ts`, so it is bundled for every consumer (a split into a small situations index is a later optimisation). `vitest.config.ts` now sets `testTimeout: 20000` because heavy tests timed out intermittently at the 5 s default. Pre-existing and left alone: `pat-verbs-02` repeats core card `food-07`. Vitest 417 passed; 11 targeted browser scenarios passed.

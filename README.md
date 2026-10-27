@@ -11,13 +11,13 @@ DutchTap is a **Dutch and French sentence-learning app**, with real-world situat
 | --- | --- | --- |
 | Dutch Core and French | 600 Everyday + 600 Dutch at Work + 600 separate French Everyday cards | Preserve all IDs, assets, progress and independent language state |
 | Existing sessions and games | Fixed-card sessions, Study/Speaking/Quiz, de/het and demonstrative/adjective games | Full migration, offline and account-sync regression testing |
-| Grammar base cards | **741 authored + 120 reviewed source aliases = 861 playable grammar base cards across 13 topics** | Larger meaningful topic coverage, complete review and advanced topics |
+| Grammar base cards | **765 authored + 120 reviewed source aliases = 885 playable grammar base cards across 13 topics** | Larger meaningful topic coverage, complete review and advanced topics |
 | Topic-wide lessons | Five expanded v1.0 guides, the Als, Toen and Wanneer guides at v1.1, three foundational v0.8, two introductory v0.2 | Complete all lessons with accurate, accessible reasons and examples |
 | Individual sentence explanations | Initial grammar notes and limited ALS clause view | Bespoke, validated full structured word-order analysis for all grammar base cards |
-| Dutch-first speaking | **545/741** authored grammar cards include Dutch prompts | Remaining 196 authored and 120 aliases need real Dutch-first scenarios; uncued mixed retrieval |
+| Dutch-first speaking | **569/765** authored grammar cards include Dutch prompts | Remaining 196 authored and 120 aliases need real Dutch-first scenarios; uncued mixed retrieval |
 | Recognised alternatives | 58 new ALS authored cards provide two clause-order models | Explicit semantic validation and alternatives throughout other topics |
 | Extra grammar variations | **100** children across ten ALS parent families | Author and validate meaningful independent children where pedagogically justified |
-| Separable verbs | **52** distinct verb records; **152** practice cards | At least eight additional verified verbs and complete representative form coverage |
+| Separable verbs | **68** distinct verb records with a forms table; **176** practice cards | Independent verification of every form and preposition; dedicated verb dictionary view |
 | Mastery and complete release | Legacy/grammar level records and focused tests | Multi-topic skill tracking, full acceptance A01–A25, content QA, security and release checks |
 
 **Audit and status:** [Grammar Mastery acceptance audit](docs/GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md), [master implementation plan](docs/GRAMMAR-MASTERY-MASTER-PLAN.md), [development work log](docs/GRAMMAR-MASTERY-WORKLOG.md), and [Grammar Patterns guide](docs/GRAMMAR-PATTERNS.md). The master plan's dated `NOT STARTED` heading is the original frozen baseline, **not the live implementation status**. The acceptance audit is the current evidence-based status.

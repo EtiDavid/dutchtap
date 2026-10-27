@@ -1,0 +1,5626 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analysis for Verbs in context: verb forms, modals, hoeven and te, hebben, inseparable verbs, fixed prepositions, reflexive verbs and infinitive groups. Status ai-editorial-checked is not native-speaker review.",
+ "cards": {
+  "pat-verbs-01": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "proberen: present tense",
+    "why": "Proberen is regular; the present form for 'ik' is the bare stem 'probeer'."
+   },
+   "situationNl": "Je zit in een restaurant en kiest iets onbekends van de kaart. Zeg wat je op dit moment doet.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik probeer een nieuw gerecht",
+     "subject": "Ik",
+     "finite": "probeer",
+     "role": "single main clause",
+     "why": "Ik is first, so 'probeer' is second and the object 'een nieuw gerecht' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "probeer"
+    },
+    {
+     "label": "object",
+     "text": "een nieuw gerecht"
+    }
+   ],
+   "meaning": "I am trying a new dish.",
+   "order": "With 'proberen' followed by a noun, the verb means to try something, to taste it. The present covers an action in progress.",
+   "forms": "proberen: ik probeer, jij probeert, wij proberen.",
+   "compare": "English 'I am trying' uses a continuous. Dutch uses the plain present. For this card: \"Ik probeer een nieuw gerecht\".",
+   "mistakes": [
+    {
+     "wrong": "Ik probeert een nieuw gerecht.",
+     "right": "Ik probeer een nieuw gerecht.",
+     "why": "With 'ik' the verb has no ending: 'probeer'."
+    },
+    {
+     "wrong": "Ik probeer nieuw een gerecht.",
+     "right": "Ik probeer een nieuw gerecht.",
+     "why": "The adjective 'nieuw' stands between the article and the noun."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik probeerde een nieuw gerecht.",
+    "english": "I tried a new dish.",
+    "note": "The simple past puts the action in the past."
+   }
+  },
+  "pat-verbs-02": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "proberen: simple past",
+    "why": "Proberen is weak; the stem ends in r, so the past takes -de: probeerde."
+   },
+   "situationNl": "Je vertelt over een etentje van vorige week. Zeg wat je die avond uitkoos, in het verleden.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik probeerde een nieuw gerecht",
+     "subject": "Ik",
+     "finite": "probeerde",
+     "role": "single main clause",
+     "why": "Ik is first, so 'probeerde' is second and the object ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "probeerde"
+    },
+    {
+     "label": "object",
+     "text": "een nieuw gerecht"
+    }
+   ],
+   "meaning": "I tried a new dish.",
+   "order": "The simple past of a weak verb adds -de to the stem 'probeer'. The word order is unchanged. Read it as \"Ik probeerde een nieuw gerecht\".",
+   "forms": "proberen: probeerde, probeerden, geprobeerd.",
+   "compare": "English 'tried' adds -ed. Dutch adds -de. For this card: \"Ik probeerde een nieuw gerecht\".",
+   "mistakes": [
+    {
+     "wrong": "Ik probeerte een nieuw gerecht.",
+     "right": "Ik probeerde een nieuw gerecht.",
+     "why": "After r the ending is -de: 'probeerde'. (not \"Ik probeerte een nieuw gerecht.\", but \"Ik probeerde een nieuw gerecht.\")"
+    },
+    {
+     "wrong": "Ik probeerden een nieuw gerecht.",
+     "right": "Ik probeerde een nieuw gerecht.",
+     "why": "The singular 'ik' needs 'probeerde'. (not \"Ik probeerden een nieuw gerecht.\", but \"Ik probeerde een nieuw gerecht.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb een nieuw gerecht geprobeerd.",
+    "english": "I have tried a new dish.",
+    "note": "The perfect reports the same event. Compare: Ik heb een nieuw gerecht geprobeerd."
+   }
+  },
+  "pat-verbs-03": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "proberen: perfect",
+    "why": "Proberen has no unstressed prefix, so the participle takes ge-; the auxiliary is hebben."
+   },
+   "situationNl": "Het gerecht is al opgegeten en een vriend vraagt wat je ervan vond. Meld dat je het hebt uitgeprobeerd.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb een nieuw gerecht geprobeerd",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the participle 'geprobeerd' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "een nieuw gerecht"
+    },
+    {
+     "label": "past participle",
+     "text": "geprobeerd"
+    }
+   ],
+   "meaning": "I have tried a new dish.",
+   "order": "The perfect wraps the object: auxiliary in slot two, participle at the end. Read it as \"Ik heb een nieuw gerecht geprobeerd\".",
+   "forms": "proberen > geprobeerd (hebben).",
+   "compare": "English 'have tried' keeps the two verbs together. Dutch puts the object between.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb een nieuw gerecht proberen.",
+     "right": "Ik heb een nieuw gerecht geprobeerd.",
+     "why": "The perfect needs the participle 'geprobeerd'. (not \"Ik heb een nieuw gerecht proberen.\", but \"Ik heb een nieuw gerecht geprobeerd.\")"
+    },
+    {
+     "wrong": "Ik ben een nieuw gerecht geprobeerd.",
+     "right": "Ik heb een nieuw gerecht geprobeerd.",
+     "why": "'Proberen' takes hebben. (not \"Ik ben een nieuw gerecht geprobeerd.\", but \"Ik heb een nieuw gerecht geprobeerd.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik probeer een nieuw gerecht.",
+    "english": "I try a new dish.",
+    "note": "The present describes the action now. Compare: Ik probeer een nieuw gerecht."
+   }
+  },
+  "pat-verbs-04": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "overwegen: present tense",
+    "why": "Overwegen is inseparable and strong: the present is the plain stem 'overweeg'."
+   },
+   "situationNl": "Je moet een lastige beslissing nemen. Een collega vraagt waar je mee bezig bent. Zeg dat je alle mogelijkheden afweegt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik overweeg alle opties",
+     "subject": "Ik",
+     "finite": "overweeg",
+     "role": "single main clause",
+     "why": "Ik is first, so 'overweeg' is second and the object 'alle opties' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "overweeg"
+    },
+    {
+     "label": "object",
+     "text": "alle opties"
+    }
+   ],
+   "meaning": "I am considering all options.",
+   "order": "In this meaning 'overwegen' (to consider) is inseparable, so the finite verb never splits: 'overweeg', not 'weeg ... over'.",
+   "forms": "overwegen: ik overweeg, hij overweegt. The stress is on 'we'.",
+   "compare": "English 'consider' has no particle. Dutch 'overwegen' is a single word.",
+   "mistakes": [
+    {
+     "wrong": "Ik weeg alle opties over.",
+     "right": "Ik overweeg alle opties.",
+     "why": "In the meaning 'to consider' the verb is inseparable: 'overweeg'."
+    },
+    {
+     "wrong": "Ik overweeg alle optie.",
+     "right": "Ik overweeg alle opties.",
+     "why": "'Alle' goes with a plural noun: 'alle opties'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik overwoog alle opties.",
+    "english": "I considered all options.",
+    "note": "The simple past puts the thought in the past."
+   }
+  },
+  "pat-verbs-05": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "overwegen: simple past",
+    "why": "Overwegen is strong: the past is 'overwoog'."
+   },
+   "situationNl": "Je vertelt over de keuze van vorige maand. Zeg wat je destijds deed met de mogelijkheden.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik overwoog alle opties",
+     "subject": "Ik",
+     "finite": "overwoog",
+     "role": "single main clause",
+     "why": "Ik is first, so the strong past 'overwoog' is second and the object ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "overwoog"
+    },
+    {
+     "label": "object",
+     "text": "alle opties"
+    }
+   ],
+   "meaning": "I considered all options.",
+   "order": "The stem vowel changes (-weeg- to -woog-). The prefix stays attached. Read it as \"Ik overwoog alle opties\". Its parts: subject Ik, finite verb (simple past) overwoog, object alle opties.",
+   "forms": "overwegen: overwoog, overwogen, overwogen.",
+   "compare": "English 'considered' is regular. Dutch 'overwoog' is strong. For this card: \"Ik overwoog alle opties\".",
+   "mistakes": [
+    {
+     "wrong": "Ik overweegde alle opties.",
+     "right": "Ik overwoog alle opties.",
+     "why": "'Overwegen' is strong: the past is 'overwoog'."
+    },
+    {
+     "wrong": "Ik overwogen alle opties.",
+     "right": "Ik overwoog alle opties.",
+     "why": "The singular 'ik' needs 'overwoog'. (not \"Ik overwogen alle opties.\", but \"Ik overwoog alle opties.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb alle opties overwogen.",
+    "english": "I have considered all options.",
+    "note": "The perfect reports the thought. Compare: Ik heb alle opties overwogen."
+   }
+  },
+  "pat-verbs-06": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "overwegen: perfect",
+    "why": "Overwegen is inseparable: the participle 'overwogen' has no ge-."
+   },
+   "situationNl": "De keuze is gemaakt. Een collega vraagt of je goed hebt nagedacht. Zeg dat je alle mogelijkheden hebt bekeken.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb alle opties overwogen",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the participle 'overwogen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "alle opties"
+    },
+    {
+     "label": "past participle",
+     "text": "overwogen"
+    }
+   ],
+   "meaning": "I have considered all options.",
+   "order": "No ge- is added, because the prefix over- is unstressed in this verb. Read it as \"Ik heb alle opties overwogen\".",
+   "forms": "overwegen > overwogen (hebben).",
+   "compare": "English 'have considered' is two words. Dutch participle has no ge-. For this card: \"Ik heb alle opties overwogen\".",
+   "mistakes": [
+    {
+     "wrong": "Ik heb alle opties geoverwogen.",
+     "right": "Ik heb alle opties overwogen.",
+     "why": "An inseparable verb takes no ge-: 'overwogen'."
+    },
+    {
+     "wrong": "Ik heb alle opties overweeg.",
+     "right": "Ik heb alle opties overwogen.",
+     "why": "The participle is the strong form 'overwogen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik overweeg alle opties.",
+    "english": "I consider all options.",
+    "note": "The present describes the thought now. Compare: Ik overweeg alle opties."
+   }
+  },
+  "pat-verbs-07": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "kopen: present tense",
+    "why": "Kopen is irregular but its present is regular: 'koop'."
+   },
+   "situationNl": "Je staat in een sportwinkel met je oude schoenen in een tas. Zeg wat je nu aanschaft.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik koop nieuwe sneakers",
+     "subject": "Ik",
+     "finite": "koop",
+     "role": "single main clause",
+     "why": "Ik is first, so 'koop' is second and the object 'nieuwe sneakers' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "koop"
+    },
+    {
+     "label": "object",
+     "text": "nieuwe sneakers"
+    }
+   ],
+   "meaning": "I am buying new sneakers.",
+   "order": "The present is the bare stem 'koop' with 'ik'. The adjective 'nieuwe' takes -e before the plural 'sneakers'. Read it as \"Ik koop nieuwe sneakers\".",
+   "forms": "kopen: ik koop, jij koopt, wij kopen.",
+   "compare": "English 'I am buying' uses a continuous. Dutch uses the plain present. For this card: \"Ik koop nieuwe sneakers\".",
+   "mistakes": [
+    {
+     "wrong": "Ik kop nieuwe sneakers.",
+     "right": "Ik koop nieuwe sneakers.",
+     "why": "The stem 'koop' keeps its double o. (not \"Ik kop nieuwe sneakers.\", but \"Ik koop nieuwe sneakers.\")"
+    },
+    {
+     "wrong": "Ik koop nieuw sneakers.",
+     "right": "Ik koop nieuwe sneakers.",
+     "why": "Before a plural the adjective takes -e: 'nieuwe'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kocht nieuwe sneakers.",
+    "english": "I bought new sneakers.",
+    "note": "The simple past 'kocht' narrates the purchase. Compare: Ik kocht nieuwe sneakers."
+   }
+  },
+  "pat-verbs-08": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "kopen: simple past",
+    "why": "Kopen is irregular: the past is 'kocht'."
+   },
+   "situationNl": "Je vertelt een vriend over je weekend. Zeg wat je zaterdag aanschafte voor je voeten.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kocht nieuwe sneakers",
+     "subject": "Ik",
+     "finite": "kocht",
+     "role": "single main clause",
+     "why": "Ik is first, so 'kocht' is second and the object ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "kocht"
+    },
+    {
+     "label": "object",
+     "text": "nieuwe sneakers"
+    }
+   ],
+   "meaning": "I bought new sneakers.",
+   "order": "The past 'kocht' does not follow the regular -te pattern. It must be learned with the participle 'gekocht'. Read it as \"Ik kocht nieuwe sneakers\".",
+   "forms": "kopen: kocht, kochten, gekocht.",
+   "compare": "English 'bought' is irregular too. Dutch uses 'kocht'. For this card: \"Ik kocht nieuwe sneakers\".",
+   "mistakes": [
+    {
+     "wrong": "Ik koopte nieuwe sneakers.",
+     "right": "Ik kocht nieuwe sneakers.",
+     "why": "'Kopen' is irregular: the past is 'kocht'."
+    },
+    {
+     "wrong": "Ik kochten nieuwe sneakers.",
+     "right": "Ik kocht nieuwe sneakers.",
+     "why": "The singular 'ik' needs 'kocht'. (not \"Ik kochten nieuwe sneakers.\", but \"Ik kocht nieuwe sneakers.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb nieuwe sneakers gekocht.",
+    "english": "I have bought new sneakers.",
+    "note": "The perfect reports the purchase. Compare: Ik heb nieuwe sneakers gekocht."
+   }
+  },
+  "pat-verbs-09": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "kopen: perfect",
+    "why": "Kopen takes hebben; the participle 'gekocht' is irregular."
+   },
+   "situationNl": "Een collega ziet je nieuwe schoenen. Meld dat je ze net hebt aangeschaft.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb nieuwe sneakers gekocht",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the participle 'gekocht' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "nieuwe sneakers"
+    },
+    {
+     "label": "past participle",
+     "text": "gekocht"
+    }
+   ],
+   "meaning": "I have bought new sneakers.",
+   "order": "The verb pair wraps the object. The participle 'gekocht' is irregular and ends in -cht. Read it as \"Ik heb nieuwe sneakers gekocht\".",
+   "forms": "kopen > gekocht (hebben).",
+   "compare": "English 'have bought' keeps the verbs together. Dutch wraps the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb nieuwe sneakers gekoopt.",
+     "right": "Ik heb nieuwe sneakers gekocht.",
+     "why": "The participle of 'kopen' is 'gekocht'. (not \"Ik heb nieuwe sneakers gekoopt.\", but \"Ik heb nieuwe sneakers gekocht.\")"
+    },
+    {
+     "wrong": "Ik ben nieuwe sneakers gekocht.",
+     "right": "Ik heb nieuwe sneakers gekocht.",
+     "why": "'Kopen' takes hebben. (not \"Ik ben nieuwe sneakers gekocht.\", but \"Ik heb nieuwe sneakers gekocht.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik koop nieuwe sneakers.",
+    "english": "I buy new sneakers.",
+    "note": "The present describes the action now. Compare: Ik koop nieuwe sneakers."
+   }
+  },
+  "pat-verbs-10": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "kiezen: present tense",
+    "why": "Kiezen is strong; the present is the stem 'kies'."
+   },
+   "situationNl": "Je staat voor de keuze tussen twee studierichtingen. Zeg wat je nu beslist.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kies een opleiding",
+     "subject": "Ik",
+     "finite": "kies",
+     "role": "single main clause",
+     "why": "Ik is first, so 'kies' is second and the object 'een opleiding' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "kies"
+    },
+    {
+     "label": "object",
+     "text": "een opleiding"
+    }
+   ],
+   "meaning": "I am choosing a study programme.",
+   "order": "The present uses the stem 'kies'. The strong past comes later. Read it as \"Ik kies een opleiding\". Its parts: subject Ik, finite verb (present) kies, object een opleiding.",
+   "forms": "kiezen: ik kies, jij kiest, wij kiezen. The z is voiced between vowels and becomes s at the end of the stem.",
+   "compare": "English 'I am choosing' uses a continuous. Dutch uses the plain present.",
+   "mistakes": [
+    {
+     "wrong": "Ik kiest een opleiding.",
+     "right": "Ik kies een opleiding.",
+     "why": "With 'ik' the verb has no ending: 'kies'."
+    },
+    {
+     "wrong": "Ik kies opleiding een.",
+     "right": "Ik kies een opleiding.",
+     "why": "The article stays before its noun: 'een opleiding'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik koos een opleiding.",
+    "english": "I chose a study programme.",
+    "note": "The strong past 'koos' narrates the choice."
+   }
+  },
+  "pat-verbs-100": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + infinitive group",
+    "why": "Komen plus infinitive expresses coming to do something: 'komt eten'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij komt morgen eten",
+     "subject": "Zij",
+     "finite": "komt",
+     "role": "single main clause",
+     "why": "Zij is first, so 'komt' is second; 'morgen' follows and the infinitive 'eten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "komt"
+    },
+    {
+     "label": "time adverb",
+     "text": "morgen"
+    },
+    {
+     "label": "infinitive",
+     "text": "eten"
+    }
+   ],
+   "meaning": "She is coming to eat tomorrow.",
+   "order": "After 'komen' the infinitive has no te. The time word stands before it. Read it as \"Zij komt morgen eten\". Its parts: subject Zij, finite verb (present) komt, time adverb morgen, infinitive eten.",
+   "forms": "komen + infinitive.",
+   "compare": "English 'is coming to eat' uses 'to'. Dutch has none. For this card: \"Zij komt morgen eten\".",
+   "mistakes": [
+    {
+     "wrong": "Zij komt morgen te eten.",
+     "right": "Zij komt morgen eten.",
+     "why": "After 'komen' there is no te. (not \"Zij komt morgen te eten.\", but \"Zij komt morgen eten.\")"
+    },
+    {
+     "wrong": "Zij komt eten morgen.",
+     "right": "Zij komt morgen eten.",
+     "why": "The time word goes before the infinitive."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij eet morgen mee.",
+    "english": "She eats along tomorrow.",
+    "note": "A separable alternative: 'meeeten'. Compare: Zij eet morgen mee."
+   }
+  },
+  "pat-verbs-11": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "kiezen: simple past",
+    "why": "Kiezen is strong: the past is 'koos'."
+   },
+   "situationNl": "Je vertelt over je studiekeuze van vroeger. Zeg welke richting je destijds insloeg.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik koos een opleiding",
+     "subject": "Ik",
+     "finite": "koos",
+     "role": "single main clause",
+     "why": "Ik is first, so the strong past 'koos' is second and the object ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "koos"
+    },
+    {
+     "label": "object",
+     "text": "een opleiding"
+    }
+   ],
+   "meaning": "I chose a study programme.",
+   "order": "The stem vowel changes (ie to oo). The plural is 'kozen'. Read it as \"Ik koos een opleiding\". Its parts: subject Ik, finite verb (simple past) koos, object een opleiding.",
+   "forms": "kiezen: koos, kozen, gekozen.",
+   "compare": "English 'chose' is also strong. Dutch has 'koos' and 'kozen'. For this card: \"Ik koos een opleiding\".",
+   "mistakes": [
+    {
+     "wrong": "Ik kiesde een opleiding.",
+     "right": "Ik koos een opleiding.",
+     "why": "'Kiezen' is strong: the past is 'koos'. (not \"Ik kiesde een opleiding.\", but \"Ik koos een opleiding.\")"
+    },
+    {
+     "wrong": "Ik kozen een opleiding.",
+     "right": "Ik koos een opleiding.",
+     "why": "The singular 'ik' needs 'koos'. (not \"Ik kozen een opleiding.\", but \"Ik koos een opleiding.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb een opleiding gekozen.",
+    "english": "I have chosen a study programme.",
+    "note": "The perfect reports the choice. Compare: Ik heb een opleiding gekozen."
+   }
+  },
+  "pat-verbs-12": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "kiezen: perfect",
+    "why": "Kiezen takes hebben; the participle 'gekozen' is strong."
+   },
+   "situationNl": "De inschrijving is rond. Een vriend vraagt wat je hebt beslist. Meld de uitkomst van je keuze.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb een opleiding gekozen",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the participle 'gekozen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "een opleiding"
+    },
+    {
+     "label": "past participle",
+     "text": "gekozen"
+    }
+   ],
+   "meaning": "I have chosen a study programme.",
+   "order": "The strong participle 'gekozen' keeps the voiced z. The verb pair wraps the object. Read it as \"Ik heb een opleiding gekozen\".",
+   "forms": "kiezen > gekozen (hebben).",
+   "compare": "English 'have chosen' keeps the verbs together. Dutch wraps the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb een opleiding gekiesd.",
+     "right": "Ik heb een opleiding gekozen.",
+     "why": "'Kiezen' is strong: the participle is 'gekozen'."
+    },
+    {
+     "wrong": "Ik ben een opleiding gekozen.",
+     "right": "Ik heb een opleiding gekozen.",
+     "why": "'Kiezen' takes hebben. (not \"Ik ben een opleiding gekozen.\", but \"Ik heb een opleiding gekozen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kies een opleiding.",
+    "english": "I choose a study programme.",
+    "note": "The present describes the choice now. Compare: Ik kies een opleiding."
+   }
+  },
+  "pat-verbs-13": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "leren: present tense",
+    "why": "Leren is regular; the present is the stem 'leer'."
+   },
+   "situationNl": "Je volgt een cursus en een collega vraagt wat je doet. Zeg dat er iets bijkomt in je kennis.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik leer iets nieuws",
+     "subject": "Ik",
+     "finite": "leer",
+     "role": "single main clause",
+     "why": "Ik is first, so 'leer' is second and the object 'iets nieuws' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "leer"
+    },
+    {
+     "label": "object",
+     "text": "iets nieuws"
+    }
+   ],
+   "meaning": "I am learning something new.",
+   "order": "'Iets nieuws' takes -s after 'iets' (something new). The present covers a process in progress. Read it as \"Ik leer iets nieuws\".",
+   "forms": "leren: ik leer, jij leert, wij leren.",
+   "compare": "English 'I am learning' uses a continuous. Dutch uses the plain present.",
+   "mistakes": [
+    {
+     "wrong": "Ik leert iets nieuws.",
+     "right": "Ik leer iets nieuws.",
+     "why": "With 'ik' the verb has no ending: 'leer'."
+    },
+    {
+     "wrong": "Ik leer iets nieuw.",
+     "right": "Ik leer iets nieuws.",
+     "why": "After 'iets' the adjective takes -s: 'nieuws'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik leerde iets nieuws.",
+    "english": "I learned something new.",
+    "note": "The simple past puts the learning in the past."
+   }
+  },
+  "pat-verbs-14": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "leren: simple past",
+    "why": "Leren is weak: stem plus -de. Card: \"Ik leerde iets nieuws\"."
+   },
+   "situationNl": "Je vertelt wat je op een bepaalde dag bijleerde. Gebruik de verleden tijd.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik leerde iets nieuws",
+     "subject": "Ik",
+     "finite": "leerde",
+     "role": "single main clause",
+     "why": "Ik is first, so 'leerde' is second and the object ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "leerde"
+    },
+    {
+     "label": "object",
+     "text": "iets nieuws"
+    }
+   ],
+   "meaning": "I learned something new.",
+   "order": "The stem 'leer' ends in r, so the past adds -de. Read it as \"Ik leerde iets nieuws\". Its parts: subject Ik, finite verb (simple past) leerde, object iets nieuws.",
+   "forms": "leren: leerde, leerden, geleerd.",
+   "compare": "English 'learned' adds -ed. Dutch adds -de. For this card: \"Ik leerde iets nieuws\".",
+   "mistakes": [
+    {
+     "wrong": "Ik leerte iets nieuws.",
+     "right": "Ik leerde iets nieuws.",
+     "why": "After r the ending is -de: 'leerde'. (not \"Ik leerte iets nieuws.\", but \"Ik leerde iets nieuws.\")"
+    },
+    {
+     "wrong": "Ik leerden iets nieuws.",
+     "right": "Ik leerde iets nieuws.",
+     "why": "The singular 'ik' needs 'leerde'. (not \"Ik leerden iets nieuws.\", but \"Ik leerde iets nieuws.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb iets nieuws geleerd.",
+    "english": "I have learned something new.",
+    "note": "The perfect reports the result. Compare: Ik heb iets nieuws geleerd."
+   }
+  },
+  "pat-verbs-15": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "leren: perfect",
+    "why": "Leren takes hebben; the participle 'geleerd' is regular."
+   },
+   "situationNl": "De les is afgelopen. Een vriend vraagt of het nuttig was. Zeg wat je eraan hebt overgehouden.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb iets nieuws geleerd",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the participle 'geleerd' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "iets nieuws"
+    },
+    {
+     "label": "past participle",
+     "text": "geleerd"
+    }
+   ],
+   "meaning": "I have learned something new.",
+   "order": "The participle is ge- + leer + d. The object 'iets nieuws' stands between the auxiliary and the participle. Read it as \"Ik heb iets nieuws geleerd\".",
+   "forms": "leren > geleerd (hebben).",
+   "compare": "English 'have learned' keeps the verbs together. Dutch wraps the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb iets nieuws leren.",
+     "right": "Ik heb iets nieuws geleerd.",
+     "why": "The perfect needs the participle 'geleerd'."
+    },
+    {
+     "wrong": "Ik heb iets nieuws geleert.",
+     "right": "Ik heb iets nieuws geleerd.",
+     "why": "The participle of 'leren' ends in -d: 'geleerd'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik leer iets nieuws.",
+    "english": "I learn something new.",
+    "note": "The present describes the process now. Compare: Ik leer iets nieuws."
+   }
+  },
+  "pat-verbs-16": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "werken: present tense",
+    "why": "Werken is regular; the present is the stem 'werk'."
+   },
+   "situationNl": "Een collega vraagt waar je je werkdag doorbrengt. Zeg dat je niet naar kantoor gaat.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik werk thuis",
+     "subject": "Ik",
+     "finite": "werk",
+     "role": "single main clause",
+     "why": "Ik is first, so 'werk' is second and the adverb 'thuis' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "werk"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    }
+   ],
+   "meaning": "I work from home.",
+   "order": "'Thuis' is an adverb of place and needs no preposition. The present describes a habit or a current situation. Read it as \"Ik werk thuis\".",
+   "forms": "werken: ik werk, jij werkt, wij werken.",
+   "compare": "English 'I work from home' needs 'from'. Dutch says 'thuis'. For this card: \"Ik werk thuis\".",
+   "mistakes": [
+    {
+     "wrong": "Ik werkt thuis.",
+     "right": "Ik werk thuis.",
+     "why": "With 'ik' the verb has no ending: 'werk'."
+    },
+    {
+     "wrong": "Ik werk op thuis.",
+     "right": "Ik werk thuis.",
+     "why": "'Thuis' needs no preposition. (not \"Ik werk op thuis.\", but \"Ik werk thuis.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik werkte thuis.",
+    "english": "I worked from home.",
+    "note": "The simple past puts the habit in the past."
+   }
+  },
+  "pat-verbs-17": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "werken: simple past",
+    "why": "Werken is weak; the stem ends in k, so the past takes -te: werkte."
+   },
+   "situationNl": "Je vertelt over de periode van de verbouwing. Zeg waar je in die tijd je werk deed.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik werkte thuis",
+     "subject": "Ik",
+     "finite": "werkte",
+     "role": "single main clause",
+     "why": "Ik is first, so 'werkte' is second and 'thuis' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "werkte"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    }
+   ],
+   "meaning": "I worked from home.",
+   "order": "The stem 'werk' ends in k, one of the 't kofschip sounds, so the past ending is -te. Read it as \"Ik werkte thuis\".",
+   "forms": "werken: werkte, werkten, gewerkt.",
+   "compare": "English 'worked' adds -ed. Dutch adds -te here. For this card: \"Ik werkte thuis\".",
+   "mistakes": [
+    {
+     "wrong": "Ik werkde thuis.",
+     "right": "Ik werkte thuis.",
+     "why": "After k the ending is -te: 'werkte'. (not \"Ik werkde thuis.\", but \"Ik werkte thuis.\")"
+    },
+    {
+     "wrong": "Ik werkten thuis.",
+     "right": "Ik werkte thuis.",
+     "why": "The singular 'ik' needs 'werkte'. (not \"Ik werkten thuis.\", but \"Ik werkte thuis.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb thuis gewerkt.",
+    "english": "I have worked from home.",
+    "note": "The perfect reports the work. Compare: Ik heb thuis gewerkt."
+   }
+  },
+  "pat-verbs-18": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "werken: perfect",
+    "why": "Werken takes hebben; the participle 'gewerkt' ends in -t after k."
+   },
+   "situationNl": "De dag is voorbij. Een collega vraagt waar je was. Meld waar je je werk hebt gedaan.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb thuis gewerkt",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; 'thuis' follows and the participle 'gewerkt' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "past participle",
+     "text": "gewerkt"
+    }
+   ],
+   "meaning": "I have worked from home.",
+   "order": "The adverb 'thuis' stands between the auxiliary and the participle. Read it as \"Ik heb thuis gewerkt\". Its parts: subject Ik, finite verb (auxiliary) heb, adverb thuis, past participle gewerkt.",
+   "forms": "werken > gewerkt (hebben). Card: \"Ik heb thuis gewerkt\".",
+   "compare": "English 'have worked' keeps the verbs together. Dutch puts 'thuis' between.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb thuis gewerk.",
+     "right": "Ik heb thuis gewerkt.",
+     "why": "The participle of 'werken' ends in -t: 'gewerkt'."
+    },
+    {
+     "wrong": "Ik ben thuis gewerkt.",
+     "right": "Ik heb thuis gewerkt.",
+     "why": "'Werken' takes hebben. (not \"Ik ben thuis gewerkt.\", but \"Ik heb thuis gewerkt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik werk thuis.",
+    "english": "I work from home.",
+    "note": "The present describes the habit now. Compare: Ik werk thuis."
+   }
+  },
+  "pat-verbs-19": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "plannen: present tense",
+    "why": "Plannen is regular; the present is the stem 'plan'."
+   },
+   "situationNl": "Het is winter en je kijkt naar reisgidsen. Zeg wat je nu uitwerkt voor de zomer.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik plan mijn vakantie",
+     "subject": "Ik",
+     "finite": "plan",
+     "role": "single main clause",
+     "why": "Ik is first, so 'plan' is second and the object 'mijn vakantie' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "plan"
+    },
+    {
+     "label": "object",
+     "text": "mijn vakantie"
+    }
+   ],
+   "meaning": "I am planning my holiday.",
+   "order": "The double n of the infinitive becomes a single n in the stem: 'plan'. 'Vakantie' is a de-word: 'mijn vakantie'.",
+   "forms": "plannen: ik plan, jij plant, wij plannen.",
+   "compare": "English 'I am planning' uses a continuous. Dutch uses the plain present.",
+   "mistakes": [
+    {
+     "wrong": "Ik plant mijn vakantie.",
+     "right": "Ik plan mijn vakantie.",
+     "why": "With 'ik' the verb has no ending: 'plan'."
+    },
+    {
+     "wrong": "Ik plan mij vakantie.",
+     "right": "Ik plan mijn vakantie.",
+     "why": "The possessive is 'mijn', not 'mij'. (not \"Ik plan mij vakantie.\", but \"Ik plan mijn vakantie.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik plande mijn vakantie.",
+    "english": "I planned my holiday.",
+    "note": "The simple past puts the planning in the past."
+   }
+  },
+  "pat-verbs-20": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "plannen: simple past",
+    "why": "Plannen is weak; the stem 'plan' ends in n, so the past takes -de: plande."
+   },
+   "situationNl": "Je vertelt wat je vorig jaar in het voorjaar regelde voor de zomer. Gebruik het verleden.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik plande mijn vakantie",
+     "subject": "Ik",
+     "finite": "plande",
+     "role": "single main clause",
+     "why": "Ik is first, so 'plande' is second and the object ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "plande"
+    },
+    {
+     "label": "object",
+     "text": "mijn vakantie"
+    }
+   ],
+   "meaning": "I planned my holiday.",
+   "order": "After n the ending is -de. The past is regular. Read it as \"Ik plande mijn vakantie\". Its parts: subject Ik, finite verb (simple past) plande, object mijn vakantie.",
+   "forms": "plannen: plande, planden, gepland.",
+   "compare": "English 'planned' doubles the n. Dutch adds -de. For this card: \"Ik plande mijn vakantie\".",
+   "mistakes": [
+    {
+     "wrong": "Ik plante mijn vakantie.",
+     "right": "Ik plande mijn vakantie.",
+     "why": "After n the ending is -de: 'plande'. (not \"Ik plante mijn vakantie.\", but \"Ik plande mijn vakantie.\")"
+    },
+    {
+     "wrong": "Ik planden mijn vakantie.",
+     "right": "Ik plande mijn vakantie.",
+     "why": "The singular 'ik' needs 'plande'. (not \"Ik planden mijn vakantie.\", but \"Ik plande mijn vakantie.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb mijn vakantie gepland.",
+    "english": "I have planned my holiday.",
+    "note": "The perfect reports the result. Compare: Ik heb mijn vakantie gepland."
+   }
+  },
+  "pat-verbs-21": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "plannen: perfect",
+    "why": "Plannen takes hebben; the participle 'gepland' ends in -d."
+   },
+   "situationNl": "De boekingen zijn rond. Een collega vraagt of je al weet waar je heen gaat. Meld dat het geregeld is.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb mijn vakantie gepland",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the participle 'gepland' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "mijn vakantie"
+    },
+    {
+     "label": "past participle",
+     "text": "gepland"
+    }
+   ],
+   "meaning": "I have planned my holiday.",
+   "order": "The participle is ge- + plan + d. The verb pair wraps the object. Read it as \"Ik heb mijn vakantie gepland\". Its parts: subject Ik, finite verb (auxiliary) heb, object mijn vakantie, past participle gepland.",
+   "forms": "plannen > gepland (hebben).",
+   "compare": "English 'have planned' keeps the verbs together. Dutch wraps the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb mijn vakantie plannen.",
+     "right": "Ik heb mijn vakantie gepland.",
+     "why": "The perfect needs the participle 'gepland'."
+    },
+    {
+     "wrong": "Ik heb mijn vakantie geplant.",
+     "right": "Ik heb mijn vakantie gepland.",
+     "why": "The participle of 'plannen' ends in -d: 'gepland'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik plan mijn vakantie.",
+    "english": "I plan my holiday.",
+    "note": "The present describes the planning now. Compare: Ik plan mijn vakantie."
+   }
+  },
+  "pat-verbs-22": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "koken: present tense",
+    "why": "Koken is regular; the present is the stem 'kook'."
+   },
+   "situationNl": "Je hebt vanavond gasten. Zeg wat je voor hen aan het doen bent.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kook voor mijn vrienden",
+     "subject": "Ik",
+     "finite": "kook",
+     "role": "single main clause",
+     "why": "Ik is first, so 'kook' is second and the phrase 'voor mijn vrienden' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "kook"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "voor mijn vrienden"
+    }
+   ],
+   "meaning": "I am cooking for my friends.",
+   "order": "The beneficiary is added with 'voor'. The stem keeps its double o. Read it as \"Ik kook voor mijn vrienden\". Its parts: subject Ik, finite verb (present) kook, prepositional phrase voor mijn vrienden.",
+   "forms": "koken: ik kook, jij kookt, wij koken.",
+   "compare": "English 'I cook for my friends' is the same. Dutch needs no auxiliary. For this card: \"Ik kook voor mijn vrienden\".",
+   "mistakes": [
+    {
+     "wrong": "Ik kooks voor mijn vrienden.",
+     "right": "Ik kook voor mijn vrienden.",
+     "why": "With 'ik' the verb is the bare stem 'kook'."
+    },
+    {
+     "wrong": "Ik kook aan mijn vrienden.",
+     "right": "Ik kook voor mijn vrienden.",
+     "why": "The beneficiary takes 'voor'. (not \"Ik kook aan mijn vrienden.\", but \"Ik kook voor mijn vrienden.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kookte voor mijn vrienden.",
+    "english": "I cooked for my friends.",
+    "note": "The simple past puts it in the past. Compare: Ik kookte voor mijn vrienden."
+   }
+  },
+  "pat-verbs-23": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "koken: simple past",
+    "why": "Koken is weak; the stem ends in k, so the past takes -te: kookte."
+   },
+   "situationNl": "Je vertelt over je verjaardagsfeest van vorige zaterdag. Zeg wat je voor je gasten deed.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kookte voor mijn vrienden",
+     "subject": "Ik",
+     "finite": "kookte",
+     "role": "single main clause",
+     "why": "Ik is first, so 'kookte' is second and the phrase ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "kookte"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "voor mijn vrienden"
+    }
+   ],
+   "meaning": "I cooked for my friends.",
+   "order": "The stem 'kook' ends in k, a 't kofschip sound, so the past adds -te. Read it as \"Ik kookte voor mijn vrienden\".",
+   "forms": "koken: kookte, kookten, gekookt.",
+   "compare": "English 'cooked' adds -ed. Dutch adds -te here. For this card: \"Ik kookte voor mijn vrienden\".",
+   "mistakes": [
+    {
+     "wrong": "Ik kookde voor mijn vrienden.",
+     "right": "Ik kookte voor mijn vrienden.",
+     "why": "After k the ending is -te: 'kookte'. (not \"Ik kookde voor mijn vrienden.\", but \"Ik kookte voor mijn vrienden.\")"
+    },
+    {
+     "wrong": "Ik kookten voor mijn vrienden.",
+     "right": "Ik kookte voor mijn vrienden.",
+     "why": "The singular 'ik' needs 'kookte'. (not \"Ik kookten voor mijn vrienden.\", but \"Ik kookte voor mijn vrienden.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb voor mijn vrienden gekookt.",
+    "english": "I have cooked for my friends.",
+    "note": "The perfect reports the meal. Compare: Ik heb voor mijn vrienden gekookt."
+   }
+  },
+  "pat-verbs-24": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "koken: perfect",
+    "why": "Koken takes hebben; the participle 'gekookt' ends in -t."
+   },
+   "situationNl": "De gasten zijn weg. Een buurman vraagt wat je die avond deed. Meld wat je voor hen hebt klaargemaakt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb voor mijn vrienden gekookt",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the phrase follows and the participle 'gekookt' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "voor mijn vrienden"
+    },
+    {
+     "label": "past participle",
+     "text": "gekookt"
+    }
+   ],
+   "meaning": "I have cooked for my friends.",
+   "order": "Without an object, the phrase 'voor mijn vrienden' stands between the auxiliary and the participle. Read it as \"Ik heb voor mijn vrienden gekookt\".",
+   "forms": "koken > gekookt (hebben).",
+   "compare": "English 'have cooked' keeps the verbs together. Dutch puts the phrase between.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb voor mijn vrienden koken.",
+     "right": "Ik heb voor mijn vrienden gekookt.",
+     "why": "The perfect needs the participle 'gekookt'."
+    },
+    {
+     "wrong": "Ik heb gekookt voor mijn vrienden.",
+     "right": "Ik heb voor mijn vrienden gekookt.",
+     "why": "The phrase 'voor mijn vrienden' goes before the participle here."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kook voor mijn vrienden.",
+    "english": "I cook for my friends.",
+    "note": "The present describes the action now. Compare: Ik kook voor mijn vrienden."
+   }
+  },
+  "pat-verbs-25": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "roepen: present tense",
+    "why": "Roepen is strong; the present is the stem 'roep'."
+   },
+   "situationNl": "Er is iemand onwel geworden in de kamer. Zeg wat je meteen doet om hulp te halen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik roep de dokter",
+     "subject": "Ik",
+     "finite": "roep",
+     "role": "single main clause",
+     "why": "Ik is first, so 'roep' is second and the object 'de dokter' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "roep"
+    },
+    {
+     "label": "object",
+     "text": "de dokter"
+    }
+   ],
+   "meaning": "I am calling the doctor.",
+   "order": "'Roepen' here means to call a person to come. The present is the bare stem with 'ik'. Read it as \"Ik roep de dokter\".",
+   "forms": "roepen: ik roep, jij roept, wij roepen.",
+   "compare": "English 'I call the doctor' can also mean to phone. Dutch 'roepen' means to call out for someone.",
+   "mistakes": [
+    {
+     "wrong": "Ik roept de dokter.",
+     "right": "Ik roep de dokter.",
+     "why": "With 'ik' the verb has no ending: 'roep'."
+    },
+    {
+     "wrong": "Ik roep dokter de.",
+     "right": "Ik roep de dokter.",
+     "why": "The article stays before its noun. (not \"Ik roep dokter de.\", but \"Ik roep de dokter.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik riep de dokter.",
+    "english": "I called the doctor.",
+    "note": "The strong past 'riep' narrates it. Compare: Ik riep de dokter."
+   }
+  },
+  "pat-verbs-26": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "roepen: simple past",
+    "why": "Roepen is strong: the past is 'riep'."
+   },
+   "situationNl": "Je vertelt over een noodgeval van vorige week. Zeg wat je deed om een arts erbij te krijgen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik riep de dokter",
+     "subject": "Ik",
+     "finite": "riep",
+     "role": "single main clause",
+     "why": "Ik is first, so the strong past 'riep' is second and the object ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "riep"
+    },
+    {
+     "label": "object",
+     "text": "de dokter"
+    }
+   ],
+   "meaning": "I called the doctor.",
+   "order": "The stem vowel changes (oe to ie). The plural is 'riepen'. Read it as \"Ik riep de dokter\". Its parts: subject Ik, finite verb (simple past) riep, object de dokter.",
+   "forms": "roepen: riep, riepen, geroepen.",
+   "compare": "English 'called' is regular. Dutch 'riep' is strong. For this card: \"Ik riep de dokter\".",
+   "mistakes": [
+    {
+     "wrong": "Ik roepte de dokter.",
+     "right": "Ik riep de dokter.",
+     "why": "'Roepen' is strong: the past is 'riep'. (not \"Ik roepte de dokter.\", but \"Ik riep de dokter.\")"
+    },
+    {
+     "wrong": "Ik riepen de dokter.",
+     "right": "Ik riep de dokter.",
+     "why": "The singular 'ik' needs 'riep'. (not \"Ik riepen de dokter.\", but \"Ik riep de dokter.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb de dokter geroepen.",
+    "english": "I have called the doctor.",
+    "note": "The perfect reports the call. Compare: Ik heb de dokter geroepen."
+   }
+  },
+  "pat-verbs-27": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "roepen: perfect",
+    "why": "Roepen takes hebben; the participle 'geroepen' is strong."
+   },
+   "situationNl": "De huisarts is onderweg. Een buur vraagt wat je hebt gedaan. Meld dat je hem hebt laten komen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb de dokter geroepen",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the participle 'geroepen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "de dokter"
+    },
+    {
+     "label": "past participle",
+     "text": "geroepen"
+    }
+   ],
+   "meaning": "I have called the doctor.",
+   "order": "The strong participle 'geroepen' keeps the stem vowel of the infinitive. Read it as \"Ik heb de dokter geroepen\".",
+   "forms": "roepen > geroepen (hebben).",
+   "compare": "English 'have called' keeps the verbs together. Dutch wraps the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb de dokter geroept.",
+     "right": "Ik heb de dokter geroepen.",
+     "why": "'Roepen' is strong: the participle is 'geroepen'."
+    },
+    {
+     "wrong": "Ik ben de dokter geroepen.",
+     "right": "Ik heb de dokter geroepen.",
+     "why": "'Roepen' takes hebben. (not \"Ik ben de dokter geroepen.\", but \"Ik heb de dokter geroepen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik roep de dokter.",
+    "english": "I call the doctor.",
+    "note": "The present describes the call now. Compare: Ik roep de dokter."
+   }
+  },
+  "pat-verbs-28": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "zitten: present tense",
+    "why": "Zitten is strong; the present is the stem 'zit'."
+   },
+   "situationNl": "Je komt thuis na een lange dag. Een huisgenoot belt en vraagt waar je bent. Zeg waar je op dit moment rust.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik zit op de bank",
+     "subject": "Ik",
+     "finite": "zit",
+     "role": "single main clause",
+     "why": "Ik is first, so 'zit' is second and the place phrase 'op de bank' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "zit"
+    },
+    {
+     "label": "place phrase",
+     "text": "op de bank"
+    }
+   ],
+   "meaning": "I am sitting on the sofa.",
+   "order": "Dutch uses 'zitten' for sitting and for being in a seat. The place takes 'op'. Read it as \"Ik zit op de bank\". Its parts: subject Ik, finite verb (present) zit, place phrase op de bank.",
+   "forms": "zitten: ik zit, jij zit, wij zitten. With 'jij' after the verb it is 'zit jij'.",
+   "compare": "English 'I am sitting' uses a continuous. Dutch uses the plain present.",
+   "mistakes": [
+    {
+     "wrong": "Ik zitt op de bank.",
+     "right": "Ik zit op de bank.",
+     "why": "The stem is 'zit', with a single t. (not \"Ik zitt op de bank.\", but \"Ik zit op de bank.\")"
+    },
+    {
+     "wrong": "Ik zit in de bank.",
+     "right": "Ik zit op de bank.",
+     "why": "The sofa takes 'op': 'op de bank'. (not \"Ik zit in de bank.\", but \"Ik zit op de bank.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik zat op de bank.",
+    "english": "I was sitting on the sofa.",
+    "note": "The strong past 'zat' narrates the scene."
+   }
+  },
+  "pat-verbs-29": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "zitten: simple past",
+    "why": "Zitten is strong: the past is 'zat'."
+   },
+   "situationNl": "Een huisgenoot vraagt waar je gisteravond was. Zeg waar je de hele avond plaatsnam.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik zat op de bank",
+     "subject": "Ik",
+     "finite": "zat",
+     "role": "single main clause",
+     "why": "Ik is first, so the strong past 'zat' is second and the place phrase ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "zat"
+    },
+    {
+     "label": "place phrase",
+     "text": "op de bank"
+    }
+   ],
+   "meaning": "I was sitting on the sofa.",
+   "order": "The stem vowel changes (i to a). The plural is 'zaten'. Read it as \"Ik zat op de bank\". Its parts: subject Ik, finite verb (simple past) zat, place phrase op de bank.",
+   "forms": "zitten: zat, zaten, gezeten.",
+   "compare": "English 'sat' is also strong. Dutch has 'zat' and 'zaten'. For this card: \"Ik zat op de bank\".",
+   "mistakes": [
+    {
+     "wrong": "Ik zitte op de bank.",
+     "right": "Ik zat op de bank.",
+     "why": "'Zitten' is strong: the past is 'zat'. (not \"Ik zitte op de bank.\", but \"Ik zat op de bank.\")"
+    },
+    {
+     "wrong": "Ik zaten op de bank.",
+     "right": "Ik zat op de bank.",
+     "why": "The singular 'ik' needs 'zat'. (not \"Ik zaten op de bank.\", but \"Ik zat op de bank.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb op de bank gezeten.",
+    "english": "I have sat on the sofa.",
+    "note": "The perfect reports the sitting. Compare: Ik heb op de bank gezeten."
+   }
+  },
+  "pat-verbs-30": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "zitten: perfect",
+    "why": "Zitten takes hebben in standard Dutch (zijn is also heard in Flanders); the participle is 'gezeten'."
+   },
+   "situationNl": "Je staat op na een lange rust. Een huisgenoot vraagt waar je was. Meld waar je hebt gelegen of gezeten, in de voltooide tijd.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb op de bank gezeten",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the place phrase follows and the participle 'gezeten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "place phrase",
+     "text": "op de bank"
+    },
+    {
+     "label": "past participle",
+     "text": "gezeten"
+    }
+   ],
+   "meaning": "I have sat on the sofa.",
+   "order": "The place phrase stands between the auxiliary and the participle. In Flemish usage the perfect may also be 'ben gezeten'.",
+   "forms": "zitten > gezeten (hebben; zijn in Flemish usage).",
+   "compare": "English 'have sat' keeps the verbs together. Dutch puts the place between.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb op de bank zitten.",
+     "right": "Ik heb op de bank gezeten.",
+     "why": "The perfect needs the participle 'gezeten'. (not \"Ik heb op de bank zitten.\", but \"Ik heb op de bank gezeten.\")"
+    },
+    {
+     "wrong": "Ik heb op de bank gezit.",
+     "right": "Ik heb op de bank gezeten.",
+     "why": "'Zitten' is strong: the participle is 'gezeten'. (not \"Ik heb op de bank gezit.\", but \"Ik heb op de bank gezeten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik zit op de bank.",
+    "english": "I sit on the sofa.",
+    "note": "The present describes the position now. Compare: Ik zit op de bank."
+   }
+  },
+  "pat-verbs-31": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verkopen: present tense",
+    "why": "Verkopen is inseparable; the present is the stem 'verkoop'."
+   },
+   "situationNl": "Je auto staat al weken te koop. Een kennis vraagt wat je ermee doet. Zeg aan wie je hem afstaat.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik verkoop mijn auto aan Zoë",
+     "subject": "Ik",
+     "finite": "verkoop",
+     "role": "single main clause",
+     "why": "Ik is first, so 'verkoop' is second; the object and the recipient phrase follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "verkoop"
+    },
+    {
+     "label": "object",
+     "text": "mijn auto"
+    },
+    {
+     "label": "recipient",
+     "text": "aan Zoë"
+    }
+   ],
+   "meaning": "I am selling my car to Zoë.",
+   "order": "The buyer is added with 'aan'. The prefix ver- is unstressed, so the verb never splits. Read it as \"Ik verkoop mijn auto aan Zoë\".",
+   "forms": "verkopen: ik verkoop, jij verkoopt, wij verkopen.",
+   "compare": "English 'I am selling my car to Zoë' puts 'to' before the buyer. Dutch uses 'aan'.",
+   "mistakes": [
+    {
+     "wrong": "Ik koop mijn auto aan Zoë ver.",
+     "right": "Ik verkoop mijn auto aan Zoë.",
+     "why": "'Verkopen' is inseparable; it never splits."
+    },
+    {
+     "wrong": "Ik verkoop mijn auto bij Zoë.",
+     "right": "Ik verkoop mijn auto aan Zoë.",
+     "why": "The buyer takes 'aan': 'aan Zoë'. (not \"Ik verkoop mijn auto bij Zoë.\", but \"Ik verkoop mijn auto aan Zoë.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik verkocht mijn auto aan Zoë.",
+    "english": "I sold my car to Zoë.",
+    "note": "The simple past narrates the sale. Compare: Ik verkocht mijn auto aan Zoë."
+   }
+  },
+  "pat-verbs-32": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verkopen: simple past",
+    "why": "Verkopen is irregular: the past is 'verkocht'."
+   },
+   "situationNl": "Je vertelt wat er vorige maand met je oude wagen gebeurde. Zeg aan wie je hem kwijt raakte.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik verkocht mijn auto aan Zoë",
+     "subject": "Ik",
+     "finite": "verkocht",
+     "role": "single main clause",
+     "why": "Ik is first, so 'verkocht' is second; the object and the recipient phrase follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "verkocht"
+    },
+    {
+     "label": "object",
+     "text": "mijn auto"
+    },
+    {
+     "label": "recipient",
+     "text": "aan Zoë"
+    }
+   ],
+   "meaning": "I sold my car to Zoë.",
+   "order": "The past 'verkocht' is irregular and equals the participle in form. Read it as \"Ik verkocht mijn auto aan Zoë\".",
+   "forms": "verkopen: verkocht, verkochten, verkocht.",
+   "compare": "English 'sold' is irregular. Dutch 'verkocht' is too. For this card: \"Ik verkocht mijn auto aan Zoë\".",
+   "mistakes": [
+    {
+     "wrong": "Ik verkoopte mijn auto aan Zoë.",
+     "right": "Ik verkocht mijn auto aan Zoë.",
+     "why": "'Verkopen' is irregular: the past is 'verkocht'."
+    },
+    {
+     "wrong": "Ik verkochten mijn auto aan Zoë.",
+     "right": "Ik verkocht mijn auto aan Zoë.",
+     "why": "The singular 'ik' needs 'verkocht'. (not \"Ik verkochten mijn auto aan Zoë.\", but \"Ik verkocht mijn auto aan Zoë.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb mijn auto aan Zoë verkocht.",
+    "english": "I have sold my car to Zoë.",
+    "note": "The perfect reports the sale. Compare: Ik heb mijn auto aan Zoë verkocht."
+   }
+  },
+  "pat-verbs-33": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verkopen: perfect",
+    "why": "Verkopen is inseparable, so the participle 'verkocht' has no ge-; the auxiliary is hebben."
+   },
+   "situationNl": "De auto is weg. Een kennis vraagt waar hij is. Meld dat Zoë hem nu heeft.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb mijn auto aan Zoë verkocht",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object and the recipient follow and the participle 'verkocht' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "mijn auto"
+    },
+    {
+     "label": "recipient",
+     "text": "aan Zoë"
+    },
+    {
+     "label": "past participle",
+     "text": "verkocht"
+    }
+   ],
+   "meaning": "I have sold my car to Zoë.",
+   "order": "No ge- is added after ver-. The verb pair wraps the object and the recipient. Read it as \"Ik heb mijn auto aan Zoë verkocht\".",
+   "forms": "verkopen > verkocht (hebben). Card: \"Ik heb mijn auto aan Zoë verkocht\".",
+   "compare": "English 'have sold' keeps the verbs together. Dutch wraps the object and the buyer.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb mijn auto aan Zoë geverkocht.",
+     "right": "Ik heb mijn auto aan Zoë verkocht.",
+     "why": "An inseparable verb takes no ge-: 'verkocht'."
+    },
+    {
+     "wrong": "Ik heb mijn auto verkocht aan Zoë.",
+     "right": "Ik heb mijn auto aan Zoë verkocht.",
+     "why": "The recipient phrase goes before the participle in this card."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik verkoop mijn auto aan Zoë.",
+    "english": "I sell my car to Zoë.",
+    "note": "The present describes the sale now. Compare: Ik verkoop mijn auto aan Zoë."
+   }
+  },
+  "pat-verbs-34": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "begrijpen: present tense",
+    "why": "Begrijpen is inseparable and strong; the present is the stem 'begrijp'."
+   },
+   "situationNl": "Een docent stelt een vraag en kijkt je aan. Zeg dat de strekking je duidelijk is.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik begrijp de vraag",
+     "subject": "Ik",
+     "finite": "begrijp",
+     "role": "single main clause",
+     "why": "Ik is first, so 'begrijp' is second and the object 'de vraag' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "begrijp"
+    },
+    {
+     "label": "object",
+     "text": "de vraag"
+    }
+   ],
+   "meaning": "I understand the question.",
+   "order": "The prefix be- is unstressed, so the verb never splits. The present is the bare stem with 'ik'. Read it as \"Ik begrijp de vraag\".",
+   "forms": "begrijpen: ik begrijp, jij begrijpt, wij begrijpen.",
+   "compare": "English 'I understand' is the same in shape. Dutch needs no auxiliary. For this card: \"Ik begrijp de vraag\".",
+   "mistakes": [
+    {
+     "wrong": "Ik begrijpt de vraag.",
+     "right": "Ik begrijp de vraag.",
+     "why": "With 'ik' the verb has no ending: 'begrijp'."
+    },
+    {
+     "wrong": "Ik begrijp het vraag.",
+     "right": "Ik begrijp de vraag.",
+     "why": "'Vraag' is a de-word: 'de vraag'. (not \"Ik begrijp het vraag.\", but \"Ik begrijp de vraag.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik begreep de vraag.",
+    "english": "I understood the question.",
+    "note": "The strong past 'begreep' narrates it. Compare: Ik begreep de vraag."
+   }
+  },
+  "pat-verbs-35": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "begrijpen: simple past",
+    "why": "Begrijpen is strong: the past is 'begreep'."
+   },
+   "situationNl": "Je vertelt over de toets van gisteren. Zeg wat je van de eerste opgave kon vatten.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik begreep de vraag",
+     "subject": "Ik",
+     "finite": "begreep",
+     "role": "single main clause",
+     "why": "Ik is first, so the strong past 'begreep' is second and the object ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (simple past)",
+     "text": "begreep"
+    },
+    {
+     "label": "object",
+     "text": "de vraag"
+    }
+   ],
+   "meaning": "I understood the question.",
+   "order": "The stem vowel changes (ij to ee). The plural is 'begrepen'. Read it as \"Ik begreep de vraag\". Its parts: subject Ik, finite verb (simple past) begreep, object de vraag.",
+   "forms": "begrijpen: begreep, begrepen, begrepen.",
+   "compare": "English 'understood' is regular-looking. Dutch 'begreep' is strong. For this card: \"Ik begreep de vraag\".",
+   "mistakes": [
+    {
+     "wrong": "Ik begrijpte de vraag.",
+     "right": "Ik begreep de vraag.",
+     "why": "'Begrijpen' is strong: the past is 'begreep'."
+    },
+    {
+     "wrong": "Ik begrepen de vraag.",
+     "right": "Ik begreep de vraag.",
+     "why": "The singular 'ik' needs 'begreep'. (not \"Ik begrepen de vraag.\", but \"Ik begreep de vraag.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb de vraag begrepen.",
+    "english": "I have understood the question.",
+    "note": "The perfect reports the understanding. Compare: Ik heb de vraag begrepen."
+   }
+  },
+  "pat-verbs-36": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "begrijpen: perfect",
+    "why": "Begrijpen is inseparable, so the participle 'begrepen' has no ge-."
+   },
+   "situationNl": "Het antwoord was juist. Een docent vraagt of je de opgave goed doorzag. Meld dat het duidelijk voor je was.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb de vraag begrepen",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the participle 'begrepen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "de vraag"
+    },
+    {
+     "label": "past participle",
+     "text": "begrepen"
+    }
+   ],
+   "meaning": "I have understood the question.",
+   "order": "No ge- is added after be-. The verb pair wraps the object. Read it as \"Ik heb de vraag begrepen\". Its parts: subject Ik, finite verb (auxiliary) heb, object de vraag, past participle begrepen.",
+   "forms": "begrijpen > begrepen (hebben).",
+   "compare": "English 'have understood' keeps the verbs together. Dutch wraps the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb de vraag gebegrepen.",
+     "right": "Ik heb de vraag begrepen.",
+     "why": "An inseparable verb takes no ge-: 'begrepen'."
+    },
+    {
+     "wrong": "Ik heb de vraag begrijpt.",
+     "right": "Ik heb de vraag begrepen.",
+     "why": "'Begrijpen' is strong: the participle is 'begrepen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik begrijp de vraag.",
+    "english": "I understand the question.",
+    "note": "The present describes the understanding now."
+   }
+  },
+  "pat-verbs-37": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Kunnen expresses ability; the infinitive 'zwemmen' goes to the end without te."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kan goed zwemmen",
+     "subject": "Ik",
+     "finite": "kan",
+     "role": "single main clause",
+     "why": "Ik is first, so the modal 'kan' is second; 'goed' follows and the infinitive 'zwemmen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "kan"
+    },
+    {
+     "label": "adverb",
+     "text": "goed"
+    },
+    {
+     "label": "infinitive",
+     "text": "zwemmen"
+    }
+   ],
+   "meaning": "I can swim well.",
+   "order": "The modal holds slot two and the main verb waits at the end as a bare infinitive. 'Goed' (well) stands between them.",
+   "forms": "kunnen: ik kan, jij kunt (kun je), wij kunnen. The infinitive after a modal has no te.",
+   "compare": "English 'I can swim well' keeps the same order. Dutch also, with the infinitive at the end.",
+   "mistakes": [
+    {
+     "wrong": "Ik kan goed te zwemmen.",
+     "right": "Ik kan goed zwemmen.",
+     "why": "After a modal there is no te. (not \"Ik kan goed te zwemmen.\", but \"Ik kan goed zwemmen.\")"
+    },
+    {
+     "wrong": "Ik kan zwemmen goed.",
+     "right": "Ik kan goed zwemmen.",
+     "why": "The adverb 'goed' goes before the infinitive."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik zwem goed.",
+    "english": "I swim well.",
+    "note": "Without the modal the verb is finite and in slot two."
+   }
+  },
+  "pat-verbs-38": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Mogen asks for permission; in a question the modal stands first."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Mag ik hier zitten",
+     "subject": "ik",
+     "finite": "Mag",
+     "role": "single main clause",
+     "why": "The modal 'Mag' opens the yes/no question, then 'ik' and 'hier', and the infinitive 'zitten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal, present)",
+     "text": "Mag"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "infinitive",
+     "text": "zitten"
+    }
+   ],
+   "meaning": "May I sit here?",
+   "order": "A yes/no question starts with the finite verb. The infinitive stays at the end, after 'hier'. Read it as \"Mag ik hier zitten\".",
+   "forms": "mogen: ik mag, jij mag, wij mogen.",
+   "compare": "English 'May I sit here?' has the same order. Dutch also. For this card: \"Mag ik hier zitten\".",
+   "mistakes": [
+    {
+     "wrong": "Ik mag hier zitten?",
+     "right": "Mag ik hier zitten?",
+     "why": "A genuine question starts with the verb: 'Mag ik'."
+    },
+    {
+     "wrong": "Mag ik zitten hier?",
+     "right": "Mag ik hier zitten?",
+     "why": "The adverb 'hier' goes before the infinitive."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik mag hier zitten.",
+    "english": "I may sit here.",
+    "note": "The statement puts the subject first. Compare: Ik mag hier zitten."
+   }
+  },
+  "pat-verbs-39": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Willen expresses a wish or plan; the infinitive 'vertrekken' goes to the end."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij willen morgen vertrekken",
+     "subject": "Wij",
+     "finite": "willen",
+     "role": "single main clause",
+     "why": "Wij is first, so the plural modal 'willen' is second; 'morgen' follows and the infinitive 'vertrekken' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "willen"
+    },
+    {
+     "label": "time adverb",
+     "text": "morgen"
+    },
+    {
+     "label": "infinitive",
+     "text": "vertrekken"
+    }
+   ],
+   "meaning": "We want to leave tomorrow.",
+   "order": "The plural 'wij' needs the plural 'willen'. The time word stands between the modal and the infinitive. Read it as \"Wij willen morgen vertrekken\".",
+   "forms": "willen: ik wil, jij wilt (wil je), wij willen.",
+   "compare": "English 'We want to leave' needs 'to'. Dutch uses the bare infinitive. For this card: \"Wij willen morgen vertrekken\".",
+   "mistakes": [
+    {
+     "wrong": "Wij willen morgen te vertrekken.",
+     "right": "Wij willen morgen vertrekken.",
+     "why": "After a modal there is no te. (not \"Wij willen morgen te vertrekken.\", but \"Wij willen morgen vertrekken.\")"
+    },
+    {
+     "wrong": "Wij wil morgen vertrekken.",
+     "right": "Wij willen morgen vertrekken.",
+     "why": "The plural subject needs 'willen'. (not \"Wij wil morgen vertrekken.\", but \"Wij willen morgen vertrekken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij vertrekken morgen.",
+    "english": "We leave tomorrow.",
+    "note": "Without the modal the verb is finite. Compare: Wij vertrekken morgen."
+   }
+  },
+  "pat-verbs-40": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Moeten expresses obligation; 'laten zien' is a fixed pair at the end."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je moet je paspoort laten zien",
+     "subject": "Je",
+     "finite": "moet",
+     "role": "single main clause",
+     "why": "Je is first, so the modal 'moet' is second; the object follows and the infinitives 'laten zien' end the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "moet"
+    },
+    {
+     "label": "object",
+     "text": "je paspoort"
+    },
+    {
+     "label": "infinitive",
+     "text": "laten"
+    },
+    {
+     "label": "infinitive",
+     "text": "zien"
+    }
+   ],
+   "meaning": "You have to show your passport.",
+   "order": "Two infinitives close the clause: 'laten zien' means to show. The weak pronoun 'je' appears twice: once as subject and once as possessive.",
+   "forms": "moeten: ik moet, jij moet, wij moeten.",
+   "compare": "English 'You have to show your passport' needs 'have to'. Dutch uses the modal.",
+   "mistakes": [
+    {
+     "wrong": "Je moet je paspoort zien laten.",
+     "right": "Je moet je paspoort laten zien.",
+     "why": "The order is 'laten zien', not 'zien laten'."
+    },
+    {
+     "wrong": "Je moet je paspoort te laten zien.",
+     "right": "Je moet je paspoort laten zien.",
+     "why": "After a modal there is no te. (not \"Je moet je paspoort te laten zien.\", but \"Je moet je paspoort laten zien.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je laat je paspoort zien.",
+    "english": "You show your passport.",
+    "note": "Without the modal the pair splits: 'laat ... zien'."
+   }
+  },
+  "pat-verbs-41": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Zullen marks the future or a prediction; the infinitive 'komen' ends the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij zal morgen komen",
+     "subject": "Zij",
+     "finite": "zal",
+     "role": "single main clause",
+     "why": "Zij is first, so the modal 'zal' is second; 'morgen' follows and the infinitive 'komen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "zal"
+    },
+    {
+     "label": "time adverb",
+     "text": "morgen"
+    },
+    {
+     "label": "infinitive",
+     "text": "komen"
+    }
+   ],
+   "meaning": "She will come tomorrow.",
+   "order": "'Zullen' expresses an expectation. The present tense of 'komen' with 'morgen' would also work in speech. Read it as \"Zij zal morgen komen\".",
+   "forms": "zullen: ik zal, jij zult (zal je), wij zullen.",
+   "compare": "English 'will come' uses 'will'. Dutch uses 'zal'. For this card: \"Zij zal morgen komen\".",
+   "mistakes": [
+    {
+     "wrong": "Zij zal morgen te komen.",
+     "right": "Zij zal morgen komen.",
+     "why": "After a modal there is no te. (not \"Zij zal morgen te komen.\", but \"Zij zal morgen komen.\")"
+    },
+    {
+     "wrong": "Zij zullen morgen komen.",
+     "right": "Zij zal morgen komen.",
+     "why": "The singular 'zij' needs 'zal'. (not \"Zij zullen morgen komen.\", but \"Zij zal morgen komen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij komt morgen.",
+    "english": "She comes tomorrow.",
+    "note": "The present also expresses a near future."
+   }
+  },
+  "pat-verbs-42": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Kunnen with niet: the negation stands before the infinitive."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij kan niet komen",
+     "subject": "Hij",
+     "finite": "kan",
+     "role": "single main clause",
+     "why": "Hij is first, so the modal 'kan' is second; 'niet' follows and the infinitive 'komen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "kan"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "infinitive",
+     "text": "komen"
+    }
+   ],
+   "meaning": "He cannot come.",
+   "order": "The negation 'niet' stands directly before the infinitive. The modal carries the finite position. Read it as \"Hij kan niet komen\".",
+   "forms": "kunnen: hij kan.",
+   "compare": "English 'cannot come' is one word 'cannot'. Dutch writes 'kan niet'. For this card: \"Hij kan niet komen\".",
+   "mistakes": [
+    {
+     "wrong": "Hij kan komen niet.",
+     "right": "Hij kan niet komen.",
+     "why": "'Niet' goes before the infinitive. (not \"Hij kan komen niet.\", but \"Hij kan niet komen.\")"
+    },
+    {
+     "wrong": "Hij kunt niet komen.",
+     "right": "Hij kan niet komen.",
+     "why": "With 'hij' the verb is 'kan', not 'kunt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij komt niet.",
+    "english": "He does not come.",
+    "note": "Without the modal the verb is finite. Compare: Hij komt niet."
+   }
+  },
+  "pat-verbs-43": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Willen with an object: the object stands before the infinitive."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wil een nieuwe telefoon kopen",
+     "subject": "Ik",
+     "finite": "wil",
+     "role": "single main clause",
+     "why": "Ik is first, so the modal 'wil' is second; the object follows and the infinitive 'kopen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "wil"
+    },
+    {
+     "label": "object",
+     "text": "een nieuwe telefoon"
+    },
+    {
+     "label": "infinitive",
+     "text": "kopen"
+    }
+   ],
+   "meaning": "I want to buy a new phone.",
+   "order": "The object sits between the modal and the infinitive. 'Nieuwe' takes -e because 'telefoon' is a de-word. Read it as \"Ik wil een nieuwe telefoon kopen\".",
+   "forms": "willen: ik wil.",
+   "compare": "English 'I want to buy a new phone' puts the object after the verb. Dutch puts it before.",
+   "mistakes": [
+    {
+     "wrong": "Ik wil kopen een nieuwe telefoon.",
+     "right": "Ik wil een nieuwe telefoon kopen.",
+     "why": "The object goes before the infinitive. (not \"Ik wil kopen een nieuwe telefoon.\", but \"Ik wil een nieuwe telefoon kopen.\")"
+    },
+    {
+     "wrong": "Ik wil een nieuw telefoon kopen.",
+     "right": "Ik wil een nieuwe telefoon kopen.",
+     "why": "'Telefoon' is a de-word, so the adjective takes -e."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik koop een nieuwe telefoon.",
+    "english": "I buy a new phone.",
+    "note": "Without the modal the verb is finite. Compare: Ik koop een nieuwe telefoon."
+   }
+  },
+  "pat-verbs-44": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Mogen with niet expresses a prohibition; formal 'u' takes 'mag'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "U mag hier niet roken",
+     "subject": "U",
+     "finite": "mag",
+     "role": "single main clause",
+     "why": "'U' is first, so the modal 'mag' is second; 'hier niet' follows and the infinitive 'roken' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject (formal)",
+     "text": "U"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "mag"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "infinitive",
+     "text": "roken"
+    }
+   ],
+   "meaning": "You may not smoke here.",
+   "order": "'Mogen' with 'niet' forbids. The negation stands before the infinitive. Read it as \"U mag hier niet roken\". Its parts: subject (formal) U, finite verb (modal, present) mag, adverb hier, negation niet.",
+   "forms": "mogen: u mag.",
+   "compare": "English 'You may not smoke here' is the same. Dutch also. For this card: \"U mag hier niet roken\".",
+   "mistakes": [
+    {
+     "wrong": "U mag hier roken niet.",
+     "right": "U mag hier niet roken.",
+     "why": "'Niet' goes before the infinitive. (not \"U mag hier roken niet.\", but \"U mag hier niet roken.\")"
+    },
+    {
+     "wrong": "U mogen hier niet roken.",
+     "right": "U mag hier niet roken.",
+     "why": "The formal 'u' takes 'mag'. (not \"U mogen hier niet roken.\", but \"U mag hier niet roken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "U moet hier niet roken.",
+    "english": "You should not smoke here.",
+    "note": "With 'moeten' the sentence advises and is weaker than a ban."
+   }
+  },
+  "pat-verbs-45": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Moeten with 'nog' and a time word; the infinitive 'betalen' ends the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We moeten vandaag nog betalen",
+     "subject": "We",
+     "finite": "moeten",
+     "role": "single main clause",
+     "why": "We is first, so the plural modal 'moeten' is second; 'vandaag nog' follows and the infinitive 'betalen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "moeten"
+    },
+    {
+     "label": "time adverb",
+     "text": "vandaag"
+    },
+    {
+     "label": "adverb",
+     "text": "nog"
+    },
+    {
+     "label": "infinitive",
+     "text": "betalen"
+    }
+   ],
+   "meaning": "We still have to pay today.",
+   "order": "'Vandaag nog' (today still) marks a deadline. Both words stand between the modal and the infinitive. Read it as \"We moeten vandaag nog betalen\".",
+   "forms": "moeten: wij moeten.",
+   "compare": "English 'We still have to pay today' uses 'have to'. Dutch uses the modal.",
+   "mistakes": [
+    {
+     "wrong": "We moeten betalen vandaag nog.",
+     "right": "We moeten vandaag nog betalen.",
+     "why": "The adverbs go before the infinitive. (not \"We moeten betalen vandaag nog.\", but \"We moeten vandaag nog betalen.\")"
+    },
+    {
+     "wrong": "We moet vandaag nog betalen.",
+     "right": "We moeten vandaag nog betalen.",
+     "why": "The plural 'we' needs 'moeten'. (not \"We moet vandaag nog betalen.\", but \"We moeten vandaag nog betalen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We betalen vandaag nog.",
+    "english": "We still pay today.",
+    "note": "Without the modal the verb is finite. Compare: We betalen vandaag nog."
+   }
+  },
+  "pat-verbs-46": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "In a question with 'je' after the verb, 'kunt' loses the -t."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Kun je mij helpen",
+     "subject": "je",
+     "finite": "Kun",
+     "role": "single main clause",
+     "why": "The modal 'Kun' opens the question, then 'je' and 'mij', and the infinitive 'helpen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal, present)",
+     "text": "Kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "mij"
+    },
+    {
+     "label": "infinitive",
+     "text": "helpen"
+    }
+   ],
+   "meaning": "Can you help me?",
+   "order": "'Kunnen' with 'je' after the verb is 'kun je'. The object stands before the infinitive. Read it as \"Kun je mij helpen\".",
+   "forms": "kunnen: jij kunt, but 'kun je' in a question.",
+   "compare": "English 'Can you help me?' has the same order. Dutch also. For this card: \"Kun je mij helpen\".",
+   "mistakes": [
+    {
+     "wrong": "Kunt je mij helpen?",
+     "right": "Kun je mij helpen?",
+     "why": "With 'je' after the verb the -t falls away: 'kun je'."
+    },
+    {
+     "wrong": "Kun je helpen mij?",
+     "right": "Kun je mij helpen?",
+     "why": "The object goes before the infinitive. (not \"Kun je helpen mij?\", but \"Kun je mij helpen?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je kunt mij helpen.",
+    "english": "You can help me.",
+    "note": "The statement keeps the -t. Compare: Je kunt mij helpen."
+   }
+  },
+  "pat-verbs-47": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "'Zou graag willen' is a polite wish; the infinitive 'willen' ends the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik zou graag een koffie willen",
+     "subject": "Ik",
+     "finite": "zou",
+     "role": "single main clause",
+     "why": "Ik is first, so 'zou' is second; 'graag' and the object follow and the infinitive 'willen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (conditional)",
+     "text": "zou"
+    },
+    {
+     "label": "adverb",
+     "text": "graag"
+    },
+    {
+     "label": "object",
+     "text": "een koffie"
+    },
+    {
+     "label": "infinitive",
+     "text": "willen"
+    }
+   ],
+   "meaning": "I would like a coffee.",
+   "order": "'Zou' plus 'graag' plus 'willen' is the polite ordering formula. The object stands before 'willen'. Read it as \"Ik zou graag een koffie willen\".",
+   "forms": "zullen > zou (conditional), willen.",
+   "compare": "English 'I would like a coffee' is shorter. Dutch builds it from 'zou ... willen'.",
+   "mistakes": [
+    {
+     "wrong": "Ik zou graag willen een koffie.",
+     "right": "Ik zou graag een koffie willen.",
+     "why": "The object goes before the infinitive. (not \"Ik zou graag willen een koffie.\", but \"Ik zou graag een koffie willen.\")"
+    },
+    {
+     "wrong": "Ik wil graag een koffie willen.",
+     "right": "Ik zou graag een koffie willen.",
+     "why": "The polite form needs 'zou': 'zou ... willen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik wil graag een koffie.",
+    "english": "I would like a coffee.",
+    "note": "The shorter form is also polite. Compare: Ik wil graag een koffie."
+   }
+  },
+  "pat-verbs-48": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Mogen with niet and an adverb phrase; 'niet te laat' stands before the infinitive."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij mag niet te laat zijn",
+     "subject": "Zij",
+     "finite": "mag",
+     "role": "single main clause",
+     "why": "Zij is first, so the modal 'mag' is second; 'niet te laat' follows and the infinitive 'zijn' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "mag"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "te laat"
+    },
+    {
+     "label": "infinitive",
+     "text": "zijn"
+    }
+   ],
+   "meaning": "She must not be late.",
+   "order": "The phrase 'te laat' (too late) is a predicate, and 'niet' stands in front of it. Read it as \"Zij mag niet te laat zijn\".",
+   "forms": "mogen: zij mag.",
+   "compare": "English 'She must not be late' uses 'must'. Dutch uses 'mag niet'. For this card: \"Zij mag niet te laat zijn\".",
+   "mistakes": [
+    {
+     "wrong": "Zij mag zijn niet te laat.",
+     "right": "Zij mag niet te laat zijn.",
+     "why": "'Niet te laat' stands before the infinitive 'zijn'."
+    },
+    {
+     "wrong": "Zij mogen niet te laat zijn.",
+     "right": "Zij mag niet te laat zijn.",
+     "why": "The singular 'zij' needs 'mag'. (not \"Zij mogen niet te laat zijn.\", but \"Zij mag niet te laat zijn.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij is niet te laat.",
+    "english": "She is not too late.",
+    "note": "Without the modal the sentence states a fact."
+   }
+  },
+  "pat-verbs-49": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Moeten with niet gives advice here; the predicate 'bang' stands before 'zijn'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je moet niet bang zijn",
+     "subject": "Je",
+     "finite": "moet",
+     "role": "single main clause",
+     "why": "Je is first, so the modal 'moet' is second; 'niet bang' follows and the infinitive 'zijn' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "moet"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "predicate",
+     "text": "bang"
+    },
+    {
+     "label": "infinitive",
+     "text": "zijn"
+    }
+   ],
+   "meaning": "You must not be afraid.",
+   "order": "'Moeten niet' here advises against being afraid. The predicate 'bang' is part of the infinitive group. Read it as \"Je moet niet bang zijn\".",
+   "forms": "moeten: je moet.",
+   "compare": "English 'You must not be afraid' is similar. Dutch uses 'moet niet'. For this card: \"Je moet niet bang zijn\".",
+   "mistakes": [
+    {
+     "wrong": "Je moet zijn niet bang.",
+     "right": "Je moet niet bang zijn.",
+     "why": "The predicate group 'niet bang' stands before 'zijn'."
+    },
+    {
+     "wrong": "Je moeten niet bang zijn.",
+     "right": "Je moet niet bang zijn.",
+     "why": "With 'je' the modal is 'moet'. (not \"Je moeten niet bang zijn.\", but \"Je moet niet bang zijn.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je hoeft niet bang te zijn.",
+    "english": "You do not need to be afraid.",
+    "note": "With 'hoeven' it is a reassurance and needs te."
+   }
+  },
+  "pat-verbs-50": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "modal verb + infinitive",
+    "why": "Kunnen offers a possibility; the object 'de afspraak' stands before 'verplaatsen'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij kunnen de afspraak verplaatsen",
+     "subject": "Wij",
+     "finite": "kunnen",
+     "role": "single main clause",
+     "why": "Wij is first, so the plural modal 'kunnen' is second; the object follows and the infinitive 'verplaatsen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (modal, present)",
+     "text": "kunnen"
+    },
+    {
+     "label": "object",
+     "text": "de afspraak"
+    },
+    {
+     "label": "infinitive",
+     "text": "verplaatsen"
+    }
+   ],
+   "meaning": "We can move the appointment.",
+   "order": "The inseparable infinitive 'verplaatsen' stays whole at the end. The object stands before it. Read it as \"Wij kunnen de afspraak verplaatsen\".",
+   "forms": "kunnen: wij kunnen.",
+   "compare": "English 'We can move the appointment' has the same order. Dutch also. For this card: \"Wij kunnen de afspraak verplaatsen\".",
+   "mistakes": [
+    {
+     "wrong": "Wij kunnen verplaatsen de afspraak.",
+     "right": "Wij kunnen de afspraak verplaatsen.",
+     "why": "The object goes before the infinitive. (not \"Wij kunnen verplaatsen de afspraak.\", but \"Wij kunnen de afspraak verplaatsen.\")"
+    },
+    {
+     "wrong": "Wij kan de afspraak verplaatsen.",
+     "right": "Wij kunnen de afspraak verplaatsen.",
+     "why": "The plural 'wij' needs 'kunnen'. (not \"Wij kan de afspraak verplaatsen.\", but \"Wij kunnen de afspraak verplaatsen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij verplaatsen de afspraak.",
+    "english": "We move the appointment.",
+    "note": "Without the modal the verb is finite. Compare: Wij verplaatsen de afspraak."
+   }
+  },
+  "pat-verbs-51": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hoeven: not having to",
+    "why": "Hoeven needs niet and te: 'hoef niet te werken'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik hoef morgen niet te werken",
+     "subject": "Ik",
+     "finite": "hoef",
+     "role": "single main clause",
+     "why": "Ik is first, so 'hoef' is second; 'morgen niet' follows and the te-infinitive 'te werken' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "hoef"
+    },
+    {
+     "label": "time adverb",
+     "text": "morgen"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te werken"
+    }
+   ],
+   "meaning": "I do not have to work tomorrow.",
+   "order": "'Hoeven' means not to have to, and it normally comes with 'niet' (or 'geen') and 'te'. 'Moeten' has no te, and 'niet moeten' means something else: must not.",
+   "forms": "hoeven: ik hoef, jij hoeft, wij hoeven. The infinitive needs te.",
+   "compare": "English 'I do not have to work' has no te. Dutch needs 'hoeven niet te'.",
+   "mistakes": [
+    {
+     "wrong": "Ik hoef morgen niet werken.",
+     "right": "Ik hoef morgen niet te werken.",
+     "why": "After 'hoeven' the infinitive needs te: 'te werken'."
+    },
+    {
+     "wrong": "Ik moet morgen niet werken.",
+     "right": "Ik hoef morgen niet te werken.",
+     "why": "'Moeten niet' means must not; for 'do not have to' use 'hoeven niet te'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik moet morgen werken.",
+    "english": "I have to work tomorrow.",
+    "note": "'Moeten' states an obligation and needs no te."
+   }
+  },
+  "pat-verbs-52": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hoeven: not having to",
+    "why": "Hoeven with an object: the object 'het' stands before niet te betalen."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je hoeft het niet te betalen",
+     "subject": "Je",
+     "finite": "hoeft",
+     "role": "single main clause",
+     "why": "Je is first, so 'hoeft' is second; the object follows, then 'niet' and the te-infinitive 'te betalen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "hoeft"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te betalen"
+    }
+   ],
+   "meaning": "You do not have to pay for it.",
+   "order": "A pronoun object stands before 'niet'. The te-infinitive group ends the clause. Read it as \"Je hoeft het niet te betalen\".",
+   "forms": "hoeven: jij hoeft.",
+   "compare": "English 'You do not have to pay for it' has no te. Dutch needs 'te betalen'.",
+   "mistakes": [
+    {
+     "wrong": "Je hoeft het niet betalen.",
+     "right": "Je hoeft het niet te betalen.",
+     "why": "After 'hoeven' the infinitive needs te: 'te betalen'."
+    },
+    {
+     "wrong": "Je hoeft niet het te betalen.",
+     "right": "Je hoeft het niet te betalen.",
+     "why": "A pronoun object goes before 'niet'. (not \"Je hoeft niet het te betalen.\", but \"Je hoeft het niet te betalen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je moet het betalen.",
+    "english": "You have to pay for it.",
+    "note": "'Moeten' states an obligation without te."
+   }
+  },
+  "pat-verbs-53": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hoeven: not having to",
+    "why": "Hoeven with a predicate: 'niet bang te zijn'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je hoeft niet bang te zijn",
+     "subject": "Je",
+     "finite": "hoeft",
+     "role": "single main clause",
+     "why": "Je is first, so 'hoeft' is second; 'niet bang' follows and the te-infinitive 'te zijn' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "hoeft"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "predicate",
+     "text": "bang"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te zijn"
+    }
+   ],
+   "meaning": "You do not need to be afraid.",
+   "order": "The predicate 'bang' stands before 'te zijn'. The sentence reassures: there is no need. Read it as \"Je hoeft niet bang te zijn\".",
+   "forms": "hoeven: je hoeft.",
+   "compare": "English 'You do not need to be afraid' is the same idea. Dutch needs te.",
+   "mistakes": [
+    {
+     "wrong": "Je hoeft niet bang zijn.",
+     "right": "Je hoeft niet bang te zijn.",
+     "why": "After 'hoeven' the infinitive needs te: 'te zijn'."
+    },
+    {
+     "wrong": "Je hoeft bang niet te zijn.",
+     "right": "Je hoeft niet bang te zijn.",
+     "why": "'Niet' goes before the predicate 'bang'. (not \"Je hoeft bang niet te zijn.\", but \"Je hoeft niet bang te zijn.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je moet niet bang zijn.",
+    "english": "You must not be afraid.",
+    "note": "'Moeten niet' advises against it and has no te."
+   }
+  },
+  "pat-verbs-54": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hoeven: not having to",
+    "why": "Hoeven with 'niets': the object 'niets' replaces niet."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij hoeft niets te doen",
+     "subject": "Hij",
+     "finite": "hoeft",
+     "role": "single main clause",
+     "why": "Hij is first, so 'hoeft' is second; the object 'niets' follows and the te-infinitive 'te doen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "hoeft"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te doen"
+    }
+   ],
+   "meaning": "He does not have to do anything.",
+   "order": "'Niets' carries the negation, so no 'niet' is needed. The te-infinitive group stays at the end. Read it as \"Hij hoeft niets te doen\".",
+   "forms": "hoeven: hij hoeft.",
+   "compare": "English 'He does not have to do anything' needs a double word. Dutch uses 'niets'.",
+   "mistakes": [
+    {
+     "wrong": "Hij hoeft niets doen.",
+     "right": "Hij hoeft niets te doen.",
+     "why": "After 'hoeven' the infinitive needs te: 'te doen'."
+    },
+    {
+     "wrong": "Hij hoeft niet niets te doen.",
+     "right": "Hij hoeft niets te doen.",
+     "why": "'Niets' is already negative; do not add 'niet'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij moet iets doen.",
+    "english": "He has to do something.",
+    "note": "'Moeten' states an obligation without te. Compare: Hij moet iets doen."
+   }
+  },
+  "pat-verbs-55": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hoeven: not having to",
+    "why": "Hoeven with a plural subject: 'hoeven niet lang te wachten'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij hoeven niet lang te wachten",
+     "subject": "Wij",
+     "finite": "hoeven",
+     "role": "single main clause",
+     "why": "Wij is first, so the plural 'hoeven' is second; 'niet lang' follows and the te-infinitive 'te wachten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "hoeven"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "adverb",
+     "text": "lang"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te wachten"
+    }
+   ],
+   "meaning": "We do not have to wait long.",
+   "order": "The plural 'wij' needs 'hoeven'. 'Niet lang' (not long) stands before the te-infinitive. Read it as \"Wij hoeven niet lang te wachten\".",
+   "forms": "hoeven: wij hoeven.",
+   "compare": "English 'We do not have to wait long' has no te. Dutch needs 'te wachten'.",
+   "mistakes": [
+    {
+     "wrong": "Wij hoeven niet lang wachten.",
+     "right": "Wij hoeven niet lang te wachten.",
+     "why": "After 'hoeven' the infinitive needs te: 'te wachten'."
+    },
+    {
+     "wrong": "Wij hoeft niet lang te wachten.",
+     "right": "Wij hoeven niet lang te wachten.",
+     "why": "The plural 'wij' needs 'hoeven'. (not \"Wij hoeft niet lang te wachten.\", but \"Wij hoeven niet lang te wachten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij moeten lang wachten.",
+    "english": "We have to wait a long time.",
+    "note": "'Moeten' states an obligation without te. Compare: Wij moeten lang wachten."
+   }
+  },
+  "pat-verbs-56": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hoeven: not having to",
+    "why": "Hoeven with a noun object needs no infinitive: 'geen nieuwe telefoon'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik hoef geen nieuwe telefoon",
+     "subject": "Ik",
+     "finite": "hoef",
+     "role": "single main clause",
+     "why": "Ik is first, so 'hoef' is second and the object 'geen nieuwe telefoon' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "hoef"
+    },
+    {
+     "label": "object",
+     "text": "geen nieuwe telefoon"
+    }
+   ],
+   "meaning": "I do not need a new phone.",
+   "order": "With a noun, 'hoeven' means not to need it. No infinitive and no te are needed, and the noun takes 'geen'. Read it as \"Ik hoef geen nieuwe telefoon\".",
+   "forms": "hoeven: ik hoef.",
+   "compare": "English 'I do not need a new phone' uses 'need'. Dutch uses 'hoef geen'.",
+   "mistakes": [
+    {
+     "wrong": "Ik hoef niet een nieuwe telefoon.",
+     "right": "Ik hoef geen nieuwe telefoon.",
+     "why": "A noun without article takes 'geen', not 'niet een'."
+    },
+    {
+     "wrong": "Ik hoeft geen nieuwe telefoon.",
+     "right": "Ik hoef geen nieuwe telefoon.",
+     "why": "With 'ik' the verb is 'hoef'. (not \"Ik hoeft geen nieuwe telefoon.\", but \"Ik hoef geen nieuwe telefoon.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik wil een nieuwe telefoon kopen.",
+    "english": "I want to buy a new phone.",
+    "note": "The opposite wish uses 'willen'. Compare: Ik wil een nieuwe telefoon kopen."
+   }
+  },
+  "pat-verbs-57": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "Proberen takes te: the group 'te slapen' ends the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik probeer vroeg te slapen",
+     "subject": "Ik",
+     "finite": "probeer",
+     "role": "single main clause",
+     "why": "Ik is first, so 'probeer' is second; 'vroeg' follows and the te-infinitive 'te slapen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "probeer"
+    },
+    {
+     "label": "adverb",
+     "text": "vroeg"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te slapen"
+    }
+   ],
+   "meaning": "I try to sleep early.",
+   "order": "Verbs like 'proberen' take a te-infinitive. The adverb 'vroeg' stands before the group. Read it as \"Ik probeer vroeg te slapen\".",
+   "forms": "proberen te + infinitive.",
+   "compare": "English 'I try to sleep early' also has 'to'. Dutch has 'te'. For this card: \"Ik probeer vroeg te slapen\".",
+   "mistakes": [
+    {
+     "wrong": "Ik probeer vroeg slapen.",
+     "right": "Ik probeer vroeg te slapen.",
+     "why": "After 'proberen' the infinitive needs te. (not \"Ik probeer vroeg slapen.\", but \"Ik probeer vroeg te slapen.\")"
+    },
+    {
+     "wrong": "Ik probeer te vroeg slapen.",
+     "right": "Ik probeer vroeg te slapen.",
+     "why": "'Te vroeg' would mean too early; the group is 'vroeg te slapen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik wil vroeg slapen.",
+    "english": "I want to sleep early.",
+    "note": "After a modal there is no te. Compare: Ik wil vroeg slapen."
+   }
+  },
+  "pat-verbs-58": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "Durven takes te; with niet the group is 'niet te vragen'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij durft niet te vragen",
+     "subject": "Zij",
+     "finite": "durft",
+     "role": "single main clause",
+     "why": "Zij is first, so 'durft' is second; 'niet' follows and the te-infinitive 'te vragen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "durft"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te vragen"
+    }
+   ],
+   "meaning": "She does not dare to ask.",
+   "order": "The negation stands before the te-infinitive group. 'Durven' needs te, unlike a modal. Read it as \"Zij durft niet te vragen\".",
+   "forms": "durven te + infinitive.",
+   "compare": "English 'dares not ask' has no te. Dutch needs it. For this card: \"Zij durft niet te vragen\".",
+   "mistakes": [
+    {
+     "wrong": "Zij durft niet vragen.",
+     "right": "Zij durft niet te vragen.",
+     "why": "After 'durven' the infinitive needs te. (not \"Zij durft niet vragen.\", but \"Zij durft niet te vragen.\")"
+    },
+    {
+     "wrong": "Zij durft te niet vragen.",
+     "right": "Zij durft niet te vragen.",
+     "why": "'Niet' stands before 'te vragen'. (not \"Zij durft te niet vragen.\", but \"Zij durft niet te vragen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij vraagt niet.",
+    "english": "She does not ask.",
+    "note": "Without 'durven' the verb is finite. Compare: Zij vraagt niet."
+   }
+  },
+  "pat-verbs-59": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "Hopen takes te; the time word stands before the group."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik hoop morgen te beginnen",
+     "subject": "Ik",
+     "finite": "hoop",
+     "role": "single main clause",
+     "why": "Ik is first, so 'hoop' is second; 'morgen' follows and the te-infinitive 'te beginnen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "hoop"
+    },
+    {
+     "label": "time adverb",
+     "text": "morgen"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te beginnen"
+    }
+   ],
+   "meaning": "I hope to start tomorrow.",
+   "order": "'Hopen' takes a te-infinitive. The time word stands before it. Read it as \"Ik hoop morgen te beginnen\". Its parts: subject Ik, finite verb (present) hoop, time adverb morgen, te + infinitive te beginnen.",
+   "forms": "hopen te + infinitive.",
+   "compare": "English 'I hope to start' also has 'to'. Dutch has 'te'. For this card: \"Ik hoop morgen te beginnen\".",
+   "mistakes": [
+    {
+     "wrong": "Ik hoop morgen beginnen.",
+     "right": "Ik hoop morgen te beginnen.",
+     "why": "After 'hopen' the infinitive needs te. (not \"Ik hoop morgen beginnen.\", but \"Ik hoop morgen te beginnen.\")"
+    },
+    {
+     "wrong": "Ik hoop te morgen beginnen.",
+     "right": "Ik hoop morgen te beginnen.",
+     "why": "'Morgen' stands before 'te beginnen'. (not \"Ik hoop te morgen beginnen.\", but \"Ik hoop morgen te beginnen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik hoop dat ik morgen begin.",
+    "english": "I hope that I start tomorrow.",
+    "note": "A dependent clause is an alternative. Compare: Ik hoop dat ik morgen begin."
+   }
+  },
+  "pat-verbs-60": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "Besluiten takes te; the plural subject needs 'besluiten'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We besluiten morgen te vertrekken",
+     "subject": "We",
+     "finite": "besluiten",
+     "role": "single main clause",
+     "why": "We is first, so the plural 'besluiten' is second; 'morgen' follows and the te-infinitive 'te vertrekken' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "besluiten"
+    },
+    {
+     "label": "time adverb",
+     "text": "morgen"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te vertrekken"
+    }
+   ],
+   "meaning": "We decide to leave tomorrow.",
+   "order": "'Besluiten' takes a te-infinitive. The present with 'morgen' reports a decision about the future. Read it as \"We besluiten morgen te vertrekken\".",
+   "forms": "besluiten te + infinitive.",
+   "compare": "English 'We decide to leave tomorrow' also has 'to'. Dutch has 'te'. For this card: \"We besluiten morgen te vertrekken\".",
+   "mistakes": [
+    {
+     "wrong": "We besluiten morgen vertrekken.",
+     "right": "We besluiten morgen te vertrekken.",
+     "why": "After 'besluiten' the infinitive needs te. (not \"We besluiten morgen vertrekken.\", but \"We besluiten morgen te vertrekken.\")"
+    },
+    {
+     "wrong": "We besluit morgen te vertrekken.",
+     "right": "We besluiten morgen te vertrekken.",
+     "why": "The plural 'we' needs 'besluiten'. (not \"We besluit morgen te vertrekken.\", but \"We besluiten morgen te vertrekken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We vertrekken morgen.",
+    "english": "We leave tomorrow.",
+    "note": "Without 'besluiten' the verb is finite. Compare: We vertrekken morgen."
+   }
+  },
+  "pat-verbs-61": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "'Om te' plus infinitive explains why there is no time: 'om te koken'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb geen tijd om te koken",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object 'geen tijd' follows and the group 'om te koken' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "geen tijd"
+    },
+    {
+     "label": "purpose group",
+     "text": "om te koken"
+    }
+   ],
+   "meaning": "I have no time to cook.",
+   "order": "After a noun like 'tijd', the group 'om te' + infinitive tells what the time is for. Read it as \"Ik heb geen tijd om te koken\".",
+   "forms": "tijd hebben om te + infinitive.",
+   "compare": "English 'no time to cook' also uses 'to'. Dutch uses 'om te'. For this card: \"Ik heb geen tijd om te koken\".",
+   "mistakes": [
+    {
+     "wrong": "Ik heb geen tijd koken.",
+     "right": "Ik heb geen tijd om te koken.",
+     "why": "The group 'om te koken' is needed. (not \"Ik heb geen tijd koken.\", but \"Ik heb geen tijd om te koken.\")"
+    },
+    {
+     "wrong": "Ik heb niet tijd om te koken.",
+     "right": "Ik heb geen tijd om te koken.",
+     "why": "A noun without article is negated with 'geen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kook niet.",
+    "english": "I do not cook.",
+    "note": "Without 'geen tijd' the sentence is a plain statement."
+   }
+  },
+  "pat-verbs-62": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "Weigeren takes te; the group 'te betalen' ends the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij weigert te betalen",
+     "subject": "Hij",
+     "finite": "weigert",
+     "role": "single main clause",
+     "why": "Hij is first, so 'weigert' is second and the te-infinitive 'te betalen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "weigert"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te betalen"
+    }
+   ],
+   "meaning": "He refuses to pay.",
+   "order": "'Weigeren' (to refuse) takes a te-infinitive, with no object here. Read it as \"Hij weigert te betalen\". Its parts: subject Hij, finite verb (present) weigert, te + infinitive te betalen.",
+   "forms": "weigeren te + infinitive.",
+   "compare": "English 'refuses to pay' also has 'to'. Dutch has 'te'. For this card: \"Hij weigert te betalen\".",
+   "mistakes": [
+    {
+     "wrong": "Hij weigert betalen.",
+     "right": "Hij weigert te betalen.",
+     "why": "After 'weigeren' the infinitive needs te."
+    },
+    {
+     "wrong": "Hij weigert te betaalt.",
+     "right": "Hij weigert te betalen.",
+     "why": "The infinitive after te is 'betalen'. (not \"Hij weigert te betaalt.\", but \"Hij weigert te betalen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij betaalt niet.",
+    "english": "He does not pay.",
+    "note": "Without 'weigeren' the verb is finite. Compare: Hij betaalt niet."
+   }
+  },
+  "pat-verbs-63": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "Proberen with a negated adverb phrase: 'niet te laat te komen' stays together."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik probeer niet te laat te komen",
+     "subject": "Ik",
+     "finite": "probeer",
+     "role": "single main clause",
+     "why": "Ik is first, so 'probeer' is second; the group 'niet te laat te komen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "probeer"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "degree adverb",
+     "text": "te"
+    },
+    {
+     "label": "adverb",
+     "text": "laat"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te komen"
+    }
+   ],
+   "meaning": "I try not to be late.",
+   "order": "The first 'te' is the adverb of degree (too) in 'te laat'; the second 'te' belongs to the infinitive. The group stays together.",
+   "forms": "proberen te + infinitive; 'te laat' = too late.",
+   "compare": "English 'try not to be late' has one 'to'. Dutch has two different words te.",
+   "mistakes": [
+    {
+     "wrong": "Ik probeer niet te laat komen.",
+     "right": "Ik probeer niet te laat te komen.",
+     "why": "After 'proberen' the infinitive needs te: 'te komen'."
+    },
+    {
+     "wrong": "Ik probeer te niet laat te komen.",
+     "right": "Ik probeer niet te laat te komen.",
+     "why": "The negation stands before 'te laat'. (not \"Ik probeer te niet laat te komen.\", but \"Ik probeer niet te laat te komen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kom niet te laat.",
+    "english": "I am not too late.",
+    "note": "Without 'proberen' the verb is finite. Compare: Ik kom niet te laat."
+   }
+  },
+  "pat-verbs-64": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "Beloven takes te; the predicate 'op tijd' stands before 'te zijn'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij belooft op tijd te zijn",
+     "subject": "Zij",
+     "finite": "belooft",
+     "role": "single main clause",
+     "why": "Zij is first, so 'belooft' is second; 'op tijd' follows and the te-infinitive 'te zijn' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "belooft"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "op tijd"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te zijn"
+    }
+   ],
+   "meaning": "She promises to be on time.",
+   "order": "'Beloven' takes a te-infinitive. The phrase 'op tijd' stands before the group. Read it as \"Zij belooft op tijd te zijn\".",
+   "forms": "beloven te + infinitive.",
+   "compare": "English 'promises to be on time' also has 'to'. Dutch has 'te'. For this card: \"Zij belooft op tijd te zijn\".",
+   "mistakes": [
+    {
+     "wrong": "Zij belooft op tijd zijn.",
+     "right": "Zij belooft op tijd te zijn.",
+     "why": "After 'beloven' the infinitive needs te. (not \"Zij belooft op tijd zijn.\", but \"Zij belooft op tijd te zijn.\")"
+    },
+    {
+     "wrong": "Zij belooft te op tijd zijn.",
+     "right": "Zij belooft op tijd te zijn.",
+     "why": "'Op tijd' stands before 'te zijn'. (not \"Zij belooft te op tijd zijn.\", but \"Zij belooft op tijd te zijn.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij is op tijd.",
+    "english": "She is on time.",
+    "note": "Without 'beloven' the verb is finite. Compare: Zij is op tijd."
+   }
+  },
+  "pat-verbs-65": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "Proberen with an object: the object stands before 'te vinden'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij proberen een oplossing te vinden",
+     "subject": "Wij",
+     "finite": "proberen",
+     "role": "single main clause",
+     "why": "Wij is first, so the plural 'proberen' is second; the object follows and the te-infinitive 'te vinden' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "proberen"
+    },
+    {
+     "label": "object",
+     "text": "een oplossing"
+    },
+    {
+     "label": "te + infinitive",
+     "text": "te vinden"
+    }
+   ],
+   "meaning": "We try to find a solution.",
+   "order": "The object of 'vinden' stands between the finite verb and the te-infinitive. Read it as \"Wij proberen een oplossing te vinden\".",
+   "forms": "proberen te + infinitive. Card: \"Wij proberen een oplossing te vinden\".",
+   "compare": "English 'try to find a solution' puts the object after the infinitive. Dutch puts it before.",
+   "mistakes": [
+    {
+     "wrong": "Wij proberen te vinden een oplossing.",
+     "right": "Wij proberen een oplossing te vinden.",
+     "why": "The object goes before the te-infinitive."
+    },
+    {
+     "wrong": "Wij proberen een oplossing vinden.",
+     "right": "Wij proberen een oplossing te vinden.",
+     "why": "After 'proberen' the infinitive needs te. (not \"Wij proberen een oplossing vinden.\", but \"Wij proberen een oplossing te vinden.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij vinden een oplossing.",
+    "english": "We find a solution.",
+    "note": "Without 'proberen' the verb is finite. Compare: Wij vinden een oplossing."
+   }
+  },
+  "pat-verbs-66": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + te + infinitive",
+    "why": "After an adjective, 'om te' plus infinitive: 'om een keuze te maken'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het is moeilijk om een keuze te maken",
+     "subject": "Het",
+     "finite": "is",
+     "role": "single main clause",
+     "why": "Het is first, so 'is' is second; the predicate 'moeilijk' follows and the group 'om een keuze te maken' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "moeilijk"
+    },
+    {
+     "label": "purpose group",
+     "text": "om een keuze te maken"
+    }
+   ],
+   "meaning": "It is difficult to make a choice.",
+   "order": "After the adjective 'moeilijk' the group 'om ... te' names what is difficult. The object stands inside the group.",
+   "forms": "moeilijk om te + infinitive.",
+   "compare": "English 'It is difficult to make a choice' has no 'om'. Dutch needs it.",
+   "mistakes": [
+    {
+     "wrong": "Het is moeilijk om een keuze te maakt.",
+     "right": "Het is moeilijk om een keuze te maken.",
+     "why": "After 'te' the verb is an infinitive: 'te maken', not 'te maakt'."
+    },
+    {
+     "wrong": "Het is moeilijk om een keuze maken.",
+     "right": "Het is moeilijk om een keuze te maken.",
+     "why": "The infinitive needs te: 'te maken'. (not \"Het is moeilijk om een keuze maken.\", but \"Het is moeilijk om een keuze te maken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik maak een keuze.",
+    "english": "I make a choice.",
+    "note": "Without the adjective the verb is finite."
+   }
+  },
+  "pat-verbs-67": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hebben (to have)",
+    "why": "Hebben expresses having a commitment; the time phrase ends the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb een afspraak om drie uur",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; the object follows and the time phrase 'om drie uur' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "een afspraak"
+    },
+    {
+     "label": "time phrase",
+     "text": "om drie uur"
+    }
+   ],
+   "meaning": "I have an appointment at three.",
+   "order": "'Hebben' is the main verb here. The time phrase says when the commitment is. Read it as \"Ik heb een afspraak om drie uur\".",
+   "forms": "hebben: ik heb, jij hebt, wij hebben.",
+   "compare": "English 'I have an appointment at three' is the same. Dutch also. For this card: \"Ik heb een afspraak om drie uur\".",
+   "mistakes": [
+    {
+     "wrong": "Ik hebben een afspraak om drie uur.",
+     "right": "Ik heb een afspraak om drie uur.",
+     "why": "With 'ik' the verb is 'heb'. (not \"Ik hebben een afspraak om drie uur.\", but \"Ik heb een afspraak om drie uur.\")"
+    },
+    {
+     "wrong": "Ik heb afspraak om drie uur.",
+     "right": "Ik heb een afspraak om drie uur.",
+     "why": "The object needs its article: 'een afspraak'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik had een afspraak om drie uur.",
+    "english": "I had an appointment at three.",
+    "note": "The simple past 'had' puts it in the past."
+   }
+  },
+  "pat-verbs-68": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hebben (to have)",
+    "why": "Hebben expresses possession; the plural object 'twee broers' ends the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij heeft twee broers",
+     "subject": "Zij",
+     "finite": "heeft",
+     "role": "single main clause",
+     "why": "Zij is first, so 'heeft' is second and the object 'twee broers' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "heeft"
+    },
+    {
+     "label": "object",
+     "text": "twee broers"
+    }
+   ],
+   "meaning": "She has two brothers.",
+   "order": "'Heeft' is the third-person form. The number stands before the plural noun. Read it as \"Zij heeft twee broers\".",
+   "forms": "hebben: zij heeft.",
+   "compare": "English 'She has two brothers' is the same. Dutch also. For this card: \"Zij heeft twee broers\".",
+   "mistakes": [
+    {
+     "wrong": "Zij hebt twee broers.",
+     "right": "Zij heeft twee broers.",
+     "why": "With 'zij' (singular) the verb is 'heeft'."
+    },
+    {
+     "wrong": "Zij heeft twee broer.",
+     "right": "Zij heeft twee broers.",
+     "why": "After a number the noun is plural: 'broers'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij had twee broers.",
+    "english": "She had two brothers.",
+    "note": "The simple past 'had' puts it in the past. Compare: Zij had twee broers."
+   }
+  },
+  "pat-verbs-69": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hebben (to have)",
+    "why": "Hebben with 'geen' negates the noun."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We hebben geen tijd",
+     "subject": "We",
+     "finite": "hebben",
+     "role": "single main clause",
+     "why": "We is first, so the plural 'hebben' is second and the object 'geen tijd' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "hebben"
+    },
+    {
+     "label": "object",
+     "text": "geen tijd"
+    }
+   ],
+   "meaning": "We have no time.",
+   "order": "A noun without article is negated with 'geen'. The plural 'we' needs 'hebben'. Read it as \"We hebben geen tijd\".",
+   "forms": "hebben: wij hebben.",
+   "compare": "English 'We have no time' is the same. Dutch also. For this card: \"We hebben geen tijd\".",
+   "mistakes": [
+    {
+     "wrong": "We hebben niet tijd.",
+     "right": "We hebben geen tijd.",
+     "why": "A noun without article is negated with 'geen'. (not \"We hebben niet tijd.\", but \"We hebben geen tijd.\")"
+    },
+    {
+     "wrong": "We heeft geen tijd.",
+     "right": "We hebben geen tijd.",
+     "why": "The plural 'we' needs 'hebben'. (not \"We heeft geen tijd.\", but \"We hebben geen tijd.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We hadden geen tijd.",
+    "english": "We had no time.",
+    "note": "The simple past 'hadden' puts it in the past."
+   }
+  },
+  "pat-verbs-70": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hebben (to have)",
+    "why": "In a question with 'je' after the verb, 'hebt' loses the -t."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Heb je een pen",
+     "subject": "je",
+     "finite": "Heb",
+     "role": "single main clause",
+     "why": "The verb 'Heb' opens the yes/no question, then 'je' and the object 'een pen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (present)",
+     "text": "Heb"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "een pen"
+    }
+   ],
+   "meaning": "Do you have a pen?",
+   "order": "A yes/no question starts with the finite verb. With 'je' after the verb it is 'heb je'. Read it as \"Heb je een pen\".",
+   "forms": "hebben: jij hebt, but 'heb je' in a question.",
+   "compare": "English 'Do you have a pen?' needs 'do'. Dutch just starts with 'Heb'. For this card: \"Heb je een pen\".",
+   "mistakes": [
+    {
+     "wrong": "Hebt je een pen?",
+     "right": "Heb je een pen?",
+     "why": "With 'je' after the verb the -t falls away: 'heb je'."
+    },
+    {
+     "wrong": "Je hebt een pen?",
+     "right": "Heb je een pen?",
+     "why": "A genuine yes/no question starts with the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je hebt een pen.",
+    "english": "You have a pen.",
+    "note": "The statement keeps the -t. Compare: Je hebt een pen."
+   }
+  },
+  "pat-verbs-71": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hebben (to have)",
+    "why": "Dutch uses hebben with honger, not zijn."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij heeft honger",
+     "subject": "Hij",
+     "finite": "heeft",
+     "role": "single main clause",
+     "why": "Hij is first, so 'heeft' is second and the object 'honger' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "heeft"
+    },
+    {
+     "label": "object",
+     "text": "honger"
+    }
+   ],
+   "meaning": "He is hungry.",
+   "order": "Dutch says 'honger hebben' (to have hunger), where English says 'to be hungry'. 'Honger' takes no article. Read it as \"Hij heeft honger\".",
+   "forms": "honger hebben, dorst hebben.",
+   "compare": "English 'He is hungry' uses be. Dutch uses have. For this card: \"Hij heeft honger\".",
+   "mistakes": [
+    {
+     "wrong": "Hij is honger.",
+     "right": "Hij heeft honger.",
+     "why": "Dutch uses hebben with honger. (not \"Hij is honger.\", but \"Hij heeft honger.\")"
+    },
+    {
+     "wrong": "Hij heeft een honger.",
+     "right": "Hij heeft honger.",
+     "why": "'Honger' takes no article here. (not \"Hij heeft een honger.\", but \"Hij heeft honger.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij is hongerig.",
+    "english": "He is hungry.",
+    "note": "The adjective 'hongerig' can be used with zijn but is less common."
+   }
+  },
+  "pat-verbs-72": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "hebben (to have)",
+    "why": "'Er genoeg van hebben' is a fixed expression with the pronoun adverb 'er'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb er genoeg van",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "Ik is first, so 'heb' is second; 'er genoeg van' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "heb"
+    },
+    {
+     "label": "pronoun adverb",
+     "text": "er"
+    },
+    {
+     "label": "object",
+     "text": "genoeg"
+    },
+    {
+     "label": "preposition",
+     "text": "van"
+    }
+   ],
+   "meaning": "I have had enough of it.",
+   "order": "'Er' stands for the thing that is enough, 'van' stays at the end. The expression is fixed. Read it as \"Ik heb er genoeg van\".",
+   "forms": "er genoeg van hebben.",
+   "compare": "English 'I have had enough of it' has a different order. Dutch puts 'er' early.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb genoeg er van.",
+     "right": "Ik heb er genoeg van.",
+     "why": "The pronoun 'er' stands before 'genoeg'. (not \"Ik heb genoeg er van.\", but \"Ik heb er genoeg van.\")"
+    },
+    {
+     "wrong": "Ik hebt er genoeg van.",
+     "right": "Ik heb er genoeg van.",
+     "why": "With 'ik' the verb is 'heb'. (not \"Ik hebt er genoeg van.\", but \"Ik heb er genoeg van.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb er genoeg van gehad.",
+    "english": "I have had enough of it.",
+    "note": "The perfect adds the participle 'gehad'. Compare: Ik heb er genoeg van gehad."
+   }
+  },
+  "pat-verbs-73": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Bezoeken is inseparable: the finite form 'bezoek' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik bezoek mijn grootmoeder",
+     "subject": "Ik",
+     "finite": "bezoek",
+     "role": "single main clause",
+     "why": "Ik is first, so 'bezoek' is second and the object 'mijn grootmoeder' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "bezoek"
+    },
+    {
+     "label": "object",
+     "text": "mijn grootmoeder"
+    }
+   ],
+   "meaning": "I visit my grandmother.",
+   "order": "The prefix be- is unstressed, so the verb stays whole. Compare the separable verb 'opbellen': 'bel ... op'. Read it as \"Ik bezoek mijn grootmoeder\".",
+   "forms": "bezoeken: ik bezoek, bezocht, bezocht.",
+   "compare": "English 'visit' is a single word. Dutch is too. For this card: \"Ik bezoek mijn grootmoeder\".",
+   "mistakes": [
+    {
+     "wrong": "Ik zoek mijn grootmoeder be.",
+     "right": "Ik bezoek mijn grootmoeder.",
+     "why": "'Bezoeken' never splits. (not \"Ik zoek mijn grootmoeder be.\", but \"Ik bezoek mijn grootmoeder.\")"
+    },
+    {
+     "wrong": "Ik bezoekt mijn grootmoeder.",
+     "right": "Ik bezoek mijn grootmoeder.",
+     "why": "With 'ik' the verb is 'bezoek'. (not \"Ik bezoekt mijn grootmoeder.\", but \"Ik bezoek mijn grootmoeder.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik bel mijn grootmoeder op.",
+    "english": "I phone my grandmother.",
+    "note": "A separable verb splits. Compare: Ik bel mijn grootmoeder op."
+   }
+  },
+  "pat-verbs-74": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Begrijpen is inseparable: 'begrijp' with 'niet' at the end."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij begrijpt de opdracht niet",
+     "subject": "Zij",
+     "finite": "begrijpt",
+     "role": "single main clause",
+     "why": "Zij is first, so 'begrijpt' is second; the object follows and 'niet' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "begrijpt"
+    },
+    {
+     "label": "object",
+     "text": "de opdracht"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    }
+   ],
+   "meaning": "She does not understand the assignment.",
+   "order": "The verb never splits, so 'niet' is the last word. A separable verb would end with its particle. Read it as \"Zij begrijpt de opdracht niet\".",
+   "forms": "begrijpen: zij begrijpt.",
+   "compare": "English 'does not understand' needs 'does'. Dutch uses 'begrijpt ... niet'.",
+   "mistakes": [
+    {
+     "wrong": "Zij begrijp de opdracht niet.",
+     "right": "Zij begrijpt de opdracht niet.",
+     "why": "With 'zij' the verb needs -t: 'begrijpt'."
+    },
+    {
+     "wrong": "Zij begrijpt niet de opdracht.",
+     "right": "Zij begrijpt de opdracht niet.",
+     "why": "The negation 'niet' stands after the object."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij heeft de opdracht niet begrepen.",
+    "english": "She did not understand the assignment.",
+    "note": "The perfect has the participle 'begrepen' at the end."
+   }
+  },
+  "pat-verbs-75": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Ontdekken is inseparable: 'ontdekt' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij ontdekt een nieuwe winkel",
+     "subject": "Hij",
+     "finite": "ontdekt",
+     "role": "single main clause",
+     "why": "Hij is first, so 'ontdekt' is second and the object 'een nieuwe winkel' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "ontdekt"
+    },
+    {
+     "label": "object",
+     "text": "een nieuwe winkel"
+    }
+   ],
+   "meaning": "He discovers a new shop.",
+   "order": "The prefix ont- is unstressed. The adjective 'nieuwe' takes -e before the de-word 'winkel'. Read it as \"Hij ontdekt een nieuwe winkel\".",
+   "forms": "ontdekken: hij ontdekt.",
+   "compare": "English 'discovers' is a single word. Dutch is too. For this card: \"Hij ontdekt een nieuwe winkel\".",
+   "mistakes": [
+    {
+     "wrong": "Hij dekt een nieuwe winkel ont.",
+     "right": "Hij ontdekt een nieuwe winkel.",
+     "why": "'Ontdekken' never splits. (not \"Hij dekt een nieuwe winkel ont.\", but \"Hij ontdekt een nieuwe winkel.\")"
+    },
+    {
+     "wrong": "Hij ontdekt een nieuw winkel.",
+     "right": "Hij ontdekt een nieuwe winkel.",
+     "why": "'Winkel' is a de-word, so the adjective takes -e."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij heeft een nieuwe winkel ontdekt.",
+    "english": "He has discovered a new shop.",
+    "note": "The perfect has the participle 'ontdekt' at the end."
+   }
+  },
+  "pat-verbs-76": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Verkopen is inseparable: the plural 'verkopen' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij verkopen onze oude fiets",
+     "subject": "Wij",
+     "finite": "verkopen",
+     "role": "single main clause",
+     "why": "Wij is first, so the plural 'verkopen' is second and the object 'onze oude fiets' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "verkopen"
+    },
+    {
+     "label": "object",
+     "text": "onze oude fiets"
+    }
+   ],
+   "meaning": "We are selling our old bike.",
+   "order": "The prefix ver- is unstressed. 'Onze oude fiets' has the de-word 'fiets', so 'onze'. Read it as \"Wij verkopen onze oude fiets\".",
+   "forms": "verkopen: wij verkopen.",
+   "compare": "English 'sell' is a single word. Dutch is too. For this card: \"Wij verkopen onze oude fiets\".",
+   "mistakes": [
+    {
+     "wrong": "Wij kopen onze oude fiets ver.",
+     "right": "Wij verkopen onze oude fiets.",
+     "why": "'Verkopen' never splits. (not \"Wij kopen onze oude fiets ver.\", but \"Wij verkopen onze oude fiets.\")"
+    },
+    {
+     "wrong": "Wij verkopen ons oude fiets.",
+     "right": "Wij verkopen onze oude fiets.",
+     "why": "'Fiets' is a de-word, so the possessive is 'onze'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij hebben onze oude fiets verkocht.",
+    "english": "We have sold our old bike.",
+    "note": "The perfect has the participle 'verkocht'."
+   }
+  },
+  "pat-verbs-77": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Overwegen is inseparable: 'overweeg' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik overweeg een andere baan",
+     "subject": "Ik",
+     "finite": "overweeg",
+     "role": "single main clause",
+     "why": "Ik is first, so 'overweeg' is second and the object 'een andere baan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "overweeg"
+    },
+    {
+     "label": "object",
+     "text": "een andere baan"
+    }
+   ],
+   "meaning": "I am considering another job.",
+   "order": "'Overwegen' (to consider) is inseparable. Compare the separable 'overnemen': 'neem ... over'. Read it as \"Ik overweeg een andere baan\".",
+   "forms": "overwegen: ik overweeg.",
+   "compare": "English 'consider' is a single word. Dutch is too. For this card: \"Ik overweeg een andere baan\".",
+   "mistakes": [
+    {
+     "wrong": "Ik weeg een andere baan over.",
+     "right": "Ik overweeg een andere baan.",
+     "why": "In this meaning the verb is inseparable. (not \"Ik weeg een andere baan over.\", but \"Ik overweeg een andere baan.\")"
+    },
+    {
+     "wrong": "Ik overweeg anders baan.",
+     "right": "Ik overweeg een andere baan.",
+     "why": "The adjective is 'andere' before a de-word."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik neem een andere baan aan.",
+    "english": "I accept another job.",
+    "note": "'Aannemen' is separable. Compare: Ik neem een andere baan aan."
+   }
+  },
+  "pat-verbs-78": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Vertellen is inseparable: 'vertelt' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij vertelt een grappig verhaal",
+     "subject": "Zij",
+     "finite": "vertelt",
+     "role": "single main clause",
+     "why": "Zij is first, so 'vertelt' is second and the object 'een grappig verhaal' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "vertelt"
+    },
+    {
+     "label": "object",
+     "text": "een grappig verhaal"
+    }
+   ],
+   "meaning": "She tells a funny story.",
+   "order": "The prefix ver- is unstressed. 'Verhaal' is a het-word, so 'grappig' takes no -e after 'een'. Read it as \"Zij vertelt een grappig verhaal\".",
+   "forms": "vertellen: zij vertelt.",
+   "compare": "English 'tells' is a single word. Dutch is too. For this card: \"Zij vertelt een grappig verhaal\".",
+   "mistakes": [
+    {
+     "wrong": "Zij telt een grappig verhaal ver.",
+     "right": "Zij vertelt een grappig verhaal.",
+     "why": "'Vertellen' never splits. (not \"Zij telt een grappig verhaal ver.\", but \"Zij vertelt een grappig verhaal.\")"
+    },
+    {
+     "wrong": "Zij vertelt een grappige verhaal.",
+     "right": "Zij vertelt een grappig verhaal.",
+     "why": "'Verhaal' is a het-word, so the adjective after 'een' has no -e."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij heeft een grappig verhaal verteld.",
+    "english": "She has told a funny story.",
+    "note": "The perfect has the participle 'verteld'."
+   }
+  },
+  "pat-verbs-79": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Veranderen is inseparable: 'verander' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik verander mijn mening",
+     "subject": "Ik",
+     "finite": "verander",
+     "role": "single main clause",
+     "why": "Ik is first, so 'verander' is second and the object 'mijn mening' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "verander"
+    },
+    {
+     "label": "object",
+     "text": "mijn mening"
+    }
+   ],
+   "meaning": "I am changing my mind.",
+   "order": "The prefix ver- is unstressed. With 'ik' the verb is the bare stem 'verander'. Read it as \"Ik verander mijn mening\".",
+   "forms": "veranderen: ik verander.",
+   "compare": "English 'change' is a single word. Dutch is too. For this card: \"Ik verander mijn mening\".",
+   "mistakes": [
+    {
+     "wrong": "Ik veranderen mijn mening.",
+     "right": "Ik verander mijn mening.",
+     "why": "With 'ik' the verb is 'verander'. (not \"Ik veranderen mijn mening.\", but \"Ik verander mijn mening.\")"
+    },
+    {
+     "wrong": "Ik ander mijn mening ver.",
+     "right": "Ik verander mijn mening.",
+     "why": "'Veranderen' never splits. (not \"Ik ander mijn mening ver.\", but \"Ik verander mijn mening.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb mijn mening veranderd.",
+    "english": "I have changed my mind.",
+    "note": "The perfect has the participle 'veranderd'."
+   }
+  },
+  "pat-verbs-80": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Herhalen is inseparable: 'herhaalt' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij herhaalt de vraag",
+     "subject": "Hij",
+     "finite": "herhaalt",
+     "role": "single main clause",
+     "why": "Hij is first, so 'herhaalt' is second and the object 'de vraag' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "herhaalt"
+    },
+    {
+     "label": "object",
+     "text": "de vraag"
+    }
+   ],
+   "meaning": "He repeats the question.",
+   "order": "The prefix her- is unstressed. The stem 'herhaal' keeps its long vowel. Read it as \"Hij herhaalt de vraag\". Its parts: subject Hij, finite verb (present) herhaalt, object de vraag.",
+   "forms": "herhalen: hij herhaalt.",
+   "compare": "English 'repeats' is a single word. Dutch is too. For this card: \"Hij herhaalt de vraag\".",
+   "mistakes": [
+    {
+     "wrong": "Hij haalt de vraag her.",
+     "right": "Hij herhaalt de vraag.",
+     "why": "'Herhalen' never splits. (not \"Hij haalt de vraag her.\", but \"Hij herhaalt de vraag.\")"
+    },
+    {
+     "wrong": "Hij herhaal de vraag.",
+     "right": "Hij herhaalt de vraag.",
+     "why": "With 'hij' the verb needs -t: 'herhaalt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij heeft de vraag herhaald.",
+    "english": "He has repeated the question.",
+    "note": "The perfect has the participle 'herhaald'."
+   }
+  },
+  "pat-verbs-81": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Ontvangen is inseparable: the plural 'ontvangen' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We ontvangen morgen een pakket",
+     "subject": "We",
+     "finite": "ontvangen",
+     "role": "single main clause",
+     "why": "We is first, so the plural 'ontvangen' is second; 'morgen' follows and the object 'een pakket' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "ontvangen"
+    },
+    {
+     "label": "time adverb",
+     "text": "morgen"
+    },
+    {
+     "label": "object",
+     "text": "een pakket"
+    }
+   ],
+   "meaning": "We receive a parcel tomorrow.",
+   "order": "The present tense with 'morgen' expresses the near future. The prefix ont- is unstressed. Read it as \"We ontvangen morgen een pakket\".",
+   "forms": "ontvangen: wij ontvangen.",
+   "compare": "English 'We receive a parcel tomorrow' uses the same present. Dutch also.",
+   "mistakes": [
+    {
+     "wrong": "We vangen morgen een pakket ont.",
+     "right": "We ontvangen morgen een pakket.",
+     "why": "'Ontvangen' never splits. (not \"We vangen morgen een pakket ont.\", but \"We ontvangen morgen een pakket.\")"
+    },
+    {
+     "wrong": "We ontvangt morgen een pakket.",
+     "right": "We ontvangen morgen een pakket.",
+     "why": "The plural 'we' needs 'ontvangen'. (not \"We ontvangt morgen een pakket.\", but \"We ontvangen morgen een pakket.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We hebben een pakket ontvangen.",
+    "english": "We have received a parcel.",
+    "note": "The perfect has the participle 'ontvangen'."
+   }
+  },
+  "pat-verbs-82": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "inseparable verb",
+    "why": "Vertrouwen is inseparable: 'vertrouw' never splits."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik vertrouw mijn collega",
+     "subject": "Ik",
+     "finite": "vertrouw",
+     "role": "single main clause",
+     "why": "Ik is first, so 'vertrouw' is second and the object 'mijn collega' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "vertrouw"
+    },
+    {
+     "label": "object",
+     "text": "mijn collega"
+    }
+   ],
+   "meaning": "I trust my colleague.",
+   "order": "The prefix ver- is unstressed. With a person as object, 'vertrouwen' means to trust. Read it as \"Ik vertrouw mijn collega\".",
+   "forms": "vertrouwen: ik vertrouw.",
+   "compare": "English 'trust' is a single word. Dutch is too. For this card: \"Ik vertrouw mijn collega\".",
+   "mistakes": [
+    {
+     "wrong": "Ik trouw mijn collega ver.",
+     "right": "Ik vertrouw mijn collega.",
+     "why": "'Vertrouwen' never splits. (not \"Ik trouw mijn collega ver.\", but \"Ik vertrouw mijn collega.\")"
+    },
+    {
+     "wrong": "Ik vertrouwt mijn collega.",
+     "right": "Ik vertrouw mijn collega.",
+     "why": "With 'ik' the verb is 'vertrouw'. (not \"Ik vertrouwt mijn collega.\", but \"Ik vertrouw mijn collega.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb mijn collega vertrouwd.",
+    "english": "I have trusted my colleague.",
+    "note": "The perfect has the participle 'vertrouwd'."
+   }
+  },
+  "pat-verbs-83": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Wachten takes the preposition 'op'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wacht op de bus",
+     "subject": "Ik",
+     "finite": "wacht",
+     "role": "single main clause",
+     "why": "Ik is first, so 'wacht' is second and the phrase 'op de bus' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "wacht"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "op de bus"
+    }
+   ],
+   "meaning": "I am waiting for the bus.",
+   "order": "'Wachten op' is a fixed pair: the thing waited for follows 'op'. English says 'wait for'. Read it as \"Ik wacht op de bus\".",
+   "forms": "wachten op iets / iemand.",
+   "compare": "English 'wait for' uses 'for'. Dutch uses 'op'. For this card: \"Ik wacht op de bus\".",
+   "mistakes": [
+    {
+     "wrong": "Ik wacht voor de bus.",
+     "right": "Ik wacht op de bus.",
+     "why": "'Wachten' takes 'op'. (not \"Ik wacht voor de bus.\", but \"Ik wacht op de bus.\")"
+    },
+    {
+     "wrong": "Ik wacht de bus op.",
+     "right": "Ik wacht op de bus.",
+     "why": "'Op' is a preposition here and stays in front of the noun."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik wacht de bus af.",
+    "english": "I wait for the bus to come.",
+    "note": "'Afwachten' is a different, separable verb with a direct object."
+   }
+  },
+  "pat-verbs-84": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Denken aan takes 'aan' for the person or thing in mind."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik denk aan mijn familie",
+     "subject": "Ik",
+     "finite": "denk",
+     "role": "single main clause",
+     "why": "Ik is first, so 'denk' is second and the phrase 'aan mijn familie' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "denk"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "aan mijn familie"
+    }
+   ],
+   "meaning": "I am thinking of my family.",
+   "order": "'Denken aan' means to have someone or something in mind. 'Denken over' means to have an opinion about it. Read it as \"Ik denk aan mijn familie\".",
+   "forms": "denken aan / denken over.",
+   "compare": "English 'think of' uses 'of'. Dutch uses 'aan'. For this card: \"Ik denk aan mijn familie\".",
+   "mistakes": [
+    {
+     "wrong": "Ik denk van mijn familie.",
+     "right": "Ik denk aan mijn familie.",
+     "why": "'Denken' takes 'aan' for what is in mind."
+    },
+    {
+     "wrong": "Ik denk mijn familie aan.",
+     "right": "Ik denk aan mijn familie.",
+     "why": "'Aan' stays in front of the noun. (not \"Ik denk mijn familie aan.\", but \"Ik denk aan mijn familie.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik denk over mijn familie.",
+    "english": "I think about my family.",
+    "note": "'Denken over' asks for an opinion. Compare: Ik denk over mijn familie."
+   }
+  },
+  "pat-verbs-85": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Houden van takes 'van' for what you love."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij houdt van muziek",
+     "subject": "Zij",
+     "finite": "houdt",
+     "role": "single main clause",
+     "why": "Zij is first, so 'houdt' is second and the phrase 'van muziek' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "houdt"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "van muziek"
+    }
+   ],
+   "meaning": "She loves music.",
+   "order": "'Houden van' means to love or like. 'Muziek' has no article in a general statement. Read it as \"Zij houdt van muziek\".",
+   "forms": "houden van.",
+   "compare": "English 'love' is one word. Dutch uses 'houden van'. For this card: \"Zij houdt van muziek\".",
+   "mistakes": [
+    {
+     "wrong": "Zij houdt muziek.",
+     "right": "Zij houdt van muziek.",
+     "why": "'Houden' needs 'van': 'houdt van muziek'."
+    },
+    {
+     "wrong": "Zij houd van muziek.",
+     "right": "Zij houdt van muziek.",
+     "why": "With 'zij' the verb needs -t: 'houdt'. (not \"Zij houd van muziek.\", but \"Zij houdt van muziek.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij vindt muziek mooi.",
+    "english": "She thinks music is beautiful.",
+    "note": "'Vinden' expresses an opinion rather than affection."
+   }
+  },
+  "pat-verbs-86": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Luisteren takes 'naar' for what you listen to."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We luisteren naar de radio",
+     "subject": "We",
+     "finite": "luisteren",
+     "role": "single main clause",
+     "why": "We is first, so the plural 'luisteren' is second and the phrase 'naar de radio' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "luisteren"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "naar de radio"
+    }
+   ],
+   "meaning": "We are listening to the radio.",
+   "order": "'Luisteren naar' is a fixed pair. The plural 'we' needs 'luisteren'. Read it as \"We luisteren naar de radio\". Its parts: subject We, finite verb (present) luisteren, prepositional phrase naar de radio.",
+   "forms": "luisteren naar.",
+   "compare": "English 'listen to' uses 'to'. Dutch uses 'naar'. For this card: \"We luisteren naar de radio\".",
+   "mistakes": [
+    {
+     "wrong": "We luisteren de radio.",
+     "right": "We luisteren naar de radio.",
+     "why": "'Luisteren' needs 'naar'. (not \"We luisteren de radio.\", but \"We luisteren naar de radio.\")"
+    },
+    {
+     "wrong": "We luistert naar de radio.",
+     "right": "We luisteren naar de radio.",
+     "why": "The plural 'we' needs 'luisteren'. (not \"We luistert naar de radio.\", but \"We luisteren naar de radio.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We horen de radio.",
+    "english": "We hear the radio.",
+    "note": "'Horen' takes a direct object and expresses hearing."
+   }
+  },
+  "pat-verbs-87": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Kijken takes 'naar' for what you look at."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij kijkt naar het scherm",
+     "subject": "Hij",
+     "finite": "kijkt",
+     "role": "single main clause",
+     "why": "Hij is first, so 'kijkt' is second and the phrase 'naar het scherm' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "kijkt"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "naar het scherm"
+    }
+   ],
+   "meaning": "He is looking at the screen.",
+   "order": "'Kijken naar' means to look at. 'Het scherm' is a het-word. Read it as \"Hij kijkt naar het scherm\". Its parts: subject Hij, finite verb (present) kijkt, prepositional phrase naar het scherm.",
+   "forms": "kijken naar.",
+   "compare": "English 'look at' uses 'at'. Dutch uses 'naar'. For this card: \"Hij kijkt naar het scherm\".",
+   "mistakes": [
+    {
+     "wrong": "Hij kijkt het scherm.",
+     "right": "Hij kijkt naar het scherm.",
+     "why": "'Kijken' needs 'naar'. (not \"Hij kijkt het scherm.\", but \"Hij kijkt naar het scherm.\")"
+    },
+    {
+     "wrong": "Hij kijkt aan het scherm.",
+     "right": "Hij kijkt naar het scherm.",
+     "why": "The preposition is 'naar'. (not \"Hij kijkt aan het scherm.\", but \"Hij kijkt naar het scherm.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij ziet het scherm.",
+    "english": "He sees the screen.",
+    "note": "'Zien' takes a direct object. Compare: Hij ziet het scherm."
+   }
+  },
+  "pat-verbs-88": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Praten takes 'over' for the topic."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij praten over het project",
+     "subject": "Wij",
+     "finite": "praten",
+     "role": "single main clause",
+     "why": "Wij is first, so the plural 'praten' is second and the phrase 'over het project' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "praten"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "over het project"
+    }
+   ],
+   "meaning": "We are talking about the project.",
+   "order": "'Praten over' names the topic. 'Praten met' names the partner. Read it as \"Wij praten over het project\". Its parts: subject Wij, finite verb (present) praten, prepositional phrase over het project.",
+   "forms": "praten over / praten met.",
+   "compare": "English 'talk about' uses 'about'. Dutch uses 'over'. For this card: \"Wij praten over het project\".",
+   "mistakes": [
+    {
+     "wrong": "Wij praten het project.",
+     "right": "Wij praten over het project.",
+     "why": "'Praten' needs 'over' for the topic. (not \"Wij praten het project.\", but \"Wij praten over het project.\")"
+    },
+    {
+     "wrong": "Wij praat over het project.",
+     "right": "Wij praten over het project.",
+     "why": "The plural 'wij' needs 'praten'. (not \"Wij praat over het project.\", but \"Wij praten over het project.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij praten met de klant.",
+    "english": "We talk with the customer.",
+    "note": "'Met' names the partner. Compare: Wij praten met de klant."
+   }
+  },
+  "pat-verbs-89": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Zorgen takes 'voor' for what you look after."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik zorg voor de planten",
+     "subject": "Ik",
+     "finite": "zorg",
+     "role": "single main clause",
+     "why": "Ik is first, so 'zorg' is second and the phrase 'voor de planten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "zorg"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "voor de planten"
+    }
+   ],
+   "meaning": "I take care of the plants.",
+   "order": "'Zorgen voor' means to take care of. 'Zorgen over' would mean to worry about. Read it as \"Ik zorg voor de planten\".",
+   "forms": "zorgen voor / zorgen over.",
+   "compare": "English 'take care of' has three words. Dutch has 'zorgen voor'. For this card: \"Ik zorg voor de planten\".",
+   "mistakes": [
+    {
+     "wrong": "Ik zorg de planten.",
+     "right": "Ik zorg voor de planten.",
+     "why": "'Zorgen' needs 'voor'. (not \"Ik zorg de planten.\", but \"Ik zorg voor de planten.\")"
+    },
+    {
+     "wrong": "Ik zorg over de planten.",
+     "right": "Ik zorg voor de planten.",
+     "why": "'Zorgen over' means to worry about. (not \"Ik zorg over de planten.\", but \"Ik zorg voor de planten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik maak me zorgen over de planten.",
+    "english": "I worry about the plants.",
+    "note": "A reflexive expression with 'over' means to worry."
+   }
+  },
+  "pat-verbs-90": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Afhangen van is separable and takes 'van' for the condition."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het hangt van het weer af",
+     "subject": "Het",
+     "finite": "hangt",
+     "role": "single main clause",
+     "why": "Het is first, so 'hangt' is second; the phrase 'van het weer' follows and the particle 'af' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb (present, separable)",
+     "text": "hangt"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "van het weer"
+    },
+    {
+     "label": "particle",
+     "text": "af"
+    }
+   ],
+   "meaning": "It depends on the weather.",
+   "order": "The separable verb 'afhangen' splits, and the preposition 'van' belongs to the verb. The phrase stands before the particle.",
+   "forms": "afhangen van: hangt af, hing af, afgehangen (hebben).",
+   "compare": "English 'It depends on the weather' has no particle. Dutch splits 'hangt ... af'.",
+   "mistakes": [
+    {
+     "wrong": "Het afhangt van het weer.",
+     "right": "Het hangt van het weer af.",
+     "why": "The particle is split off in a main clause."
+    },
+    {
+     "wrong": "Het hangt het weer van af.",
+     "right": "Het hangt van het weer af.",
+     "why": "The phrase 'van het weer' stays together: 'van het weer', with the particle 'af' behind it."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het weer bepaalt het.",
+    "english": "The weather decides it.",
+    "note": "A different verb that takes a direct object."
+   }
+  },
+  "pat-verbs-91": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Beginnen takes 'met' before a noun."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik begin met de oefening",
+     "subject": "Ik",
+     "finite": "begin",
+     "role": "single main clause",
+     "why": "Ik is first, so 'begin' is second and the phrase 'met de oefening' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "begin"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "met de oefening"
+    }
+   ],
+   "meaning": "I am starting the exercise.",
+   "order": "Before a noun, 'beginnen' takes 'met'. Before an infinitive it takes te: 'Ik begin te werken'. Read it as \"Ik begin met de oefening\".",
+   "forms": "beginnen met iets; beginnen te + infinitive.",
+   "compare": "English 'start the exercise' needs no preposition. Dutch needs 'met'. For this card: \"Ik begin met de oefening\".",
+   "mistakes": [
+    {
+     "wrong": "Ik begin de oefening.",
+     "right": "Ik begin met de oefening.",
+     "why": "With a noun 'beginnen' takes 'met'. (not \"Ik begin de oefening.\", but \"Ik begin met de oefening.\")"
+    },
+    {
+     "wrong": "Ik begin op de oefening.",
+     "right": "Ik begin met de oefening.",
+     "why": "The preposition is 'met'. (not \"Ik begin op de oefening.\", but \"Ik begin met de oefening.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik begin te oefenen.",
+    "english": "I start practising.",
+    "note": "Before an infinitive 'beginnen' takes te."
+   }
+  },
+  "pat-verbs-92": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + fixed preposition",
+    "why": "Lachen takes 'om' for what you laugh at."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij lacht om de grap",
+     "subject": "Zij",
+     "finite": "lacht",
+     "role": "single main clause",
+     "why": "Zij is first, so 'lacht' is second and the phrase 'om de grap' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "lacht"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "om de grap"
+    }
+   ],
+   "meaning": "She laughs at the joke.",
+   "order": "'Lachen om' means to laugh at something funny. 'Lachen naar' means to smile at someone. Read it as \"Zij lacht om de grap\".",
+   "forms": "lachen om / lachen naar.",
+   "compare": "English 'laugh at' uses 'at'. Dutch uses 'om'. For this card: \"Zij lacht om de grap\".",
+   "mistakes": [
+    {
+     "wrong": "Zij lacht de grap.",
+     "right": "Zij lacht om de grap.",
+     "why": "'Lachen' needs 'om'. (not \"Zij lacht de grap.\", but \"Zij lacht om de grap.\")"
+    },
+    {
+     "wrong": "Zij lacht bij de grap.",
+     "right": "Zij lacht om de grap.",
+     "why": "The preposition is 'om'. (not \"Zij lacht bij de grap.\", but \"Zij lacht om de grap.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij lacht naar de klant.",
+    "english": "She smiles at the customer.",
+    "note": "'Lachen naar' directs the smile at a person."
+   }
+  },
+  "pat-verbs-93": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "reflexive verb",
+    "why": "Zich herinneren is reflexive: 'me' follows the finite verb."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik herinner me die dag",
+     "subject": "Ik",
+     "finite": "herinner",
+     "role": "single main clause",
+     "why": "Ik is first, so 'herinner' is second; the reflexive 'me' and the object 'die dag' follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "herinner"
+    },
+    {
+     "label": "reflexive pronoun",
+     "text": "me"
+    },
+    {
+     "label": "object",
+     "text": "die dag"
+    }
+   ],
+   "meaning": "I remember that day.",
+   "order": "The reflexive pronoun 'me' matches 'ik'. 'Herinneren' is inseparable. Read it as \"Ik herinner me die dag\". Its parts: subject Ik, finite verb (present) herinner, reflexive pronoun me, object die dag.",
+   "forms": "zich herinneren: ik herinner me, jij herinnert je, wij herinneren ons.",
+   "compare": "English 'I remember' has no reflexive. Dutch needs 'me'. For this card: \"Ik herinner me die dag\".",
+   "mistakes": [
+    {
+     "wrong": "Ik herinner die dag.",
+     "right": "Ik herinner me die dag.",
+     "why": "'Zich herinneren' needs the reflexive 'me'."
+    },
+    {
+     "wrong": "Ik herinner me aan die dag.",
+     "right": "Ik herinner me die dag.",
+     "why": "'Zich herinneren' takes a direct object and no preposition: 'me die dag'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet die dag nog.",
+    "english": "I still know that day.",
+    "note": "A non-reflexive alternative with 'weten'."
+   }
+  },
+  "pat-verbs-94": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "reflexive verb",
+    "why": "Zich vergissen is reflexive and takes 'in' for the object of the mistake."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij vergist zich in het adres",
+     "subject": "Hij",
+     "finite": "vergist",
+     "role": "single main clause",
+     "why": "Hij is first, so 'vergist' is second; the reflexive 'zich' and the phrase 'in het adres' follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "vergist"
+    },
+    {
+     "label": "reflexive pronoun",
+     "text": "zich"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "in het adres"
+    }
+   ],
+   "meaning": "He is mistaken about the address.",
+   "order": "The third person uses 'zich'. The mistake is introduced with 'in'. Read it as \"Hij vergist zich in het adres\". Its parts: subject Hij, finite verb (present) vergist, reflexive pronoun zich, prepositional phrase in het adres.",
+   "forms": "zich vergissen in iets.",
+   "compare": "English 'be mistaken about' has no reflexive. Dutch needs 'zich'. For this card: \"Hij vergist zich in het adres\".",
+   "mistakes": [
+    {
+     "wrong": "Hij vergist in het adres.",
+     "right": "Hij vergist zich in het adres.",
+     "why": "'Zich vergissen' needs 'zich'. (not \"Hij vergist in het adres.\", but \"Hij vergist zich in het adres.\")"
+    },
+    {
+     "wrong": "Hij vergist zich het adres.",
+     "right": "Hij vergist zich in het adres.",
+     "why": "The mistake is introduced with 'in'. (not \"Hij vergist zich het adres.\", but \"Hij vergist zich in het adres.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij maakt een fout met het adres.",
+    "english": "He makes an error with the address.",
+    "note": "A non-reflexive alternative. Compare: Hij maakt een fout met het adres."
+   }
+  },
+  "pat-verbs-95": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "reflexive verb",
+    "why": "Zich haasten is reflexive: 'ons' matches 'wij'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij haasten ons niet",
+     "subject": "Wij",
+     "finite": "haasten",
+     "role": "single main clause",
+     "why": "Wij is first, so the plural 'haasten' is second; the reflexive 'ons' and 'niet' follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "haasten"
+    },
+    {
+     "label": "reflexive pronoun",
+     "text": "ons"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    }
+   ],
+   "meaning": "We are not rushing.",
+   "order": "The reflexive pronoun for 'wij' is 'ons'. 'Niet' ends the clause. Read it as \"Wij haasten ons niet\". Its parts: subject Wij, finite verb (present) haasten, reflexive pronoun ons, negation niet.",
+   "forms": "zich haasten: wij haasten ons.",
+   "compare": "English 'We are not rushing' has no reflexive. Dutch needs 'ons'. For this card: \"Wij haasten ons niet\".",
+   "mistakes": [
+    {
+     "wrong": "Wij haasten niet.",
+     "right": "Wij haasten ons niet.",
+     "why": "'Zich haasten' needs the reflexive 'ons'."
+    },
+    {
+     "wrong": "Wij haasten zich niet.",
+     "right": "Wij haasten ons niet.",
+     "why": "The reflexive must match 'wij': 'ons'. (not \"Wij haasten zich niet.\", but \"Wij haasten ons niet.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij gaan niet snel.",
+    "english": "We do not go fast.",
+    "note": "A non-reflexive alternative. Compare: Wij gaan niet snel."
+   }
+  },
+  "pat-verbs-96": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "reflexive verb",
+    "why": "Zich voelen is reflexive: 'me' follows the finite verb."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik voel me vandaag goed",
+     "subject": "Ik",
+     "finite": "voel",
+     "role": "single main clause",
+     "why": "Ik is first, so 'voel' is second; the reflexive 'me', 'vandaag' and the predicate 'goed' follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "voel"
+    },
+    {
+     "label": "reflexive pronoun",
+     "text": "me"
+    },
+    {
+     "label": "time adverb",
+     "text": "vandaag"
+    },
+    {
+     "label": "predicate",
+     "text": "goed"
+    }
+   ],
+   "meaning": "I feel well today.",
+   "order": "'Zich voelen' describes how you feel. 'Voelen' with an object would mean to feel something physically. Read it as \"Ik voel me vandaag goed\".",
+   "forms": "zich voelen: ik voel me.",
+   "compare": "English 'I feel well' has no reflexive. Dutch needs 'me'. For this card: \"Ik voel me vandaag goed\".",
+   "mistakes": [
+    {
+     "wrong": "Ik voel vandaag goed.",
+     "right": "Ik voel me vandaag goed.",
+     "why": "'Zich voelen' needs 'me'. (not \"Ik voel vandaag goed.\", but \"Ik voel me vandaag goed.\")"
+    },
+    {
+     "wrong": "Ik voelt me vandaag goed.",
+     "right": "Ik voel me vandaag goed.",
+     "why": "With 'ik' the verb has no ending: 'voel'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik ben vandaag goed.",
+    "english": "I am good today.",
+    "note": "This says something else: it describes behaviour, not feeling."
+   }
+  },
+  "pat-verbs-97": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + infinitive group",
+    "why": "Laten zien is a fixed pair: 'laat ... zien', with the object between."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik laat het je zien",
+     "subject": "Ik",
+     "finite": "laat",
+     "role": "single main clause",
+     "why": "Ik is first, so 'laat' is second; 'het je' follows and the infinitive 'zien' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "laat"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "indirect object",
+     "text": "je"
+    },
+    {
+     "label": "infinitive",
+     "text": "zien"
+    }
+   ],
+   "meaning": "I will show it to you.",
+   "order": "'Laten zien' means to show. The finite verb 'laat' and the infinitive 'zien' surround the objects. Read it as \"Ik laat het je zien\".",
+   "forms": "laten zien: laat ... zien.",
+   "compare": "English 'I will show it to you' uses a different verb. Dutch builds 'show' from 'laten' + 'zien'.",
+   "mistakes": [
+    {
+     "wrong": "Ik laat het je zien laten.",
+     "right": "Ik laat het je zien.",
+     "why": "The order is 'laat ... zien'. (not \"Ik laat het je zien laten.\", but \"Ik laat het je zien.\")"
+    },
+    {
+     "wrong": "Ik laat zien het je.",
+     "right": "Ik laat het je zien.",
+     "why": "The objects go before the infinitive. (not \"Ik laat zien het je.\", but \"Ik laat het je zien.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik toon het je.",
+    "english": "I show it to you.",
+    "note": "'Tonen' is a more formal single verb. Compare: Ik toon het je."
+   }
+  },
+  "pat-verbs-98": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + infinitive group",
+    "why": "Blijven plus infinitive: the infinitive 'werken' ends the group."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij blijft werken tot zes uur",
+     "subject": "Hij",
+     "finite": "blijft",
+     "role": "single main clause",
+     "why": "Hij is first, so 'blijft' is second; the infinitive 'werken' follows and the phrase 'tot zes uur' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "blijft"
+    },
+    {
+     "label": "infinitive",
+     "text": "werken"
+    },
+    {
+     "label": "time limit",
+     "text": "tot zes uur"
+    }
+   ],
+   "meaning": "He keeps working until six.",
+   "order": "After 'blijven' the infinitive has no te. The time limit follows the group. Read it as \"Hij blijft werken tot zes uur\".",
+   "forms": "blijven + infinitive.",
+   "compare": "English 'keeps working' uses an -ing form. Dutch uses 'blijft werken'. For this card: \"Hij blijft werken tot zes uur\".",
+   "mistakes": [
+    {
+     "wrong": "Hij blijft te werken tot zes uur.",
+     "right": "Hij blijft werken tot zes uur.",
+     "why": "After 'blijven' there is no te. (not \"Hij blijft te werken tot zes uur.\", but \"Hij blijft werken tot zes uur.\")"
+    },
+    {
+     "wrong": "Hij blijft werkt tot zes uur.",
+     "right": "Hij blijft werken tot zes uur.",
+     "why": "After 'blijven' the verb is an infinitive: 'werken'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij werkt tot zes uur.",
+    "english": "He works until six.",
+    "note": "Without 'blijven' the verb is finite. Compare: Hij werkt tot zes uur."
+   }
+  },
+  "pat-verbs-99": {
+   "status": "ai-editorial-checked",
+   "pattern": "tense",
+   "sense": {
+    "label": "verb + infinitive group",
+    "why": "Gaan plus infinitive expresses a plan: 'ga koken'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ga koken voor mijn vrienden",
+     "subject": "Ik",
+     "finite": "ga",
+     "role": "single main clause",
+     "why": "Ik is first, so 'ga' is second; the infinitive 'koken' follows and the phrase 'voor mijn vrienden' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (present)",
+     "text": "ga"
+    },
+    {
+     "label": "infinitive",
+     "text": "koken"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "voor mijn vrienden"
+    }
+   ],
+   "meaning": "I am going to cook for my friends.",
+   "order": "After 'gaan' the infinitive has no te. The beneficiary follows the group. Read it as \"Ik ga koken voor mijn vrienden\".",
+   "forms": "gaan + infinitive.",
+   "compare": "English 'I am going to cook' has 'to'. Dutch has none. For this card: \"Ik ga koken voor mijn vrienden\".",
+   "mistakes": [
+    {
+     "wrong": "Ik ga te koken voor mijn vrienden.",
+     "right": "Ik ga koken voor mijn vrienden.",
+     "why": "After 'gaan' there is no te. (not \"Ik ga te koken voor mijn vrienden.\", but \"Ik ga koken voor mijn vrienden.\")"
+    },
+    {
+     "wrong": "Ik ga koken aan mijn vrienden.",
+     "right": "Ik ga koken voor mijn vrienden.",
+     "why": "The beneficiary takes 'voor': 'voor mijn vrienden'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kook voor mijn vrienden.",
+    "english": "I cook for my friends.",
+    "note": "Without 'gaan' the verb is finite. Compare: Ik kook voor mijn vrienden."
+   }
+  }
+ }
+}

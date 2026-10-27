@@ -4,6 +4,21 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P3 Verbs in context to 100 and lesson v1.1
+
+**Plan check (again):** P3 in the master plan asks for Verbs in Context to 100, Past & Perfect to 100 with auxiliary rationale, inseparable contrasts, and cross-pattern tests. Past & Perfect, separable cards, forms and inseparable contrasts are done; this batch finishes Verbs in Context. Still open from P3: cross-pattern tests beyond the forms table, and the plan's recap and mini self-check in each lesson.
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- 64 new Verbs cards (`pat-verbs-37..100`, `data/editorial/grammar-p2-verbs.json`) and a hand-authored record for all 100 (`data/grammar-verbs-analysis.json`): 14 modal sentences, 6 hoeven + niet + te, 10 te-infinitive and om-te sentences, 6 hebben, 10 inseparable verbs, 10 verbs with a fixed preposition, 4 reflexive verbs and 4 infinitive groups (laten zien, blijven, gaan, komen). The 36 older cards got Dutch-first prompts.
+- Verbs lesson raised to v1.1: sections 7 to 10 (inseparable verbs, fixed prepositions, reflexive verbs, infinitive groups) and three more mistakes; the onboarding test now accepts 1.0 or 1.1.
+- Counts: 920 authored + 120 aliases = 1,040 playable grammar cards; 724/920 with Dutch-first prompts; lessons 3 at v1.0, 6 at v1.1, 3 at v0.8, 1 at v0.2.
+
+**Evidence:** tsc and eslint clean; vitest 443 passed; browser scenarios for verbs (2) passed. Full browser suite not re-run.
+
+**Open:** Tot/totdat, Terwijl, Voordat/Nadat are the remaining small topics (P4); lessons for them are still v0.2 and v0.8; no native review; the formulaic-finishing caveat from the separable batch applies to the long texts here too (appended sentence quotes); Verbs has no interactive children.
+
 ## 2026-10-27 — Claude Code continuation: P3 Past & perfect to 100, separable lesson v1.1, imperatives (checked against the master plan)
 
 **Plan check:** I re-read `docs/DutchTap_Grammar_Master_Implementation_Plan_v1.0.md` (it is the same text as `GRAMMAR-MASTERY-MASTER-PLAN.md`, differing only in a trailing newline). §3, §4.3, §5.4, §6.1 and §7.4 match what these batches do. Gaps found against it, and handled or left open: §6.1 asks for inseparable contrasts and imperative forms (done: lesson sections 7 and 8, eight imperative cards); §4.2 asks for a "recognise the pattern" recap and a mini self-check in every lesson (still missing in all lessons, noted as open); §5.4 asks for combined `als/omdat/toen` + separable cards (deferred to P5 mixed practice as the plan itself places them).

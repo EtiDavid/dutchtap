@@ -3,7 +3,7 @@ import { GRAMMAR_CARDS } from '@/lib/flashcards/engine';
 import { cardFor } from '@/lib/content/cards';
 import { separableFormsFor } from '@/lib/separableForms';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
-import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, SEPARABLE_ANALYSIS, TENSE_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
+import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, SEPARABLE_ANALYSIS, TENSE_ANALYSIS, VERBS_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
 
 const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}' ]/gu, ' ').replace(/’/g, "'").split(/\s+/).filter(Boolean);
 const GENERIC = [/because it is (a )?subordinate\b/i, /^dutch uses inversion\.?$/i, /\bthis is correct grammar\b/i, /^the verb goes to the end\.?$/i, /^op is a separable prefix\.?$/i, /subject and verb switch\.?$/i];
@@ -18,6 +18,7 @@ const TOPICS: TopicConfig[] = [
   { topic: 'inversion', records: INVERSION_ANALYSIS, conj: [], target: 100 },
   { topic: 'separable', records: SEPARABLE_ANALYSIS, conj: ['dat'], target: 184 },
   { topic: 'tense', records: TENSE_ANALYSIS, conj: ['dat', 'omdat'], target: 100 },
+  { topic: 'verbs', records: VERBS_ANALYSIS, conj: [], target: 100 },
 ];
 
 const seenText = new Map<string, string>();

@@ -1211,8 +1211,8 @@
   "title": "Verbs in context — hebben, moeten, hoeven, proberen",
   "goal": "Choose the right verb and construct present, past, perfect and obligation sentences without translating 'have to' as hebben.",
   "overview": "Dutch uses hebben to possess something or as a perfect-tense auxiliary; moeten expresses 'have to/must'; hoeven in negative contexts means 'need to' and normally takes te + infinitive. The conjugated verb carries tense and person; other verbs keep their required infinitive or participle form.",
-  "status": "Expanded teaching module (AI-edited, not independently reviewed by a native speaker); broader course and exercise review pending.",
-  "revision": "1.0",
+  "status": "Expanded teaching module (AI-edited, not independently reviewed by a native speaker); broader course and exercise review pending. Sections 7 to 10 (inseparable verbs, fixed prepositions, reflexive verbs, infinitive groups) were added with the 100 analysed cards and are AI-edited without external source checks.",
+  "revision": "1.1",
   "formulas": [
    {
     "label": "Possession: hebben",
@@ -1348,6 +1348,78 @@
       "en": "I know that I still have to do it."
      }
     ]
+   },
+   {
+    "title": "7. Inseparable verbs never split",
+    "body": "Verbs that start with an unstressed prefix such as be-, ver-, ont- and her- are inseparable: bezoeken, begrijpen, verkopen, ontdekken, herhalen. The finite form stays whole ('Ik bezoek mijn grootmoeder'), the participle has no ge- ('bezocht', 'begrepen') and nothing is left at the end of the clause. Compare the separable 'opbellen': 'Ik bel mijn grootmoeder op'.",
+    "examples": [
+     {
+      "nl": "Ik bezoek mijn grootmoeder.",
+      "en": "I visit my grandmother."
+     },
+     {
+      "nl": "Zij begrijpt de opdracht niet.",
+      "en": "She does not understand the assignment."
+     },
+     {
+      "nl": "Wij verkopen onze oude fiets.",
+      "en": "We are selling our old bike."
+     }
+    ]
+   },
+   {
+    "title": "8. Verbs with a fixed preposition",
+    "body": "Many verbs come with a preposition that you must learn together: wachten op, denken aan, houden van, luisteren naar, kijken naar, praten over, zorgen voor, beginnen met, lachen om. The English preposition is no guide: 'wait for' is 'wachten op', 'listen to' is 'luisteren naar'. Some verbs change meaning with the preposition: denken aan (have in mind) versus denken over (have an opinion).",
+    "examples": [
+     {
+      "nl": "Ik wacht op de bus.",
+      "en": "I am waiting for the bus."
+     },
+     {
+      "nl": "Zij houdt van muziek.",
+      "en": "She loves music."
+     },
+     {
+      "nl": "Wij praten over het project.",
+      "en": "We are talking about the project."
+     }
+    ]
+   },
+   {
+    "title": "9. Reflexive verbs",
+    "body": "A reflexive verb is used with a pronoun that refers back to the subject: ik herinner me, hij vergist zich, wij haasten ons, ik voel me. The pronoun follows the finite verb in a main clause. English often has no pronoun for the same idea, so a reflexive pronoun is easy to forget.",
+    "examples": [
+     {
+      "nl": "Ik herinner me die dag.",
+      "en": "I remember that day."
+     },
+     {
+      "nl": "Hij vergist zich in het adres.",
+      "en": "He is mistaken about the address."
+     },
+     {
+      "nl": "Ik voel me vandaag goed.",
+      "en": "I feel well today."
+     }
+    ]
+   },
+   {
+    "title": "10. Verbs that take an infinitive",
+    "body": "Some verbs take a bare infinitive (modals, laten, blijven, gaan, komen): 'Ik laat het je zien', 'Hij blijft werken', 'Ik ga koken'. Others take te (proberen, besluiten, durven, weigeren, beloven, hopen) or 'om te' after a noun or an adjective. Learn which pattern each verb follows. Hoeven needs niet and te: 'Ik hoef niet te werken'.",
+    "examples": [
+     {
+      "nl": "Ik ga koken voor mijn vrienden.",
+      "en": "I am going to cook for my friends."
+     },
+     {
+      "nl": "Ik probeer vroeg te slapen.",
+      "en": "I try to sleep early."
+     },
+     {
+      "nl": "Het is moeilijk om een keuze te maken.",
+      "en": "It is difficult to make a choice."
+     }
+    ]
    }
   ],
   "mistakes": [
@@ -1365,6 +1437,21 @@
     "wrong": "Ik ben probeer Nederlands.",
     "right": "Ik probeer Nederlands te spreken.",
     "why": "Probeer is already the finite present verb; don't add ben before it. Add a complete infinitive phrase for what you are trying to do."
+   },
+   {
+    "wrong": "Ik zoek mijn grootmoeder be.",
+    "right": "Ik bezoek mijn grootmoeder.",
+    "why": "Bezoeken is inseparable because of the unstressed prefix be-; its finite form never splits and no particle can be left at the end of the clause."
+   },
+   {
+    "wrong": "Ik wacht voor de bus.",
+    "right": "Ik wacht op de bus.",
+    "why": "The verb wachten takes the preposition op, not voor; the English 'wait for' is no guide to the Dutch preposition."
+   },
+   {
+    "wrong": "Ik herinner die dag.",
+    "right": "Ik herinner me die dag.",
+    "why": "Zich herinneren is a reflexive verb and needs the pronoun me after the finite verb; without it the sentence is incomplete."
    }
   ],
   "sources": [

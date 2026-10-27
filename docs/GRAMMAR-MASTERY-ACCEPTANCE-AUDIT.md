@@ -32,7 +32,7 @@ Other planned sections (`zodra/zolang`, `of` meaning whether, `hoewel/tenzij`, r
 - **569 of 765** authored grammar cards include Dutch-first `scenarioNl`; **196 do not**. The **120** aliases inherit original English scenarios and do not yet add Dutch-first metadata.
 - **100** independent interactive grammar variations exist across **10** ALS parent families. **875 of 885** grammar parents currently have no complete ten-child variation family. Passive notes/examples do not count.
 - **68** separable verb lemma records, all explicitly marked AI-authored / independent review required.
-- Topic lesson versions: **5 v1.0** (`separable`, `inversion`, `omdat`, `dat`, `verbs`), **3 v1.1** (`als`, `toen`, `wanneer`), **3 v0.8** (`terwijl`, `voordat`, `nadat`), **2 v0.2** (`tot`, `tense`). A version label is not linguistic certification.
+- Topic lesson versions: **4 v1.0** (`inversion`, `omdat`, `dat`, `verbs`), **4 v1.1** (`als`, `toen`, `wanneer`, `separable`), **3 v0.8** (`terwijl`, `voordat`, `nadat`), **2 v0.2** (`tot`, `tense`). A version label is not linguistic certification.
 - All 765 authored grammar sentence IDs and Dutch strings are unique within authored grammar JSON; full semantic duplication/translation naturalness audit is outstanding.
 
 **Structural evidence:** `data/grammar-pattern-cards.json`, `data/grammar-reuse-links.json`, `data/grammar-variation-families.json`, `data/editorial/grammar-separable-verbs.json`, `data/grammar-topic-lessons.json`. Counts are derived from the actual branch data rather than passive lesson examples.

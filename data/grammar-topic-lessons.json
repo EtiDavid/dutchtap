@@ -270,10 +270,10 @@
  },
  "separable": {
   "title": "Separable verbs — scheidbare werkwoorden",
-  "goal": "Choose correctly among stuur ... op, opsturen, opgestuurd, opstuurt and op te sturen, and understand why.",
-  "overview": "A separable verb combines a particle with a verb. Its parts can separate when the lexical verb is finite in an ordinary main clause, but form a single word as an infinitive, participle, or single finite verb at a subordinate-clause end.",
-  "status": "Detailed first-release lesson, AI-edited; independent review pending.",
-  "revision": "1.0",
+  "goal": "Choose correctly among stuur ... op, opsturen, opgestuurd, opstuurt and op te sturen, understand why, and tell separable verbs from inseparable lookalikes.",
+  "overview": "A separable verb is a particle plus a verb (op + sturen). The particle carries the stress and moves: it stays behind in a main clause where the verb takes position two, and it is written together with the verb everywhere else (infinitive, participle, dependent clause). Verbs with an unstressed prefix such as be-, ver-, ont- or her- are inseparable and never split.",
+  "status": "Detailed lesson, AI-edited and aligned with the separable-verb forms table (68 verbs). The forms are authored but not yet checked by a native speaker; no external source has been checked for the stress-dependent verbs, so those are qualified.",
+  "revision": "1.1",
   "formulas": [
    {
     "label": "Present main clause",
@@ -304,82 +304,183 @@
     "label": "Te-infinitive",
     "pattern": "Ik probeer het verslag op te sturen.",
     "why": "Te goes between the particle and the verb."
+   },
+   {
+    "label": "Where the particle goes (main clause)",
+    "pattern": "Ik | stuur | het verslag | op.",
+    "why": "Slot two holds the finite verb stuur; the particle op waits at the end of the clause, behind every object and adverbial."
+   },
+   {
+    "label": "Where the particle goes (joined forms)",
+    "pattern": "opsturen | opgestuurd | op te sturen | dat ik opstuur",
+    "why": "Whenever the verb is not finite in slot two, the particle stays attached: infinitive, participle with ge- inside, te between particle and verb, and the finite form at the end of a dependent clause."
+   },
+   {
+    "label": "Imperative",
+    "pattern": "Stuur | het verslag | op!",
+    "why": "The imperative is a main clause: the stem comes first and the particle is split off to the end."
    }
   ],
   "sections": [
    {
-    "title": "Why do separable verbs split?",
-    "body": "A main-clause finite verb occupies the V2 slot; the separable particle remains later. Not all prefixed verbs are separable: verkopen and begrijpen are inseparable. Learn the individual verb.",
+    "title": "1. Why do separable verbs split?",
+    "body": "A main clause needs its finite verb in position two. In a separable verb the finite part is the stem (stuur) and the particle (op) is left behind and goes to the end of the clause. The particle is stressed and carries part of the meaning: 'opsturen' means to send off, 'sturen' only to send. Read the end of a Dutch main clause carefully, because the particle that completes the verb may be the last word.",
     "examples": [
      {
-      "nl": "Ik sta vroeg op.",
-      "en": "I get up early."
+      "nl": "Ik stuur het verslag op.",
+      "en": "I send off the report."
      },
      {
-      "nl": "Wij vullen het formulier in.",
-      "en": "We fill in the form."
+      "nl": "Ik bel mijn collega terug.",
+      "en": "I call my colleague back."
+     },
+     {
+      "nl": "Ik schakel de testserver uit.",
+      "en": "I switch off the test server."
+     }
+    ]
+   },
+   {
+    "title": "2. Watch the particle move",
+    "body": "Compare one verb in six places. Main clause: 'Ik stuur het verslag op'. Past: 'Ik stuurde het verslag op'. Modal: 'Ik moet het verslag opsturen'. Perfect: 'Ik heb het verslag opgestuurd'. Dependent clause: 'dat hij het verslag opstuurt'. With te: 'Ik probeer het verslag op te sturen'. The particle is detached only in the first two, where the verb itself sits in position two.",
+    "examples": [
+     {
+      "nl": "Ik moet het verslag opsturen.",
+      "en": "I have to send off the report."
+     },
+     {
+      "nl": "Ik weet dat hij het verslag opstuurt.",
+      "en": "I know that he sends off the report."
+     },
+     {
+      "nl": "Ik probeer het verslag op te sturen.",
+      "en": "I try to send off the report."
+     }
+    ]
+   },
+   {
+    "title": "3. The participle: ge- goes inside",
+    "body": "For a separable verb the participle is particle + ge + stem: op + ge + stuurd, terug + ge + beld, uit + ge + schakeld. Regular stems end in -d or -t as usual, and strong verbs keep their strong participle: opgenomen, deelgenomen, afgesproken. Verbs whose stem starts with an unstressed prefix get no ge-: voorbereid, not voorgebereid. Verbs of movement or change of state take zijn (aangekomen, opgestaan, uitgevallen), most others hebben.",
+    "examples": [
+     {
+      "nl": "Ik heb het verslag opgestuurd.",
+      "en": "I have sent off the report."
+     },
+     {
+      "nl": "Ik ben op kantoor aangekomen.",
+      "en": "I have arrived at the office."
+     },
+     {
+      "nl": "Ik heb de presentatie voorbereid.",
+      "en": "I have prepared the presentation."
+     }
+    ]
+   },
+   {
+    "title": "4. Te goes between particle and verb",
+    "body": "The te-infinitive is written in three parts: particle, te, verb. 'op te sturen', 'in te leveren', 'mee te brengen'. After a modal there is no te and the infinitive is whole: 'moet opsturen'. The three-part group stays together at the end of its clause.",
+    "examples": [
+     {
+      "nl": "Ik probeer mijn werk op tijd in te leveren.",
+      "en": "I try to hand in my work on time."
+     },
+     {
+      "nl": "Ik besluit het antwoord af te wachten.",
+      "en": "I decide to wait for the answer."
+     },
+     {
+      "nl": "Ik moet om zeven uur opstaan.",
+      "en": "I have to get up at seven."
+     }
+    ]
+   },
+   {
+    "title": "5. Dependent clauses and the imperative",
+    "body": "In a dependent clause the finite verb goes to the end and is written together with its particle: 'dat hij het verslag opstuurt'. The imperative is a main clause, so it splits again: 'Stuur het verslag op!'. This is why the same verb can look different in two clauses of one sentence.",
+    "examples": [
+     {
+      "nl": "Ik weet dat zij het adres opschrijft.",
+      "en": "I know that she writes down the address."
+     },
+     {
+      "nl": "Stuur het verslag op!",
+      "en": "Send off the report!"
+     },
+     {
+      "nl": "Ik zie dat de klant binnenkomt.",
+      "en": "I see that the customer is coming in."
+     }
+    ]
+   },
+   {
+    "title": "6. Reflexive verbs and fixed prepositions",
+    "body": "Some separable verbs are reflexive: 'zich aanmelden', 'zich inschrijven', 'zich uitschrijven'. The reflexive pronoun stays near the verb: 'Ik meld me aan'. Some take a fixed preposition: 'deelnemen aan', 'meedoen aan', 'aanmelden voor'. The preposition belongs to the verb and does not replace the particle.",
+    "examples": [
+     {
+      "nl": "Ik meld me aan voor de cursus.",
+      "en": "I register for the course."
+     },
+     {
+      "nl": "Ik neem deel aan de vergadering.",
+      "en": "I take part in the meeting."
+     },
+     {
+      "nl": "Ik doe mee aan de cursus.",
+      "en": "I join the course."
+     }
+    ]
+   },
+   {
+    "title": "7. Inseparable verbs: do not split them",
+    "body": "Verbs that begin with an unstressed prefix such as be-, ge-, ver-, ont- and her- are inseparable. The stress falls on the stem, they never split, and their participle has no ge-: bezoeken (bezocht), begrijpen (begrepen), ontdekken (ontdekt), verkopen (verkocht), overwegen (overwogen). A verb that merely starts with a letter group is not automatically separable, so learn each verb with its stress.",
+    "examples": [
+     {
+      "nl": "Ik bezoek mijn collega.",
+      "en": "I visit my colleague."
      },
      {
       "nl": "Ik begrijp het probleem.",
       "en": "I understand the problem."
+     },
+     {
+      "nl": "Ik heb de fout ontdekt.",
+      "en": "I have discovered the error."
      }
     ]
    },
    {
-    "title": "Finite present and past",
-    "body": "Conjugate the core according to subject and tense. The particle stays separate in a main clause.",
+    "title": "8. Lookalikes that depend on stress and meaning",
+    "body": "A few verbs exist in both forms with different meanings. 'Voorkomen' with stress on the stem means to prevent and is inseparable ('Ik voorkom het probleem'); with stress on the particle it means to occur and is separable ('Dat komt vaak voor'). Treat such pairs as two different verbs and check the meaning before you decide whether to split.",
     "examples": [
      {
-      "nl": "Ik bel je terug.",
-      "en": "I call you back."
+      "nl": "Ik voorkom het probleem.",
+      "en": "I prevent the problem."
      },
      {
-      "nl": "Gisteren belde ik je terug.",
-      "en": "Yesterday I called you back."
+      "nl": "Dat komt vaak voor.",
+      "en": "That happens often."
      },
      {
-      "nl": "Hij ruimt zijn bureau op.",
-      "en": "He tidies up his desk."
+      "nl": "Ik heb het probleem voorkomen.",
+      "en": "I have prevented the problem."
      }
     ]
    },
    {
-    "title": "Perfect, modal and subordinate constructions",
-    "body": "Many participles place ge- after the particle, but some are irregular; choose hebben or zijn correctly. After a modal the infinitive remains whole; a simple subordinate finite form rejoins.",
+    "title": "9. Combining the rules",
+    "body": "Real sentences combine several rules. After a fronted dependent clause the main clause inverts and the particle still goes to the end: 'Als het systeem uitvalt, schakel ik de server uit'. In the past with a time word first: 'Gisteren sloot ik de sessie af'. In the perfect the particle disappears into the participle: 'Ik heb de sessie afgesloten'. Ask three questions in order: which verb is finite, which position does it sit in, and is it the finite verb or a form of the verb that carries the particle?",
     "examples": [
      {
-      "nl": "We hebben het formulier ingevuld.",
-      "en": "We have filled in the form."
+      "nl": "Als het systeem uitvalt, schakel ik de server uit.",
+      "en": "If the system fails, I switch off the server."
      },
      {
-      "nl": "De trein is aangekomen.",
-      "en": "The train has arrived."
+      "nl": "Gisteren sloot ik de sessie af.",
+      "en": "Yesterday I ended the session."
      },
      {
-      "nl": "Ik moet de server opnieuw opstarten.",
-      "en": "I must restart the server."
-     },
-     {
-      "nl": "Ik weet dat hij mij terugbelt.",
-      "en": "I know he will call me back."
-     }
-    ]
-   },
-   {
-    "title": "Te-infinitive and imperative",
-    "body": "The te-infinitive places te between the particle and the infinitive. The imperative commonly splits.",
-    "examples": [
-     {
-      "nl": "Ik probeer de bestanden op te slaan.",
-      "en": "I try to save the files."
-     },
-     {
-      "nl": "Vul het formulier in!",
-      "en": "Fill in the form!"
-     },
-     {
-      "nl": "Ik neem deel aan de vergadering.",
-      "en": "I participate in the meeting."
+      "nl": "Ik heb de sessie afgesloten.",
+      "en": "I have ended the session."
      }
     ]
    }
@@ -399,6 +500,21 @@
     "wrong": "Ik probeer te opsturen het verslag.",
     "right": "Ik probeer het verslag op te sturen.",
     "why": "Te separates the particle from the infinitive."
+   },
+   {
+    "wrong": "Ik heb het verslag voorgebereid.",
+    "right": "Ik heb het verslag voorbereid.",
+    "why": "Voorbereiden contains the unstressed prefix be-, so the participle takes no ge-: voorbereid."
+   },
+   {
+    "wrong": "Ik begrijp het probleem niet te.",
+    "right": "Ik begrijp het probleem niet.",
+    "why": "Begrijpen is inseparable and has no particle, so nothing is left to put at the end; the verb never splits."
+   },
+   {
+    "wrong": "Ik heb op kantoor aangekomen.",
+    "right": "Ik ben op kantoor aangekomen.",
+    "why": "Aankomen is a verb of movement and forms its perfect with zijn, so the auxiliary is ben."
    }
   ],
   "sources": []

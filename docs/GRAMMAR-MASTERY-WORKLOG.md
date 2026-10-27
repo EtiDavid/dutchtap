@@ -4,6 +4,23 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-27 — Claude Code continuation: P4 Tot/Totdat to 60 and lesson v1.1
+
+**Plan check:** P4 in the master plan asks for Tot/Totdat at 60–100 with correct preposition-versus-conjunction explanations. This slice does that for Tot only; Terwijl, Voordat/Nadat and the new advanced topics are still open.
+
+**Branch:** `feat/grammar-mastery-completion`. Nothing merged, tagged or deployed.
+
+**Done**
+- 29 new Tot cards (`pat-tot-21..49`, `data/editorial/grammar-p2-tot.json`) and 11 core aliases; hand-authored records for all 60 in `data/grammar-tot-analysis.json`: conjunction `tot`/`totdat` (main-first and clause-first), perfect and separable verbs inside the clause, prepositional `tot` (clock time, day, `tot aan`, `tot nu toe`, `van … tot`) and fixed combinations (`toegang tot`, `leiden tot`, `zich wenden tot`, `promoveren tot`). The 20 legacy cards and the aliases got Dutch-first `situationNl` prompts that avoid the conjunction.
+- Preposition cards use the single-clause `demonstrative` pattern, so the clause map shows one main clause and no verb after `tot`.
+- Tot lesson raised to v1.1 (7 sections, 4 formulas, 5 mistakes). No external source was checked for it; the status line says so.
+- `tests/grammar.patterns.test.ts` now accepts `totdat` as the topic word for the Tot topic; new e2e spec `grammar-tot-analysis.spec.ts` (3 tests).
+- Counts: 949 authored + 131 aliases = 1,080 playable grammar cards; 753/949 with Dutch-first prompts; lessons 3 at v1.0, 7 at v1.1, 3 at v0.8.
+
+**Evidence:** vitest grammar suite 154 passed; browser tot and toen specs 5 passed. Full suite not re-run for this slice.
+
+**Open:** Terwijl 12→60, Voordat/Nadat 24→100; zodra/zolang, `of`, indirect questions, hoewel/tenzij and relative clauses as new topics; no native review; some Tot mistakes are short and teach through one rule each.
+
 ## 2026-10-27 — Claude Code continuation: flaky vocabulary test fixed, cross-pattern tests, full browser run
 
 - Root cause of the flaky `sessions-navigation` vocabulary test (failed on `main` too): only sentences with linked words show "Vocabulary for this sentence" (which opens a page with a Back button); others show "Browse vocabulary" (no Back button), and the card is random. The test now moves to the next card until the link is the specific one. 10/10 repeated runs pass. This is a test fix, not an app change.

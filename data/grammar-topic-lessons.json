@@ -1167,33 +1167,156 @@
  },
  "tot": {
   "title": "Tot / totdat — until",
-  "goal": "Explain when an activity stops.",
-  "overview": "Tot and totdat can introduce a time-endpoint subordinate clause. Tot vrijdag is instead a prepositional time phrase.",
-  "status": "Introductory reference only; full module expansion pending.",
-  "revision": "0.2",
+  "goal": "Tell the preposition tot from the conjunctions tot and totdat, and put the verb in the right place when an event ends something.",
+  "overview": "Tot can be a preposition before a time or a place (tot vijf uur, tot aan de deur) and it can be a conjunction before a clause (tot de dokter me roept). Totdat is only a conjunction and always opens a clause. After a conjunction the finite verb goes to the end of its clause; after a preposition there is no verb at all. Tot also sits inside fixed combinations that have nothing to do with time (toegang tot, leiden tot).",
+  "status": "Detailed lesson, AI-edited. Not independently reviewed by a native speaker.",
+  "revision": "1.1",
   "formulas": [
    {
-    "label": "Core structure",
-    "pattern": "Ik wacht | totdat de dokter me roept.",
-    "why": "Tot and totdat can introduce a time-endpoint subordinate clause. Tot vrijdag is instead a prepositional time phrase."
+    "label": "Conjunction after the main clause",
+    "pattern": "Ik wacht | tot de dokter me roept.",
+    "why": "The main clause keeps normal order; the tot-clause sends roept behind the object me."
+   },
+   {
+    "label": "Tot-clause first",
+    "pattern": "Tot de dokter me roept, | blijf ik in de wachtkamer.",
+    "why": "The whole tot-clause fills position one, so the main clause inverts to blijf ik."
+   },
+   {
+    "label": "Preposition with a time",
+    "pattern": "Ik werk | tot vijf uur.",
+    "why": "A clock time is no clause, so there is no second verb after tot."
+   },
+   {
+    "label": "Fixed combination",
+    "pattern": "Ik heb toegang | tot de map.",
+    "why": "Here tot belongs to the noun toegang and says nothing about time."
    }
   ],
   "sections": [
    {
-    "title": "Recognise the pattern",
-    "body": "Tot and totdat can introduce a time-endpoint subordinate clause. Tot vrijdag is instead a prepositional time phrase.",
+    "title": "1. Is there a verb after it?",
+    "body": "Look at what follows tot. If a subject and a verb follow, tot is a conjunction and the verb moves to the end: 'Ik wacht tot de bus komt'. If only a time, a day or a place follows, tot is a preposition: 'Ik wacht tot twaalf uur'. The test is simply whether a second verb is needed.",
     "examples": [
      {
-      "nl": "Ik wacht tot je klaar bent.",
-      "en": "I wait until you are ready."
+      "nl": "Ik wacht tot de bus komt.",
+      "en": "I wait until the bus comes."
      },
      {
-      "nl": "We blijven hier totdat de vergadering begint.",
-      "en": "We stay here until the meeting begins."
+      "nl": "Ik wacht tot twaalf uur.",
+      "en": "I wait until twelve o'clock."
      },
      {
-      "nl": "Ik werk tot vrijdag.",
-      "en": "I work until Friday."
+      "nl": "Tot nu toe is alles goed gegaan.",
+      "en": "Up to now everything has gone well."
+     }
+    ]
+   },
+   {
+    "title": "2. Tot and totdat as conjunctions",
+    "body": "Before a clause, tot and totdat mean the same thing and both send the finite verb to the end. Totdat can only be a conjunction; tot can be both. In practice speakers use tot more often for short clauses and totdat when they want the clause to stand out. Neither changes the verb order.",
+    "examples": [
+     {
+      "nl": "Ik blijf proberen totdat het lukt.",
+      "en": "I keep trying until it works."
+     },
+     {
+      "nl": "Zij wacht totdat de klant haar terugbelt.",
+      "en": "She waits until the customer calls her back."
+     },
+     {
+      "nl": "Ik wacht tot mijn collega mij heeft teruggebeld.",
+      "en": "I wait until my colleague has called me back."
+     }
+    ]
+   },
+   {
+    "title": "3. The clause can come first",
+    "body": "When the tot-clause opens the sentence, it fills position one and the main clause inverts. The verb of the tot-clause still goes last, and the main clause then starts with its own finite verb. So 'Tot de les begint, lees ik mijn notities' has two verbs in the wrong English position: begint at the end of clause one, lees at the start of clause two.",
+    "examples": [
+     {
+      "nl": "Tot de les begint, lees ik mijn notities.",
+      "en": "Until the lesson starts, I read my notes."
+     },
+     {
+      "nl": "Totdat ik meer weet, zeg ik niets.",
+      "en": "Until I know more, I say nothing."
+     },
+     {
+      "nl": "Tot ik antwoord heb, blijft het ticket open.",
+      "en": "Until I have an answer, the ticket stays open."
+     }
+    ]
+   },
+   {
+    "title": "4. Verb groups at the end",
+    "body": "Perfect tenses, passives and separable verbs all end up behind the object inside the tot-clause. A separable verb is written together there: 'tot ik terugbel', not 'tot ik bel terug'. Participles come last: 'tot de vergadering is afgelopen'. The finite verb is the one that carries the person ending.",
+    "examples": [
+     {
+      "nl": "Wacht even tot ik terugbel.",
+      "en": "Wait a moment until I call back."
+     },
+     {
+      "nl": "Ik blijf hier tot de vergadering is afgelopen.",
+      "en": "I stay here until the meeting is over."
+     },
+     {
+      "nl": "Totdat de storing is verholpen, gebruiken we de reserveserver.",
+      "en": "Until the fault is fixed, we use the backup server."
+     }
+    ]
+   },
+   {
+    "title": "5. The preposition tot",
+    "body": "As a preposition tot takes a noun phrase: a clock time, a day, a moment or a place. There is no verb to move. 'Tot' + 'aan' is a stronger limit and is often used for places. A noun can also hide an event: 'tot mijn terugkomst' says the same as 'tot ik terugkom', but with a noun and no extra clause.",
+    "examples": [
+     {
+      "nl": "De winkel is open tot negen uur.",
+      "en": "The shop is open until nine o'clock."
+     },
+     {
+      "nl": "Van maandag tot vrijdag werk ik thuis.",
+      "en": "From Monday to Friday I work from home."
+     },
+     {
+      "nl": "Het water stijgt tot aan de deur.",
+      "en": "The water rises up to the door."
+     }
+    ]
+   },
+   {
+    "title": "6. Tot nu toe and other fixed phrases",
+    "body": "Some phrases are learned as a whole. 'Tot nu toe' means 'so far' and 'tot nu toe' fills a normal position in the sentence. 'Tot ziens' and 'tot morgen' are greetings. These phrases have no clause and no verb of their own; treat them as one adverb.",
+    "examples": [
+     {
+      "nl": "Wij hebben tot nu toe vijf meldingen ontvangen.",
+      "en": "We have received five reports so far."
+     },
+     {
+      "nl": "Tot zondag heb ik vakantie.",
+      "en": "Until Sunday I am on holiday."
+     },
+     {
+      "nl": "Het kan wachten tot volgende week.",
+      "en": "It can wait until next week."
+     }
+    ]
+   },
+   {
+    "title": "7. Tot as a fixed preposition",
+    "body": "Many words take tot and have no time meaning at all. 'Toegang tot' is access to, 'leiden tot' is to lead to, 'zich wenden tot' is to turn to someone, 'promoveren tot' is to be promoted to. Learn each combination with its noun or verb; the preposition is not predictable from English alone.",
+    "examples": [
+     {
+      "nl": "Ik heb toegang tot de map.",
+      "en": "I have access to the folder."
+     },
+     {
+      "nl": "Dat leidt tot problemen.",
+      "en": "That leads to problems."
+     },
+     {
+      "nl": "Hij wendt zich tot de manager.",
+      "en": "He turns to the manager."
      }
     ]
    }
@@ -1202,7 +1325,27 @@
    {
     "wrong": "Ik wacht totdat hij is klaar.",
     "right": "Ik wacht totdat hij klaar is.",
-    "why": "The single subordinate finite verb follows the predicate klaar."
+    "why": "In a dependent clause the finite verb goes to the end, so is follows the predicate klaar."
+   },
+   {
+    "wrong": "Ik werk tot is vijf uur.",
+    "right": "Ik werk tot vijf uur.",
+    "why": "A clock time is not a clause. As a preposition tot needs no verb after it."
+   },
+   {
+    "wrong": "Ik wacht tot mijn collega heeft mij teruggebeld.",
+    "right": "Ik wacht tot mijn collega mij heeft teruggebeld.",
+    "why": "Both parts of the perfect group go behind the object in the dependent clause, not before it."
+   },
+   {
+    "wrong": "Tot de les begint, ik lees mijn notities.",
+    "right": "Tot de les begint, lees ik mijn notities.",
+    "why": "After a fronted clause the main clause starts with its finite verb: lees ik, not ik lees."
+   },
+   {
+    "wrong": "Ik heb toegang aan de map.",
+    "right": "Ik heb toegang tot de map.",
+    "why": "The noun toegang takes tot; another preposition sounds wrong here and has to be learned with the noun."
    }
   ],
   "sources": []

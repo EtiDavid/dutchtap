@@ -38,7 +38,7 @@ describe('Grammar patterns collection', () => {
   it('puts each conjunction pattern into the sentence: als, omdat, dat, tot and toen sentences use their word', () => {
     for (const topic of ['als', 'omdat', 'tot', 'toen'] as const) {
       // Contrast cards (want instead of omdat) are tagged to the topic on purpose and teach the choice between the two.
-      const bad = GRAMMAR_CARDS.filter(c => c.category === topic && !(c as { review?: { focus?: string } }).review?.focus?.startsWith('want') && !new RegExp(`\\b${topic}\\b`, 'i').test(c.dutch));
+      const bad = GRAMMAR_CARDS.filter(c => c.category === topic && !(c as { review?: { focus?: string } }).review?.focus?.startsWith('want') && !new RegExp(topic === 'tot' ? '\\btot(dat)?\\b' : `\\b${topic}\\b`, 'i').test(c.dutch));
       expect(bad.map(c => c.dutch), topic).toEqual([]);
     }
     const dat = GRAMMAR_CARDS.filter(c => c.category === 'dat');

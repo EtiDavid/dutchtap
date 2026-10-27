@@ -7,6 +7,7 @@ import inversionAnalysis from "@/data/grammar-inversion-analysis.json";
 import separableAnalysis from "@/data/grammar-separable-analysis.json";
 import tenseAnalysis from "@/data/grammar-tense-analysis.json";
 import verbsAnalysis from "@/data/grammar-verbs-analysis.json";
+import totAnalysis from "@/data/grammar-tot-analysis.json";
 import type { Breakdown } from "@/lib/grammarBreakdowns";
 
 /**
@@ -54,8 +55,9 @@ export const INVERSION_ANALYSIS = inversionAnalysis.cards as unknown as Record<s
 export const SEPARABLE_ANALYSIS = separableAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const TENSE_ANALYSIS = tenseAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 export const VERBS_ANALYSIS = verbsAnalysis.cards as unknown as Record<string, AnalysisRecord>;
+export const TOT_ANALYSIS = totAnalysis.cards as unknown as Record<string, AnalysisRecord>;
 /** Every authored sentence analysis, whatever its topic. Ids are unique across topics. */
-export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS, ...WANNEER_ANALYSIS, ...INVERSION_ANALYSIS, ...SEPARABLE_ANALYSIS, ...TENSE_ANALYSIS, ...VERBS_ANALYSIS };
+export const GRAMMAR_ANALYSIS: Record<string, AnalysisRecord> = { ...ALS_ANALYSIS, ...OMDAT_ANALYSIS, ...DAT_ANALYSIS, ...TOEN_ANALYSIS, ...WANNEER_ANALYSIS, ...INVERSION_ANALYSIS, ...SEPARABLE_ANALYSIS, ...TENSE_ANALYSIS, ...VERBS_ANALYSIS, ...TOT_ANALYSIS };
 export const analysisFor = (cardId: string): AnalysisRecord | undefined => GRAMMAR_ANALYSIS[cardId];
 /** A Dutch-first situation for cards that were written before Dutch prompts existed (including linked Everyday/Work sentences). */
 export const situationEnFor = (cardId: string): string | undefined => GRAMMAR_ANALYSIS[cardId]?.situationEn;

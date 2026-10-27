@@ -28,18 +28,18 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 | `terwijl` | 12 | 0 | 12 | Foundational |
 | `voordat` | 12 | 0 | 12 | Foundational |
 | `nadat` | 12 | 0 | 12 | Foundational |
-| `tot` | 20 | 0 | 20 | Introductory |
+| `tot` | 49 | 11 | **60** | Expanded v1.1 |
 | `verbs` | 100 | 0 | **100** | Expanded v1.1 |
 | `separable` | 184 | 0 | **184** | Expanded v1 |
 | `tense` | 100 | 0 | **100** | Expanded v1.1 |
-| **TOTAL** | **920** | **120** | **1040** | **13 topics** |
+| **TOTAL** | **949** | **131** | **1080** | **13 topics** |
 
 There are also **68 authored separable-verb lemmas** (within the 60–100 target; **not** independently native-verified), 100 interactive child variations on ten ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
 
 ## Authoring and safety
 
 - Canonical grammar-generation inputs: `data/learning-tasks.json`, `data/editorial/grammar-pattern-extra.tsv`, `data/editorial/grammar-als-expansion.json`, `data/editorial/grammar-new-time-patterns.json`, `data/editorial/grammar-separable-cards.json`, `data/editorial/grammar-separable-verbs.json`; the deterministic generator is `scripts/build-grammar-patterns.py`. Never edit just the generated JSON.
-- `data/grammar-reuse-links.json` explicitly lists 120 source IDs; `lib/flashcards/engine.ts` materializes runtime grammar aliases and preserves the originals.
+- `data/grammar-reuse-links.json` explicitly lists 131 source IDs; `lib/flashcards/engine.ts` materializes runtime grammar aliases and preserves the originals.
 - `data/grammar-topic-lessons.json` holds lesson-wide explanations and optional mistake-repair prompts, not per-card certified linguistic analyses.
 - `data/grammar-variation-families.json` holds the three initial ALS ten-child families. Device Dutch speech is used; no paid grammar audio or new pictures are required.
 - Full grammar tagging, new interactive variations for other parents, additional topic coverage, cross-device migration/restore tests, independent content QA, accessibility tests and production release must follow the [master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).

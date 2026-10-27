@@ -28,6 +28,7 @@ export const GRAMMAR_AREAS = {
   voordat: 'Voordat · before',
   nadat: 'Nadat · after',
   zodra: 'Zodra & zolang · as soon as, as long as',
+  of: 'Of · whether, or, as if',
   tot: 'Tot · until something happens',
   toen: 'Toen · one past occasion',
   verbs: 'Verbs in context',

@@ -12,7 +12,7 @@ Source material is AI-edited and is **not** independently certified by a native 
 
 **Tests:** 7 new Vitest cases (14 in `tests/grammar.mixed.test.ts`); 4 new Playwright specs `tests/flashcard-e2e/grammar-mixed-sync.spec.ts` (account save + second device, failed upload retried, guest copy button, guest makes no account calls) using an in-memory endpoint, not Atlas. `tsc`, `eslint` clean; Vitest 526 passed (7 skipped).
 
-**Not verified:** the new API route has not been run against a real MongoDB (it needs a session cookie); its logic mirrors `/api/flashcards` and is covered only through the in-memory stand-in. Not done: sessions integration, prerequisite gating, more than 31 challenges, native review.
+**Route verified against real MongoDB (follow-up):** `tests/grammar.mixed-route.mongo.test.ts` runs the real GET/POST handlers against the local docker Mongo (`TEST_MONGODB_URI=mongodb://127.0.0.1:27018`, localhost-only guard, throwaway database; skipped otherwise) with only the cookie session and connection stubbed. 6 cases: signed-out 401, per-learner isolation, older snapshot cannot overwrite newer, 8 concurrent identical posts leave one document, invalid/untimed/impossible records get 400 and store nothing, an invalid stored document is ignored. Breaking the `$lte` guard makes the older-snapshot case fail, so the test does detect it. Not done: sessions integration, prerequisite gating, more than 31 challenges, native review.
 
 ## 2026-10-27 — Claude Code continuation: P5 source-card tagging (one sentence, several topics)
 

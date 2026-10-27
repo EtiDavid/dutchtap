@@ -16,9 +16,11 @@ Source material is AI-edited and is **not** independently certified by a native 
 - Relative-clause lesson v1.1 (8 sections, 5 mistakes); no external source checked.
 - Counts: 1,400 authored + 184 aliases = 1,584 playable across 18 topics; 1204/1400 with Dutch-first prompts; 3 lessons at v1.0 and 15 at v1.1.
 
-**P4 status:** every P4 content bullet now has a topic with the target count (Tot 60, Terwijl 60, Voordat 50 + Nadat 50, Zodra & zolang 60, Of 60, Indirect questions 100, Hoewel & tenzij 60, Relative clauses 100). Not done under P4: "meaningful coverage of other advanced conjunctions" (e.g. `sinds`, `zodat`, `opdat`, `alsof` beyond what Of covers, `naargelang`) and the topic grouping/navigation update; both remain open.
+**P4 status:** every P4 content bullet now has a topic with the target count (Tot 60, Terwijl 60, Voordat 50 + Nadat 50, Zodra & zolang 60, Of 60, Indirect questions 100, Hoewel & tenzij 60, Relative clauses 100). Topic grouping is now done: the pattern tiles are grouped under four headings (Word order & verbs, Reasons & statements, Time, Contrast & exceptions) while every pattern keeps its own direct tile and link (`components/sessions/PatternTiles.tsx`, `tests/grammar.pattern-tiles.test.ts`). Not done under P4: "meaningful coverage of other advanced conjunctions" (e.g. `sinds`, `zodat`, `opdat`, `naargelang`).
 
-**Open:** other advanced conjunctions (§5.2), topic grouping/navigation, P5–P7, no native review.
+**Evidence:** tsc and eslint clean; Vitest 503 passed (7 skipped) before the grouping change; full Chromium suite 141 passed (3.8 min) on the commit that added Relative clauses.
+
+**Open:** other advanced conjunctions (§5.2), P5–P7, no native review.
 
 ## 2026-10-27 — Claude Code continuation: P4 Indirect questions (new topic, 100 cards), lesson v1.1
 

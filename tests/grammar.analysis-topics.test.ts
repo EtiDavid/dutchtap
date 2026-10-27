@@ -3,7 +3,7 @@ import { GRAMMAR_CARDS } from '@/lib/flashcards/engine';
 import { cardFor } from '@/lib/content/cards';
 import { separableFormsFor } from '@/lib/separableForms';
 import { breakdownFor } from '@/lib/grammarBreakdowns';
-import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, SEPARABLE_ANALYSIS, TENSE_ANALYSIS, VERBS_ANALYSIS, TOT_ANALYSIS, TERWIJL_ANALYSIS, VOORDAT_ANALYSIS, NADAT_ANALYSIS, ZODRA_ANALYSIS, OF_ANALYSIS, HOEWEL_ANALYSIS, INDIRECT_ANALYSIS, RELATIVE_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
+import { DAT_ANALYSIS, GRAMMAR_ANALYSIS, OMDAT_ANALYSIS, TOEN_ANALYSIS, WANNEER_ANALYSIS, INVERSION_ANALYSIS, SEPARABLE_ANALYSIS, TENSE_ANALYSIS, VERBS_ANALYSIS, TOT_ANALYSIS, TERWIJL_ANALYSIS, VOORDAT_ANALYSIS, NADAT_ANALYSIS, ZODRA_ANALYSIS, OF_ANALYSIS, HOEWEL_ANALYSIS, INDIRECT_ANALYSIS, RELATIVE_ANALYSIS, CONNECTORS_ANALYSIS, type AnalysisRecord } from '@/lib/grammarAnalysis';
 
 const words = (text: string) => text.toLowerCase().replace(/[^\p{L}\p{N}' ]/gu, ' ').replace(/’/g, "'").split(/\s+/).filter(Boolean);
 const GENERIC = [/because it is (a )?subordinate\b/i, /^dutch uses inversion\.?$/i, /\bthis is correct grammar\b/i, /^the verb goes to the end\.?$/i, /^op is a separable prefix\.?$/i, /subject and verb switch\.?$/i];
@@ -28,6 +28,7 @@ const TOPICS: TopicConfig[] = [
   { topic: 'hoewel', records: HOEWEL_ANALYSIS, conj: ['hoewel', 'alhoewel', 'ook', 'al', 'tenzij', 'maar'], target: 60 },
   { topic: 'indirect', records: INDIRECT_ANALYSIS, conj: ['wie', 'wat', 'waar', 'waarom', 'hoe', 'wanneer', 'welke', 'welk', 'hoeveel', 'waarover', 'waarvoor', 'waarmee', 'waardoor', 'waarop', 'waarvan', 'met', 'van', 'waaraan'], target: 100 },
   { topic: 'relative', records: RELATIVE_ANALYSIS, conj: ['die', 'dat', 'wie', 'wat', 'waar', 'waarin', 'waarop', 'waarmee', 'waarvoor', 'waarover', 'waaraan', 'waarom', 'met', 'aan', 'voor', 'van', 'over', 'bij'], target: 100, leak: /\b(die|dat)\b/i },
+  { topic: 'connectors', records: CONNECTORS_ANALYSIS, conj: ['sinds', 'nu', 'zodat', 'opdat', 'doordat', 'aangezien', 'mits', 'indien', 'naarmate', 'op', 'voor'], target: 40, leak: /\b(sinds|nu|zodat|opdat|doordat|aangezien|mits|indien|naarmate)\b/i },
 ];
 
 const seenText = new Map<string, string>();

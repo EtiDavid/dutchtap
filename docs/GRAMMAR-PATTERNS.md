@@ -37,7 +37,8 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 | `hoewel` | 59 | 1 | **60** | Expanded v1.1 |
 | `indirect` | 85 | 15 | **100** | Expanded v1.1 |
 | `relative` | 97 | 3 | **100** | Expanded v1.1 |
-| **TOTAL** | **1400** | **184** | **1584** | **18 topics** |
+| `connectors` | 40 | 0 | **40** | Expanded v1.1 |
+| **TOTAL** | **1440** | **184** | **1624** | **19 topics** |
 
 There are also **68 authored separable-verb lemmas** (within the 60–100 target; **not** independently native-verified), 100 interactive child variations on ten ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
 

@@ -26,19 +26,20 @@
 | Hoewel & tenzij | 0 | 59 | 1 | **60** | New topic `hoewel`; target count met (60 combined); `hoewel`/`alhoewel` (verb last), `maar` contrast (two main clauses), `ook al` (verb directly behind `al`, with the contrast to `hoewel`), and `tenzij` (exception); every card has a hand-authored analysis |
 | Indirect questions | 0 | 85 | 15 | **100** | New topic `indirect`; target count met (100); wie / wat / waar / waarom / hoe / wanneer / welke-welk / hoeveel / R-words (waarover, waarmee, waarvoor, waardoor, waarop, waarvan), verb groups, tenses, imperatives, polite requests and direct-versus-embedded contrast; every card has a hand-authored analysis |
 | Relative clauses | 0 | 97 | 3 | **100** | New topic `relative`; target count met (100); `die` / `dat` (subject and object), `wie` and `degene die`, `wat` (alles, iets, niets, het enige, whole clause), `waar` and R-words, preposition + `wie`, and contrast cards for demonstrative `die`/`dat` and embedded `wie`; every card has a hand-authored analysis |
+| More conjunctions | 0 | 40 | 0 | **40** | New topic `connectors`; sinds (conjunction and preposition), nu (conjunction and adverb), zodat, opdat, doordat, aangezien, mits, indien, naarmate, op voorwaarde dat, voor het geval dat; every card has a hand-authored analysis; no core sentence uses these words in a form worth linking, so no aliases; lesson cites no source (none cross-checked); `ondanks dat`, `zonder dat`, `behalve dat`, `daar`, `gesteld dat` and `zoals` are still not covered |
 | Verbs | 36 | 64 | 0 | **100** | Target count met; modals, hoeven + te, te-infinitive verbs, hebben, inseparable verbs, fixed prepositions, reflexive verbs and infinitive groups; every card has a hand-authored analysis |
 | Separable verbs | 24 | 160 | 0 | **184** | Card count in target range; 68 verb lemmas in the dictionary (60–100 target met by count), each with an authored forms table; not native-verified |
 | Past & perfect | 17 | 83 | 0 | **100** | Target count met; present, simple past (weak and strong), perfect with hebben and zijn, prefix verbs without ge-, modal perfect, perfect in dependent clauses, past perfect and perfect questions; every card has a hand-authored analysis with the auxiliary rationale |
-| **Total** | **196** | **1204** | **184** | **1,584** | **1400 authored; 184 source aliases** |
+| **Total** | **196** | **1244** | **184** | **1,624** | **1440 authored; 184 source aliases** |
 
-Other planned sections (other advanced connectors) are not yet independent complete topic collections. Their presence in existing core sentences or notes **does not count** as a released, tracked new topic.
+Other planned sections (the remaining advanced connectors listed in the row above) are not yet independent complete topic collections. Their presence in existing core sentences or notes **does not count** as a released, tracked new topic.
 
-- **1,200 Core cards** remain in Everyday/Dutch at Work; the branch adds 1,584 grammar aliases/authored base cards for **2,784 total card IDs**.
-- **1204 of 1400** authored grammar cards include Dutch-first `scenarioNl`; **196 do not**. The **184** aliases inherit original English scenarios and do not yet add Dutch-first metadata.
-- **100** independent interactive grammar variations exist across **10** ALS parent families. **1574 of 1584** grammar parents currently have no complete ten-child variation family. Passive notes/examples do not count.
+- **1,200 Core cards** remain in Everyday/Dutch at Work; the branch adds 1,624 grammar aliases/authored base cards for **2,824 total card IDs**.
+- **1244 of 1440** authored grammar cards include Dutch-first `scenarioNl`; **196 do not**. The **184** aliases inherit original English scenarios and do not yet add Dutch-first metadata.
+- **100** independent interactive grammar variations exist across **10** ALS parent families. **1614 of 1624** grammar parents currently have no complete ten-child variation family. Passive notes/examples do not count.
 - **68** separable verb lemma records, all explicitly marked AI-authored / independent review required.
-- Topic lesson versions: **3 v1.0** (`inversion`, `omdat`, `dat`), **15 v1.1** (`als`, `toen`, `wanneer`, `separable`, `tense`, `verbs`, `tot`, `terwijl`, `voordat`, `nadat`, `zodra`, `of`, `hoewel`, `indirect`, `relative`), **0 v0.8**, **0 v0.2**. A version label is not linguistic certification.
-- All 1400 authored grammar sentence IDs and Dutch strings are unique within authored grammar JSON; full semantic duplication/translation naturalness audit is outstanding.
+- Topic lesson versions: **3 v1.0** (`inversion`, `omdat`, `dat`), **16 v1.1** (`connectors`, `als`, `toen`, `wanneer`, `separable`, `tense`, `verbs`, `tot`, `terwijl`, `voordat`, `nadat`, `zodra`, `of`, `hoewel`, `indirect`, `relative`), **0 v0.8**, **0 v0.2**. A version label is not linguistic certification.
+- All 1440 authored grammar sentence IDs and Dutch strings are unique within authored grammar JSON; full semantic duplication/translation naturalness audit is outstanding.
 
 **Structural evidence:** `data/grammar-pattern-cards.json`, `data/grammar-reuse-links.json`, `data/grammar-variation-families.json`, `data/editorial/grammar-separable-verbs.json`, `data/grammar-topic-lessons.json`. Counts are derived from the actual branch data rather than passive lesson examples.
 

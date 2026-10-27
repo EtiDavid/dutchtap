@@ -1,0 +1,3113 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for sinds, nu, zodat, opdat, doordat, aangezien, mits, indien, naarmate, op voorwaarde dat and voor het geval dat. AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-connectors-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "sinds = since (the starting point of something that still holds)",
+    "why": "The habit began at a moment that is still part of the present, so Dutch keeps the present tense in both clauses."
+   },
+   "situationNl": "Je vertelt een collega hoe je naar kantoor reist en wat daar de aanleiding voor was: je woonplaats. Verbind die twee in één zin.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik fiets naar mijn werk",
+     "subject": "Ik",
+     "finite": "fiets",
+     "role": "main clause (the situation that continues)",
+     "why": "'Ik' is first and 'fiets' follows it, then the phrase 'naar mijn werk'; nothing has moved."
+    },
+    {
+     "kind": "bijzin",
+     "text": "sinds ik in Utrecht woon",
+     "subject": "ik",
+     "finite": "woon",
+     "role": "sinds-clause (the starting point)",
+     "why": "After 'sinds' come the subject 'ik' and the place 'in Utrecht', and the finite verb 'woon' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "fiets"
+    },
+    {
+     "label": "phrase",
+     "text": "naar mijn werk"
+    },
+    {
+     "label": "conjunction (since)",
+     "text": "sinds"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "phrase",
+     "text": "in Utrecht"
+    },
+    {
+     "label": "finite verb",
+     "text": "woon"
+    }
+   ],
+   "meaning": "I have cycled to work ever since I moved to Utrecht.",
+   "order": "The main clause comes first and keeps its normal order. The sinds-clause is subordinate, so 'woon' goes to the end, and the present tense is used because the habit still continues.",
+   "forms": "fietsen: ik fiets. wonen: ik woon.",
+   "compare": "English needs the perfect ('have cycled ... since I moved'). Dutch keeps the present tense, because the situation still holds today.",
+   "mistakes": [
+    {
+     "wrong": "Ik fiets naar mijn werk sinds ik woon in Utrecht.",
+     "right": "Ik fiets naar mijn werk sinds ik in Utrecht woon.",
+     "why": "After 'sinds' the verb 'woon' goes to the end of its clause: 'sinds ik in Utrecht woon'."
+    },
+    {
+     "wrong": "Ik fiets naar mijn werk, sinds woon ik in Utrecht.",
+     "right": "Ik fiets naar mijn werk sinds ik in Utrecht woon.",
+     "why": "Sinds does not trigger inversion after the main clause; the clause stays in subordinate order with 'woon' last."
+    }
+   ],
+   "contrast": {
+    "dutch": "Sinds ik in Utrecht woon, fiets ik naar mijn werk.",
+    "english": "Since I live in Utrecht, I cycle to work.",
+    "note": "With the sinds-clause first, the main clause inverts to 'fiets ik'."
+   }
+  },
+  "pat-connectors-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "sinds = since (the starting point of something that still holds)",
+    "why": "The new job marks the start of the change; the fronted clause fills position one and the main clause inverts."
+   },
+   "situationNl": "Een vriend lijkt de laatste tijd opgewekter. Verklaar zijn verandering aan een collega met één zin over zijn werk en zijn stemming.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Sinds hij een nieuwe baan heeft",
+     "subject": "hij",
+     "finite": "heeft",
+     "role": "sinds-clause (the starting point)",
+     "why": "The subject 'hij' comes first, then the object 'een nieuwe baan', and the finite verb 'heeft' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is hij veel vrolijker",
+     "subject": "hij",
+     "finite": "is",
+     "role": "main clause (the situation that continues)",
+     "why": "The finite verb 'is' comes first, then the subject 'hij' and the predicate 'veel vrolijker'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since)",
+     "text": "Sinds"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "een nieuwe baan"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "veel vrolijker"
+    }
+   ],
+   "meaning": "Since he has had a new job, he has been much more cheerful.",
+   "order": "The whole sinds-clause is position one, so the main clause inverts to 'is hij'. The comma marks the border between the clauses.",
+   "forms": "hebben: hij heeft. zijn: hij is.",
+   "compare": "English 'since he has had a new job, he is' keeps 'he is'. Dutch inverts to 'is hij' after the fronted clause.",
+   "mistakes": [
+    {
+     "wrong": "Sinds hij een nieuwe baan heeft, hij is veel vrolijker.",
+     "right": "Sinds hij een nieuwe baan heeft, is hij veel vrolijker.",
+     "why": "After the fronted clause the main clause starts with the verb: 'is hij'."
+    },
+    {
+     "wrong": "Sinds hij heeft een nieuwe baan, is hij veel vrolijker.",
+     "right": "Sinds hij een nieuwe baan heeft, is hij veel vrolijker.",
+     "why": "The finite verb 'heeft' goes to the end of the sinds-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij is veel vrolijker sinds hij een nieuwe baan heeft.",
+    "english": "He has been much more cheerful since he got a new job.",
+    "note": "With the main clause first there is no inversion: 'Hij is'."
+   }
+  },
+  "pat-connectors-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "sinds = since (the starting point of something that still holds)",
+    "why": "The move is finished, but its effect, the silence, continues. The main clause is in the perfect, the sinds-clause too."
+   },
+   "situationNl": "Een buurvrouw vraagt naar een oud-collega. Zeg dat het contact is weggevallen en noem het moment waarop dat begon.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We hebben niets meer van haar gehoord",
+     "subject": "We",
+     "finite": "hebben",
+     "role": "main clause (the situation that continues)",
+     "why": "'We' is first and 'hebben' second; the participle 'gehoord' closes the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "sinds ze is verhuisd",
+     "subject": "ze",
+     "finite": "is",
+     "role": "sinds-clause (the starting point)",
+     "why": "After 'sinds' the subject 'ze' comes first, and the perfect group 'is verhuisd' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebben"
+    },
+    {
+     "label": "object",
+     "text": "niets meer"
+    },
+    {
+     "label": "phrase",
+     "text": "van haar"
+    },
+    {
+     "label": "participle",
+     "text": "gehoord"
+    },
+    {
+     "label": "conjunction (since)",
+     "text": "sinds"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "participle",
+     "text": "verhuisd"
+    }
+   ],
+   "meaning": "We haven't heard anything from her since she moved away.",
+   "order": "Both clauses are in the perfect. In the sinds-clause the finite verb 'is' comes just before the participle 'verhuisd', and verhuizen takes zijn because it describes a change of place.",
+   "forms": "horen: gehoord (hebben). verhuizen: verhuisd (zijn).",
+   "compare": "English 'since she moved' uses the past. Dutch usually uses the perfect here: 'sinds ze is verhuisd'.",
+   "mistakes": [
+    {
+     "wrong": "We hebben niets meer van haar horen sinds ze is verhuisd.",
+     "right": "We hebben niets meer van haar gehoord sinds ze is verhuisd.",
+     "why": "The perfect needs the participle 'gehoord', not the infinitive 'horen'."
+    },
+    {
+     "wrong": "We hebben niets meer van haar gehoord sinds ze heeft verhuisd.",
+     "right": "We hebben niets meer van haar gehoord sinds ze is verhuisd.",
+     "why": "Verhuizen takes zijn, not hebben: 'ze is verhuisd'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Sinds ze is verhuisd, hebben we niets meer van haar gehoord.",
+    "english": "Since she moved, we haven't heard anything from her.",
+    "note": "The fronted clause makes the main clause start with 'hebben we'."
+   }
+  },
+  "pat-connectors-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "sinds = since (the starting point of something that still holds)",
+    "why": "A completed renovation starts a quieter period, so the fronted clause names the event and the main clause the result."
+   },
+   "situationNl": "Je komt vaak in een winkel en merkt dat de sfeer anders is. Begin bij de verbouwing van het pand en beschrijf het verschil dat je merkt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Sinds de winkel is verbouwd",
+     "subject": "de winkel",
+     "finite": "is",
+     "role": "sinds-clause (the starting point)",
+     "why": "The subject 'de winkel' follows 'sinds', and the passive group 'is verbouwd' closes the clause with 'is' directly before the participle."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is het er veel rustiger",
+     "subject": "het",
+     "finite": "is",
+     "role": "main clause (the situation that continues)",
+     "why": "The finite verb 'is' comes first, then the subject 'het', the place word 'er' and the predicate 'veel rustiger'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since)",
+     "text": "Sinds"
+    },
+    {
+     "label": "subject",
+     "text": "de winkel"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "participle",
+     "text": "verbouwd"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "er"
+    },
+    {
+     "label": "predicate",
+     "text": "veel rustiger"
+    }
+   ],
+   "meaning": "Since the shop was renovated, it has been much quieter there.",
+   "order": "'Is verbouwd' is a passive group: a form of zijn plus a participle. The main clause follows the fronted clause and starts with 'is het'.",
+   "forms": "zijn: de winkel is verbouwd (passive). zijn: het is rustiger.",
+   "compare": "English 'since the shop was renovated' uses the simple past. Dutch uses 'is verbouwd'.",
+   "mistakes": [
+    {
+     "wrong": "Sinds de winkel is verbouw, is het er veel rustiger.",
+     "right": "Sinds de winkel is verbouwd, is het er veel rustiger.",
+     "why": "The passive needs the participle 'verbouwd', not the stem 'verbouw'."
+    },
+    {
+     "wrong": "Sinds de winkel is verbouwd, het is er veel rustiger.",
+     "right": "Sinds de winkel is verbouwd, is het er veel rustiger.",
+     "why": "After the fronted clause the main clause starts with its verb: 'is het'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het is er veel rustiger sinds de winkel is verbouwd.",
+    "english": "It has been much quieter there since the shop was renovated.",
+    "note": "With the main clause first there is no inversion. Compare: Het is er veel rustiger sinds de winkel is verbouwd."
+   }
+  },
+  "pat-connectors-05": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "sinds = since, as a preposition before a time (no clause)",
+    "why": "'Maandag' is a noun phrase, not a clause, so the sentence has one finite verb and nothing moves to the end."
+   },
+   "situationNl": "Een nieuwe collega vraagt hoe lang jij al in het team zit. Noem de dag waarop het begon, zonder een bijzin te gebruiken.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik werk hier sinds maandag",
+     "subject": "Ik",
+     "finite": "werk",
+     "role": "single main clause with a time phrase",
+     "why": "The subject 'Ik' comes first, 'werk' is second, then 'hier' and the time phrase 'sinds maandag' with no second verb."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "werk"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "preposition (since)",
+     "text": "sinds"
+    },
+    {
+     "label": "time word",
+     "text": "maandag"
+    }
+   ],
+   "meaning": "I have worked here since Monday.",
+   "order": "Compare the two jobs of sinds: before a noun ('sinds maandag') it is a preposition, before a clause ('sinds ik hier werk') a conjunction. Only the clause version sends a verb to the end.",
+   "forms": "werken: ik werk. Card: \"Ik werk hier sinds maandag\".",
+   "compare": "English 'since Monday' and 'since I started' use the same word. Dutch does too, but only the clause version changes the word order.",
+   "mistakes": [
+    {
+     "wrong": "Ik werk hier sinds maandag ben.",
+     "right": "Ik werk hier sinds maandag.",
+     "why": "There is no second clause after 'sinds maandag', so no extra verb belongs at the end."
+    },
+    {
+     "wrong": "Ik werk hier sinds het is maandag.",
+     "right": "Ik werk hier sinds maandag.",
+     "why": "'Sinds maandag' is a phrase; 'het is maandag' would make a clause and put the verb in the wrong place."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik werk hier sinds ik in maart ben begonnen.",
+    "english": "I have worked here since I started in March.",
+    "note": "With a clause the verb group 'ben begonnen' closes the sinds-clause."
+   }
+  },
+  "pat-connectors-06": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "sinds = since, as a preposition before a time (no clause)",
+    "why": "'Vorig jaar' is a time phrase, so the sentence is one main clause with the verb in second position."
+   },
+   "situationNl": "Je vertelt een vriend over een collega die een taalcursus volgt. Zeg hoe lang zij dit al doet, met alleen een tijdsaanduiding vooraan.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Sinds vorig jaar leert ze Nederlands",
+     "subject": "ze",
+     "finite": "leert",
+     "role": "single main clause, time phrase first",
+     "why": "The time phrase 'sinds vorig jaar' fills position one, so the finite verb 'leert' comes second and the subject 'ze' follows it before 'Nederlands'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "preposition (since)",
+     "text": "Sinds"
+    },
+    {
+     "label": "fronted time",
+     "text": "vorig jaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "leert"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "Nederlands"
+    }
+   ],
+   "meaning": "She has been learning Dutch since last year.",
+   "order": "The fronted time phrase is one element, so 'leert' is the second element and the subject comes after it. No verb goes to the end because there is no clause.",
+   "forms": "leren: ze leert.",
+   "compare": "English 'since last year she has been learning' uses a perfect progressive. Dutch uses the plain present: 'leert ze'.",
+   "mistakes": [
+    {
+     "wrong": "Sinds vorig jaar ze leert Nederlands.",
+     "right": "Sinds vorig jaar leert ze Nederlands.",
+     "why": "The finite verb must be second: after the time phrase comes 'leert', then 'ze'."
+    },
+    {
+     "wrong": "Sinds vorig jaar leert Nederlands ze.",
+     "right": "Sinds vorig jaar leert ze Nederlands.",
+     "why": "The subject 'ze' follows the verb directly; the object comes after it."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze leert Nederlands sinds ze vorig jaar is begonnen.",
+    "english": "She has been learning Dutch since she began last year.",
+    "note": "With a clause after sinds the verb group 'is begonnen' goes to the end."
+   }
+  },
+  "pat-connectors-07": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nu = now that (a situation that is new and has consequences)",
+    "why": "The rain is a new fact and the reason for staying in; the conjunction nu is followed by a full clause with the verb last."
+   },
+   "situationNl": "Het weer slaat om en jullie passen jullie plannen aan. Zeg wat jullie op dat moment besluiten.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nu het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "nu-clause (the new fact)",
+     "why": "The dummy subject 'het' follows 'nu' and the finite verb 'regent' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijven we thuis",
+     "subject": "we",
+     "finite": "blijven",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'blijven' comes first, then the subject 'we' and the place word 'thuis'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (now that)",
+     "text": "Nu"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijven"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    }
+   ],
+   "meaning": "Now that it is raining, we are staying at home.",
+   "order": "The nu-clause fills position one, so the main clause inverts to 'blijven we'. The word nu here introduces a clause; it is not just the adverb 'now'.",
+   "forms": "regenen: het regent. blijven: wij blijven.",
+   "compare": "English 'now that' has two words; Dutch uses just 'nu' followed by a clause.",
+   "mistakes": [
+    {
+     "wrong": "Nu het regent, we blijven thuis.",
+     "right": "Nu het regent, blijven we thuis.",
+     "why": "After the fronted clause the main clause starts with 'blijven we'."
+    },
+    {
+     "wrong": "Nu regent het, blijven we thuis.",
+     "right": "Nu het regent, blijven we thuis.",
+     "why": "In a clause introduced by nu the verb goes to the end: 'Nu het regent'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We blijven thuis nu het regent.",
+    "english": "We are staying at home now that it is raining.",
+    "note": "With the main clause first there is no inversion. Compare: We blijven thuis nu het regent."
+   }
+  },
+  "pat-connectors-08": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nu = now that (a situation that is new and has consequences)",
+    "why": "Finishing the task is a new situation that makes the next step possible."
+   },
+   "situationNl": "Je werkdag loopt ten einde en je taak is af. Zeg dat jij vrij bent en wat je dan doet.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nu ik klaar ben",
+     "subject": "ik",
+     "finite": "ben",
+     "role": "nu-clause (the new situation)",
+     "why": "The subject 'ik' follows 'nu', then the predicate 'klaar', and the finite verb 'ben' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kan ik naar huis",
+     "subject": "ik",
+     "finite": "kan",
+     "role": "main clause (what is now possible)",
+     "why": "The modal 'kan' comes first, then the subject 'ik', and 'naar huis' stands where the infinitive 'gaan' could be."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (now that)",
+     "text": "Nu"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "ben"
+    },
+    {
+     "label": "modal verb",
+     "text": "kan"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "phrase",
+     "text": "naar huis"
+    }
+   ],
+   "meaning": "Now that I am finished, I can go home.",
+   "order": "After the fronted nu-clause the modal 'kan' comes first. The infinitive 'gaan' is left out because 'naar huis' already expresses the direction.",
+   "forms": "zijn: ik ben. kunnen: ik kan.",
+   "compare": "English 'I can go home' has a verb of motion. Dutch can leave out 'gaan' after a modal with a direction: 'kan ik naar huis'.",
+   "mistakes": [
+    {
+     "wrong": "Nu ik klaar ben, ik kan naar huis.",
+     "right": "Nu ik klaar ben, kan ik naar huis.",
+     "why": "The main clause starts with the verb: 'kan ik'."
+    },
+    {
+     "wrong": "Nu ik ben klaar, kan ik naar huis.",
+     "right": "Nu ik klaar ben, kan ik naar huis.",
+     "why": "The finite verb 'ben' goes behind 'klaar' at the end of the nu-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kan naar huis nu ik klaar ben.",
+    "english": "I can go home now that I am finished.",
+    "note": "With the main clause first, the order is 'Ik kan'."
+   }
+  },
+  "pat-connectors-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nu = now that (a situation that is new and has consequences)",
+    "why": "The main clause names the possibility and the nu-clause the new fact that has just made it true."
+   },
+   "situationNl": "Je leidt een vergadering en de laatste deelnemer loopt net binnen. Zeg dat het werk kan starten, met de reden erbij.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We kunnen beginnen",
+     "subject": "We",
+     "finite": "kunnen",
+     "role": "main clause (what is possible)",
+     "why": "'We' is first, the modal 'kunnen' second, and the infinitive 'beginnen' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nu iedereen er is",
+     "subject": "iedereen",
+     "finite": "is",
+     "role": "nu-clause (the new fact)",
+     "why": "After 'nu' come the subject 'iedereen' and the place word 'er', and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "modal verb",
+     "text": "kunnen"
+    },
+    {
+     "label": "infinitive",
+     "text": "beginnen"
+    },
+    {
+     "label": "conjunction (now that)",
+     "text": "nu"
+    },
+    {
+     "label": "subject",
+     "text": "iedereen"
+    },
+    {
+     "label": "adverb",
+     "text": "er"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "We can begin now that everyone is here.",
+   "order": "A modal and its infinitive end the main clause. The nu-clause is a separate subordinate clause that ends in 'is'.",
+   "forms": "kunnen: wij kunnen. zijn: iedereen is.",
+   "compare": "English 'now that everyone is here' ends in 'here'. Dutch adds 'er' and ends in the verb: 'er is'.",
+   "mistakes": [
+    {
+     "wrong": "We kunnen beginnen nu is iedereen er.",
+     "right": "We kunnen beginnen nu iedereen er is.",
+     "why": "After 'nu' the verb goes to the end of the clause: 'iedereen er is'."
+    },
+    {
+     "wrong": "We kunnen nu iedereen er is beginnen.",
+     "right": "We kunnen beginnen nu iedereen er is.",
+     "why": "The nu-clause comes after the complete main clause, so the infinitive 'beginnen' stays before it."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nu iedereen er is, kunnen we beginnen.",
+    "english": "Now that everyone is here, we can begin.",
+    "note": "The fronted clause makes the main clause start with 'kunnen we'."
+   }
+  },
+  "pat-connectors-10": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "nu as an adverb = now (position one, no clause)",
+    "why": "No second finite verb follows the word nu, so it is an adverb and the sentence is a single main clause."
+   },
+   "situationNl": "Het is het einde van de dag en je kondigt je eigen plan aan, voor dit ene moment. Begin met het tijdstip.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Nu ga ik naar huis",
+     "subject": "ik",
+     "finite": "ga",
+     "role": "single main clause, adverb first",
+     "why": "The adverb 'nu' fills position one, so the finite verb 'ga' is second and the subject 'ik' follows it before 'naar huis'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted time",
+     "text": "Nu"
+    },
+    {
+     "label": "finite verb",
+     "text": "ga"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "phrase",
+     "text": "naar huis"
+    }
+   ],
+   "meaning": "Now I am going home.",
+   "order": "Nu as an adverb takes the first place; the verb then comes second and the subject follows it. There is no subordinate clause, so nothing goes to the end.",
+   "forms": "gaan: ik ga. Card: \"Nu ga ik naar huis\".",
+   "compare": "English 'Now I am going home' has no inversion because 'I am' stays together. Dutch inverts to 'ga ik' after the fronted adverb.",
+   "mistakes": [
+    {
+     "wrong": "Nu ik ga naar huis.",
+     "right": "Nu ga ik naar huis.",
+     "why": "With the adverb in first position the verb is second: 'Nu ga ik'."
+    },
+    {
+     "wrong": "Nu ik naar huis ga.",
+     "right": "Nu ga ik naar huis.",
+     "why": "This is the order of a nu-clause; the single sentence 'Nu ga ik naar huis' is an adverb plus a main clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nu ik klaar ben, ga ik naar huis.",
+    "english": "Now that I am finished, I am going home.",
+    "note": "With a clause after nu the verb 'ben' goes to the end, and the main clause inverts."
+   }
+  },
+  "pat-connectors-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodat = so that (purpose or result, one word)",
+    "why": "The slow speech is the means and the understanding is the aim, so the aim is put in a zodat-clause."
+   },
+   "situationNl": "Je geeft een presentatie voor een internationaal publiek. Zeg hoe je praat en wat je daarmee voor de luisteraars bereikt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik spreek langzaam",
+     "subject": "Ik",
+     "finite": "spreek",
+     "role": "main clause (the action)",
+     "why": "'Ik' is first and 'spreek' second, then the adverb 'langzaam'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodat iedereen me kan verstaan",
+     "subject": "iedereen",
+     "finite": "kan",
+     "role": "zodat-clause (the aim)",
+     "why": "After 'zodat' the subject 'iedereen' and the object 'me' come first, and the modal group 'kan verstaan' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "spreek"
+    },
+    {
+     "label": "adverb",
+     "text": "langzaam"
+    },
+    {
+     "label": "conjunction (so that)",
+     "text": "zodat"
+    },
+    {
+     "label": "subject",
+     "text": "iedereen"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "modal verb",
+     "text": "kan"
+    },
+    {
+     "label": "infinitive",
+     "text": "verstaan"
+    }
+   ],
+   "meaning": "I speak slowly so that everyone can understand me.",
+   "order": "The main clause keeps normal order. In the zodat-clause the modal 'kan' stands before the infinitive 'verstaan', and both end the clause.",
+   "forms": "spreken: ik spreek. kunnen: iedereen kan. verstaan: infinitive.",
+   "compare": "English 'so that everyone can understand me' keeps 'can' early. Dutch puts the modal group at the end: 'kan verstaan'.",
+   "mistakes": [
+    {
+     "wrong": "Ik spreek langzaam zodat iedereen kan me verstaan.",
+     "right": "Ik spreek langzaam zodat iedereen me kan verstaan.",
+     "why": "After 'zodat' the modal group goes to the end: 'me kan verstaan'."
+    },
+    {
+     "wrong": "Ik spreek langzaam zo dat iedereen me kan verstaan.",
+     "right": "Ik spreek langzaam zodat iedereen me kan verstaan.",
+     "why": "In this meaning 'zodat' is written as one word; 'zo dat' belongs to 'zo ... dat' constructions."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodat iedereen me kan verstaan, spreek ik langzaam.",
+    "english": "So that everyone can understand me, I speak slowly.",
+    "note": "A fronted zodat-clause is possible but unusual; it would make the main clause invert to 'spreek ik'."
+   }
+  },
+  "pat-connectors-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodat = so that (purpose or result, one word)",
+    "why": "Writing the explanation down is the action; avoiding forgetting is the aim."
+   },
+   "situationNl": "Een collega legt een procedure vast. Zeg wat zij met de uitleg deed en welk gevolg zij wilde.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze schreef de uitleg op",
+     "subject": "Ze",
+     "finite": "schreef",
+     "role": "main clause (the action)",
+     "why": "'Ze' is first and 'schreef' second; the object 'de uitleg' follows and the particle 'op' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodat niemand het vergat",
+     "subject": "niemand",
+     "finite": "vergat",
+     "role": "zodat-clause (the aim)",
+     "why": "After 'zodat' come the subject 'niemand' and the object 'het', and the past form 'vergat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "schreef"
+    },
+    {
+     "label": "object",
+     "text": "de uitleg"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    },
+    {
+     "label": "conjunction (so that)",
+     "text": "zodat"
+    },
+    {
+     "label": "subject",
+     "text": "niemand"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vergat"
+    }
+   ],
+   "meaning": "She wrote the explanation down so that nobody would forget it.",
+   "order": "'Opschrijven' splits as 'schreef ... op' in the main clause. In the zodat-clause the simple past 'vergat' closes the clause and corresponds to 'would forget' in English.",
+   "forms": "opschrijven: schreef ... op. vergeten: vergat.",
+   "compare": "English 'would forget' needs a modal. Dutch uses the simple past 'vergat' for the aim in the past.",
+   "mistakes": [
+    {
+     "wrong": "Ze schreef op de uitleg zodat niemand het vergat.",
+     "right": "Ze schreef de uitleg op zodat niemand het vergat.",
+     "why": "The particle 'op' goes to the end of the main clause, after the object."
+    },
+    {
+     "wrong": "Ze schreef de uitleg op zodat niemand vergat het.",
+     "right": "Ze schreef de uitleg op zodat niemand het vergat.",
+     "why": "The finite verb 'vergat' goes to the end of the zodat-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze schreef de uitleg op, dus niemand vergat het.",
+    "english": "She wrote the explanation down, so nobody forgot it.",
+    "note": "With a coordinating word the second part is a main clause with the verb second."
+   }
+  },
+  "pat-connectors-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodat = so that (purpose or result, one word)",
+    "why": "The command is the means and the purpose is a clause of its own, linked by the one word zodat."
+   },
+   "situationNl": "Een vriend heeft morgenochtend een vroege afspraak. Geef hem een opdracht en leg erbij waarom die nuttig is.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zet de wekker",
+     "subject": "(jij)",
+     "finite": "Zet",
+     "role": "main clause (the action)",
+     "why": "The imperative 'Zet' comes first and the object 'de wekker' follows; the subject 'jij' is not spoken."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodat je morgen niet te laat bent",
+     "subject": "je",
+     "finite": "bent",
+     "role": "zodat-clause (the aim)",
+     "why": "After 'zodat' come the subject 'je', the time word 'morgen', 'niet te laat', and the finite verb 'bent' at the end."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Zet"
+    },
+    {
+     "label": "object",
+     "text": "de wekker"
+    },
+    {
+     "label": "conjunction (so that)",
+     "text": "zodat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "time word",
+     "text": "morgen"
+    },
+    {
+     "label": "negation and degree",
+     "text": "niet te"
+    },
+    {
+     "label": "predicate",
+     "text": "laat"
+    },
+    {
+     "label": "finite verb",
+     "text": "bent"
+    }
+   ],
+   "meaning": "Set the alarm so that you aren't late tomorrow.",
+   "order": "An imperative begins with the verb and has no spoken subject. The zodat-clause is subordinate and ends in 'bent', after the predicate 'te laat'.",
+   "forms": "zetten: zet (imperative). zijn: je bent.",
+   "compare": "English 'so that you aren't late' contracts the verb. Dutch keeps 'bent' separate and last.",
+   "mistakes": [
+    {
+     "wrong": "Zet de wekker zodat je bent morgen niet te laat.",
+     "right": "Zet de wekker zodat je morgen niet te laat bent.",
+     "why": "The finite verb 'bent' goes to the end of the zodat-clause."
+    },
+    {
+     "wrong": "Je zet de wekker zodat je morgen niet te laat bent.",
+     "right": "Zet de wekker zodat je morgen niet te laat bent.",
+     "why": "'Zet de wekker' is an instruction; adding 'je' would turn it into a statement."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zet de wekker, anders ben je morgen te laat.",
+    "english": "Set the alarm, otherwise you will be late tomorrow.",
+    "note": "With 'anders' the second part is a main clause: 'ben je'."
+   }
+  },
+  "pat-connectors-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodat = so that (purpose or result, one word) - here as a result",
+    "why": "The breakdown caused the waiting, so the clause with zodat states the consequence rather than a plan."
+   },
+   "situationNl": "Je legt uit waarom je te laat bent: er was een technisch probleem met het voertuig en dat had gevolgen voor de reizigers.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De bus had pech",
+     "subject": "De bus",
+     "finite": "had",
+     "role": "main clause (the action)",
+     "why": "'De bus' is first and 'had' second, then the object 'pech'. The clause is \"De bus had pech\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodat we een uur moesten wachten",
+     "subject": "we",
+     "finite": "moesten",
+     "role": "zodat-clause (the aim)",
+     "why": "After 'zodat' come the subject 'we' and the time phrase 'een uur', and the past modal 'moesten' stands before the infinitive 'wachten'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De bus"
+    },
+    {
+     "label": "finite verb",
+     "text": "had"
+    },
+    {
+     "label": "object",
+     "text": "pech"
+    },
+    {
+     "label": "conjunction (so that)",
+     "text": "zodat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "time phrase",
+     "text": "een uur"
+    },
+    {
+     "label": "modal verb (past)",
+     "text": "moesten"
+    },
+    {
+     "label": "infinitive",
+     "text": "wachten"
+    }
+   ],
+   "meaning": "The bus broke down, so that we had to wait an hour.",
+   "order": "A comma separates the main clause from the result clause. The modal 'moesten' stands before its infinitive 'wachten', and both end the clause.",
+   "forms": "hebben: de bus had. moeten: wij moesten. wachten: infinitive.",
+   "compare": "English 'so that we had to wait' also shows the result, but 'so' alone ('so we had to wait') is more usual. Dutch zodat works for both.",
+   "mistakes": [
+    {
+     "wrong": "De bus had pech, zodat we moesten een uur wachten.",
+     "right": "De bus had pech, zodat we een uur moesten wachten.",
+     "why": "The modal and infinitive go to the end: 'een uur moesten wachten'."
+    },
+    {
+     "wrong": "De bus had pech, zo dat we een uur moesten wachten.",
+     "right": "De bus had pech, zodat we een uur moesten wachten.",
+     "why": "As a conjunction zodat is written as one word."
+    }
+   ],
+   "contrast": {
+    "dutch": "De bus had pech, dus we moesten een uur wachten.",
+    "english": "The bus broke down, so we had to wait an hour.",
+    "note": "With 'dus' the next part is a main clause: 'we moesten'."
+   }
+  },
+  "pat-connectors-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "opdat = so that (formal, written purpose)",
+    "why": "The speaker's pace served an aim, expressed in the formal register with opdat and a conditional form."
+   },
+   "situationNl": "Je schrijft een verslag van een officiële toespraak. Vertel hoe de spreker praatte en welk doel hij had.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij sprak langzaam",
+     "subject": "Hij",
+     "finite": "sprak",
+     "role": "main clause (the action)",
+     "why": "'Hij' is first and 'sprak' second, then the adverb 'langzaam'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "opdat iedereen hem zou verstaan",
+     "subject": "iedereen",
+     "finite": "zou",
+     "role": "opdat-clause (the aim)",
+     "why": "After 'opdat' come the subject 'iedereen' and the object 'hem', and 'zou verstaan' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "sprak"
+    },
+    {
+     "label": "adverb",
+     "text": "langzaam"
+    },
+    {
+     "label": "conjunction (so that, formal)",
+     "text": "opdat"
+    },
+    {
+     "label": "subject",
+     "text": "iedereen"
+    },
+    {
+     "label": "object",
+     "text": "hem"
+    },
+    {
+     "label": "finite verb (conditional)",
+     "text": "zou"
+    },
+    {
+     "label": "infinitive",
+     "text": "verstaan"
+    }
+   ],
+   "meaning": "He spoke slowly so that everyone would understand him.",
+   "order": "Opdat belongs to formal writing. Its clause behaves like a zodat-clause: the finite verb 'zou' and the infinitive 'verstaan' stand at the end.",
+   "forms": "spreken: hij sprak. zullen: zou. verstaan: infinitive.",
+   "compare": "English 'so that everyone would understand' is neutral. In Dutch speech zodat is the normal word; opdat sounds formal.",
+   "mistakes": [
+    {
+     "wrong": "Hij sprak langzaam opdat iedereen zou hem verstaan.",
+     "right": "Hij sprak langzaam opdat iedereen hem zou verstaan.",
+     "why": "The object 'hem' stands before the verbs: 'hem zou verstaan'."
+    },
+    {
+     "wrong": "Hij sprak langzaam opdat iedereen hem zou verstond.",
+     "right": "Hij sprak langzaam opdat iedereen hem zou verstaan.",
+     "why": "After 'zou' the verb is the infinitive 'verstaan', not a past form."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij sprak langzaam zodat iedereen hem kon verstaan.",
+    "english": "He spoke slowly so that everyone could understand him.",
+    "note": "Zodat is the everyday word with the same order."
+   }
+  },
+  "pat-connectors-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "opdat = so that (formal, written purpose)",
+    "why": "The strictness is justified by its goal, written in a formal style."
+   },
+   "situationNl": "Een veiligheidsmedewerker legt schriftelijk uit waarom het reglement zo hard is. Formuleer het doel van die strengheid.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De regels zijn streng",
+     "subject": "De regels",
+     "finite": "zijn",
+     "role": "main clause (the action)",
+     "why": "'De regels' is first and 'zijn' second, followed by the predicate 'streng'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "opdat niemand gevaar loopt",
+     "subject": "niemand",
+     "finite": "loopt",
+     "role": "opdat-clause (the aim)",
+     "why": "After 'opdat' come the subject 'niemand' and the object 'gevaar', and the finite verb 'loopt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De regels"
+    },
+    {
+     "label": "finite verb",
+     "text": "zijn"
+    },
+    {
+     "label": "predicate",
+     "text": "streng"
+    },
+    {
+     "label": "conjunction (so that, formal)",
+     "text": "opdat"
+    },
+    {
+     "label": "subject",
+     "text": "niemand"
+    },
+    {
+     "label": "object",
+     "text": "gevaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "loopt"
+    }
+   ],
+   "meaning": "The rules are strict so that nobody runs a risk.",
+   "order": "'Gevaar lopen' is a fixed expression meaning to run a risk. Its verb 'loopt' goes to the end of the opdat-clause.",
+   "forms": "zijn: de regels zijn. lopen: niemand loopt (gevaar lopen).",
+   "compare": "English 'runs a risk' has the verb before the noun. Dutch splits the expression: 'gevaar loopt' at the end.",
+   "mistakes": [
+    {
+     "wrong": "De regels zijn streng opdat niemand loopt gevaar.",
+     "right": "De regels zijn streng opdat niemand gevaar loopt.",
+     "why": "In the clause the finite verb goes to the end: 'gevaar loopt'."
+    },
+    {
+     "wrong": "De regels zijn streng opdat niemand gevaar lopen.",
+     "right": "De regels zijn streng opdat niemand gevaar loopt.",
+     "why": "The verb agrees with the singular subject 'niemand': 'loopt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De regels zijn streng omdat niemand gevaar mag lopen.",
+    "english": "The rules are strict because nobody may run a risk.",
+    "note": "Omdat gives a reason; opdat gives the aim."
+   }
+  },
+  "pat-connectors-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "opdat = so that (formal, written purpose)",
+    "why": "The letter is the means; the residents' knowledge is the aim, written in a formal tone."
+   },
+   "situationNl": "Een woningcorporatie informeert huurders schriftelijk. Zeg wat jullie versturen en wat jullie daarmee willen bereiken.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij sturen een brief",
+     "subject": "Wij",
+     "finite": "sturen",
+     "role": "main clause (the action)",
+     "why": "'Wij' is first and 'sturen' second, then the object 'een brief'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "opdat alle bewoners het weten",
+     "subject": "alle bewoners",
+     "finite": "weten",
+     "role": "opdat-clause (the aim)",
+     "why": "After 'opdat' come the subject 'alle bewoners' and the object 'het', and the finite verb 'weten' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "sturen"
+    },
+    {
+     "label": "object",
+     "text": "een brief"
+    },
+    {
+     "label": "conjunction (so that, formal)",
+     "text": "opdat"
+    },
+    {
+     "label": "subject",
+     "text": "alle bewoners"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "weten"
+    }
+   ],
+   "meaning": "We are sending a letter so that all residents know.",
+   "order": "The aim clause uses the present tense when the aim lies in the future. 'Weten' agrees with the plural 'alle bewoners' and ends the clause.",
+   "forms": "sturen: wij sturen. weten: zij weten.",
+   "compare": "English 'so that all residents know' uses the present too. The difference is that Dutch puts 'weten' after 'het'.",
+   "mistakes": [
+    {
+     "wrong": "Wij sturen een brief opdat alle bewoners weten het.",
+     "right": "Wij sturen een brief opdat alle bewoners het weten.",
+     "why": "The finite verb 'weten' goes to the end, after the object 'het'."
+    },
+    {
+     "wrong": "Wij sturen een brief opdat alle bewoners het weet.",
+     "right": "Wij sturen een brief opdat alle bewoners het weten.",
+     "why": "The plural subject 'alle bewoners' needs the plural verb 'weten'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij sturen een brief zodat alle bewoners het weten.",
+    "english": "We are sending a letter so that all residents know.",
+    "note": "Zodat is the everyday word; opdat is the formal one."
+   }
+  },
+  "pat-connectors-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "doordat = because, through the fact that (cause by circumstance)",
+    "why": "A concrete circumstance, the tree, directly caused the cancellation."
+   },
+   "situationNl": "Je legt een forens uit waarom de trein niet reed. Noem eerst het gevolg en daarna de situatie die het veroorzaakte.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De trein viel uit",
+     "subject": "De trein",
+     "finite": "viel",
+     "role": "main clause (the effect)",
+     "why": "'De trein' is first, 'viel' second, and the particle 'uit' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "doordat er een boom op het spoor lag",
+     "subject": "een boom",
+     "finite": "lag",
+     "role": "doordat-clause (the circumstance)",
+     "why": "After 'doordat' come 'er' and the subject 'een boom', then the place phrase, and the finite verb 'lag' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De trein"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "viel"
+    },
+    {
+     "label": "particle",
+     "text": "uit"
+    },
+    {
+     "label": "conjunction (because)",
+     "text": "doordat"
+    },
+    {
+     "label": "dummy subject",
+     "text": "er"
+    },
+    {
+     "label": "subject",
+     "text": "een boom"
+    },
+    {
+     "label": "phrase",
+     "text": "op het spoor"
+    },
+    {
+     "label": "finite verb",
+     "text": "lag"
+    }
+   ],
+   "meaning": "The train was cancelled because a tree lay on the track.",
+   "order": "'Uitvallen' splits as 'viel ... uit' in the main clause. In the doordat-clause 'lag' stands last, after the place phrase 'op het spoor'.",
+   "forms": "uitvallen: viel ... uit. liggen: lag.",
+   "compare": "English 'because a tree lay on the track' can start with 'because of'. Dutch doordat needs a full clause with its own verb.",
+   "mistakes": [
+    {
+     "wrong": "De trein viel doordat er een boom op het spoor lag uit.",
+     "right": "De trein viel uit doordat er een boom op het spoor lag.",
+     "why": "The particle 'uit' stays at the end of the main clause, before the doordat-clause."
+    },
+    {
+     "wrong": "De trein viel uit doordat er lag een boom op het spoor.",
+     "right": "De trein viel uit doordat er een boom op het spoor lag.",
+     "why": "The finite verb 'lag' goes to the end of the doordat-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "De trein viel uit door een boom op het spoor.",
+    "english": "The train was cancelled because of a tree on the track.",
+    "note": "Door plus a noun phrase has no clause and no extra verb."
+   }
+  },
+  "pat-connectors-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "doordat = because, through the fact that (cause by circumstance)",
+    "why": "The snow is the circumstance and the slippery road its direct result."
+   },
+   "situationNl": "Een collega vraagt waarom je rit zo moeizaam was. Begin met wat het weer deed en zeg dan hoe de weg erbij lag.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Doordat het hard sneeuwde",
+     "subject": "het",
+     "finite": "sneeuwde",
+     "role": "doordat-clause (the circumstance)",
+     "why": "The dummy subject 'het' follows 'doordat', then 'hard', and the past form 'sneeuwde' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "was de weg glad",
+     "subject": "de weg",
+     "finite": "was",
+     "role": "main clause (the effect)",
+     "why": "The finite verb 'was' comes first, then the subject 'de weg' and the predicate 'glad'. The clause is \"was de weg glad\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (because)",
+     "text": "Doordat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "hard"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "sneeuwde"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "subject",
+     "text": "de weg"
+    },
+    {
+     "label": "predicate",
+     "text": "glad"
+    }
+   ],
+   "meaning": "Because it snowed hard, the road was slippery.",
+   "order": "The doordat-clause fills position one, so the main clause inverts to 'was de weg'. 'Sneeuwde' closes the clause.",
+   "forms": "sneeuwen: het sneeuwde. zijn: de weg was.",
+   "compare": "English 'because it snowed hard' keeps the verb after 'it' and before 'hard'. Dutch puts 'hard' first and the verb last.",
+   "mistakes": [
+    {
+     "wrong": "Doordat het sneeuwde hard, was de weg glad.",
+     "right": "Doordat het hard sneeuwde, was de weg glad.",
+     "why": "The adverb 'hard' comes before the finite verb: 'hard sneeuwde'."
+    },
+    {
+     "wrong": "Doordat het hard sneeuwde, de weg was glad.",
+     "right": "Doordat het hard sneeuwde, was de weg glad.",
+     "why": "After the fronted clause the main clause starts with 'was de weg'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De weg was glad doordat het hard sneeuwde.",
+    "english": "The road was slippery because it snowed hard.",
+    "note": "With the main clause first there is no inversion. Compare: De weg was glad doordat het hard sneeuwde."
+   }
+  },
+  "pat-connectors-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "doordat = because, through the fact that (cause by circumstance)",
+    "why": "His fast driving led directly to the fine, so doordat links the two events."
+   },
+   "situationNl": "Een automobilist vertelt een vriend over een sanctie van de politie. Zeg wat hij kreeg en door welk gedrag dat kwam.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij kreeg een boete",
+     "subject": "Hij",
+     "finite": "kreeg",
+     "role": "main clause (the effect)",
+     "why": "'Hij' is first and 'kreeg' second, then the object 'een boete'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "doordat hij te hard reed",
+     "subject": "hij",
+     "finite": "reed",
+     "role": "doordat-clause (the circumstance)",
+     "why": "After 'doordat' come the subject 'hij' and 'te hard', and the past form 'reed' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kreeg"
+    },
+    {
+     "label": "object",
+     "text": "een boete"
+    },
+    {
+     "label": "conjunction (because)",
+     "text": "doordat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "te hard"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "reed"
+    }
+   ],
+   "meaning": "He got a fine because he drove too fast.",
+   "order": "Both verbs are in the simple past. The main verb 'kreeg' is second; in the clause 'reed' is last, after 'te hard'.",
+   "forms": "krijgen: hij kreeg. rijden: hij reed.",
+   "compare": "English 'drove too fast' has the verb before 'too fast'. Dutch puts 'te hard' first and 'reed' at the end.",
+   "mistakes": [
+    {
+     "wrong": "Hij kreeg een boete doordat hij reed te hard.",
+     "right": "Hij kreeg een boete doordat hij te hard reed.",
+     "why": "The finite verb goes to the end: 'te hard reed'."
+    },
+    {
+     "wrong": "Hij kreeg een boete doordat hij te hard rijdt.",
+     "right": "Hij kreeg een boete doordat hij te hard reed.",
+     "why": "The story is in the past, so the clause uses 'reed'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij reed te hard, daardoor kreeg hij een boete.",
+    "english": "He drove too fast, which is why he got a fine.",
+    "note": "'Daardoor' is an adverb, so the main clause inverts to 'kreeg hij'."
+   }
+  },
+  "pat-connectors-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "doordat = because, through the fact that (cause by circumstance)",
+    "why": "Her practice is the cause and her flawless playing the effect."
+   },
+   "situationNl": "Je complimenteert een pianiste na haar optreden. Noem wat haar succes mogelijk maakte en hoe zij tegenwoordig speelt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Doordat zij goed heeft geoefend",
+     "subject": "zij",
+     "finite": "heeft",
+     "role": "doordat-clause (the circumstance)",
+     "why": "After 'doordat' come the subject 'zij' and 'goed', and the perfect group 'heeft geoefend' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "speelt ze zonder fouten",
+     "subject": "ze",
+     "finite": "speelt",
+     "role": "main clause (the effect)",
+     "why": "The finite verb 'speelt' comes first, then the subject 'ze' and the phrase 'zonder fouten'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (because)",
+     "text": "Doordat"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "adverb",
+     "text": "goed"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    },
+    {
+     "label": "participle",
+     "text": "geoefend"
+    },
+    {
+     "label": "finite verb",
+     "text": "speelt"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "phrase",
+     "text": "zonder fouten"
+    }
+   ],
+   "meaning": "Because she has practised well, she plays without mistakes.",
+   "order": "'Heeft geoefend' is a perfect: the finite verb 'heeft' stands before the participle 'geoefend', and the pair ends the doordat-clause.",
+   "forms": "hebben: zij heeft. oefenen: geoefend. spelen: ze speelt.",
+   "compare": "English 'because she has practised well' has 'well' at the end. Dutch puts 'goed' before the verbs.",
+   "mistakes": [
+    {
+     "wrong": "Doordat zij goed heeft oefenen, speelt ze zonder fouten.",
+     "right": "Doordat zij goed heeft geoefend, speelt ze zonder fouten.",
+     "why": "The perfect needs the participle 'geoefend', not the infinitive 'oefenen'."
+    },
+    {
+     "wrong": "Doordat zij goed heeft geoefend, ze speelt zonder fouten.",
+     "right": "Doordat zij goed heeft geoefend, speelt ze zonder fouten.",
+     "why": "The main clause starts with the verb: 'speelt ze'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze speelt zonder fouten doordat zij goed heeft geoefend.",
+    "english": "She plays without mistakes because she has practised well.",
+    "note": "With the main clause first there is no inversion. Compare: Ze speelt zonder fouten doordat zij goed heeft geoefend."
+   }
+  },
+  "pat-connectors-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "aangezien = since, given that (a reason both people know)",
+    "why": "The closed shop is obvious to both people, which is why aangezien fits better than a reason that needs explaining."
+   },
+   "situationNl": "Jullie staan voor een winkel waar het licht uit is. Neem de gesloten deur voor kennisgeving aan en maak een nieuw plan.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Aangezien de winkel dicht is",
+     "subject": "de winkel",
+     "finite": "is",
+     "role": "aangezien-clause (the known reason)",
+     "why": "After 'aangezien' come the subject 'de winkel' and the predicate 'dicht', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "gaan we morgen terug",
+     "subject": "we",
+     "finite": "gaan",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'gaan' comes first, then the subject 'we' and the time word 'morgen'; the particle 'terug' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since)",
+     "text": "Aangezien"
+    },
+    {
+     "label": "subject",
+     "text": "de winkel"
+    },
+    {
+     "label": "predicate",
+     "text": "dicht"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "gaan"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "time word",
+     "text": "morgen"
+    },
+    {
+     "label": "particle",
+     "text": "terug"
+    }
+   ],
+   "meaning": "Since the shop is closed, we will go back tomorrow.",
+   "order": "The aangezien-clause is position one, so the main clause inverts to 'gaan we'. 'Teruggaan' splits as 'gaan ... terug'.",
+   "forms": "zijn: de winkel is. teruggaan: gaan ... terug.",
+   "compare": "English 'since the shop is closed' can also mean 'since' in time. Dutch aangezien is only a reason, never a time.",
+   "mistakes": [
+    {
+     "wrong": "Aangezien de winkel is dicht, gaan we morgen terug.",
+     "right": "Aangezien de winkel dicht is, gaan we morgen terug.",
+     "why": "The finite verb 'is' goes behind the predicate 'dicht'."
+    },
+    {
+     "wrong": "Aangezien de winkel dicht is, we gaan morgen terug.",
+     "right": "Aangezien de winkel dicht is, gaan we morgen terug.",
+     "why": "After the fronted clause the verb comes first: 'gaan we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We gaan morgen terug aangezien de winkel dicht is.",
+    "english": "We will go back tomorrow since the shop is closed.",
+    "note": "With the main clause first there is no inversion. Compare: We gaan morgen terug aangezien de winkel dicht is."
+   }
+  },
+  "pat-connectors-23": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "aangezien = since, given that (a reason both people know)",
+    "why": "The absence is stated as a known fact, in the polite register of a letter."
+   },
+   "situationNl": "Je schrijft formeel aan een klant die niet op een overleg verscheen. Noem eerst het feit en vervolgens wat het bedrijf deed.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Aangezien u niet aanwezig was",
+     "subject": "u",
+     "finite": "was",
+     "role": "aangezien-clause (the known reason)",
+     "why": "After 'aangezien' come the formal subject 'u' and 'niet aanwezig', and the past form 'was' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "hebben wij de afspraak verzet",
+     "subject": "wij",
+     "finite": "hebben",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'hebben' comes first, then the subject 'wij' and the object 'de afspraak'; the participle 'verzet' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since)",
+     "text": "Aangezien"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "predicate",
+     "text": "aanwezig"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebben"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "object",
+     "text": "de afspraak"
+    },
+    {
+     "label": "participle",
+     "text": "verzet"
+    }
+   ],
+   "meaning": "Since you were not present, we have rescheduled the appointment.",
+   "order": "In the main clause the finite verb 'hebben' comes first and the participle 'verzet' last, with subject and object between them.",
+   "forms": "zijn: u was. hebben: wij hebben. verzetten: verzet.",
+   "compare": "English 'we have rescheduled the appointment' keeps 'have' and the participle together. Dutch separates them with the object.",
+   "mistakes": [
+    {
+     "wrong": "Aangezien u niet aanwezig was, wij hebben de afspraak verzet.",
+     "right": "Aangezien u niet aanwezig was, hebben wij de afspraak verzet.",
+     "why": "The main clause starts with its verb: 'hebben wij'."
+    },
+    {
+     "wrong": "Aangezien u niet was aanwezig, hebben wij de afspraak verzet.",
+     "right": "Aangezien u niet aanwezig was, hebben wij de afspraak verzet.",
+     "why": "The finite verb 'was' goes to the end of the aangezien-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij hebben de afspraak verzet aangezien u niet aanwezig was.",
+    "english": "We have rescheduled the appointment since you were not present.",
+    "note": "With the main clause first there is no inversion. Compare: Wij hebben de afspraak verzet aangezien u niet aanwezig was."
+   }
+  },
+  "pat-connectors-24": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "aangezien = since, given that (a reason both people know)",
+    "why": "The polite way of asking is something both people know, so it is introduced as a given."
+   },
+   "situationNl": "Een collega vraagt je met veel respect om een gunst. Zeg dat je meewerkt en noem zijn manier van vragen, die hierbij een rol speelt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik help je graag",
+     "subject": "Ik",
+     "finite": "help",
+     "role": "main clause (the consequence)",
+     "why": "'Ik' is first and 'help' second, then the object 'je' and the adverb 'graag'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "aangezien je zo vriendelijk vraagt",
+     "subject": "je",
+     "finite": "vraagt",
+     "role": "aangezien-clause (the known reason)",
+     "why": "After 'aangezien' come the subject 'je' and 'zo vriendelijk', and the finite verb 'vraagt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "help"
+    },
+    {
+     "label": "object",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "graag"
+    },
+    {
+     "label": "conjunction (since)",
+     "text": "aangezien"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "zo vriendelijk"
+    },
+    {
+     "label": "finite verb",
+     "text": "vraagt"
+    }
+   ],
+   "meaning": "I am happy to help you, since you ask so politely.",
+   "order": "The main clause is complete before the comma. The aangezien-clause is subordinate and ends in 'vraagt' after 'zo vriendelijk'.",
+   "forms": "helpen: ik help. vragen: je vraagt.",
+   "compare": "English 'since you ask so nicely' keeps the verb before the adverb. Dutch puts 'vraagt' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik help je graag, aangezien je vraagt zo vriendelijk.",
+     "right": "Ik help je graag, aangezien je zo vriendelijk vraagt.",
+     "why": "The finite verb 'vraagt' goes to the end of the clause."
+    },
+    {
+     "wrong": "Ik help je graag, aangezien vraag je zo vriendelijk.",
+     "right": "Ik help je graag, aangezien je zo vriendelijk vraagt.",
+     "why": "In a clause with aangezien the subject comes before the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik help je graag, want je vraagt zo vriendelijk.",
+    "english": "I am happy to help you, for you ask so politely.",
+    "note": "After 'want' the verb stays second: 'je vraagt'."
+   }
+  },
+  "pat-connectors-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "aangezien = since, given that (a reason both people know)",
+    "why": "The illness is known to the team and decides who does the work."
+   },
+   "situationNl": "Je informeert het team over een wijziging op de dag van een belangrijke presentatie. Begin met de reden en zeg wie de taak krijgt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Aangezien hij ziek is",
+     "subject": "hij",
+     "finite": "is",
+     "role": "aangezien-clause (the known reason)",
+     "why": "After 'aangezien' come the subject 'hij' and the predicate 'ziek', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "neemt zijn collega de presentatie over",
+     "subject": "zijn collega",
+     "finite": "neemt",
+     "role": "main clause (the consequence)",
+     "why": "The finite verb 'neemt' comes first, then the subject 'zijn collega' and the object 'de presentatie'; the particle 'over' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (since)",
+     "text": "Aangezien"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "ziek"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "neemt"
+    },
+    {
+     "label": "subject",
+     "text": "zijn collega"
+    },
+    {
+     "label": "object",
+     "text": "de presentatie"
+    },
+    {
+     "label": "particle",
+     "text": "over"
+    }
+   ],
+   "meaning": "Since he is ill, his colleague takes over the presentation.",
+   "order": "'Overnemen' splits as 'neemt ... over' in the main clause. The subject is two words, 'zijn collega', and stays together behind the verb.",
+   "forms": "zijn: hij is. overnemen: neemt ... over.",
+   "compare": "English 'takes over the presentation' has the particle before the object. Dutch puts 'over' at the end.",
+   "mistakes": [
+    {
+     "wrong": "Aangezien hij ziek is, neemt zijn collega over de presentatie.",
+     "right": "Aangezien hij ziek is, neemt zijn collega de presentatie over.",
+     "why": "The particle 'over' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Aangezien hij ziek is, zijn collega neemt de presentatie over.",
+     "right": "Aangezien hij ziek is, neemt zijn collega de presentatie over.",
+     "why": "After the fronted clause the main clause starts with the verb: 'neemt zijn collega'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zijn collega neemt de presentatie over aangezien hij ziek is.",
+    "english": "His colleague takes over the presentation since he is ill.",
+    "note": "With the main clause first there is no inversion. Compare: Zijn collega neemt de presentatie over aangezien hij ziek is."
+   }
+  },
+  "pat-connectors-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "mits = provided that (one condition, fairly formal)",
+    "why": "The permission is real, but only if the condition is met; mits is stronger and shorter than 'als'."
+   },
+   "situationNl": "Een kind wil graag mee op een uitstapje. Geef toestemming en noem de ene voorwaarde die daaraan vastzit.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je mag mee",
+     "subject": "Je",
+     "finite": "mag",
+     "role": "main clause (what is allowed)",
+     "why": "'Je' is first and the modal 'mag' second; the infinitive is omitted because 'mee' already gives the direction."
+    },
+    {
+     "kind": "bijzin",
+     "text": "mits je op tijd bent",
+     "subject": "je",
+     "finite": "bent",
+     "role": "mits-clause (the condition)",
+     "why": "After 'mits' come the subject 'je' and the phrase 'op tijd', and the finite verb 'bent' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "modal verb",
+     "text": "mag"
+    },
+    {
+     "label": "particle",
+     "text": "mee"
+    },
+    {
+     "label": "conjunction (provided that)",
+     "text": "mits"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "phrase",
+     "text": "op tijd"
+    },
+    {
+     "label": "finite verb",
+     "text": "bent"
+    }
+   ],
+   "meaning": "You may come along, provided you are on time.",
+   "order": "After the comma the mits-clause is subordinate: its verb 'bent' goes to the end, behind 'op tijd'. Read it as \"Je mag mee, mits je op tijd bent\".",
+   "forms": "mogen: je mag. zijn: je bent.",
+   "compare": "English 'provided you are on time' can drop 'that'. Dutch mits stands alone and needs a full clause.",
+   "mistakes": [
+    {
+     "wrong": "Je mag mee, mits je bent op tijd.",
+     "right": "Je mag mee, mits je op tijd bent.",
+     "why": "The finite verb 'bent' goes to the end of the mits-clause."
+    },
+    {
+     "wrong": "Je mag mee, mits ben je op tijd.",
+     "right": "Je mag mee, mits je op tijd bent.",
+     "why": "After mits the clause is subordinate: subject first, verb last."
+    }
+   ],
+   "contrast": {
+    "dutch": "Als je op tijd bent, mag je mee.",
+    "english": "If you are on time, you may come along.",
+    "note": "With 'als' the condition can open the sentence, and the main clause inverts to 'mag je'."
+   }
+  },
+  "pat-connectors-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "mits = provided that (one condition, fairly formal)",
+    "why": "The loan is possible only on one condition, so mits is used."
+   },
+   "situationNl": "Je legt een vriend de regels van een lening uit. Zeg wat de uitlener doet en welke ene eis hij stelt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze lenen het geld uit",
+     "subject": "Ze",
+     "finite": "lenen",
+     "role": "main clause (what is allowed)",
+     "why": "'Ze' is first and 'lenen' second; the object 'het geld' follows and the particle 'uit' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "mits je een vast contract hebt",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "mits-clause (the condition)",
+     "why": "After 'mits' come the subject 'je' and the object 'een vast contract', and the finite verb 'hebt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "lenen"
+    },
+    {
+     "label": "object",
+     "text": "het geld"
+    },
+    {
+     "label": "particle",
+     "text": "uit"
+    },
+    {
+     "label": "conjunction (provided that)",
+     "text": "mits"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "een vast contract"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebt"
+    }
+   ],
+   "meaning": "They lend the money out, provided you have a permanent contract.",
+   "order": "'Uitlenen' splits as 'lenen ... uit'. In the mits-clause the inverted second-person form 'hebt' is used because the subject 'je' comes first.",
+   "forms": "uitlenen: lenen ... uit. hebben: je hebt.",
+   "compare": "English 'lend out' keeps the particle next to the verb. Dutch puts 'uit' at the end of the clause.",
+   "mistakes": [
+    {
+     "wrong": "Ze lenen uit het geld, mits je een vast contract hebt.",
+     "right": "Ze lenen het geld uit, mits je een vast contract hebt.",
+     "why": "The particle 'uit' goes to the end of the main clause, after 'het geld'."
+    },
+    {
+     "wrong": "Ze lenen het geld uit, mits je hebt een vast contract.",
+     "right": "Ze lenen het geld uit, mits je een vast contract hebt.",
+     "why": "The finite verb 'hebt' goes to the end of the mits-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze lenen het geld alleen uit als je een vast contract hebt.",
+    "english": "They only lend the money if you have a permanent contract.",
+    "note": "With 'alleen ... als' the condition is made exclusive in everyday speech."
+   }
+  },
+  "pat-connectors-28": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "mits = provided that (one condition, fairly formal)",
+    "why": "The departure depends on one condition, which is placed first for emphasis."
+   },
+   "situationNl": "Jullie plannen een wandeltocht. Zeg welke ene omstandigheid het vertrek bepaalt en wat jullie dan doen.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Mits het weer meewerkt",
+     "subject": "het weer",
+     "finite": "meewerkt",
+     "role": "mits-clause (the condition)",
+     "why": "After 'mits' come the subject 'het weer' and the joined verb 'meewerkt', which closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "vertrekken we morgen",
+     "subject": "we",
+     "finite": "vertrekken",
+     "role": "main clause (what is allowed)",
+     "why": "The finite verb 'vertrekken' comes first, then the subject 'we' and the time word 'morgen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (provided that)",
+     "text": "Mits"
+    },
+    {
+     "label": "subject",
+     "text": "het weer"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "meewerkt"
+    },
+    {
+     "label": "finite verb",
+     "text": "vertrekken"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "time word",
+     "text": "morgen"
+    }
+   ],
+   "meaning": "Provided the weather cooperates, we leave tomorrow.",
+   "order": "The separable verb 'meewerken' is written as one word in the clause. The fronted clause makes the main clause start with 'vertrekken we'.",
+   "forms": "meewerken: het weer werkt mee (joined: meewerkt). vertrekken: wij vertrekken.",
+   "compare": "English 'cooperates' is a single verb. Dutch 'meewerken' has a particle that joins the verb in a subordinate clause.",
+   "mistakes": [
+    {
+     "wrong": "Mits het weer werkt mee, vertrekken we morgen.",
+     "right": "Mits het weer meewerkt, vertrekken we morgen.",
+     "why": "In a subordinate clause the separable verb is written as one word: 'meewerkt'."
+    },
+    {
+     "wrong": "Mits het weer meewerkt, we vertrekken morgen.",
+     "right": "Mits het weer meewerkt, vertrekken we morgen.",
+     "why": "After the fronted clause the verb comes first: 'vertrekken we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We vertrekken morgen mits het weer meewerkt.",
+    "english": "We leave tomorrow provided the weather cooperates.",
+    "note": "With the main clause first there is no inversion. Compare: We vertrekken morgen mits het weer meewerkt."
+   }
+  },
+  "pat-connectors-29": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "indien = if (formal, written)",
+    "why": "A conditional in the polite, formal register typical of letters; in speech als would be used."
+   },
+   "situationNl": "Je schrijft de laatste regels van een officiële brief aan klanten. Bied hulp aan voor wie nog onduidelijkheden heeft.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Indien u vragen heeft",
+     "subject": "u",
+     "finite": "heeft",
+     "role": "indien-clause (the condition)",
+     "why": "After 'indien' come the subject 'u' and the object 'vragen', and the finite verb 'heeft' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kunt u ons mailen",
+     "subject": "u",
+     "finite": "kunt",
+     "role": "main clause (what follows)",
+     "why": "The modal 'kunt' comes first, then the subject 'u', the object 'ons' and the infinitive 'mailen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (if, formal)",
+     "text": "Indien"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "object",
+     "text": "vragen"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    },
+    {
+     "label": "modal verb",
+     "text": "kunt"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "object",
+     "text": "ons"
+    },
+    {
+     "label": "infinitive",
+     "text": "mailen"
+    }
+   ],
+   "meaning": "If you have questions, you can e-mail us.",
+   "order": "The fronted indien-clause is position one, so the main clause starts with the modal 'kunt'; the infinitive 'mailen' closes the sentence.",
+   "forms": "hebben: u heeft. kunnen: u kunt. mailen: infinitive.",
+   "compare": "English 'If you have questions' is neutral; Dutch indien is formal. In speech you hear 'Als u vragen heeft'.",
+   "mistakes": [
+    {
+     "wrong": "Indien u vragen heeft, u kunt ons mailen.",
+     "right": "Indien u vragen heeft, kunt u ons mailen.",
+     "why": "After the fronted clause the main clause starts with the verb: 'kunt u'."
+    },
+    {
+     "wrong": "Indien u heeft vragen, kunt u ons mailen.",
+     "right": "Indien u vragen heeft, kunt u ons mailen.",
+     "why": "The finite verb 'heeft' goes to the end of the indien-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Als u vragen heeft, kunt u ons mailen.",
+    "english": "If you have questions, you can e-mail us.",
+    "note": "Als is the everyday word with the same order."
+   }
+  },
+  "pat-connectors-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "indien = if (formal, written)",
+    "why": "The refund depends on a condition written in a formal register."
+   },
+   "situationNl": "Een webwinkel legt schriftelijk zijn retourbeleid uit. Zeg wat het bedrijf doet en onder welke formele voorwaarde.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij betalen het bedrag terug",
+     "subject": "Wij",
+     "finite": "betalen",
+     "role": "main clause (what follows)",
+     "why": "'Wij' is first and 'betalen' second; the object 'het bedrag' follows and the particle 'terug' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "indien het product defect is",
+     "subject": "het product",
+     "finite": "is",
+     "role": "indien-clause (the condition)",
+     "why": "After 'indien' come the subject 'het product' and the predicate 'defect', and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "betalen"
+    },
+    {
+     "label": "object",
+     "text": "het bedrag"
+    },
+    {
+     "label": "particle",
+     "text": "terug"
+    },
+    {
+     "label": "conjunction (if, formal)",
+     "text": "indien"
+    },
+    {
+     "label": "subject",
+     "text": "het product"
+    },
+    {
+     "label": "predicate",
+     "text": "defect"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "We will refund the amount if the product is defective.",
+   "order": "'Terugbetalen' splits as 'betalen ... terug'. The conditional clause follows the complete main clause and ends in 'is'.",
+   "forms": "terugbetalen: betalen ... terug. zijn: het product is.",
+   "compare": "English 'refund the amount' is a single verb. Dutch splits 'terugbetalen'.",
+   "mistakes": [
+    {
+     "wrong": "Wij betalen terug het bedrag indien het product defect is.",
+     "right": "Wij betalen het bedrag terug indien het product defect is.",
+     "why": "The particle 'terug' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Wij betalen het bedrag terug indien het product is defect.",
+     "right": "Wij betalen het bedrag terug indien het product defect is.",
+     "why": "The finite verb 'is' goes to the end of the indien-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Indien het product defect is, betalen wij het bedrag terug.",
+    "english": "If the product is defective, we refund the amount.",
+    "note": "With the condition first, the main clause inverts to 'betalen wij'."
+   }
+  },
+  "pat-connectors-31": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "indien = if (formal, written)",
+    "why": "A formal promise that depends on need."
+   },
+   "situationNl": "Je schrijft een klant formeel dat je hem zult benaderen, mocht blijken dat er meer informatie nodig is voor zijn dossier.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Indien het nodig is",
+     "subject": "het",
+     "finite": "is",
+     "role": "indien-clause (the condition)",
+     "why": "After 'indien' come the dummy subject 'het' and the predicate 'nodig', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "nemen wij contact met u op",
+     "subject": "wij",
+     "finite": "nemen",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'nemen' comes first, then the subject 'wij', the object 'contact' and the phrase 'met u'; the particle 'op' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (if, formal)",
+     "text": "Indien"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "nodig"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "nemen"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "object",
+     "text": "contact"
+    },
+    {
+     "label": "phrase",
+     "text": "met u"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    }
+   ],
+   "meaning": "If necessary, we will contact you.",
+   "order": "'Contact opnemen' splits as 'nemen ... op', with the object 'contact' and the phrase 'met u' between the two parts.",
+   "forms": "zijn: het is. opnemen: nemen ... op.",
+   "compare": "English 'contact you' is a short verb. Dutch uses 'contact opnemen met u', a fixed expression.",
+   "mistakes": [
+    {
+     "wrong": "Indien het nodig is, nemen wij op contact met u.",
+     "right": "Indien het nodig is, nemen wij contact met u op.",
+     "why": "The particle 'op' goes to the end of the main clause. (not \"Indien het nodig is, nemen wij op contact met u.\", but \"Indien het nodig is, nemen wij contact met u op.\")"
+    },
+    {
+     "wrong": "Indien het nodig is, wij nemen contact met u op.",
+     "right": "Indien het nodig is, nemen wij contact met u op.",
+     "why": "After the fronted clause the main clause starts with its verb: 'nemen wij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij nemen contact met u op indien het nodig is.",
+    "english": "We will contact you if necessary.",
+    "note": "With the main clause first there is no inversion. Compare: Wij nemen contact met u op indien het nodig is."
+   }
+  },
+  "pat-connectors-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "naarmate = as, the more ... (gradual change)",
+    "why": "As one thing progresses, the other changes gradually, which naarmate expresses."
+   },
+   "situationNl": "Je beschrijft de sfeer in een restaurant op één avond. Laat zien dat de drukte langzaam toenam met het verstrijken van de uren.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Naarmate de avond vorderde",
+     "subject": "de avond",
+     "finite": "vorderde",
+     "role": "naarmate-clause (the process)",
+     "why": "After 'naarmate' come the subject 'de avond' and the past form 'vorderde', which closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "werd het drukker",
+     "subject": "het",
+     "finite": "werd",
+     "role": "main clause (the change)",
+     "why": "The finite verb 'werd' comes first, then the subject 'het' and the comparative 'drukker'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as)",
+     "text": "Naarmate"
+    },
+    {
+     "label": "subject",
+     "text": "de avond"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vorderde"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "werd"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "comparative",
+     "text": "drukker"
+    }
+   ],
+   "meaning": "As the evening progressed, it got busier.",
+   "order": "The naarmate-clause fills position one, so the main clause inverts to 'werd het'. The comparative 'drukker' shows the growing change.",
+   "forms": "vorderen: de avond vorderde. worden: het werd.",
+   "compare": "English 'as the evening progressed' uses 'as' for both time and cause. Dutch naarmate is only gradual change.",
+   "mistakes": [
+    {
+     "wrong": "Naarmate de avond vorderde, het werd drukker.",
+     "right": "Naarmate de avond vorderde, werd het drukker.",
+     "why": "After the fronted clause the main clause starts with 'werd het'."
+    },
+    {
+     "wrong": "Naarmate vorderde de avond, werd het drukker.",
+     "right": "Naarmate de avond vorderde, werd het drukker.",
+     "why": "The finite verb 'vorderde' goes to the end of the naarmate-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het werd drukker naarmate de avond vorderde.",
+    "english": "It got busier as the evening progressed.",
+    "note": "With the main clause first there is no inversion. Compare: Het werd drukker naarmate de avond vorderde."
+   }
+  },
+  "pat-connectors-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "naarmate = as, the more ... (gradual change)",
+    "why": "Progress and difficulty increase together, which is the typical use."
+   },
+   "situationNl": "Je spreekt een cursist toe die moeite heeft met een gevorderde cursus. Zeg eerlijk wat er met de moeilijkheid gebeurt gedurende de weg.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het wordt moeilijker",
+     "subject": "Het",
+     "finite": "wordt",
+     "role": "main clause (the change)",
+     "why": "'Het' is first and 'wordt' second, followed by the comparative 'moeilijker'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "naarmate je verder komt",
+     "subject": "je",
+     "finite": "komt",
+     "role": "naarmate-clause (the process)",
+     "why": "After 'naarmate' come the subject 'je' and the adverb 'verder', and the finite verb 'komt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb",
+     "text": "wordt"
+    },
+    {
+     "label": "comparative",
+     "text": "moeilijker"
+    },
+    {
+     "label": "conjunction (as)",
+     "text": "naarmate"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "verder"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    }
+   ],
+   "meaning": "It gets harder the further you get.",
+   "order": "The main clause with the comparative comes first. The clause with naarmate ends in 'komt' after 'verder'. Read it as \"Het wordt moeilijker naarmate je verder komt\".",
+   "forms": "worden: het wordt. komen: je komt.",
+   "compare": "English 'the further you get' uses a comparative pair. Dutch uses naarmate plus a plain clause.",
+   "mistakes": [
+    {
+     "wrong": "Het wordt moeilijker naarmate je komt verder.",
+     "right": "Het wordt moeilijker naarmate je verder komt.",
+     "why": "The finite verb 'komt' goes to the end of the clause. (not \"Het wordt moeilijker naarmate je komt verder.\", but \"Het wordt moeilijker naarmate je verder komt.\")"
+    },
+    {
+     "wrong": "Het wordt moeilijker, naarmate wordt je verder.",
+     "right": "Het wordt moeilijker naarmate je verder komt.",
+     "why": "The naarmate-clause has the subject first and the verb last."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hoe verder je komt, hoe moeilijker het wordt.",
+    "english": "The further you get, the harder it gets.",
+    "note": "The 'hoe ... hoe' pair also expresses the link and puts the verb last in each part."
+   }
+  },
+  "pat-connectors-34": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "naarmate = as, the more ... (gradual change)",
+    "why": "Her ageing and her reading grow together, which naarmate captures."
+   },
+   "situationNl": "Je vertelt over de ontwikkeling van een vriendin. Laat zien hoe haar leesgewoonte veranderde met de jaren.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Naarmate zij ouder werd",
+     "subject": "zij",
+     "finite": "werd",
+     "role": "naarmate-clause (the process)",
+     "why": "After 'naarmate' come the subject 'zij' and the comparative 'ouder', and the past form 'werd' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "las ze meer boeken",
+     "subject": "ze",
+     "finite": "las",
+     "role": "main clause (the change)",
+     "why": "The finite verb 'las' comes first, then the subject 'ze' and the object 'meer boeken'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as)",
+     "text": "Naarmate"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "comparative",
+     "text": "ouder"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "werd"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "las"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "meer boeken"
+    }
+   ],
+   "meaning": "As she got older, she read more books.",
+   "order": "The fronted clause makes the main clause start with 'las ze'. Both verbs are in the simple past because the story is told in the past.",
+   "forms": "worden: zij werd. lezen: ze las.",
+   "compare": "English 'as she got older' uses 'got'; Dutch uses 'werd' with the comparative.",
+   "mistakes": [
+    {
+     "wrong": "Naarmate zij werd ouder, las ze meer boeken.",
+     "right": "Naarmate zij ouder werd, las ze meer boeken.",
+     "why": "The finite verb 'werd' goes to the end of the naarmate-clause."
+    },
+    {
+     "wrong": "Naarmate zij ouder werd, ze las meer boeken.",
+     "right": "Naarmate zij ouder werd, las ze meer boeken.",
+     "why": "After the fronted clause the verb comes first: 'las ze'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze las meer boeken naarmate zij ouder werd.",
+    "english": "She read more books as she got older.",
+    "note": "With the main clause first there is no inversion. Compare: Ze las meer boeken naarmate zij ouder werd."
+   }
+  },
+  "pat-connectors-35": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "op voorwaarde dat = on condition that (a stated requirement)",
+    "why": "A stronger, more explicit condition than 'als': the permission is bound to a requirement."
+   },
+   "situationNl": "Een ouder leent de wagen uit aan een tiener en stelt één duidelijke eis. Zeg wat mag en wat daarvoor van de rijder wordt verwacht.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je mag de auto lenen",
+     "subject": "Je",
+     "finite": "mag",
+     "role": "main clause (what is granted)",
+     "why": "'Je' is first and the modal 'mag' second; the infinitive 'lenen' closes the main clause after the object 'de auto'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "op voorwaarde dat je voorzichtig rijdt",
+     "subject": "je",
+     "finite": "rijdt",
+     "role": "condition clause (the requirement)",
+     "why": "The phrase 'op voorwaarde dat' opens the clause, then come the subject 'je' and 'voorzichtig', and the finite verb 'rijdt' closes it."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "modal verb",
+     "text": "mag"
+    },
+    {
+     "label": "object",
+     "text": "de auto"
+    },
+    {
+     "label": "infinitive",
+     "text": "lenen"
+    },
+    {
+     "label": "conjunction (on condition that)",
+     "text": "op voorwaarde dat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "voorzichtig"
+    },
+    {
+     "label": "finite verb",
+     "text": "rijdt"
+    }
+   ],
+   "meaning": "You may borrow the car on condition that you drive carefully.",
+   "order": "'Op voorwaarde dat' is a three-word conjunction followed by a normal subordinate clause. The finite verb 'rijdt' stands at the end.",
+   "forms": "mogen: je mag. lenen: infinitive. rijden: je rijdt.",
+   "compare": "English 'on condition that' also introduces a clause. In Dutch the verb goes to the end of it.",
+   "mistakes": [
+    {
+     "wrong": "Je mag de auto lenen op voorwaarde dat je rijdt voorzichtig.",
+     "right": "Je mag de auto lenen op voorwaarde dat je voorzichtig rijdt.",
+     "why": "The finite verb 'rijdt' goes to the end of the clause."
+    },
+    {
+     "wrong": "Je mag de auto lenen op voorwaarde je voorzichtig rijdt.",
+     "right": "Je mag de auto lenen op voorwaarde dat je voorzichtig rijdt.",
+     "why": "The word 'dat' is part of the conjunction and must stay."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je mag de auto lenen als je voorzichtig rijdt.",
+    "english": "You may borrow the car if you drive carefully.",
+    "note": "Als is shorter and less explicit about the requirement."
+   }
+  },
+  "pat-connectors-36": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "op voorwaarde dat = on condition that (a stated requirement)",
+    "why": "The acceptance depends on a requirement she has set."
+   },
+   "situationNl": "Je vertelt een vriend over een sollicitante en haar belangrijkste eis. Zeg wat zij doet en wat zij vooraf afspreekt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze accepteert de baan",
+     "subject": "Ze",
+     "finite": "accepteert",
+     "role": "main clause (what is granted)",
+     "why": "'Ze' is first and 'accepteert' second; the object 'de baan' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "op voorwaarde dat ze thuis mag werken",
+     "subject": "ze",
+     "finite": "mag",
+     "role": "condition clause (the requirement)",
+     "why": "The phrase 'op voorwaarde dat' opens the clause, then come the subject 'ze' and 'thuis', and the modal group 'mag werken' closes it."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "accepteert"
+    },
+    {
+     "label": "object",
+     "text": "de baan"
+    },
+    {
+     "label": "conjunction (on condition that)",
+     "text": "op voorwaarde dat"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "modal verb",
+     "text": "mag"
+    },
+    {
+     "label": "infinitive",
+     "text": "werken"
+    }
+   ],
+   "meaning": "She accepts the job on condition that she may work from home.",
+   "order": "In the condition clause the modal 'mag' and the infinitive 'werken' both stand at the end, in this order. Read it as \"Ze accepteert de baan op voorwaarde dat ze thuis mag werken\".",
+   "forms": "accepteren: ze accepteert. mogen: ze mag. werken: infinitive.",
+   "compare": "English 'may work from home' keeps the modal early. Dutch puts 'mag werken' at the end.",
+   "mistakes": [
+    {
+     "wrong": "Ze accepteert de baan op voorwaarde dat ze mag thuis werken.",
+     "right": "Ze accepteert de baan op voorwaarde dat ze thuis mag werken.",
+     "why": "The adverb 'thuis' comes before the modal group: 'thuis mag werken'."
+    },
+    {
+     "wrong": "Ze accepteert de baan op voorwaarde dat zij thuis mogen werken.",
+     "right": "Ze accepteert de baan op voorwaarde dat ze thuis mag werken.",
+     "why": "The singular subject 'ze' needs 'mag'. (not \"Ze accepteert de baan op voorwaarde dat zij thuis mogen werken.\", but \"Ze accepteert de baan op voorwaarde dat ze thuis mag werken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze accepteert de baan, maar ze wil thuis werken.",
+    "english": "She accepts the job, but she wants to work from home.",
+    "note": "With 'maar' the second part is a main clause: 'ze wil'."
+   }
+  },
+  "pat-connectors-37": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "op voorwaarde dat = on condition that (a stated requirement)",
+    "why": "The offer to cook depends on the other person's task."
+   },
+   "situationNl": "Huisgenoten verdelen de taken. Doe een aanbod voor de avond dat afhangt van wat de ander doet.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Op voorwaarde dat jij de boodschappen doet",
+     "subject": "jij",
+     "finite": "doet",
+     "role": "condition clause (the requirement)",
+     "why": "The phrase 'op voorwaarde dat' opens the clause, then come the subject 'jij' and the object 'de boodschappen', and 'doet' closes it."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kook ik vanavond",
+     "subject": "ik",
+     "finite": "kook",
+     "role": "main clause (what is granted)",
+     "why": "The finite verb 'kook' comes first, then the subject 'ik' and the time word 'vanavond'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (on condition that)",
+     "text": "Op voorwaarde dat"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "object",
+     "text": "de boodschappen"
+    },
+    {
+     "label": "finite verb",
+     "text": "doet"
+    },
+    {
+     "label": "finite verb",
+     "text": "kook"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "time word",
+     "text": "vanavond"
+    }
+   ],
+   "meaning": "On condition that you do the shopping, I will cook tonight.",
+   "order": "The whole condition clause fills position one, so the main clause inverts to 'kook ik'. 'Doet' ends the first clause.",
+   "forms": "doen: jij doet. koken: ik kook.",
+   "compare": "English 'On condition that you do the shopping' is long; Dutch often shortens to 'als jij ... doet' in speech.",
+   "mistakes": [
+    {
+     "wrong": "Op voorwaarde dat jij de boodschappen doet, ik kook vanavond.",
+     "right": "Op voorwaarde dat jij de boodschappen doet, kook ik vanavond.",
+     "why": "After the fronted clause the main clause starts with 'kook ik'."
+    },
+    {
+     "wrong": "Op voorwaarde dat jij doet de boodschappen, kook ik vanavond.",
+     "right": "Op voorwaarde dat jij de boodschappen doet, kook ik vanavond.",
+     "why": "The finite verb 'doet' goes to the end of the clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kook vanavond op voorwaarde dat jij de boodschappen doet.",
+    "english": "I will cook tonight on condition that you do the shopping.",
+    "note": "With the main clause first there is no inversion. Compare: Ik kook vanavond op voorwaarde dat jij de boodschappen doet."
+   }
+  },
+  "pat-connectors-38": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voor het geval dat = in case (a precaution)",
+    "why": "The rain may or may not come; the action is done for safety."
+   },
+   "situationNl": "Een vriend gaat de hele dag weg en het weerbericht is onzeker. Geef hem een advies voor de zekerheid.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Neem een paraplu mee",
+     "subject": "(jij)",
+     "finite": "Neem",
+     "role": "main clause (the precaution)",
+     "why": "The imperative 'Neem' comes first and the object 'een paraplu' follows; the particle 'mee' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voor het geval dat het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "in-case clause (the possible event)",
+     "why": "The phrase 'voor het geval dat' opens the clause, then come the dummy subject 'het' and the finite verb 'regent' at the end."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb (split separable)",
+     "text": "Neem"
+    },
+    {
+     "label": "object",
+     "text": "een paraplu"
+    },
+    {
+     "label": "particle",
+     "text": "mee"
+    },
+    {
+     "label": "conjunction (in case)",
+     "text": "voor het geval dat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    }
+   ],
+   "meaning": "Take an umbrella in case it rains.",
+   "order": "'Meenemen' splits as 'Neem ... mee'. The in-case clause is subordinate, so 'regent' stands last. Read it as \"Neem een paraplu mee voor het geval dat het regent\".",
+   "forms": "meenemen: neem ... mee. regenen: het regent.",
+   "compare": "English 'in case it rains' does not take 'that'. Dutch 'voor het geval dat' is a full conjunction.",
+   "mistakes": [
+    {
+     "wrong": "Neem mee een paraplu voor het geval dat het regent.",
+     "right": "Neem een paraplu mee voor het geval dat het regent.",
+     "why": "The particle 'mee' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Neem een paraplu mee voor het geval dat regent het.",
+     "right": "Neem een paraplu mee voor het geval dat het regent.",
+     "why": "The finite verb 'regent' goes to the end of the clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Neem een paraplu mee als het regent.",
+    "english": "Take an umbrella if it rains.",
+    "note": "With 'als' the umbrella is for the case when it actually rains; with 'voor het geval dat' you take it beforehand."
+   }
+  },
+  "pat-connectors-39": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voor het geval dat = in case (a precaution)",
+    "why": "The crash might never happen; the extra file is a precaution."
+   },
+   "situationNl": "Je legt een collega je werkwijze uit om gegevens veilig te houden. Zeg wat je extra doet en welke mogelijke storing je wilt opvangen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik sla een extra bestand op",
+     "subject": "Ik",
+     "finite": "sla",
+     "role": "main clause (the precaution)",
+     "why": "'Ik' is first and 'sla' second; the object 'een extra bestand' follows and the particle 'op' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voor het geval dat de computer crasht",
+     "subject": "de computer",
+     "finite": "crasht",
+     "role": "in-case clause (the possible event)",
+     "why": "The phrase 'voor het geval dat' opens the clause, then come the subject 'de computer' and the finite verb 'crasht' at the end."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "sla"
+    },
+    {
+     "label": "object",
+     "text": "een extra bestand"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    },
+    {
+     "label": "conjunction (in case)",
+     "text": "voor het geval dat"
+    },
+    {
+     "label": "subject",
+     "text": "de computer"
+    },
+    {
+     "label": "finite verb",
+     "text": "crasht"
+    }
+   ],
+   "meaning": "I save an extra file in case the computer crashes.",
+   "order": "'Opslaan' splits as 'sla ... op'. The second clause is subordinate and ends in 'crasht', so nothing else follows the verb.",
+   "forms": "opslaan: sla ... op. crashen: de computer crasht.",
+   "compare": "English 'save' is a single word; Dutch 'opslaan' splits. For this card: \"Ik sla een extra bestand op voor het geval dat de computer crasht\".",
+   "mistakes": [
+    {
+     "wrong": "Ik sla op een extra bestand voor het geval dat de computer crasht.",
+     "right": "Ik sla een extra bestand op voor het geval dat de computer crasht.",
+     "why": "The particle 'op' goes to the end of the main clause. (not \"Ik sla op een extra bestand voor het geval dat de computer crasht.\", but \"Ik sla een extra bestand op voor het geval dat de computer crasht.\")"
+    },
+    {
+     "wrong": "Ik sla een extra bestand op voor het geval dat de computer crash.",
+     "right": "Ik sla een extra bestand op voor het geval dat de computer crasht.",
+     "why": "The verb must agree with the singular subject: 'crasht'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik sla een extra bestand op, want de computer crasht soms.",
+    "english": "I save an extra file, because the computer sometimes crashes.",
+    "note": "With 'want' the reason is a fact; with 'voor het geval dat' it is only a possibility."
+   }
+  },
+  "pat-connectors-40": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voor het geval dat = in case (a precaution)",
+    "why": "He did not know that she needed help; he called to be sure."
+   },
+   "situationNl": "Je vertelt een vriend over iemand die contact zocht met een familielid. Zeg wat hij deed en welke mogelijkheid hij wilde opvangen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij belde zijn moeder",
+     "subject": "Hij",
+     "finite": "belde",
+     "role": "main clause (the precaution)",
+     "why": "'Hij' is first and 'belde' second, followed by the object 'zijn moeder'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voor het geval dat ze hulp nodig had",
+     "subject": "ze",
+     "finite": "had",
+     "role": "in-case clause (the possible event)",
+     "why": "The phrase 'voor het geval dat' opens the clause, then come the subject 'ze' and 'hulp nodig', and the past form 'had' closes it."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "belde"
+    },
+    {
+     "label": "object",
+     "text": "zijn moeder"
+    },
+    {
+     "label": "conjunction (in case)",
+     "text": "voor het geval dat"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "hulp"
+    },
+    {
+     "label": "predicate",
+     "text": "nodig"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "had"
+    }
+   ],
+   "meaning": "He called his mother in case she needed help.",
+   "order": "'Hulp nodig hebben' is a fixed expression. In the clause, 'had' stands at the end after 'hulp nodig'. Read it as \"Hij belde zijn moeder voor het geval dat ze hulp nodig had\".",
+   "forms": "bellen: hij belde. hebben: ze had (hulp nodig hebben).",
+   "compare": "English 'needed help' is a plain verb. Dutch uses 'hulp nodig hebben', with the verb last in a clause.",
+   "mistakes": [
+    {
+     "wrong": "Hij belde zijn moeder voor het geval dat ze had hulp nodig.",
+     "right": "Hij belde zijn moeder voor het geval dat ze hulp nodig had.",
+     "why": "The finite verb 'had' goes to the end: 'hulp nodig had'."
+    },
+    {
+     "wrong": "Hij belde zijn moeder voor het geval dat ze hulp nodig heeft.",
+     "right": "Hij belde zijn moeder voor het geval dat ze hulp nodig had.",
+     "why": "The story is in the past, so the clause uses 'had'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij belde zijn moeder omdat ze hulp nodig had.",
+    "english": "He called his mother because she needed help.",
+    "note": "With 'omdat' the need is a fact, not a possibility."
+   }
+  }
+ }
+}

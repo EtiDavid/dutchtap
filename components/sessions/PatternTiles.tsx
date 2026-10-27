@@ -18,6 +18,7 @@ const SHORT: Record<keyof typeof GRAMMAR_AREAS, { title: string; hint: string }>
   hoewel: { title: 'Hoewel & tenzij', hint: 'hoewel het regent…' },
   indirect: { title: 'Indirect questions', hint: 'ik weet niet waar…' },
   relative: { title: 'Relative clauses', hint: 'de man die…' },
+  connectors: { title: 'More conjunctions', hint: 'sinds · zodat · mits' },
   tot: { title: 'Tot', hint: 'tot de bus komt' },
   toen: { title: 'Toen', hint: 'toen ik jong was' },
   verbs: { title: 'Verbs', hint: 'probeer · probeerde' },
@@ -34,6 +35,7 @@ const GROUPS: { title: string; ids: AreaId[] }[] = [
   { title: 'Reasons & statements', ids: ['omdat', 'dat', 'of', 'indirect', 'relative'] },
   { title: 'Time', ids: ['als', 'wanneer', 'toen', 'terwijl', 'voordat', 'nadat', 'zodra', 'tot'] },
   { title: 'Contrast & exceptions', ids: ['hoewel'] },
+  { title: 'Purpose, cause & conditions', ids: ['connectors'] },
 ];
 
 /** Each grammar pattern is a set of real sentences: choose one to start a session (Study, Say it, Word order, with levels). */

@@ -1580,6 +1580,126 @@
     }
    ],
    "rule": "Tot = until the end point; the clause after it has its verb last."
+  },
+  {
+   "id": "mx-zodat-aim",
+   "topics": [
+    "connectors",
+    "omdat"
+   ],
+   "mix": [
+    "zodat"
+   ],
+   "situationNl": "Je zet vanavond een wekker. Het doel ligt in de toekomst: de trein van morgenochtend niet missen. Zeg dat in één zin, beginnend met \"Ik zet een wekker\".",
+   "hintEn": "You set an alarm tonight. The aim lies in the future: not missing tomorrow morning's train. Say it in one sentence.",
+   "options": [
+    {
+     "text": "Ik zet een wekker zodat ik morgen de trein haal.",
+     "correct": true,
+     "why": "Zodat links an action to its aim; the finite verb \"haal\" goes to the end of the clause."
+    },
+    {
+     "text": "Ik zet een wekker omdat ik morgen de trein haal.",
+     "correct": false,
+     "why": "Omdat gives a reason that is already a fact; catching the train is an aim, not an existing fact."
+    },
+    {
+     "text": "Ik zet een wekker zodat ik haal morgen de trein.",
+     "correct": false,
+     "why": "After zodat the clause is subordinate, so the finite verb \"haal\" goes to the end."
+    }
+   ],
+   "rule": "Aim: zodat; reason that is a fact: omdat."
+  },
+  {
+   "id": "mx-sinds-habit",
+   "topics": [
+    "connectors",
+    "tot"
+   ],
+   "mix": [
+    "sinds"
+   ],
+   "situationNl": "Je woont een jaar in Utrecht. Daarvoor fietste je nooit. Beschrijf je gewoonte van nu en wat de aanleiding was: je verhuizing. Begin met \"Ik fiets elke dag naar mijn werk\".",
+   "hintEn": "You have lived in Utrecht for a year; before that you never cycled. Describe the habit and what started it.",
+   "options": [
+    {
+     "text": "Ik fiets elke dag naar mijn werk sinds ik in Utrecht woon.",
+     "correct": true,
+     "why": "Sinds names the starting point of a habit that still continues; the verb \"woon\" goes to the end and the present tense stays."
+    },
+    {
+     "text": "Ik fiets elke dag naar mijn werk tot ik in Utrecht woon.",
+     "correct": false,
+     "why": "Tot means \"until\"; it would say the habit stops when you live in Utrecht, which reverses the meaning."
+    },
+    {
+     "text": "Ik fiets elke dag naar mijn werk sinds ik woon in Utrecht.",
+     "correct": false,
+     "why": "After sinds the clause is subordinate, so the finite verb \"woon\" goes behind the place phrase."
+    }
+   ],
+   "rule": "Sinds = from that starting point until now; tot = until it stops."
+  },
+  {
+   "id": "mx-mits-condition",
+   "topics": [
+    "connectors",
+    "hoewel"
+   ],
+   "mix": [
+    "mits"
+   ],
+   "situationNl": "Een vriend wil je laptop lenen. Je stelt één voorwaarde: hij brengt hem vanavond terug. Begin met \"Je mag mijn laptop lenen\".",
+   "hintEn": "A friend wants to borrow your laptop. You set one condition: he returns it tonight.",
+   "options": [
+    {
+     "text": "Je mag mijn laptop lenen, mits je hem vanavond terugbrengt.",
+     "correct": true,
+     "why": "Mits names the one condition for the permission; the separable verb is written together at the end: \"terugbrengt\"."
+    },
+    {
+     "text": "Je mag mijn laptop lenen, hoewel je hem vanavond terugbrengt.",
+     "correct": false,
+     "why": "Hoewel marks a contrast; returning the laptop is not an obstacle to lending it."
+    },
+    {
+     "text": "Je mag mijn laptop lenen, mits je brengt hem vanavond terug.",
+     "correct": false,
+     "why": "In the mits-clause the separable verb is joined and stands at the end: \"terugbrengt\"."
+    }
+   ],
+   "rule": "Mits = provided that (a condition); hoewel = although (a contrast)."
+  },
+  {
+   "id": "mx-geval-precaution",
+   "topics": [
+    "connectors",
+    "zodra"
+   ],
+   "mix": [
+    "voor het geval dat"
+   ],
+   "situationNl": "Je gaat kamperen en het is mogelijk dat je zaklamp het begeeft, al weet je dat niet. Zeg wat je vooraf inpakt en waarom, beginnend met \"Ik neem extra batterijen mee\".",
+   "hintEn": "You go camping and your torch might fail, though you don't know. Say what you pack beforehand and why.",
+   "options": [
+    {
+     "text": "Ik neem extra batterijen mee voor het geval dat de lamp uitvalt.",
+     "correct": true,
+     "why": "Voor het geval dat introduces a possible event you prepare for; the separable verb \"uitvalt\" is joined at the end."
+    },
+    {
+     "text": "Ik neem extra batterijen mee zodra de lamp uitvalt.",
+     "correct": false,
+     "why": "Zodra names the moment something happens; you cannot pack the batteries at the moment the lamp fails."
+    },
+    {
+     "text": "Ik neem extra batterijen mee voor het geval dat de lamp valt uit.",
+     "correct": false,
+     "why": "In the subordinate clause the separable verb is written together at the end: \"uitvalt\"."
+    }
+   ],
+   "rule": "Precaution before a possible event: voor het geval dat."
   }
  ]
 }

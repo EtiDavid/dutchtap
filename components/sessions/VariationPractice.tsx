@@ -27,14 +27,14 @@ export function VariationControls({
   const parent = parentFor(id),
     family = session.variations?.[parent],
     children = variationsFor(parent);
-  if (session.lang !== "nl" || children.length !== 10) return null;
+  if (session.lang !== "nl" || children.length < 1 || children.length > 10) return null;
   const learned = children.filter(
     (v) =>
       ["easy", "mastered"].includes(
         progressOf(session, v.id).level ?? "difficult",
       ) || progressOf(session, v.id).qStreak >= 3,
   ).length;
-  const released = children.slice(0, family?.unlocked ?? 2);
+  const released = children.slice(0, family?.unlocked ?? Math.min(2, children.length));
   const speakingRetired = released.filter(
     (v) => progressOf(session, v.id).spDone,
   ).length;
@@ -63,8 +63,8 @@ export function VariationControls({
       </label>
       <p className="mt-2 text-xs leading-relaxed text-muted">
         {family?.enabled
-          ? `${family.unlocked} of 10 variations released · ${learned} ready for the next step. More release after an Easy/Mastered rating or 3 Quiz successes in a row. Their progress is separate from the main card.`
-          : "Two variations join Speaking and Quiz when enabled. A Mastered main card enables them automatically. Turning this off preserves child progress."}
+          ? `${family.unlocked} of ${children.length} variation${children.length === 1 ? "" : "s"} released · ${learned} ready for the next step. More release after an Easy/Mastered rating or 3 Quiz successes in a row. Their progress is separate from the main card.`
+          : `${Math.min(2, children.length)} meaningful variation${children.length === 1 ? "" : "s"} ${children.length === 1 ? "joins" : "join"} Speaking and Quiz when enabled. A Mastered main card enables ${children.length === 1 ? "it" : "them"} automatically. Turning this off preserves child progress.`}
       </p>
       {family?.enabled && (
         <p className="mt-2 text-xs font-medium text-muted">
@@ -73,8 +73,7 @@ export function VariationControls({
         </p>
       )}
       <p className="mt-1 text-xs text-muted">
-        New variations start Difficult. They use situations and device audio,
-        without pictures.
+        New variations start Difficult. Families contain only authored or analysed meaningful contrasts; the app does not pad every card to ten. They use situations and device audio, without pictures.
       </p>
     </section>
   );

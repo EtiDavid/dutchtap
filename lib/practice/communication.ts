@@ -3,6 +3,7 @@ import catalogue from "@/data/dutch-communication.json";
 import corrections from "@/data/editorial/communication-corrections.json";
 import alsExpansion from "@/data/editorial/grammar-als-expansion.json";
 import type { Lang } from "@/lib/lang";
+import { analysisFor } from "@/lib/grammarAnalysis";
 import {
   sentenceTokens,
   tokenIndex,
@@ -23,6 +24,7 @@ type EditorialCorrection = {
   answers: ModelAnswer[];
 };
 export type PracticeSentence = {
+  id?: string;
   text: string;
   english: string;
   scenario: string;
@@ -99,21 +101,53 @@ export function principalAnswers(task: CommunicationTask) {
     return true;
   });
 }
-/** Exact authored text is the key. French and legacy records keep their single model. */
+const normalEnglish = (value: string) =>
+  value
+    .toLocaleLowerCase("en")
+    .replace(/[.,!?;:]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+/**
+ * Exact authored text remains the primary key. For grammar cards, a sentence-specific
+ * analysis may also provide a reviewed contrast with the same meaning. Expose that
+ * as a legitimate model answer instead of teaching that only one Dutch word order
+ * can ever be correct. Contrasts whose English meaning changes are deliberately not
+ * accepted as alternatives.
+ */
 export function communicationFor(card: PracticeSentence): CommunicationTask {
-  return card.lang === "nl" && tasks[card.text]
-    ? tasks[card.text]
-    : {
-        scenario: card.scenario,
-        answers: [
-          {
-            id: "model",
-            text: card.text,
-            english: card.english,
-            explanation: "",
-          },
-        ],
-      };
+  const base =
+    card.lang === "nl" && tasks[card.text]
+      ? {
+          scenario: tasks[card.text].scenario,
+          answers: tasks[card.text].answers.map((answer) => ({ ...answer })),
+        }
+      : {
+          scenario: card.scenario,
+          answers: [
+            {
+              id: "model",
+              text: card.text,
+              english: card.english,
+              explanation: "",
+            },
+          ],
+        };
+  if (card.lang !== "nl" || !card.id) return base;
+  const contrast = analysisFor(card.id)?.contrast;
+  if (
+    contrast &&
+    contrast.dutch !== card.text &&
+    normalEnglish(contrast.english) === normalEnglish(card.english) &&
+    !base.answers.some((answer) => answer.text === contrast.dutch)
+  )
+    base.answers.push({
+      id: "analysis-contrast",
+      text: contrast.dutch,
+      english: contrast.english,
+      explanation: contrast.note,
+    });
+  return base;
 }
 export const scenarioFor = (text: string, fallback: string) =>
   tasks[text]?.scenario ?? fallback;

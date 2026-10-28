@@ -1,61 +1,87 @@
-# Grammar Mastery — closing report (P7 cross-check)
+# Grammar Mastery — closing report (current cross-check)
 
-**Date:** 27 October 2026 · **Branch:** `feat/grammar-mastery-completion` · **Evidence commit:** `cbc6a08` · **Baseline:** `7b41335` (before any grammar work)  
-**Final verdict: PARTIALLY COMPLETE.** Nothing is merged to `main` from this branch, tagged or deployed. All content is AI-edited; no native speaker or independent person has reviewed any of it. Mandatory item A25 (independent re-read) is blocked, and `npm run grammar:release-gate` fails by design.
+**Date:** 28 October 2026 · **Review branch:** `feat/grammar-mastery-finish-2` · **Draft PR:** #21 · **Baseline:** `7b41335` (before Grammar Mastery)  
+**Final verdict: PARTIALLY COMPLETE.** The implementable product gaps addressed by PR #21 are tested, but the frozen acceptance contract still contains work that cannot be honestly self-certified: independent/native-language review, a human screen-reader/manual accessibility pass, a rollback drill, and an independent A25 sign-off. PR #21 is therefore not merged or deployed.
 
-Detailed rows: [GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md](GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md) · Counts: [GRAMMAR-MASTERY-RECOUNT.md](GRAMMAR-MASTERY-RECOUNT.md) (generated from the data files, tested) · Work history: [GRAMMAR-MASTERY-WORKLOG.md](GRAMMAR-MASTERY-WORKLOG.md).
+Detailed rows: [GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md](GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md) · Counts: [GRAMMAR-MASTERY-RECOUNT.md](GRAMMAR-MASTERY-RECOUNT.md) · Work history: [GRAMMAR-MASTERY-WORKLOG.md](GRAMMAR-MASTERY-WORKLOG.md).
 
-## Baseline → final counts (programmatic)
+## Baseline → current counts
 
-| Item | Baseline (`7b41335`) | Final |
+| Item | Baseline | Current |
 | --- | ---: | ---: |
-| Original Everyday + Dutch at Work cards (protected) | 1,200 | 1,200, every id, sentence, translation, picture and audio unchanged (fingerprint test) |
-| Grammar pattern cards authored | 196 | **1,506** (all original 196 ids and sentences unchanged) |
-| Reused references (aliases of core sentences) | 0 | **184** (180 distinct original sentences, each alias with its own rating) |
-| Playable grammar base cards | 196 | **1,690** in **21 topics** |
-| Hand-authored sentence analyses | 0 | **1,690** (every playable card) |
-| Source tags (pointer, no card, no rating) | 0 | 145 on 136 sentences |
-| Passive lesson examples (not cards) | 0 | 480 |
-| Interactive child variations | 0 | 100 (10 ALS families) |
-| Distinct separable verb lemmas | — | 68 (184 separable cards) |
-| Uncued mixed-grammar challenges | 0 | 61 |
-| Topic lessons | — | 21 (3 at v1.0, 18 at v1.1; all cite at least one source; the 10 added on 2026-10-28 were taken from search results, not read line by line against the lesson text) |
+| Protected Everyday + Dutch at Work cards | 1,200 | **1,200**, historical IDs/text/media fingerprint-protected |
+| Authored Grammar Pattern cards | 196 | **1,506** |
+| Reused grammar aliases | 0 | **184** aliases of 180 distinct original sentences |
+| Playable grammar base cards | 196 | **1,690** across **21 topics** |
+| Sentence-specific analyses | 0 | **1,690 / 1,690** |
+| Effective Dutch-first grammar prompts | — | **1,690 / 1,690** |
+| Passive lesson examples | — | **480** |
+| Deep authored child variations | 0 | **100** in ten ALS families |
+| Runtime tracked grammar children | 0 | **126 across 36 families**: 100 deep authored + 26 conservative same-meaning analysis contrasts |
+| Separable-verb lemmas | — | **68** (184 separable base cards) |
+| Uncued Mixed Grammar challenges | 0 | **61** |
+| Topic lessons | — | **21**; every lesson now lists at least one source, with source depth still varying |
 
-Plan §5.3 count targets are all met by this recount. Honest count notes: 58 of the 100 ALS cards are 29 pairs (71 distinct tasks); 1,680 of the 1,690 base cards have no variation family.
+All numeric card targets in plan §5.3 are met. Counts do not certify naturalness. The variation recount now reports each topic's uncovered parents rather than padding missing families with generic swaps.
 
-## Completed (verified, narrow)
+## What PR #21 closes
 
-- **A24** Frozen Academy curriculum: no such file exists or changed; the protected 1,200 cards are fingerprint-checked (`tests/grammar.id-stability.test.ts`).
-- Structural facts with tests: deterministic regeneration, unique ids and sentences, stable legacy ids, no renumbering, every alias/tag/analysis resolves, old saved sessions still validate and run (`tests/grammar.migration.test.ts`).
+- **Meaningful variations beyond the old exactly-ten rule.** Grammar families now support **1–10** children. The existing ten deep ALS families stay intact. A non-ALS card gets a tracked child only when its existing sentence analysis contains a Dutch-first situation and a contrast with the same English meaning. Child IDs/progress remain independent.
+- **Natural alternatives beyond ALS.** The authored ALS alternatives remain. A same-meaning analysis contrast may also become an accepted model with its explanation; different-meaning contrasts remain teaching contrasts and are not silently accepted as equivalent.
+- **Typed production before reveal.** Grammar Speaking now offers an optional Dutch draft. A stored-model match is confirmed after reveal; an unmatched answer is described as different from the stored models, never automatically “wrong Dutch”.
+- **Lesson usability.** Topic lessons include a short reveal-based self-check. Study remembers the learner's open/closed preference; Speaking and Quiz always start with the guide closed so recall is not leaked.
+- **Advanced connector sourcing.** ANS/IVDNT references now support `gesteld dat`, `stel dat`, `voor het geval dat`, `op voorwaarde dat`, comparison/manner `zoals`, and time-conjunction `nu` / `sinds`. Formal conjunction `daar` remains explicitly flagged as the weakest sourced claim.
+- **Transparent coverage.** The generated recount distinguishes authored base cards, aliases, source tags, passive examples, deep variations and analysis-derived runtime children, including per-topic variation shortfalls.
+- **Documentation.** Architecture, Grammar Patterns and authoring guidance now describe the actual lesson/analysis/variation/alternative/reuse boundaries instead of the older partial-release snapshot.
 
-## Partial / blocked / deferred
+## What remains genuinely open
 
-Every other row is **PARTIAL**; **A25 is BLOCKED**. The remaining action for each is in the audit table. The common causes: no native review; ALS-only variations; thin or missing sources for some lessons; tags that display but do not feed sessions; no person has walked the manual scenarios of plan §10.2 or used a screen reader.
+- **A17 / language certification:** all new grammar content is AI-edited. No native speaker or independent human has reviewed the full lessons/cards/analyses/mistakes/alternatives.
+- **A25 / independent final review:** cannot be performed by the same implementation author and remains blocked.
+- **Human accessibility:** automated axe/keyboard/overflow coverage exists, but no person has completed a screen-reader walk-through.
+- **Rollback drill:** rollback instructions exist; an actual rollback/redeploy drill has not been executed.
+- **Live-account / Atlas suite:** the Atlas-backed account lifecycle/game E2E remains deliberately outside the isolated grammar CI. The optional Mongo tests are skipped in normal CI unless a throwaway `TEST_MONGODB_URI` is provided.
+- **Multi-topic skill identity:** explicit aliases have separate grammar ratings and source tags never create false credit. Tags still do not automatically become extra session cards; doing that safely requires topic-specific analysis/rating semantics rather than treating a tag as mastery.
+- **Variation breadth:** 36 of 1,690 parents currently have a verified family. This is a visible content shortfall, not hidden by filler.
 
-## Tests (exact results, 27 Oct 2026)
+## Latest code validation
 
-See the table in the audit ("Tests and deployment evidence"). In short: lint, typegen, tsc, build and all content checks exit 0; Vitest 570 passed (13 skipped, need a local MongoDB); real-MongoDB tests 13 passed; Chromium flashcards suite 177 passed; production offline suite 4 passed; release gate fails as designed. Not run: the Atlas-backed `tests/e2e`.
+Grammar feature validation run **40613586900** on the PR #21 code head before this report refresh:
 
-## Regressions and migrations
+- deterministic grammar regeneration: **pass**
+- `npm run lint`: **pass**
+- `npx next typegen`: **pass**
+- `npx tsc --noEmit`: **pass**
+- `npm test`: **573 passed, 13 skipped** across 63 test files (the 13 optional tests require Mongo)
+- `npm run content:learning-check`: **pass**
+- `npm run build`: **pass**
+- focused Chromium grammar journeys: **9 passed** in 22.1s, including the full ALS lesson → Study → Dutch-first/typed Speaking → Quiz journey, responsive widths, variation persistence and Grammar Patterns behavior
 
-- **Data is additive.** New files and rows only; 133 lines were deleted in the whole 166-file diff against the baseline, in application code, none in the protected card files.
-- **Stored data.** Existing keys are unchanged (`dutchtap:flashcards:v2:*`, `dutchtap:sessions:v1:*`). New keys: `dutchtap:grammar-mixed:v1` (guest) and `dutchtap:grammar-mixed:v1:user:<name>`; one new MongoDB collection, `grammarMixedProgress` (unique on `userId + id`, created on first use). Session schema, store and service are byte-identical to the baseline, so no migration step exists or is needed.
-- **Visible changes outside grammar:** the accent colour is `#b93c09` instead of `#c2410c` (contrast fix, buttons slightly darker); the session title is an h1 and some headings changed level; the Home header wraps at narrow widths; Home now loads the learner's levels once for the grammar progress tiles; sessions deduplicate by original sentence.
+The 13 skipped Mongo tests are not failures; prior project evidence records them passing against a throwaway local MongoDB when `TEST_MONGODB_URI` is configured. Atlas-backed `tests/e2e` was not run in this PR.
+
+## Regressions and migration safety
+
+- Existing core card IDs/content/media remain fingerprint-protected.
+- Grammar aliases keep their own ratings; original Everyday/Work ratings are not promoted by grammar practice.
+- Existing session schema remains compatible with old sessions; variable-size variation families are constrained to 1–10 and validate through the same stored-session schema.
+- Mixed Grammar remains separate from the four sentence levels, avoiding false mastery promotion.
+- French grammar exclusion and legacy game code remain protected by existing test suites.
+- PR #21 is additive to current `main`; it is not deployed while draft.
 
 ## Rollback
 
-1. This work is on `main` (PRs #15, #16, #18). To roll back, revert the merge commit `8b2e935` (or deploy the previous tag); card ids and progress are untouched, so nothing in learners' data needs undoing.
-2. After a release by tag: redeploy the previous `v*` tag (deployment is tag-only, see `docs/DEPLOYMENT.md`). Learners keep their Everyday, Work and French levels and sessions, because their keys and schema are unchanged. Ratings of new grammar cards and mixed-grammar answers would stay in storage unused; the `grammarMixedProgress` collection can stay or be dropped without effect on other data.
-3. A rollback drill has **not** been performed.
+Current production follows `main` through Vercel's Git integration. PR #21 has not changed production, so its rollback is simply “do not merge” or close the PR. If a later merge needs reversal, revert the PR #21 merge commit and redeploy that resulting `main`; stable grammar/base IDs mean existing ratings remain stored and become unused rather than corrupted. A real rollback drill is still required before A23 can be called fully verified.
 
 ## Editorial accuracy
 
-All lessons, cards, analyses, mistakes and situations were written and checked by the AI (Claude), with web sources read through search summaries and page fetches where cited. A stratified sample (84 cards, 4 per topic) was re-read on 27 October 2026; it found one acceptable-Dutch "mistake" and one unnatural English gloss, both fixed. Two earlier sourced corrections (`aangezien`, `mits`) came from reading Taaladvies pages. Ten lessons cite no source and six topics are only partly sourced. **No native speaker has reviewed anything**, and the sampling pass is not independent.
+Sources are recorded in the topic lessons and the new ANS/IVDNT references close several previously explicit source gaps. This does **not** turn AI-authored content into native-reviewed content. The app and docs retain `independentHumanReview: false` / equivalent warnings, and unverified claims remain identified rather than promoted to fact.
 
-## Deployment
+## Deployment state
 
-Merged into `main` by the owner (PRs #15, #16 and #18; #18 also carries the Next.js upgrade). CI (`Grammar feature validation`, run 40606047981) passed on that head. The first version tag is pushed only on the owner's explicit instruction and ships this PARTIAL state; no live smoke test exists. **Security:** Next.js is upgraded 16.3.5 → 16.4.3 and `npm audit --omit=dev` reports 0 vulnerabilities; 3 moderate dev-only vitest advisories remain.
+The current production site already contains the Grammar Mastery foundation merged before PR #21. **PR #21 is draft, unmerged and not production-deployed.** Merging it would deploy through the current Vercel Git integration, so deployment should happen only after the owner accepts the remaining external-review gates.
 
 ## Final verdict
 
-`PARTIALLY COMPLETE`. Do not call the Grammar Mastery scope complete, and do not merge this branch or push a production tag until the independent review, native review, a fresh CI run, the merge of the Next.js upgrade branch and the manual walk-throughs are done.
+`PARTIALLY COMPLETE`.
+
+The remaining blockers are no longer hidden engineering placeholders: they are explicitly the independent/native review, human accessibility/manual checks, rollback drill, optional live-account testing, broader verified variation content, and the unresolved multi-topic skill-model decision. Do not label the full master plan `COMPLETE` until those acceptance requirements are genuinely satisfied.

@@ -21,7 +21,7 @@ Source material is AI-edited and is **not** independently certified by a native 
 
 **Why/decision:** The master plan says “up to ten appropriate variations”, not “ten filler children”. Existing sentence analyses already contain reviewed contrasts, so reuse only the contrasts that preserve the same communicative meaning and keep progress independent. Do not turn source tags into practice cards without topic-specific analysis/rating, because that would create false mastery credit.
 
-**Evidence/tests:** GitHub Actions Grammar feature validation is required before merge; exact final result is recorded after the branch head finishes CI.
+**Evidence/tests:** Grammar feature validation run **40613586900** on the code head: deterministic regeneration, lint, Next typegen, TypeScript, `npm test` (**573 passed, 13 skipped**), `content:learning-check`, production build, Chromium install and **9 focused browser tests** all passed. The browser set includes the full ALS typed-production journey, three responsive widths, Grammar Patterns behavior and variation persistence.
 
 **Known issues and unfinished requirements:**
 - [ ] Independent/native-speaker editorial review remains external; AI cannot self-certify it.
@@ -29,7 +29,7 @@ Source material is AI-edited and is **not** independently certified by a native 
 - [ ] Rollback drill has not yet been performed.
 - [ ] A25 independent final review remains blocked until a separate reviewer performs it.
 
-**Next specific task:** resolve CI findings, refresh the acceptance audit/final report to the branch's actual evidence, then keep PR #21 unmerged until remaining independent-review gates are explicitly accepted.
+**Next specific task:** keep PR #21 unmerged until the external acceptance work is explicitly accepted: independent/native language review, human accessibility/manual walk-through, rollback drill and the unresolved multi-topic skill-model decision. Any new variation content should be authored/reviewed, not quota-filled.
 
 ## 2026-10-27 — Claude Code continuation: P7 cross-check and recount
 

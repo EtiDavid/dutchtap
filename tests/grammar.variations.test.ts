@@ -1,5 +1,6 @@
 import { describe,expect,it } from "vitest";
-import { variationsFor,variationFor,variationCard,parentFor } from "@/lib/variations/content";
+import { FAMILIES, variationsFor,variationFor,variationCard,parentFor } from "@/lib/variations/content";
+import { GRAMMAR_CARDS } from "@/lib/flashcards/engine";
 import { createSessionFromIds, progressOf } from "@/lib/sessions/engine";
 describe("grammar interactive variations",()=>{
  for(const id of ["pat-als-01","pat-als-02","pat-als-03","pat-als-07","pat-als-14","pat-als-33","pat-als-60","pat-als-68","pat-als-72","pat-als-reuse-career-troubleshooting-029"]){
@@ -18,4 +19,20 @@ describe("grammar interactive variations",()=>{
    }
   });
  }
+ it("exposes meaningful non-ALS grammar variations without padding families to ten",()=>{
+  const grammarIds=new Set(GRAMMAR_CARDS.map(c=>c.id));
+  const generated=Object.entries(FAMILIES).filter(([id,children])=>grammarIds.has(id)&&!id.startsWith("pat-als-")&&children.length>0);
+  expect(generated.length).toBeGreaterThan(20);
+  expect(new Set(generated.map(([id])=>GRAMMAR_CARDS.find(c=>c.id===id)!.category)).size).toBeGreaterThan(5);
+  for(const [parentId,children] of generated){
+    expect(children.length).toBeGreaterThanOrEqual(1);
+    expect(children.length).toBeLessThanOrEqual(10);
+    for(const child of children){
+      expect(child.parentId).toBe(parentId);
+      expect(child.scenarioNl).toBeTruthy();
+      expect(child.explanation.length).toBeGreaterThan(30);
+      expect(variationCard(child.id)?.text).toBe(child.text);
+    }
+  }
+ });
 });

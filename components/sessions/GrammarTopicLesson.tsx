@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import rawLessons from "@/data/grammar-topic-lessons.json";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { button } from "../flashcards/styles";
@@ -11,8 +11,17 @@ export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; 
   const lesson = lessons[topic];
   const [opened, setOpened] = useState(defaultOpen);
   const {listen,stop,sound} = useCardAudio();
+  const storageKey = `dutchtap:grammar-lesson-open:${topic}`;
+  useEffect(() => {
+    const saved = window.localStorage.getItem(storageKey);
+    setOpened(saved === null ? defaultOpen : saved === "1");
+  }, [defaultOpen, storageKey]);
   if (!lesson) return null;
-  return <details open={opened} onToggle={event => setOpened(event.currentTarget.open)} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
+  return <details open={opened} onToggle={event => {
+    const next = event.currentTarget.open;
+    setOpened(next);
+    window.localStorage.setItem(storageKey, next ? "1" : "0");
+  }} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
     <summary className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">
       📖 Learn the rule · {lesson.title}
       <span className="mt-1 block text-xs font-normal text-muted">Tap to expand the complete topic guide; close it when speaking.</span>
@@ -33,6 +42,16 @@ export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; 
       <section className="space-y-2 border-t border-border pt-4" aria-label="Common mistakes"><h3 className="font-bold">Common mistakes: wrong → right → why</h3>
         {lesson.mistakes.map(x=><div key={x.wrong} className="rounded-xl bg-surface-2 p-3 text-sm"><p lang="nl"><span aria-label="Incorrect">❌</span> <span className="line-through">{x.wrong}</span></p><p lang="nl" className="mt-1 font-semibold">✅ {x.right}</p><p className="mt-2 text-muted">{x.why}</p></div>)}
       </section>
+      {lesson.mistakes[0] && <section className="border-t border-border pt-4" aria-label="Quick self-check" data-testid="grammar-topic-self-check">
+        <h3 className="font-bold">Quick self-check</h3>
+        <p className="mt-2 text-sm text-muted">Spot the problem before you reveal the model correction.</p>
+        <p lang="nl" className="mt-3 rounded-xl bg-surface-2 p-3 font-semibold">❌ {lesson.mistakes[0].wrong}</p>
+        <details className="mt-3 rounded-xl border border-border p-3">
+          <summary className="cursor-pointer text-sm font-semibold">Reveal correction and why</summary>
+          <p lang="nl" className="mt-3 font-semibold">✅ {lesson.mistakes[0].right}</p>
+          <p className="mt-2 text-sm leading-relaxed text-muted">{lesson.mistakes[0].why}</p>
+        </details>
+      </section>}
       {lesson.sources.length>0 && <section className="border-t border-border pt-4"><h3 className="font-bold">References</h3><ul className="mt-2 space-y-1">{lesson.sources.map(s=><li key={s[1]}><a className="text-sm text-accent underline" href={s[1]} target="_blank" rel="noopener noreferrer">{s[0]}</a></li>)}</ul></section>}
       <p className="border-t border-border pt-3 text-xs text-muted">Lesson v{lesson.revision} · {lesson.status}. Example audio uses the Dutch device voice.</p>
       {sound && <p role="status" className="text-xs text-muted">{sound}</p>}

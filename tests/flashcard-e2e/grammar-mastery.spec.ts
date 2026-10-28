@@ -21,9 +21,9 @@ test('learn verbs before speaking: guide opens in Study but does not expose answ
   await expect(guide).toContainText('Ik heb de afwas gedaan.');
 
   // The learner can close the explanation without losing the chosen session.
-  await guide.locator('summary').click();
+  await guide.getByTestId('grammar-topic-lesson-summary').click();
   await expect(guide).not.toHaveAttribute('open', '');
-  await guide.locator('summary').click();
+  await guide.getByTestId('grammar-topic-lesson-summary').click();
   await expect(guide).toHaveAttribute('open', '');
 
   // Changing modes collapses the lesson, making recall genuine.
@@ -51,13 +51,13 @@ test('expanded lessons exist for V2, because and reported dat', async ({ page })
   await page.goto('/flashcards?new=grammar:omdat');
   const dialog = page.getByRole('dialog', { name: 'Create a session' });
   const guide = dialog.getByTestId('grammar-topic-lesson');
-  await guide.locator('summary').click();
+  await guide.getByTestId('grammar-topic-lesson-summary').click();
   await expect(guide).toContainText('Omdat versus want versus daarom');
   await expect(guide).toContainText('Omdat het regent, neem ik de bus.');
   await dialog.locator('select').nth(1).selectOption('dat');
-  await guide.locator('summary').click();
+  await guide.getByTestId('grammar-topic-lesson-summary').click();
   await expect(guide).toContainText('DAT is not always a conjunction');
   await dialog.locator('select').nth(1).selectOption('inversion');
-  await guide.locator('summary').click();
+  await guide.getByTestId('grammar-topic-lesson-summary').click();
   await expect(guide).toContainText('Count phrases, not individual words.');
 });

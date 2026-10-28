@@ -1,26 +1,31 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import rawLessons from "@/data/grammar-topic-lessons.json";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { button } from "../flashcards/styles";
 type Example = {nl:string;en:string};
 type Lesson = {title:string;goal:string;overview:string;status:string;revision:string;formulas:{label:string;pattern:string;why:string}[];sections:{title:string;body:string;examples:Example[]}[];mistakes:{wrong:string;right:string;why:string}[];sources:string[][]};
 const lessons = rawLessons as Record<string,Lesson>;
+function savedLessonOpen(topic:string, fallback:boolean) {
+  if (typeof window === "undefined") return fallback;
+  try {
+    const saved = window.localStorage.getItem(`dutchtap:grammar-lesson-open:${topic}`);
+    return saved === null ? fallback : saved === "1";
+  } catch {
+    return fallback;
+  }
+}
 /** Topic-wide teaching remains independent from a session's current question and answer. */
 export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; defaultOpen?: boolean}) {
   const lesson = lessons[topic];
-  const [opened, setOpened] = useState(defaultOpen);
+  const [opened, setOpened] = useState(() => savedLessonOpen(topic, defaultOpen));
   const {listen,stop,sound} = useCardAudio();
   const storageKey = `dutchtap:grammar-lesson-open:${topic}`;
-  useEffect(() => {
-    const saved = window.localStorage.getItem(storageKey);
-    setOpened(saved === null ? defaultOpen : saved === "1");
-  }, [defaultOpen, storageKey]);
   if (!lesson) return null;
-  return <details open={opened} onToggle={event => {
+  return <details suppressHydrationWarning open={opened} onToggle={event => {
     const next = event.currentTarget.open;
     setOpened(next);
-    window.localStorage.setItem(storageKey, next ? "1" : "0");
+    try { window.localStorage.setItem(storageKey, next ? "1" : "0"); } catch {}
   }} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
     <summary className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">
       📖 Learn the rule · {lesson.title}

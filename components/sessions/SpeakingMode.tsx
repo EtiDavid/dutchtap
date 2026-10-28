@@ -26,6 +26,7 @@ import { copy } from "@/lib/lang/copy";
 import { button, primary } from "../flashcards/styles";
 import { GrammarNotes } from "../flashcards/GrammarNotes";
 import { GrammarScenarioPrompt } from "./GrammarScenarioPrompt";
+import { TypedGrammarDraft } from "./TypedGrammarDraft";
 import { AudioControls, CardImage, VocabLinks } from "./CardParts";
 import type { ModeProps } from "./modeTypes";
 
@@ -232,6 +233,13 @@ export function SpeakingMode({
               {isVariation(card.id) && variationFor(card.id) && <div className="mt-4 rounded-xl bg-surface-2 p-3 text-sm" data-testid="grammar-variation-explanation"><h3 className="font-semibold">Why this variation works</h3><p className="mt-1 leading-relaxed">{variationFor(card.id)?.explanation}</p></div>}
               {!isVariation(card.id) && <VocabLinks card={card} />}
             </>
+          )}
+          {session.collection === "grammar" && session.lang === "nl" && (
+            <TypedGrammarDraft
+              key={current.attemptId}
+              card={card}
+              revealed={current.revealed}
+            />
           )}
           <p
             className="mt-5 text-sm font-semibold"

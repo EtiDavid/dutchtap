@@ -37,7 +37,7 @@ for (const width of [320, 390]) {
 test('no axe violations in the create dialog with a lesson open, in a study session, and in every mixed-grammar state', async ({ page }) => {
   await page.goto('/flashcards?new=grammar:connectors');
   const dialog = page.getByRole('dialog', { name: 'Create a session' });
-  await dialog.getByTestId('grammar-topic-lesson').locator('summary').click();
+  await dialog.getByTestId('grammar-topic-lesson').getByTestId('grammar-topic-lesson-summary').click();
   expect(await violations(page), 'dialog with lesson').toEqual([]);
   await dialog.getByRole('button', { name: '10', exact: true }).click();
   await dialog.getByRole('button', { name: 'Create session' }).click();
@@ -82,7 +82,7 @@ test('nothing scrolls sideways at 320, 375, 430 and 768 px', async ({ page }) =>
   await page.setViewportSize({ width: 320, height: 800 });
   await page.goto('/flashcards?new=grammar:daar');
   const dialog = page.getByRole('dialog', { name: 'Create a session' });
-  await dialog.getByTestId('grammar-topic-lesson').locator('summary').click();
+  await dialog.getByTestId('grammar-topic-lesson').getByTestId('grammar-topic-lesson-summary').click();
   expect(await overflow(page), 'dialog with the longest lesson open').toBeLessThanOrEqual(0);
 });
 

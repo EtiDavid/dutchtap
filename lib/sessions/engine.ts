@@ -260,10 +260,14 @@ export function createSessionFromIds(input: {
         ? {}
         : Object.fromEntries(
             input.cardIds
-              .filter((id) => variationsFor(id).length === 10)
+              .filter((id) => variationsFor(id).length > 0)
               .map((id) => [
                 id,
-                { enabled: true, unlocked: 2, manualOff: false },
+                {
+                  enabled: true,
+                  unlocked: Math.min(2, variationsFor(id).length),
+                  manualOff: false,
+                },
               ]),
           ),
     childProgress: {},
@@ -514,7 +518,8 @@ export function practiceLevel(
 function releaseChildren(s: Session, parent: string) {
   const f = s.variations[parent];
   if (!f?.enabled) return;
-  const learned = variationsFor(parent)
+  const family = variationsFor(parent);
+  const learned = family
     .slice(0, f.unlocked)
     .filter(
       (v) =>
@@ -522,7 +527,10 @@ function releaseChildren(s: Session, parent: string) {
           progressOf(s, v.id).level ?? "difficult",
         ) || progressOf(s, v.id).qStreak >= 3,
     ).length;
-  f.unlocked = Math.max(f.unlocked, Math.min(10, 2 + learned));
+  f.unlocked = Math.max(
+    f.unlocked,
+    Math.min(family.length, Math.min(10, 2 + learned)),
+  );
 }
 /** The model is saved per attempt. Old saved attempts without answerId retain the original model. */
 export function quizModel(session: Session, current = session.quiz.current) {
@@ -654,13 +662,16 @@ export function applyAction(
       if (
         s.lang !== "nl" ||
         !s.cardIds.includes(action.parentId) ||
-        variationsFor(action.parentId).length !== 10
+        variationsFor(action.parentId).length < 1 ||
+        variationsFor(action.parentId).length > 10
       )
         return reject(input, "invalid");
       const previous = s.variations[action.parentId];
       s.variations[action.parentId] = {
         enabled: action.enabled,
-        unlocked: previous?.unlocked ?? 2,
+        unlocked:
+          previous?.unlocked ??
+          Math.min(2, variationsFor(action.parentId).length),
         manualOff: !action.enabled,
       };
       if (!action.enabled) {
@@ -774,12 +785,12 @@ export function applyAction(
         if (
           s.lang === "nl" &&
           action.level === "mastered" &&
-          variationsFor(current.cardId).length === 10 &&
+          variationsFor(current.cardId).length > 0 &&
           !s.variations[current.cardId]?.manualOff
         )
           s.variations[current.cardId] ??= {
             enabled: true,
-            unlocked: 2,
+            unlocked: Math.min(2, variationsFor(current.cardId).length),
             manualOff: false,
           };
       }

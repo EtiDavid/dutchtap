@@ -79,7 +79,7 @@ export function AnswerModels({
   );
 }
 
-/** A child keeps the family's ten related models, without creating another generation of cards. */
+/** A child keeps the family's related models, without creating another generation of cards. */
 export function FamilyExamples({ card }: { card: LCard }) {
   const { listen } = useCardAudio();
   const parent = parentFor(card.id),
@@ -91,13 +91,14 @@ export function FamilyExamples({ card }: { card: LCard }) {
   ]
     .filter((e) => e.text !== card.text)
     .slice(0, 10);
+  if (!examples.length) return null;
   return (
     <details
       className="mt-5 border-t border-border pt-4"
       data-testid="family-examples"
     >
       <summary className="cursor-pointer text-sm font-semibold">
-        10 similar grammar examples
+        {examples.length} related grammar example{examples.length === 1 ? "" : "s"}
       </summary>
       <ul className="mt-3 flex flex-col gap-3">
         {examples.map((e) => (

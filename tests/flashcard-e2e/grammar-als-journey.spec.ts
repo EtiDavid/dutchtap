@@ -19,6 +19,7 @@ test('ALS journey: lesson → study with the clause map → Dutch-first speaking
   const lesson = page.getByTestId('grammar-topic-lesson');
   await expect(lesson).toBeVisible();
   await expect(lesson).toContainText('toen is the correct conjunction');
+  await expect(lesson.getByTestId('grammar-topic-self-check')).toBeVisible();
 
   // Study: every card shows the authored clause map for exactly that sentence.
   for (let i = 0; i < 3; i++) {
@@ -45,10 +46,14 @@ test('ALS journey: lesson → study with the clause map → Dutch-first speaking
   const cardId = current.speaking?.current?.cardId ?? session.cardIds[0];
   const model = cardFor('nl', cardId)?.text ?? '';
   if (model) await expect(page.locator('article')).not.toContainText(model);
+  const typed = page.getByTestId('typed-grammar-draft').locator('textarea');
+  await expect(typed).toBeVisible();
+  if (model) await typed.fill(model);
   await page.getByRole('button', { name: /English help/ }).click();
   await expect(page.getByRole('button', { name: 'Hide English help' })).toBeVisible();
   await page.getByRole('button', { name: 'Check the Dutch' }).click();
   await expect(page.locator('article p[lang="nl"]').first()).toBeVisible();
+  if (model) await expect(page.getByTestId('typed-grammar-draft')).toContainText('matches one of the reviewed model answers');
   await page.getByRole('button', { name: 'Medium', exact: true }).click();
 
   // The same session, still on Speaking after a reload.
@@ -81,7 +86,7 @@ for (const width of [320, 375, 430]) {
     await page.keyboard.press('Enter');
     await expect(page.getByTestId('clause-map')).toBeVisible();
     await noOverflow();
-    await page.getByTestId('grammar-topic-lesson').locator('summary').focus();
+    await page.getByTestId('grammar-topic-lesson').getByTestId('grammar-topic-lesson-summary').focus();
     await page.keyboard.press('Enter'); // collapse the lesson again
     await switchMode(page, 'speaking');
     await expect(page.getByTestId('grammar-scenario-prompt')).toBeVisible();

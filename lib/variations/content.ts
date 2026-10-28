@@ -1,4 +1,5 @@
 import { communicationFor, scenarioFor } from "@/lib/practice/communication";
+import { analysisFor } from "@/lib/grammarAnalysis";
 import workplaceFamilies from "@/data/workplace-families.json";
 import grammarVariationFamilies from "@/data/grammar-variation-families.json";
 import workplaceBank from "@/data/workplace-practice-bank.json";
@@ -60,7 +61,73 @@ const careerFamilies: Record<string, Variation[]> = Object.fromEntries(Object.en
       example: { text: next.text, english: next.english }, focus: group.focus };
   })];
 }));
-export const FAMILIES: Record<string, Variation[]> = { ...everydayFamilies, ...careerFamilies, ...(grammarVariationFamilies as Record<string, Variation[]>) };
+const authoredGrammarFamilies = grammarVariationFamilies as Record<string, Variation[]>;
+
+/**
+ * Every grammar card already has a sentence-specific editorial analysis. When that
+ * analysis contains a contrast that preserves the same English meaning, expose it
+ * as one tracked child variation instead of inventing filler. Authored families
+ * (currently the ten deep ALS families) always win and can still contain up to ten
+ * children. This deliberately implements "up to ten meaningful variations", not
+ * "exactly ten or nothing".
+ */
+const normalMeaning = (value: string) =>
+  value
+    .toLocaleLowerCase("en")
+    .replace(/[.,!?;:]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+const normalDutch = (value: string) =>
+  value
+    .toLocaleLowerCase("nl")
+    .replace(/[.,!?;:]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const analysedGrammarFamilies: Record<string, Variation[]> = Object.fromEntries(
+  CARDS.flatMap((card) => {
+    if (card.collection !== "grammar" || authoredGrammarFamilies[card.id]) return [];
+    const analysed = analysisFor(card.id);
+    const contrast = analysed?.contrast;
+    if (
+      !analysed ||
+      !contrast ||
+      !analysed.situationNl ||
+      normalDutch(contrast.dutch) === normalDutch(card.dutch) ||
+      normalMeaning(contrast.english) !== normalMeaning(analysed.meaning)
+    )
+      return [];
+    const explanation = [contrast.note, analysed.order]
+      .filter(Boolean)
+      .join(" ");
+    return [[
+      card.id,
+      [{
+        id: `${card.id}~v01`,
+        parentId: card.id,
+        text: contrast.dutch,
+        english: contrast.english,
+        scenario:
+          analysed.situationEn ??
+          scenarioFor(card.dutch, card.scenario),
+        scenarioNl: analysed.situationNl,
+        explanation,
+        focus: `${card.category} · meaningful contrast`,
+        example: {
+          text: card.dutch,
+          english: analysed.meaning,
+        },
+      }],
+    ]];
+  }),
+);
+
+export const FAMILIES: Record<string, Variation[]> = {
+  ...everydayFamilies,
+  ...careerFamilies,
+  ...analysedGrammarFamilies,
+  ...authoredGrammarFamilies,
+};
 const byId = new Map(
   Object.values(FAMILIES)
     .flat()

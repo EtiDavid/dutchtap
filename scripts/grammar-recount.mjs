@@ -15,12 +15,42 @@ const forms = J("data/grammar-separable-forms.json");
 const mixed = J("data/grammar-mixed-challenges.json").items;
 const tags = J("data/grammar-source-tags.json").tags;
 const analysisFiles = readdirSync(new URL("data/", root)).filter((f) => /^grammar-.*-analysis\.json$/.test(f));
-const analysed = new Set(); const analysedBy = {};
-for (const f of analysisFiles) for (const id of Object.keys(J(`data/${f}`).cards)) { analysed.add(id); analysedBy[id] = f; }
+const analysed = new Set(); const analysedBy = {}; const analysisRecords = {};
+for (const f of analysisFiles) for (const [id, record] of Object.entries(J(`data/${f}`).cards)) {
+  analysed.add(id); analysedBy[id] = f; analysisRecords[id] = record;
+}
 const core = [];
 for (const n of ["flashcards", "flashcard-additions", "flashcard-additions-2", "workplace-cards"]) { const d = J(`data/${n}.json`); core.push(...(Array.isArray(d) ? d : d.cards ?? d)); }
 const coreIds = new Set(core.map((c) => c.id));
+const coreById = new Map(core.map((c) => [c.id, c]));
 const topics = Object.keys(lessons);
+
+const normalMeaning = (value) => String(value ?? "").toLocaleLowerCase("en").replace(/[.,!?;:]/g, "").replace(/\s+/g, " ").trim();
+const normalDutch = (value) => String(value ?? "").toLocaleLowerCase("nl").replace(/[.,!?;:]/g, "").replace(/\s+/g, " ").trim();
+
+const grammarParents = [
+  ...cards,
+  ...links.map((link) => {
+    const source = coreById.get(link.sourceId);
+    if (!source) return null;
+    return { ...source, id: `pat-${link.topic}-reuse-${source.id}`, category: link.topic, originCardId: source.id };
+  }).filter(Boolean),
+];
+const analysedVariationFamilies = {};
+for (const card of grammarParents) {
+  if (variations[card.id]) continue;
+  const record = analysisRecords[card.id], contrast = record?.contrast;
+  if (!record?.situationNl || !contrast) continue;
+  if (normalDutch(contrast.dutch) === normalDutch(card.dutch)) continue;
+  if (normalMeaning(contrast.english) !== normalMeaning(record.meaning)) continue;
+  analysedVariationFamilies[card.id] = [{
+    id: `${card.id}~v01`,
+    parentId: card.id,
+    text: contrast.dutch,
+    english: contrast.english,
+  }];
+}
+const runtimeVariationFamilies = { ...analysedVariationFamilies, ...variations };
 // targets from the frozen master plan, section 5.3 (a range is shown as its minimum; Voordat+Nadat is a combined target)
 const TARGET = { inversion: 100, als: 100, omdat: 100, dat: 100, toen: 100, wanneer: 100, separable: 150, verbs: 100, tense: 100, tot: 60, terwijl: 60, zodra: 60, of: 60, hoewel: 60, relative: 100, indirect: 100 };
 const COMBINED = { voordat: ["voordat", "nadat"], nadat: ["voordat", "nadat"] };
@@ -38,7 +68,9 @@ const dutchEffective = {}; for (const c of cards) if ((c.scenarioNl && c.scenari
 const aliasEffective = {}; for (const l of links) if (situation[`pat-${l.topic}-reuse-${l.sourceId}`]) aliasEffective[l.topic] = (aliasEffective[l.topic] ?? 0) + 1;
 const aliasIds = links.map((l) => `pat-${l.topic}-reuse-${l.sourceId}`);
 const analysedCount = (t) => cards.filter((c) => c.category === t && analysed.has(c.id)).length + links.filter((l) => l.topic === t && analysed.has(`pat-${l.topic}-reuse-${l.sourceId}`)).length;
-const children = Object.values(variations).flat();
+const authoredChildren = Object.values(variations).flat();
+const analysedChildren = Object.values(analysedVariationFamilies).flat();
+const children = Object.values(runtimeVariationFamilies).flat();
 const passive = (t) => (lessons[t]?.sections ?? []).reduce((n, s) => n + s.examples.length, 0);
 const tagCount = (t) => tags.filter((x) => x.topic === t).length;
 const mixedCount = (t) => mixed.filter((m) => m.topics.includes(t)).length;
@@ -63,13 +95,21 @@ out.push(`- Unique authored parent cards: **${sa}** (${new Set(cards.map((c) => 
 out.push(`- Reused references (aliases of Everyday / Dutch at Work sentences): **${sl}** across **${new Set(links.map((l) => l.sourceId)).size}** distinct original sentences; each alias has its own grammar rating.`);
 out.push(`- Source-sentence tags (a pointer, no card, no second rating): **${tags.length}** on **${new Set(tags.map((t) => t.id)).size}** original sentences.`);
 out.push(`- Passive lesson examples (not cards): **${sp}**.`);
-out.push(`- Interactive child variations: **${children.length}** in **${Object.keys(variations).length}** families (parents: ${Object.keys(variations).join(", ")}).`);
+out.push(`- Interactive child variations at runtime: **${children.length}** in **${Object.keys(runtimeVariationFamilies).length}** families. **${authoredChildren.length}** children in **${Object.keys(variations).length}** deep authored families; **${analysedChildren.length}** one-child families are exposed only where an existing sentence analysis contains a same-meaning contrast. No family is padded to ten.`);
 out.push(`- Distinct separable verb lemmas in the forms table: **${Object.keys(forms).length}**; separable base cards: **${playable("separable")}**.`);
 out.push(`- Uncued mixed-grammar challenges: **${mixed.length}** (${new Set(mixed.flatMap((m) => m.topics)).size} topics touched).`);
 out.push(`- Hand-authored sentence analyses: **${analysed.size}** records in **${analysisFiles.length}** files. Playable grammar base cards without one: **${sa + sl - sn}**.`);
 out.push(`- Protected original core sentences (Everyday + Dutch at Work): **${core.length}** (${coreIds.size} distinct ids).`);
 const missing = [...aliasIds].filter((id) => !analysed.has(id)).length;
 out.push(`- Aliases without their own analysis: **${missing}** (${aliasIds.length} aliases in total).`, "");
+out.push("## Interactive variation coverage by topic", "", "| Topic | Base parents | Families with ≥1 child | Interactive children | Parents without a verified child |", "| --- | ---: | ---: | ---: | ---: |");
+for (const t of topics) {
+  const parents = grammarParents.filter((card) => card.category === t);
+  const families = parents.filter((card) => (runtimeVariationFamilies[card.id]?.length ?? 0) > 0);
+  const topicChildren = families.reduce((n, card) => n + runtimeVariationFamilies[card.id].length, 0);
+  out.push(`| \`${t}\` | ${parents.length} | ${families.length} | ${topicChildren} | ${parents.length - families.length} |`);
+}
+out.push("", "A missing family is reported honestly rather than filled with generic name/tense swaps. New children should be added only when their scenario, meaning, explanation and target structure can be verified.", "");
 out.push("## Integrity checks computed here", "");
 const problems = [];
 if (new Set(cards.map((c) => c.id)).size !== cards.length) problems.push("duplicate authored ids");
@@ -82,6 +122,19 @@ out.push(problems.length ? problems.map((p) => `- PROBLEM: ${p}`).join("\n") : "
 const text = out.join("\n") + "\n";
 const target = new URL("docs/GRAMMAR-MASTERY-RECOUNT.md", root);
 if (process.argv.includes("--write")) { writeFileSync(target, text); console.log("wrote docs/GRAMMAR-MASTERY-RECOUNT.md"); }
-else if (process.argv.includes("--check")) { let old = ""; try { old = readFileSync(target, "utf8"); } catch {} if (old !== text) { console.error("docs/GRAMMAR-MASTERY-RECOUNT.md is out of date: run node scripts/grammar-recount.mjs --write"); process.exit(1); } console.log("recount is current"); }
+else if (process.argv.includes("--check")) {
+  let old = ""; try { old = readFileSync(target, "utf8"); } catch {}
+  if (old !== text) {
+    const actual = old.split("\n"), expected = text.split("\n");
+    let line = 0;
+    while (line < actual.length && line < expected.length && actual[line] === expected[line]) line++;
+    console.error("docs/GRAMMAR-MASTERY-RECOUNT.md is out of date: run node scripts/grammar-recount.mjs --write");
+    console.error(`first mismatch at line ${line + 1}`);
+    console.error(`expected: ${expected[line] ?? "<EOF>"}`);
+    console.error(`actual:   ${actual[line] ?? "<EOF>"}`);
+    process.exit(1);
+  }
+  console.log("recount is current");
+}
 else process.stdout.write(text);
 if (problems.length) process.exit(1);

@@ -1,19 +1,21 @@
 # Grammar Patterns — scope, implementation and teaching
 
-> **Status: PARTIALLY COMPLETE.** [PR #15](https://github.com/EtiDavid/dutchtap/pull/15) was MERGED into `main` on 26 October 2026, carrying the 13-topic / 485-base-card partial Grammar Mastery foundation. This merge did **not** automatically deploy (production is tag-only) or satisfy the full acceptance plan. The live site may still serve an older release. See the [acceptance audit](GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md) and [approved master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).
+> **Status: PARTIALLY COMPLETE — current implementation, still not native-certified.** The Grammar Mastery system is on `main` and the production app. The corpus/count targets are present, but the frozen acceptance plan still requires honest provenance and independent review before the whole project can be called fully complete. PR #21 continues the remaining learning-depth and audit work on a review branch.
 
-## Learner experience in the merged partial implementation
+## Learner experience in the current implementation
 
-- The **Practise → Grammar Patterns** tile grid selects a topic and opens a prefilled creation dialog (`/flashcards?new=grammar:als`). The base selection stays fixed between Study, Speaking and word-order Quiz; card levels start Difficult.
-- **Learn the rule:** a topic-level collapsible guide in session creation and practice. Six topics have expanded first-release guides (ALS, separable, inversion, omdat, dat, verbs). Seven others remain short/foundational. Study begins with the topic guide expanded; Speaking and Quiz keep it collapsed by default.
-- **Study:** read, listen to device Dutch speech, read English meaning, inspect an individual rule and ten **passive** related examples. **Limitation:** original 432 authored grammar cards still lack the full structured per-card breakdown chips found in the Everyday/Workplace decks; reused core cards inherit source breakdowns. An ALS-specific clause view exists but is not a complete sentence parser.
-- **Speaking:** answer a situational prompt aloud, reveal Dutch, then **self-rate**. No automatic speech-to-text or pronunciation scoring. An optional English-help toggle is available **only for the 236 authored grammar cards that include a Dutch-first prompt**; other cards fall back to English until authored and checked.
-- **Word-order Quiz:** reconstruct a model sentence with word tiles. The 58 new ALS sentences form 29 clause-order contrast pairs with a second saved and recognisable model. A broader set of alternative answers and optional typed/uncued mixed grammar inside the flashcard session are **not** finished. The older `/learn` lab has additional typed and mixed exercises.
-- **Find and fix a mistake:** each current topic lesson has a non-scoring optional correction exercise. Its response check compares one stored model; another grammatical correction may be valid even if not matched.
-- **Extra interactive variations:** only **ten ALS base cards** have ten separately tracked child questions each (**100 total**); the other grammar parents have no ready ten-child family. The ten passive examples displayed in notes are **not** independently scored questions.
-- **Progress:** each reused core reference receives a grammar-specific alias ID and level; the original card's level is unchanged. This does not yet implement full skill-by-topic mastery or multi-topic tagging.
+- **Practise → Grammar Patterns** contains 21 topic collections plus Mixed Grammar. A topic opens the normal session creator; the selected base-card set stays fixed across Study, Speaking and Quiz.
+- **Learn the rule:** every topic has one detailed, collapsible lesson with formulas, examples, mistakes and references. The same lesson is reachable in creation and all practice modes. The learner's open/closed preference is remembered per topic. Each lesson also has a short reveal-based self-check.
+- **Study:** all 1,690 playable grammar base cards have sentence-specific analysis: clause spans where relevant, subject/finite verb, word order, forms, one or more mistakes and a contrast. Passive examples remain reference material rather than scored children.
+- **Speaking:** grammar starts from a Dutch situation, with English help on request. The model stays hidden until reveal. The learner may optionally type a sentence before reveal; a stored-model match is reported, while an unrecognised answer is explicitly **not** labelled bad Dutch. Speaking remains self-rated; there is no microphone-based pronunciation score.
+- **Word-order Quiz:** the existing tile game keeps points/streak semantics and recognises explicitly authored alternative models. In addition to the original ALS contrast pairs, a sentence-specific analysed contrast can be a model only when its English meaning matches the base card's meaning.
+- **Find and fix a mistake:** session-sentence mistakes and lesson mistakes are available as an optional typed repair exercise. The check distinguishes “matches this stored model” from “different”, rather than claiming every unmatched answer is ungrammatical.
+- **Interactive variations:** the registry now supports **1–10 meaningful children**. The ten deep ALS families still contain ten independently tracked children each. Other grammar cards receive a tracked child only when their existing analysis contains a same-meaning contrast and Dutch-first situation. The app deliberately does not manufacture filler to make every family ten.
+- **Mixed Grammar:** uncued Dutch-first construction-choice challenges have their own local/account progress and weak-item weighting; they do not silently promote the four-level sentence rating.
+- **Progress/reuse:** explicit grammar aliases have separate grammar ratings; source tags can show that one original sentence illustrates several topics but do not automatically enter that sentence into another topic session without topic-specific analysis/rating.
+- **Editorial status:** grammar content is AI-edited with explicit source/review metadata. Automated checks verify structure and regressions, not native-speaker quality.
 
-## Exact merged-feature inventory (26 October 2026)
+## Current grammar inventory
 
 Counts below represent **playable base cards**, NOT passive examples or optional children.
 
@@ -42,19 +44,20 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 | `daar` | 30 | 0 | **30** | Expanded v1.1 (limited sources) |
 | **TOTAL** | **1506** | **184** | **1690** | **21 topics** |
 
-There are also **68 authored separable-verb lemmas** (within the 60–100 target; **not** independently native-verified), 100 interactive child variations on ten ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
+There are also **68 authored separable-verb lemmas** (within the 60–100 target; not independently native-verified), **1,506 authored grammar cards + 184 aliases = 1,690 playable grammar base cards**, and 1,200 protected original Dutch Core cards. Every playable grammar base card resolves to a Dutch-first situation and a sentence-specific analysis. The runtime variation registry currently exposes **126 tracked grammar children in 36 families**: 100 children in ten deep ALS families plus 26 one-child families derived conservatively from existing same-meaning analyses.
 
 ## Authoring and safety
 
 - Canonical grammar-generation inputs: `data/learning-tasks.json`, `data/editorial/grammar-pattern-extra.tsv`, `data/editorial/grammar-als-expansion.json`, `data/editorial/grammar-new-time-patterns.json`, `data/editorial/grammar-separable-cards.json`, `data/editorial/grammar-separable-verbs.json`; the deterministic generator is `scripts/build-grammar-patterns.py`. Never edit just the generated JSON.
 - `data/grammar-reuse-links.json` explicitly lists 184 source IDs; `lib/flashcards/engine.ts` materializes runtime grammar aliases and preserves the originals.
-- `data/grammar-topic-lessons.json` holds lesson-wide explanations and optional mistake-repair prompts, not per-card certified linguistic analyses.
-- `data/grammar-variation-families.json` holds the three initial ALS ten-child families. Device Dutch speech is used; no paid grammar audio or new pictures are required.
-- Full grammar tagging, new interactive variations for other parents, additional topic coverage, cross-device migration/restore tests, independent content QA, accessibility tests and production release must follow the [master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).
+- `data/grammar-topic-lessons.json` holds the 21 lesson-wide explanations and references. Per-card analysis lives separately in `data/grammar-*-analysis.json` and is combined by `lib/grammarAnalysis.ts`.
+- `data/grammar-variation-families.json` holds the deep authored grammar families. `lib/variations/content.ts` may additionally expose one tracked child when an existing per-card analysis already contains a same-meaning contrast. Families are 1–10 children; never add filler solely to hit ten. Device Dutch speech is used; no paid grammar audio or new pictures are required.
+- Source tags, explicit aliases, accepted alternatives and variations must keep stable IDs and honest mastery semantics. A source tag alone is not enough to add a core sentence to a grammar session; it needs topic-specific analysis/rating first. Independent content QA and human accessibility checks remain external acceptance work under the [master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).
 - **Do not claim a pass in one Playwright subset or all structural tests is proof of natural Dutch quality.** The branch's content is AI-edited, not independently native-certified.
 
 ## Tests and deployment
 
-Relevant tests: `tests/grammar.*.test.ts`, `tests/flashcard-e2e/grammar-mastery.spec.ts`, `tests/flashcard-e2e/grammar-patterns.spec.ts`, and `.github/workflows/grammar-feature-validation.yml`.
+The current validation workflow runs deterministic generation, lint, Next type generation, TypeScript, Vitest, content checks, a production build and focused Chromium grammar journeys. PR #21 additionally exercises the full ALS lesson → Study → Dutch-first Speaking/typed draft → Quiz path and variation persistence.
 
-The scoped [CI run 40367520391](https://github.com/EtiDavid/dutchtap/actions/runs/40367520391) passed 346 Vitest tests (7 optional database tests skipped) and 5 Chromium browser tests, including ALS variation-toggle persistence. This is a **subset** of the required final acceptance/migration tests. PR #15 is merged into `main`, but release to production requires an authorized version tag and full release checks; see [deployment instructions](DEPLOYMENT.md).
+Production deploys from `main` through the repository's Vercel Git integration. Do not merge a partial review branch merely to deploy it; see [deployment instructions](DEPLOYMENT.md).
+

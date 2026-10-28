@@ -46,6 +46,19 @@ Full contracts and rules are in [STAGE-1-HANDOVER.md](STAGE-1-HANDOVER.md); the 
   rating updates exactly one level record.
 * **Service worker** (`public/sw.js`): network-first pages so deployments reach returning users, with offline fallback.
 
+## Grammar Mastery content and practice
+
+Grammar Patterns reuses the normal session engine rather than maintaining a second learning app.
+
+* **Topic lessons.** `data/grammar-topic-lessons.json` contains one versioned lesson per grammar topic. `GrammarTopicLesson.tsx` renders the same lesson from session creation, Study, Speaking and Quiz. The learner's open/closed preference is stored locally per topic; active recall can stay collapsed. Every lesson includes formulas, examples, mistakes, references and a short reveal-based self-check.
+* **Sentence-specific analysis.** The `data/grammar-*-analysis.json` files are the topic-specific source for clause boundaries, subjects, finite verbs, order, forms, mistakes and contrasts. `lib/grammarAnalysis.ts` combines them, and `lib/grammarBreakdowns.ts` lets the existing sentence-detail UI render them without regex grammar guessing.
+* **Natural answer models.** `lib/practice/communication.ts` keeps the historical model answer stable. Authored alternatives remain explicit. A grammar analysis contrast is also exposed as an alternative only when its English meaning matches the card's meaning; a different contrast is never silently accepted as equivalent. Quiz attempts persist the selected answer id so refresh/replay cannot change the target.
+* **Interactive child variations.** `lib/variations/content.ts` is the single registry. Everyday and Workplace keep their established ten-child families. Grammar families may contain **1–10** children: the ten deep ALS families stay authored, while another grammar card gets a tracked child only when its existing sentence analysis already contains a same-meaning contrast and a Dutch-first situation. The app deliberately does not manufacture filler to reach ten. Child ids, levels, streaks and progress remain independent and survive toggle/reload/sync through the existing session schema.
+* **Speaking production.** Grammar Speaking starts from a Dutch situation with optional English help and keeps the model hidden. `TypedGrammarDraft.tsx` optionally lets the learner write before reveal; after reveal it reports only whether the draft matches a stored reviewed model. A different answer is not labelled bad Dutch.
+* **Mixed Grammar.** `/grammar/mixed`, `lib/grammarMixed.ts` and `app/api/grammar-mixed` provide uncued construction-choice practice with weak-item weighting. Guest progress is local; signed-in progress synchronizes independently of the four card-level ratings so a mixed question cannot falsely promote a sentence card.
+* **Reuse and tags.** `data/grammar-reuse-links.json` creates explicit grammar aliases with separate grammar ratings. `data/grammar-source-tags.json` is weaker metadata: it can show that a core sentence illustrates multiple topics, but a tag alone does **not** put that sentence into another grammar session because it has no separate topic-specific rating/analysis. This is intentional rather than a hidden limitation.
+* **Review provenance.** AI editorial checks, source links and independent-human-review flags remain explicit. Automated tests can verify structure and regressions; they do not convert AI-authored language into native-speaker certification.
+
 ## Learning languages (`lib/lang`, `lib/content`, `lib/speech`, `data/fr`)
 
 DutchTap teaches Dutch and French in the same persistent-session app. Full detail is in [FRENCH-HANDOVER.md](FRENCH-HANDOVER.md).

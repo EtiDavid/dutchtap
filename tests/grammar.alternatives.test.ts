@@ -1,6 +1,8 @@
 import { describe,expect,it } from "vitest";
 import exp from "@/data/editorial/grammar-als-expansion.json";
 import { cardFor } from "@/lib/content/cards";
+import { GRAMMAR_CARDS } from "@/lib/flashcards/engine";
+import { analysisFor } from "@/lib/grammarAnalysis";
 import { communicationFor,matchAnswer,modelFor,principalAnswers } from "@/lib/practice/communication";
 import { sentenceTokens,tokenId } from "@/lib/sessions/wordOrder";
 describe("ALS alternative clause orders",()=>{
@@ -36,5 +38,23 @@ describe("ALS alternative clause orders",()=>{
     used.add(j);return tokenId(j);
   });
   expect(matchAnswer(c,selected,tokens)?.id).toBe("clause-order");
+ });
+ it("uses same-meaning analysed contrasts as natural answer models across grammar topics",()=>{
+  const topics=new Set<string>();
+  let count=0;
+  for(const raw of GRAMMAR_CARDS){
+    const card=cardFor("nl",raw.id)!;
+    const contrast=analysisFor(raw.id)?.contrast;
+    if(!contrast)continue;
+    const model=principalAnswers(communicationFor(card)).find(a=>a.id==="analysis-contrast");
+    if(!model)continue;
+    count++;
+    topics.add(raw.category);
+    expect(model.text).toBe(contrast.dutch);
+    expect(model.english).toBe(contrast.english);
+    expect(model.explanation).toBe(contrast.note);
+  }
+  expect(count).toBeGreaterThan(20);
+  expect(topics.size).toBeGreaterThan(5);
  });
 });

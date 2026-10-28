@@ -176,9 +176,10 @@ function checkSession(s: SessionShape, ctx: z.RefinementCtx) {
   )
     fail("Variations are Dutch only");
   if (
-    Object.keys(s.variations).some(
-      (id) => !ids.has(id) || variationsFor(id).length !== 10,
-    )
+    Object.keys(s.variations).some((id) => {
+      const count = variationsFor(id).length;
+      return !ids.has(id) || count < 1 || count > 10;
+    })
   )
     fail("Unknown variation family");
   if (

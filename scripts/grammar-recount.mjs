@@ -11,9 +11,6 @@ const cards = J("data/grammar-pattern-cards.json");
 const links = J("data/grammar-reuse-links.json");
 const lessons = J("data/grammar-topic-lessons.json");
 const variations = J("data/grammar-variation-families.json");
-const communication = { ...J("data/dutch-communication.json"), ...J("data/workplace-communication.json") };
-const communicationCorrections = J("data/editorial/communication-corrections.json");
-const alsExpansion = J("data/editorial/grammar-als-expansion.json");
 const forms = J("data/grammar-separable-forms.json");
 const mixed = J("data/grammar-mixed-challenges.json").items;
 const tags = J("data/grammar-source-tags.json").tags;
@@ -30,11 +27,6 @@ const topics = Object.keys(lessons);
 
 const normalMeaning = (value) => String(value ?? "").toLocaleLowerCase("en").replace(/[.,!?;:]/g, "").replace(/\s+/g, " ").trim();
 const normalDutch = (value) => String(value ?? "").toLocaleLowerCase("nl").replace(/[.,!?;:]/g, "").replace(/\s+/g, " ").trim();
-const meaningByDutch = {};
-for (const [text, task] of Object.entries(communication)) meaningByDutch[text] = task.answers?.[0]?.english;
-for (const [text, patch] of Object.entries(communicationCorrections)) if (patch.english) meaningByDutch[text] = patch.english;
-for (const row of alsExpansion) meaningByDutch[row.dutch] = row.english;
-const effectiveMeaning = (card) => meaningByDutch[card.dutch] ?? card.english;
 
 const grammarParents = [
   ...cards,
@@ -50,7 +42,7 @@ for (const card of grammarParents) {
   const record = analysisRecords[card.id], contrast = record?.contrast;
   if (!record?.situationNl || !contrast) continue;
   if (normalDutch(contrast.dutch) === normalDutch(card.dutch)) continue;
-  if (normalMeaning(contrast.english) !== normalMeaning(effectiveMeaning(card))) continue;
+  if (normalMeaning(contrast.english) !== normalMeaning(record.meaning)) continue;
   analysedVariationFamilies[card.id] = [{
     id: `${card.id}~v01`,
     parentId: card.id,

@@ -103,7 +103,6 @@ out.push(`- Protected original core sentences (Everyday + Dutch at Work): **${co
 const missing = [...aliasIds].filter((id) => !analysed.has(id)).length;
 out.push(`- Aliases without their own analysis: **${missing}** (${aliasIds.length} aliases in total).`, "");
 out.push("## Interactive variation coverage by topic", "", "| Topic | Base parents | Families with ≥1 child | Interactive children | Parents without a verified child |", "| --- | ---: | ---: | ---: | ---: |");
-const parentById = new Map(grammarParents.map((card) => [card.id, card]));
 for (const t of topics) {
   const parents = grammarParents.filter((card) => card.category === t);
   const families = parents.filter((card) => (runtimeVariationFamilies[card.id]?.length ?? 0) > 0);

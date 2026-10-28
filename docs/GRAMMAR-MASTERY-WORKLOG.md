@@ -4,6 +4,33 @@ This is a living implementation log, **not a claim that the full master plan is 
 The approved baseline remains `docs/GRAMMAR-MASTERY-MASTER-PLAN.md`.
 Source material is AI-edited and is **not** independently certified by a native speaker.
 
+## 2026-10-28 — Remaining Grammar Mastery depth / PR #21
+
+**Status:** In progress on review branch `feat/grammar-mastery-finish-2`. Draft PR #21; not merged or deployed.
+
+**What changed:**
+- Generalised grammar variation families from the old “exactly ten or unavailable” rule to **1–10 meaningful children**. The ten deep ALS families remain unchanged; other cards get one tracked child only when their existing sentence analysis contains a same-meaning contrast and Dutch-first situation. Current runtime recount: **126 children in 36 families** (100 deep authored + 26 analysis-derived); no quota filler.
+- Generalised accepted natural answer models beyond ALS: a sentence analysis contrast may become an answer model only when its English meaning matches the base analysis meaning. Different-meaning contrasts remain teaching contrasts, not accepted equivalents.
+- Added optional typed sentence production to grammar Speaking before reveal. Exact stored-model matches are confirmed; unmatched Dutch is never automatically labelled wrong.
+- Topic lessons now remember their open/closed state per topic and include a reveal-based quick self-check.
+- Strengthened advanced-connector sourcing with ANS/IVDNT references for conditional expressions (`gesteld dat`, `stel dat`, `voor het geval dat`, `op voorwaarde dat`), comparison/manner `zoals`, and time conjunction `nu`/ `sinds`. Formal conjunction `daar` remains flagged for independent review.
+- Refreshed architecture and authoring documentation so aliases, tags, alternatives, variations and review provenance have explicit boundaries.
+- Expanded grammar CI to include the full ALS lesson → Study → Dutch-first/typed Speaking → Quiz browser journey.
+
+**Files/links:** PR #21; `lib/variations/content.ts`, `lib/practice/communication.ts`, `lib/sessions/engine.ts`, `lib/sessions/types.ts`, `components/sessions/TypedGrammarDraft.tsx`, `GrammarTopicLesson.tsx`, `VariationPractice.tsx`, `AnswerModels.tsx`, grammar tests/docs.
+
+**Why/decision:** The master plan says “up to ten appropriate variations”, not “ten filler children”. Existing sentence analyses already contain reviewed contrasts, so reuse only the contrasts that preserve the same communicative meaning and keep progress independent. Do not turn source tags into practice cards without topic-specific analysis/rating, because that would create false mastery credit.
+
+**Evidence/tests:** GitHub Actions Grammar feature validation is required before merge; exact final result is recorded after the branch head finishes CI.
+
+**Known issues and unfinished requirements:**
+- [ ] Independent/native-speaker editorial review remains external; AI cannot self-certify it.
+- [ ] Human screen-reader/manual accessibility walk-through remains external to automated axe/Playwright evidence.
+- [ ] Rollback drill has not yet been performed.
+- [ ] A25 independent final review remains blocked until a separate reviewer performs it.
+
+**Next specific task:** resolve CI findings, refresh the acceptance audit/final report to the branch's actual evidence, then keep PR #21 unmerged until remaining independent-review gates are explicitly accepted.
+
 ## 2026-10-27 — Claude Code continuation: P7 cross-check and recount
 
 **Done:** (1) `scripts/grammar-recount.mjs` recounts everything from the data files and writes `docs/GRAMMAR-MASTERY-RECOUNT.md`; a test fails if that file is stale or any duplicate or dangling reference appears. (2) `tests/fixtures/grammar-baseline.json` fingerprints the 1,200 protected cards and the 196 original grammar cards from commit `7b41335`; `tests/grammar.id-stability.test.ts` fails on any change or removal (checked by a deliberate mutation). (3) `tests/grammar.migration.test.ts`: sessions saved with baseline ids still validate, resolve and take actions (the session schema and reducer are unchanged since the baseline). (4) Ran every command of plan §10.3 and recorded exact results. (5) Rewrote audit rows A01, A03–A05, A08–A15, A17, A20, A22–A24 and the P0–P7 gates against the code and tests; wrote `docs/GRAMMAR-MASTERY-FINAL-REPORT.md`. (6) Sampling pass: 84 cards (4 per topic, fixed seed) re-read for Dutch, translation and mistakes.

@@ -86,7 +86,7 @@ for (const width of [320, 375, 430]) {
     await page.keyboard.press('Enter');
     await expect(page.getByTestId('clause-map')).toBeVisible();
     await noOverflow();
-    await page.getByTestId('grammar-topic-lesson').locator('summary').focus();
+    await page.getByTestId('grammar-topic-lesson').getByTestId('grammar-topic-lesson-summary').focus();
     await page.keyboard.press('Enter'); // collapse the lesson again
     await switchMode(page, 'speaking');
     await expect(page.getByTestId('grammar-scenario-prompt')).toBeVisible();

@@ -18,15 +18,19 @@ function savedLessonOpen(topic:string, fallback:boolean) {
 /** Topic-wide teaching remains independent from a session's current question and answer. */
 export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; defaultOpen?: boolean}) {
   const lesson = lessons[topic];
-  const [openState, setOpenState] = useState(() => ({ topic, opened: savedLessonOpen(topic, defaultOpen) }));
-  const opened = openState.topic === topic ? openState.opened : savedLessonOpen(topic, defaultOpen);
+  const stateKey = `${topic}:${defaultOpen ? "study" : "recall"}`;
+  const preferredOpen = defaultOpen ? savedLessonOpen(topic, true) : false;
+  const [openState, setOpenState] = useState(() => ({ key: stateKey, opened: preferredOpen }));
+  const opened = openState.key === stateKey ? openState.opened : preferredOpen;
   const {listen,stop,sound} = useCardAudio();
   const storageKey = `dutchtap:grammar-lesson-open:${topic}`;
   if (!lesson) return null;
   return <details suppressHydrationWarning open={opened} onToggle={event => {
     const next = event.currentTarget.open;
-    setOpenState({ topic, opened: next });
-    try { window.localStorage.setItem(storageKey, next ? "1" : "0"); } catch { /* Storage can be disabled; lesson still works for this visit. */ }
+    setOpenState({ key: stateKey, opened: next });
+    if (defaultOpen) {
+      try { window.localStorage.setItem(storageKey, next ? "1" : "0"); } catch { /* Storage can be disabled; lesson still works for this visit. */ }
+    }
   }} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
     <summary data-testid="grammar-topic-lesson-summary" className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">
       📖 Learn the rule · {lesson.title}

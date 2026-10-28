@@ -25,7 +25,7 @@ export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; 
   return <details suppressHydrationWarning open={opened} onToggle={event => {
     const next = event.currentTarget.open;
     setOpened(next);
-    try { window.localStorage.setItem(storageKey, next ? "1" : "0"); } catch {}
+    try { window.localStorage.setItem(storageKey, next ? "1" : "0"); } catch { /* Storage can be disabled; lesson still works for this visit. */ }
   }} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
     <summary className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">
       📖 Learn the rule · {lesson.title}

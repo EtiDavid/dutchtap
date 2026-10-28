@@ -18,13 +18,14 @@ function savedLessonOpen(topic:string, fallback:boolean) {
 /** Topic-wide teaching remains independent from a session's current question and answer. */
 export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; defaultOpen?: boolean}) {
   const lesson = lessons[topic];
-  const [opened, setOpened] = useState(() => savedLessonOpen(topic, defaultOpen));
+  const [openState, setOpenState] = useState(() => ({ topic, opened: savedLessonOpen(topic, defaultOpen) }));
+  const opened = openState.topic === topic ? openState.opened : savedLessonOpen(topic, defaultOpen);
   const {listen,stop,sound} = useCardAudio();
   const storageKey = `dutchtap:grammar-lesson-open:${topic}`;
   if (!lesson) return null;
   return <details suppressHydrationWarning open={opened} onToggle={event => {
     const next = event.currentTarget.open;
-    setOpened(next);
+    setOpenState({ topic, opened: next });
     try { window.localStorage.setItem(storageKey, next ? "1" : "0"); } catch { /* Storage can be disabled; lesson still works for this visit. */ }
   }} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
     <summary className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">

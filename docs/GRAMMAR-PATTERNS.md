@@ -1,6 +1,6 @@
 # Grammar Patterns — scope, implementation and teaching
 
-> **Status: CURRENT IMPLEMENTATION, STILL NOT NATIVE-CERTIFIED.** The Grammar Mastery system is on `main` and the production app. The corpus/count targets are present, but the frozen acceptance plan still requires honest provenance and independent review before the whole project can be called fully complete. PR #21 continues the remaining learning-depth and audit work on a review branch.
+> **Status: PARTIALLY COMPLETE — current implementation, still not native-certified.** The Grammar Mastery system is on `main` and the production app. The corpus/count targets are present, but the frozen acceptance plan still requires honest provenance and independent review before the whole project can be called fully complete. PR #21 continues the remaining learning-depth and audit work on a review branch.
 
 ## Learner experience in the current implementation
 

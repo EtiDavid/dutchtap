@@ -102,6 +102,15 @@ out.push(`- Hand-authored sentence analyses: **${analysed.size}** records in **$
 out.push(`- Protected original core sentences (Everyday + Dutch at Work): **${core.length}** (${coreIds.size} distinct ids).`);
 const missing = [...aliasIds].filter((id) => !analysed.has(id)).length;
 out.push(`- Aliases without their own analysis: **${missing}** (${aliasIds.length} aliases in total).`, "");
+out.push("## Interactive variation coverage by topic", "", "| Topic | Base parents | Families with ≥1 child | Interactive children | Parents without a verified child |", "| --- | ---: | ---: | ---: | ---: |");
+const parentById = new Map(grammarParents.map((card) => [card.id, card]));
+for (const t of topics) {
+  const parents = grammarParents.filter((card) => card.category === t);
+  const families = parents.filter((card) => (runtimeVariationFamilies[card.id]?.length ?? 0) > 0);
+  const topicChildren = families.reduce((n, card) => n + runtimeVariationFamilies[card.id].length, 0);
+  out.push(`| \`${t}\` | ${parents.length} | ${families.length} | ${topicChildren} | ${parents.length - families.length} |`);
+}
+out.push("", "A missing family is reported honestly rather than filled with generic name/tense swaps. New children should be added only when their scenario, meaning, explanation and target structure can be verified.", "");
 out.push("## Integrity checks computed here", "");
 const problems = [];
 if (new Set(cards.map((c) => c.id)).size !== cards.length) problems.push("duplicate authored ids");

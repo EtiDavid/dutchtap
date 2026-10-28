@@ -45,6 +45,18 @@ The frozen Nova Dutch Academy curriculum is not changed. The labs practise relat
 
 The full ten-example family relevance review is part of the active incomplete editorial review. Additional topic coverage, cross-device lab progress and curated multi-turn conversations remain later work. Keep this PR in draft until its intended scope is reviewed; the existence of the new screens is not evidence the entire upgrade plan is complete.
 
+## Grammar Mastery authoring rules (current)
+
+The newer Grammar Patterns system uses stricter source boundaries than the historical Learning Hub:
+
+- **Topic lesson** content belongs in `data/grammar-topic-lessons.json`; **sentence-specific analysis** belongs in the relevant `data/grammar-*-analysis.json`. Do not duplicate a full lesson onto every card.
+- A natural alternative may be added to the model-answer inventory only when it preserves the communicative meaning. The runtime may expose an existing analysis `contrast` as an alternative when its English meaning matches the base analysis meaning. A contrast that changes tense, emphasis or factual meaning remains a teaching contrast, not an accepted equivalent.
+- Interactive grammar child families contain **1–10 meaningful questions**. Existing deep families may have ten; a card with only one verified contrast may have one. Never manufacture ten superficial name/tense swaps merely to satisfy a quota.
+- Each child needs a stable ID, Dutch and English, a situation, a Dutch-first prompt where used in grammar practice, a specific explanation, and independent child progress. Turning a family off must preserve that progress.
+- Typed production is a comparison aid, not a grammar oracle. Exact matches to stored reviewed models can be confirmed; unmatched Dutch must be described as “different from the stored models”, not automatically wrong.
+- A source tag is metadata. Do not move a tagged Everyday/Workplace sentence into another grammar session unless it has the topic-specific analysis and rating semantics needed to avoid false mastery credit.
+- Keep `independentHumanReview: false` and equivalent status wording until an actual independent reviewer has inspected that content. Passing structural tests is not language certification.
+
 ## Audio later: recommended workflow
 
 First finalise the language, then generate audio. One clip per manifest utterance is easiest to align. If using long recordings, use **50 utterances per batch**, and allow the exporter to reduce this further for long prompts. It accepts up to 100, but 50 makes checking/correction easier. Identical text is deduplicated before export; existing matching card recordings are reused.

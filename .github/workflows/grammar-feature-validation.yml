@@ -33,4 +33,4 @@ jobs:
       - name: Install Chromium for learning-flow browser tests
         run: npx playwright install --with-deps chromium
       - name: Check Grammar Mastery learning on a guest browser
-        run: npm run test:flashcards -- tests/flashcard-e2e/grammar-mastery.spec.ts tests/flashcard-e2e/grammar-patterns.spec.ts tests/flashcard-e2e/grammar-variation-persistence.spec.ts
+        run: npm run test:flashcards -- tests/flashcard-e2e/grammar-mastery.spec.ts tests/flashcard-e2e/grammar-patterns.spec.ts tests/flashcard-e2e/grammar-variation-persistence.spec.ts tests/flashcard-e2e/grammar-als-journey.spec.ts

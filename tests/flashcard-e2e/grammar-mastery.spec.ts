@@ -23,6 +23,8 @@ test('learn verbs before speaking: guide opens in Study but does not expose answ
   // The learner can close the explanation without losing the chosen session.
   await guide.getByTestId('grammar-topic-lesson-summary').click();
   await expect(guide).not.toHaveAttribute('open', '');
+  await page.reload();
+  await expect(guide).not.toHaveAttribute('open', ''); // Study preference survives a reload.
   await guide.getByTestId('grammar-topic-lesson-summary').click();
   await expect(guide).toHaveAttribute('open', '');
 

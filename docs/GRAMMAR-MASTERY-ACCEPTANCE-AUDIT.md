@@ -105,7 +105,7 @@ Run on 27 October 2026 on branch `feat/grammar-mastery-completion` at `cbc6a08` 
 
 Not run: `npm run test:e2e` (Atlas-backed account lifecycle and game fixtures, deliberately excluded); the manual browser scenarios of plan §10.2 as a person would walk them; any run against production.
 
-- **GitHub state:** PR #15 and PR #16 are merged into `main` (merge `892b5303` and `3c18067`), which does NOT mean A01–A25 are complete. This branch is 166 files and about 249,000 lines ahead of the pre-grammar baseline `7b41335`, mostly generated-looking JSON content, with 133 deleted lines in total. It is not merged, not tagged and not deployed.
+- **GitHub state:** PR #15 and PR #16 are merged into `main` (merge `892b5303` and `3c18067`), which does NOT mean A01–A25 are complete. This branch is 166 files and about 249,000 lines ahead of the pre-grammar baseline `7b41335`, mostly generated-looking JSON content, with 133 deleted lines in total. PR #18 (grammar completion plus the Next.js 16.4.3 upgrade) was merged into `main` by the owner on 2026-10-28 (merge `8b2e935`) after CI passed; the release gate still fails by design.
 - No fresh CI run exists for the final head; request one on the pull request before relying on it.
 
 ## Next acceptance tasks, in priority order
@@ -113,5 +113,5 @@ Not run: `npm run test:e2e` (Atlas-backed account lifecycle and game fixtures, d
 1. **Independent review (A25) and native-speaker review** of the lessons, a stratified sample of cards (at least every topic and subpattern), the Dutch-first situations and the mistakes. Everything here is AI-edited.
 2. **Review and merge the Next.js upgrade branch** `chore/nextjs-security-upgrade` (critical advisories) before any release.
 3. Get a CI run of the final head; walk plan §10.2 scenarios by hand on a phone, with a screen reader and keyboard only.
-4. Add source checks for the 10 lessons that cite none, and for `daar`, `gesteld dat`, `zoals`, `nu`, `op voorwaarde dat`, `voor het geval dat`.
+4. The 10 lessons that cited none now cite Onze Taal / Taaladvies.net pages (added 2026-10-28 from search results; check each lesson sentence against them). Still thinly sourced: `daar`, `gesteld dat`, `zoals`, `nu`, `op voorwaarde dat`, `voor het geval dat`.
 5. Variations beyond ALS, tags for tense and verbs-in-context, tags feeding topic sessions, a per-pattern mastery model, ARCHITECTURE.md refresh, a rollback drill. Only then discuss merging or tagging.

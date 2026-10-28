@@ -19,7 +19,7 @@ Detailed rows: [GRAMMAR-MASTERY-ACCEPTANCE-AUDIT.md](GRAMMAR-MASTERY-ACCEPTANCE-
 | Interactive child variations | 0 | 100 (10 ALS families) |
 | Distinct separable verb lemmas | — | 68 (184 separable cards) |
 | Uncued mixed-grammar challenges | 0 | 61 |
-| Topic lessons | — | 21 (3 at v1.0, 18 at v1.1; 10 cite no source) |
+| Topic lessons | — | 21 (3 at v1.0, 18 at v1.1; all cite at least one source; the 10 added on 2026-10-28 were taken from search results, not read line by line against the lesson text) |
 
 Plan §5.3 count targets are all met by this recount. Honest count notes: 58 of the 100 ALS cards are 29 pairs (71 distinct tasks); 1,680 of the 1,690 base cards have no variation family.
 
@@ -44,7 +44,7 @@ See the table in the audit ("Tests and deployment evidence"). In short: lint, ty
 
 ## Rollback
 
-1. Before release: nothing to undo; the branch is unmerged.
+1. This work is on `main` (PRs #15, #16, #18). To roll back, revert the merge commit `8b2e935` (or deploy the previous tag); card ids and progress are untouched, so nothing in learners' data needs undoing.
 2. After a release by tag: redeploy the previous `v*` tag (deployment is tag-only, see `docs/DEPLOYMENT.md`). Learners keep their Everyday, Work and French levels and sessions, because their keys and schema are unchanged. Ratings of new grammar cards and mixed-grammar answers would stay in storage unused; the `grammarMixedProgress` collection can stay or be dropped without effect on other data.
 3. A rollback drill has **not** been performed.
 
@@ -54,7 +54,7 @@ All lessons, cards, analyses, mistakes and situations were written and checked b
 
 ## Deployment
 
-Branch only. `main` already contains the earlier, partial grammar foundation (PR #15) and the documentation PR #16. This branch has not been merged, tagged or deployed, and no live smoke test exists. **Security:** `npm audit` reports 8 vulnerabilities, 4 in production dependencies, including a critical set against the installed Next.js 16.3.5; this predates the branch. The fix (Next.js 16.4.3) is on the unmerged branch `chore/nextjs-security-upgrade`, which needs owner review.
+Merged into `main` by the owner (PRs #15, #16 and #18; #18 also carries the Next.js upgrade). CI (`Grammar feature validation`, run 40606047981) passed on that head. The first version tag is pushed only on the owner's explicit instruction and ships this PARTIAL state; no live smoke test exists. **Security:** Next.js is upgraded 16.3.5 → 16.4.3 and `npm audit --omit=dev` reports 0 vulnerabilities; 3 moderate dev-only vitest advisories remain.
 
 ## Final verdict
 

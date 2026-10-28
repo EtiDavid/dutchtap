@@ -1,10 +1,10 @@
 name: Deploy to production
 
-# Production is deployed only by pushing a version tag (for example v1.4.0) that points at a commit already on main.
-# Vercel's own Git deployments are switched off in vercel.json, so a push or merge to any branch deploys nothing.
+# Production now deploys through Vercel's own Git integration when a commit lands on main (vercel.json no longer switches it off).
+# This CLI workflow needs the VERCEL_TOKEN, VERCEL_ORG_ID and VERCEL_PROJECT_ID secrets, which this repo does not have,
+# so it only runs by hand (workflow_dispatch) and a version tag no longer triggers it.
 on:
-  push:
-    tags: ['v*']
+  workflow_dispatch:
 
 concurrency:
   group: production-deploy

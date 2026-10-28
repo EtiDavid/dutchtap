@@ -128,3 +128,7 @@ One-time setup in GitHub → Settings → Secrets and variables → Actions: add
 `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` (both are in `.vercel/project.json` after running `npx vercel link` locally).
 The environment variables in section 2 stay in the Vercel project (Production), where `vercel pull` reads them.
 To roll back, push a new tag on the earlier commit, or promote an earlier deployment in the Vercel dashboard.
+
+## Release flow (changed 2026-10-28)
+
+Production deploys when a commit lands on `main`, through Vercel's own Git integration (the earlier tag-only switch-off in `vercel.json` was removed because the repo has no `VERCEL_TOKEN` / `VERCEL_ORG_ID` / `VERCEL_PROJECT_ID` secrets for the CLI workflow). Pull requests also get Vercel preview deployments again, so Preview needs `MONGODB_URI` and `SESSION_SECRET`. A version tag (for example `v0.2.0`) now only marks a release; it deploys nothing. `.github/workflows/deploy-production.yml` is kept for manual use only. Merging to `main` is therefore a production release: the owner approves it, and Grammar Mastery's release gate (`npm run grammar:release-gate`) still fails by design.

@@ -1,0 +1,3925 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for the Nadat topic. AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-nadat-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The eating is finished first, so 'nadat' opens the clause with the perfect group 'heb gegeten'."
+   },
+   "situationNl": "Het avondeten is voorbij. Een huisgenoot vraagt wat de volgende klus is. Vertel wat je doet en welke stap daaraan voorafging.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat ik heb gegeten",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first and the perfect group 'heb gegeten' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "maak ik de keuken schoon",
+     "subject": "ik",
+     "finite": "maak",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'maak' comes first, then the subject 'ik' and the object 'de keuken'; the particle 'schoon' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gegeten"
+    },
+    {
+     "label": "finite verb",
+     "text": "maak"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de keuken"
+    },
+    {
+     "label": "particle",
+     "text": "schoon"
+    }
+   ],
+   "meaning": "After eating, I clean the kitchen.",
+   "order": "The nadat-clause stands for the earlier event, so it uses the perfect. The main clause inverts to 'maak ik ... schoon'.",
+   "forms": "eten: heb gegeten. schoonmaken: maak ... schoon.",
+   "compare": "English 'After eating' is an -ing phrase. Dutch uses a clause with 'heb gegeten'.",
+   "mistakes": [
+    {
+     "wrong": "Nadat ik gegeten heb, ik maak de keuken schoon.",
+     "right": "Nadat ik heb gegeten, maak ik de keuken schoon.",
+     "why": "The main clause starts with the verb: 'maak ik'."
+    },
+    {
+     "wrong": "Nadat ik eet, maak ik de keuken schoon.",
+     "right": "Nadat ik heb gegeten, maak ik de keuken schoon.",
+     "why": "The earlier event needs the perfect: 'heb gegeten'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik maak de keuken schoon nadat ik heb gegeten.",
+    "english": "I clean the kitchen after I have eaten.",
+    "note": "With the main clause first there is no inversion. Compare: Ik maak de keuken schoon nadat ik heb gegeten."
+   }
+  },
+  "pat-nadat-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The promise to call follows the meeting; 'is afgelopen' closes the nadat-clause."
+   },
+   "situationNl": "Een collega zit in een lang overleg en je wilt hem spreken. Beloof dat je belt en op welk moment.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik bel je",
+     "subject": "Ik",
+     "finite": "bel",
+     "role": "main clause (the later action)",
+     "why": "Ik is first, so 'bel' is second and the object 'je' follows. The clause is \"Ik bel je\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat de vergadering is afgelopen",
+     "subject": "de vergadering",
+     "finite": "is",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de vergadering' comes first and the group 'is afgelopen' closes the clause. The clause is \"nadat de vergadering is afgelopen\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "bel"
+    },
+    {
+     "label": "object",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de vergadering"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "afgelopen"
+    }
+   ],
+   "meaning": "I'll call you after the meeting finishes.",
+   "order": "'Aflopen' is a verb of change, so the perfect uses 'zijn': 'is afgelopen'. Read it as \"Ik bel je nadat de vergadering is afgelopen\".",
+   "forms": "bellen: ik bel. aflopen: is afgelopen.",
+   "compare": "English 'after the meeting finishes' uses the present. Dutch uses the perfect.",
+   "mistakes": [
+    {
+     "wrong": "Ik bel je nadat de vergadering afgelopen.",
+     "right": "Ik bel je nadat de vergadering is afgelopen.",
+     "why": "The auxiliary 'is' is missing from the nadat-clause."
+    },
+    {
+     "wrong": "Ik bel je nadat de vergadering heeft afgelopen.",
+     "right": "Ik bel je nadat de vergadering is afgelopen.",
+     "why": "'Aflopen' takes 'zijn' in the perfect. (not \"Ik bel je nadat de vergadering heeft afgelopen.\", but \"Ik bel je nadat de vergadering is afgelopen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat de vergadering is afgelopen, bel ik je.",
+    "english": "After the meeting is over, I will call you.",
+    "note": "The nadat-clause first inverts the main clause to 'bel ik'."
+   }
+  },
+  "pat-nadat-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The backup is made first; the auxiliary 'hebben' and the participle 'gemaakt' close the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat we de back-up hebben gemaakt",
+     "subject": "we",
+     "finite": "hebben",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'we' comes first, then the object 'de back-up', and the perfect group 'hebben gemaakt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "starten we de update",
+     "subject": "we",
+     "finite": "starten",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'starten' comes first, then the subject 'we' and the object 'de update'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de back-up"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebben"
+    },
+    {
+     "label": "past participle",
+     "text": "gemaakt"
+    },
+    {
+     "label": "finite verb",
+     "text": "starten"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de update"
+    }
+   ],
+   "meaning": "After we've made the backup, we start the update.",
+   "order": "The object stands before the perfect group. The main clause inverts to 'starten we'. Read it as \"Nadat we de back-up hebben gemaakt, starten we de update\".",
+   "forms": "maken: hebben gemaakt. starten: wij starten.",
+   "compare": "English 'After we have made the backup' keeps 'have' before the object. Dutch puts 'hebben gemaakt' last.",
+   "mistakes": [
+    {
+     "wrong": "Nadat we hebben de back-up gemaakt, starten we de update.",
+     "right": "Nadat we de back-up hebben gemaakt, starten we de update.",
+     "why": "The perfect group goes behind the object."
+    },
+    {
+     "wrong": "Nadat we de back-up hebben gemaakt, we starten de update.",
+     "right": "Nadat we de back-up hebben gemaakt, starten we de update.",
+     "why": "The main clause starts with the verb: 'starten we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We starten de update nadat we de back-up hebben gemaakt.",
+    "english": "We start the update after we have made the backup.",
+    "note": "With the main clause first there is no inversion. Compare: We starten de update nadat we de back-up hebben gemaakt."
+   }
+  },
+  "pat-nadat-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The checking happens first; 'heb gecontroleerd' ends the nadat-clause, with 'het' as the object."
+   },
+   "situationNl": "Een manager wacht op een document. Leg uit op welk punt jij het verstuurt en wat daarvoor nodig was.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik stuur het document",
+     "subject": "Ik",
+     "finite": "stuur",
+     "role": "main clause (the later action)",
+     "why": "Ik is first, so 'stuur' is second and the object 'het document' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ik het heb gecontroleerd",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first, then the object 'het', and the perfect group 'heb gecontroleerd' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "stuur"
+    },
+    {
+     "label": "object",
+     "text": "het document"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gecontroleerd"
+    }
+   ],
+   "meaning": "I send the document after checking it.",
+   "order": "'Controleren' is inseparable, so its participle has no extra 'ge' in front: 'gecontroleerd' is regular. Read it as \"Ik stuur het document nadat ik het heb gecontroleerd\".",
+   "forms": "sturen: ik stuur. controleren: heb gecontroleerd.",
+   "compare": "English 'after checking it' is an -ing phrase. Dutch uses 'nadat ik het heb gecontroleerd'.",
+   "mistakes": [
+    {
+     "wrong": "Ik stuur het document nadat ik heb het gecontroleerd.",
+     "right": "Ik stuur het document nadat ik het heb gecontroleerd.",
+     "why": "The perfect group goes behind the object 'het'."
+    },
+    {
+     "wrong": "Ik stuur het document nadat ik het gecontroleerd.",
+     "right": "Ik stuur het document nadat ik het heb gecontroleerd.",
+     "why": "The auxiliary 'heb' is missing. (not \"Ik stuur het document nadat ik het gecontroleerd.\", but \"Ik stuur het document nadat ik het heb gecontroleerd.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ik het heb gecontroleerd, stuur ik het document.",
+    "english": "After I have checked it, I send the document.",
+    "note": "The nadat-clause first inverts the main clause to 'stuur ik'."
+   }
+  },
+  "pat-nadat-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "A past story: the technician's leaving came first; the past perfect 'was vertrokken' uses 'zijn'."
+   },
+   "situationNl": "Je vertelt over een storing van vorige week. Een collega vraagt hoe het afliep. Zeg wat er gebeurde op het moment dat de hulp weg was.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat de monteur was vertrokken",
+     "subject": "de monteur",
+     "finite": "was",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de monteur' comes first and the group 'was vertrokken' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "werkte het systeem weer",
+     "subject": "het systeem",
+     "finite": "werkte",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'werkte' comes first, then the subject 'het systeem' and the adverb 'weer'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de monteur"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "was"
+    },
+    {
+     "label": "past participle",
+     "text": "vertrokken"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "werkte"
+    },
+    {
+     "label": "subject",
+     "text": "het systeem"
+    },
+    {
+     "label": "adverb",
+     "text": "weer"
+    }
+   ],
+   "meaning": "After the technician had left, the system worked again.",
+   "order": "'Vertrekken' is a movement verb, so the past perfect is 'was vertrokken'. The main clause uses the simple past.",
+   "forms": "vertrekken: was vertrokken. werken: het systeem werkte.",
+   "compare": "English 'had left' uses 'had'. Dutch uses 'was' for verbs of movement. For this card: \"Nadat de monteur was vertrokken, werkte het systeem weer\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat de monteur had vertrokken, werkte het systeem weer.",
+     "right": "Nadat de monteur was vertrokken, werkte het systeem weer.",
+     "why": "'Vertrekken' takes 'zijn' in the perfect tenses."
+    },
+    {
+     "wrong": "Nadat de monteur was vertrokken, het systeem werkte weer.",
+     "right": "Nadat de monteur was vertrokken, werkte het systeem weer.",
+     "why": "The main clause starts with the verb: 'werkte het systeem'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het systeem werkte weer nadat de monteur was vertrokken.",
+    "english": "The system worked again after the technician had left.",
+    "note": "With the main clause first there is no inversion. Compare: Het systeem werkte weer nadat de monteur was vertrokken."
+   }
+  },
+  "pat-nadat-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The rain stops first; the group 'is gestopt met regenen' has a phrase after the participle."
+   },
+   "situationNl": "Jullie willen naar buiten maar het weer is slecht. Een vriend vraagt hoe laat jullie gaan. Zeg wat jullie doen en wat eerst moet gebeuren.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We gaan wandelen",
+     "subject": "We",
+     "finite": "gaan",
+     "role": "main clause (the later action)",
+     "why": "We is first, so the plural 'gaan' is second and the infinitive 'wandelen' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat het is gestopt met regenen",
+     "subject": "het",
+     "finite": "is",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The dummy subject 'het' comes first and the group 'is gestopt' stands before 'met regenen', which closes the clause.",
+     "afterFinite": "gestopt met regenen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "gestopt"
+    },
+    {
+     "label": "phrase",
+     "text": "met regenen"
+    }
+   ],
+   "meaning": "We go walking after it has stopped raining.",
+   "order": "'Stoppen met' takes a phrase after the participle, so the auxiliary 'is' is not within the last two words. Read it as \"We gaan wandelen nadat het is gestopt met regenen\".",
+   "forms": "gaan: wij gaan. stoppen: is gestopt.",
+   "compare": "English 'has stopped raining' needs no 'with'. Dutch uses 'gestopt met regenen'.",
+   "mistakes": [
+    {
+     "wrong": "We gaan wandelen nadat het gestopt is met regenen.",
+     "right": "We gaan wandelen nadat het is gestopt met regenen.",
+     "why": "The group 'is gestopt' comes before 'met regenen'."
+    },
+    {
+     "wrong": "We gaan wandelen nadat het heeft gestopt met regenen.",
+     "right": "We gaan wandelen nadat het is gestopt met regenen.",
+     "why": "'Stoppen' takes 'zijn' here: 'is gestopt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat het is gestopt met regenen, gaan we wandelen.",
+    "english": "After it has stopped raining, we go for a walk.",
+    "note": "The nadat-clause first inverts the main clause to 'gaan we'."
+   }
+  },
+  "pat-nadat-07": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Reading comes before replying; the participle 'gelezen' closes the nadat-clause."
+   },
+   "situationNl": "Een klant wil snel weten hoe snel jij reageert. Leg uit wat jij doet en op welk moment.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat ik de e-mail heb gelezen",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first, then the object 'de e-mail', and the perfect group 'heb gelezen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "antwoord ik meteen",
+     "subject": "ik",
+     "finite": "antwoord",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'antwoord' comes first, then the subject 'ik' and the adverb 'meteen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de e-mail"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gelezen"
+    },
+    {
+     "label": "finite verb",
+     "text": "antwoord"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "meteen"
+    }
+   ],
+   "meaning": "After I've read the email, I reply immediately.",
+   "order": "The object comes before the perfect group. The main clause inverts to 'antwoord ik'. Read it as \"Nadat ik de e-mail heb gelezen, antwoord ik meteen\".",
+   "forms": "lezen: heb gelezen. antwoorden: ik antwoord.",
+   "compare": "English 'After I have read' also uses the perfect. Dutch puts 'heb gelezen' last.",
+   "mistakes": [
+    {
+     "wrong": "Nadat ik heb de e-mail gelezen, antwoord ik meteen.",
+     "right": "Nadat ik de e-mail heb gelezen, antwoord ik meteen.",
+     "why": "The perfect group goes behind the object. (not \"Nadat ik heb de e-mail gelezen, antwoord ik meteen.\", but \"Nadat ik de e-mail heb gelezen, antwoord ik meteen.\")"
+    },
+    {
+     "wrong": "Nadat ik de e-mail heb gelezen, ik antwoord meteen.",
+     "right": "Nadat ik de e-mail heb gelezen, antwoord ik meteen.",
+     "why": "The main clause starts with the verb: 'antwoord ik'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik antwoord meteen nadat ik de e-mail heb gelezen.",
+    "english": "I reply immediately after I have read the email.",
+    "note": "With the main clause first there is no inversion. Compare: Ik antwoord meteen nadat ik de e-mail heb gelezen."
+   }
+  },
+  "pat-nadat-08": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Coming home is the earlier event; 'zijn gekomen' uses 'zijn' for a verb of movement."
+   },
+   "situationNl": "Een vriend vraagt wat jullie na een lange werkdag doen. Vertel de volgorde van je thuiskomst.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We drinken koffie",
+     "subject": "We",
+     "finite": "drinken",
+     "role": "main clause (the later action)",
+     "why": "We is first, so the plural 'drinken' is second and the object 'koffie' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat we thuis zijn gekomen",
+     "subject": "we",
+     "finite": "zijn",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'we' comes first, the adverb 'thuis' follows, and the perfect group 'zijn gekomen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "drinken"
+    },
+    {
+     "label": "object",
+     "text": "koffie"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "zijn"
+    },
+    {
+     "label": "past participle",
+     "text": "gekomen"
+    }
+   ],
+   "meaning": "We drink coffee after we've come home.",
+   "order": "'Thuiskomen' is a verb of movement and takes 'zijn'. Here it is written as 'thuis ... gekomen'. Read it as \"We drinken koffie nadat we thuis zijn gekomen\".",
+   "forms": "drinken: wij drinken. komen: zijn gekomen.",
+   "compare": "English 'have come home' uses 'have'. Dutch uses 'zijn'. For this card: \"We drinken koffie nadat we thuis zijn gekomen\".",
+   "mistakes": [
+    {
+     "wrong": "We drinken koffie nadat we thuis hebben gekomen.",
+     "right": "We drinken koffie nadat we thuis zijn gekomen.",
+     "why": "A verb of movement takes 'zijn': 'zijn gekomen'."
+    },
+    {
+     "wrong": "We drinken koffie nadat we zijn thuis gekomen.",
+     "right": "We drinken koffie nadat we thuis zijn gekomen.",
+     "why": "The adverb 'thuis' stands before the auxiliary."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat we thuis zijn gekomen, drinken we koffie.",
+    "english": "After we have come home, we drink coffee.",
+    "note": "The nadat-clause first inverts the main clause to 'drinken we'."
+   }
+  },
+  "pat-nadat-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The error was fixed first; the passive past perfect 'was opgelost' closes the clause."
+   },
+   "situationNl": "Een storing heeft het hele kantoor lamgelegd. Je vertelt hoe het afliep. Zeg wat iedereen weer mocht doen en op welk moment.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat de fout was opgelost",
+     "subject": "de fout",
+     "finite": "was",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de fout' comes first and the group 'was opgelost' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kon iedereen weer werken",
+     "subject": "iedereen",
+     "finite": "kon",
+     "role": "main clause (the later action)",
+     "why": "The modal 'kon' comes first, then the subject 'iedereen' and the adverb 'weer'; the infinitive 'werken' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de fout"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "was"
+    },
+    {
+     "label": "past participle",
+     "text": "opgelost"
+    },
+    {
+     "label": "finite verb (modal, past)",
+     "text": "kon"
+    },
+    {
+     "label": "subject",
+     "text": "iedereen"
+    },
+    {
+     "label": "adverb",
+     "text": "weer"
+    },
+    {
+     "label": "infinitive",
+     "text": "werken"
+    }
+   ],
+   "meaning": "After the error was fixed, everyone could work again.",
+   "order": "'Was opgelost' describes a state after the fixing. The main clause inverts to 'kon iedereen weer werken'. Read it as \"Nadat de fout was opgelost, kon iedereen weer werken\".",
+   "forms": "oplossen: was opgelost. kunnen: iedereen kon.",
+   "compare": "English 'was fixed' is a passive too. Dutch uses 'was opgelost'. For this card: \"Nadat de fout was opgelost, kon iedereen weer werken\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat de fout opgelost was, iedereen kon weer werken.",
+     "right": "Nadat de fout was opgelost, kon iedereen weer werken.",
+     "why": "The main clause starts with the modal: 'kon iedereen'."
+    },
+    {
+     "wrong": "Nadat de fout werd opgelost was, kon iedereen weer werken.",
+     "right": "Nadat de fout was opgelost, kon iedereen weer werken.",
+     "why": "One auxiliary is enough: 'was opgelost'. (not \"Nadat de fout werd opgelost was, kon iedereen weer werken.\", but \"Nadat de fout was opgelost, kon iedereen weer werken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Iedereen kon weer werken nadat de fout was opgelost.",
+    "english": "Everyone could work again after the error was fixed.",
+    "note": "With the main clause first there is no inversion. Compare: Iedereen kon weer werken nadat de fout was opgelost."
+   }
+  },
+  "pat-nadat-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The data collection comes first; 'in' is the particle of 'invullen' in the main clause."
+   },
+   "situationNl": "Je zit voor een lang aanvraagformulier. Een collega vraagt wat je eerst doet. Leg de volgorde uit.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik vul het formulier in",
+     "subject": "Ik",
+     "finite": "vul",
+     "role": "main clause (the later action)",
+     "why": "Ik is first, so 'vul' is second; the object 'het formulier' comes before the particle 'in'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ik de gegevens heb verzameld",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first, then the object 'de gegevens', and the perfect group 'heb verzameld' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "vul"
+    },
+    {
+     "label": "object",
+     "text": "het formulier"
+    },
+    {
+     "label": "particle",
+     "text": "in"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de gegevens"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "verzameld"
+    }
+   ],
+   "meaning": "I fill in the form after gathering the details.",
+   "order": "'Invullen' splits in the main clause: 'vul ... in'. The participle of 'verzamelen' has no 'ge' because the prefix 'ver-' is inseparable.",
+   "forms": "invullen: vul ... in. verzamelen: heb verzameld.",
+   "compare": "English 'fill in' has the same split. For this card: \"Ik vul het formulier in nadat ik de gegevens heb verzameld\".",
+   "mistakes": [
+    {
+     "wrong": "Ik invul het formulier nadat ik de gegevens heb verzameld.",
+     "right": "Ik vul het formulier in nadat ik de gegevens heb verzameld.",
+     "why": "In a main clause 'invullen' splits. (not \"Ik invul het formulier nadat ik de gegevens heb verzameld.\", but \"Ik vul het formulier in nadat ik de gegevens heb verzameld.\")"
+    },
+    {
+     "wrong": "Ik vul het formulier in nadat ik heb de gegevens verzameld.",
+     "right": "Ik vul het formulier in nadat ik de gegevens heb verzameld.",
+     "why": "The perfect group goes behind the object. (not \"Ik vul het formulier in nadat ik heb de gegevens verzameld.\", but \"Ik vul het formulier in nadat ik de gegevens heb verzameld.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ik de gegevens heb verzameld, vul ik het formulier in.",
+    "english": "After I have gathered the data, I fill in the form.",
+    "note": "The nadat-clause first inverts the main clause to 'vul ik'."
+   }
+  },
+  "pat-nadat-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "A past story: finding the keys came first; the past perfect 'had gevonden' closes the clause."
+   },
+   "situationNl": "Je vertelt over een leerlinge die laat was. Zeg wat haar ophield en wat zij vervolgens deed.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat zij haar sleutels had gevonden",
+     "subject": "zij",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'zij' comes first, then the object 'haar sleutels', and the past perfect 'had gevonden' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "vertrok ze naar school",
+     "subject": "ze",
+     "finite": "vertrok",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'vertrok' comes first, then the subject 'ze' and the direction 'naar school'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "object",
+     "text": "haar sleutels"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gevonden"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vertrok"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "direction",
+     "text": "naar school"
+    }
+   ],
+   "meaning": "After she found her keys, she left for school.",
+   "order": "The past perfect marks the earlier event, the simple past 'vertrok' the later one. 'Vinden' has an irregular participle: 'gevonden'.",
+   "forms": "vinden: had gevonden. vertrekken: ze vertrok.",
+   "compare": "English 'had found' and 'left' show the same two layers. For this card: \"Nadat zij haar sleutels had gevonden, vertrok ze naar school\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat zij haar sleutels had gevonden, ze vertrok naar school.",
+     "right": "Nadat zij haar sleutels had gevonden, vertrok ze naar school.",
+     "why": "The main clause starts with the verb: 'vertrok ze'."
+    },
+    {
+     "wrong": "Nadat zij haar sleutels had gevind, vertrok ze naar school.",
+     "right": "Nadat zij haar sleutels had gevonden, vertrok ze naar school.",
+     "why": "The participle of 'vinden' is 'gevonden'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze vertrok naar school nadat zij haar sleutels had gevonden.",
+    "english": "She left for school after she had found her keys.",
+    "note": "With the main clause first there is no inversion. Compare: Ze vertrok naar school nadat zij haar sleutels had gevonden."
+   }
+  },
+  "pat-nadat-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Helping came first; the past perfect 'hadden geholpen' closes the clause, and 'hem' is the object."
+   },
+   "situationNl": "Een vreemdeling kreeg hulp bij zijn koffer. Vertel hoe hij reageerde en wat zijn reactie voorafging.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij bedankte ons",
+     "subject": "Hij",
+     "finite": "bedankte",
+     "role": "main clause (the later action)",
+     "why": "Hij is first, so the past form 'bedankte' is second and the object 'ons' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat we hem hadden geholpen",
+     "subject": "we",
+     "finite": "hadden",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'we' comes first, then the object 'hem', and the past perfect 'hadden geholpen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "bedankte"
+    },
+    {
+     "label": "object",
+     "text": "ons"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "hem"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hadden"
+    },
+    {
+     "label": "past participle",
+     "text": "geholpen"
+    }
+   ],
+   "meaning": "He thanked us after we'd helped him.",
+   "order": "The simple past 'bedankte' is the later event; 'hadden geholpen' marks what happened earlier. Read it as \"Hij bedankte ons nadat we hem hadden geholpen\".",
+   "forms": "bedanken: hij bedankte. helpen: hadden geholpen.",
+   "compare": "English 'we had helped him' is the same tense. For this card: \"Hij bedankte ons nadat we hem hadden geholpen\".",
+   "mistakes": [
+    {
+     "wrong": "Hij bedankte ons nadat we hadden hem geholpen.",
+     "right": "Hij bedankte ons nadat we hem hadden geholpen.",
+     "why": "The past perfect goes behind the object 'hem'."
+    },
+    {
+     "wrong": "Hij bedankte ons nadat we hem hebben geholpen.",
+     "right": "Hij bedankte ons nadat we hem hadden geholpen.",
+     "why": "In a past story use the past auxiliary: 'hadden'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat we hem hadden geholpen, bedankte hij ons.",
+    "english": "After we had helped him, he thanked us.",
+    "note": "The nadat-clause first inverts the main clause to 'bedankte hij'."
+   }
+  },
+  "pat-nadat-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Reading the letter is the earlier event, so the past perfect 'had gelezen' closes the nadat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat ik de brief had gelezen",
+     "subject": "ik",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first, then the object 'de brief', and the past perfect 'had gelezen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "belde ik de afzender",
+     "subject": "ik",
+     "finite": "belde",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'belde' comes first, then the subject 'ik' and the object 'de afzender'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de brief"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gelezen"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "belde"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de afzender"
+    }
+   ],
+   "meaning": "After I had read the letter, I called the sender.",
+   "order": "Two tenses mark the order: past perfect for the earlier reading, simple past for the later call. The main clause inverts to 'belde ik'.",
+   "forms": "lezen: had gelezen. bellen: ik belde.",
+   "compare": "English 'After I had read the letter, I called' has the same two layers.",
+   "mistakes": [
+    {
+     "wrong": "Nadat ik de brief had gelezen, ik belde de afzender.",
+     "right": "Nadat ik de brief had gelezen, belde ik de afzender.",
+     "why": "The main clause starts with the verb: 'belde ik'."
+    },
+    {
+     "wrong": "Nadat ik de brief had lezen, belde ik de afzender.",
+     "right": "Nadat ik de brief had gelezen, belde ik de afzender.",
+     "why": "The participle is 'gelezen'. (not \"Nadat ik de brief had lezen, belde ik de afzender.\", but \"Nadat ik de brief had gelezen, belde ik de afzender.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik belde de afzender nadat ik de brief had gelezen.",
+    "english": "I called the sender after I had read the letter.",
+    "note": "With the main clause first there is no inversion. Compare: Ik belde de afzender nadat ik de brief had gelezen."
+   }
+  },
+  "pat-nadat-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Picking up the children is the earlier event; the participle 'opgehaald' of the separable 'ophalen' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij ging naar huis",
+     "subject": "Zij",
+     "finite": "ging",
+     "role": "main clause (the later action)",
+     "why": "Zij is first, so the past form 'ging' is second and the direction 'naar huis' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ze de kinderen had opgehaald",
+     "subject": "ze",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ze' comes first, then the object 'de kinderen', and the past perfect 'had opgehaald' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "ging"
+    },
+    {
+     "label": "direction",
+     "text": "naar huis"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "de kinderen"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "opgehaald"
+    }
+   ],
+   "meaning": "She went home after she had picked up the children.",
+   "order": "The participle of the separable verb 'ophalen' is one word with 'ge' inside: 'opgehaald'. Read it as \"Zij ging naar huis nadat ze de kinderen had opgehaald\".",
+   "forms": "gaan: zij ging. ophalen: had opgehaald.",
+   "compare": "English 'picked up' is two words. Dutch writes 'opgehaald'. For this card: \"Zij ging naar huis nadat ze de kinderen had opgehaald\".",
+   "mistakes": [
+    {
+     "wrong": "Zij ging naar huis nadat ze de kinderen had gehaald op.",
+     "right": "Zij ging naar huis nadat ze de kinderen had opgehaald.",
+     "why": "The participle of a separable verb is one word: 'opgehaald'."
+    },
+    {
+     "wrong": "Zij ging naar huis nadat ze de kinderen heeft opgehaald.",
+     "right": "Zij ging naar huis nadat ze de kinderen had opgehaald.",
+     "why": "In a past story use the past auxiliary: 'had'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ze de kinderen had opgehaald, ging zij naar huis.",
+    "english": "After she had picked up the children, she went home.",
+    "note": "The nadat-clause first inverts the main clause to 'ging zij'."
+   }
+  },
+  "pat-nadat-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Selling the house is the earlier event; the plural past perfect 'hadden verkocht' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat wij het huis hadden verkocht",
+     "subject": "wij",
+     "finite": "hadden",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'wij' comes first, then the object 'het huis', and the plural past perfect 'hadden verkocht' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "verhuisden we naar Utrecht",
+     "subject": "we",
+     "finite": "verhuisden",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'verhuisden' comes first, then the subject 'we' and the direction 'naar Utrecht'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "object",
+     "text": "het huis"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hadden"
+    },
+    {
+     "label": "past participle",
+     "text": "verkocht"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "verhuisden"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "direction",
+     "text": "naar Utrecht"
+    }
+   ],
+   "meaning": "After we had sold the house, we moved to Utrecht.",
+   "order": "'Verkopen' and 'verhuizen' have the inseparable prefix 'ver-', so no 'ge' is added to the participle. Read it as \"Nadat wij het huis hadden verkocht, verhuisden we naar Utrecht\".",
+   "forms": "verkopen: hadden verkocht. verhuizen: we verhuisden.",
+   "compare": "English 'had sold' and 'moved' show the same sequence. For this card: \"Nadat wij het huis hadden verkocht, verhuisden we naar Utrecht\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat wij het huis hadden verkocht, wij verhuisden naar Utrecht.",
+     "right": "Nadat wij het huis hadden verkocht, verhuisden we naar Utrecht.",
+     "why": "The main clause starts with the verb: 'verhuisden we'."
+    },
+    {
+     "wrong": "Nadat wij het huis had verkocht, verhuisden we naar Utrecht.",
+     "right": "Nadat wij het huis hadden verkocht, verhuisden we naar Utrecht.",
+     "why": "The plural 'wij' needs 'hadden'. (not \"Nadat wij het huis had verkocht, verhuisden we naar Utrecht.\", but \"Nadat wij het huis hadden verkocht, verhuisden we naar Utrecht.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We verhuisden naar Utrecht nadat wij het huis hadden verkocht.",
+    "english": "We moved to Utrecht after we had sold the house.",
+    "note": "With the main clause first there is no inversion. Compare: We verhuisden naar Utrecht nadat wij het huis hadden verkocht."
+   }
+  },
+  "pat-nadat-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Watching a film is the earlier event; 'had gekeken' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij ging slapen",
+     "subject": "Hij",
+     "finite": "ging",
+     "role": "main clause (the later action)",
+     "why": "Hij is first, so the past form 'ging' is second and the infinitive 'slapen' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat hij een film had gekeken",
+     "subject": "hij",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'hij' comes first, then the object 'een film', and the past perfect 'had gekeken' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "ging"
+    },
+    {
+     "label": "infinitive",
+     "text": "slapen"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "een film"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gekeken"
+    }
+   ],
+   "meaning": "He went to sleep after he had watched a film.",
+   "order": "'Gaan slapen' is a verb chain. The nadat-clause explains what had happened before. Read it as \"Hij ging slapen nadat hij een film had gekeken\".",
+   "forms": "gaan: hij ging. kijken: had gekeken.",
+   "compare": "English 'went to sleep' is a single verb. Dutch uses 'gaan slapen'. For this card: \"Hij ging slapen nadat hij een film had gekeken\".",
+   "mistakes": [
+    {
+     "wrong": "Hij ging slapen nadat hij een film had kijken.",
+     "right": "Hij ging slapen nadat hij een film had gekeken.",
+     "why": "The participle is 'gekeken'. (not \"Hij ging slapen nadat hij een film had kijken.\", but \"Hij ging slapen nadat hij een film had gekeken.\")"
+    },
+    {
+     "wrong": "Hij ging slapen nadat hij had een film gekeken.",
+     "right": "Hij ging slapen nadat hij een film had gekeken.",
+     "why": "The auxiliary and participle go behind the object."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat hij een film had gekeken, ging hij slapen.",
+    "english": "After he had watched a film, he went to sleep.",
+    "note": "The nadat-clause first inverts the main clause to 'ging hij slapen'."
+   }
+  },
+  "pat-nadat-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The guests left first; the past perfect with 'zijn' and the split 'opruimen' in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat de gasten waren vertrokken",
+     "subject": "de gasten",
+     "finite": "waren",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The plural subject 'de gasten' comes first and the group 'waren vertrokken' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "ruimden we de tafel op",
+     "subject": "we",
+     "finite": "ruimden",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'ruimden' comes first, then the subject 'we' and the object 'de tafel'; the particle 'op' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de gasten"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "waren"
+    },
+    {
+     "label": "past participle",
+     "text": "vertrokken"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "ruimden"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de tafel"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    }
+   ],
+   "meaning": "After the guests had left, we cleared the table.",
+   "order": "'Opruimen' splits in the main clause: 'ruimden ... op'. 'Vertrekken' takes 'zijn'. Read it as \"Nadat de gasten waren vertrokken, ruimden we de tafel op\".",
+   "forms": "vertrekken: waren vertrokken. opruimen: ruimden ... op.",
+   "compare": "English 'cleared the table' has no particle. Dutch uses 'opruimen'. For this card: \"Nadat de gasten waren vertrokken, ruimden we de tafel op\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat de gasten waren vertrokken, we ruimden de tafel op.",
+     "right": "Nadat de gasten waren vertrokken, ruimden we de tafel op.",
+     "why": "The main clause starts with the verb: 'ruimden we'."
+    },
+    {
+     "wrong": "Nadat de gasten hadden vertrokken, ruimden we de tafel op.",
+     "right": "Nadat de gasten waren vertrokken, ruimden we de tafel op.",
+     "why": "'Vertrekken' takes 'zijn': 'waren vertrokken'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We ruimden de tafel op nadat de gasten waren vertrokken.",
+    "english": "We cleared the table after the guests had left.",
+    "note": "With the main clause first there is no inversion. Compare: We ruimden de tafel op nadat de gasten waren vertrokken."
+   }
+  },
+  "pat-nadat-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Getting up is the earlier event; 'ben gaan wandelen' is a perfect with a double infinitive."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ben gaan wandelen",
+     "subject": "Ik",
+     "finite": "ben",
+     "role": "main clause (the later action)",
+     "why": "Ik is first, so the auxiliary 'ben' is second; the two infinitives 'gaan wandelen' end the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ik was opgestaan",
+     "subject": "ik",
+     "finite": "was",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first and the group 'was opgestaan' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "ben"
+    },
+    {
+     "label": "infinitive",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "was"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "opgestaan"
+    }
+   ],
+   "meaning": "I went for a walk after I had got up.",
+   "order": "'Opstaan' takes 'zijn', so the past perfect is 'was opgestaan'. The main clause uses a perfect with a double infinitive.",
+   "forms": "zijn: ik ben. opstaan: was opgestaan.",
+   "compare": "English 'went for a walk' is a simple past. Dutch often uses the perfect 'ben gaan wandelen'.",
+   "mistakes": [
+    {
+     "wrong": "Ik ben gaan wandelen nadat ik had opgestaan.",
+     "right": "Ik ben gaan wandelen nadat ik was opgestaan.",
+     "why": "'Opstaan' takes 'zijn' in the perfect tenses."
+    },
+    {
+     "wrong": "Ik ben gaan wandelen nadat was ik opgestaan.",
+     "right": "Ik ben gaan wandelen nadat ik was opgestaan.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik ben gaan wandelen nadat was ik opgestaan.\", but \"Ik ben gaan wandelen nadat ik was opgestaan.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ik was opgestaan, ben ik gaan wandelen.",
+    "english": "After I had got up, I went for a walk.",
+    "note": "The nadat-clause first inverts the main clause to 'ben ik'."
+   }
+  },
+  "pat-nadat-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "A promise: the call has to be completed first; the present perfect 'hebt gebeld' closes the nadat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat jij me hebt gebeld",
+     "subject": "jij",
+     "finite": "hebt",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'jij' comes first, then the object 'me', and the perfect group 'hebt gebeld' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stuur ik de gegevens",
+     "subject": "ik",
+     "finite": "stuur",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'stuur' comes first, then the subject 'ik' and the object 'de gegevens'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebt"
+    },
+    {
+     "label": "past participle",
+     "text": "gebeld"
+    },
+    {
+     "label": "finite verb",
+     "text": "stuur"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de gegevens"
+    }
+   ],
+   "meaning": "After you have called me, I will send the data.",
+   "order": "In a future-oriented promise the earlier step uses the perfect and the main clause the present. The auxiliary agrees with 'jij': 'hebt'.",
+   "forms": "bellen: hebt gebeld. sturen: ik stuur.",
+   "compare": "English 'After you have called me, I will send' uses 'will'. Dutch uses the present tense.",
+   "mistakes": [
+    {
+     "wrong": "Nadat jij me heb gebeld, stuur ik de gegevens.",
+     "right": "Nadat jij me hebt gebeld, stuur ik de gegevens.",
+     "why": "With 'jij' the auxiliary is 'hebt'. (not \"Nadat jij me heb gebeld, stuur ik de gegevens.\", but \"Nadat jij me hebt gebeld, stuur ik de gegevens.\")"
+    },
+    {
+     "wrong": "Nadat jij me hebt gebeld, ik stuur de gegevens.",
+     "right": "Nadat jij me hebt gebeld, stuur ik de gegevens.",
+     "why": "The main clause starts with the verb: 'stuur ik'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik stuur de gegevens nadat jij me hebt gebeld.",
+    "english": "I send the data after you have called me.",
+    "note": "With the main clause first there is no inversion. Compare: Ik stuur de gegevens nadat jij me hebt gebeld."
+   }
+  },
+  "pat-nadat-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The film ends first; 'is afgelopen' closes the nadat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We gaan uit eten",
+     "subject": "We",
+     "finite": "gaan",
+     "role": "main clause (the later action)",
+     "why": "We is first, so the plural 'gaan' is second; 'uit' and the infinitive 'eten' end the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat de film is afgelopen",
+     "subject": "de film",
+     "finite": "is",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de film' comes first and the group 'is afgelopen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "particle",
+     "text": "uit"
+    },
+    {
+     "label": "infinitive",
+     "text": "eten"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de film"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "afgelopen"
+    }
+   ],
+   "meaning": "We are going out for dinner after the film is over.",
+   "order": "'Uit eten gaan' means to go out for dinner. 'Aflopen' takes 'zijn'. Read it as \"We gaan uit eten nadat de film is afgelopen\".",
+   "forms": "gaan: wij gaan. aflopen: is afgelopen.",
+   "compare": "English 'go out for dinner' is a phrase. Dutch uses 'uit eten gaan'. For this card: \"We gaan uit eten nadat de film is afgelopen\".",
+   "mistakes": [
+    {
+     "wrong": "We gaan uit eten nadat de film afgelopen.",
+     "right": "We gaan uit eten nadat de film is afgelopen.",
+     "why": "The auxiliary 'is' is missing from the nadat-clause. In \"We gaan uit eten nadat de film afgelopen.\" this is what goes wrong."
+    },
+    {
+     "wrong": "We gaan uit eten nadat de film heeft afgelopen.",
+     "right": "We gaan uit eten nadat de film is afgelopen.",
+     "why": "'Aflopen' takes 'zijn'. (not \"We gaan uit eten nadat de film heeft afgelopen.\", but \"We gaan uit eten nadat de film is afgelopen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat de film is afgelopen, gaan we uit eten.",
+    "english": "After the film is over, we go out for dinner.",
+    "note": "The nadat-clause first inverts the main clause, so the dinner plan reads 'gaan we uit eten'."
+   }
+  },
+  "pat-nadat-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The customer's testing comes first; the perfect 'heeft getest' closes the clause, and the feedback follows."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat de klant het product heeft getest",
+     "subject": "de klant",
+     "finite": "heeft",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de klant' comes first, then the object 'het product', and the perfect group 'heeft getest' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "geeft hij feedback",
+     "subject": "hij",
+     "finite": "geeft",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'geeft' comes first, then the subject 'hij' and the object 'feedback'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de klant"
+    },
+    {
+     "label": "object",
+     "text": "het product"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heeft"
+    },
+    {
+     "label": "past participle",
+     "text": "getest"
+    },
+    {
+     "label": "finite verb",
+     "text": "geeft"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "feedback"
+    }
+   ],
+   "meaning": "After the customer has tested the product, he gives feedback.",
+   "order": "The perfect names the earlier step, the present the habitual result. The main clause inverts to 'geeft hij'. Read it as \"Nadat de klant het product heeft getest, geeft hij feedback\".",
+   "forms": "testen: heeft getest. geven: hij geeft.",
+   "compare": "English 'After the customer has tested' keeps 'has' before the object. Dutch puts 'heeft getest' last.",
+   "mistakes": [
+    {
+     "wrong": "Nadat de klant heeft het product getest, geeft hij feedback.",
+     "right": "Nadat de klant het product heeft getest, geeft hij feedback.",
+     "why": "The perfect group goes behind the object. In \"Nadat de klant heeft het product getest, geeft hij feedback.\" this is what goes wrong."
+    },
+    {
+     "wrong": "Nadat de klant het product heeft getest, hij geeft feedback.",
+     "right": "Nadat de klant het product heeft getest, geeft hij feedback.",
+     "why": "The main clause starts with the verb: 'geeft hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De klant geeft feedback nadat hij het product heeft getest.",
+    "english": "The customer gives feedback after he has tested the product.",
+    "note": "With the main clause first there is no inversion. Compare: De klant geeft feedback nadat hij het product heeft getest."
+   }
+  },
+  "pat-nadat-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Marking the test comes first; 'heeft nagekeken' contains the separable participle 'nagekeken'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De docent geeft het cijfer",
+     "subject": "De docent",
+     "finite": "geeft",
+     "role": "main clause (the later action)",
+     "why": "'De docent' is first, so 'geeft' is second and the object 'het cijfer' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat hij de toets heeft nagekeken",
+     "subject": "hij",
+     "finite": "heeft",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'hij' comes first, then the object 'de toets', and the perfect group 'heeft nagekeken' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De docent"
+    },
+    {
+     "label": "finite verb",
+     "text": "geeft"
+    },
+    {
+     "label": "object",
+     "text": "het cijfer"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "de toets"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heeft"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "nagekeken"
+    }
+   ],
+   "meaning": "The teacher gives the grade after he has marked the test.",
+   "order": "'Nakijken' is separable; its participle is one word with 'ge' inside: 'nagekeken'. Read it as \"De docent geeft het cijfer nadat hij de toets heeft nagekeken\".",
+   "forms": "geven: de docent geeft. nakijken: heeft nagekeken.",
+   "compare": "English 'marked' is a simple past. Dutch uses the perfect group 'heeft nagekeken'.",
+   "mistakes": [
+    {
+     "wrong": "De docent geeft het cijfer nadat hij de toets heeft gekeken na.",
+     "right": "De docent geeft het cijfer nadat hij de toets heeft nagekeken.",
+     "why": "The participle of a separable verb is one word: 'nagekeken'."
+    },
+    {
+     "wrong": "De docent geeft het cijfer nadat hij de toets nagekeken.",
+     "right": "De docent geeft het cijfer nadat hij de toets heeft nagekeken.",
+     "why": "The auxiliary 'heeft' is missing from the nadat-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat hij de toets heeft nagekeken, geeft de docent het cijfer.",
+    "english": "After he has marked the test, the teacher gives the grade.",
+    "note": "The nadat-clause first inverts the main clause."
+   }
+  },
+  "pat-nadat-23": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Winning came first; 'hadden gewonnen' closes the clause, then the team went off to celebrate."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat zij hadden gewonnen",
+     "subject": "zij",
+     "finite": "hadden",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'zij' comes first and the past perfect 'hadden gewonnen' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "gingen de spelers feestvieren",
+     "subject": "de spelers",
+     "finite": "gingen",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'gingen' comes first, then the subject 'de spelers' and the infinitive 'feestvieren'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hadden"
+    },
+    {
+     "label": "past participle",
+     "text": "gewonnen"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "gingen"
+    },
+    {
+     "label": "subject",
+     "text": "de spelers"
+    },
+    {
+     "label": "infinitive",
+     "text": "feestvieren"
+    }
+   ],
+   "meaning": "After they had won, the players went partying.",
+   "order": "'Gingen feestvieren' is a verb chain: 'gaan' plus an infinitive. The plural subject takes 'gingen'. Read it as \"Nadat zij hadden gewonnen, gingen de spelers feestvieren\".",
+   "forms": "winnen: hadden gewonnen. gaan: de spelers gingen.",
+   "compare": "English 'went partying' has a similar chain. Dutch uses 'gaan feestvieren'.",
+   "mistakes": [
+    {
+     "wrong": "Nadat zij hadden gewonnen, de spelers gingen feestvieren.",
+     "right": "Nadat zij hadden gewonnen, gingen de spelers feestvieren.",
+     "why": "The main clause starts with the verb: 'gingen de spelers'."
+    },
+    {
+     "wrong": "Nadat zij had gewonnen, gingen de spelers feestvieren.",
+     "right": "Nadat zij hadden gewonnen, gingen de spelers feestvieren.",
+     "why": "The plural 'zij' needs 'hadden'. (not \"Nadat zij had gewonnen, gingen de spelers feestvieren.\", but \"Nadat zij hadden gewonnen, gingen de spelers feestvieren.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De spelers gingen feestvieren nadat zij hadden gewonnen.",
+    "english": "The players went partying after they had won.",
+    "note": "With the main clause first there is no inversion. Compare: De spelers gingen feestvieren nadat zij hadden gewonnen."
+   }
+  },
+  "pat-nadat-24": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Exercising comes first; the short perfect 'heb gesport' closes the nadat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik drink water",
+     "subject": "Ik",
+     "finite": "drink",
+     "role": "main clause (the later action)",
+     "why": "Ik is first, so 'drink' is second and the object 'water' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ik heb gesport",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first and the perfect group 'heb gesport' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "drink"
+    },
+    {
+     "label": "object",
+     "text": "water"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gesport"
+    }
+   ],
+   "meaning": "I drink water after I have exercised.",
+   "order": "A short nadat-clause: only a subject and the perfect group. The participle of 'sporten' is 'gesport'. Read it as \"Ik drink water nadat ik heb gesport\".",
+   "forms": "drinken: ik drink. sporten: heb gesport.",
+   "compare": "English 'after exercising' is an -ing phrase. Dutch uses a clause. For this card: \"Ik drink water nadat ik heb gesport\".",
+   "mistakes": [
+    {
+     "wrong": "Ik drink water nadat ik gesport.",
+     "right": "Ik drink water nadat ik heb gesport.",
+     "why": "The auxiliary 'heb' is missing from the nadat-clause."
+    },
+    {
+     "wrong": "Ik drink water nadat heb ik gesport.",
+     "right": "Ik drink water nadat ik heb gesport.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik drink water nadat heb ik gesport.\", but \"Ik drink water nadat ik heb gesport.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ik heb gesport, drink ik water.",
+    "english": "After I have exercised, I drink water.",
+    "note": "The nadat-clause first inverts the main clause to 'drink ik'."
+   }
+  },
+  "pat-nadat-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The start-up comes first; the modal 'kun' opens the main clause, with 'is opgestart' in the nadat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat het systeem is opgestart",
+     "subject": "het systeem",
+     "finite": "is",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'het systeem' comes first and the group 'is opgestart' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kun je inloggen",
+     "subject": "je",
+     "finite": "kun",
+     "role": "main clause (the later action)",
+     "why": "The modal 'kun' comes first, then the subject 'je'; the infinitive 'inloggen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "het systeem"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "opgestart"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "infinitive",
+     "text": "inloggen"
+    }
+   ],
+   "meaning": "After the system has started up, you can log in.",
+   "order": "The participle of 'opstarten' is 'opgestart'. The main clause inverts to 'kun je inloggen'. Read it as \"Nadat het systeem is opgestart, kun je inloggen\".",
+   "forms": "opstarten: is opgestart. kunnen: je kunt / kun je. inloggen: infinitive.",
+   "compare": "English 'you can log in' keeps 'can' after 'you'. Dutch inverts. For this card: \"Nadat het systeem is opgestart, kun je inloggen\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat het systeem is opgestart, je kunt inloggen.",
+     "right": "Nadat het systeem is opgestart, kun je inloggen.",
+     "why": "The main clause starts with the modal: 'kun je'."
+    },
+    {
+     "wrong": "Nadat het systeem is gestart op, kun je inloggen.",
+     "right": "Nadat het systeem is opgestart, kun je inloggen.",
+     "why": "The participle of a separable verb is one word: 'opgestart'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je kunt inloggen nadat het systeem is opgestart.",
+    "english": "You can log in after the system has started up.",
+    "note": "With the main clause first the modal stays after the subject. Compare: Je kunt inloggen nadat het systeem is opgestart."
+   }
+  },
+  "pat-nadat-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "A rule: cooling must come first; 'is afgekoeld' closes the nadat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je mag het eten",
+     "subject": "Je",
+     "finite": "mag",
+     "role": "main clause (the later action)",
+     "why": "'Je' is first and the modal 'mag' is second; 'het' is the object and 'eten' the infinitive here."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat het is afgekoeld",
+     "subject": "het",
+     "finite": "is",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'het' comes first and the group 'is afgekoeld' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "mag"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "infinitive",
+     "text": "eten"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "afgekoeld"
+    }
+   ],
+   "meaning": "You may eat it after it has cooled down.",
+   "order": "'Afkoelen' is a change of state and takes 'zijn'. In the main clause 'eten' is the infinitive; in other uses 'het eten' is a noun.",
+   "forms": "mogen: je mag. afkoelen: is afgekoeld.",
+   "compare": "English 'You may eat it' needs a pronoun. Dutch uses 'het' as the object.",
+   "mistakes": [
+    {
+     "wrong": "Je mag het eten nadat het heeft afgekoeld.",
+     "right": "Je mag het eten nadat het is afgekoeld.",
+     "why": "'Afkoelen' takes 'zijn': 'is afgekoeld'. (not \"Je mag het eten nadat het heeft afgekoeld.\", but \"Je mag het eten nadat het is afgekoeld.\")"
+    },
+    {
+     "wrong": "Je mag het eten nadat het afgekoeld.",
+     "right": "Je mag het eten nadat het is afgekoeld.",
+     "why": "The auxiliary 'is' is missing from the nadat-clause. (not \"Je mag het eten nadat het afgekoeld.\", but \"Je mag het eten nadat het is afgekoeld.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat het is afgekoeld, mag je het eten.",
+    "english": "After it has cooled down, you may eat it.",
+    "note": "The nadat-clause first inverts the main clause to 'mag je'."
+   }
+  },
+  "pat-nadat-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Snowing is the earlier event; the weather verb uses 'het' as the dummy subject."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat het had gesneeuwd",
+     "subject": "het",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The dummy subject 'het' comes first and the past perfect 'had gesneeuwd' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "was de weg glad",
+     "subject": "de weg",
+     "finite": "was",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'was' comes first, then the subject 'de weg' and the predicate 'glad'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject (dummy)",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gesneeuwd"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "subject",
+     "text": "de weg"
+    },
+    {
+     "label": "predicate",
+     "text": "glad"
+    }
+   ],
+   "meaning": "After it had snowed, the road was slippery.",
+   "order": "Weather verbs take 'hebben' in the perfect: 'had gesneeuwd'. The main clause inverts to 'was de weg glad'. Read it as \"Nadat het had gesneeuwd, was de weg glad\".",
+   "forms": "sneeuwen: had gesneeuwd. zijn: de weg was.",
+   "compare": "English 'After it had snowed' is the same layer. For this card: \"Nadat het had gesneeuwd, was de weg glad\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat het was gesneeuwd, was de weg glad.",
+     "right": "Nadat het had gesneeuwd, was de weg glad.",
+     "why": "Weather verbs take 'hebben': 'had gesneeuwd'."
+    },
+    {
+     "wrong": "Nadat het had gesneeuwd, de weg was glad.",
+     "right": "Nadat het had gesneeuwd, was de weg glad.",
+     "why": "The main clause starts with the verb: 'was de weg'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De weg was glad nadat het had gesneeuwd.",
+    "english": "The road was slippery after it had snowed.",
+    "note": "With the main clause first there is no inversion. Compare: De weg was glad nadat het had gesneeuwd."
+   }
+  },
+  "pat-nadat-28": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The eating came first; the plural past perfect 'hadden gegeten' closes the nadat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De buren kwamen langs",
+     "subject": "De buren",
+     "finite": "kwamen",
+     "role": "main clause (the later action)",
+     "why": "'De buren' is first, so the plural 'kwamen' is second; the particle 'langs' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat wij hadden gegeten",
+     "subject": "wij",
+     "finite": "hadden",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'wij' comes first and the past perfect 'hadden gegeten' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De buren"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "kwamen"
+    },
+    {
+     "label": "particle",
+     "text": "langs"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hadden"
+    },
+    {
+     "label": "past participle",
+     "text": "gegeten"
+    }
+   ],
+   "meaning": "The neighbours came by after we had eaten.",
+   "order": "'Langskomen' splits: 'kwamen ... langs'. The nadat-clause shows what was finished before the visit. Read it as \"De buren kwamen langs nadat wij hadden gegeten\".",
+   "forms": "langskomen: kwamen ... langs. eten: hadden gegeten.",
+   "compare": "English 'came by' has the same particle at the end. For this card: \"De buren kwamen langs nadat wij hadden gegeten\".",
+   "mistakes": [
+    {
+     "wrong": "De buren kwamen langs nadat wij gegeten.",
+     "right": "De buren kwamen langs nadat wij hadden gegeten.",
+     "why": "The auxiliary 'hadden' is missing from the nadat-clause."
+    },
+    {
+     "wrong": "De buren langskwamen nadat wij hadden gegeten.",
+     "right": "De buren kwamen langs nadat wij hadden gegeten.",
+     "why": "In a main clause 'langskomen' splits. (not \"De buren langskwamen nadat wij hadden gegeten.\", but \"De buren kwamen langs nadat wij hadden gegeten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat wij hadden gegeten, kwamen de buren langs.",
+    "english": "After we had eaten, the neighbours came by.",
+    "note": "The nadat-clause first inverts the main clause. Compare: Nadat wij hadden gegeten, kwamen de buren langs."
+   }
+  },
+  "pat-nadat-29": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Getting the licence is the earlier event; the past perfect 'had gehaald' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat hij zijn rijbewijs had gehaald",
+     "subject": "hij",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'hij' comes first, then the object 'zijn rijbewijs', and the past perfect 'had gehaald' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kocht hij een auto",
+     "subject": "hij",
+     "finite": "kocht",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'kocht' comes first, then the subject 'hij' and the object 'een auto'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "zijn rijbewijs"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gehaald"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kocht"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "een auto"
+    }
+   ],
+   "meaning": "After he had got his driving licence, he bought a car.",
+   "order": "'Een rijbewijs halen' is the fixed phrase for getting a licence. 'Kopen' has the irregular past 'kocht'. Read it as \"Nadat hij zijn rijbewijs had gehaald, kocht hij een auto\".",
+   "forms": "halen: had gehaald. kopen: hij kocht.",
+   "compare": "English 'got his licence' uses 'get'. Dutch uses 'halen'. For this card: \"Nadat hij zijn rijbewijs had gehaald, kocht hij een auto\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat hij zijn rijbewijs had gehaald, hij kocht een auto.",
+     "right": "Nadat hij zijn rijbewijs had gehaald, kocht hij een auto.",
+     "why": "The main clause starts with the verb: 'kocht hij'."
+    },
+    {
+     "wrong": "Nadat hij zijn rijbewijs had gehaalt, kocht hij een auto.",
+     "right": "Nadat hij zijn rijbewijs had gehaald, kocht hij een auto.",
+     "why": "The participle ends in -d: 'gehaald'. (not \"Nadat hij zijn rijbewijs had gehaalt, kocht hij een auto.\", but \"Nadat hij zijn rijbewijs had gehaald, kocht hij een auto.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij kocht een auto nadat hij zijn rijbewijs had gehaald.",
+    "english": "He bought a car after he had got his driving licence.",
+    "note": "With the main clause first there is no inversion. Compare: Hij kocht een auto nadat hij zijn rijbewijs had gehaald."
+   }
+  },
+  "pat-nadat-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The interviews came first; 'had gevoerd' closes the clause and the job followed."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij kreeg de baan",
+     "subject": "Zij",
+     "finite": "kreeg",
+     "role": "main clause (the later action)",
+     "why": "Zij is first, so the past form 'kreeg' is second and the object 'de baan' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ze drie gesprekken had gevoerd",
+     "subject": "ze",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ze' comes first, then the object 'drie gesprekken', and the past perfect 'had gevoerd' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kreeg"
+    },
+    {
+     "label": "object",
+     "text": "de baan"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "drie gesprekken"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gevoerd"
+    }
+   ],
+   "meaning": "She got the job after she had had three interviews.",
+   "order": "'Gesprekken voeren' is the fixed phrase for holding interviews. The past perfect marks the earlier layer. Read it as \"Zij kreeg de baan nadat ze drie gesprekken had gevoerd\".",
+   "forms": "krijgen: zij kreeg. voeren: had gevoerd.",
+   "compare": "English 'had three interviews' uses 'have'. Dutch uses 'gesprekken voeren'.",
+   "mistakes": [
+    {
+     "wrong": "Zij kreeg de baan nadat ze drie gesprekken gevoerd.",
+     "right": "Zij kreeg de baan nadat ze drie gesprekken had gevoerd.",
+     "why": "The auxiliary 'had' is missing from the nadat-clause."
+    },
+    {
+     "wrong": "Zij kreeg de baan nadat ze had drie gesprekken gevoerd.",
+     "right": "Zij kreeg de baan nadat ze drie gesprekken had gevoerd.",
+     "why": "The auxiliary and participle go behind the object. (not \"Zij kreeg de baan nadat ze had drie gesprekken gevoerd.\", but \"Zij kreeg de baan nadat ze drie gesprekken had gevoerd.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ze drie gesprekken had gevoerd, kreeg zij de baan.",
+    "english": "After she had held three interviews, she got the job.",
+    "note": "The nadat-clause first inverts the main clause to 'kreeg zij'."
+   }
+  },
+  "pat-nadat-31": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Changing the password comes first; 'inloggen' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat ik mijn wachtwoord heb gewijzigd",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first, then the object 'mijn wachtwoord', and the perfect group 'heb gewijzigd' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "log ik opnieuw in",
+     "subject": "ik",
+     "finite": "log",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'log' comes first, then the subject 'ik' and the adverb 'opnieuw'; the particle 'in' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "mijn wachtwoord"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gewijzigd"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "log"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "opnieuw"
+    },
+    {
+     "label": "particle",
+     "text": "in"
+    }
+   ],
+   "meaning": "After I have changed my password, I log in again.",
+   "order": "'Inloggen' splits as 'log ... in'. The nadat-clause names the step that has to be finished first. Read it as \"Nadat ik mijn wachtwoord heb gewijzigd, log ik opnieuw in\".",
+   "forms": "wijzigen: heb gewijzigd. inloggen: log ... in.",
+   "compare": "English 'log in again' has the same particle at the end. For this card: \"Nadat ik mijn wachtwoord heb gewijzigd, log ik opnieuw in\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat ik mijn wachtwoord heb gewijzigd, ik log opnieuw in.",
+     "right": "Nadat ik mijn wachtwoord heb gewijzigd, log ik opnieuw in.",
+     "why": "The main clause starts with the verb: 'log ik'."
+    },
+    {
+     "wrong": "Nadat ik mijn wachtwoord heb gewijzigd, log in ik opnieuw.",
+     "right": "Nadat ik mijn wachtwoord heb gewijzigd, log ik opnieuw in.",
+     "why": "The particle 'in' goes to the end of the main clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik log opnieuw in nadat ik mijn wachtwoord heb gewijzigd.",
+    "english": "I log in again after I have changed my password.",
+    "note": "With the main clause first there is no inversion. Compare: Ik log opnieuw in nadat ik mijn wachtwoord heb gewijzigd."
+   }
+  },
+  "pat-nadat-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "An imperative: calling comes after the reading; the formal-informal 'je' takes 'hebt'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Bel me",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Bel",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Bel' stands first and the object 'me' follows. The clause is \"Bel me\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat je het rapport hebt gelezen",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'je' comes first, then the object 'het rapport', and the perfect group 'hebt gelezen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Bel"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "het rapport"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebt"
+    },
+    {
+     "label": "past participle",
+     "text": "gelezen"
+    }
+   ],
+   "meaning": "Call me after you have read the report.",
+   "order": "A short command with a nadat-clause that names the condition. With 'je' the auxiliary is 'hebt'. Read it as \"Bel me nadat je het rapport hebt gelezen\".",
+   "forms": "bellen: imperative bel. lezen: hebt gelezen.",
+   "compare": "English 'Call me after you have read the report' has the same order, but Dutch puts 'hebt gelezen' last.",
+   "mistakes": [
+    {
+     "wrong": "Bel me nadat je hebt het rapport gelezen.",
+     "right": "Bel me nadat je het rapport hebt gelezen.",
+     "why": "The perfect group goes behind the object. (not \"Bel me nadat je hebt het rapport gelezen.\", but \"Bel me nadat je het rapport hebt gelezen.\")"
+    },
+    {
+     "wrong": "Bel me nadat je het rapport heb gelezen.",
+     "right": "Bel me nadat je het rapport hebt gelezen.",
+     "why": "With 'je' the auxiliary is 'hebt'. (not \"Bel me nadat je het rapport heb gelezen.\", but \"Bel me nadat je het rapport hebt gelezen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat je het rapport hebt gelezen, bel je me.",
+    "english": "After you have read the report, you call me.",
+    "note": "The nadat-clause first inverts the main clause to 'bel je me'."
+   }
+  },
+  "pat-nadat-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Filling in the form is the earlier step; the final step is the click."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat je het formulier hebt ingevuld",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'je' comes first, then the object 'het formulier', and the perfect group 'hebt ingevuld' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "klik je op verzenden",
+     "subject": "je",
+     "finite": "klik",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'klik' comes first, then the subject 'je' and the phrase 'op verzenden'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "het formulier"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebt"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "ingevuld"
+    },
+    {
+     "label": "finite verb",
+     "text": "klik"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "op verzenden"
+    }
+   ],
+   "meaning": "After you have filled in the form, you click on send.",
+   "order": "The participle of 'invullen' is 'ingevuld'. 'Klikken op' takes a phrase after the subject. Read it as \"Nadat je het formulier hebt ingevuld, klik je op verzenden\".",
+   "forms": "invullen: hebt ingevuld. klikken: je klikt / klik je.",
+   "compare": "English 'click on send' has the same preposition. For this card: \"Nadat je het formulier hebt ingevuld, klik je op verzenden\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat je het formulier hebt gevuld in, klik je op verzenden.",
+     "right": "Nadat je het formulier hebt ingevuld, klik je op verzenden.",
+     "why": "The participle of a separable verb is one word: 'ingevuld'."
+    },
+    {
+     "wrong": "Nadat je het formulier hebt ingevuld, je klikt op verzenden.",
+     "right": "Nadat je het formulier hebt ingevuld, klik je op verzenden.",
+     "why": "The main clause starts with the verb: 'klik je'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je klikt op verzenden nadat je het formulier hebt ingevuld.",
+    "english": "You click on send after you have filled in the form.",
+    "note": "With the main clause first there is no inversion. Compare: Je klikt op verzenden nadat je het formulier hebt ingevuld."
+   }
+  },
+  "pat-nadat-34": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "A question about the routine after coming home; 'bent thuisgekomen' uses 'zijn'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wat doe je",
+     "subject": "je",
+     "finite": "doe",
+     "role": "main clause (the question)",
+     "why": "The question word 'Wat' is first, so 'doe' is second and the subject 'je' follows. The clause is \"Wat doe je\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat je bent thuisgekomen",
+     "subject": "je",
+     "finite": "bent",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'je' comes first and the group 'bent thuisgekomen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "question word",
+     "text": "Wat"
+    },
+    {
+     "label": "finite verb",
+     "text": "doe"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "bent"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "thuisgekomen"
+    }
+   ],
+   "meaning": "What do you do after you have come home?",
+   "order": "'Thuiskomen' takes 'zijn'. The question keeps verb-second order in the main clause. Read it as \"Wat doe je nadat je bent thuisgekomen\".",
+   "forms": "doen: doe je. thuiskomen: bent thuisgekomen.",
+   "compare": "English 'What do you do' needs two forms of 'do'. Dutch needs one. For this card: \"Wat doe je nadat je bent thuisgekomen\".",
+   "mistakes": [
+    {
+     "wrong": "Wat je doet nadat je bent thuisgekomen?",
+     "right": "Wat doe je nadat je bent thuisgekomen?",
+     "why": "A direct question needs the verb second: 'Wat doe je'. (not \"Wat je doet nadat je bent thuisgekomen?\", but \"Wat doe je nadat je bent thuisgekomen?\")"
+    },
+    {
+     "wrong": "Wat doe je nadat je hebt thuisgekomen?",
+     "right": "Wat doe je nadat je bent thuisgekomen?",
+     "why": "'Thuiskomen' takes 'zijn': 'bent thuisgekomen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet wat je doet nadat je bent thuisgekomen.",
+    "english": "I know what you do after you have come home.",
+    "note": "With an embedded question 'doet' goes to the end."
+   }
+  },
+  "pat-nadat-35": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "A request to talk after the presentation; 'is afgelopen' closes the nadat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Kunnen we praten",
+     "subject": "we",
+     "finite": "Kunnen",
+     "role": "main clause (the question)",
+     "why": "A yes/no question starts with the finite verb 'Kunnen', then the subject 'we'; the infinitive 'praten' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat de presentatie is afgelopen",
+     "subject": "de presentatie",
+     "finite": "is",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de presentatie' comes first and the group 'is afgelopen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Kunnen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "infinitive",
+     "text": "praten"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de presentatie"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "afgelopen"
+    }
+   ],
+   "meaning": "Can we talk after the presentation is over?",
+   "order": "In a question the modal opens the sentence. The nadat-clause adds the point in time. Read it as \"Kunnen we praten nadat de presentatie is afgelopen\".",
+   "forms": "kunnen: kunnen we. praten: infinitive. aflopen: is afgelopen.",
+   "compare": "English 'Can we talk' has the same inversion. For this card: \"Kunnen we praten nadat de presentatie is afgelopen\".",
+   "mistakes": [
+    {
+     "wrong": "We kunnen praten nadat de presentatie is afgelopen?",
+     "right": "Kunnen we praten nadat de presentatie is afgelopen?",
+     "why": "A question inverts the modal and the subject: 'Kunnen we'."
+    },
+    {
+     "wrong": "Kunnen we praten nadat de presentatie afgelopen.",
+     "right": "Kunnen we praten nadat de presentatie is afgelopen?",
+     "why": "The auxiliary 'is' is missing from the nadat-clause. (not \"Kunnen we praten nadat de presentatie afgelopen.\", but \"Kunnen we praten nadat de presentatie is afgelopen?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We kunnen praten nadat de presentatie is afgelopen.",
+    "english": "We can talk after the presentation is over.",
+    "note": "A statement has the subject first. Compare: We kunnen praten nadat de presentatie is afgelopen."
+   }
+  },
+  "pat-nadat-36": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Becoming ill is the starting point; the negative object 'niets' belongs to the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb niets gegeten",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "main clause (the later action)",
+     "why": "Ik is first, so the auxiliary 'heb' is second; the object 'niets' stands before the participle 'gegeten'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ik ziek was geworden",
+     "subject": "ik",
+     "finite": "was",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first, then the predicate 'ziek', and the group 'was geworden' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    },
+    {
+     "label": "past participle",
+     "text": "gegeten"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "predicate",
+     "text": "ziek"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "was"
+    },
+    {
+     "label": "past participle",
+     "text": "geworden"
+    }
+   ],
+   "meaning": "I have not eaten anything since I became ill.",
+   "order": "'Ziek worden' takes 'zijn' in the perfect: 'was geworden'. The main clause uses 'hebben' with 'eten'. Read it as \"Ik heb niets gegeten nadat ik ziek was geworden\".",
+   "forms": "eten: heb gegeten. worden: was geworden.",
+   "compare": "English 'since I became ill' uses 'since'. Dutch uses 'nadat'. For this card: \"Ik heb niets gegeten nadat ik ziek was geworden\".",
+   "mistakes": [
+    {
+     "wrong": "Ik heb niets gegeten nadat ik ziek geworden.",
+     "right": "Ik heb niets gegeten nadat ik ziek was geworden.",
+     "why": "The auxiliary 'was' is missing from the nadat-clause."
+    },
+    {
+     "wrong": "Ik heb niets gegeten nadat ik ziek had geworden.",
+     "right": "Ik heb niets gegeten nadat ik ziek was geworden.",
+     "why": "'Worden' takes 'zijn': 'was geworden'. (not \"Ik heb niets gegeten nadat ik ziek had geworden.\", but \"Ik heb niets gegeten nadat ik ziek was geworden.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ik ziek was geworden, heb ik niets gegeten.",
+    "english": "After I had become ill, I ate nothing.",
+    "note": "The nadat-clause first inverts the main clause to 'heb ik'."
+   }
+  },
+  "pat-nadat-37": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Logging in comes first; the reflexive 'zich' goes with 'had aangemeld'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat hij zich had aangemeld",
+     "subject": "hij",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'hij' comes first, then the reflexive 'zich', and the past perfect 'had aangemeld' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kreeg hij toegang",
+     "subject": "hij",
+     "finite": "kreeg",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'kreeg' comes first, then the subject 'hij' and the object 'toegang'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "reflexive",
+     "text": "zich"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "aangemeld"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kreeg"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "toegang"
+    }
+   ],
+   "meaning": "After he had logged in, he got access.",
+   "order": "'Zich aanmelden' is reflexive and separable; its participle is 'aangemeld'. The main clause inverts to 'kreeg hij'.",
+   "forms": "aanmelden: had aangemeld. krijgen: hij kreeg.",
+   "compare": "English 'logged in' has no reflexive. Dutch needs 'zich'. For this card: \"Nadat hij zich had aangemeld, kreeg hij toegang\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat hij had zich aangemeld, kreeg hij toegang.",
+     "right": "Nadat hij zich had aangemeld, kreeg hij toegang.",
+     "why": "The reflexive 'zich' stands before the auxiliary."
+    },
+    {
+     "wrong": "Nadat hij zich had aangemeld, hij kreeg toegang.",
+     "right": "Nadat hij zich had aangemeld, kreeg hij toegang.",
+     "why": "The main clause starts with the verb: 'kreeg hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij kreeg toegang nadat hij zich had aangemeld.",
+    "english": "He got access after he had logged in.",
+    "note": "With the main clause first there is no inversion. Compare: Hij kreeg toegang nadat hij zich had aangemeld."
+   }
+  },
+  "pat-nadat-38": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Closing the door comes first; 'aantrekken' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik trek mijn jas aan",
+     "subject": "Ik",
+     "finite": "trek",
+     "role": "main clause (the later action)",
+     "why": "Ik is first, so 'trek' is second; the object 'mijn jas' comes before the particle 'aan'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ik de deur heb gesloten",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first, then the object 'de deur', and the perfect group 'heb gesloten' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "trek"
+    },
+    {
+     "label": "object",
+     "text": "mijn jas"
+    },
+    {
+     "label": "particle",
+     "text": "aan"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de deur"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gesloten"
+    }
+   ],
+   "meaning": "I put on my coat after I have closed the door.",
+   "order": "'Aantrekken' splits as 'trek ... aan'. The participle of 'sluiten' is the strong form 'gesloten'. Read it as \"Ik trek mijn jas aan nadat ik de deur heb gesloten\".",
+   "forms": "aantrekken: trek ... aan. sluiten: heb gesloten.",
+   "compare": "English 'put on' has the same particle at the end. For this card: \"Ik trek mijn jas aan nadat ik de deur heb gesloten\".",
+   "mistakes": [
+    {
+     "wrong": "Ik aantrek mijn jas nadat ik de deur heb gesloten.",
+     "right": "Ik trek mijn jas aan nadat ik de deur heb gesloten.",
+     "why": "In a main clause the separable verb splits. (not \"Ik aantrek mijn jas nadat ik de deur heb gesloten.\", but \"Ik trek mijn jas aan nadat ik de deur heb gesloten.\")"
+    },
+    {
+     "wrong": "Ik trek mijn jas aan nadat ik de deur heb gesloot.",
+     "right": "Ik trek mijn jas aan nadat ik de deur heb gesloten.",
+     "why": "The participle of 'sluiten' is 'gesloten'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ik de deur heb gesloten, trek ik mijn jas aan.",
+    "english": "After I have closed the door, I put on my coat.",
+    "note": "The nadat-clause first inverts the main clause. Compare: Nadat ik de deur heb gesloten, trek ik mijn jas aan."
+   }
+  },
+  "pat-nadat-39": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The arrival is the earlier event; the past modal 'kon' opens the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat de brandweer was gearriveerd",
+     "subject": "de brandweer",
+     "finite": "was",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de brandweer' comes first and the group 'was gearriveerd' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kon niemand meer naar binnen",
+     "subject": "niemand",
+     "finite": "kon",
+     "role": "main clause (the later action)",
+     "why": "The modal 'kon' comes first, then the subject 'niemand', 'meer' and the direction 'naar binnen'; a verb of motion is understood."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de brandweer"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "was"
+    },
+    {
+     "label": "past participle",
+     "text": "gearriveerd"
+    },
+    {
+     "label": "finite verb (modal, past)",
+     "text": "kon"
+    },
+    {
+     "label": "subject",
+     "text": "niemand"
+    },
+    {
+     "label": "adverb",
+     "text": "meer"
+    },
+    {
+     "label": "direction",
+     "text": "naar binnen"
+    }
+   ],
+   "meaning": "After the fire brigade had arrived, nobody could go in any more.",
+   "order": "After a modal, a verb of motion can be left out: 'kon niemand meer naar binnen' means nobody could go in any more.",
+   "forms": "arriveren: was gearriveerd. kunnen: niemand kon.",
+   "compare": "English 'could go in' needs 'go'. Dutch can leave it out after the modal.",
+   "mistakes": [
+    {
+     "wrong": "Nadat de brandweer was gearriveerd, niemand kon meer naar binnen.",
+     "right": "Nadat de brandweer was gearriveerd, kon niemand meer naar binnen.",
+     "why": "The main clause starts with the modal: 'kon niemand'."
+    },
+    {
+     "wrong": "Nadat de brandweer had gearriveerd, kon niemand meer naar binnen.",
+     "right": "Nadat de brandweer was gearriveerd, kon niemand meer naar binnen.",
+     "why": "'Arriveren' takes 'zijn': 'was gearriveerd'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Niemand kon meer naar binnen nadat de brandweer was gearriveerd.",
+    "english": "Nobody could go in any more after the fire brigade had arrived.",
+    "note": "With the main clause first there is no inversion. Compare: Niemand kon meer naar binnen nadat de brandweer was gearriveerd."
+   }
+  },
+  "pat-nadat-40": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Completing the investigation came first; the passive 'was afgerond' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij schreef een rapport",
+     "subject": "Zij",
+     "finite": "schreef",
+     "role": "main clause (the later action)",
+     "why": "Zij is first, so the past form 'schreef' is second and the object 'een rapport' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat het onderzoek was afgerond",
+     "subject": "het onderzoek",
+     "finite": "was",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'het onderzoek' comes first and the passive group 'was afgerond' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "schreef"
+    },
+    {
+     "label": "object",
+     "text": "een rapport"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "het onderzoek"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "was"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "afgerond"
+    }
+   ],
+   "meaning": "She wrote a report after the investigation had been completed.",
+   "order": "The passive state 'was afgerond' means the investigation was finished. The participle of 'afronden' is 'afgerond'.",
+   "forms": "schrijven: zij schreef. afronden: was afgerond.",
+   "compare": "English 'had been completed' needs 'been'. Dutch uses 'was afgerond'. For this card: \"Zij schreef een rapport nadat het onderzoek was afgerond\".",
+   "mistakes": [
+    {
+     "wrong": "Zij schreef een rapport nadat het onderzoek afgerond.",
+     "right": "Zij schreef een rapport nadat het onderzoek was afgerond.",
+     "why": "The auxiliary 'was' is missing from the nadat-clause. (not \"Zij schreef een rapport nadat het onderzoek afgerond.\", but \"Zij schreef een rapport nadat het onderzoek was afgerond.\")"
+    },
+    {
+     "wrong": "Zij schreef een rapport nadat het onderzoek was ronde af.",
+     "right": "Zij schreef een rapport nadat het onderzoek was afgerond.",
+     "why": "The participle of a separable verb is one word: 'afgerond'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat het onderzoek was afgerond, schreef zij een rapport.",
+    "english": "After the investigation had been completed, she wrote a report.",
+    "note": "The nadat-clause first inverts the main clause to 'schreef zij'."
+   }
+  },
+  "pat-nadat-41": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "na = after (preposition)",
+    "why": "'Na de les' is a prepositional phrase: it names a moment with a noun and needs no second verb, unlike nadat."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Na de les ga ik naar huis",
+     "subject": "ik",
+     "finite": "ga",
+     "role": "single main clause",
+     "why": "The phrase 'na de les' is first, so 'ga' is second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "preposition (after)",
+     "text": "Na"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de les"
+    },
+    {
+     "label": "finite verb",
+     "text": "ga"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "direction",
+     "text": "naar huis"
+    }
+   ],
+   "meaning": "After the lesson I go home.",
+   "order": "The fronted phrase makes the verb second and puts the subject behind it. No dependent clause is involved. Read it as \"Na de les ga ik naar huis\".",
+   "forms": "gaan: ik ga.",
+   "compare": "English 'After the lesson' is also a prepositional phrase. For this card: \"Na de les ga ik naar huis\".",
+   "mistakes": [
+    {
+     "wrong": "Na de les ik ga naar huis.",
+     "right": "Na de les ga ik naar huis.",
+     "why": "After the fronted phrase the verb comes second: 'ga ik'."
+    },
+    {
+     "wrong": "Na de les ga ik huis naar.",
+     "right": "Na de les ga ik naar huis.",
+     "why": "'Naar huis' keeps its order. (not \"Na de les ga ik huis naar.\", but \"Na de les ga ik naar huis.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat de les is afgelopen, ga ik naar huis.",
+    "english": "After the lesson is over, I go home.",
+    "note": "With a verb after the time word you need the conjunction 'nadat'."
+   }
+  },
+  "pat-nadat-42": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "daarna = after that (adverb)",
+    "why": "'Daarna' is an adverb that points to the following step; it fills position one and the verb follows."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Daarna kijken we een film",
+     "subject": "we",
+     "finite": "kijken",
+     "role": "single main clause",
+     "why": "The adverb 'daarna' is first, so the plural 'kijken' is second and the subject 'we' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (after that)",
+     "text": "Daarna"
+    },
+    {
+     "label": "finite verb",
+     "text": "kijken"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "een film"
+    }
+   ],
+   "meaning": "After that we watch a film.",
+   "order": "A single main clause: the adverb replaces a whole earlier event. No verb goes to the end. Read it as \"Daarna kijken we een film\".",
+   "forms": "kijken: wij kijken.",
+   "compare": "English 'After that we watch' keeps the subject first. Dutch inverts. For this card: \"Daarna kijken we een film\".",
+   "mistakes": [
+    {
+     "wrong": "Daarna we kijken een film.",
+     "right": "Daarna kijken we een film.",
+     "why": "After the adverb the verb comes second: 'kijken we'."
+    },
+    {
+     "wrong": "Daarna kijkt we een film.",
+     "right": "Daarna kijken we een film.",
+     "why": "The plural 'we' needs 'kijken'. (not \"Daarna kijkt we een film.\", but \"Daarna kijken we een film.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat we hebben gegeten, kijken we een film.",
+    "english": "After we have eaten, we watch a film.",
+    "note": "With a clause instead of an adverb you need 'nadat' and a final perfect group."
+   }
+  },
+  "pat-nadat-43": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "vervolgens = then (adverb)",
+    "why": "'Vervolgens' is an adverb of sequence: it takes position one and the verb follows, with the subject behind it."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Vervolgens stuur ik de factuur",
+     "subject": "ik",
+     "finite": "stuur",
+     "role": "single main clause",
+     "why": "The adverb 'vervolgens' is first, so 'stuur' is second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (then)",
+     "text": "Vervolgens"
+    },
+    {
+     "label": "finite verb",
+     "text": "stuur"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de factuur"
+    }
+   ],
+   "meaning": "Then I send the invoice.",
+   "order": "Because the adverb fills position one, the subject follows the verb. This is the main-clause counterpart of a nadat-clause.",
+   "forms": "sturen: ik stuur.",
+   "compare": "English 'Then I send' keeps the subject first. Dutch inverts. For this card: \"Vervolgens stuur ik de factuur\".",
+   "mistakes": [
+    {
+     "wrong": "Vervolgens ik stuur de factuur.",
+     "right": "Vervolgens stuur ik de factuur.",
+     "why": "After the adverb the verb comes second: 'stuur ik'."
+    },
+    {
+     "wrong": "Vervolgens stuurt ik de factuur.",
+     "right": "Vervolgens stuur ik de factuur.",
+     "why": "With 'ik' the verb has no ending: 'stuur'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik stuur de factuur nadat ik het werk heb afgerond.",
+    "english": "I send the invoice after I have finished the work.",
+    "note": "With 'nadat' the earlier step becomes a clause with a final perfect group."
+   }
+  },
+  "pat-nadat-44": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Winning the final is the earlier event; 'hadden gewonnen' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We vierden feest",
+     "subject": "We",
+     "finite": "vierden",
+     "role": "main clause (the later action)",
+     "why": "We is first, so the plural past 'vierden' is second and the object 'feest' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat we de finale hadden gewonnen",
+     "subject": "we",
+     "finite": "hadden",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'we' comes first, then the object 'de finale', and the plural past perfect 'hadden gewonnen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vierden"
+    },
+    {
+     "label": "object",
+     "text": "feest"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de finale"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hadden"
+    },
+    {
+     "label": "past participle",
+     "text": "gewonnen"
+    }
+   ],
+   "meaning": "We celebrated after we had won the final.",
+   "order": "'Feest vieren' is a fixed phrase. The strong participle 'gewonnen' ends the nadat-clause. Read it as \"We vierden feest nadat we de finale hadden gewonnen\".",
+   "forms": "vieren: wij vierden. winnen: hadden gewonnen.",
+   "compare": "English 'celebrated' is a single verb. Dutch uses 'feest vieren'. For this card: \"We vierden feest nadat we de finale hadden gewonnen\".",
+   "mistakes": [
+    {
+     "wrong": "We vierden feest nadat we hadden de finale gewonnen.",
+     "right": "We vierden feest nadat we de finale hadden gewonnen.",
+     "why": "The past perfect goes behind the object. (not \"We vierden feest nadat we hadden de finale gewonnen.\", but \"We vierden feest nadat we de finale hadden gewonnen.\")"
+    },
+    {
+     "wrong": "We vierden feest nadat we de finale hadden gewinnen.",
+     "right": "We vierden feest nadat we de finale hadden gewonnen.",
+     "why": "The participle is 'gewonnen'. (not \"We vierden feest nadat we de finale hadden gewinnen.\", but \"We vierden feest nadat we de finale hadden gewonnen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat we de finale hadden gewonnen, vierden we feest.",
+    "english": "After we had won the final, we celebrated.",
+    "note": "The nadat-clause first inverts the main clause to 'vierden we'."
+   }
+  },
+  "pat-nadat-45": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Hearing the advice came first; the main clause has a te-infinitive after 'besloot'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat ik het advies had gehoord",
+     "subject": "ik",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first, then the object 'het advies', and the past perfect 'had gehoord' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "besloot ik te wachten",
+     "subject": "ik",
+     "finite": "besloot",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'besloot' comes first, then the subject 'ik'; the group 'te wachten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het advies"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gehoord"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "besloot"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "infinitive group",
+     "text": "te wachten"
+    }
+   ],
+   "meaning": "After I had heard the advice, I decided to wait.",
+   "order": "'Besluiten' takes 'te' + infinitive. The main clause inverts to 'besloot ik te wachten'. Read it as \"Nadat ik het advies had gehoord, besloot ik te wachten\".",
+   "forms": "horen: had gehoord. besluiten: ik besloot.",
+   "compare": "English 'decided to wait' uses 'to'. Dutch uses 'te wachten'. For this card: \"Nadat ik het advies had gehoord, besloot ik te wachten\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat ik het advies had gehoord, ik besloot te wachten.",
+     "right": "Nadat ik het advies had gehoord, besloot ik te wachten.",
+     "why": "The main clause starts with the verb: 'besloot ik'."
+    },
+    {
+     "wrong": "Nadat ik het advies had gehoord, besloot ik wachten.",
+     "right": "Nadat ik het advies had gehoord, besloot ik te wachten.",
+     "why": "'Besluiten' needs 'te' before the infinitive."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik besloot te wachten nadat ik het advies had gehoord.",
+    "english": "I decided to wait after I had heard the advice.",
+    "note": "With the main clause first there is no inversion. Compare: Ik besloot te wachten nadat ik het advies had gehoord."
+   }
+  },
+  "pat-nadat-46": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Seeing the burglar came first; 'had gezien' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij belde de politie",
+     "subject": "Hij",
+     "finite": "belde",
+     "role": "main clause (the later action)",
+     "why": "Hij is first, so the past form 'belde' is second and the object 'de politie' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat hij de inbreker had gezien",
+     "subject": "hij",
+     "finite": "had",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'hij' comes first, then the object 'de inbreker', and the past perfect 'had gezien' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "belde"
+    },
+    {
+     "label": "object",
+     "text": "de politie"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "de inbreker"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "past participle",
+     "text": "gezien"
+    }
+   ],
+   "meaning": "He called the police after he had seen the burglar.",
+   "order": "The strong verb 'zien' has the participle 'gezien'. The nadat-clause explains the reason for the call in time. Read it as \"Hij belde de politie nadat hij de inbreker had gezien\".",
+   "forms": "bellen: hij belde. zien: had gezien.",
+   "compare": "English 'had seen' is the same tense. For this card: \"Hij belde de politie nadat hij de inbreker had gezien\".",
+   "mistakes": [
+    {
+     "wrong": "Hij belde de politie nadat hij had de inbreker gezien.",
+     "right": "Hij belde de politie nadat hij de inbreker had gezien.",
+     "why": "The past perfect goes behind the object. (not \"Hij belde de politie nadat hij had de inbreker gezien.\", but \"Hij belde de politie nadat hij de inbreker had gezien.\")"
+    },
+    {
+     "wrong": "Hij belde de politie nadat hij de inbreker had gezeen.",
+     "right": "Hij belde de politie nadat hij de inbreker had gezien.",
+     "why": "The participle of 'zien' is 'gezien'. (not \"Hij belde de politie nadat hij de inbreker had gezeen.\", but \"Hij belde de politie nadat hij de inbreker had gezien.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat hij de inbreker had gezien, belde hij de politie.",
+    "english": "After he had seen the burglar, he called the police.",
+    "note": "The nadat-clause first inverts the main clause. Compare: Nadat hij de inbreker had gezien, belde hij de politie."
+   }
+  },
+  "pat-nadat-47": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The installation finishes first; 'opnieuw opstarten' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat de update is geïnstalleerd",
+     "subject": "de update",
+     "finite": "is",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de update' comes first and the passive group 'is geïnstalleerd' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "start de computer opnieuw op",
+     "subject": "de computer",
+     "finite": "start",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'start' comes first, then the subject 'de computer' and the adverb 'opnieuw'; the particle 'op' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de update"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "geïnstalleerd"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "start"
+    },
+    {
+     "label": "subject",
+     "text": "de computer"
+    },
+    {
+     "label": "adverb",
+     "text": "opnieuw"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    }
+   ],
+   "meaning": "After the update has been installed, the computer restarts.",
+   "order": "Verbs ending in -eren form the participle without 'ge-': 'installeren' gives 'geïnstalleerd' with a diaeresis on the i. 'Opstarten' splits as 'start ... op'.",
+   "forms": "installeren: is geïnstalleerd. opstarten: start ... op.",
+   "compare": "English 'restarts' is a single verb. Dutch uses 'opnieuw opstarten'. For this card: \"Nadat de update is geïnstalleerd, start de computer opnieuw op\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat de update is geïnstalleerd, de computer start opnieuw op.",
+     "right": "Nadat de update is geïnstalleerd, start de computer opnieuw op.",
+     "why": "The main clause starts with the verb: 'start de computer'."
+    },
+    {
+     "wrong": "Nadat de update is geïnstalleerd, start de computer op opnieuw.",
+     "right": "Nadat de update is geïnstalleerd, start de computer opnieuw op.",
+     "why": "The adverb 'opnieuw' stands before the particle. (not \"Nadat de update is geïnstalleerd, start de computer op opnieuw.\", but \"Nadat de update is geïnstalleerd, start de computer opnieuw op.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De computer start opnieuw op nadat de update is geïnstalleerd.",
+    "english": "The computer restarts after the update has been installed.",
+    "note": "With the main clause first there is no inversion. Compare: De computer start opnieuw op nadat de update is geïnstalleerd."
+   }
+  },
+  "pat-nadat-48": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "The bell rings first; 'is gegaan' uses 'gaan' for a bell."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De leerlingen mogen naar buiten",
+     "subject": "De leerlingen",
+     "finite": "mogen",
+     "role": "main clause (the later action)",
+     "why": "'De leerlingen' is first, so the plural modal 'mogen' is second; the direction 'naar buiten' follows and a verb of motion is understood."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat de bel is gegaan",
+     "subject": "de bel",
+     "finite": "is",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'de bel' comes first and the group 'is gegaan' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De leerlingen"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "mogen"
+    },
+    {
+     "label": "direction",
+     "text": "naar buiten"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "de bel"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "gegaan"
+    }
+   ],
+   "meaning": "The pupils may go outside after the bell has rung.",
+   "order": "After a modal, a verb of motion can be left out: 'mogen naar buiten'. 'Gaan' takes 'zijn' in the perfect. Read it as \"De leerlingen mogen naar buiten nadat de bel is gegaan\".",
+   "forms": "mogen: de leerlingen mogen. gaan: is gegaan.",
+   "compare": "English 'may go outside' needs 'go'. Dutch can leave it out. For this card: \"De leerlingen mogen naar buiten nadat de bel is gegaan\".",
+   "mistakes": [
+    {
+     "wrong": "De leerlingen mogen naar buiten nadat de bel heeft gegaan.",
+     "right": "De leerlingen mogen naar buiten nadat de bel is gegaan.",
+     "why": "'Gaan' takes 'zijn': 'is gegaan'. (not \"De leerlingen mogen naar buiten nadat de bel heeft gegaan.\", but \"De leerlingen mogen naar buiten nadat de bel is gegaan.\")"
+    },
+    {
+     "wrong": "De leerlingen mag naar buiten nadat de bel is gegaan.",
+     "right": "De leerlingen mogen naar buiten nadat de bel is gegaan.",
+     "why": "The plural subject needs 'mogen'. (not \"De leerlingen mag naar buiten nadat de bel is gegaan.\", but \"De leerlingen mogen naar buiten nadat de bel is gegaan.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat de bel is gegaan, mogen de leerlingen naar buiten.",
+    "english": "After the bell has rung, the pupils may go outside.",
+    "note": "The nadat-clause first inverts the main clause to 'mogen de leerlingen'."
+   }
+  },
+  "pat-nadat-49": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Signing came first; the dinner followed. 'Vierden ze het' uses 'het' for the signing."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Nadat ze het contract hadden getekend",
+     "subject": "ze",
+     "finite": "hadden",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ze' comes first, then the object 'het contract', and the plural past perfect 'hadden getekend' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "vierden ze het met een diner",
+     "subject": "ze",
+     "finite": "vierden",
+     "role": "main clause (the later action)",
+     "why": "The finite verb 'vierden' comes first, then the subject 'ze', the object 'het' and the phrase 'met een diner'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (after)",
+     "text": "Nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "het contract"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hadden"
+    },
+    {
+     "label": "past participle",
+     "text": "getekend"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vierden"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "met een diner"
+    }
+   ],
+   "meaning": "After they had signed the contract, they celebrated with a dinner.",
+   "order": "'Vieren' takes a direct object 'het' (the signing) and 'met' for the way of celebrating. Read it as \"Nadat ze het contract hadden getekend, vierden ze het met een diner\".",
+   "forms": "tekenen: hadden getekend. vieren: ze vierden.",
+   "compare": "English 'celebrated it with a dinner' has the same phrase. For this card: \"Nadat ze het contract hadden getekend, vierden ze het met een diner\".",
+   "mistakes": [
+    {
+     "wrong": "Nadat ze het contract hadden getekend, ze vierden het met een diner.",
+     "right": "Nadat ze het contract hadden getekend, vierden ze het met een diner.",
+     "why": "The main clause starts with the verb: 'vierden ze'."
+    },
+    {
+     "wrong": "Nadat ze het contract had getekend, vierden ze het met een diner.",
+     "right": "Nadat ze het contract hadden getekend, vierden ze het met een diner.",
+     "why": "The plural 'ze' needs 'hadden'. (not \"Nadat ze het contract had getekend, vierden ze het met een diner.\", but \"Nadat ze het contract hadden getekend, vierden ze het met een diner.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze vierden het met een diner nadat ze het contract hadden getekend.",
+    "english": "They celebrated it with a dinner after they had signed the contract.",
+    "note": "With the main clause first there is no inversion. Compare: Ze vierden het met een diner nadat ze het contract hadden getekend."
+   }
+  },
+  "pat-nadat-50": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "nadat = after (conjunction)",
+    "why": "Sleeping is the earlier event; the short perfect 'heb geslapen' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik voel me beter",
+     "subject": "Ik",
+     "finite": "voel",
+     "role": "main clause (the later action)",
+     "why": "Ik is first, so 'voel' is second; the reflexive 'me' and the predicate 'beter' follow."
+    },
+    {
+     "kind": "bijzin",
+     "text": "nadat ik heb geslapen",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "nadat-clause (the earlier event)",
+     "why": "The subject 'ik' comes first and the perfect group 'heb geslapen' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "voel"
+    },
+    {
+     "label": "reflexive",
+     "text": "me"
+    },
+    {
+     "label": "predicate",
+     "text": "beter"
+    },
+    {
+     "label": "conjunction (after)",
+     "text": "nadat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "geslapen"
+    }
+   ],
+   "meaning": "I feel better after I have slept.",
+   "order": "'Zich voelen' is reflexive. The nadat-clause names the cause in time. Read it as \"Ik voel me beter nadat ik heb geslapen\".",
+   "forms": "voelen: ik voel me. slapen: heb geslapen.",
+   "compare": "English 'I feel better' needs no reflexive. Dutch uses 'me'. For this card: \"Ik voel me beter nadat ik heb geslapen\".",
+   "mistakes": [
+    {
+     "wrong": "Ik voel me beter nadat ik geslapen.",
+     "right": "Ik voel me beter nadat ik heb geslapen.",
+     "why": "The auxiliary 'heb' is missing from the nadat-clause. (not \"Ik voel me beter nadat ik geslapen.\", but \"Ik voel me beter nadat ik heb geslapen.\")"
+    },
+    {
+     "wrong": "Ik voel beter me nadat ik heb geslapen.",
+     "right": "Ik voel me beter nadat ik heb geslapen.",
+     "why": "The reflexive 'me' stands before the predicate."
+    }
+   ],
+   "contrast": {
+    "dutch": "Nadat ik heb geslapen, voel ik me beter.",
+    "english": "After I have slept, I feel better.",
+    "note": "The nadat-clause first inverts the main clause to 'voel ik me'."
+   }
+  }
+ }
+}

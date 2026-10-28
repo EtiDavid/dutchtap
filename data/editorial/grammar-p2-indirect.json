@@ -1,0 +1,1277 @@
+[
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet wie er komt.",
+    "english": "I don't know who is coming.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je organiseert een etentje en de gastenlijst is niet rond. Zeg dat je niet weet wie er langskomt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vraagt wie de brief heeft geschreven.",
+    "english": "She asks who wrote the letter.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt wat je zus wil achterhalen over een anonieme brief. Geef haar vraag weer.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Kun je zeggen wie dit heeft gedaan?",
+    "english": "Can you say who did this?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Er ligt een gebroken vaas op de vloer. Vraag een collega beleefd naar de dader.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik vraag me af wie hij uitnodigt.",
+    "english": "I wonder who he is inviting.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een vriend plant een feest. Zeg dat je benieuwd bent naar zijn gastenlijst.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Niemand weet wie de nieuwe directeur wordt.",
+    "english": "Nobody knows who the new director will be.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Op kantoor gonst het van geruchten. Beschrijf de onzekerheid over de opvolging.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij wil weten met wie ze praat.",
+    "english": "He wants to know who she is talking to.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je ziet een ongerust persoon kijken naar iemand aan de telefoon. Geef weer wat hij zich afvraagt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Vertel me wie je gisteren hebt gezien.",
+    "english": "Tell me who you saw yesterday.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een agent stelt een getuige een open vraag. Geef de opdracht.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We onderzoeken wie toegang heeft gehad tot de map.",
+    "english": "We are investigating who has had access to the folder.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een beveiligingsmedewerker legt uit waar het team aan werkt. Beschrijf het onderzoek.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik zie niet wie er binnenkomt.",
+    "english": "I can't see who is coming in.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je staat achter een gesloten balie en hoort de deur. Zeg wat je niet kunt zien.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Weet je van wie deze jas is?",
+    "english": "Do you know whose coat this is?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Er hangt een onbekende jas in de gang. Vraag een collega naar de eigenaar.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wie",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wie"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet wat hij wil.",
+    "english": "I don't know what he wants.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een klant gedraagt zich vreemd bij de balie. Zeg dat zijn bedoeling je niet duidelijk is.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vraagt wat dit kost.",
+    "english": "She asks what this costs.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over een klant bij de kassa. Geef haar vraag over de prijs weer.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Vertel me wat er is gebeurd.",
+    "english": "Tell me what happened.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega komt aangeslagen binnen. Geef hem een open uitnodiging om te vertellen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik begrijp niet wat je bedoelt.",
+    "english": "I don't understand what you mean.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een vriend legt iets onduidelijk uit. Zeg dat de betekenis je ontgaat.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Kun je uitleggen wat dit betekent?",
+    "english": "Can you explain what this means?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je staat voor een onbekend pictogram op het scherm. Vraag een collega om uitleg.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij laat zien wat hij heeft gemaakt.",
+    "english": "He shows what he has made.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een kind komt trots uit zijn kamer. Beschrijf wat hij doet.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We controleren wat er ontbreekt.",
+    "english": "We are checking what is missing.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een lading is aangekomen maar de lijst klopt niet. Zeg wat jullie nakijken.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik hoor niet wat ze zegt.",
+    "english": "I can't hear what she is saying.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je zit achterin een drukke zaal. Zeg wat er misgaat met het geluid.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Weet je wat ik denk?",
+    "english": "Do you know what I think?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je wilt een vriend een gedachte onthullen. Begin met een vraag naar zijn vermoeden.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik vraag me af wat ze nodig heeft.",
+    "english": "I wonder what she needs.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een nieuwe collega lijkt te zoeken. Zeg dat je je zorgen maakt over haar behoefte.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zeg me wat je wilt drinken.",
+    "english": "Tell me what you want to drink.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een gast komt binnen. Nodig hem uit om zijn keuze te noemen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik moet nog uitzoeken wat de fout veroorzaakt.",
+    "english": "I still have to find out what is causing the error.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een manager vraagt naar de stand van zaken. Zeg wat er nog open staat.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wat"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet waar hij woont.",
+    "english": "I don't know where he lives.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je wilt een collega een kaart sturen. Zeg dat je zijn adres niet kent.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vraagt waar de uitgang is.",
+    "english": "She asks where the exit is.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over een toerist in een groot gebouw. Geef haar vraag weer.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Kun je me vertellen waar de bus stopt?",
+    "english": "Can you tell me where the bus stops?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je staat in een vreemde stad. Vraag een voorbijganger om informatie.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik ben vergeten waar ik mijn sleutels heb gelegd.",
+    "english": "I forgot where I put my keys.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je zoekt koortsachtig in huis. Leg uit wat je kwijt bent.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij wil weten waar het kantoor is.",
+    "english": "He wants to know where the office is.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een nieuwe medewerker komt aan. Geef weer wat hij zoekt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We zoeken uit waar het lek zit.",
+    "english": "We are finding out where the leak is.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "De monteur belt over het water in de kelder. Zeg wat jullie nu doen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Weet je waar ze naartoe gaat?",
+    "english": "Do you know where she is going?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je ziet een collega haastig vertrekken. Vraag naar haar bestemming.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik snap niet waar je het over hebt.",
+    "english": "I don't get what you are talking about.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een vriend begint over een onbekend onderwerp. Zeg dat je hem niet kunt volgen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vertelt waar ze mee bezig is.",
+    "english": "She tells what she is working on.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega geeft een korte update. Beschrijf haar onderwerp zonder het te noemen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik vraag me af waar hij op wacht.",
+    "english": "I wonder what he is waiting for.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je ziet iemand roerloos bij een deur staan. Zeg wat je je afvraagt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Laat me zien waar je aan werkt.",
+    "english": "Show me what you are working on.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega zit achter een scherm vol code. Vraag hem zijn werk te tonen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet meer waar ik het voor nodig had.",
+    "english": "I no longer know what I needed it for.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vindt een vreemd onderdeel in een la. Zeg dat je het doel vergeten bent.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Niemand weet waar de fout vandaan komt.",
+    "english": "Nobody knows where the error comes from.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Het hele team zoekt naar een oorzaak. Beschrijf de situatie.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij vroeg waar wij heen wilden gaan.",
+    "english": "He asked where we wanted to go.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over een taxichauffeur. Geef weer wat hij wilde weten.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet waarom ze huilt.",
+    "english": "I don't know why she is crying.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je ziet een collega verdrietig zitten. Zeg dat je de reden niet kent.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waarom",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waarom"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vraagt waarom de trein vertraagd is.",
+    "english": "She asks why the train is delayed.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over een reiziger bij de informatiebalie. Geef haar vraag weer.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waarom",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waarom"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Vertel me waarom je gebeld hebt.",
+    "english": "Tell me why you called.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een onbekende staat aan de lijn. Nodig hem uit zijn reden te noemen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waarom",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waarom"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik begrijp niet waarom hij dit doet.",
+    "english": "I don't understand why he does this.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega neemt een vreemd besluit. Spreek je verbazing uit.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waarom",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waarom"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We onderzoeken waarom het systeem crasht.",
+    "english": "We are investigating why the system crashes.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een klant belt over onverwachte uitval. Zeg wat jullie uitzoeken.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waarom",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waarom"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik vraag me af waarom niemand reageert.",
+    "english": "I wonder why nobody reacts.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je hebt een bericht gestuurd zonder antwoord. Zeg wat je bezighoudt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waarom",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waarom"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij legt uit waarom hij te laat was.",
+    "english": "He explains why he was late.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega komt laat binnen. Beschrijf wat hij vertelt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waarom",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waarom"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Kun je zeggen waarom het niet werkt?",
+    "english": "Can you say why it doesn't work?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een apparaat doet het niet. Vraag een technicus naar de oorzaak.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waarom",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waarom"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet hoe dit werkt.",
+    "english": "I don't know how this works.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je staat voor een onbekende machine. Zeg dat de werking je ontgaat.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoe",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoe"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vraagt hoe laat de winkel opengaat.",
+    "english": "She asks what time the shop opens.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over een klant voor de deur. Geef haar vraag over het tijdstip weer.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoe",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoe"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Laat me zien hoe je het doet.",
+    "english": "Show me how you do it.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega beheerst een handigheid. Vraag hem een demonstratie.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoe",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoe"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij vertelt hoe hij hier terechtkwam.",
+    "english": "He tells how he ended up here.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een nieuwe collega vertelt zijn levensverhaal. Beschrijf zijn onderwerp.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoe",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoe"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We bespreken hoe we dit oplossen.",
+    "english": "We discuss how we are going to solve this.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een team zit rond de tafel met een probleem. Zeg wat jullie nu doen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoe",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoe"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik begrijp niet hoe je dat bedoelt.",
+    "english": "I don't understand how you mean that.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een opmerking klinkt dubbelzinnig. Vraag voorzichtig om toelichting.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoe",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoe"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Kun je uitleggen hoe ik me aanmeld?",
+    "english": "Can you explain how I log in?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je zit vast bij een inlogscherm. Vraag een collega naar de stappen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoe",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoe"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij vraagt hoe het met je gaat.",
+    "english": "He asks how you are doing.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je ontmoet een oude kennis. Geef weer wat hij belangstellend vraagt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoe",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoe"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik wil weten wanneer de pakketten aankomen.",
+    "english": "I want to know when the parcels arrive.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een klant belt over zijn bestelling. Zeg wat je nodig hebt aan informatie.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wanneer",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wanneer"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij weet nog niet wanneer ze vertrekt.",
+    "english": "She doesn't know yet when she leaves.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over de reisplannen van een collega. Geef haar onzekerheid weer.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wanneer",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wanneer"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Kun je zeggen wanneer de vergadering eindigt?",
+    "english": "Can you say when the meeting ends?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je moet een afspraak plannen. Vraag een collega naar het eindtijdstip.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wanneer",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wanneer"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We spreken af wanneer we elkaar zien.",
+    "english": "We agree when we will see each other.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Twee vrienden maken een afspraak. Beschrijf het resultaat van hun overleg.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "wanneer",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "wanneer"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet welke trein ik moet nemen.",
+    "english": "I don't know which train I have to take.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je staat op een druk station. Zeg wat je probleem is.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "welke",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "welke"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vraagt welk gerecht je wilt.",
+    "english": "She asks which dish you want.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over de ober. Geef weer wat hij wil weten.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "welke",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "welke"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij laat zien welke knop je moet indrukken.",
+    "english": "He shows which button you have to press.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega demonstreert een apparaat. Beschrijf wat hij toont.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "welke",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "welke"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We zoeken uit welke optie het goedkoopst is.",
+    "english": "We are finding out which option is cheapest.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een team vergelijkt aanbieders. Zeg waar jullie mee bezig zijn.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "welke",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "welke"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Weet je welke bus naar het station gaat?",
+    "english": "Do you know which bus goes to the station?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je bent op zoek naar de juiste halte. Vraag een omstander.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "welke",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "welke"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik kan niet kiezen welk boek ik koop.",
+    "english": "I can't choose which book I'll buy.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je staat in een boekwinkel. Zeg dat je twijfelt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "welke",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "welke"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vertelt welke taken al klaar zijn.",
+    "english": "She tells which tasks are already done.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega geeft een voortgangsrapport. Beschrijf haar mededeling.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "welke",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "welke"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Kun je aangeven welke bestanden ontbreken?",
+    "english": "Can you indicate which files are missing?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een controle toont dat de map onvolledig is. Vraag een collega om duidelijkheid.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "welke",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "welke"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet hoeveel dit kost.",
+    "english": "I don't know how much this costs.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Er hangt geen prijskaartje aan een product. Zeg dat je de prijs niet kent.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoeveel",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoeveel"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vraagt hoeveel mensen er komen.",
+    "english": "She asks how many people are coming.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over de organisator van een feest. Geef haar vraag weer.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoeveel",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoeveel"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We tellen hoeveel stoelen er nodig zijn.",
+    "english": "We are counting how many chairs are needed.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Jullie bereiden een evenement voor. Zeg wat jullie nu doen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoeveel",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoeveel"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij wil weten hoe lang de reis duurt.",
+    "english": "He wants to know how long the trip takes.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een toerist staat bij het loket. Geef weer wat hij wil weten.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoeveel",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoeveel"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik vraag me af hoe ver het nog is.",
+    "english": "I wonder how far it still is.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je loopt al uren door een onbekend gebied. Zeg wat je bezighoudt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoeveel",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoeveel"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Kun je zeggen hoe oud het gebouw is?",
+    "english": "Can you say how old the building is?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je staat voor een monument. Vraag een gids om informatie.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "hoeveel",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "hoeveel"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij vertelt waarover de vergadering gaat.",
+    "english": "She tells what the meeting is about.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega informeert je kort voor een overleg. Beschrijf wat zij uitlegt.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik begrijp niet waarvoor dit nodig is.",
+    "english": "I don't understand what this is needed for.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je krijgt een onbekend formulier. Zeg dat het doel je ontgaat.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij vraagt waarmee je dit hebt gemaakt.",
+    "english": "He asks what you made this with.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een ambachtsman bekijkt je werk. Geef weer wat hij wil weten.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "We onderzoeken waardoor de fout ontstaat.",
+    "english": "We are investigating what causes the error.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Het team zoekt de oorzaak van een terugkerend probleem. Zeg wat jullie doen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik wil weten waarop je je baseert.",
+    "english": "I want to know what you base yourself on.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een collega presenteert een stelling zonder bron. Vraag naar zijn basis.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Weet je waarvan hij leeft?",
+    "english": "Do you know what he lives on?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je hoort iets raadselachtigs over een buurman. Vraag naar zijn inkomen.",
+    "why": "The question word starts an embedded question, and the verb of that clause goes to the end.",
+    "focus": "waar",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "waar"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Waar woont hij?",
+    "english": "Where does he live?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je wilt het adres van een collega. Stel de vraag direct, zonder inleiding.",
+    "why": "A direct question has the question word first and the verb second; there is no embedded clause.",
+    "focus": "direct",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "direct"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Wie heeft de brief geschreven?",
+    "english": "Who wrote the letter?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Er ligt een onbekende brief op tafel. Stel een directe vraag naar de schrijver.",
+    "why": "A direct question has the question word first and the verb second; there is no embedded clause.",
+    "focus": "direct",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "direct"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hoe werkt dit?",
+    "english": "How does this work?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je staat voor een nieuw apparaat. Stel een korte, directe vraag.",
+    "why": "A direct question has the question word first and the verb second; there is no embedded clause.",
+    "focus": "direct",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "direct"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Waarom huilt ze?",
+    "english": "Why is she crying?",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je ziet iemand huilen op de gang. Stel een directe vraag aan een collega.",
+    "why": "A direct question has the question word first and the verb second; there is no embedded clause.",
+    "focus": "direct",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "direct"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik weet niet wie wat heeft besteld.",
+    "english": "I don't know who ordered what.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je brengt gerechten rond maar de bestelling is door elkaar. Zeg wat je niet weet.",
+    "why": "Two question words in one embedded question still send the verb to the end.",
+    "focus": "dubbel",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "dubbel"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik heb niet gehoord wat hij zei.",
+    "english": "I didn't hear what he said.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je was afgeleid tijdens een gesprek. Zeg wat je gemist hebt.",
+    "why": "The embedded question after a perfect main clause keeps the verb last.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Zij wist niet meer wie haar had gebeld.",
+    "english": "She no longer knew who had called her.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over een vergeetachtige collega. Geef weer wat zij kwijt was.",
+    "why": "The embedded question can contain a past perfect; both parts close the clause.",
+    "focus": "pastperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "pastperfect"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Ik vraag me af hoe het zou aflopen.",
+    "english": "I wonder how it would turn out.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Je vertelt over een spannende periode. Zeg wat je je destijds afvroeg.",
+    "why": "The conditional zou ends the embedded question next to its infinitive.",
+    "focus": "conditional",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "conditional"
+    }
+  },
+  {
+    "topic": "indirect",
+    "dutch": "Hij zegt niet waar ze is.",
+    "english": "He doesn't say where she is.",
+    "scenario": "Say what happens, choosing the right form.",
+    "scenarioNl": "Een vriend weigert iets te vertellen. Beschrijf zijn zwijgen.",
+    "why": "Niet belongs to the main clause; the embedded question sends its verb to the end.",
+    "focus": "negation",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-indirect-v1",
+      "focus": "negation"
+    }
+  }
+]

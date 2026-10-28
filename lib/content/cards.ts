@@ -31,6 +31,8 @@ export type LCard = {
   audio?: string;
   audioStatus?: string;
   adapted?: boolean;
+  /** For a grammar alias: the id of the one original sentence it points at. */
+  originCardId?: string;
   /** Where the sentence text came from, for the review table. */
   review?: FrenchReview;
 };
@@ -72,7 +74,7 @@ function dutchCard(card: Card): LCard {
     scenario: situationEnFor(card.id) ?? scenarioFor(card.dutch, card.scenario),
     // An authored Dutch-first situation wins over an older one that gave the conjunction away.
     scenarioNl: situationNlFor(card.id) ?? card.scenarioNl,
-    cue: situationEnFor(card.id) ?? card.cue,
+    cue: card.cue === card.scenario ? (situationEnFor(card.id) ?? card.cue) : card.cue,
     variation: card.variation,
     difficulty: card.difficulty ?? "beginner",
     vocabularyIds: card.vocabularyIds ?? [],
@@ -81,6 +83,7 @@ function dutchCard(card: Card): LCard {
     audio: card.audio || undefined,
     audioStatus: card.audioStatus,
     adapted: card.adapted,
+    originCardId: card.originCardId,
   };
 }
 function frenchCard(shared: Card, record: FrenchCardRecord): LCard {

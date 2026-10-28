@@ -1,0 +1,3782 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for the Voordat topic. AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-voordat-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The check comes before the sending, so 'voordat' opens the clause that names the later step."
+   },
+   "situationNl": "Een collega ziet een bijlage klaarstaan in je mail. Zeg wat je eerst doet met dat document en welke stap erna komt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer het verslag",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so 'controleer' is second and the object 'het verslag' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik het verstuur",
+     "subject": "ik",
+     "finite": "verstuur",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, then the object 'het', and the finite verb 'verstuur' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "object",
+     "text": "het verslag"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "verstuur"
+    }
+   ],
+   "meaning": "I check the report before sending it.",
+   "order": "The main clause names the action that happens first. The voordat-clause names the later event and ends with its verb.",
+   "forms": "controleren: ik controleer. versturen: ik verstuur.",
+   "compare": "English 'before sending it' needs no subject. Dutch repeats 'ik' and puts 'verstuur' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer het verslag voordat ik verstuur het.",
+     "right": "Ik controleer het verslag voordat ik het verstuur.",
+     "why": "The finite verb goes behind the object 'het'. (not \"Ik controleer het verslag voordat ik verstuur het.\", but \"Ik controleer het verslag voordat ik het verstuur.\")"
+    },
+    {
+     "wrong": "Ik controleer het verslag voordat verstuur ik het.",
+     "right": "Ik controleer het verslag voordat ik het verstuur.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik controleer het verslag voordat verstuur ik het.\", but \"Ik controleer het verslag voordat ik het verstuur.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik het verstuur, controleer ik het verslag.",
+    "english": "Before I send it, I check the report.",
+    "note": "With the voordat-clause first, the main clause inverts to 'controleer ik'."
+   }
+  },
+  "pat-voordat-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The leaving is the later event; the switching off comes first and follows the comma."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat ik vertrek",
+     "subject": "ik",
+     "finite": "vertrek",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first and the finite verb 'vertrek' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "zet ik het licht uit",
+     "subject": "ik",
+     "finite": "zet",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'zet' comes first, then the subject 'ik' and the object 'het licht'; the particle 'uit' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "vertrek"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "zet"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het licht"
+    },
+    {
+     "label": "particle",
+     "text": "uit"
+    }
+   ],
+   "meaning": "Before I leave, I turn off the light.",
+   "order": "'Uitzetten' splits in the main clause: 'zet ... uit'. The voordat-clause stands first, so the main clause inverts to 'zet ik'.",
+   "forms": "vertrekken: ik vertrek. uitzetten: zet ... uit.",
+   "compare": "English 'turn off' has the same split. Dutch inverts the subject after the clause.",
+   "mistakes": [
+    {
+     "wrong": "Voordat ik vertrek, ik zet het licht uit.",
+     "right": "Voordat ik vertrek, zet ik het licht uit.",
+     "why": "After the voordat-clause the main clause starts with the verb: 'zet ik'."
+    },
+    {
+     "wrong": "Voordat ik vertrek, zet ik uit het licht.",
+     "right": "Voordat ik vertrek, zet ik het licht uit.",
+     "why": "The particle 'uit' goes to the end of the main clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik zet het licht uit voordat ik vertrek.",
+    "english": "I turn off the light before I leave.",
+    "note": "With the main clause first there is no inversion. Compare: Ik zet het licht uit voordat ik vertrek."
+   }
+  },
+  "pat-voordat-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The backup must exist before the update starts; 'installeren' ends the voordat-clause."
+   },
+   "situationNl": "Een collega wil meteen een nieuwe versie plaatsen. Leg uit welke voorzorg jullie nemen en in welke volgorde.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We maken een back-up",
+     "subject": "We",
+     "finite": "maken",
+     "role": "main clause (what happens first)",
+     "why": "We is first, so the plural 'maken' is second and the object 'een back-up' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat we de update installeren",
+     "subject": "we",
+     "finite": "installeren",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'we' comes first, then the object 'de update', and the plural verb 'installeren' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "maken"
+    },
+    {
+     "label": "object",
+     "text": "een back-up"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de update"
+    },
+    {
+     "label": "finite verb",
+     "text": "installeren"
+    }
+   ],
+   "meaning": "We make a backup before installing the update.",
+   "order": "The same plural subject 'we' returns; the verb of the voordat-clause is last. Read it as \"We maken een back-up voordat we de update installeren\".",
+   "forms": "maken: wij maken. installeren: wij installeren.",
+   "compare": "English 'before installing the update' needs no subject. Dutch repeats 'we'.",
+   "mistakes": [
+    {
+     "wrong": "We maken een back-up voordat we installeren de update.",
+     "right": "We maken een back-up voordat we de update installeren.",
+     "why": "The finite verb goes behind the object. (not \"We maken een back-up voordat we installeren de update.\", but \"We maken een back-up voordat we de update installeren.\")"
+    },
+    {
+     "wrong": "We maakt een back-up voordat we de update installeren.",
+     "right": "We maken een back-up voordat we de update installeren.",
+     "why": "The plural 'we' needs 'maken'. (not \"We maakt een back-up voordat we de update installeren.\", but \"We maken een back-up voordat we de update installeren.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat we de update installeren, maken we een back-up.",
+    "english": "Before we install the update, we make a backup.",
+    "note": "The voordat-clause first inverts the main clause to 'maken we'."
+   }
+  },
+  "pat-voordat-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The meeting's start is the later event; reading the agenda is the preparation."
+   },
+   "situationNl": "Je zit alvast in de vergaderruimte. Een collega vraagt waarom je zo geconcentreerd kijkt. Zeg wat je op dat moment leest.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat de vergadering begint",
+     "subject": "de vergadering",
+     "finite": "begint",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'de vergadering' comes first and the finite verb 'begint' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "lees ik de agenda",
+     "subject": "ik",
+     "finite": "lees",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'lees' comes first, then the subject 'ik' and the object 'de agenda'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "de vergadering"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    },
+    {
+     "label": "finite verb",
+     "text": "lees"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de agenda"
+    }
+   ],
+   "meaning": "Before the meeting begins, I read the agenda.",
+   "order": "A short voordat-clause with a singular subject. The main clause inverts to 'lees ik'. Read it as \"Voordat de vergadering begint, lees ik de agenda\".",
+   "forms": "beginnen: de vergadering begint. lezen: ik lees.",
+   "compare": "English 'Before the meeting begins, I read the agenda' keeps 'I read'. Dutch inverts.",
+   "mistakes": [
+    {
+     "wrong": "Voordat de vergadering begint, ik lees de agenda.",
+     "right": "Voordat de vergadering begint, lees ik de agenda.",
+     "why": "The main clause starts with the verb: 'lees ik'. (not \"Voordat de vergadering begint, ik lees de agenda.\", but \"Voordat de vergadering begint, lees ik de agenda.\")"
+    },
+    {
+     "wrong": "Voordat de vergadering beginnen, lees ik de agenda.",
+     "right": "Voordat de vergadering begint, lees ik de agenda.",
+     "why": "The singular subject needs 'begint'. (not \"Voordat de vergadering beginnen, lees ik de agenda.\", but \"Voordat de vergadering begint, lees ik de agenda.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik lees de agenda voordat de vergadering begint.",
+    "english": "I read the agenda before the meeting begins.",
+    "note": "With the main clause first there is no inversion. Compare: Ik lees de agenda voordat de vergadering begint."
+   }
+  },
+  "pat-voordat-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Asking comes before sharing; 'deel' ends the voordat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik vraag toestemming",
+     "subject": "Ik",
+     "finite": "vraag",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so 'vraag' is second and the object 'toestemming' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik het scherm deel",
+     "subject": "ik",
+     "finite": "deel",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, then the object 'het scherm', and the finite verb 'deel' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "vraag"
+    },
+    {
+     "label": "object",
+     "text": "toestemming"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het scherm"
+    },
+    {
+     "label": "finite verb",
+     "text": "deel"
+    }
+   ],
+   "meaning": "I ask permission before sharing the screen.",
+   "order": "The permission is the first step. The voordat-clause names the later action with its verb last. Read it as \"Ik vraag toestemming voordat ik het scherm deel\".",
+   "forms": "vragen: ik vraag. delen: ik deel.",
+   "compare": "English 'before sharing the screen' has no subject. Dutch repeats 'ik'.",
+   "mistakes": [
+    {
+     "wrong": "Ik vraag toestemming voordat ik deel het scherm.",
+     "right": "Ik vraag toestemming voordat ik het scherm deel.",
+     "why": "The finite verb goes behind the object. (not \"Ik vraag toestemming voordat ik deel het scherm.\", but \"Ik vraag toestemming voordat ik het scherm deel.\")"
+    },
+    {
+     "wrong": "Ik vraag toestemming voordat ik het scherm deelt.",
+     "right": "Ik vraag toestemming voordat ik het scherm deel.",
+     "why": "With 'ik' the verb has no -t: 'deel'. (not \"Ik vraag toestemming voordat ik het scherm deelt.\", but \"Ik vraag toestemming voordat ik het scherm deel.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik het scherm deel, vraag ik toestemming.",
+    "english": "Before I share the screen, I ask permission.",
+    "note": "The voordat-clause first inverts the main clause to 'vraag ik'."
+   }
+  },
+  "pat-voordat-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A rule with 'je moet': saving the work must come before switching off."
+   },
+   "situationNl": "Een collega sluit steeds haastig zijn laptop. Geef hem een regel over zijn bestanden en het moment van afsluiten.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat je de computer uitzet",
+     "subject": "je",
+     "finite": "uitzet",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'je' comes first, then the object 'de computer', and the joined verb 'uitzet' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "moet je je werk opslaan",
+     "subject": "je",
+     "finite": "moet",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'moet' comes first, then the subject 'je', the object 'je werk' and the infinitive 'opslaan'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "de computer"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "uitzet"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moet"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "je werk"
+    },
+    {
+     "label": "infinitive",
+     "text": "opslaan"
+    }
+   ],
+   "meaning": "Before switching off the computer, you must save your work.",
+   "order": "The voordat-clause stands first, so the modal 'moet' opens the main clause. 'Opslaan' stays an infinitive at the end.",
+   "forms": "uitzetten: zet ... uit / uitzet. moeten: je moet. opslaan: infinitive.",
+   "compare": "English 'switching off' is an -ing form. Dutch uses a full clause with 'uitzet'.",
+   "mistakes": [
+    {
+     "wrong": "Voordat je de computer zet uit, moet je je werk opslaan.",
+     "right": "Voordat je de computer uitzet, moet je je werk opslaan.",
+     "why": "The separable verb is written together in a dependent clause. (not \"Voordat je de computer zet uit, moet je je werk opslaan.\", but \"Voordat je de computer uitzet, moet je je werk opslaan.\")"
+    },
+    {
+     "wrong": "Voordat je de computer uitzet, je moet je werk opslaan.",
+     "right": "Voordat je de computer uitzet, moet je je werk opslaan.",
+     "why": "The main clause starts with the verb: 'moet je'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je moet je werk opslaan voordat je de computer uitzet.",
+    "english": "You must save your work before you switch off the computer.",
+    "note": "With the main clause first there is no inversion. Compare: Je moet je werk opslaan voordat je de computer uitzet."
+   }
+  },
+  "pat-voordat-07": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Eating comes before the start of work; 'ga' ends the voordat-clause after the direction."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik eet iets",
+     "subject": "Ik",
+     "finite": "eet",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so 'eet' is second and the object 'iets' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik naar mijn werk ga",
+     "subject": "ik",
+     "finite": "ga",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, the direction 'naar mijn werk' follows, and the finite verb 'ga' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "eet"
+    },
+    {
+     "label": "object",
+     "text": "iets"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "direction",
+     "text": "naar mijn werk"
+    },
+    {
+     "label": "finite verb",
+     "text": "ga"
+    }
+   ],
+   "meaning": "I eat something before going to work.",
+   "order": "'Gaan' ends the clause behind the direction phrase. 'Naar mijn werk' says where you are heading. Read it as \"Ik eet iets voordat ik naar mijn werk ga\".",
+   "forms": "eten: ik eet. gaan: ik ga.",
+   "compare": "English 'before going to work' is an -ing phrase. Dutch uses a clause with 'ga'.",
+   "mistakes": [
+    {
+     "wrong": "Ik eet iets voordat ik ga naar mijn werk.",
+     "right": "Ik eet iets voordat ik naar mijn werk ga.",
+     "why": "The finite verb goes behind the direction phrase."
+    },
+    {
+     "wrong": "Ik eet iets voordat ik naar mijn werk gaat.",
+     "right": "Ik eet iets voordat ik naar mijn werk ga.",
+     "why": "With 'ik' the verb is 'ga'. (not \"Ik eet iets voordat ik naar mijn werk gaat.\", but \"Ik eet iets voordat ik naar mijn werk ga.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik naar mijn werk ga, eet ik iets.",
+    "english": "Before I go to work, I eat something.",
+    "note": "The voordat-clause first inverts the main clause to 'eet ik'."
+   }
+  },
+  "pat-voordat-08": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The train's departure is the later event; the boarding is described after the comma."
+   },
+   "situationNl": "Je staat op het perron en een toerist vraagt hoe het gaat. Beschrijf wat mensen doen en op welk moment dat moet gebeuren.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat de trein vertrekt",
+     "subject": "de trein",
+     "finite": "vertrekt",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'de trein' comes first and the finite verb 'vertrekt' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stappen de reizigers in",
+     "subject": "de reizigers",
+     "finite": "stappen",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'stappen' comes first, then the subject 'de reizigers'; the particle 'in' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "de trein"
+    },
+    {
+     "label": "finite verb",
+     "text": "vertrekt"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "stappen"
+    },
+    {
+     "label": "subject",
+     "text": "de reizigers"
+    },
+    {
+     "label": "particle",
+     "text": "in"
+    }
+   ],
+   "meaning": "Before the train departs, passengers board.",
+   "order": "'Instappen' splits in the main clause: 'stappen ... in'. The plural subject takes 'stappen'. Read it as \"Voordat de trein vertrekt, stappen de reizigers in\".",
+   "forms": "vertrekken: de trein vertrekt. instappen: stappen ... in.",
+   "compare": "English 'board' is a different verb. Dutch uses 'instappen' with the particle at the end.",
+   "mistakes": [
+    {
+     "wrong": "Voordat de trein vertrekt, de reizigers stappen in.",
+     "right": "Voordat de trein vertrekt, stappen de reizigers in.",
+     "why": "After the voordat-clause the verb comes first: 'stappen de reizigers'."
+    },
+    {
+     "wrong": "Voordat de trein vertrekt, stappen in de reizigers.",
+     "right": "Voordat de trein vertrekt, stappen de reizigers in.",
+     "why": "The particle 'in' goes to the end. (not \"Voordat de trein vertrekt, stappen in de reizigers.\", but \"Voordat de trein vertrekt, stappen de reizigers in.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De reizigers stappen in voordat de trein vertrekt.",
+    "english": "The passengers board before the train departs.",
+    "note": "With the main clause first there is no inversion. Compare: De reizigers stappen in voordat de trein vertrekt."
+   }
+  },
+  "pat-voordat-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Checking rights precedes granting access; 'verleent' ends the voordat-clause."
+   },
+   "situationNl": "Een nieuwe medewerker vraagt hoe accounts worden geopend. Leg uit welke controle de beheerder eerst uitvoert.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De beheerder controleert de rechten",
+     "subject": "De beheerder",
+     "finite": "controleert",
+     "role": "main clause (what happens first)",
+     "why": "'De beheerder' is first, so 'controleert' is second and the object 'de rechten' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat hij toegang verleent",
+     "subject": "hij",
+     "finite": "verleent",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'hij' comes first, then the object 'toegang', and the finite verb 'verleent' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De beheerder"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleert"
+    },
+    {
+     "label": "object",
+     "text": "de rechten"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "toegang"
+    },
+    {
+     "label": "finite verb",
+     "text": "verleent"
+    }
+   ],
+   "meaning": "The administrator checks permissions before granting access.",
+   "order": "'Hij' refers back to 'de beheerder'. 'Toegang verlenen' is a fixed phrase for granting access. Read it as \"De beheerder controleert de rechten voordat hij toegang verleent\".",
+   "forms": "controleren: de beheerder controleert. verlenen: hij verleent.",
+   "compare": "English 'before granting access' has no subject. Dutch repeats 'hij'. For this card: \"De beheerder controleert de rechten voordat hij toegang verleent\".",
+   "mistakes": [
+    {
+     "wrong": "De beheerder controleert de rechten voordat hij verleent toegang.",
+     "right": "De beheerder controleert de rechten voordat hij toegang verleent.",
+     "why": "The finite verb goes behind the object 'toegang'."
+    },
+    {
+     "wrong": "De beheerder controleert de rechten voordat hij toegang verlenen.",
+     "right": "De beheerder controleert de rechten voordat hij toegang verleent.",
+     "why": "With 'hij' the verb is 'verleent'. (not \"De beheerder controleert de rechten voordat hij toegang verlenen.\", but \"De beheerder controleert de rechten voordat hij toegang verleent.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat hij toegang verleent, controleert de beheerder de rechten.",
+    "english": "Before he grants access, the administrator checks the permissions.",
+    "note": "The voordat-clause first inverts the main clause."
+   }
+  },
+  "pat-voordat-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Closing the windows is the bedtime preparation; 'gaan slapen' is a verb chain."
+   },
+   "situationNl": "Het is avond en jullie maken het huis klaar. Vertel een logé wat jullie doen en op welk moment.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat we gaan slapen",
+     "subject": "we",
+     "finite": "gaan",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'we' comes first; the finite verb 'gaan' stands before the infinitive 'slapen', which closes the clause.",
+     "afterFinite": "slapen"
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "sluiten we de ramen",
+     "subject": "we",
+     "finite": "sluiten",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'sluiten' comes first, then the subject 'we' and the object 'de ramen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "slapen"
+    },
+    {
+     "label": "finite verb",
+     "text": "sluiten"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de ramen"
+    }
+   ],
+   "meaning": "Before we go to sleep, we close the windows.",
+   "order": "'Gaan slapen' means to go to sleep. Its finite verb is not the last word because the infinitive follows. Read it as \"Voordat we gaan slapen, sluiten we de ramen\".",
+   "forms": "gaan: wij gaan. slapen: infinitive. sluiten: wij sluiten.",
+   "compare": "English 'before we go to sleep' keeps 'go' before 'to sleep'. Dutch puts 'slapen' last.",
+   "mistakes": [
+    {
+     "wrong": "Voordat gaan we slapen, sluiten we de ramen.",
+     "right": "Voordat we gaan slapen, sluiten we de ramen.",
+     "why": "In the dependent clause the subject comes before the verb: 'we gaan slapen'."
+    },
+    {
+     "wrong": "Voordat we gaan slapen, we sluiten de ramen.",
+     "right": "Voordat we gaan slapen, sluiten we de ramen.",
+     "why": "The main clause starts with the verb: 'sluiten we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We sluiten de ramen voordat we gaan slapen.",
+    "english": "We close the windows before we go to sleep.",
+    "note": "With the main clause first there is no inversion. Compare: We sluiten de ramen voordat we gaan slapen."
+   }
+  },
+  "pat-voordat-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Checking the route comes before the cycling; 'fiets' ends the clause after the direction."
+   },
+   "situationNl": "Je staat op het punt weg te gaan op de fiets in een onbekende wijk. Vertel een buurman wat je nakijkt en wat je dan doet.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kijk naar de route",
+     "subject": "Ik",
+     "finite": "kijk",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so 'kijk' is second and the phrase 'naar de route' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik naar het station fiets",
+     "subject": "ik",
+     "finite": "fiets",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, the direction 'naar het station' follows, and the finite verb 'fiets' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "kijk"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "naar de route"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "direction",
+     "text": "naar het station"
+    },
+    {
+     "label": "finite verb",
+     "text": "fiets"
+    }
+   ],
+   "meaning": "I check the route before cycling to the station.",
+   "order": "'Fietsen' is a verb of its own, so no 'gaan' is needed. The direction phrase stands before it. Read it as \"Ik kijk naar de route voordat ik naar het station fiets\".",
+   "forms": "kijken: ik kijk. fietsen: ik fiets.",
+   "compare": "English 'cycling to the station' is an -ing form. Dutch uses the clause 'ik naar het station fiets'.",
+   "mistakes": [
+    {
+     "wrong": "Ik kijk naar de route voordat ik fiets naar het station.",
+     "right": "Ik kijk naar de route voordat ik naar het station fiets.",
+     "why": "The finite verb goes behind the direction phrase. (not \"Ik kijk naar de route voordat ik fiets naar het station.\", but \"Ik kijk naar de route voordat ik naar het station fiets.\")"
+    },
+    {
+     "wrong": "Ik kijk naar de route voordat ik naar het station fietst.",
+     "right": "Ik kijk naar de route voordat ik naar het station fiets.",
+     "why": "With 'ik' the verb is 'fiets'. (not \"Ik kijk naar de route voordat ik naar het station fietst.\", but \"Ik kijk naar de route voordat ik naar het station fiets.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik naar het station fiets, kijk ik naar de route.",
+    "english": "Before I cycle to the station, I check the route.",
+    "note": "The voordat-clause first inverts the main clause to 'kijk ik'."
+   }
+  },
+  "pat-voordat-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Reading the manual precedes using the feature; the object 'de nieuwe functie' stands before 'gebruik'."
+   },
+   "situationNl": "Er is net een update uitgekomen met een onbekende knop. Een collega vraagt hoe jij dat aanpakt. Zeg wat jij leest en op welk moment.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat ik de nieuwe functie gebruik",
+     "subject": "ik",
+     "finite": "gebruik",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, then the object 'de nieuwe functie', and the finite verb 'gebruik' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "lees ik de handleiding",
+     "subject": "ik",
+     "finite": "lees",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'lees' comes first, then the subject 'ik' and the object 'de handleiding'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de nieuwe functie"
+    },
+    {
+     "label": "finite verb",
+     "text": "gebruik"
+    },
+    {
+     "label": "finite verb",
+     "text": "lees"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de handleiding"
+    }
+   ],
+   "meaning": "Before using the new feature, I read the manual.",
+   "order": "The object stands before the final verb in the voordat-clause. The main clause inverts to 'lees ik'. Read it as \"Voordat ik de nieuwe functie gebruik, lees ik de handleiding\".",
+   "forms": "gebruiken: ik gebruik. lezen: ik lees.",
+   "compare": "English 'Before using the new feature' is an -ing phrase. Dutch uses a clause.",
+   "mistakes": [
+    {
+     "wrong": "Voordat ik gebruik de nieuwe functie, lees ik de handleiding.",
+     "right": "Voordat ik de nieuwe functie gebruik, lees ik de handleiding.",
+     "why": "The finite verb goes behind the object. (not \"Voordat ik gebruik de nieuwe functie, lees ik de handleiding.\", but \"Voordat ik de nieuwe functie gebruik, lees ik de handleiding.\")"
+    },
+    {
+     "wrong": "Voordat ik de nieuwe functie gebruik, ik lees de handleiding.",
+     "right": "Voordat ik de nieuwe functie gebruik, lees ik de handleiding.",
+     "why": "The main clause starts with the verb: 'lees ik'. (not \"Voordat ik de nieuwe functie gebruik, ik lees de handleiding.\", but \"Voordat ik de nieuwe functie gebruik, lees ik de handleiding.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik lees de handleiding voordat ik de nieuwe functie gebruik.",
+    "english": "I read the manual before I use the new feature.",
+    "note": "With the main clause first there is no inversion. Compare: Ik lees de handleiding voordat ik de nieuwe functie gebruik."
+   }
+  },
+  "pat-voordat-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The coffee comes before the start of work; 'aan het werk gaan' is a fixed phrase."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik drink koffie",
+     "subject": "Ik",
+     "finite": "drink",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so 'drink' is second and the object 'koffie' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik aan het werk ga",
+     "subject": "ik",
+     "finite": "ga",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, the phrase 'aan het werk' follows, and the finite verb 'ga' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "drink"
+    },
+    {
+     "label": "object",
+     "text": "koffie"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "phrase",
+     "text": "aan het werk"
+    },
+    {
+     "label": "finite verb",
+     "text": "ga"
+    }
+   ],
+   "meaning": "I drink coffee before I start work.",
+   "order": "'Aan het werk gaan' means to start working. The fixed phrase stands before the final 'ga'. Read it as \"Ik drink koffie voordat ik aan het werk ga\".",
+   "forms": "drinken: ik drink. gaan: ik ga.",
+   "compare": "English 'before I start work' uses 'start'. Dutch uses 'aan het werk gaan'.",
+   "mistakes": [
+    {
+     "wrong": "Ik drink koffie voordat ik ga aan het werk.",
+     "right": "Ik drink koffie voordat ik aan het werk ga.",
+     "why": "The finite verb goes behind the phrase 'aan het werk'."
+    },
+    {
+     "wrong": "Ik drink koffie voordat ik aan het werk gaat.",
+     "right": "Ik drink koffie voordat ik aan het werk ga.",
+     "why": "With 'ik' the verb is 'ga'. (not \"Ik drink koffie voordat ik aan het werk gaat.\", but \"Ik drink koffie voordat ik aan het werk ga.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik aan het werk ga, drink ik koffie.",
+    "english": "Before I start work, I drink coffee.",
+    "note": "The voordat-clause first inverts the main clause to 'drink ik'."
+   }
+  },
+  "pat-voordat-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The guests' arrival is the later event; tidying up is the preparation, with the particle at the end."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat de gasten komen",
+     "subject": "de gasten",
+     "finite": "komen",
+     "role": "voordat-clause (the later event)",
+     "why": "The plural subject 'de gasten' comes first and the plural verb 'komen' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "ruim ik de woonkamer op",
+     "subject": "ik",
+     "finite": "ruim",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'ruim' comes first, then the subject 'ik' and the object 'de woonkamer'; the particle 'op' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "de gasten"
+    },
+    {
+     "label": "finite verb",
+     "text": "komen"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "ruim"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de woonkamer"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    }
+   ],
+   "meaning": "Before the guests arrive, I tidy the living room.",
+   "order": "'Opruimen' splits in the main clause. The inverted order 'ruim ik ... op' keeps the particle last. Read it as \"Voordat de gasten komen, ruim ik de woonkamer op\".",
+   "forms": "komen: de gasten komen. opruimen: ruim ... op.",
+   "compare": "English 'tidy up' has the same split. For this card: \"Voordat de gasten komen, ruim ik de woonkamer op\".",
+   "mistakes": [
+    {
+     "wrong": "Voordat de gasten komen, ik ruim de woonkamer op.",
+     "right": "Voordat de gasten komen, ruim ik de woonkamer op.",
+     "why": "The main clause starts with the verb: 'ruim ik'."
+    },
+    {
+     "wrong": "Voordat de gasten komt, ruim ik de woonkamer op.",
+     "right": "Voordat de gasten komen, ruim ik de woonkamer op.",
+     "why": "The plural subject needs 'komen'. (not \"Voordat de gasten komt, ruim ik de woonkamer op.\", but \"Voordat de gasten komen, ruim ik de woonkamer op.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik ruim de woonkamer op voordat de gasten komen.",
+    "english": "I tidy the living room before the guests arrive.",
+    "note": "With the main clause first there is no inversion. Compare: Ik ruim de woonkamer op voordat de gasten komen."
+   }
+  },
+  "pat-voordat-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The phone call comes before bedtime; 'naar bed gaan' is a fixed phrase."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij belt haar moeder",
+     "subject": "Zij",
+     "finite": "belt",
+     "role": "main clause (what happens first)",
+     "why": "Zij is first, so 'belt' is second and the object 'haar moeder' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ze naar bed gaat",
+     "subject": "ze",
+     "finite": "gaat",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ze' comes first, the phrase 'naar bed' follows, and the finite verb 'gaat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "belt"
+    },
+    {
+     "label": "object",
+     "text": "haar moeder"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "phrase",
+     "text": "naar bed"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    }
+   ],
+   "meaning": "She calls her mother before she goes to bed.",
+   "order": "'Naar bed gaan' means to go to bed. 'Zij' and 'ze' are the same person. Read it as \"Zij belt haar moeder voordat ze naar bed gaat\".",
+   "forms": "bellen: zij belt. gaan: ze gaat.",
+   "compare": "English 'goes to bed' is the same idea. Dutch puts 'gaat' last. For this card: \"Zij belt haar moeder voordat ze naar bed gaat\".",
+   "mistakes": [
+    {
+     "wrong": "Zij belt haar moeder voordat ze gaat naar bed.",
+     "right": "Zij belt haar moeder voordat ze naar bed gaat.",
+     "why": "The finite verb goes behind 'naar bed'. (not \"Zij belt haar moeder voordat ze gaat naar bed.\", but \"Zij belt haar moeder voordat ze naar bed gaat.\")"
+    },
+    {
+     "wrong": "Zij belt haar moeder voordat ze naar bed gaan.",
+     "right": "Zij belt haar moeder voordat ze naar bed gaat.",
+     "why": "The singular 'ze' needs 'gaat'. (not \"Zij belt haar moeder voordat ze naar bed gaan.\", but \"Zij belt haar moeder voordat ze naar bed gaat.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ze naar bed gaat, belt zij haar moeder.",
+    "english": "Before she goes to bed, she calls her mother.",
+    "note": "The voordat-clause first inverts the main clause. Compare: Voordat ze naar bed gaat, belt zij haar moeder."
+   }
+  },
+  "pat-voordat-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Opening the door is the later event; looking through the window is the precaution."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat hij de deur opent",
+     "subject": "hij",
+     "finite": "opent",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'hij' comes first, then the object 'de deur', and the finite verb 'opent' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kijkt hij door het raam",
+     "subject": "hij",
+     "finite": "kijkt",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'kijkt' comes first, then the subject 'hij' and the phrase 'door het raam'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "de deur"
+    },
+    {
+     "label": "finite verb",
+     "text": "opent"
+    },
+    {
+     "label": "finite verb",
+     "text": "kijkt"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "door het raam"
+    }
+   ],
+   "meaning": "Before he opens the door, he looks through the window.",
+   "order": "'Opent' here is the plain verb 'openen', not a separable one. The main clause inverts to 'kijkt hij'. Read it as \"Voordat hij de deur opent, kijkt hij door het raam\".",
+   "forms": "openen: hij opent. kijken: hij kijkt.",
+   "compare": "English 'looks through the window' uses 'through'. Dutch uses 'door'. For this card: \"Voordat hij de deur opent, kijkt hij door het raam\".",
+   "mistakes": [
+    {
+     "wrong": "Voordat hij opent de deur, kijkt hij door het raam.",
+     "right": "Voordat hij de deur opent, kijkt hij door het raam.",
+     "why": "The finite verb goes behind the object. (not \"Voordat hij opent de deur, kijkt hij door het raam.\", but \"Voordat hij de deur opent, kijkt hij door het raam.\")"
+    },
+    {
+     "wrong": "Voordat hij de deur opent, hij kijkt door het raam.",
+     "right": "Voordat hij de deur opent, kijkt hij door het raam.",
+     "why": "The main clause starts with the verb: 'kijkt hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij kijkt door het raam voordat hij de deur opent.",
+    "english": "He looks through the window before he opens the door.",
+    "note": "With the main clause first there is no inversion. Compare: Hij kijkt door het raam voordat hij de deur opent."
+   }
+  },
+  "pat-voordat-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A rule: 'moet' is the modal and 'gaan eten' is a verb chain in the voordat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je moet je handen wassen",
+     "subject": "Je",
+     "finite": "moet",
+     "role": "main clause (what happens first)",
+     "why": "'Je' is first and the modal 'moet' is second; the object 'je handen' comes before the infinitive 'wassen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat je gaat eten",
+     "subject": "je",
+     "finite": "gaat",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'je' comes first; the finite verb 'gaat' stands before the infinitive 'eten', which closes the clause.",
+     "afterFinite": "eten"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moet"
+    },
+    {
+     "label": "object",
+     "text": "je handen"
+    },
+    {
+     "label": "infinitive",
+     "text": "wassen"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    },
+    {
+     "label": "infinitive",
+     "text": "eten"
+    }
+   ],
+   "meaning": "You must wash your hands before you go and eat.",
+   "order": "Two verb chains appear: 'moet ... wassen' and 'gaat eten'. The voordat-clause ends in the infinitive. Read it as \"Je moet je handen wassen voordat je gaat eten\".",
+   "forms": "moeten: je moet. wassen: infinitive. gaan: je gaat. eten: infinitive.",
+   "compare": "English 'go and eat' needs 'and'. Dutch simply links 'gaan' and 'eten'.",
+   "mistakes": [
+    {
+     "wrong": "Je moet wassen je handen voordat je gaat eten.",
+     "right": "Je moet je handen wassen voordat je gaat eten.",
+     "why": "The infinitive 'wassen' goes behind the object."
+    },
+    {
+     "wrong": "Je moet je handen wassen voordat je eten gaat.",
+     "right": "Je moet je handen wassen voordat je gaat eten.",
+     "why": "'Gaat' stands before the infinitive: 'gaat eten'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat je gaat eten, moet je je handen wassen.",
+    "english": "Before you go and eat, you have to wash your hands.",
+    "note": "The voordat-clause first inverts the main clause to 'moet je'."
+   }
+  },
+  "pat-voordat-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A decision rule: before signing, the conditions have to be read; 'willen' is the modal."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat wij het contract tekenen",
+     "subject": "wij",
+     "finite": "tekenen",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'wij' comes first, then the object 'het contract', and the plural verb 'tekenen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "willen we de voorwaarden lezen",
+     "subject": "we",
+     "finite": "willen",
+     "role": "main clause (what happens first)",
+     "why": "The modal 'willen' comes first, then the subject 'we' and the object; the infinitive 'lezen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "object",
+     "text": "het contract"
+    },
+    {
+     "label": "finite verb",
+     "text": "tekenen"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "willen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de voorwaarden"
+    },
+    {
+     "label": "infinitive",
+     "text": "lezen"
+    }
+   ],
+   "meaning": "Before we sign the contract, we want to read the conditions.",
+   "order": "The main clause inverts to 'willen we ... lezen'. The modal stands second in the clause, the infinitive last. Read it as \"Voordat wij het contract tekenen, willen we de voorwaarden lezen\".",
+   "forms": "tekenen: wij tekenen. willen: wij willen. lezen: infinitive.",
+   "compare": "English 'we want to read' keeps 'want' next to 'we'. Dutch inverts after the clause.",
+   "mistakes": [
+    {
+     "wrong": "Voordat wij het contract tekenen, wij willen de voorwaarden lezen.",
+     "right": "Voordat wij het contract tekenen, willen we de voorwaarden lezen.",
+     "why": "The main clause starts with the verb: 'willen we'."
+    },
+    {
+     "wrong": "Voordat wij het contract tekent, willen we de voorwaarden lezen.",
+     "right": "Voordat wij het contract tekenen, willen we de voorwaarden lezen.",
+     "why": "The plural 'wij' needs 'tekenen'. (not \"Voordat wij het contract tekent, willen we de voorwaarden lezen.\", but \"Voordat wij het contract tekenen, willen we de voorwaarden lezen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij willen de voorwaarden lezen voordat wij het contract tekenen.",
+    "english": "We want to read the conditions before we sign the contract.",
+    "note": "With the main clause first there is no inversion. Compare: Wij willen de voorwaarden lezen voordat wij het contract tekenen."
+   }
+  },
+  "pat-voordat-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The leaving happened before the start of the party; both verbs are in the simple past."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij vertrok",
+     "subject": "Hij",
+     "finite": "vertrok",
+     "role": "main clause (what happens first)",
+     "why": "Hij is first, so the past form 'vertrok' is second. The clause is \"Hij vertrok\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat het feest begon",
+     "subject": "het feest",
+     "finite": "begon",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'het feest' comes first and the past form 'begon' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vertrok"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "het feest"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "begon"
+    }
+   ],
+   "meaning": "He left before the party began.",
+   "order": "A past story. Both clauses use the simple past: 'vertrok' and 'begon', both strong verbs. Read it as \"Hij vertrok voordat het feest begon\".",
+   "forms": "vertrekken: hij vertrok. beginnen: het feest begon.",
+   "compare": "English 'left' and 'began' are also irregular. Dutch has 'vertrok' and 'begon'.",
+   "mistakes": [
+    {
+     "wrong": "Hij vertrok voordat begon het feest.",
+     "right": "Hij vertrok voordat het feest begon.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Hij vertrok voordat begon het feest.\", but \"Hij vertrok voordat het feest begon.\")"
+    },
+    {
+     "wrong": "Hij vertrok voordat het feest begint.",
+     "right": "Hij vertrok voordat het feest begon.",
+     "why": "A past event needs a past form: 'begon'. (not \"Hij vertrok voordat het feest begint.\", but \"Hij vertrok voordat het feest begon.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat het feest begon, vertrok hij.",
+    "english": "Before the party began, he left.",
+    "note": "The voordat-clause first inverts the main clause to 'vertrok hij'."
+   }
+  },
+  "pat-voordat-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The past perfect marks the closing as finished before the storm came."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat de storm kwam",
+     "subject": "de storm",
+     "finite": "kwam",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'de storm' comes first and the past form 'kwam' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "hadden we alle ramen gesloten",
+     "subject": "we",
+     "finite": "hadden",
+     "role": "main clause (what happens first)",
+     "why": "The auxiliary 'hadden' comes first, then the subject 'we' and the object; the participle 'gesloten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "de storm"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kwam"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hadden"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "alle ramen"
+    },
+    {
+     "label": "past participle",
+     "text": "gesloten"
+    }
+   ],
+   "meaning": "Before the storm came, we had closed all the windows.",
+   "order": "'Hadden ... gesloten' is the past perfect: a finished action before a past moment. The auxiliary is first because of inversion.",
+   "forms": "komen: de storm kwam. sluiten: hadden gesloten.",
+   "compare": "English 'had closed' is the same tense. Dutch splits auxiliary and participle.",
+   "mistakes": [
+    {
+     "wrong": "Voordat de storm kwam, we hadden alle ramen gesloten.",
+     "right": "Voordat de storm kwam, hadden we alle ramen gesloten.",
+     "why": "The main clause starts with the auxiliary: 'hadden we'."
+    },
+    {
+     "wrong": "Voordat de storm kwam, hadden we alle ramen sluiten.",
+     "right": "Voordat de storm kwam, hadden we alle ramen gesloten.",
+     "why": "The participle is 'gesloten'. (not \"Voordat de storm kwam, hadden we alle ramen sluiten.\", but \"Voordat de storm kwam, hadden we alle ramen gesloten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We hadden alle ramen gesloten voordat de storm kwam.",
+    "english": "We had closed all the windows before the storm came.",
+    "note": "With the main clause first there is no inversion. Compare: We hadden alle ramen gesloten voordat de storm kwam."
+   }
+  },
+  "pat-voordat-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A finished action (perfect) before a past event (simple past)."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb mijn tas gepakt",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so the auxiliary 'heb' is second; the object 'mijn tas' precedes the participle 'gepakt'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat de taxi kwam",
+     "subject": "de taxi",
+     "finite": "kwam",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'de taxi' comes first and the past form 'kwam' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "mijn tas"
+    },
+    {
+     "label": "past participle",
+     "text": "gepakt"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "de taxi"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kwam"
+    }
+   ],
+   "meaning": "I packed my bag before the taxi came.",
+   "order": "The perfect 'heb gepakt' is used for the completed packing, the simple past 'kwam' for the arrival. Read it as \"Ik heb mijn tas gepakt voordat de taxi kwam\".",
+   "forms": "pakken: heb gepakt. komen: de taxi kwam.",
+   "compare": "English 'packed' and 'came' are both simple pasts. Dutch often uses the perfect for the first.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb gepakt mijn tas voordat de taxi kwam.",
+     "right": "Ik heb mijn tas gepakt voordat de taxi kwam.",
+     "why": "The participle 'gepakt' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Ik heb mijn tas gepakt voordat de taxi komt.",
+     "right": "Ik heb mijn tas gepakt voordat de taxi kwam.",
+     "why": "A past event needs a past form: 'kwam'. (not \"Ik heb mijn tas gepakt voordat de taxi komt.\", but \"Ik heb mijn tas gepakt voordat de taxi kwam.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat de taxi kwam, heb ik mijn tas gepakt.",
+    "english": "Before the taxi came, I packed my bag.",
+    "note": "The voordat-clause first inverts the main clause to 'heb ik'."
+   }
+  },
+  "pat-voordat-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "She switched off the lights before leaving: the past perfect with a separable participle."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat zij het gebouw verliet",
+     "subject": "zij",
+     "finite": "verliet",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'zij' comes first, then the object 'het gebouw', and the past form 'verliet' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "had ze alle lichten uitgedaan",
+     "subject": "ze",
+     "finite": "had",
+     "role": "main clause (what happens first)",
+     "why": "The auxiliary 'had' comes first, then the subject 'ze' and the object; the participle 'uitgedaan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "object",
+     "text": "het gebouw"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "verliet"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "alle lichten"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "uitgedaan"
+    }
+   ],
+   "meaning": "Before she left the building, she had turned off all the lights.",
+   "order": "The participle of the separable 'uitdoen' is written together with 'ge' in the middle: 'uitgedaan'. Read it as \"Voordat zij het gebouw verliet, had ze alle lichten uitgedaan\".",
+   "forms": "verlaten: zij verliet. uitdoen: had uitgedaan.",
+   "compare": "English 'turned off' has no such middle 'ge'. Dutch writes 'uitgedaan'.",
+   "mistakes": [
+    {
+     "wrong": "Voordat zij het gebouw verliet, ze had alle lichten uitgedaan.",
+     "right": "Voordat zij het gebouw verliet, had ze alle lichten uitgedaan.",
+     "why": "The main clause starts with the auxiliary: 'had ze'."
+    },
+    {
+     "wrong": "Voordat zij het gebouw verliet, had ze alle lichten gedaan uit.",
+     "right": "Voordat zij het gebouw verliet, had ze alle lichten uitgedaan.",
+     "why": "The participle of a separable verb is one word: 'uitgedaan'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze had alle lichten uitgedaan voordat zij het gebouw verliet.",
+    "english": "She had turned off all the lights before she left the building.",
+    "note": "With the main clause first there is no inversion. Compare: Ze had alle lichten uitgedaan voordat zij het gebouw verliet."
+   }
+  },
+  "pat-voordat-23": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Writing a list precedes the shopping trip; the direction phrase stands before 'ga'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik schrijf een lijstje",
+     "subject": "Ik",
+     "finite": "schrijf",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so 'schrijf' is second and the object 'een lijstje' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik naar de supermarkt ga",
+     "subject": "ik",
+     "finite": "ga",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, the direction 'naar de supermarkt' follows, and the finite verb 'ga' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "schrijf"
+    },
+    {
+     "label": "object",
+     "text": "een lijstje"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "direction",
+     "text": "naar de supermarkt"
+    },
+    {
+     "label": "finite verb",
+     "text": "ga"
+    }
+   ],
+   "meaning": "I write a list before I go to the supermarket.",
+   "order": "A diminutive object 'lijstje' for a short list. The voordat-clause ends in 'ga'. Read it as \"Ik schrijf een lijstje voordat ik naar de supermarkt ga\".",
+   "forms": "schrijven: ik schrijf. gaan: ik ga.",
+   "compare": "English 'go to the supermarket' puts 'to' after the verb. Dutch puts the direction before.",
+   "mistakes": [
+    {
+     "wrong": "Ik schrijf een lijstje voordat ik ga naar de supermarkt.",
+     "right": "Ik schrijf een lijstje voordat ik naar de supermarkt ga.",
+     "why": "The finite verb goes behind the direction phrase. (not \"Ik schrijf een lijstje voordat ik ga naar de supermarkt.\", but \"Ik schrijf een lijstje voordat ik naar de supermarkt ga.\")"
+    },
+    {
+     "wrong": "Ik schrijf een lijstje voordat ik naar de supermarkt gaat.",
+     "right": "Ik schrijf een lijstje voordat ik naar de supermarkt ga.",
+     "why": "With 'ik' the verb is 'ga'. (not \"Ik schrijf een lijstje voordat ik naar de supermarkt gaat.\", but \"Ik schrijf een lijstje voordat ik naar de supermarkt ga.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik naar de supermarkt ga, schrijf ik een lijstje.",
+    "english": "Before I go to the supermarket, I write a list.",
+    "note": "The voordat-clause first inverts the main clause to 'schrijf ik'."
+   }
+  },
+  "pat-voordat-24": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The lesson's start is the later event; switching on the laptop is the teacher's first act."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat de les begint",
+     "subject": "de les",
+     "finite": "begint",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'de les' comes first and the finite verb 'begint' closes the short clause. The clause is \"Voordat de les begint\"."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "zet de docent de laptop aan",
+     "subject": "de docent",
+     "finite": "zet",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'zet' comes first, then the subject 'de docent' and the object 'de laptop'; the particle 'aan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "de les"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "zet"
+    },
+    {
+     "label": "subject",
+     "text": "de docent"
+    },
+    {
+     "label": "object",
+     "text": "de laptop"
+    },
+    {
+     "label": "particle",
+     "text": "aan"
+    }
+   ],
+   "meaning": "Before the lesson begins, the teacher switches on the laptop.",
+   "order": "'Aanzetten' splits in the main clause: 'zet ... aan'. The particle 'aan' stands last. Read it as \"Voordat de les begint, zet de docent de laptop aan\".",
+   "forms": "beginnen: de les begint. aanzetten: zet ... aan.",
+   "compare": "English 'switches on' has the same split. For this card: \"Voordat de les begint, zet de docent de laptop aan\".",
+   "mistakes": [
+    {
+     "wrong": "Voordat de les begint, de docent zet de laptop aan.",
+     "right": "Voordat de les begint, zet de docent de laptop aan.",
+     "why": "The main clause starts with the verb: 'zet de docent'."
+    },
+    {
+     "wrong": "Voordat de les begint, zet aan de docent de laptop.",
+     "right": "Voordat de les begint, zet de docent de laptop aan.",
+     "why": "The particle 'aan' goes to the end. (not \"Voordat de les begint, zet aan de docent de laptop.\", but \"Voordat de les begint, zet de docent de laptop aan.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De docent zet de laptop aan voordat de les begint.",
+    "english": "The teacher switches on the laptop before the lesson begins.",
+    "note": "With the main clause first there is no inversion. Compare: De docent zet de laptop aan voordat de les begint."
+   }
+  },
+  "pat-voordat-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A call precedes the sending; 'opsturen' is joined in the voordat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We bellen de klant",
+     "subject": "We",
+     "finite": "bellen",
+     "role": "main clause (what happens first)",
+     "why": "We is first, so the plural 'bellen' is second and the object 'de klant' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat we het voorstel opsturen",
+     "subject": "we",
+     "finite": "opsturen",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'we' comes first, then the object 'het voorstel', and the joined plural verb 'opsturen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "bellen"
+    },
+    {
+     "label": "object",
+     "text": "de klant"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "het voorstel"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "opsturen"
+    }
+   ],
+   "meaning": "We call the customer before we send off the proposal.",
+   "order": "In a main clause 'opsturen' splits ('sturen ... op'); here it is written together at the end. Read it as \"We bellen de klant voordat we het voorstel opsturen\".",
+   "forms": "bellen: wij bellen. opsturen: sturen op / opsturen.",
+   "compare": "English 'send off' is two words. Dutch joins them in this clause. For this card: \"We bellen de klant voordat we het voorstel opsturen\".",
+   "mistakes": [
+    {
+     "wrong": "We bellen de klant voordat we sturen het voorstel op.",
+     "right": "We bellen de klant voordat we het voorstel opsturen.",
+     "why": "In a dependent clause the separable verb is written together. (not \"We bellen de klant voordat we sturen het voorstel op.\", but \"We bellen de klant voordat we het voorstel opsturen.\")"
+    },
+    {
+     "wrong": "We bellen de klant voordat we het voorstel opstuurt.",
+     "right": "We bellen de klant voordat we het voorstel opsturen.",
+     "why": "The plural 'we' needs 'opsturen'. (not \"We bellen de klant voordat we het voorstel opstuurt.\", but \"We bellen de klant voordat we het voorstel opsturen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat we het voorstel opsturen, bellen we de klant.",
+    "english": "Before we send off the proposal, we call the customer.",
+    "note": "The voordat-clause first inverts the main clause to 'bellen we'."
+   }
+  },
+  "pat-voordat-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A rule for the team: testing must come before publishing; 'moeten' is the modal."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat jullie de website publiceren",
+     "subject": "jullie",
+     "finite": "publiceren",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'jullie' comes first, then the object 'de website', and the plural verb 'publiceren' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "moeten jullie alles testen",
+     "subject": "jullie",
+     "finite": "moeten",
+     "role": "main clause (what happens first)",
+     "why": "The modal 'moeten' comes first, then the subject 'jullie' and the object 'alles'; the infinitive 'testen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "jullie"
+    },
+    {
+     "label": "object",
+     "text": "de website"
+    },
+    {
+     "label": "finite verb",
+     "text": "publiceren"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moeten"
+    },
+    {
+     "label": "subject",
+     "text": "jullie"
+    },
+    {
+     "label": "object",
+     "text": "alles"
+    },
+    {
+     "label": "infinitive",
+     "text": "testen"
+    }
+   ],
+   "meaning": "Before you publish the website, you must test everything.",
+   "order": "The main clause inverts to 'moeten jullie ... testen'. The pronoun 'alles' is the object of 'testen'. Read it as \"Voordat jullie de website publiceren, moeten jullie alles testen\".",
+   "forms": "publiceren: jullie publiceren. moeten: jullie moeten. testen: infinitive.",
+   "compare": "English 'you must test everything' keeps 'must' next to 'you'. Dutch inverts.",
+   "mistakes": [
+    {
+     "wrong": "Voordat jullie de website publiceren, jullie moeten alles testen.",
+     "right": "Voordat jullie de website publiceren, moeten jullie alles testen.",
+     "why": "The main clause starts with the modal: 'moeten jullie'."
+    },
+    {
+     "wrong": "Voordat jullie de website publiceert, moeten jullie alles testen.",
+     "right": "Voordat jullie de website publiceren, moeten jullie alles testen.",
+     "why": "The plural 'jullie' needs 'publiceren'. (not \"Voordat jullie de website publiceert, moeten jullie alles testen.\", but \"Voordat jullie de website publiceren, moeten jullie alles testen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Jullie moeten alles testen voordat jullie de website publiceren.",
+    "english": "You must test everything before you publish the website.",
+    "note": "With the main clause first there is no inversion. Compare: Jullie moeten alles testen voordat jullie de website publiceren."
+   }
+  },
+  "pat-voordat-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "An imperative with 'me' as object; the leaving is the later event."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Bel me",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Bel",
+     "role": "main clause (what happens first)",
+     "why": "An imperative: 'Bel' stands first and the object 'me' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat je naar huis gaat",
+     "subject": "je",
+     "finite": "gaat",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'je' comes first, the direction 'naar huis' follows, and the finite verb 'gaat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Bel"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "direction",
+     "text": "naar huis"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    }
+   ],
+   "meaning": "Call me before you go home.",
+   "order": "A short command followed by a voordat-clause with a direction before the verb. Read it as \"Bel me voordat je naar huis gaat\".",
+   "forms": "bellen: imperative bel. gaan: je gaat.",
+   "compare": "English 'Call me before you go home' has the same order, but Dutch puts 'gaat' last.",
+   "mistakes": [
+    {
+     "wrong": "Bel me voordat je gaat naar huis.",
+     "right": "Bel me voordat je naar huis gaat.",
+     "why": "The finite verb goes behind the direction phrase. (not \"Bel me voordat je gaat naar huis.\", but \"Bel me voordat je naar huis gaat.\")"
+    },
+    {
+     "wrong": "Bel me voordat je naar huis gaan.",
+     "right": "Bel me voordat je naar huis gaat.",
+     "why": "With 'je' the verb is 'gaat'. (not \"Bel me voordat je naar huis gaan.\", but \"Bel me voordat je naar huis gaat.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat je naar huis gaat, bel je me.",
+    "english": "Before you go home, you call me.",
+    "note": "The voordat-clause first inverts the main clause to 'bel je me'."
+   }
+  },
+  "pat-voordat-28": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "An imperative follows a voordat-clause: the answering is the later event."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat je antwoordt",
+     "subject": "je",
+     "finite": "antwoordt",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'je' comes first and the finite verb 'antwoordt' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "denk even na",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "denk",
+     "role": "main clause (the advice)",
+     "why": "An imperative: 'denk' stands first and the adverb 'even' follows; the particle 'na' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb",
+     "text": "antwoordt"
+    },
+    {
+     "label": "imperative verb (split separable)",
+     "text": "denk"
+    },
+    {
+     "label": "adverb",
+     "text": "even"
+    },
+    {
+     "label": "particle",
+     "text": "na"
+    }
+   ],
+   "meaning": "Before you answer, think for a moment.",
+   "order": "An imperative has no spoken subject, so there is no inversion. 'Nadenken' splits into 'denk ... na'. Read it as \"Voordat je antwoordt, denk even na\".",
+   "forms": "antwoorden: je antwoordt. nadenken: denk ... na.",
+   "compare": "English 'think for a moment' has no particle. Dutch uses 'nadenken'. For this card: \"Voordat je antwoordt, denk even na\".",
+   "mistakes": [
+    {
+     "wrong": "Voordat je antwoordt, je denk even na.",
+     "right": "Voordat je antwoordt, denk even na.",
+     "why": "An imperative has no spoken subject. (not \"Voordat je antwoordt, je denk even na.\", but \"Voordat je antwoordt, denk even na.\")"
+    },
+    {
+     "wrong": "Voordat je antwoordt, nadenk even.",
+     "right": "Voordat je antwoordt, denk even na.",
+     "why": "In a main clause 'nadenken' splits: 'denk ... na'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Denk even na voordat je antwoordt.",
+    "english": "Think for a moment before you answer.",
+    "note": "With the main clause first the imperative opens the sentence."
+   }
+  },
+  "pat-voordat-29": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The decision is the later event; the wanting to know comes first."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wil het weten",
+     "subject": "Ik",
+     "finite": "wil",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so the modal 'wil' is second; the object 'het' comes before the infinitive 'weten'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik beslis",
+     "subject": "ik",
+     "finite": "beslis",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first and the finite verb 'beslis' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "wil"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "infinitive",
+     "text": "weten"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "beslis"
+    }
+   ],
+   "meaning": "I want to know before I decide.",
+   "order": "A modal chain in the main clause and a short voordat-clause. Read it as \"Ik wil het weten voordat ik beslis\". Its parts: subject Ik, finite verb (modal) wil, object het, infinitive weten.",
+   "forms": "willen: ik wil. weten: infinitive. beslissen: ik beslis.",
+   "compare": "English 'I want to know' uses 'to'. Dutch has no 'te' after a modal. For this card: \"Ik wil het weten voordat ik beslis\".",
+   "mistakes": [
+    {
+     "wrong": "Ik wil het weten voordat beslis ik.",
+     "right": "Ik wil het weten voordat ik beslis.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik wil het weten voordat beslis ik.\", but \"Ik wil het weten voordat ik beslis.\")"
+    },
+    {
+     "wrong": "Ik wil het weten voordat ik beslist.",
+     "right": "Ik wil het weten voordat ik beslis.",
+     "why": "With 'ik' the verb is 'beslis'. (not \"Ik wil het weten voordat ik beslist.\", but \"Ik wil het weten voordat ik beslis.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik beslis, wil ik het weten.",
+    "english": "Before I decide, I want to know.",
+    "note": "The voordat-clause first inverts the main clause to 'wil ik'."
+   }
+  },
+  "pat-voordat-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A direct question: the question word starts the sentence and the verb is second."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wat doe je",
+     "subject": "je",
+     "finite": "doe",
+     "role": "main clause (the question)",
+     "why": "The question word 'Wat' is first, so 'doe' is second and the subject 'je' follows. The clause is \"Wat doe je\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat je de computer uitzet",
+     "subject": "je",
+     "finite": "uitzet",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'je' comes first, then the object 'de computer', and the joined verb 'uitzet' closes the clause. The clause is \"voordat je de computer uitzet\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "question word",
+     "text": "Wat"
+    },
+    {
+     "label": "finite verb",
+     "text": "doe"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "de computer"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "uitzet"
+    }
+   ],
+   "meaning": "What do you do before you switch off the computer?",
+   "order": "The main clause is a question with verb-second order. The voordat-clause has the separable verb joined at the end.",
+   "forms": "doen: doe je. uitzetten: zet ... uit / uitzet.",
+   "compare": "English 'What do you do' needs 'do' twice. Dutch uses 'doen' once. For this card: \"Wat doe je voordat je de computer uitzet\".",
+   "mistakes": [
+    {
+     "wrong": "Wat je doet voordat je de computer uitzet?",
+     "right": "Wat doe je voordat je de computer uitzet?",
+     "why": "A direct question needs the verb second: 'Wat doe je'."
+    },
+    {
+     "wrong": "Wat doe je voordat je de computer zet uit?",
+     "right": "Wat doe je voordat je de computer uitzet?",
+     "why": "The separable verb is written together in the voordat-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet wat je doet voordat je de computer uitzet.",
+    "english": "I know what you do before you switch off the computer.",
+    "note": "In a statement with an embedded question 'doet' goes to the end."
+   }
+  },
+  "pat-voordat-31": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A yes/no question starts with the modal; the payment would come before the start."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Moet ik iets betalen",
+     "subject": "ik",
+     "finite": "Moet",
+     "role": "main clause (the question)",
+     "why": "A yes/no question starts with the finite verb 'Moet', then the subject 'ik'; the object 'iets' comes before the infinitive 'betalen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik begin",
+     "subject": "ik",
+     "finite": "begin",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first and the finite verb 'begin' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Moet"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "iets"
+    },
+    {
+     "label": "infinitive",
+     "text": "betalen"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "begin"
+    }
+   ],
+   "meaning": "Do I have to pay anything before I start?",
+   "order": "In a question the modal opens the clause. The voordat-clause adds the point in time. Read it as \"Moet ik iets betalen voordat ik begin\".",
+   "forms": "moeten: moet ik. betalen: infinitive. beginnen: ik begin.",
+   "compare": "English 'Do I have to pay' needs 'do'. Dutch uses the modal 'moet' directly.",
+   "mistakes": [
+    {
+     "wrong": "Ik moet iets betalen voordat ik begin?",
+     "right": "Moet ik iets betalen voordat ik begin?",
+     "why": "A question inverts the modal and the subject: 'Moet ik'."
+    },
+    {
+     "wrong": "Moet ik iets betalen voordat begin ik?",
+     "right": "Moet ik iets betalen voordat ik begin?",
+     "why": "In the voordat-clause the subject comes before the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik moet iets betalen voordat ik begin.",
+    "english": "I have to pay something before I start.",
+    "note": "A statement has the subject first. Compare: Ik moet iets betalen voordat ik begin."
+   }
+  },
+  "pat-voordat-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The refusal is tied to knowledge: nothing can be said until the facts are known."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kan niets zeggen",
+     "subject": "Ik",
+     "finite": "kan",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so the modal 'kan' is second; the object 'niets' comes before the infinitive 'zeggen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik de feiten ken",
+     "subject": "ik",
+     "finite": "ken",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, then the object 'de feiten', and the finite verb 'ken' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    },
+    {
+     "label": "infinitive",
+     "text": "zeggen"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de feiten"
+    },
+    {
+     "label": "finite verb",
+     "text": "ken"
+    }
+   ],
+   "meaning": "I can't say anything before I know the facts.",
+   "order": "'Niets' is a negative object that stands before the infinitive. The verb 'kennen' is used for knowing facts. Read it as \"Ik kan niets zeggen voordat ik de feiten ken\".",
+   "forms": "kunnen: ik kan. zeggen: infinitive. kennen: ik ken.",
+   "compare": "English 'I can't say anything' needs 'not' and 'anything'. Dutch uses 'niets'.",
+   "mistakes": [
+    {
+     "wrong": "Ik kan zeggen niets voordat ik de feiten ken.",
+     "right": "Ik kan niets zeggen voordat ik de feiten ken.",
+     "why": "The infinitive 'zeggen' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Ik kan niets zeggen voordat ik de feiten kent.",
+     "right": "Ik kan niets zeggen voordat ik de feiten ken.",
+     "why": "With 'ik' the verb is 'ken'. (not \"Ik kan niets zeggen voordat ik de feiten kent.\", but \"Ik kan niets zeggen voordat ik de feiten ken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik de feiten ken, kan ik niets zeggen.",
+    "english": "Before I know the facts, I cannot say anything.",
+    "note": "The voordat-clause first inverts the main clause to 'kan ik'."
+   }
+  },
+  "pat-voordat-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "'Het' is the dummy subject of 'te laat zijn'; the decision has to come before."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat het te laat is",
+     "subject": "het",
+     "finite": "is",
+     "role": "voordat-clause (the later event)",
+     "why": "The dummy subject 'het' comes first, the predicate 'te laat' follows, and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "moeten we een besluit nemen",
+     "subject": "we",
+     "finite": "moeten",
+     "role": "main clause (what happens first)",
+     "why": "The modal 'moeten' comes first, then the subject 'we' and the object; the infinitive 'nemen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject (dummy)",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "te laat"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moeten"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "een besluit"
+    },
+    {
+     "label": "infinitive",
+     "text": "nemen"
+    }
+   ],
+   "meaning": "Before it is too late, we have to make a decision.",
+   "order": "'Een besluit nemen' is a fixed phrase. The main clause inverts to 'moeten we ... nemen'. Read it as \"Voordat het te laat is, moeten we een besluit nemen\".",
+   "forms": "zijn: het is. moeten: wij moeten. nemen: infinitive.",
+   "compare": "English 'before it is too late' keeps 'is' before the predicate. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Voordat het is te laat, moeten we een besluit nemen.",
+     "right": "Voordat het te laat is, moeten we een besluit nemen.",
+     "why": "The finite verb 'is' goes behind the predicate. (not \"Voordat het is te laat, moeten we een besluit nemen.\", but \"Voordat het te laat is, moeten we een besluit nemen.\")"
+    },
+    {
+     "wrong": "Voordat het te laat is, we moeten een besluit nemen.",
+     "right": "Voordat het te laat is, moeten we een besluit nemen.",
+     "why": "The main clause starts with the modal: 'moeten we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We moeten een besluit nemen voordat het te laat is.",
+    "english": "We have to make a decision before it is too late.",
+    "note": "With the main clause first there is no inversion. Compare: We moeten een besluit nemen voordat het te laat is."
+   }
+  },
+  "pat-voordat-34": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The check precedes the return; 'teruggeeft' is the joined separable verb."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De monteur controleert de motor",
+     "subject": "De monteur",
+     "finite": "controleert",
+     "role": "main clause (what happens first)",
+     "why": "'De monteur' is first, so 'controleert' is second and the object 'de motor' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat hij de auto teruggeeft",
+     "subject": "hij",
+     "finite": "teruggeeft",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'hij' comes first, then the object 'de auto', and the joined verb 'teruggeeft' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De monteur"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleert"
+    },
+    {
+     "label": "object",
+     "text": "de motor"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "de auto"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "teruggeeft"
+    }
+   ],
+   "meaning": "The mechanic checks the engine before he gives the car back.",
+   "order": "'Teruggeven' splits in a main clause ('geeft ... terug') and joins here. Read it as \"De monteur controleert de motor voordat hij de auto teruggeeft\".",
+   "forms": "controleren: de monteur controleert. teruggeven: geeft terug / teruggeeft.",
+   "compare": "English 'gives back' is two words. Dutch writes one in this clause. For this card: \"De monteur controleert de motor voordat hij de auto teruggeeft\".",
+   "mistakes": [
+    {
+     "wrong": "De monteur controleert de motor voordat hij geeft de auto terug.",
+     "right": "De monteur controleert de motor voordat hij de auto teruggeeft.",
+     "why": "In a dependent clause the separable verb is written together. (not \"De monteur controleert de motor voordat hij geeft de auto terug.\", but \"De monteur controleert de motor voordat hij de auto teruggeeft.\")"
+    },
+    {
+     "wrong": "De monteur controleert de motor voordat hij de auto teruggeven.",
+     "right": "De monteur controleert de motor voordat hij de auto teruggeeft.",
+     "why": "With 'hij' the verb is 'teruggeeft'. (not \"De monteur controleert de motor voordat hij de auto teruggeven.\", but \"De monteur controleert de motor voordat hij de auto teruggeeft.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat hij de auto teruggeeft, controleert de monteur de motor.",
+    "english": "Before he gives the car back, the mechanic checks the engine.",
+    "note": "The voordat-clause first inverts the main clause. Compare: Voordat hij de auto teruggeeft, controleert de monteur de motor."
+   }
+  },
+  "pat-voordat-35": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "voor = before (preposition)",
+    "why": "'Voor het eten' is a prepositional phrase: it names a moment with a noun and needs no second verb, unlike voordat."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Voor het eten was ik mijn handen",
+     "subject": "ik",
+     "finite": "was",
+     "role": "single main clause",
+     "why": "The phrase 'voor het eten' is first, so 'was' (from 'wassen') is second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "preposition (before)",
+     "text": "Voor"
+    },
+    {
+     "label": "noun phrase",
+     "text": "het eten"
+    },
+    {
+     "label": "finite verb",
+     "text": "was"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "mijn handen"
+    }
+   ],
+   "meaning": "Before dinner I wash my hands.",
+   "order": "The fronted phrase makes the verb second and puts the subject behind it. Here 'was' belongs to 'wassen', not 'zijn'.",
+   "forms": "wassen: ik was.",
+   "compare": "English 'before dinner' is also a prepositional phrase. For this card: \"Voor het eten was ik mijn handen\".",
+   "mistakes": [
+    {
+     "wrong": "Voor het eten ik was mijn handen.",
+     "right": "Voor het eten was ik mijn handen.",
+     "why": "After the fronted phrase the verb comes second: 'was ik'."
+    },
+    {
+     "wrong": "Voor het eten wast ik mijn handen.",
+     "right": "Voor het eten was ik mijn handen.",
+     "why": "With 'ik' the verb has no ending: 'was'. (not \"Voor het eten wast ik mijn handen.\", but \"Voor het eten was ik mijn handen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat we gaan eten, was ik mijn handen.",
+    "english": "Before we go and eat, I wash my hands.",
+    "note": "With a verb after the time word you need the conjunction 'voordat'."
+   }
+  },
+  "pat-voordat-36": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "daarvoor = before that (adverb)",
+    "why": "'Daarvoor' is an adverb that points back to an earlier moment; it fills position one and the verb follows."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Daarvoor controleerde ik de cijfers",
+     "subject": "ik",
+     "finite": "controleerde",
+     "role": "single main clause",
+     "why": "The adverb 'daarvoor' is first, so the past form 'controleerde' is second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (before that)",
+     "text": "Daarvoor"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "controleerde"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de cijfers"
+    }
+   ],
+   "meaning": "Before that I checked the figures.",
+   "order": "A single main clause: the adverb replaces a whole earlier event. No verb goes to the end. Read it as \"Daarvoor controleerde ik de cijfers\".",
+   "forms": "controleren: ik controleerde.",
+   "compare": "English 'before that' also refers back. Dutch uses one word. For this card: \"Daarvoor controleerde ik de cijfers\".",
+   "mistakes": [
+    {
+     "wrong": "Daarvoor ik controleerde de cijfers.",
+     "right": "Daarvoor controleerde ik de cijfers.",
+     "why": "After the adverb the verb comes second: 'controleerde ik'."
+    },
+    {
+     "wrong": "Daarvoor controleer ik de cijfers.",
+     "right": "Daarvoor controleerde ik de cijfers.",
+     "why": "The story is in the past: 'controleerde'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat de rapportage klaar was, controleerde ik de cijfers.",
+    "english": "Before the report was ready, I checked the figures.",
+    "note": "With a clause instead of an adverb you need 'voordat' and a final verb."
+   }
+  },
+  "pat-voordat-37": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "eerst = first (adverb)",
+    "why": "'Eerst' is an adverb of order: it takes position one and the verb follows directly."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Eerst lees ik de handleiding",
+     "subject": "ik",
+     "finite": "lees",
+     "role": "single main clause",
+     "why": "The adverb 'eerst' is first, so 'lees' is second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (first)",
+     "text": "Eerst"
+    },
+    {
+     "label": "finite verb",
+     "text": "lees"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de handleiding"
+    }
+   ],
+   "meaning": "First I read the manual.",
+   "order": "Because the adverb fills position one, the subject comes after the verb. No dependent clause is involved. Read it as \"Eerst lees ik de handleiding\".",
+   "forms": "lezen: ik lees.",
+   "compare": "English 'First I read' keeps the subject first. Dutch inverts. For this card: \"Eerst lees ik de handleiding\".",
+   "mistakes": [
+    {
+     "wrong": "Eerst ik lees de handleiding.",
+     "right": "Eerst lees ik de handleiding.",
+     "why": "After the adverb the verb comes second: 'lees ik'."
+    },
+    {
+     "wrong": "Eerst lezen ik de handleiding.",
+     "right": "Eerst lees ik de handleiding.",
+     "why": "The verb must be finite: 'lees'. (not \"Eerst lezen ik de handleiding.\", but \"Eerst lees ik de handleiding.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik lees de handleiding voordat ik begin.",
+    "english": "I read the manual before I start.",
+    "note": "With 'voordat' the order is expressed by a clause."
+   }
+  },
+  "pat-voordat-38": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Reading comes before sending; 'doorlezen' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik lees de mail door",
+     "subject": "Ik",
+     "finite": "lees",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so 'lees' is second; the object 'de mail' comes before the particle 'door'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat ik hem verstuur",
+     "subject": "ik",
+     "finite": "verstuur",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, then the object 'hem', and the finite verb 'verstuur' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "lees"
+    },
+    {
+     "label": "object",
+     "text": "de mail"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "hem"
+    },
+    {
+     "label": "finite verb",
+     "text": "verstuur"
+    }
+   ],
+   "meaning": "I read through the mail before I send it.",
+   "order": "'Doorlezen' splits as 'lees ... door'. The pronoun 'hem' stands for 'de mail'. Read it as \"Ik lees de mail door voordat ik hem verstuur\".",
+   "forms": "doorlezen: lees ... door. versturen: ik verstuur.",
+   "compare": "English 'read through' has the same split. Dutch also uses the pronoun 'hem' for a 'de' noun.",
+   "mistakes": [
+    {
+     "wrong": "Ik doorlees de mail voordat ik hem verstuur.",
+     "right": "Ik lees de mail door voordat ik hem verstuur.",
+     "why": "In a main clause the separable verb splits: 'lees ... door'."
+    },
+    {
+     "wrong": "Ik lees de mail door voordat ik verstuur hem.",
+     "right": "Ik lees de mail door voordat ik hem verstuur.",
+     "why": "The finite verb goes behind the object 'hem'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat ik hem verstuur, lees ik de mail door.",
+    "english": "Before I send it, I read the mail through.",
+    "note": "The voordat-clause first inverts the main clause. Compare: Voordat ik hem verstuur, lees ik de mail door."
+   }
+  },
+  "pat-voordat-39": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A final taste test before serving; the pronouns 'hem' stand for 'de saus'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De kok proeft de saus",
+     "subject": "De kok",
+     "finite": "proeft",
+     "role": "main clause (what happens first)",
+     "why": "'De kok' is first, so 'proeft' is second and the object 'de saus' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat hij hem serveert",
+     "subject": "hij",
+     "finite": "serveert",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'hij' comes first, then the object 'hem', and the finite verb 'serveert' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De kok"
+    },
+    {
+     "label": "finite verb",
+     "text": "proeft"
+    },
+    {
+     "label": "object",
+     "text": "de saus"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "hem"
+    },
+    {
+     "label": "finite verb",
+     "text": "serveert"
+    }
+   ],
+   "meaning": "The cook tastes the sauce before he serves it.",
+   "order": "Two different pronouns appear: 'hij' (the cook) and 'hem' (the sauce, a 'de' noun). Read it as \"De kok proeft de saus voordat hij hem serveert\".",
+   "forms": "proeven: de kok proeft. serveren: hij serveert.",
+   "compare": "English uses 'it' for the sauce. Dutch uses 'hem' for 'de' nouns. For this card: \"De kok proeft de saus voordat hij hem serveert\".",
+   "mistakes": [
+    {
+     "wrong": "De kok proeft de saus voordat hij serveert hem.",
+     "right": "De kok proeft de saus voordat hij hem serveert.",
+     "why": "The finite verb goes behind the object 'hem'. (not \"De kok proeft de saus voordat hij serveert hem.\", but \"De kok proeft de saus voordat hij hem serveert.\")"
+    },
+    {
+     "wrong": "De kok proeft de saus voordat hij hem serveren.",
+     "right": "De kok proeft de saus voordat hij hem serveert.",
+     "why": "With 'hij' the verb is 'serveert'. (not \"De kok proeft de saus voordat hij hem serveren.\", but \"De kok proeft de saus voordat hij hem serveert.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat hij hem serveert, proeft de kok de saus.",
+    "english": "Before he serves it, the cook tastes the sauce.",
+    "note": "The voordat-clause first inverts the main clause to 'proeft de kok'."
+   }
+  },
+  "pat-voordat-40": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Darkness is the later event; being home is the wish, expressed with a modal and no verb of motion."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat het donker wordt",
+     "subject": "het",
+     "finite": "wordt",
+     "role": "voordat-clause (the later event)",
+     "why": "The dummy subject 'het' comes first, the predicate 'donker' follows, and the finite verb 'wordt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "willen we thuis zijn",
+     "subject": "we",
+     "finite": "willen",
+     "role": "main clause (what happens first)",
+     "why": "The modal 'willen' comes first, then the subject 'we' and the adverb 'thuis'; the infinitive 'zijn' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject (dummy)",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "donker"
+    },
+    {
+     "label": "finite verb",
+     "text": "wordt"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "willen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "infinitive",
+     "text": "zijn"
+    }
+   ],
+   "meaning": "Before it gets dark, we want to be home.",
+   "order": "'Donker worden' expresses the change. The main clause inverts to 'willen we thuis zijn'. Read it as \"Voordat het donker wordt, willen we thuis zijn\".",
+   "forms": "worden: het wordt. willen: wij willen. zijn: infinitive.",
+   "compare": "English 'before it gets dark' uses 'get'. Dutch uses 'worden'. For this card: \"Voordat het donker wordt, willen we thuis zijn\".",
+   "mistakes": [
+    {
+     "wrong": "Voordat het wordt donker, willen we thuis zijn.",
+     "right": "Voordat het donker wordt, willen we thuis zijn.",
+     "why": "The finite verb 'wordt' goes behind the predicate 'donker'. (not \"Voordat het wordt donker, willen we thuis zijn.\", but \"Voordat het donker wordt, willen we thuis zijn.\")"
+    },
+    {
+     "wrong": "Voordat het donker wordt, we willen thuis zijn.",
+     "right": "Voordat het donker wordt, willen we thuis zijn.",
+     "why": "The main clause starts with the modal: 'willen we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We willen thuis zijn voordat het donker wordt.",
+    "english": "We want to be home before it gets dark.",
+    "note": "With the main clause first there is no inversion. Compare: We willen thuis zijn voordat het donker wordt."
+   }
+  },
+  "pat-voordat-reuse-career-changes-030": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The start is the later event; confirming the stopping criteria is the preparation."
+   },
+   "situationNl": "Een team begint een risicovolle ingreep. Vertel hoe jullie je voorbereiden en in welke volgorde.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat we beginnen",
+     "subject": "we",
+     "finite": "beginnen",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'we' comes first and the plural verb 'beginnen' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "bevestigen we de stopcriteria",
+     "subject": "we",
+     "finite": "bevestigen",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'bevestigen' comes first, then the subject 'we' and the object 'de stopcriteria'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "finite verb",
+     "text": "beginnen"
+    },
+    {
+     "label": "finite verb",
+     "text": "bevestigen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de stopcriteria"
+    }
+   ],
+   "meaning": "Before we begin, we confirm the stopping criteria.",
+   "order": "A short voordat-clause. The main clause inverts to 'bevestigen we'. Read it as \"Voordat we beginnen, bevestigen we de stopcriteria\".",
+   "forms": "beginnen: wij beginnen. bevestigen: wij bevestigen.",
+   "compare": "English 'Before we begin, we confirm' keeps 'we confirm'. Dutch inverts.",
+   "mistakes": [
+    {
+     "wrong": "Voordat we beginnen, we bevestigen de stopcriteria.",
+     "right": "Voordat we beginnen, bevestigen we de stopcriteria.",
+     "why": "After the voordat-clause the verb comes first: 'bevestigen we'."
+    },
+    {
+     "wrong": "Voordat we beginnen, bevestigt we de stopcriteria.",
+     "right": "Voordat we beginnen, bevestigen we de stopcriteria.",
+     "why": "The plural 'we' needs 'bevestigen'. (not \"Voordat we beginnen, bevestigt we de stopcriteria.\", but \"Voordat we beginnen, bevestigen we de stopcriteria.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We bevestigen de stopcriteria voordat we beginnen.",
+    "english": "We confirm the stopping criteria before we begin.",
+    "note": "With the main clause first there is no inversion. Compare: We bevestigen de stopcriteria voordat we beginnen."
+   }
+  },
+  "pat-voordat-reuse-career-changes-052": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A prerequisite with 'moeten': the plan must exist before the start."
+   },
+   "situationNl": "Een manager wil direct starten met een migratie. Noem de voorwaarde die jij stelt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We moeten een herstelplan hebben",
+     "subject": "We",
+     "finite": "moeten",
+     "role": "main clause (what happens first)",
+     "why": "We is first, so the plural 'moeten' is second; the object 'een herstelplan' comes before the infinitive 'hebben'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat we beginnen",
+     "subject": "we",
+     "finite": "beginnen",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'we' comes first and the plural verb 'beginnen' closes the short clause. The clause is \"voordat we beginnen\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moeten"
+    },
+    {
+     "label": "object",
+     "text": "een herstelplan"
+    },
+    {
+     "label": "infinitive",
+     "text": "hebben"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "finite verb",
+     "text": "beginnen"
+    }
+   ],
+   "meaning": "We must have a recovery plan before we begin.",
+   "order": "The modal chain 'moeten ... hebben' stands in the main clause; the voordat-clause adds the point in time. Read it as \"We moeten een herstelplan hebben voordat we beginnen\".",
+   "forms": "moeten: wij moeten. hebben: infinitive. beginnen: wij beginnen.",
+   "compare": "English 'We must have a recovery plan' is the same chain. For this card: \"We moeten een herstelplan hebben voordat we beginnen\".",
+   "mistakes": [
+    {
+     "wrong": "We moeten hebben een herstelplan voordat we beginnen.",
+     "right": "We moeten een herstelplan hebben voordat we beginnen.",
+     "why": "The infinitive 'hebben' goes to the end of the main clause."
+    },
+    {
+     "wrong": "We moet een herstelplan hebben voordat we beginnen.",
+     "right": "We moeten een herstelplan hebben voordat we beginnen.",
+     "why": "The plural 'we' needs 'moeten'. (not \"We moet een herstelplan hebben voordat we beginnen.\", but \"We moeten een herstelplan hebben voordat we beginnen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat we beginnen, moeten we een herstelplan hebben.",
+    "english": "Before we begin, we must have a recovery plan.",
+    "note": "The voordat-clause first inverts the main clause to 'moeten we'."
+   }
+  },
+  "pat-voordat-reuse-career-clarification-048": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Checking the order precedes continuing; 'verderga' is a joined separable verb."
+   },
+   "situationNl": "Je volgt een handleiding met meerdere stappen. Een collega staat klaar om door te gaan. Zeg wat je eerst wilt nakijken.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat ik verderga",
+     "subject": "ik",
+     "finite": "verderga",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first and the joined separable verb 'verderga' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "wil ik de volgorde van de stappen controleren",
+     "subject": "ik",
+     "finite": "wil",
+     "role": "main clause (what happens first)",
+     "why": "The modal 'wil' comes first, then the subject 'ik' and the object; the infinitive 'controleren' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "verderga"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "wil"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de volgorde van de stappen"
+    },
+    {
+     "label": "infinitive",
+     "text": "controleren"
+    }
+   ],
+   "meaning": "Before I continue, I want to check the order of the steps.",
+   "order": "'Verdergaan' joins in the dependent clause. The modal 'wil' opens the inverted main clause. Read it as \"Voordat ik verderga, wil ik de volgorde van de stappen controleren\".",
+   "forms": "verdergaan: ga verder / verderga. willen: ik wil. controleren: infinitive.",
+   "compare": "English 'before I continue' uses one verb. Dutch uses the separable 'verdergaan'.",
+   "mistakes": [
+    {
+     "wrong": "Voordat ik ga verder, wil ik de volgorde van de stappen controleren.",
+     "right": "Voordat ik verderga, wil ik de volgorde van de stappen controleren.",
+     "why": "In a dependent clause the separable verb is written together. (not \"Voordat ik ga verder, wil ik de volgorde van de stappen controleren.\", but \"Voordat ik verderga, wil ik de volgorde van de stappen controleren.\")"
+    },
+    {
+     "wrong": "Voordat ik verderga, ik wil de volgorde van de stappen controleren.",
+     "right": "Voordat ik verderga, wil ik de volgorde van de stappen controleren.",
+     "why": "The main clause starts with the verb: 'wil ik'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik wil de volgorde van de stappen controleren voordat ik verderga.",
+    "english": "I want to check the order of the steps before I continue.",
+    "note": "With the main clause first there is no inversion. Compare: Ik wil de volgorde van de stappen controleren voordat ik verderga."
+   }
+  },
+  "pat-voordat-reuse-career-priorities-060": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The leave is the later event; handing over tasks is the preparation."
+   },
+   "situationNl": "Je gaat binnenkort op vakantie. Vertel je team hoe je je werk overgeeft en op welk moment dat gebeurt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat ik verlof neem",
+     "subject": "ik",
+     "finite": "neem",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'ik' comes first, then the object 'verlof', and the finite verb 'neem' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "draag ik de openstaande taken over",
+     "subject": "ik",
+     "finite": "draag",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'draag' comes first, then the subject 'ik' and the object; the particle 'over' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "verlof"
+    },
+    {
+     "label": "finite verb",
+     "text": "neem"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "draag"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de openstaande taken"
+    },
+    {
+     "label": "particle",
+     "text": "over"
+    }
+   ],
+   "meaning": "Before I take leave, I hand over the outstanding tasks.",
+   "order": "'Verlof nemen' is a fixed phrase. 'Overdragen' splits in the main clause: 'draag ... over'. Read it as \"Voordat ik verlof neem, draag ik de openstaande taken over\".",
+   "forms": "nemen: ik neem. overdragen: draag ... over.",
+   "compare": "English 'hand over' has the same split. For this card: \"Voordat ik verlof neem, draag ik de openstaande taken over\".",
+   "mistakes": [
+    {
+     "wrong": "Voordat ik neem verlof, draag ik de openstaande taken over.",
+     "right": "Voordat ik verlof neem, draag ik de openstaande taken over.",
+     "why": "The finite verb goes behind the object 'verlof'."
+    },
+    {
+     "wrong": "Voordat ik verlof neem, draag ik over de openstaande taken.",
+     "right": "Voordat ik verlof neem, draag ik de openstaande taken over.",
+     "why": "The particle 'over' goes to the end. (not \"Voordat ik verlof neem, draag ik over de openstaande taken.\", but \"Voordat ik verlof neem, draag ik de openstaande taken over.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik draag de openstaande taken over voordat ik verlof neem.",
+    "english": "I hand over the outstanding tasks before I take leave.",
+    "note": "With the main clause first there is no inversion. Compare: Ik draag de openstaande taken over voordat ik verlof neem."
+   }
+  },
+  "pat-voordat-reuse-career-support-032": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A formal request: 'u' takes 'deelt'; the closing comes before the sharing."
+   },
+   "situationNl": "Een klant gaat zijn beeldscherm laten zien. Vraag hem beleefd wat hij moet afsluiten, en in welke volgorde.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Sluit persoonlijke vensters alstublieft",
+     "subject": "(u, niet uitgesproken)",
+     "finite": "Sluit",
+     "role": "main clause (what happens first)",
+     "why": "A formal imperative: 'Sluit' stands first, then the object and the polite word 'alstublieft'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat u het scherm deelt",
+     "subject": "u",
+     "finite": "deelt",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'u' comes first, then the object 'het scherm', and the finite verb 'deelt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Sluit"
+    },
+    {
+     "label": "object",
+     "text": "persoonlijke vensters"
+    },
+    {
+     "label": "particle (please)",
+     "text": "alstublieft"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "object",
+     "text": "het scherm"
+    },
+    {
+     "label": "finite verb",
+     "text": "deelt"
+    }
+   ],
+   "meaning": "Please close personal windows before sharing the screen.",
+   "order": "The formal 'u' takes 'deelt'. The imperative needs no subject, but the voordat-clause does. Read it as \"Sluit persoonlijke vensters alstublieft voordat u het scherm deelt\".",
+   "forms": "sluiten: imperative sluit. delen: u deelt.",
+   "compare": "English 'Please close ... before sharing' has no subject in the second part. Dutch has 'u'.",
+   "mistakes": [
+    {
+     "wrong": "Sluit persoonlijke vensters alstublieft voordat u deelt het scherm.",
+     "right": "Sluit persoonlijke vensters alstublieft voordat u het scherm deelt.",
+     "why": "The finite verb goes behind the object. (not \"Sluit persoonlijke vensters alstublieft voordat u deelt het scherm.\", but \"Sluit persoonlijke vensters alstublieft voordat u het scherm deelt.\")"
+    },
+    {
+     "wrong": "Sluit persoonlijke vensters alstublieft voordat u het scherm deel.",
+     "right": "Sluit persoonlijke vensters alstublieft voordat u het scherm deelt.",
+     "why": "With 'u' the verb needs -t: 'deelt'. (not \"Sluit persoonlijke vensters alstublieft voordat u het scherm deel.\", but \"Sluit persoonlijke vensters alstublieft voordat u het scherm deelt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat u het scherm deelt, sluit u persoonlijke vensters alstublieft.",
+    "english": "Before you share the screen, please close personal windows.",
+    "note": "The voordat-clause first inverts the main clause to 'sluit u'."
+   }
+  },
+  "pat-voordat-reuse-career-support-039": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The explanation precedes the start; 'wat u kunt doen' is an embedded clause with the modal last."
+   },
+   "situationNl": "Een klant wil weten hoe hij zich voorbereidt op een sessie op afstand. Beloof hem formeel een uitleg en noem het moment.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik leg uit wat u kunt doen",
+     "subject": "Ik",
+     "finite": "leg",
+     "role": "main clause (what happens first)",
+     "why": "Ik is first, so 'leg' is second; the embedded question 'wat u kunt doen' fills the object slot and the particle 'uit' stays before it."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat we beginnen",
+     "subject": "we",
+     "finite": "beginnen",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'we' comes first and the plural verb 'beginnen' closes the short clause. The clause is \"voordat we beginnen\". (2)"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "leg"
+    },
+    {
+     "label": "particle",
+     "text": "uit"
+    },
+    {
+     "label": "embedded question",
+     "text": "wat u kunt doen"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "finite verb",
+     "text": "beginnen"
+    }
+   ],
+   "meaning": "I will explain what you can do before we start.",
+   "order": "Two clause types follow the main verb: an embedded question with 'kunt doen' and the voordat-clause. Both put the verb last.",
+   "forms": "uitleggen: leg ... uit. kunnen: u kunt. beginnen: wij beginnen.",
+   "compare": "English 'explain what you can do' uses 'explain' alone. Dutch uses the separable 'uitleggen'.",
+   "mistakes": [
+    {
+     "wrong": "Ik leg uit wat kunt u doen voordat we beginnen.",
+     "right": "Ik leg uit wat u kunt doen voordat we beginnen.",
+     "why": "In an embedded question the subject comes before the modal: 'wat u kunt doen'."
+    },
+    {
+     "wrong": "Ik uitleg wat u kunt doen voordat we beginnen.",
+     "right": "Ik leg uit wat u kunt doen voordat we beginnen.",
+     "why": "In a main clause 'uitleggen' splits: 'leg ... uit'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat we beginnen, leg ik uit wat u kunt doen.",
+    "english": "Before we start, I explain what you can do.",
+    "note": "The voordat-clause first inverts the main clause to 'leg ik'."
+   }
+  },
+  "pat-voordat-reuse-career-troubleshooting-008": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "A screenshot is the record made before the change; 'iets' is the object of 'wijzigen'."
+   },
+   "situationNl": "Je begeleidt een collega bij een controle van instellingen. Zeg wat jullie eerst vastleggen en welke stap dan volgt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Voordat we iets wijzigen",
+     "subject": "we",
+     "finite": "wijzigen",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'we' comes first, then the object 'iets', and the finite verb 'wijzigen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "maken we een schermafbeelding",
+     "subject": "we",
+     "finite": "maken",
+     "role": "main clause (what happens first)",
+     "why": "The finite verb 'maken' comes first, then the subject 'we' and the object 'een schermafbeelding'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (before)",
+     "text": "Voordat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "iets"
+    },
+    {
+     "label": "finite verb",
+     "text": "wijzigen"
+    },
+    {
+     "label": "finite verb",
+     "text": "maken"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "een schermafbeelding"
+    }
+   ],
+   "meaning": "Before we change anything, we take a screenshot.",
+   "order": "The pronoun 'iets' stands before the verb. The main clause inverts to 'maken we'. Read it as \"Voordat we iets wijzigen, maken we een schermafbeelding\".",
+   "forms": "wijzigen: wij wijzigen. maken: wij maken.",
+   "compare": "English 'Before we change anything' keeps 'change' before 'anything'. Dutch puts 'wijzigen' last.",
+   "mistakes": [
+    {
+     "wrong": "Voordat we wijzigen iets, maken we een schermafbeelding.",
+     "right": "Voordat we iets wijzigen, maken we een schermafbeelding.",
+     "why": "The finite verb goes behind the object 'iets'."
+    },
+    {
+     "wrong": "Voordat we iets wijzigen, we maken een schermafbeelding.",
+     "right": "Voordat we iets wijzigen, maken we een schermafbeelding.",
+     "why": "The main clause starts with the verb: 'maken we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We maken een schermafbeelding voordat we iets wijzigen.",
+    "english": "We take a screenshot before we change anything.",
+    "note": "With the main clause first there is no inversion. Compare: We maken een schermafbeelding voordat we iets wijzigen."
+   }
+  },
+  "pat-voordat-reuse-home-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "The tidying comes before the leaving; 'gaat ... opruimen' is a verb chain, 'weggaat' is joined."
+   },
+   "situationNl": "Een kind wil meteen naar buiten. Zeg wat het eerst moet doen in zijn eigen kamer.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je gaat je kamer opruimen",
+     "subject": "Je",
+     "finite": "gaat",
+     "role": "main clause (what happens first)",
+     "why": "'Je' is first, so 'gaat' is second; the object 'je kamer' comes before the infinitive 'opruimen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat je weggaat",
+     "subject": "je",
+     "finite": "weggaat",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'je' comes first and the joined separable verb 'weggaat' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    },
+    {
+     "label": "object",
+     "text": "je kamer"
+    },
+    {
+     "label": "infinitive",
+     "text": "opruimen"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "weggaat"
+    }
+   ],
+   "meaning": "You are going to tidy your room before you leave.",
+   "order": "'Gaan + infinitive' marks the near plan. 'Weggaan' is separable and joins in the dependent clause. Read it as \"Je gaat je kamer opruimen voordat je weggaat\".",
+   "forms": "gaan: je gaat. opruimen: infinitive. weggaan: ga weg / weggaat.",
+   "compare": "English 'before you leave' has one verb. Dutch uses the separable 'weggaan'.",
+   "mistakes": [
+    {
+     "wrong": "Je gaat je kamer opruimen voordat je gaat weg.",
+     "right": "Je gaat je kamer opruimen voordat je weggaat.",
+     "why": "In a dependent clause the separable verb is written together: 'weggaat'."
+    },
+    {
+     "wrong": "Je gaat opruimen je kamer voordat je weggaat.",
+     "right": "Je gaat je kamer opruimen voordat je weggaat.",
+     "why": "The infinitive 'opruimen' goes behind the object."
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat je weggaat, ga je je kamer opruimen.",
+    "english": "Before you leave, you are going to tidy your room.",
+    "note": "The voordat-clause first inverts the main clause to 'ga je'."
+   }
+  },
+  "pat-voordat-reuse-work-174": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "An imperative: 'dit' is the last task, and the voordat-clause names the leaving."
+   },
+   "situationNl": "Een collega pakt zijn jas aan het einde van de dag. Wijs hem op een laatste taak.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Doe dit",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Doe",
+     "role": "main clause (what happens first)",
+     "why": "An imperative: 'Doe' stands first and the object 'dit' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat je vertrekt",
+     "subject": "je",
+     "finite": "vertrekt",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'je' comes first and the finite verb 'vertrekt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Doe"
+    },
+    {
+     "label": "object",
+     "text": "dit"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb",
+     "text": "vertrekt"
+    }
+   ],
+   "meaning": "Do this before you leave.",
+   "order": "A very short imperative. Only the voordat-clause has a subject. Read it as \"Doe dit voordat je vertrekt\". Its parts: imperative verb Doe, object dit, conjunction (before) voordat, subject je.",
+   "forms": "doen: imperative doe. vertrekken: je vertrekt.",
+   "compare": "English 'Do this before you leave' has the same structure. For this card: \"Doe dit voordat je vertrekt\".",
+   "mistakes": [
+    {
+     "wrong": "Doe dit voordat vertrekt je.",
+     "right": "Doe dit voordat je vertrekt.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Doe dit voordat vertrekt je.\", but \"Doe dit voordat je vertrekt.\")"
+    },
+    {
+     "wrong": "Doe dit voordat je vertrek.",
+     "right": "Doe dit voordat je vertrekt.",
+     "why": "With 'je' the verb needs -t: 'vertrekt'. (not \"Doe dit voordat je vertrek.\", but \"Doe dit voordat je vertrekt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat je vertrekt, doe je dit.",
+    "english": "Before you leave, you do this.",
+    "note": "The voordat-clause first inverts the main clause. Compare: Voordat je vertrekt, doe je dit."
+   }
+  },
+  "pat-voordat-reuse-work-330": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "voordat = before (conjunction)",
+    "why": "Two imperatives joined by 'en', then the voordat-clause: compare before you book."
+   },
+   "situationNl": "Een vriend wil snel een hotel reserveren. Geef hem een advies over zijn aanpak en het moment.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wees slim en vergelijk de prijzen",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Wees",
+     "role": "main clause (what happens first)",
+     "why": "An imperative: 'Wees' stands first; the second imperative 'vergelijk' follows after 'en'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "voordat je boekt",
+     "subject": "je",
+     "finite": "boekt",
+     "role": "voordat-clause (the later event)",
+     "why": "The subject 'je' comes first and the finite verb 'boekt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Wees"
+    },
+    {
+     "label": "predicate",
+     "text": "slim"
+    },
+    {
+     "label": "conjunction (and)",
+     "text": "en"
+    },
+    {
+     "label": "imperative verb",
+     "text": "vergelijk"
+    },
+    {
+     "label": "object",
+     "text": "de prijzen"
+    },
+    {
+     "label": "conjunction (before)",
+     "text": "voordat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb",
+     "text": "boekt"
+    }
+   ],
+   "meaning": "Be smart and compare the prices before you book.",
+   "order": "Two commands share one subject (not spoken). Each is first in its part; the voordat-clause ends the sentence. Read it as \"Wees slim en vergelijk de prijzen voordat je boekt\".",
+   "forms": "zijn: wees. vergelijken: vergelijk. boeken: je boekt.",
+   "compare": "English 'Be smart and compare' has the same structure. For this card: \"Wees slim en vergelijk de prijzen voordat je boekt\".",
+   "mistakes": [
+    {
+     "wrong": "Wees slim en vergelijk de prijzen voordat boekt je.",
+     "right": "Wees slim en vergelijk de prijzen voordat je boekt.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Wees slim en vergelijk de prijzen voordat boekt je.\", but \"Wees slim en vergelijk de prijzen voordat je boekt.\")"
+    },
+    {
+     "wrong": "Wees slim en je vergelijk de prijzen voordat je boekt.",
+     "right": "Wees slim en vergelijk de prijzen voordat je boekt.",
+     "why": "An imperative has no spoken subject. (not \"Wees slim en je vergelijk de prijzen voordat je boekt.\", but \"Wees slim en vergelijk de prijzen voordat je boekt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Voordat je boekt, vergelijk je de prijzen.",
+    "english": "Before you book, you compare the prices.",
+    "note": "The voordat-clause first inverts the main clause to 'vergelijk je'."
+   }
+  }
+ }
+}

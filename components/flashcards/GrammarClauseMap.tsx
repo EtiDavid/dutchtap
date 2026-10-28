@@ -4,11 +4,10 @@ const KIND = {
   hoofdzin: { dutch: "hoofdzin", english: "main clause" },
   bijzin: { dutch: "bijzin", english: "subordinate clause" },
 } as const;
-const SENSE: Record<string, string> = { if: "if", when: "when", whenever: "whenever", "only-when": "only when (not until)" };
 
-/** Highlights the finite verb inside its clause. The clause text and verb are authored, so the match is a literal word, never a guess. */
+/** Highlights the finite verb inside its clause (first whole-word match, ignoring case). The clause text and verb are authored; a test requires the verb to occur once in a clause, so the match is never ambiguous. */
 function Highlighted({ text, finite }: { text: string; finite: string }) {
-  const at = text.search(new RegExp(`(^|\\s)${finite.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=\\s|$)`));
+  const at = text.search(new RegExp(`(^|\\s)${finite.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=\\s|$)`, "i"));
   if (at < 0) return <>{text}</>;
   const start = text[at] === " " ? at + 1 : at;
   return (
@@ -29,17 +28,17 @@ export function GrammarClauseMap({ breakdown }: { breakdown: Breakdown }) {
   return (
     <section className="mt-4 space-y-3" aria-label="Clause map" data-testid="clause-map">
       <h3 className="eyebrow">Clause map</h3>
-      {breakdown.alsSense && (
-        <p className="text-sm" data-testid="als-sense">
-          <span className="rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent">als = {SENSE[breakdown.alsSense.sense] ?? breakdown.alsSense.sense}</span>{" "}
-          <span className="text-muted">{breakdown.alsSense.why}</span>
+      {breakdown.sense && (
+        <p className="text-sm" data-testid="topic-sense">
+          <span className="rounded-full bg-accent-soft px-2 py-0.5 text-xs font-bold text-accent">{breakdown.sense.label}</span>{" "}
+          <span className="text-muted">{breakdown.sense.why}</span>
         </p>
       )}
       <div className="grid gap-2">
         {breakdown.clauses.map((clause, index) => (
           <div key={index} className="rounded-xl border border-border bg-surface p-3" data-clause={clause.kind}>
             <p className="text-[11px] font-bold uppercase tracking-wide text-accent">
-              {KIND[clause.kind].dutch} · {KIND[clause.kind].english}
+              {KIND[clause.kind].dutch} · {clause.role ?? KIND[clause.kind].english}
             </p>
             <p lang="nl" className="mt-1 text-base font-semibold leading-snug">
               <Highlighted text={clause.text} finite={clause.finite} />

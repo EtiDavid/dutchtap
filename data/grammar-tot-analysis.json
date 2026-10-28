@@ -1,0 +1,4205 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analysis for Tot and totdat: conjunction, preposition and fixed expressions. Status ai-editorial-checked is not native-speaker review.",
+ "cards": {
+  "pat-tot-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The doctor's call is the event that ends the waiting, so 'tot' opens the end-point clause."
+   },
+   "situationNl": "Je zit in een wachtkamer en weet niet hoe lang het duurt. Een vriend belt en vraagt wat je doet. Zeg wat je blijft doen en wat er moet gebeuren.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wacht",
+     "subject": "Ik",
+     "finite": "wacht",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Ik is first, so 'wacht' is second; the activity is only the waiting."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de dokter me roept",
+     "subject": "de dokter",
+     "finite": "roept",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de dokter' comes first, then the object 'me', and the finite verb 'roept' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de dokter"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "finite verb",
+     "text": "roept"
+    }
+   ],
+   "meaning": "I wait until the doctor calls me.",
+   "order": "The main clause says what continues, the tot-clause says when it stops. The dependent clause sends its verb to the end after the object.",
+   "forms": "wachten: ik wacht. roepen: de dokter roept.",
+   "compare": "English 'until the doctor calls me' keeps 'calls' next to the subject. Dutch puts 'roept' behind 'me'.",
+   "mistakes": [
+    {
+     "wrong": "Ik wacht tot de dokter roept me.",
+     "right": "Ik wacht tot de dokter me roept.",
+     "why": "In the tot-clause the finite verb goes to the end, behind the object."
+    },
+    {
+     "wrong": "Ik wacht tot de dokter me roep.",
+     "right": "Ik wacht tot de dokter me roept.",
+     "why": "With a singular noun subject the verb needs -t: 'roept'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de dokter me roept, wacht ik.",
+    "english": "Until the doctor calls me, I wait.",
+    "note": "With the tot-clause first the main clause inverts to 'wacht ik'."
+   }
+  },
+  "pat-tot-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The plural 'dokters' and 'we' need plural verbs; the end point is again an event."
+   },
+   "situationNl": "Jullie zitten met meer mensen in een praktijk. Vertel wat jullie doen en op wie jullie rekenen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We wachten",
+     "subject": "We",
+     "finite": "wachten",
+     "role": "main clause (the waiting or the activity)",
+     "why": "We is first, so the plural 'wachten' is second. The clause is \"We wachten\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de dokters ons roepen",
+     "subject": "de dokters",
+     "finite": "roepen",
+     "role": "tot-clause (the end point)",
+     "why": "The plural subject 'de dokters' comes first, then the object 'ons', and the plural verb 'roepen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "wachten"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de dokters"
+    },
+    {
+     "label": "object",
+     "text": "ons"
+    },
+    {
+     "label": "finite verb",
+     "text": "roepen"
+    }
+   ],
+   "meaning": "We wait until the doctors call us.",
+   "order": "Both clauses have plural subjects, so both verbs end in -en. The object 'ons' stands before the final verb. Read it as \"We wachten tot de dokters ons roepen\".",
+   "forms": "wachten: wij wachten. roepen: de dokters roepen.",
+   "compare": "English 'wait until the doctors call us' has the same logic. Dutch puts 'roepen' last.",
+   "mistakes": [
+    {
+     "wrong": "We wachten tot de dokters roept ons.",
+     "right": "We wachten tot de dokters ons roepen.",
+     "why": "The plural subject needs 'roepen', and the verb goes last."
+    },
+    {
+     "wrong": "We wacht tot de dokters ons roepen.",
+     "right": "We wachten tot de dokters ons roepen.",
+     "why": "The plural 'we' needs 'wachten'. (not \"We wacht tot de dokters ons roepen.\", but \"We wachten tot de dokters ons roepen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de dokters ons roepen, wachten we.",
+    "english": "Until the doctors call us, we wait.",
+    "note": "With the tot-clause first the main clause inverts to 'wachten we'."
+   }
+  },
+  "pat-tot-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The colleague's return ends the staying; 'terugkomt' is the joined separable verb."
+   },
+   "situationNl": "Een collega is even weg en jij bewaakt zijn plek. Iemand vraagt of je mee gaat. Zeg wat je doet en voor hoe lang.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik blijf hier",
+     "subject": "Ik",
+     "finite": "blijf",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Ik is first, so 'blijf' is second and 'hier' follows. The clause is \"Ik blijf hier\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot mijn collega terugkomt",
+     "subject": "mijn collega",
+     "finite": "terugkomt",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'mijn collega' comes first and the joined separable verb 'terugkomt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "mijn collega"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "terugkomt"
+    }
+   ],
+   "meaning": "I stay here until my colleague returns.",
+   "order": "In a main clause 'terugkomen' would split ('komt ... terug'); in the dependent clause it is written together at the end.",
+   "forms": "terugkomen: komt terug / terugkomt.",
+   "compare": "English 'comes back' stays two words. Dutch joins them in the tot-clause.",
+   "mistakes": [
+    {
+     "wrong": "Ik blijf hier tot mijn collega komt terug.",
+     "right": "Ik blijf hier tot mijn collega terugkomt.",
+     "why": "In a dependent clause the separable verb is written together: 'terugkomt'."
+    },
+    {
+     "wrong": "Ik blijf hier tot mijn collega terugkomen.",
+     "right": "Ik blijf hier tot mijn collega terugkomt.",
+     "why": "The singular subject needs 'terugkomt'. (not \"Ik blijf hier tot mijn collega terugkomen.\", but \"Ik blijf hier tot mijn collega terugkomt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot mijn collega terugkomt, blijf ik hier.",
+    "english": "Until my colleague comes back, I stay here.",
+    "note": "With the tot-clause first the main clause inverts to 'blijf ik'."
+   }
+  },
+  "pat-tot-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "An imperative main clause followed by a tot-clause: the instruction continues until the system is ready."
+   },
+   "situationNl": "Een collega zit te klikken en een programma nog bezig is. Geef hem een korte opdracht om te blijven staan.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wacht",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Wacht",
+     "role": "main clause (the waiting or the activity)",
+     "why": "An imperative: the stem 'Wacht' stands first and the subject is not spoken."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de installatie klaar is",
+     "subject": "de installatie",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The predicate 'klaar' stands before the finite verb 'is', which closes the clause. The clause is \"tot de installatie klaar is\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Wacht"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de installatie"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "Wait until the installation is ready.",
+   "order": "An imperative has no subject, so the tot-clause directly follows the verb. The end point is a state: 'klaar zijn'.",
+   "forms": "wachten: imperative wacht. zijn: de installatie is.",
+   "compare": "English 'Wait until the installation is ready' has the same order. Dutch moves 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Wacht tot de installatie is klaar.",
+     "right": "Wacht tot de installatie klaar is.",
+     "why": "The finite verb 'is' goes behind the predicate 'klaar'."
+    },
+    {
+     "wrong": "Wacht tot klaar de installatie is.",
+     "right": "Wacht tot de installatie klaar is.",
+     "why": "The subject comes first in the tot-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de installatie klaar is, wacht je.",
+    "english": "Until the installation is ready, you wait.",
+    "note": "The tot-clause first inverts the main clause."
+   }
+  },
+  "pat-tot-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The solution of the problem ends the working; the perfect passive 'is opgelost' closes the clause."
+   },
+   "situationNl": "Een storing houdt het hele systeem plat. Een manager vraagt of je naar huis gaat. Zeg dat je blijft doorgaan en hoe lang.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik werk door",
+     "subject": "Ik",
+     "finite": "werk",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Ik is first, so 'werk' is second; the particle 'door' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot het probleem is opgelost",
+     "subject": "het probleem",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'het probleem' comes first and the passive-perfect group 'is opgelost' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "werk"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "het probleem"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "opgelost"
+    }
+   ],
+   "meaning": "I keep working until the problem is resolved.",
+   "order": "'Doorwerken' splits in the main clause, while the dependent clause has the perfect group 'is opgelost'. Two different verb positions in one sentence.",
+   "forms": "doorwerken: werk ... door. oplossen: is opgelost.",
+   "compare": "English 'work on until the problem is solved' keeps the verbs together. Dutch splits and then groups.",
+   "mistakes": [
+    {
+     "wrong": "Ik doorwerk tot het probleem is opgelost.",
+     "right": "Ik werk door tot het probleem is opgelost.",
+     "why": "In a main clause 'doorwerken' splits: 'werk ... door'."
+    },
+    {
+     "wrong": "Ik werk door tot het probleem opgelost is.",
+     "right": "Ik werk door tot het probleem is opgelost.",
+     "why": "This order is also possible, but the card trains 'is opgelost'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot het probleem is opgelost, werk ik door.",
+    "english": "Until the problem is solved, I keep working.",
+    "note": "With the tot-clause first the main clause inverts to 'werk ik door'."
+   }
+  },
+  "pat-tot-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The stopping of the rain ends the waiting."
+   },
+   "situationNl": "Je staat onder een afdak en het giet. Een voorbijganger vraagt of je doorloopt. Zeg wat je doet.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wacht",
+     "subject": "Ik",
+     "finite": "wacht",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Ik is first, so 'wacht' is second, and the main clause ends there."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de regen stopt",
+     "subject": "de regen",
+     "finite": "stopt",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de regen' comes first and the finite verb 'stopt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de regen"
+    },
+    {
+     "label": "finite verb",
+     "text": "stopt"
+    }
+   ],
+   "meaning": "I wait until the rain stops.",
+   "order": "A very short example: subject and finite verb are the only elements of the tot-clause. Read it as \"Ik wacht tot de regen stopt\".",
+   "forms": "wachten: ik wacht. stoppen: de regen stopt.",
+   "compare": "English 'until the rain stops' is the same. Dutch has the same order for a short clause.",
+   "mistakes": [
+    {
+     "wrong": "Ik wacht tot stopt de regen.",
+     "right": "Ik wacht tot de regen stopt.",
+     "why": "In the tot-clause the subject comes before the verb."
+    },
+    {
+     "wrong": "Ik wacht tot de regen stop.",
+     "right": "Ik wacht tot de regen stopt.",
+     "why": "The singular subject needs 'stopt'. (not \"Ik wacht tot de regen stop.\", but \"Ik wacht tot de regen stopt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de regen stopt, wacht ik.",
+    "english": "Until the rain stops, I wait.",
+    "note": "With the tot-clause first the main clause inverts to 'wacht ik'. Compare: Tot de regen stopt, wacht ik."
+   }
+  },
+  "pat-tot-07": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The bus's arrival ends the waiting."
+   },
+   "situationNl": "Je staat bij een halte met een koffer. Een toerist vraagt wat je doet. Zeg waar je op rekent.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wacht",
+     "subject": "Ik",
+     "finite": "wacht",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Ik is first, so 'wacht' is second, and the main clause ends there. The clause is \"Ik wacht\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de bus komt",
+     "subject": "de bus",
+     "finite": "komt",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de bus' comes first and the finite verb 'komt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de bus"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    }
+   ],
+   "meaning": "I wait until the bus comes.",
+   "order": "The structure repeats the previous card with a different event; the end point is a person's or object's arrival.",
+   "forms": "wachten: ik wacht. komen: de bus komt.",
+   "compare": "English 'until the bus comes' is the same. Dutch has the same order for a short clause.",
+   "mistakes": [
+    {
+     "wrong": "Ik wacht tot komt de bus.",
+     "right": "Ik wacht tot de bus komt.",
+     "why": "In the tot-clause the subject comes before the verb. (not \"Ik wacht tot komt de bus.\", but \"Ik wacht tot de bus komt.\")"
+    },
+    {
+     "wrong": "Ik wacht tot de bus kom.",
+     "right": "Ik wacht tot de bus komt.",
+     "why": "The singular subject needs 'komt'. (not \"Ik wacht tot de bus kom.\", but \"Ik wacht tot de bus komt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de bus komt, wacht ik.",
+    "english": "Until the bus comes, I wait.",
+    "note": "With the tot-clause first the main clause inverts to 'wacht ik'. Compare: Tot de bus komt, wacht ik."
+   }
+  },
+  "pat-tot-08": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "Darkness ends the working; 'wordt' follows the predicate 'donker'."
+   },
+   "situationNl": "Een tuinman werkt buiten en gaat niet naar binnen. Vertel een buurman wat zij doet en op welk natuurlijk moment ze stopt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij werkt",
+     "subject": "Zij",
+     "finite": "werkt",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Zij is first, so 'werkt' is second. The clause is \"Zij werkt\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot het donker wordt",
+     "subject": "het",
+     "finite": "wordt",
+     "role": "tot-clause (the end point)",
+     "why": "The dummy subject 'het' comes first, the predicate 'donker' follows and the finite verb 'wordt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject (dummy)",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "donker"
+    },
+    {
+     "label": "finite verb",
+     "text": "wordt"
+    }
+   ],
+   "meaning": "She works until it gets dark.",
+   "order": "'Donker worden' expresses the change; the predicate stands before 'wordt'. Read it as \"Zij werkt tot het donker wordt\".",
+   "forms": "werken: zij werkt. worden: het wordt.",
+   "compare": "English 'until it gets dark' uses 'get'. Dutch uses 'worden'. For this card: \"Zij werkt tot het donker wordt\".",
+   "mistakes": [
+    {
+     "wrong": "Zij werkt tot het wordt donker.",
+     "right": "Zij werkt tot het donker wordt.",
+     "why": "The finite verb 'wordt' goes behind the predicate 'donker'. (not \"Zij werkt tot het wordt donker.\", but \"Zij werkt tot het donker wordt.\")"
+    },
+    {
+     "wrong": "Zij werk tot het donker wordt.",
+     "right": "Zij werkt tot het donker wordt.",
+     "why": "With 'zij' the verb needs -t: 'werkt'. (not \"Zij werk tot het donker wordt.\", but \"Zij werkt tot het donker wordt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot het donker wordt, werkt zij.",
+    "english": "Until it gets dark, she works.",
+    "note": "With the tot-clause first the main clause inverts to 'werkt zij'."
+   }
+  },
+  "pat-tot-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "Your readiness ends the staying; 'jij' is the subject of the tot-clause."
+   },
+   "situationNl": "Jullie zijn met zijn tweeën op pad en één van jullie pakt nog zijn spullen. Zeg wat jullie doen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We blijven hier",
+     "subject": "We",
+     "finite": "blijven",
+     "role": "main clause (the waiting or the activity)",
+     "why": "We is first, so the plural 'blijven' is second and 'hier' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot jij klaar bent",
+     "subject": "jij",
+     "finite": "bent",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'jij' comes first, the predicate 'klaar' follows and the finite verb 'bent' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijven"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "bent"
+    }
+   ],
+   "meaning": "We are staying here until you are ready.",
+   "order": "The tot-clause has its own subject 'jij' with the form 'bent'. The predicate 'klaar' stands before it. Read it as \"We blijven hier tot jij klaar bent\".",
+   "forms": "blijven: wij blijven. zijn: jij bent.",
+   "compare": "English 'until you are ready' keeps 'are' next to the subject. Dutch puts 'bent' last.",
+   "mistakes": [
+    {
+     "wrong": "We blijven hier tot jij bent klaar.",
+     "right": "We blijven hier tot jij klaar bent.",
+     "why": "The finite verb 'bent' goes behind the predicate 'klaar'."
+    },
+    {
+     "wrong": "We blijft hier tot jij klaar bent.",
+     "right": "We blijven hier tot jij klaar bent.",
+     "why": "The plural 'we' needs 'blijven'. (not \"We blijft hier tot jij klaar bent.\", but \"We blijven hier tot jij klaar bent.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot jij klaar bent, blijven we hier.",
+    "english": "Until you are ready, we stay here.",
+    "note": "With the tot-clause first the main clause inverts to 'blijven we hier'."
+   }
+  },
+  "pat-tot-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The alarm clock ends the sleeping; 'gaat' means 'rings' here."
+   },
+   "situationNl": "Je vertelt over de gewoonte van je huisgenoot in het weekend. Zeg wat hij doet en welk geluid hem uit bed haalt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij slaapt",
+     "subject": "Hij",
+     "finite": "slaapt",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Hij is first, so 'slaapt' is second. The clause is \"Hij slaapt\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de wekker gaat",
+     "subject": "de wekker",
+     "finite": "gaat",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de wekker' comes first and the finite verb 'gaat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "slaapt"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de wekker"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    }
+   ],
+   "meaning": "He sleeps until the alarm goes off.",
+   "order": "'Gaan' is used for an alarm or a bell that rings. The clause is short. Read it as \"Hij slaapt tot de wekker gaat\".",
+   "forms": "slapen: hij slaapt. gaan: de wekker gaat.",
+   "compare": "English 'until the alarm goes off' needs two words. Dutch uses 'gaat'. For this card: \"Hij slaapt tot de wekker gaat\".",
+   "mistakes": [
+    {
+     "wrong": "Hij slaapt tot gaat de wekker.",
+     "right": "Hij slaapt tot de wekker gaat.",
+     "why": "In the tot-clause the subject comes before the verb. (not \"Hij slaapt tot gaat de wekker.\", but \"Hij slaapt tot de wekker gaat.\")"
+    },
+    {
+     "wrong": "Hij slaap tot de wekker gaat.",
+     "right": "Hij slaapt tot de wekker gaat.",
+     "why": "With 'hij' the verb needs -t: 'slaapt'. (not \"Hij slaap tot de wekker gaat.\", but \"Hij slaapt tot de wekker gaat.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de wekker gaat, slaapt hij.",
+    "english": "Until the alarm rings, he sleeps.",
+    "note": "With the tot-clause first the main clause inverts to 'slaapt hij'."
+   }
+  },
+  "pat-tot-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "An imperative with 'even' and the tot-clause: wait until I call back."
+   },
+   "situationNl": "Je bent bezig met een klant en een collega staat op het punt iets te doen. Zeg hem rustig te blijven staan tot jij hem uitleg geeft.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wacht even",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Wacht",
+     "role": "main clause (the waiting or the activity)",
+     "why": "An imperative: 'Wacht' stands first and 'even' (for a moment) follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot ik terugbel",
+     "subject": "ik",
+     "finite": "terugbel",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'ik' comes first and the joined separable verb 'terugbel' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Wacht"
+    },
+    {
+     "label": "adverb",
+     "text": "even"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "terugbel"
+    }
+   ],
+   "meaning": "Wait a moment until I call back.",
+   "order": "'Terugbellen' is written together in the dependent clause. The adverb 'even' softens the command. Read it as \"Wacht even tot ik terugbel\".",
+   "forms": "terugbellen: bel terug / terugbel.",
+   "compare": "English 'until I call back' keeps two words. Dutch writes one. For this card: \"Wacht even tot ik terugbel\".",
+   "mistakes": [
+    {
+     "wrong": "Wacht even tot ik bel terug.",
+     "right": "Wacht even tot ik terugbel.",
+     "why": "In a dependent clause the separable verb is written together: 'terugbel'."
+    },
+    {
+     "wrong": "Wacht even tot ik terugbelt.",
+     "right": "Wacht even tot ik terugbel.",
+     "why": "With 'ik' the verb has no ending. (not \"Wacht even tot ik terugbelt.\", but \"Wacht even tot ik terugbel.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot ik terugbel, wacht je even.",
+    "english": "Until I call back, you wait a moment.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot ik terugbel, wacht je even."
+   }
+  },
+  "pat-tot-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "Mastering the skill ends the practising; 'het kan' ends the clause."
+   },
+   "situationNl": "Je leert een lastig muziekstuk. Een docent vraagt hoe lang je dat blijft doen. Antwoord zonder de vaardigheid te noemen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik oefen",
+     "subject": "Ik",
+     "finite": "oefen",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Ik is first, so 'oefen' is second, and the main clause ends there."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot ik het kan",
+     "subject": "ik",
+     "finite": "kan",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'ik' comes first, then the object 'het', and the modal 'kan' closes the clause (the infinitive is understood)."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "oefen"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    }
+   ],
+   "meaning": "I practise until I can do it.",
+   "order": "The modal 'kan' needs no infinitive, because the thing to do is understood from the main clause. Read it as \"Ik oefen tot ik het kan\".",
+   "forms": "oefenen: ik oefen. kunnen: ik kan.",
+   "compare": "English 'until I can do it' needs a pronoun for the action. Dutch has 'het kan'.",
+   "mistakes": [
+    {
+     "wrong": "Ik oefen tot ik kan het.",
+     "right": "Ik oefen tot ik het kan.",
+     "why": "The object stands before the finite verb 'kan'."
+    },
+    {
+     "wrong": "Ik oefen tot ik het kunt.",
+     "right": "Ik oefen tot ik het kan.",
+     "why": "With 'ik' the modal is 'kan'. (not \"Ik oefen tot ik het kunt.\", but \"Ik oefen tot ik het kan.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot ik het kan, oefen ik.",
+    "english": "Until I can do it, I practise.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot ik het kan, oefen ik."
+   }
+  },
+  "pat-tot-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "Finding the keys ends the search."
+   },
+   "situationNl": "Een huisgenoot staat in paniek in de gang. Beschrijf wat zij doet en wat haar stopt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij zoekt",
+     "subject": "Zij",
+     "finite": "zoekt",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Zij is first, so 'zoekt' is second. The clause is \"Zij zoekt\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot ze haar sleutels vindt",
+     "subject": "ze",
+     "finite": "vindt",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'ze' comes first, then the object 'haar sleutels', and the finite verb 'vindt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "zoekt"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "haar sleutels"
+    },
+    {
+     "label": "finite verb",
+     "text": "vindt"
+    }
+   ],
+   "meaning": "She searches until she finds her keys.",
+   "order": "'Zij' and 'ze' are the same person. The object stands before the final verb. Read it as \"Zij zoekt tot ze haar sleutels vindt\".",
+   "forms": "zoeken: zij zoekt. vinden: ze vindt.",
+   "compare": "English 'until she finds her keys' keeps 'finds' before the object. Dutch puts 'vindt' last.",
+   "mistakes": [
+    {
+     "wrong": "Zij zoekt tot ze vindt haar sleutels.",
+     "right": "Zij zoekt tot ze haar sleutels vindt.",
+     "why": "In the tot-clause the verb goes behind the object."
+    },
+    {
+     "wrong": "Zij zoek tot ze haar sleutels vindt.",
+     "right": "Zij zoekt tot ze haar sleutels vindt.",
+     "why": "With 'zij' the verb needs -t: 'zoekt'. (not \"Zij zoek tot ze haar sleutels vindt.\", but \"Zij zoekt tot ze haar sleutels vindt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot ze haar sleutels vindt, zoekt zij.",
+    "english": "Until she finds her keys, she searches.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot ze haar sleutels vindt, zoekt zij."
+   }
+  },
+  "pat-tot-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "Seeing the park ends the walking on; 'doorlopen' splits in the main clause."
+   },
+   "situationNl": "Jullie wandelen door een onbekende stad. Een vriend vraagt hoe ver jullie gaan. Zeg wat jullie blijven doen en wat jullie zoeken.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We lopen door",
+     "subject": "We",
+     "finite": "lopen",
+     "role": "main clause (the waiting or the activity)",
+     "why": "We is first, so the plural 'lopen' is second; the particle 'door' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot we het park zien",
+     "subject": "we",
+     "finite": "zien",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'we' comes first, then the object 'het park', and the plural verb 'zien' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "lopen"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "het park"
+    },
+    {
+     "label": "finite verb",
+     "text": "zien"
+    }
+   ],
+   "meaning": "We keep walking until we see the park.",
+   "order": "'Doorlopen' splits in the main clause: 'lopen ... door'. The dependent clause has an object before the verb. Read it as \"We lopen door tot we het park zien\".",
+   "forms": "doorlopen: lopen ... door. zien: wij zien.",
+   "compare": "English 'keep walking until we see the park' has a different verb chain. Dutch uses 'lopen door'.",
+   "mistakes": [
+    {
+     "wrong": "We doorlopen tot we het park zien.",
+     "right": "We lopen door tot we het park zien.",
+     "why": "In a main clause 'doorlopen' splits: 'lopen ... door'."
+    },
+    {
+     "wrong": "We lopen door tot we zien het park.",
+     "right": "We lopen door tot we het park zien.",
+     "why": "The verb goes behind the object in the tot-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot we het park zien, lopen we door.",
+    "english": "Until we see the park, we keep walking.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot we het park zien, lopen we door."
+   }
+  },
+  "pat-tot-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The end of the situation ends the calm; 'voorbij' is the predicate."
+   },
+   "situationNl": "Er is een onweer of een lawaai-incident aan de gang. Vertel hoe iemand zich gedraagt en hoe lang dat duurt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij blijft rustig",
+     "subject": "Hij",
+     "finite": "blijft",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Hij is first, so 'blijft' is second and 'rustig' follows. The clause is \"Hij blijft rustig\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot het voorbij is",
+     "subject": "het",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The dummy subject 'het' comes first, the predicate 'voorbij' follows and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "predicate",
+     "text": "rustig"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "voorbij"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "He stays calm until it is over.",
+   "order": "'Voorbij zijn' means to be over. The dummy subject 'het' stands for the situation. Read it as \"Hij blijft rustig tot het voorbij is\".",
+   "forms": "blijven: hij blijft. zijn: het is.",
+   "compare": "English 'until it is over' keeps 'is' before 'over'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Hij blijft rustig tot het is voorbij.",
+     "right": "Hij blijft rustig tot het voorbij is.",
+     "why": "The finite verb 'is' goes behind the predicate 'voorbij'."
+    },
+    {
+     "wrong": "Hij blijf rustig tot het voorbij is.",
+     "right": "Hij blijft rustig tot het voorbij is.",
+     "why": "With 'hij' the verb needs -t: 'blijft'. (not \"Hij blijf rustig tot het voorbij is.\", but \"Hij blijft rustig tot het voorbij is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot het voorbij is, blijft hij rustig.",
+    "english": "Until it is over, he stays calm.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot het voorbij is, blijft hij rustig."
+   }
+  },
+  "pat-tot-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The time to sleep ends the reading; the phrase 'om te slapen' follows the finite verb."
+   },
+   "situationNl": "Je ligt al in bed met een boek. Een huisgenoot vraagt hoe laat je het licht uitdoet. Zeg waar het voor wordt gebruikt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik lees",
+     "subject": "Ik",
+     "finite": "lees",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Ik is first, so 'lees' is second, and the main clause ends there."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot het tijd is om te slapen",
+     "subject": "het",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The dummy subject 'het' comes first, the predicate 'tijd' follows, and the finite verb 'is' is followed by the purpose group 'om te slapen'.",
+     "afterFinite": "om te slapen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "lees"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "tijd"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "purpose group",
+     "text": "om te slapen"
+    }
+   ],
+   "meaning": "I read until it is time to sleep.",
+   "order": "The purpose group 'om te slapen' may stand after the finite verb, so 'is' is not the last word of the clause. Read it as \"Ik lees tot het tijd is om te slapen\".",
+   "forms": "lezen: ik lees. 'Tijd zijn om te' + infinitive = it is time to.",
+   "compare": "English 'until it is time to sleep' has the same order. Dutch also. For this card: \"Ik lees tot het tijd is om te slapen\".",
+   "mistakes": [
+    {
+     "wrong": "Ik lees tot het is tijd om te slapen.",
+     "right": "Ik lees tot het tijd is om te slapen.",
+     "why": "The finite verb 'is' goes behind the predicate 'tijd'."
+    },
+    {
+     "wrong": "Ik lees tot het tijd is om slapen.",
+     "right": "Ik lees tot het tijd is om te slapen.",
+     "why": "The infinitive after 'om' needs te: 'om te slapen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot het tijd is om te slapen, lees ik.",
+    "english": "Until it is time to sleep, I read.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot het tijd is om te slapen, lees ik."
+   }
+  },
+  "pat-tot-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The start of the lesson ends the waiting."
+   },
+   "situationNl": "Jullie staan voor het lokaal en de deur is nog dicht. Een andere groep komt aan en vraagt wat er aan de hand is. Zeg wat jullie doen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij wachten",
+     "subject": "Wij",
+     "finite": "wachten",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Wij is first, so the plural 'wachten' is second. The clause is \"Wij wachten\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de les begint",
+     "subject": "de les",
+     "finite": "begint",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de les' comes first and the finite verb 'begint' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "wachten"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de les"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    }
+   ],
+   "meaning": "We wait until the lesson starts.",
+   "order": "A short example: the end point is the beginning of another event. Read it as \"Wij wachten tot de les begint\". Its parts: subject Wij, finite verb wachten, conjunction (until) tot, subject de les.",
+   "forms": "wachten: wij wachten. beginnen: de les begint.",
+   "compare": "English 'until the lesson begins' is the same. Dutch has the same order for a short clause.",
+   "mistakes": [
+    {
+     "wrong": "Wij wachten tot begint de les.",
+     "right": "Wij wachten tot de les begint.",
+     "why": "In the tot-clause the subject comes before the verb. (not \"Wij wachten tot begint de les.\", but \"Wij wachten tot de les begint.\")"
+    },
+    {
+     "wrong": "Wij wacht tot de les begint.",
+     "right": "Wij wachten tot de les begint.",
+     "why": "The plural 'wij' needs 'wachten'. (not \"Wij wacht tot de les begint.\", but \"Wij wachten tot de les begint.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de les begint, wachten wij.",
+    "english": "Until the lesson begins, we wait.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot de les begint, wachten wij."
+   }
+  },
+  "pat-tot-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "An imperative with 'zitten' and a tot-clause: stay seated until the train stops."
+   },
+   "situationNl": "Een kind springt op in de trein. Geef een korte opdracht om te blijven zitten en zeg op welk moment de rit eindigt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Blijf zitten",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Blijf",
+     "role": "main clause (the waiting or the activity)",
+     "why": "An imperative: 'Blijf' stands first and the infinitive 'zitten' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de trein stilstaat",
+     "subject": "de trein",
+     "finite": "stilstaat",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de trein' comes first and the joined separable verb 'stilstaat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Blijf"
+    },
+    {
+     "label": "infinitive",
+     "text": "zitten"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de trein"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "stilstaat"
+    }
+   ],
+   "meaning": "Stay seated until the train stops.",
+   "order": "'Stilstaan' is written together in the dependent clause. In a main clause it would split: 'staat stil'. Read it as \"Blijf zitten tot de trein stilstaat\".",
+   "forms": "stilstaan: staat stil / stilstaat.",
+   "compare": "English 'until the train stops' uses a different verb. Dutch uses 'stilstaan'.",
+   "mistakes": [
+    {
+     "wrong": "Blijf zitten tot de trein staat stil.",
+     "right": "Blijf zitten tot de trein stilstaat.",
+     "why": "In a dependent clause the separable verb is written together."
+    },
+    {
+     "wrong": "Blijf zitten tot de trein stilstaan.",
+     "right": "Blijf zitten tot de trein stilstaat.",
+     "why": "The singular subject needs 'stilstaat'. (not \"Blijf zitten tot de trein stilstaan.\", but \"Blijf zitten tot de trein stilstaat.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de trein stilstaat, blijf je zitten.",
+    "english": "Until the train stops, you stay seated.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot de trein stilstaat, blijf je zitten."
+   }
+  },
+  "pat-tot-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The soup being ready ends the cooking."
+   },
+   "situationNl": "Een gast kijkt in de keuken. Beschrijf wat de kok doet en op welk punt ze ermee ophoudt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij kookt",
+     "subject": "Zij",
+     "finite": "kookt",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Zij is first, so 'kookt' is second. The clause is \"Zij kookt\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de soep klaar is",
+     "subject": "de soep",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de soep' comes first, the predicate 'klaar' follows and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "kookt"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de soep"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "She cooks until the soup is ready.",
+   "order": "The end point is a state: the soup being ready. The predicate stands before 'is'. Read it as \"Zij kookt tot de soep klaar is\".",
+   "forms": "koken: zij kookt. zijn: de soep is.",
+   "compare": "English 'until the soup is ready' keeps 'is' next to the subject. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Zij kookt tot de soep is klaar.",
+     "right": "Zij kookt tot de soep klaar is.",
+     "why": "The finite verb 'is' goes behind the predicate 'klaar'. (not \"Zij kookt tot de soep is klaar.\", but \"Zij kookt tot de soep klaar is.\")"
+    },
+    {
+     "wrong": "Zij kook tot de soep klaar is.",
+     "right": "Zij kookt tot de soep klaar is.",
+     "why": "With 'zij' the verb needs -t: 'kookt'. (not \"Zij kook tot de soep klaar is.\", but \"Zij kookt tot de soep klaar is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de soep klaar is, kookt zij.",
+    "english": "Until the soup is ready, she cooks.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot de soep klaar is, kookt zij."
+   }
+  },
+  "pat-tot-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "Having enough money ends the saving; 'heb' follows the object 'genoeg geld'."
+   },
+   "situationNl": "Je wilt iets groots kopen. Een vriend vraagt hoe lang je daarmee doorgaat. Zeg wat je doet en wat je bereikt moet hebben.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik spaar",
+     "subject": "Ik",
+     "finite": "spaar",
+     "role": "main clause (the waiting or the activity)",
+     "why": "Ik is first, so 'spaar' is second, and the main clause ends there."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot ik genoeg geld heb",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'ik' comes first, then the object 'genoeg geld', and the finite verb 'heb' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "spaar"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "genoeg geld"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    }
+   ],
+   "meaning": "I save until I have enough money.",
+   "order": "The object 'genoeg geld' stands before the finite verb 'heb'. The goal is a possession. Read it as \"Ik spaar tot ik genoeg geld heb\".",
+   "forms": "sparen: ik spaar. hebben: ik heb.",
+   "compare": "English 'until I have enough money' keeps 'have' before the object. Dutch puts 'heb' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik spaar tot ik heb genoeg geld.",
+     "right": "Ik spaar tot ik genoeg geld heb.",
+     "why": "The verb goes behind the object in the tot-clause. (not \"Ik spaar tot ik heb genoeg geld.\", but \"Ik spaar tot ik genoeg geld heb.\")"
+    },
+    {
+     "wrong": "Ik spaar tot ik genoeg geld hebt.",
+     "right": "Ik spaar tot ik genoeg geld heb.",
+     "why": "With 'ik' the verb is 'heb'. (not \"Ik spaar tot ik genoeg geld hebt.\", but \"Ik spaar tot ik genoeg geld heb.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot ik genoeg geld heb, spaar ik.",
+    "english": "Until I have enough money, I save.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot ik genoeg geld heb, spaar ik."
+   }
+  },
+  "pat-tot-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The doctor's call is the event that ends the sitting; with the tot-clause first, the main clause inverts."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Tot de dokter me roept",
+     "subject": "de dokter",
+     "finite": "roept",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de dokter' comes first, then the object 'me', and the finite verb 'roept' closes the clause. The clause is \"Tot de dokter me roept\"."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijf ik in de wachtkamer",
+     "subject": "ik",
+     "finite": "blijf",
+     "role": "main clause (what goes on)",
+     "why": "After the dependent clause the finite verb comes first: 'blijf', then the subject 'ik', then the place."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (until)",
+     "text": "Tot"
+    },
+    {
+     "label": "subject",
+     "text": "de dokter"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "finite verb",
+     "text": "roept"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "place",
+     "text": "in de wachtkamer"
+    }
+   ],
+   "meaning": "Until the doctor calls me, I stay in the waiting room.",
+   "order": "The whole tot-clause counts as one element in first position. That is why the next word is the finite verb 'blijf', and the subject 'ik' follows it.",
+   "forms": "roepen: de dokter roept. blijven: ik blijf.",
+   "compare": "English 'Until the doctor calls me, I stay' keeps 'I stay'. Dutch turns it into 'blijf ik'.",
+   "mistakes": [
+    {
+     "wrong": "Tot de dokter me roept, ik blijf in de wachtkamer.",
+     "right": "Tot de dokter me roept, blijf ik in de wachtkamer.",
+     "why": "After the tot-clause the main clause starts with the verb: 'blijf ik'."
+    },
+    {
+     "wrong": "Tot de dokter me roep, blijf ik in de wachtkamer.",
+     "right": "Tot de dokter me roept, blijf ik in de wachtkamer.",
+     "why": "The singular subject 'de dokter' needs 'roept'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik blijf in de wachtkamer tot de dokter me roept.",
+    "english": "I stay in the waiting room until the doctor calls me.",
+    "note": "With the main clause first there is no inversion: 'Ik blijf'. Compare: Ik blijf in de wachtkamer tot de dokter me roept."
+   }
+  },
+  "pat-tot-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The end of the installation is the moment the other work stops; the tot-clause stands first."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Tot de installatie klaar is",
+     "subject": "de installatie",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de installatie' comes first, the predicate 'klaar' follows, and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "werk ik aan iets anders",
+     "subject": "ik",
+     "finite": "werk",
+     "role": "main clause (what goes on)",
+     "why": "The finite verb 'werk' stands first in the main clause, then the subject 'ik' and the rest."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (until)",
+     "text": "Tot"
+    },
+    {
+     "label": "subject",
+     "text": "de installatie"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "werk"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "aan iets anders"
+    }
+   ],
+   "meaning": "Until the installation is ready, I work on something else.",
+   "order": "The state 'klaar' stands before 'is' in the dependent clause. The inverted main clause then says what you do in the meantime.",
+   "forms": "zijn: de installatie is. werken: ik werk.",
+   "compare": "English 'Until the installation is ready, I work on something else' keeps 'is' before 'ready'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Tot de installatie is klaar, werk ik aan iets anders.",
+     "right": "Tot de installatie klaar is, werk ik aan iets anders.",
+     "why": "The finite verb 'is' goes behind the predicate 'klaar'. (not \"Tot de installatie is klaar, werk ik aan iets anders.\", but \"Tot de installatie klaar is, werk ik aan iets anders.\")"
+    },
+    {
+     "wrong": "Tot de installatie klaar is, ik werk aan iets anders.",
+     "right": "Tot de installatie klaar is, werk ik aan iets anders.",
+     "why": "The main clause starts with the verb: 'werk ik'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik werk aan iets anders tot de installatie klaar is.",
+    "english": "I work on something else until the installation is ready.",
+    "note": "With the main clause first there is no inversion. Compare: Ik werk aan iets anders tot de installatie klaar is."
+   }
+  },
+  "pat-tot-23": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "Getting an answer ends the open status of the ticket; a clause with its own subject 'ik' stands first."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Tot ik antwoord heb",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'ik' comes first, then the object 'antwoord', and the finite verb 'heb' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijft het ticket open",
+     "subject": "het ticket",
+     "finite": "blijft",
+     "role": "main clause (what goes on)",
+     "why": "The finite verb 'blijft' comes first, then the subject 'het ticket' and the predicate 'open'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (until)",
+     "text": "Tot"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "antwoord"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "het ticket"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    }
+   ],
+   "meaning": "Until I have an answer, the ticket stays open.",
+   "order": "The tot-clause has its own subject 'ik', but the main clause has a different one, 'het ticket'. Inversion puts 'blijft' before it.",
+   "forms": "hebben: ik heb. blijven: het ticket blijft.",
+   "compare": "English 'Until I have an answer' keeps 'have' before the object. Dutch puts 'heb' last.",
+   "mistakes": [
+    {
+     "wrong": "Tot ik heb antwoord, blijft het ticket open.",
+     "right": "Tot ik antwoord heb, blijft het ticket open.",
+     "why": "The finite verb 'heb' goes behind the object 'antwoord'."
+    },
+    {
+     "wrong": "Tot ik antwoord heb, het ticket blijft open.",
+     "right": "Tot ik antwoord heb, blijft het ticket open.",
+     "why": "The main clause starts with the finite verb: 'blijft het ticket'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het ticket blijft open tot ik antwoord heb.",
+    "english": "The ticket stays open until I have an answer.",
+    "note": "With the main clause first there is no inversion. Compare: Het ticket blijft open tot ik antwoord heb."
+   }
+  },
+  "pat-tot-24": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The start of the lesson ends the free time; the main clause then reads 'lees ik'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Tot de les begint",
+     "subject": "de les",
+     "finite": "begint",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de les' comes first and the finite verb 'begint' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "lees ik mijn notities",
+     "subject": "ik",
+     "finite": "lees",
+     "role": "main clause (what goes on)",
+     "why": "The finite verb 'lees' comes first, then the subject 'ik' and the object 'mijn notities'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (until)",
+     "text": "Tot"
+    },
+    {
+     "label": "subject",
+     "text": "de les"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    },
+    {
+     "label": "finite verb",
+     "text": "lees"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "mijn notities"
+    }
+   ],
+   "meaning": "Until the lesson starts, I read my notes.",
+   "order": "A short dependent clause in first position. The main clause then inverts, with the object last. Read it as \"Tot de les begint, lees ik mijn notities\".",
+   "forms": "beginnen: de les begint. lezen: ik lees.",
+   "compare": "English 'Until the lesson starts, I read my notes' has the same meaning. Dutch inverts the main clause.",
+   "mistakes": [
+    {
+     "wrong": "Tot de les begint, ik lees mijn notities.",
+     "right": "Tot de les begint, lees ik mijn notities.",
+     "why": "The main clause starts with the verb: 'lees ik'."
+    },
+    {
+     "wrong": "Tot de les begin, lees ik mijn notities.",
+     "right": "Tot de les begint, lees ik mijn notities.",
+     "why": "The singular subject needs 'begint'. (not \"Tot de les begin, lees ik mijn notities.\", but \"Tot de les begint, lees ik mijn notities.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik lees mijn notities tot de les begint.",
+    "english": "I read my notes until the lesson starts.",
+    "note": "With the main clause first there is no inversion. Compare: Ik lees mijn notities tot de les begint."
+   }
+  },
+  "pat-tot-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The callback ends the waiting; the perfect group 'heeft teruggebeld' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wacht",
+     "subject": "Ik",
+     "finite": "wacht",
+     "role": "main clause (what goes on)",
+     "why": "Ik is first, so 'wacht' is second and the main clause is complete. The clause is \"Ik wacht\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot mijn collega mij heeft teruggebeld",
+     "subject": "mijn collega",
+     "finite": "heeft",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'mijn collega' comes first, then the object 'mij', and the perfect group 'heeft teruggebeld' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "mijn collega"
+    },
+    {
+     "label": "object",
+     "text": "mij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heeft"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "teruggebeld"
+    }
+   ],
+   "meaning": "I wait until my colleague has called me back.",
+   "order": "Both verbs stand at the end: the auxiliary 'heeft' and the participle 'teruggebeld' of the separable verb 'terugbellen'.",
+   "forms": "wachten: ik wacht. terugbellen: heeft teruggebeld.",
+   "compare": "English 'has called me back' keeps the verbs together. Dutch puts them behind the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik wacht tot mijn collega heeft mij teruggebeld.",
+     "right": "Ik wacht tot mijn collega mij heeft teruggebeld.",
+     "why": "Auxiliary and participle both go behind the object 'mij'."
+    },
+    {
+     "wrong": "Ik wacht tot mijn collega mij heeft terug gebeld.",
+     "right": "Ik wacht tot mijn collega mij heeft teruggebeld.",
+     "why": "The participle of a separable verb is written together: 'teruggebeld'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot mijn collega mij heeft teruggebeld, wacht ik.",
+    "english": "Until my colleague has called me back, I wait.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot mijn collega mij heeft teruggebeld, wacht ik."
+   }
+  },
+  "pat-tot-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The working of the system again ends the working on; 'doorwerken' is an infinitive here."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We blijven doorwerken",
+     "subject": "We",
+     "finite": "blijven",
+     "role": "main clause (what goes on)",
+     "why": "We is first, so the plural 'blijven' is second and the infinitive 'doorwerken' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot het systeem weer werkt",
+     "subject": "het systeem",
+     "finite": "werkt",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'het systeem' comes first, the adverb 'weer' follows and the finite verb 'werkt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijven"
+    },
+    {
+     "label": "infinitive (joined)",
+     "text": "doorwerken"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "het systeem"
+    },
+    {
+     "label": "adverb",
+     "text": "weer"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    }
+   ],
+   "meaning": "We keep working until the system works again.",
+   "order": "'Blijven doorwerken' is a chain: finite verb in second position and the infinitive after it. The tot-clause adds the end point.",
+   "forms": "blijven: wij blijven. werken: het systeem werkt.",
+   "compare": "English 'keep on working' uses a participle. Dutch uses an infinitive: 'blijven doorwerken'.",
+   "mistakes": [
+    {
+     "wrong": "We blijven doorwerken tot het systeem werkt weer.",
+     "right": "We blijven doorwerken tot het systeem weer werkt.",
+     "why": "The finite verb 'werkt' goes behind the adverb 'weer'."
+    },
+    {
+     "wrong": "We blijft doorwerken tot het systeem weer werkt.",
+     "right": "We blijven doorwerken tot het systeem weer werkt.",
+     "why": "The plural 'we' needs 'blijven'. (not \"We blijft doorwerken tot het systeem weer werkt.\", but \"We blijven doorwerken tot het systeem weer werkt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot het systeem weer werkt, blijven we doorwerken.",
+    "english": "Until the system works again, we keep working.",
+    "note": "The tot-clause first inverts the main clause to 'blijven we'."
+   }
+  },
+  "pat-tot-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The looked-up data ends the instruction to wait; an imperative opens the sentence."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wacht met bellen",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Wacht",
+     "role": "main clause (what goes on)",
+     "why": "An imperative: 'Wacht' stands first and the phrase 'met bellen' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot ik de gegevens heb opgezocht",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'ik' comes first, then the object 'de gegevens', and the perfect group 'heb opgezocht' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Wacht"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "met bellen"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de gegevens"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "opgezocht"
+    }
+   ],
+   "meaning": "Wait with calling until I have looked up the data.",
+   "order": "'Met bellen' is a noun phrase with a preposition, while the real end point is the whole tot-clause. The perfect group 'heb opgezocht' stands at the end.",
+   "forms": "wachten: imperative wacht. opzoeken: heb opgezocht.",
+   "compare": "English 'Wait with calling' is unnatural. Dutch uses 'wachten met' + infinitive.",
+   "mistakes": [
+    {
+     "wrong": "Wacht met bellen tot ik heb de gegevens opgezocht.",
+     "right": "Wacht met bellen tot ik de gegevens heb opgezocht.",
+     "why": "The auxiliary and participle both go behind the object."
+    },
+    {
+     "wrong": "Wacht om te bellen tot ik de gegevens heb opgezocht.",
+     "right": "Wacht met bellen tot ik de gegevens heb opgezocht.",
+     "why": "The fixed phrase is 'wachten met bellen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot ik de gegevens heb opgezocht, wacht je met bellen.",
+    "english": "Until I have looked up the data, you wait with calling.",
+    "note": "The tot-clause first inverts the main clause. Compare: Tot ik de gegevens heb opgezocht, wacht je met bellen."
+   }
+  },
+  "pat-tot-28": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The end of the meeting ends the staying; the perfect group 'is afgelopen' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik blijf hier",
+     "subject": "Ik",
+     "finite": "blijf",
+     "role": "main clause (what goes on)",
+     "why": "Ik is first, so 'blijf' is second and 'hier' follows. The clause is \"Ik blijf hier\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de vergadering is afgelopen",
+     "subject": "de vergadering",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de vergadering' comes first and the group 'is afgelopen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de vergadering"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "afgelopen"
+    }
+   ],
+   "meaning": "I stay here until the meeting is over.",
+   "order": "'Afgelopen zijn' means to be over. Both the auxiliary and the participle stand at the end. Read it as \"Ik blijf hier tot de vergadering is afgelopen\".",
+   "forms": "blijven: ik blijf. aflopen: is afgelopen.",
+   "compare": "English 'until the meeting is over' uses an adjective-like word. Dutch uses the participle 'afgelopen'.",
+   "mistakes": [
+    {
+     "wrong": "Ik blijf hier tot de vergadering afgelopen.",
+     "right": "Ik blijf hier tot de vergadering is afgelopen.",
+     "why": "The auxiliary 'is' is missing before 'afgelopen'."
+    },
+    {
+     "wrong": "Ik blijf hier tot is de vergadering afgelopen.",
+     "right": "Ik blijf hier tot de vergadering is afgelopen.",
+     "why": "The subject comes before the verb in a dependent clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de vergadering is afgelopen, blijf ik hier.",
+    "english": "Until the meeting is over, I stay here.",
+    "note": "The tot-clause first inverts the main clause to 'blijf ik hier'."
+   }
+  },
+  "pat-tot-29": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "Success ends the trying; 'totdat' opens the end-point clause and, unlike 'tot', is never a preposition."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik blijf proberen",
+     "subject": "Ik",
+     "finite": "blijf",
+     "role": "main clause (what goes on)",
+     "why": "Ik is first, so 'blijf' is second and the infinitive 'proberen' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "totdat het lukt",
+     "subject": "het",
+     "finite": "lukt",
+     "role": "tot-clause (the end point)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'lukt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "infinitive",
+     "text": "proberen"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "totdat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "lukt"
+    }
+   ],
+   "meaning": "I keep trying until it works.",
+   "order": "'Lukken' always takes 'het' as its subject in this meaning. The totdat-clause has just two words. Read it as \"Ik blijf proberen totdat het lukt\".",
+   "forms": "blijven: ik blijf. lukken: het lukt.",
+   "compare": "English 'until it works' uses another verb. Dutch uses 'lukken' for success.",
+   "mistakes": [
+    {
+     "wrong": "Ik blijf proberen totdat lukt het.",
+     "right": "Ik blijf proberen totdat het lukt.",
+     "why": "In the totdat-clause the subject comes before the verb."
+    },
+    {
+     "wrong": "Ik blijf proberen totdat het luk.",
+     "right": "Ik blijf proberen totdat het lukt.",
+     "why": "The verb needs -t: 'lukt'. (not \"Ik blijf proberen totdat het luk.\", but \"Ik blijf proberen totdat het lukt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Totdat het lukt, blijf ik proberen.",
+    "english": "Until it works, I keep trying.",
+    "note": "The totdat-clause first inverts the main clause."
+   }
+  },
+  "pat-tot-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "Repairing the fault ends the use of the backup server; the totdat-clause stands first."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Totdat de storing is verholpen",
+     "subject": "de storing",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de storing' comes first and the passive group 'is verholpen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "gebruiken we de reserveserver",
+     "subject": "we",
+     "finite": "gebruiken",
+     "role": "main clause (what goes on)",
+     "why": "The finite verb 'gebruiken' comes first, then the subject 'we' and the object 'de reserveserver'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (until)",
+     "text": "Totdat"
+    },
+    {
+     "label": "subject",
+     "text": "de storing"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "verholpen"
+    },
+    {
+     "label": "finite verb",
+     "text": "gebruiken"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "de reserveserver"
+    }
+   ],
+   "meaning": "Until the fault is fixed, we use the backup server.",
+   "order": "The passive 'is verholpen' keeps the fault as the subject. The main clause is inverted because the first position is taken by the clause.",
+   "forms": "verhelpen: is verholpen. gebruiken: wij gebruiken.",
+   "compare": "English 'Until the fault is fixed' keeps 'is fixed' together. Dutch also but in the dependent clause.",
+   "mistakes": [
+    {
+     "wrong": "Totdat de storing verholpen is, we gebruiken de reserveserver.",
+     "right": "Totdat de storing is verholpen, gebruiken we de reserveserver.",
+     "why": "The main clause starts with the verb: 'gebruiken we'."
+    },
+    {
+     "wrong": "Totdat de storing is verholpen, gebruikt we de reserveserver.",
+     "right": "Totdat de storing is verholpen, gebruiken we de reserveserver.",
+     "why": "The plural 'we' needs 'gebruiken'. (not \"Totdat de storing is verholpen, gebruikt we de reserveserver.\", but \"Totdat de storing is verholpen, gebruiken we de reserveserver.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We gebruiken de reserveserver totdat de storing is verholpen.",
+    "english": "We use the backup server until the fault is fixed.",
+    "note": "With the main clause first there is no inversion. Compare: We gebruiken de reserveserver totdat de storing is verholpen."
+   }
+  },
+  "pat-tot-31": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "The customer's callback ends the waiting; 'terugbelt' is the joined separable verb."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij wacht",
+     "subject": "Zij",
+     "finite": "wacht",
+     "role": "main clause (what goes on)",
+     "why": "Zij is first, so 'wacht' is second. The clause is \"Zij wacht\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "totdat de klant haar terugbelt",
+     "subject": "de klant",
+     "finite": "terugbelt",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de klant' comes first, then the object 'haar', and the joined verb 'terugbelt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "totdat"
+    },
+    {
+     "label": "subject",
+     "text": "de klant"
+    },
+    {
+     "label": "object",
+     "text": "haar"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "terugbelt"
+    }
+   ],
+   "meaning": "She waits until the customer calls her back.",
+   "order": "In a main clause 'terugbellen' would split ('belt ... terug'); here it is written together at the end. Read it as \"Zij wacht totdat de klant haar terugbelt\".",
+   "forms": "wachten: zij wacht. terugbellen: de klant terugbelt.",
+   "compare": "English 'calls her back' keeps two words. Dutch writes one in this clause.",
+   "mistakes": [
+    {
+     "wrong": "Zij wacht totdat de klant belt haar terug.",
+     "right": "Zij wacht totdat de klant haar terugbelt.",
+     "why": "In a dependent clause the separable verb is written together. (not \"Zij wacht totdat de klant belt haar terug.\", but \"Zij wacht totdat de klant haar terugbelt.\")"
+    },
+    {
+     "wrong": "Zij wacht totdat de klant haar terugbellen.",
+     "right": "Zij wacht totdat de klant haar terugbelt.",
+     "why": "The singular subject needs 'terugbelt'. (not \"Zij wacht totdat de klant haar terugbellen.\", but \"Zij wacht totdat de klant haar terugbelt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Totdat de klant haar terugbelt, wacht zij.",
+    "english": "Until the customer calls her back, she waits.",
+    "note": "The totdat-clause first inverts the main clause. Compare: Totdat de klant haar terugbelt, wacht zij."
+   }
+  },
+  "pat-tot-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "Understanding by everyone ends the practising; the pronoun 'iedereen' is singular."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We oefenen",
+     "subject": "We",
+     "finite": "oefenen",
+     "role": "main clause (what goes on)",
+     "why": "We is first, so the plural 'oefenen' is second. The clause is \"We oefenen\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "totdat iedereen het begrijpt",
+     "subject": "iedereen",
+     "finite": "begrijpt",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'iedereen' comes first, then the object 'het', and the finite verb 'begrijpt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "oefenen"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "totdat"
+    },
+    {
+     "label": "subject",
+     "text": "iedereen"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "begrijpt"
+    }
+   ],
+   "meaning": "We practise until everyone understands it.",
+   "order": "'Iedereen' means everybody but takes a singular verb: 'begrijpt'. Read it as \"We oefenen totdat iedereen het begrijpt\".",
+   "forms": "oefenen: wij oefenen. begrijpen: iedereen begrijpt.",
+   "compare": "English 'everyone understands' is also singular. Dutch uses 'begrijpt'.",
+   "mistakes": [
+    {
+     "wrong": "We oefenen totdat iedereen begrijpt het.",
+     "right": "We oefenen totdat iedereen het begrijpt.",
+     "why": "The finite verb goes behind the object 'het'. (not \"We oefenen totdat iedereen begrijpt het.\", but \"We oefenen totdat iedereen het begrijpt.\")"
+    },
+    {
+     "wrong": "We oefenen totdat iedereen het begrijpen.",
+     "right": "We oefenen totdat iedereen het begrijpt.",
+     "why": "'Iedereen' is singular and takes 'begrijpt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Totdat iedereen het begrijpt, oefenen we.",
+    "english": "Until everyone understands it, we practise.",
+    "note": "The totdat-clause first inverts the main clause to 'oefenen we'."
+   }
+  },
+  "pat-tot-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "The extra knowledge ends the silence; the first position is taken by the totdat-clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Totdat ik meer weet",
+     "subject": "ik",
+     "finite": "weet",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'ik' comes first, then the object 'meer', and the finite verb 'weet' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "zeg ik niets",
+     "subject": "ik",
+     "finite": "zeg",
+     "role": "main clause (what goes on)",
+     "why": "The finite verb 'zeg' comes first, then the subject 'ik' and the negative object 'niets'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (until)",
+     "text": "Totdat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "meer"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "finite verb",
+     "text": "zeg"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    }
+   ],
+   "meaning": "Until I know more, I say nothing.",
+   "order": "Both clauses have the same subject 'ik'. In the main clause it follows the verb because of inversion. Read it as \"Totdat ik meer weet, zeg ik niets\".",
+   "forms": "weten: ik weet. zeggen: ik zeg.",
+   "compare": "English 'Until I know more, I say nothing' keeps the order. Dutch inverts to 'zeg ik'.",
+   "mistakes": [
+    {
+     "wrong": "Totdat ik meer weet, ik zeg niets.",
+     "right": "Totdat ik meer weet, zeg ik niets.",
+     "why": "The main clause starts with the verb: 'zeg ik'."
+    },
+    {
+     "wrong": "Totdat ik meer weten, zeg ik niets.",
+     "right": "Totdat ik meer weet, zeg ik niets.",
+     "why": "With 'ik' the verb is 'weet'. (not \"Totdat ik meer weten, zeg ik niets.\", but \"Totdat ik meer weet, zeg ik niets.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik zeg niets totdat ik meer weet.",
+    "english": "I say nothing until I know more.",
+    "note": "With the main clause first there is no inversion. Compare: Ik zeg niets totdat ik meer weet."
+   }
+  },
+  "pat-tot-34": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "The new login ends the block; the formal 'u' goes with the reflexive 'zich'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De pagina blijft geblokkeerd",
+     "subject": "De pagina",
+     "finite": "blijft",
+     "role": "main clause (what goes on)",
+     "why": "'De pagina' is first, so 'blijft' is second and the predicate 'geblokkeerd' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "totdat u zich opnieuw aanmeldt",
+     "subject": "u",
+     "finite": "aanmeldt",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'u' comes first, then 'zich' and the adverb 'opnieuw', and the joined verb 'aanmeldt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De pagina"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "predicate",
+     "text": "geblokkeerd"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "totdat"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "reflexive",
+     "text": "zich"
+    },
+    {
+     "label": "adverb",
+     "text": "opnieuw"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "aanmeldt"
+    }
+   ],
+   "meaning": "The page stays blocked until you log in again.",
+   "order": "'Zich aanmelden' is separable and reflexive; the formal 'u' goes with 'zich'. Written together at the end of the dependent clause.",
+   "forms": "blijven: de pagina blijft. aanmelden: u meldt zich aan / aanmeldt.",
+   "compare": "English 'log in again' is two words. Dutch writes 'aanmeldt' at the end of the dependent clause.",
+   "mistakes": [
+    {
+     "wrong": "De pagina blijft geblokkeerd totdat u zich meldt opnieuw aan.",
+     "right": "De pagina blijft geblokkeerd totdat u zich opnieuw aanmeldt.",
+     "why": "In the dependent clause the separable verb goes together at the end."
+    },
+    {
+     "wrong": "De pagina blijft geblokkeerd totdat u zich opnieuw aanmelden.",
+     "right": "De pagina blijft geblokkeerd totdat u zich opnieuw aanmeldt.",
+     "why": "The singular 'u' needs 'aanmeldt'. (not \"De pagina blijft geblokkeerd totdat u zich opnieuw aanmelden.\", but \"De pagina blijft geblokkeerd totdat u zich opnieuw aanmeldt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Totdat u zich opnieuw aanmeldt, blijft de pagina geblokkeerd.",
+    "english": "Until you log in again, the page stays blocked.",
+    "note": "The totdat-clause first inverts the main clause. Compare: Totdat u zich opnieuw aanmeldt, blijft de pagina geblokkeerd."
+   }
+  },
+  "pat-tot-35": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "The darkness ended the working on; the past tense 'was' closes the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij werkte door",
+     "subject": "Hij",
+     "finite": "werkte",
+     "role": "main clause (what goes on)",
+     "why": "Hij is first, so 'werkte' is second; the particle 'door' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "totdat het donker was",
+     "subject": "het",
+     "finite": "was",
+     "role": "tot-clause (the end point)",
+     "why": "The dummy subject 'het' comes first, the predicate 'donker' follows and the finite verb 'was' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "werkte"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "totdat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "donker"
+    },
+    {
+     "label": "finite verb",
+     "text": "was"
+    }
+   ],
+   "meaning": "He worked on until it was dark.",
+   "order": "'Doorwerken' splits in the main clause: 'werkte ... door'. In the past tense 'was' is the verb of the dependent clause.",
+   "forms": "doorwerken: werkte ... door. zijn: het was.",
+   "compare": "English 'worked on until it was dark' uses 'was' in the same clause. Dutch puts 'was' last.",
+   "mistakes": [
+    {
+     "wrong": "Hij werkte door totdat het was donker.",
+     "right": "Hij werkte door totdat het donker was.",
+     "why": "The finite verb 'was' goes behind the predicate 'donker'."
+    },
+    {
+     "wrong": "Hij doorwerkte totdat het donker was.",
+     "right": "Hij werkte door totdat het donker was.",
+     "why": "In a main clause 'doorwerken' splits. (not \"Hij doorwerkte totdat het donker was.\", but \"Hij werkte door totdat het donker was.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Totdat het donker was, werkte hij door.",
+    "english": "Until it was dark, he worked on.",
+    "note": "The totdat-clause first inverts the main clause to 'werkte hij door'."
+   }
+  },
+  "pat-tot-36": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "A late moment would end the waiting; the negation 'niet' stands between the verb and the conjunction."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wacht niet",
+     "subject": "Ik",
+     "finite": "wacht",
+     "role": "main clause (what goes on)",
+     "why": "Ik is first, so 'wacht' is second and the negation 'niet' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "totdat het te laat is",
+     "subject": "het",
+     "finite": "is",
+     "role": "tot-clause (the end point)",
+     "why": "The dummy subject 'het' comes first, the predicate 'te laat' follows and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "totdat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "te laat"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I do not wait until it is too late.",
+   "order": "The negation belongs to the main clause. The totdat-clause says the point that you do not want to reach. Read it as \"Ik wacht niet totdat het te laat is\".",
+   "forms": "wachten: ik wacht. zijn: het is.",
+   "compare": "English 'do not wait until it is too late' uses the helper verb 'do'. Dutch has no helper.",
+   "mistakes": [
+    {
+     "wrong": "Ik wacht totdat het te laat is niet.",
+     "right": "Ik wacht niet totdat het te laat is.",
+     "why": "The negation stays in the main clause. (not \"Ik wacht totdat het te laat is niet.\", but \"Ik wacht niet totdat het te laat is.\")"
+    },
+    {
+     "wrong": "Ik niet wacht totdat het te laat is.",
+     "right": "Ik wacht niet totdat het te laat is.",
+     "why": "The negation follows the finite verb: 'wacht niet'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Totdat het te laat is, wacht ik niet.",
+    "english": "Until it is too late I do not wait.",
+    "note": "The totdat-clause first inverts the main clause to 'wacht ik niet'."
+   }
+  },
+  "pat-tot-37": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "'Vijf uur' is a time, not an event, so 'tot' is a preposition and no second verb is needed."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik werk tot vijf uur",
+     "subject": "Ik",
+     "finite": "werk",
+     "role": "single main clause",
+     "why": "'Ik' is first and 'werk' is second; the time phrase 'tot vijf uur' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "werk"
+    },
+    {
+     "label": "preposition (until)",
+     "text": "tot"
+    },
+    {
+     "label": "time",
+     "text": "vijf uur"
+    }
+   ],
+   "meaning": "I work until five o'clock.",
+   "order": "A clock time after 'tot' makes it a preposition. The sentence is one main clause with the verb in second position.",
+   "forms": "werken: ik werk.",
+   "compare": "English 'until five o'clock' says the same. Dutch has no 'o'clock'. For this card: \"Ik werk tot vijf uur\".",
+   "mistakes": [
+    {
+     "wrong": "Ik werk tot is vijf uur.",
+     "right": "Ik werk tot vijf uur.",
+     "why": "After a clock time 'tot' needs no verb. (not \"Ik werk tot is vijf uur.\", but \"Ik werk tot vijf uur.\")"
+    },
+    {
+     "wrong": "Ik werkt tot vijf uur.",
+     "right": "Ik werk tot vijf uur.",
+     "why": "With 'ik' the verb has no ending: 'werk'. (not \"Ik werkt tot vijf uur.\", but \"Ik werk tot vijf uur.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik werk tot het vijf uur is.",
+    "english": "I work until it is five o'clock.",
+    "note": "With 'het ... is' a clause follows and the verb goes last; the meaning is the same."
+   }
+  },
+  "pat-tot-38": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "'Negen uur' is a clock time, so 'tot' is a preposition."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De winkel is open tot negen uur",
+     "subject": "De winkel",
+     "finite": "is",
+     "role": "single main clause",
+     "why": "'De winkel' is first and 'is' is second; the predicate 'open' and the time phrase follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De winkel"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "preposition (until)",
+     "text": "tot"
+    },
+    {
+     "label": "time",
+     "text": "negen uur"
+    }
+   ],
+   "meaning": "The shop is open until nine o'clock.",
+   "order": "The finite verb 'is' stands in second position. The predicate 'open' comes before the time phrase with 'tot'. Read it as \"De winkel is open tot negen uur\".",
+   "forms": "zijn: de winkel is.",
+   "compare": "English 'The shop is open until nine' has the same logic. Dutch adds 'uur'.",
+   "mistakes": [
+    {
+     "wrong": "De winkel open is tot negen uur.",
+     "right": "De winkel is open tot negen uur.",
+     "why": "The finite verb 'is' stands in second position."
+    },
+    {
+     "wrong": "De winkel is open tot negen uur is.",
+     "right": "De winkel is open tot negen uur.",
+     "why": "One finite verb is enough; 'tot' with a clock time needs no second 'is'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De winkel is open tot het negen uur is.",
+    "english": "The shop is open until it is nine o'clock.",
+    "note": "With a clause you need a verb at the end of the tot-clause."
+   }
+  },
+  "pat-tot-39": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "'Maandag' is a day, not an event, so 'tot' is a preposition."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het kantoor blijft gesloten tot maandag",
+     "subject": "Het kantoor",
+     "finite": "blijft",
+     "role": "single main clause",
+     "why": "'Het kantoor' is first and 'blijft' is second; the predicate 'gesloten' and the day follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het kantoor"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "predicate",
+     "text": "gesloten"
+    },
+    {
+     "label": "preposition (until)",
+     "text": "tot"
+    },
+    {
+     "label": "day",
+     "text": "maandag"
+    }
+   ],
+   "meaning": "The office stays closed until Monday.",
+   "order": "The day name is the end point. The preposition 'tot' needs no verb after it. Read it as \"Het kantoor blijft gesloten tot maandag\".",
+   "forms": "blijven: het kantoor blijft.",
+   "compare": "English 'stays closed until Monday' has the same structure. For this card: \"Het kantoor blijft gesloten tot maandag\".",
+   "mistakes": [
+    {
+     "wrong": "Het kantoor blijft gesloten tot is maandag.",
+     "right": "Het kantoor blijft gesloten tot maandag.",
+     "why": "'Tot' with a day name needs no verb. (not \"Het kantoor blijft gesloten tot is maandag.\", but \"Het kantoor blijft gesloten tot maandag.\")"
+    },
+    {
+     "wrong": "Het kantoor blijven gesloten tot maandag.",
+     "right": "Het kantoor blijft gesloten tot maandag.",
+     "why": "The singular subject needs 'blijft'. (not \"Het kantoor blijven gesloten tot maandag.\", but \"Het kantoor blijft gesloten tot maandag.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Het kantoor blijft gesloten tot het maandag is.",
+    "english": "The office stays closed until it is Monday.",
+    "note": "A clause is possible but heavier than the simple day name."
+   }
+  },
+  "pat-tot-40": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot nu toe = so far (fixed phrase)",
+    "why": "'Tot nu toe' is a fixed time phrase meaning 'so far'; it fills the first position here."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Tot nu toe is alles goed gegaan",
+     "subject": "alles",
+     "finite": "is",
+     "role": "single main clause",
+     "why": "The time phrase 'tot nu toe' is first, so the finite verb 'is' comes second and the subject 'alles' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fixed phrase (so far)",
+     "text": "Tot nu toe"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "alles"
+    },
+    {
+     "label": "adverb",
+     "text": "goed"
+    },
+    {
+     "label": "past participle",
+     "text": "gegaan"
+    }
+   ],
+   "meaning": "Up to now everything has gone well.",
+   "order": "Because a time phrase opens the sentence, the verb 'is' comes before the subject 'alles'. The participle 'gegaan' ends the clause.",
+   "forms": "zijn: alles is. gaan: gegaan.",
+   "compare": "English 'Up to now everything has gone well' keeps the subject first. Dutch inverts after the time phrase.",
+   "mistakes": [
+    {
+     "wrong": "Tot nu toe alles is goed gegaan.",
+     "right": "Tot nu toe is alles goed gegaan.",
+     "why": "After the time phrase the verb comes second: 'is alles'."
+    },
+    {
+     "wrong": "Tot nu toe is alles goed gegaan is.",
+     "right": "Tot nu toe is alles goed gegaan.",
+     "why": "One finite 'is' is enough; the participle is 'gegaan'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Alles is tot nu toe goed gegaan.",
+    "english": "Everything has gone well so far.",
+    "note": "With the subject first there is no inversion; the time phrase moves to the middle."
+   }
+  },
+  "pat-tot-41": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "van … tot = from … to",
+    "why": "'Van maandag tot vrijdag' is a pair of days, so 'tot' is a preposition marking the end of the range."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Van maandag tot vrijdag werk ik thuis",
+     "subject": "ik",
+     "finite": "werk",
+     "role": "single main clause",
+     "why": "The range 'van maandag tot vrijdag' fills the first position, so 'werk' comes second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "range",
+     "text": "Van maandag tot vrijdag"
+    },
+    {
+     "label": "finite verb",
+     "text": "werk"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "place",
+     "text": "thuis"
+    }
+   ],
+   "meaning": "From Monday to Friday I work from home.",
+   "order": "The whole range counts as one element in first position, so the verb 'werk' comes before the subject. Read it as \"Van maandag tot vrijdag werk ik thuis\".",
+   "forms": "werken: ik werk. Card: \"Van maandag tot vrijdag werk ik thuis\".",
+   "compare": "English 'From Monday to Friday' uses 'to'. Dutch uses 'tot'. For this card: \"Van maandag tot vrijdag werk ik thuis\".",
+   "mistakes": [
+    {
+     "wrong": "Van maandag tot vrijdag ik werk thuis.",
+     "right": "Van maandag tot vrijdag werk ik thuis.",
+     "why": "After the range the verb comes second: 'werk ik'."
+    },
+    {
+     "wrong": "Van maandag tot vrijdag werk ik thuis is.",
+     "right": "Van maandag tot vrijdag werk ik thuis.",
+     "why": "The sentence needs only one verb. (not \"Van maandag tot vrijdag werk ik thuis is.\", but \"Van maandag tot vrijdag werk ik thuis.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik werk thuis van maandag tot vrijdag.",
+    "english": "I work from home from Monday to Friday.",
+    "note": "With the subject first there is no inversion."
+   }
+  },
+  "pat-tot-42": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "'De lunch' is a moment, not an event with a verb, so 'tot' is a preposition."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Tot de lunch blijf ik aan mijn bureau",
+     "subject": "ik",
+     "finite": "blijf",
+     "role": "single main clause",
+     "why": "The phrase 'tot de lunch' is first, so 'blijf' comes second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "preposition (until)",
+     "text": "Tot"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de lunch"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "place",
+     "text": "aan mijn bureau"
+    }
+   ],
+   "meaning": "Until lunch I stay at my desk.",
+   "order": "The noun phrase 'de lunch' sets the end point; no clause is needed. Read it as \"Tot de lunch blijf ik aan mijn bureau\".",
+   "forms": "blijven: ik blijf.",
+   "compare": "English 'Until lunch I stay at my desk' also fronts the time. For this card: \"Tot de lunch blijf ik aan mijn bureau\".",
+   "mistakes": [
+    {
+     "wrong": "Tot de lunch ik blijf aan mijn bureau.",
+     "right": "Tot de lunch blijf ik aan mijn bureau.",
+     "why": "After the time phrase the verb comes second: 'blijf ik'."
+    },
+    {
+     "wrong": "Tot de lunch blijft ik aan mijn bureau.",
+     "right": "Tot de lunch blijf ik aan mijn bureau.",
+     "why": "With 'ik' the verb is 'blijf'. (not \"Tot de lunch blijft ik aan mijn bureau.\", but \"Tot de lunch blijf ik aan mijn bureau.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik blijf aan mijn bureau tot de lunch.",
+    "english": "I stay at my desk until lunch.",
+    "note": "With the subject first there is no inversion. Compare: Ik blijf aan mijn bureau tot de lunch."
+   }
+  },
+  "pat-tot-43": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "'Volgende week' is a time phrase, so 'tot' is a preposition; the dummy 'het' is the subject."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het kan wachten tot volgende week",
+     "subject": "Het",
+     "finite": "kan",
+     "role": "single main clause",
+     "why": "'Het' is first and the modal 'kan' is second; the infinitive 'wachten' and the time phrase follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "infinitive",
+     "text": "wachten"
+    },
+    {
+     "label": "preposition (until)",
+     "text": "tot"
+    },
+    {
+     "label": "time",
+     "text": "volgende week"
+    }
+   ],
+   "meaning": "It can wait until next week.",
+   "order": "The modal 'kan' is in second position. Here the infinitive 'wachten' stands before the time phrase. Read it as \"Het kan wachten tot volgende week\".",
+   "forms": "kunnen: het kan. wachten: infinitive.",
+   "compare": "English 'It can wait until next week' has the same structure. For this card: \"Het kan wachten tot volgende week\".",
+   "mistakes": [
+    {
+     "wrong": "Het kan wachten tot is volgende week.",
+     "right": "Het kan wachten tot volgende week.",
+     "why": "'Tot' with a time phrase needs no verb. (not \"Het kan wachten tot is volgende week.\", but \"Het kan wachten tot volgende week.\")"
+    },
+    {
+     "wrong": "Het kunt wachten tot volgende week.",
+     "right": "Het kan wachten tot volgende week.",
+     "why": "With 'het' the modal is 'kan'. (not \"Het kunt wachten tot volgende week.\", but \"Het kan wachten tot volgende week.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Het kan wachten totdat de storing voorbij is.",
+    "english": "It can wait until the fault is over.",
+    "note": "An event needs 'totdat' and a clause. Compare: Het kan wachten totdat de storing voorbij is."
+   }
+  },
+  "pat-tot-44": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "'Zondag' is a day, so 'tot' is a preposition; the time phrase is first."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Tot zondag heb ik vakantie",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "The phrase 'tot zondag' is first, so 'heb' comes second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "preposition (until)",
+     "text": "Tot"
+    },
+    {
+     "label": "day",
+     "text": "zondag"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "vakantie"
+    }
+   ],
+   "meaning": "Until Sunday I am on holiday.",
+   "order": "After a fronted time phrase the verb 'heb' comes before the subject. Read it as \"Tot zondag heb ik vakantie\". Its parts: preposition (until) Tot, day zondag, finite verb heb, subject ik.",
+   "forms": "hebben: ik heb.",
+   "compare": "English 'Until Sunday I am on holiday' uses 'be'. Dutch uses 'hebben'. For this card: \"Tot zondag heb ik vakantie\".",
+   "mistakes": [
+    {
+     "wrong": "Tot zondag ik heb vakantie.",
+     "right": "Tot zondag heb ik vakantie.",
+     "why": "After the time phrase the verb comes second: 'heb ik'."
+    },
+    {
+     "wrong": "Tot zondag ben ik vakantie.",
+     "right": "Tot zondag heb ik vakantie.",
+     "why": "With 'vakantie' Dutch uses 'hebben'. (not \"Tot zondag ben ik vakantie.\", but \"Tot zondag heb ik vakantie.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik heb vakantie tot zondag.",
+    "english": "I am on holiday until Sunday.",
+    "note": "With the subject first there is no inversion. Compare: Ik heb vakantie tot zondag."
+   }
+  },
+  "pat-tot-45": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = to (fixed preposition)",
+    "why": "Here 'tot' belongs to the noun 'toegang'; 'toegang tot' is a fixed combination, not a time phrase."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb toegang tot de map",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "single main clause",
+     "why": "'Ik' is first and 'heb' is second; the object 'toegang' and the prepositional phrase follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    },
+    {
+     "label": "object",
+     "text": "toegang"
+    },
+    {
+     "label": "preposition (to)",
+     "text": "tot"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de map"
+    }
+   ],
+   "meaning": "I have access to the folder.",
+   "order": "'Toegang tot' is a fixed combination: the noun takes 'tot' for the thing you can reach. Read it as \"Ik heb toegang tot de map\".",
+   "forms": "hebben: ik heb. Card: \"Ik heb toegang tot de map\".",
+   "compare": "English 'access to' uses 'to'. Dutch uses 'tot'. For this card: \"Ik heb toegang tot de map\".",
+   "mistakes": [
+    {
+     "wrong": "Ik heb toegang aan de map.",
+     "right": "Ik heb toegang tot de map.",
+     "why": "The noun 'toegang' takes the preposition 'tot'."
+    },
+    {
+     "wrong": "Ik heb toegang de map.",
+     "right": "Ik heb toegang tot de map.",
+     "why": "The preposition 'tot' is missing between the noun and the folder."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik krijg toegang tot de map.",
+    "english": "I get access to the folder.",
+    "note": "The same combination works with other verbs."
+   }
+  },
+  "pat-tot-46": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = to (fixed preposition)",
+    "why": "'Zich wenden tot' is a fixed combination: 'tot' marks the person you turn to."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij wendt zich tot de manager",
+     "subject": "Hij",
+     "finite": "wendt",
+     "role": "single main clause",
+     "why": "'Hij' is first and 'wendt' is second; the reflexive 'zich' and the phrase follow."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "wendt"
+    },
+    {
+     "label": "reflexive",
+     "text": "zich"
+    },
+    {
+     "label": "preposition (to)",
+     "text": "tot"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de manager"
+    }
+   ],
+   "meaning": "He turns to the manager.",
+   "order": "The reflexive 'zich' follows the finite verb. 'Tot' introduces the person addressed. Read it as \"Hij wendt zich tot de manager\".",
+   "forms": "zich wenden: hij wendt zich.",
+   "compare": "English 'turns to the manager' uses 'to'. Dutch uses 'zich wenden tot'.",
+   "mistakes": [
+    {
+     "wrong": "Hij wendt zich op de manager.",
+     "right": "Hij wendt zich tot de manager.",
+     "why": "The verb 'zich wenden' takes 'tot' for the person addressed."
+    },
+    {
+     "wrong": "Hij wendt tot de manager.",
+     "right": "Hij wendt zich tot de manager.",
+     "why": "The reflexive 'zich' is missing. (not \"Hij wendt tot de manager.\", but \"Hij wendt zich tot de manager.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij wendt zich tot de manager met een klacht.",
+    "english": "He turns to the manager with a complaint.",
+    "note": "A detail with 'met' may follow. Compare: Hij wendt zich tot de manager met een klacht."
+   }
+  },
+  "pat-tot-47": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = to (fixed preposition)",
+    "why": "'Leiden tot' is a fixed combination: 'tot' marks the result."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Dat leidt tot problemen",
+     "subject": "Dat",
+     "finite": "leidt",
+     "role": "single main clause",
+     "why": "'Dat' is first and 'leidt' is second; the phrase 'tot problemen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Dat"
+    },
+    {
+     "label": "finite verb",
+     "text": "leidt"
+    },
+    {
+     "label": "preposition (to)",
+     "text": "tot"
+    },
+    {
+     "label": "noun",
+     "text": "problemen"
+    }
+   ],
+   "meaning": "That leads to problems.",
+   "order": "'Leiden tot' marks the result. The verb stays in second position. Read it as \"Dat leidt tot problemen\". Its parts: subject Dat, finite verb leidt, preposition (to) tot, noun problemen.",
+   "forms": "leiden: dat leidt.",
+   "compare": "English 'leads to problems' uses 'to'. Dutch uses 'tot'. For this card: \"Dat leidt tot problemen\".",
+   "mistakes": [
+    {
+     "wrong": "Dat leidt naar problemen.",
+     "right": "Dat leidt tot problemen.",
+     "why": "The verb takes 'tot' in this meaning. (not \"Dat leidt naar problemen.\", but \"Dat leidt tot problemen.\")"
+    },
+    {
+     "wrong": "Dat leiden tot problemen.",
+     "right": "Dat leidt tot problemen.",
+     "why": "The singular subject needs 'leidt'. (not \"Dat leiden tot problemen.\", but \"Dat leidt tot problemen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Dat leidt tot grote problemen.",
+    "english": "That leads to big problems.",
+    "note": "An adjective may stand before the noun. Compare: Dat leidt tot grote problemen."
+   }
+  },
+  "pat-tot-48": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = to (fixed preposition)",
+    "why": "'Promoveren tot' marks the position someone reaches, so 'tot' is not a time word here."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij is gepromoveerd tot manager",
+     "subject": "Hij",
+     "finite": "is",
+     "role": "single main clause",
+     "why": "'Hij' is first and the auxiliary 'is' is second; the participle 'gepromoveerd' follows the position."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "gepromoveerd"
+    },
+    {
+     "label": "preposition (to)",
+     "text": "tot"
+    },
+    {
+     "label": "noun",
+     "text": "manager"
+    }
+   ],
+   "meaning": "He has been promoted to manager.",
+   "order": "The auxiliary 'is' comes second; the participle stands before the result with 'tot'. Read it as \"Hij is gepromoveerd tot manager\".",
+   "forms": "promoveren: is gepromoveerd.",
+   "compare": "English 'promoted to manager' uses 'to'. Dutch uses 'tot'. For this card: \"Hij is gepromoveerd tot manager\".",
+   "mistakes": [
+    {
+     "wrong": "Hij is gepromoveerd naar manager.",
+     "right": "Hij is gepromoveerd tot manager.",
+     "why": "The verb takes 'tot' in this meaning. (not \"Hij is gepromoveerd naar manager.\", but \"Hij is gepromoveerd tot manager.\")"
+    },
+    {
+     "wrong": "Hij is tot manager gepromoveerd is.",
+     "right": "Hij is gepromoveerd tot manager.",
+     "why": "Only one 'is' is needed. (not \"Hij is tot manager gepromoveerd is.\", but \"Hij is gepromoveerd tot manager.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij is tot manager gepromoveerd.",
+    "english": "He has been promoted to manager.",
+    "note": "The phrase may also stand before the participle."
+   }
+  },
+  "pat-tot-49": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot aan = up to (preposition)",
+    "why": "'Tot aan' is a stronger preposition: it marks the exact limit that the water reaches."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het water stijgt tot aan de deur",
+     "subject": "Het water",
+     "finite": "stijgt",
+     "role": "single main clause",
+     "why": "'Het water' is first and 'stijgt' is second; the phrase 'tot aan de deur' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het water"
+    },
+    {
+     "label": "finite verb",
+     "text": "stijgt"
+    },
+    {
+     "label": "preposition (up to)",
+     "text": "tot aan"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de deur"
+    }
+   ],
+   "meaning": "The water rises up to the door.",
+   "order": "The preposition 'tot aan' is followed by a place. It describes how far the water rises. Read it as \"Het water stijgt tot aan de deur\".",
+   "forms": "stijgen: het water stijgt.",
+   "compare": "English 'rises up to the door' uses 'up to'. Dutch uses 'tot aan'. For this card: \"Het water stijgt tot aan de deur\".",
+   "mistakes": [
+    {
+     "wrong": "Het water stijg tot aan de deur.",
+     "right": "Het water stijgt tot aan de deur.",
+     "why": "The singular subject needs 'stijgt'. (not \"Het water stijg tot aan de deur.\", but \"Het water stijgt tot aan de deur.\")"
+    },
+    {
+     "wrong": "Het water stijgt tot aan is de deur.",
+     "right": "Het water stijgt tot aan de deur.",
+     "why": "'Tot aan' with a noun needs no verb. (not \"Het water stijgt tot aan is de deur.\", but \"Het water stijgt tot aan de deur.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Het water stijgt tot het de deur bereikt.",
+    "english": "The water rises until it reaches the door.",
+    "note": "With a clause 'tot' needs a verb at the end."
+   }
+  },
+  "pat-tot-reuse-career-changes-006": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "Here 'tot' is a preposition before 'het einde van deze week'; the phrase is a noun phrase, not a clause."
+   },
+   "situationNl": "Een tijdelijke collega krijgt een pas. Hij vraagt hoe lang die werkt. Leg het einde van de periode uit.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De toegang geldt tot het einde van deze week",
+     "subject": "De toegang",
+     "finite": "geldt",
+     "role": "single main clause",
+     "why": "'De toegang' is first and 'geldt' is second; 'tot het einde van deze week' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De toegang"
+    },
+    {
+     "label": "finite verb",
+     "text": "geldt"
+    },
+    {
+     "label": "preposition (until)",
+     "text": "tot"
+    },
+    {
+     "label": "noun phrase",
+     "text": "het einde van deze week"
+    }
+   ],
+   "meaning": "Access is valid until the end of this week.",
+   "order": "The finite verb 'geldt' stands in second position and the time phrase with 'tot' ends the sentence. Read it as \"De toegang geldt tot het einde van deze week\".",
+   "forms": "gelden: de toegang geldt.",
+   "compare": "English 'is valid until the end of this week' uses a different verb. Dutch uses 'gelden'.",
+   "mistakes": [
+    {
+     "wrong": "De toegang gelden tot het einde van deze week.",
+     "right": "De toegang geldt tot het einde van deze week.",
+     "why": "The singular subject needs 'geldt'. (not \"De toegang gelden tot het einde van deze week.\", but \"De toegang geldt tot het einde van deze week.\")"
+    },
+    {
+     "wrong": "De toegang geldt tot het einde van deze week is.",
+     "right": "De toegang geldt tot het einde van deze week.",
+     "why": "'Tot' with a noun phrase needs no verb afterwards."
+    }
+   ],
+   "contrast": {
+    "dutch": "De toegang geldt totdat de week voorbij is.",
+    "english": "The access is valid until the week is over.",
+    "note": "With an event instead of a noun phrase you need 'totdat' and the verb last."
+   }
+  },
+  "pat-tot-reuse-career-changes-016": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The written approval is the event that ends the waiting, so 'tot' opens the end-point clause."
+   },
+   "situationNl": "Een project ligt stil en er ontbreekt nog een handtekening. Een collega vraagt wat je doet. Zeg dat je blijft staan en wat voor bewijs je nodig hebt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wacht",
+     "subject": "Ik",
+     "finite": "wacht",
+     "role": "main clause (the waiting)",
+     "why": "Ik is first, so 'wacht' is second and the main clause is complete."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de eigenaar schriftelijk akkoord geeft",
+     "subject": "de eigenaar",
+     "finite": "geeft",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de eigenaar' comes first, then the adverb 'schriftelijk' and the object 'akkoord', and the finite verb 'geeft' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de eigenaar"
+    },
+    {
+     "label": "manner",
+     "text": "schriftelijk"
+    },
+    {
+     "label": "object",
+     "text": "akkoord"
+    },
+    {
+     "label": "finite verb",
+     "text": "geeft"
+    }
+   ],
+   "meaning": "I wait until the owner gives written agreement.",
+   "order": "'Akkoord geven' is a fixed expression, and in the dependent clause its finite verb 'geeft' comes after both the adverb and the object.",
+   "forms": "wachten: ik wacht. geven: de eigenaar geeft.",
+   "compare": "English 'gives written agreement' keeps the verb before the object. Dutch puts 'geeft' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik wacht tot de eigenaar geeft schriftelijk akkoord.",
+     "right": "Ik wacht tot de eigenaar schriftelijk akkoord geeft.",
+     "why": "The finite verb 'geeft' goes behind the adverb and the object."
+    },
+    {
+     "wrong": "Ik wacht tot de eigenaar schriftelijk akkoord geven.",
+     "right": "Ik wacht tot de eigenaar schriftelijk akkoord geeft.",
+     "why": "The singular subject 'de eigenaar' needs 'geeft'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de eigenaar schriftelijk akkoord geeft, wacht ik.",
+    "english": "Until the owner gives written agreement, I wait.",
+    "note": "The tot-clause first inverts the main clause to 'wacht ik'."
+   }
+  },
+  "pat-tot-reuse-career-incidents-050": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "Confirmation of the takeover ends the responsibility; the dependent clause stands first."
+   },
+   "situationNl": "Je geeft taken over aan een opvolger en een collega vraagt hoe lang jij nog aanspreekbaar bent. Zeg wat jouw rol is en wat die rol beëindigt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Totdat de overname bevestigd is",
+     "subject": "de overname",
+     "finite": "is",
+     "role": "totdat-clause (the end point)",
+     "why": "The subject 'de overname' comes first, the participle 'bevestigd' follows and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijf ik verantwoordelijk",
+     "subject": "ik",
+     "finite": "blijf",
+     "role": "main clause (the responsibility)",
+     "why": "After a dependent clause the main clause starts with its finite verb: 'blijf' first, then 'ik'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (until)",
+     "text": "Totdat"
+    },
+    {
+     "label": "subject",
+     "text": "de overname"
+    },
+    {
+     "label": "past participle",
+     "text": "bevestigd"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "predicate",
+     "text": "verantwoordelijk"
+    }
+   ],
+   "meaning": "Until takeover is confirmed, I remain responsible.",
+   "order": "The totdat-clause fills the first position of the sentence, so the main clause inverts to 'blijf ik'. The perfect group 'bevestigd is' closes the dependent clause.",
+   "forms": "blijven: ik blijf. zijn: de overname is bevestigd.",
+   "compare": "English 'Until takeover is confirmed, I remain responsible' keeps the order. Dutch also moves 'is' to the end of the first clause.",
+   "mistakes": [
+    {
+     "wrong": "Totdat de overname bevestigd is, ik blijf verantwoordelijk.",
+     "right": "Totdat de overname bevestigd is, blijf ik verantwoordelijk.",
+     "why": "After the first clause the main clause starts with the finite verb: 'blijf ik'."
+    },
+    {
+     "wrong": "Totdat de overname bevestigd, blijf ik verantwoordelijk.",
+     "right": "Totdat de overname bevestigd is, blijf ik verantwoordelijk.",
+     "why": "The dependent clause needs its finite verb 'is' after the participle."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik blijf verantwoordelijk totdat de overname bevestigd is.",
+    "english": "I remain responsible until takeover is confirmed.",
+    "note": "With the main clause first there is no inversion: 'Ik blijf'."
+   }
+  },
+  "pat-tot-reuse-career-incidents-056": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "Here 'tot' is a preposition: the post-check is a noun phrase, so no new verb follows it."
+   },
+   "situationNl": "Een storing is verholpen maar nog niet afgesloten. Een collega vraagt of het dossier dicht is. Zeg wat de status is en welke stap die verandert.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het incident blijft tot de nacontrole open",
+     "subject": "Het incident",
+     "finite": "blijft",
+     "role": "single main clause",
+     "why": "'Het incident' is first and 'blijft' is second; 'tot de nacontrole' is a time phrase and the predicate 'open' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het incident"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "preposition (until)",
+     "text": "tot"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de nacontrole"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    }
+   ],
+   "meaning": "The incident remains open until the post-check.",
+   "order": "The preposition 'tot' takes a noun phrase ('de nacontrole'), not a clause. The finite verb stays in second position and the predicate 'open' comes after the time phrase.",
+   "forms": "blijven: het incident blijft.",
+   "compare": "English 'remains open until the post-check' has the same noun phrase. Dutch puts 'open' after it.",
+   "mistakes": [
+    {
+     "wrong": "Het incident blijft open tot de nacontrole is.",
+     "right": "Het incident blijft tot de nacontrole open.",
+     "why": "Without a verb phrase 'tot' is a preposition; do not add a clause."
+    },
+    {
+     "wrong": "Het incident blijf tot de nacontrole open.",
+     "right": "Het incident blijft tot de nacontrole open.",
+     "why": "The singular subject needs 'blijft'. (not \"Het incident blijf tot de nacontrole open.\", but \"Het incident blijft tot de nacontrole open.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Het incident blijft open totdat de nacontrole is gedaan.",
+    "english": "The incident stays open until the post-check is done.",
+    "note": "With a verb after the time word you need the conjunction 'totdat' and the verb goes last."
+   }
+  },
+  "pat-tot-reuse-career-office-024": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "Here 'tot' is a preposition before the noun 'mijn terugkomst', which stands for the event 'when I come back'."
+   },
+   "situationNl": "Je moet even weg en een collega is bereid je werk op te vangen. Vraag haar vriendelijk of ze de balie bemant gedurende jouw afwezigheid.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Kun je de servicedesk tot mijn terugkomst ondersteunen",
+     "subject": "je",
+     "finite": "Kun",
+     "role": "single main clause",
+     "why": "This is a question, so the finite verb 'Kun' stands first and the subject 'je' follows; the infinitive 'ondersteunen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "de servicedesk"
+    },
+    {
+     "label": "preposition (until)",
+     "text": "tot"
+    },
+    {
+     "label": "noun phrase",
+     "text": "mijn terugkomst"
+    },
+    {
+     "label": "infinitive",
+     "text": "ondersteunen"
+    }
+   ],
+   "meaning": "Can you support the service desk until I return?",
+   "order": "In a yes/no question the modal opens the sentence. The noun 'terugkomst' turns the event into a noun phrase, so 'tot' stays a preposition.",
+   "forms": "kunnen: kun je. ondersteunen: infinitive.",
+   "compare": "English 'support the service desk until I return' needs a clause. Dutch can use the noun 'terugkomst'.",
+   "mistakes": [
+    {
+     "wrong": "Kun je tot mijn terugkomst de servicedesk ondersteun?",
+     "right": "Kun je de servicedesk tot mijn terugkomst ondersteunen?",
+     "why": "The infinitive keeps its full form: 'ondersteunen'."
+    },
+    {
+     "wrong": "Kun je ondersteunen de servicedesk tot mijn terugkomst?",
+     "right": "Kun je de servicedesk tot mijn terugkomst ondersteunen?",
+     "why": "The infinitive 'ondersteunen' goes to the end of the question."
+    }
+   ],
+   "contrast": {
+    "dutch": "Kun je de servicedesk ondersteunen tot ik terugkom?",
+    "english": "Can you support the service desk until I come back?",
+    "note": "With a clause instead of a noun the conjunction 'tot' needs a finite verb at the end."
+   }
+  },
+  "pat-tot-reuse-career-priorities-009": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot = until (preposition)",
+    "why": "Here 'tot' is a preposition before the time word 'morgen'; no verb follows it."
+   },
+   "situationNl": "Er is veel dringend werk. Een collega vraagt of de onderhoudstaak nu af moet. Zeg dat er tijd is en hoe lang.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De onderhoudstaak kan tot morgen wachten",
+     "subject": "De onderhoudstaak",
+     "finite": "kan",
+     "role": "single main clause",
+     "why": "'De onderhoudstaak' is first and the modal 'kan' is second; the infinitive 'wachten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De onderhoudstaak"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "preposition (until)",
+     "text": "tot"
+    },
+    {
+     "label": "time",
+     "text": "morgen"
+    },
+    {
+     "label": "infinitive",
+     "text": "wachten"
+    }
+   ],
+   "meaning": "The maintenance task can wait until tomorrow.",
+   "order": "The modal 'kan' is the finite verb in second position, so the infinitive 'wachten' goes last. 'Tot morgen' stands between them as a time phrase.",
+   "forms": "kunnen: de onderhoudstaak kan. wachten: infinitive.",
+   "compare": "English 'can wait until tomorrow' puts the time phrase after the verb group. Dutch puts it between 'kan' and 'wachten'.",
+   "mistakes": [
+    {
+     "wrong": "De onderhoudstaak kan wachten tot morgen is.",
+     "right": "De onderhoudstaak kan tot morgen wachten.",
+     "why": "A time word like 'morgen' needs no verb after 'tot'."
+    },
+    {
+     "wrong": "De onderhoudstaak kunt tot morgen wachten.",
+     "right": "De onderhoudstaak kan tot morgen wachten.",
+     "why": "The singular subject needs 'kan'. (not \"De onderhoudstaak kunt tot morgen wachten.\", but \"De onderhoudstaak kan tot morgen wachten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De onderhoudstaak kan wachten totdat de storing voorbij is.",
+    "english": "The maintenance task can wait until the fault is over.",
+    "note": "When an event follows, you need the conjunction 'totdat' and a clause."
+   }
+  },
+  "pat-tot-reuse-career-problems-020": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot nu toe = so far (fixed phrase)",
+    "why": "'Tot nu toe' is a fixed adverbial phrase meaning 'so far'; 'nu' is not a clause here."
+   },
+   "situationNl": "Je bent een probleem aan het uitzoeken en een manager wil een tussenstand. Geef het aantal meldingen dat er tot op dit moment is.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij hebben tot nu toe vijf meldingen ontvangen",
+     "subject": "Wij",
+     "finite": "hebben",
+     "role": "single main clause",
+     "why": "'Wij' is first and the auxiliary 'hebben' is second; 'tot nu toe' and the object follow, and the participle 'ontvangen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebben"
+    },
+    {
+     "label": "fixed phrase (so far)",
+     "text": "tot nu toe"
+    },
+    {
+     "label": "object",
+     "text": "vijf meldingen"
+    },
+    {
+     "label": "past participle",
+     "text": "ontvangen"
+    }
+   ],
+   "meaning": "We have received five reports so far.",
+   "order": "The auxiliary 'hebben' is in second position and the participle 'ontvangen' goes last. 'Tot nu toe' stands before the object.",
+   "forms": "hebben: wij hebben. ontvangen: ontvangen.",
+   "compare": "English 'so far' stands elsewhere. Dutch puts 'tot nu toe' in the middle field.",
+   "mistakes": [
+    {
+     "wrong": "Wij hebben ontvangen tot nu toe vijf meldingen.",
+     "right": "Wij hebben tot nu toe vijf meldingen ontvangen.",
+     "why": "The participle 'ontvangen' goes to the end of the clause."
+    },
+    {
+     "wrong": "Wij hebt tot nu toe vijf meldingen ontvangen.",
+     "right": "Wij hebben tot nu toe vijf meldingen ontvangen.",
+     "why": "The plural 'wij' needs 'hebben'. (not \"Wij hebt tot nu toe vijf meldingen ontvangen.\", but \"Wij hebben tot nu toe vijf meldingen ontvangen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot nu toe hebben wij vijf meldingen ontvangen.",
+    "english": "So far we have received five reports.",
+    "note": "The time phrase first inverts the sentence to 'hebben wij'."
+   }
+  },
+  "pat-tot-reuse-career-support-013": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot aan = up to (preposition)",
+    "why": "'Tot aan' is a stronger preposition: it marks the exact point where the steps stop."
+   },
+   "situationNl": "Een klant belt met een foutmelding op het scherm. Vraag beleefd wat hij heeft gedaan voor dat punt bereikt werd.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Kunt u de stappen tot aan de foutmelding beschrijven",
+     "subject": "u",
+     "finite": "Kunt",
+     "role": "single main clause",
+     "why": "This is a polite question: 'Kunt' stands first and 'u' follows; the infinitive 'beschrijven' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Kunt"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "object",
+     "text": "de stappen"
+    },
+    {
+     "label": "preposition (up to)",
+     "text": "tot aan"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de foutmelding"
+    },
+    {
+     "label": "infinitive",
+     "text": "beschrijven"
+    }
+   ],
+   "meaning": "Could you describe the steps leading up to the error message?",
+   "order": "The formal question starts with the modal 'Kunt'. 'Tot aan de foutmelding' is a prepositional phrase that limits 'de stappen'.",
+   "forms": "kunnen: kunt u. beschrijven: infinitive.",
+   "compare": "English 'the steps leading up to the error message' is a long phrase. Dutch says 'tot aan de foutmelding'.",
+   "mistakes": [
+    {
+     "wrong": "Kunt u beschrijven de stappen tot aan de foutmelding?",
+     "right": "Kunt u de stappen tot aan de foutmelding beschrijven?",
+     "why": "The infinitive 'beschrijven' goes to the end."
+    },
+    {
+     "wrong": "Kun u de stappen tot aan de foutmelding beschrijven?",
+     "right": "Kunt u de stappen tot aan de foutmelding beschrijven?",
+     "why": "With formal 'u' use 'Kunt'. (not \"Kun u de stappen tot aan de foutmelding beschrijven?\", but \"Kunt u de stappen tot aan de foutmelding beschrijven?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Beschrijf de stappen tot aan de foutmelding.",
+    "english": "Describe the steps up to the error message.",
+    "note": "An imperative version has no subject or modal."
+   }
+  },
+  "pat-tot-reuse-career-support-054": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "The customer's confirmation ends the open status, so 'totdat' opens the end-point clause; the formal 'u' takes 'hebt'."
+   },
+   "situationNl": "Een klant moet nog nakijken of een herstelwerk goed is gedaan. Leg hem beleefd uit hoe lang je zijn melding laat staan en wat hij moet doen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het ticket blijft open",
+     "subject": "Het ticket",
+     "finite": "blijft",
+     "role": "main clause (the status)",
+     "why": "'Het ticket' is first, so 'blijft' is second and the predicate 'open' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "totdat u het resultaat hebt bevestigd",
+     "subject": "u",
+     "finite": "hebt",
+     "role": "totdat-clause (the end point)",
+     "why": "The subject 'u' comes first, then the object 'het resultaat', and the perfect group 'hebt bevestigd' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het ticket"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "totdat"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "object",
+     "text": "het resultaat"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebt"
+    },
+    {
+     "label": "past participle",
+     "text": "bevestigd"
+    }
+   ],
+   "meaning": "The ticket will remain open until you have confirmed the result.",
+   "order": "Both verbs of the perfect group stand at the end: the auxiliary 'hebt' first and the participle 'bevestigd' last. The formal 'u' takes 'hebt'.",
+   "forms": "blijven: het ticket blijft. hebben: u hebt. bevestigen: bevestigd.",
+   "compare": "English 'until you have confirmed' keeps the auxiliary next to the subject. Dutch puts 'hebt bevestigd' behind the object.",
+   "mistakes": [
+    {
+     "wrong": "Het ticket blijft open totdat u hebt het resultaat bevestigd.",
+     "right": "Het ticket blijft open totdat u het resultaat hebt bevestigd.",
+     "why": "The perfect group 'hebt bevestigd' goes behind the object."
+    },
+    {
+     "wrong": "Het ticket blijft open totdat u het resultaat bevestigd.",
+     "right": "Het ticket blijft open totdat u het resultaat hebt bevestigd.",
+     "why": "The perfect needs the auxiliary 'hebt' as well as the participle."
+    }
+   ],
+   "contrast": {
+    "dutch": "Totdat u het resultaat hebt bevestigd, blijft het ticket open.",
+    "english": "Until you have confirmed the result, the ticket stays open.",
+    "note": "The totdat-clause first inverts the main clause to 'blijft het ticket'."
+   }
+  },
+  "pat-tot-reuse-health-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "tot = until (conjunction)",
+    "why": "The doctor's call is the event that ends the sitting, so 'tot' opens the end-point clause."
+   },
+   "situationNl": "Je beschrijft een groep patiënten die net binnenkomt. Zeg wat zij doen en wat hun plek weer vrijmaakt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze gaan in de wachtkamer zitten",
+     "subject": "Ze",
+     "finite": "gaan",
+     "role": "main clause (the waiting)",
+     "why": "Ze is first, so 'gaan' is second; 'zitten' stands at the end because it is the infinitive of 'gaan zitten'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "tot de dokter ze roept",
+     "subject": "de dokter",
+     "finite": "roept",
+     "role": "tot-clause (the end point)",
+     "why": "The subject 'de dokter' comes first, then the object 'ze', and the finite verb 'roept' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "place",
+     "text": "in de wachtkamer"
+    },
+    {
+     "label": "infinitive",
+     "text": "zitten"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "tot"
+    },
+    {
+     "label": "subject",
+     "text": "de dokter"
+    },
+    {
+     "label": "object",
+     "text": "ze"
+    },
+    {
+     "label": "finite verb",
+     "text": "roept"
+    }
+   ],
+   "meaning": "They will sit in the waiting room until the doctor calls them.",
+   "order": "'Gaan zitten' describes the act of sitting down, so the infinitive 'zitten' sits at the end of the main clause. The tot-clause then adds the end point with its verb last.",
+   "forms": "gaan: ze gaan. zitten: infinitive. roepen: de dokter roept.",
+   "compare": "English 'sit down until the doctor calls them' needs no extra verb of motion. Dutch says 'gaan zitten' and then puts 'roept' last.",
+   "mistakes": [
+    {
+     "wrong": "Ze gaan in de wachtkamer zitten tot de dokter roept ze.",
+     "right": "Ze gaan in de wachtkamer zitten tot de dokter ze roept.",
+     "why": "In the tot-clause the finite verb goes behind the object 'ze'."
+    },
+    {
+     "wrong": "Ze gaat in de wachtkamer zitten tot de dokter ze roept.",
+     "right": "Ze gaan in de wachtkamer zitten tot de dokter ze roept.",
+     "why": "With 'ze' meaning 'they' the verb is plural: 'gaan'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Tot de dokter ze roept, gaan ze in de wachtkamer zitten.",
+    "english": "Until the doctor calls them, they sit in the waiting room.",
+    "note": "The tot-clause first inverts the main clause to 'gaan ze'."
+   }
+  },
+  "pat-tot-reuse-school-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "totdat = until (conjunction)",
+    "why": "Understanding is the state that ends the trying; 'totdat' says the same as 'tot' but is only a conjunction."
+   },
+   "situationNl": "Een klasgenoot wil opgeven bij een moeilijke opgave. Geef hem een kort advies en zeg op welk punt hij mag stoppen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Blijf proberen",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Blijf",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Blijf' stands first and the infinitive 'proberen' follows it."
+    },
+    {
+     "kind": "bijzin",
+     "text": "totdat je het snapt",
+     "subject": "je",
+     "finite": "snapt",
+     "role": "totdat-clause (the end point)",
+     "why": "The subject 'je' comes first, then the object 'het', and the finite verb 'snapt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Blijf"
+    },
+    {
+     "label": "infinitive",
+     "text": "proberen"
+    },
+    {
+     "label": "conjunction (until)",
+     "text": "totdat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "snapt"
+    }
+   ],
+   "meaning": "Keep trying until you understand it.",
+   "order": "'Blijven + infinitive' means to keep doing something. The conjunction 'totdat' is always a conjunction, and the verb of its clause goes last.",
+   "forms": "blijven: imperative blijf. snappen: je snapt.",
+   "compare": "English 'Keep trying until you get it' keeps 'get' before 'it'. Dutch puts 'snapt' last.",
+   "mistakes": [
+    {
+     "wrong": "Blijf proberen totdat je snapt het.",
+     "right": "Blijf proberen totdat je het snapt.",
+     "why": "The finite verb goes behind the object 'het'."
+    },
+    {
+     "wrong": "Blijf proberen totdat je het snap.",
+     "right": "Blijf proberen totdat je het snapt.",
+     "why": "With 'je' the verb needs -t: 'snapt'. (not \"Blijf proberen totdat je het snap.\", but \"Blijf proberen totdat je het snapt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Totdat je het snapt, blijf je proberen.",
+    "english": "Until you get it, you keep trying.",
+    "note": "The totdat-clause first inverts the main clause to 'blijf je'."
+   }
+  }
+ }
+}

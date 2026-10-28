@@ -1,0 +1,4557 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for the Zodra and Zolang topic. AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-zodra-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The arrival home is the trigger; 'zodra' stresses that the call follows immediately."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik bel je",
+     "subject": "Ik",
+     "finite": "bel",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'bel' is second and the object 'je' follows. The clause is \"Ik bel je\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra ik thuis ben",
+     "subject": "ik",
+     "finite": "ben",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ik' comes first, the adverb 'thuis' follows, and the finite verb 'ben' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "bel"
+    },
+    {
+     "label": "object",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "finite verb",
+     "text": "ben"
+    }
+   ],
+   "meaning": "I'll call you as soon as I'm home.",
+   "order": "Zodra says the call comes right after the arrival, not just at some time after it. Read it as \"Ik bel je zodra ik thuis ben\".",
+   "forms": "bellen: ik bel. zijn: ik ben.",
+   "compare": "English 'as soon as I'm home' uses 'I'm'. Dutch uses 'ik thuis ben' with the verb last.",
+   "mistakes": [
+    {
+     "wrong": "Ik bel je zodra ik ben thuis.",
+     "right": "Ik bel je zodra ik thuis ben.",
+     "why": "The finite verb 'ben' goes behind the adverb 'thuis'."
+    },
+    {
+     "wrong": "Ik bel je zodra ik thuis bent.",
+     "right": "Ik bel je zodra ik thuis ben.",
+     "why": "With 'ik' the verb is 'ben'. (not \"Ik bel je zodra ik thuis bent.\", but \"Ik bel je zodra ik thuis ben.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra ik thuis ben, bel ik je.",
+    "english": "As soon as I'm home, I'll call you.",
+    "note": "The zodra-clause first inverts the main clause to 'bel ik'."
+   }
+  },
+  "pat-zodra-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The end of the meeting triggers the minutes; the whole zodra-clause fills position one."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra de vergadering voorbij is",
+     "subject": "de vergadering",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de vergadering' comes first, the predicate 'voorbij' follows, and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stuur ik de notulen",
+     "subject": "ik",
+     "finite": "stuur",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'stuur' comes first, then the subject 'ik' and the object 'de notulen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de vergadering"
+    },
+    {
+     "label": "predicate",
+     "text": "voorbij"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "stuur"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de notulen"
+    }
+   ],
+   "meaning": "As soon as the meeting is over, I'll send the minutes.",
+   "order": "'Voorbij zijn' means to be over. The main clause inverts to 'stuur ik'. Read it as \"Zodra de vergadering voorbij is, stuur ik de notulen\".",
+   "forms": "zijn: de vergadering is. sturen: ik stuur.",
+   "compare": "English 'is over' keeps 'is' before 'over'. Dutch puts 'is' last. For this card: \"Zodra de vergadering voorbij is, stuur ik de notulen\".",
+   "mistakes": [
+    {
+     "wrong": "Zodra de vergadering is voorbij, stuur ik de notulen.",
+     "right": "Zodra de vergadering voorbij is, stuur ik de notulen.",
+     "why": "The finite verb 'is' goes behind the predicate 'voorbij'. (not \"Zodra de vergadering is voorbij, stuur ik de notulen.\", but \"Zodra de vergadering voorbij is, stuur ik de notulen.\")"
+    },
+    {
+     "wrong": "Zodra de vergadering voorbij is, ik stuur de notulen.",
+     "right": "Zodra de vergadering voorbij is, stuur ik de notulen.",
+     "why": "The main clause starts with the verb: 'stuur ik'. (not \"Zodra de vergadering voorbij is, ik stuur de notulen.\", but \"Zodra de vergadering voorbij is, stuur ik de notulen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik stuur de notulen zodra de vergadering voorbij is.",
+    "english": "I send the minutes as soon as the meeting is over.",
+    "note": "With the main clause first there is no inversion. Compare: Ik stuur de notulen zodra de vergadering voorbij is."
+   }
+  },
+  "pat-zodra-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The guests' arrival starts the cooking; 'begint te koken' is a verb group with 'te'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij begint te koken",
+     "subject": "Hij",
+     "finite": "begint",
+     "role": "main clause (what follows)",
+     "why": "Hij is first, so 'begint' is second; the group 'te koken' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra de gasten zijn aangekomen",
+     "subject": "de gasten",
+     "finite": "zijn",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de gasten' comes first and the group 'zijn aangekomen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    },
+    {
+     "label": "infinitive group",
+     "text": "te koken"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de gasten"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "zijn"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "aangekomen"
+    }
+   ],
+   "meaning": "He starts cooking as soon as the guests have arrived.",
+   "order": "After 'beginnen' comes 'te' + infinitive. 'Aankomen' takes 'zijn' because it is a verb of movement. Read it as \"Hij begint te koken zodra de gasten zijn aangekomen\".",
+   "forms": "beginnen: hij begint. aankomen: zijn aangekomen.",
+   "compare": "English 'starts cooking' uses an -ing form. Dutch uses 'begint te koken'.",
+   "mistakes": [
+    {
+     "wrong": "Hij begint te koken zodra de gasten hebben aangekomen.",
+     "right": "Hij begint te koken zodra de gasten zijn aangekomen.",
+     "why": "'Aankomen' takes 'zijn': 'zijn aangekomen'."
+    },
+    {
+     "wrong": "Hij begint koken zodra de gasten zijn aangekomen.",
+     "right": "Hij begint te koken zodra de gasten zijn aangekomen.",
+     "why": "'Beginnen' needs 'te' before the infinitive. (not \"Hij begint koken zodra de gasten zijn aangekomen.\", but \"Hij begint te koken zodra de gasten zijn aangekomen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra de gasten zijn aangekomen, begint hij te koken.",
+    "english": "As soon as the guests have arrived, he starts cooking.",
+    "note": "The zodra-clause first inverts the main clause to 'begint hij'."
+   }
+  },
+  "pat-zodra-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The traffic light is the trigger; 'optrekken' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra het licht groen wordt",
+     "subject": "het licht",
+     "finite": "wordt",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'het licht' comes first, the predicate 'groen' follows, and the finite verb 'wordt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "trekken de auto's op",
+     "subject": "de auto's",
+     "finite": "trekken",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'trekken' comes first, then the subject 'de auto's'; the particle 'op' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "het licht"
+    },
+    {
+     "label": "predicate",
+     "text": "groen"
+    },
+    {
+     "label": "finite verb",
+     "text": "wordt"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "trekken"
+    },
+    {
+     "label": "subject",
+     "text": "de auto's"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    }
+   ],
+   "meaning": "As soon as the light turns green, the cars pull away.",
+   "order": "'Optrekken' means to accelerate and splits as 'trekken ... op'. 'Groen worden' expresses the change. Read it as \"Zodra het licht groen wordt, trekken de auto's op\".",
+   "forms": "worden: het licht wordt. optrekken: trekken ... op.",
+   "compare": "English 'pull away' has the same particle at the end. For this card: \"Zodra het licht groen wordt, trekken de auto's op\".",
+   "mistakes": [
+    {
+     "wrong": "Zodra het licht wordt groen, trekken de auto's op.",
+     "right": "Zodra het licht groen wordt, trekken de auto's op.",
+     "why": "The finite verb 'wordt' goes behind the predicate 'groen'."
+    },
+    {
+     "wrong": "Zodra het licht groen wordt, trekken op de auto's.",
+     "right": "Zodra het licht groen wordt, trekken de auto's op.",
+     "why": "The particle 'op' goes to the end. (not \"Zodra het licht groen wordt, trekken op de auto's.\", but \"Zodra het licht groen wordt, trekken de auto's op.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De auto's trekken op zodra het licht groen wordt.",
+    "english": "The cars pull away as soon as the light turns green.",
+    "note": "With the main clause first there is no inversion. Compare: De auto's trekken op zodra het licht groen wordt."
+   }
+  },
+  "pat-zodra-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "Everyone's readiness is the trigger for leaving."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij vertrekken",
+     "subject": "Wij",
+     "finite": "vertrekken",
+     "role": "main clause (what follows)",
+     "why": "Wij is first, so the plural 'vertrekken' is second. The clause is \"Wij vertrekken\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra iedereen klaar is",
+     "subject": "iedereen",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'iedereen' comes first, the predicate 'klaar' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "vertrekken"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "iedereen"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "We leave as soon as everyone is ready.",
+   "order": "'Iedereen' is singular and takes 'is'. The predicate stands before the verb. Read it as \"Wij vertrekken zodra iedereen klaar is\".",
+   "forms": "vertrekken: wij vertrekken. zijn: iedereen is.",
+   "compare": "English 'everyone is ready' also uses a singular verb. For this card: \"Wij vertrekken zodra iedereen klaar is\".",
+   "mistakes": [
+    {
+     "wrong": "Wij vertrekken zodra iedereen is klaar.",
+     "right": "Wij vertrekken zodra iedereen klaar is.",
+     "why": "The finite verb 'is' goes behind the predicate 'klaar'. (not \"Wij vertrekken zodra iedereen is klaar.\", but \"Wij vertrekken zodra iedereen klaar is.\")"
+    },
+    {
+     "wrong": "Wij vertrekken zodra iedereen klaar zijn.",
+     "right": "Wij vertrekken zodra iedereen klaar is.",
+     "why": "'Iedereen' takes 'is'. (not \"Wij vertrekken zodra iedereen klaar zijn.\", but \"Wij vertrekken zodra iedereen klaar is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra iedereen klaar is, vertrekken wij.",
+    "english": "As soon as everyone is ready, we leave.",
+    "note": "The zodra-clause first inverts the main clause to 'vertrekken wij'."
+   }
+  },
+  "pat-zodra-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "Finishing the packing triggers the taxi call; the perfect 'heb gepakt' closes the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra ik mijn koffer heb gepakt",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ik' comes first, then the object 'mijn koffer', and the perfect group 'heb gepakt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "bel ik een taxi",
+     "subject": "ik",
+     "finite": "bel",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'bel' comes first, then the subject 'ik' and the object 'een taxi'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "mijn koffer"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gepakt"
+    },
+    {
+     "label": "finite verb",
+     "text": "bel"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "een taxi"
+    }
+   ],
+   "meaning": "As soon as I've packed my suitcase, I'll call a taxi.",
+   "order": "The perfect names a finished step; the main clause uses the present for the plan. The main clause inverts to 'bel ik'.",
+   "forms": "pakken: heb gepakt. bellen: ik bel.",
+   "compare": "English 'As soon as I've packed' keeps 'I've' before the object. Dutch puts 'heb gepakt' last.",
+   "mistakes": [
+    {
+     "wrong": "Zodra ik heb mijn koffer gepakt, bel ik een taxi.",
+     "right": "Zodra ik mijn koffer heb gepakt, bel ik een taxi.",
+     "why": "The perfect group goes behind the object. (not \"Zodra ik heb mijn koffer gepakt, bel ik een taxi.\", but \"Zodra ik mijn koffer heb gepakt, bel ik een taxi.\")"
+    },
+    {
+     "wrong": "Zodra ik mijn koffer heb gepakt, ik bel een taxi.",
+     "right": "Zodra ik mijn koffer heb gepakt, bel ik een taxi.",
+     "why": "The main clause starts with the verb: 'bel ik'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik bel een taxi zodra ik mijn koffer heb gepakt.",
+    "english": "I call a taxi as soon as I've packed my suitcase.",
+    "note": "With the main clause first there is no inversion. Compare: Ik bel een taxi zodra ik mijn koffer heb gepakt."
+   }
+  },
+  "pat-zodra-07": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "A fever is the signal for calling; the object 'koorts' stands before the verb."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij belt de huisarts",
+     "subject": "Zij",
+     "finite": "belt",
+     "role": "main clause (what follows)",
+     "why": "Zij is first, so 'belt' is second and the object 'de huisarts' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra ze koorts krijgt",
+     "subject": "ze",
+     "finite": "krijgt",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ze' comes first, then the object 'koorts', and the finite verb 'krijgt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "belt"
+    },
+    {
+     "label": "object",
+     "text": "de huisarts"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "koorts"
+    },
+    {
+     "label": "finite verb",
+     "text": "krijgt"
+    }
+   ],
+   "meaning": "She calls the doctor as soon as she gets a fever.",
+   "order": "'Koorts krijgen' means to develop a fever. The object stands before 'krijgt'. Read it as \"Zij belt de huisarts zodra ze koorts krijgt\".",
+   "forms": "bellen: zij belt. krijgen: ze krijgt.",
+   "compare": "English 'gets a fever' keeps 'gets' before the object. Dutch puts 'krijgt' last.",
+   "mistakes": [
+    {
+     "wrong": "Zij belt de huisarts zodra ze krijgt koorts.",
+     "right": "Zij belt de huisarts zodra ze koorts krijgt.",
+     "why": "The finite verb goes behind the object 'koorts'."
+    },
+    {
+     "wrong": "Zij belt de huisarts zodra ze koorts krijg.",
+     "right": "Zij belt de huisarts zodra ze koorts krijgt.",
+     "why": "With 'ze' the verb needs -t: 'krijgt'. (not \"Zij belt de huisarts zodra ze koorts krijg.\", but \"Zij belt de huisarts zodra ze koorts krijgt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra ze koorts krijgt, belt zij de huisarts.",
+    "english": "As soon as she gets a fever, she calls the doctor.",
+    "note": "The zodra-clause first inverts the main clause."
+   }
+  },
+  "pat-zodra-08": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "In the past: the child's falling asleep triggered the cleaning; both clauses use the simple past."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra het kind sliep",
+     "subject": "het kind",
+     "finite": "sliep",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'het kind' comes first and the past form 'sliep' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "ruimde zij de keuken op",
+     "subject": "zij",
+     "finite": "ruimde",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'ruimde' comes first, then the subject 'zij' and the object; the particle 'op' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "het kind"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "sliep"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "ruimde"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "object",
+     "text": "de keuken"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    }
+   ],
+   "meaning": "As soon as the child was asleep, she tidied the kitchen.",
+   "order": "'Slapen' has the strong past 'sliep'; 'opruimen' splits as 'ruimde ... op'. Read it as \"Zodra het kind sliep, ruimde zij de keuken op\".",
+   "forms": "slapen: het kind sliep. opruimen: ruimde ... op.",
+   "compare": "English 'As soon as the child was asleep' uses 'was asleep'. Dutch uses 'sliep'.",
+   "mistakes": [
+    {
+     "wrong": "Zodra het kind sliep, zij ruimde de keuken op.",
+     "right": "Zodra het kind sliep, ruimde zij de keuken op.",
+     "why": "The main clause starts with the verb: 'ruimde zij'."
+    },
+    {
+     "wrong": "Zodra het kind slaapt, ruimde zij de keuken op.",
+     "right": "Zodra het kind sliep, ruimde zij de keuken op.",
+     "why": "A past story needs a past form: 'sliep'. (not \"Zodra het kind slaapt, ruimde zij de keuken op.\", but \"Zodra het kind sliep, ruimde zij de keuken op.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij ruimde de keuken op zodra het kind sliep.",
+    "english": "She tidied the kitchen as soon as the child was asleep.",
+    "note": "With the main clause first there is no inversion. Compare: Zij ruimde de keuken op zodra het kind sliep."
+   }
+  },
+  "pat-zodra-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The closing of the doors triggered the departure; both clauses are in the simple past."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De bus vertrok",
+     "subject": "De bus",
+     "finite": "vertrok",
+     "role": "main clause (what follows)",
+     "why": "'De bus' is first, so the past form 'vertrok' is second. The clause is \"De bus vertrok\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra de deuren dicht waren",
+     "subject": "de deuren",
+     "finite": "waren",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de deuren' comes first, the predicate 'dicht' follows, and the plural past 'waren' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De bus"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vertrok"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de deuren"
+    },
+    {
+     "label": "predicate",
+     "text": "dicht"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "waren"
+    }
+   ],
+   "meaning": "The bus left as soon as the doors were closed.",
+   "order": "A past story. The predicate 'dicht' stands before the plural past 'waren'. Read it as \"De bus vertrok zodra de deuren dicht waren\".",
+   "forms": "vertrekken: de bus vertrok. zijn: de deuren waren.",
+   "compare": "English 'were closed' uses a participle. Dutch uses the predicate 'dicht' with 'waren'.",
+   "mistakes": [
+    {
+     "wrong": "De bus vertrok zodra de deuren waren dicht.",
+     "right": "De bus vertrok zodra de deuren dicht waren.",
+     "why": "The finite verb 'waren' goes behind the predicate 'dicht'."
+    },
+    {
+     "wrong": "De bus vertrok zodra de deuren dicht was.",
+     "right": "De bus vertrok zodra de deuren dicht waren.",
+     "why": "The plural subject needs 'waren'. (not \"De bus vertrok zodra de deuren dicht was.\", but \"De bus vertrok zodra de deuren dicht waren.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra de deuren dicht waren, vertrok de bus.",
+    "english": "As soon as the doors were closed, the bus left.",
+    "note": "The zodra-clause first inverts the main clause to 'vertrok de bus'."
+   }
+  },
+  "pat-zodra-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "His entering triggered the light; 'binnenkwam' is the joined past of 'binnenkomen'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra hij binnenkwam",
+     "subject": "hij",
+     "finite": "binnenkwam",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'hij' comes first and the joined separable past 'binnenkwam' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "ging het licht aan",
+     "subject": "het licht",
+     "finite": "ging",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'ging' comes first, then the subject 'het licht'; the particle 'aan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb (joined separable, past)",
+     "text": "binnenkwam"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "ging"
+    },
+    {
+     "label": "subject",
+     "text": "het licht"
+    },
+    {
+     "label": "particle",
+     "text": "aan"
+    }
+   ],
+   "meaning": "As soon as he came in, the light went on.",
+   "order": "'Aangaan' is the verb for a light that comes on. It splits as 'ging ... aan'; 'binnenkomen' joins in the dependent clause.",
+   "forms": "binnenkomen: kwam binnen / binnenkwam. aangaan: ging ... aan.",
+   "compare": "English 'came in' and 'went on' have the same particles. For this card: \"Zodra hij binnenkwam, ging het licht aan\".",
+   "mistakes": [
+    {
+     "wrong": "Zodra hij kwam binnen, ging het licht aan.",
+     "right": "Zodra hij binnenkwam, ging het licht aan.",
+     "why": "In a dependent clause the separable verb is written together. (not \"Zodra hij kwam binnen, ging het licht aan.\", but \"Zodra hij binnenkwam, ging het licht aan.\")"
+    },
+    {
+     "wrong": "Zodra hij binnenkwam, het licht ging aan.",
+     "right": "Zodra hij binnenkwam, ging het licht aan.",
+     "why": "The main clause starts with the verb: 'ging het licht'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het licht ging aan zodra hij binnenkwam.",
+    "english": "The light went on as soon as he came in.",
+    "note": "With the main clause first there is no inversion. Compare: Het licht ging aan zodra hij binnenkwam."
+   }
+  },
+  "pat-zodra-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The boss's agreement is the green light; the main clause has a fixed phrase 'aan de slag'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je mag aan de slag",
+     "subject": "Je",
+     "finite": "mag",
+     "role": "main clause (what follows)",
+     "why": "'Je' is first and the modal 'mag' is second; 'aan de slag' is the phrase for getting started."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra de baas akkoord geeft",
+     "subject": "de baas",
+     "finite": "geeft",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de baas' comes first, then 'akkoord', and the finite verb 'geeft' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "mag"
+    },
+    {
+     "label": "phrase",
+     "text": "aan de slag"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de baas"
+    },
+    {
+     "label": "predicate",
+     "text": "akkoord"
+    },
+    {
+     "label": "finite verb",
+     "text": "geeft"
+    }
+   ],
+   "meaning": "You may get started as soon as the boss agrees.",
+   "order": "'Aan de slag' needs no verb of motion after 'mag'. 'Akkoord geven' is a fixed phrase. Read it as \"Je mag aan de slag zodra de baas akkoord geeft\".",
+   "forms": "mogen: je mag. geven: de baas geeft.",
+   "compare": "English 'get started' needs a verb. Dutch uses 'aan de slag'. For this card: \"Je mag aan de slag zodra de baas akkoord geeft\".",
+   "mistakes": [
+    {
+     "wrong": "Je mag aan de slag zodra de baas geeft akkoord.",
+     "right": "Je mag aan de slag zodra de baas akkoord geeft.",
+     "why": "The finite verb goes behind 'akkoord'. (not \"Je mag aan de slag zodra de baas geeft akkoord.\", but \"Je mag aan de slag zodra de baas akkoord geeft.\")"
+    },
+    {
+     "wrong": "Je mag aan de slag zodra de baas akkoord geven.",
+     "right": "Je mag aan de slag zodra de baas akkoord geeft.",
+     "why": "The singular subject needs 'geeft'. (not \"Je mag aan de slag zodra de baas akkoord geven.\", but \"Je mag aan de slag zodra de baas akkoord geeft.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra de baas akkoord geeft, mag je aan de slag.",
+    "english": "As soon as the boss agrees, you may get started.",
+    "note": "The zodra-clause first inverts the main clause to 'mag je'."
+   }
+  },
+  "pat-zodra-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "Incoming payment triggers the shipping; the predicate 'binnen' stands before 'is'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra de betaling binnen is",
+     "subject": "de betaling",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de betaling' comes first, the adverb 'binnen' follows, and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "versturen wij het pakket",
+     "subject": "wij",
+     "finite": "versturen",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'versturen' comes first, then the subject 'wij' and the object 'het pakket'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de betaling"
+    },
+    {
+     "label": "predicate",
+     "text": "binnen"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "versturen"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "object",
+     "text": "het pakket"
+    }
+   ],
+   "meaning": "As soon as the payment is in, we send the parcel.",
+   "order": "'Binnen zijn' means to have arrived (of money or mail). The main clause inverts to 'versturen wij'. Read it as \"Zodra de betaling binnen is, versturen wij het pakket\".",
+   "forms": "zijn: de betaling is. versturen: wij versturen.",
+   "compare": "English 'is in' also uses 'in'. Dutch uses 'binnen'. For this card: \"Zodra de betaling binnen is, versturen wij het pakket\".",
+   "mistakes": [
+    {
+     "wrong": "Zodra de betaling is binnen, versturen wij het pakket.",
+     "right": "Zodra de betaling binnen is, versturen wij het pakket.",
+     "why": "The finite verb 'is' goes behind the predicate 'binnen'."
+    },
+    {
+     "wrong": "Zodra de betaling binnen is, wij versturen het pakket.",
+     "right": "Zodra de betaling binnen is, versturen wij het pakket.",
+     "why": "The main clause starts with the verb: 'versturen wij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij versturen het pakket zodra de betaling binnen is.",
+    "english": "We send the parcel as soon as the payment is in.",
+    "note": "With the main clause first there is no inversion. Compare: Wij versturen het pakket zodra de betaling binnen is."
+   }
+  },
+  "pat-zodra-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "Waking up triggers switching off the alarm; 'uitzetten' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik zet de wekker uit",
+     "subject": "Ik",
+     "finite": "zet",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'zet' is second; the object 'de wekker' comes before the particle 'uit'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra ik wakker word",
+     "subject": "ik",
+     "finite": "word",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ik' comes first, the predicate 'wakker' follows, and the finite verb 'word' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "zet"
+    },
+    {
+     "label": "object",
+     "text": "de wekker"
+    },
+    {
+     "label": "particle",
+     "text": "uit"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "predicate",
+     "text": "wakker"
+    },
+    {
+     "label": "finite verb",
+     "text": "word"
+    }
+   ],
+   "meaning": "I switch off the alarm as soon as I wake up.",
+   "order": "'Wakker worden' means to wake up. The predicate stands before 'word'. Read it as \"Ik zet de wekker uit zodra ik wakker word\".",
+   "forms": "uitzetten: zet ... uit. worden: ik word.",
+   "compare": "English 'wake up' is a phrasal verb. Dutch uses 'wakker worden'. For this card: \"Ik zet de wekker uit zodra ik wakker word\".",
+   "mistakes": [
+    {
+     "wrong": "Ik zet de wekker uit zodra ik word wakker.",
+     "right": "Ik zet de wekker uit zodra ik wakker word.",
+     "why": "The finite verb 'word' goes behind the predicate 'wakker'."
+    },
+    {
+     "wrong": "Ik zet de wekker uit zodra ik wakker wordt.",
+     "right": "Ik zet de wekker uit zodra ik wakker word.",
+     "why": "With 'ik' the verb is 'word'. (not \"Ik zet de wekker uit zodra ik wakker wordt.\", but \"Ik zet de wekker uit zodra ik wakker word.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra ik wakker word, zet ik de wekker uit.",
+    "english": "As soon as I wake up, I switch off the alarm.",
+    "note": "The zodra-clause first inverts the main clause. Compare: Zodra ik wakker word, zet ik de wekker uit."
+   }
+  },
+  "pat-zodra-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "After starting the program a wait is needed; the perfect 'hebben gestart' closes the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra jullie het programma hebben gestart",
+     "subject": "jullie",
+     "finite": "hebben",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'jullie' comes first, then the object 'het programma', and the perfect group 'hebben gestart' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "moeten jullie even wachten",
+     "subject": "jullie",
+     "finite": "moeten",
+     "role": "main clause (what follows)",
+     "why": "The modal 'moeten' comes first, then the subject 'jullie' and the adverb 'even'; the infinitive 'wachten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "jullie"
+    },
+    {
+     "label": "object",
+     "text": "het programma"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebben"
+    },
+    {
+     "label": "past participle",
+     "text": "gestart"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moeten"
+    },
+    {
+     "label": "subject",
+     "text": "jullie"
+    },
+    {
+     "label": "adverb",
+     "text": "even"
+    },
+    {
+     "label": "infinitive",
+     "text": "wachten"
+    }
+   ],
+   "meaning": "As soon as you have started the program, you have to wait a moment.",
+   "order": "The main clause inverts to 'moeten jullie even wachten'. The perfect group closes the zodra-clause. Read it as \"Zodra jullie het programma hebben gestart, moeten jullie even wachten\".",
+   "forms": "starten: hebben gestart. moeten: jullie moeten. wachten: infinitive.",
+   "compare": "English 'you have to wait' keeps 'you' first. Dutch inverts to 'moeten jullie'.",
+   "mistakes": [
+    {
+     "wrong": "Zodra jullie hebben het programma gestart, moeten jullie even wachten.",
+     "right": "Zodra jullie het programma hebben gestart, moeten jullie even wachten.",
+     "why": "The perfect group goes behind the object. (not \"Zodra jullie hebben het programma gestart, moeten jullie even wachten.\", but \"Zodra jullie het programma hebben gestart, moeten jullie even wachten.\")"
+    },
+    {
+     "wrong": "Zodra jullie het programma hebben gestart, jullie moeten even wachten.",
+     "right": "Zodra jullie het programma hebben gestart, moeten jullie even wachten.",
+     "why": "The main clause starts with the modal: 'moeten jullie'. (not \"Zodra jullie het programma hebben gestart, jullie moeten even wachten.\", but \"Zodra jullie het programma hebben gestart, moeten jullie even wachten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Jullie moeten even wachten zodra jullie het programma hebben gestart.",
+    "english": "You have to wait a moment as soon as you have started the program.",
+    "note": "With the main clause first there is no inversion. Compare: Jullie moeten even wachten zodra jullie het programma hebben gestart."
+   }
+  },
+  "pat-zodra-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "An imperative: the call is due at the moment of arrival."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Bel me",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Bel",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Bel' stands first and the object 'me' follows. The clause is \"Bel me\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra je er bent",
+     "subject": "je",
+     "finite": "bent",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'je' comes first, the adverb 'er' follows, and the finite verb 'bent' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Bel"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "er"
+    },
+    {
+     "label": "finite verb",
+     "text": "bent"
+    }
+   ],
+   "meaning": "Call me as soon as you get there.",
+   "order": "'Er zijn' means to be there. The adverb 'er' stands before the verb. Read it as \"Bel me zodra je er bent\". Its parts: imperative verb Bel, object me, conjunction (as soon as) zodra, subject je.",
+   "forms": "bellen: imperative bel. zijn: je bent.",
+   "compare": "English 'get there' uses 'get'. Dutch uses 'er zijn'. For this card: \"Bel me zodra je er bent\".",
+   "mistakes": [
+    {
+     "wrong": "Bel me zodra je bent er.",
+     "right": "Bel me zodra je er bent.",
+     "why": "The finite verb 'bent' goes behind the adverb 'er'."
+    },
+    {
+     "wrong": "Bel me zodra je er ben.",
+     "right": "Bel me zodra je er bent.",
+     "why": "With 'je' the verb is 'bent'. (not \"Bel me zodra je er ben.\", but \"Bel me zodra je er bent.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra je er bent, bel je me.",
+    "english": "As soon as you get there, you call me.",
+    "note": "The zodra-clause first inverts the main clause to 'bel je me'."
+   }
+  },
+  "pat-zodra-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "An imperative follows the zodra-clause: 'laat het me weten' is the request."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra je antwoord hebt",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'je' comes first, then the object 'antwoord', and the finite verb 'hebt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "laat het me weten",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "laat",
+     "role": "main clause (the request)",
+     "why": "An imperative: 'laat' stands first, then the objects 'het' and 'me'; the infinitive 'weten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "antwoord"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebt"
+    },
+    {
+     "label": "imperative verb",
+     "text": "laat"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "infinitive",
+     "text": "weten"
+    }
+   ],
+   "meaning": "As soon as you have an answer, let me know.",
+   "order": "The imperative has no subject, so there is no inversion after the zodra-clause. 'Laten weten' means to let someone know.",
+   "forms": "hebben: je hebt. laten: imperative laat. weten: infinitive.",
+   "compare": "English 'let me know' has the same chain. Dutch puts 'weten' last. For this card: \"Zodra je antwoord hebt, laat het me weten\".",
+   "mistakes": [
+    {
+     "wrong": "Zodra je antwoord hebt, je laat het me weten.",
+     "right": "Zodra je antwoord hebt, laat het me weten.",
+     "why": "An imperative has no spoken subject. (not \"Zodra je antwoord hebt, je laat het me weten.\", but \"Zodra je antwoord hebt, laat het me weten.\")"
+    },
+    {
+     "wrong": "Zodra je antwoord hebt, laat weten het me.",
+     "right": "Zodra je antwoord hebt, laat het me weten.",
+     "why": "The infinitive 'weten' goes to the end. (not \"Zodra je antwoord hebt, laat weten het me.\", but \"Zodra je antwoord hebt, laat het me weten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Laat het me weten zodra je antwoord hebt.",
+    "english": "Let me know as soon as you have an answer.",
+    "note": "With the main clause first the imperative opens the sentence. Compare: Laat het me weten zodra je antwoord hebt."
+   }
+  },
+  "pat-zodra-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "A direct question about the first moment: the main clause is the question."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wat doe je",
+     "subject": "je",
+     "finite": "doe",
+     "role": "main clause (the question)",
+     "why": "The question word 'Wat' is first, so 'doe' is second and the subject 'je' follows. The clause is \"Wat doe je\". (2) (3)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra het systeem opstart",
+     "subject": "het systeem",
+     "finite": "opstart",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'het systeem' comes first and the joined separable verb 'opstart' closes the clause. The clause is \"zodra het systeem opstart\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "question word",
+     "text": "Wat"
+    },
+    {
+     "label": "finite verb",
+     "text": "doe"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "het systeem"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "opstart"
+    }
+   ],
+   "meaning": "What do you do as soon as the system starts up?",
+   "order": "A question with a question word keeps the verb second. The zodra-clause names the moment. Read it as \"Wat doe je zodra het systeem opstart\".",
+   "forms": "doen: doe je. opstarten: start op / opstart.",
+   "compare": "English 'What do you do' needs 'do' twice. Dutch uses 'doen' once. For this card: \"Wat doe je zodra het systeem opstart\".",
+   "mistakes": [
+    {
+     "wrong": "Wat je doet zodra het systeem opstart?",
+     "right": "Wat doe je zodra het systeem opstart?",
+     "why": "A direct question needs the verb second: 'Wat doe je'. (not \"Wat je doet zodra het systeem opstart?\", but \"Wat doe je zodra het systeem opstart?\")"
+    },
+    {
+     "wrong": "Wat doe je zodra het systeem start op?",
+     "right": "Wat doe je zodra het systeem opstart?",
+     "why": "The separable verb is written together in the zodra-clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet wat je doet zodra het systeem opstart.",
+    "english": "I know what you do as soon as the system starts up.",
+    "note": "In an embedded question 'doet' goes to the end."
+   }
+  },
+  "pat-zodra-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "A polite request about timing: the modal opens the question."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Kun je me bellen",
+     "subject": "je",
+     "finite": "Kun",
+     "role": "main clause (the question)",
+     "why": "A yes/no question starts with the finite verb 'Kun', then the subject 'je'; the object 'me' and the infinitive 'bellen' end the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra de vergadering is afgelopen",
+     "subject": "de vergadering",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de vergadering' comes first and the group 'is afgelopen' closes the clause. The clause is \"zodra de vergadering is afgelopen\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "infinitive",
+     "text": "bellen"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de vergadering"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "afgelopen"
+    }
+   ],
+   "meaning": "Can you call me as soon as the meeting is over?",
+   "order": "In a question the modal opens the clause. 'Aflopen' takes 'zijn'. Read it as \"Kun je me bellen zodra de vergadering is afgelopen\".",
+   "forms": "kunnen: kun je. bellen: infinitive. aflopen: is afgelopen.",
+   "compare": "English 'Can you call me' has the same inversion. For this card: \"Kun je me bellen zodra de vergadering is afgelopen\".",
+   "mistakes": [
+    {
+     "wrong": "Je kunt me bellen zodra de vergadering is afgelopen?",
+     "right": "Kun je me bellen zodra de vergadering is afgelopen?",
+     "why": "A question inverts the modal and the subject: 'Kun je'."
+    },
+    {
+     "wrong": "Kun je me bellen zodra de vergadering heeft afgelopen?",
+     "right": "Kun je me bellen zodra de vergadering is afgelopen?",
+     "why": "'Aflopen' takes 'zijn': 'is afgelopen'. (not \"Kun je me bellen zodra de vergadering heeft afgelopen?\", but \"Kun je me bellen zodra de vergadering is afgelopen?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je kunt me bellen zodra de vergadering is afgelopen.",
+    "english": "You can call me as soon as the meeting is over.",
+    "note": "A statement has the subject first. Compare: Je kunt me bellen zodra de vergadering is afgelopen."
+   }
+  },
+  "pat-zodra-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "'Pas' makes the condition strict: nothing can start before the file arrives."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kan pas beginnen",
+     "subject": "Ik",
+     "finite": "kan",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so the modal 'kan' is second; the adverb 'pas' stands before the infinitive 'beginnen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra je het bestand hebt gestuurd",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'je' comes first, then the object 'het bestand', and the perfect group 'hebt gestuurd' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "adverb",
+     "text": "pas"
+    },
+    {
+     "label": "infinitive",
+     "text": "beginnen"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "het bestand"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebt"
+    },
+    {
+     "label": "past participle",
+     "text": "gestuurd"
+    }
+   ],
+   "meaning": "I can only start as soon as you have sent the file.",
+   "order": "'Pas' means 'not before'. The perfect in the zodra-clause names the finished trigger. Read it as \"Ik kan pas beginnen zodra je het bestand hebt gestuurd\".",
+   "forms": "kunnen: ik kan. beginnen: infinitive. sturen: hebt gestuurd.",
+   "compare": "English 'only ... as soon as' needs two words. Dutch uses 'pas'. For this card: \"Ik kan pas beginnen zodra je het bestand hebt gestuurd\".",
+   "mistakes": [
+    {
+     "wrong": "Ik kan pas beginnen zodra je hebt het bestand gestuurd.",
+     "right": "Ik kan pas beginnen zodra je het bestand hebt gestuurd.",
+     "why": "The perfect group goes behind the object. (not \"Ik kan pas beginnen zodra je hebt het bestand gestuurd.\", but \"Ik kan pas beginnen zodra je het bestand hebt gestuurd.\")"
+    },
+    {
+     "wrong": "Ik kan beginnen pas zodra je het bestand hebt gestuurd.",
+     "right": "Ik kan pas beginnen zodra je het bestand hebt gestuurd.",
+     "why": "The adverb 'pas' stands before the infinitive."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra je het bestand hebt gestuurd, kan ik beginnen.",
+    "english": "As soon as you have sent the file, I can start.",
+    "note": "The zodra-clause first inverts the main clause to 'kan ik'."
+   }
+  },
+  "pat-zodra-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "'Zodra het kan' leaves the exact time open; the modal 'kan' closes the short clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We lossen het op",
+     "subject": "We",
+     "finite": "lossen",
+     "role": "main clause (what follows)",
+     "why": "We is first, so the plural 'lossen' is second; the object 'het' comes before the particle 'op'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra het kan",
+     "subject": "het",
+     "finite": "kan",
+     "role": "zodra-clause (the trigger)",
+     "why": "The dummy subject 'het' comes first and the modal 'kan' closes the short clause (the infinitive is understood)."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "lossen"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    }
+   ],
+   "meaning": "We'll solve it as soon as possible.",
+   "order": "'Zodra het kan' means as soon as it is possible. The full infinitive is left out because it is clear. Read it as \"We lossen het op zodra het kan\".",
+   "forms": "oplossen: lossen ... op. kunnen: het kan.",
+   "compare": "English 'as soon as possible' is an adjective phrase. Dutch can use 'zodra het kan'.",
+   "mistakes": [
+    {
+     "wrong": "We lossen het op zodra kan het.",
+     "right": "We lossen het op zodra het kan.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"We lossen het op zodra kan het.\", but \"We lossen het op zodra het kan.\")"
+    },
+    {
+     "wrong": "We lossen het op zodra het kunnen.",
+     "right": "We lossen het op zodra het kan.",
+     "why": "With 'het' the modal is 'kan'. (not \"We lossen het op zodra het kunnen.\", but \"We lossen het op zodra het kan.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra het kan, lossen we het op.",
+    "english": "As soon as it can be done, we solve it.",
+    "note": "The zodra-clause first inverts the main clause. Compare: Zodra het kan, lossen we het op."
+   }
+  },
+  "pat-zodra-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The finished download triggers the installation; the second clause is a short main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra de download klaar is",
+     "subject": "de download",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de download' comes first, the predicate 'klaar' follows, and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "begint de installatie",
+     "subject": "de installatie",
+     "finite": "begint",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'begint' comes first, then the subject 'de installatie'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de download"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    },
+    {
+     "label": "subject",
+     "text": "de installatie"
+    }
+   ],
+   "meaning": "As soon as the download is finished, the installation begins.",
+   "order": "Two processes follow each other. The main clause inverts to 'begint de installatie'. Read it as \"Zodra de download klaar is, begint de installatie\".",
+   "forms": "zijn: de download is. beginnen: de installatie begint.",
+   "compare": "English 'As soon as the download is finished' also uses 'is'. Dutch puts it last.",
+   "mistakes": [
+    {
+     "wrong": "Zodra de download is klaar, begint de installatie.",
+     "right": "Zodra de download klaar is, begint de installatie.",
+     "why": "The finite verb 'is' goes behind the predicate 'klaar'. (not \"Zodra de download is klaar, begint de installatie.\", but \"Zodra de download klaar is, begint de installatie.\")"
+    },
+    {
+     "wrong": "Zodra de download klaar is, de installatie begint.",
+     "right": "Zodra de download klaar is, begint de installatie.",
+     "why": "The main clause starts with the verb: 'begint de installatie'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De installatie begint zodra de download klaar is.",
+    "english": "The installation begins as soon as the download is finished.",
+    "note": "With the main clause first there is no inversion. Compare: De installatie begint zodra de download klaar is."
+   }
+  },
+  "pat-zodra-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The adverb 'direct' (right away) goes with the main clause; the perfect 'heb gelezen' closes the zodra-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik antwoord direct",
+     "subject": "Ik",
+     "finite": "antwoord",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'antwoord' is second and the adverb 'direct' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra ik de e-mail heb gelezen",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ik' comes first, then the object 'de e-mail', and the perfect group 'heb gelezen' closes the clause. The clause is \"zodra ik de e-mail heb gelezen\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "antwoord"
+    },
+    {
+     "label": "adverb",
+     "text": "direct"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de e-mail"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gelezen"
+    }
+   ],
+   "meaning": "I reply right away as soon as I've read the e-mail.",
+   "order": "'Direct' and 'zodra' both stress speed; 'direct' modifies the answering, 'zodra' names the trigger. Read it as \"Ik antwoord direct zodra ik de e-mail heb gelezen\".",
+   "forms": "antwoorden: ik antwoord. lezen: heb gelezen.",
+   "compare": "English 'reply right away' is similar. Dutch puts 'direct' after the verb.",
+   "mistakes": [
+    {
+     "wrong": "Ik antwoord direct zodra ik heb de e-mail gelezen.",
+     "right": "Ik antwoord direct zodra ik de e-mail heb gelezen.",
+     "why": "The perfect group goes behind the object. (not \"Ik antwoord direct zodra ik heb de e-mail gelezen.\", but \"Ik antwoord direct zodra ik de e-mail heb gelezen.\")"
+    },
+    {
+     "wrong": "Ik direct antwoord zodra ik de e-mail heb gelezen.",
+     "right": "Ik antwoord direct zodra ik de e-mail heb gelezen.",
+     "why": "The finite verb 'antwoord' stands in second position."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra ik de e-mail heb gelezen, antwoord ik direct.",
+    "english": "As soon as I've read the e-mail, I reply right away.",
+    "note": "The zodra-clause first inverts the main clause. Compare: Zodra ik de e-mail heb gelezen, antwoord ik direct."
+   }
+  },
+  "pat-zodra-23": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "meteen = immediately (adverb)",
+    "why": "'Meteen' is an adverb: it takes position one and the verb follows, with no zodra-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Meteen bel ik de klant",
+     "subject": "ik",
+     "finite": "bel",
+     "role": "single main clause",
+     "why": "The adverb 'meteen' is first, so 'bel' is second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (immediately)",
+     "text": "Meteen"
+    },
+    {
+     "label": "finite verb",
+     "text": "bel"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de klant"
+    }
+   ],
+   "meaning": "Immediately I call the customer.",
+   "order": "A single main clause: the adverb gives the speed, but no trigger is named. No verb goes to the end. Read it as \"Meteen bel ik de klant\".",
+   "forms": "bellen: ik bel.",
+   "compare": "English 'Immediately I call' keeps the subject first. Dutch inverts. For this card: \"Meteen bel ik de klant\".",
+   "mistakes": [
+    {
+     "wrong": "Meteen ik bel de klant.",
+     "right": "Meteen bel ik de klant.",
+     "why": "After the adverb the verb comes second: 'bel ik'."
+    },
+    {
+     "wrong": "Meteen bellen ik de klant.",
+     "right": "Meteen bel ik de klant.",
+     "why": "The verb must be finite: 'bel'. (not \"Meteen bellen ik de klant.\", but \"Meteen bel ik de klant.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik bel de klant zodra ik de fout zie.",
+    "english": "I call the customer as soon as I see the error.",
+    "note": "With a trigger you need a zodra-clause and a final verb."
+   }
+  },
+  "pat-zodra-24": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "direct na = right after (preposition)",
+    "why": "'Direct na de vergadering' is a prepositional phrase: it names the moment with a noun and needs no second verb."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Direct na de vergadering bel ik je",
+     "subject": "ik",
+     "finite": "bel",
+     "role": "single main clause",
+     "why": "The phrase 'direct na de vergadering' is first, so 'bel' is second and the subject 'ik' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (right)",
+     "text": "Direct"
+    },
+    {
+     "label": "preposition (after)",
+     "text": "na"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de vergadering"
+    },
+    {
+     "label": "finite verb",
+     "text": "bel"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "je"
+    }
+   ],
+   "meaning": "Right after the meeting I'll call you.",
+   "order": "'Direct' strengthens the preposition 'na'. The fronted phrase makes the verb second. Read it as \"Direct na de vergadering bel ik je\".",
+   "forms": "bellen: ik bel. Card: \"Direct na de vergadering bel ik je\".",
+   "compare": "English 'right after the meeting' is also a phrase with a noun. For this card: \"Direct na de vergadering bel ik je\".",
+   "mistakes": [
+    {
+     "wrong": "Direct na de vergadering ik bel je.",
+     "right": "Direct na de vergadering bel ik je.",
+     "why": "After the fronted phrase the verb comes second: 'bel ik'."
+    },
+    {
+     "wrong": "Direct naar de vergadering bel ik je.",
+     "right": "Direct na de vergadering bel ik je.",
+     "why": "The time preposition is 'na' (after), not 'naar' (to)."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra de vergadering voorbij is, bel ik je.",
+    "english": "As soon as the meeting is over, I'll call you.",
+    "note": "With a clause instead of a noun you need 'zodra' and a final verb."
+   }
+  },
+  "pat-zodra-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "Forcing the door triggers the alarm; 'afgaan' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het alarm gaat af",
+     "subject": "Het alarm",
+     "finite": "gaat",
+     "role": "main clause (what follows)",
+     "why": "'Het alarm' is first, so 'gaat' is second; the particle 'af' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra iemand de deur forceert",
+     "subject": "iemand",
+     "finite": "forceert",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'iemand' comes first, then the object 'de deur', and the finite verb 'forceert' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het alarm"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "gaat"
+    },
+    {
+     "label": "particle",
+     "text": "af"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "iemand"
+    },
+    {
+     "label": "object",
+     "text": "de deur"
+    },
+    {
+     "label": "finite verb",
+     "text": "forceert"
+    }
+   ],
+   "meaning": "The alarm goes off as soon as someone forces the door.",
+   "order": "'Afgaan' (of an alarm) splits as 'gaat ... af'. 'Iemand' is singular and takes 'forceert'. Read it as \"Het alarm gaat af zodra iemand de deur forceert\".",
+   "forms": "afgaan: gaat ... af. forceren: iemand forceert.",
+   "compare": "English 'goes off' has the same particle at the end. For this card: \"Het alarm gaat af zodra iemand de deur forceert\".",
+   "mistakes": [
+    {
+     "wrong": "Het alarm afgaat zodra iemand de deur forceert.",
+     "right": "Het alarm gaat af zodra iemand de deur forceert.",
+     "why": "In a main clause the separable verb splits: 'gaat ... af'."
+    },
+    {
+     "wrong": "Het alarm gaat af zodra iemand de deur forceren.",
+     "right": "Het alarm gaat af zodra iemand de deur forceert.",
+     "why": "'Iemand' takes 'forceert'. (not \"Het alarm gaat af zodra iemand de deur forceren.\", but \"Het alarm gaat af zodra iemand de deur forceert.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra iemand de deur forceert, gaat het alarm af.",
+    "english": "As soon as someone forces the door, the alarm goes off.",
+    "note": "The zodra-clause first inverts the main clause to 'gaat het alarm af'."
+   }
+  },
+  "pat-zodra-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "The rain sets the duration of staying inside, so 'zolang' opens the condition clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij blijven binnen",
+     "subject": "Wij",
+     "finite": "blijven",
+     "role": "main clause (what follows)",
+     "why": "Wij is first, so the plural 'blijven' is second and the adverb 'binnen' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "zolang-clause (the condition)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'regent' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijven"
+    },
+    {
+     "label": "adverb",
+     "text": "binnen"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    }
+   ],
+   "meaning": "We stay inside as long as it rains.",
+   "order": "Zolang means the main clause is true for exactly as long as the second clause is true. The weather verb takes 'het'.",
+   "forms": "blijven: wij blijven. regenen: het regent.",
+   "compare": "English 'as long as it rains' uses 'it rains'. Dutch puts 'regent' last.",
+   "mistakes": [
+    {
+     "wrong": "Wij blijven binnen zolang regent het.",
+     "right": "Wij blijven binnen zolang het regent.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Wij blijven binnen zolang regent het.\", but \"Wij blijven binnen zolang het regent.\")"
+    },
+    {
+     "wrong": "Wij blijft binnen zolang het regent.",
+     "right": "Wij blijven binnen zolang het regent.",
+     "why": "The plural 'wij' needs 'blijven'. (not \"Wij blijft binnen zolang het regent.\", but \"Wij blijven binnen zolang het regent.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang het regent, blijven wij binnen.",
+    "english": "As long as it rains, we stay inside.",
+    "note": "The zolang-clause first inverts the main clause to 'blijven wij'."
+   }
+  },
+  "pat-zodra-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "A condition with a negation: access is denied for as long as payment is missing."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang jij niet betaalt",
+     "subject": "jij",
+     "finite": "betaalt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'jij' comes first, the negation 'niet' follows, and the finite verb 'betaalt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "krijg je geen toegang",
+     "subject": "je",
+     "finite": "krijg",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'krijg' comes first, then the subject 'je' and the object 'geen toegang'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb",
+     "text": "betaalt"
+    },
+    {
+     "label": "finite verb",
+     "text": "krijg"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "geen toegang"
+    }
+   ],
+   "meaning": "As long as you don't pay, you don't get access.",
+   "order": "'Niet' negates the verb of the zolang-clause; 'geen' negates the noun in the main clause. Read it as \"Zolang jij niet betaalt, krijg je geen toegang\".",
+   "forms": "betalen: jij betaalt. krijgen: je krijgt / krijg je.",
+   "compare": "English 'as long as you don't pay' uses 'don't'. Dutch uses 'niet' before the final verb.",
+   "mistakes": [
+    {
+     "wrong": "Zolang jij betaalt niet, krijg je geen toegang.",
+     "right": "Zolang jij niet betaalt, krijg je geen toegang.",
+     "why": "The negation 'niet' stands before the final verb."
+    },
+    {
+     "wrong": "Zolang jij niet betaalt, je krijgt geen toegang.",
+     "right": "Zolang jij niet betaalt, krijg je geen toegang.",
+     "why": "The main clause starts with the verb: 'krijg je'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je krijgt geen toegang zolang jij niet betaalt.",
+    "english": "You get no access as long as you don't pay.",
+    "note": "With the main clause first there is no inversion. Compare: Je krijgt geen toegang zolang jij niet betaalt."
+   }
+  },
+  "pat-zodra-28": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "The stay depends on ability; the modal 'kan' closes the zolang-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik blijf hier",
+     "subject": "Ik",
+     "finite": "blijf",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'blijf' is second and the adverb 'hier' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang ik kan",
+     "subject": "ik",
+     "finite": "kan",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'ik' comes first and the modal 'kan' closes the short clause (the infinitive 'blijven' is understood)."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    }
+   ],
+   "meaning": "I'll stay here as long as I can.",
+   "order": "After 'kan' the verb already named in the main clause is left out. This is common in short clauses. Read it as \"Ik blijf hier zolang ik kan\".",
+   "forms": "blijven: ik blijf. kunnen: ik kan.",
+   "compare": "English 'as long as I can' also drops the verb. For this card: \"Ik blijf hier zolang ik kan\".",
+   "mistakes": [
+    {
+     "wrong": "Ik blijf hier zolang kan ik.",
+     "right": "Ik blijf hier zolang ik kan.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik blijf hier zolang kan ik.\", but \"Ik blijf hier zolang ik kan.\")"
+    },
+    {
+     "wrong": "Ik blijf hier zolang ik kunt.",
+     "right": "Ik blijf hier zolang ik kan.",
+     "why": "With 'ik' the modal is 'kan'. (not \"Ik blijf hier zolang ik kunt.\", but \"Ik blijf hier zolang ik kan.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang ik kan, blijf ik hier.",
+    "english": "As long as I can, I stay here.",
+    "note": "The zolang-clause first inverts the main clause to 'blijf ik'."
+   }
+  },
+  "pat-zodra-29": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "A blocked start: the system must work first; the modal 'kunnen' opens the inverted main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang het systeem niet werkt",
+     "subject": "het systeem",
+     "finite": "werkt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'het systeem' comes first, the negation 'niet' follows, and the finite verb 'werkt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kunnen we niet beginnen",
+     "subject": "we",
+     "finite": "kunnen",
+     "role": "main clause (what follows)",
+     "why": "The modal 'kunnen' comes first, then the subject 'we' and the negation 'niet'; the infinitive 'beginnen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "het systeem"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kunnen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "infinitive",
+     "text": "beginnen"
+    }
+   ],
+   "meaning": "As long as the system doesn't work, we can't start.",
+   "order": "The negation 'niet' appears twice, once in each clause. The main clause inverts to 'kunnen we niet beginnen'. Read it as \"Zolang het systeem niet werkt, kunnen we niet beginnen\".",
+   "forms": "werken: het systeem werkt. kunnen: wij kunnen. beginnen: infinitive.",
+   "compare": "English 'we can't start' keeps 'can't' next to 'we'. Dutch inverts. For this card: \"Zolang het systeem niet werkt, kunnen we niet beginnen\".",
+   "mistakes": [
+    {
+     "wrong": "Zolang het systeem niet werkt, we kunnen niet beginnen.",
+     "right": "Zolang het systeem niet werkt, kunnen we niet beginnen.",
+     "why": "The main clause starts with the modal: 'kunnen we'."
+    },
+    {
+     "wrong": "Zolang het systeem niet werkt, kunnen we beginnen niet.",
+     "right": "Zolang het systeem niet werkt, kunnen we niet beginnen.",
+     "why": "The negation stands before the infinitive."
+    }
+   ],
+   "contrast": {
+    "dutch": "We kunnen niet beginnen zolang het systeem niet werkt.",
+    "english": "We can't start as long as the system doesn't work.",
+    "note": "With the main clause first there is no inversion. Compare: We kunnen niet beginnen zolang het systeem niet werkt."
+   }
+  },
+  "pat-zodra-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "Opening hours depend on customers; 'er' introduces the plural subject 'klanten'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De winkel blijft open",
+     "subject": "De winkel",
+     "finite": "blijft",
+     "role": "main clause (what follows)",
+     "why": "'De winkel' is first, so 'blijft' is second and the predicate 'open' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang er klanten zijn",
+     "subject": "klanten",
+     "finite": "zijn",
+     "role": "zolang-clause (the condition)",
+     "why": "The introducing 'er' comes first, then the plural subject 'klanten', and the plural 'zijn' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De winkel"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "dummy",
+     "text": "er"
+    },
+    {
+     "label": "subject",
+     "text": "klanten"
+    },
+    {
+     "label": "finite verb",
+     "text": "zijn"
+    }
+   ],
+   "meaning": "The shop stays open as long as there are customers.",
+   "order": "'Er zijn' means there are. The dummy 'er' stands before the real subject 'klanten'. Read it as \"De winkel blijft open zolang er klanten zijn\".",
+   "forms": "blijven: de winkel blijft. zijn: er zijn klanten.",
+   "compare": "English 'as long as there are customers' also uses 'there are'. Dutch puts 'zijn' last.",
+   "mistakes": [
+    {
+     "wrong": "De winkel blijft open zolang er zijn klanten.",
+     "right": "De winkel blijft open zolang er klanten zijn.",
+     "why": "The finite verb 'zijn' goes behind the subject 'klanten'."
+    },
+    {
+     "wrong": "De winkel blijft open zolang er klanten is.",
+     "right": "De winkel blijft open zolang er klanten zijn.",
+     "why": "The plural 'klanten' needs 'zijn'. (not \"De winkel blijft open zolang er klanten is.\", but \"De winkel blijft open zolang er klanten zijn.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang er klanten zijn, blijft de winkel open.",
+    "english": "As long as there are customers, the shop stays open.",
+    "note": "The zolang-clause first inverts the main clause to 'blijft de winkel'."
+   }
+  },
+  "pat-zodra-31": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "The duration of the storm decides how long the airport stays closed."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang de storm duurt",
+     "subject": "de storm",
+     "finite": "duurt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'de storm' comes first and the finite verb 'duurt' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijft het vliegveld dicht",
+     "subject": "het vliegveld",
+     "finite": "blijft",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'blijft' comes first, then the subject 'het vliegveld' and the predicate 'dicht'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "de storm"
+    },
+    {
+     "label": "finite verb",
+     "text": "duurt"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "het vliegveld"
+    },
+    {
+     "label": "predicate",
+     "text": "dicht"
+    }
+   ],
+   "meaning": "As long as the storm lasts, the airport stays closed.",
+   "order": "'Duren' expresses duration, which matches the meaning of 'zolang'. The main clause inverts to 'blijft het vliegveld'.",
+   "forms": "duren: de storm duurt. blijven: het vliegveld blijft.",
+   "compare": "English 'as long as the storm lasts' uses 'lasts'. Dutch uses 'duurt'. For this card: \"Zolang de storm duurt, blijft het vliegveld dicht\".",
+   "mistakes": [
+    {
+     "wrong": "Zolang de storm duurt, het vliegveld blijft dicht.",
+     "right": "Zolang de storm duurt, blijft het vliegveld dicht.",
+     "why": "The main clause starts with the verb: 'blijft het vliegveld'."
+    },
+    {
+     "wrong": "Zolang de storm duren, blijft het vliegveld dicht.",
+     "right": "Zolang de storm duurt, blijft het vliegveld dicht.",
+     "why": "The singular subject needs 'duurt'. (not \"Zolang de storm duren, blijft het vliegveld dicht.\", but \"Zolang de storm duurt, blijft het vliegveld dicht.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Het vliegveld blijft dicht zolang de storm duurt.",
+    "english": "The airport stays closed as long as the storm lasts.",
+    "note": "With the main clause first there is no inversion. Compare: Het vliegveld blijft dicht zolang de storm duurt."
+   }
+  },
+  "pat-zodra-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "A permission with a time frame: your absence is the condition; the modal 'mag' stands second."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je mag mijn laptop gebruiken",
+     "subject": "Je",
+     "finite": "mag",
+     "role": "main clause (what follows)",
+     "why": "'Je' is first and the modal 'mag' is second; the object 'mijn laptop' comes before the infinitive 'gebruiken'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang ik weg ben",
+     "subject": "ik",
+     "finite": "ben",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'ik' comes first, the predicate 'weg' follows, and the finite verb 'ben' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "mag"
+    },
+    {
+     "label": "object",
+     "text": "mijn laptop"
+    },
+    {
+     "label": "infinitive",
+     "text": "gebruiken"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "predicate",
+     "text": "weg"
+    },
+    {
+     "label": "finite verb",
+     "text": "ben"
+    }
+   ],
+   "meaning": "You can use my laptop as long as I'm away.",
+   "order": "'Weg zijn' means to be away. The predicate stands before 'ben'. Read it as \"Je mag mijn laptop gebruiken zolang ik weg ben\".",
+   "forms": "mogen: je mag. gebruiken: infinitive. zijn: ik ben.",
+   "compare": "English 'while I'm away' uses 'while'. Dutch uses 'zolang' when the permission lasts exactly that long.",
+   "mistakes": [
+    {
+     "wrong": "Je mag mijn laptop gebruiken zolang ik ben weg.",
+     "right": "Je mag mijn laptop gebruiken zolang ik weg ben.",
+     "why": "The finite verb 'ben' goes behind the predicate 'weg'."
+    },
+    {
+     "wrong": "Je mag gebruiken mijn laptop zolang ik weg ben.",
+     "right": "Je mag mijn laptop gebruiken zolang ik weg ben.",
+     "why": "The infinitive 'gebruiken' goes to the end of the main clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang ik weg ben, mag je mijn laptop gebruiken.",
+    "english": "As long as I'm away, you may use my laptop.",
+    "note": "The zolang-clause first inverts the main clause to 'mag je'."
+   }
+  },
+  "pat-zodra-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "In the past: his illness set the period in which he worked at home."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang hij ziek was",
+     "subject": "hij",
+     "finite": "was",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'hij' comes first, the predicate 'ziek' follows, and the past form 'was' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "werkte hij thuis",
+     "subject": "hij",
+     "finite": "werkte",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'werkte' comes first, then the subject 'hij' and the adverb 'thuis'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "ziek"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "werkte"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    }
+   ],
+   "meaning": "As long as he was ill, he worked from home.",
+   "order": "Both clauses are in the simple past. The main clause inverts to 'werkte hij'. Read it as \"Zolang hij ziek was, werkte hij thuis\".",
+   "forms": "zijn: hij was. werken: hij werkte.",
+   "compare": "English 'As long as he was ill' keeps 'was' before 'ill'. Dutch puts 'was' last.",
+   "mistakes": [
+    {
+     "wrong": "Zolang hij was ziek, werkte hij thuis.",
+     "right": "Zolang hij ziek was, werkte hij thuis.",
+     "why": "The finite verb 'was' goes behind the predicate 'ziek'."
+    },
+    {
+     "wrong": "Zolang hij ziek was, hij werkte thuis.",
+     "right": "Zolang hij ziek was, werkte hij thuis.",
+     "why": "The main clause starts with the verb: 'werkte hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij werkte thuis zolang hij ziek was.",
+    "english": "He worked at home as long as he was ill.",
+    "note": "With the main clause first there is no inversion. Compare: Hij werkte thuis zolang hij ziek was."
+   }
+  },
+  "pat-zodra-34": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "Her working at home lasted as long as the children were small."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij werkte thuis",
+     "subject": "Zij",
+     "finite": "werkte",
+     "role": "main clause (what follows)",
+     "why": "Zij is first, so the past form 'werkte' is second and the adverb 'thuis' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang de kinderen klein waren",
+     "subject": "de kinderen",
+     "finite": "waren",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'de kinderen' comes first, the predicate 'klein' follows, and the plural past 'waren' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "werkte"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "de kinderen"
+    },
+    {
+     "label": "predicate",
+     "text": "klein"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "waren"
+    }
+   ],
+   "meaning": "She worked from home as long as the children were small.",
+   "order": "The plural subject 'de kinderen' takes 'waren'. The predicate 'klein' stands before it. Read it as \"Zij werkte thuis zolang de kinderen klein waren\".",
+   "forms": "werken: zij werkte. zijn: de kinderen waren.",
+   "compare": "English 'were small' keeps 'were' before 'small'. Dutch puts 'waren' last.",
+   "mistakes": [
+    {
+     "wrong": "Zij werkte thuis zolang de kinderen waren klein.",
+     "right": "Zij werkte thuis zolang de kinderen klein waren.",
+     "why": "The finite verb 'waren' goes behind the predicate 'klein'."
+    },
+    {
+     "wrong": "Zij werkte thuis zolang de kinderen klein was.",
+     "right": "Zij werkte thuis zolang de kinderen klein waren.",
+     "why": "The plural subject needs 'waren'. (not \"Zij werkte thuis zolang de kinderen klein was.\", but \"Zij werkte thuis zolang de kinderen klein waren.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang de kinderen klein waren, werkte zij thuis.",
+    "english": "As long as the children were small, she worked at home.",
+    "note": "The zolang-clause first inverts the main clause to 'werkte zij'."
+   }
+  },
+  "pat-zodra-35": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "An emotional promise: 'zolang ik leef' sets the longest possible period."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang ik leef",
+     "subject": "ik",
+     "finite": "leef",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'ik' comes first and the finite verb 'leef' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "vergeet ik dit niet",
+     "subject": "ik",
+     "finite": "vergeet",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'vergeet' comes first, then the subject 'ik', the object 'dit' and the negation 'niet'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "leef"
+    },
+    {
+     "label": "finite verb",
+     "text": "vergeet"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "dit"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    }
+   ],
+   "meaning": "As long as I live, I won't forget this.",
+   "order": "The negation 'niet' stands at the end of the main clause. The inverted order 'vergeet ik' follows the zolang-clause.",
+   "forms": "leven: ik leef. vergeten: ik vergeet.",
+   "compare": "English 'As long as I live, I won't forget' uses 'won't'. Dutch uses the present tense.",
+   "mistakes": [
+    {
+     "wrong": "Zolang ik leef, ik vergeet dit niet.",
+     "right": "Zolang ik leef, vergeet ik dit niet.",
+     "why": "The main clause starts with the verb: 'vergeet ik'."
+    },
+    {
+     "wrong": "Zolang ik leven, vergeet ik dit niet.",
+     "right": "Zolang ik leef, vergeet ik dit niet.",
+     "why": "With 'ik' the verb is 'leef'. (not \"Zolang ik leven, vergeet ik dit niet.\", but \"Zolang ik leef, vergeet ik dit niet.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik vergeet dit niet zolang ik leef.",
+    "english": "I won't forget this as long as I live.",
+    "note": "With the main clause first there is no inversion. Compare: Ik vergeet dit niet zolang ik leef."
+   }
+  },
+  "pat-zodra-36": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "The help lasts as long as the need: 'nodig' is the predicate."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik help je",
+     "subject": "Ik",
+     "finite": "help",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'help' is second and the object 'je' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang het nodig is",
+     "subject": "het",
+     "finite": "is",
+     "role": "zolang-clause (the condition)",
+     "why": "The dummy subject 'het' comes first, the predicate 'nodig' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "help"
+    },
+    {
+     "label": "object",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "nodig"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I'll help you as long as it's necessary.",
+   "order": "'Nodig zijn' means to be necessary. The predicate stands before 'is'. Read it as \"Ik help je zolang het nodig is\".",
+   "forms": "helpen: ik help. zijn: het is.",
+   "compare": "English 'as long as it's necessary' contracts 'it is'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik help je zolang het is nodig.",
+     "right": "Ik help je zolang het nodig is.",
+     "why": "The finite verb 'is' goes behind the predicate 'nodig'."
+    },
+    {
+     "wrong": "Ik help je zolang het nodig ben.",
+     "right": "Ik help je zolang het nodig is.",
+     "why": "With 'het' the verb is 'is'. (not \"Ik help je zolang het nodig ben.\", but \"Ik help je zolang het nodig is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang het nodig is, help ik je.",
+    "english": "As long as it's necessary, I help you.",
+    "note": "The zolang-clause first inverts the main clause to 'help ik'."
+   }
+  },
+  "pat-zodra-37": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "'Er is nog plaats' names the state that must hold; the modal 'kun' opens the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang er nog plaats is",
+     "subject": "plaats",
+     "finite": "is",
+     "role": "zolang-clause (the condition)",
+     "why": "The dummy 'er' comes first, then 'nog' and the subject 'plaats', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kun je je inschrijven",
+     "subject": "je",
+     "finite": "kun",
+     "role": "main clause (what follows)",
+     "why": "The modal 'kun' comes first, then the subject 'je' and the reflexive 'je'; the infinitive 'inschrijven' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "dummy",
+     "text": "er"
+    },
+    {
+     "label": "adverb",
+     "text": "nog"
+    },
+    {
+     "label": "subject",
+     "text": "plaats"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "reflexive",
+     "text": "je"
+    },
+    {
+     "label": "infinitive",
+     "text": "inschrijven"
+    }
+   ],
+   "meaning": "As long as there is still room, you can sign up.",
+   "order": "'Je' appears twice: first as the subject, then as the reflexive of 'zich inschrijven'. 'Nog' means still. Read it as \"Zolang er nog plaats is, kun je je inschrijven\".",
+   "forms": "zijn: er is. kunnen: je kunt / kun je. inschrijven: infinitive.",
+   "compare": "English 'sign up' is a phrasal verb. Dutch uses the reflexive 'zich inschrijven'.",
+   "mistakes": [
+    {
+     "wrong": "Zolang er nog plaats is, je kunt je inschrijven.",
+     "right": "Zolang er nog plaats is, kun je je inschrijven.",
+     "why": "The main clause starts with the modal: 'kun je'. (not \"Zolang er nog plaats is, je kunt je inschrijven.\", but \"Zolang er nog plaats is, kun je je inschrijven.\")"
+    },
+    {
+     "wrong": "Zolang er nog plaats is, kun je inschrijven.",
+     "right": "Zolang er nog plaats is, kun je je inschrijven.",
+     "why": "The reflexive pronoun is missing: 'je inschrijven'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je kunt je inschrijven zolang er nog plaats is.",
+    "english": "You can sign up as long as there is still room.",
+    "note": "With the main clause first the modal stays after the subject. Compare: Je kunt je inschrijven zolang er nog plaats is."
+   }
+  },
+  "pat-zodra-38": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "A policy: the ticket stays open until the passive state 'is opgelost' is reached; 'niet' negates it."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het ticket blijft open",
+     "subject": "Het ticket",
+     "finite": "blijft",
+     "role": "main clause (what follows)",
+     "why": "'Het ticket' is first, so 'blijft' is second and the predicate 'open' follows. The clause is \"Het ticket blijft open\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang het probleem niet is opgelost",
+     "subject": "het probleem",
+     "finite": "is",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'het probleem' comes first, then 'niet', and the passive group 'is opgelost' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het ticket"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "het probleem"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "opgelost"
+    }
+   ],
+   "meaning": "The ticket stays open as long as the problem has not been solved.",
+   "order": "The negation stands before the group 'is opgelost'. 'Oplossen' is separable, so its participle is one word. Read it as \"Het ticket blijft open zolang het probleem niet is opgelost\".",
+   "forms": "blijven: het ticket blijft. oplossen: is opgelost.",
+   "compare": "English 'has not been solved' needs 'been'. Dutch uses 'is opgelost'. For this card: \"Het ticket blijft open zolang het probleem niet is opgelost\".",
+   "mistakes": [
+    {
+     "wrong": "Het ticket blijft open zolang het probleem is niet opgelost.",
+     "right": "Het ticket blijft open zolang het probleem niet is opgelost.",
+     "why": "The negation stands before the auxiliary group."
+    },
+    {
+     "wrong": "Het ticket blijft open zolang het probleem niet opgelost.",
+     "right": "Het ticket blijft open zolang het probleem niet is opgelost.",
+     "why": "The finite verb 'is' is missing. (not \"Het ticket blijft open zolang het probleem niet opgelost.\", but \"Het ticket blijft open zolang het probleem niet is opgelost.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang het probleem niet is opgelost, blijft het ticket open.",
+    "english": "As long as the problem has not been solved, the ticket stays open.",
+    "note": "The zolang-clause first inverts the main clause."
+   }
+  },
+  "pat-zodra-39": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "Without the figures no statement is possible; the modal 'kan' opens the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang ik de cijfers niet heb",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'ik' comes first, then the object 'de cijfers' and the negation 'niet', and the finite verb 'heb' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kan ik niets zeggen",
+     "subject": "ik",
+     "finite": "kan",
+     "role": "main clause (what follows)",
+     "why": "The modal 'kan' comes first, then the subject 'ik' and the object 'niets'; the infinitive 'zeggen' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de cijfers"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    },
+    {
+     "label": "infinitive",
+     "text": "zeggen"
+    }
+   ],
+   "meaning": "As long as I don't have the figures, I can't say anything.",
+   "order": "A double negation of content: 'niet' in the zolang-clause and 'niets' in the main clause. The main clause inverts to 'kan ik'.",
+   "forms": "hebben: ik heb. kunnen: ik kan. zeggen: infinitive.",
+   "compare": "English 'I can't say anything' uses 'anything'. Dutch uses 'niets'. For this card: \"Zolang ik de cijfers niet heb, kan ik niets zeggen\".",
+   "mistakes": [
+    {
+     "wrong": "Zolang ik de cijfers niet heb, ik kan niets zeggen.",
+     "right": "Zolang ik de cijfers niet heb, kan ik niets zeggen.",
+     "why": "The main clause starts with the modal: 'kan ik'."
+    },
+    {
+     "wrong": "Zolang ik de cijfers heb niet, kan ik niets zeggen.",
+     "right": "Zolang ik de cijfers niet heb, kan ik niets zeggen.",
+     "why": "The negation stands before the final verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik kan niets zeggen zolang ik de cijfers niet heb.",
+    "english": "I can't say anything as long as I don't have the figures.",
+    "note": "With the main clause first there is no inversion. Compare: Ik kan niets zeggen zolang ik de cijfers niet heb."
+   }
+  },
+  "pat-zodra-40": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "An imperative with a duration clause: keep the form for exactly as long as it is needed."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Bewaar het formulier",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Bewaar",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Bewaar' stands first and the object 'het formulier' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang je het nodig hebt",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'je' comes first, then the object 'het', the predicate 'nodig', and the finite verb 'hebt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Bewaar"
+    },
+    {
+     "label": "object",
+     "text": "het formulier"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "nodig"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebt"
+    }
+   ],
+   "meaning": "Keep the form for as long as you need it.",
+   "order": "'Nodig hebben' means to need. The object and the predicate stand before 'hebt'. Read it as \"Bewaar het formulier zolang je het nodig hebt\".",
+   "forms": "bewaren: imperative bewaar. hebben: je hebt.",
+   "compare": "English 'for as long as you need it' uses 'need'. Dutch uses 'nodig hebben'.",
+   "mistakes": [
+    {
+     "wrong": "Bewaar het formulier zolang je hebt het nodig.",
+     "right": "Bewaar het formulier zolang je het nodig hebt.",
+     "why": "The finite verb 'hebt' goes behind 'het nodig'."
+    },
+    {
+     "wrong": "Bewaar het formulier zolang je het nodig heb.",
+     "right": "Bewaar het formulier zolang je het nodig hebt.",
+     "why": "With 'je' the verb needs -t: 'hebt'. (not \"Bewaar het formulier zolang je het nodig heb.\", but \"Bewaar het formulier zolang je het nodig hebt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang je het nodig hebt, bewaar je het formulier.",
+    "english": "As long as you need it, you keep the form.",
+    "note": "The zolang-clause first inverts the main clause. Compare: Zolang je het nodig hebt, bewaar je het formulier."
+   }
+  },
+  "pat-zodra-41": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "Waiting depends on a phone call that has not come; 'belt' is in the negated zolang-clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang je niet belt",
+     "subject": "je",
+     "finite": "belt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'je' comes first, the negation 'niet' follows, and the finite verb 'belt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijf ik wachten",
+     "subject": "ik",
+     "finite": "blijf",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'blijf' comes first, then the subject 'ik'; the infinitive 'wachten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb",
+     "text": "belt"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "infinitive",
+     "text": "wachten"
+    }
+   ],
+   "meaning": "As long as you don't call, I'll keep waiting.",
+   "order": "'Blijven wachten' means to keep waiting. The main clause inverts to 'blijf ik wachten'. Read it as \"Zolang je niet belt, blijf ik wachten\".",
+   "forms": "bellen: je belt. blijven: ik blijf. wachten: infinitive.",
+   "compare": "English 'keep waiting' uses an -ing form. Dutch uses 'blijven wachten'.",
+   "mistakes": [
+    {
+     "wrong": "Zolang je niet belt, ik blijf wachten.",
+     "right": "Zolang je niet belt, blijf ik wachten.",
+     "why": "The main clause starts with the verb: 'blijf ik'."
+    },
+    {
+     "wrong": "Zolang je niet bel, blijf ik wachten.",
+     "right": "Zolang je niet belt, blijf ik wachten.",
+     "why": "With 'je' the verb needs -t: 'belt'. (not \"Zolang je niet bel, blijf ik wachten.\", but \"Zolang je niet belt, blijf ik wachten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik blijf wachten zolang je niet belt.",
+    "english": "I keep waiting as long as you don't call.",
+    "note": "With the main clause first there is no inversion. Compare: Ik blijf wachten zolang je niet belt."
+   }
+  },
+  "pat-zodra-42": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "A question about permission for a period: the modal opens the question."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Mag ik hier parkeren",
+     "subject": "ik",
+     "finite": "Mag",
+     "role": "main clause (the question)",
+     "why": "A yes/no question starts with the finite verb 'Mag', then the subject 'ik' and the adverb 'hier'; the infinitive 'parkeren' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang ik in de winkel ben",
+     "subject": "ik",
+     "finite": "ben",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'ik' comes first, the place 'in de winkel' follows, and the finite verb 'ben' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Mag"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "infinitive",
+     "text": "parkeren"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "place",
+     "text": "in de winkel"
+    },
+    {
+     "label": "finite verb",
+     "text": "ben"
+    }
+   ],
+   "meaning": "May I park here while I'm in the shop?",
+   "order": "A permission question with a duration clause. The place phrase stands before the final 'ben'. Read it as \"Mag ik hier parkeren zolang ik in de winkel ben\".",
+   "forms": "mogen: mag ik. parkeren: infinitive. zijn: ik ben.",
+   "compare": "English 'May I park here' has the same inversion. For this card: \"Mag ik hier parkeren zolang ik in de winkel ben\".",
+   "mistakes": [
+    {
+     "wrong": "Ik mag hier parkeren zolang ik in de winkel ben?",
+     "right": "Mag ik hier parkeren zolang ik in de winkel ben?",
+     "why": "A question inverts the modal and the subject: 'Mag ik'."
+    },
+    {
+     "wrong": "Mag ik hier parkeren zolang ik ben in de winkel?",
+     "right": "Mag ik hier parkeren zolang ik in de winkel ben?",
+     "why": "The finite verb 'ben' goes behind the place phrase."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik mag hier parkeren zolang ik in de winkel ben.",
+    "english": "I may park here as long as I'm in the shop.",
+    "note": "A statement has the subject first. Compare: Ik mag hier parkeren zolang ik in de winkel ben."
+   }
+  },
+  "pat-zodra-43": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "A question about coping through a long stretch: 'volhouden' splits as 'houd ... vol'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hoe houd je het vol",
+     "subject": "je",
+     "finite": "houd",
+     "role": "main clause (the question)",
+     "why": "The question word 'Hoe' is first, so 'houd' is second; the subject 'je' and the object 'het' come before the particle 'vol'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang je geen vakantie hebt",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'je' comes first, then the object 'geen vakantie', and the finite verb 'hebt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "question word",
+     "text": "Hoe"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "houd"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "particle",
+     "text": "vol"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "geen vakantie"
+    },
+    {
+     "label": "finite verb",
+     "text": "hebt"
+    }
+   ],
+   "meaning": "How do you keep going as long as you have no holiday?",
+   "order": "'Volhouden' means to keep going and splits as 'houd ... vol'. The zolang-clause gives the period of strain. Read it as \"Hoe houd je het vol zolang je geen vakantie hebt\".",
+   "forms": "volhouden: houd ... vol. hebben: je hebt.",
+   "compare": "English 'keep it up' has the same split structure. For this card: \"Hoe houd je het vol zolang je geen vakantie hebt\".",
+   "mistakes": [
+    {
+     "wrong": "Hoe je houd het vol zolang je geen vakantie hebt?",
+     "right": "Hoe houd je het vol zolang je geen vakantie hebt?",
+     "why": "A direct question needs the verb second: 'Hoe houd je'."
+    },
+    {
+     "wrong": "Hoe houd je het vol zolang je hebt geen vakantie?",
+     "right": "Hoe houd je het vol zolang je geen vakantie hebt?",
+     "why": "The finite verb goes behind the object. (not \"Hoe houd je het vol zolang je hebt geen vakantie?\", but \"Hoe houd je het vol zolang je geen vakantie hebt?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik vraag hoe je het volhoudt zolang je geen vakantie hebt.",
+    "english": "I ask how you keep going as long as you have no holiday.",
+    "note": "In an embedded question the separable verb is joined."
+   }
+  },
+  "pat-zodra-44": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "A phrase meaning 'for as long as': 'zo lang als nodig is' is written as separate words here."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik blijf",
+     "subject": "Ik",
+     "finite": "blijf",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'blijf' is second and the main clause is complete. The clause is \"Ik blijf\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zo lang als het nodig is",
+     "subject": "het",
+     "finite": "is",
+     "role": "zolang-clause (the condition)",
+     "why": "The comparison 'zo lang als' opens the clause; the subject 'het' and the predicate 'nodig' follow, and the finite verb 'is' closes it."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijf"
+    },
+    {
+     "label": "comparison (as long as)",
+     "text": "zo lang als"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "nodig"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I'll stay as long as is necessary.",
+   "order": "'Zo lang als' compares a duration. The clause has its own subject 'het' and the predicate 'nodig'. The same idea with 'zolang' is written as one word.",
+   "forms": "blijven: ik blijf. zijn: het is.",
+   "compare": "English 'as long as necessary' uses 'as ... as'. Dutch can use 'zo lang als' or the conjunction 'zolang'.",
+   "mistakes": [
+    {
+     "wrong": "Ik blijf zo lang als het is nodig.",
+     "right": "Ik blijf zo lang als het nodig is.",
+     "why": "The finite verb 'is' goes behind the predicate 'nodig'. (not \"Ik blijf zo lang als het is nodig.\", but \"Ik blijf zo lang als het nodig is.\")"
+    },
+    {
+     "wrong": "Ik blijf zo lang het nodig als is.",
+     "right": "Ik blijf zo lang als het nodig is.",
+     "why": "The comparison 'zo lang als' stays together."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik blijf zolang het nodig is.",
+    "english": "I stay as long as it is necessary.",
+    "note": "'Zolang' is one word and introduces a full clause with its own subject."
+   }
+  },
+  "pat-zodra-45": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "voorlopig = for the time being (adverb)",
+    "why": "'Voorlopig' is an adverb of time: it takes position one and the verb follows, without any zolang-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Voorlopig blijft alles hetzelfde",
+     "subject": "alles",
+     "finite": "blijft",
+     "role": "single main clause",
+     "why": "The adverb 'voorlopig' is first, so 'blijft' is second and the subject 'alles' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (for the time being)",
+     "text": "Voorlopig"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "alles"
+    },
+    {
+     "label": "predicate",
+     "text": "hetzelfde"
+    }
+   ],
+   "meaning": "For the time being everything stays the same.",
+   "order": "A single main clause: the adverb fills position one and the subject follows the verb. Read it as \"Voorlopig blijft alles hetzelfde\".",
+   "forms": "blijven: alles blijft.",
+   "compare": "English 'For the time being' is an adverbial phrase. Dutch uses one word.",
+   "mistakes": [
+    {
+     "wrong": "Voorlopig alles blijft hetzelfde.",
+     "right": "Voorlopig blijft alles hetzelfde.",
+     "why": "After the adverb the verb comes second: 'blijft alles'."
+    },
+    {
+     "wrong": "Voorlopig blijven alles hetzelfde.",
+     "right": "Voorlopig blijft alles hetzelfde.",
+     "why": "'Alles' is singular and takes 'blijft'. (not \"Voorlopig blijven alles hetzelfde.\", but \"Voorlopig blijft alles hetzelfde.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Alles blijft hetzelfde zolang er geen besluit is.",
+    "english": "Everything stays the same as long as there is no decision.",
+    "note": "With a condition you need a zolang-clause."
+   }
+  },
+  "pat-zodra-46": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tot dan = until then (preposition)",
+    "why": "'Tot dan' is a short phrase with a time word: it needs no verb after it."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Tot dan blijft de deur dicht",
+     "subject": "de deur",
+     "finite": "blijft",
+     "role": "single main clause",
+     "why": "The phrase 'tot dan' is first, so 'blijft' is second and the subject 'de deur' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "preposition (until)",
+     "text": "Tot"
+    },
+    {
+     "label": "adverb (then)",
+     "text": "dan"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "de deur"
+    },
+    {
+     "label": "predicate",
+     "text": "dicht"
+    }
+   ],
+   "meaning": "Until then the door stays closed.",
+   "order": "The fronted phrase makes the verb second. 'Dan' stands for the date that was mentioned. Read it as \"Tot dan blijft de deur dicht\".",
+   "forms": "blijven: de deur blijft.",
+   "compare": "English 'Until then' is the same short phrase. For this card: \"Tot dan blijft de deur dicht\".",
+   "mistakes": [
+    {
+     "wrong": "Tot dan de deur blijft dicht.",
+     "right": "Tot dan blijft de deur dicht.",
+     "why": "After the fronted phrase the verb comes second: 'blijft de deur'."
+    },
+    {
+     "wrong": "Tot dan blijven de deur dicht.",
+     "right": "Tot dan blijft de deur dicht.",
+     "why": "The singular subject needs 'blijft'. (not \"Tot dan blijven de deur dicht.\", but \"Tot dan blijft de deur dicht.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang de renovatie duurt, blijft de deur dicht.",
+    "english": "As long as the renovation lasts, the door stays closed.",
+    "note": "With a state instead of a date you need 'zolang' and a clause."
+   }
+  },
+  "pat-zodra-47": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "Trust depends on honesty: the predicate 'eerlijk' is linked to 'blijft'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik vertrouw hem",
+     "subject": "Ik",
+     "finite": "vertrouw",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'vertrouw' is second and the object 'hem' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang hij eerlijk blijft",
+     "subject": "hij",
+     "finite": "blijft",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'hij' comes first, the predicate 'eerlijk' follows, and the finite verb 'blijft' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "vertrouw"
+    },
+    {
+     "label": "object",
+     "text": "hem"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "eerlijk"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    }
+   ],
+   "meaning": "I trust him as long as he stays honest.",
+   "order": "'Eerlijk blijven' means to stay honest. The predicate stands before the verb. Read it as \"Ik vertrouw hem zolang hij eerlijk blijft\".",
+   "forms": "vertrouwen: ik vertrouw. blijven: hij blijft.",
+   "compare": "English 'stays honest' keeps 'stays' before the adjective. Dutch puts 'blijft' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik vertrouw hem zolang hij blijft eerlijk.",
+     "right": "Ik vertrouw hem zolang hij eerlijk blijft.",
+     "why": "The finite verb 'blijft' goes behind the predicate 'eerlijk'."
+    },
+    {
+     "wrong": "Ik vertrouw hem zolang hij eerlijk blijf.",
+     "right": "Ik vertrouw hem zolang hij eerlijk blijft.",
+     "why": "With 'hij' the verb needs -t: 'blijft'. (not \"Ik vertrouw hem zolang hij eerlijk blijf.\", but \"Ik vertrouw hem zolang hij eerlijk blijft.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang hij eerlijk blijft, vertrouw ik hem.",
+    "english": "As long as he stays honest, I trust him.",
+    "note": "The zolang-clause first inverts the main clause to 'vertrouw ik'."
+   }
+  },
+  "pat-zodra-48": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "The absence of the bus decides that people walk; 'niet komt' closes the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang de bus niet komt",
+     "subject": "de bus",
+     "finite": "komt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'de bus' comes first, the negation 'niet' follows, and the finite verb 'komt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "lopen we",
+     "subject": "we",
+     "finite": "lopen",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'lopen' comes first, then the subject 'we'. The clause is \"lopen we\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "de bus"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    },
+    {
+     "label": "finite verb",
+     "text": "lopen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    }
+   ],
+   "meaning": "As long as the bus doesn't come, we walk.",
+   "order": "A very short main clause after the long zolang-clause. The inverted order is 'lopen we'. Read it as \"Zolang de bus niet komt, lopen we\".",
+   "forms": "komen: de bus komt. lopen: wij lopen.",
+   "compare": "English 'we walk' keeps the subject first. Dutch inverts after the clause.",
+   "mistakes": [
+    {
+     "wrong": "Zolang de bus niet komt, we lopen.",
+     "right": "Zolang de bus niet komt, lopen we.",
+     "why": "The main clause starts with the verb: 'lopen we'."
+    },
+    {
+     "wrong": "Zolang de bus niet komen, lopen we.",
+     "right": "Zolang de bus niet komt, lopen we.",
+     "why": "The singular subject needs 'komt'. (not \"Zolang de bus niet komen, lopen we.\", but \"Zolang de bus niet komt, lopen we.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "We lopen zolang de bus niet komt.",
+    "english": "We walk as long as the bus doesn't come.",
+    "note": "With the main clause first there is no inversion. Compare: We lopen zolang de bus niet komt."
+   }
+  },
+  "pat-zodra-49": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "Pocket money depends on grades: 'haalt' closes the clause after the object 'goede cijfers'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je krijgt zakgeld",
+     "subject": "Je",
+     "finite": "krijgt",
+     "role": "main clause (what follows)",
+     "why": "'Je' is first, so 'krijgt' is second and the object 'zakgeld' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang je goede cijfers haalt",
+     "subject": "je",
+     "finite": "haalt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'je' comes first, then the object 'goede cijfers', and the finite verb 'haalt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb",
+     "text": "krijgt"
+    },
+    {
+     "label": "object",
+     "text": "zakgeld"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "goede cijfers"
+    },
+    {
+     "label": "finite verb",
+     "text": "haalt"
+    }
+   ],
+   "meaning": "You get pocket money as long as you get good grades.",
+   "order": "'Cijfers halen' means to get grades. The object stands before 'haalt'. Read it as \"Je krijgt zakgeld zolang je goede cijfers haalt\".",
+   "forms": "krijgen: je krijgt. halen: je haalt.",
+   "compare": "English 'get good grades' uses 'get' twice. Dutch uses 'krijgen' and 'halen'.",
+   "mistakes": [
+    {
+     "wrong": "Je krijgt zakgeld zolang je haalt goede cijfers.",
+     "right": "Je krijgt zakgeld zolang je goede cijfers haalt.",
+     "why": "The finite verb goes behind the object. (not \"Je krijgt zakgeld zolang je haalt goede cijfers.\", but \"Je krijgt zakgeld zolang je goede cijfers haalt.\")"
+    },
+    {
+     "wrong": "Je krijgt zakgeld zolang je goede cijfers haal.",
+     "right": "Je krijgt zakgeld zolang je goede cijfers haalt.",
+     "why": "With 'je' the verb needs -t: 'haalt'. (not \"Je krijgt zakgeld zolang je goede cijfers haal.\", but \"Je krijgt zakgeld zolang je goede cijfers haalt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang je goede cijfers haalt, krijg je zakgeld.",
+    "english": "As long as you get good grades, you get pocket money.",
+    "note": "The zolang-clause first inverts the main clause to 'krijg je'."
+   }
+  },
+  "pat-zodra-reuse-career-incidents-040": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The restoration is the trigger for stopping the workaround; the state 'hersteld is' closes the first clause."
+   },
+   "situationNl": "Een incident heeft een tijdelijke oplossing nodig gemaakt. Een collega vraagt naar het einde daarvan. Zeg op welk moment jullie ermee ophouden.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra de gewone dienst hersteld is",
+     "subject": "de gewone dienst",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de gewone dienst' comes first, the participle 'hersteld' follows, and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stoppen we met deze omweg",
+     "subject": "we",
+     "finite": "stoppen",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'stoppen' comes first, then the subject 'we' and the phrase 'met deze omweg'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de gewone dienst"
+    },
+    {
+     "label": "past participle",
+     "text": "hersteld"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "stoppen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "met deze omweg"
+    }
+   ],
+   "meaning": "As soon as the normal service is restored, we stop using this workaround.",
+   "order": "The state 'hersteld zijn' means restored. 'Stoppen met' takes a phrase after the subject. Read it as \"Zodra de gewone dienst hersteld is, stoppen we met deze omweg\".",
+   "forms": "herstellen: is hersteld. stoppen: wij stoppen.",
+   "compare": "English 'stop using' needs a verb in -ing. Dutch uses 'stoppen met' + noun.",
+   "mistakes": [
+    {
+     "wrong": "Zodra de gewone dienst is hersteld, we stoppen met deze omweg.",
+     "right": "Zodra de gewone dienst hersteld is, stoppen we met deze omweg.",
+     "why": "The main clause starts with the verb: 'stoppen we'."
+    },
+    {
+     "wrong": "Zodra de gewone dienst hersteld, stoppen we met deze omweg.",
+     "right": "Zodra de gewone dienst hersteld is, stoppen we met deze omweg.",
+     "why": "The finite verb 'is' is missing at the end."
+    }
+   ],
+   "contrast": {
+    "dutch": "We stoppen met deze omweg zodra de gewone dienst hersteld is.",
+    "english": "We stop using this workaround as soon as the normal service is restored.",
+    "note": "With the main clause first there is no inversion. Compare: We stoppen met deze omweg zodra de gewone dienst hersteld is."
+   }
+  },
+  "pat-zodra-reuse-career-meetings-027": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "As long as access is missing, the test stays blocked: the condition holds for the whole period."
+   },
+   "situationNl": "Een testplan ligt stil. Een manager vraagt naar de reden. Leg uit wat er ontbreekt en wat dat betekent voor de test.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zolang de toegang ontbreekt",
+     "subject": "de toegang",
+     "finite": "ontbreekt",
+     "role": "zolang-clause (the condition)",
+     "why": "The subject 'de toegang' comes first and the finite verb 'ontbreekt' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijft de test geblokkeerd",
+     "subject": "de test",
+     "finite": "blijft",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'blijft' comes first, then the subject 'de test' and the predicate 'geblokkeerd'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as long as)",
+     "text": "Zolang"
+    },
+    {
+     "label": "subject",
+     "text": "de toegang"
+    },
+    {
+     "label": "finite verb",
+     "text": "ontbreekt"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "de test"
+    },
+    {
+     "label": "predicate",
+     "text": "geblokkeerd"
+    }
+   ],
+   "meaning": "As long as access is missing, the test remains blocked.",
+   "order": "The zolang-clause names a state that must end before the main clause changes. The main clause inverts to 'blijft de test'.",
+   "forms": "ontbreken: de toegang ontbreekt. blijven: de test blijft.",
+   "compare": "English 'As long as access is missing' needs 'is missing'. Dutch uses the single verb 'ontbreken'.",
+   "mistakes": [
+    {
+     "wrong": "Zolang de toegang ontbreekt, de test blijft geblokkeerd.",
+     "right": "Zolang de toegang ontbreekt, blijft de test geblokkeerd.",
+     "why": "The main clause starts with the verb: 'blijft de test'."
+    },
+    {
+     "wrong": "Zolang de toegang ontbreken, blijft de test geblokkeerd.",
+     "right": "Zolang de toegang ontbreekt, blijft de test geblokkeerd.",
+     "why": "The singular subject needs 'ontbreekt'. (not \"Zolang de toegang ontbreken, blijft de test geblokkeerd.\", but \"Zolang de toegang ontbreekt, blijft de test geblokkeerd.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De test blijft geblokkeerd zolang de toegang ontbreekt.",
+    "english": "The test stays blocked as long as access is missing.",
+    "note": "With the main clause first there is no inversion. Compare: De test blijft geblokkeerd zolang de toegang ontbreekt."
+   }
+  },
+  "pat-zodra-reuse-career-meetings-059": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The finished check triggers the update; the owner is the subject of the inverted main clause."
+   },
+   "situationNl": "Je team wacht op een controle van een tweede persoon. Een manager vraagt op welk moment de status bekend wordt. Leg uit wie iets meldt en op welk moment.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra de controle klaar is",
+     "subject": "de controle",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de controle' comes first, the predicate 'klaar' follows, and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stuurt de eigenaar een update",
+     "subject": "de eigenaar",
+     "finite": "stuurt",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'stuurt' comes first, then the subject 'de eigenaar' and the object 'een update'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de controle"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "stuurt"
+    },
+    {
+     "label": "subject",
+     "text": "de eigenaar"
+    },
+    {
+     "label": "object",
+     "text": "een update"
+    }
+   ],
+   "meaning": "As soon as the check is complete, the owner sends an update.",
+   "order": "The predicate 'klaar' stands before 'is'. The main clause inverts to 'stuurt de eigenaar'. Read it as \"Zodra de controle klaar is, stuurt de eigenaar een update\".",
+   "forms": "zijn: de controle is. sturen: de eigenaar stuurt.",
+   "compare": "English 'As soon as the check is complete' keeps 'is' before 'complete'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Zodra de controle is klaar, stuurt de eigenaar een update.",
+     "right": "Zodra de controle klaar is, stuurt de eigenaar een update.",
+     "why": "The finite verb 'is' goes behind the predicate 'klaar'. (not \"Zodra de controle is klaar, stuurt de eigenaar een update.\", but \"Zodra de controle klaar is, stuurt de eigenaar een update.\")"
+    },
+    {
+     "wrong": "Zodra de controle klaar is, de eigenaar stuurt een update.",
+     "right": "Zodra de controle klaar is, stuurt de eigenaar een update.",
+     "why": "The main clause starts with the verb: 'stuurt de eigenaar'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De eigenaar stuurt een update zodra de controle klaar is.",
+    "english": "The owner sends an update as soon as the check is complete.",
+    "note": "With the main clause first there is no inversion. Compare: De eigenaar stuurt een update zodra de controle klaar is."
+   }
+  },
+  "pat-zodra-reuse-career-office-035": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The end of the break triggers the return; 'kom terug' splits in the main clause."
+   },
+   "situationNl": "Je staat op en loopt weg van je bureau. Een collega vraagt of je er nog bent. Zeg dat je terugkeert en op welk moment.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kom terug",
+     "subject": "Ik",
+     "finite": "kom",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'kom' is second; the particle 'terug' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra mijn pauze voorbij is",
+     "subject": "mijn pauze",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'mijn pauze' comes first, the predicate 'voorbij' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "kom"
+    },
+    {
+     "label": "particle",
+     "text": "terug"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "mijn pauze"
+    },
+    {
+     "label": "predicate",
+     "text": "voorbij"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I will return as soon as my break is over.",
+   "order": "'Terugkomen' splits as 'kom ... terug'. 'Voorbij zijn' means to be over. Read it as \"Ik kom terug zodra mijn pauze voorbij is\".",
+   "forms": "terugkomen: kom ... terug. zijn: mijn pauze is.",
+   "compare": "English 'I will return' uses 'will'. Dutch uses the present tense. For this card: \"Ik kom terug zodra mijn pauze voorbij is\".",
+   "mistakes": [
+    {
+     "wrong": "Ik terugkom zodra mijn pauze voorbij is.",
+     "right": "Ik kom terug zodra mijn pauze voorbij is.",
+     "why": "In a main clause the separable verb splits: 'kom ... terug'."
+    },
+    {
+     "wrong": "Ik kom terug zodra mijn pauze is voorbij.",
+     "right": "Ik kom terug zodra mijn pauze voorbij is.",
+     "why": "The finite verb 'is' goes behind the predicate 'voorbij'. (not \"Ik kom terug zodra mijn pauze is voorbij.\", but \"Ik kom terug zodra mijn pauze voorbij is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra mijn pauze voorbij is, kom ik terug.",
+    "english": "As soon as my break is over, I will return.",
+    "note": "The zodra-clause first inverts the main clause to 'kom ik terug'."
+   }
+  },
+  "pat-zodra-reuse-career-priorities-039": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The extra knowledge is the trigger for the new estimate."
+   },
+   "situationNl": "Een manager vraagt hoe lang een taak nog duurt. Beloof een nieuwe inschatting en noem het moment.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra ik meer weet",
+     "subject": "ik",
+     "finite": "weet",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ik' comes first, then the object 'meer', and the finite verb 'weet' closes the clause. The clause is \"Zodra ik meer weet\"."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stuur ik een nieuwe schatting",
+     "subject": "ik",
+     "finite": "stuur",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'stuur' comes first, then the subject 'ik' and the object 'een nieuwe schatting'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "meer"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "finite verb",
+     "text": "stuur"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "een nieuwe schatting"
+    }
+   ],
+   "meaning": "As soon as I know more, I will send a new estimate.",
+   "order": "A short zodra-clause; the main clause inverts to 'stuur ik'. Read it as \"Zodra ik meer weet, stuur ik een nieuwe schatting\".",
+   "forms": "weten: ik weet. sturen: ik stuur.",
+   "compare": "English 'As soon as I know more, I will send' uses 'will'. Dutch uses the present.",
+   "mistakes": [
+    {
+     "wrong": "Zodra ik meer weet, ik stuur een nieuwe schatting.",
+     "right": "Zodra ik meer weet, stuur ik een nieuwe schatting.",
+     "why": "The main clause starts with the verb: 'stuur ik'. (not \"Zodra ik meer weet, ik stuur een nieuwe schatting.\", but \"Zodra ik meer weet, stuur ik een nieuwe schatting.\")"
+    },
+    {
+     "wrong": "Zodra ik meer weten, stuur ik een nieuwe schatting.",
+     "right": "Zodra ik meer weet, stuur ik een nieuwe schatting.",
+     "why": "With 'ik' the verb is 'weet'. (not \"Zodra ik meer weten, stuur ik een nieuwe schatting.\", but \"Zodra ik meer weet, stuur ik een nieuwe schatting.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik stuur een nieuwe schatting zodra ik meer weet.",
+    "english": "I send a new estimate as soon as I know more.",
+    "note": "With the main clause first there is no inversion. Compare: Ik stuur een nieuwe schatting zodra ik meer weet."
+   }
+  },
+  "pat-zodra-reuse-career-support-028": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The customer's availability triggers the scheduling; 'doorgeeft' is joined and the polite 'u' takes -t."
+   },
+   "situationNl": "Een klant wil een afspraak voor ondersteuning. Leg hem formeel uit wat jij doet en wat hij eerst moet melden.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik plan de afspraak in",
+     "subject": "Ik",
+     "finite": "plan",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'plan' is second; the object 'de afspraak' comes before the particle 'in'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra u uw beschikbaarheid doorgeeft",
+     "subject": "u",
+     "finite": "doorgeeft",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'u' comes first, then the object 'uw beschikbaarheid', and the joined verb 'doorgeeft' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "plan"
+    },
+    {
+     "label": "object",
+     "text": "de afspraak"
+    },
+    {
+     "label": "particle",
+     "text": "in"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "u"
+    },
+    {
+     "label": "object",
+     "text": "uw beschikbaarheid"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "doorgeeft"
+    }
+   ],
+   "meaning": "I will schedule the appointment as soon as you provide your availability.",
+   "order": "'Inplannen' splits in the main clause; 'doorgeven' is joined in the zodra-clause. The formal 'u' takes the -t form.",
+   "forms": "inplannen: plan ... in. doorgeven: geeft door / doorgeeft.",
+   "compare": "English 'provide your availability' is a single verb. Dutch uses the separable 'doorgeven'.",
+   "mistakes": [
+    {
+     "wrong": "Ik plan de afspraak in zodra u geeft uw beschikbaarheid door.",
+     "right": "Ik plan de afspraak in zodra u uw beschikbaarheid doorgeeft.",
+     "why": "The separable verb is written together at the end: 'doorgeeft'."
+    },
+    {
+     "wrong": "Ik plan de afspraak in zodra u uw beschikbaarheid doorgeef.",
+     "right": "Ik plan de afspraak in zodra u uw beschikbaarheid doorgeeft.",
+     "why": "With 'u' the verb needs -t: 'doorgeeft'. (not \"Ik plan de afspraak in zodra u uw beschikbaarheid doorgeef.\", but \"Ik plan de afspraak in zodra u uw beschikbaarheid doorgeeft.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra u uw beschikbaarheid doorgeeft, plan ik de afspraak in.",
+    "english": "As soon as you provide your availability, I will schedule the appointment.",
+    "note": "The zodra-clause first inverts the main clause to 'plan ik'."
+   }
+  },
+  "pat-zodra-reuse-career-support-047": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "More knowledge triggers the new contact; 'opnemen' is split around 'contact met u'."
+   },
+   "situationNl": "Een klant heeft nog geen definitief antwoord gekregen. Beloof hem formeel een vervolgcontact en noem de voorwaarde.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik neem opnieuw contact met u op",
+     "subject": "Ik",
+     "finite": "neem",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so 'neem' is second; the particle 'op' closes the main clause behind 'contact met u'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra ik meer weet",
+     "subject": "ik",
+     "finite": "weet",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ik' comes first, then the object 'meer', and the finite verb 'weet' closes the clause. The clause is \"zodra ik meer weet\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "neem"
+    },
+    {
+     "label": "adverb",
+     "text": "opnieuw"
+    },
+    {
+     "label": "object",
+     "text": "contact met u"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "meer"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    }
+   ],
+   "meaning": "I will contact you again as soon as I know more.",
+   "order": "'Contact opnemen' is a fixed phrase that splits as 'neem ... op'. The zodra-clause is short. Read it as \"Ik neem opnieuw contact met u op zodra ik meer weet\".",
+   "forms": "opnemen: neem ... op. weten: ik weet.",
+   "compare": "English 'contact you again' is one verb. Dutch uses 'contact opnemen'. For this card: \"Ik neem opnieuw contact met u op zodra ik meer weet\".",
+   "mistakes": [
+    {
+     "wrong": "Ik neem op opnieuw contact met u zodra ik meer weet.",
+     "right": "Ik neem opnieuw contact met u op zodra ik meer weet.",
+     "why": "The particle 'op' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Ik neem opnieuw contact met u op zodra ik meer weten.",
+     "right": "Ik neem opnieuw contact met u op zodra ik meer weet.",
+     "why": "With 'ik' the verb is 'weet'. (not \"Ik neem opnieuw contact met u op zodra ik meer weten.\", but \"Ik neem opnieuw contact met u op zodra ik meer weet.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra ik meer weet, neem ik opnieuw contact met u op.",
+    "english": "As soon as I know more, I will contact you again.",
+    "note": "The zodra-clause first inverts the main clause to 'neem ik'."
+   }
+  },
+  "pat-zodra-reuse-career-troubleshooting-014": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "Clicking save is the trigger of the error; the error appears as a result."
+   },
+   "situationNl": "Je beschrijft een programmafout aan een collega. Zeg precies welke handeling de melding veroorzaakt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zodra ik op bewaren klik",
+     "subject": "ik",
+     "finite": "klik",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ik' comes first, the phrase 'op bewaren' follows, and the finite verb 'klik' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "verschijnt de foutcode",
+     "subject": "de foutcode",
+     "finite": "verschijnt",
+     "role": "main clause (what follows)",
+     "why": "The finite verb 'verschijnt' comes first, then the subject 'de foutcode'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (as soon as)",
+     "text": "Zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "op bewaren"
+    },
+    {
+     "label": "finite verb",
+     "text": "klik"
+    },
+    {
+     "label": "finite verb",
+     "text": "verschijnt"
+    },
+    {
+     "label": "subject",
+     "text": "de foutcode"
+    }
+   ],
+   "meaning": "As soon as I click save, the error code appears.",
+   "order": "'Klikken op' takes a phrase before the final verb. The main clause inverts to 'verschijnt de foutcode'. Read it as \"Zodra ik op bewaren klik, verschijnt de foutcode\".",
+   "forms": "klikken: ik klik. verschijnen: de foutcode verschijnt.",
+   "compare": "English 'click save' has no preposition. Dutch uses 'klikken op'. For this card: \"Zodra ik op bewaren klik, verschijnt de foutcode\".",
+   "mistakes": [
+    {
+     "wrong": "Zodra ik klik op bewaren, verschijnt de foutcode.",
+     "right": "Zodra ik op bewaren klik, verschijnt de foutcode.",
+     "why": "The finite verb goes behind the phrase 'op bewaren'."
+    },
+    {
+     "wrong": "Zodra ik op bewaren klik, de foutcode verschijnt.",
+     "right": "Zodra ik op bewaren klik, verschijnt de foutcode.",
+     "why": "The main clause starts with the verb: 'verschijnt de foutcode'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De foutcode verschijnt zodra ik op bewaren klik.",
+    "english": "The error code appears as soon as I click save.",
+    "note": "With the main clause first there is no inversion. Compare: De foutcode verschijnt zodra ik op bewaren klik."
+   }
+  },
+  "pat-zodra-reuse-career-troubleshooting-049": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zolang = as long as",
+    "why": "A condition on guessing: no data, no guess. 'Willen' is the modal of the main clause."
+   },
+   "situationNl": "Een collega vraagt je een oorzaak te noemen voor een storing. Leg uit waarom je geen antwoord geeft en wat daarvoor nodig is.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wil niet gissen",
+     "subject": "Ik",
+     "finite": "wil",
+     "role": "main clause (what follows)",
+     "why": "Ik is first, so the modal 'wil' is second; the negation 'niet' stands before the infinitive 'gissen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zolang de gegevens ontbreken",
+     "subject": "de gegevens",
+     "finite": "ontbreken",
+     "role": "zolang-clause (the condition)",
+     "why": "The plural subject 'de gegevens' comes first and the plural verb 'ontbreken' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "wil"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "infinitive",
+     "text": "gissen"
+    },
+    {
+     "label": "conjunction (as long as)",
+     "text": "zolang"
+    },
+    {
+     "label": "subject",
+     "text": "de gegevens"
+    },
+    {
+     "label": "finite verb",
+     "text": "ontbreken"
+    }
+   ],
+   "meaning": "I do not want to guess while the data is missing.",
+   "order": "The negation belongs to the main clause. The zolang-clause names the state that justifies it. Read it as \"Ik wil niet gissen zolang de gegevens ontbreken\".",
+   "forms": "willen: ik wil. gissen: infinitive. ontbreken: de gegevens ontbreken.",
+   "compare": "English 'while the data is missing' uses a singular 'data'. Dutch 'de gegevens' is plural.",
+   "mistakes": [
+    {
+     "wrong": "Ik wil gissen niet zolang de gegevens ontbreken.",
+     "right": "Ik wil niet gissen zolang de gegevens ontbreken.",
+     "why": "The negation stands before the infinitive 'gissen'."
+    },
+    {
+     "wrong": "Ik wil niet gissen zolang de gegevens ontbreekt.",
+     "right": "Ik wil niet gissen zolang de gegevens ontbreken.",
+     "why": "The plural subject needs 'ontbreken'. (not \"Ik wil niet gissen zolang de gegevens ontbreekt.\", but \"Ik wil niet gissen zolang de gegevens ontbreken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zolang de gegevens ontbreken, wil ik niet gissen.",
+    "english": "As long as the data is missing, I do not want to guess.",
+    "note": "The zolang-clause first inverts the main clause to 'wil ik'."
+   }
+  },
+  "pat-zodra-reuse-work-187": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "The readiness of the order is the trigger, so 'zodra' opens the clause that names it; the future-like 'zullen' stays in the main clause."
+   },
+   "situationNl": "Een klant wacht op zijn bestelling. Beloof formeel dat hij een telefoontje krijgt en noem het moment.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze zullen u bellen",
+     "subject": "Ze",
+     "finite": "zullen",
+     "role": "main clause (what follows)",
+     "why": "'Ze' is first, so the plural 'zullen' is second; the object 'u' stands before the infinitive 'bellen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra de bestelling klaar is",
+     "subject": "de bestelling",
+     "finite": "is",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'de bestelling' comes first, the predicate 'klaar' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "zullen"
+    },
+    {
+     "label": "object",
+     "text": "u"
+    },
+    {
+     "label": "infinitive",
+     "text": "bellen"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "de bestelling"
+    },
+    {
+     "label": "predicate",
+     "text": "klaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "They'll call you as soon as the order is ready.",
+   "order": "A modal chain 'zullen ... bellen' stands in the main clause; the zodra-clause names the trigger in the present tense.",
+   "forms": "zullen: ze zullen. bellen: infinitive. zijn: de bestelling is.",
+   "compare": "English 'They'll call you' uses 'will'. Dutch uses 'zullen' with an infinitive.",
+   "mistakes": [
+    {
+     "wrong": "Ze zullen u bellen zodra de bestelling is klaar.",
+     "right": "Ze zullen u bellen zodra de bestelling klaar is.",
+     "why": "The finite verb 'is' goes behind the predicate 'klaar'. (not \"Ze zullen u bellen zodra de bestelling is klaar.\", but \"Ze zullen u bellen zodra de bestelling klaar is.\")"
+    },
+    {
+     "wrong": "Ze zullen bellen u zodra de bestelling klaar is.",
+     "right": "Ze zullen u bellen zodra de bestelling klaar is.",
+     "why": "The infinitive 'bellen' goes to the end of the main clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra de bestelling klaar is, zullen ze u bellen.",
+    "english": "As soon as the order is ready, they'll call you.",
+    "note": "The zodra-clause first inverts the main clause to 'zullen ze'."
+   }
+  },
+  "pat-zodra-reuse-work-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zodra = as soon as",
+    "why": "Problems are solved at the moment they arise; 'voordoen' is reflexive and separable."
+   },
+   "situationNl": "Een nieuwe collega vraagt hoe jullie team omgaat met fouten. Beschrijf de aanpak en het moment waarop je ingrijpt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We lossen problemen op",
+     "subject": "We",
+     "finite": "lossen",
+     "role": "main clause (what follows)",
+     "why": "We is first, so the plural 'lossen' is second; the object 'problemen' comes before the particle 'op'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zodra ze zich voordoen",
+     "subject": "ze",
+     "finite": "voordoen",
+     "role": "zodra-clause (the trigger)",
+     "why": "The subject 'ze' comes first, then the reflexive 'zich', and the joined verb 'voordoen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "lossen"
+    },
+    {
+     "label": "object",
+     "text": "problemen"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    },
+    {
+     "label": "conjunction (as soon as)",
+     "text": "zodra"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "reflexive",
+     "text": "zich"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "voordoen"
+    }
+   ],
+   "meaning": "We solve problems as soon as they arise.",
+   "order": "'Oplossen' splits in the main clause; 'zich voordoen' is reflexive and joined in the zodra-clause. Read it as \"We lossen problemen op zodra ze zich voordoen\".",
+   "forms": "oplossen: lossen ... op. voordoen: doen zich voor / voordoen.",
+   "compare": "English 'arise' is a single verb. Dutch uses 'zich voordoen'. For this card: \"We lossen problemen op zodra ze zich voordoen\".",
+   "mistakes": [
+    {
+     "wrong": "We lossen problemen op zodra ze doen zich voor.",
+     "right": "We lossen problemen op zodra ze zich voordoen.",
+     "why": "The separable verb is written together at the end: 'voordoen'."
+    },
+    {
+     "wrong": "We lossen problemen op zodra ze voordoen zich.",
+     "right": "We lossen problemen op zodra ze zich voordoen.",
+     "why": "The reflexive 'zich' stands before the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zodra ze zich voordoen, lossen we problemen op.",
+    "english": "As soon as they arise, we solve problems.",
+    "note": "The zodra-clause first inverts the main clause to 'lossen we'."
+   }
+  }
+ }
+}

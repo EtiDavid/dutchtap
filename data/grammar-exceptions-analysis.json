@@ -1,0 +1,2745 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for ondanks dat, ondanks het feit dat, zonder dat, zonder ... te, behalve dat and buiten dat, with the prepositional uses as contrasts. AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-exceptions-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks dat = even though (concession, verb last)",
+    "why": "His illness is the obstacle, but it did not prevent his presence; 'ondanks dat' is a conjunction here and needs a full clause."
+   },
+   "situationNl": "Een collega kwam naar een belangrijke bijeenkomst en voelde zich niet goed. Zeg dat hij er was en wat hem eigenlijk tegenhield.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij was aanwezig",
+     "subject": "Hij",
+     "finite": "was",
+     "role": "main clause (what happens anyway)",
+     "why": "'Hij' is first and 'was' second, followed by the predicate 'aanwezig'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ondanks dat hij ziek was",
+     "subject": "hij",
+     "finite": "was",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks dat' come the subject 'hij' and the predicate 'ziek', and the past form 'was' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "predicate",
+     "text": "aanwezig"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ondanks dat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "ziek"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    }
+   ],
+   "meaning": "He was present, even though he was ill.",
+   "order": "The main clause comes first and keeps its normal order. The ondanks dat-clause is subordinate, so its verb 'was' goes to the end after 'ziek'.",
+   "forms": "zijn: hij was (twice).",
+   "compare": "English 'even though he was ill' keeps 'was' before 'ill'. Dutch puts the predicate first and the verb last.",
+   "mistakes": [
+    {
+     "wrong": "Hij was aanwezig, ondanks dat hij was ziek.",
+     "right": "Hij was aanwezig, ondanks dat hij ziek was.",
+     "why": "The finite verb 'was' goes to the end of the ondanks dat-clause."
+    },
+    {
+     "wrong": "Hij was aanwezig, ondanks hij ziek was.",
+     "right": "Hij was aanwezig, ondanks dat hij ziek was.",
+     "why": "As a conjunction 'ondanks' needs 'dat'; without it only a noun phrase can follow."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij was aanwezig, ondanks zijn ziekte.",
+    "english": "He was present in spite of his illness.",
+    "note": "With a noun phrase 'ondanks' is a preposition and there is no clause and no second verb."
+   }
+  },
+  "pat-exceptions-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks dat = even though (concession, verb last)",
+    "why": "The rain is the obstacle in first position, so the main clause starts with its verb."
+   },
+   "situationNl": "Tijdens een fietstocht begint het stevig te gieten. Zeg wat de groep desondanks doet.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Ondanks dat het hard regende",
+     "subject": "het",
+     "finite": "regende",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks dat' come the dummy subject 'het' and 'hard', and the past form 'regende' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "fietsten we door",
+     "subject": "we",
+     "finite": "fietsten",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'fietsten' comes first, then the subject 'we'; the particle 'door' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (even though)",
+     "text": "Ondanks dat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "hard"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "regende"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "fietsten"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    }
+   ],
+   "meaning": "Even though it rained hard, we cycled on.",
+   "order": "The whole concession clause fills position one, so the main clause starts with 'fietsten we'. 'Doorfietsen' splits, and 'door' ends the sentence.",
+   "forms": "regenen: het regende. doorfietsen: fietsten ... door.",
+   "compare": "English 'cycled on' keeps the particle next to the verb. Dutch puts 'door' after the subject.",
+   "mistakes": [
+    {
+     "wrong": "Ondanks dat het hard regende, we fietsten door.",
+     "right": "Ondanks dat het hard regende, fietsten we door.",
+     "why": "After the fronted clause the main clause starts with its verb: 'fietsten we'."
+    },
+    {
+     "wrong": "Ondanks dat het regende hard, fietsten we door.",
+     "right": "Ondanks dat het hard regende, fietsten we door.",
+     "why": "The adverb 'hard' comes before the verb: 'hard regende'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We fietsten door, ondanks dat het hard regende.",
+    "english": "We cycled on, even though it rained hard.",
+    "note": "With the main clause first there is no inversion. Compare: We fietsten door, ondanks dat het hard regende."
+   }
+  },
+  "pat-exceptions-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks dat = even though (concession, verb last)",
+    "why": "The low salary spoke against the job, yet she accepted it."
+   },
+   "situationNl": "Een vriendin koos voor een functie met een bescheiden loon. Zeg wat zij deed en welk bezwaar er was.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze nam de baan aan",
+     "subject": "Ze",
+     "finite": "nam",
+     "role": "main clause (what happens anyway)",
+     "why": "'Ze' is first and 'nam' second; the object 'de baan' follows and the particle 'aan' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ondanks dat het salaris laag was",
+     "subject": "het salaris",
+     "finite": "was",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks dat' come the subject 'het salaris' and the predicate 'laag', and 'was' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "nam"
+    },
+    {
+     "label": "object",
+     "text": "de baan"
+    },
+    {
+     "label": "particle",
+     "text": "aan"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ondanks dat"
+    },
+    {
+     "label": "subject",
+     "text": "het salaris"
+    },
+    {
+     "label": "predicate",
+     "text": "laag"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    }
+   ],
+   "meaning": "She accepted the job, even though the salary was low.",
+   "order": "'Aannemen' splits as 'nam ... aan' in the main clause. In the subordinate clause 'was' stands last, after 'laag'.",
+   "forms": "aannemen: nam ... aan. zijn: het salaris was.",
+   "compare": "English 'accepted the job' has no particle. Dutch 'aannemen' splits. For this card: \"Ze nam de baan aan, ondanks dat het salaris laag was\".",
+   "mistakes": [
+    {
+     "wrong": "Ze nam aan de baan, ondanks dat het salaris laag was.",
+     "right": "Ze nam de baan aan, ondanks dat het salaris laag was.",
+     "why": "The particle 'aan' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Ze nam de baan aan, ondanks dat was het salaris laag.",
+     "right": "Ze nam de baan aan, ondanks dat het salaris laag was.",
+     "why": "The finite verb 'was' goes to the end of the clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze nam de baan aan, maar het salaris was laag.",
+    "english": "She accepted the job, but the salary was low.",
+    "note": "With 'maar' the second part is a main clause, so the verb stays second after the subject: 'het salaris was laag'."
+   }
+  },
+  "pat-exceptions-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks dat = even though (concession, verb last)",
+    "why": "The crowd is the obstacle, but the action goes ahead, which the word 'toch' repeats in the main clause."
+   },
+   "situationNl": "Een forens heeft haast en ziet een overvol voertuig aankomen. Zeg wat hij tóch doet.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Ondanks dat de bus vol was",
+     "subject": "de bus",
+     "finite": "was",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks dat' come the subject 'de bus' and the predicate 'vol', and 'was' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stapte hij toch in",
+     "subject": "hij",
+     "finite": "stapte",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'stapte' comes first, then the subject 'hij' and 'toch'; the particle 'in' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (even though)",
+     "text": "Ondanks dat"
+    },
+    {
+     "label": "subject",
+     "text": "de bus"
+    },
+    {
+     "label": "predicate",
+     "text": "vol"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "stapte"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "toch"
+    },
+    {
+     "label": "particle",
+     "text": "in"
+    }
+   ],
+   "meaning": "Even though the bus was full, he got on anyway.",
+   "order": "'Instappen' splits as 'stapte ... in'. The adverb 'toch' stands behind the subject and stresses that the action happens anyway.",
+   "forms": "zijn: de bus was. instappen: stapte ... in.",
+   "compare": "English 'got on anyway' uses 'anyway' at the end. Dutch puts 'toch' behind the subject.",
+   "mistakes": [
+    {
+     "wrong": "Ondanks dat de bus vol was, hij stapte toch in.",
+     "right": "Ondanks dat de bus vol was, stapte hij toch in.",
+     "why": "The main clause starts with the verb: 'stapte hij'."
+    },
+    {
+     "wrong": "Ondanks dat de bus was vol, stapte hij toch in.",
+     "right": "Ondanks dat de bus vol was, stapte hij toch in.",
+     "why": "The finite verb 'was' goes to the end after 'vol'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij stapte toch in, ondanks dat de bus vol was.",
+    "english": "He got on anyway, even though the bus was full.",
+    "note": "With the main clause first there is no inversion. Compare: Hij stapte toch in, ondanks dat de bus vol was."
+   }
+  },
+  "pat-exceptions-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks het feit dat = despite the fact that (more emphatic)",
+    "why": "The longer conjunction puts extra weight on the obstacle, which is why it is chosen for emphasis."
+   },
+   "situationNl": "Je houdt vast aan je plan en benadrukt dat het weer daar niets aan verandert. Gebruik een nadrukkelijke formulering.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij gaan wandelen",
+     "subject": "Wij",
+     "finite": "gaan",
+     "role": "main clause (what happens anyway)",
+     "why": "'Wij' is first and 'gaan' second; the infinitive 'wandelen' closes the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ondanks het feit dat het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "The phrase 'ondanks het feit dat' opens the clause, then come the dummy subject 'het' and the finite verb 'regent' at the end."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    },
+    {
+     "label": "conjunction (despite the fact that)",
+     "text": "ondanks het feit dat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    }
+   ],
+   "meaning": "We are going for a walk, despite the fact that it is raining.",
+   "order": "'Ondanks het feit dat' is a four-word conjunction. After it the clause behaves like any subordinate clause: subject first, verb last.",
+   "forms": "gaan: wij gaan. regenen: het regent. Card: \"Wij gaan wandelen, ondanks het feit dat het regent\".",
+   "compare": "English 'despite the fact that' is equally heavy. Dutch has the shorter 'ondanks dat' for everyday use.",
+   "mistakes": [
+    {
+     "wrong": "Wij gaan wandelen, ondanks het feit dat regent het.",
+     "right": "Wij gaan wandelen, ondanks het feit dat het regent.",
+     "why": "The verb 'regent' goes to the end of the clause."
+    },
+    {
+     "wrong": "Wij gaan wandelen, ondanks het feit het regent.",
+     "right": "Wij gaan wandelen, ondanks het feit dat het regent.",
+     "why": "The word 'dat' is part of the conjunction and must stay. (not \"Wij gaan wandelen, ondanks het feit het regent.\", but \"Wij gaan wandelen, ondanks het feit dat het regent.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wij gaan wandelen, ondanks dat het regent.",
+    "english": "We are going for a walk, even though it is raining.",
+    "note": "The shorter 'ondanks dat' has the same word order."
+   }
+  },
+  "pat-exceptions-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks het feit dat = despite the fact that (more emphatic)",
+    "why": "The effort did not lead to success, which the emphatic conjunction underlines."
+   },
+   "situationNl": "Een student heeft veel moeite gedaan en is toch gezakt. Begin met de inspanning en eindig met het resultaat.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Ondanks het feit dat hij hard heeft gewerkt",
+     "subject": "hij",
+     "finite": "heeft",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks het feit dat' come the subject 'hij' and 'hard', and the perfect group 'heeft gewerkt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "haalde hij de toets niet",
+     "subject": "hij",
+     "finite": "haalde",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'haalde' comes first, then the subject 'hij', the object 'de toets' and the negation 'niet'. The clause is \"haalde hij de toets niet\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (despite the fact that)",
+     "text": "Ondanks het feit dat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "hard"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    },
+    {
+     "label": "participle",
+     "text": "gewerkt"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "haalde"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "de toets"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    }
+   ],
+   "meaning": "Despite the fact that he worked hard, he did not pass the test.",
+   "order": "The fronted clause is position one, so the main clause starts with 'haalde hij'. In the clause 'heeft' stands before the participle 'gewerkt'.",
+   "forms": "hebben: hij heeft. werken: gewerkt. halen: hij haalde.",
+   "compare": "English 'he worked hard' is the simple past; Dutch uses the perfect after this conjunction here: 'heeft gewerkt'.",
+   "mistakes": [
+    {
+     "wrong": "Ondanks het feit dat hij hard heeft gewerkt, hij haalde de toets niet.",
+     "right": "Ondanks het feit dat hij hard heeft gewerkt, haalde hij de toets niet.",
+     "why": "The main clause starts with the verb: 'haalde hij'. (not \"Ondanks het feit dat hij hard heeft gewerkt, hij haalde de toets niet.\", but \"Ondanks het feit dat hij hard heeft gewerkt, haalde hij de toets niet.\")"
+    },
+    {
+     "wrong": "Ondanks het feit dat hij hard heeft werken, haalde hij de toets niet.",
+     "right": "Ondanks het feit dat hij hard heeft gewerkt, haalde hij de toets niet.",
+     "why": "The perfect needs the participle 'gewerkt', not the infinitive 'werken'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij haalde de toets niet, ondanks het feit dat hij hard heeft gewerkt.",
+    "english": "He did not pass the test, despite the fact that he worked hard.",
+    "note": "With the main clause first there is no inversion. Compare: Hij haalde de toets niet, ondanks het feit dat hij hard heeft gewerkt."
+   }
+  },
+  "pat-exceptions-07": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "ondanks = in spite of, as a preposition (no clause)",
+    "why": "'Het slechte weer' is a noun phrase, so the sentence has a single finite verb in second position."
+   },
+   "situationNl": "Je vertelt over een dag in de open lucht en noemt het weer dat jullie niet tegenhield, met een zelfstandig naamwoord en niet met een bijzin.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ondanks het slechte weer gingen we naar buiten",
+     "subject": "we",
+     "finite": "gingen",
+     "role": "single main clause, preposition phrase first",
+     "why": "The phrase 'ondanks het slechte weer' fills position one, so the finite verb 'gingen' is second and the subject 'we' follows it before 'naar buiten'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted phrase (in spite of)",
+     "text": "Ondanks het slechte weer"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "gingen"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "phrase",
+     "text": "naar buiten"
+    }
+   ],
+   "meaning": "In spite of the bad weather we went outside.",
+   "order": "Compare the two jobs of ondanks: with a noun it is a preposition and nothing moves to the end; with 'dat' it is a conjunction and the verb goes last.",
+   "forms": "gaan: wij gingen.",
+   "compare": "English 'in spite of the bad weather' behaves the same way, but the verb inversion after it is Dutch.",
+   "mistakes": [
+    {
+     "wrong": "Ondanks het slechte weer we gingen naar buiten.",
+     "right": "Ondanks het slechte weer gingen we naar buiten.",
+     "why": "After a fronted phrase the finite verb comes second: 'gingen we'."
+    },
+    {
+     "wrong": "Ondanks het slechte weer gingen naar buiten we.",
+     "right": "Ondanks het slechte weer gingen we naar buiten.",
+     "why": "The phrase 'naar buiten' stands behind the subject."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ondanks dat het slecht weer was, gingen we naar buiten.",
+    "english": "Even though the weather was bad, we went outside.",
+    "note": "With 'dat' there is a clause and the verb 'was' goes to the end of it."
+   }
+  },
+  "pat-exceptions-08": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "ondanks = in spite of, as a preposition (no clause)",
+    "why": "'Zijn ziekte' is a noun phrase, so only one finite verb is needed."
+   },
+   "situationNl": "Je prijst de inzet van een collega en noemt zijn probleem met één zelfstandig naamwoord, niet met een volledige bijzin.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ondanks zijn ziekte was hij aanwezig",
+     "subject": "hij",
+     "finite": "was",
+     "role": "single main clause, preposition phrase first",
+     "why": "The fronted phrase 'ondanks zijn ziekte' is position one, so 'was' is second and the subject 'hij' follows before 'aanwezig'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted phrase (in spite of)",
+     "text": "Ondanks zijn ziekte"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "predicate",
+     "text": "aanwezig"
+    }
+   ],
+   "meaning": "In spite of his illness he was present.",
+   "order": "The noun 'ziekte' replaces the whole clause 'dat hij ziek was'. The sentence then keeps ordinary verb-second order with inversion.",
+   "forms": "zijn: hij was.",
+   "compare": "English 'in spite of his illness' reads the same; the Dutch verb 'was' directly follows the fronted phrase.",
+   "mistakes": [
+    {
+     "wrong": "Ondanks zijn ziekte hij was aanwezig.",
+     "right": "Ondanks zijn ziekte was hij aanwezig.",
+     "why": "After a fronted phrase the verb comes second: 'was hij'."
+    },
+    {
+     "wrong": "Ondanks zijn ziekte aanwezig was hij.",
+     "right": "Ondanks zijn ziekte was hij aanwezig.",
+     "why": "The predicate 'aanwezig' stands behind the subject."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ondanks dat hij ziek was, was hij aanwezig.",
+    "english": "Even though he was ill, he was present.",
+    "note": "With 'dat' a clause follows and 'was' goes to the end of it."
+   }
+  },
+  "pat-exceptions-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks dat = even though (concession, verb last)",
+    "why": "Your busy day is the obstacle; the offer of help stands anyway."
+   },
+   "situationNl": "Een collega vraagt om een gunst en jouw eigen werk stapelt zich op. Stem toe en noem je eigen drukte.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik help je",
+     "subject": "Ik",
+     "finite": "help",
+     "role": "main clause (what happens anyway)",
+     "why": "'Ik' is first and 'help' second, followed by the object 'je'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ondanks dat ik het druk heb",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks dat' come the subject 'ik', the object 'het' and the predicate 'druk', and the finite verb 'heb' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "help"
+    },
+    {
+     "label": "object",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ondanks dat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "druk"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    }
+   ],
+   "meaning": "I will help you, even though I am busy.",
+   "order": "'Het druk hebben' means to be busy. In the clause the finite verb 'heb' stands last, behind 'het druk'. Read it as \"Ik help je, ondanks dat ik het druk heb\".",
+   "forms": "helpen: ik help. hebben: ik heb.",
+   "compare": "English 'I am busy' uses 'to be'. Dutch uses 'het druk hebben'. For this card: \"Ik help je, ondanks dat ik het druk heb\".",
+   "mistakes": [
+    {
+     "wrong": "Ik help je, ondanks dat ik heb het druk.",
+     "right": "Ik help je, ondanks dat ik het druk heb.",
+     "why": "The finite verb 'heb' goes to the end of the clause."
+    },
+    {
+     "wrong": "Ik help je, ondanks dat ik het druk ben.",
+     "right": "Ik help je, ondanks dat ik het druk heb.",
+     "why": "The expression is 'het druk hebben', not 'zijn'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik help je, hoewel ik het druk heb.",
+    "english": "I will help you, although I am busy.",
+    "note": "Hoewel has the same word order and meaning."
+   }
+  },
+  "pat-exceptions-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks dat = even though (concession, verb last)",
+    "why": "Little money would normally prevent a purchase, but they bought anyway."
+   },
+   "situationNl": "Een jong stel doet een grote aankoop. Begin met hun beperkte middelen en zeg wat ze toch deden.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Ondanks dat ze weinig geld hadden",
+     "subject": "ze",
+     "finite": "hadden",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks dat' come the subject 'ze' and the object 'weinig geld', and the past form 'hadden' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kochten ze een huis",
+     "subject": "ze",
+     "finite": "kochten",
+     "role": "main clause (what happens anyway)",
+     "why": "The finite verb 'kochten' comes first, then the subject 'ze' and the object 'een huis'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (even though)",
+     "text": "Ondanks dat"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "weinig geld"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "hadden"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kochten"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "een huis"
+    }
+   ],
+   "meaning": "Even though they had little money, they bought a house.",
+   "order": "The fronted clause is position one, so the main clause starts with 'kochten ze'. In the clause 'hadden' ends after the object.",
+   "forms": "hebben: ze hadden. kopen: ze kochten.",
+   "compare": "English 'they had little money' keeps 'had' before the object. Dutch puts 'hadden' last in the clause.",
+   "mistakes": [
+    {
+     "wrong": "Ondanks dat ze hadden weinig geld, kochten ze een huis.",
+     "right": "Ondanks dat ze weinig geld hadden, kochten ze een huis.",
+     "why": "The finite verb 'hadden' goes to the end after the object."
+    },
+    {
+     "wrong": "Ondanks dat ze weinig geld hadden, ze kochten een huis.",
+     "right": "Ondanks dat ze weinig geld hadden, kochten ze een huis.",
+     "why": "The main clause starts with the verb: 'kochten ze'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze kochten een huis, ondanks dat ze weinig geld hadden.",
+    "english": "They bought a house, even though they had little money.",
+    "note": "With the main clause first there is no inversion. Compare: Ze kochten een huis, ondanks dat ze weinig geld hadden."
+   }
+  },
+  "pat-exceptions-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks dat = even though (concession, verb last)",
+    "why": "The boredom is a reason to leave, but they stayed."
+   },
+   "situationNl": "Je vertelt over een bioscoopavond. Zeg dat jullie bleven en wat er eigenlijk tegen pleitte.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We bleven tot het einde",
+     "subject": "We",
+     "finite": "bleven",
+     "role": "main clause (what happens anyway)",
+     "why": "'We' is first and 'bleven' second, then the phrase 'tot het einde'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ondanks dat de film saai was",
+     "subject": "de film",
+     "finite": "was",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks dat' come the subject 'de film' and the predicate 'saai', and 'was' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "bleven"
+    },
+    {
+     "label": "phrase",
+     "text": "tot het einde"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ondanks dat"
+    },
+    {
+     "label": "subject",
+     "text": "de film"
+    },
+    {
+     "label": "predicate",
+     "text": "saai"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    }
+   ],
+   "meaning": "We stayed until the end, even though the film was boring.",
+   "order": "The phrase 'tot het einde' is a preposition phrase, not a clause, so it does not move any verb. The ondanks dat-clause ends in 'was'.",
+   "forms": "blijven: wij bleven. zijn: de film was.",
+   "compare": "English 'until the end' behaves the same; the Dutch clause verb goes last.",
+   "mistakes": [
+    {
+     "wrong": "We bleven tot het einde, ondanks dat de film was saai.",
+     "right": "We bleven tot het einde, ondanks dat de film saai was.",
+     "why": "The finite verb 'was' goes to the end after 'saai'."
+    },
+    {
+     "wrong": "We bleven tot het einde, ondanks dat saai was de film.",
+     "right": "We bleven tot het einde, ondanks dat de film saai was.",
+     "why": "In the clause the subject 'de film' comes before the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "We bleven tot het einde, hoewel de film saai was.",
+    "english": "We stayed until the end, although the film was boring.",
+    "note": "Hoewel has the same order and meaning. Compare: We bleven tot het einde, hoewel de film saai was."
+   }
+  },
+  "pat-exceptions-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "ondanks dat = even though (concession, verb last)",
+    "why": "The party was an obstacle to sleeping; the sleep went well anyway."
+   },
+   "situationNl": "Je vertelt een vriend over een nacht met luidruchtige buren. Zeg hoe de nacht verliep voor degene die sliep.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij sliep goed",
+     "subject": "Hij",
+     "finite": "sliep",
+     "role": "main clause (what happens anyway)",
+     "why": "'Hij' is first and 'sliep' second, then the adverb 'goed'. The clause is \"Hij sliep goed\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "ondanks dat de buren feestten",
+     "subject": "de buren",
+     "finite": "feestten",
+     "role": "ondanks dat-clause (the obstacle)",
+     "why": "After 'ondanks dat' come the plural subject 'de buren' and the plural past form 'feestten', which closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "sliep"
+    },
+    {
+     "label": "adverb",
+     "text": "goed"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "ondanks dat"
+    },
+    {
+     "label": "subject",
+     "text": "de buren"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "feestten"
+    }
+   ],
+   "meaning": "He slept well, even though the neighbours were partying.",
+   "order": "The clause is short: subject plus verb. The plural subject 'de buren' needs the plural past 'feestten'. Read it as \"Hij sliep goed, ondanks dat de buren feestten\".",
+   "forms": "slapen: hij sliep. feesten: zij feestten.",
+   "compare": "English 'were partying' is progressive. Dutch uses the plain past 'feestten'.",
+   "mistakes": [
+    {
+     "wrong": "Hij sliep goed, ondanks dat feestten de buren.",
+     "right": "Hij sliep goed, ondanks dat de buren feestten.",
+     "why": "The subject 'de buren' comes before the verb in the clause."
+    },
+    {
+     "wrong": "Hij sliep goed, ondanks dat de buren feestte.",
+     "right": "Hij sliep goed, ondanks dat de buren feestten.",
+     "why": "The plural subject 'de buren' needs 'feestten'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij sliep goed, ook al feestten de buren.",
+    "english": "He slept well, even if the neighbours were partying.",
+    "note": "After 'ook al' the verb follows 'al' directly."
+   }
+  },
+  "pat-exceptions-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "The noticing is what did not happen, and it concerns other people, so a full clause with its own subject is used."
+   },
+   "situationNl": "Een gast verlaat een feest stilletjes. Zeg dat hij wegging en dat niemand van de aanwezigen het in de gaten kreeg.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij vertrok",
+     "subject": "Hij",
+     "finite": "vertrok",
+     "role": "main clause (what happens)",
+     "why": "'Hij' is first and the past form 'vertrok' second; nothing else stands in the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zonder dat iemand het merkte",
+     "subject": "iemand",
+     "finite": "merkte",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come the subject 'iemand' and the object 'het', and the past form 'merkte' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vertrok"
+    },
+    {
+     "label": "conjunction (without)",
+     "text": "zonder dat"
+    },
+    {
+     "label": "subject",
+     "text": "iemand"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "merkte"
+    }
+   ],
+   "meaning": "He left without anyone noticing.",
+   "order": "The clause has its own subject 'iemand', which differs from 'hij'. That is why the short form with 'te' is not available here.",
+   "forms": "vertrekken: hij vertrok. merken: iemand merkte.",
+   "compare": "English 'without anyone noticing' uses an -ing form. Dutch needs a full clause: 'zonder dat iemand het merkte'.",
+   "mistakes": [
+    {
+     "wrong": "Hij vertrok zonder dat iemand merkte het.",
+     "right": "Hij vertrok zonder dat iemand het merkte.",
+     "why": "The finite verb 'merkte' goes to the end after the object."
+    },
+    {
+     "wrong": "Hij vertrok zonder iemand het te merken.",
+     "right": "Hij vertrok zonder dat iemand het merkte.",
+     "why": "A short clause with 'te' needs an unstated subject that is the same as in the main clause; here the noticer is someone else."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij vertrok zonder afscheid te nemen.",
+    "english": "He left without saying goodbye.",
+    "note": "When the same person acts, a short clause with 'te' is used."
+   }
+  },
+  "pat-exceptions-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "Omar skipped the manual; the clause names that omission and the main clause what he did."
+   },
+   "situationNl": "Beschrijf hoe een collega nieuwe software in gebruik nam. Begin met de handeling die hij oversloeg.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zonder dat Omar de handleiding las",
+     "subject": "Omar",
+     "finite": "las",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come the subject 'Omar' and the object 'de handleiding', and the past form 'las' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "installeerde hij het programma",
+     "subject": "hij",
+     "finite": "installeerde",
+     "role": "main clause (what happens)",
+     "why": "The finite verb 'installeerde' comes first, then the subject 'hij' and the object 'het programma'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (without)",
+     "text": "Zonder dat"
+    },
+    {
+     "label": "subject",
+     "text": "Omar"
+    },
+    {
+     "label": "object",
+     "text": "de handleiding"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "las"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "installeerde"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "het programma"
+    }
+   ],
+   "meaning": "Without Omar reading the manual, he installed the program.",
+   "order": "The fronted clause is position one, so the main clause starts with 'installeerde hij'. The subject 'Omar' is repeated by the pronoun 'hij'.",
+   "forms": "lezen: Omar las. installeren: hij installeerde.",
+   "compare": "English 'without Omar reading' uses an -ing form. Dutch uses a finite clause with the verb last.",
+   "mistakes": [
+    {
+     "wrong": "Zonder dat Omar las de handleiding, installeerde hij het programma.",
+     "right": "Zonder dat Omar de handleiding las, installeerde hij het programma.",
+     "why": "The finite verb 'las' goes to the end after the object."
+    },
+    {
+     "wrong": "Zonder dat Omar de handleiding las, hij installeerde het programma.",
+     "right": "Zonder dat Omar de handleiding las, installeerde hij het programma.",
+     "why": "The main clause starts with the verb: 'installeerde hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zonder de handleiding te lezen, installeerde Omar het programma.",
+    "english": "Without reading the manual, Omar installed the program.",
+    "note": "With one subject a short clause with 'te' is possible."
+   }
+  },
+  "pat-exceptions-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "The receptionist's not seeing her is the omitted event, with a different subject."
+   },
+   "situationNl": "Een bezoeker komt een gebouw in en niemand aan de balie ziet het. Zeg wat zij deed en wie het niet zag.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze liep het kantoor binnen",
+     "subject": "Ze",
+     "finite": "liep",
+     "role": "main clause (what happens)",
+     "why": "'Ze' is first and 'liep' second; the object 'het kantoor' follows and the particle 'binnen' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zonder dat de receptionist haar zag",
+     "subject": "de receptionist",
+     "finite": "zag",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come the subject 'de receptionist' and the object 'haar', and the past form 'zag' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "liep"
+    },
+    {
+     "label": "object",
+     "text": "het kantoor"
+    },
+    {
+     "label": "particle",
+     "text": "binnen"
+    },
+    {
+     "label": "conjunction (without)",
+     "text": "zonder dat"
+    },
+    {
+     "label": "subject",
+     "text": "de receptionist"
+    },
+    {
+     "label": "object",
+     "text": "haar"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "zag"
+    }
+   ],
+   "meaning": "She walked into the office without the receptionist seeing her.",
+   "order": "'Binnenlopen' splits as 'liep ... binnen'. In the zonder dat-clause the object 'haar' stands before the verb 'zag'.",
+   "forms": "binnenlopen: liep ... binnen. zien: de receptionist zag.",
+   "compare": "English 'without the receptionist seeing her' uses an -ing form. Dutch uses a clause with 'zag' last.",
+   "mistakes": [
+    {
+     "wrong": "Ze liep binnen het kantoor zonder dat de receptionist haar zag.",
+     "right": "Ze liep het kantoor binnen zonder dat de receptionist haar zag.",
+     "why": "The particle 'binnen' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Ze liep het kantoor binnen zonder dat de receptionist zag haar.",
+     "right": "Ze liep het kantoor binnen zonder dat de receptionist haar zag.",
+     "why": "The finite verb 'zag' goes to the end, after 'haar'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze liep het kantoor binnen en de receptionist zag haar niet.",
+    "english": "She walked into the office and the receptionist did not see her.",
+    "note": "'En' joins two main clauses; no verb moves."
+   }
+  },
+  "pat-exceptions-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "The alarm not going off is what the system makes possible."
+   },
+   "situationNl": "Je legt een collega een nieuw beveiligingssysteem uit. Zeg welke handeling mogelijk is, met het gevolg dat uitblijft.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je kunt de deur openen",
+     "subject": "Je",
+     "finite": "kunt",
+     "role": "main clause (what happens)",
+     "why": "'Je' is first and the modal 'kunt' second; the object 'de deur' and the infinitive 'openen' follow."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zonder dat het alarm afgaat",
+     "subject": "het alarm",
+     "finite": "afgaat",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come the subject 'het alarm' and the joined verb 'afgaat', which closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "modal verb",
+     "text": "kunt"
+    },
+    {
+     "label": "object",
+     "text": "de deur"
+    },
+    {
+     "label": "infinitive",
+     "text": "openen"
+    },
+    {
+     "label": "conjunction (without)",
+     "text": "zonder dat"
+    },
+    {
+     "label": "subject",
+     "text": "het alarm"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "afgaat"
+    }
+   ],
+   "meaning": "You can open the door without the alarm going off.",
+   "order": "The separable verb 'afgaan' is one word in the subordinate clause. In the main clause a modal and an infinitive stand together.",
+   "forms": "kunnen: je kunt. openen: infinitive. afgaan: het alarm gaat af (joined: afgaat).",
+   "compare": "English 'going off' keeps the particle separate. Dutch joins 'afgaat' in a clause.",
+   "mistakes": [
+    {
+     "wrong": "Je kunt de deur openen zonder dat het alarm gaat af.",
+     "right": "Je kunt de deur openen zonder dat het alarm afgaat.",
+     "why": "In a subordinate clause the separable verb is one word: 'afgaat'."
+    },
+    {
+     "wrong": "Je kunt de deur openen zonder dat het alarm afgaan.",
+     "right": "Je kunt de deur openen zonder dat het alarm afgaat.",
+     "why": "The singular subject 'het alarm' needs 'afgaat'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je kunt de deur openen zonder het alarm af te laten gaan.",
+    "english": "You can open the door without setting off the alarm.",
+    "note": "A short clause with 'te' needs the same subject as the main clause."
+   }
+  },
+  "pat-exceptions-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "The speaker did not know; the arranging happened anyway."
+   },
+   "situationNl": "Je ontdekt dat iemand al klaar was met een klus waar jij niets van wist. Begin met je onwetendheid en zeg dan wat er gebeurd was.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zonder dat ik het wist",
+     "subject": "ik",
+     "finite": "wist",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come the subject 'ik' and the object 'het', and the past form 'wist' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "had mijn collega alles geregeld",
+     "subject": "mijn collega",
+     "finite": "had",
+     "role": "main clause (what happens)",
+     "why": "The finite verb 'had' comes first, then the subject 'mijn collega' and the object 'alles'; the participle 'geregeld' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (without)",
+     "text": "Zonder dat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "wist"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "had"
+    },
+    {
+     "label": "subject",
+     "text": "mijn collega"
+    },
+    {
+     "label": "object",
+     "text": "alles"
+    },
+    {
+     "label": "participle",
+     "text": "geregeld"
+    }
+   ],
+   "meaning": "Without my knowing, my colleague had arranged everything.",
+   "order": "The fronted clause is position one, so the main clause starts with 'had mijn collega'. The past perfect 'had ... geregeld' places the arranging before the moment of discovery.",
+   "forms": "weten: ik wist. hebben: had. regelen: geregeld.",
+   "compare": "English 'without my knowing' uses a possessive and -ing. Dutch uses the clause 'ik het wist'.",
+   "mistakes": [
+    {
+     "wrong": "Zonder dat ik wist het, had mijn collega alles geregeld.",
+     "right": "Zonder dat ik het wist, had mijn collega alles geregeld.",
+     "why": "The finite verb 'wist' goes to the end after 'het'."
+    },
+    {
+     "wrong": "Zonder dat ik het wist, mijn collega had alles geregeld.",
+     "right": "Zonder dat ik het wist, had mijn collega alles geregeld.",
+     "why": "The main clause starts with the verb: 'had mijn collega'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Mijn collega had alles geregeld zonder dat ik het wist.",
+    "english": "My colleague had arranged everything without my knowing.",
+    "note": "With the main clause first there is no inversion. Compare: Mijn collega had alles geregeld zonder dat ik het wist."
+   }
+  },
+  "pat-exceptions-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "Taking a break is what did not happen; the subject is the same here, so a short clause would also be possible."
+   },
+   "situationNl": "Je vertelt een vriend over de lange dag van een collega. Zeg dat hij bleef werken en wat hij niet deed.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij werkte de hele dag door",
+     "subject": "Hij",
+     "finite": "werkte",
+     "role": "main clause (what happens)",
+     "why": "'Hij' is first and 'werkte' second; 'de hele dag' follows and the particle 'door' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zonder dat hij pauze nam",
+     "subject": "hij",
+     "finite": "nam",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come the subject 'hij' and the object 'pauze', and the past form 'nam' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "werkte"
+    },
+    {
+     "label": "time phrase",
+     "text": "de hele dag"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "conjunction (without)",
+     "text": "zonder dat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "pauze"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "nam"
+    }
+   ],
+   "meaning": "He worked all day without taking a break.",
+   "order": "'Doorwerken' splits as 'werkte ... door'. The clause has a repeated subject 'hij', which is why the short form 'zonder pauze te nemen' is an alternative.",
+   "forms": "doorwerken: werkte ... door. nemen: hij nam.",
+   "compare": "English 'without taking a break' uses an -ing form. Dutch offers a clause or a short clause with 'te'.",
+   "mistakes": [
+    {
+     "wrong": "Hij werkte door de hele dag zonder dat hij pauze nam.",
+     "right": "Hij werkte de hele dag door zonder dat hij pauze nam.",
+     "why": "The particle 'door' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Hij werkte de hele dag door zonder dat hij nam pauze.",
+     "right": "Hij werkte de hele dag door zonder dat hij pauze nam.",
+     "why": "The finite verb 'nam' goes to the end after the object."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij werkte de hele dag door zonder pauze te nemen.",
+    "english": "He worked all day without taking a break.",
+    "note": "With the same subject a short clause with 'te' is possible."
+   }
+  },
+  "pat-exceptions-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "The not noticing is the omitted event, with 'we' as its own subject."
+   },
+   "situationNl": "Je vertelt over een gezellige avond die heel kort leek. Zeg wat er met de uren gebeurde en wat jullie daarvan niet opmerkten.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De tijd ging voorbij",
+     "subject": "De tijd",
+     "finite": "ging",
+     "role": "main clause (what happens)",
+     "why": "'De tijd' is first and 'ging' second; the particle 'voorbij' closes the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zonder dat we het merkten",
+     "subject": "we",
+     "finite": "merkten",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come the subject 'we' and the object 'het', and the plural past 'merkten' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De tijd"
+    },
+    {
+     "label": "finite verb (split separable, past)",
+     "text": "ging"
+    },
+    {
+     "label": "particle",
+     "text": "voorbij"
+    },
+    {
+     "label": "conjunction (without)",
+     "text": "zonder dat"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "merkten"
+    }
+   ],
+   "meaning": "Time passed without our noticing.",
+   "order": "'Voorbijgaan' splits as 'ging ... voorbij'. The plural subject 'we' needs the plural past 'merkten'. Read it as \"De tijd ging voorbij zonder dat we het merkten\".",
+   "forms": "voorbijgaan: ging ... voorbij. merken: we merkten.",
+   "compare": "English 'without our noticing' is a possessive plus -ing. Dutch uses a plain clause.",
+   "mistakes": [
+    {
+     "wrong": "De tijd ging voorbij zonder dat we merkten het.",
+     "right": "De tijd ging voorbij zonder dat we het merkten.",
+     "why": "The finite verb 'merkten' goes to the end after 'het'."
+    },
+    {
+     "wrong": "De tijd ging voorbij zonder dat we het merkte.",
+     "right": "De tijd ging voorbij zonder dat we het merkten.",
+     "why": "The plural subject 'we' needs 'merkten'. (not \"De tijd ging voorbij zonder dat we het merkte.\", but \"De tijd ging voorbij zonder dat we het merkten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De tijd ging voorbij, maar we merkten het niet.",
+    "english": "Time passed, but we did not notice.",
+    "note": "With 'maar' the second part is a main clause: 'we merkten'."
+   }
+  },
+  "pat-exceptions-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "Nothing was said; the group left anyway."
+   },
+   "situationNl": "Na een gespannen overleg ging iedereen weg. Begin met wat niemand uitsprak en zeg dan wat de groep deed.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Zonder dat er iets is gezegd",
+     "subject": "er iets",
+     "finite": "is",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come 'er' and the subject 'iets', and the passive perfect 'is gezegd' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "zijn ze vertrokken",
+     "subject": "ze",
+     "finite": "zijn",
+     "role": "main clause (what happens)",
+     "why": "The finite verb 'zijn' comes first, then the subject 'ze'; the participle 'vertrokken' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (without)",
+     "text": "Zonder dat"
+    },
+    {
+     "label": "dummy subject",
+     "text": "er"
+    },
+    {
+     "label": "subject",
+     "text": "iets"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "participle",
+     "text": "gezegd"
+    },
+    {
+     "label": "finite verb",
+     "text": "zijn"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "participle",
+     "text": "vertrokken"
+    }
+   ],
+   "meaning": "Without anything having been said, they left.",
+   "order": "'Is gezegd' is a passive perfect: a form of zijn plus a participle. Vertrekken takes zijn, so the main clause is 'zijn ze vertrokken'.",
+   "forms": "zeggen: is gezegd (passive). vertrekken: zijn vertrokken.",
+   "compare": "English 'without anything having been said' needs a long -ing form. Dutch uses a clause with 'is gezegd'.",
+   "mistakes": [
+    {
+     "wrong": "Zonder dat er iets is zeggen, zijn ze vertrokken.",
+     "right": "Zonder dat er iets is gezegd, zijn ze vertrokken.",
+     "why": "The passive needs the participle 'gezegd', not the infinitive 'zeggen'."
+    },
+    {
+     "wrong": "Zonder dat er iets is gezegd, ze zijn vertrokken.",
+     "right": "Zonder dat er iets is gezegd, zijn ze vertrokken.",
+     "why": "The main clause starts with the verb: 'zijn ze vertrokken'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze zijn vertrokken zonder dat er iets is gezegd.",
+    "english": "They left without anything having been said.",
+    "note": "With the main clause first there is no inversion. Compare: Ze zijn vertrokken zonder dat er iets is gezegd."
+   }
+  },
+  "pat-exceptions-21": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "zonder ... te = without -ing (same subject, no finite verb in the short clause)",
+    "why": "The omitted action has the same subject as the main clause, so a short clause with 'te' is used instead of 'zonder dat'."
+   },
+   "situationNl": "Je beschrijft een onbeleefd vertrek. Zeg wat de man deed en wat hij naliet, met dezelfde persoon in beide handelingen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij vertrok zonder afscheid te nemen",
+     "subject": "Hij",
+     "finite": "vertrok",
+     "role": "main clause with a short zonder ... te phrase",
+     "why": "'Hij' is first and 'vertrok' second; the short phrase 'zonder afscheid te nemen' follows and has no finite verb."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vertrok"
+    },
+    {
+     "label": "preposition (without)",
+     "text": "zonder"
+    },
+    {
+     "label": "object",
+     "text": "afscheid"
+    },
+    {
+     "label": "particle (te)",
+     "text": "te"
+    },
+    {
+     "label": "infinitive",
+     "text": "nemen"
+    }
+   ],
+   "meaning": "He left without saying goodbye.",
+   "order": "The short clause 'zonder afscheid te nemen' contains an infinitive with 'te' and no subject; it takes its subject from 'hij'. There is no second finite verb.",
+   "forms": "vertrekken: hij vertrok. afscheid nemen: infinitive.",
+   "compare": "English 'without saying goodbye' uses an -ing form. Dutch uses 'zonder ... te' plus the infinitive.",
+   "mistakes": [
+    {
+     "wrong": "Hij vertrok zonder dat afscheid te nemen.",
+     "right": "Hij vertrok zonder afscheid te nemen.",
+     "why": "'Zonder dat' needs a full clause with its own verb; the short form uses 'zonder ... te'."
+    },
+    {
+     "wrong": "Hij vertrok zonder om afscheid te nemen.",
+     "right": "Hij vertrok zonder afscheid te nemen.",
+     "why": "After 'zonder' you do not add 'om': 'zonder afscheid te nemen'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij vertrok zonder dat iemand afscheid nam.",
+    "english": "He left without anyone saying goodbye.",
+    "note": "With a different subject a full clause is needed."
+   }
+  },
+  "pat-exceptions-22": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "zonder ... te = without -ing (same subject, no finite verb in the short clause)",
+    "why": "The fronted phrase has no finite verb; the subject of 'lezen' is Omar, taken from the main clause."
+   },
+   "situationNl": "Beschrijf hoe een collega met een programma begon. Begin met de stap die hij oversloeg, met dezelfde persoon in beide handelingen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zonder de handleiding te lezen, installeerde Omar het programma",
+     "subject": "Omar",
+     "finite": "installeerde",
+     "role": "main clause with a fronted zonder ... te phrase",
+     "why": "The fronted phrase fills position one, so the finite verb 'installeerde' is second and the subject 'Omar' follows it, before the object 'het programma'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "preposition (without)",
+     "text": "Zonder"
+    },
+    {
+     "label": "object",
+     "text": "de handleiding"
+    },
+    {
+     "label": "particle (te)",
+     "text": "te"
+    },
+    {
+     "label": "infinitive",
+     "text": "lezen"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "installeerde"
+    },
+    {
+     "label": "subject",
+     "text": "Omar"
+    },
+    {
+     "label": "object",
+     "text": "het programma"
+    }
+   ],
+   "meaning": "Without reading the manual, Omar installed the program.",
+   "order": "The short phrase is position one, so the verb 'installeerde' is second and the subject follows. Only one finite verb appears.",
+   "forms": "lezen: infinitive. installeren: Omar installeerde.",
+   "compare": "English 'Without reading the manual' is identical in structure; Dutch adds 'te' before the infinitive.",
+   "mistakes": [
+    {
+     "wrong": "Zonder de handleiding lezen, installeerde Omar het programma.",
+     "right": "Zonder de handleiding te lezen, installeerde Omar het programma.",
+     "why": "The infinitive needs 'te' after 'zonder': 'te lezen'."
+    },
+    {
+     "wrong": "Zonder de handleiding te lezen, Omar installeerde het programma.",
+     "right": "Zonder de handleiding te lezen, installeerde Omar het programma.",
+     "why": "After the fronted phrase the verb comes second: 'installeerde Omar'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zonder dat Omar de handleiding las, installeerde hij het programma.",
+    "english": "Without Omar reading the manual, he installed the program.",
+    "note": "The full-clause version puts the verb 'las' last."
+   }
+  },
+  "pat-exceptions-23": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "zonder = without, as a preposition (no clause)",
+    "why": "'Jou' is a pronoun, so no second verb is needed and the sentence is one main clause."
+   },
+   "situationNl": "Een vriend wil eerder vertrekken van een feest en jij wilt hem niet alleen laten. Zeg dat jij alleen samen met hem of haar vertrekt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ga niet weg zonder jou",
+     "subject": "Ik",
+     "finite": "ga",
+     "role": "single main clause with a preposition phrase",
+     "why": "'Ik' is first and 'ga' second; 'niet' and the particle 'weg' follow, then the phrase 'zonder jou'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "ga"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "particle",
+     "text": "weg"
+    },
+    {
+     "label": "preposition (without)",
+     "text": "zonder"
+    },
+    {
+     "label": "pronoun",
+     "text": "jou"
+    }
+   ],
+   "meaning": "I am not leaving without you.",
+   "order": "'Weggaan' splits as 'ga ... weg'. The phrase 'zonder jou' stands at the end and contains no verb. Read it as \"Ik ga niet weg zonder jou\".",
+   "forms": "weggaan: ga ... weg.",
+   "compare": "English 'leave without you' keeps the particle out; Dutch has the separable verb.",
+   "mistakes": [
+    {
+     "wrong": "Ik ga niet weg zonder dat jou.",
+     "right": "Ik ga niet weg zonder jou.",
+     "why": "'Zonder dat' needs a clause; a pronoun alone follows 'zonder'."
+    },
+    {
+     "wrong": "Ik niet ga weg zonder jou.",
+     "right": "Ik ga niet weg zonder jou.",
+     "why": "The finite verb comes second: 'Ik ga niet weg'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik ga niet weg zonder dat jij meegaat.",
+    "english": "I am not leaving without you coming along.",
+    "note": "With a clause 'zonder dat' is used and 'meegaat' ends it."
+   }
+  },
+  "pat-exceptions-24": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "zonder dat = without (something that does not happen)",
+    "why": "The lamp being on is the condition she cannot do without."
+   },
+   "situationNl": "Je vertelt over de slaapgewoonte van een vriendin. Zeg wat ze nodig heeft om in te slapen en welke voorwaarde dat stelt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze kan niet slapen",
+     "subject": "Ze",
+     "finite": "kan",
+     "role": "main clause (what happens)",
+     "why": "'Ze' is first and the modal 'kan' second; 'niet' and the infinitive 'slapen' follow."
+    },
+    {
+     "kind": "bijzin",
+     "text": "zonder dat de lamp aan is",
+     "subject": "de lamp",
+     "finite": "is",
+     "role": "zonder dat-clause (what does not happen)",
+     "why": "After 'zonder dat' come the subject 'de lamp' and the predicate 'aan', and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "modal verb",
+     "text": "kan"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "infinitive",
+     "text": "slapen"
+    },
+    {
+     "label": "conjunction (without)",
+     "text": "zonder dat"
+    },
+    {
+     "label": "subject",
+     "text": "de lamp"
+    },
+    {
+     "label": "predicate",
+     "text": "aan"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "She cannot sleep without the lamp being on.",
+   "order": "A modal and its infinitive stand in the main clause. The zonder dat-clause ends in 'is' after the predicate 'aan'.",
+   "forms": "kunnen: ze kan. slapen: infinitive. zijn: de lamp is.",
+   "compare": "English 'without the lamp being on' uses an -ing form. Dutch uses a clause with 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Ze kan niet slapen zonder dat de lamp is aan.",
+     "right": "Ze kan niet slapen zonder dat de lamp aan is.",
+     "why": "The finite verb 'is' goes to the end after 'aan'."
+    },
+    {
+     "wrong": "Ze kan niet slapen zonder dat aan is de lamp.",
+     "right": "Ze kan niet slapen zonder dat de lamp aan is.",
+     "why": "In the clause the subject 'de lamp' comes before the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze kan alleen slapen als de lamp aan is.",
+    "english": "She can only sleep if the lamp is on.",
+    "note": "'Alleen ... als' expresses the same condition positively."
+   }
+  },
+  "pat-exceptions-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = besides the fact that (addition)",
+    "why": "The shopping is already given; the sports come on top of it, which the word 'ook' in the main clause signals."
+   },
+   "situationNl": "Je vertelt een toerist wat een stadsdeel te bieden heeft: eerst één mogelijkheid, daarna nog meer. Begin met wat al vaststaat.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Behalve dat je er kunt winkelen",
+     "subject": "je",
+     "finite": "kunt",
+     "role": "behalve dat-clause (what is already given)",
+     "why": "After 'behalve dat' come the subject 'je' and the place word 'er', and the modal group 'kunt winkelen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kun je er ook verschillende sporten beoefenen",
+     "subject": "je",
+     "finite": "kun",
+     "role": "main clause (the further point)",
+     "why": "The modal 'kun' comes first, then the subject 'je', the words 'er ook', the object 'verschillende sporten' and the infinitive 'beoefenen'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (besides)",
+     "text": "Behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "er"
+    },
+    {
+     "label": "modal verb",
+     "text": "kunt"
+    },
+    {
+     "label": "infinitive",
+     "text": "winkelen"
+    },
+    {
+     "label": "modal verb",
+     "text": "kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "er ook"
+    },
+    {
+     "label": "object",
+     "text": "verschillende sporten"
+    },
+    {
+     "label": "infinitive",
+     "text": "beoefenen"
+    }
+   ],
+   "meaning": "Besides being able to shop there, you can also do various sports there.",
+   "order": "The fronted clause is position one, so the main clause starts with 'kun je'. In the clause the modal 'kunt' stands before the infinitive 'winkelen' at the end.",
+   "forms": "kunnen: je kunt (clause), kun je (main clause, after inversion). winkelen, beoefenen: infinitives.",
+   "compare": "English 'besides being able to shop' uses an -ing form. Dutch uses 'behalve dat' plus a clause.",
+   "mistakes": [
+    {
+     "wrong": "Behalve dat je er kunt winkelen, je kunt er ook verschillende sporten beoefenen.",
+     "right": "Behalve dat je er kunt winkelen, kun je er ook verschillende sporten beoefenen.",
+     "why": "After the fronted clause the main clause starts with the verb: 'kun je'."
+    },
+    {
+     "wrong": "Behalve dat kunt je er winkelen, kun je er ook verschillende sporten beoefenen.",
+     "right": "Behalve dat je er kunt winkelen, kun je er ook verschillende sporten beoefenen.",
+     "why": "In the clause the subject 'je' comes before the modal 'kunt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Buiten dat je er kunt winkelen, kun je er ook verschillende sporten beoefenen.",
+    "english": "Besides being able to shop there, you can also do various sports there.",
+    "note": "'Buiten dat' is an equivalent introduction with the same order."
+   }
+  },
+  "pat-exceptions-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "buiten dat = besides the fact that (addition, same as behalve dat)",
+    "why": "The size is given, and the location comes on top of it, marked by 'ook'."
+   },
+   "situationNl": "Je raadt een park aan met twee sterke punten. Begin met de eerste eigenschap en zeg wat er nog meer is.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Buiten dat het park groot is",
+     "subject": "het park",
+     "finite": "is",
+     "role": "behalve dat-clause (what is already given)",
+     "why": "After 'buiten dat' come the subject 'het park' and the predicate 'groot', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "ligt het ook heel mooi aan het water",
+     "subject": "het",
+     "finite": "ligt",
+     "role": "main clause (the further point)",
+     "why": "The finite verb 'ligt' comes first, then the subject 'het', 'ook', the degree words 'heel mooi' and the phrase 'aan het water'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (besides)",
+     "text": "Buiten dat"
+    },
+    {
+     "label": "subject",
+     "text": "het park"
+    },
+    {
+     "label": "predicate",
+     "text": "groot"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb",
+     "text": "ligt"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "ook"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "heel mooi"
+    },
+    {
+     "label": "phrase",
+     "text": "aan het water"
+    }
+   ],
+   "meaning": "Besides being large, the park is also beautifully situated by the water.",
+   "order": "The fronted clause fills position one, so the main clause starts with 'ligt het'. 'Ook' signals the added point.",
+   "forms": "zijn: het park is. liggen: het ligt.",
+   "compare": "English 'besides being large' has no clause. Dutch has 'buiten dat' plus a full clause.",
+   "mistakes": [
+    {
+     "wrong": "Buiten dat het park groot is, het ligt ook heel mooi aan het water.",
+     "right": "Buiten dat het park groot is, ligt het ook heel mooi aan het water.",
+     "why": "The main clause starts with the verb: 'ligt het'."
+    },
+    {
+     "wrong": "Buiten dat het park is groot, ligt het ook heel mooi aan het water.",
+     "right": "Buiten dat het park groot is, ligt het ook heel mooi aan het water.",
+     "why": "The finite verb 'is' goes to the end after 'groot'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Behalve dat het park groot is, ligt het ook heel mooi aan het water.",
+    "english": "Besides being large, the park is also beautifully situated by the water.",
+    "note": "'Behalve dat' is the more common wording and has the same order."
+   }
+  },
+  "pat-exceptions-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = except that (exception)",
+    "why": "The verdict 'good day' holds except for the rain, so the clause names the exception."
+   },
+   "situationNl": "Je vat een dag uit samen en noemt het ene ding dat de dag tegenzat. Begin met je oordeel.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het was een goede dag",
+     "subject": "Het",
+     "finite": "was",
+     "role": "main clause (the general statement)",
+     "why": "'Het' is first and 'was' second, followed by the predicate 'een goede dag'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "behalve dat het de hele tijd regende",
+     "subject": "het",
+     "finite": "regende",
+     "role": "behalve dat-clause (the exception)",
+     "why": "After 'behalve dat' come the dummy subject 'het' and the time phrase 'de hele tijd', and the past form 'regende' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "predicate",
+     "text": "een goede dag"
+    },
+    {
+     "label": "conjunction (except that)",
+     "text": "behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "time phrase",
+     "text": "de hele tijd"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "regende"
+    }
+   ],
+   "meaning": "It was a good day, except that it rained the whole time.",
+   "order": "The main clause is complete before the comma. The exception clause is subordinate and ends in 'regende' after the time phrase.",
+   "forms": "zijn: het was. regenen: het regende.",
+   "compare": "English 'except that' also takes a clause; the Dutch verb 'regende' stands last.",
+   "mistakes": [
+    {
+     "wrong": "Het was een goede dag, behalve dat het regende de hele tijd.",
+     "right": "Het was een goede dag, behalve dat het de hele tijd regende.",
+     "why": "The time phrase 'de hele tijd' comes before the verb: 'de hele tijd regende'."
+    },
+    {
+     "wrong": "Het was een goede dag, behalve het de hele tijd regende.",
+     "right": "Het was een goede dag, behalve dat het de hele tijd regende.",
+     "why": "The word 'dat' is part of the conjunction and must stay before a clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het was een goede dag, maar het regende de hele tijd.",
+    "english": "It was a good day, but it rained the whole time.",
+    "note": "With 'maar' the second part is a main clause."
+   }
+  },
+  "pat-exceptions-28": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = except that (exception)",
+    "why": "Everything is done apart from one fact, which the clause states."
+   },
+   "situationNl": "Je geeft een tussenstand over een verhuizing: bijna alles is klaar, op één punt na. Noem het punt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Alles is geregeld",
+     "subject": "Alles",
+     "finite": "is",
+     "role": "main clause (the general statement)",
+     "why": "'Alles' is first and 'is' second, followed by the participle 'geregeld'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "behalve dat de sleutels nog ontbreken",
+     "subject": "de sleutels",
+     "finite": "ontbreken",
+     "role": "behalve dat-clause (the exception)",
+     "why": "After 'behalve dat' come the plural subject 'de sleutels' and 'nog', and the plural verb 'ontbreken' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Alles"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "participle",
+     "text": "geregeld"
+    },
+    {
+     "label": "conjunction (except that)",
+     "text": "behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "de sleutels"
+    },
+    {
+     "label": "adverb",
+     "text": "nog"
+    },
+    {
+     "label": "finite verb",
+     "text": "ontbreken"
+    }
+   ],
+   "meaning": "Everything is arranged, except that the keys are still missing.",
+   "order": "The main clause is a passive-like state with 'is geregeld'. The exception clause is subordinate, so 'ontbreken' stands last.",
+   "forms": "zijn: alles is. regelen: geregeld. ontbreken: de sleutels ontbreken.",
+   "compare": "English 'are still missing' is progressive. Dutch uses the plain present 'ontbreken'.",
+   "mistakes": [
+    {
+     "wrong": "Alles is geregeld, behalve dat ontbreken de sleutels nog.",
+     "right": "Alles is geregeld, behalve dat de sleutels nog ontbreken.",
+     "why": "The finite verb 'ontbreken' goes to the end of the clause."
+    },
+    {
+     "wrong": "Alles is geregeld, behalve dat de sleutels nog ontbreekt.",
+     "right": "Alles is geregeld, behalve dat de sleutels nog ontbreken.",
+     "why": "The plural subject 'de sleutels' needs 'ontbreken'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Alles is geregeld, alleen de sleutels ontbreken nog.",
+    "english": "Everything is arranged, only the keys are still missing.",
+    "note": "'Alleen' starts a new main clause with the verb second."
+   }
+  },
+  "pat-exceptions-29": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = besides the fact that (addition)",
+    "why": "Hard work is given; creativity is added, marked by 'ook'."
+   },
+   "situationNl": "Je maakt een collega een compliment over twee sterke kanten. Begin met de eerste, de inzet, en voeg de tweede toe.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Behalve dat hij hard werkt",
+     "subject": "hij",
+     "finite": "werkt",
+     "role": "behalve dat-clause (what is already given)",
+     "why": "After 'behalve dat' come the subject 'hij' and the adverb 'hard', and the finite verb 'werkt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is hij ook erg creatief",
+     "subject": "hij",
+     "finite": "is",
+     "role": "main clause (the further point)",
+     "why": "The finite verb 'is' comes first, then the subject 'hij', 'ook' and the predicate 'erg creatief'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (besides)",
+     "text": "Behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "hard"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "ook"
+    },
+    {
+     "label": "predicate",
+     "text": "erg creatief"
+    }
+   ],
+   "meaning": "Besides working hard, he is also very creative.",
+   "order": "The fronted clause is position one, so the main clause starts with 'is hij'. The word 'ook' marks the second point.",
+   "forms": "werken: hij werkt. zijn: hij is.",
+   "compare": "English 'besides working hard' uses -ing. Dutch uses a clause with 'werkt' last.",
+   "mistakes": [
+    {
+     "wrong": "Behalve dat hij hard werkt, hij is ook erg creatief.",
+     "right": "Behalve dat hij hard werkt, is hij ook erg creatief.",
+     "why": "The main clause starts with the verb: 'is hij'."
+    },
+    {
+     "wrong": "Behalve dat hij werkt hard, is hij ook erg creatief.",
+     "right": "Behalve dat hij hard werkt, is hij ook erg creatief.",
+     "why": "The adverb 'hard' stands before the verb: 'hard werkt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij werkt hard en is ook erg creatief.",
+    "english": "He works hard and is also very creative.",
+    "note": "'En' joins two verbs without a subordinate clause."
+   }
+  },
+  "pat-exceptions-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = except that (exception)",
+    "why": "'Niets' is almost true; one fact is the exception."
+   },
+   "situationNl": "Een vriend vraagt wat je van een nieuwe kennis weet. Zeg dat het weinig is en noem het enige wat je wel kent.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik weet niets over haar",
+     "subject": "Ik",
+     "finite": "weet",
+     "role": "main clause (the general statement)",
+     "why": "'Ik' is first and 'weet' second; the object 'niets' and the phrase 'over haar' follow."
+    },
+    {
+     "kind": "bijzin",
+     "text": "behalve dat ze in Utrecht woont",
+     "subject": "ze",
+     "finite": "woont",
+     "role": "behalve dat-clause (the exception)",
+     "why": "After 'behalve dat' come the subject 'ze' and the phrase 'in Utrecht', and the finite verb 'woont' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    },
+    {
+     "label": "phrase",
+     "text": "over haar"
+    },
+    {
+     "label": "conjunction (except that)",
+     "text": "behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "phrase",
+     "text": "in Utrecht"
+    },
+    {
+     "label": "finite verb",
+     "text": "woont"
+    }
+   ],
+   "meaning": "I know nothing about her, except that she lives in Utrecht.",
+   "order": "A negative main clause is followed by the exception clause. The clause is subordinate, so 'woont' stands last after the place phrase.",
+   "forms": "weten: ik weet. wonen: ze woont.",
+   "compare": "English 'except that she lives in Utrecht' has the same shape; the Dutch verb goes last.",
+   "mistakes": [
+    {
+     "wrong": "Ik weet niets over haar, behalve dat ze woont in Utrecht.",
+     "right": "Ik weet niets over haar, behalve dat ze in Utrecht woont.",
+     "why": "The finite verb 'woont' goes to the end after the place phrase."
+    },
+    {
+     "wrong": "Ik weet niets over haar, behalve ze in Utrecht woont.",
+     "right": "Ik weet niets over haar, behalve dat ze in Utrecht woont.",
+     "why": "Before a clause 'behalve' needs 'dat'. (not \"Ik weet niets over haar, behalve ze in Utrecht woont.\", but \"Ik weet niets over haar, behalve dat ze in Utrecht woont.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet niets over haar, behalve haar naam.",
+    "english": "I know nothing about her, except her name.",
+    "note": "Before a noun 'behalve' is a preposition and there is no clause."
+   }
+  },
+  "pat-exceptions-31": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = except that (exception)",
+    "why": "The positive verdict holds except for one weakness."
+   },
+   "situationNl": "Je beoordeelt een film voor een vriend. Geef een positief oordeel en noem het ene punt van kritiek.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De film was prima",
+     "subject": "De film",
+     "finite": "was",
+     "role": "main clause (the general statement)",
+     "why": "'De film' is first and 'was' second, followed by the predicate 'prima'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "behalve dat het einde te snel kwam",
+     "subject": "het einde",
+     "finite": "kwam",
+     "role": "behalve dat-clause (the exception)",
+     "why": "After 'behalve dat' come the subject 'het einde' and 'te snel', and the past form 'kwam' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De film"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "predicate",
+     "text": "prima"
+    },
+    {
+     "label": "conjunction (except that)",
+     "text": "behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "het einde"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "te snel"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "kwam"
+    }
+   ],
+   "meaning": "The film was excellent, except that the ending came too fast.",
+   "order": "The clause names the single fault; its verb 'kwam' stands at the end, after 'te snel'. Read it as \"De film was prima, behalve dat het einde te snel kwam\".",
+   "forms": "zijn: de film was. komen: het einde kwam.",
+   "compare": "English 'came too fast' keeps the adverb after the verb. Dutch puts 'te snel' before 'kwam'.",
+   "mistakes": [
+    {
+     "wrong": "De film was prima, behalve dat het einde kwam te snel.",
+     "right": "De film was prima, behalve dat het einde te snel kwam.",
+     "why": "The finite verb 'kwam' goes to the end of the clause."
+    },
+    {
+     "wrong": "De film was prima, behalve het einde te snel kwam.",
+     "right": "De film was prima, behalve dat het einde te snel kwam.",
+     "why": "Before a clause 'behalve' needs 'dat'. (not \"De film was prima, behalve het einde te snel kwam.\", but \"De film was prima, behalve dat het einde te snel kwam.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De film was prima, hoewel het einde te snel kwam.",
+    "english": "The film was excellent, although the ending came too fast.",
+    "note": "Hoewel gives a concession; behalve dat names the single exception."
+   }
+  },
+  "pat-exceptions-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = besides the fact that (addition)",
+    "why": "Two negative points: the high price is given and the weak quality is added."
+   },
+   "situationNl": "Je beoordeelt een product met twee nadelen. Begin met het eerste, de kosten, en voeg het tweede toe.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Behalve dat de prijs hoog is",
+     "subject": "de prijs",
+     "finite": "is",
+     "role": "behalve dat-clause (what is already given)",
+     "why": "After 'behalve dat' come the subject 'de prijs' and the predicate 'hoog', and the finite verb 'is' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "valt de kwaliteit tegen",
+     "subject": "de kwaliteit",
+     "finite": "valt",
+     "role": "main clause (the further point)",
+     "why": "The finite verb 'valt' comes first, then the subject 'de kwaliteit'; the particle 'tegen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (besides)",
+     "text": "Behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "de prijs"
+    },
+    {
+     "label": "predicate",
+     "text": "hoog"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "valt"
+    },
+    {
+     "label": "subject",
+     "text": "de kwaliteit"
+    },
+    {
+     "label": "particle",
+     "text": "tegen"
+    }
+   ],
+   "meaning": "Besides the price being high, the quality is disappointing.",
+   "order": "'Tegenvallen' splits as 'valt ... tegen'. The fronted clause makes the main clause start with 'valt de kwaliteit'.",
+   "forms": "zijn: de prijs is. tegenvallen: valt ... tegen.",
+   "compare": "English 'is disappointing' is a phrase; Dutch uses the separable verb 'tegenvallen'.",
+   "mistakes": [
+    {
+     "wrong": "Behalve dat de prijs hoog is, valt tegen de kwaliteit.",
+     "right": "Behalve dat de prijs hoog is, valt de kwaliteit tegen.",
+     "why": "The particle 'tegen' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Behalve dat de prijs hoog is, de kwaliteit valt tegen.",
+     "right": "Behalve dat de prijs hoog is, valt de kwaliteit tegen.",
+     "why": "The main clause starts with the verb: 'valt de kwaliteit'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De kwaliteit valt tegen, behalve dat de prijs hoog is.",
+    "english": "The quality is disappointing, except that the price is high.",
+    "note": "Reversed order changes the sense to an exception, not an addition."
+   }
+  },
+  "pat-exceptions-33": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "behalve = except, before a noun (no clause)",
+    "why": "'Sanne' is a name, so the phrase has no verb and the sentence is a single main clause."
+   },
+   "situationNl": "Je meldt de opkomst van een teamoverleg. Bijna het hele team was aanwezig; noem de enige die ontbrak.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Iedereen was er, behalve Sanne",
+     "subject": "Iedereen",
+     "finite": "was",
+     "role": "single main clause with an exception phrase",
+     "why": "'Iedereen' is first and 'was' second; 'er' follows and the exception phrase 'behalve Sanne' ends the sentence."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Iedereen"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "adverb",
+     "text": "er"
+    },
+    {
+     "label": "preposition (except)",
+     "text": "behalve"
+    },
+    {
+     "label": "noun",
+     "text": "Sanne"
+    }
+   ],
+   "meaning": "Everyone was there, except Sanne.",
+   "order": "The exception phrase follows the main clause and carries no verb. With a clause it would need 'dat' and a final verb.",
+   "forms": "zijn: iedereen was.",
+   "compare": "English 'except Sanne' is the same; Dutch 'behalve Sanne' adds no verb.",
+   "mistakes": [
+    {
+     "wrong": "Iedereen was er, behalve dat Sanne.",
+     "right": "Iedereen was er, behalve Sanne.",
+     "why": "Before a name there is no clause, so 'dat' is wrong."
+    },
+    {
+     "wrong": "Iedereen er was, behalve Sanne.",
+     "right": "Iedereen was er, behalve Sanne.",
+     "why": "The finite verb 'was' is second: 'Iedereen was er'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Iedereen was er, behalve dat Sanne ziek was.",
+    "english": "Everyone was there, except that Sanne was ill.",
+    "note": "With 'dat' a clause follows and 'was' goes last."
+   }
+  },
+  "pat-exceptions-34": {
+   "status": "ai-editorial-checked",
+   "pattern": "inverted",
+   "sense": {
+    "label": "behalve = besides, before a noun (no clause)",
+    "why": "'Wijn' is a noun, so there is no clause and the main clause keeps verb-second order."
+   },
+   "situationNl": "Je beschrijft een feest en noemt eerst één drank en voegt een tweede toe. Begin met de eerste, met alleen een zelfstandig naamwoord.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Behalve wijn dronken ze ook bier",
+     "subject": "ze",
+     "finite": "dronken",
+     "role": "single main clause, addition phrase first",
+     "why": "The fronted phrase 'behalve wijn' fills position one, so the finite verb 'dronken' is second and the subject 'ze' follows it before 'ook bier'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "fronted phrase (besides)",
+     "text": "Behalve wijn"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "dronken"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "adverb",
+     "text": "ook"
+    },
+    {
+     "label": "object",
+     "text": "bier"
+    }
+   ],
+   "meaning": "Besides wine they also drank beer.",
+   "order": "The phrase 'behalve wijn' replaces a clause with 'behalve dat'. The word 'ook' marks the added item. Read it as \"Behalve wijn dronken ze ook bier\".",
+   "forms": "drinken: ze dronken.",
+   "compare": "English 'besides wine they also drank beer' follows the same logic with inversion in the main clause.",
+   "mistakes": [
+    {
+     "wrong": "Behalve wijn ze dronken ook bier.",
+     "right": "Behalve wijn dronken ze ook bier.",
+     "why": "After a fronted phrase the verb comes second: 'dronken ze'."
+    },
+    {
+     "wrong": "Behalve wijn dronken ook ze bier.",
+     "right": "Behalve wijn dronken ze ook bier.",
+     "why": "The subject 'ze' follows the verb directly."
+    }
+   ],
+   "contrast": {
+    "dutch": "Behalve dat ze wijn dronken, dronken ze ook bier.",
+    "english": "Besides drinking wine, they also drank beer.",
+    "note": "With 'dat' a clause follows and 'dronken' goes last in it."
+   }
+  },
+  "pat-exceptions-35": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = except that (exception)",
+    "why": "The positive description holds except for the flaw."
+   },
+   "situationNl": "Je beschrijft een collega voor een nieuwkomer. Noem een prettige eigenschap en het ene minpunt.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij is aardig",
+     "subject": "Hij",
+     "finite": "is",
+     "role": "main clause (the general statement)",
+     "why": "'Hij' is first and 'is' second, followed by the predicate 'aardig'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "behalve dat hij soms te laat komt",
+     "subject": "hij",
+     "finite": "komt",
+     "role": "behalve dat-clause (the exception)",
+     "why": "After 'behalve dat' come the subject 'hij', 'soms' and 'te laat', and the finite verb 'komt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "aardig"
+    },
+    {
+     "label": "conjunction (except that)",
+     "text": "behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "soms"
+    },
+    {
+     "label": "adverb phrase",
+     "text": "te laat"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    }
+   ],
+   "meaning": "He is nice, except that he sometimes comes too late.",
+   "order": "'Te laat komen' is a fixed expression. In the clause the verb 'komt' stands last, after 'soms te laat'. Read it as \"Hij is aardig, behalve dat hij soms te laat komt\".",
+   "forms": "zijn: hij is. komen: hij komt (te laat komen).",
+   "compare": "English 'comes too late' keeps the verb before 'too late'. Dutch puts 'te laat' first.",
+   "mistakes": [
+    {
+     "wrong": "Hij is aardig, behalve dat hij komt soms te laat.",
+     "right": "Hij is aardig, behalve dat hij soms te laat komt.",
+     "why": "The finite verb 'komt' goes to the end of the clause. (not \"Hij is aardig, behalve dat hij komt soms te laat.\", but \"Hij is aardig, behalve dat hij soms te laat komt.\")"
+    },
+    {
+     "wrong": "Hij is aardig, behalve dat hij soms komt te laat.",
+     "right": "Hij is aardig, behalve dat hij soms te laat komt.",
+     "why": "The adverbs stand before the final verb: 'soms te laat komt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij is aardig, maar hij komt soms te laat.",
+    "english": "He is nice, but he sometimes comes too late.",
+    "note": "With 'maar' the second part is a main clause: 'hij komt'."
+   }
+  },
+  "pat-exceptions-36": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "behalve dat = besides the fact that (addition)",
+    "why": "Leading is already stated; doing the work comes on top, marked by 'ook'."
+   },
+   "situationNl": "Je beschrijft een leidinggevende met een dubbele rol. Begin met haar positie en voeg haar taak toe.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Behalve dat zij de leiding heeft",
+     "subject": "zij",
+     "finite": "heeft",
+     "role": "behalve dat-clause (what is already given)",
+     "why": "After 'behalve dat' come the subject 'zij' and the object 'de leiding', and the finite verb 'heeft' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "doet ze ook het meeste werk",
+     "subject": "ze",
+     "finite": "doet",
+     "role": "main clause (the further point)",
+     "why": "The finite verb 'doet' comes first, then the subject 'ze', 'ook' and the object 'het meeste werk'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (besides)",
+     "text": "Behalve dat"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "object",
+     "text": "de leiding"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    },
+    {
+     "label": "finite verb",
+     "text": "doet"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "adverb",
+     "text": "ook"
+    },
+    {
+     "label": "object",
+     "text": "het meeste werk"
+    }
+   ],
+   "meaning": "Besides being in charge, she also does most of the work.",
+   "order": "'De leiding hebben' means to be in charge. The fronted clause ends in 'heeft', and the main clause starts with 'doet ze'.",
+   "forms": "hebben: zij heeft (de leiding hebben). doen: ze doet.",
+   "compare": "English 'being in charge' is an -ing phrase. Dutch uses 'de leiding hebben' in a clause.",
+   "mistakes": [
+    {
+     "wrong": "Behalve dat zij heeft de leiding, doet ze ook het meeste werk.",
+     "right": "Behalve dat zij de leiding heeft, doet ze ook het meeste werk.",
+     "why": "The finite verb 'heeft' goes to the end after the object."
+    },
+    {
+     "wrong": "Behalve dat zij de leiding heeft, ze doet ook het meeste werk.",
+     "right": "Behalve dat zij de leiding heeft, doet ze ook het meeste werk.",
+     "why": "The main clause starts with the verb: 'doet ze'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ze doet ook het meeste werk, behalve dat zij de leiding heeft.",
+    "english": "She also does most of the work, except that she is in charge.",
+    "note": "Reversed order changes the sense from addition to exception."
+   }
+  }
+ }
+}

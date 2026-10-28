@@ -14,7 +14,7 @@ import { Icon, type IconName } from "@/components/ui/Icon";
  */
 const TABS: readonly { href: string; label: string; icon: IconName; match: readonly string[]; session?: boolean }[] = [
   { href: "/", label: "Today", icon: "today", match: [] },
-  { href: "/flashcards", label: "Practise", icon: "practise", match: ["/flashcards", "/quiz", "/learn", "/sentences"], session: true },
+  { href: "/flashcards", label: "Practise", icon: "practise", match: ["/flashcards", "/quiz", "/learn", "/sentences", "/grammar"], session: true },
   { href: "/vocabulary", label: "Words", icon: "words", match: ["/vocabulary", "/game"] },
   { href: "/stats", label: "Progress", icon: "progress", match: ["/stats", "/account"] },
 ];

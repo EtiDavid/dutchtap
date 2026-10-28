@@ -18,6 +18,7 @@ export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; 
       <span className="mt-1 block text-xs font-normal text-muted">Tap to expand the complete topic guide; close it when speaking.</span>
     </summary>
     <div className="mt-4 space-y-5 border-t border-border pt-4">
+      <h2 className="sr-only">Topic guide: {lesson.title}</h2>
       <div className="rounded-xl bg-accent-soft p-4"><p className="font-bold">Your goal</p><p className="mt-2 text-sm leading-relaxed">{lesson.goal}</p><p className="mt-2 text-sm leading-relaxed">{lesson.overview}</p></div>
       <section aria-label="Word order formulas" className="space-y-3">
         <h3 className="font-bold">Sentence formulas · why before how</h3>

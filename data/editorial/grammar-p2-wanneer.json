@@ -1,0 +1,1112 @@
+[
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer de server klaar is, laat ik het je weten.",
+    "english": "When the server is ready, I'll let you know.",
+    "scenario": "Promise to report once a system is ready.",
+    "scenarioNl": "De server draait een zware taak die nog even duurt. Beloof je collega dat je hem bericht geeft op het juiste moment.",
+    "why": "The wanneer-clause opens the sentence and ends in is; the main clause inverts to laat ik.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer je het formulier invult, krijg je een bevestiging.",
+    "english": "When you fill in the form, you get a confirmation.",
+    "scenario": "Explain what follows after submitting a form.",
+    "scenarioNl": "Een klant vraagt wat er gebeurt na het invullen van het online formulier. Leg de vaste procedure uit.",
+    "why": "Invult is the joined separable verb at the end; krijg je follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer het regent, blijven we binnen.",
+    "english": "When it rains, we stay inside.",
+    "scenario": "State the team's rule for bad weather.",
+    "scenarioNl": "Een nieuwe stagiair wil weten wat jullie doen bij slecht weer. Leg de afspraak uit.",
+    "why": "Regent closes the clause; blijven we inverts in the main clause.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer ik tijd heb, ga ik hardlopen.",
+    "english": "When I have time, I go running.",
+    "scenario": "Say what you do in your free time.",
+    "scenarioNl": "Een kennis vraagt hoe je je vrije uren besteedt. Vertel je gewoonte.",
+    "why": "Heb closes the time clause; ga ik follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer de klant belt, noteer ik zijn vraag.",
+    "english": "When the customer calls, I note down his question.",
+    "scenario": "Describe your routine for incoming calls.",
+    "scenarioNl": "Je legt een collega uit hoe jij telefoontjes van klanten afhandelt. Beschrijf je werkwijze.",
+    "why": "Belt closes the clause; noteer ik follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer het systeem opnieuw opstart, controleer ik de logs.",
+    "english": "When the system restarts, I check the logs.",
+    "scenario": "Describe your routine after a restart.",
+    "scenarioNl": "Na elke herstart van het systeem doe je dezelfde controle. Vertel wat je dan doet.",
+    "why": "Opstart is the joined separable verb; controleer ik follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer jullie aankomen, sta ik bij de ingang.",
+    "english": "When you arrive, I'll be standing at the entrance.",
+    "scenario": "Tell visitors where you will wait.",
+    "scenarioNl": "Je ontvangt morgen gasten die het gebouw niet kennen. Zeg waar zij je kunnen vinden bij hun komst.",
+    "why": "Aankomen is plural and joined; sta ik follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer ik thuiskom, begin ik meteen met koken.",
+    "english": "When I get home, I start cooking right away.",
+    "scenario": "Describe your evening routine.",
+    "scenarioNl": "Een vriend vraagt naar je gewone avond. Vertel wat je allereerst doet na je werk.",
+    "why": "Thuiskom is joined at the end; begin ik follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer de update klaar is, ontvangen alle gebruikers een bericht.",
+    "english": "When the update is ready, all users receive a message.",
+    "scenario": "Explain how users will be informed.",
+    "scenarioNl": "Gebruikers vragen hoe ze merken dat de nieuwe versie beschikbaar is. Leg de melding uit.",
+    "why": "Is closes the clause; ontvangen alle gebruikers inverts.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer u op de knop drukt, begint de test.",
+    "english": "When you press the button, the test starts.",
+    "scenario": "Give formal instructions to a visitor.",
+    "scenarioNl": "Je begeleidt een bezoeker bij een demonstratie. Leg hem beleefd uit wat er na de handeling gebeurt.",
+    "why": "Drukt closes the clause with formal u; begint de test follows.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer het donker wordt, gaan de lampen automatisch aan.",
+    "english": "When it gets dark, the lights switch on automatically.",
+    "scenario": "Explain an automatic lighting system.",
+    "scenarioNl": "Een bezoeker ziet de verlichting in de tuin en vraagt hoe die werkt. Leg het uit.",
+    "why": "Wordt closes the clause; gaan de lampen ... aan splits aangaan.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer de koffie klaar is, roep ik jullie.",
+    "english": "When the coffee is ready, I'll call you.",
+    "scenario": "Tell the group you will fetch them.",
+    "scenarioNl": "Je zet koffie voor het team, dat nog druk aan het werk is. Zeg dat je ze waarschuwt op het goede moment.",
+    "why": "Is closes the clause; roep ik follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer je een fout vindt, meld je die direct.",
+    "english": "When you find an error, you report it straight away.",
+    "scenario": "State the rule for reporting mistakes.",
+    "scenarioNl": "Een nieuwe collega vraagt hoe jullie met vergissingen omgaan. Leg de regel uit.",
+    "why": "Vindt closes the clause; meld je follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer iedereen er is, beginnen we met de presentatie.",
+    "english": "When everyone is here, we start the presentation.",
+    "scenario": "Say when the session will start.",
+    "scenarioNl": "Een paar mensen ontbreken nog in de zaal. Zeg op welk punt jullie van start gaan.",
+    "why": "Is closes the clause; beginnen we inverts.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer het weekend begint, sluiten we het kantoor.",
+    "english": "When the weekend starts, we close the office.",
+    "scenario": "Explain the weekend closing rule.",
+    "scenarioNl": "Een leverancier wil weten of er in het weekend iemand aanwezig is. Leg de regel uit.",
+    "why": "Begint closes the clause; sluiten we follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer ik de resultaten heb, bel ik je terug.",
+    "english": "When I have the results, I'll call you back.",
+    "scenario": "Promise a callback once you have information.",
+    "scenarioNl": "Een klant wacht op uitslagen van een controle. Beloof hem een terugbelmoment.",
+    "why": "Heb closes the clause; bel ik ... terug splits terugbellen.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik bel je terug wanneer ik de resultaten heb.",
+    "english": "I'll call you back when I have the results.",
+    "scenario": "Promise a callback once you have information.",
+    "scenarioNl": "Een klant wil weten of hij nog van je hoort. Beloof een telefoontje op het juiste moment.",
+    "why": "The main clause comes first with normal order; heb closes the wanneer-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "We vieren het wanneer het project klaar is.",
+    "english": "We'll celebrate when the project is finished.",
+    "scenario": "Say when the team will celebrate.",
+    "scenarioNl": "Het team werkt hard aan een groot project. Vertel wat jullie dan van plan zijn.",
+    "why": "Vieren is second; is closes the wanneer-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Zij komt langs wanneer ze in de buurt is.",
+    "english": "She drops by when she is in the area.",
+    "scenario": "Say when she drops by on a visit.",
+    "scenarioNl": "Een vriendin woont ver weg maar komt soms in jullie regio. Vertel op welk moment ze op bezoek komt.",
+    "why": "Komt ... langs splits langskomen; is closes the wanneer-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Hij wil rusten wanneer hij vandaag klaar is.",
+    "english": "He wants to rest when he is done today.",
+    "scenario": "Say what he plans after work.",
+    "scenarioNl": "Een collega heeft een zware dag. Vertel wat hij zich voorneemt.",
+    "why": "Wil rusten is a modal chain; is closes the wanneer-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Je mag beginnen wanneer iedereen aanwezig is.",
+    "english": "You may start when everyone is present.",
+    "scenario": "Give permission with a condition.",
+    "scenarioNl": "Een groep wacht op het teken om met de oefening te starten. Zeg onder welke voorwaarde ze mogen beginnen.",
+    "why": "Mag beginnen is a modal chain; is closes the wanneer-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Het alarm gaat af wanneer de temperatuur te hoog wordt.",
+    "english": "The alarm goes off when the temperature gets too high.",
+    "scenario": "Explain how a warning system works.",
+    "scenarioNl": "Een technicus vraagt hoe de beveiliging van de serverruimte reageert. Leg het principe uit.",
+    "why": "Gaat ... af splits afgaan; wordt closes the clause after te hoog.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik stuur de factuur wanneer de betaling binnen is.",
+    "english": "I send the invoice when the payment is in.",
+    "scenario": "Explain your billing routine.",
+    "scenarioNl": "Een nieuwe collega boekhouding vraagt naar jouw volgorde. Leg uit wat je eerst afwacht.",
+    "why": "Stuur ... is second; is closes the clause after binnen.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "De gebruikers loggen in wanneer ze toegang hebben gekregen.",
+    "english": "The users log in when they have been given access.",
+    "scenario": "Explain when users can sign in.",
+    "scenarioNl": "Een beheerder vraagt vanaf welk moment nieuwe accounts bruikbaar zijn. Leg de voorwaarde uit.",
+    "why": "Loggen ... in splits inloggen; hebben gekregen closes the clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik bereid de presentatie voor wanneer ik de cijfers ken.",
+    "english": "I prepare the presentation when I know the figures.",
+    "scenario": "Describe your work order.",
+    "scenarioNl": "Een collega vraagt op welk punt jij aan je slides begint. Leg uit wat je eerst nodig hebt.",
+    "why": "Bereid ... voor splits voorbereiden; ken closes the clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Je kunt me bereiken wanneer je me nodig hebt.",
+    "english": "You can reach me when you need me.",
+    "scenario": "Offer availability to a colleague.",
+    "scenarioNl": "Een nieuwe collega durft je niet te storen. Stel hem gerust over je bereikbaarheid.",
+    "why": "Kunt bereiken is a modal chain; nodig hebt closes the clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "We starten de back-up wanneer het kantoor sluit.",
+    "english": "We start the backup when the office closes.",
+    "scenario": "Explain the backup schedule.",
+    "scenarioNl": "Een auditor vraagt naar jullie back-upbeleid. Leg uit op welk punt van de dag het begint.",
+    "why": "Starten is second; sluit closes the wanneer-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Zij sluit de deur wanneer ze weggaat.",
+    "english": "She closes the door when she leaves.",
+    "scenario": "Describe a colleague's habit.",
+    "scenarioNl": "Je vertelt een stagiair over de gewoontes van een collega. Beschrijf wat zij bij haar vertrek doet.",
+    "why": "Sluit is second; weggaat is joined at the end.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik pak mijn jas wanneer het gaat regenen.",
+    "english": "I take my coat when it's going to rain.",
+    "scenario": "Say how you prepare for rain.",
+    "scenarioNl": "Een vriend vraagt hoe je je kleedt bij dreigend weer. Vertel je gewoonte.",
+    "why": "Pak ... is second; gaat regenen closes the clause with finite gaat.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "De bus vertrekt wanneer de chauffeur klaar is.",
+    "english": "The bus leaves when the driver is ready.",
+    "scenario": "Explain how the bus is timed.",
+    "scenarioNl": "Een toerist vraagt hoe laat de bus precies rijdt. Leg uit waarvan het vertrek afhangt.",
+    "why": "Vertrekt is second; is closes the wanneer-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer komt de monteur langs?",
+    "english": "When is the technician coming by?",
+    "scenario": "Ask when a repairman will visit.",
+    "scenarioNl": "Je wacht op een reparatie aan je verwarming. Vraag naar het tijdstip van het bezoek.",
+    "why": "A direct question: wanneer opens and the finite verb komt is second; langs ends it.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer is de volgende vergadering?",
+    "english": "When is the next meeting?",
+    "scenario": "Ask about the next meeting date.",
+    "scenarioNl": "Je hebt de laatste uitnodiging gemist. Vraag naar de datum van het volgende overleg.",
+    "why": "Is follows wanneer directly; the subject comes after.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer sluit het kantoor vandaag?",
+    "english": "When does the office close today?",
+    "scenario": "Ask about today's closing time.",
+    "scenarioNl": "Je moet nog iets afhandelen op een andere afdeling. Vraag naar het uur van sluiting.",
+    "why": "Sluit follows wanneer directly; vandaag ends it.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer kan ik je bellen?",
+    "english": "When can I call you?",
+    "scenario": "Ask about a good time to phone.",
+    "scenarioNl": "Je wilt een collega spreken maar hij zit vaak in overleg. Vraag naar zijn beschikbaarheid.",
+    "why": "Kan follows wanneer; the infinitive bellen ends the question.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer heb je tijd voor een kort gesprek?",
+    "english": "When do you have time for a short talk?",
+    "scenario": "Ask a colleague for a time to talk.",
+    "scenarioNl": "Je hebt een korte vraag over je taken. Vraag je collega naar een gaatje in zijn agenda.",
+    "why": "Heb follows wanneer; je comes next.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer is de update klaar?",
+    "english": "When will the update be ready?",
+    "scenario": "Ask for the completion time.",
+    "scenarioNl": "De nieuwe versie wordt al uren geïnstalleerd. Vraag naar het verwachte einde.",
+    "why": "Is follows wanneer; de update is the subject.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer gaan jullie op vakantie?",
+    "english": "When are you going on holiday?",
+    "scenario": "Ask about holiday plans.",
+    "scenarioNl": "Een buurfamilie praat over de zomer. Vraag naar het vertrek van hun reis.",
+    "why": "Gaan follows wanneer; op vakantie is the destination phrase.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer hebt u de klacht ontvangen?",
+    "english": "When did you receive the complaint?",
+    "scenario": "Ask formally about a past moment.",
+    "scenarioNl": "Je onderzoekt een klacht van een klant en spreekt een collega formeel aan. Vraag naar de ontvangst ervan.",
+    "why": "Hebt follows wanneer; the participle ontvangen ends the question.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer begint de training voor nieuwe collega's?",
+    "english": "When does the training for new colleagues start?",
+    "scenario": "Ask about a training date.",
+    "scenarioNl": "Je begeleidt iemand die net binnenkomt. Vraag naar het startmoment van de inwerpcursus.",
+    "why": "Begint follows wanneer directly.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer wordt het pakket bezorgd?",
+    "english": "When will the package be delivered?",
+    "scenario": "Ask about a delivery.",
+    "scenarioNl": "Je volgt een bestelling die al dagen onderweg is. Vraag de koerier naar de levering.",
+    "why": "Wordt follows wanneer; the participle bezorgd ends the passive.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer heb je het ticket gesloten?",
+    "english": "When did you close the ticket?",
+    "scenario": "Ask about an action time.",
+    "scenarioNl": "Een klant betwist de afhandeling van zijn melding. Vraag je collega naar het moment van afsluiten.",
+    "why": "Heb follows wanneer; the participle gesloten ends the question.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer moeten wij het rapport opsturen?",
+    "english": "When do we have to send in the report?",
+    "scenario": "Ask about a deadline.",
+    "scenarioNl": "Je team schrijft een rapport voor de directie. Vraag naar de uiterste dag.",
+    "why": "Moeten follows wanneer; the infinitive opsturen ends the question.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer zijn jullie teruggekomen?",
+    "english": "When did you come back?",
+    "scenario": "Ask a friend about his return from a trip.",
+    "scenarioNl": "Een vriend was lang op reis. Vraag naar zijn terugkeer.",
+    "why": "Zijn follows wanneer; the participle teruggekomen ends the question.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer zullen we de nieuwe versie uitrollen?",
+    "english": "When shall we roll out the new version?",
+    "scenario": "Propose planning a rollout.",
+    "scenarioNl": "Het team heeft een nieuwe versie klaar. Vraag collega's naar het geschikte moment voor invoering.",
+    "why": "Zullen follows wanneer; uitrollen is the final infinitive.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer kom jij terug van je reis?",
+    "english": "When are you coming back from your trip?",
+    "scenario": "Ask about a return date.",
+    "scenarioNl": "Een vriend zit nog in het buitenland. Vraag hem naar zijn thuiskomst.",
+    "why": "Kom follows wanneer; terug ends the verb group with van je reis.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer weet u meer over de oorzaak?",
+    "english": "When will you know more about the cause?",
+    "scenario": "Ask a specialist about timing.",
+    "scenarioNl": "Een storing blijft onverklaard. Vraag de analist formeel naar de verwachte uitkomst.",
+    "why": "Weet follows wanneer; u comes next.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik weet nog niet wanneer de reparatie begint.",
+    "english": "I don't know yet when the repair starts.",
+    "scenario": "Say you lack the date.",
+    "scenarioNl": "Een klant wil weten op welke dag jij begint. Je hebt nog geen planning. Zeg eerlijk hoe het zit.",
+    "why": "Weet is second; begint closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Kunt u mij zeggen wanneer het loket opengaat?",
+    "english": "Can you tell me when the counter opens?",
+    "scenario": "Politely ask for opening time.",
+    "scenarioNl": "Je staat voor een dicht loket. Vraag formeel naar het uur van opening.",
+    "why": "Kunt ... zeggen is the polite frame; opengaat is joined at the end.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Weet jij wanneer de deadline verstrijkt?",
+    "english": "Do you know when the deadline expires?",
+    "scenario": "Ask a colleague about the due date.",
+    "scenarioNl": "Je twijfelt over de einddatum van een opdracht. Vraag een collega of hij het weet.",
+    "why": "Weet jij is the yes/no frame; verstrijkt closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik zou graag willen weten wanneer de resultaten komen.",
+    "english": "I would like to know when the results will come.",
+    "scenario": "Ask politely for the results timing.",
+    "scenarioNl": "Je wacht op uitslagen en wilt niet opdringerig zijn. Vraag beleefd naar de planning.",
+    "why": "Zou ... willen weten is the polite frame; komen closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Hij vroeg wanneer wij de fout hadden ontdekt.",
+    "english": "He asked when we had discovered the error.",
+    "scenario": "Report a colleague's question.",
+    "scenarioNl": "Een collega wilde de ontdekking van een fout terugvinden. Vertel wat hij je vroeg.",
+    "why": "Vroeg is second; hadden ontdekt closes the embedded question in the past perfect.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Zij vertelt wanneer de bus vertrekt.",
+    "english": "She tells us when the bus leaves.",
+    "scenario": "Report what she says about the bus timetable.",
+    "scenarioNl": "Een reisgenoot heeft de dienstregeling gelezen. Vertel wat zij het gezelschap meedeelt.",
+    "why": "Vertelt is second; vertrekt closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Niemand weet precies wanneer het probleem is ontstaan.",
+    "english": "Nobody knows exactly when the problem arose.",
+    "scenario": "Say the origin is unclear.",
+    "scenarioNl": "Een storing heeft een onduidelijk begin. Vertel wat de collega's over de oorsprong weten.",
+    "why": "Weet is second; is ontstaan closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik wil begrijpen wanneer de storing zich voordoet.",
+    "english": "I want to understand when the fault occurs.",
+    "scenario": "Express a diagnostic goal.",
+    "scenarioNl": "Een storing komt en gaat op onvoorspelbare tijden. Leg uit wat je wilt achterhalen.",
+    "why": "Wil begrijpen is a modal chain; voordoet is joined at the end.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Laat me weten wanneer je klaar bent.",
+    "english": "Let me know when you are ready.",
+    "scenario": "Ask a colleague to tell you when finished.",
+    "scenarioNl": "Een collega is bezig met een taak waar jij op wacht. Vraag hem je te berichten op het juiste moment.",
+    "why": "The imperative Laat starts the sentence; bent closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "We moeten afspreken wanneer we elkaar spreken.",
+    "english": "We have to agree when we'll talk to each other.",
+    "scenario": "Propose fixing a time.",
+    "scenarioNl": "Je team heeft nog geen gezamenlijk overlegmoment. Stel voor een tijdstip vast te leggen.",
+    "why": "Moeten afspreken is a modal chain; spreken closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik heb geen idee wanneer het systeem weer werkt.",
+    "english": "I have no idea when the system will work again.",
+    "scenario": "Admit you don't know the recovery time.",
+    "scenarioNl": "Een gebruiker vraagt naar het herstel van het systeem. Zeg openhartig wat je ervan weet.",
+    "why": "Heb geen idee is the frame; werkt closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "De klant wil weten wanneer hij zijn geld terugkrijgt.",
+    "english": "The customer wants to know when he gets his money back.",
+    "scenario": "Report a customer question.",
+    "scenarioNl": "Een klant heeft een terugbetaling gevraagd. Vertel je collega wat hij wil horen.",
+    "why": "Wil weten is a modal chain; terugkrijgt is joined at the end.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Kunt u uitleggen wanneer ik de wijziging moet melden?",
+    "english": "Can you explain when I have to report the change?",
+    "scenario": "Ask about a procedure.",
+    "scenarioNl": "Je bent nieuw in de afdeling en kent de regels niet. Vraag formeel naar het moment van melden.",
+    "why": "Kunt ... uitleggen is the frame; moet melden closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik onthoud nooit wanneer de vuilnis wordt opgehaald.",
+    "english": "I never remember when the rubbish is collected.",
+    "scenario": "Complain about forgetting.",
+    "scenarioNl": "Je mist steeds de ophaaldag van het afval. Vertel dat je het niet kunt onthouden.",
+    "why": "Onthoud is second; wordt opgehaald closes the embedded question.",
+    "focus": "indirect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "indirect"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer ik vroeger vrij was, ging ik fietsen.",
+    "english": "Whenever I was free in the past, I went cycling.",
+    "scenario": "Describe a past habit.",
+    "scenarioNl": "Je vertelt een collega over je jeugdhobby's. Beschrijf wat je regelmatig deed in je vrije uren.",
+    "why": "Was closes the wanneer-clause; ging ik fietsen is the main clause with a repeated meaning.",
+    "focus": "repeated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "repeated"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer het lang regende, bleef de hond binnen.",
+    "english": "Whenever it rained for a long time, the dog stayed inside.",
+    "scenario": "Describe a repeated pattern.",
+    "scenarioNl": "Je vertelt wat het huisdier deed bij aanhoudend slecht weer in het verleden. Beschrijf de gewoonte.",
+    "why": "Regende closes the clause; bleef de hond inverts.",
+    "focus": "repeated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "repeated"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer mijn vader thuiskwam, aten we altijd samen.",
+    "english": "Whenever my father came home, we always ate together.",
+    "scenario": "Describe a family routine.",
+    "scenarioNl": "Je haalt herinneringen op aan het gezinsleven vroeger. Vertel wat er elke keer gebeurde.",
+    "why": "Thuiskwam is joined; aten we altijd samen follows.",
+    "focus": "repeated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "repeated"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer de klant belde, nam ik altijd meteen op.",
+    "english": "Whenever the customer called, I always picked up immediately.",
+    "scenario": "Describe a service habit.",
+    "scenarioNl": "Je vertelt over je vroegere werkwijze op de servicedesk. Beschrijf hoe je steeds reageerde.",
+    "why": "Belde closes the clause; nam ik ... op splits opnemen.",
+    "focus": "repeated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "repeated"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer wij op vakantie gingen, bracht ik de sleutel naar de buren.",
+    "english": "Whenever we went on holiday, I took the key to the neighbours.",
+    "scenario": "Describe a yearly routine.",
+    "scenarioNl": "Je vertelt over een vaste gewoonte voor het weggaan. Beschrijf wat je telkens regelde.",
+    "why": "Gingen closes the clause after op vakantie; bracht ik inverts.",
+    "focus": "repeated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "repeated"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Zij gaf haar kinderen een kus wanneer ze naar bed gingen.",
+    "english": "She gave her children a kiss whenever they went to bed.",
+    "scenario": "Describe a bedtime habit.",
+    "scenarioNl": "Je beschrijft de avondgewoonte van een moeder uit een oud verhaal. Zeg wat zij elke keer deed.",
+    "why": "Gaf is second; gingen closes the wanneer-clause after naar bed.",
+    "focus": "repeated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "repeated"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Hij werd nerveus wanneer hij moest presenteren.",
+    "english": "He got nervous whenever he had to present.",
+    "scenario": "Describe a recurring reaction.",
+    "scenarioNl": "Een collega heeft last van spanning. Vertel hoe hij telkens reageerde op bepaalde momenten.",
+    "why": "Werd is second; moest presenteren closes the clause with finite moest.",
+    "focus": "repeated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "repeated"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer de post kwam, hielden we de deur open.",
+    "english": "Whenever the post came, we held the door open.",
+    "scenario": "Describe the old office routine at mail time.",
+    "scenarioNl": "Je vertelt over het kantoor van vroeger. Beschrijf wat er bij de dagelijkse bezorging gebeurde.",
+    "why": "Kwam closes the clause; hielden we inverts.",
+    "focus": "repeated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "repeated"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer je het formulier hebt ingevuld, kun je betalen.",
+    "english": "When you have filled in the form, you can pay.",
+    "scenario": "Explain the next step.",
+    "scenarioNl": "Een klant is bijna klaar met zijn online bestelling. Leg uit welke handeling hem nog rest.",
+    "why": "Hebt ingevuld is a perfect group at the end; kun je follows with inversion.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Ik ga pas weg wanneer alle klanten zijn geholpen.",
+    "english": "I'll only leave when all customers have been helped.",
+    "scenario": "Say when you will leave.",
+    "scenarioNl": "Het is sluitingstijd, maar er staan nog mensen in de rij. Zeg onder welke voorwaarde je naar huis gaat.",
+    "why": "Ga ... weg splits weggaan; zijn geholpen closes the clause.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer niemand reageert, sturen we een herinnering.",
+    "english": "When nobody responds, we send a reminder.",
+    "scenario": "Explain the follow-up rule.",
+    "scenarioNl": "Een enquête krijgt weinig antwoorden. Leg uit wat de afspraak is bij uitblijven van reacties.",
+    "why": "Reageert closes the clause; sturen we inverts.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Je kunt het wijzigen wanneer je wilt.",
+    "english": "You can change it whenever you want.",
+    "scenario": "Offer freedom of timing.",
+    "scenarioNl": "Een klant twijfelt over een boeking. Stel hem gerust over zijn mogelijkheden.",
+    "why": "Kunt wijzigen is a modal chain; wilt closes the wanneer-clause.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Hij zal het weten wanneer het zover is.",
+    "english": "He will know when the time comes.",
+    "scenario": "Predict future awareness.",
+    "scenarioNl": "Je stelt een bezorgd familielid gerust over een beslissing. Zeg dat de ander het vanzelf merkt.",
+    "why": "Zal weten is a future chain; is closes the clause after zover.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "wanneer",
+    "dutch": "Wanneer het moet, werken wij ook in het weekend.",
+    "english": "When necessary, we also work at the weekend.",
+    "scenario": "State your flexibility.",
+    "scenarioNl": "Een klant vraagt of jullie bereikbaar zijn buiten kantooruren. Geef een eerlijk antwoord.",
+    "why": "Moet closes the clause; werken wij inverts.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-wanneer-v1",
+      "focus": "other"
+    }
+  }
+]

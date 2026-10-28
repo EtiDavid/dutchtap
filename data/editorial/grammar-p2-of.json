@@ -1,0 +1,722 @@
+[
+  {
+    "topic": "of",
+    "dutch": "Ik weet niet of hij komt.",
+    "english": "I don't know whether he is coming.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een vriend wil weten wat jij hoort over de komst van een gezamenlijke kennis naar het feest. Zeg dat je het antwoord niet hebt.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik vraag me af of het gaat regenen.",
+    "english": "I wonder whether it is going to rain.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je kijkt naar de lucht voor een wandeling. Zeg wat je je afvraagt over het weer.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Zij vraagt of de winkel open is.",
+    "english": "She asks whether the shop is open.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt wat je zus wil weten voor zij de deur uitgaat. Geef haar vraag weer.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "We onderzoeken of het probleem opnieuw optreedt.",
+    "english": "We are investigating whether the problem occurs again.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een klant belt over een eerdere storing. Zeg wat jullie nu controleren.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Hij twijfelt of hij moet bellen.",
+    "english": "He hesitates whether he should call.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over je broer die een lastig gesprek voor zich uitschuift. Beschrijf zijn dilemma.",
+    "why": "A modal can close the of-clause or stand second in the main clause; the infinitive goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik ben benieuwd of ze het leuk vindt.",
+    "english": "I'm curious whether she likes it.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je hebt een cadeau gegeven. Vertel wat je spannend vindt aan haar reactie.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Kun je nagaan of de printer werkt?",
+    "english": "Can you check whether the printer works?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega loopt langs een apparaat. Vraag hem iets te controleren.",
+    "why": "A direct question keeps question order; the embedded of-clause sends its verb to the end.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Weet je of de bus nog rijdt?",
+    "english": "Do you know whether the bus is still running?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Het is laat en je staat bij een halte. Vraag het aan een voorbijganger.",
+    "why": "A direct question keeps question order; the embedded of-clause sends its verb to the end.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik wil weten of jij mee kunt.",
+    "english": "I want to know whether you can come along.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je organiseert een uitje. Zeg tegen een collega wat je van hem nodig hebt.",
+    "why": "A modal can close the of-clause or stand second in the main clause; the infinitive goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik heb gevraagd of ik vrij mag nemen.",
+    "english": "I asked whether I may take time off.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega vraagt hoe het met je vakantie staat. Vertel wat je bij de leidinggevende hebt gedaan.",
+    "why": "The perfect group in the of-clause or main clause stands at the end of its clause.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Hij vroeg of wij hadden gegeten.",
+    "english": "He asked whether we had eaten.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over een bezoeker van gisteren. Geef zijn vraag weer in de verleden tijd.",
+    "why": "The reported question stays in the past; the of-clause verb goes to the end.",
+    "focus": "past",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "past"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Zij wist niet of hij was vertrokken.",
+    "english": "She did not know whether he had left.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over een verwarde situatie bij de balie. Zeg waar zij geen zekerheid over had.",
+    "why": "The past perfect shows what was settled before the main-clause moment; the auxiliary and participle close the clause.",
+    "focus": "pastperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "pastperfect"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik zie nog niet of de update is gelukt.",
+    "english": "I can't yet see whether the update has succeeded.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een manager wil een status. Zeg wat je op dit moment nog niet kunt melden.",
+    "why": "The perfect group in the of-clause or main clause stands at the end of its clause.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Laat me weten of het je lukt.",
+    "english": "Let me know whether you manage.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega krijgt een lastige taak. Geef hem een korte opdracht voor terugkoppeling.",
+    "why": "An imperative main clause followed by an of-clause with the verb last.",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "imperative"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Vraag of de dokter tijd heeft.",
+    "english": "Ask whether the doctor has time.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vriend staat bij de balie van een praktijk. Zeg wat hij moet vragen.",
+    "why": "An imperative main clause followed by an of-clause with the verb last.",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "imperative"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik hoor niet of ze thuis is.",
+    "english": "I can't hear whether she is home.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je staat voor een deur en luistert. Zeg wat je niet kunt vaststellen.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik kan niet zeggen of het waar is.",
+    "english": "I can't say whether it is true.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega vertelt een gerucht. Reageer voorzichtig.",
+    "why": "A modal can close the of-clause or stand second in the main clause; the infinitive goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Niemand weet of het project doorgaat.",
+    "english": "Nobody knows whether the project is going ahead.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Op kantoor heerst onzekerheid. Beschrijf de stemming over een plan.",
+    "why": "A separable verb is written together in the of-clause and splits in the main clause.",
+    "focus": "sep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "sep"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "De klant wil weten of de levering vandaag komt.",
+    "english": "The customer wants to know whether the delivery is coming today.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je geeft een collega door wat een klant belde. Zeg waarover hij zekerheid wil.",
+    "why": "A modal can close the of-clause or stand second in the main clause; the infinitive goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik controleer eerst of alles klopt.",
+    "english": "First I check whether everything is correct.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega wil snel verder met een rapportage. Zeg welke stap je eerst zet.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Zij is niet zeker of ze de baan wil.",
+    "english": "She isn't sure whether she wants the job.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over een vriendin met een aanbod. Beschrijf haar twijfel.",
+    "why": "A modal can close the of-clause or stand second in the main clause; the infinitive goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Het hangt ervan af of het regent.",
+    "english": "It depends on whether it rains.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een vriend wil weten hoe het zit met de barbecue. Geef een antwoord dat van het weer afhangt.",
+    "why": "A separable verb is written together in the of-clause and splits in the main clause.",
+    "focus": "sep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "sep"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Of het gaat regenen, weet niemand.",
+    "english": "Whether it is going to rain, nobody knows.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je bent met een groep op pad zonder weerbericht. Zeg wat niemand kan zeggen.",
+    "why": "An of-clause in first position fills position one, so the main clause inverts.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Of hij komt, weet ik niet.",
+    "english": "Whether he's coming, I don't know.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je antwoordt kortaf op een vraag over een gast. Zet het onderwerp van de twijfel voorop.",
+    "why": "An of-clause in first position fills position one, so the main clause inverts.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Of ze het begrepen heeft, is nog de vraag.",
+    "english": "Whether she has understood it is still the question.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je spreekt over een leerling na een lastige uitleg. Zeg wat nog niet vaststaat.",
+    "why": "An of-clause in first position fills position one, so the main clause inverts.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik weet niet of ik moet lachen of huilen.",
+    "english": "I don't know whether to laugh or cry.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je bent geraakt door een vreemd nieuwsbericht. Beschrijf je gemengde gevoel.",
+    "why": "Of can be the embedded whether and the coordinating or in the same sentence; only the first introduces a clause.",
+    "focus": "orcontrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "orcontrast"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik vraag of je thee of koffie wilt.",
+    "english": "I'm asking whether you want tea or coffee.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je neemt de bestelling op voor een gast. Geef de keuze weer die je voorlegt.",
+    "why": "Of can be the embedded whether and the coordinating or in the same sentence; only the first introduces a clause.",
+    "focus": "orcontrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "orcontrast"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Wil je thee of koffie?",
+    "english": "Do you want tea or coffee?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een gast komt binnen. Bied hem iets te drinken aan en laat hem kiezen.",
+    "why": "Here of is the coordinating conjunction 'or': it joins two options and does not send a verb to the end.",
+    "focus": "or",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "or"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "We kunnen hier eten of thuis bestellen.",
+    "english": "We can eat here or order in.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Jullie hebben honger en er zijn twee opties. Leg ze voor.",
+    "why": "Here of is the coordinating conjunction 'or': it joins two options and does not send a verb to the end.",
+    "focus": "or",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "or"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Je moet meedoen, of je nu wilt of niet.",
+    "english": "You have to take part, whether you want to or not.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega weigert aan een verplichte training mee te doen. Maak duidelijk dat zijn voorkeur niets uitmaakt.",
+    "why": "Of ... of niet means whether or not; it follows the main clause after a comma and its verb stands before the repeated 'of niet'.",
+    "focus": "concession",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "concession"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "We gaan wandelen, of het nu regent of niet.",
+    "english": "We are going for a walk, whether it rains or not.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een vriend twijfelt door het weer. Zeg dat het plan hoe dan ook doorgaat.",
+    "why": "Of ... of niet means whether or not; it follows the main clause after a comma and its verb stands before the repeated 'of niet'.",
+    "focus": "concession",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "concession"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Het maakt niet uit of je komt.",
+    "english": "It doesn't matter whether you come.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Iemand voelt zich verplicht. Stel hem gerust over de afspraak.",
+    "why": "A separable verb is written together in the of-clause and splits in the main clause.",
+    "focus": "sep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "sep"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik weet niet of hij thuis is of op kantoor.",
+    "english": "I don't know whether he is at home or at the office.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een bezoeker vraagt waar je collega zit. Geef twee mogelijkheden zonder te kiezen.",
+    "why": "Of can be the embedded whether and the coordinating or in the same sentence; only the first introduces a clause.",
+    "focus": "orcontrast",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "orcontrast"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik vraag me af of dat wel zo is.",
+    "english": "I wonder whether that is really so.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Iemand beweert iets dat jij niet gelooft. Spreek je twijfel voorzichtig uit.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Hij keek of er iemand aankwam.",
+    "english": "He looked to see whether someone was coming.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt over een bezorger die naar de straat keek. Beschrijf waarom hij omkeek.",
+    "why": "A separable verb is written together in the of-clause and splits in the main clause.",
+    "focus": "sep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "sep"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Probeer of het lukt.",
+    "english": "Try whether it works.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega staat met een nieuw apparaat. Moedig hem aan het gewoon te testen.",
+    "why": "An imperative main clause followed by an of-clause with the verb last.",
+    "focus": "imperative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "imperative"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Zij doet alsof ze niets hoort.",
+    "english": "She acts as if she hears nothing.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je ziet een kind dat een opdracht negeert. Beschrijf haar gedrag.",
+    "why": "Alsof means as if; its clause sends the verb to the end and names an impression or pretence.",
+    "focus": "alsof",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "alsof"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Hij praat alsof hij alles weet.",
+    "english": "He talks as if he knows everything.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega is erg zelfverzekerd. Beschrijf zijn toon met een vergelijking.",
+    "why": "Alsof means as if; its clause sends the verb to the end and names an impression or pretence.",
+    "focus": "alsof",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "alsof"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Het lijkt alsof het gaat sneeuwen.",
+    "english": "It looks as if it's going to snow.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je kijkt naar de grijze lucht. Zeg wat het weer lijkt te gaan doen.",
+    "why": "Alsof means as if; its clause sends the verb to the end and names an impression or pretence.",
+    "focus": "alsof",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "alsof"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik weet dat hij komt, maar ik vraag me af of hij blijft.",
+    "english": "I know he's coming, but I wonder whether he'll stay.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een gastvrouw vraagt naar een vriend. Maak onderscheid tussen wat vaststaat en wat nog open is.",
+    "why": "Dat reports a fact and of reports an open question; both introduce clauses with the verb last.",
+    "focus": "contrastdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "contrastdat"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik zeg dat ik kom, maar ik weet nog niet of ik kan.",
+    "english": "I say that I'm coming, but I don't know yet whether I can.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je reageert op een uitnodiging met een voorbehoud. Zeg wat je toezegt en wat je nog niet weet.",
+    "why": "Dat reports a fact and of reports an open question; both introduce clauses with the verb last.",
+    "focus": "contrastdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "contrastdat"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Komt hij vandaag of morgen?",
+    "english": "Is he coming today or tomorrow?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een gast heeft zijn komst niet vastgelegd. Stel een collega een directe vraag met twee mogelijke dagen.",
+    "why": "Here of is the coordinating 'or' in a direct question: it joins two options and does not send a verb to the end.",
+    "focus": "or",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "or"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Heb je gehoord of hij is geslaagd?",
+    "english": "Have you heard whether he passed?",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je bent benieuwd naar het examen van een vriend. Vraag naar nieuws.",
+    "why": "A direct question keeps question order; the embedded of-clause sends its verb to the end.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik had me afgevraagd of hij zou komen.",
+    "english": "I had wondered whether he would come.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je vertelt achteraf over een verrassend bezoek. Zeg wat je je daarvoor afvroeg.",
+    "why": "The past perfect shows what was settled before the main-clause moment; the auxiliary and participle close the clause.",
+    "focus": "pastperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "pastperfect"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Wij weten niet of onze buren gaan verhuizen.",
+    "english": "We don't know whether our neighbours are going to move.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je praat met een collega over de buurt. Zeg wat jullie niet weten over de buren.",
+    "why": "A modal can close the of-clause or stand second in the main clause; the infinitive goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "De docent vraagt of de leerlingen het begrijpen.",
+    "english": "The teacher asks whether the pupils understand it.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je beschrijft een les. Zeg wat de docent steeds controleert.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Ik kijk of ik tijd heb.",
+    "english": "I'll see whether I have time.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Een collega vraagt om hulp. Reageer voorzichtig en bekijk eerst je planning.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  },
+  {
+    "topic": "of",
+    "dutch": "Zij test of de verbinding werkt.",
+    "english": "She tests whether the connection works.",
+    "scenario": "Say what happens, choosing the right word.",
+    "scenarioNl": "Je beschrijft het werk van een technicus. Zeg wat zij precies uitprobeert.",
+    "why": "Of introduces an embedded yes/no question; the verb of the of-clause goes to the end.",
+    "focus": "embedded",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-of-v1",
+      "focus": "embedded"
+    }
+  }
+]

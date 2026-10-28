@@ -1,0 +1,962 @@
+[
+  {
+    "topic": "verbs",
+    "dutch": "Ik kan goed zwemmen.",
+    "english": "I can swim well.",
+    "scenario": "Say what you are good at.",
+    "scenarioNl": "Een kennis vraagt of je sportief bent. Zeg wat je goed beheerst in het water.",
+    "why": "Kunnen is a modal: the infinitive zwemmen goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Mag ik hier zitten?",
+    "english": "May I sit here?",
+    "scenario": "Ask permission to sit.",
+    "scenarioNl": "Je komt in een volle wachtkamer en ziet een lege stoel. Vraag beleefd of dat kan.",
+    "why": "Mogen opens the yes/no question; the infinitive zitten ends it.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Wij willen morgen vertrekken.",
+    "english": "We want to leave tomorrow.",
+    "scenario": "State a plan, choosing the right verb form.",
+    "scenarioNl": "Een collega vraagt op welke dag jullie weggaan. Zeg wat jullie willen.",
+    "why": "Willen is a modal: the infinitive vertrekken goes to the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Je moet je paspoort laten zien.",
+    "english": "You have to show your passport.",
+    "scenario": "Tell someone the rule.",
+    "scenarioNl": "Een reiziger staat bij de grenscontrole en weet niet wat hij moet doen. Leg uit wat verplicht is.",
+    "why": "Moeten expresses obligation; laten zien is a fixed pair at the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij zal morgen komen.",
+    "english": "She will come tomorrow.",
+    "scenario": "Predict an arrival, choosing the right verb form.",
+    "scenarioNl": "Een gastvrouw vraagt of er nog een gast komt. Zeg wat je verwacht.",
+    "why": "Zullen marks the future; the infinitive komen ends the clause.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij kan niet komen.",
+    "english": "He cannot come.",
+    "scenario": "Report an absence, choosing the right verb form.",
+    "scenarioNl": "Een collega is niet beschikbaar voor het overleg. Meld waarom hij ontbreekt.",
+    "why": "Kunnen plus niet: niet stands before the infinitive komen.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik wil een nieuwe telefoon kopen.",
+    "english": "I want to buy a new phone.",
+    "scenario": "Express a wish, choosing the right verb form.",
+    "scenarioNl": "Je oude toestel is stuk. Zeg wat je van plan bent aan te schaffen.",
+    "why": "Willen plus an object and the infinitive kopen at the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "U mag hier niet roken.",
+    "english": "You may not smoke here.",
+    "scenario": "State a rule, choosing the right verb form.",
+    "scenarioNl": "Een bezoeker steekt een sigaret aan op een plek waar het verboden is. Zeg beleefd wat niet mag.",
+    "why": "Mogen plus niet expresses a prohibition; formal u takes mag.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "We moeten vandaag nog betalen.",
+    "english": "We still have to pay today.",
+    "scenario": "State a deadline, choosing the right verb form.",
+    "scenarioNl": "Een rekening staat open en de dag loopt af. Zeg wat er nog moet gebeuren.",
+    "why": "Moeten plus nog and the infinitive betalen at the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Kun je mij helpen?",
+    "english": "Can you help me?",
+    "scenario": "Ask for help, choosing the right verb form.",
+    "scenarioNl": "Je komt er alleen niet uit en een collega staat naast je. Vraag hem om hulp.",
+    "why": "Kunnen opens the question; je loses the -t after the verb.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik zou graag een koffie willen.",
+    "english": "I would like a coffee.",
+    "scenario": "Order politely, choosing the right verb form.",
+    "scenarioNl": "Je zit in een café en de ober komt naar je tafel. Bestel beleefd.",
+    "why": "Zou plus graag plus willen is the polite wish form.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij mag niet te laat zijn.",
+    "english": "She must not be late.",
+    "scenario": "State a limit, choosing the right verb form.",
+    "scenarioNl": "Een nieuwe medewerker begint morgen. Leg uit wat voor haar niet is toegestaan.",
+    "why": "Mogen plus niet te laat zijn: niet te laat stands before the infinitive.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Je moet niet bang zijn.",
+    "english": "You must not be afraid.",
+    "scenario": "Reassure a nervous person.",
+    "scenarioNl": "Een kind staat te twijfelen voor een groot examen. Moedig het aan.",
+    "why": "Moeten plus niet gives a strong warning in this phrase.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Wij kunnen de afspraak verplaatsen.",
+    "english": "We can move the appointment.",
+    "scenario": "Offer flexibility, choosing the right verb form.",
+    "scenarioNl": "Een klant kan niet komen. Stel een oplossing voor.",
+    "why": "Kunnen plus the object and the infinitive verplaatsen at the end.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik hoef morgen niet te werken.",
+    "english": "I do not have to work tomorrow.",
+    "scenario": "Say a day is free, choosing the right verb form.",
+    "scenarioNl": "Een vriend vraagt of je morgen tijd hebt. Zeg dat er geen plicht is.",
+    "why": "Hoeven needs niet and te: hoef niet te werken.",
+    "focus": "hoeven",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hoeven"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Je hoeft het niet te betalen.",
+    "english": "You do not have to pay for it.",
+    "scenario": "Tell someone they are free of cost.",
+    "scenarioNl": "Een gast wil zijn portemonnee pakken. Zeg dat dit niet nodig is.",
+    "why": "Hoeven plus niet te plus infinitive, with the object before niet.",
+    "focus": "hoeven",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hoeven"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Je hoeft niet bang te zijn.",
+    "english": "You do not need to be afraid.",
+    "scenario": "Reassure someone, choosing the right verb form.",
+    "scenarioNl": "Een nieuweling aarzelt voor zijn eerste presentatie. Stel hem gerust.",
+    "why": "Hoeven plus niet bang te zijn: te stands before the infinitive.",
+    "focus": "hoeven",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hoeven"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij hoeft niets te doen.",
+    "english": "He does not have to do anything.",
+    "scenario": "Say there is no task.",
+    "scenarioNl": "Een collega vraagt wat de gast moet doen. Zeg dat er niets van hem verwacht wordt.",
+    "why": "Hoeven plus niets te doen: niets replaces niet.",
+    "focus": "hoeven",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hoeven"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Wij hoeven niet lang te wachten.",
+    "english": "We do not have to wait long.",
+    "scenario": "Report a short wait, choosing the right verb form.",
+    "scenarioNl": "Jullie vrezen een lange rij. Meld dat het meevalt.",
+    "why": "Hoeven plus niet lang te wachten: the te-infinitive group ends the clause.",
+    "focus": "hoeven",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hoeven"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik hoef geen nieuwe telefoon.",
+    "english": "I do not need a new phone.",
+    "scenario": "Decline an offer, choosing the right verb form.",
+    "scenarioNl": "Een verkoper wil je een nieuw toestel aanpraten. Wijs vriendelijk af.",
+    "why": "Hoeven with a noun takes geen and needs no infinitive.",
+    "focus": "hoeven",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hoeven"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik probeer vroeg te slapen.",
+    "english": "I try to sleep early.",
+    "scenario": "State an effort, choosing the right verb form.",
+    "scenarioNl": "Een collega merkt dat je moe bent. Vertel wat je aan jezelf oplegt.",
+    "why": "Proberen is followed by te plus infinitive.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij durft niet te vragen.",
+    "english": "She does not dare to ask.",
+    "scenario": "Describe a hesitation.",
+    "scenarioNl": "Een stagiaire zit met een vraag maar zwijgt. Meld wat haar tegenhoudt.",
+    "why": "Durven plus niet te plus infinitive; the finite verb keeps its place in the clause.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik hoop morgen te beginnen.",
+    "english": "I hope to start tomorrow.",
+    "scenario": "Share a hope, choosing the right verb form.",
+    "scenarioNl": "Een collega vraagt op welke dag je aan het project begint. Zeg wat je wenst.",
+    "why": "Hopen is followed by te plus infinitive; the finite verb keeps its place in the clause.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "We besluiten morgen te vertrekken.",
+    "english": "We decide to leave tomorrow.",
+    "scenario": "Report a decision, choosing the right verb form.",
+    "scenarioNl": "Een gezelschap wikt en weegt. Meld wat de groep heeft beslist.",
+    "why": "Besluiten is followed by te plus infinitive.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik heb geen tijd om te koken.",
+    "english": "I have no time to cook.",
+    "scenario": "Give an excuse, choosing the right verb form.",
+    "scenarioNl": "Een vriend nodigt je uit voor een maaltijd bij jou. Leg uit wat je beperkt.",
+    "why": "Om te plus infinitive explains a purpose or a limit.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij weigert te betalen.",
+    "english": "He refuses to pay.",
+    "scenario": "Report a refusal, choosing the right verb form.",
+    "scenarioNl": "Een klant wil de rekening niet voldoen. Meld zijn houding.",
+    "why": "Weigeren is followed by te plus infinitive.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik probeer niet te laat te komen.",
+    "english": "I try not to be late.",
+    "scenario": "State an effort, choosing the right verb form.",
+    "scenarioNl": "Je hebt de laatste tijd vaak vertraging. Zeg wat je jezelf voorneemt.",
+    "why": "Proberen plus niet te laat te komen: the te-infinitive group stays together.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij belooft op tijd te zijn.",
+    "english": "She promises to be on time.",
+    "scenario": "Report a promise, choosing the right verb form.",
+    "scenarioNl": "Een leidinggevende vraagt of een medewerker betrouwbaar is. Meld wat zij heeft toegezegd.",
+    "why": "Beloven is followed by te plus infinitive.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Wij proberen een oplossing te vinden.",
+    "english": "We try to find a solution.",
+    "scenario": "Report a joint effort.",
+    "scenarioNl": "Een klant wacht op een antwoord. Meld wat het team doet.",
+    "why": "Proberen plus an object and te vinden at the end.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Het is moeilijk om een keuze te maken.",
+    "english": "It is difficult to make a choice.",
+    "scenario": "Give an opinion, choosing the right verb form.",
+    "scenarioNl": "Een vriend twijfelt tussen twee aanbiedingen. Zeg hoe je erover denkt.",
+    "why": "Om te plus infinitive follows an adjective.",
+    "focus": "te",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "te"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik heb een afspraak om drie uur.",
+    "english": "I have an appointment at three.",
+    "scenario": "State a commitment, choosing the right verb form.",
+    "scenarioNl": "Een collega wil je spreken. Leg uit waarom het moment niet schikt.",
+    "why": "Hebben expresses possession or having a commitment.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij heeft twee broers.",
+    "english": "She has two brothers.",
+    "scenario": "Describe family, choosing the right verb form.",
+    "scenarioNl": "Een nieuwe kennis vraagt naar haar familie. Vertel hoeveel broers zij heeft.",
+    "why": "Hebben with a plain object; the finite verb keeps its place in the clause.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "We hebben geen tijd.",
+    "english": "We have no time.",
+    "scenario": "Say time is short, choosing the right verb form.",
+    "scenarioNl": "Een klant wil een extra klus. Zeg dat jullie volgeboekt zijn.",
+    "why": "Hebben plus geen negates the noun; the finite verb keeps its place in the clause.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Heb je een pen?",
+    "english": "Do you have a pen?",
+    "scenario": "Ask to borrow something.",
+    "scenarioNl": "Je moet iets opschrijven maar hebt niets bij je. Vraag het aan je buurman.",
+    "why": "Hebben opens the yes/no question; je loses the -t.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij heeft honger.",
+    "english": "He is hungry.",
+    "scenario": "Describe a state, choosing the right verb form.",
+    "scenarioNl": "Een kind kijkt steeds naar de keukenkast. Zeg wat er aan de hand is.",
+    "why": "Dutch uses hebben with honger, not zijn; the finite verb keeps its place in the clause.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik heb er genoeg van.",
+    "english": "I have had enough of it.",
+    "scenario": "Express frustration, choosing the right verb form.",
+    "scenarioNl": "Er is voor de derde keer een fout in het systeem. Laat je ergernis horen.",
+    "why": "Er genoeg van hebben is a fixed expression.",
+    "focus": "hebben",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "hebben"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik bezoek mijn grootmoeder.",
+    "english": "I visit my grandmother.",
+    "scenario": "Say whom you are seeing.",
+    "scenarioNl": "Een collega vraagt wat je dit weekend doet. Zeg bij wie je langsgaat.",
+    "why": "Bezoeken is inseparable: the finite form never splits.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij begrijpt de opdracht niet.",
+    "english": "She does not understand the assignment.",
+    "scenario": "Report a problem, choosing the right verb form.",
+    "scenarioNl": "Een leerling zit met een vraag op papier. Meld wat haar tegenhoudt.",
+    "why": "Begrijpen is inseparable; niet stands at the end.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij ontdekt een nieuwe winkel.",
+    "english": "He discovers a new shop.",
+    "scenario": "Report a find, choosing the right verb form.",
+    "scenarioNl": "Een wijkbewoner komt enthousiast thuis. Vertel wat hij tegenkwam.",
+    "why": "Ontdekken is inseparable: the finite form stays whole.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Wij verkopen onze oude fiets.",
+    "english": "We are selling our old bike.",
+    "scenario": "Announce a sale, choosing the right verb form.",
+    "scenarioNl": "Een buurman vraagt wat er in de garage staat. Zeg wat jullie kwijt willen.",
+    "why": "Verkopen is inseparable; the verb never splits.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik overweeg een andere baan.",
+    "english": "I am considering another job.",
+    "scenario": "Share a thought, choosing the right verb form.",
+    "scenarioNl": "Een vriend merkt dat je ontevreden bent. Zeg wat je in gedachten hebt.",
+    "why": "Overwegen is inseparable in this meaning.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij vertelt een grappig verhaal.",
+    "english": "She tells a funny story.",
+    "scenario": "Describe a storyteller.",
+    "scenarioNl": "Een groep luistert lachend. Zeg wat er gebeurt.",
+    "why": "Vertellen is inseparable; the participle would be verteld.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik verander mijn mening.",
+    "english": "I am changing my mind.",
+    "scenario": "Announce a change of view.",
+    "scenarioNl": "Een collega vraagt of je nog bij je standpunt blijft. Zeg dat dit verandert.",
+    "why": "Veranderen is inseparable; verander is the finite form.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij herhaalt de vraag.",
+    "english": "He repeats the question.",
+    "scenario": "Describe a repeated question.",
+    "scenarioNl": "In de klas verstaat niemand de vraag. Meld wat de docent doet.",
+    "why": "Herhalen is inseparable; the finite form never splits.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "We ontvangen morgen een pakket.",
+    "english": "We receive a parcel tomorrow.",
+    "scenario": "Announce a delivery, choosing the right verb form.",
+    "scenarioNl": "Een collega vraagt waarom je thuisblijft. Zeg waarvoor.",
+    "why": "Ontvangen is inseparable; morgen stands before the object.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik vertrouw mijn collega.",
+    "english": "I trust my colleague.",
+    "scenario": "State a trust, choosing the right verb form.",
+    "scenarioNl": "Een manager vraagt of hij je collega kan inschakelen. Zeg wat je over hem denkt.",
+    "why": "Vertrouwen is inseparable; no particle is detached.",
+    "focus": "inseparable",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "inseparable"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik wacht op de bus.",
+    "english": "I am waiting for the bus.",
+    "scenario": "Say what you are doing.",
+    "scenarioNl": "Een kennis belt en vraagt waar je bent. Zeg wat je op dit moment doet.",
+    "why": "Wachten op takes the preposition op; the finite verb keeps its place in the clause.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik denk aan mijn familie.",
+    "english": "I am thinking of my family.",
+    "scenario": "Share a thought, choosing the right verb form.",
+    "scenarioNl": "Een vriend merkt dat je stil bent. Zeg waar je met je gedachten zit.",
+    "why": "Denken aan takes the preposition aan; the finite verb keeps its place in the clause.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij houdt van muziek.",
+    "english": "She loves music.",
+    "scenario": "Describe a taste, choosing the right verb form.",
+    "scenarioNl": "Een gast vraagt wat de gastvrouw leuk vindt. Zeg waar zij van houdt.",
+    "why": "Houden van takes the preposition van; the finite verb keeps its place in the clause.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "We luisteren naar de radio.",
+    "english": "We are listening to the radio.",
+    "scenario": "Describe an activity.",
+    "scenarioNl": "Een kennis hoort muziek door de muur. Zeg wat jullie doen.",
+    "why": "Luisteren naar takes the preposition naar.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij kijkt naar het scherm.",
+    "english": "He is looking at the screen.",
+    "scenario": "Describe attention, choosing the right verb form.",
+    "scenarioNl": "Een collega staart al lang voor zich uit. Zeg waar hij naar kijkt.",
+    "why": "Kijken naar takes the preposition naar; the finite verb keeps its place in the clause.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Wij praten over het project.",
+    "english": "We are talking about the project.",
+    "scenario": "Describe a conversation.",
+    "scenarioNl": "Een collega vraagt waar jullie mee bezig zijn. Zeg waarover jullie overleggen.",
+    "why": "Praten over takes the preposition over; the finite verb keeps its place in the clause.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik zorg voor de planten.",
+    "english": "I take care of the plants.",
+    "scenario": "Describe a task, choosing the right verb form.",
+    "scenarioNl": "Een buurvrouw gaat op reis. Zeg wat je op je neemt.",
+    "why": "Zorgen voor takes the preposition voor; the finite verb keeps its place in the clause.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Het hangt van het weer af.",
+    "english": "It depends on the weather.",
+    "scenario": "Express a condition, choosing the right verb form.",
+    "scenarioNl": "Een vriend vraagt of de uitstap doorgaat. Zeg waar het van afhangt.",
+    "why": "Afhangen van is separable: hangt ... af with van before the particle.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik begin met de oefening.",
+    "english": "I am starting the exercise.",
+    "scenario": "Announce a start, choosing the right verb form.",
+    "scenarioNl": "Een docent vraagt of je klaar bent. Zeg waarmee je aanvangt.",
+    "why": "Beginnen met takes the preposition met; the finite verb keeps its place in the clause.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij lacht om de grap.",
+    "english": "She laughs at the joke.",
+    "scenario": "Describe a reaction, choosing the right verb form.",
+    "scenarioNl": "Een groep vrienden hoort een mop. Zeg wat zij doet.",
+    "why": "Lachen om takes the preposition om; the finite verb keeps its place in the clause.",
+    "focus": "preposition",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "preposition"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik herinner me die dag.",
+    "english": "I remember that day.",
+    "scenario": "Share a memory, choosing the right verb form.",
+    "scenarioNl": "Een kennis haalt een oude gebeurtenis aan. Zeg dat je het nog weet.",
+    "why": "Zich herinneren is reflexive: me follows the finite verb.",
+    "focus": "reflexive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "reflexive"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij vergist zich in het adres.",
+    "english": "He is mistaken about the address.",
+    "scenario": "Report a mistake, choosing the right verb form.",
+    "scenarioNl": "De bezorger staat voor een verkeerd huis. Zeg wat er misging.",
+    "why": "Zich vergissen is reflexive; zich follows the finite verb.",
+    "focus": "reflexive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "reflexive"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Wij haasten ons niet.",
+    "english": "We are not rushing.",
+    "scenario": "Say you take it easy.",
+    "scenarioNl": "Een collega wil dat het sneller gaat. Zeg dat jullie de rust bewaren.",
+    "why": "Zich haasten is reflexive; ons matches wij.",
+    "focus": "reflexive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "reflexive"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik voel me vandaag goed.",
+    "english": "I feel well today.",
+    "scenario": "Report your state, choosing the right verb form.",
+    "scenarioNl": "Een collega vraagt hoe het gaat. Zeg hoe je erbij zit.",
+    "why": "Zich voelen is reflexive: voel me; the finite verb keeps its place in the clause.",
+    "focus": "reflexive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "reflexive"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik laat het je zien.",
+    "english": "I will show it to you.",
+    "scenario": "Offer to show something.",
+    "scenarioNl": "Een vriend wil weten hoe iets werkt. Zeg dat je het laat zien.",
+    "why": "Laten zien is a fixed pair: laat ... zien.",
+    "focus": "infinitive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "infinitive"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Hij blijft werken tot zes uur.",
+    "english": "He keeps working until six.",
+    "scenario": "Describe persistence.",
+    "scenarioNl": "Een collega gaat naar huis maar jouw baas blijft. Meld wat hij doet.",
+    "why": "Blijven plus infinitive: the infinitive werken ends the verb group.",
+    "focus": "infinitive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "infinitive"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Ik ga koken voor mijn vrienden.",
+    "english": "I am going to cook for my friends.",
+    "scenario": "Announce a plan, choosing the right verb form.",
+    "scenarioNl": "Een buur ziet je boodschappen. Zeg wat je gaat doen.",
+    "why": "Gaan plus infinitive expresses a plan; the finite verb keeps its place in the clause.",
+    "focus": "infinitive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "infinitive"
+    }
+  },
+  {
+    "topic": "verbs",
+    "dutch": "Zij komt morgen eten.",
+    "english": "She is coming to eat tomorrow.",
+    "scenario": "Announce a visit, choosing the right verb form.",
+    "scenarioNl": "Een collega vraagt wie er aanschuift. Zeg wie er komt.",
+    "why": "Komen plus infinitive: morgen stands before eten.",
+    "focus": "infinitive",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p3-verbs-v1",
+      "focus": "infinitive"
+    }
+  }
+]

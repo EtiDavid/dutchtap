@@ -9,7 +9,7 @@ describe("Grammar Mastery: learn before recall", () => {
   it("provides a complete stepwise study guide for essential word order and verb choice", () => {
     for (const topic of expanded) {
       const lesson = lessons[topic];
-      expect(lesson.revision).toBe("1.0");
+      expect(lesson.revision).toMatch(/^1\.[01]$/);
       expect(lesson.sections.length, topic).toBeGreaterThanOrEqual(5);
       expect(lesson.formulas.length, topic).toBeGreaterThanOrEqual(3);
       expect(lesson.mistakes.length, topic).toBeGreaterThanOrEqual(3);

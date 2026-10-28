@@ -1,0 +1,662 @@
+[
+  {
+    "topic": "dat",
+    "dutch": "Ik denk dat de printer kapot is.",
+    "english": "I think the printer is broken.",
+    "scenario": "Give your opinion about a printer that does not print.",
+    "scenarioNl": "Een collega probeert te printen zonder resultaat. Zeg wat jij vermoedt over het toestel.",
+    "why": "Is closes the clause after kapot; the main clause Ik denk is ordinary.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Hij zegt dat de bestelling morgen aankomt.",
+    "english": "He says that the order will arrive tomorrow.",
+    "scenario": "Pass on what a colleague told you about a delivery.",
+    "scenarioNl": "Je collega heeft gebeld over een levering. Vertel wat hij je meedeelde over de aankomst.",
+    "why": "Aankomt joins the separable verb and closes the clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Zij vertelt dat de dienst weer werkt.",
+    "english": "She tells us that the service works again.",
+    "scenario": "Pass on good news about a service.",
+    "scenarioNl": "Een collega komt melden dat een storing voorbij is. Geef haar bericht door.",
+    "why": "Werkt closes the clause after weer.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik merk dat mijn laptop traag wordt.",
+    "english": "I notice that my laptop is getting slow.",
+    "scenario": "Describe what you notice about your laptop.",
+    "scenarioNl": "Je computer reageert steeds trager. Zeg wat je ziet gebeuren.",
+    "why": "Wordt closes the clause after traag.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "We geloven dat het probleem bij het netwerk ligt.",
+    "english": "We believe the problem lies with the network.",
+    "scenario": "State the team's belief about a fault.",
+    "scenarioNl": "Het team zoekt de oorzaak van een storing. Zeg waar volgens jullie de fout zit.",
+    "why": "Ligt closes the clause after bij het netwerk.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "De klant meldt dat hij zich niet kan aanmelden.",
+    "english": "The customer reports that he cannot log in.",
+    "scenario": "Report what a customer says about logging in.",
+    "scenarioNl": "Een klant heeft een probleem met zijn account. Geef zijn melding door aan je collega.",
+    "why": "Kan aanmelden is a modal verb group at the end of the clause after zich niet.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik hoor dat de buren gaan verhuizen.",
+    "english": "I hear that the neighbours are going to move.",
+    "scenario": "Share a rumour from the street.",
+    "scenarioNl": "Je hoort iets over je buren. Vertel het aan een vriend.",
+    "why": "Gaan verhuizen is a verb group at the end of the clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik verwacht dat de levering vrijdag komt.",
+    "english": "I expect the delivery to arrive on Friday.",
+    "scenario": "Say when you expect a delivery.",
+    "scenarioNl": "Een klant vraagt je naar het moment van levering. Zeg wat je verwacht.",
+    "why": "Komt closes the clause after vrijdag.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "De gemeente laat weten dat het loket gesloten is.",
+    "english": "The municipality announces that the counter is closed.",
+    "scenario": "Pass on an announcement from the town hall.",
+    "scenarioNl": "Je leest een bericht van de gemeente. Geef de boodschap aan een buur door.",
+    "why": "Gesloten is closes the clause: participle before is.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik zie dat het bestand is verwijderd.",
+    "english": "I see that the file has been deleted.",
+    "scenario": "Report what you see in the system.",
+    "scenarioNl": "Je opent een map en een document ontbreekt. Zeg wat je vaststelt.",
+    "why": "Is verwijderd is a verb group at the end of the clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Mijn huisarts denkt dat ik genoeg rust nodig heb.",
+    "english": "My GP thinks I need enough rest.",
+    "scenario": "Pass on the doctor's opinion.",
+    "scenarioNl": "Je dokter heeft je onderzocht. Vertel wat zijn mening is.",
+    "why": "Nodig heb closes the clause after genoeg rust.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ze zegt dat ze morgen vroeg moet opstaan.",
+    "english": "She says that she has to get up early tomorrow.",
+    "scenario": "Report what a friend says about tomorrow.",
+    "scenarioNl": "Een vriendin wil vanavond niet laat opblijven. Geef haar reden door.",
+    "why": "Moet opstaan is a modal group at the end, with a joined separable infinitive.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik vind dat de uitleg te snel gaat.",
+    "english": "I think the explanation is going too fast.",
+    "scenario": "Give feedback on a presentation.",
+    "scenarioNl": "Een spreker praat erg snel. Zeg wat jij ervan vindt.",
+    "why": "Gaat closes the clause after te snel.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Hij belooft dat hij het rapport vandaag opstuurt.",
+    "english": "He promises that he will send the report today.",
+    "scenario": "Report a colleague's promise.",
+    "scenarioNl": "Een collega zegt dat je zijn verslag vandaag krijgt. Geef zijn belofte door.",
+    "why": "Opstuurt joins the separable verb and closes the clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "We hebben gehoord dat de trein vertraging heeft.",
+    "english": "We have heard that the train is delayed.",
+    "scenario": "Say what you have heard about the train.",
+    "scenarioNl": "Je bent op het perron en er gaat een gerucht rond. Vertel wat je gehoord hebt.",
+    "why": "Hebben gehoord is a perfect in the main clause; vertraging heeft closes the dat-clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik heb gemerkt dat de server elke nacht herstart.",
+    "english": "I have noticed that the server restarts every night.",
+    "scenario": "Describe a pattern you noticed.",
+    "scenarioNl": "Je kijkt naar de logs van een systeem. Zeg wat je opvalt aan de nachten.",
+    "why": "Herstart joins the separable verb and closes the clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik ben ervan overtuigd dat de test slaagt.",
+    "english": "I am convinced that the test will pass.",
+    "scenario": "State your confidence in a test.",
+    "scenarioNl": "Een collega is nerveus voor een controle. Zeg hoe zeker je bent.",
+    "why": "Ervan overtuigd zijn takes a dat-clause; slaagt closes it.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Zij is blij dat haar zoon geslaagd is.",
+    "english": "She is glad that her son has passed.",
+    "scenario": "Describe how she feels about her son's result.",
+    "scenarioNl": "Een kennis krijgt goed nieuws over haar kind. Vertel hoe ze zich voelt en waarom.",
+    "why": "Blij zijn takes a dat-clause; geslaagd is closes it.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Het is jammer dat de winkel zo vroeg sluit.",
+    "english": "It is a pity that the shop closes so early.",
+    "scenario": "Express regret about opening hours.",
+    "scenarioNl": "Je wilde nog iets kopen maar de winkel gaat al dicht. Zeg wat je jammer vindt.",
+    "why": "Het is jammer can be followed by a dat-clause; sluit closes it.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik leg uit dat de wachtwoorden elke maand verlopen.",
+    "english": "I explain that the passwords expire every month.",
+    "scenario": "Explain a security rule.",
+    "scenarioNl": "Een nieuwe collega vraagt naar het wachtwoordbeleid. Leg het uit.",
+    "why": "Leg uit splits uitleggen; verlopen closes the dat-clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Hij beweert dat hij het bericht niet heeft ontvangen.",
+    "english": "He claims that he did not receive the message.",
+    "scenario": "Report a colleague's claim.",
+    "scenarioNl": "Een collega zegt iets over een bericht dat je stuurde. Geef zijn bewering weer.",
+    "why": "Niet heeft ontvangen is a perfect group at the end of the clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik ben bang dat we te laat zijn.",
+    "english": "I am afraid that we are too late.",
+    "scenario": "Express a worry about time.",
+    "scenarioNl": "Het wordt laat en de trein vertrekt zo. Zeg wat je vreest.",
+    "why": "Bang zijn takes a dat-clause; zijn closes it after te laat.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "De leraar zegt dat we de tekst moeten lezen.",
+    "english": "The teacher says that we have to read the text.",
+    "scenario": "Pass on an instruction from class.",
+    "scenarioNl": "Je leraar geeft huiswerk. Vertel wat hij van jullie verlangt.",
+    "why": "Moeten lezen is a modal group at the end of the clause.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik begrijp niet dat jij nooit antwoordt.",
+    "english": "I do not understand that you never answer.",
+    "scenario": "Show surprise about someone's behaviour.",
+    "scenarioNl": "Een vriend reageert nooit op je berichten. Zeg wat je niet snapt.",
+    "why": "Begrijp niet governs the dat-clause; antwoordt closes it after nooit.",
+    "focus": "report",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "report"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Gisteren zei de manager dat de update klaar was.",
+    "english": "Yesterday the manager said that the update was ready.",
+    "scenario": "Report what the manager said yesterday.",
+    "scenarioNl": "Je teamleider heeft een melding gedaan. Vertel wat hij zei en op welke dag.",
+    "why": "Gisteren is position one, so zei comes before de manager; was closes the dat-clause.",
+    "focus": "fronted",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "fronted"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Vanochtend hoorde ik dat de trein uitviel.",
+    "english": "This morning I heard that the train was cancelled.",
+    "scenario": "Say what you heard this morning.",
+    "scenarioNl": "Op het station gingen geruchten rond. Vertel wat je daar vernam.",
+    "why": "Vanochtend is position one, so hoorde comes before ik; uitviel joins the separable verb.",
+    "focus": "fronted",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "fronted"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Vandaag meldt het systeem dat het wachtwoord verlopen is.",
+    "english": "Today the system reports that the password has expired.",
+    "scenario": "Describe a system message.",
+    "scenarioNl": "Een scherm geeft een melding bij het aanmelden. Zeg wat het toont.",
+    "why": "Vandaag is position one, so meldt comes before het systeem; verlopen is closes the dat-clause.",
+    "focus": "fronted",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "fronted"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Daarna begreep ik dat ik de verkeerde knop had gebruikt.",
+    "english": "Afterwards I understood that I had used the wrong button.",
+    "scenario": "Describe what you realised afterwards.",
+    "scenarioNl": "Na een fout zag je wat er misging. Vertel wat je toen inzag.",
+    "why": "Daarna is position one, so begreep comes before ik; had gebruikt is a past perfect group.",
+    "focus": "fronted",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "fronted"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Soms merk ik dat mijn collega's mijn bericht niet lezen.",
+    "english": "Sometimes I notice that my colleagues do not read my message.",
+    "scenario": "Describe a recurring observation.",
+    "scenarioNl": "Je schrijft vaak berichten naar je team. Zeg wat je soms vaststelt.",
+    "why": "Soms is position one, so merk comes before ik; lezen closes the dat-clause after niet.",
+    "focus": "fronted",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "fronted"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Gelukkig weet iedereen dat de afspraak om negen uur begint.",
+    "english": "Luckily everyone knows that the appointment starts at nine.",
+    "scenario": "Say that everybody is informed.",
+    "scenarioNl": "De afspraak staat vast en iedereen is op de hoogte. Zeg dat met opluchting.",
+    "why": "Gelukkig is position one, so weet comes before iedereen; begint closes the dat-clause.",
+    "focus": "fronted",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "fronted"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik denk niet dat het vandaag lukt.",
+    "english": "I do not think that it will work today.",
+    "scenario": "Express doubt about today's plan.",
+    "scenarioNl": "Een collega vraagt of het vandaag nog gaat lukken. Zeg dat je het betwijfelt.",
+    "why": "Niet follows the verb denk in the main clause; lukt closes the dat-clause.",
+    "focus": "negated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "negated"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Hij zegt niet dat de fout opgelost is.",
+    "english": "He does not say that the error has been solved.",
+    "scenario": "Point out what he has not claimed.",
+    "scenarioNl": "Een collega meldt een stand van zaken, maar over een fout zegt hij niets zeker. Geef dat weer.",
+    "why": "Niet follows zegt; opgelost is closes the dat-clause.",
+    "focus": "negated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "negated"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik geloof niet dat deze oplossing werkt.",
+    "english": "I do not believe that this solution works.",
+    "scenario": "Voice your doubt about a fix.",
+    "scenarioNl": "Een collega stelt een snelle oplossing voor. Geef je twijfel weer.",
+    "why": "Niet follows geloof; werkt closes the dat-clause after deze oplossing.",
+    "focus": "negated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "negated"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik beweer niet dat het gemakkelijk is.",
+    "english": "I am not claiming that it is easy.",
+    "scenario": "Add a caveat to your advice.",
+    "scenarioNl": "Je geeft raad over een moeilijke taak. Zeg dat je het niet licht opvat.",
+    "why": "Niet follows beweer; is closes the dat-clause after gemakkelijk.",
+    "focus": "negated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "negated"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Weet je dat de winkel vandaag dicht is?",
+    "english": "Do you know that the shop is closed today?",
+    "scenario": "Ask whether a friend knows.",
+    "scenarioNl": "Je vriend wil naar de winkel. Vraag of hij op de hoogte is van de situatie.",
+    "why": "The main clause is a yes/no question: weet comes before je; dicht is closes the dat-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Denk je dat de update vanavond klaar is?",
+    "english": "Do you think the update will be ready tonight?",
+    "scenario": "Ask for a colleague's estimate.",
+    "scenarioNl": "De update loopt nog. Vraag naar de verwachting van je collega.",
+    "why": "Denk je is a question with the verb first; klaar is closes the dat-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Hebt u gehoord dat de vergadering is verplaatst?",
+    "english": "Have you heard that the meeting has been moved?",
+    "scenario": "Ask formally whether someone has heard.",
+    "scenarioNl": "Je spreekt een oudere collega aan. Vraag of hij het nieuws kent.",
+    "why": "Hebt u gehoord is a perfect question; is verplaatst closes the dat-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Het bestand dat ik zoek, staat in de map.",
+    "english": "The file that I am looking for is in the folder.",
+    "scenario": "Say where the file is.",
+    "scenarioNl": "Je collega zoekt een bestand en jij weet waar het staat. Beschrijf de plek.",
+    "why": "Dat introduces a relative clause describing het bestand; zoek closes it.",
+    "focus": "relative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "relative"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Het programma dat vastloopt, moet opnieuw opstarten.",
+    "english": "The program that freezes has to restart.",
+    "scenario": "Explain what must happen to the program.",
+    "scenarioNl": "Een toepassing reageert niet meer. Zeg wat ermee moet gebeuren.",
+    "why": "Dat refers to het programma; vastloopt joins the separable verb; moet opstarten is a modal group.",
+    "focus": "relative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "relative"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Ik lees het boek dat mijn zus mij heeft aangeraden.",
+    "english": "I am reading the book that my sister recommended to me.",
+    "scenario": "Say which book you are reading.",
+    "scenarioNl": "Een vriend ziet je lezen. Vertel welk boek het is en van wie je het hebt.",
+    "why": "Dat refers to het boek; heeft aangeraden is a perfect group closing the relative clause.",
+    "focus": "relative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "relative"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "De printer die kapot is, staat naast de deur.",
+    "english": "The printer that is broken stands next to the door.",
+    "scenario": "Say where the broken printer is.",
+    "scenarioNl": "Je collega zoekt het defecte toestel. Wijs de plek aan.",
+    "why": "Die refers to de printer, a de-word; kapot is closes the relative clause.",
+    "focus": "relative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "relative"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Het ticket dat gisteren is aangemaakt, heeft prioriteit.",
+    "english": "The ticket that was created yesterday has priority.",
+    "scenario": "Say which ticket comes first.",
+    "scenarioNl": "Er liggen meerdere meldingen. Zeg welke voorrang krijgt.",
+    "why": "Dat refers to het ticket; is aangemaakt closes the relative clause.",
+    "focus": "relative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "relative"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "De klant die gisteren belde, wil een terugbelafspraak.",
+    "english": "The customer who phoned yesterday wants a callback appointment.",
+    "scenario": "Describe a customer request.",
+    "scenarioNl": "Een klant heeft gisteren contact gezocht. Zeg wat hij nu vraagt.",
+    "why": "Die refers to de klant, a person; belde closes the relative clause.",
+    "focus": "relative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "relative"
+    }
+  },
+  {
+    "topic": "dat",
+    "dutch": "Dit is het bericht dat ik bedoel.",
+    "english": "This is the message that I mean.",
+    "scenario": "Point out the message.",
+    "scenarioNl": "Een collega heeft meerdere berichten open. Zeg welk bericht je op het oog hebt.",
+    "why": "Dat refers to het bericht; bedoel closes the relative clause.",
+    "focus": "relative",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-dat-v1",
+      "focus": "relative"
+    }
+  }
+]

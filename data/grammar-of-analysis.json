@@ -1,0 +1,4548 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for the Of topic: whether, or, as if. AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-of-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The answer is unknown, so the embedded yes/no question starts with 'of'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik weet niet",
+     "subject": "Ik",
+     "finite": "weet",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'weet' is second and the negation 'niet' follows. The clause is \"Ik weet niet\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of hij komt",
+     "subject": "hij",
+     "finite": "komt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'hij' comes first and the finite verb 'komt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    }
+   ],
+   "meaning": "I don't know whether he is coming.",
+   "order": "The of-clause is the object of 'weet'. It repeats the direct question 'Komt hij?' as a dependent clause. Read it as \"Ik weet niet of hij komt\".",
+   "forms": "weten: ik weet. komen: hij komt.",
+   "compare": "English 'whether he is coming' uses 'is coming'. Dutch uses the simple 'komt'.",
+   "mistakes": [
+    {
+     "wrong": "Ik weet niet of komt hij.",
+     "right": "Ik weet niet of hij komt.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik weet niet of komt hij.\", but \"Ik weet niet of hij komt.\")"
+    },
+    {
+     "wrong": "Ik weet niet of hij komen.",
+     "right": "Ik weet niet of hij komt.",
+     "why": "The singular subject needs 'komt'. (not \"Ik weet niet of hij komen.\", but \"Ik weet niet of hij komt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Komt hij?",
+    "english": "Is he coming?",
+    "note": "The direct question starts with the verb and needs no 'of'."
+   }
+  },
+  "pat-of-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "'Zich afvragen' introduces the open question; the reflexive 'me' and the particle 'af' belong to the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik vraag me af",
+     "subject": "Ik",
+     "finite": "vraag",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'vraag' is second; the reflexive 'me' follows and the particle 'af' ends the main clause. The clause is \"Ik vraag me af\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het gaat regenen",
+     "subject": "het",
+     "finite": "gaat",
+     "role": "of-clause (the open question)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'gaat' stands before the infinitive 'regenen', which closes the clause.",
+     "afterFinite": "regenen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "vraag"
+    },
+    {
+     "label": "reflexive",
+     "text": "me"
+    },
+    {
+     "label": "particle",
+     "text": "af"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    },
+    {
+     "label": "infinitive",
+     "text": "regenen"
+    }
+   ],
+   "meaning": "I wonder whether it is going to rain.",
+   "order": "'Zich afvragen' splits as 'vraag me af'. In the of-clause 'gaat regenen' expresses the near future. Read it as \"Ik vraag me af of het gaat regenen\".",
+   "forms": "afvragen: vraag me af. gaan: het gaat. regenen: infinitive.",
+   "compare": "English 'I wonder' is a single verb. Dutch uses the reflexive 'zich afvragen'.",
+   "mistakes": [
+    {
+     "wrong": "Ik vraag me af of het regenen gaat.",
+     "right": "Ik vraag me af of het gaat regenen.",
+     "why": "The chain 'gaat regenen' keeps the finite verb first."
+    },
+    {
+     "wrong": "Ik afvraag me of het gaat regenen.",
+     "right": "Ik vraag me af of het gaat regenen.",
+     "why": "In a main clause 'afvragen' splits: 'vraag ... af'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Gaat het regenen?",
+    "english": "Is it going to rain?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Gaat het regenen."
+   }
+  },
+  "pat-of-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Asking for information: the reported question starts with 'of' and ends with 'is'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij vraagt",
+     "subject": "Zij",
+     "finite": "vraagt",
+     "role": "main clause (the asking or knowing)",
+     "why": "Zij is first, so 'vraagt' is second; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de winkel open is",
+     "subject": "de winkel",
+     "finite": "is",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de winkel' comes first, the predicate 'open' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "vraagt"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de winkel"
+    },
+    {
+     "label": "predicate",
+     "text": "open"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "She asks whether the shop is open.",
+   "order": "The predicate 'open' stands before 'is'. 'Vragen of' introduces a reported yes/no question. Read it as \"Zij vraagt of de winkel open is\".",
+   "forms": "vragen: zij vraagt. zijn: de winkel is.",
+   "compare": "English 'whether the shop is open' keeps 'is' before 'open'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Zij vraagt of de winkel is open.",
+     "right": "Zij vraagt of de winkel open is.",
+     "why": "The finite verb goes behind the predicate 'open'."
+    },
+    {
+     "wrong": "Zij vraagt of de winkel open zijn.",
+     "right": "Zij vraagt of de winkel open is.",
+     "why": "The singular subject needs 'is'. (not \"Zij vraagt of de winkel open zijn.\", but \"Zij vraagt of de winkel open is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Is de winkel open?",
+    "english": "Is the shop open?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Is de winkel open."
+   }
+  },
+  "pat-of-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A team investigates an open point: does the problem recur? 'Optreedt' is joined at the end."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We onderzoeken",
+     "subject": "We",
+     "finite": "onderzoeken",
+     "role": "main clause (the asking or knowing)",
+     "why": "We is first, so the plural 'onderzoeken' is second; its object is the of-clause. The clause is \"We onderzoeken\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het probleem opnieuw optreedt",
+     "subject": "het probleem",
+     "finite": "optreedt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'het probleem' comes first, the adverb 'opnieuw' follows, and the joined verb 'optreedt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "onderzoeken"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het probleem"
+    },
+    {
+     "label": "adverb",
+     "text": "opnieuw"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "optreedt"
+    }
+   ],
+   "meaning": "We are investigating whether the problem occurs again.",
+   "order": "'Optreden' splits in a main clause ('treedt op') and is joined at the end of the of-clause. Read it as \"We onderzoeken of het probleem opnieuw optreedt\".",
+   "forms": "onderzoeken: wij onderzoeken. optreden: treedt op / optreedt. Card: \"We onderzoeken of het probleem opnieuw optreedt\".",
+   "compare": "English 'occurs again' is two words. Dutch writes 'optreedt' last. For this card: \"We onderzoeken of het probleem opnieuw optreedt\".",
+   "mistakes": [
+    {
+     "wrong": "We onderzoeken of het probleem opnieuw treedt op.",
+     "right": "We onderzoeken of het probleem opnieuw optreedt.",
+     "why": "The separable verb is written together at the end. (not \"We onderzoeken of het probleem opnieuw treedt op.\", but \"We onderzoeken of het probleem opnieuw optreedt.\")"
+    },
+    {
+     "wrong": "We onderzoeken of het probleem opnieuw optreden.",
+     "right": "We onderzoeken of het probleem opnieuw optreedt.",
+     "why": "The singular subject needs 'optreedt'. (not \"We onderzoeken of het probleem opnieuw optreden.\", but \"We onderzoeken of het probleem opnieuw optreedt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Treedt het probleem opnieuw op?",
+    "english": "Does the problem occur again?",
+    "note": "The direct question starts with the verb; 'optreden' splits."
+   }
+  },
+  "pat-of-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The hesitation concerns whether he has to call; the modal 'moet' stands before the infinitive 'bellen'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij twijfelt",
+     "subject": "Hij",
+     "finite": "twijfelt",
+     "role": "main clause (the asking or knowing)",
+     "why": "Hij is first, so 'twijfelt' is second; the of-clause gives the content of the doubt."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of hij moet bellen",
+     "subject": "hij",
+     "finite": "moet",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'hij' comes first and the modal 'moet' stands before the infinitive 'bellen', which closes the clause.",
+     "afterFinite": "bellen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "twijfelt"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moet"
+    },
+    {
+     "label": "infinitive",
+     "text": "bellen"
+    }
+   ],
+   "meaning": "He hesitates whether he should call.",
+   "order": "A modal chain closes the clause: 'moet bellen'. The finite verb is not the last word. Read it as \"Hij twijfelt of hij moet bellen\".",
+   "forms": "twijfelen: hij twijfelt. moeten: hij moet. bellen: infinitive.",
+   "compare": "English 'whether he should call' uses 'should'. Dutch uses 'moet'. For this card: \"Hij twijfelt of hij moet bellen\".",
+   "mistakes": [
+    {
+     "wrong": "Hij twijfelt of moet hij bellen.",
+     "right": "Hij twijfelt of hij moet bellen.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Hij twijfelt of moet hij bellen.\", but \"Hij twijfelt of hij moet bellen.\")"
+    },
+    {
+     "wrong": "Hij twijfelt of hij moeten bellen.",
+     "right": "Hij twijfelt of hij moet bellen.",
+     "why": "With 'hij' the modal is 'moet'. (not \"Hij twijfelt of hij moeten bellen.\", but \"Hij twijfelt of hij moet bellen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Moet hij bellen?",
+    "english": "Does he have to call?",
+    "note": "The direct question starts with the modal and needs no 'of'."
+   }
+  },
+  "pat-of-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Curiosity about an unknown reaction: 'benieuwd zijn of' takes an embedded question."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ben benieuwd",
+     "subject": "Ik",
+     "finite": "ben",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'ben' is second and the predicate 'benieuwd' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of ze het leuk vindt",
+     "subject": "ze",
+     "finite": "vindt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'ze' comes first, then 'het leuk', and the finite verb 'vindt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "ben"
+    },
+    {
+     "label": "predicate",
+     "text": "benieuwd"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "leuk"
+    },
+    {
+     "label": "finite verb",
+     "text": "vindt"
+    }
+   ],
+   "meaning": "I'm curious whether she likes it.",
+   "order": "'Iets leuk vinden' means to like something. The object and the predicate stand before 'vindt'. Read it as \"Ik ben benieuwd of ze het leuk vindt\".",
+   "forms": "zijn: ik ben. vinden: ze vindt.",
+   "compare": "English 'whether she likes it' uses one verb 'likes'. Dutch uses 'het leuk vinden'.",
+   "mistakes": [
+    {
+     "wrong": "Ik ben benieuwd of ze vindt het leuk.",
+     "right": "Ik ben benieuwd of ze het leuk vindt.",
+     "why": "The finite verb goes behind 'het leuk'. (not \"Ik ben benieuwd of ze vindt het leuk.\", but \"Ik ben benieuwd of ze het leuk vindt.\")"
+    },
+    {
+     "wrong": "Ik ben benieuwd of ze het leuk vinden.",
+     "right": "Ik ben benieuwd of ze het leuk vindt.",
+     "why": "With 'ze' meaning 'she' the verb is 'vindt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Vindt ze het leuk?",
+    "english": "Does she like it?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Vindt ze het leuk."
+   }
+  },
+  "pat-of-07": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A polite request to check: the main clause is a question with a modal; the checked point is the of-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Kun je nagaan",
+     "subject": "je",
+     "finite": "Kun",
+     "role": "main clause (the request)",
+     "why": "A yes/no question starts with the finite verb 'Kun', then the subject 'je'; the infinitive 'nagaan' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de printer werkt",
+     "subject": "de printer",
+     "finite": "werkt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de printer' comes first and the finite verb 'werkt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "infinitive",
+     "text": "nagaan"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de printer"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    }
+   ],
+   "meaning": "Can you check whether the printer works?",
+   "order": "'Nagaan' means to check. It stays an infinitive at the end of the main clause, before the of-clause. Read it as \"Kun je nagaan of de printer werkt\".",
+   "forms": "kunnen: kun je. nagaan: infinitive. werken: de printer werkt.",
+   "compare": "English 'Can you check whether...' has the same chain. For this card: \"Kun je nagaan of de printer werkt\".",
+   "mistakes": [
+    {
+     "wrong": "Je kunt nagaan of de printer werkt?",
+     "right": "Kun je nagaan of de printer werkt?",
+     "why": "A question inverts the modal and the subject: 'Kun je'. (not \"Je kunt nagaan of de printer werkt?\", but \"Kun je nagaan of de printer werkt?\")"
+    },
+    {
+     "wrong": "Kun je nagaan of werkt de printer?",
+     "right": "Kun je nagaan of de printer werkt?",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Kun je nagaan of werkt de printer?\", but \"Kun je nagaan of de printer werkt?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Werkt de printer?",
+    "english": "Does the printer work?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Werkt de printer."
+   }
+  },
+  "pat-of-08": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A question that contains an embedded question: the speaker asks for knowledge about a yes/no fact."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Weet je",
+     "subject": "je",
+     "finite": "Weet",
+     "role": "main clause (the question)",
+     "why": "A yes/no question starts with the finite verb 'Weet', then the subject 'je'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de bus nog rijdt",
+     "subject": "de bus",
+     "finite": "rijdt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de bus' comes first, the adverb 'nog' follows, and the finite verb 'rijdt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb",
+     "text": "Weet"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de bus"
+    },
+    {
+     "label": "adverb",
+     "text": "nog"
+    },
+    {
+     "label": "finite verb",
+     "text": "rijdt"
+    }
+   ],
+   "meaning": "Do you know whether the bus is still running?",
+   "order": "The question itself is about knowing; the of-clause is the content. 'Nog' means still. Read it as \"Weet je of de bus nog rijdt\".",
+   "forms": "weten: weet je. rijden: de bus rijdt.",
+   "compare": "English 'Do you know whether the bus is still running?' uses 'do' and 'is running'. Dutch needs neither.",
+   "mistakes": [
+    {
+     "wrong": "Je weet of de bus nog rijdt?",
+     "right": "Weet je of de bus nog rijdt?",
+     "why": "A question inverts the verb and the subject: 'Weet je'."
+    },
+    {
+     "wrong": "Weet je of de bus rijdt nog?",
+     "right": "Weet je of de bus nog rijdt?",
+     "why": "The finite verb 'rijdt' goes behind the adverb 'nog'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Rijdt de bus nog?",
+    "english": "Is the bus still running?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Rijdt de bus nog."
+   }
+  },
+  "pat-of-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The wish to know concerns an open ability; 'mee kunt' closes the of-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik wil weten",
+     "subject": "Ik",
+     "finite": "wil",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so the modal 'wil' is second; the infinitive 'weten' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of jij mee kunt",
+     "subject": "jij",
+     "finite": "kunt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'jij' comes first, the particle 'mee' follows, and the modal 'kunt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "wil"
+    },
+    {
+     "label": "infinitive",
+     "text": "weten"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "particle",
+     "text": "mee"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kunt"
+    }
+   ],
+   "meaning": "I want to know whether you can come along.",
+   "order": "'Meekunnen' keeps its particle before the modal; a verb of motion is understood. The modal agrees with 'jij': 'kunt'.",
+   "forms": "willen: ik wil. weten: infinitive. kunnen: jij kunt.",
+   "compare": "English 'whether you can come along' needs a verb of motion. Dutch can leave it out.",
+   "mistakes": [
+    {
+     "wrong": "Ik wil weten of jij kunt mee.",
+     "right": "Ik wil weten of jij mee kunt.",
+     "why": "The modal goes to the end of the clause, behind 'mee'."
+    },
+    {
+     "wrong": "Ik wil weten of jij mee kunnen.",
+     "right": "Ik wil weten of jij mee kunt.",
+     "why": "With 'jij' the modal is 'kunt'. (not \"Ik wil weten of jij mee kunnen.\", but \"Ik wil weten of jij mee kunt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Kun jij mee?",
+    "english": "Can you come along?",
+    "note": "The direct question starts with the modal and needs no 'of'. Compare: Kun jij mee."
+   }
+  },
+  "pat-of-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The perfect 'heb gevraagd' reports a past act of asking; the of-clause gives the question."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb gevraagd",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so the auxiliary 'heb' is second and the participle 'gevraagd' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of ik vrij mag nemen",
+     "subject": "ik",
+     "finite": "mag",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'ik' comes first, then 'vrij', and the modal 'mag' stands before the infinitive 'nemen', which closes the clause.",
+     "afterFinite": "nemen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gevraagd"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "vrij"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "mag"
+    },
+    {
+     "label": "infinitive",
+     "text": "nemen"
+    }
+   ],
+   "meaning": "I asked whether I may take time off.",
+   "order": "'Vrij nemen' means to take time off. The modal 'mag' marks permission and stands before 'nemen'. Read it as \"Ik heb gevraagd of ik vrij mag nemen\".",
+   "forms": "vragen: heb gevraagd. mogen: ik mag. nemen: infinitive.",
+   "compare": "English 'I asked whether I may take time off' uses the simple past. Dutch uses the perfect 'heb gevraagd'.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb gevraagd of ik mag vrij nemen.",
+     "right": "Ik heb gevraagd of ik vrij mag nemen.",
+     "why": "The infinitive 'nemen' goes to the end, behind 'vrij'."
+    },
+    {
+     "wrong": "Ik vraag gevraagd of ik vrij mag nemen.",
+     "right": "Ik heb gevraagd of ik vrij mag nemen.",
+     "why": "The perfect needs the auxiliary 'heb'. (not \"Ik vraag gevraagd of ik vrij mag nemen.\", but \"Ik heb gevraagd of ik vrij mag nemen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Mag ik vrij nemen?",
+    "english": "May I take time off?",
+    "note": "The direct question starts with the modal and needs no 'of'. Compare: Mag ik vrij nemen."
+   }
+  },
+  "pat-of-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A reported question in the past: 'vroeg of' with the past perfect in the of-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij vroeg",
+     "subject": "Hij",
+     "finite": "vroeg",
+     "role": "main clause (the asking or knowing)",
+     "why": "Hij is first, so the past form 'vroeg' is second; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of wij hadden gegeten",
+     "subject": "wij",
+     "finite": "hadden",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'wij' comes first and the past perfect 'hadden gegeten' closes the short clause. The clause is \"of wij hadden gegeten\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "vroeg"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hadden"
+    },
+    {
+     "label": "past participle",
+     "text": "gegeten"
+    }
+   ],
+   "meaning": "He asked whether we had eaten.",
+   "order": "The question was about a finished event, so the of-clause uses the past perfect. Read it as \"Hij vroeg of wij hadden gegeten\".",
+   "forms": "vragen: hij vroeg. eten: hadden gegeten.",
+   "compare": "English 'whether we had eaten' is the same tense. For this card: \"Hij vroeg of wij hadden gegeten\".",
+   "mistakes": [
+    {
+     "wrong": "Hij vroeg of hadden wij gegeten.",
+     "right": "Hij vroeg of wij hadden gegeten.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Hij vroeg of hadden wij gegeten.\", but \"Hij vroeg of wij hadden gegeten.\")"
+    },
+    {
+     "wrong": "Hij vroeg of wij hebben gegeten.",
+     "right": "Hij vroeg of wij hadden gegeten.",
+     "why": "A reported past question needs the past auxiliary: 'hadden'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hadden jullie gegeten?",
+    "english": "Had you eaten?",
+    "note": "The direct question starts with the auxiliary and needs no 'of'."
+   }
+  },
+  "pat-of-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "She lacked knowledge about a departure; 'was vertrokken' uses 'zijn'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij wist niet",
+     "subject": "Zij",
+     "finite": "wist",
+     "role": "main clause (the asking or knowing)",
+     "why": "Zij is first, so the past form 'wist' is second and the negation 'niet' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of hij was vertrokken",
+     "subject": "hij",
+     "finite": "was",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'hij' comes first and the group 'was vertrokken' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "wist"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "was"
+    },
+    {
+     "label": "past participle",
+     "text": "vertrokken"
+    }
+   ],
+   "meaning": "She did not know whether he had left.",
+   "order": "'Vertrekken' takes 'zijn' because it is a movement; the past perfect is 'was vertrokken'. Read it as \"Zij wist niet of hij was vertrokken\".",
+   "forms": "weten: zij wist. vertrekken: was vertrokken.",
+   "compare": "English 'whether he had left' uses 'had'. Dutch uses 'was'. For this card: \"Zij wist niet of hij was vertrokken\".",
+   "mistakes": [
+    {
+     "wrong": "Zij wist niet of hij had vertrokken.",
+     "right": "Zij wist niet of hij was vertrokken.",
+     "why": "'Vertrekken' takes 'zijn': 'was vertrokken'."
+    },
+    {
+     "wrong": "Zij wist niet of hij vertrokken.",
+     "right": "Zij wist niet of hij was vertrokken.",
+     "why": "The auxiliary 'was' is missing. (not \"Zij wist niet of hij vertrokken.\", but \"Zij wist niet of hij was vertrokken.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Was hij vertrokken?",
+    "english": "Had he left?",
+    "note": "The direct question starts with the auxiliary and needs no 'of'. Compare: Was hij vertrokken."
+   }
+  },
+  "pat-of-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The success of the update is still unclear; the perfect 'is gelukt' uses 'zijn'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik zie nog niet",
+     "subject": "Ik",
+     "finite": "zie",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'zie' is second; 'nog niet' means not yet. The clause is \"Ik zie nog niet\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de update is gelukt",
+     "subject": "de update",
+     "finite": "is",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de update' comes first and the group 'is gelukt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "zie"
+    },
+    {
+     "label": "adverb",
+     "text": "nog niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de update"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "gelukt"
+    }
+   ],
+   "meaning": "I can't yet see whether the update has succeeded.",
+   "order": "'Lukken' takes 'zijn' in the perfect: 'is gelukt'. 'Nog niet' means not yet. Read it as \"Ik zie nog niet of de update is gelukt\".",
+   "forms": "zien: ik zie. lukken: is gelukt.",
+   "compare": "English 'has succeeded' uses 'has'. Dutch uses 'is'. For this card: \"Ik zie nog niet of de update is gelukt\".",
+   "mistakes": [
+    {
+     "wrong": "Ik zie nog niet of de update heeft gelukt.",
+     "right": "Ik zie nog niet of de update is gelukt.",
+     "why": "'Lukken' takes 'zijn': 'is gelukt'. (not \"Ik zie nog niet of de update heeft gelukt.\", but \"Ik zie nog niet of de update is gelukt.\")"
+    },
+    {
+     "wrong": "Ik zie nog niet of de update gelukt.",
+     "right": "Ik zie nog niet of de update is gelukt.",
+     "why": "The auxiliary 'is' is missing. (not \"Ik zie nog niet of de update gelukt.\", but \"Ik zie nog niet of de update is gelukt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Is de update gelukt?",
+    "english": "Has the update succeeded?",
+    "note": "The direct question starts with the auxiliary and needs no 'of'. Compare: Is de update gelukt."
+   }
+  },
+  "pat-of-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "An imperative: the listener has to report back on an open point."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Laat me weten",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Laat",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Laat' stands first, the object 'me' follows, and the infinitive 'weten' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het je lukt",
+     "subject": "het",
+     "finite": "lukt",
+     "role": "of-clause (the open question)",
+     "why": "The dummy subject 'het' comes first, the object 'je' follows, and the finite verb 'lukt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Laat"
+    },
+    {
+     "label": "object",
+     "text": "me"
+    },
+    {
+     "label": "infinitive",
+     "text": "weten"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "object",
+     "text": "je"
+    },
+    {
+     "label": "finite verb",
+     "text": "lukt"
+    }
+   ],
+   "meaning": "Let me know whether you manage.",
+   "order": "'Iets lukt iemand' means someone manages something; the person is the object. The imperative has no subject. Read it as \"Laat me weten of het je lukt\".",
+   "forms": "laten: imperative laat. weten: infinitive. lukken: het lukt.",
+   "compare": "English 'whether you manage' makes 'you' the subject. Dutch makes 'je' the object of 'lukt'.",
+   "mistakes": [
+    {
+     "wrong": "Laat me weten of het lukt je.",
+     "right": "Laat me weten of het je lukt.",
+     "why": "The finite verb goes behind the object 'je'."
+    },
+    {
+     "wrong": "Laat me weten of het je lukken.",
+     "right": "Laat me weten of het je lukt.",
+     "why": "The singular subject 'het' needs 'lukt'. (not \"Laat me weten of het je lukken.\", but \"Laat me weten of het je lukt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Lukt het je?",
+    "english": "Do you manage?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Lukt het je."
+   }
+  },
+  "pat-of-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "An imperative that passes on a question: the doctor's time is the open point."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Vraag",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Vraag",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Vraag' stands first; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de dokter tijd heeft",
+     "subject": "de dokter",
+     "finite": "heeft",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de dokter' comes first, then the object 'tijd', and the finite verb 'heeft' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Vraag"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de dokter"
+    },
+    {
+     "label": "object",
+     "text": "tijd"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    }
+   ],
+   "meaning": "Ask whether the doctor has time.",
+   "order": "A very short main clause. 'Tijd hebben' means to have time. Read it as \"Vraag of de dokter tijd heeft\". Its parts: imperative verb Vraag, conjunction (whether) of, subject de dokter, object tijd.",
+   "forms": "vragen: imperative vraag. hebben: de dokter heeft.",
+   "compare": "English 'Ask whether the doctor has time' has the same structure. For this card: \"Vraag of de dokter tijd heeft\".",
+   "mistakes": [
+    {
+     "wrong": "Vraag of de dokter heeft tijd.",
+     "right": "Vraag of de dokter tijd heeft.",
+     "why": "The finite verb goes behind the object 'tijd'."
+    },
+    {
+     "wrong": "Vraag of de dokter tijd hebben.",
+     "right": "Vraag of de dokter tijd heeft.",
+     "why": "The singular subject needs 'heeft'. (not \"Vraag of de dokter tijd hebben.\", but \"Vraag of de dokter tijd heeft.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Heeft de dokter tijd?",
+    "english": "Does the doctor have time?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Heeft de dokter tijd."
+   }
+  },
+  "pat-of-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Listening for a sign of presence: the open point is whether she is home."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik hoor niet",
+     "subject": "Ik",
+     "finite": "hoor",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'hoor' is second and the negation 'niet' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of ze thuis is",
+     "subject": "ze",
+     "finite": "is",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'ze' comes first, the adverb 'thuis' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "hoor"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I can't hear whether she is home.",
+   "order": "'Horen of' means to hear whether something is the case. The adverb 'thuis' stands before 'is'. Read it as \"Ik hoor niet of ze thuis is\".",
+   "forms": "horen: ik hoor. zijn: ze is.",
+   "compare": "English 'I can't hear whether she is home' needs 'can't'. Dutch uses 'hoor niet'.",
+   "mistakes": [
+    {
+     "wrong": "Ik hoor niet of ze is thuis.",
+     "right": "Ik hoor niet of ze thuis is.",
+     "why": "The finite verb 'is' goes behind the adverb 'thuis'."
+    },
+    {
+     "wrong": "Ik hoor niet of ze thuis ben.",
+     "right": "Ik hoor niet of ze thuis is.",
+     "why": "With 'ze' the verb is 'is'. (not \"Ik hoor niet of ze thuis ben.\", but \"Ik hoor niet of ze thuis is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Is ze thuis?",
+    "english": "Is she home?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Is ze thuis."
+   }
+  },
+  "pat-of-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A modal in the main clause limits what can be said; the unknown is whether it is true."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kan niet zeggen",
+     "subject": "Ik",
+     "finite": "kan",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so the modal 'kan' is second; 'niet' and the infinitive 'zeggen' close the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het waar is",
+     "subject": "het",
+     "finite": "is",
+     "role": "of-clause (the open question)",
+     "why": "The dummy subject 'het' comes first, the predicate 'waar' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "infinitive",
+     "text": "zeggen"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "predicate",
+     "text": "waar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I can't say whether it is true.",
+   "order": "The modal chain 'kan niet zeggen' stands in the main clause; the of-clause is the content that cannot be stated.",
+   "forms": "kunnen: ik kan. zeggen: infinitive. zijn: het is.",
+   "compare": "English 'I can't say whether it is true' keeps 'is' before 'true'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik kan niet zeggen of het is waar.",
+     "right": "Ik kan niet zeggen of het waar is.",
+     "why": "The finite verb 'is' goes behind the predicate 'waar'."
+    },
+    {
+     "wrong": "Ik kan zeggen niet of het waar is.",
+     "right": "Ik kan niet zeggen of het waar is.",
+     "why": "The negation 'niet' stands before the infinitive."
+    }
+   ],
+   "contrast": {
+    "dutch": "Is het waar?",
+    "english": "Is it true?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Is het waar."
+   }
+  },
+  "pat-of-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Nobody knows the outcome; 'doorgaat' is the joined separable verb of the of-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Niemand weet",
+     "subject": "Niemand",
+     "finite": "weet",
+     "role": "main clause (the asking or knowing)",
+     "why": "'Niemand' is first, so 'weet' is second; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het project doorgaat",
+     "subject": "het project",
+     "finite": "doorgaat",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'het project' comes first and the joined separable verb 'doorgaat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Niemand"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het project"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "doorgaat"
+    }
+   ],
+   "meaning": "Nobody knows whether the project is going ahead.",
+   "order": "'Doorgaan' means to go ahead and splits as 'gaat door' in a main clause. 'Niemand' is singular and takes 'weet'.",
+   "forms": "weten: niemand weet. doorgaan: gaat door / doorgaat.",
+   "compare": "English 'goes ahead' is two words. Dutch writes 'doorgaat' as one in the dependent clause.",
+   "mistakes": [
+    {
+     "wrong": "Niemand weet of het project gaat door.",
+     "right": "Niemand weet of het project doorgaat.",
+     "why": "In a dependent clause the separable verb is written together. (not \"Niemand weet of het project gaat door.\", but \"Niemand weet of het project doorgaat.\")"
+    },
+    {
+     "wrong": "Niemand weten of het project doorgaat.",
+     "right": "Niemand weet of het project doorgaat.",
+     "why": "'Niemand' takes 'weet'. (not \"Niemand weten of het project doorgaat.\", but \"Niemand weet of het project doorgaat.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Gaat het project door?",
+    "english": "Is the project going ahead?",
+    "note": "The direct question starts with the verb; 'doorgaan' splits."
+   }
+  },
+  "pat-of-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A customer's wish to know: 'willen weten' in the main clause and the delivery question in the of-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De klant wil weten",
+     "subject": "De klant",
+     "finite": "wil",
+     "role": "main clause (the asking or knowing)",
+     "why": "'De klant' is first and the modal 'wil' is second; the infinitive 'weten' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de levering vandaag komt",
+     "subject": "de levering",
+     "finite": "komt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de levering' comes first, the adverb 'vandaag' follows, and the finite verb 'komt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De klant"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "wil"
+    },
+    {
+     "label": "infinitive",
+     "text": "weten"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de levering"
+    },
+    {
+     "label": "adverb",
+     "text": "vandaag"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    }
+   ],
+   "meaning": "The customer wants to know whether the delivery is coming today.",
+   "order": "The time adverb 'vandaag' stands before the verb inside the of-clause. Read it as \"De klant wil weten of de levering vandaag komt\".",
+   "forms": "willen: de klant wil. weten: infinitive. komen: de levering komt.",
+   "compare": "English 'whether the delivery is coming today' uses 'is coming'. Dutch uses 'komt'.",
+   "mistakes": [
+    {
+     "wrong": "De klant wil weten of de levering komt vandaag.",
+     "right": "De klant wil weten of de levering vandaag komt.",
+     "why": "The finite verb goes behind the adverb 'vandaag'."
+    },
+    {
+     "wrong": "De klant willen weten of de levering vandaag komt.",
+     "right": "De klant wil weten of de levering vandaag komt.",
+     "why": "The singular subject needs 'wil'. (not \"De klant willen weten of de levering vandaag komt.\", but \"De klant wil weten of de levering vandaag komt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Komt de levering vandaag?",
+    "english": "Is the delivery coming today?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Komt de levering vandaag."
+   }
+  },
+  "pat-of-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "'Eerst' (first) goes with the main clause; the embedded question names what is checked."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer eerst",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'controleer' is second and the adverb 'eerst' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of alles klopt",
+     "subject": "alles",
+     "finite": "klopt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'alles' comes first and the finite verb 'klopt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "adverb",
+     "text": "eerst"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "alles"
+    },
+    {
+     "label": "finite verb",
+     "text": "klopt"
+    }
+   ],
+   "meaning": "First I check whether everything is correct.",
+   "order": "'Alles' is singular and takes 'klopt'. The adverb 'eerst' sets the order of steps. Read it as \"Ik controleer eerst of alles klopt\".",
+   "forms": "controleren: ik controleer. kloppen: alles klopt.",
+   "compare": "English 'First I check whether everything is correct' fronts 'first'. Dutch can keep it after the verb.",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer eerst of klopt alles.",
+     "right": "Ik controleer eerst of alles klopt.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik controleer eerst of klopt alles.\", but \"Ik controleer eerst of alles klopt.\")"
+    },
+    {
+     "wrong": "Ik controleer eerst of alles kloppen.",
+     "right": "Ik controleer eerst of alles klopt.",
+     "why": "'Alles' takes 'klopt'. (not \"Ik controleer eerst of alles kloppen.\", but \"Ik controleer eerst of alles klopt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Klopt alles?",
+    "english": "Is everything correct?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Klopt alles."
+   }
+  },
+  "pat-of-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Uncertainty about a wish: the modal 'wil' closes the of-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij is niet zeker",
+     "subject": "Zij",
+     "finite": "is",
+     "role": "main clause (the asking or knowing)",
+     "why": "Zij is first, so 'is' is second; the predicate 'niet zeker' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of ze de baan wil",
+     "subject": "ze",
+     "finite": "wil",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'ze' comes first, then the object 'de baan', and the modal 'wil' closes the clause (the verb 'hebben' is understood)."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "niet zeker"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "de baan"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "wil"
+    }
+   ],
+   "meaning": "She isn't sure whether she wants the job.",
+   "order": "'De baan willen' means to want the job; the infinitive 'hebben' can be left out. Read it as \"Zij is niet zeker of ze de baan wil\".",
+   "forms": "zijn: zij is. willen: ze wil.",
+   "compare": "English 'whether she wants the job' keeps 'wants' before the object. Dutch puts 'wil' last.",
+   "mistakes": [
+    {
+     "wrong": "Zij is niet zeker of ze wil de baan.",
+     "right": "Zij is niet zeker of ze de baan wil.",
+     "why": "The modal goes behind the object. (not \"Zij is niet zeker of ze wil de baan.\", but \"Zij is niet zeker of ze de baan wil.\")"
+    },
+    {
+     "wrong": "Zij is niet zeker of ze de baan willen.",
+     "right": "Zij is niet zeker of ze de baan wil.",
+     "why": "With 'ze' meaning 'she' the modal is 'wil'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wil ze de baan?",
+    "english": "Does she want the job?",
+    "note": "The direct question starts with the modal and needs no 'of'. Compare: Wil ze de baan."
+   }
+  },
+  "pat-of-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The result depends on an open fact; 'afhangen van' splits around the dummy 'ervan'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het hangt ervan af",
+     "subject": "Het",
+     "finite": "hangt",
+     "role": "main clause (the asking or knowing)",
+     "why": "'Het' is first, so 'hangt' is second; 'ervan' follows and the particle 'af' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "of-clause (the open question)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'regent' closes the short clause. The clause is \"of het regent\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "hangt"
+    },
+    {
+     "label": "adverb",
+     "text": "ervan"
+    },
+    {
+     "label": "particle",
+     "text": "af"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    }
+   ],
+   "meaning": "It depends on whether it rains.",
+   "order": "'Afhangen van' splits as 'hangt ... af'. The word 'ervan' points ahead to the of-clause. Read it as \"Het hangt ervan af of het regent\".",
+   "forms": "afhangen: hangt ... af. regenen: het regent.",
+   "compare": "English 'It depends on whether it rains' uses 'on'. Dutch uses 'ervan' plus 'af'.",
+   "mistakes": [
+    {
+     "wrong": "Het afhangt ervan of het regent.",
+     "right": "Het hangt ervan af of het regent.",
+     "why": "In a main clause 'afhangen' splits: 'hangt ... af'."
+    },
+    {
+     "wrong": "Het hangt af ervan of het regent.",
+     "right": "Het hangt ervan af of het regent.",
+     "why": "The word 'ervan' comes before the particle 'af'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Regent het?",
+    "english": "Is it raining?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Regent het."
+   }
+  },
+  "pat-of-23": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The of-clause is fronted for emphasis: the open question is the topic of the sentence."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Of het gaat regenen",
+     "subject": "het",
+     "finite": "gaat",
+     "role": "of-clause (the open question)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'gaat' stands before the infinitive 'regenen', which closes the clause. The clause is \"Of het gaat regenen\".",
+     "afterFinite": "regenen"
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "weet niemand",
+     "subject": "niemand",
+     "finite": "weet",
+     "role": "main clause (the asking or knowing)",
+     "why": "The finite verb 'weet' comes first, then the subject 'niemand'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (whether)",
+     "text": "Of"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    },
+    {
+     "label": "infinitive",
+     "text": "regenen"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "subject",
+     "text": "niemand"
+    }
+   ],
+   "meaning": "Whether it is going to rain, nobody knows.",
+   "order": "A fronted of-clause fills position one, so the main clause inverts to 'weet niemand'. The sentence is a marked, emphatic way to say 'Niemand weet of het gaat regenen'.",
+   "forms": "gaan: het gaat. regenen: infinitive. weten: niemand weet.",
+   "compare": "English 'Whether it will rain, nobody knows' sounds just as marked. Dutch uses the same inversion.",
+   "mistakes": [
+    {
+     "wrong": "Of het gaat regenen, niemand weet.",
+     "right": "Of het gaat regenen, weet niemand.",
+     "why": "After the fronted clause the main clause starts with the verb: 'weet niemand'."
+    },
+    {
+     "wrong": "Of gaat het regenen, weet niemand.",
+     "right": "Of het gaat regenen, weet niemand.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Of gaat het regenen, weet niemand.\", but \"Of het gaat regenen, weet niemand.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Niemand weet of het gaat regenen.",
+    "english": "Nobody knows whether it is going to rain.",
+    "note": "With the main clause first there is no inversion. Compare: Niemand weet of het gaat regenen."
+   }
+  },
+  "pat-of-24": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A short fronted of-clause: 'weet ik niet' follows because the clause fills position one."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Of hij komt",
+     "subject": "hij",
+     "finite": "komt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'hij' comes first and the finite verb 'komt' closes the short clause. The clause is \"Of hij komt\"."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "weet ik niet",
+     "subject": "ik",
+     "finite": "weet",
+     "role": "main clause (the asking or knowing)",
+     "why": "The finite verb 'weet' comes first, then the subject 'ik' and the negation 'niet'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (whether)",
+     "text": "Of"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    }
+   ],
+   "meaning": "Whether he's coming, I don't know.",
+   "order": "The main clause inverts to 'weet ik niet'. The negation stays at the end. Read it as \"Of hij komt, weet ik niet\".",
+   "forms": "komen: hij komt. weten: ik weet.",
+   "compare": "English 'Whether he's coming, I don't know' is marked. Dutch uses the same inversion.",
+   "mistakes": [
+    {
+     "wrong": "Of hij komt, ik weet niet.",
+     "right": "Of hij komt, weet ik niet.",
+     "why": "After the fronted clause the main clause starts with the verb: 'weet ik'."
+    },
+    {
+     "wrong": "Of hij komt, weet niet ik.",
+     "right": "Of hij komt, weet ik niet.",
+     "why": "The negation follows the subject: 'weet ik niet'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet niet of hij komt.",
+    "english": "I don't know whether he is coming.",
+    "note": "With the main clause first there is no inversion. Compare: Ik weet niet of hij komt."
+   }
+  },
+  "pat-of-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The fronted clause 'Of ze het begrepen heeft' is the subject of the question 'is nog de vraag'."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Of ze het begrepen heeft",
+     "subject": "ze",
+     "finite": "heeft",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'ze' comes first, then the object 'het', and the perfect group 'begrepen heeft' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is nog de vraag",
+     "subject": "de vraag",
+     "finite": "is",
+     "role": "main clause (the asking or knowing)",
+     "why": "The finite verb 'is' comes first, then the adverb 'nog' and the predicate noun 'de vraag'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (whether)",
+     "text": "Of"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "past participle",
+     "text": "begrepen"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heeft"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "adverb",
+     "text": "nog"
+    },
+    {
+     "label": "predicate",
+     "text": "de vraag"
+    }
+   ],
+   "meaning": "Whether she has understood it is still the question.",
+   "order": "The whole of-clause is what remains open; the main clause says that this is 'nog de vraag'. This order is common in the written language.",
+   "forms": "begrijpen: heeft begrepen. zijn: is.",
+   "compare": "English 'Whether she has understood it is still the question' also begins with the clause.",
+   "mistakes": [
+    {
+     "wrong": "Of ze het begrepen, is nog de vraag.",
+     "right": "Of ze het begrepen heeft, is nog de vraag.",
+     "why": "The auxiliary 'heeft' is missing from the of-clause."
+    },
+    {
+     "wrong": "Of ze het begrepen heeft, nog is de vraag.",
+     "right": "Of ze het begrepen heeft, is nog de vraag.",
+     "why": "The finite verb 'is' stays in second position of the main clause: 'is nog de vraag'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het is nog de vraag of ze het begrepen heeft.",
+    "english": "It is still the question whether she has understood it.",
+    "note": "With 'het' as a placeholder the of-clause moves to the end."
+   }
+  },
+  "pat-of-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether, and of = or in the same sentence",
+    "why": "'Of' appears twice: first as the whether-conjunction, then as the 'or' between two infinitives."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik weet niet",
+     "subject": "Ik",
+     "finite": "weet",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'weet' is second and the negation 'niet' follows. The clause is \"Ik weet niet\". (2) (3)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of ik moet lachen of huilen",
+     "subject": "ik",
+     "finite": "moet",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'ik' comes first, the modal 'moet' follows, and the two infinitives 'lachen of huilen' close the clause.",
+     "afterFinite": "lachen of huilen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moet"
+    },
+    {
+     "label": "infinitive",
+     "text": "lachen"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "infinitive",
+     "text": "huilen"
+    }
+   ],
+   "meaning": "I don't know whether to laugh or cry.",
+   "order": "The modal 'moet' is not the last word: the two infinitives joined by 'of' follow it. Only the first 'of' starts a clause.",
+   "forms": "weten: ik weet. moeten: ik moet. lachen, huilen: infinitives.",
+   "compare": "English uses 'whether' and 'or'. Dutch uses 'of' for both and relies on the position to tell them apart.",
+   "mistakes": [
+    {
+     "wrong": "Ik weet niet of moet ik lachen of huilen.",
+     "right": "Ik weet niet of ik moet lachen of huilen.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Ik weet niet of moet ik lachen of huilen.\", but \"Ik weet niet of ik moet lachen of huilen.\")"
+    },
+    {
+     "wrong": "Ik weet niet of ik moet lachen en huilen.",
+     "right": "Ik weet niet of ik moet lachen of huilen.",
+     "why": "The choice between two options needs 'of' (or), not 'en' (and)."
+    }
+   ],
+   "contrast": {
+    "dutch": "Moet ik lachen of huilen?",
+    "english": "Should I laugh or cry?",
+    "note": "The direct question has verb-first order; the only 'of' means 'or'."
+   }
+  },
+  "pat-of-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether, and of = or in the same sentence",
+    "why": "The first 'of' starts the embedded question, the second 'of' offers a choice between tea and coffee."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik vraag",
+     "subject": "Ik",
+     "finite": "vraag",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'vraag' is second; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of je thee of koffie wilt",
+     "subject": "je",
+     "finite": "wilt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'je' comes first, then the two options joined by 'of', and the finite verb 'wilt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "vraag"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "thee"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "object",
+     "text": "koffie"
+    },
+    {
+     "label": "finite verb",
+     "text": "wilt"
+    }
+   ],
+   "meaning": "I'm asking whether you want tea or coffee.",
+   "order": "The verb 'wilt' stands behind both options. The second 'of' changes nothing about the verb order. Read it as \"Ik vraag of je thee of koffie wilt\".",
+   "forms": "vragen: ik vraag. willen: je wilt.",
+   "compare": "English 'whether you want tea or coffee' also has both words. Dutch uses 'of' twice.",
+   "mistakes": [
+    {
+     "wrong": "Ik vraag of je wilt thee of koffie.",
+     "right": "Ik vraag of je thee of koffie wilt.",
+     "why": "The finite verb goes behind both options."
+    },
+    {
+     "wrong": "Ik vraag of je thee of koffie wil.",
+     "right": "Ik vraag of je thee of koffie wilt.",
+     "why": "With 'je' the modal is 'wilt' in this register."
+    }
+   ],
+   "contrast": {
+    "dutch": "Wil je thee of koffie?",
+    "english": "Do you want tea or coffee?",
+    "note": "The direct question uses 'of' only for 'or'."
+   }
+  },
+  "pat-of-28": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "of = or (coordinating)",
+    "why": "Here 'of' is the coordinating conjunction 'or': it joins two options in one main clause and sends no verb to the end."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wil je thee of koffie",
+     "subject": "je",
+     "finite": "Wil",
+     "role": "single main clause",
+     "why": "This is a yes/no question: the modal 'Wil' stands first, then the subject 'je', then the two options joined by 'of'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Wil"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "thee"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "object",
+     "text": "koffie"
+    }
+   ],
+   "meaning": "Do you want tea or coffee?",
+   "order": "The verb stays at the front of the question. 'Of' only connects the objects 'thee' and 'koffie'. Read it as \"Wil je thee of koffie\".",
+   "forms": "willen: wil je.",
+   "compare": "English 'Do you want tea or coffee?' needs 'do'. Dutch inverts the modal.",
+   "mistakes": [
+    {
+     "wrong": "Je wil thee of koffie?",
+     "right": "Wil je thee of koffie?",
+     "why": "A question inverts the modal and the subject: 'Wil je'."
+    },
+    {
+     "wrong": "Wil je thee of koffie wilt?",
+     "right": "Wil je thee of koffie?",
+     "why": "One finite verb is enough; the modal is not repeated at the end."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik vraag of je thee of koffie wilt.",
+    "english": "I ask whether you want tea or coffee.",
+    "note": "In an embedded question the first 'of' starts a clause and the verb goes last."
+   }
+  },
+  "pat-of-29": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "of = or (coordinating)",
+    "why": "Here 'of' means 'or': it joins two infinitive options after the modal 'kunnen'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We kunnen hier eten of thuis bestellen",
+     "subject": "We",
+     "finite": "kunnen",
+     "role": "single main clause",
+     "why": "'We' is first, so the plural 'kunnen' is second; two infinitive options joined by 'of' end the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kunnen"
+    },
+    {
+     "label": "adverb",
+     "text": "hier"
+    },
+    {
+     "label": "infinitive",
+     "text": "eten"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "infinitive",
+     "text": "bestellen"
+    }
+   ],
+   "meaning": "We can eat here or order in.",
+   "order": "One finite verb 'kunnen' serves both options. The infinitives 'eten' and 'bestellen' are joined by 'of'. Read it as \"We kunnen hier eten of thuis bestellen\".",
+   "forms": "kunnen: wij kunnen. eten, bestellen: infinitives.",
+   "compare": "English 'We can eat here or order in' has the same shape. For this card: \"We kunnen hier eten of thuis bestellen\".",
+   "mistakes": [
+    {
+     "wrong": "We kunnen hier eten of bestellen thuis.",
+     "right": "We kunnen hier eten of thuis bestellen.",
+     "why": "The second option keeps its adverb before the infinitive."
+    },
+    {
+     "wrong": "We kunt hier eten of thuis bestellen.",
+     "right": "We kunnen hier eten of thuis bestellen.",
+     "why": "The plural 'we' needs 'kunnen'. (not \"We kunt hier eten of thuis bestellen.\", but \"We kunnen hier eten of thuis bestellen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet niet of we hier kunnen eten of thuis moeten bestellen.",
+    "english": "I don't know whether we can eat here or have to order in.",
+    "note": "An embedded question puts both modals inside the of-clause."
+   }
+  },
+  "pat-of-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "'Het maakt niet uit' is a fixed phrase that takes an of-clause for the thing that makes no difference."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het maakt niet uit",
+     "subject": "Het",
+     "finite": "maakt",
+     "role": "main clause (the asking or knowing)",
+     "why": "'Het' is first, so 'maakt' is second; 'niet' follows and the particle 'uit' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of je komt",
+     "subject": "je",
+     "finite": "komt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'je' comes first and the finite verb 'komt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "maakt"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "particle",
+     "text": "uit"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    }
+   ],
+   "meaning": "It doesn't matter whether you come.",
+   "order": "'Uitmaken' splits as 'maakt ... uit' and the negation stands between the two parts. Read it as \"Het maakt niet uit of je komt\".",
+   "forms": "uitmaken: maakt ... uit. komen: je komt.",
+   "compare": "English 'It doesn't matter whether you come' uses 'matter'. Dutch uses 'uitmaken'.",
+   "mistakes": [
+    {
+     "wrong": "Het maakt uit niet of je komt.",
+     "right": "Het maakt niet uit of je komt.",
+     "why": "The negation stands before the particle 'uit'."
+    },
+    {
+     "wrong": "Het maakt niet uit of je komen.",
+     "right": "Het maakt niet uit of je komt.",
+     "why": "With 'je' the verb is 'komt'. (not \"Het maakt niet uit of je komen.\", but \"Het maakt niet uit of je komt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Maakt het uit of je komt?",
+    "english": "Does it matter whether you come?",
+    "note": "A direct question starts with the verb. Compare: Maakt het uit of je komt."
+   }
+  },
+  "pat-of-reuse-career-changes-008": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Checking is a way of finding out an unknown fact, so the embedded yes/no question starts with 'of'."
+   },
+   "situationNl": "Een beheerder vraagt wat je nakijkt bij een nieuw account. Zeg welk gegeven je nagaat zonder het al te weten.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'controleer' is second; its object is the whole of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de gebruiker de juiste rol heeft",
+     "subject": "de gebruiker",
+     "finite": "heeft",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de gebruiker' comes first, then the object 'de juiste rol', and the finite verb 'heeft' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de gebruiker"
+    },
+    {
+     "label": "object",
+     "text": "de juiste rol"
+    },
+    {
+     "label": "finite verb",
+     "text": "heeft"
+    }
+   ],
+   "meaning": "I check whether the user has the correct role.",
+   "order": "The of-clause fills the object slot of 'controleer'. Inside it the verb goes last, behind the object. Read it as \"Ik controleer of de gebruiker de juiste rol heeft\".",
+   "forms": "controleren: ik controleer. hebben: de gebruiker heeft.",
+   "compare": "English 'whether the user has the right role' keeps 'has' before the object. Dutch puts 'heeft' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer of de gebruiker heeft de juiste rol.",
+     "right": "Ik controleer of de gebruiker de juiste rol heeft.",
+     "why": "The finite verb goes behind the object 'de juiste rol'."
+    },
+    {
+     "wrong": "Ik controleer of de gebruiker de juiste rol hebben.",
+     "right": "Ik controleer of de gebruiker de juiste rol heeft.",
+     "why": "The singular subject needs 'heeft'. (not \"Ik controleer of de gebruiker de juiste rol hebben.\", but \"Ik controleer of de gebruiker de juiste rol heeft.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Heeft de gebruiker de juiste rol?",
+    "english": "Does the user have the right role?",
+    "note": "A direct question starts with the verb and needs no 'of'."
+   }
+  },
+  "pat-of-reuse-career-changes-027": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The answer is unknown: either the test account is ready or it is not."
+   },
+   "situationNl": "Een collega wil beginnen met testen. Zeg wat je eerst nagaat over de omgeving zonder het antwoord te kennen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'controleer' is second; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het testaccount klaarstaat",
+     "subject": "het testaccount",
+     "finite": "klaarstaat",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'het testaccount' comes first and the joined separable verb 'klaarstaat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het testaccount"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "klaarstaat"
+    }
+   ],
+   "meaning": "I check whether the test account is ready.",
+   "order": "'Klaarstaan' splits in a main clause ('staat klaar') and is joined at the end of the of-clause. Read it as \"Ik controleer of het testaccount klaarstaat\".",
+   "forms": "controleren: ik controleer. klaarstaan: staat klaar / klaarstaat.",
+   "compare": "English 'is ready' uses a predicate. Dutch uses the verb 'klaarstaan'. For this card: \"Ik controleer of het testaccount klaarstaat\".",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer of het testaccount staat klaar.",
+     "right": "Ik controleer of het testaccount klaarstaat.",
+     "why": "In a dependent clause the separable verb is written together. (not \"Ik controleer of het testaccount staat klaar.\", but \"Ik controleer of het testaccount klaarstaat.\")"
+    },
+    {
+     "wrong": "Ik controleer of het testaccount klaarstaan.",
+     "right": "Ik controleer of het testaccount klaarstaat.",
+     "why": "The singular subject needs 'klaarstaat'. (not \"Ik controleer of het testaccount klaarstaan.\", but \"Ik controleer of het testaccount klaarstaat.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Staat het testaccount klaar?",
+    "english": "Is the test account ready?",
+    "note": "A direct question starts with the verb; 'klaarstaan' splits."
+   }
+  },
+  "pat-of-reuse-career-clarification-038": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether, and of = or in the same sentence",
+    "why": "Two uses of 'of' in one sentence: the first introduces the whether-clause, the second means 'or'."
+   },
+   "situationNl": "Een collega noemt twee omgevingen en je weet niet welke bedoeld wordt. Zeg beleefd dat je twijfelt en noem de twee mogelijkheden.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik weet niet",
+     "subject": "Ik",
+     "finite": "weet",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'weet' is second and the negation 'niet' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of je de nieuwe of de bestaande omgeving bedoelt",
+     "subject": "je",
+     "finite": "bedoelt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'je' comes first, then the object with the coordinating 'of', and the finite verb 'bedoelt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "de nieuwe"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "object",
+     "text": "de bestaande omgeving"
+    },
+    {
+     "label": "finite verb",
+     "text": "bedoelt"
+    }
+   ],
+   "meaning": "I do not know whether you mean the new or the existing environment.",
+   "order": "The first 'of' starts a clause and sends the verb to the end. The second 'of' joins two objects and changes nothing about the verb.",
+   "forms": "weten: ik weet. bedoelen: je bedoelt.",
+   "compare": "English uses two different words: 'whether' and 'or'. Dutch uses 'of' for both.",
+   "mistakes": [
+    {
+     "wrong": "Ik weet niet of je bedoelt de nieuwe of de bestaande omgeving.",
+     "right": "Ik weet niet of je de nieuwe of de bestaande omgeving bedoelt.",
+     "why": "The finite verb goes to the end of the clause, behind both options."
+    },
+    {
+     "wrong": "Ik weet niet of je de nieuwe of de bestaande omgeving bedoel.",
+     "right": "Ik weet niet of je de nieuwe of de bestaande omgeving bedoelt.",
+     "why": "With 'je' the verb needs -t: 'bedoelt'. (not \"Ik weet niet of je de nieuwe of de bestaande omgeving bedoel.\", but \"Ik weet niet of je de nieuwe of de bestaande omgeving bedoelt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Bedoel je de nieuwe of de bestaande omgeving?",
+    "english": "Do you mean the new or the existing environment?",
+    "note": "A direct question uses 'of' only for 'or'."
+   }
+  },
+  "pat-of-reuse-career-incidents-057": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Whether the user can follow the normal procedure again is the open point; 'kan volgen' is a modal chain."
+   },
+   "situationNl": "Na een incident is een proces tijdelijk veranderd. Een manager vraagt wat je nu nakijkt. Zeg wat je wilt vaststellen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'controleer' is second; its object is the of-clause. The clause is \"Ik controleer\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de gebruiker de gewone werkwijze weer kan volgen",
+     "subject": "de gebruiker",
+     "finite": "kan",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de gebruiker' comes first, then the object and 'weer', and the modal 'kan' stands before the infinitive 'volgen', which closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de gebruiker"
+    },
+    {
+     "label": "object",
+     "text": "de gewone werkwijze"
+    },
+    {
+     "label": "adverb",
+     "text": "weer"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "infinitive",
+     "text": "volgen"
+    }
+   ],
+   "meaning": "I check whether the user can follow the normal procedure again.",
+   "order": "A modal chain 'kan volgen' closes the clause: the modal first, the infinitive last. Read it as \"Ik controleer of de gebruiker de gewone werkwijze weer kan volgen\".",
+   "forms": "controleren: ik controleer. kunnen: de gebruiker kan. volgen: infinitive.",
+   "compare": "English 'can follow' keeps the chain together. Dutch also, but behind the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer of de gebruiker kan de gewone werkwijze weer volgen.",
+     "right": "Ik controleer of de gebruiker de gewone werkwijze weer kan volgen.",
+     "why": "The modal chain goes behind the object and the adverb."
+    },
+    {
+     "wrong": "Ik controleer of de gebruiker de gewone werkwijze weer kunt volgen.",
+     "right": "Ik controleer of de gebruiker de gewone werkwijze weer kan volgen.",
+     "why": "The singular subject needs the modal 'kan'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Kan de gebruiker de gewone werkwijze weer volgen?",
+    "english": "Can the user follow the normal procedure again?",
+    "note": "A direct question starts with the modal and needs no 'of'."
+   }
+  },
+  "pat-of-reuse-career-meetings-037": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Not being sure leads to an embedded question; 'zeker zijn' is followed by 'of'."
+   },
+   "situationNl": "In een gesprek over een plan klinkt iets anders dan jij dacht. Spreek je twijfel voorzichtig uit zonder te beschuldigen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ben niet zeker",
+     "subject": "Ik",
+     "finite": "ben",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'ben' is second; the predicate 'niet zeker' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of we hetzelfde bedoelen",
+     "subject": "we",
+     "finite": "bedoelen",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'we' comes first, then the object 'hetzelfde', and the plural verb 'bedoelen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "ben"
+    },
+    {
+     "label": "predicate",
+     "text": "niet zeker"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "hetzelfde"
+    },
+    {
+     "label": "finite verb",
+     "text": "bedoelen"
+    }
+   ],
+   "meaning": "I am not sure whether we mean the same thing.",
+   "order": "After 'zeker zijn' the open point is introduced by 'of'. The predicate 'niet zeker' stays in the main clause. Read it as \"Ik ben niet zeker of we hetzelfde bedoelen\".",
+   "forms": "zijn: ik ben. bedoelen: wij bedoelen.",
+   "compare": "English 'I'm not sure whether we mean the same' keeps 'mean' before the object. Dutch puts 'bedoelen' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik ben niet zeker of we bedoelen hetzelfde.",
+     "right": "Ik ben niet zeker of we hetzelfde bedoelen.",
+     "why": "The plural verb goes behind the object 'hetzelfde'."
+    },
+    {
+     "wrong": "Ik ben niet zeker of we hetzelfde bedoelt.",
+     "right": "Ik ben niet zeker of we hetzelfde bedoelen.",
+     "why": "The plural 'we' needs 'bedoelen'. (not \"Ik ben niet zeker of we hetzelfde bedoelt.\", but \"Ik ben niet zeker of we hetzelfde bedoelen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Bedoelen we hetzelfde?",
+    "english": "Do we mean the same thing?",
+    "note": "A direct question starts with the verb and needs no 'of'. Compare: Bedoelen we hetzelfde."
+   }
+  },
+  "pat-of-reuse-career-meetings-047": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The unknown fact is whether the minutes reflect the decision correctly."
+   },
+   "situationNl": "Er is een verslag van een overleg verschenen. Een collega vraagt wat jij nog nakijkt. Zeg wat je wilt vaststellen over de inhoud.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'controleer' is second; its object is the of-clause. The clause is \"Ik controleer\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het verslag ons besluit correct weergeeft",
+     "subject": "het verslag",
+     "finite": "weergeeft",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'het verslag' comes first, then the object and the adverb 'correct', and the joined separable verb 'weergeeft' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het verslag"
+    },
+    {
+     "label": "object",
+     "text": "ons besluit"
+    },
+    {
+     "label": "adverb",
+     "text": "correct"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "weergeeft"
+    }
+   ],
+   "meaning": "I check whether the minutes accurately reflect our decision.",
+   "order": "'Weergeven' splits in a main clause ('geeft weer') and is joined at the end of the of-clause. Read it as \"Ik controleer of het verslag ons besluit correct weergeeft\".",
+   "forms": "controleren: ik controleer. weergeven: geeft weer / weergeeft.",
+   "compare": "English 'reflects' is a single verb. Dutch uses the separable 'weergeven'.",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer of het verslag ons besluit correct geeft weer.",
+     "right": "Ik controleer of het verslag ons besluit correct weergeeft.",
+     "why": "In a dependent clause the separable verb is written together. (not \"Ik controleer of het verslag ons besluit correct geeft weer.\", but \"Ik controleer of het verslag ons besluit correct weergeeft.\")"
+    },
+    {
+     "wrong": "Ik controleer of het verslag ons besluit correct weergeven.",
+     "right": "Ik controleer of het verslag ons besluit correct weergeeft.",
+     "why": "The singular subject needs 'weergeeft'. (not \"Ik controleer of het verslag ons besluit correct weergeven.\", but \"Ik controleer of het verslag ons besluit correct weergeeft.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Geeft het verslag ons besluit correct weer?",
+    "english": "Does the report reflect our decision correctly?",
+    "note": "A direct question starts with the verb; 'weergeven' splits."
+   }
+  },
+  "pat-of-reuse-career-priorities-057": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Whether the supplier has confirmed is unknown; the perfect group 'heeft bevestigd' closes the clause."
+   },
+   "situationNl": "Een project hangt af van een levering. Een manager wil weten wat jij nagaat. Zeg welk gegeven je wilt bevestigd zien.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'controleer' is second; its object is the of-clause. The clause is \"Ik controleer\". (2) (3)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de leverancier de datum heeft bevestigd",
+     "subject": "de leverancier",
+     "finite": "heeft",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de leverancier' comes first, then the object 'de datum', and the perfect group 'heeft bevestigd' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de leverancier"
+    },
+    {
+     "label": "object",
+     "text": "de datum"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heeft"
+    },
+    {
+     "label": "past participle",
+     "text": "bevestigd"
+    }
+   ],
+   "meaning": "I check whether the supplier has confirmed the date.",
+   "order": "The perfect group stands at the end of the of-clause: the auxiliary 'heeft' first, the participle last. Read it as \"Ik controleer of de leverancier de datum heeft bevestigd\".",
+   "forms": "controleren: ik controleer. bevestigen: heeft bevestigd.",
+   "compare": "English 'has confirmed' keeps 'has' before the object. Dutch puts 'heeft bevestigd' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer of de leverancier heeft de datum bevestigd.",
+     "right": "Ik controleer of de leverancier de datum heeft bevestigd.",
+     "why": "The perfect group goes behind the object. (not \"Ik controleer of de leverancier heeft de datum bevestigd.\", but \"Ik controleer of de leverancier de datum heeft bevestigd.\")"
+    },
+    {
+     "wrong": "Ik controleer of de leverancier de datum bevestigd.",
+     "right": "Ik controleer of de leverancier de datum heeft bevestigd.",
+     "why": "The auxiliary 'heeft' is missing. (not \"Ik controleer of de leverancier de datum bevestigd.\", but \"Ik controleer of de leverancier de datum heeft bevestigd.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Heeft de leverancier de datum bevestigd?",
+    "english": "Has the supplier confirmed the date?",
+    "note": "A direct question starts with the auxiliary and needs no 'of'."
+   }
+  },
+  "pat-of-reuse-career-problems-030": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A negative statement about knowledge: the open question is the start time of the fault."
+   },
+   "situationNl": "Een klant meldt een storing en vraagt naar het begin. Zeg dat je het tijdstip niet kent en wat je eigenlijk bedoelt te weten.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik weet niet",
+     "subject": "Ik",
+     "finite": "weet",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'weet' is second and the negation 'niet' follows. The clause is \"Ik weet niet\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de storing eerder begon",
+     "subject": "de storing",
+     "finite": "begon",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de storing' comes first, the adverb 'eerder' follows, and the past form 'begon' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de storing"
+    },
+    {
+     "label": "adverb",
+     "text": "eerder"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "begon"
+    }
+   ],
+   "meaning": "I do not know whether the disruption started earlier.",
+   "order": "The of-clause is in the simple past because the question concerns a past moment. The adverb 'eerder' stands before the verb.",
+   "forms": "weten: ik weet. beginnen: de storing begon.",
+   "compare": "English 'whether the fault began earlier' keeps 'began' next to the subject. Dutch puts 'begon' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik weet niet of de storing begon eerder.",
+     "right": "Ik weet niet of de storing eerder begon.",
+     "why": "The finite verb goes behind the adverb 'eerder'."
+    },
+    {
+     "wrong": "Ik weet niet of de storing eerder begint.",
+     "right": "Ik weet niet of de storing eerder begon.",
+     "why": "A past question needs a past form: 'begon'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Begon de storing eerder?",
+    "english": "Did the fault begin earlier?",
+    "note": "A direct question starts with the verb and needs no 'of'. Compare: Begon de storing eerder."
+   }
+  },
+  "pat-of-reuse-career-problems-059": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Availability of the backup connection is the unknown; 'beschikbaar is' closes the clause."
+   },
+   "situationNl": "De hoofdverbinding is uitgevallen. Een collega vraagt wat je nu eerst nakijkt. Noem het gegeven dat je nog niet weet.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'controleer' is second; its object is the of-clause. The clause is \"Ik controleer\". (2) (3) (4)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de reserveverbinding beschikbaar is",
+     "subject": "de reserveverbinding",
+     "finite": "is",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de reserveverbinding' comes first, the predicate 'beschikbaar' follows, and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de reserveverbinding"
+    },
+    {
+     "label": "predicate",
+     "text": "beschikbaar"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I check whether the backup connection is available.",
+   "order": "The predicate 'beschikbaar' stands before 'is'. The compound noun 'reserveverbinding' is the subject. Read it as \"Ik controleer of de reserveverbinding beschikbaar is\".",
+   "forms": "controleren: ik controleer. zijn: de reserveverbinding is.",
+   "compare": "English 'is available' keeps 'is' before the adjective. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer of de reserveverbinding is beschikbaar.",
+     "right": "Ik controleer of de reserveverbinding beschikbaar is.",
+     "why": "The finite verb 'is' goes behind the predicate. (not \"Ik controleer of de reserveverbinding is beschikbaar.\", but \"Ik controleer of de reserveverbinding beschikbaar is.\")"
+    },
+    {
+     "wrong": "Ik controleer of de reserveverbinding beschikbaar zijn.",
+     "right": "Ik controleer of de reserveverbinding beschikbaar is.",
+     "why": "The singular subject needs 'is'. (not \"Ik controleer of de reserveverbinding beschikbaar zijn.\", but \"Ik controleer of de reserveverbinding beschikbaar is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Is de reserveverbinding beschikbaar?",
+    "english": "Is the backup connection available?",
+    "note": "A direct question starts with the verb and needs no 'of'. Compare: Is de reserveverbinding beschikbaar."
+   }
+  },
+  "pat-of-reuse-career-remote-040": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Whether the deadline is the same for both is the open point."
+   },
+   "situationNl": "In een mailwisseling klinken twee data door elkaar. Zeg wat je gaat nagaan met een collega op afstand.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik controleer",
+     "subject": "Ik",
+     "finite": "controleer",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'controleer' is second; its object is the of-clause. The clause is \"Ik controleer\". (2) (3) (4) (5)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of we dezelfde deadline bedoelen",
+     "subject": "we",
+     "finite": "bedoelen",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'we' comes first, then the object 'dezelfde deadline', and the plural verb 'bedoelen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "object",
+     "text": "dezelfde deadline"
+    },
+    {
+     "label": "finite verb",
+     "text": "bedoelen"
+    }
+   ],
+   "meaning": "I check whether we mean the same deadline.",
+   "order": "'Dezelfde' is the form of 'hetzelfde' before a 'de' noun: 'dezelfde deadline'. Read it as \"Ik controleer of we dezelfde deadline bedoelen\".",
+   "forms": "controleren: ik controleer. bedoelen: wij bedoelen.",
+   "compare": "English 'mean the same deadline' keeps 'mean' before the object. Dutch puts 'bedoelen' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik controleer of we bedoelen dezelfde deadline.",
+     "right": "Ik controleer of we dezelfde deadline bedoelen.",
+     "why": "The plural verb goes behind the object. (not \"Ik controleer of we bedoelen dezelfde deadline.\", but \"Ik controleer of we dezelfde deadline bedoelen.\")"
+    },
+    {
+     "wrong": "Ik controleer of we hetzelfde deadline bedoelen.",
+     "right": "Ik controleer of we dezelfde deadline bedoelen.",
+     "why": "'Deadline' is a 'de' word: 'dezelfde'. (not \"Ik controleer of we hetzelfde deadline bedoelen.\", but \"Ik controleer of we dezelfde deadline bedoelen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Bedoelen we dezelfde deadline?",
+    "english": "Do we mean the same deadline?",
+    "note": "A direct question starts with the verb and needs no 'of'. Compare: Bedoelen we dezelfde deadline."
+   }
+  },
+  "pat-of-reuse-career-troubleshooting-020": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The team investigates an open yes/no question: does the fault also occur in a new session?"
+   },
+   "situationNl": "Een klant meldt een terugkerende fout. Zeg wat jullie team gaat uitzoeken zonder een oorzaak te noemen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We onderzoeken",
+     "subject": "We",
+     "finite": "onderzoeken",
+     "role": "main clause (the asking or knowing)",
+     "why": "We is first, so the plural 'onderzoeken' is second; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de fout ook bij een nieuwe sessie optreedt",
+     "subject": "de fout",
+     "finite": "optreedt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de fout' comes first, then 'ook' and the phrase 'bij een nieuwe sessie', and the joined separable verb 'optreedt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "onderzoeken"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de fout"
+    },
+    {
+     "label": "adverb",
+     "text": "ook"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "bij een nieuwe sessie"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "optreedt"
+    }
+   ],
+   "meaning": "We investigate whether the error also occurs in a new session.",
+   "order": "'Optreden' splits in a main clause ('treedt op') and is joined at the end of the of-clause. Read it as \"We onderzoeken of de fout ook bij een nieuwe sessie optreedt\".",
+   "forms": "onderzoeken: wij onderzoeken. optreden: treedt op / optreedt.",
+   "compare": "English 'occurs' is a single verb. Dutch uses the separable 'optreden'.",
+   "mistakes": [
+    {
+     "wrong": "We onderzoeken of de fout ook bij een nieuwe sessie treedt op.",
+     "right": "We onderzoeken of de fout ook bij een nieuwe sessie optreedt.",
+     "why": "In a dependent clause the separable verb is written together. (not \"We onderzoeken of de fout ook bij een nieuwe sessie treedt op.\", but \"We onderzoeken of de fout ook bij een nieuwe sessie optreedt.\")"
+    },
+    {
+     "wrong": "We onderzoeken of de fout ook bij een nieuwe sessie optreden.",
+     "right": "We onderzoeken of de fout ook bij een nieuwe sessie optreedt.",
+     "why": "The singular subject needs 'optreedt'. (not \"We onderzoeken of de fout ook bij een nieuwe sessie optreden.\", but \"We onderzoeken of de fout ook bij een nieuwe sessie optreedt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Treedt de fout ook bij een nieuwe sessie op?",
+    "english": "Does the fault also occur in a new session?",
+    "note": "A direct question starts with the verb; 'optreden' splits."
+   }
+  },
+  "pat-of-reuse-career-troubleshooting-043": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The unknown is whether the cache plays a role; 'een rol spelen' is a fixed phrase."
+   },
+   "situationNl": "Een webpagina toont oude gegevens. Een collega vraagt wat jullie nu bekijken. Noem het ene punt dat nog open is.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We onderzoeken",
+     "subject": "We",
+     "finite": "onderzoeken",
+     "role": "main clause (the asking or knowing)",
+     "why": "We is first, so the plural 'onderzoeken' is second; its object is the of-clause. The clause is \"We onderzoeken\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de cache een rol speelt",
+     "subject": "de cache",
+     "finite": "speelt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de cache' comes first, then the object 'een rol', and the finite verb 'speelt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "onderzoeken"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de cache"
+    },
+    {
+     "label": "object",
+     "text": "een rol"
+    },
+    {
+     "label": "finite verb",
+     "text": "speelt"
+    }
+   ],
+   "meaning": "We investigate whether the cache plays a role.",
+   "order": "'Een rol spelen' is a fixed phrase meaning to be a factor. The object stands before the final verb. Read it as \"We onderzoeken of de cache een rol speelt\".",
+   "forms": "onderzoeken: wij onderzoeken. spelen: de cache speelt.",
+   "compare": "English 'plays a role' keeps 'plays' before the object. Dutch puts 'speelt' last.",
+   "mistakes": [
+    {
+     "wrong": "We onderzoeken of de cache speelt een rol.",
+     "right": "We onderzoeken of de cache een rol speelt.",
+     "why": "The finite verb goes behind the object 'een rol'."
+    },
+    {
+     "wrong": "We onderzoeken of de cache een rol spelen.",
+     "right": "We onderzoeken of de cache een rol speelt.",
+     "why": "The singular subject needs 'speelt'. (not \"We onderzoeken of de cache een rol spelen.\", but \"We onderzoeken of de cache een rol speelt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Speelt de cache een rol?",
+    "english": "Does the cache play a role?",
+    "note": "A direct question starts with the verb and needs no 'of'. Compare: Speelt de cache een rol."
+   }
+  },
+  "pat-of-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of ... of niet = whether or not",
+    "why": "'Of ... of niet' means whether or not: it follows the main clause and the verb stands before the repeated 'of niet'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je moet meedoen",
+     "subject": "Je",
+     "finite": "moet",
+     "role": "main clause (the asking or knowing)",
+     "why": "'Je' is first and the modal 'moet' is second; the joined separable infinitive 'meedoen' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of je nu wilt of niet",
+     "subject": "je",
+     "finite": "wilt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'je' comes first, 'nu' follows, and the finite verb 'wilt' stands before the repeated 'of niet', which closes the clause.",
+     "afterFinite": "of niet"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moet"
+    },
+    {
+     "label": "infinitive (joined)",
+     "text": "meedoen"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "nu"
+    },
+    {
+     "label": "finite verb",
+     "text": "wilt"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    }
+   ],
+   "meaning": "You have to take part, whether you want to or not.",
+   "order": "The pattern 'of ... of niet' covers both possibilities and makes the main clause independent of the answer. Read it as \"Je moet meedoen, of je nu wilt of niet\".",
+   "forms": "moeten: je moet. meedoen: infinitive. willen: je wilt.",
+   "compare": "English 'whether you want to or not' uses 'to'. Dutch repeats 'of' and ends with 'niet'.",
+   "mistakes": [
+    {
+     "wrong": "Je moet meedoen, of je nu wil niet.",
+     "right": "Je moet meedoen, of je nu wilt of niet.",
+     "why": "The repeated 'of niet' completes the pattern."
+    },
+    {
+     "wrong": "Je moet meedoen, of je nu wilt of.",
+     "right": "Je moet meedoen, of je nu wilt of niet.",
+     "why": "The pattern ends with 'niet'. (not \"Je moet meedoen, of je nu wilt of.\", but \"Je moet meedoen, of je nu wilt of niet.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Of je het wilt of niet, je moet meedoen.",
+    "english": "Whether you want it or not, you have to take part.",
+    "note": "A fronted clause is possible but marked; the card keeps the clear order."
+   }
+  },
+  "pat-of-31": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of ... of niet = whether or not",
+    "why": "'Of ... of niet' again, now with the weather: it makes no difference to the plan."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We gaan wandelen",
+     "subject": "We",
+     "finite": "gaan",
+     "role": "main clause (the asking or knowing)",
+     "why": "We is first, so the plural 'gaan' is second and the infinitive 'wandelen' ends the main clause. The clause is \"We gaan wandelen\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het nu regent of niet",
+     "subject": "het",
+     "finite": "regent",
+     "role": "of-clause (the open question)",
+     "why": "The dummy subject 'het' comes first, 'nu' follows, and the finite verb 'regent' stands before the repeated 'of niet', which closes the clause.",
+     "afterFinite": "of niet"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "wandelen"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "nu"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    }
+   ],
+   "meaning": "We are going for a walk, whether it rains or not.",
+   "order": "The word 'nu' strengthens the concession. The weather verb takes 'het'. Read it as \"We gaan wandelen, of het nu regent of niet\".",
+   "forms": "gaan: wij gaan. wandelen: infinitive. regenen: het regent.",
+   "compare": "English 'whether it rains or not' also repeats the choice. Dutch puts 'regent' before 'of niet'.",
+   "mistakes": [
+    {
+     "wrong": "We gaan wandelen, of het nu regenen of niet.",
+     "right": "We gaan wandelen, of het nu regent of niet.",
+     "why": "The singular subject 'het' needs 'regent'."
+    },
+    {
+     "wrong": "We gaan wandelen, of het nu regent niet.",
+     "right": "We gaan wandelen, of het nu regent of niet.",
+     "why": "The pattern needs 'of niet'. (not \"We gaan wandelen, of het nu regent niet.\", but \"We gaan wandelen, of het nu regent of niet.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Of het nu regent of niet, gaan we wandelen.",
+    "english": "Whether it rains or not, we go for a walk.",
+    "note": "A fronted clause makes the main clause invert to 'gaan we'."
+   }
+  },
+  "pat-of-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether, and of = or in the same sentence",
+    "why": "Three things are in play: the whether-conjunction, the two options, and the verb that stays after the first option."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik weet niet",
+     "subject": "Ik",
+     "finite": "weet",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'weet' is second and the negation 'niet' follows. The clause is \"Ik weet niet\". (2) (3) (4)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of hij thuis is of op kantoor",
+     "subject": "hij",
+     "finite": "is",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'hij' comes first, the adverb 'thuis' follows, and the finite verb 'is' stands before the second option 'of op kantoor'.",
+     "afterFinite": "of op kantoor"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "place",
+     "text": "op kantoor"
+    }
+   ],
+   "meaning": "I don't know whether he is at home or at the office.",
+   "order": "The second option is added after the verb. The verb 'is' serves both options and is not repeated. Read it as \"Ik weet niet of hij thuis is of op kantoor\".",
+   "forms": "weten: ik weet. zijn: hij is.",
+   "compare": "English 'whether he is at home or at the office' repeats the preposition. Dutch uses 'thuis' and 'op kantoor'.",
+   "mistakes": [
+    {
+     "wrong": "Ik weet niet of hij is thuis of op kantoor.",
+     "right": "Ik weet niet of hij thuis is of op kantoor.",
+     "why": "The finite verb 'is' goes behind 'thuis' and before the second option."
+    },
+    {
+     "wrong": "Ik weet niet of hij thuis of op kantoor.",
+     "right": "Ik weet niet of hij thuis is of op kantoor.",
+     "why": "The finite verb 'is' is missing. (not \"Ik weet niet of hij thuis of op kantoor.\", but \"Ik weet niet of hij thuis is of op kantoor.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Is hij thuis of op kantoor?",
+    "english": "Is he at home or at the office?",
+    "note": "A direct question uses 'of' only for 'or'. Compare: Is hij thuis of op kantoor."
+   }
+  },
+  "pat-of-34": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "'Zich afvragen' with a doubt: 'wel zo' questions whether the claim is really true."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik vraag me af",
+     "subject": "Ik",
+     "finite": "vraag",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'vraag' is second; the reflexive 'me' follows and the particle 'af' ends the main clause. The clause is \"Ik vraag me af\". (2)"
+    },
+    {
+     "kind": "bijzin",
+     "text": "of dat wel zo is",
+     "subject": "dat",
+     "finite": "is",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'dat' comes first, then 'wel zo', and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "vraag"
+    },
+    {
+     "label": "reflexive",
+     "text": "me"
+    },
+    {
+     "label": "particle",
+     "text": "af"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "dat"
+    },
+    {
+     "label": "adverb",
+     "text": "wel zo"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I wonder whether that is really so.",
+   "order": "'Wel zo' adds doubt: is it really so? Here 'dat' is the demonstrative subject, not the conjunction 'dat'. Read it as \"Ik vraag me af of dat wel zo is\".",
+   "forms": "afvragen: vraag me af. zijn: dat is.",
+   "compare": "English 'I wonder whether that is really so' uses 'really'. Dutch uses 'wel zo'.",
+   "mistakes": [
+    {
+     "wrong": "Ik vraag me af of dat is wel zo.",
+     "right": "Ik vraag me af of dat wel zo is.",
+     "why": "The finite verb 'is' goes behind 'wel zo'."
+    },
+    {
+     "wrong": "Ik vraag me af dat of wel zo is.",
+     "right": "Ik vraag me af of dat wel zo is.",
+     "why": "'Of' directly introduces the clause. (not \"Ik vraag me af dat of wel zo is.\", but \"Ik vraag me af of dat wel zo is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Is dat wel zo?",
+    "english": "Is that really so?",
+    "note": "A direct question starts with the verb and needs no 'of'. Compare: Is dat wel zo."
+   }
+  },
+  "pat-of-35": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "He was looking for a sign: the of-clause says what he wanted to see; 'aankwam' is joined."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij keek",
+     "subject": "Hij",
+     "finite": "keek",
+     "role": "main clause (the asking or knowing)",
+     "why": "Hij is first, so the past form 'keek' is second. The clause is \"Hij keek\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of er iemand aankwam",
+     "subject": "iemand",
+     "finite": "aankwam",
+     "role": "of-clause (the open question)",
+     "why": "The introducing 'er' comes first, then the subject 'iemand', and the joined separable past 'aankwam' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "keek"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "dummy",
+     "text": "er"
+    },
+    {
+     "label": "subject",
+     "text": "iemand"
+    },
+    {
+     "label": "finite verb (joined separable, past)",
+     "text": "aankwam"
+    }
+   ],
+   "meaning": "He looked to see whether someone was coming.",
+   "order": "'Aankomen' splits as 'kwam ... aan' in a main clause and joins in the of-clause. 'Kijken of' means to look to see whether.",
+   "forms": "kijken: hij keek. aankomen: kwam aan / aankwam.",
+   "compare": "English 'looked to see whether someone was coming' uses a long chain. Dutch uses 'keek of'.",
+   "mistakes": [
+    {
+     "wrong": "Hij keek of er iemand kwam aan.",
+     "right": "Hij keek of er iemand aankwam.",
+     "why": "In a dependent clause the separable verb is written together. (not \"Hij keek of er iemand kwam aan.\", but \"Hij keek of er iemand aankwam.\")"
+    },
+    {
+     "wrong": "Hij keek of er iemand aankomt.",
+     "right": "Hij keek of er iemand aankwam.",
+     "why": "A past story needs a past form: 'aankwam'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Kwam er iemand aan?",
+    "english": "Was someone coming?",
+    "note": "A direct question starts with the verb; 'aankomen' splits."
+   }
+  },
+  "pat-of-36": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "An encouragement to test: the result of the attempt is unknown."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Probeer",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Probeer",
+     "role": "main clause (the instruction)",
+     "why": "An imperative: 'Probeer' stands first; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of het lukt",
+     "subject": "het",
+     "finite": "lukt",
+     "role": "of-clause (the open question)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'lukt' closes the short clause. The clause is \"of het lukt\"."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Probeer"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "lukt"
+    }
+   ],
+   "meaning": "Try whether it works.",
+   "order": "A very short main clause: 'proberen of' means to try and see whether something works. Read it as \"Probeer of het lukt\".",
+   "forms": "proberen: imperative probeer. lukken: het lukt.",
+   "compare": "English 'Try and see if it works' needs 'see'. Dutch uses 'probeer of het lukt'.",
+   "mistakes": [
+    {
+     "wrong": "Probeer of lukt het.",
+     "right": "Probeer of het lukt.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Probeer of lukt het.\", but \"Probeer of het lukt.\")"
+    },
+    {
+     "wrong": "Probeer of het lukken.",
+     "right": "Probeer of het lukt.",
+     "why": "With 'het' the verb is 'lukt'. (not \"Probeer of het lukken.\", but \"Probeer of het lukt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Lukt het?",
+    "english": "Does it work?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Lukt het."
+   }
+  },
+  "pat-of-37": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "alsof = as if",
+    "why": "'Alsof' compares with a pretence: she behaves in a way that does not match reality."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij doet",
+     "subject": "Zij",
+     "finite": "doet",
+     "role": "main clause (the behaviour)",
+     "why": "Zij is first, so 'doet' is second; the clause after it says what she pretends."
+    },
+    {
+     "kind": "bijzin",
+     "text": "alsof ze niets hoort",
+     "subject": "ze",
+     "finite": "hoort",
+     "role": "alsof-clause (the pretence)",
+     "why": "The subject 'ze' comes first, then the object 'niets', and the finite verb 'hoort' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "doet"
+    },
+    {
+     "label": "conjunction (as if)",
+     "text": "alsof"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    },
+    {
+     "label": "finite verb",
+     "text": "hoort"
+    }
+   ],
+   "meaning": "She acts as if she hears nothing.",
+   "order": "'Alsof' is one word and sends the verb to the end like 'of'. It introduces an impression, not a question. Read it as \"Zij doet alsof ze niets hoort\".",
+   "forms": "doen: zij doet. horen: ze hoort.",
+   "compare": "English 'acts as if she hears nothing' uses two words 'as if'. Dutch uses one: 'alsof'.",
+   "mistakes": [
+    {
+     "wrong": "Zij doet alsof ze hoort niets.",
+     "right": "Zij doet alsof ze niets hoort.",
+     "why": "The finite verb goes behind the object 'niets'. (not \"Zij doet alsof ze hoort niets.\", but \"Zij doet alsof ze niets hoort.\")"
+    },
+    {
+     "wrong": "Zij doet als of ze niets hoort.",
+     "right": "Zij doet alsof ze niets hoort.",
+     "why": "'Alsof' is written as one word. (not \"Zij doet als of ze niets hoort.\", but \"Zij doet alsof ze niets hoort.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij hoort niets.",
+    "english": "She hears nothing.",
+    "note": "Without 'alsof' the sentence states a fact instead of a pretence."
+   }
+  },
+  "pat-of-38": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "alsof = as if",
+    "why": "An impression about someone's confidence: 'alsof' links his tone to the claim he seems to make."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij praat",
+     "subject": "Hij",
+     "finite": "praat",
+     "role": "main clause (the behaviour)",
+     "why": "Hij is first, so 'praat' is second. The clause is \"Hij praat\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "alsof hij alles weet",
+     "subject": "hij",
+     "finite": "weet",
+     "role": "alsof-clause (the impression)",
+     "why": "The subject 'hij' comes first, then the object 'alles', and the finite verb 'weet' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "praat"
+    },
+    {
+     "label": "conjunction (as if)",
+     "text": "alsof"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "alles"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    }
+   ],
+   "meaning": "He talks as if he knows everything.",
+   "order": "'Alsof' describes how something appears. The object 'alles' stands before the final verb. Read it as \"Hij praat alsof hij alles weet\".",
+   "forms": "praten: hij praat. weten: hij weet.",
+   "compare": "English 'as if he knows everything' keeps 'knows' before the object. Dutch puts 'weet' last.",
+   "mistakes": [
+    {
+     "wrong": "Hij praat alsof hij weet alles.",
+     "right": "Hij praat alsof hij alles weet.",
+     "why": "The finite verb goes behind the object 'alles'."
+    },
+    {
+     "wrong": "Hij praat alsof hij alles weten.",
+     "right": "Hij praat alsof hij alles weet.",
+     "why": "With 'hij' the verb is 'weet'. (not \"Hij praat alsof hij alles weten.\", but \"Hij praat alsof hij alles weet.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij weet alles.",
+    "english": "He knows everything.",
+    "note": "Without 'alsof' the sentence states a fact."
+   }
+  },
+  "pat-of-39": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "alsof = as if",
+    "why": "An impression about the weather: 'het lijkt alsof' introduces a clause with 'gaat sneeuwen'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Het lijkt",
+     "subject": "Het",
+     "finite": "lijkt",
+     "role": "main clause (the observation)",
+     "why": "'Het' is first, so 'lijkt' is second. The clause is \"Het lijkt\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "alsof het gaat sneeuwen",
+     "subject": "het",
+     "finite": "gaat",
+     "role": "alsof-clause (the impression)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'gaat' stands before the infinitive 'sneeuwen', which closes the clause.",
+     "afterFinite": "sneeuwen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Het"
+    },
+    {
+     "label": "finite verb",
+     "text": "lijkt"
+    },
+    {
+     "label": "conjunction (as if)",
+     "text": "alsof"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaat"
+    },
+    {
+     "label": "infinitive",
+     "text": "sneeuwen"
+    }
+   ],
+   "meaning": "It looks as if it's going to snow.",
+   "order": "'Gaan + infinitive' marks the near future. 'Lijken alsof' reports an impression. Read it as \"Het lijkt alsof het gaat sneeuwen\".",
+   "forms": "lijken: het lijkt. gaan: het gaat. sneeuwen: infinitive.",
+   "compare": "English 'It looks as if it's going to snow' has the same chain. For this card: \"Het lijkt alsof het gaat sneeuwen\".",
+   "mistakes": [
+    {
+     "wrong": "Het lijkt alsof het sneeuwen gaat.",
+     "right": "Het lijkt alsof het gaat sneeuwen.",
+     "why": "The chain 'gaat sneeuwen' keeps the finite verb first."
+    },
+    {
+     "wrong": "Het lijkt als of het gaat sneeuwen.",
+     "right": "Het lijkt alsof het gaat sneeuwen.",
+     "why": "'Alsof' is written as one word. (not \"Het lijkt als of het gaat sneeuwen.\", but \"Het lijkt alsof het gaat sneeuwen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Het gaat sneeuwen.",
+    "english": "It is going to snow.",
+    "note": "Without 'alsof' the sentence states a prediction."
+   }
+  },
+  "pat-of-40": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "dat = that versus of = whether",
+    "why": "Dat reports a fact the speaker knows, of reports an open question: the contrast sits in one sentence."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik weet dat hij komt, maar ik vraag me af",
+     "subject": "Ik",
+     "finite": "weet",
+     "role": "main clause (what is known and what is not)",
+     "why": "Ik is first, so 'weet' is second; the dat-clause 'dat hij komt' follows, then comes 'maar' and a second main clause with the reflexive verb 'zich afvragen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of hij blijft",
+     "subject": "hij",
+     "finite": "blijft",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'hij' comes first and the finite verb 'blijft' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "conjunction (that)",
+     "text": "dat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "komt"
+    },
+    {
+     "label": "conjunction (but)",
+     "text": "maar"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "vraag"
+    },
+    {
+     "label": "reflexive",
+     "text": "me"
+    },
+    {
+     "label": "particle",
+     "text": "af"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    }
+   ],
+   "meaning": "I know he's coming, but I wonder whether he'll stay.",
+   "order": "'Dat hij komt' is known, 'of hij blijft' is open. Both clauses send their verb to the end; the choice of conjunction shows the speaker's certainty.",
+   "forms": "weten: ik weet. komen: hij komt. afvragen: vraag me af. blijven: hij blijft.",
+   "compare": "English uses 'that' and 'whether' for the same contrast. Dutch uses 'dat' and 'of'.",
+   "mistakes": [
+    {
+     "wrong": "Ik weet dat hij komt, maar ik vraag me af dat hij blijft.",
+     "right": "Ik weet dat hij komt, maar ik vraag me af of hij blijft.",
+     "why": "After 'zich afvragen' an open point needs 'of', not 'dat': 'dat' would present the staying as a known fact."
+    },
+    {
+     "wrong": "Ik weet of hij komt, maar ik vraag me af of hij blijft.",
+     "right": "Ik weet dat hij komt, maar ik vraag me af of hij blijft.",
+     "why": "A known fact is reported with 'dat'. (not \"Ik weet of hij komt, maar ik weet niet of hij blijft.\", but \"Ik weet dat hij komt, maar ik weet niet of hij blijft.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet niet of hij komt of blijft.",
+    "english": "I don't know whether he is coming or staying.",
+    "note": "Both uncertainties can share one 'of' clause."
+   }
+  },
+  "pat-of-41": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "dat = that versus of = whether",
+    "why": "The speaker promises ('dat ik kom') but keeps an open question ('of ik kan'); the modal closes the second clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik zeg dat ik kom, maar ik weet nog niet",
+     "subject": "Ik",
+     "finite": "zeg",
+     "role": "main clause (what is said and what is not known)",
+     "why": "Ik is first, so 'zeg' is second; the dat-clause 'dat ik kom' follows, then 'maar' and a second main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of ik kan",
+     "subject": "ik",
+     "finite": "kan",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'ik' comes first and the modal 'kan' closes the short clause (the verb 'komen' is understood)."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "zeg"
+    },
+    {
+     "label": "conjunction (that)",
+     "text": "dat"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "kom"
+    },
+    {
+     "label": "conjunction (but)",
+     "text": "maar"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "weet"
+    },
+    {
+     "label": "adverb",
+     "text": "nog niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    }
+   ],
+   "meaning": "I say that I'm coming, but I don't know yet whether I can.",
+   "order": "The dat-clause reports what the speaker says, the of-clause what remains uncertain. 'Nog niet' means not yet. Read it as \"Ik zeg dat ik kom, maar ik weet nog niet of ik kan\".",
+   "forms": "zeggen: ik zeg. komen: ik kom. weten: ik weet. kunnen: ik kan.",
+   "compare": "English 'that I'm coming' and 'whether I can' show the same contrast. For this card: \"Ik zeg dat ik kom, maar ik weet nog niet of ik kan\".",
+   "mistakes": [
+    {
+     "wrong": "Ik zeg dat ik kom, maar ik weet nog niet dat ik kan.",
+     "right": "Ik zeg dat ik kom, maar ik weet nog niet of ik kan.",
+     "why": "An open point after 'niet weten' needs 'of', not 'dat'."
+    },
+    {
+     "wrong": "Ik zeg of ik kom, maar ik weet nog niet of ik kan.",
+     "right": "Ik zeg dat ik kom, maar ik weet nog niet of ik kan.",
+     "why": "A statement of intent is reported with 'dat'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik zeg dat ik kom, maar kan ik dat?",
+    "english": "I say that I'm coming, but can I?",
+    "note": "A direct question replaces the embedded one."
+   }
+  },
+  "pat-of-42": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "of = or (coordinating)",
+    "why": "'Of' is the coordinating 'or' in a direct question: it joins two options and no verb goes to the end."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Komt hij vandaag of morgen",
+     "subject": "hij",
+     "finite": "Komt",
+     "role": "single main clause",
+     "why": "This is a yes/no question: the verb 'Komt' stands first, then the subject 'hij', then the two options joined by 'of'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb",
+     "text": "Komt"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "adverb",
+     "text": "vandaag"
+    },
+    {
+     "label": "conjunction (or)",
+     "text": "of"
+    },
+    {
+     "label": "adverb",
+     "text": "morgen"
+    }
+   ],
+   "meaning": "Is he coming today or tomorrow?",
+   "order": "The question has verb-first order. 'Of' only connects the two adverbs 'vandaag' and 'morgen'. Read it as \"Komt hij vandaag of morgen\".",
+   "forms": "komen: komt hij.",
+   "compare": "English 'Is he coming today or tomorrow?' has the same shape. For this card: \"Komt hij vandaag of morgen\".",
+   "mistakes": [
+    {
+     "wrong": "Hij komt vandaag of morgen?",
+     "right": "Komt hij vandaag of morgen?",
+     "why": "A question inverts the verb and the subject: 'Komt hij'."
+    },
+    {
+     "wrong": "Komt hij vandaag of morgen komt?",
+     "right": "Komt hij vandaag of morgen?",
+     "why": "One finite verb is enough; it is not repeated after the second option."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik vraag of hij vandaag of morgen komt.",
+    "english": "I ask whether he is coming today or tomorrow.",
+    "note": "In an embedded question the first 'of' starts a clause and the verb goes last. Compare: Ik vraag of hij vandaag of morgen komt."
+   }
+  },
+  "pat-of-43": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A question about hearing news; the content is the embedded 'of hij is geslaagd'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Heb je gehoord",
+     "subject": "je",
+     "finite": "Heb",
+     "role": "main clause (the question)",
+     "why": "A yes/no question starts with the finite verb 'Heb', then the subject 'je'; the participle 'gehoord' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of hij is geslaagd",
+     "subject": "hij",
+     "finite": "is",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'hij' comes first and the group 'is geslaagd' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "Heb"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "past participle",
+     "text": "gehoord"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "past participle",
+     "text": "geslaagd"
+    }
+   ],
+   "meaning": "Have you heard whether he passed?",
+   "order": "'Slagen' takes 'zijn' in the perfect: 'is geslaagd'. The question uses 'hebben' with 'horen'. Read it as \"Heb je gehoord of hij is geslaagd\".",
+   "forms": "horen: heb gehoord. slagen: is geslaagd.",
+   "compare": "English 'Have you heard whether he passed?' uses the simple past for 'passed'. Dutch uses the perfect.",
+   "mistakes": [
+    {
+     "wrong": "Je hebt gehoord of hij is geslaagd?",
+     "right": "Heb je gehoord of hij is geslaagd?",
+     "why": "A question inverts the auxiliary and the subject: 'Heb je'."
+    },
+    {
+     "wrong": "Heb je gehoord of hij heeft geslaagd?",
+     "right": "Heb je gehoord of hij is geslaagd?",
+     "why": "'Slagen' takes 'zijn': 'is geslaagd'. (not \"Heb je gehoord of hij heeft geslaagd?\", but \"Heb je gehoord of hij is geslaagd?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Is hij geslaagd?",
+    "english": "Did he pass?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Is hij geslaagd."
+   }
+  },
+  "pat-of-44": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A past thought: the doubt concerned a possible event; the conditional 'zou komen' ends the clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik had me afgevraagd",
+     "subject": "Ik",
+     "finite": "had",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so the auxiliary 'had' is second; 'me' follows and the participle 'afgevraagd' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of hij zou komen",
+     "subject": "hij",
+     "finite": "zou",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'hij' comes first and 'zou' stands before the infinitive 'komen', which closes the clause.",
+     "afterFinite": "komen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "reflexive",
+     "text": "me"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "afgevraagd"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb (conditional)",
+     "text": "zou"
+    },
+    {
+     "label": "infinitive",
+     "text": "komen"
+    }
+   ],
+   "meaning": "I had wondered whether he would come.",
+   "order": "'Zich afvragen' has the joined participle 'afgevraagd'. The conditional 'zou komen' expresses a possibility seen from the past.",
+   "forms": "afvragen: had afgevraagd. komen: hij zou komen.",
+   "compare": "English 'whether he would come' also uses 'would'. Dutch uses 'zou'. For this card: \"Ik had me afgevraagd of hij zou komen\".",
+   "mistakes": [
+    {
+     "wrong": "Ik had me afgevraagd of hij kwam zou.",
+     "right": "Ik had me afgevraagd of hij zou komen.",
+     "why": "The conditional needs the infinitive 'komen': 'zou komen'."
+    },
+    {
+     "wrong": "Ik had afgevraagd me of hij zou komen.",
+     "right": "Ik had me afgevraagd of hij zou komen.",
+     "why": "The reflexive 'me' stands before the participle. (not \"Ik had afgevraagd me of hij zou komen.\", but \"Ik had me afgevraagd of hij zou komen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zou hij komen?",
+    "english": "Would he come?",
+    "note": "The direct question starts with the modal and needs no 'of'. Compare: Zou hij komen."
+   }
+  },
+  "pat-of-45": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The neighbours' plans are unknown; 'gaan verhuizen' is a verb chain with a joined separable-looking infinitive."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wij weten niet",
+     "subject": "Wij",
+     "finite": "weten",
+     "role": "main clause (the asking or knowing)",
+     "why": "Wij is first, so the plural 'weten' is second and the negation 'niet' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of onze buren gaan verhuizen",
+     "subject": "onze buren",
+     "finite": "gaan",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'onze buren' comes first and the plural 'gaan' stands before the infinitive 'verhuizen', which closes the clause.",
+     "afterFinite": "verhuizen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "weten"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "onze buren"
+    },
+    {
+     "label": "finite verb",
+     "text": "gaan"
+    },
+    {
+     "label": "infinitive",
+     "text": "verhuizen"
+    }
+   ],
+   "meaning": "We don't know whether our neighbours are going to move.",
+   "order": "'Gaan verhuizen' marks a plan for the near future. The finite verb 'gaan' is not the last word of the clause. Read it as \"Wij weten niet of onze buren gaan verhuizen\".",
+   "forms": "weten: wij weten. gaan: onze buren gaan. verhuizen: infinitive.",
+   "compare": "English 'are going to move' is a longer chain. Dutch uses 'gaan verhuizen'.",
+   "mistakes": [
+    {
+     "wrong": "Wij weten niet of onze buren verhuizen gaan.",
+     "right": "Wij weten niet of onze buren gaan verhuizen.",
+     "why": "The chain 'gaan verhuizen' keeps the finite verb first."
+    },
+    {
+     "wrong": "Wij weten niet of onze buren gaat verhuizen.",
+     "right": "Wij weten niet of onze buren gaan verhuizen.",
+     "why": "The plural subject needs 'gaan'. (not \"Wij weten niet of onze buren gaat verhuizen.\", but \"Wij weten niet of onze buren gaan verhuizen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Gaan onze buren verhuizen?",
+    "english": "Are our neighbours going to move?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Gaan onze buren verhuizen."
+   }
+  },
+  "pat-of-46": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "The teacher checks understanding: the of-clause is what he asks."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De docent vraagt",
+     "subject": "De docent",
+     "finite": "vraagt",
+     "role": "main clause (the asking or knowing)",
+     "why": "'De docent' is first, so 'vraagt' is second; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de leerlingen het begrijpen",
+     "subject": "de leerlingen",
+     "finite": "begrijpen",
+     "role": "of-clause (the open question)",
+     "why": "The plural subject 'de leerlingen' comes first, then the object 'het', and the plural verb 'begrijpen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De docent"
+    },
+    {
+     "label": "finite verb",
+     "text": "vraagt"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de leerlingen"
+    },
+    {
+     "label": "object",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "begrijpen"
+    }
+   ],
+   "meaning": "The teacher asks whether the pupils understand it.",
+   "order": "A plural subject takes the plural verb 'begrijpen'. The object 'het' stands before it. Read it as \"De docent vraagt of de leerlingen het begrijpen\".",
+   "forms": "vragen: de docent vraagt. begrijpen: de leerlingen begrijpen.",
+   "compare": "English 'whether the pupils understand it' keeps 'understand' before the object. Dutch puts 'begrijpen' last.",
+   "mistakes": [
+    {
+     "wrong": "De docent vraagt of de leerlingen begrijpen het.",
+     "right": "De docent vraagt of de leerlingen het begrijpen.",
+     "why": "The finite verb goes behind the object 'het'. (not \"De docent vraagt of de leerlingen begrijpen het.\", but \"De docent vraagt of de leerlingen het begrijpen.\")"
+    },
+    {
+     "wrong": "De docent vraagt of de leerlingen het begrijpt.",
+     "right": "De docent vraagt of de leerlingen het begrijpen.",
+     "why": "The plural subject needs 'begrijpen'. (not \"De docent vraagt of de leerlingen het begrijpt.\", but \"De docent vraagt of de leerlingen het begrijpen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Begrijpen de leerlingen het?",
+    "english": "Do the pupils understand it?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Begrijpen de leerlingen het."
+   }
+  },
+  "pat-of-47": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "A cautious reply to a request: the speaker first looks at their own planning."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kijk",
+     "subject": "Ik",
+     "finite": "kijk",
+     "role": "main clause (the asking or knowing)",
+     "why": "Ik is first, so 'kijk' is second; its complement is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of ik tijd heb",
+     "subject": "ik",
+     "finite": "heb",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'ik' comes first, then the object 'tijd', and the finite verb 'heb' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "kijk"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "tijd"
+    },
+    {
+     "label": "finite verb",
+     "text": "heb"
+    }
+   ],
+   "meaning": "I'll see whether I have time.",
+   "order": "'Kijken of' means to see whether. The speaker does not promise anything yet. Read it as \"Ik kijk of ik tijd heb\".",
+   "forms": "kijken: ik kijk. hebben: ik heb.",
+   "compare": "English 'I'll see whether I have time' uses 'see'. Dutch uses 'kijken'.",
+   "mistakes": [
+    {
+     "wrong": "Ik kijk of ik heb tijd.",
+     "right": "Ik kijk of ik tijd heb.",
+     "why": "The finite verb goes behind the object 'tijd'. (not \"Ik kijk of ik heb tijd.\", but \"Ik kijk of ik tijd heb.\")"
+    },
+    {
+     "wrong": "Ik kijk of ik tijd hebt.",
+     "right": "Ik kijk of ik tijd heb.",
+     "why": "With 'ik' the verb is 'heb'. (not \"Ik kijk of ik tijd hebt.\", but \"Ik kijk of ik tijd heb.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Heb ik tijd?",
+    "english": "Do I have time?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Heb ik tijd."
+   }
+  },
+  "pat-of-48": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "of = whether (embedded question)",
+    "why": "Testing is a way of finding out; the result of the connection test is unknown."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij test",
+     "subject": "Zij",
+     "finite": "test",
+     "role": "main clause (the asking or knowing)",
+     "why": "Zij is first, so 'test' is second; its object is the of-clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "of de verbinding werkt",
+     "subject": "de verbinding",
+     "finite": "werkt",
+     "role": "of-clause (the open question)",
+     "why": "The subject 'de verbinding' comes first and the finite verb 'werkt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "test"
+    },
+    {
+     "label": "conjunction (whether)",
+     "text": "of"
+    },
+    {
+     "label": "subject",
+     "text": "de verbinding"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    }
+   ],
+   "meaning": "She tests whether the connection works.",
+   "order": "A short main clause with a short of-clause. 'Testen of' means to test whether. Read it as \"Zij test of de verbinding werkt\".",
+   "forms": "testen: zij test. werken: de verbinding werkt.",
+   "compare": "English 'tests whether the connection works' has the same chain. For this card: \"Zij test of de verbinding werkt\".",
+   "mistakes": [
+    {
+     "wrong": "Zij test of werkt de verbinding.",
+     "right": "Zij test of de verbinding werkt.",
+     "why": "In the dependent clause the subject comes before the verb. (not \"Zij test of werkt de verbinding.\", but \"Zij test of de verbinding werkt.\")"
+    },
+    {
+     "wrong": "Zij test of de verbinding werken.",
+     "right": "Zij test of de verbinding werkt.",
+     "why": "The singular subject needs 'werkt'. (not \"Zij test of de verbinding werken.\", but \"Zij test of de verbinding werkt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Werkt de verbinding?",
+    "english": "Does the connection work?",
+    "note": "The direct question starts with the verb and needs no 'of'. Compare: Werkt de verbinding."
+   }
+  }
+ }
+}

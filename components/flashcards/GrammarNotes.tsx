@@ -5,7 +5,8 @@ import { breakdownFor, hasForms, patternOf } from "@/lib/grammarBreakdowns";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { CARDS } from "@/lib/flashcards/engine";
 import { cardFor } from "@/lib/content/cards";
-import { GrammarAlsAnalysis } from "./GrammarAlsAnalysis";
+import { GrammarClauseMap } from "./GrammarClauseMap";
+import { SeparableVerbForms } from "./SeparableVerbForms";
 
 const ADAPTED = new Set(
   CARDS.filter((card) => card.adapted).map((card) => card.id),
@@ -63,7 +64,6 @@ export function GrammarNotes({
         Grammar rule &amp; similar examples
       </summary>
 
-      {lang === "nl" && cardId.startsWith("pat-als-") && <GrammarAlsAnalysis cardId={cardId} />}
 
       {breakdown && (
         <section aria-label="Sentence breakdown" data-testid="breakdown">
@@ -107,6 +107,7 @@ export function GrammarNotes({
               </li>
             ))}
           </ol>
+          {lang === "nl" && <GrammarClauseMap breakdown={breakdown} />}
           <h3 className={heading}>{words.order}</h3>
           <p
             className="mt-2 text-sm leading-relaxed"
@@ -171,8 +172,33 @@ export function GrammarNotes({
           >
             {breakdown.mistake.why}
           </p>
+          {breakdown.extraMistakes?.map((extra, index) => (
+            <div key={index} className="mt-3" data-testid="extra-mistake">
+              <p className="text-sm">
+                <span className="sr-only">Incorrect: </span>
+                <span aria-hidden>✗ </span>
+                <span lang={lang} className="line-through decoration-accent">{extra.wrong}</span>
+              </p>
+              <p className="mt-1 text-sm">
+                <span className="sr-only">Correct: </span>
+                <span aria-hidden>✓ </span>
+                <span lang={lang} className="font-semibold">{extra.right}</span>
+              </p>
+              <p className="mt-1 text-sm text-muted" lang="en">{extra.why}</p>
+            </div>
+          ))}
+          {breakdown.contrast && (
+            <>
+              <h3 className={heading}>The same plan, said another way</h3>
+              <p lang={lang} className="mt-2 text-sm font-semibold" data-testid="contrast">{breakdown.contrast.dutch}</p>
+              <p className="text-sm text-muted">{breakdown.contrast.english}</p>
+              <p className="mt-1 text-sm leading-relaxed">{breakdown.contrast.note}</p>
+            </>
+          )}
         </section>
       )}
+
+      {lang === "nl" && <SeparableVerbForms cardId={cardId} />}
 
       {note && (
         <>

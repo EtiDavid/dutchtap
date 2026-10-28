@@ -2,6 +2,7 @@ import { CARDS, type Card } from "@/lib/flashcards/engine";
 import { meaningFor, scenarioFor } from "@/lib/practice/communication";
 import frCards from "@/data/fr/cards.json";
 import { DEFAULT_LANG, type Lang } from "@/lib/lang";
+import { situationEnFor, situationNlFor } from "@/lib/grammarAnalysis";
 
 /**
  * One sentence card as the learner sees it in a given language. The situation (id, topic, picture, scenario and cue) is shared;
@@ -30,6 +31,8 @@ export type LCard = {
   audio?: string;
   audioStatus?: string;
   adapted?: boolean;
+  /** For a grammar alias: the id of the one original sentence it points at. */
+  originCardId?: string;
   /** Where the sentence text came from, for the review table. */
   review?: FrenchReview;
 };
@@ -68,9 +71,10 @@ function dutchCard(card: Card): LCard {
     category: card.category,
     text: card.dutch,
     english: meaningFor(card.dutch, card.english),
-    scenario: scenarioFor(card.dutch, card.scenario),
-    scenarioNl: card.scenarioNl,
-    cue: card.cue,
+    scenario: situationEnFor(card.id) ?? scenarioFor(card.dutch, card.scenario),
+    // An authored Dutch-first situation wins over an older one that gave the conjunction away.
+    scenarioNl: situationNlFor(card.id) ?? card.scenarioNl,
+    cue: card.cue === card.scenario ? (situationEnFor(card.id) ?? card.cue) : card.cue,
     variation: card.variation,
     difficulty: card.difficulty ?? "beginner",
     vocabularyIds: card.vocabularyIds ?? [],
@@ -79,6 +83,7 @@ function dutchCard(card: Card): LCard {
     audio: card.audio || undefined,
     audioStatus: card.audioStatus,
     adapted: card.adapted,
+    originCardId: card.originCardId,
   };
 }
 function frenchCard(shared: Card, record: FrenchCardRecord): LCard {

@@ -1,0 +1,437 @@
+[
+  {
+    "topic": "tot",
+    "dutch": "Tot de dokter me roept, blijf ik in de wachtkamer.",
+    "english": "Until the doctor calls me, I stay in the waiting room.",
+    "scenario": "Say how long you will stay.",
+    "scenarioNl": "Je zit bij de huisarts en een verpleegster vraagt of je kunt wachten. Zeg hoe lang je op je plek blijft zitten.",
+    "why": "The tot-clause opens the sentence, so the main clause inverts to blijf ik.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Tot de installatie klaar is, werk ik aan iets anders.",
+    "english": "Until the installation is ready, I work on something else.",
+    "scenario": "Explain what you do meanwhile.",
+    "scenarioNl": "Een collega ziet dat je niet op de installatie let. Leg uit wat je intussen doet.",
+    "why": "The tot-clause ends in is; the main clause inverts to werk ik.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Tot ik antwoord heb, blijft het ticket open.",
+    "english": "Until I have an answer, the ticket stays open.",
+    "scenario": "State a ticket rule, choosing the right word.",
+    "scenarioNl": "Een klant vraagt of zijn melding al gesloten is. Leg uit hoe lang die openstaat.",
+    "why": "The tot-clause ends in heb after antwoord; blijft het ticket inverts.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Tot de les begint, lees ik mijn notities.",
+    "english": "Until the lesson starts, I read my notes.",
+    "scenario": "Say how you spend the waiting time.",
+    "scenarioNl": "Je zit al in het lokaal en de docent is er nog niet. Vertel wat je in de tussentijd doet.",
+    "why": "The tot-clause ends in begint; lees ik inverts.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Ik wacht tot mijn collega mij heeft teruggebeld.",
+    "english": "I wait until my colleague has called me back.",
+    "scenario": "Say what you are waiting for.",
+    "scenarioNl": "Je hebt een boodschap achtergelaten. Zeg waarop je rekent voor je verder gaat.",
+    "why": "The perfect group heeft teruggebeld ends the tot-clause, with the particle joined.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "We blijven doorwerken tot het systeem weer werkt.",
+    "english": "We keep working until the system works again.",
+    "scenario": "State how long the team continues.",
+    "scenarioNl": "Een manager vraagt hoe lang jullie nog doorgaan. Geef het eindpunt.",
+    "why": "Blijven doorwerken is a verb chain; werkt closes the tot-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Wacht met bellen tot ik de gegevens heb opgezocht.",
+    "english": "Wait with calling until I have looked up the data.",
+    "scenario": "Tell a colleague to hold off.",
+    "scenarioNl": "Een collega wil de klant meteen bellen maar jij hebt de gegevens nog niet. Geef hem een aanwijzing.",
+    "why": "An imperative opens; the tot-clause ends in the perfect group heb opgezocht.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Ik blijf hier tot de vergadering is afgelopen.",
+    "english": "I stay here until the meeting is over.",
+    "scenario": "Say how long you will stay.",
+    "scenarioNl": "Een collega vraagt of je mee naar de kantine gaat. Zeg hoe lang je op je plaats zit.",
+    "why": "Is afgelopen is a state group at the end of the tot-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Ik blijf proberen totdat het lukt.",
+    "english": "I keep trying until it works.",
+    "scenario": "Express persistence, choosing the right word.",
+    "scenarioNl": "Een collega ziet je steeds opnieuw beginnen. Zeg hoe lang je volhoudt.",
+    "why": "Totdat is the longer form of tot; lukt closes the clause.",
+    "focus": "totdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "totdat"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Totdat de storing is verholpen, gebruiken we de reserveserver.",
+    "english": "Until the fault is fixed, we use the backup server.",
+    "scenario": "State the interim arrangement.",
+    "scenarioNl": "Een klant vraagt hoe jullie het werk intussen opvangen. Leg het tijdelijke plan uit.",
+    "why": "The totdat-clause ends in is verholpen; gebruiken we inverts.",
+    "focus": "totdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "totdat"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Zij wacht totdat de klant haar terugbelt.",
+    "english": "She waits until the customer calls her back.",
+    "scenario": "Report what she waits for.",
+    "scenarioNl": "Een collega is bezig aan haar bureau zonder iets te doen. Meld waarom ze blijft zitten.",
+    "why": "Terugbelt is the joined separable verb ending the clause.",
+    "focus": "totdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "totdat"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "We oefenen totdat iedereen het begrijpt.",
+    "english": "We practise until everyone understands it.",
+    "scenario": "State the goal of a class.",
+    "scenarioNl": "Een docent geeft aan hoe lang de oefening duurt. Zeg wat het eindpunt is voor de groep.",
+    "why": "Iedereen takes the singular begrijpt, which closes the clause.",
+    "focus": "totdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "totdat"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Totdat ik meer weet, zeg ik niets.",
+    "english": "Until I know more, I say nothing.",
+    "scenario": "Announce reticence, choosing the right word.",
+    "scenarioNl": "Een journalist vraagt om een reactie. Geef beleefd aan op welk moment je wel iets zult zeggen.",
+    "why": "The totdat-clause ends in weet; zeg ik inverts.",
+    "focus": "totdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "totdat"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "De pagina blijft geblokkeerd totdat u zich opnieuw aanmeldt.",
+    "english": "The page stays blocked until you log in again.",
+    "scenario": "Explain a lock to a user.",
+    "scenarioNl": "Een klant ziet een slot op het scherm. Leg uit wat hij moet doen om verder te kunnen.",
+    "why": "The reflexive zich precedes the joined verb aanmeldt.",
+    "focus": "totdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "totdat"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Hij werkte door totdat het donker was.",
+    "english": "He worked on until it was dark.",
+    "scenario": "Describe a past effort.",
+    "scenarioNl": "Je vertelt over een collega die geen pauze nam. Zeg hoe lang hij doorging.",
+    "why": "Doorwerken splits to werkte ... door; the totdat-clause ends in was.",
+    "focus": "totdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "totdat"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Ik wacht niet totdat het te laat is.",
+    "english": "I do not wait until it is too late.",
+    "scenario": "State a decision to act early.",
+    "scenarioNl": "Een team aarzelt met een beslissing. Zeg dat jij niet blijft treuzelen.",
+    "why": "Niet stands in the main clause; the totdat-clause ends in is.",
+    "focus": "totdat",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "totdat"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Ik werk tot vijf uur.",
+    "english": "I work until five o'clock.",
+    "scenario": "Say when your workday ends.",
+    "scenarioNl": "Een klant belt en wil weten hoe laat je werkdag eindigt. Geef het uur van je laatste dienst.",
+    "why": "Here tot is a preposition with a time phrase, so there is no second clause.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "De winkel is open tot negen uur.",
+    "english": "The shop is open until nine o'clock.",
+    "scenario": "State opening hours, choosing the right word.",
+    "scenarioNl": "Een toerist vraagt hoe laat de winkel dichtgaat. Noem het sluitingsuur.",
+    "why": "Tot negen uur is a time phrase at the end of the clause.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Het kantoor blijft gesloten tot maandag.",
+    "english": "The office stays closed until Monday.",
+    "scenario": "Announce a closure, choosing the right word.",
+    "scenarioNl": "Een bezoeker staat voor een gesloten deur. Zeg op welke dag het gebouw weer opengaat.",
+    "why": "Tot maandag is a prepositional time phrase.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Tot nu toe is alles goed gegaan.",
+    "english": "Up to now everything has gone well.",
+    "scenario": "Give a progress report.",
+    "scenarioNl": "Een manager vraagt hoe het project er op dit moment voorstaat. Geef een tussentijds oordeel over het verleden.",
+    "why": "Tot nu toe is a fixed phrase in slot one, so the verb is second.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Van maandag tot vrijdag werk ik thuis.",
+    "english": "From Monday to Friday I work from home.",
+    "scenario": "State a weekly arrangement.",
+    "scenarioNl": "Een collega vraagt op welke dagen je op kantoor bent. Beschrijf je thuiswerkperiode.",
+    "why": "Van ... tot ... marks a period; it is one fronted phrase.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Tot de lunch blijf ik aan mijn bureau.",
+    "english": "Until lunch I stay at my desk.",
+    "scenario": "Say where you stay, choosing the right word.",
+    "scenarioNl": "Een collega wil je spreken. Zeg waar je zit voor het middaguur.",
+    "why": "Tot de lunch is a fronted time phrase; blijf ik inverts.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Het kan wachten tot volgende week.",
+    "english": "It can wait until next week.",
+    "scenario": "Say something is not urgent.",
+    "scenarioNl": "Een collega vraagt of de klus nu af moet. Zeg dat er tijd is.",
+    "why": "Tot volgende week is a time phrase after the modal chain kan wachten.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Tot zondag heb ik vakantie.",
+    "english": "Until Sunday I am on holiday.",
+    "scenario": "Announce an absence, choosing the right word.",
+    "scenarioNl": "Een klant belt en krijgt jou aan de lijn. Vertel hoe lang je er niet bent.",
+    "why": "Tot zondag is fronted, so heb ik inverts.",
+    "focus": "prep",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "prep"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Ik heb toegang tot de map.",
+    "english": "I have access to the folder.",
+    "scenario": "Say what you may open.",
+    "scenarioNl": "Een collega vraagt of je het gedeelde archief kunt bekijken. Zeg wat je mag openen.",
+    "why": "Here tot is not a time word but a fixed preposition after toegang.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Hij wendt zich tot de manager.",
+    "english": "He turns to the manager.",
+    "scenario": "Report who he asks, choosing the right word.",
+    "scenarioNl": "Een medewerker heeft een klacht. Zeg bij wie hij zijn verhaal doet.",
+    "why": "Zich wenden tot is a fixed expression with tot.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Dat leidt tot problemen.",
+    "english": "That leads to problems.",
+    "scenario": "Warn about a consequence.",
+    "scenarioNl": "Een collega wil een stap overslaan. Zeg wat daarvan het gevolg is.",
+    "why": "Leiden tot expresses a result: tot introduces the outcome, a noun, and no verb follows it.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Hij is gepromoveerd tot manager.",
+    "english": "He has been promoted to manager.",
+    "scenario": "Report a promotion, choosing the right word.",
+    "scenarioNl": "Een oud-collega maakt carrière. Meld wat hij is geworden.",
+    "why": "Promoveren tot names the new role: tot introduces the position someone reaches, not a time.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "other"
+    }
+  },
+  {
+    "topic": "tot",
+    "dutch": "Het water stijgt tot aan de deur.",
+    "english": "The water rises up to the door.",
+    "scenario": "Describe a flood, choosing the right word.",
+    "scenarioNl": "Er staat veel regen op straat. Beschrijf hoe hoog het komt.",
+    "why": "Tot aan marks the limit of a place, not of time.",
+    "focus": "other",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p4-tot-v1",
+      "focus": "other"
+    }
+  }
+]

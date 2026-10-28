@@ -1,0 +1,1172 @@
+[
+  {
+    "topic": "toen",
+    "dutch": "Toen de storing begon, belde ik de helpdesk.",
+    "english": "When the outage started, I called the helpdesk.",
+    "scenario": "Say what you did at the moment a fault began.",
+    "scenarioNl": "Vorige week viel het netwerk plotseling uit. Vertel wat jij op dat ogenblik meteen deed.",
+    "why": "Toen opens the clause and begon closes it; the main clause then inverts to belde ik.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik de e-mail las, begreep ik het probleem.",
+    "english": "When I read the email, I understood the problem.",
+    "scenario": "Tell what became clear while reading a message.",
+    "scenarioNl": "Gisterochtend kreeg je een lang bericht van een klant. Vertel wat er duidelijk werd tijdens het lezen.",
+    "why": "Las closes the toen-clause; the main clause starts with the verb begreep.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de klant binnenkwam, stond ik al klaar.",
+    "english": "When the customer came in, I was already ready.",
+    "scenario": "Say you were prepared at the moment a customer arrived.",
+    "scenarioNl": "Vanmorgen verscheen de eerste klant bij de balie. Zeg dat jij op dat moment al voorbereid was.",
+    "why": "Binnenkwam is the joined separable verb at the end of the toen-clause.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen het systeem opnieuw startte, verscheen er een waarschuwing.",
+    "english": "When the system restarted, a warning appeared.",
+    "scenario": "Describe what showed up on screen after a restart.",
+    "scenarioNl": "Na de onderhoudsbeurt van gisteravond ging het apparaat weer aan. Beschrijf wat er op het scherm kwam.",
+    "why": "Startte closes the toen-clause and verscheen er follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik het wachtwoord invoerde, werd het geweigerd.",
+    "english": "When I entered the password, it was rejected.",
+    "scenario": "Explain what happened at the login screen yesterday.",
+    "scenarioNl": "Gisteren probeerde je om in te loggen. Vertel wat er gebeurde op het inlogscherm.",
+    "why": "Invoerde is the past tense of the separable verb invoeren, joined at the end.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen mijn collega vertrok, nam hij de sleutel mee.",
+    "english": "When my colleague left, he took the key with him.",
+    "scenario": "Explain why nobody could get in afterwards.",
+    "scenarioNl": "Vrijdagavond was je collega de laatste die wegging. Vertel wat hij bij zijn vertrek meenam.",
+    "why": "Nam ... mee splits meenemen in the main clause; vertrok closes the toen-clause.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik het kantoor verliet, regende het nog steeds.",
+    "english": "When I left the office, it was still raining.",
+    "scenario": "Describe the weather as you left work.",
+    "scenarioNl": "Gisteren ging je na een lange dag naar buiten. Beschrijf het weer op het moment van je vertrek.",
+    "why": "Verliet closes the toen-clause; regende het follows the comma with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de lift stopte, zaten we vast.",
+    "english": "When the lift stopped, we were stuck.",
+    "scenario": "Tell what happened in a broken lift.",
+    "scenarioNl": "Vorige maand viel de lift in het kantoorgebouw stil met jullie erin. Vertel wat jullie overkwam.",
+    "why": "Stopte closes the clause; the main clause begins with the verb zaten.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik klaar was met de test, stuurde ik de resultaten op.",
+    "english": "When I finished the test, I sent in the results.",
+    "scenario": "Say what you did right after finishing a test.",
+    "scenarioNl": "Gistermiddag rondde je een controle af. Vertel wat je daarna met de uitkomsten deed.",
+    "why": "Was closes the toen-clause after klaar met de test; stuurde ... op splits opsturen.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de baas belde, zat ik in de trein.",
+    "english": "When the boss called, I was on the train.",
+    "scenario": "Say where you were at the moment your boss phoned.",
+    "scenarioNl": "Donderdag kreeg je een telefoontje van je leidinggevende. Zeg waar jij op dat moment was.",
+    "why": "Belde closes the toen-clause and the main clause starts with zat.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen we de deur openden, rook het naar koffie.",
+    "english": "When we opened the door, it smelled of coffee.",
+    "scenario": "Describe what you noticed when you opened a door.",
+    "scenarioNl": "Je ging samen met een collega een kamer in die lang dicht was geweest. Beschrijf wat jullie opmerkten.",
+    "why": "Openden closes the toen-clause; rook het inverts in the main clause.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik het nieuws hoorde, kon ik het niet geloven.",
+    "english": "When I heard the news, I could not believe it.",
+    "scenario": "Describe your reaction to surprising news.",
+    "scenarioNl": "Vorige week kreeg je onverwacht groot nieuws te horen. Vertel hoe je daar eerst op reageerde.",
+    "why": "Hoorde closes the toen-clause; kon ik het niet geloven inverts with a modal.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de les afgelopen was, gingen we samen lunchen.",
+    "english": "When the lesson was over, we went to lunch together.",
+    "scenario": "Say what the group did after a lesson ended.",
+    "scenarioNl": "Gistermiddag eindigde de cursus. Vertel wat jullie met de hele groep daarna deden.",
+    "why": "Afgelopen was ends the toen-clause; gingen we samen lunchen is the main clause.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik mijn tas zocht, vond ik mijn oude pas.",
+    "english": "When I looked for my bag, I found my old pass.",
+    "scenario": "Tell what you unexpectedly found while looking for something.",
+    "scenarioNl": "Zaterdag zocht je in de kast naar iets anders. Vertel wat je daarbij onverwacht tegenkwam.",
+    "why": "Zocht closes the clause; vond ik follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen het alarm afging, liep iedereen naar buiten.",
+    "english": "When the alarm went off, everyone walked outside.",
+    "scenario": "Describe how people reacted to an alarm.",
+    "scenarioNl": "Vanochtend loeide er een sirene door het gebouw. Beschrijf wat de mensen deden.",
+    "why": "Afging is the joined separable verb afgaan at the end of the toen-clause.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik terugkwam, was de vergadering al voorbij.",
+    "english": "When I came back, the meeting was already over.",
+    "scenario": "Say you missed the end of a meeting.",
+    "scenarioNl": "Je liep even weg voor een telefoontje. Vertel wat je aantrof bij je terugkeer in de zaal.",
+    "why": "Terugkwam is joined at the end; was de vergadering follows with inversion.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen het internet uitviel, werkten we offline verder.",
+    "english": "When the internet went down, we carried on working offline.",
+    "scenario": "Explain how the team handled a connection failure.",
+    "scenarioNl": "Gisteren was de verbinding een uur weg. Vertel hoe het team zonder verbinding toch doorwerkte.",
+    "why": "Uitviel is joined at the end; werkten we ... verder splits verderwerken.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de nieuwe collega begon, kreeg hij een rondleiding.",
+    "english": "When the new colleague started, he got a tour.",
+    "scenario": "Tell how a new colleague was welcomed.",
+    "scenarioNl": "Maandag was de eerste werkdag van een nieuwe medewerker. Vertel hoe hij werd ontvangen.",
+    "why": "Begon closes the clause; kreeg hij inverts in the main clause.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik de fout zag, waarschuwde ik meteen mijn team.",
+    "english": "When I saw the error, I immediately warned my team.",
+    "scenario": "Say how quickly you reacted to a mistake.",
+    "scenarioNl": "Gisteren ontdekte je een vergissing in het rooster. Vertel wat je onmiddellijk deed.",
+    "why": "Zag closes the toen-clause; waarschuwde ik meteen follows.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de kinderen sliepen, ruimde ik de keuken op.",
+    "english": "When the children were asleep, I tidied up the kitchen.",
+    "scenario": "Say what you did once the house was quiet.",
+    "scenarioNl": "Gisteravond was het eindelijk stil thuis. Vertel wat je deed met het gezin op bed.",
+    "why": "Sliepen closes the toen-clause; ruimde ik ... op splits opruimen.",
+    "focus": "first",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "first"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Ik was net aan het werk toen de stroom uitviel.",
+    "english": "I had just started working when the power failed.",
+    "scenario": "Say what interrupted your work.",
+    "scenarioNl": "Gistermiddag zat je geconcentreerd achter je bureau. Vertel wat je werk plotseling stilzette.",
+    "why": "The main clause comes first with normal order; uitviel closes the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Ze huilde toen ze het slechte nieuws hoorde.",
+    "english": "She cried when she heard the bad news.",
+    "scenario": "Describe a friend's reaction to bad news.",
+    "scenarioNl": "Een vriendin kreeg vorige week een vervelend bericht. Beschrijf hoe ze reageerde.",
+    "why": "No inversion: the main clause stands first and hoorde closes the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "De server crashte toen wij de update installeerden.",
+    "english": "The server crashed when we installed the update.",
+    "scenario": "Explain what went wrong during an update.",
+    "scenarioNl": "Gisterenavond voerden jullie een nieuwe versie door. Vertel wat er misging met het systeem.",
+    "why": "Crashte is second in the main clause; installeerden is last in the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Ik stond op het perron toen mijn trein vertrok.",
+    "english": "I was standing on the platform when my train left.",
+    "scenario": "Describe a missed-train moment.",
+    "scenarioNl": "Vanmorgen was je net op het station. Vertel wat je zag gebeuren met je verbinding.",
+    "why": "Stond is second; vertrok closes the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Hij verontschuldigde zich toen hij te laat binnenkwam.",
+    "english": "He apologised when he came in late.",
+    "scenario": "Describe how a colleague reacted to being late.",
+    "scenarioNl": "Een collega kwam vanmorgen na het begin binnen. Beschrijf wat hij op dat moment zei.",
+    "why": "Verontschuldigde zich is the main verb; binnenkwam closes the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Wij zaten in de vergadering toen het brandalarm afging.",
+    "english": "We were in the meeting when the fire alarm went off.",
+    "scenario": "Tell what interrupted a meeting.",
+    "scenarioNl": "Dinsdag werd jullie overleg ruw verstoord. Vertel wat er plotseling gebeurde.",
+    "why": "Zaten is second; afging is joined at the end of the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Ik schrok toen de telefoon midden in de nacht ging.",
+    "english": "I was startled when the phone rang in the middle of the night.",
+    "scenario": "Describe a night-time interruption.",
+    "scenarioNl": "Afgelopen weekend werd je midden in de nacht wakker. Vertel hoe je reageerde op het geluid.",
+    "why": "Schrok is second; ging closes the toen-clause behind midden in de nacht.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "De klant werd boos toen hij de rekening zag.",
+    "english": "The customer got angry when he saw the bill.",
+    "scenario": "Describe a customer's reaction to a bill.",
+    "scenarioNl": "Een klant kreeg gisteren een hoog bedrag te zien. Beschrijf zijn reactie.",
+    "why": "Werd is second; zag closes the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Ik was al weg toen jij terugbelde.",
+    "english": "I was already gone when you called back.",
+    "scenario": "Explain why you missed someone's return call.",
+    "scenarioNl": "Gisteren probeerde een collega je terug te bellen. Leg uit waarom je niet bereikbaar was.",
+    "why": "Was is second; terugbelde is the joined separable verb at the end.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Zij lachten hard toen de grap werd verteld.",
+    "english": "They laughed loudly when the joke was told.",
+    "scenario": "Describe the mood at a team event.",
+    "scenarioNl": "Op het teamuitje van vorige maand ging er een mop rond. Beschrijf hoe de groep reageerde.",
+    "why": "Lachten is second; werd verteld closes the toen-clause as a passive.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Ik zat te lezen toen mijn buurman aanbelde.",
+    "english": "I was reading when my neighbour rang the bell.",
+    "scenario": "Tell what you were doing when someone came to the door.",
+    "scenarioNl": "Zondagmiddag zat je rustig in je stoel. Vertel wat je deed met onverwacht bezoek aan de deur.",
+    "why": "Zat te lezen is a continuous frame; aanbelde closes the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Het begon te sneeuwen toen we de berg opliepen.",
+    "english": "It began to snow when we walked up the mountain.",
+    "scenario": "Describe a change in the weather on a hike.",
+    "scenarioNl": "Tijdens jullie wandeling in de winter veranderde er iets aan de lucht. Beschrijf wat er gebeurde.",
+    "why": "Begon te sneeuwen is the main clause; opliepen is joined at the end.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Hij had zijn jas al aan toen ik hem riep.",
+    "english": "He already had his coat on when I called him.",
+    "scenario": "Say he was ready before you called him.",
+    "scenarioNl": "Een collega stond al in de gang. Vertel wat hij droeg op het moment dat je hem riep.",
+    "why": "Had ... aan is the main clause; riep closes the toen-clause.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Mijn laptop ging uit toen ik het bestand wilde opslaan.",
+    "english": "My laptop switched off when I wanted to save the file.",
+    "scenario": "Tell about losing work when a computer shut down.",
+    "scenarioNl": "Gisteren was je bezig met een belangrijk document. Vertel wat er met je computer gebeurde.",
+    "why": "Ging uit splits uitgaan; wilde opslaan has the finite wilde before the infinitive.",
+    "focus": "after",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "after"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik aankwam, was de vergadering al begonnen.",
+    "english": "When I arrived, the meeting had already started.",
+    "scenario": "Say the meeting was underway when you arrived.",
+    "scenarioNl": "Gisteren kwam je bij een overleg en de deur stond open. Vertel hoe het ervoor stond.",
+    "why": "Was ... begonnen is the past perfect in the main clause: the meeting started earlier.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de monteur arriveerde, had ik het probleem al opgelost.",
+    "english": "When the technician arrived, I had already solved the problem.",
+    "scenario": "Say you had already fixed the fault.",
+    "scenarioNl": "Een technicus kwam gisteren langs voor een defect. Vertel hoe ver jij op dat tijdstip al was.",
+    "why": "Had ... opgelost marks an earlier action than arriveerde.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik haar belde, was ze al vertrokken.",
+    "english": "When I phoned her, she had already left.",
+    "scenario": "Explain why you could not reach her.",
+    "scenarioNl": "Je belde vorige week een vriendin, maar zij nam niet op. Leg uit waarom.",
+    "why": "Was ze al vertrokken is the past perfect with zijn.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de mail binnenkwam, had niemand de storing nog opgemerkt.",
+    "english": "When the email arrived, nobody had noticed the outage yet.",
+    "scenario": "Say nobody knew about the fault yet.",
+    "scenarioNl": "Een melding kwam gisteren in je inbox. Vertel wat de collega's op dat tijdstip nog niet wisten.",
+    "why": "Had niemand ... opgemerkt is the past perfect; binnenkwam is joined.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen wij het lokaal binnenkwamen, was de les al begonnen.",
+    "english": "When we entered the classroom, the lesson had already begun.",
+    "scenario": "Say the class had already started.",
+    "scenarioNl": "Jij en een vriend kwamen vorige week te laat bij een cursus. Vertel wat jullie aantroffen.",
+    "why": "Binnenkwamen is joined at the end; was de les al begonnen inverts.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Het was al donker toen we eindelijk thuiskwamen.",
+    "english": "It was already dark when we finally got home.",
+    "scenario": "Describe how late you came home.",
+    "scenarioNl": "Na een lange rit gisteren was het plots avond. Vertel hoe laat het in feite al was.",
+    "why": "Was is second; thuiskwamen is joined at the end.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "De bakker was al dicht toen ik bij de winkel aankwam.",
+    "english": "The baker was already closed when I got to the shop.",
+    "scenario": "Say you arrived too late to buy bread.",
+    "scenarioNl": "Zaterdag wilde je brood halen. Vertel wat je aantrof bij de winkel.",
+    "why": "Was ... dicht is the main clause; aankwam closes the toen-clause.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de update klaar was, hadden de gebruikers het systeem al verlaten.",
+    "english": "When the update was ready, the users had already left the system.",
+    "scenario": "Explain why nobody saw the update finish.",
+    "scenarioNl": "Gisteravond werd een wijziging afgerond. Vertel waar de gebruikers op dat moment al waren.",
+    "why": "Hadden ... verlaten is the past perfect; klaar was ends the toen-clause.",
+    "focus": "pluperfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "pluperfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik gisteren thuiskwam, heb ik meteen gekookt.",
+    "english": "When I got home yesterday, I cooked straight away.",
+    "scenario": "Tell what you did immediately after getting home.",
+    "scenarioNl": "Je kwam gistermiddag moe aan. Vertel wat je allereerst deed.",
+    "why": "Toen takes the past tense thuiskwam; the main clause uses the perfect heb gekookt.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de telefoon ging, heb ik opgenomen.",
+    "english": "When the phone rang, I picked up.",
+    "scenario": "Say how you reacted to a ringing phone.",
+    "scenarioNl": "Op kantoor rinkelde vanmorgen het toestel op je bureau. Vertel wat je deed.",
+    "why": "Ging closes the toen-clause; heb ik opgenomen is the perfect of opnemen.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik het ticket aanmaakte, heb ik de bijlage vergeten.",
+    "english": "When I created the ticket, I forgot the attachment.",
+    "scenario": "Admit a small mistake when filing a ticket.",
+    "scenarioNl": "Gisteren meldde je een probleem in het systeem. Vertel welke fout je daarbij maakte.",
+    "why": "Aanmaakte is joined at the end; heb ik ... vergeten is the perfect.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen we in Rotterdam waren, hebben we de haven bezocht.",
+    "english": "When we were in Rotterdam, we visited the harbour.",
+    "scenario": "Tell what you visited during a trip.",
+    "scenarioNl": "Vorige zomer waren jullie een weekend in een havenstad. Vertel wat jullie bezochten.",
+    "why": "Waren closes the toen-clause; hebben we ... bezocht is the perfect.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik de fout ontdekte, ben ik naar mijn manager gelopen.",
+    "english": "When I discovered the error, I walked to my manager.",
+    "scenario": "Say you reported a mistake in person.",
+    "scenarioNl": "Je merkte gisteren een grote vergissing op. Vertel wat je daarop deed.",
+    "why": "Ontdekte closes the toen-clause; ben ik ... gelopen uses zijn.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen het regende, zijn we in het café gebleven.",
+    "english": "When it rained, we stayed in the café.",
+    "scenario": "Say where the group sheltered from the rain.",
+    "scenarioNl": "Tijdens jullie stadsbezoek kwam er plots een bui. Vertel waar jullie bleven.",
+    "why": "Regende closes the clause; zijn we ... gebleven uses zijn with blijven.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen zij vertrok, heb ik haar nog uitgezwaaid.",
+    "english": "When she left, I waved her off.",
+    "scenario": "Describe saying goodbye to a friend who left.",
+    "scenarioNl": "Een goede vriendin verhuisde vorig jaar naar het buitenland. Vertel wat jij op het afscheidsmoment zelf deed, in een korte zin.",
+    "why": "Vertrok closes the clause; heb ik ... uitgezwaaid is the perfect of uitzwaaien.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de test mislukte, hebben wij het opnieuw geprobeerd.",
+    "english": "When the test failed, we tried again.",
+    "scenario": "Say what the team did after a failed test.",
+    "scenarioNl": "Gistermiddag gaf de controle een slecht resultaat. Vertel wat jullie met het hele team daarna deden.",
+    "why": "Mislukte closes the clause; hebben wij ... geprobeerd is the perfect.",
+    "focus": "perfect",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "perfect"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen belde ik mijn collega.",
+    "english": "Then I called my colleague.",
+    "scenario": "Say what you did next in a sequence.",
+    "scenarioNl": "Eerst ging het mis op je scherm. Zeg wat je daarna deed, in één korte zin.",
+    "why": "Here toen is an adverb meaning then: it fills the first slot, so the verb belde is second.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen kwam de manager binnen.",
+    "english": "Then the manager came in.",
+    "scenario": "Tell what happened next in a story.",
+    "scenarioNl": "Je vertelt een anekdote over een rumoerige vergadering. Zeg wat er vervolgens gebeurde.",
+    "why": "Toen is an adverb; kwam is second and binnen closes the clause.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ging het licht uit.",
+    "english": "Then the light went out.",
+    "scenario": "Tell what happened next in a story.",
+    "scenarioNl": "Je vertelt een spannend verhaal over een avond op kantoor. Zeg wat er daarna gebeurde.",
+    "why": "Toen is an adverb in first position; ging is second and uit closes it.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen zag ik haar voor het eerst.",
+    "english": "That was when I first saw her.",
+    "scenario": "Tell about the first time you saw someone.",
+    "scenarioNl": "Je vertelt over een bijzondere ontmoeting. Zeg wat er op dat moment gebeurde.",
+    "why": "Toen as an adverb pushes the subject behind the verb: zag ik.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen had ik geen keuze meer.",
+    "english": "Then I had no choice left.",
+    "scenario": "Say you were out of options at that point.",
+    "scenarioNl": "Je vertelt over een lastig moment in het project. Zeg hoe de situatie voor jou stond.",
+    "why": "Toen as an adverb: had is second, the subject ik follows.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen werd het eindelijk rustig op kantoor.",
+    "english": "Then it finally became quiet at the office.",
+    "scenario": "Say things calmed down at last.",
+    "scenarioNl": "Na een hectische dag liep alles weer in het gareel. Zeg wat er vervolgens gebeurde.",
+    "why": "Toen is an adverb; werd is second, followed by het.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen pas begreep ik de fout.",
+    "english": "Only then did I understand the error.",
+    "scenario": "Say you understood the mistake only later.",
+    "scenarioNl": "Je zocht uren naar de oorzaak van een probleem. Zeg op welk tijdstip het je duidelijk werd, in één zin.",
+    "why": "Toen pas is a fixed adverb pair meaning only then; begreep ik follows with inversion.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen kregen we eindelijk antwoord van de klant.",
+    "english": "Then we finally got an answer from the customer.",
+    "scenario": "Say the customer replied at last.",
+    "scenarioNl": "Na dagen wachten kwam er beweging in een lang dossier. Zeg wat er eindelijk gebeurde.",
+    "why": "Toen as an adverb; kregen is second and we follows.",
+    "focus": "adverb",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "adverb"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Wat deed je toen de storing begon?",
+    "english": "What did you do when the outage began?",
+    "scenario": "Ask a colleague what they did when the fault began.",
+    "scenarioNl": "Een collega zat erbij bij de uitval van het netwerk. Vraag wat hij op dat moment deed.",
+    "why": "The question has its own order (Wat deed je); the toen-clause closes with begon.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Waar was je toen het alarm afging?",
+    "english": "Where were you when the alarm went off?",
+    "scenario": "Ask where someone was when an alarm sounded.",
+    "scenarioNl": "Vanochtend ging de sirene af in het gebouw. Vraag je collega waar hij zich bevond.",
+    "why": "The question word Waar opens; the toen-clause ends with afging.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Wie belde er toen je in de vergadering zat?",
+    "english": "Who called while you were in the meeting?",
+    "scenario": "Ask who phoned during a meeting.",
+    "scenarioNl": "Je collega zat in een overleg en zijn telefoon trilde. Vraag wie er belde.",
+    "why": "Wie belde er is the question; zat closes the toen-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Wist je het al toen je de uitnodiging kreeg?",
+    "english": "Did you already know when you got the invitation?",
+    "scenario": "Ask if someone already knew about an event.",
+    "scenarioNl": "Een vriend ontving vorige week een uitnodiging. Vraag of hij op dat moment al wist wat er ging gebeuren.",
+    "why": "A yes/no question starts with the verb wist; kreeg closes the toen-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Hoe voelde je je toen je de uitslag hoorde?",
+    "english": "How did you feel when you heard the result?",
+    "scenario": "Ask how someone felt about a result.",
+    "scenarioNl": "Een collega hoorde gisteren de uitkomst van een examen. Vraag hoe dat voor hem was.",
+    "why": "Voelde je je is the question frame; hoorde closes the toen-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Wat zei de klant toen hij de offerte las?",
+    "english": "What did the customer say when he read the quote?",
+    "scenario": "Ask about a customer's reaction.",
+    "scenarioNl": "Je collega stuurde een prijsvoorstel naar een klant. Vraag wat de reactie was bij het lezen.",
+    "why": "Wat zei de klant is the question; las closes the toen-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Was je al thuis toen de storm begon?",
+    "english": "Were you already home when the storm began?",
+    "scenario": "Ask whether someone was safe at home.",
+    "scenarioNl": "Gisteravond trok een zware storm over het land. Vraag je vriend of hij al binnen zat.",
+    "why": "A yes/no question with Was je; begon closes the toen-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Waarom zei je niets toen ik je om hulp vroeg?",
+    "english": "Why did you say nothing when I asked you for help?",
+    "scenario": "Challenge a friend who stayed silent.",
+    "scenarioNl": "Je vroeg een vriend vorige week om hulp en kreeg geen reactie. Vraag waarom hij zweeg.",
+    "why": "Waarom zei je niets is the question; vroeg closes the toen-clause.",
+    "focus": "question",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "question"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik in Amsterdam woonde, werkte ik bij een bank.",
+    "english": "When I lived in Amsterdam, I worked at a bank.",
+    "scenario": "Describe a period in your life.",
+    "scenarioNl": "Je vertelt over je tijd in de hoofdstad. Zeg wat je in die periode deed voor je werk.",
+    "why": "Toen introduces a whole period; woonde ends it and werkte ik inverts.",
+    "focus": "period",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "period"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen mijn zus studeerde, had ze een bijbaan in een café.",
+    "english": "When my sister was studying, she had a part-time job in a café.",
+    "scenario": "Describe a family member's student years.",
+    "scenarioNl": "Je vertelt over de studententijd van je zus. Zeg welk werk zij in die jaren had.",
+    "why": "Studeerde closes the toen-clause; had ze inverts in the main clause.",
+    "focus": "period",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "period"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen we klein waren, gingen we elke zomer naar zee.",
+    "english": "When we were small, we went to the sea every summer.",
+    "scenario": "Describe childhood summers.",
+    "scenarioNl": "Je haalt herinneringen op aan je jeugd met je broer. Vertel wat jullie in de vakanties deden.",
+    "why": "Toen frames a period (we waren klein); elke zomer inside it does not turn toen into als.",
+    "focus": "period",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "period"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen het internet nog traag was, downloadden we alles 's nachts.",
+    "english": "When the internet was still slow, we downloaded everything at night.",
+    "scenario": "Describe how things used to work.",
+    "scenarioNl": "Je vertelt een nieuwe collega over de begintijd van het bedrijf. Zeg hoe jullie destijds met grote bestanden omgingen.",
+    "why": "Was ends the toen-clause; downloadden we inverts.",
+    "focus": "period",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "period"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik net begon bij dit bedrijf, kende ik niemand.",
+    "english": "When I had just started at this company, I knew nobody.",
+    "scenario": "Describe your first period at work.",
+    "scenarioNl": "Je blikt terug op je eerste werkweken. Zeg hoeveel mensen je daar kende.",
+    "why": "Begon closes the toen-clause; kende ik inverts.",
+    "focus": "period",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "period"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen mijn opa jong was, bestond de computer nog niet.",
+    "english": "When my grandfather was young, the computer did not exist yet.",
+    "scenario": "Describe a time before computers.",
+    "scenarioNl": "Je praat met een kind over vroeger. Zeg wat er in de jeugd van je opa nog niet was.",
+    "why": "Was closes the clause; bestond de computer inverts, with nog niet at the end.",
+    "focus": "period",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "period"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik niet reageerde, belde hij nog een keer.",
+    "english": "When I did not respond, he called once more.",
+    "scenario": "Say what happened after you missed a call.",
+    "scenarioNl": "Je nam vorige week niet op. Vertel wat de beller daarna deed.",
+    "why": "Reageerde closes the clause after niet; belde hij inverts.",
+    "focus": "negated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "negated"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen de klant niet kwam opdagen, zijn we zonder hem begonnen.",
+    "english": "When the customer did not show up, we started without him.",
+    "scenario": "Say what you did when a customer was absent.",
+    "scenarioNl": "Gisteren bleef een klant weg bij een afspraak. Vertel wat jullie met het team besloten.",
+    "why": "Kwam opdagen has the finite kwam before the infinitive opdagen; zijn we ... begonnen is the perfect.",
+    "focus": "negated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "negated"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen ik moest kiezen, nam ik de goedkoopste optie.",
+    "english": "When I had to choose, I took the cheapest option.",
+    "scenario": "Say how you decided under pressure.",
+    "scenarioNl": "Vorige week moest je snel een keuze maken voor een bestelling. Vertel wat je koos.",
+    "why": "Moest kiezen puts the modal first and the infinitive last; nam ik inverts.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Toen zij het wilde weten, legde hij alles uit.",
+    "english": "When she wanted to know, he explained everything.",
+    "scenario": "Describe how a question was answered.",
+    "scenarioNl": "Een collega vroeg gisteren om meer informatie. Vertel hoe de ander reageerde.",
+    "why": "Wilde weten ends the clause; legde hij ... uit splits uitleggen.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "modal"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "Ik kon niet slapen toen het onweerde.",
+    "english": "I could not sleep when there was a thunderstorm.",
+    "scenario": "Explain why you slept badly.",
+    "scenarioNl": "Afgelopen nacht was het weer heel onrustig. Vertel waarom je wakker lag.",
+    "why": "Kon ... slapen is the main clause; onweerde closes the toen-clause.",
+    "focus": "negated",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "negated"
+    }
+  },
+  {
+    "topic": "toen",
+    "dutch": "We moesten wachten toen het systeem werd bijgewerkt.",
+    "english": "We had to wait when the system was being updated.",
+    "scenario": "Explain why work stopped for a while.",
+    "scenarioNl": "Gistermiddag stond alles stil op kantoor. Leg uit waarom je team niets kon doen.",
+    "why": "Moesten wachten is the main clause; werd bijgewerkt is a passive at the end of the toen-clause.",
+    "focus": "modal",
+    "review": {
+      "status": "ai-editorially-reviewed",
+      "independentHumanReview": false,
+      "batch": "p2-toen-v1",
+      "focus": "modal"
+    }
+  }
+]

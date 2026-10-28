@@ -1,8 +1,9 @@
 "use client";
-import {useState} from "react";
+import {useMemo,useState} from "react";
 import rawLessons from "@/data/grammar-topic-lessons.json";
+import {analysisFor} from "@/lib/grammarAnalysis";
 import {button,primary} from "../flashcards/styles";
-type Mistake={wrong:string;right:string;why:string};
+type Mistake={wrong:string;right:string;why:string;own?:boolean};
 type Lesson={mistakes:Mistake[]};
 const lessons=rawLessons as Record<string,Lesson>;
 const normal=(s:string)=>s.normalize("NFC").toLocaleLowerCase("nl").replace(/[.,!?;:]/g,"").replace(/\s+/g," ").trim();
@@ -10,9 +11,18 @@ const normal=(s:string)=>s.normalize("NFC").toLocaleLowerCase("nl").replace(/[.,
  * Optional grammar pattern self-check. Never touches points, mastery, sessions,
  * or claims all grammatical alternatives are machine-validatable.
  */
-export function GrammarErrorRepair({topic}:{topic:string}){
- const mistakes=lessons[topic]?.mistakes??[];
- const [index,setIndex]=useState(0);
+export function GrammarErrorRepair({topic,cardIds=[]}:{topic:string;cardIds?:string[]}){
+ // Mistakes written for the sentences of this session come first, then the topic lesson's general ones.
+ const key=`${topic}|${cardIds.join(",")}`;
+ const mistakes=useMemo(()=>{
+  const own:Mistake[]=[];
+  for(const id of cardIds)for(const m of analysisFor(id)?.mistakes??[])own.push({...m,own:true});
+  return [...own,...(lessons[topic]?.mistakes??[])];
+ // eslint-disable-next-line react-hooks/exhaustive-deps
+ },[key]);
+ const [state,setState]=useState({key,index:0});
+ const index=state.key===key?state.index:0;
+ const setIndex=(f:(i:number)=>number)=>setState({key,index:f(index)});
  const [draft,setDraft]=useState("");
  const [checked,setChecked]=useState(false);
  const [showAnswer,setShowAnswer]=useState(false);
@@ -26,7 +36,7 @@ export function GrammarErrorRepair({topic}:{topic:string}){
  return <details className="card p-4" data-testid="grammar-error-repair">
   <summary className="cursor-pointer text-sm font-bold marker:text-accent">🛠️ Find and fix a grammar mistake</summary>
   <div className="mt-4 space-y-3">
-   <p className="text-sm text-muted">Exercise {index+1} of {mistakes.length}. Read the incorrect Dutch sentence and rewrite it naturally. Compare your answer with a reviewed model—other correct Dutch wordings may also exist.</p>
+   <p className="text-sm text-muted">Exercise {index+1} of {mistakes.length}{item.own?" · from one of your session sentences":" · from the topic lesson"}. Read the incorrect Dutch sentence and rewrite it naturally. Compare your answer with a reviewed model—other correct Dutch wordings may also exist.</p>
    <p lang="nl" className="rounded-xl bg-surface-2 p-4 text-lg font-semibold" data-testid="wrong-sentence">❌ {item.wrong}</p>
    <form onSubmit={e=>{e.preventDefault();setChecked(true);}} className="space-y-2">
      <label className="block text-sm font-semibold" htmlFor="grammar-repair-answer">Your corrected sentence</label>

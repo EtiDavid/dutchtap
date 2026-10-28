@@ -84,6 +84,8 @@ export function eligibleIds(
   lang: Lang = DEFAULT_LANG,
   collection: Collection = "everyday",
 ): string[] {
+  // One original sentence can be linked into several grammar topics. A set of cards never holds it twice.
+  const seen = new Set<string>();
   return cardsFor(lang)
     .filter(
       (card) =>
@@ -91,6 +93,7 @@ export function eligibleIds(
         validTopic(collection, topic) && (topic === "all" || card.category === topic) &&
         levelOf(reviews, card.id) === level,
     )
+    .filter((card) => { const origin = card.originCardId ?? card.id; if (seen.has(origin)) return false; seen.add(origin); return true; })
     .map((card) => card.id);
 }
 export function levelCounts(
@@ -105,9 +108,15 @@ export function levelCounts(
     easy: 0,
     mastered: 0,
   };
+  const seen: Record<Level, Set<string>> = { difficult: new Set(), medium: new Set(), easy: new Set(), mastered: new Set() };
   for (const card of cardsFor(lang))
-    if (collectionAvailable(lang, collection) && card.collection === collection && validTopic(collection, topic) && (topic === "all" || card.category === topic))
-      counts[levelOf(reviews, card.id)]++;
+    if (collectionAvailable(lang, collection) && card.collection === collection && validTopic(collection, topic) && (topic === "all" || card.category === topic)) {
+      const level = levelOf(reviews, card.id);
+      const origin = card.originCardId ?? card.id;
+      if (seen[level].has(origin)) continue; // the same sentence linked into two topics counts once
+      seen[level].add(origin);
+      counts[level]++;
+    }
   return counts;
 }
 

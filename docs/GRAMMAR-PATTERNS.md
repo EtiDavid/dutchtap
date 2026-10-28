@@ -10,7 +10,7 @@
 - **Speaking:** answer a situational prompt aloud, reveal Dutch, then **self-rate**. No automatic speech-to-text or pronunciation scoring. An optional English-help toggle is available **only for the 236 authored grammar cards that include a Dutch-first prompt**; other cards fall back to English until authored and checked.
 - **Word-order Quiz:** reconstruct a model sentence with word tiles. The 58 new ALS sentences form 29 clause-order contrast pairs with a second saved and recognisable model. A broader set of alternative answers and optional typed/uncued mixed grammar inside the flashcard session are **not** finished. The older `/learn` lab has additional typed and mixed exercises.
 - **Find and fix a mistake:** each current topic lesson has a non-scoring optional correction exercise. Its response check compares one stored model; another grammatical correction may be valid even if not matched.
-- **Extra interactive variations:** just **three ALS base cards** have ten separately tracked child questions each (**30 total**); the other grammar parents have no ready ten-child family. The ten passive examples displayed in notes are **not** independently scored questions.
+- **Extra interactive variations:** only **ten ALS base cards** have ten separately tracked child questions each (**100 total**); the other grammar parents have no ready ten-child family. The ten passive examples displayed in notes are **not** independently scored questions.
 - **Progress:** each reused core reference receives a grammar-specific alias ID and level; the original card's level is unchanged. This does not yet implement full skill-by-topic mastery or multi-topic tagging.
 
 ## Exact merged-feature inventory (26 October 2026)
@@ -19,27 +19,35 @@ Counts below represent **playable base cards**, NOT passive examples or optional
 
 | Topic ID | Authored cards | Reused original cards | Playable total | Topic lesson |
 | --- | ---: | ---: | ---: | --- |
-| `inversion` | 20 | 0 | 20 | Expanded v1 |
+| `inversion` | 62 | 38 | **100** | Expanded v1 |
 | `als` | 77 | 23 | **100** | Expanded v1 |
-| `omdat` | 20 | 9 | 29 | Expanded v1 |
-| `dat` | 20 | 19 | 39 | Expanded v1 |
-| `toen` | 20 | 2 | 22 | Introductory |
-| `wanneer` | 14 | 0 | 14 | Foundational |
-| `terwijl` | 12 | 0 | 12 | Foundational |
-| `voordat` | 12 | 0 | 12 | Foundational |
-| `nadat` | 12 | 0 | 12 | Foundational |
-| `tot` | 20 | 0 | 20 | Introductory |
-| `verbs` | 36 | 0 | 36 | Expanded v1 |
-| `separable` | 152 | 0 | **152** | Expanded v1 |
-| `tense` | 17 | 0 | 17 | Introductory |
-| **TOTAL** | **432** | **53** | **485** | **13 topics** |
+| `omdat` | 91 | 9 | **100** | Expanded v1 |
+| `dat` | 64 | 36 | **100** | Expanded v1 |
+| `toen` | 98 | 2 | **100** | Introductory |
+| `wanneer` | 88 | 12 | **100** | Foundational |
+| `terwijl` | 59 | 1 | **60** | Expanded v1.1 |
+| `voordat` | 40 | 10 | **50** | Expanded v1.1 |
+| `nadat` | 50 | 0 | **50** | Expanded v1.1 |
+| `tot` | 49 | 11 | **60** | Expanded v1.1 |
+| `verbs` | 100 | 0 | **100** | Expanded v1.1 |
+| `separable` | 184 | 0 | **184** | Expanded v1 |
+| `tense` | 100 | 0 | **100** | Expanded v1.1 |
+| `zodra` | 49 | 11 | **60** | Expanded v1.1 |
+| `of` | 48 | 12 | **60** | Expanded v1.1 |
+| `hoewel` | 59 | 1 | **60** | Expanded v1.1 |
+| `indirect` | 85 | 15 | **100** | Expanded v1.1 |
+| `relative` | 97 | 3 | **100** | Expanded v1.1 |
+| `connectors` | 40 | 0 | **40** | Expanded v1.1 |
+| `exceptions` | 36 | 0 | **36** | Expanded v1.1 |
+| `daar` | 30 | 0 | **30** | Expanded v1.1 (limited sources) |
+| **TOTAL** | **1506** | **184** | **1690** | **21 topics** |
 
-There are also **52 authored separable-verb lemmas** (below the 60–100 target; **not** independently native-verified), 30 interactive child variations on three ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
+There are also **68 authored separable-verb lemmas** (within the 60–100 target; **not** independently native-verified), 100 interactive child variations on ten ALS parents, and 1,200 protected original Dutch Core cards. 432 authored grammar cards have unique IDs and sentence texts. Of those, 236 include `scenarioNl` (Dutch-first prompt) and 196 lack it. Reused core aliases currently do not provide independent Dutch-first prompts.
 
 ## Authoring and safety
 
 - Canonical grammar-generation inputs: `data/learning-tasks.json`, `data/editorial/grammar-pattern-extra.tsv`, `data/editorial/grammar-als-expansion.json`, `data/editorial/grammar-new-time-patterns.json`, `data/editorial/grammar-separable-cards.json`, `data/editorial/grammar-separable-verbs.json`; the deterministic generator is `scripts/build-grammar-patterns.py`. Never edit just the generated JSON.
-- `data/grammar-reuse-links.json` explicitly lists 53 source IDs; `lib/flashcards/engine.ts` materializes runtime grammar aliases and preserves the originals.
+- `data/grammar-reuse-links.json` explicitly lists 184 source IDs; `lib/flashcards/engine.ts` materializes runtime grammar aliases and preserves the originals.
 - `data/grammar-topic-lessons.json` holds lesson-wide explanations and optional mistake-repair prompts, not per-card certified linguistic analyses.
 - `data/grammar-variation-families.json` holds the three initial ALS ten-child families. Device Dutch speech is used; no paid grammar audio or new pictures are required.
 - Full grammar tagging, new interactive variations for other parents, additional topic coverage, cross-device migration/restore tests, independent content QA, accessibility tests and production release must follow the [master plan](GRAMMAR-MASTERY-MASTER-PLAN.md).

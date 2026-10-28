@@ -106,8 +106,40 @@ for i, row in enumerate(more_separable):
         if len(related)==10: break
     assert len(related)==10, cid
     notes[cid]={'rule':row['why']+' Focus on the lexical verb and the particle\'s position, not just the tense.','examples':related}
-assert len(more_separable)==128 and len(cards)==432, f"Expected 432 generated grammar cards, got {len(cards)}"
+assert len(more_separable)==160 and len(cards)==464, f"Expected 464 generated grammar cards, got {len(cards)}"
+# P2 expansions: one file per topic, data/editorial/grammar-p2-<topic>.json. New ids continue after the topic's existing ids
+# (they never renumber an earlier card), and the file order is the id order.
+import glob
+p2_ids = set()
+for path in sorted(glob.glob(str(ROOT / 'data/editorial/grammar-p2-*.json'))):
+    group = J(pathlib.Path(path).relative_to(ROOT).as_posix())
+    topic = group[0]['topic']
+    assert all(r['topic'] == topic for r in group), path
+    assert len(group) >= 12, f'Need >=12 rows for unique example notes: {path}'
+    # continue after the highest existing id of the topic (ids are not always contiguous)
+    first = max([int(c['id'].rsplit('-', 1)[1]) for c in cards if c['category'] == topic] or [0])
+    for i, row in enumerate(group):
+        cid = f'pat-{topic}-{first + i + 1:02d}'
+        cards.append({
+            'id': cid, 'category': topic, 'collection': 'grammar', 'dutch': row['dutch'], 'english': row['english'],
+            'scenario': row['scenario'], 'scenarioNl': row['scenarioNl'], 'cue': row['scenario'], 'grammar': row['why'],
+            'variation': group[(i + 1) % len(group)]['dutch'], 'image': '', 'audio': '', 'quizMode': 'order',
+            'imageStatus': 'not-applicable', 'audioStatus': 'device', 'difficulty': 'intermediate', 'vocabularyIds': [], 'review': row['review'],
+        })
+        p2_ids.add(cid)
+        notes[cid] = {'rule': row['why'], 'examples': [{'dutch': group[(i + j + 2) % len(group)]['dutch'], 'english': group[(i + j + 2) % len(group)]['english']} for j in range(10)]}
 assert len({c['dutch'].lower() for c in cards}) == len(cards), 'Duplicate grammar sentence'
+# A new P2 sentence must not repeat a core Everyday/Work sentence that is not linked as an alias (it would be a second card with separate progress).
+core_text = {}
+for name in ['flashcards', 'flashcard-additions', 'flashcard-additions-2', 'workplace-cards']:
+    data = J(f'data/{name}.json')
+    for c in (data if isinstance(data, list) else data.get('cards', data)):
+        core_text[c['dutch'].lower().strip()] = c['id']
+linked = {l['sourceId'] for l in J('data/grammar-reuse-links.json')}
+for c in cards:
+    if c['id'] in p2_ids:
+        other = core_text.get(c['dutch'].lower().strip())
+        assert other is None or other in linked, f"{c['id']} repeats core sentence {other}"
 (ROOT / 'data/grammar-pattern-cards.json').write_text(json.dumps(cards, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 (ROOT / 'data/grammar-pattern-notes.json').write_text(json.dumps(notes, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 print(len(cards), 'cards;', {t: len(v) for t, v in rows.items()})

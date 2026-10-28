@@ -1,0 +1,1885 @@
+{
+ "version": 1,
+ "note": "Hand-authored uncued construction-choice challenges for mixed grammar practice. AI-edited, not native-reviewed. The situation text never names the target conjunction.",
+ "items": [
+  {
+   "id": "mx-omdat-front",
+   "topics": [
+    "omdat"
+   ],
+   "mix": [
+    "omdat",
+    "inversion"
+   ],
+   "situationNl": "Je komt te laat bij een afspraak door een treinstoring. Begin je verontschuldiging met de oorzaak.",
+   "hintEn": "You are late because of a train disruption. Start your apology with the cause.",
+   "options": [
+    {
+     "text": "Omdat de trein is uitgevallen, ben ik te laat.",
+     "correct": true,
+     "why": "Omdat opens a dependent clause with the verb last; in first position it makes the main clause invert: 'ben ik'."
+    },
+    {
+     "text": "Want de trein is uitgevallen, ben ik te laat.",
+     "correct": false,
+     "why": "Want is a coordinating word. It joins two main clauses and cannot open the sentence."
+    },
+    {
+     "text": "Omdat de trein is uitgevallen, ik ben te laat.",
+     "correct": false,
+     "why": "After a fronted omdat-clause the main clause must start with its verb: 'ben ik'."
+    }
+   ],
+   "rule": "Only omdat can open the sentence; the main clause then inverts."
+  },
+  {
+   "id": "mx-omdat-perfect",
+   "topics": [
+    "omdat",
+    "tense"
+   ],
+   "mix": [
+    "omdat",
+    "perfect"
+   ],
+   "situationNl": "Je bent moe en vertelt een collega wat de oorzaak is: je hebt vannacht slecht geslapen. Noem eerst je toestand.",
+   "hintEn": "You are tired; the cause is that you slept badly last night. Name your state first.",
+   "options": [
+    {
+     "text": "Ik ben moe omdat ik slecht heb geslapen.",
+     "correct": true,
+     "why": "Omdat sends the whole perfect group to the end: 'heb geslapen'."
+    },
+    {
+     "text": "Ik ben moe omdat ik heb slecht geslapen.",
+     "correct": false,
+     "why": "In a dependent clause the auxiliary and participle both go behind the adverb."
+    },
+    {
+     "text": "Ik ben moe omdat heb ik slecht geslapen.",
+     "correct": false,
+     "why": "The subject comes before the verb in a dependent clause."
+    }
+   ],
+   "rule": "Omdat + perfect: auxiliary and participle stand together at the end."
+  },
+  {
+   "id": "mx-toen-single",
+   "topics": [
+    "toen",
+    "als",
+    "wanneer"
+   ],
+   "mix": [
+    "toen",
+    "past"
+   ],
+   "situationNl": "Gisteren kwam je één keer thuis en op dat moment belde je een vriend. Vertel het als een gebeurtenis uit het verleden.",
+   "hintEn": "Yesterday you came home once and called a friend at that moment. Tell it as a past event.",
+   "options": [
+    {
+     "text": "Ik belde je toen ik thuiskwam.",
+     "correct": true,
+     "why": "For one past occasion Dutch uses toen; the separable verb is joined at the end of the clause."
+    },
+    {
+     "text": "Ik belde je als ik thuiskwam.",
+     "correct": false,
+     "why": "Als in the past suggests repetition (whenever), not one occasion."
+    },
+    {
+     "text": "Ik belde je toen ik kwam thuis.",
+     "correct": false,
+     "why": "In the toen-clause the separable verb is joined at the end: 'thuiskwam'."
+    }
+   ],
+   "rule": "Toen = one past occasion; als/wanneer = repeated."
+  },
+  {
+   "id": "mx-als-repeat",
+   "topics": [
+    "als",
+    "toen"
+   ],
+   "mix": [
+    "als",
+    "past"
+   ],
+   "situationNl": "Vroeger belde je elke dag je moeder op het moment dat je thuiskwam. Vertel over die gewoonte.",
+   "hintEn": "In the past you called your mother every day at the moment you came home. Describe the habit.",
+   "options": [
+    {
+     "text": "Als ik thuiskwam, belde ik altijd mijn moeder.",
+     "correct": true,
+     "why": "Als in the past marks a repeated situation. The fronted clause makes the main clause invert: 'belde ik'."
+    },
+    {
+     "text": "Toen ik thuiskwam, belde ik altijd mijn moeder.",
+     "correct": false,
+     "why": "Toen is for one occasion; 'altijd' signals repetition."
+    },
+    {
+     "text": "Als ik thuiskwam, ik belde altijd mijn moeder.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb: 'belde ik'."
+    }
+   ],
+   "rule": "Repeated past: als; one past occasion: toen."
+  },
+  {
+   "id": "mx-als-future",
+   "topics": [
+    "als",
+    "inversion"
+   ],
+   "mix": [
+    "als",
+    "inversion"
+   ],
+   "situationNl": "Je legt uit wat jullie doen bij slecht weer morgen. Begin met de voorwaarde.",
+   "hintEn": "You explain what you will do in bad weather tomorrow. Begin with the condition.",
+   "options": [
+    {
+     "text": "Als het morgen regent, blijven we thuis.",
+     "correct": true,
+     "why": "Als opens a condition; the clause fills position one so the main clause inverts: 'blijven we'."
+    },
+    {
+     "text": "Toen het morgen regent, blijven we thuis.",
+     "correct": false,
+     "why": "Toen refers to a past occasion, not a future condition."
+    },
+    {
+     "text": "Als het morgen regent, we blijven thuis.",
+     "correct": false,
+     "why": "The main clause must start with its verb after a fronted clause."
+    }
+   ],
+   "rule": "Condition about the future: als + inversion."
+  },
+  {
+   "id": "mx-wanneer-embedded",
+   "topics": [
+    "wanneer",
+    "indirect"
+   ],
+   "mix": [
+    "wanneer",
+    "indirect"
+   ],
+   "situationNl": "Je kent het vertrektijdstip van de trein niet en zegt dat tegen een reiziger.",
+   "hintEn": "You don't know when the train leaves and say so to a traveller.",
+   "options": [
+    {
+     "text": "Ik weet niet wanneer de trein vertrekt.",
+     "correct": true,
+     "why": "An embedded question starts with the question word and ends with the verb."
+    },
+    {
+     "text": "Ik weet niet wanneer vertrekt de trein.",
+     "correct": false,
+     "why": "Question order (verb second) is only for direct questions."
+    },
+    {
+     "text": "Ik weet niet als de trein vertrekt.",
+     "correct": false,
+     "why": "Als is not a question word; the embedded question needs wanneer."
+    }
+   ],
+   "rule": "Embedded question: question word + subject + verb last."
+  },
+  {
+   "id": "mx-tot-wait",
+   "topics": [
+    "tot",
+    "terwijl",
+    "voordat"
+   ],
+   "mix": [
+    "tot"
+   ],
+   "situationNl": "Je staat bij een halte en blijft staan; het verschijnen van de bus is het einde van je wachten.",
+   "hintEn": "You stand at a stop; the bus appearing is the end of your waiting.",
+   "options": [
+    {
+     "text": "Ik wacht tot de bus komt.",
+     "correct": true,
+     "why": "Tot names the moment that ends the waiting; the verb goes to the end."
+    },
+    {
+     "text": "Ik wacht voordat de bus komt.",
+     "correct": false,
+     "why": "Voordat means before; it does not say the waiting ends when the bus comes."
+    },
+    {
+     "text": "Ik wacht tot komt de bus.",
+     "correct": false,
+     "why": "The verb goes to the end of the tot-clause."
+    }
+   ],
+   "rule": "Tot = until; the clause is dependent."
+  },
+  {
+   "id": "mx-terwijl-parallel",
+   "topics": [
+    "terwijl",
+    "voordat"
+   ],
+   "mix": [
+    "terwijl"
+   ],
+   "situationNl": "Twee mensen doen tegelijk iets: jij kookt, je broer dekt de tafel. Vertel dat in één zin.",
+   "hintEn": "Two people do things at the same time: you cook, your brother sets the table. Tell it in one sentence.",
+   "options": [
+    {
+     "text": "Ik kook terwijl mijn broer de tafel dekt.",
+     "correct": true,
+     "why": "Terwijl joins two actions at the same time; its verb goes last."
+    },
+    {
+     "text": "Ik kook voordat mijn broer de tafel dekt.",
+     "correct": false,
+     "why": "Voordat says one action comes first; the situation is simultaneous."
+    },
+    {
+     "text": "Ik kook terwijl mijn broer dekt de tafel.",
+     "correct": false,
+     "why": "The verb goes behind the object in a dependent clause."
+    }
+   ],
+   "rule": "Simultaneous: terwijl."
+  },
+  {
+   "id": "mx-of-unknown",
+   "topics": [
+    "of",
+    "dat"
+   ],
+   "mix": [
+    "of"
+   ],
+   "situationNl": "Je weet niet wat je collega vandaag doet: hij komt misschien naar kantoor, misschien niet. Zeg tegen een klant dat je het niet weet.",
+   "hintEn": "You have no idea whether your colleague comes to the office today. Tell a customer.",
+   "options": [
+    {
+     "text": "Ik weet niet of hij vandaag komt.",
+     "correct": true,
+     "why": "Of introduces an open yes/no question inside the sentence, and its verb goes to the end."
+    },
+    {
+     "text": "Ik weet niet dat hij vandaag komt.",
+     "correct": false,
+     "why": "Dat would say you were unaware of a fact, not that the answer is open."
+    },
+    {
+     "text": "Ik weet niet of komt hij vandaag.",
+     "correct": false,
+     "why": "The verb goes to the end in the embedded question."
+    }
+   ],
+   "rule": "Open yes/no question: of; reported fact: dat."
+  },
+  {
+   "id": "mx-dat-fact",
+   "topics": [
+    "dat",
+    "of"
+   ],
+   "mix": [
+    "dat"
+   ],
+   "situationNl": "Je meldt aan een collega wat je vermoedt: het programma werkt weer.",
+   "hintEn": "You tell a colleague what you think: the program works again.",
+   "options": [
+    {
+     "text": "Ik denk dat het programma weer werkt.",
+     "correct": true,
+     "why": "Dat reports what you think; the verb goes to the end."
+    },
+    {
+     "text": "Ik denk of het programma weer werkt.",
+     "correct": false,
+     "why": "Denken reports a belief with dat; 'of' would turn it into an open question that denken does not take."
+    },
+    {
+     "text": "Ik denk dat werkt het programma weer.",
+     "correct": false,
+     "why": "The verb goes to the end of the dat-clause."
+    }
+   ],
+   "rule": "Belief or fact: dat."
+  },
+  {
+   "id": "mx-maar-main",
+   "topics": [
+    "hoewel"
+   ],
+   "mix": [
+    "maar"
+   ],
+   "situationNl": "Je vertelt in twee korte hoofdzinnen: het weer is slecht, het plan gaat toch door.",
+   "hintEn": "You tell it in two short main clauses: the weather is bad, the plan goes ahead.",
+   "options": [
+    {
+     "text": "Het regent, maar we gaan wandelen.",
+     "correct": true,
+     "why": "Maar joins two main clauses without changing word order."
+    },
+    {
+     "text": "Het regent, maar gaan we wandelen.",
+     "correct": false,
+     "why": "After maar the second clause keeps its normal order: 'we gaan'."
+    },
+    {
+     "text": "Het regent, hoewel we gaan wandelen.",
+     "correct": false,
+     "why": "Hoewel would put the wrong part in the obstacle clause and send its verb last."
+    }
+   ],
+   "rule": "Maar: no inversion; hoewel: verb-final clause."
+  },
+  {
+   "id": "mx-hoewel-front",
+   "topics": [
+    "hoewel",
+    "inversion"
+   ],
+   "mix": [
+    "hoewel",
+    "inversion"
+   ],
+   "situationNl": "Je vertelt over een obstakel dat het plan niet stopt. Begin met het obstakel: het regent.",
+   "hintEn": "You describe an obstacle that does not stop the plan. Begin with the obstacle: it rains.",
+   "options": [
+    {
+     "text": "Hoewel het regent, gaan we wandelen.",
+     "correct": true,
+     "why": "Hoewel opens a dependent clause; fronted, it makes the main clause invert: 'gaan we'."
+    },
+    {
+     "text": "Hoewel het regent, we gaan wandelen.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb."
+    },
+    {
+     "text": "Hoewel regent het, gaan we wandelen.",
+     "correct": false,
+     "why": "The subject comes before the verb in the hoewel-clause."
+    }
+   ],
+   "rule": "Hoewel: verb last, then inversion."
+  },
+  {
+   "id": "mx-tenzij",
+   "topics": [
+    "hoewel"
+   ],
+   "mix": [
+    "tenzij"
+   ],
+   "situationNl": "Je belooft morgen te komen, met één uitzondering: slecht weer.",
+   "hintEn": "You promise to come tomorrow with one exception: bad weather.",
+   "options": [
+    {
+     "text": "Ik kom morgen, tenzij het regent.",
+     "correct": true,
+     "why": "Tenzij names the one exception; the verb goes last."
+    },
+    {
+     "text": "Ik kom morgen, hoewel het regent.",
+     "correct": false,
+     "why": "Hoewel says you come in spite of the rain, not that rain is the exception."
+    },
+    {
+     "text": "Ik kom morgen, tenzij regent het.",
+     "correct": false,
+     "why": "The verb goes to the end of the tenzij-clause."
+    }
+   ],
+   "rule": "Exception: tenzij; concession: hoewel."
+  },
+  {
+   "id": "mx-voordat-nadat",
+   "topics": [
+    "voordat",
+    "nadat"
+   ],
+   "mix": [
+    "voordat",
+    "modal"
+   ],
+   "situationNl": "Je zegt wat je eerst doet: het licht uitdoen. Pas daarna vertrek je.",
+   "hintEn": "You say what you do first: turn off the light. Only afterwards you leave.",
+   "options": [
+    {
+     "text": "Ik doe het licht uit voordat ik wegga.",
+     "correct": true,
+     "why": "Voordat names the later event; 'uitdoen' splits in the main clause and 'weggaan' is joined in the clause."
+    },
+    {
+     "text": "Ik doe het licht uit nadat ik wegga.",
+     "correct": false,
+     "why": "Nadat names the earlier event and would need the perfect 'ben weggegaan'."
+    },
+    {
+     "text": "Ik doe uit het licht voordat ik wegga.",
+     "correct": false,
+     "why": "The particle 'uit' goes to the end of the main clause."
+    }
+   ],
+   "rule": "Voordat: the later event; nadat: the earlier event."
+  },
+  {
+   "id": "mx-nadat-perfect",
+   "topics": [
+    "nadat",
+    "tense"
+   ],
+   "mix": [
+    "nadat",
+    "perfect",
+    "inversion"
+   ],
+   "situationNl": "Eerst eet je, daarna ruim je de keuken op. Begin je zin met het eten.",
+   "hintEn": "First you eat, then you clean the kitchen. Begin your sentence with the eating.",
+   "options": [
+    {
+     "text": "Nadat ik heb gegeten, ruim ik de keuken op.",
+     "correct": true,
+     "why": "Nadat takes the perfect for the earlier event; fronted, it inverts the main clause: 'ruim ik ... op'."
+    },
+    {
+     "text": "Nadat ik heb gegeten, ik ruim de keuken op.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb."
+    },
+    {
+     "text": "Voordat ik heb gegeten, ruim ik de keuken op.",
+     "correct": false,
+     "why": "Voordat would make the eating the later event."
+    }
+   ],
+   "rule": "Nadat + perfect, then inversion."
+  },
+  {
+   "id": "mx-zodra",
+   "topics": [
+    "zodra"
+   ],
+   "mix": [
+    "zodra"
+   ],
+   "situationNl": "Je belooft je vriend meteen te bellen op het moment dat je thuis bent.",
+   "hintEn": "You promise your friend to call right when you are home.",
+   "options": [
+    {
+     "text": "Ik bel je zodra ik thuis ben.",
+     "correct": true,
+     "why": "Zodra names the trigger moment: the call follows right after you arrive home."
+    },
+    {
+     "text": "Ik bel je zolang ik thuis ben.",
+     "correct": false,
+     "why": "Zolang would mean for as long as you are home."
+    },
+    {
+     "text": "Ik bel je zodra ik ben thuis.",
+     "correct": false,
+     "why": "The finite verb 'ben' goes behind the adverb 'thuis' at the end of the clause."
+    }
+   ],
+   "rule": "Trigger: zodra; duration: zolang."
+  },
+  {
+   "id": "mx-zolang",
+   "topics": [
+    "zodra"
+   ],
+   "mix": [
+    "zolang"
+   ],
+   "situationNl": "Je geeft een gast toestemming om te blijven, maar alleen voor de periode dat hij rustig is.",
+   "hintEn": "You allow a guest to stay, but only for as long as he is quiet.",
+   "options": [
+    {
+     "text": "Je mag blijven zolang je stil bent.",
+     "correct": true,
+     "why": "Zolang names a condition that must stay true."
+    },
+    {
+     "text": "Je mag blijven zodra je stil bent.",
+     "correct": false,
+     "why": "Zodra names a trigger moment, not a lasting condition."
+    },
+    {
+     "text": "Je mag blijven zolang ben je stil.",
+     "correct": false,
+     "why": "The verb goes to the end of the zolang-clause."
+    }
+   ],
+   "rule": "Zolang: as long as; zodra: as soon as."
+  },
+  {
+   "id": "mx-relative-de",
+   "topics": [
+    "relative",
+    "dat"
+   ],
+   "mix": [
+    "die"
+   ],
+   "situationNl": "Je wijst op de man aan het bureau naast je en vertelt een bezoeker wie hij is: je buurman.",
+   "hintEn": "You point out the man at the desk next to you and tell a visitor who he is: your neighbour.",
+   "options": [
+    {
+     "text": "De man die naast me zit, is mijn buurman.",
+     "correct": true,
+     "why": "Man is a de word, so the relative pronoun is die; the verb goes to the end of the clause."
+    },
+    {
+     "text": "De man dat naast me zit, is mijn buurman.",
+     "correct": false,
+     "why": "Dat goes with het words; 'man' is a de word, so the relative pronoun must be die."
+    },
+    {
+     "text": "De man die zit naast me, is mijn buurman.",
+     "correct": false,
+     "why": "The verb of a relative clause goes to the end, behind the place phrase 'naast me'."
+    }
+   ],
+   "rule": "De word: die; het word: dat."
+  },
+  {
+   "id": "mx-relative-het",
+   "topics": [
+    "relative",
+    "dat"
+   ],
+   "mix": [
+    "dat"
+   ],
+   "situationNl": "Je beschrijft een boek van gisteren: het was erg dik.",
+   "hintEn": "You describe a book you read yesterday. It was very thick.",
+   "options": [
+    {
+     "text": "Het boek dat ik las, was erg dik.",
+     "correct": true,
+     "why": "Boek is a het word, so the relative pronoun is dat."
+    },
+    {
+     "text": "Het boek die ik las, was erg dik.",
+     "correct": false,
+     "why": "Die goes with de words and plurals; 'boek' is a het word, so the pronoun must be dat."
+    },
+    {
+     "text": "Het boek dat las ik, was erg dik.",
+     "correct": false,
+     "why": "In the relative clause the subject comes before the verb."
+    }
+   ],
+   "rule": "Het word: dat: the relative pronoun follows the noun's article."
+  },
+  {
+   "id": "mx-indirect-order",
+   "topics": [
+    "indirect"
+   ],
+   "mix": [
+    "indirect",
+    "order"
+   ],
+   "situationNl": "Je kent het adres van je collega niet en zegt dat tegen een bezorger.",
+   "hintEn": "You don't know your colleague's address and tell a courier.",
+   "options": [
+    {
+     "text": "Ik weet niet waar hij woont.",
+     "correct": true,
+     "why": "An embedded question ends with the verb: the subject 'hij' comes before 'woont'."
+    },
+    {
+     "text": "Ik weet niet waar woont hij.",
+     "correct": false,
+     "why": "Verb-second order belongs to direct questions."
+    },
+    {
+     "text": "Ik weet niet of hij woont.",
+     "correct": false,
+     "why": "Of asks yes/no; here the place is unknown, so you need waar."
+    }
+   ],
+   "rule": "Place unknown: waar; yes/no unknown: of."
+  },
+  {
+   "id": "mx-als-separable",
+   "topics": [
+    "als",
+    "separable",
+    "inversion"
+   ],
+   "mix": [
+    "als",
+    "separable",
+    "inversion"
+   ],
+   "situationNl": "Je belooft een vriend een telefoontje voor een toekomstig moment: je thuiskomst is de voorwaarde. Begin met die voorwaarde.",
+   "hintEn": "You promise a friend: if you are home later you will call. Begin with the condition.",
+   "options": [
+    {
+     "text": "Als ik thuiskom, bel ik je op.",
+     "correct": true,
+     "why": "Als opens a condition with the joined verb 'thuiskom'; the main clause inverts and 'opbellen' splits: 'bel ik je op'."
+    },
+    {
+     "text": "Als ik thuiskom, ik bel je op.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb."
+    },
+    {
+     "text": "Als ik kom thuis, bel ik je op.",
+     "correct": false,
+     "why": "In the als-clause the separable verb is written together at the end: 'thuiskom'."
+    }
+   ],
+   "rule": "Als + separable + inversion."
+  },
+  {
+   "id": "mx-dat-modal",
+   "topics": [
+    "dat",
+    "verbs"
+   ],
+   "mix": [
+    "dat",
+    "modal"
+   ],
+   "situationNl": "Je rapporteert wat een collega zegt: hij moet vandaag werken.",
+   "hintEn": "You report what a colleague says: he has to work today.",
+   "options": [
+    {
+     "text": "Hij zegt dat hij vandaag moet werken.",
+     "correct": true,
+     "why": "The modal chain closes the dat-clause: 'moet werken'."
+    },
+    {
+     "text": "Hij zegt dat moet hij vandaag werken.",
+     "correct": false,
+     "why": "The subject comes before the verb in the dat-clause."
+    },
+    {
+     "text": "Hij zegt of hij vandaag moet werken.",
+     "correct": false,
+     "why": "Of would present the duty as uncertain rather than reported."
+    }
+   ],
+   "rule": "Dat + modal: verb group at the end."
+  },
+  {
+   "id": "mx-indirect-cluster",
+   "topics": [
+    "indirect",
+    "tense"
+   ],
+   "mix": [
+    "indirect",
+    "perfect"
+   ],
+   "situationNl": "Je bent de bestelling van de gasten van gisteren vergeten en zegt dat tegen de kok.",
+   "hintEn": "You have forgotten yesterday's guests' order and tell the cook.",
+   "options": [
+    {
+     "text": "Ik weet niet meer wat de gasten hebben besteld.",
+     "correct": true,
+     "why": "The embedded question ends with the perfect group 'hebben besteld'."
+    },
+    {
+     "text": "Ik weet niet meer wat hebben de gasten besteld.",
+     "correct": false,
+     "why": "Verb-second order belongs to direct questions."
+    },
+    {
+     "text": "Ik weet niet meer wat de gasten besteld.",
+     "correct": false,
+     "why": "The perfect needs its auxiliary: 'hebben besteld' belongs together at the end of the clause."
+    }
+   ],
+   "rule": "Indirect question + perfect group."
+  },
+  {
+   "id": "mx-relative-perfect",
+   "topics": [
+    "relative",
+    "tense"
+   ],
+   "mix": [
+    "relative",
+    "perfect"
+   ],
+   "situationNl": "Je meldt een manager de stand van zaken over de gevonden fouten: ze zijn weg.",
+   "hintEn": "You report to a manager on the errors found: they are gone.",
+   "options": [
+    {
+     "text": "De fouten die we hebben gevonden, zijn opgelost.",
+     "correct": true,
+     "why": "Die is the object; the relative clause ends in 'hebben gevonden' and the main clause continues with 'zijn opgelost'."
+    },
+    {
+     "text": "De fouten die we hebben gevonden, zijn oplossen.",
+     "correct": false,
+     "why": "The passive needs the participle 'opgelost'."
+    },
+    {
+     "text": "De fouten dat we hebben gevonden, zijn opgelost.",
+     "correct": false,
+     "why": "Fouten is plural, so the relative pronoun is die."
+    }
+   ],
+   "rule": "Plural: die: the relative pronoun follows the noun's article."
+  },
+  {
+   "id": "mx-hoewel-separable",
+   "topics": [
+    "hoewel",
+    "separable"
+   ],
+   "mix": [
+    "hoewel",
+    "separable"
+   ],
+   "situationNl": "Een collega is ziek maar gaat door met werken. Begin met zijn ziekte.",
+   "hintEn": "A colleague is ill but keeps working. Begin with his illness.",
+   "options": [
+    {
+     "text": "Hoewel hij ziek is, werkt hij door.",
+     "correct": true,
+     "why": "Hoewel gives the obstacle; the main clause inverts and 'doorwerken' splits: 'werkt hij door'."
+    },
+    {
+     "text": "Hoewel hij ziek is, hij werkt door.",
+     "correct": false,
+     "why": "The main clause must start with its verb after the fronted clause."
+    },
+    {
+     "text": "Hoewel hij ziek is, doorwerkt hij.",
+     "correct": false,
+     "why": "In a main clause 'doorwerken' splits: 'werkt ... door'."
+    }
+   ],
+   "rule": "Hoewel + separable + inversion."
+  },
+  {
+   "id": "mx-voordat-modal",
+   "topics": [
+    "voordat",
+    "verbs"
+   ],
+   "mix": [
+    "voordat",
+    "modal"
+   ],
+   "situationNl": "Je geeft een team een regel: het testen komt voor het publiceren. Begin met het publiceren.",
+   "hintEn": "You give a team a rule: testing comes before publishing. Begin with publishing.",
+   "options": [
+    {
+     "text": "Voordat jullie publiceren, moeten jullie alles testen.",
+     "correct": true,
+     "why": "Voordat names the later event; the modal opens the inverted main clause: 'moeten jullie'."
+    },
+    {
+     "text": "Voordat jullie publiceren, jullie moeten alles testen.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb."
+    },
+    {
+     "text": "Nadat jullie publiceren, moeten jullie alles testen.",
+     "correct": false,
+     "why": "Nadat would put the testing after the publishing."
+    }
+   ],
+   "rule": "Voordat + modal + inversion."
+  },
+  {
+   "id": "mx-toen-past",
+   "topics": [
+    "toen",
+    "tense"
+   ],
+   "mix": [
+    "toen",
+    "past",
+    "inversion"
+   ],
+   "situationNl": "Je vertelt over de periode van je jeugd: je was jong en woonde in Gent.",
+   "hintEn": "You tell about a period when you were young and lived in Ghent.",
+   "options": [
+    {
+     "text": "Toen ik jong was, woonde ik in Gent.",
+     "correct": true,
+     "why": "Toen fits a past period; fronted, it inverts the main clause: 'woonde ik'."
+    },
+    {
+     "text": "Toen ik jong was, ik woonde in Gent.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb."
+    },
+    {
+     "text": "Als ik jong was, woonde ik in Gent.",
+     "correct": false,
+     "why": "Als here would suggest a hypothetical or repeated situation, not a past period."
+    }
+   ],
+   "rule": "Past period: toen."
+  },
+  {
+   "id": "mx-terwijl-contrast",
+   "topics": [
+    "terwijl",
+    "hoewel"
+   ],
+   "mix": [
+    "terwijl"
+   ],
+   "situationNl": "Je zet twee broers naast elkaar: de ene werkt hard, de andere ligt de hele dag op de bank.",
+   "hintEn": "You contrast two brothers: one works hard, the other lies on the sofa all day.",
+   "options": [
+    {
+     "text": "Hij werkt hard, terwijl zijn broer de hele dag op de bank ligt.",
+     "correct": true,
+     "why": "Terwijl can contrast two situations; its verb goes last."
+    },
+    {
+     "text": "Hij werkt hard, zodra zijn broer de hele dag op de bank ligt.",
+     "correct": false,
+     "why": "Zodra names a trigger moment, not a contrast."
+    },
+    {
+     "text": "Hij werkt hard, terwijl zijn broer ligt de hele dag op de bank.",
+     "correct": false,
+     "why": "The verb of the terwijl-clause goes to the end, behind the time and the place phrase."
+    }
+   ],
+   "rule": "Terwijl: simultaneous or contrasting."
+  },
+  {
+   "id": "mx-wie-relative",
+   "topics": [
+    "relative",
+    "indirect"
+   ],
+   "mix": [
+    "wie"
+   ],
+   "situationNl": "Je kondigt een cursus aan voor iedereen met belangstelling. Begin met die groep.",
+   "hintEn": "You announce a course for everyone with an interest. Begin with that group.",
+   "options": [
+    {
+     "text": "Wie interesse heeft, mag zich aanmelden.",
+     "correct": true,
+     "why": "Wie means whoever; the clause ends in its verb and the main clause begins with 'mag'."
+    },
+    {
+     "text": "Wie heeft interesse, mag zich aanmelden.",
+     "correct": false,
+     "why": "The verb goes to the end of the clause here."
+    },
+    {
+     "text": "Wat interesse heeft, mag zich aanmelden.",
+     "correct": false,
+     "why": "Wat is for things and ideas; a group of people needs wie as the free relative word."
+    }
+   ],
+   "rule": "Whoever: wie: the relative pronoun follows the noun's article."
+  },
+  {
+   "id": "mx-wat-alles",
+   "topics": [
+    "relative",
+    "dat"
+   ],
+   "mix": [
+    "wat"
+   ],
+   "situationNl": "Je belooft een inspecteur volledige openheid: je vertelt hem je hele kennis.",
+   "hintEn": "You promise an inspector full openness: you tell him all your knowledge.",
+   "options": [
+    {
+     "text": "Ik vertel alles wat ik weet.",
+     "correct": true,
+     "why": "After alles the standard relative word is wat."
+    },
+    {
+     "text": "Ik vertel alles die ik weet.",
+     "correct": false,
+     "why": "Alles is not a de word, so die does not fit; the standard relative word after alles is wat."
+    },
+    {
+     "text": "Ik vertel alles wat weet ik.",
+     "correct": false,
+     "why": "The verb goes to the end of the relative clause."
+    }
+   ],
+   "rule": "Alles/iets/niets + wat."
+  },
+  {
+   "id": "mx-r-word",
+   "topics": [
+    "relative"
+   ],
+   "mix": [
+    "waar"
+   ],
+   "situationNl": "Je beschrijft het nieuwe materiaal van een ambachtsman en noemt zijn werktuig.",
+   "hintEn": "You describe a craftsman's new materials and name his tool.",
+   "options": [
+    {
+     "text": "Het gereedschap waarmee hij werkt, is nieuw.",
+     "correct": true,
+     "why": "For a thing with a preposition Dutch uses an R-word: waarmee."
+    },
+    {
+     "text": "Het gereedschap met dat hij werkt, is nieuw.",
+     "correct": false,
+     "why": "For a thing with a preposition Dutch uses an R-word such as waarmee, not a preposition before dat."
+    },
+    {
+     "text": "Het gereedschap waarmee werkt hij, is nieuw.",
+     "correct": false,
+     "why": "The subject comes before the verb in the relative clause."
+    }
+   ],
+   "rule": "Things with prepositions: R-words."
+  },
+  {
+   "id": "mx-want-main",
+   "topics": [
+    "omdat"
+   ],
+   "mix": [
+    "want"
+   ],
+   "situationNl": "Je hebt een lange dag gehad en wilt twee dingen zeggen: je gaat vanavond niet mee, en je bent erg moe. Zeg eerst wat je doet en daarna de reden, in gewone woordvolgorde.",
+   "hintEn": "You had a long day. First say you are not coming tonight, then give the reason, in ordinary word order.",
+   "options": [
+    {
+     "text": "Ik ga vanavond niet mee, want ik ben erg moe.",
+     "correct": true,
+     "why": "Want joins two full main clauses, so the second keeps its normal order: subject first, verb second (\"ik ben erg moe\")."
+    },
+    {
+     "text": "Ik ga vanavond niet mee, want ik erg moe ben.",
+     "correct": false,
+     "why": "Want does not send the verb to the end; only subordinating words such as omdat do that. After want the clause stays \"ik ben\"."
+    },
+    {
+     "text": "Ik ga vanavond niet mee, daarom ik ben erg moe.",
+     "correct": false,
+     "why": "Daarom points forward to a result, so the reason cannot follow it; and it would also invert the subject and verb (\"daarom ben ik\")."
+    }
+   ],
+   "rule": "Want + main clause (verb second); omdat + subordinate clause (verb last)."
+  },
+  {
+   "id": "mx-tot-waiting",
+   "topics": [
+    "tot",
+    "terwijl"
+   ],
+   "mix": [
+    "tot"
+   ],
+   "situationNl": "Je zit in de wachtkamer. Je naam wordt straks genoemd en op dat moment stopt het wachten. Zeg hoe lang je blijft zitten.",
+   "hintEn": "You sit in the waiting room. Your name will be called soon and the waiting stops at that moment. Say how long you stay seated.",
+   "options": [
+    {
+     "text": "Ik blijf zitten tot mijn naam wordt genoemd.",
+     "correct": true,
+     "why": "Tot marks the moment an ongoing state ends, and it sends the finite verb to the end of its clause: \"wordt genoemd\"."
+    },
+    {
+     "text": "Ik blijf zitten terwijl mijn naam wordt genoemd.",
+     "correct": false,
+     "why": "Terwijl means \"while\" two things happen at once; here the sitting is meant to last until the name is called, not only during it."
+    },
+    {
+     "text": "Ik blijf zitten tot wordt mijn naam genoemd.",
+     "correct": false,
+     "why": "After tot the clause is subordinate, so the finite verb \"wordt\" goes to the end: \"tot mijn naam wordt genoemd\"."
+    }
+   ],
+   "rule": "Tot = until (end point); terwijl = while (at the same time)."
+  },
+  {
+   "id": "mx-terwijl-front",
+   "topics": [
+    "terwijl",
+    "inversion"
+   ],
+   "mix": [
+    "terwijl",
+    "inversion"
+   ],
+   "situationNl": "Je kookt en je luistert ondertussen naar een podcast. Begin je zin met het koken.",
+   "hintEn": "You cook and listen to a podcast at the same time. Begin your sentence with the cooking.",
+   "options": [
+    {
+     "text": "Terwijl ik kook, luister ik naar een podcast.",
+     "correct": true,
+     "why": "Terwijl introduces the simultaneous action and sends \"kook\" to the end; the fronted clause fills position one, so the main clause starts with its verb: \"luister ik\"."
+    },
+    {
+     "text": "Terwijl ik kook, ik luister naar een podcast.",
+     "correct": false,
+     "why": "After a fronted clause the main clause must start with its finite verb: \"luister ik\", not \"ik luister\"."
+    },
+    {
+     "text": "Nadat ik kook, luister ik naar een podcast.",
+     "correct": false,
+     "why": "Nadat means one action is finished before the next begins; here the two actions run at the same time, so terwijl is needed."
+    }
+   ],
+   "rule": "Fronted terwijl-clause: the main clause starts with its verb."
+  },
+  {
+   "id": "mx-hoewel-weather",
+   "topics": [
+    "hoewel",
+    "omdat"
+   ],
+   "mix": [
+    "hoewel",
+    "inversion"
+   ],
+   "situationNl": "Het regent hard. Je gaat tóch fietsen, ondanks het weer. Begin je zin met het weer.",
+   "hintEn": "It is raining hard. You cycle anyway, despite the weather. Begin your sentence with the weather.",
+   "options": [
+    {
+     "text": "Hoewel het hard regent, ga ik fietsen.",
+     "correct": true,
+     "why": "Hoewel introduces something that works against the main action; \"regent\" goes to the end and the main clause inverts: \"ga ik\"."
+    },
+    {
+     "text": "Omdat het hard regent, ga ik fietsen.",
+     "correct": false,
+     "why": "Omdat gives a reason that supports the action. Rain is not a reason to cycle, so the contrast word is needed."
+    },
+    {
+     "text": "Hoewel het hard regent, ik ga fietsen.",
+     "correct": false,
+     "why": "After the fronted clause the main clause starts with its verb: \"ga ik fietsen\"."
+    }
+   ],
+   "rule": "Hoewel = contrast with what would be expected; omdat = reason."
+  },
+  {
+   "id": "mx-voordat-separable",
+   "topics": [
+    "voordat",
+    "separable",
+    "inversion"
+   ],
+   "mix": [
+    "voordat",
+    "separable",
+    "inversion"
+   ],
+   "situationNl": "Het laatste wat je doet vóór je vertrek: de lichten uitdoen. Begin met dat vertrek.",
+   "hintEn": "The last thing you do before leaving is turn the lights off. Begin with the leaving.",
+   "options": [
+    {
+     "text": "Voordat ik vertrek, doe ik de lichten uit.",
+     "correct": true,
+     "why": "Voordat sends \"vertrek\" to the end; the main clause inverts to \"doe ik\", and the separable verb \"uitdoen\" splits with \"uit\" at the end."
+    },
+    {
+     "text": "Voordat ik vertrek, ik doe de lichten uit.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb: \"doe ik\", not \"ik doe\"."
+    },
+    {
+     "text": "Nadat ik vertrek, doe ik de lichten uit.",
+     "correct": false,
+     "why": "Nadat puts the leaving first and the lights second, which reverses the order of events described."
+    }
+   ],
+   "rule": "Voordat = before the later event; fronted clause makes the main clause invert."
+  },
+  {
+   "id": "mx-nadat-separable",
+   "topics": [
+    "nadat",
+    "separable",
+    "tense"
+   ],
+   "mix": [
+    "nadat",
+    "separable",
+    "perfect",
+    "inversion"
+   ],
+   "situationNl": "Eerst eet je, daarna bel je je zus. Begin met wat eerst gebeurde.",
+   "hintEn": "First you eat, then you phone your sister. Begin with what happened first.",
+   "options": [
+    {
+     "text": "Nadat ik gegeten heb, bel ik mijn zus op.",
+     "correct": true,
+     "why": "Nadat takes the completed action in the perfect and sends the finite verb \"heb\" to the end; the main clause inverts and \"opbellen\" splits: \"bel ... op\"."
+    },
+    {
+     "text": "Nadat ik gegeten heb, ik bel mijn zus op.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb: \"bel ik mijn zus op\"."
+    },
+    {
+     "text": "Nadat ik gegeten heb, bel ik op mijn zus.",
+     "correct": false,
+     "why": "The separable particle \"op\" goes to the end of the main clause, after the object: \"bel ik mijn zus op\"."
+    }
+   ],
+   "rule": "Nadat + perfect; then inversion and a split separable verb."
+  },
+  {
+   "id": "mx-zodra-separable",
+   "topics": [
+    "zodra",
+    "separable",
+    "inversion"
+   ],
+   "mix": [
+    "zodra",
+    "separable",
+    "inversion"
+   ],
+   "situationNl": "Straks komt je trein aan en op dat moment stuur je een bericht naar je vader. Begin met dat moment.",
+   "hintEn": "Soon your train arrives and at that moment you send your father a message. Begin with that moment.",
+   "options": [
+    {
+     "text": "Zodra mijn trein aankomt, stuur ik mijn vader een bericht.",
+     "correct": true,
+     "why": "Zodra marks the moment something happens; \"aankomt\" is one word at the end of the clause, and the main clause inverts to \"stuur ik\"."
+    },
+    {
+     "text": "Zodra mijn trein komt aan, stuur ik mijn vader een bericht.",
+     "correct": false,
+     "why": "In the subordinate clause the separable verb is joined and stays at the end: \"aankomt\", not \"komt aan\"."
+    },
+    {
+     "text": "Zolang mijn trein aankomt, stuur ik mijn vader een bericht.",
+     "correct": false,
+     "why": "Zolang means \"as long as\"; it would describe a lasting situation, not the single moment the train arrives."
+    }
+   ],
+   "rule": "Zodra = the moment that; zolang = as long as."
+  },
+  {
+   "id": "mx-of-keys",
+   "topics": [
+    "of",
+    "indirect",
+    "tense"
+   ],
+   "mix": [
+    "of",
+    "indirect",
+    "perfect"
+   ],
+   "situationNl": "Je staat voor de deur en twijfelt over je sleutels: wel meegenomen, niet meegenomen? Vertel een buur over die twijfel, beginnend met \"Ik weet niet\".",
+   "hintEn": "You stand at the door unsure whether you took your keys. Tell a neighbour about the doubt, starting with \"Ik weet niet\".",
+   "options": [
+    {
+     "text": "Ik weet niet of ik mijn sleutels heb meegenomen.",
+     "correct": true,
+     "why": "Of introduces a yes/no question inside a sentence; the finite verb \"heb\" moves to the end part of the clause, after the rest."
+    },
+    {
+     "text": "Ik weet niet dat ik mijn sleutels heb meegenomen.",
+     "correct": false,
+     "why": "Dat introduces a statement that is known. The doubt is a question, so of is needed."
+    },
+    {
+     "text": "Ik weet niet of heb ik mijn sleutels meegenomen.",
+     "correct": false,
+     "why": "After of the clause is subordinate: the finite verb cannot come second and the order \"heb ik\" is wrong."
+    }
+   ],
+   "rule": "Of = whether (open yes/no question); dat = that (stated fact)."
+  },
+  {
+   "id": "mx-dat-fact-utrecht",
+   "topics": [
+    "dat",
+    "of"
+   ],
+   "mix": [
+    "dat"
+   ],
+   "situationNl": "Je zus heeft je gisteren zeker verteld wat haar plannen zijn: ze verhuist naar Utrecht. Geef dat door aan een vriend, beginnend met \"Mijn zus vertelde me\".",
+   "hintEn": "Your sister told you for certain that she is moving to Utrecht. Pass it on, starting with \"Mijn zus vertelde me\".",
+   "options": [
+    {
+     "text": "Mijn zus vertelde me dat ze naar Utrecht verhuist.",
+     "correct": true,
+     "why": "Dat links a known fact to the verb of telling, and the finite verb \"verhuist\" ends the clause."
+    },
+    {
+     "text": "Mijn zus vertelde me of ze naar Utrecht verhuist.",
+     "correct": false,
+     "why": "Of would say that it was unclear whether she moves; she told you for certain, so dat is the right link."
+    },
+    {
+     "text": "Mijn zus vertelde me wat ze naar Utrecht verhuist.",
+     "correct": false,
+     "why": "Wat asks for a thing; the content here is a complete fact, so it needs dat, not a question word."
+    }
+   ],
+   "rule": "After saying or telling a fact: dat."
+  },
+  {
+   "id": "mx-relative-person-prep",
+   "topics": [
+    "relative",
+    "indirect"
+   ],
+   "mix": [
+    "relative",
+    "wie"
+   ],
+   "situationNl": "Je stelt een collega voor. Je werkt elke dag met die man en je wilt zeggen wie hij is, beginnend met \"Dit is de man\".",
+   "hintEn": "You introduce a colleague. You work with him every day. Begin with \"Dit is de man\".",
+   "options": [
+    {
+     "text": "Dit is de man met wie ik werk.",
+     "correct": true,
+     "why": "After a preposition, a person is referred to with wie, and the relative clause ends in its finite verb: \"werk\"."
+    },
+    {
+     "text": "Dit is de man met die ik werk.",
+     "correct": false,
+     "why": "Die cannot follow a preposition for a person; the pronoun after \"met\" is wie."
+    },
+    {
+     "text": "Dit is de man die ik met werk.",
+     "correct": false,
+     "why": "The preposition cannot be left behind for a person (\"die ... met\"); it stays attached to its pronoun: \"met wie\"."
+    }
+   ],
+   "rule": "Preposition + person: met wie, aan wie, voor wie."
+  },
+  {
+   "id": "mx-relative-neighbour",
+   "topics": [
+    "relative"
+   ],
+   "mix": [
+    "relative",
+    "die"
+   ],
+   "situationNl": "Je vertelt iets over je buurvrouw. Ze woont naast je en ze heeft een hond. Verwerk het wonen in één zin die met \"De buurvrouw\" begint.",
+   "hintEn": "You tell something about your neighbour: she lives next door and has a dog. Begin with \"De buurvrouw\".",
+   "options": [
+    {
+     "text": "De buurvrouw die naast me woont, heeft een hond.",
+     "correct": true,
+     "why": "Buurvrouw is a de-word, so the relative pronoun is die; \"woont\" ends the relative clause and the main verb \"heeft\" follows the clause."
+    },
+    {
+     "text": "De buurvrouw dat naast me woont, heeft een hond.",
+     "correct": false,
+     "why": "Dat only follows het-words; buurvrouw is a de-word, so it needs die."
+    },
+    {
+     "text": "De buurvrouw die ze naast me woont, heeft een hond.",
+     "correct": false,
+     "why": "The relative pronoun die already stands for the neighbour; adding \"ze\" repeats the subject."
+    }
+   ],
+   "rule": "Relative clause: de-word or plural -> die; het-word -> dat."
+  },
+  {
+   "id": "mx-indirect-modal",
+   "topics": [
+    "indirect",
+    "verbs"
+   ],
+   "mix": [
+    "indirect",
+    "modal"
+   ],
+   "situationNl": "Je weet niet welke collega de vergadering morgen kan leiden en je vraagt het aan de manager. Begin met \"Kunt u me zeggen\".",
+   "hintEn": "You do not know which colleague can lead the meeting tomorrow and you ask the manager. Begin with \"Kunt u me zeggen\".",
+   "options": [
+    {
+     "text": "Kunt u me zeggen wie de vergadering morgen kan leiden?",
+     "correct": true,
+     "why": "Wie opens the embedded question, so the finite verb \"kan\" goes to the end after the infinitive-free predicate \"leiden\" ordering used here: \"kan leiden\" ends the clause."
+    },
+    {
+     "text": "Kunt u me zeggen wie kan de vergadering morgen leiden?",
+     "correct": false,
+     "why": "Inside an embedded question the finite verb goes to the end; \"wie kan ...\" is the order of a direct question."
+    },
+    {
+     "text": "Kunt u me zeggen of wie de vergadering morgen kan leiden?",
+     "correct": false,
+     "why": "A question word such as wie already opens the embedded question; adding of in front of it is not possible."
+    }
+   ],
+   "rule": "Embedded question: question word + verbs at the end."
+  },
+  {
+   "id": "mx-indirect-why",
+   "topics": [
+    "indirect"
+   ],
+   "mix": [
+    "indirect",
+    "order"
+   ],
+   "situationNl": "De bus is alweer te laat. De reden is je onbekend en je wilt die graag horen. Begin met \"Ik wil weten\".",
+   "hintEn": "The bus is late again. You do not know the reason and want to hear it. Begin with \"Ik wil weten\".",
+   "options": [
+    {
+     "text": "Ik wil weten waarom de bus te laat is.",
+     "correct": true,
+     "why": "Waarom opens an embedded question, so the verb \"is\" goes to the end of the clause."
+    },
+    {
+     "text": "Ik wil weten waarom is de bus te laat.",
+     "correct": false,
+     "why": "This is the order of a direct question; in an embedded question the finite verb goes last."
+    },
+    {
+     "text": "Ik wil weten dat de bus te laat is.",
+     "correct": false,
+     "why": "Dat states a fact. You are asking for the reason, so the clause needs the question word waarom."
+    }
+   ],
+   "rule": "Embedded wh-question: question word, subject, rest, verb last."
+  },
+  {
+   "id": "mx-wanneer-opens",
+   "topics": [
+    "wanneer",
+    "indirect",
+    "separable"
+   ],
+   "mix": [
+    "wanneer",
+    "indirect",
+    "separable"
+   ],
+   "situationNl": "Je staat voor een gesloten winkel en je weet niet hoe laat die open is. Begin met \"Ik weet niet\".",
+   "hintEn": "You stand before a closed shop and do not know when it opens. Begin with \"Ik weet niet\".",
+   "options": [
+    {
+     "text": "Ik weet niet wanneer de winkel opengaat.",
+     "correct": true,
+     "why": "Wanneer asks for a time. In the embedded question the separable verb is joined and stands at the end: \"opengaat\"."
+    },
+    {
+     "text": "Ik weet niet wanneer gaat de winkel open.",
+     "correct": false,
+     "why": "In an embedded question the verb does not come second; \"gaat de winkel open\" is a direct-question order."
+    },
+    {
+     "text": "Ik weet niet als de winkel opengaat.",
+     "correct": false,
+     "why": "Als does not introduce a question about a time; the question word is wanneer."
+    }
+   ],
+   "rule": "Wanneer asks for the time; als sets a condition or habit."
+  },
+  {
+   "id": "mx-toen-arrived",
+   "topics": [
+    "toen",
+    "separable",
+    "inversion"
+   ],
+   "mix": [
+    "toen",
+    "past",
+    "separable",
+    "inversion"
+   ],
+   "situationNl": "Gisteravond ben je eindelijk op het station aangekomen en op dat ene moment bleek het al donker. Begin met je aankomst.",
+   "hintEn": "Last night you finally arrived at the station, and at that single moment it turned out to be dark. Begin with your arrival.",
+   "options": [
+    {
+     "text": "Toen ik aankwam, was het al donker.",
+     "correct": true,
+     "why": "Toen introduces one past moment; \"aankwam\" is joined at the end, and the main clause inverts to \"was het\"."
+    },
+    {
+     "text": "Als ik aankwam, was het al donker.",
+     "correct": false,
+     "why": "Als in the past describes a repeated situation; this was a single arrival, so toen is needed."
+    },
+    {
+     "text": "Toen ik aankwam, het was al donker.",
+     "correct": false,
+     "why": "After a fronted clause the main clause starts with its verb: \"was het\", not \"het was\"."
+    }
+   ],
+   "rule": "One past moment: toen; repeated past: als."
+  },
+  {
+   "id": "mx-dat-modal-call",
+   "topics": [
+    "dat",
+    "verbs",
+    "separable"
+   ],
+   "mix": [
+    "dat",
+    "modal"
+   ],
+   "situationNl": "Je overweegt wat je morgen moet doen: je tante opbellen is verplicht. Je weet het niet helemaal zeker en presenteert het als gedachte. Begin met \"Ik denk\".",
+   "hintEn": "You think about tomorrow: phoning your aunt is a must. You are not sure and present it as a thought. Begin with \"Ik denk\".",
+   "options": [
+    {
+     "text": "Ik denk dat ik morgen mijn tante moet opbellen.",
+     "correct": true,
+     "why": "Dat opens the subordinate clause, so the finite verb \"moet\" is not second; the infinitive \"opbellen\" stays joined."
+    },
+    {
+     "text": "Ik denk dat ik moet morgen mijn tante opbellen.",
+     "correct": false,
+     "why": "After dat the finite verb \"moet\" goes with the verbs at the end, not directly after the subject."
+    },
+    {
+     "text": "Ik denk of ik morgen mijn tante moet opbellen.",
+     "correct": false,
+     "why": "Of would turn the thought into an open question; you are expressing a belief, so dat is needed."
+    }
+   ],
+   "rule": "Dat + modal: finite verb with the other verbs at the end."
+  },
+  {
+   "id": "mx-perfect-separable",
+   "topics": [
+    "inversion",
+    "separable",
+    "tense"
+   ],
+   "mix": [
+    "perfect",
+    "separable",
+    "inversion"
+   ],
+   "situationNl": "Gisteren heb je je tante gebeld om te horen hoe het gaat. Vertel het in één hoofdzin die met \"Gisteren\" begint.",
+   "hintEn": "Yesterday you phoned your aunt. Tell it in one main clause that begins with \"Gisteren\".",
+   "options": [
+    {
+     "text": "Gisteren heb ik mijn tante opgebeld.",
+     "correct": true,
+     "why": "With a fronted time word the verb stays second: \"heb ik\"; the perfect participle \"opgebeld\" is the separable verb in one piece at the end."
+    },
+    {
+     "text": "Gisteren ik heb mijn tante opgebeld.",
+     "correct": false,
+     "why": "After a fronted time word the main clause inverts: \"heb ik\"."
+    },
+    {
+     "text": "Gisteren heb ik mijn tante gebeld op.",
+     "correct": false,
+     "why": "In the perfect the particle joins the participle: \"opgebeld\", not \"gebeld op\"."
+    }
+   ],
+   "rule": "Perfect with a separable verb: ge- goes inside (op-ge-beld)."
+  },
+  {
+   "id": "mx-omdat-modal-front",
+   "topics": [
+    "omdat",
+    "verbs",
+    "inversion"
+   ],
+   "mix": [
+    "omdat",
+    "modal",
+    "inversion"
+   ],
+   "situationNl": "Morgen begint je werkdag al om zes uur en je gaat nu slapen. Begin met de reden.",
+   "hintEn": "Your workday starts at six tomorrow and you go to bed now. Begin with the reason.",
+   "options": [
+    {
+     "text": "Omdat ik morgen vroeg moet opstaan, ga ik nu naar bed.",
+     "correct": true,
+     "why": "Omdat sends the verbs \"moet opstaan\" to the end; the main clause then inverts: \"ga ik\"."
+    },
+    {
+     "text": "Omdat ik moet morgen vroeg opstaan, ga ik nu naar bed.",
+     "correct": false,
+     "why": "After omdat the finite verb \"moet\" belongs at the end with \"opstaan\", not after the subject."
+    },
+    {
+     "text": "Want ik morgen vroeg moet opstaan, ga ik nu naar bed.",
+     "correct": false,
+     "why": "Want cannot start a sentence and does not send the verbs to the end."
+    }
+   ],
+   "rule": "Omdat in front: verbs last in the clause, inversion in the main clause."
+  },
+  {
+   "id": "mx-terwijl-asleep",
+   "topics": [
+    "terwijl",
+    "toen"
+   ],
+   "mix": [
+    "terwijl",
+    "past",
+    "separable"
+   ],
+   "situationNl": "Gisteravond sliep je diep en ondertussen ging de telefoon over. Begin met het slapen.",
+   "hintEn": "Last night you slept deeply and meanwhile the phone rang. Begin with the sleeping.",
+   "options": [
+    {
+     "text": "Terwijl ik sliep, ging de telefoon over.",
+     "correct": true,
+     "why": "Terwijl links two actions that run at the same time; the main clause inverts and the separable verb splits: \"ging ... over\"."
+    },
+    {
+     "text": "Nadat ik sliep, ging de telefoon over.",
+     "correct": false,
+     "why": "Nadat needs an action that is finished first; the sleeping was still going on when the phone rang."
+    },
+    {
+     "text": "Terwijl ik sliep, de telefoon ging over.",
+     "correct": false,
+     "why": "After a fronted clause the verb comes first in the main clause: \"ging de telefoon over\"."
+    }
+   ],
+   "rule": "Terwijl = at the same time; nadat = after it is finished."
+  },
+  {
+   "id": "mx-tot-homework",
+   "topics": [
+    "tot",
+    "terwijl"
+   ],
+   "mix": [
+    "tot"
+   ],
+   "situationNl": "Je huiswerk is nog niet af. Pas op het moment dat het klaar is, mag je gamen. Zeg hoe lang het verbod duurt, beginnend met \"Ik mag niet gamen\".",
+   "hintEn": "Your homework is not finished. Only once it is done may you game. Say how long the ban lasts, beginning with \"Ik mag niet gamen\".",
+   "options": [
+    {
+     "text": "Ik mag niet gamen tot mijn huiswerk af is.",
+     "correct": true,
+     "why": "Tot marks the end point of the ban and sends the finite verb \"is\" to the end of its clause."
+    },
+    {
+     "text": "Ik mag niet gamen terwijl mijn huiswerk af is.",
+     "correct": false,
+     "why": "Terwijl would say the ban applies during the time the homework is finished, which reverses the meaning."
+    },
+    {
+     "text": "Ik mag niet gamen tot is mijn huiswerk af.",
+     "correct": false,
+     "why": "After tot the clause is subordinate: the finite verb \"is\" goes to the end, \"tot mijn huiswerk af is\"."
+    }
+   ],
+   "rule": "Tot = until the end point; the clause after it has its verb last."
+  },
+  {
+   "id": "mx-zodat-aim",
+   "topics": [
+    "connectors",
+    "omdat"
+   ],
+   "mix": [
+    "zodat"
+   ],
+   "situationNl": "Je zet vanavond een wekker. Het doel ligt in de toekomst: de trein van morgenochtend niet missen. Zeg dat in één zin, beginnend met \"Ik zet een wekker\".",
+   "hintEn": "You set an alarm tonight. The aim lies in the future: not missing tomorrow morning's train. Say it in one sentence.",
+   "options": [
+    {
+     "text": "Ik zet een wekker zodat ik morgen de trein haal.",
+     "correct": true,
+     "why": "Zodat links an action to its aim; the finite verb \"haal\" goes to the end of the clause."
+    },
+    {
+     "text": "Ik zet een wekker omdat ik morgen de trein haal.",
+     "correct": false,
+     "why": "Omdat gives a reason that is already a fact; catching the train is an aim, not an existing fact."
+    },
+    {
+     "text": "Ik zet een wekker zodat ik haal morgen de trein.",
+     "correct": false,
+     "why": "After zodat the clause is subordinate, so the finite verb \"haal\" goes to the end."
+    }
+   ],
+   "rule": "Aim: zodat; reason that is a fact: omdat."
+  },
+  {
+   "id": "mx-sinds-habit",
+   "topics": [
+    "connectors",
+    "tot"
+   ],
+   "mix": [
+    "sinds"
+   ],
+   "situationNl": "Je woont een jaar in Utrecht. Daarvoor fietste je nooit. Beschrijf je gewoonte van nu en wat de aanleiding was: je verhuizing. Begin met \"Ik fiets elke dag naar mijn werk\".",
+   "hintEn": "You have lived in Utrecht for a year; before that you never cycled. Describe the habit and what started it.",
+   "options": [
+    {
+     "text": "Ik fiets elke dag naar mijn werk sinds ik in Utrecht woon.",
+     "correct": true,
+     "why": "Sinds names the starting point of a habit that still continues; the verb \"woon\" goes to the end and the present tense stays."
+    },
+    {
+     "text": "Ik fiets elke dag naar mijn werk tot ik in Utrecht woon.",
+     "correct": false,
+     "why": "Tot means \"until\"; it would say the habit stops when you live in Utrecht, which reverses the meaning."
+    },
+    {
+     "text": "Ik fiets elke dag naar mijn werk sinds ik woon in Utrecht.",
+     "correct": false,
+     "why": "After sinds the clause is subordinate, so the finite verb \"woon\" goes behind the place phrase."
+    }
+   ],
+   "rule": "Sinds = from that starting point until now; tot = until it stops."
+  },
+  {
+   "id": "mx-mits-condition",
+   "topics": [
+    "connectors",
+    "hoewel"
+   ],
+   "mix": [
+    "mits"
+   ],
+   "situationNl": "Een vriend wil je laptop lenen. Je stelt één voorwaarde: hij brengt hem vanavond terug. Begin met \"Je mag mijn laptop lenen\".",
+   "hintEn": "A friend wants to borrow your laptop. You set one condition: he returns it tonight.",
+   "options": [
+    {
+     "text": "Je mag mijn laptop lenen, mits je hem vanavond terugbrengt.",
+     "correct": true,
+     "why": "Mits names the one condition for the permission; the separable verb is written together at the end: \"terugbrengt\"."
+    },
+    {
+     "text": "Je mag mijn laptop lenen, hoewel je hem vanavond terugbrengt.",
+     "correct": false,
+     "why": "Hoewel marks a contrast; returning the laptop is not an obstacle to lending it."
+    },
+    {
+     "text": "Je mag mijn laptop lenen, mits je brengt hem vanavond terug.",
+     "correct": false,
+     "why": "In the mits-clause the separable verb is joined and stands at the end: \"terugbrengt\"."
+    }
+   ],
+   "rule": "Mits = provided that (a condition); hoewel = although (a contrast)."
+  },
+  {
+   "id": "mx-geval-precaution",
+   "topics": [
+    "connectors",
+    "zodra"
+   ],
+   "mix": [
+    "voor het geval dat"
+   ],
+   "situationNl": "Je gaat kamperen en het is mogelijk dat je zaklamp het begeeft, al weet je dat niet. Zeg wat je vooraf inpakt en waarom, beginnend met \"Ik neem extra batterijen mee\".",
+   "hintEn": "You go camping and your torch might fail, though you don't know. Say what you pack beforehand and why.",
+   "options": [
+    {
+     "text": "Ik neem extra batterijen mee voor het geval dat de lamp uitvalt.",
+     "correct": true,
+     "why": "Voor het geval dat introduces a possible event you prepare for; the separable verb \"uitvalt\" is joined at the end."
+    },
+    {
+     "text": "Ik neem extra batterijen mee zodra de lamp uitvalt.",
+     "correct": false,
+     "why": "Zodra names the moment something happens; you cannot pack the batteries at the moment the lamp fails."
+    },
+    {
+     "text": "Ik neem extra batterijen mee voor het geval dat de lamp valt uit.",
+     "correct": false,
+     "why": "In the subordinate clause the separable verb is written together at the end: \"uitvalt\"."
+    }
+   ],
+   "rule": "Precaution before a possible event: voor het geval dat."
+  },
+  {
+   "id": "mx-ondanks-dat",
+   "topics": [
+    "exceptions",
+    "hoewel"
+   ],
+   "mix": [
+    "ondanks dat"
+   ],
+   "situationNl": "Een collega voelde zich niet goed, maar kwam naar de bijeenkomst. Zeg dat hij er was en noem zijn gezondheid als obstakel. Begin met \"Hij kwam\".",
+   "hintEn": "A colleague felt unwell but came to the meeting. Say he came and name his health as the obstacle.",
+   "options": [
+    {
+     "text": "Hij kwam, ondanks dat hij ziek was.",
+     "correct": true,
+     "why": "Ondanks dat opens a concession clause; dat cannot be left out and the verb \"was\" goes to the end."
+    },
+    {
+     "text": "Hij kwam, ondanks hij ziek was.",
+     "correct": false,
+     "why": "As a conjunction ondanks needs dat; without it only a noun phrase can follow."
+    },
+    {
+     "text": "Hij kwam, omdat hij ziek was.",
+     "correct": false,
+     "why": "Omdat gives a reason that supports coming; illness is an obstacle, so a concession is needed."
+    }
+   ],
+   "rule": "Ondanks + noun; ondanks dat + clause (verb last)."
+  },
+  {
+   "id": "mx-zonder-dat",
+   "topics": [
+    "exceptions",
+    "indirect"
+   ],
+   "mix": [
+    "zonder dat"
+   ],
+   "situationNl": "Een collega verliet de zaal stilletjes. Niemand van de aanwezigen kreeg het in de gaten. Begin met \"Hij verliet de zaal\".",
+   "hintEn": "A colleague quietly left the room. Nobody present noticed. Begin with \"Hij verliet de zaal\".",
+   "options": [
+    {
+     "text": "Hij verliet de zaal zonder dat iemand het merkte.",
+     "correct": true,
+     "why": "The noticer is someone else, so a full clause with its own subject is needed, and the verb \"merkte\" goes last."
+    },
+    {
+     "text": "Hij verliet de zaal zonder het te merken.",
+     "correct": false,
+     "why": "A short phrase with te takes the main subject, so it would say that he himself did not notice something."
+    },
+    {
+     "text": "Hij verliet de zaal zonder dat iemand merkte het.",
+     "correct": false,
+     "why": "The finite verb \"merkte\" goes to the end of the clause, after \"het\"."
+    }
+   ],
+   "rule": "Same subject: zonder ... te; different subject: zonder dat + clause."
+  },
+  {
+   "id": "mx-behalve-dat",
+   "topics": [
+    "exceptions",
+    "hoewel"
+   ],
+   "mix": [
+    "behalve dat"
+   ],
+   "situationNl": "Je vat een uitstapje samen: het was heel gezellig. Eén ding viel tegen, namelijk het weer, dat de hele tijd nat was. Begin met \"Het was een fijne dag\".",
+   "hintEn": "You sum up a trip: it was very pleasant, and only the weather was a letdown. Begin with \"Het was een fijne dag\".",
+   "options": [
+    {
+     "text": "Het was een fijne dag, behalve dat het regende.",
+     "correct": true,
+     "why": "Behalve dat names the single exception to the verdict; the verb \"regende\" goes to the end of the clause."
+    },
+    {
+     "text": "Het was een fijne dag, behalve het regende.",
+     "correct": false,
+     "why": "Before a clause behalve needs dat; without it only a noun or pronoun can follow."
+    },
+    {
+     "text": "Het was een fijne dag, omdat het regende.",
+     "correct": false,
+     "why": "Omdat would make the rain the reason for the good day, which reverses the meaning."
+    }
+   ],
+   "rule": "Behalve dat = except that (or besides, when it adds a point)."
+  },
+  {
+   "id": "mx-zoals-clause",
+   "topics": [
+    "daar",
+    "dat"
+   ],
+   "mix": [
+    "zoals"
+   ],
+   "situationNl": "Je herinnert een collega aan iets wat hij al weet en geeft dan het tijdstip van het overleg. Begin met het geheugensteuntje.",
+   "hintEn": "You remind a colleague of something he already knows, then give the time of the meeting. Begin with the reminder.",
+   "options": [
+    {
+     "text": "Zoals je weet, begint de vergadering om negen uur.",
+     "correct": true,
+     "why": "The fronted clause is position one, so the main clause starts with its verb: \"begint de vergadering\"."
+    },
+    {
+     "text": "Zoals je weet, de vergadering begint om negen uur.",
+     "correct": false,
+     "why": "After a fronted clause the main clause must start with its verb."
+    },
+    {
+     "text": "Zoals weet je, begint de vergadering om negen uur.",
+     "correct": false,
+     "why": "In a clause with zoals the subject comes first and the verb last."
+    }
+   ],
+   "rule": "Fronted zoals-clause: the main clause starts with its verb."
+  },
+  {
+   "id": "mx-stel-dat",
+   "topics": [
+    "daar",
+    "als"
+   ],
+   "mix": [
+    "stel dat"
+   ],
+   "situationNl": "Je praat met een vriend over een denkbeeldig geval: een loterijwinst. Vraag wat hij dan zou doen. Begin met de veronderstelling.",
+   "hintEn": "You chat with a friend about an imaginary case: a lottery win. Ask what he would do. Begin with the supposition.",
+   "options": [
+    {
+     "text": "Stel dat je de loterij wint, wat zou je dan doen?",
+     "correct": true,
+     "why": "The supposition ends in its verb \"wint\"; the question follows with the conditional \"zou\"."
+    },
+    {
+     "text": "Stel dat je wint de loterij, wat zou je dan doen?",
+     "correct": false,
+     "why": "After \"dat\" the clause is subordinate, so the verb \"wint\" goes to the end."
+    },
+    {
+     "text": "Stel dat je de loterij wint, wat je zou dan doen?",
+     "correct": false,
+     "why": "In the question the verb follows the question word directly: \"wat zou je\"."
+    }
+   ],
+   "rule": "Stel dat / gesteld dat: a supposition with the verb last."
+  },
+  {
+   "id": "mx-daar-adverb",
+   "topics": [
+    "daar",
+    "omdat"
+   ],
+   "mix": [
+    "daar"
+   ],
+   "situationNl": "Je wijst op een huis in de verte en zegt wie er woont. Begin met de plaats. Het huis is van je oma.",
+   "hintEn": "You point at a house in the distance and say who lives in it. Begin with the place.",
+   "options": [
+    {
+     "text": "Daar woont mijn oma.",
+     "correct": true,
+     "why": "Here daar is an adverb of place in position one, so the verb \"woont\" is second."
+    },
+    {
+     "text": "Daar mijn oma woont.",
+     "correct": false,
+     "why": "This is a subordinate-clause order and would be a fragment; after the adverb the verb comes second."
+    },
+    {
+     "text": "Daar oma woont mijn.",
+     "correct": false,
+     "why": "The possessive stands before the noun, and the verb is second."
+    }
+   ],
+   "rule": "Daar + verb = there (adverb); daar + subject ... verb last = since (formal conjunction)."
+  }
+ ]
+}

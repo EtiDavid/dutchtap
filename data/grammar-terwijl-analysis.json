@@ -1,0 +1,4514 @@
+{
+ "version": 1,
+ "note": "Hand-authored per-sentence analyses for the Terwijl topic. AI-edited, not native-reviewed.",
+ "cards": {
+  "pat-terwijl-01": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Two chores run in parallel, so 'terwijl' opens the clause that tells what the brother does at the same time."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kook",
+     "subject": "Ik",
+     "finite": "kook",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so 'kook' is second and the main clause is complete."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl mijn broer de tafel dekt",
+     "subject": "mijn broer",
+     "finite": "dekt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'mijn broer' comes first, then the object 'de tafel', and the finite verb 'dekt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "kook"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "mijn broer"
+    },
+    {
+     "label": "object",
+     "text": "de tafel"
+    },
+    {
+     "label": "finite verb",
+     "text": "dekt"
+    }
+   ],
+   "meaning": "I cook while my brother sets the table.",
+   "order": "Two people, two actions, one moment: the main clause carries your action, the terwijl-clause the other person's action with its verb last.",
+   "forms": "koken: ik kook. dekken: mijn broer dekt.",
+   "compare": "English 'while my brother sets the table' keeps 'sets' next to the subject. Dutch puts 'dekt' behind the object.",
+   "mistakes": [
+    {
+     "wrong": "Ik kook terwijl mijn broer dekt de tafel.",
+     "right": "Ik kook terwijl mijn broer de tafel dekt.",
+     "why": "In the terwijl-clause the finite verb goes behind the object 'de tafel'."
+    },
+    {
+     "wrong": "Ik kook terwijl mijn broer de tafel dekken.",
+     "right": "Ik kook terwijl mijn broer de tafel dekt.",
+     "why": "The singular subject 'mijn broer' needs 'dekt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl mijn broer de tafel dekt, kook ik.",
+    "english": "While my brother sets the table, I cook.",
+    "note": "With the terwijl-clause first, the main clause inverts to 'kook ik'."
+   }
+  },
+  "pat-terwijl-02": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Studying and listening happen at once; the terwijl-clause names the first activity and stands in first position."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl ik studeer",
+     "subject": "ik",
+     "finite": "studeer",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first and the finite verb 'studeer' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "luistert Zoë naar muziek",
+     "subject": "Zoë",
+     "finite": "luistert",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'luistert' comes first, then the subject 'Zoë' and the phrase 'naar muziek'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "studeer"
+    },
+    {
+     "label": "finite verb",
+     "text": "luistert"
+    },
+    {
+     "label": "subject",
+     "text": "Zoë"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "naar muziek"
+    }
+   ],
+   "meaning": "While I study, Zoë listens to music.",
+   "order": "The terwijl-clause fills position one, so the main clause inverts. 'Luisteren naar' is a fixed verb plus preposition.",
+   "forms": "studeren: ik studeer. luisteren: Zoë luistert.",
+   "compare": "English 'While I study, Zoë listens' keeps the subject first in the main clause. Dutch inverts to 'luistert Zoë'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl ik studeer, Zoë luistert naar muziek.",
+     "right": "Terwijl ik studeer, luistert Zoë naar muziek.",
+     "why": "After the terwijl-clause the main clause starts with the verb: 'luistert Zoë'."
+    },
+    {
+     "wrong": "Terwijl ik studeert, luistert Zoë naar muziek.",
+     "right": "Terwijl ik studeer, luistert Zoë naar muziek.",
+     "why": "With 'ik' the verb has no -t: 'studeer'. (not \"Terwijl ik studeert, luistert Zoë naar muziek.\", but \"Terwijl ik studeer, luistert Zoë naar muziek.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Zoë luistert naar muziek terwijl ik studeer.",
+    "english": "Zoë listens to music while I study.",
+    "note": "With the main clause first there is no inversion. Compare: Zoë luistert naar muziek terwijl ik studeer."
+   }
+  },
+  "pat-terwijl-03": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The download runs while the computer stays usable; the passive 'wordt gedownload' closes the terwijl-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De computer werkt",
+     "subject": "De computer",
+     "finite": "werkt",
+     "role": "main clause (the first action)",
+     "why": "'De computer' is first, so 'werkt' is second. The clause is \"De computer werkt\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de update wordt gedownload",
+     "subject": "de update",
+     "finite": "wordt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de update' comes first and the passive group 'wordt gedownload' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De computer"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de update"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "wordt"
+    },
+    {
+     "label": "past participle",
+     "text": "gedownload"
+    }
+   ],
+   "meaning": "The computer works while the update is downloaded.",
+   "order": "The passive turns the update into the subject: it does not act, it is downloaded. Auxiliary and participle stand at the end.",
+   "forms": "werken: de computer werkt. worden: de update wordt.",
+   "compare": "English 'while the update is downloaded' keeps 'is' before the participle too. Dutch puts both behind the subject.",
+   "mistakes": [
+    {
+     "wrong": "De computer werkt terwijl de update gedownload.",
+     "right": "De computer werkt terwijl de update wordt gedownload.",
+     "why": "The passive needs the auxiliary 'wordt' before the participle."
+    },
+    {
+     "wrong": "De computer werkt terwijl wordt de update gedownload.",
+     "right": "De computer werkt terwijl de update wordt gedownload.",
+     "why": "In the dependent clause the subject comes before the verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de update wordt gedownload, werkt de computer.",
+    "english": "While the update is downloaded, the computer works.",
+    "note": "With the terwijl-clause first, the main clause inverts to 'werkt de computer'."
+   }
+  },
+  "pat-terwijl-04": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The waiting of the user and the checking of the logs go on together."
+   },
+   "situationNl": "Een klant staat aan de telefoon en wil een oplossing. Vertel hem wat jij intussen onderzoekt.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl de gebruiker wacht",
+     "subject": "de gebruiker",
+     "finite": "wacht",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de gebruiker' comes first and the finite verb 'wacht' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "controleer ik de logs",
+     "subject": "ik",
+     "finite": "controleer",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'controleer' comes first, then the subject 'ik' and the object 'de logs'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de gebruiker"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    },
+    {
+     "label": "finite verb",
+     "text": "controleer"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de logs"
+    }
+   ],
+   "meaning": "While the user waits, I check the logs.",
+   "order": "The clause that sets the scene stands first; the main clause inverts and names your action. Read it as \"Terwijl de gebruiker wacht, controleer ik de logs\".",
+   "forms": "wachten: de gebruiker wacht. controleren: ik controleer.",
+   "compare": "English 'While the user waits, I check the logs' keeps 'I check'. Dutch inverts.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl de gebruiker wacht, ik controleer de logs.",
+     "right": "Terwijl de gebruiker wacht, controleer ik de logs.",
+     "why": "The main clause starts with the verb: 'controleer ik'."
+    },
+    {
+     "wrong": "Terwijl de gebruiker wachten, controleer ik de logs.",
+     "right": "Terwijl de gebruiker wacht, controleer ik de logs.",
+     "why": "The singular subject needs 'wacht'. (not \"Terwijl de gebruiker wachten, controleer ik de logs.\", but \"Terwijl de gebruiker wacht, controleer ik de logs.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik controleer de logs terwijl de gebruiker wacht.",
+    "english": "I check the logs while the user waits.",
+    "note": "With the main clause first there is no inversion. Compare: Ik controleer de logs terwijl de gebruiker wacht."
+   }
+  },
+  "pat-terwijl-05": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Talking and walking go together; the terwijl-clause ends with the verb 'lopen'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We praten",
+     "subject": "We",
+     "finite": "praten",
+     "role": "main clause (the first action)",
+     "why": "We is first, so the plural 'praten' is second. The clause is \"We praten\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl we naar het station lopen",
+     "subject": "we",
+     "finite": "lopen",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'we' comes first, the direction phrase 'naar het station' follows, and the finite verb 'lopen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "praten"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "direction",
+     "text": "naar het station"
+    },
+    {
+     "label": "finite verb",
+     "text": "lopen"
+    }
+   ],
+   "meaning": "We talk while walking to the station.",
+   "order": "The same subject 'we' returns in the terwijl-clause. The direction phrase comes before the final verb. Read it as \"We praten terwijl we naar het station lopen\".",
+   "forms": "praten: wij praten. lopen: wij lopen.",
+   "compare": "English 'while walking to the station' can drop the subject. Dutch repeats it with a finite verb.",
+   "mistakes": [
+    {
+     "wrong": "We praten terwijl lopen we naar het station.",
+     "right": "We praten terwijl we naar het station lopen.",
+     "why": "The finite verb goes to the end of the terwijl-clause."
+    },
+    {
+     "wrong": "We praten terwijl we naar het station loopt.",
+     "right": "We praten terwijl we naar het station lopen.",
+     "why": "The plural 'we' needs 'lopen'. (not \"We praten terwijl we naar het station loopt.\", but \"We praten terwijl we naar het station lopen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl we naar het station lopen, praten we.",
+    "english": "While we walk to the station, we talk.",
+    "note": "With the terwijl-clause first, the main clause inverts to 'praten we'."
+   }
+  },
+  "pat-terwijl-06": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Two people prepare to leave at once; 'inpak' is the joined separable verb in the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl ik mijn tas inpak",
+     "subject": "ik",
+     "finite": "inpak",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, then the object 'mijn tas', and the joined separable verb 'inpak' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "zoekt zij haar sleutels",
+     "subject": "zij",
+     "finite": "zoekt",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'zoekt' comes first, then the subject 'zij' and the object 'haar sleutels'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "mijn tas"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "inpak"
+    },
+    {
+     "label": "finite verb",
+     "text": "zoekt"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "object",
+     "text": "haar sleutels"
+    }
+   ],
+   "meaning": "While I pack my bag, she looks for her keys.",
+   "order": "'Inpakken' splits in a main clause ('ik pak in'), but inside the terwijl-clause the particle sits right before the verb at the end: 'inpak'.",
+   "forms": "inpakken: pak in / inpak. zoeken: zij zoekt.",
+   "compare": "English 'pack my bag' is two words. Dutch writes 'inpak' as one in the dependent clause.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl ik mijn tas pak in, zoekt zij haar sleutels.",
+     "right": "Terwijl ik mijn tas inpak, zoekt zij haar sleutels.",
+     "why": "In a dependent clause the separable verb is written together: 'inpak'."
+    },
+    {
+     "wrong": "Terwijl ik mijn tas inpak, zij zoekt haar sleutels.",
+     "right": "Terwijl ik mijn tas inpak, zoekt zij haar sleutels.",
+     "why": "The main clause starts with the verb: 'zoekt zij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Zij zoekt haar sleutels terwijl ik mijn tas inpak.",
+    "english": "She looks for her keys while I pack my bag.",
+    "note": "With the main clause first there is no inversion. Compare: Zij zoekt haar sleutels terwijl ik mijn tas inpak."
+   }
+  },
+  "pat-terwijl-07": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Writing and explaining run in parallel; the pupil and the teacher have separate verbs."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De leerling schrijft",
+     "subject": "De leerling",
+     "finite": "schrijft",
+     "role": "main clause (the first action)",
+     "why": "'De leerling' is first, so 'schrijft' is second. The clause is \"De leerling schrijft\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de docent uitlegt",
+     "subject": "de docent",
+     "finite": "uitlegt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de docent' comes first and the joined separable verb 'uitlegt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De leerling"
+    },
+    {
+     "label": "finite verb",
+     "text": "schrijft"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de docent"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "uitlegt"
+    }
+   ],
+   "meaning": "The pupil writes while the teacher explains.",
+   "order": "'Uitleggen' is separable: 'legt uit' in a main clause, 'uitlegt' at the end of a dependent clause. Read it as \"De leerling schrijft terwijl de docent uitlegt\".",
+   "forms": "schrijven: de leerling schrijft. uitleggen: de docent legt uit / uitlegt.",
+   "compare": "English 'while the teacher explains' is a single verb. Dutch uses a separable verb written as one word here.",
+   "mistakes": [
+    {
+     "wrong": "De leerling schrijft terwijl de docent legt uit.",
+     "right": "De leerling schrijft terwijl de docent uitlegt.",
+     "why": "The separable verb is written together in a dependent clause."
+    },
+    {
+     "wrong": "De leerling schrijven terwijl de docent uitlegt.",
+     "right": "De leerling schrijft terwijl de docent uitlegt.",
+     "why": "The singular subject needs 'schrijft'. (not \"De leerling schrijven terwijl de docent uitlegt.\", but \"De leerling schrijft terwijl de docent uitlegt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de docent uitlegt, schrijft de leerling.",
+    "english": "While the teacher explains, the pupil writes.",
+    "note": "The terwijl-clause first inverts the main clause to 'schrijft de leerling'."
+   }
+  },
+  "pat-terwijl-08": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The restart is the background event; the wait is the team's reaction."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl de server opnieuw opstart",
+     "subject": "de server",
+     "finite": "opstart",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de server' comes first, the adverb 'opnieuw' follows, and the joined verb 'opstart' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "wachten we even",
+     "subject": "we",
+     "finite": "wachten",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'wachten' comes first, then the subject 'we' and the adverb 'even'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de server"
+    },
+    {
+     "label": "adverb",
+     "text": "opnieuw"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "opstart"
+    },
+    {
+     "label": "finite verb",
+     "text": "wachten"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "adverb",
+     "text": "even"
+    }
+   ],
+   "meaning": "While the server restarts, we wait a moment.",
+   "order": "'Opstarten' joins at the end of the dependent clause. The main clause inverts because the clause fills position one.",
+   "forms": "opstarten: start op / opstart. wachten: wij wachten.",
+   "compare": "English 'restarts' is one word. Dutch uses the separable verb 'opstarten'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl de server opnieuw start op, wachten we even.",
+     "right": "Terwijl de server opnieuw opstart, wachten we even.",
+     "why": "The separable verb is written together at the end: 'opstart'."
+    },
+    {
+     "wrong": "Terwijl de server opnieuw opstart, we wachten even.",
+     "right": "Terwijl de server opnieuw opstart, wachten we even.",
+     "why": "The main clause starts with the verb: 'wachten we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We wachten even terwijl de server opnieuw opstart.",
+    "english": "We wait a moment while the server restarts.",
+    "note": "With the main clause first there is no inversion. Compare: We wachten even terwijl de server opnieuw opstart."
+   }
+  },
+  "pat-terwijl-09": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Washing up and tidying up are shared at the same time; both clauses have an object."
+   },
+   "situationNl": "Jullie wonen samen en verdelen de klussen na het eten. Vertel een vriend wat jij doet en wat je partner op datzelfde moment doet.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik doe de afwas",
+     "subject": "Ik",
+     "finite": "doe",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so 'doe' is second and the object 'de afwas' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl mijn partner de keuken opruimt",
+     "subject": "mijn partner",
+     "finite": "opruimt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'mijn partner' comes first, then the object 'de keuken', and the joined verb 'opruimt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "doe"
+    },
+    {
+     "label": "object",
+     "text": "de afwas"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "mijn partner"
+    },
+    {
+     "label": "object",
+     "text": "de keuken"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "opruimt"
+    }
+   ],
+   "meaning": "I do the dishes while my partner tidies the kitchen.",
+   "order": "'Afwas doen' is a fixed phrase. 'Opruimen' joins at the end of the terwijl-clause. Read it as \"Ik doe de afwas terwijl mijn partner de keuken opruimt\".",
+   "forms": "doen: ik doe. opruimen: ruimt op / opruimt.",
+   "compare": "English 'tidies the kitchen' needs no particle at the end. Dutch writes 'opruimt' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik doe de afwas terwijl mijn partner ruimt de keuken op.",
+     "right": "Ik doe de afwas terwijl mijn partner de keuken opruimt.",
+     "why": "The separable verb is written together at the end: 'opruimt'."
+    },
+    {
+     "wrong": "Ik doe de afwas terwijl mijn partner de keuken opruim.",
+     "right": "Ik doe de afwas terwijl mijn partner de keuken opruimt.",
+     "why": "The singular subject needs 'opruimt'. (not \"Ik doe de afwas terwijl mijn partner de keuken opruim.\", but \"Ik doe de afwas terwijl mijn partner de keuken opruimt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl mijn partner de keuken opruimt, doe ik de afwas.",
+    "english": "While my partner tidies the kitchen, I do the dishes.",
+    "note": "The terwijl-clause first inverts the main clause to 'doe ik'."
+   }
+  },
+  "pat-terwijl-10": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Your call and your colleague's notes run in parallel; 'telefoneer' is a plain verb at the end."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl ik telefoneer",
+     "subject": "ik",
+     "finite": "telefoneer",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first and the finite verb 'telefoneer' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "maakt mijn collega notities",
+     "subject": "mijn collega",
+     "finite": "maakt",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'maakt' comes first, then the subject 'mijn collega' and the object 'notities'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "telefoneer"
+    },
+    {
+     "label": "finite verb",
+     "text": "maakt"
+    },
+    {
+     "label": "subject",
+     "text": "mijn collega"
+    },
+    {
+     "label": "object",
+     "text": "notities"
+    }
+   ],
+   "meaning": "While I'm on the phone, my colleague takes notes.",
+   "order": "'Notities maken' is the fixed phrase for taking notes. The main clause inverts after the terwijl-clause. Read it as \"Terwijl ik telefoneer, maakt mijn collega notities\".",
+   "forms": "telefoneren: ik telefoneer. maken: mijn collega maakt.",
+   "compare": "English 'While I'm on the phone' uses 'be'. Dutch uses the verb 'telefoneren'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl ik telefoneer, mijn collega maakt notities.",
+     "right": "Terwijl ik telefoneer, maakt mijn collega notities.",
+     "why": "After the terwijl-clause the verb comes first: 'maakt mijn collega'."
+    },
+    {
+     "wrong": "Terwijl ik telefoneert, maakt mijn collega notities.",
+     "right": "Terwijl ik telefoneer, maakt mijn collega notities.",
+     "why": "With 'ik' the verb has no -t. (not \"Terwijl ik telefoneert, maakt mijn collega notities.\", but \"Terwijl ik telefoneer, maakt mijn collega notities.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Mijn collega maakt notities terwijl ik telefoneer.",
+    "english": "My colleague takes notes while I'm on the phone.",
+    "note": "With the main clause first there is no inversion. Compare: Mijn collega maakt notities terwijl ik telefoneer."
+   }
+  },
+  "pat-terwijl-11": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The train keeps moving while the passengers sleep; 'rijdt verder' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De trein rijdt verder",
+     "subject": "De trein",
+     "finite": "rijdt",
+     "role": "main clause (the first action)",
+     "why": "'De trein' is first, so 'rijdt' is second; the particle 'verder' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de passagiers slapen",
+     "subject": "de passagiers",
+     "finite": "slapen",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The plural subject 'de passagiers' comes first and the plural verb 'slapen' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De trein"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "rijdt"
+    },
+    {
+     "label": "particle",
+     "text": "verder"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de passagiers"
+    },
+    {
+     "label": "finite verb",
+     "text": "slapen"
+    }
+   ],
+   "meaning": "The train continues while the passengers sleep.",
+   "order": "'Verderrijden' splits in the main clause and the particle 'verder' stands at the end of it. The terwijl-clause has a plural verb.",
+   "forms": "verderrijden: rijdt verder. slapen: de passagiers slapen.",
+   "compare": "English 'continues' is a single verb. Dutch splits 'verderrijden' into 'rijdt ... verder'.",
+   "mistakes": [
+    {
+     "wrong": "De trein verderrijdt terwijl de passagiers slapen.",
+     "right": "De trein rijdt verder terwijl de passagiers slapen.",
+     "why": "In a main clause the separable verb splits: 'rijdt ... verder'."
+    },
+    {
+     "wrong": "De trein rijdt verder terwijl de passagiers slaapt.",
+     "right": "De trein rijdt verder terwijl de passagiers slapen.",
+     "why": "The plural subject needs 'slapen'. (not \"De trein rijdt verder terwijl de passagiers slaapt.\", but \"De trein rijdt verder terwijl de passagiers slapen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de passagiers slapen, rijdt de trein verder.",
+    "english": "While the passengers sleep, the train continues.",
+    "note": "The terwijl-clause first inverts the main clause."
+   }
+  },
+  "pat-terwijl-12": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The rain is the background; coffee indoors is the reaction. The dummy subject 'het' goes with 'regent'."
+   },
+   "situationNl": "Jullie hebben de kamer warm gestookt en kijken naar de ruit. Vertel een vriend wat jullie doen en hoe het weer is.",
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl het buiten regent",
+     "subject": "het",
+     "finite": "regent",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The dummy subject 'het' comes first, the adverb 'buiten' follows and the finite verb 'regent' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "drinken we binnen koffie",
+     "subject": "we",
+     "finite": "drinken",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'drinken' comes first, then the subject 'we', the adverb 'binnen' and the object 'koffie'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject (dummy)",
+     "text": "het"
+    },
+    {
+     "label": "adverb",
+     "text": "buiten"
+    },
+    {
+     "label": "finite verb",
+     "text": "regent"
+    },
+    {
+     "label": "finite verb",
+     "text": "drinken"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "adverb",
+     "text": "binnen"
+    },
+    {
+     "label": "object",
+     "text": "koffie"
+    }
+   ],
+   "meaning": "While it rains outside, we drink coffee indoors.",
+   "order": "Weather verbs use 'het' as a dummy subject. The adverbs 'buiten' and 'binnen' contrast the two places. Read it as \"Terwijl het buiten regent, drinken we binnen koffie\".",
+   "forms": "regenen: het regent. drinken: wij drinken.",
+   "compare": "English 'While it rains outside' keeps 'rains' next to 'it'. Dutch puts 'regent' last, after 'buiten'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl het regent buiten, drinken we binnen koffie.",
+     "right": "Terwijl het buiten regent, drinken we binnen koffie.",
+     "why": "The finite verb goes to the end, behind 'buiten'."
+    },
+    {
+     "wrong": "Terwijl het buiten regent, we drinken binnen koffie.",
+     "right": "Terwijl het buiten regent, drinken we binnen koffie.",
+     "why": "The main clause starts with the verb: 'drinken we'."
+    }
+   ],
+   "contrast": {
+    "dutch": "We drinken binnen koffie terwijl het buiten regent.",
+    "english": "We drink coffee indoors while it rains outside.",
+    "note": "With the main clause first there is no inversion. Compare: We drinken binnen koffie terwijl het buiten regent."
+   }
+  },
+  "pat-terwijl-13": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Washing and listening happen together; note that 'was' here is the verb 'wassen', not the past of 'zijn'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik was de auto",
+     "subject": "Ik",
+     "finite": "was",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so 'was' is second; here 'was' is the present tense of 'wassen' and the object 'de auto' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ik naar de radio luister",
+     "subject": "ik",
+     "finite": "luister",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, the phrase 'naar de radio' follows, and the finite verb 'luister' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "was"
+    },
+    {
+     "label": "object",
+     "text": "de auto"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "naar de radio"
+    },
+    {
+     "label": "finite verb",
+     "text": "luister"
+    }
+   ],
+   "meaning": "I wash the car while I listen to the radio.",
+   "order": "The same subject 'ik' appears in both clauses. 'Luisteren naar' takes the phrase before the final verb. Read it as \"Ik was de auto terwijl ik naar de radio luister\".",
+   "forms": "wassen: ik was. luisteren: ik luister.",
+   "compare": "English 'wash' and Dutch 'was' look like the past of 'zijn', but here it is the present of 'wassen'.",
+   "mistakes": [
+    {
+     "wrong": "Ik was de auto terwijl ik luister naar de radio.",
+     "right": "Ik was de auto terwijl ik naar de radio luister.",
+     "why": "The finite verb goes behind the phrase 'naar de radio'."
+    },
+    {
+     "wrong": "Ik wast de auto terwijl ik naar de radio luister.",
+     "right": "Ik was de auto terwijl ik naar de radio luister.",
+     "why": "With 'ik' the verb has no -t: 'was'. (not \"Ik wast de auto terwijl ik naar de radio luister.\", but \"Ik was de auto terwijl ik naar de radio luister.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl ik naar de radio luister, was ik de auto.",
+    "english": "While I listen to the radio, I wash the car.",
+    "note": "The terwijl-clause first inverts the main clause to 'was ik'."
+   }
+  },
+  "pat-terwijl-14": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The cooking pasta sets the time frame in which you cut the vegetables."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl de pasta kookt",
+     "subject": "de pasta",
+     "finite": "kookt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de pasta' comes first and the finite verb 'kookt' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "snijd ik de groenten",
+     "subject": "ik",
+     "finite": "snijd",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'snijd' comes first, then the subject 'ik' and the object 'de groenten'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de pasta"
+    },
+    {
+     "label": "finite verb",
+     "text": "kookt"
+    },
+    {
+     "label": "finite verb",
+     "text": "snijd"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de groenten"
+    }
+   ],
+   "meaning": "While the pasta cooks, I cut the vegetables.",
+   "order": "The thing that cooks is the subject of the first clause. The main clause inverts to put 'snijd' before 'ik'. Read it as \"Terwijl de pasta kookt, snijd ik de groenten\".",
+   "forms": "koken: de pasta kookt. snijden: ik snijd.",
+   "compare": "English 'While the pasta cooks, I cut' keeps 'I cut'. Dutch inverts to 'snijd ik'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl de pasta kookt, ik snijd de groenten.",
+     "right": "Terwijl de pasta kookt, snijd ik de groenten.",
+     "why": "After the terwijl-clause the verb comes first: 'snijd ik'."
+    },
+    {
+     "wrong": "Terwijl de pasta koken, snijd ik de groenten.",
+     "right": "Terwijl de pasta kookt, snijd ik de groenten.",
+     "why": "The singular subject needs 'kookt'. (not \"Terwijl de pasta koken, snijd ik de groenten.\", but \"Terwijl de pasta kookt, snijd ik de groenten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik snijd de groenten terwijl de pasta kookt.",
+    "english": "I cut the vegetables while the pasta cooks.",
+    "note": "With the main clause first there is no inversion. Compare: Ik snijd de groenten terwijl de pasta kookt."
+   }
+  },
+  "pat-terwijl-15": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Calling and waiting overlap; the same person 'hij' is the subject of both clauses."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij belt zijn moeder",
+     "subject": "Hij",
+     "finite": "belt",
+     "role": "main clause (the first action)",
+     "why": "Hij is first, so 'belt' is second and the object 'zijn moeder' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl hij op de bus wacht",
+     "subject": "hij",
+     "finite": "wacht",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'hij' comes first, the phrase 'op de bus' follows, and the finite verb 'wacht' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "belt"
+    },
+    {
+     "label": "object",
+     "text": "zijn moeder"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "op de bus"
+    },
+    {
+     "label": "finite verb",
+     "text": "wacht"
+    }
+   ],
+   "meaning": "He calls his mother while he waits for the bus.",
+   "order": "'Wachten op' takes the phrase 'op de bus' before the final verb. Both clauses share their subject. Read it as \"Hij belt zijn moeder terwijl hij op de bus wacht\".",
+   "forms": "bellen: hij belt. wachten: hij wacht.",
+   "compare": "English 'waits for the bus' uses 'for'. Dutch uses 'wachten op'. For this card: \"Hij belt zijn moeder terwijl hij op de bus wacht\".",
+   "mistakes": [
+    {
+     "wrong": "Hij belt zijn moeder terwijl hij wacht op de bus.",
+     "right": "Hij belt zijn moeder terwijl hij op de bus wacht.",
+     "why": "The finite verb goes behind the phrase 'op de bus'."
+    },
+    {
+     "wrong": "Hij belt zijn moeder terwijl hij op de bus wachten.",
+     "right": "Hij belt zijn moeder terwijl hij op de bus wacht.",
+     "why": "With 'hij' the verb is 'wacht'. (not \"Hij belt zijn moeder terwijl hij op de bus wachten.\", but \"Hij belt zijn moeder terwijl hij op de bus wacht.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl hij op de bus wacht, belt hij zijn moeder.",
+    "english": "While he waits for the bus, he calls his mother.",
+    "note": "The terwijl-clause first inverts the main clause to 'belt hij'."
+   }
+  },
+  "pat-terwijl-16": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Eating is the frame; Daan's story is the action that fills it."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl wij eten",
+     "subject": "wij",
+     "finite": "eten",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'wij' comes first and the plural verb 'eten' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "vertelt Daan over zijn reis",
+     "subject": "Daan",
+     "finite": "vertelt",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'vertelt' comes first, then the subject 'Daan' and the phrase 'over zijn reis'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "eten"
+    },
+    {
+     "label": "finite verb",
+     "text": "vertelt"
+    },
+    {
+     "label": "subject",
+     "text": "Daan"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "over zijn reis"
+    }
+   ],
+   "meaning": "While we eat, Daan tells about his trip.",
+   "order": "The first clause is about 'wij', the main clause about 'Daan'. 'Vertellen over' links the story to its topic. Read it as \"Terwijl wij eten, vertelt Daan over zijn reis\".",
+   "forms": "eten: wij eten. vertellen: Daan vertelt.",
+   "compare": "English 'While we eat, Daan tells about his trip' uses 'tells about'. Dutch uses 'vertelt over'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl wij eten, Daan vertelt over zijn reis.",
+     "right": "Terwijl wij eten, vertelt Daan over zijn reis.",
+     "why": "After the terwijl-clause the verb comes first: 'vertelt Daan'."
+    },
+    {
+     "wrong": "Terwijl wij eet, vertelt Daan over zijn reis.",
+     "right": "Terwijl wij eten, vertelt Daan over zijn reis.",
+     "why": "The plural 'wij' needs 'eten'. (not \"Terwijl wij eet, vertelt Daan over zijn reis.\", but \"Terwijl wij eten, vertelt Daan over zijn reis.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Daan vertelt over zijn reis terwijl wij eten.",
+    "english": "Daan tells about his trip while we eat.",
+    "note": "With the main clause first there is no inversion. Compare: Daan vertelt over zijn reis terwijl wij eten."
+   }
+  },
+  "pat-terwijl-17": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The baby's sleep gives her the quiet to read."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij leest een boek",
+     "subject": "Zij",
+     "finite": "leest",
+     "role": "main clause (the first action)",
+     "why": "Zij is first, so 'leest' is second and the object 'een boek' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de baby slaapt",
+     "subject": "de baby",
+     "finite": "slaapt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de baby' comes first and the finite verb 'slaapt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "leest"
+    },
+    {
+     "label": "object",
+     "text": "een boek"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de baby"
+    },
+    {
+     "label": "finite verb",
+     "text": "slaapt"
+    }
+   ],
+   "meaning": "She reads a book while the baby sleeps.",
+   "order": "A short terwijl-clause with only a subject and a verb. The reading is the main action. Read it as \"Zij leest een boek terwijl de baby slaapt\".",
+   "forms": "lezen: zij leest. slapen: de baby slaapt.",
+   "compare": "English 'while the baby sleeps' has the same shape. Dutch also keeps it short.",
+   "mistakes": [
+    {
+     "wrong": "Zij leest een boek terwijl slaapt de baby.",
+     "right": "Zij leest een boek terwijl de baby slaapt.",
+     "why": "In the terwijl-clause the subject comes before the verb."
+    },
+    {
+     "wrong": "Zij leest een boek terwijl de baby slapen.",
+     "right": "Zij leest een boek terwijl de baby slaapt.",
+     "why": "The singular subject needs 'slaapt'. (not \"Zij leest een boek terwijl de baby slapen.\", but \"Zij leest een boek terwijl de baby slaapt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de baby slaapt, leest zij een boek.",
+    "english": "While the baby sleeps, she reads a book.",
+    "note": "The terwijl-clause first inverts the main clause to 'leest zij'."
+   }
+  },
+  "pat-terwijl-18": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The printer's job fills the waiting time in which you answer e-mails."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl de printer afdrukt",
+     "subject": "de printer",
+     "finite": "afdrukt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de printer' comes first and the joined separable verb 'afdrukt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "beantwoord ik mijn e-mails",
+     "subject": "ik",
+     "finite": "beantwoord",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'beantwoord' comes first, then the subject 'ik' and the object 'mijn e-mails'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de printer"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "afdrukt"
+    },
+    {
+     "label": "finite verb",
+     "text": "beantwoord"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "mijn e-mails"
+    }
+   ],
+   "meaning": "While the printer prints, I answer my e-mails.",
+   "order": "'Afdrukken' is separable ('drukt af' in a main clause). 'Beantwoorden' is inseparable and stays whole. Read it as \"Terwijl de printer afdrukt, beantwoord ik mijn e-mails\".",
+   "forms": "afdrukken: drukt af / afdrukt. beantwoorden: ik beantwoord.",
+   "compare": "English 'prints' is a single verb. Dutch uses 'afdrukken' and joins it here.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl de printer drukt af, beantwoord ik mijn e-mails.",
+     "right": "Terwijl de printer afdrukt, beantwoord ik mijn e-mails.",
+     "why": "The separable verb is written together: 'afdrukt'."
+    },
+    {
+     "wrong": "Terwijl de printer afdrukt, ik beantwoord mijn e-mails.",
+     "right": "Terwijl de printer afdrukt, beantwoord ik mijn e-mails.",
+     "why": "The main clause starts with the verb: 'beantwoord ik'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik beantwoord mijn e-mails terwijl de printer afdrukt.",
+    "english": "I answer my e-mails while the printer prints.",
+    "note": "With the main clause first there is no inversion. Compare: Ik beantwoord mijn e-mails terwijl de printer afdrukt."
+   }
+  },
+  "pat-terwijl-19": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A modal in the main clause: the suggestion 'je kunt' is parallel to the room booking."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je kunt koffie halen",
+     "subject": "Je",
+     "finite": "kunt",
+     "role": "main clause (the first action)",
+     "why": "'Je' is first and the modal 'kunt' is second; the object 'koffie' stands before the infinitive 'halen'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ik de zaal boek",
+     "subject": "ik",
+     "finite": "boek",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, then the object 'de zaal', and the finite verb 'boek' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kunt"
+    },
+    {
+     "label": "object",
+     "text": "koffie"
+    },
+    {
+     "label": "infinitive",
+     "text": "halen"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de zaal"
+    },
+    {
+     "label": "finite verb",
+     "text": "boek"
+    }
+   ],
+   "meaning": "You can get coffee while I book the room.",
+   "order": "The main clause has a modal chain (kunt ... halen). The terwijl-clause has one finite verb at the end. Read it as \"Je kunt koffie halen terwijl ik de zaal boek\".",
+   "forms": "kunnen: je kunt. halen: infinitive. boeken: ik boek.",
+   "compare": "English 'You can get coffee while I book' keeps one verb per part. Dutch splits the modal and the infinitive.",
+   "mistakes": [
+    {
+     "wrong": "Je kunt halen koffie terwijl ik de zaal boek.",
+     "right": "Je kunt koffie halen terwijl ik de zaal boek.",
+     "why": "The infinitive 'halen' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Je kunt koffie halen terwijl ik boek de zaal.",
+     "right": "Je kunt koffie halen terwijl ik de zaal boek.",
+     "why": "The finite verb goes behind the object 'de zaal'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl ik de zaal boek, kun je koffie halen.",
+    "english": "While I book the room, you can get coffee.",
+    "note": "The terwijl-clause first inverts the main clause to 'kun je'."
+   }
+  },
+  "pat-terwijl-20": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A request that fits into the other person's writing time; the modal 'kun' opens the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl ik de brief schrijf",
+     "subject": "ik",
+     "finite": "schrijf",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, then the object 'de brief', and the finite verb 'schrijf' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kun je even koffie zetten",
+     "subject": "je",
+     "finite": "kun",
+     "role": "main clause (the first action)",
+     "why": "The modal 'kun' comes first, then the subject 'je', the adverb 'even' and the object 'koffie'; the infinitive 'zetten' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de brief"
+    },
+    {
+     "label": "finite verb",
+     "text": "schrijf"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "adverb",
+     "text": "even"
+    },
+    {
+     "label": "object",
+     "text": "koffie"
+    },
+    {
+     "label": "infinitive",
+     "text": "zetten"
+    }
+   ],
+   "meaning": "While I write the letter, you can make some coffee.",
+   "order": "The main clause inverts to 'kun je' because the first position is filled. The infinitive 'zetten' stays last. Read it as \"Terwijl ik de brief schrijf, kun je even koffie zetten\".",
+   "forms": "schrijven: ik schrijf. kunnen: je kunt / kun je. zetten: infinitive.",
+   "compare": "English 'you can make some coffee' puts the modal after 'you'. Dutch puts 'kun' first.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl ik de brief schrijf, je kunt even koffie zetten.",
+     "right": "Terwijl ik de brief schrijf, kun je even koffie zetten.",
+     "why": "After the terwijl-clause the modal comes first: 'kun je'."
+    },
+    {
+     "wrong": "Terwijl ik de brief schrijf, kun je even zetten koffie.",
+     "right": "Terwijl ik de brief schrijf, kun je even koffie zetten.",
+     "why": "The infinitive 'zetten' goes to the end. (not \"Terwijl ik de brief schrijf, kun je even zetten koffie.\", but \"Terwijl ik de brief schrijf, kun je even koffie zetten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je kunt even koffie zetten terwijl ik de brief schrijf.",
+    "english": "You can make some coffee while I write the letter.",
+    "note": "With the main clause first the modal stays after the subject."
+   }
+  },
+  "pat-terwijl-21": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A past action ('Ik heb gebeld') happened during a longer past state ('jij zat')."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik heb gebeld",
+     "subject": "Ik",
+     "finite": "heb",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so the auxiliary 'heb' is second and the participle 'gebeld' closes the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl jij in de vergadering zat",
+     "subject": "jij",
+     "finite": "zat",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'jij' comes first, the phrase 'in de vergadering' follows, and the past form 'zat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "heb"
+    },
+    {
+     "label": "past participle",
+     "text": "gebeld"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "place",
+     "text": "in de vergadering"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "zat"
+    }
+   ],
+   "meaning": "I called while you were in the meeting.",
+   "order": "The main clause uses the perfect for the finished call; the terwijl-clause uses the simple past for the ongoing state.",
+   "forms": "bellen: heb gebeld. zitten: jij zat.",
+   "compare": "English 'were in the meeting' uses 'were'. Dutch uses 'zat' (zitten) for being present at a meeting.",
+   "mistakes": [
+    {
+     "wrong": "Ik heb gebeld terwijl jij zat in de vergadering.",
+     "right": "Ik heb gebeld terwijl jij in de vergadering zat.",
+     "why": "The finite verb 'zat' goes behind the place phrase."
+    },
+    {
+     "wrong": "Ik heb gebeld terwijl jij in de vergadering zit.",
+     "right": "Ik heb gebeld terwijl jij in de vergadering zat.",
+     "why": "The past event needs a past form: 'zat'. (not \"Ik heb gebeld terwijl jij in de vergadering zit.\", but \"Ik heb gebeld terwijl jij in de vergadering zat.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl jij in de vergadering zat, heb ik gebeld.",
+    "english": "While you were in the meeting, I called.",
+    "note": "The terwijl-clause first inverts the main clause to 'heb ik gebeld'."
+   }
+  },
+  "pat-terwijl-22": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Someone slept and, in that time, something happened: the perfect with 'zijn' for the storm passing."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl hij sliep",
+     "subject": "hij",
+     "finite": "sliep",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'hij' comes first and the past form 'sliep' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is de storm voorbijgetrokken",
+     "subject": "de storm",
+     "finite": "is",
+     "role": "main clause (the first action)",
+     "why": "The auxiliary 'is' comes first, then the subject 'de storm', and the participle 'voorbijgetrokken' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "sliep"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "de storm"
+    },
+    {
+     "label": "past participle (joined)",
+     "text": "voorbijgetrokken"
+    }
+   ],
+   "meaning": "While he slept, the storm passed.",
+   "order": "'Voorbijtrekken' is a verb of movement, so the perfect uses 'zijn'. The participle stands at the very end. Read it as \"Terwijl hij sliep, is de storm voorbijgetrokken\".",
+   "forms": "slapen: hij sliep. voorbijtrekken: is voorbijgetrokken.",
+   "compare": "English 'the storm passed' uses the simple past. Dutch often uses the perfect with 'zijn' for a completed movement.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl hij sliep, de storm is voorbijgetrokken.",
+     "right": "Terwijl hij sliep, is de storm voorbijgetrokken.",
+     "why": "After the terwijl-clause the auxiliary comes first: 'is de storm'."
+    },
+    {
+     "wrong": "Terwijl hij sliep, heeft de storm voorbijgetrokken.",
+     "right": "Terwijl hij sliep, is de storm voorbijgetrokken.",
+     "why": "A verb of movement takes 'zijn' in the perfect."
+    }
+   ],
+   "contrast": {
+    "dutch": "De storm is voorbijgetrokken terwijl hij sliep.",
+    "english": "The storm passed while he slept.",
+    "note": "With the main clause first there is no inversion. Compare: De storm is voorbijgetrokken terwijl hij sliep."
+   }
+  },
+  "pat-terwijl-23": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Two past activities in progress together; both clauses use the simple past."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ze lazen de krant",
+     "subject": "Ze",
+     "finite": "lazen",
+     "role": "main clause (the first action)",
+     "why": "Ze is first, so the plural past 'lazen' is second and the object 'de krant' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ze op de trein wachtten",
+     "subject": "ze",
+     "finite": "wachtten",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ze' comes first, the phrase 'op de trein' follows, and the plural past 'wachtten' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ze"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "lazen"
+    },
+    {
+     "label": "object",
+     "text": "de krant"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "op de trein"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "wachtten"
+    }
+   ],
+   "meaning": "They read the paper while they waited for the train.",
+   "order": "The simple past of 'lezen' is strong (lazen), the past of 'wachten' is weak (wachtten). Both are plural. Read it as \"Ze lazen de krant terwijl ze op de trein wachtten\".",
+   "forms": "lezen: ze lazen. wachten: ze wachtten.",
+   "compare": "English 'read' and 'waited' differ in form too. Dutch shows the same strong and weak split.",
+   "mistakes": [
+    {
+     "wrong": "Ze lazen de krant terwijl ze wachtten op de trein.",
+     "right": "Ze lazen de krant terwijl ze op de trein wachtten.",
+     "why": "The finite verb goes behind the phrase 'op de trein'."
+    },
+    {
+     "wrong": "Ze lazen de krant terwijl ze op de trein wachtte.",
+     "right": "Ze lazen de krant terwijl ze op de trein wachtten.",
+     "why": "The plural subject needs 'wachtten'. (not \"Ze lazen de krant terwijl ze op de trein wachtte.\", but \"Ze lazen de krant terwijl ze op de trein wachtten.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl ze op de trein wachtten, lazen ze de krant.",
+    "english": "While they waited for the train, they read the paper.",
+    "note": "The terwijl-clause first inverts the main clause to 'lazen ze'."
+   }
+  },
+  "pat-terwijl-24": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The breakfast was in progress when the phone rang; 'aan het ontbijten waren' shows an ongoing action."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl we aan het ontbijten waren",
+     "subject": "we",
+     "finite": "waren",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'we' comes first, then 'aan het ontbijten', and the past form 'waren' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "ging de telefoon",
+     "subject": "de telefoon",
+     "finite": "ging",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'ging' comes first, then the subject 'de telefoon'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "progressive",
+     "text": "aan het ontbijten"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "waren"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "ging"
+    },
+    {
+     "label": "subject",
+     "text": "de telefoon"
+    }
+   ],
+   "meaning": "While we were having breakfast, the phone rang.",
+   "order": "'Aan het + infinitive + zijn' marks an action in progress. 'De telefoon gaat' is the usual way to say a phone rings.",
+   "forms": "zijn: we waren. gaan: de telefoon ging.",
+   "compare": "English 'were having breakfast' uses '-ing'. Dutch uses 'aan het ontbijten zijn'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl we aan het ontbijten waren, de telefoon ging.",
+     "right": "Terwijl we aan het ontbijten waren, ging de telefoon.",
+     "why": "After the terwijl-clause the verb comes first: 'ging de telefoon'."
+    },
+    {
+     "wrong": "Terwijl we waren aan het ontbijten, ging de telefoon.",
+     "right": "Terwijl we aan het ontbijten waren, ging de telefoon.",
+     "why": "The finite verb 'waren' goes to the end. (not \"Terwijl we waren aan het ontbijten, ging de telefoon.\", but \"Terwijl we aan het ontbijten waren, ging de telefoon.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De telefoon ging terwijl we aan het ontbijten waren.",
+    "english": "The phone rang while we were having breakfast.",
+    "note": "With the main clause first there is no inversion. Compare: De telefoon ging terwijl we aan het ontbijten waren."
+   }
+  },
+  "pat-terwijl-25": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A past perfect-like state in the terwijl-clause: the colleagues had already left while she kept working."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij ging door met werken",
+     "subject": "Zij",
+     "finite": "ging",
+     "role": "main clause (the first action)",
+     "why": "Zij is first, so 'ging' is second; the particle 'door' and 'met werken' follow."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl haar collega's al waren vertrokken",
+     "subject": "haar collega's",
+     "finite": "waren",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'haar collega's' comes first, the adverb 'al' follows, and 'waren vertrokken' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "ging"
+    },
+    {
+     "label": "particle",
+     "text": "door"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "met werken"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "haar collega's"
+    },
+    {
+     "label": "adverb",
+     "text": "al"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "waren"
+    },
+    {
+     "label": "past participle",
+     "text": "vertrokken"
+    }
+   ],
+   "meaning": "She kept working while her colleagues had already left.",
+   "order": "'Doorgaan met' splits as 'ging door met'. 'Vertrekken' takes 'zijn' because it is a movement. Read it as \"Zij ging door met werken terwijl haar collega's al waren vertrokken\".",
+   "forms": "doorgaan: ging door. vertrekken: waren vertrokken.",
+   "compare": "English 'had already left' uses 'had'. Dutch uses 'waren vertrokken'. For this card: \"Zij ging door met werken terwijl haar collega's al waren vertrokken\".",
+   "mistakes": [
+    {
+     "wrong": "Zij ging door met werken terwijl haar collega's al hadden vertrokken.",
+     "right": "Zij ging door met werken terwijl haar collega's al waren vertrokken.",
+     "why": "A verb of leaving takes 'zijn': 'waren vertrokken'."
+    },
+    {
+     "wrong": "Zij ging met werken door terwijl haar collega's al waren vertrokken.",
+     "right": "Zij ging door met werken terwijl haar collega's al waren vertrokken.",
+     "why": "The particle 'door' comes right after the finite verb."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl haar collega's al waren vertrokken, ging zij door met werken.",
+    "english": "While her colleagues had already left, she kept working.",
+    "note": "The terwijl-clause first inverts the main clause to 'ging zij'."
+   }
+  },
+  "pat-terwijl-26": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Tidying the room and drying the dishes are shared; 'opruimen' splits and 'afdroogt' stays joined."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik ruim de kamer op",
+     "subject": "Ik",
+     "finite": "ruim",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so 'ruim' is second; the particle 'op' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl jij de afwas afdroogt",
+     "subject": "jij",
+     "finite": "afdroogt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'jij' comes first, then the object 'de afwas', and the joined verb 'afdroogt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "ruim"
+    },
+    {
+     "label": "object",
+     "text": "de kamer"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "object",
+     "text": "de afwas"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "afdroogt"
+    }
+   ],
+   "meaning": "I tidy the room while you dry the dishes.",
+   "order": "Two separable verbs in one sentence: the main clause splits 'ruim ... op', the terwijl-clause joins 'afdroogt'.",
+   "forms": "opruimen: ruim ... op. afdrogen: droogt af / afdroogt.",
+   "compare": "English 'dry the dishes' needs no particle. Dutch uses 'afdrogen'. For this card: \"Ik ruim de kamer op terwijl jij de afwas afdroogt\".",
+   "mistakes": [
+    {
+     "wrong": "Ik opruim de kamer terwijl jij de afwas afdroogt.",
+     "right": "Ik ruim de kamer op terwijl jij de afwas afdroogt.",
+     "why": "In a main clause the separable verb splits: 'ruim ... op'."
+    },
+    {
+     "wrong": "Ik ruim de kamer op terwijl jij de afwas droogt af.",
+     "right": "Ik ruim de kamer op terwijl jij de afwas afdroogt.",
+     "why": "In the terwijl-clause the verb is joined: 'afdroogt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl jij de afwas afdroogt, ruim ik de kamer op.",
+    "english": "While you dry the dishes, I tidy the room.",
+    "note": "The terwijl-clause first inverts the main clause to 'ruim ik'."
+   }
+  },
+  "pat-terwijl-27": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "While one person phones, the other prepares; the first clause has a joined verb and the main clause a split one."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl zij de gasten opbelt",
+     "subject": "zij",
+     "finite": "opbelt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'zij' comes first, then the object 'de gasten', and the joined verb 'opbelt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "zet hij de tafel klaar",
+     "subject": "hij",
+     "finite": "zet",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'zet' comes first, then the subject 'hij' and the object 'de tafel'; the particle 'klaar' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "zij"
+    },
+    {
+     "label": "object",
+     "text": "de gasten"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "opbelt"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "zet"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "de tafel"
+    },
+    {
+     "label": "particle",
+     "text": "klaar"
+    }
+   ],
+   "meaning": "While she phones the guests, he sets the table.",
+   "order": "'Opbellen' joins at the end of the terwijl-clause. 'Klaarzetten' splits: 'zet ... klaar'. Read it as \"Terwijl zij de gasten opbelt, zet hij de tafel klaar\".",
+   "forms": "opbellen: belt op / opbelt. klaarzetten: zet ... klaar.",
+   "compare": "English 'sets the table' has no particle. Dutch uses 'klaarzetten' with the particle at the end.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl zij de gasten belt op, zet hij de tafel klaar.",
+     "right": "Terwijl zij de gasten opbelt, zet hij de tafel klaar.",
+     "why": "In the terwijl-clause the verb is joined: 'opbelt'."
+    },
+    {
+     "wrong": "Terwijl zij de gasten opbelt, hij zet de tafel klaar.",
+     "right": "Terwijl zij de gasten opbelt, zet hij de tafel klaar.",
+     "why": "The main clause starts with the verb: 'zet hij'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij zet de tafel klaar terwijl zij de gasten opbelt.",
+    "english": "He sets the table while she phones the guests.",
+    "note": "With the main clause first there is no inversion. Compare: Hij zet de tafel klaar terwijl zij de gasten opbelt."
+   }
+  },
+  "pat-terwijl-28": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Writing down the words happens during the teacher's pronouncing; both verbs are separable."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij schrijft de woorden op",
+     "subject": "Hij",
+     "finite": "schrijft",
+     "role": "main clause (the first action)",
+     "why": "Hij is first, so 'schrijft' is second; the particle 'op' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de docent ze uitspreekt",
+     "subject": "de docent",
+     "finite": "uitspreekt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de docent' comes first, then the object 'ze', and the joined verb 'uitspreekt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "schrijft"
+    },
+    {
+     "label": "object",
+     "text": "de woorden"
+    },
+    {
+     "label": "particle",
+     "text": "op"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de docent"
+    },
+    {
+     "label": "object",
+     "text": "ze"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "uitspreekt"
+    }
+   ],
+   "meaning": "He writes the words down while the teacher pronounces them.",
+   "order": "'Opschrijven' splits in the main clause, 'uitspreken' joins in the terwijl-clause. The pronoun 'ze' stands for 'de woorden'.",
+   "forms": "opschrijven: schrijft ... op. uitspreken: spreekt uit / uitspreekt.",
+   "compare": "English 'writes down' and 'pronounces' are different kinds of verb. Dutch treats both as separable here.",
+   "mistakes": [
+    {
+     "wrong": "Hij schrijft de woorden op terwijl de docent spreekt ze uit.",
+     "right": "Hij schrijft de woorden op terwijl de docent ze uitspreekt.",
+     "why": "In the terwijl-clause the verb is joined: 'uitspreekt'."
+    },
+    {
+     "wrong": "Hij opschrijft de woorden terwijl de docent ze uitspreekt.",
+     "right": "Hij schrijft de woorden op terwijl de docent ze uitspreekt.",
+     "why": "In a main clause the separable verb splits."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de docent ze uitspreekt, schrijft hij de woorden op.",
+    "english": "While the teacher pronounces them, he writes the words down.",
+    "note": "The terwijl-clause first inverts the main clause to 'schrijft hij'."
+   }
+  },
+  "pat-terwijl-29": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Packing and checking the route divide the preparation; 'inpak' is joined and 'kijkt ... na' splits."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl ik de koffer inpak",
+     "subject": "ik",
+     "finite": "inpak",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, then the object 'de koffer', and the joined verb 'inpak' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kijkt mijn zus de route na",
+     "subject": "mijn zus",
+     "finite": "kijkt",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'kijkt' comes first, then the subject 'mijn zus' and the object 'de route'; the particle 'na' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de koffer"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "inpak"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "kijkt"
+    },
+    {
+     "label": "subject",
+     "text": "mijn zus"
+    },
+    {
+     "label": "object",
+     "text": "de route"
+    },
+    {
+     "label": "particle",
+     "text": "na"
+    }
+   ],
+   "meaning": "While I pack the suitcase, my sister checks the route.",
+   "order": "'Nakijken' means to check; it splits in the main clause with 'na' at the end. Read it as \"Terwijl ik de koffer inpak, kijkt mijn zus de route na\".",
+   "forms": "inpakken: pak in / inpak. nakijken: kijkt ... na.",
+   "compare": "English 'checks the route' is a single verb. Dutch uses 'nakijken'. For this card: \"Terwijl ik de koffer inpak, kijkt mijn zus de route na\".",
+   "mistakes": [
+    {
+     "wrong": "Terwijl ik de koffer pak in, kijkt mijn zus de route na.",
+     "right": "Terwijl ik de koffer inpak, kijkt mijn zus de route na.",
+     "why": "In the terwijl-clause the verb is joined: 'inpak'."
+    },
+    {
+     "wrong": "Terwijl ik de koffer inpak, kijkt mijn zus na de route.",
+     "right": "Terwijl ik de koffer inpak, kijkt mijn zus de route na.",
+     "why": "The particle 'na' goes to the end of the main clause."
+    }
+   ],
+   "contrast": {
+    "dutch": "Mijn zus kijkt de route na terwijl ik de koffer inpak.",
+    "english": "My sister checks the route while I pack the suitcase.",
+    "note": "With the main clause first there is no inversion. Compare: Mijn zus kijkt de route na terwijl ik de koffer inpak."
+   }
+  },
+  "pat-terwijl-30": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A passive in the main clause: the cleaning is done while the children are away."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De vloer wordt schoongemaakt",
+     "subject": "De vloer",
+     "finite": "wordt",
+     "role": "main clause (the first action)",
+     "why": "'De vloer' is first, so the passive auxiliary 'wordt' is second; the participle 'schoongemaakt' ends the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de kinderen op school zijn",
+     "subject": "de kinderen",
+     "finite": "zijn",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de kinderen' comes first, the place 'op school' follows, and the plural 'zijn' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De vloer"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "wordt"
+    },
+    {
+     "label": "past participle",
+     "text": "schoongemaakt"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de kinderen"
+    },
+    {
+     "label": "place",
+     "text": "op school"
+    },
+    {
+     "label": "finite verb",
+     "text": "zijn"
+    }
+   ],
+   "meaning": "The floor is cleaned while the children are at school.",
+   "order": "The passive hides the cleaner; the floor is the subject. The terwijl-clause names the time frame. Read it as \"De vloer wordt schoongemaakt terwijl de kinderen op school zijn\".",
+   "forms": "worden: de vloer wordt. zijn: de kinderen zijn.",
+   "compare": "English 'is cleaned' and 'are at school' are similar. Dutch puts 'zijn' last.",
+   "mistakes": [
+    {
+     "wrong": "De vloer wordt schoongemaakt terwijl de kinderen zijn op school.",
+     "right": "De vloer wordt schoongemaakt terwijl de kinderen op school zijn.",
+     "why": "The finite verb 'zijn' goes behind the place phrase."
+    },
+    {
+     "wrong": "De vloer worden schoongemaakt terwijl de kinderen op school zijn.",
+     "right": "De vloer wordt schoongemaakt terwijl de kinderen op school zijn.",
+     "why": "The singular subject needs 'wordt'. (not \"De vloer worden schoongemaakt terwijl de kinderen op school zijn.\", but \"De vloer wordt schoongemaakt terwijl de kinderen op school zijn.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de kinderen op school zijn, wordt de vloer schoongemaakt.",
+    "english": "While the children are at school, the floor is cleaned.",
+    "note": "The terwijl-clause first inverts the main clause to 'wordt de vloer'."
+   }
+  },
+  "pat-terwijl-31": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The test of the new app runs in the same period as the old app's activity; the passive group closes the first clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl de nieuwe app wordt getest",
+     "subject": "de nieuwe app",
+     "finite": "wordt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de nieuwe app' comes first and the passive group 'wordt getest' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijft de oude actief",
+     "subject": "de oude",
+     "finite": "blijft",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'blijft' comes first, then the subject 'de oude' (app) and the predicate 'actief'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de nieuwe app"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "wordt"
+    },
+    {
+     "label": "past participle",
+     "text": "getest"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "de oude"
+    },
+    {
+     "label": "predicate",
+     "text": "actief"
+    }
+   ],
+   "meaning": "While the new app is being tested, the old one stays active.",
+   "order": "'De oude' stands for 'de oude app' and 'blijven' links the subject to the predicate 'actief'. The main clause inverts.",
+   "forms": "worden: de app wordt. blijven: de oude blijft.",
+   "compare": "English 'While the new app is being tested' uses 'being'. Dutch uses 'wordt getest'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl de nieuwe app getest wordt wordt, blijft de oude actief.",
+     "right": "Terwijl de nieuwe app wordt getest, blijft de oude actief.",
+     "why": "The passive needs one 'wordt'. (not \"Terwijl de nieuwe app getest wordt wordt, blijft de oude actief.\", but \"Terwijl de nieuwe app wordt getest, blijft de oude actief.\")"
+    },
+    {
+     "wrong": "Terwijl de nieuwe app wordt getest, de oude blijft actief.",
+     "right": "Terwijl de nieuwe app wordt getest, blijft de oude actief.",
+     "why": "The main clause starts with the verb: 'blijft de oude'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De oude app blijft actief terwijl de nieuwe wordt getest.",
+    "english": "The old app stays active while the new one is tested.",
+    "note": "With the main clause first there is no inversion. Compare: De oude app blijft actief terwijl de nieuwe wordt getest."
+   }
+  },
+  "pat-terwijl-32": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = whereas (contrast)",
+    "why": "Here 'terwijl' contrasts two tastes instead of linking two moments; the verbs behave the same."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Mijn zus houdt van koffie",
+     "subject": "Mijn zus",
+     "finite": "houdt",
+     "role": "main clause (the first action)",
+     "why": "'Mijn zus' is first, so 'houdt' is second; 'van koffie' follows as the phrase of 'houden van'."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ik liever thee drink",
+     "subject": "ik",
+     "finite": "drink",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, the adverb 'liever' and the object 'thee' follow, and the finite verb 'drink' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Mijn zus"
+    },
+    {
+     "label": "finite verb",
+     "text": "houdt"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "van koffie"
+    },
+    {
+     "label": "conjunction (whereas)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "liever"
+    },
+    {
+     "label": "object",
+     "text": "thee"
+    },
+    {
+     "label": "finite verb",
+     "text": "drink"
+    }
+   ],
+   "meaning": "My sister likes coffee, whereas I prefer tea.",
+   "order": "A comma before 'terwijl' signals contrast. 'Liever' marks the preference; the finite verb 'drink' is last. Read it as \"Mijn zus houdt van koffie, terwijl ik liever thee drink\".",
+   "forms": "houden: mijn zus houdt. drinken: ik drink.",
+   "compare": "English 'whereas I prefer' uses 'prefer'. Dutch uses 'liever' with 'drinken'.",
+   "mistakes": [
+    {
+     "wrong": "Mijn zus houdt van koffie, terwijl ik drink liever thee.",
+     "right": "Mijn zus houdt van koffie, terwijl ik liever thee drink.",
+     "why": "The finite verb goes to the end of the terwijl-clause. (not \"Mijn zus houdt van koffie, terwijl ik drink liever thee.\", but \"Mijn zus houdt van koffie, terwijl ik liever thee drink.\")"
+    },
+    {
+     "wrong": "Mijn zus houd van koffie, terwijl ik liever thee drink.",
+     "right": "Mijn zus houdt van koffie, terwijl ik liever thee drink.",
+     "why": "The singular subject needs 'houdt'. (not \"Mijn zus houd van koffie, terwijl ik liever thee drink.\", but \"Mijn zus houdt van koffie, terwijl ik liever thee drink.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl mijn zus van koffie houdt, drink ik liever thee.",
+    "english": "While my sister likes coffee, I prefer tea.",
+    "note": "With the terwijl-clause first, the main clause inverts to 'drink ik'."
+   }
+  },
+  "pat-terwijl-33": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = whereas (contrast)",
+    "why": "The comma and the content show contrast: one brother works, the other lies down."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Hij werkt hard",
+     "subject": "Hij",
+     "finite": "werkt",
+     "role": "main clause (the first action)",
+     "why": "Hij is first, so 'werkt' is second and the adverb 'hard' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl zijn broer de hele dag op de bank ligt",
+     "subject": "zijn broer",
+     "finite": "ligt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'zijn broer' comes first, then the time and the place, and the finite verb 'ligt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    },
+    {
+     "label": "adverb",
+     "text": "hard"
+    },
+    {
+     "label": "conjunction (whereas)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "zijn broer"
+    },
+    {
+     "label": "time",
+     "text": "de hele dag"
+    },
+    {
+     "label": "place",
+     "text": "op de bank"
+    },
+    {
+     "label": "finite verb",
+     "text": "ligt"
+    }
+   ],
+   "meaning": "He works hard, whereas his brother lies on the sofa all day.",
+   "order": "The two brothers are compared. The time phrase 'de hele dag' and the place stand before the final 'ligt'. Read it as \"Hij werkt hard, terwijl zijn broer de hele dag op de bank ligt\".",
+   "forms": "werken: hij werkt. liggen: zijn broer ligt.",
+   "compare": "English 'lies on the sofa' uses 'lies'. Dutch uses 'liggen' for something that lies flat.",
+   "mistakes": [
+    {
+     "wrong": "Hij werkt hard, terwijl zijn broer de hele dag ligt op de bank.",
+     "right": "Hij werkt hard, terwijl zijn broer de hele dag op de bank ligt.",
+     "why": "The finite verb goes behind the place phrase."
+    },
+    {
+     "wrong": "Hij werkt hard, terwijl zijn broer de hele dag op de bank liggen.",
+     "right": "Hij werkt hard, terwijl zijn broer de hele dag op de bank ligt.",
+     "why": "The singular subject needs 'ligt'. (not \"Hij werkt hard, terwijl zijn broer de hele dag op de bank liggen.\", but \"Hij werkt hard, terwijl zijn broer de hele dag op de bank ligt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl zijn broer de hele dag op de bank ligt, werkt hij hard.",
+    "english": "While his brother lies on the sofa all day, he works hard.",
+    "note": "The terwijl-clause first inverts the main clause to 'werkt hij'."
+   }
+  },
+  "pat-terwijl-34": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = whereas (contrast)",
+    "why": "Two regions are compared at one moment; 'terwijl' sets them against each other."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl het in het noorden sneeuwt",
+     "subject": "het",
+     "finite": "sneeuwt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The dummy subject 'het' comes first, the place 'in het noorden' follows, and the finite verb 'sneeuwt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "is het in het zuiden zonnig",
+     "subject": "het",
+     "finite": "is",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'is' comes first, then the subject 'het', the place 'in het zuiden' and the predicate 'zonnig'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (whereas)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject (dummy)",
+     "text": "het"
+    },
+    {
+     "label": "place",
+     "text": "in het noorden"
+    },
+    {
+     "label": "finite verb",
+     "text": "sneeuwt"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "place",
+     "text": "in het zuiden"
+    },
+    {
+     "label": "predicate",
+     "text": "zonnig"
+    }
+   ],
+   "meaning": "While it snows in the north, it is sunny in the south.",
+   "order": "Both clauses use the dummy subject 'het' for the weather. The main clause inverts to 'is het'. Read it as \"Terwijl het in het noorden sneeuwt, is het in het zuiden zonnig\".",
+   "forms": "sneeuwen: het sneeuwt. zijn: het is.",
+   "compare": "English 'While it snows in the north' keeps 'snows' next to 'it'. Dutch puts 'sneeuwt' after the place.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl het sneeuwt in het noorden, is het in het zuiden zonnig.",
+     "right": "Terwijl het in het noorden sneeuwt, is het in het zuiden zonnig.",
+     "why": "The finite verb goes behind the place phrase. (not \"Terwijl het sneeuwt in het noorden, is het in het zuiden zonnig.\", but \"Terwijl het in het noorden sneeuwt, is het in het zuiden zonnig.\")"
+    },
+    {
+     "wrong": "Terwijl het in het noorden sneeuwt, het is in het zuiden zonnig.",
+     "right": "Terwijl het in het noorden sneeuwt, is het in het zuiden zonnig.",
+     "why": "The main clause starts with the verb: 'is het'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Het is in het zuiden zonnig terwijl het in het noorden sneeuwt.",
+    "english": "It is sunny in the south while it snows in the north.",
+    "note": "With the main clause first there is no inversion. Compare: Het is in het zuiden zonnig terwijl het in het noorden sneeuwt."
+   }
+  },
+  "pat-terwijl-35": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = whereas (contrast)",
+    "why": "The full shop is set against the empty street; the verb 'is' ends each clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De winkel is vol",
+     "subject": "De winkel",
+     "finite": "is",
+     "role": "main clause (the first action)",
+     "why": "'De winkel' is first, so 'is' is second and the predicate 'vol' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de straat verder leeg is",
+     "subject": "de straat",
+     "finite": "is",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de straat' comes first, then 'verder' and the predicate 'leeg', and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De winkel"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    },
+    {
+     "label": "predicate",
+     "text": "vol"
+    },
+    {
+     "label": "conjunction (whereas)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de straat"
+    },
+    {
+     "label": "adverb",
+     "text": "verder"
+    },
+    {
+     "label": "predicate",
+     "text": "leeg"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "The shop is full, whereas the rest of the street is empty.",
+   "order": "'Verder' here means 'for the rest'. The predicate 'leeg' stands before the final 'is'. Read it as \"De winkel is vol, terwijl de straat verder leeg is\".",
+   "forms": "zijn: de winkel is. zijn: de straat is.",
+   "compare": "English 'whereas the rest of the street is empty' keeps 'is' before 'empty'. Dutch puts 'is' last.",
+   "mistakes": [
+    {
+     "wrong": "De winkel is vol, terwijl de straat verder is leeg.",
+     "right": "De winkel is vol, terwijl de straat verder leeg is.",
+     "why": "The finite verb 'is' goes behind the predicate 'leeg'."
+    },
+    {
+     "wrong": "De winkel is vol, terwijl de straat verder leeg zijn.",
+     "right": "De winkel is vol, terwijl de straat verder leeg is.",
+     "why": "The singular subject needs 'is'. (not \"De winkel is vol, terwijl de straat verder leeg zijn.\", but \"De winkel is vol, terwijl de straat verder leeg is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de straat verder leeg is, is de winkel vol.",
+    "english": "While the rest of the street is empty, the shop is full.",
+    "note": "The terwijl-clause first inverts the main clause to 'is de winkel'."
+   }
+  },
+  "pat-terwijl-36": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = even though (concession)",
+    "why": "The terwijl-clause names a fact that does not fit the main clause: a high rent for a small flat."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik betaal veel huur",
+     "subject": "Ik",
+     "finite": "betaal",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so 'betaal' is second and the object 'veel huur' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de flat erg klein is",
+     "subject": "de flat",
+     "finite": "is",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de flat' comes first, then 'erg klein', and the finite verb 'is' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "betaal"
+    },
+    {
+     "label": "object",
+     "text": "veel huur"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de flat"
+    },
+    {
+     "label": "adverb",
+     "text": "erg"
+    },
+    {
+     "label": "predicate",
+     "text": "klein"
+    },
+    {
+     "label": "finite verb",
+     "text": "is"
+    }
+   ],
+   "meaning": "I pay a lot of rent, even though the flat is very small.",
+   "order": "The clause explains why the situation is surprising, not when it takes place. This use needs a comma before 'terwijl'.",
+   "forms": "betalen: ik betaal. zijn: de flat is.",
+   "compare": "English 'even though the flat is small' uses 'even though'. Dutch uses 'terwijl' here.",
+   "mistakes": [
+    {
+     "wrong": "Ik betaal veel huur, terwijl de flat is erg klein.",
+     "right": "Ik betaal veel huur, terwijl de flat erg klein is.",
+     "why": "The finite verb 'is' goes behind the predicate."
+    },
+    {
+     "wrong": "Ik betaalt veel huur, terwijl de flat erg klein is.",
+     "right": "Ik betaal veel huur, terwijl de flat erg klein is.",
+     "why": "With 'ik' the verb has no -t: 'betaal'. (not \"Ik betaalt veel huur, terwijl de flat erg klein is.\", but \"Ik betaal veel huur, terwijl de flat erg klein is.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik betaal veel huur, hoewel de flat erg klein is.",
+    "english": "I pay a lot of rent, although the flat is very small.",
+    "note": "'Hoewel' also expresses concession; it has the same verb order."
+   }
+  },
+  "pat-terwijl-37": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = whereas (contrast)",
+    "why": "The groups are contrasted: we pay, he receives the benefit."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl wij de rekening betalen",
+     "subject": "wij",
+     "finite": "betalen",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'wij' comes first, then the object 'de rekening', and the plural 'betalen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "krijgt hij de korting",
+     "subject": "hij",
+     "finite": "krijgt",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'krijgt' comes first, then the subject 'hij' and the object 'de korting'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (whereas)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "object",
+     "text": "de rekening"
+    },
+    {
+     "label": "finite verb",
+     "text": "betalen"
+    },
+    {
+     "label": "finite verb",
+     "text": "krijgt"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "de korting"
+    }
+   ],
+   "meaning": "While we pay the bill, he gets the discount.",
+   "order": "The contrast is in the content: payers versus receiver. The main clause inverts after the terwijl-clause. Read it as \"Terwijl wij de rekening betalen, krijgt hij de korting\".",
+   "forms": "betalen: wij betalen. krijgen: hij krijgt.",
+   "compare": "English 'While we pay the bill, he gets the discount' keeps 'he gets'. Dutch inverts to 'krijgt hij'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl wij de rekening betalen, hij krijgt de korting.",
+     "right": "Terwijl wij de rekening betalen, krijgt hij de korting.",
+     "why": "The main clause starts with the verb: 'krijgt hij'."
+    },
+    {
+     "wrong": "Terwijl wij de rekening betaalt, krijgt hij de korting.",
+     "right": "Terwijl wij de rekening betalen, krijgt hij de korting.",
+     "why": "The plural 'wij' needs 'betalen'. (not \"Terwijl wij de rekening betaalt, krijgt hij de korting.\", but \"Terwijl wij de rekening betalen, krijgt hij de korting.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Hij krijgt de korting terwijl wij de rekening betalen.",
+    "english": "He gets the discount while we pay the bill.",
+    "note": "With the main clause first there is no inversion. Compare: Hij krijgt de korting terwijl wij de rekening betalen."
+   }
+  },
+  "pat-terwijl-38": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = even though (concession)",
+    "why": "The modal 'moet' ends the clause: she has to go, yet she stays."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij blijft thuis",
+     "subject": "Zij",
+     "finite": "blijft",
+     "role": "main clause (the first action)",
+     "why": "Zij is first, so 'blijft' is second and the adverb 'thuis' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ze eigenlijk naar de dokter moet",
+     "subject": "ze",
+     "finite": "moet",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ze' comes first, then 'eigenlijk' and 'naar de dokter', and the modal 'moet' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "adverb",
+     "text": "thuis"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "adverb",
+     "text": "eigenlijk"
+    },
+    {
+     "label": "direction",
+     "text": "naar de dokter"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "moet"
+    }
+   ],
+   "meaning": "She stays at home, even though she really has to go to the doctor.",
+   "order": "With 'moeten' the verb of motion can be left out: 'naar de dokter moet' means 'has to go to the doctor'. Read it as \"Zij blijft thuis, terwijl ze eigenlijk naar de dokter moet\".",
+   "forms": "blijven: zij blijft. moeten: ze moet.",
+   "compare": "English 'has to go' needs a verb of motion. Dutch can leave it out after 'moet'.",
+   "mistakes": [
+    {
+     "wrong": "Zij blijft thuis, terwijl ze eigenlijk moet naar de dokter.",
+     "right": "Zij blijft thuis, terwijl ze eigenlijk naar de dokter moet.",
+     "why": "The modal 'moet' goes to the end of the clause."
+    },
+    {
+     "wrong": "Zij blijft thuis, terwijl ze eigenlijk naar de dokter moeten.",
+     "right": "Zij blijft thuis, terwijl ze eigenlijk naar de dokter moet.",
+     "why": "With 'ze' meaning 'she' the modal is 'moet'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl ze eigenlijk naar de dokter moet, blijft zij thuis.",
+    "english": "Even though she really has to go to the doctor, she stays at home.",
+    "note": "The terwijl-clause first inverts the main clause. Compare: Terwijl ze eigenlijk naar de dokter moet, blijft zij thuis."
+   }
+  },
+  "pat-terwijl-39": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = even though (concession)",
+    "why": "The clause with 'terwijl' exposes an inconsistency: the diary has just been filled."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Je zegt dat je tijd hebt",
+     "subject": "Je",
+     "finite": "zegt",
+     "role": "main clause (the first action)",
+     "why": "'Je' is first, so 'zegt' is second; the content clause 'dat je tijd hebt' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl je je agenda net vol hebt gezet",
+     "subject": "je",
+     "finite": "hebt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'je' comes first, then the object 'je agenda', the adverb 'net' and the predicate 'vol', and the perfect group 'hebt gezet' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Je"
+    },
+    {
+     "label": "finite verb",
+     "text": "zegt"
+    },
+    {
+     "label": "content clause",
+     "text": "dat je tijd hebt"
+    },
+    {
+     "label": "conjunction (even though)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "object",
+     "text": "je agenda"
+    },
+    {
+     "label": "adverb",
+     "text": "net"
+    },
+    {
+     "label": "predicate",
+     "text": "vol"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "hebt"
+    },
+    {
+     "label": "past participle",
+     "text": "gezet"
+    }
+   ],
+   "meaning": "You say you have time, even though you have just filled your diary.",
+   "order": "The sentence contains two dependent clauses: 'dat je tijd hebt' and the terwijl-clause. Each sends its verb to the end.",
+   "forms": "zeggen: je zegt. hebben: je hebt. zetten: hebt gezet.",
+   "compare": "English 'you have just filled your diary' keeps 'have' before the object. Dutch puts 'hebt gezet' last.",
+   "mistakes": [
+    {
+     "wrong": "Je zegt dat je tijd hebt, terwijl je je agenda net hebt vol gezet.",
+     "right": "Je zegt dat je tijd hebt, terwijl je je agenda net vol hebt gezet.",
+     "why": "The predicate 'vol' goes before the perfect group."
+    },
+    {
+     "wrong": "Je zegt dat je tijd hebt, terwijl je je agenda net vol zet hebt.",
+     "right": "Je zegt dat je tijd hebt, terwijl je je agenda net vol hebt gezet.",
+     "why": "The participle 'gezet' comes after the auxiliary."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl je je agenda net vol hebt gezet, zeg je dat je tijd hebt.",
+    "english": "Even though you have just filled your diary, you say that you have time.",
+    "note": "The terwijl-clause first inverts the main clause to 'zeg je'."
+   }
+  },
+  "pat-terwijl-40": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A direct question whose second part names a parallel event; the question word starts the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Wat doe je",
+     "subject": "je",
+     "finite": "doe",
+     "role": "main clause (the question)",
+     "why": "The question word 'Wat' is first, so 'doe' is second and the subject 'je' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl het systeem opstart",
+     "subject": "het systeem",
+     "finite": "opstart",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'het systeem' comes first and the joined separable verb 'opstart' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "question word",
+     "text": "Wat"
+    },
+    {
+     "label": "finite verb",
+     "text": "doe"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "het systeem"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "opstart"
+    }
+   ],
+   "meaning": "What do you do while the system starts up?",
+   "order": "A question with 'wat' puts the verb second. The terwijl-clause behind it works as a time frame. Read it as \"Wat doe je terwijl het systeem opstart\".",
+   "forms": "doen: je doet / doe je. opstarten: start op / opstart.",
+   "compare": "English 'What do you do while the system starts?' needs 'do' twice. Dutch uses 'doen' once.",
+   "mistakes": [
+    {
+     "wrong": "Wat je doet terwijl het systeem opstart?",
+     "right": "Wat doe je terwijl het systeem opstart?",
+     "why": "A direct question needs the verb in second position: 'Wat doe je'."
+    },
+    {
+     "wrong": "Wat doe je terwijl het systeem start op?",
+     "right": "Wat doe je terwijl het systeem opstart?",
+     "why": "In the terwijl-clause the separable verb is joined."
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik weet niet wat je doet terwijl het systeem opstart.",
+    "english": "I don't know what you do while the system starts up.",
+    "note": "In an indirect question 'doet' goes to the end of its clause."
+   }
+  },
+  "pat-terwijl-41": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A yes/no question: the modal opens the clause and the terwijl-clause names the parallel activity."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Kun je praten",
+     "subject": "je",
+     "finite": "Kun",
+     "role": "main clause (the question)",
+     "why": "A yes/no question starts with the finite verb 'Kun', then the subject 'je'; the infinitive 'praten' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl je loopt",
+     "subject": "je",
+     "finite": "loopt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'je' comes first and the finite verb 'loopt' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb (modal)",
+     "text": "Kun"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "infinitive",
+     "text": "praten"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "finite verb",
+     "text": "loopt"
+    }
+   ],
+   "meaning": "Can you talk while you walk?",
+   "order": "The modal chain 'kun ... praten' stays in the main question. The terwijl-clause keeps the verb last. Read it as \"Kun je praten terwijl je loopt\".",
+   "forms": "kunnen: kun je. praten: infinitive. lopen: je loopt.",
+   "compare": "English 'Can you talk while you walk?' has the same logic. Dutch moves 'loopt' to the end of its clause only.",
+   "mistakes": [
+    {
+     "wrong": "Kun je praten terwijl loop je?",
+     "right": "Kun je praten terwijl je loopt?",
+     "why": "In the terwijl-clause the subject comes before the verb. (not \"Kun je praten terwijl loop je?\", but \"Kun je praten terwijl je loopt?\")"
+    },
+    {
+     "wrong": "Kun je praten terwijl je loop?",
+     "right": "Kun je praten terwijl je loopt?",
+     "why": "With 'je' the verb needs -t: 'loopt'. (not \"Kun je praten terwijl je loop?\", but \"Kun je praten terwijl je loopt?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Je kunt praten terwijl je loopt.",
+    "english": "You can talk while you walk.",
+    "note": "A statement has the subject first; the question inverts to 'Kun je'."
+   }
+  },
+  "pat-terwijl-42": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "An indirect question inside a main-clause question, followed by a terwijl-clause for the parallel moment."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Weet je wat hij doet",
+     "subject": "je",
+     "finite": "Weet",
+     "role": "main clause (the question)",
+     "why": "The question starts with the finite verb 'Weet', then 'je'; the embedded question 'wat hij doet' ends with its own verb."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl wij vergaderen",
+     "subject": "wij",
+     "finite": "vergaderen",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'wij' comes first and the plural verb 'vergaderen' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "finite verb",
+     "text": "Weet"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "question word",
+     "text": "wat"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "finite verb",
+     "text": "doet"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "wij"
+    },
+    {
+     "label": "finite verb",
+     "text": "vergaderen"
+    }
+   ],
+   "meaning": "Do you know what he does while we have our meeting?",
+   "order": "Two dependent verbs end their own parts: 'doet' closes the embedded question and 'vergaderen' the terwijl-clause.",
+   "forms": "weten: je weet. doen: hij doet. vergaderen: wij vergaderen.",
+   "compare": "English 'Do you know what he does while we meet?' uses 'do' twice. Dutch uses 'Weet je' and 'doet'.",
+   "mistakes": [
+    {
+     "wrong": "Weet je wat doet hij terwijl wij vergaderen?",
+     "right": "Weet je wat hij doet terwijl wij vergaderen?",
+     "why": "In an embedded question the subject comes before the verb: 'wat hij doet'."
+    },
+    {
+     "wrong": "Weet je wat hij doet terwijl wij vergadert?",
+     "right": "Weet je wat hij doet terwijl wij vergaderen?",
+     "why": "The plural 'wij' needs 'vergaderen'. (not \"Weet je wat hij doet terwijl wij vergadert?\", but \"Weet je wat hij doet terwijl wij vergaderen?\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Wat doet hij terwijl wij vergaderen?",
+    "english": "What does he do while we have our meeting?",
+    "note": "A direct question puts the verb right behind 'wat': 'doet hij'."
+   }
+  },
+  "pat-terwijl-43": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A direct why-question with a terwijl-clause that names the serious moment."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Waarom lach je",
+     "subject": "je",
+     "finite": "lach",
+     "role": "main clause (the question)",
+     "why": "The question word 'Waarom' is first, so 'lach' is second and the subject 'je' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ik serieus praat",
+     "subject": "ik",
+     "finite": "praat",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, the adverb 'serieus' follows, and the finite verb 'praat' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "question word",
+     "text": "Waarom"
+    },
+    {
+     "label": "finite verb",
+     "text": "lach"
+    },
+    {
+     "label": "subject",
+     "text": "je"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "adverb",
+     "text": "serieus"
+    },
+    {
+     "label": "finite verb",
+     "text": "praat"
+    }
+   ],
+   "meaning": "Why are you laughing while I am talking seriously?",
+   "order": "A question with a question word keeps the verb second. The terwijl-clause behind it sends its verb last. Read it as \"Waarom lach je terwijl ik serieus praat\".",
+   "forms": "lachen: je lacht / lach je. praten: ik praat.",
+   "compare": "English 'Why are you laughing' uses the progressive. Dutch uses the simple present.",
+   "mistakes": [
+    {
+     "wrong": "Waarom je lach terwijl ik serieus praat?",
+     "right": "Waarom lach je terwijl ik serieus praat?",
+     "why": "The verb comes second in the question: 'lach je'."
+    },
+    {
+     "wrong": "Waarom lach je terwijl ik praat serieus?",
+     "right": "Waarom lach je terwijl ik serieus praat?",
+     "why": "The finite verb goes behind the adverb 'serieus'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Je lacht terwijl ik serieus praat.",
+    "english": "You laugh while I talk seriously.",
+    "note": "A statement has the subject first. Compare: Je lacht terwijl ik serieus praat."
+   }
+  },
+  "pat-terwijl-44": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The negation 'niet' belongs to the main clause; the neighbours' party makes sleep impossible."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kan niet slapen",
+     "subject": "Ik",
+     "finite": "kan",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so the modal 'kan' is second; 'niet' and the infinitive 'slapen' follow."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de buren feestvieren",
+     "subject": "de buren",
+     "finite": "feestvieren",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The plural subject 'de buren' comes first and the plural verb 'feestvieren' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (modal)",
+     "text": "kan"
+    },
+    {
+     "label": "negation",
+     "text": "niet"
+    },
+    {
+     "label": "infinitive",
+     "text": "slapen"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de buren"
+    },
+    {
+     "label": "finite verb",
+     "text": "feestvieren"
+    }
+   ],
+   "meaning": "I cannot sleep while the neighbours are partying.",
+   "order": "'Feestvieren' is a compound that behaves like a separable verb in the main clause ('ze vieren feest'), but it is written together in the dependent clause.",
+   "forms": "kunnen: ik kan. slapen: infinitive. feestvieren: de buren vieren feest.",
+   "compare": "English 'are partying' is progressive. Dutch uses the plain present. For this card: \"Ik kan niet slapen terwijl de buren feestvieren\".",
+   "mistakes": [
+    {
+     "wrong": "Ik kan slapen niet terwijl de buren feestvieren.",
+     "right": "Ik kan niet slapen terwijl de buren feestvieren.",
+     "why": "The negation 'niet' stands before the infinitive 'slapen'."
+    },
+    {
+     "wrong": "Ik kan niet slapen terwijl de buren feestviert.",
+     "right": "Ik kan niet slapen terwijl de buren feestvieren.",
+     "why": "The plural subject needs 'feestvieren'. (not \"Ik kan niet slapen terwijl de buren feestviert.\", but \"Ik kan niet slapen terwijl de buren feestvieren.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de buren feestvieren, kan ik niet slapen.",
+    "english": "While the neighbours party, I cannot sleep.",
+    "note": "The terwijl-clause first inverts the main clause to 'kan ik'."
+   }
+  },
+  "pat-terwijl-45": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Silence and attention happen together; the negative 'niets' is the object."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl hij niets zegt",
+     "subject": "hij",
+     "finite": "zegt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'hij' comes first, then the object 'niets', and the finite verb 'zegt' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "kijkt iedereen naar hem",
+     "subject": "iedereen",
+     "finite": "kijkt",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'kijkt' comes first, then the subject 'iedereen' and the phrase 'naar hem'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "niets"
+    },
+    {
+     "label": "finite verb",
+     "text": "zegt"
+    },
+    {
+     "label": "finite verb",
+     "text": "kijkt"
+    },
+    {
+     "label": "subject",
+     "text": "iedereen"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "naar hem"
+    }
+   ],
+   "meaning": "While he says nothing, everyone looks at him.",
+   "order": "'Iedereen' is singular and takes 'kijkt'. The main clause inverts because the terwijl-clause fills position one.",
+   "forms": "zeggen: hij zegt. kijken: iedereen kijkt.",
+   "compare": "English 'looks at him' uses 'at'. Dutch uses 'kijken naar'. For this card: \"Terwijl hij niets zegt, kijkt iedereen naar hem\".",
+   "mistakes": [
+    {
+     "wrong": "Terwijl hij zegt niets, kijkt iedereen naar hem.",
+     "right": "Terwijl hij niets zegt, kijkt iedereen naar hem.",
+     "why": "The finite verb goes behind the object 'niets'."
+    },
+    {
+     "wrong": "Terwijl hij niets zegt, kijken iedereen naar hem.",
+     "right": "Terwijl hij niets zegt, kijkt iedereen naar hem.",
+     "why": "'Iedereen' is singular and takes 'kijkt'."
+    }
+   ],
+   "contrast": {
+    "dutch": "Iedereen kijkt naar hem terwijl hij niets zegt.",
+    "english": "Everyone looks at him while he says nothing.",
+    "note": "With the main clause first there is no inversion. Compare: Iedereen kijkt naar hem terwijl hij niets zegt."
+   }
+  },
+  "pat-terwijl-46": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "tijdens = during (preposition)",
+    "why": "'Tijdens' is a preposition: it takes a noun phrase, so no second verb follows it, unlike 'terwijl'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Tijdens de les schrijft hij aantekeningen",
+     "subject": "hij",
+     "finite": "schrijft",
+     "role": "single main clause",
+     "why": "The phrase 'tijdens de les' is first, so 'schrijft' is second and the subject 'hij' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "preposition (during)",
+     "text": "Tijdens"
+    },
+    {
+     "label": "noun phrase",
+     "text": "de les"
+    },
+    {
+     "label": "finite verb",
+     "text": "schrijft"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "object",
+     "text": "aantekeningen"
+    }
+   ],
+   "meaning": "During the lesson he takes notes.",
+   "order": "One clause only: the preposition and its noun fill position one, so the verb comes before the subject. Read it as \"Tijdens de les schrijft hij aantekeningen\".",
+   "forms": "schrijven: hij schrijft.",
+   "compare": "English 'during the lesson' is also a preposition. Dutch does not add a second verb either.",
+   "mistakes": [
+    {
+     "wrong": "Tijdens de les hij schrijft aantekeningen.",
+     "right": "Tijdens de les schrijft hij aantekeningen.",
+     "why": "After the fronted phrase the verb comes second: 'schrijft hij'."
+    },
+    {
+     "wrong": "Tijdens de les schrijf hij aantekeningen.",
+     "right": "Tijdens de les schrijft hij aantekeningen.",
+     "why": "With 'hij' the verb needs -t. (not \"Tijdens de les schrijf hij aantekeningen.\", but \"Tijdens de les schrijft hij aantekeningen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de docent uitlegt, schrijft hij aantekeningen.",
+    "english": "While the teacher explains, he takes notes.",
+    "note": "With a verb after the time word you need 'terwijl' and a clause."
+   }
+  },
+  "pat-terwijl-47": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "intussen = meanwhile (adverb)",
+    "why": "'Intussen' is an adverb, not a conjunction: it takes position one and the verb follows immediately."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Intussen kijkt de docent de huiswerkopdrachten na",
+     "subject": "de docent",
+     "finite": "kijkt",
+     "role": "single main clause",
+     "why": "The adverb 'intussen' is first, so 'kijkt' is second; the particle 'na' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (meanwhile)",
+     "text": "Intussen"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "kijkt"
+    },
+    {
+     "label": "subject",
+     "text": "de docent"
+    },
+    {
+     "label": "object",
+     "text": "de huiswerkopdrachten"
+    },
+    {
+     "label": "particle",
+     "text": "na"
+    }
+   ],
+   "meaning": "Meanwhile the teacher marks the homework.",
+   "order": "A conjunction would send the verb to the end; an adverb does not. Here the verb stays second and 'nakijken' splits.",
+   "forms": "nakijken: kijkt ... na.",
+   "compare": "English 'meanwhile' is also an adverb. Dutch inverts after it. For this card: \"Intussen kijkt de docent de huiswerkopdrachten na\".",
+   "mistakes": [
+    {
+     "wrong": "Intussen de docent kijkt de huiswerkopdrachten na.",
+     "right": "Intussen kijkt de docent de huiswerkopdrachten na.",
+     "why": "After the adverb the verb comes second: 'kijkt de docent'."
+    },
+    {
+     "wrong": "Intussen nakijkt de docent de huiswerkopdrachten.",
+     "right": "Intussen kijkt de docent de huiswerkopdrachten na.",
+     "why": "In a main clause 'nakijken' splits. (not \"Intussen nakijkt de docent de huiswerkopdrachten.\", but \"Intussen kijkt de docent de huiswerkopdrachten na.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De docent kijkt de huiswerkopdrachten na terwijl de leerlingen werken.",
+    "english": "The teacher marks the homework while the pupils work.",
+    "note": "With 'terwijl' a full clause follows and its verb goes last."
+   }
+  },
+  "pat-terwijl-48": {
+   "status": "ai-editorial-checked",
+   "pattern": "demonstrative",
+   "sense": {
+    "label": "ondertussen = meanwhile (adverb)",
+    "why": "'Ondertussen' is an adverb: the verb follows it directly, with no clause-final verb."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ondertussen wachten de klanten bij de balie",
+     "subject": "de klanten",
+     "finite": "wachten",
+     "role": "single main clause",
+     "why": "The adverb 'ondertussen' is first, so the plural 'wachten' is second and the subject 'de klanten' follows."
+    }
+   ],
+   "parts": [
+    {
+     "label": "adverb (meanwhile)",
+     "text": "Ondertussen"
+    },
+    {
+     "label": "finite verb",
+     "text": "wachten"
+    },
+    {
+     "label": "subject",
+     "text": "de klanten"
+    },
+    {
+     "label": "place",
+     "text": "bij de balie"
+    }
+   ],
+   "meaning": "Meanwhile the customers wait at the counter.",
+   "order": "The adverb fills position one, so the subject follows the verb. The place phrase ends the sentence. Read it as \"Ondertussen wachten de klanten bij de balie\".",
+   "forms": "wachten: de klanten wachten.",
+   "compare": "English 'meanwhile the customers wait' keeps the subject first. Dutch inverts.",
+   "mistakes": [
+    {
+     "wrong": "Ondertussen de klanten wachten bij de balie.",
+     "right": "Ondertussen wachten de klanten bij de balie.",
+     "why": "After the adverb the verb comes second: 'wachten de klanten'."
+    },
+    {
+     "wrong": "Ondertussen wacht de klanten bij de balie.",
+     "right": "Ondertussen wachten de klanten bij de balie.",
+     "why": "The plural subject needs 'wachten'. (not \"Ondertussen wacht de klanten bij de balie.\", but \"Ondertussen wachten de klanten bij de balie.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De klanten wachten bij de balie terwijl de medewerker zoekt.",
+    "english": "The customers wait at the counter while the employee searches.",
+    "note": "With 'terwijl' the second part becomes a clause with a final verb."
+   }
+  },
+  "pat-terwijl-49": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "An imperative followed by a terwijl-clause: the instruction applies for the length of the meeting."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zet je telefoon uit",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Zet",
+     "role": "main clause (the first action)",
+     "why": "An imperative: 'Zet' stands first, the object 'je telefoon' follows, and the particle 'uit' ends the clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl we vergaderen",
+     "subject": "we",
+     "finite": "vergaderen",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'we' comes first and the plural verb 'vergaderen' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb (split separable)",
+     "text": "Zet"
+    },
+    {
+     "label": "object",
+     "text": "je telefoon"
+    },
+    {
+     "label": "particle",
+     "text": "uit"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "we"
+    },
+    {
+     "label": "finite verb",
+     "text": "vergaderen"
+    }
+   ],
+   "meaning": "Turn your phone off while we are in the meeting.",
+   "order": "'Uitzetten' splits in the imperative: 'zet ... uit'. The terwijl-clause gives the period. Read it as \"Zet je telefoon uit terwijl we vergaderen\".",
+   "forms": "uitzetten: zet ... uit. vergaderen: wij vergaderen.",
+   "compare": "English 'Turn your phone off' has the same split. Dutch also separates 'uit'.",
+   "mistakes": [
+    {
+     "wrong": "Zet uit je telefoon terwijl we vergaderen.",
+     "right": "Zet je telefoon uit terwijl we vergaderen.",
+     "why": "The particle 'uit' goes to the end of the imperative."
+    },
+    {
+     "wrong": "Zet je telefoon uit terwijl vergaderen we.",
+     "right": "Zet je telefoon uit terwijl we vergaderen.",
+     "why": "In the terwijl-clause the subject comes before the verb. (not \"Zet je telefoon uit terwijl vergaderen we.\", but \"Zet je telefoon uit terwijl we vergaderen.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl we vergaderen, zet je telefoon uit.",
+    "english": "While we are in the meeting, turn your phone off.",
+    "note": "The terwijl-clause first inverts the imperative too."
+   }
+  },
+  "pat-terwijl-50": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "A calming order that is valid during your explanation; 'uitleg' is the joined separable verb."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Blijf kalm",
+     "subject": "(jij, niet uitgesproken)",
+     "finite": "Blijf",
+     "role": "main clause (the first action)",
+     "why": "An imperative: 'Blijf' stands first and the predicate 'kalm' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ik de situatie uitleg",
+     "subject": "ik",
+     "finite": "uitleg",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, then the object 'de situatie', and the joined verb 'uitleg' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "imperative verb",
+     "text": "Blijf"
+    },
+    {
+     "label": "predicate",
+     "text": "kalm"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de situatie"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "uitleg"
+    }
+   ],
+   "meaning": "Stay calm while I explain the situation.",
+   "order": "'Uitleggen' splits in a main clause ('leg uit') but joins in the terwijl-clause. Read it as \"Blijf kalm terwijl ik de situatie uitleg\".",
+   "forms": "blijven: imperative blijf. uitleggen: leg uit / uitleg.",
+   "compare": "English 'explain' is a single word. Dutch has the separable 'uitleggen'.",
+   "mistakes": [
+    {
+     "wrong": "Blijf kalm terwijl ik leg de situatie uit.",
+     "right": "Blijf kalm terwijl ik de situatie uitleg.",
+     "why": "In the terwijl-clause the separable verb is joined: 'uitleg'."
+    },
+    {
+     "wrong": "Blijf kalm terwijl ik de situatie uitlegt.",
+     "right": "Blijf kalm terwijl ik de situatie uitleg.",
+     "why": "With 'ik' the verb has no -t. (not \"Blijf kalm terwijl ik de situatie uitlegt.\", but \"Blijf kalm terwijl ik de situatie uitleg.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl ik de situatie uitleg, blijf je kalm.",
+    "english": "While I explain the situation, you stay calm.",
+    "note": "The terwijl-clause first inverts the main clause. Compare: Terwijl ik de situatie uitleg, blijf je kalm."
+   }
+  },
+  "pat-terwijl-51": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Watching the news and tidying the desk run together; 'opruim' is joined."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik kijk naar het nieuws",
+     "subject": "Ik",
+     "finite": "kijk",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so 'kijk' is second and the phrase 'naar het nieuws' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ik mijn bureau opruim",
+     "subject": "ik",
+     "finite": "opruim",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ik' comes first, then the object 'mijn bureau', and the joined verb 'opruim' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "kijk"
+    },
+    {
+     "label": "prepositional phrase",
+     "text": "naar het nieuws"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "mijn bureau"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "opruim"
+    }
+   ],
+   "meaning": "I watch the news while I tidy my desk.",
+   "order": "One subject, two activities. 'Opruimen' joins in the dependent clause. Read it as \"Ik kijk naar het nieuws terwijl ik mijn bureau opruim\".",
+   "forms": "kijken: ik kijk. opruimen: ruim op / opruim.",
+   "compare": "English 'tidy my desk' is two words. Dutch writes 'opruim' as one at the end.",
+   "mistakes": [
+    {
+     "wrong": "Ik kijk naar het nieuws terwijl ik mijn bureau ruim op.",
+     "right": "Ik kijk naar het nieuws terwijl ik mijn bureau opruim.",
+     "why": "The separable verb is written together at the end. (not \"Ik kijk naar het nieuws terwijl ik mijn bureau ruim op.\", but \"Ik kijk naar het nieuws terwijl ik mijn bureau opruim.\")"
+    },
+    {
+     "wrong": "Ik kijk naar het nieuws terwijl ik mijn bureau opruimt.",
+     "right": "Ik kijk naar het nieuws terwijl ik mijn bureau opruim.",
+     "why": "With 'ik' the verb has no -t. (not \"Ik kijk naar het nieuws terwijl ik mijn bureau opruimt.\", but \"Ik kijk naar het nieuws terwijl ik mijn bureau opruim.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl ik mijn bureau opruim, kijk ik naar het nieuws.",
+    "english": "While I tidy my desk, I watch the news.",
+    "note": "The terwijl-clause first inverts the main clause to 'kijk ik'."
+   }
+  },
+  "pat-terwijl-52": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The walk and the start of the rain overlap; the verb group 'begint te regenen' needs 'te'."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "We lopen naar huis",
+     "subject": "We",
+     "finite": "lopen",
+     "role": "main clause (the first action)",
+     "why": "We is first, so the plural 'lopen' is second and the direction 'naar huis' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl het begint te regenen",
+     "subject": "het",
+     "finite": "begint",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The dummy subject 'het' comes first and the finite verb 'begint' stands before 'te regenen', which closes the clause.",
+     "afterFinite": "te regenen"
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "We"
+    },
+    {
+     "label": "finite verb",
+     "text": "lopen"
+    },
+    {
+     "label": "direction",
+     "text": "naar huis"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "het"
+    },
+    {
+     "label": "finite verb",
+     "text": "begint"
+    },
+    {
+     "label": "infinitive group",
+     "text": "te regenen"
+    }
+   ],
+   "meaning": "We walk home while it starts to rain.",
+   "order": "After 'beginnen' comes 'te' + infinitive. The finite verb 'begint' is therefore not the last word of the clause.",
+   "forms": "lopen: wij lopen. beginnen: het begint.",
+   "compare": "English 'starts to rain' also uses 'to'. Dutch uses 'te regenen'. For this card: \"We lopen naar huis terwijl het begint te regenen\".",
+   "mistakes": [
+    {
+     "wrong": "We lopen naar huis terwijl het te regenen begint.",
+     "right": "We lopen naar huis terwijl het begint te regenen.",
+     "why": "The finite verb 'begint' stands before 'te regenen'."
+    },
+    {
+     "wrong": "We lopen naar huis terwijl het begint regenen.",
+     "right": "We lopen naar huis terwijl het begint te regenen.",
+     "why": "'Beginnen' needs 'te' before the infinitive."
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl het begint te regenen, lopen we naar huis.",
+    "english": "While it starts to rain, we walk home.",
+    "note": "The terwijl-clause first inverts the main clause to 'lopen we'."
+   }
+  },
+  "pat-terwijl-53": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The phone call was in progress when the soup burnt; 'aanbranden' splits in the main clause."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl hij aan het bellen was",
+     "subject": "hij",
+     "finite": "was",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'hij' comes first, then 'aan het bellen', and the past form 'was' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "brandde de soep aan",
+     "subject": "de soep",
+     "finite": "brandde",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'brandde' comes first, then the subject 'de soep'; the particle 'aan' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "hij"
+    },
+    {
+     "label": "progressive",
+     "text": "aan het bellen"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "was"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "brandde"
+    },
+    {
+     "label": "subject",
+     "text": "de soep"
+    },
+    {
+     "label": "particle",
+     "text": "aan"
+    }
+   ],
+   "meaning": "While he was on the phone, the soup burnt.",
+   "order": "'Aanbranden' splits in the main clause: 'brandde ... aan'. The terwijl-clause uses the progressive 'aan het bellen zijn'.",
+   "forms": "zijn: hij was. aanbranden: brandde ... aan.",
+   "compare": "English 'burnt' is a single verb. Dutch uses 'aanbranden' for food that sticks and burns.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl hij aan het bellen was, de soep brandde aan.",
+     "right": "Terwijl hij aan het bellen was, brandde de soep aan.",
+     "why": "After the terwijl-clause the verb comes first: 'brandde de soep'."
+    },
+    {
+     "wrong": "Terwijl hij aan het bellen was, aanbrandde de soep.",
+     "right": "Terwijl hij aan het bellen was, brandde de soep aan.",
+     "why": "In a main clause 'aanbranden' splits. (not \"Terwijl hij aan het bellen was, aanbrandde de soep.\", but \"Terwijl hij aan het bellen was, brandde de soep aan.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "De soep brandde aan terwijl hij aan het bellen was.",
+    "english": "The soup burnt while he was on the phone.",
+    "note": "With the main clause first there is no inversion. Compare: De soep brandde aan terwijl hij aan het bellen was."
+   }
+  },
+  "pat-terwijl-54": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Singing and drying hair are done at once; 'haar haar' is the possessive plus the noun."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Zij zingt",
+     "subject": "Zij",
+     "finite": "zingt",
+     "role": "main clause (the first action)",
+     "why": "Zij is first, so 'zingt' is second. The clause is \"Zij zingt\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl ze haar haar droogt",
+     "subject": "ze",
+     "finite": "droogt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'ze' comes first, then the object 'haar haar', and the finite verb 'droogt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Zij"
+    },
+    {
+     "label": "finite verb",
+     "text": "zingt"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "ze"
+    },
+    {
+     "label": "object",
+     "text": "haar haar"
+    },
+    {
+     "label": "finite verb",
+     "text": "droogt"
+    }
+   ],
+   "meaning": "She sings while she dries her hair.",
+   "order": "'Haar haar' means 'her hair': the possessive 'haar' comes first, the noun 'haar' second. Read it as \"Zij zingt terwijl ze haar haar droogt\".",
+   "forms": "zingen: zij zingt. drogen: ze droogt.",
+   "compare": "English 'her hair' is the same pair of words in a different order. For this card: \"Zij zingt terwijl ze haar haar droogt\".",
+   "mistakes": [
+    {
+     "wrong": "Zij zingt terwijl ze droogt haar haar.",
+     "right": "Zij zingt terwijl ze haar haar droogt.",
+     "why": "The finite verb goes behind the object. (not \"Zij zingt terwijl ze droogt haar haar.\", but \"Zij zingt terwijl ze haar haar droogt.\")"
+    },
+    {
+     "wrong": "Zij zingt terwijl ze haar haar droog.",
+     "right": "Zij zingt terwijl ze haar haar droogt.",
+     "why": "With 'ze' the verb needs -t: 'droogt'. (not \"Zij zingt terwijl ze haar haar droog.\", but \"Zij zingt terwijl ze haar haar droogt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl ze haar haar droogt, zingt zij.",
+    "english": "While she dries her hair, she sings.",
+    "note": "The terwijl-clause first inverts the main clause to 'zingt zij'."
+   }
+  },
+  "pat-terwijl-55": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "One person keeps the customer occupied while the others meet; 'bezighouden' splits."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl jullie vergaderen",
+     "subject": "jullie",
+     "finite": "vergaderen",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'jullie' comes first and the plural verb 'vergaderen' closes the short clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "houd ik de klant bezig",
+     "subject": "ik",
+     "finite": "houd",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'houd' comes first, then the subject 'ik' and the object 'de klant'; the particle 'bezig' ends the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "jullie"
+    },
+    {
+     "label": "finite verb",
+     "text": "vergaderen"
+    },
+    {
+     "label": "finite verb (split separable)",
+     "text": "houd"
+    },
+    {
+     "label": "subject",
+     "text": "ik"
+    },
+    {
+     "label": "object",
+     "text": "de klant"
+    },
+    {
+     "label": "particle",
+     "text": "bezig"
+    }
+   ],
+   "meaning": "While you hold your meeting, I keep the customer busy.",
+   "order": "'Bezighouden' splits in the main clause: 'houd ... bezig'. The terwijl-clause is short. Read it as \"Terwijl jullie vergaderen, houd ik de klant bezig\".",
+   "forms": "vergaderen: jullie vergaderen. bezighouden: houd ... bezig.",
+   "compare": "English 'keep busy' has the same particle at the end. For this card: \"Terwijl jullie vergaderen, houd ik de klant bezig\".",
+   "mistakes": [
+    {
+     "wrong": "Terwijl jullie vergaderen, ik houd de klant bezig.",
+     "right": "Terwijl jullie vergaderen, houd ik de klant bezig.",
+     "why": "After the terwijl-clause the verb comes first: 'houd ik'."
+    },
+    {
+     "wrong": "Terwijl jullie vergadert, houd ik de klant bezig.",
+     "right": "Terwijl jullie vergaderen, houd ik de klant bezig.",
+     "why": "The plural 'jullie' needs 'vergaderen'. (not \"Terwijl jullie vergadert, houd ik de klant bezig.\", but \"Terwijl jullie vergaderen, houd ik de klant bezig.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Ik houd de klant bezig terwijl jullie vergaderen.",
+    "english": "I keep the customer busy while you hold your meeting.",
+    "note": "With the main clause first there is no inversion. Compare: Ik houd de klant bezig terwijl jullie vergaderen."
+   }
+  },
+  "pat-terwijl-56": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "Work and watching happen together; 'toekijkt' is joined in the terwijl-clause."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "De monteur werkt",
+     "subject": "De monteur",
+     "finite": "werkt",
+     "role": "main clause (the first action)",
+     "why": "'De monteur' is first, so 'werkt' is second. The clause is \"De monteur werkt\"."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl de klant toekijkt",
+     "subject": "de klant",
+     "finite": "toekijkt",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de klant' comes first and the joined separable verb 'toekijkt' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "De monteur"
+    },
+    {
+     "label": "finite verb",
+     "text": "werkt"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de klant"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "toekijkt"
+    }
+   ],
+   "meaning": "The mechanic works while the customer looks on.",
+   "order": "'Toekijken' splits in a main clause ('kijkt toe') and joins here. Read it as \"De monteur werkt terwijl de klant toekijkt\".",
+   "forms": "werken: de monteur werkt. toekijken: kijkt toe / toekijkt.",
+   "compare": "English 'looks on' is two words. Dutch writes 'toekijkt' as one in the dependent clause.",
+   "mistakes": [
+    {
+     "wrong": "De monteur werkt terwijl de klant kijkt toe.",
+     "right": "De monteur werkt terwijl de klant toekijkt.",
+     "why": "The separable verb is written together: 'toekijkt'."
+    },
+    {
+     "wrong": "De monteur werkt terwijl de klant toekijken.",
+     "right": "De monteur werkt terwijl de klant toekijkt.",
+     "why": "The singular subject needs 'toekijkt'. (not \"De monteur werkt terwijl de klant toekijken.\", but \"De monteur werkt terwijl de klant toekijkt.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl de klant toekijkt, werkt de monteur.",
+    "english": "While the customer looks on, the mechanic works.",
+    "note": "The terwijl-clause first inverts the main clause. Compare: Terwijl de klant toekijkt, werkt de monteur."
+   }
+  },
+  "pat-terwijl-57": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The past perfect of the main clause sits next to the simple past of the sleeping."
+   },
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik had mijn huiswerk gemaakt",
+     "subject": "Ik",
+     "finite": "had",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so the auxiliary 'had' is second and the participle 'gemaakt' ends the main clause."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl jij sliep",
+     "subject": "jij",
+     "finite": "sliep",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'jij' comes first and the past form 'sliep' closes the short clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb (auxiliary)",
+     "text": "had"
+    },
+    {
+     "label": "object",
+     "text": "mijn huiswerk"
+    },
+    {
+     "label": "past participle",
+     "text": "gemaakt"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "sliep"
+    }
+   ],
+   "meaning": "I had done my homework while you were sleeping.",
+   "order": "The past perfect 'had gemaakt' marks an action that was finished before a later reference point. Read it as \"Ik had mijn huiswerk gemaakt terwijl jij sliep\".",
+   "forms": "hebben: ik had. maken: gemaakt. slapen: jij sliep.",
+   "compare": "English 'I had done my homework' uses 'done'. Dutch uses 'gemaakt'. For this card: \"Ik had mijn huiswerk gemaakt terwijl jij sliep\".",
+   "mistakes": [
+    {
+     "wrong": "Ik had gemaakt mijn huiswerk terwijl jij sliep.",
+     "right": "Ik had mijn huiswerk gemaakt terwijl jij sliep.",
+     "why": "The participle 'gemaakt' goes to the end of the main clause."
+    },
+    {
+     "wrong": "Ik had mijn huiswerk gemaakt terwijl jij slaapt.",
+     "right": "Ik had mijn huiswerk gemaakt terwijl jij sliep.",
+     "why": "The past needs a past form: 'sliep'. (not \"Ik had mijn huiswerk gemaakt terwijl jij slaapt.\", but \"Ik had mijn huiswerk gemaakt terwijl jij sliep.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl jij sliep, had ik mijn huiswerk gemaakt.",
+    "english": "While you were sleeping, I had done my homework.",
+    "note": "The terwijl-clause first inverts the main clause to 'had ik'."
+   }
+  },
+  "pat-terwijl-58": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "The guests were arriving and the host was standing at the door; both clauses are in the past."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl de gasten binnenkwamen",
+     "subject": "de gasten",
+     "finite": "binnenkwamen",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'de gasten' comes first and the joined past form 'binnenkwamen' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "stond de gastheer bij de deur",
+     "subject": "de gastheer",
+     "finite": "stond",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'stond' comes first, then the subject 'de gastheer' and the phrase 'bij de deur'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (while)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "de gasten"
+    },
+    {
+     "label": "finite verb (joined separable)",
+     "text": "binnenkwamen"
+    },
+    {
+     "label": "finite verb (past)",
+     "text": "stond"
+    },
+    {
+     "label": "subject",
+     "text": "de gastheer"
+    },
+    {
+     "label": "place",
+     "text": "bij de deur"
+    }
+   ],
+   "meaning": "While the guests came in, the host stood at the door.",
+   "order": "In the past tense a separable verb is also joined in a dependent clause: 'binnenkwamen'. In a main clause it would split: 'kwamen ... binnen'.",
+   "forms": "binnenkomen: kwamen binnen / binnenkwamen. staan: stond.",
+   "compare": "English 'came in' is two words. Dutch writes 'binnenkwamen' at the end of the clause.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl de gasten kwamen binnen, stond de gastheer bij de deur.",
+     "right": "Terwijl de gasten binnenkwamen, stond de gastheer bij de deur.",
+     "why": "In the dependent clause the separable verb is written together."
+    },
+    {
+     "wrong": "Terwijl de gasten binnenkwamen, de gastheer stond bij de deur.",
+     "right": "Terwijl de gasten binnenkwamen, stond de gastheer bij de deur.",
+     "why": "The main clause starts with the verb: 'stond de gastheer'."
+    }
+   ],
+   "contrast": {
+    "dutch": "De gastheer stond bij de deur terwijl de gasten binnenkwamen.",
+    "english": "The host stood at the door while the guests came in.",
+    "note": "With the main clause first there is no inversion. Compare: De gastheer stond bij de deur terwijl de gasten binnenkwamen."
+   }
+  },
+  "pat-terwijl-59": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = whereas (contrast)",
+    "why": "Two friends are contrasted; 'terwijl' sets Anna's travel love against Peter's staying at home."
+   },
+   "clauses": [
+    {
+     "kind": "bijzin",
+     "text": "Terwijl Anna graag reist",
+     "subject": "Anna",
+     "finite": "reist",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'Anna' comes first, the adverb 'graag' follows, and the finite verb 'reist' closes the clause."
+    },
+    {
+     "kind": "hoofdzin",
+     "text": "blijft Peter liever thuis",
+     "subject": "Peter",
+     "finite": "blijft",
+     "role": "main clause (the first action)",
+     "why": "The finite verb 'blijft' comes first, then the subject 'Peter' and the adverbs 'liever' and 'thuis'."
+    }
+   ],
+   "parts": [
+    {
+     "label": "conjunction (whereas)",
+     "text": "Terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "Anna"
+    },
+    {
+     "label": "adverb",
+     "text": "graag"
+    },
+    {
+     "label": "finite verb",
+     "text": "reist"
+    },
+    {
+     "label": "finite verb",
+     "text": "blijft"
+    },
+    {
+     "label": "subject",
+     "text": "Peter"
+    },
+    {
+     "label": "adverb",
+     "text": "liever"
+    },
+    {
+     "label": "place",
+     "text": "thuis"
+    }
+   ],
+   "meaning": "While Anna likes to travel, Peter prefers to stay at home.",
+   "order": "'Graag' and 'liever' belong together: like to versus prefer. The main clause inverts to 'blijft Peter'. Read it as \"Terwijl Anna graag reist, blijft Peter liever thuis\".",
+   "forms": "reizen: Anna reist. blijven: Peter blijft.",
+   "compare": "English 'likes to travel' needs 'likes'. Dutch uses the adverb 'graag'.",
+   "mistakes": [
+    {
+     "wrong": "Terwijl Anna graag reist, Peter blijft liever thuis.",
+     "right": "Terwijl Anna graag reist, blijft Peter liever thuis.",
+     "why": "After the terwijl-clause the verb comes first: 'blijft Peter'."
+    },
+    {
+     "wrong": "Terwijl Anna graag reizen, blijft Peter liever thuis.",
+     "right": "Terwijl Anna graag reist, blijft Peter liever thuis.",
+     "why": "The singular subject needs 'reist'. (not \"Terwijl Anna graag reizen, blijft Peter liever thuis.\", but \"Terwijl Anna graag reist, blijft Peter liever thuis.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Peter blijft liever thuis terwijl Anna graag reist.",
+    "english": "Peter prefers to stay at home while Anna likes to travel.",
+    "note": "With the main clause first there is no inversion. Compare: Peter blijft liever thuis terwijl Anna graag reist."
+   }
+  },
+  "pat-terwijl-reuse-career-troubleshooting-036": {
+   "status": "ai-editorial-checked",
+   "sense": {
+    "label": "terwijl = while (at the same time)",
+    "why": "You and your colleague split a task: comparing results and noting times happen together."
+   },
+   "situationNl": "Jullie onderzoeken een storing op meerdere toestellen. Verdeel het werk tussen jou en een collega en zeg wat jullie tegelijk doen.",
+   "clauses": [
+    {
+     "kind": "hoofdzin",
+     "text": "Ik vergelijk de resultaten",
+     "subject": "Ik",
+     "finite": "vergelijk",
+     "role": "main clause (the first action)",
+     "why": "Ik is first, so 'vergelijk' is second and the object 'de resultaten' follows."
+    },
+    {
+     "kind": "bijzin",
+     "text": "terwijl jij de tijden noteert",
+     "subject": "jij",
+     "finite": "noteert",
+     "role": "terwijl-clause (the parallel action)",
+     "why": "The subject 'jij' comes first, then the object 'de tijden', and the finite verb 'noteert' closes the clause."
+    }
+   ],
+   "parts": [
+    {
+     "label": "subject",
+     "text": "Ik"
+    },
+    {
+     "label": "finite verb",
+     "text": "vergelijk"
+    },
+    {
+     "label": "object",
+     "text": "de resultaten"
+    },
+    {
+     "label": "conjunction (while)",
+     "text": "terwijl"
+    },
+    {
+     "label": "subject",
+     "text": "jij"
+    },
+    {
+     "label": "object",
+     "text": "de tijden"
+    },
+    {
+     "label": "finite verb",
+     "text": "noteert"
+    }
+   ],
+   "meaning": "I compare the results while you note the times.",
+   "order": "Two people split the work. Each clause has its own subject and object, and the verb of the terwijl-clause is last.",
+   "forms": "vergelijken: ik vergelijk. noteren: jij noteert.",
+   "compare": "English 'while you note the times' keeps 'note' before the object. Dutch puts 'noteert' last.",
+   "mistakes": [
+    {
+     "wrong": "Ik vergelijk de resultaten terwijl jij noteert de tijden.",
+     "right": "Ik vergelijk de resultaten terwijl jij de tijden noteert.",
+     "why": "The finite verb goes behind the object 'de tijden'."
+    },
+    {
+     "wrong": "Ik vergelijk de resultaten terwijl jij de tijden noteren.",
+     "right": "Ik vergelijk de resultaten terwijl jij de tijden noteert.",
+     "why": "With 'jij' the verb is 'noteert'. (not \"Ik vergelijk de resultaten terwijl jij de tijden noteren.\", but \"Ik vergelijk de resultaten terwijl jij de tijden noteert.\")"
+    }
+   ],
+   "contrast": {
+    "dutch": "Terwijl jij de tijden noteert, vergelijk ik de resultaten.",
+    "english": "While you note the times, I compare the results.",
+    "note": "The terwijl-clause first inverts the main clause. Compare: Terwijl jij de tijden noteert, vergelijk ik de resultaten."
+   }
+  }
+ }
+}

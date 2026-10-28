@@ -59,7 +59,7 @@ export function SessionView({ sessionId, lang, store, snapshot, reviews, reviews
       <Link href={withLang(DASHBOARD_URL, session.lang)} className="inline-flex items-center gap-1 text-sm font-semibold text-accent" data-testid="back-to-sessions"><Icon name="back" className="h-4 w-4" />Back to sessions</Link>
       <button type="button" className="text-sm text-muted underline" onClick={() => { setName(session.name); setRenaming(true); }}>Rename</button>
     </div>
-    <div><h2 className="text-2xl font-bold leading-snug tracking-tight" data-testid="session-name">{session.name}</h2><p className="text-xs text-muted"><span data-testid="session-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {total} fixed {total === 1 ? 'sentence' : 'sentences'} · the same set in every mode</p></div>
+    <div><h1 className="text-2xl font-bold leading-snug tracking-tight" data-testid="session-name">{session.name}</h1><p className="text-xs text-muted"><span data-testid="session-language" lang={session.lang}>{LANG_INFO[session.lang].flag} {LANG_INFO[session.lang].native}</span> · {total} fixed {total === 1 ? 'sentence' : 'sentences'} · the same set in every mode</p></div>
     <SyncStatus snapshot={snapshot} guest={!signedIn} onRetry={() => void store.sync()} />
     {snapshot.refused[session.id] && <p role="alert" className="rounded-xl bg-accent-soft p-3 text-xs">{snapshot.refused[session.id]} <button type="button" onClick={() => store.retryRefused(session.id)} className="font-semibold underline">Retry</button></p>}
     {notice && <p role="status" className="rounded-xl bg-accent-soft p-3 text-sm">{notice}</p>}
@@ -73,7 +73,7 @@ export function SessionView({ sessionId, lang, store, snapshot, reviews, reviews
       </button>)}
     </nav>
 
-    {session.collection === 'grammar' && session.lang === 'nl' && <><GrammarTopicLesson key={`${session.id}-${mode}`} topic={session.topic} defaultOpen={mode === "study"} /><GrammarErrorRepair topic={session.topic} /></>}
+    {session.collection === 'grammar' && session.lang === 'nl' && <><GrammarTopicLesson key={`${session.id}-${mode}`} topic={session.topic} defaultOpen={mode === "study"} /><GrammarErrorRepair topic={session.topic} cardIds={session.cardIds} /></>}
 
     {session.status === 'archived' && <CompletionSummary session={session} onAgain={again} againDisabled={activeCount >= MAX_ACTIVE_SESSIONS} againMessage={`You already have ${MAX_ACTIVE_SESSIONS} active sessions, so finish or delete one first.`} />}
 

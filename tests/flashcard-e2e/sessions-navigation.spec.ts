@@ -103,13 +103,17 @@ test.describe("navigation", () => {
     await createSession(page, { topic: "shopping", count: 10 });
     await switchMode(page, "speaking");
     await page.getByRole("button", { name: "Check the Dutch" }).click();
+    // Only a sentence with linked words offers "Vocabulary for this sentence" (and a Back button);
+    // others offer a plain "Browse vocabulary" link. Move on until the card has linked words.
+    const linked = page.getByRole("link", { name: "Vocabulary for this sentence" });
+    for (let tries = 0; tries < 9 && !(await linked.isVisible()); tries++) {
+      await page.getByRole("button", { name: "Medium", exact: true }).click();
+      await page.getByRole("button", { name: "Next", exact: true }).click();
+      await page.getByRole("button", { name: "Check the Dutch" }).click();
+    }
     const dutch = await shownDutch(page);
     const url = page.url();
-    await page
-      .getByRole("link", {
-        name: /Vocabulary for this sentence|Browse vocabulary/,
-      })
-      .click();
+    await linked.click();
     await expect(
       page.getByRole("heading", { name: "Vocabulary", exact: true }),
     ).toBeVisible();

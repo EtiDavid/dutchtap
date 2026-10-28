@@ -38,7 +38,8 @@ test.describe('Grammar patterns work like flashcards', () => {
     // Word order: tiles for the same sentences.
     await switchMode(page, 'quiz');
     await expect(page.getByTestId('grammar-scenario-prompt')).toBeVisible();
-    expect(await page.locator('article img').count()).toBe(0);
+    // Authored grammar cards have no picture; a linked Everyday/Work sentence keeps its own picture, so at most one image is shown.
+    expect(await page.locator('article img').count()).toBeLessThanOrEqual(1);
   });
 
   test('patterns are Dutch-only: French has no grammar tiles and never offers the collection', async ({ page }) => {

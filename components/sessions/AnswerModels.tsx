@@ -25,7 +25,7 @@ export function AnswerModels({
       className="mt-5 border-t border-border pt-4"
       aria-label="Ways to say it"
     >
-      <h3 className="text-sm font-semibold">Why this answer works</h3>
+      <h2 className="text-sm font-semibold">Why this answer works</h2>
       <p
         className="mt-2 text-sm leading-relaxed"
         data-testid="answer-explanation"

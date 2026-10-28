@@ -1,0 +1,602 @@
+[
+ {
+  "topic": "connectors",
+  "dutch": "Ik fiets naar mijn werk sinds ik in Utrecht woon.",
+  "english": "I have cycled to work ever since I moved to Utrecht.",
+  "scenario": "You tell a colleague how you get to the office and what started this habit: where you live.",
+  "scenarioNl": "Je vertelt een collega hoe je naar kantoor reist en wat daar de aanleiding voor was: je woonplaats. Verbind die twee in één zin.",
+  "why": "Sinds names the starting point of a situation that is still true, and its clause ends in the finite verb.",
+  "focus": "sinds",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "sinds"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Sinds hij een nieuwe baan heeft, is hij veel vrolijker.",
+  "english": "Since he has had a new job, he has been much more cheerful.",
+  "scenario": "You describe a friend whose mood has changed. Name the change at work and the effect on him.",
+  "scenarioNl": "Een vriend lijkt de laatste tijd opgewekter. Verklaar zijn verandering aan een collega met één zin over zijn werk en zijn stemming.",
+  "why": "A fronted sinds-clause gives the starting point first; the main clause then begins with its verb.",
+  "focus": "sinds",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "sinds"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "We hebben niets meer van haar gehoord sinds ze is verhuisd.",
+  "english": "We haven't heard anything from her since she moved away.",
+  "scenario": "A neighbour asks about a former colleague. Say what has happened to the contact and when it stopped.",
+  "scenarioNl": "Een buurvrouw vraagt naar een oud-collega. Zeg dat het contact is weggevallen en noem het moment waarop dat begon.",
+  "why": "A completed event, the moving, is the starting point of the silence; the perfect sits at the end of the sinds-clause.",
+  "focus": "sinds",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "sinds"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Sinds de winkel is verbouwd, is het er veel rustiger.",
+  "english": "Since the shop was renovated, it has been much quieter there.",
+  "scenario": "A regular customer notices a change in the shop. Describe the atmosphere and what lies behind it.",
+  "scenarioNl": "Je komt vaak in een winkel en merkt dat de sfeer anders is. Begin bij de verbouwing van het pand en beschrijf het verschil dat je merkt.",
+  "why": "The renovation is the starting point; 'is verbouwd' closes the fronted clause and the main clause inverts.",
+  "focus": "sinds",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "sinds"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Ik werk hier sinds maandag.",
+  "english": "I have worked here since Monday.",
+  "scenario": "A new colleague asks how long you have been in the team. Name the day it began.",
+  "scenarioNl": "Een nieuwe collega vraagt hoe lang jij al in het team zit. Noem de dag waarop het begon, zonder een bijzin te gebruiken.",
+  "why": "Before a noun or a time word, sinds is a preposition and introduces no clause; there is only one finite verb.",
+  "focus": "sinds",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "sinds"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Sinds vorig jaar leert ze Nederlands.",
+  "english": "She has been learning Dutch since last year.",
+  "scenario": "You tell a friend about a colleague's language course and when she began it.",
+  "scenarioNl": "Je vertelt een vriend over een collega die een taalcursus volgt. Zeg hoe lang zij dit al doet, met alleen een tijdsaanduiding vooraan.",
+  "why": "Sinds with a time phrase fronts the time; the verb stays second and the subject follows it.",
+  "focus": "sinds",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "sinds"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Nu het regent, blijven we thuis.",
+  "english": "Now that it is raining, we are staying at home.",
+  "scenario": "The weather turns and your plans change. Say what you decide to do.",
+  "scenarioNl": "Het weer slaat om en jullie passen jullie plannen aan. Zeg wat jullie op dat moment besluiten.",
+  "why": "Nu introduces a new fact that explains the main clause; its clause ends in the verb.",
+  "focus": "nu",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "nu"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Nu ik klaar ben, kan ik naar huis.",
+  "english": "Now that I am finished, I can go home.",
+  "scenario": "You finish your task at the end of the day. Say that the work is done and what that allows you to do.",
+  "scenarioNl": "Je werkdag loopt ten einde en je taak is af. Zeg dat jij vrij bent en wat je dan doet.",
+  "why": "The finished task is new and permits the action; 'ben' closes the clause and 'kan ik' opens the main clause.",
+  "focus": "nu",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "nu"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "We kunnen beginnen nu iedereen er is.",
+  "english": "We can begin now that everyone is here.",
+  "scenario": "You lead a meeting and the last participant has just walked in. Say that you can start.",
+  "scenarioNl": "Je leidt een vergadering en de laatste deelnemer loopt net binnen. Zeg dat het werk kan starten, met de reden erbij.",
+  "why": "The last arrival is the new fact that allows the start; 'is' closes the nu-clause.",
+  "focus": "nu",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "nu"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Nu ga ik naar huis.",
+  "english": "Now I am going home.",
+  "scenario": "It is the end of the day and you announce your own plan right at this moment.",
+  "scenarioNl": "Het is het einde van de dag en je kondigt je eigen plan aan, voor dit ene moment. Begin met het tijdstip.",
+  "why": "Here nu is an adverb that fills position one; it introduces no clause, so the verb stays second.",
+  "focus": "nu",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "nu"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Ik spreek langzaam zodat iedereen me kan verstaan.",
+  "english": "I speak slowly so that everyone can understand me.",
+  "scenario": "You give a talk to an international group. Say how you speak and what that makes possible.",
+  "scenarioNl": "Je geeft een presentatie voor een internationaal publiek. Zeg hoe je praat en wat je daarmee voor de luisteraars bereikt.",
+  "why": "Zodat introduces the aim of the main action; its clause ends in the verb group 'kan verstaan'.",
+  "focus": "zodat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "zodat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Ze schreef de uitleg op zodat niemand het vergat.",
+  "english": "She wrote the explanation down so that nobody would forget it.",
+  "scenario": "A colleague writes down a procedure. Say what she did and why it helps the team.",
+  "scenarioNl": "Een collega legt een procedure vast. Zeg wat zij met de uitleg deed en welk gevolg zij wilde.",
+  "why": "The separable verb 'opschrijven' splits in the main clause and the zodat-clause ends in 'vergat'.",
+  "focus": "zodat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "zodat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Zet de wekker zodat je morgen niet te laat bent.",
+  "english": "Set the alarm so that you aren't late tomorrow.",
+  "scenario": "You advise a friend who has an early appointment. Give an instruction and its purpose.",
+  "scenarioNl": "Een vriend heeft morgenochtend een vroege afspraak. Geef hem een opdracht en leg erbij waarom die nuttig is.",
+  "why": "An imperative main clause comes first; the zodat-clause explains the purpose and ends in 'bent'.",
+  "focus": "zodat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "zodat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "De bus had pech, zodat we een uur moesten wachten.",
+  "english": "The bus broke down, so that we had to wait an hour.",
+  "scenario": "You explain a late arrival: what happened to the bus and the consequence for the passengers.",
+  "scenarioNl": "Je legt uit waarom je te laat bent: er was een technisch probleem met het voertuig en dat had gevolgen voor de reizigers.",
+  "why": "Zodat can also introduce a result; 'moesten wachten' closes the clause.",
+  "focus": "zodat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "zodat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Hij sprak langzaam opdat iedereen hem zou verstaan.",
+  "english": "He spoke slowly so that everyone would understand him.",
+  "scenario": "You report on a formal speech in a written text. Say how the speaker spoke and what he wanted.",
+  "scenarioNl": "Je schrijft een verslag van een officiële toespraak. Vertel hoe de spreker praatte en welk doel hij had.",
+  "why": "Opdat is the formal, mostly written word for an aim; the clause ends in 'zou verstaan'.",
+  "focus": "opdat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "opdat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "De regels zijn streng opdat niemand gevaar loopt.",
+  "english": "The rules are strict so that nobody runs a risk.",
+  "scenario": "A safety officer explains in writing why the regulations are so tough.",
+  "scenarioNl": "Een veiligheidsmedewerker legt schriftelijk uit waarom het reglement zo hard is. Formuleer het doel van die strengheid.",
+  "why": "A formal aim clause: opdat sends the verb 'loopt' to the end.",
+  "focus": "opdat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "opdat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Wij sturen een brief opdat alle bewoners het weten.",
+  "english": "We are sending a letter so that all residents know.",
+  "scenario": "A housing association informs tenants in writing. Say what you send and what you want to achieve.",
+  "scenarioNl": "Een woningcorporatie informeert huurders schriftelijk. Zeg wat jullie versturen en wat jullie daarmee willen bereiken.",
+  "why": "Opdat links the sending to the aim; the present 'weten' closes the clause.",
+  "focus": "opdat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "opdat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "De trein viel uit doordat er een boom op het spoor lag.",
+  "english": "The train was cancelled because a tree lay on the track.",
+  "scenario": "You tell a commuter why the train did not run. Name the effect and the circumstance behind it.",
+  "scenarioNl": "Je legt een forens uit waarom de trein niet reed. Noem eerst het gevolg en daarna de situatie die het veroorzaakte.",
+  "why": "Doordat names the circumstance that caused the event; 'viel ... uit' is split and 'lag' closes the clause.",
+  "focus": "doordat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "doordat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Doordat het hard sneeuwde, was de weg glad.",
+  "english": "Because it snowed hard, the road was slippery.",
+  "scenario": "You explain to a colleague why the drive was difficult: the weather and the state of the road.",
+  "scenarioNl": "Een collega vraagt waarom je rit zo moeizaam was. Begin met wat het weer deed en zeg dan hoe de weg erbij lag.",
+  "why": "A fronted doordat-clause names the circumstance; the main clause inverts to 'was de weg glad'.",
+  "focus": "doordat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "doordat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Hij kreeg een boete doordat hij te hard reed.",
+  "english": "He got a fine because he drove too fast.",
+  "scenario": "A driver tells a friend about a penalty and its cause.",
+  "scenarioNl": "Een automobilist vertelt een vriend over een sanctie van de politie. Zeg wat hij kreeg en door welk gedrag dat kwam.",
+  "why": "A behaviour is named as the circumstance of the penalty; 'reed' closes the doordat-clause.",
+  "focus": "doordat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "doordat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Doordat zij goed heeft geoefend, speelt ze zonder fouten.",
+  "english": "Because she has practised well, she plays without mistakes.",
+  "scenario": "You praise a pianist. Name the cause of her good performance and the result.",
+  "scenarioNl": "Je complimenteert een pianiste na haar optreden. Noem wat haar succes mogelijk maakte en hoe zij tegenwoordig speelt.",
+  "why": "The perfect closes the fronted clause; the main clause inverts to 'speelt ze'.",
+  "focus": "doordat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "doordat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Aangezien de winkel dicht is, gaan we morgen terug.",
+  "english": "Since the shop is closed, we will go back tomorrow.",
+  "scenario": "You are standing before a closed shop with a friend. Take the situation as given and decide the next step.",
+  "scenarioNl": "Jullie staan voor een winkel waar het licht uit is. Neem de gesloten deur voor kennisgeving aan en maak een nieuw plan.",
+  "why": "Aangezien gives the reason in a fairly formal way; 'is' closes the fronted clause.",
+  "focus": "aangezien",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "aangezien"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Aangezien u niet aanwezig was, hebben wij de afspraak verzet.",
+  "english": "Since you were not present, we have rescheduled the appointment.",
+  "scenario": "You write formally to a client who missed a meeting. State the fact and what the company did.",
+  "scenarioNl": "Je schrijft formeel aan een klant die niet op een overleg verscheen. Noem eerst het feit en vervolgens wat het bedrijf deed.",
+  "why": "A formal, written reason; the perfect 'hebben wij ... verzet' follows the fronted clause.",
+  "focus": "aangezien",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "aangezien"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Ik help je graag, aangezien je zo vriendelijk vraagt.",
+  "english": "I am happy to help you, since you ask so politely.",
+  "scenario": "A colleague asks you for a favour in a very friendly way. Say that you agree and why.",
+  "scenarioNl": "Een collega vraagt je met veel respect om een gunst. Zeg dat je meewerkt en noem zijn manier van vragen, die hierbij een rol speelt.",
+  "why": "The reason is placed behind the main clause; 'vraagt' closes the aangezien-clause.",
+  "focus": "aangezien",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "aangezien"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Aangezien hij ziek is, neemt zijn collega de presentatie over.",
+  "english": "Since he is ill, his colleague takes over the presentation.",
+  "scenario": "You inform the team about a change of plan on the day of an important talk.",
+  "scenarioNl": "Je informeert het team over een wijziging op de dag van een belangrijke presentatie. Begin met de reden en zeg wie de taak krijgt.",
+  "why": "The known fact 'hij is ziek' leads to 'neemt ... over', which splits in the main clause.",
+  "focus": "aangezien",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "aangezien"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Je mag mee, mits je op tijd bent.",
+  "english": "You may come along, provided you are on time.",
+  "scenario": "A child asks to join a trip. Say yes, with one condition.",
+  "scenarioNl": "Een kind wil graag mee op een uitstapje. Geef toestemming en noem de ene voorwaarde die daaraan vastzit.",
+  "why": "Mits names the single condition on which the permission depends; 'bent' closes the clause.",
+  "focus": "mits",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "mits"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Ze lenen het geld uit, mits je een vast contract hebt.",
+  "english": "They lend the money out, provided you have a permanent contract.",
+  "scenario": "You explain the rules of a loan to a friend: what the lender does and the one requirement.",
+  "scenarioNl": "Je legt een vriend de regels van een lening uit. Zeg wat de uitlener doet en welke ene eis hij stelt.",
+  "why": "'Uitlenen' splits in the main clause; 'hebt' closes the mits-clause.",
+  "focus": "mits",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "mits"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Mits het weer meewerkt, vertrekken we morgen.",
+  "english": "Provided the weather cooperates, we leave tomorrow.",
+  "scenario": "You plan a hike. State your plan and the one thing it depends on.",
+  "scenarioNl": "Jullie plannen een wandeltocht. Zeg welke ene omstandigheid het vertrek bepaalt en wat jullie dan doen.",
+  "why": "A fronted mits-clause; the main clause inverts to 'vertrekken we'.",
+  "focus": "mits",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "mits"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Indien u vragen heeft, kunt u ons mailen.",
+  "english": "If you have questions, you can e-mail us.",
+  "scenario": "You write the closing lines of a formal letter to customers. Offer help for any further questions.",
+  "scenarioNl": "Je schrijft de laatste regels van een officiële brief aan klanten. Bied hulp aan voor wie nog onduidelijkheden heeft.",
+  "why": "Indien is the formal 'if' of letters; the main clause inverts to 'kunt u'.",
+  "focus": "indien",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "indien"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Wij betalen het bedrag terug indien het product defect is.",
+  "english": "We will refund the amount if the product is defective.",
+  "scenario": "A shop explains its refund policy in writing.",
+  "scenarioNl": "Een webwinkel legt schriftelijk zijn retourbeleid uit. Zeg wat het bedrijf doet en onder welke formele voorwaarde.",
+  "why": "'Terugbetalen' splits in the main clause; 'is' closes the indien-clause.",
+  "focus": "indien",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "indien"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Indien het nodig is, nemen wij contact met u op.",
+  "english": "If necessary, we will contact you.",
+  "scenario": "You promise a client in a formal e-mail that you will get in touch when required.",
+  "scenarioNl": "Je schrijft een klant formeel dat je hem zult benaderen, mocht blijken dat er meer informatie nodig is voor zijn dossier.",
+  "why": "A fronted indien-clause; 'nemen ... op' is the fixed phrase 'contact opnemen'.",
+  "focus": "indien",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "indien"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Naarmate de avond vorderde, werd het drukker.",
+  "english": "As the evening progressed, it got busier.",
+  "scenario": "You describe the mood in a restaurant during one evening.",
+  "scenarioNl": "Je beschrijft de sfeer in een restaurant op één avond. Laat zien dat de drukte langzaam toenam met het verstrijken van de uren.",
+  "why": "Naarmate links two developments that grow together; 'vorderde' closes the fronted clause.",
+  "focus": "naarmate",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "naarmate"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Het wordt moeilijker naarmate je verder komt.",
+  "english": "It gets harder the further you get.",
+  "scenario": "You encourage a learner who struggles with an advanced course.",
+  "scenarioNl": "Je spreekt een cursist toe die moeite heeft met een gevorderde cursus. Zeg eerlijk wat er met de moeilijkheid gebeurt gedurende de weg.",
+  "why": "The difficulty grows with the progress; 'komt' closes the naarmate-clause.",
+  "focus": "naarmate",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "naarmate"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Naarmate zij ouder werd, las ze meer boeken.",
+  "english": "As she got older, she read more books.",
+  "scenario": "You tell about a friend's development: how her reading habit changed over the years.",
+  "scenarioNl": "Je vertelt over de ontwikkeling van een vriendin. Laat zien hoe haar leesgewoonte veranderde met de jaren.",
+  "why": "A gradual change; the comparative 'ouder' and the main clause inverts to 'las ze'.",
+  "focus": "naarmate",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "naarmate"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Je mag de auto lenen op voorwaarde dat je voorzichtig rijdt.",
+  "english": "You may borrow the car on condition that you drive carefully.",
+  "scenario": "A parent lends the car to a teenager and makes one clear demand.",
+  "scenarioNl": "Een ouder leent de wagen uit aan een tiener en stelt één duidelijke eis. Zeg wat mag en wat daarvoor van de rijder wordt verwacht.",
+  "why": "A stated requirement; the whole phrase sends 'rijdt' to the end of the clause.",
+  "focus": "op voorwaarde dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "op voorwaarde dat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Ze accepteert de baan op voorwaarde dat ze thuis mag werken.",
+  "english": "She accepts the job on condition that she may work from home.",
+  "scenario": "You tell a friend about a job offer and the one thing the candidate insists on.",
+  "scenarioNl": "Je vertelt een vriend over een sollicitante en haar belangrijkste eis. Zeg wat zij doet en wat zij vooraf afspreekt.",
+  "why": "The condition phrase ends in the modal group 'mag werken'.",
+  "focus": "op voorwaarde dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "op voorwaarde dat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Op voorwaarde dat jij de boodschappen doet, kook ik vanavond.",
+  "english": "On condition that you do the shopping, I will cook tonight.",
+  "scenario": "Housemates agree on the division of chores. Make an offer that depends on the other person.",
+  "scenarioNl": "Huisgenoten verdelen de taken. Doe een aanbod voor de avond dat afhangt van wat de ander doet.",
+  "why": "A fronted condition; the main clause inverts to 'kook ik'.",
+  "focus": "op voorwaarde dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "op voorwaarde dat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Neem een paraplu mee voor het geval dat het regent.",
+  "english": "Take an umbrella in case it rains.",
+  "scenario": "You advise a friend who goes out for the day when the forecast is uncertain.",
+  "scenarioNl": "Een vriend gaat de hele dag weg en het weerbericht is onzeker. Geef hem een advies voor de zekerheid.",
+  "why": "A precaution for a possible event; 'regent' closes the clause.",
+  "focus": "voor het geval dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "voor het geval dat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Ik sla een extra bestand op voor het geval dat de computer crasht.",
+  "english": "I save an extra file in case the computer crashes.",
+  "scenario": "You explain your back-up routine to a colleague.",
+  "scenarioNl": "Je legt een collega je werkwijze uit om gegevens veilig te houden. Zeg wat je extra doet en welke mogelijke storing je wilt opvangen.",
+  "why": "'Opslaan' splits; the clause ends in 'crasht'.",
+  "focus": "voor het geval dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "voor het geval dat"
+  }
+ },
+ {
+  "topic": "connectors",
+  "dutch": "Hij belde zijn moeder voor het geval dat ze hulp nodig had.",
+  "english": "He called his mother in case she needed help.",
+  "scenario": "You tell a friend about someone who checked on a relative as a precaution.",
+  "scenarioNl": "Je vertelt een vriend over iemand die contact zocht met een familielid. Zeg wat hij deed en welke mogelijkheid hij wilde opvangen.",
+  "why": "A past precaution; 'had' closes the in-case clause after 'hulp nodig'.",
+  "focus": "voor het geval dat",
+  "review": {
+   "status": "ai-editorially-reviewed",
+   "independentHumanReview": false,
+   "batch": "p4-connectors-v1",
+   "focus": "voor het geval dat"
+  }
+ }
+]

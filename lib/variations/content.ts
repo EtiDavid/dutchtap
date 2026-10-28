@@ -1,4 +1,4 @@
-import { communicationFor, meaningFor, scenarioFor } from "@/lib/practice/communication";
+import { communicationFor, scenarioFor } from "@/lib/practice/communication";
 import { analysisFor } from "@/lib/grammarAnalysis";
 import workplaceFamilies from "@/data/workplace-families.json";
 import grammarVariationFamilies from "@/data/grammar-variation-families.json";
@@ -94,8 +94,7 @@ const analysedGrammarFamilies: Record<string, Variation[]> = Object.fromEntries(
       !contrast ||
       !analysed.situationNl ||
       normalDutch(contrast.dutch) === normalDutch(card.dutch) ||
-      normalMeaning(contrast.english) !==
-        normalMeaning(meaningFor(card.dutch, card.english))
+      normalMeaning(contrast.english) !== normalMeaning(analysed.meaning)
     )
       return [];
     const explanation = [contrast.note, analysed.order]
@@ -116,7 +115,7 @@ const analysedGrammarFamilies: Record<string, Variation[]> = Object.fromEntries(
         focus: `${card.category} · meaningful contrast`,
         example: {
           text: card.dutch,
-          english: meaningFor(card.dutch, card.english),
+          english: analysed.meaning,
         },
       }],
     ]];

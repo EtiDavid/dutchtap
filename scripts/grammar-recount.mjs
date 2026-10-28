@@ -122,6 +122,19 @@ out.push(problems.length ? problems.map((p) => `- PROBLEM: ${p}`).join("\n") : "
 const text = out.join("\n") + "\n";
 const target = new URL("docs/GRAMMAR-MASTERY-RECOUNT.md", root);
 if (process.argv.includes("--write")) { writeFileSync(target, text); console.log("wrote docs/GRAMMAR-MASTERY-RECOUNT.md"); }
-else if (process.argv.includes("--check")) { let old = ""; try { old = readFileSync(target, "utf8"); } catch {} if (old !== text) { console.error("docs/GRAMMAR-MASTERY-RECOUNT.md is out of date: run node scripts/grammar-recount.mjs --write"); process.exit(1); } console.log("recount is current"); }
+else if (process.argv.includes("--check")) {
+  let old = ""; try { old = readFileSync(target, "utf8"); } catch {}
+  if (old !== text) {
+    const actual = old.split("\n"), expected = text.split("\n");
+    let line = 0;
+    while (line < actual.length && line < expected.length && actual[line] === expected[line]) line++;
+    console.error("docs/GRAMMAR-MASTERY-RECOUNT.md is out of date: run node scripts/grammar-recount.mjs --write");
+    console.error(`first mismatch at line ${line + 1}`);
+    console.error(`expected: ${expected[line] ?? "<EOF>"}`);
+    console.error(`actual:   ${actual[line] ?? "<EOF>"}`);
+    process.exit(1);
+  }
+  console.log("recount is current");
+}
 else process.stdout.write(text);
 if (problems.length) process.exit(1);

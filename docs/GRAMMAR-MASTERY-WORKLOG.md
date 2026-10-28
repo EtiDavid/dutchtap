@@ -585,3 +585,7 @@ The earlier [full feature CI run #40361591866](https://github.com/EtiDavid/dutch
 **What the upgrade exposed (tests only, no app change):** (1) `switchMode` in `tests/flashcard-e2e/helpers.ts` read the page right after the click, but in 16.4 the `history.replaceState` change reaches `useSearchParams` a moment later; it now waits for the tab's `aria-current`. This hit 7 session/quiz/variation tests. (2) The axe helper in `grammar-a11y.spec.ts` occasionally scanned a card that was still fading in and reported a false contrast failure; it now waits for animations to finish (5 consecutive clean runs).
 
 **Still needs the owner:** merging this branch (not done). A production release also still needs a person to smoke-test the live app on 16.4.3.
+
+## 2026-10-28 — Sources for the 10 uncited lessons, docs refresh
+
+PR #18 was merged into `main` by the owner (merge `8b2e935`) after CI run 40606047981 passed. Added sources to `separable`, `tot`, `tense`, `terwijl`, `voordat`, `nadat`, `zodra`, `of`, `indirect`, `relative` (Onze Taal and Taaladvies.net pages; the URLs respond). Taken from search results, so the lesson text has not been compared sentence by sentence against them. Refreshed the stale merge/rollback/security statements in the final report and audit and regenerated the recount. Release gate unchanged (fails by design).

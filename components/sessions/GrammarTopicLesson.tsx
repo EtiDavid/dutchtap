@@ -28,7 +28,7 @@ export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; 
     setOpenState({ topic, opened: next });
     try { window.localStorage.setItem(storageKey, next ? "1" : "0"); } catch { /* Storage can be disabled; lesson still works for this visit. */ }
   }} className="card group overflow-hidden p-4" data-testid="grammar-topic-lesson" data-topic={topic}>
-    <summary className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">
+    <summary data-testid="grammar-topic-lesson-summary" className="cursor-pointer text-sm font-bold leading-relaxed text-foreground marker:text-accent">
       📖 Learn the rule · {lesson.title}
       <span className="mt-1 block text-xs font-normal text-muted">Tap to expand the complete topic guide; close it when speaking.</span>
     </summary>

@@ -11,6 +11,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:e2e": "playwright test",
+    "audio:test-five": "node scripts/generate-flashcard-audio.mjs --test-five",
+    "audio:test-five:dry-run": "node scripts/generate-flashcard-audio.mjs --test-five --dry-run",
     "audio:sample": "node scripts/generate-flashcard-audio.mjs",
     "audio:all": "node scripts/generate-flashcard-audio.mjs --all",
     "audio:voices": "node scripts/generate-flashcard-audio.mjs --voices",

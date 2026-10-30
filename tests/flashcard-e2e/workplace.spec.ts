@@ -2,6 +2,7 @@ import { test, expect, type Page } from '@playwright/test';
 import { createSessionFromIds } from '../../lib/sessions/engine';
 import type { Session } from '../../lib/sessions/types';
 import { cardFor } from '../../lib/content/cards';
+import { recordingFor } from '../../lib/speech/recordings';
 import { communicationFor, modelFor } from '../../lib/practice/communication';
 import { asGuest, guestSessionsKey, savedGuestSessions, switchMode, solveQuiz, currentQuizModel, rateSpeaking } from './helpers';
 
@@ -46,6 +47,13 @@ test('collection and area selection use only the chosen eligible workplace pool'
 for(const width of [390,1280])test(`pictureless workplace rotation, refresh, history and Dutch speech at ${width}px`,async({page},testInfo)=>{
   await page.setViewportSize({width,height:900});await voices(page);
   const errors:string[]=[];const assets:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+  const recordingRequests: string[] = [];
+  // Simulate a missing MP3 so both recorded-first sentences and TTS-only
+  // alternatives exercise the Dutch voice fallback with stable timing.
+  await page.route('**/audio/utterances/**', route => {
+    recordingRequests.push(new URL(route.request().url()).pathname);
+    return route.abort();
+  });
   page.on('request',r=>{if(/\/(illustrations\/cards|audio\/flashcards)\//.test(r.url()))assets.push(r.url());});
   await seed(page);
   await expect(page.getByTestId('session-name')).toBeVisible();
@@ -58,6 +66,8 @@ for(const width of [390,1280])test(`pictureless workplace rotation, refresh, his
     await solveQuiz(page,current.dutch);await page.getByRole('button',{name:'Check',exact:true}).click();
     await expect(page.getByTestId('quiz-model-answer')).toHaveText(current.dutch);
     await expect(page.getByTestId('answer-explanation')).toHaveText(modelFor(cardFor('nl',current.id)!,seen[i])!.explanation);
+    const expectedRecording = recordingFor(current.dutch, 'nl');
+    const requestsBefore = recordingRequests.length;
     await page.getByRole('button',{name:'Listen',exact:true}).click();
     await expect.poll(()=>page.evaluate(()=>((window as unknown as {__spoken:unknown[]}).__spoken).length)).toBe(1);
     const spoken=await page.evaluate(()=>(window as unknown as {__spoken:{text:string;lang:string;rate:number}[]}).__spoken);
@@ -65,6 +75,11 @@ for(const width of [390,1280])test(`pictureless workplace rotation, refresh, his
     await page.getByRole('button',{name:'Listen slowly',exact:true}).click();
     await expect.poll(()=>page.evaluate(()=>(window as unknown as {__spoken:unknown[]}).__spoken.length)).toBe(2);
     expect((await page.evaluate(()=>(window as unknown as {__spoken:{rate:number}[]}).__spoken))[1].rate).toBe(0.75);
+    // A matching Flemish MP3 is requested before Dutch TTS fallback; an
+    // unrecorded alternative must never request the parent card's MP3.
+    expect(recordingRequests.slice(requestsBefore)).toEqual(
+      expectedRecording ? [expectedRecording, expectedRecording] : []
+    );
     const cancels=await page.evaluate(()=>(window as unknown as {__cancels:number}).__cancels);
     await page.getByRole('button',{name:'Stop audio',exact:true}).click();
     await expect.poll(()=>page.evaluate(()=>(window as unknown as {__cancels:number}).__cancels)).toBeGreaterThan(cancels);
@@ -96,9 +111,17 @@ for(const width of [390,1280])test(`pictureless workplace rotation, refresh, his
 });
 
 test('no Dutch voice leaves reading usable and never substitutes English speech',async({page})=>{
-  await voices(page,false);await seed(page,'study');await page.getByRole('button',{name:'Listen',exact:true}).click();
+  await voices(page,false);
+  const recordingRequests: string[] = [];
+  await page.route('**/audio/utterances/**', route => {
+    recordingRequests.push(new URL(route.request().url()).pathname);
+    return route.abort();
+  });
+  await seed(page,'study');await page.getByRole('button',{name:'Listen',exact:true}).click();
   await expect(page.locator('article').getByRole('status')).toContainText('No Dutch voice is installed');
   expect(await page.evaluate(()=>(window as unknown as {__spoken:unknown[]}).__spoken)).toEqual([]);
+  const expectedRecording = recordingFor(cardFor('nl','career-office-007')!.text, 'nl');
+  expect(recordingRequests).toEqual(expectedRecording ? [expectedRecording] : []);
   await expect(page.locator('article')).toContainText('Vanaf maandag');await page.getByRole('button',{name:'Next sentence',exact:true}).click();await expect(page.locator('article')).toBeVisible();
 });
 
@@ -107,7 +130,13 @@ test('workplace sentence links have grammar and vocabulary and truthfully declin
   await expect(page.getByRole('heading',{name:'Sentence example'})).toBeVisible();
   await expect(page.locator('article')).toContainText('Ik heb alleen leesrechten voor deze map.');
   await expect(page.locator('article img')).toHaveCount(0);
-  await expect(page.getByText('Spoken by your device’s Dutch voice.',{exact:true})).toBeVisible();
+  const recorded = recordingFor('Ik heb alleen leesrechten voor deze map.', 'nl');
+  if (recorded) {
+    await expect(page.getByText('Spoken by your device’s Dutch voice.',{exact:true})).toHaveCount(0);
+    await expect(page.getByRole('button',{name:'Listen',exact:true})).toBeVisible();
+  } else {
+    await expect(page.getByText('Spoken by your device’s Dutch voice.',{exact:true})).toBeVisible();
+  }
   await expect(page.getByRole('link',{name:'hebben',exact:true})).toBeVisible();
   await page.getByRole('link',{name:'hebben',exact:true}).click();await expect(page.getByRole('heading',{name:'Vocabulary',exact:true})).toBeVisible();
   await page.goto('/sentences/career-changes-001?lang=fr');await expect(page.getByTestId('sentence-unavailable')).toContainText('not available in French');

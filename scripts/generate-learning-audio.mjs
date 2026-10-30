@@ -43,7 +43,7 @@ const rows = manifest.batches.flatMap((batch) => batch.items);
 const seen = new Set();
 const candidates = [];
 for (const row of rows) {
-  if (row.lang !== 'nl' || row.id !== sha('nl\\0' + row.text).slice(0, 24))
+  if (row.lang !== 'nl' || row.id !== sha('nl\0' + row.text).slice(0, 24))
     throw Error('Manifest text/id mismatch: ' + row.id);
   if (seen.has(row.id)) continue;
   seen.add(row.id);

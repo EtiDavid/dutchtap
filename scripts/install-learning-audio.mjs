@@ -16,7 +16,7 @@ const apply = process.argv.includes('--apply');
 const install = []; let already = 0, unapproved = 0;
 for (const [id, entry] of Object.entries(state.clips)) {
   if (entry.lang !== 'nl' || entry.approved !== true) { unapproved++; continue; }
-  if (!/^[a-f0-9]{24}$/.test(id) || id !== hash('nl\\0' + entry.text).slice(0, 24)) throw Error('Invalid ID: ' + id);
+  if (!/^[a-f0-9]{24}$/.test(id) || id !== hash('nl\0' + entry.text).slice(0, 24)) throw Error('Invalid ID: ' + id);
   const data = await fs.readFile(path.join(source, id + '.mp3'));
   if (hash(data) !== entry.checksum) throw Error('Checksum mismatch: ' + id);
   const dest = path.join(targetDir, id + '.mp3');

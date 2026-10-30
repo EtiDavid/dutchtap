@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { createSessionFromIds } from "../../lib/sessions/engine";
 import { variationsFor } from "../../lib/variations/content";
+import audioIndex from "../../data/audio-index.json";
 import {
   asGuest,
   guestSessionsKey,
@@ -121,7 +122,7 @@ test("default rating, automatic gradual children, device audio and previous-card
   });
 });
 
-test("a pictureless Dutch variation uses a Dutch device voice and makes no recording request", async ({
+test("a pictureless variation uses its matching Flemish recording and falls back to Dutch device speech if unavailable", async ({
   page,
 }) => {
   await page.addInitScript(() => {
@@ -159,9 +160,11 @@ test("a pictureless Dutch variation uses a Dutch device voice and makes no recor
       },
     });
   });
-  let recordings = 0;
+  const requestedPaths: string[] = [];
+  // Simulate a missing recording to assert the new indexed MP3 is selected first
+  // and device TTS reads exactly the same child sentence on network failure.
   await page.route("**/audio/**", (route) => {
-    recordings++;
+    requestedPaths.push(new URL(route.request().url()).pathname);
     return route.abort();
   });
   await seed(page);
@@ -169,6 +172,11 @@ test("a pictureless Dutch variation uses a Dutch device voice and makes no recor
   await page.getByRole("button", { name: "Check the Dutch" }).click();
   const child = (await read(page)).speaking.current!.cardId;
   expect(child).toContain("~v");
+  const childText = variationsFor("food-07").find((v) => v.id === child)!.text;
+  const expectedRecording = Object.values(audioIndex.items).find(
+    (item) => item.lang === "nl" && item.text === childText,
+  )?.path;
+  expect(expectedRecording).toBeTruthy();
   await page.getByRole("button", { name: "Listen", exact: true }).click();
   await expect
     .poll(() =>
@@ -188,5 +196,6 @@ test("a pictureless Dutch variation uses a Dutch device voice and makes no recor
       voice: "Dutch voice",
     },
   ]);
-  expect(recordings).toBe(0);
+  await expect.poll(() => requestedPaths.length).toBe(1);
+  expect(requestedPaths).toEqual([expectedRecording]);
 });

@@ -108,6 +108,15 @@ export function inventory() {
     add(match[2], `game-adjective:${match[1]}`, false, `/words/adjectives/${match[1]}.mp3`);
     add(match[3], `game-adjective:${match[1]}`);
   }
+  for (const card of read("grammar-pattern-cards.json")) add(card.dutch, "grammar-card");
+  for (const children of Object.values(read("grammar-variation-families.json")))
+    for (const child of children) add(child.text, "grammar-child");
+  for (const lesson of Object.values(read("grammar-topic-lessons.json")))
+    for (const section of lesson.sections || [])
+      for (const example of section.examples || []) add(example.nl, "grammar-lesson");
+  for (const note of Object.values(read("workplace-grammar-notes.json")))
+    for (const key of ["examples", "originalExamples"])
+      for (const example of note[key] || []) add(example.dutch, "workplace-example");
   const installed = read("audio-index.json");
   for (const item of items.values()) {
     item.existingAudio = installed.items[item.id]?.path || item.existingAudio;

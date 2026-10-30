@@ -7,6 +7,7 @@ import {
 import { communicationFor, modelFor } from "../../lib/practice/communication";
 import { cardFor } from "../../lib/content/cards";
 import { variationsFor } from "../../lib/variations/content";
+import audioIndex from "../../data/audio-index.json";
 import type { Session, ActionInput } from "../../lib/sessions/types";
 import {
   asGuest,
@@ -195,7 +196,7 @@ test("a child gives a precise instruction scenario, meaningful alternatives, pro
   await expect(page.getByTestId("quiz-points")).toHaveText("10");
 });
 
-test("an alternative answer speaks its own Dutch text using the device, never the original recording", async ({
+test("a recorded alternative requests its own Flemish MP3, then falls back to Dutch speech if playback fails", async ({
   page,
 }) => {
   await page.addInitScript(() => {
@@ -244,10 +245,16 @@ test("an alternative answer speaks its own Dutch text using the device, never th
     }
   }
   expect(selected).toBeDefined();
-  let recordings = 0;
-  await page.route("**/audio/**", (r) => {
-    recordings++;
-    return r.abort();
+  const expectedRecording = Object.values(audioIndex.items).find(
+    (item) => item.lang === "nl" && item.text === "Ik heb een nieuw gerecht geprobeerd.",
+  )?.path;
+  expect(expectedRecording).toBeTruthy();
+  const requestedPaths: string[] = [];
+  // Deliberately fail the indexed MP3: playback must first request the correct alternative,
+  // never the original card audio, and then recover using a Dutch device voice.
+  await page.route("**/audio/**", (route) => {
+    requestedPaths.push(new URL(route.request().url()).pathname);
+    return route.abort();
   });
   await seed(page, selected!);
   await solveQuiz(page, "Ik heb een nieuw gerecht geprobeerd.");
@@ -265,5 +272,6 @@ test("an alternative answer speaks its own Dutch text using the device, never th
       () => (window as unknown as { __spoken: unknown[] }).__spoken,
     ),
   ).toEqual([{ text: "Ik heb een nieuw gerecht geprobeerd.", lang: "nl-BE" }]);
-  expect(recordings).toBe(0);
+  await expect.poll(() => requestedPaths.length).toBe(1);
+  expect(requestedPaths).toEqual([expectedRecording]);
 });

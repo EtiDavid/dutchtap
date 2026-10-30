@@ -3,12 +3,12 @@
   "campaign": "workplace-500",
   "date": "2026-10-30",
   "source": "data/workplace-cards.json",
-  "selectionRule": "Exactly 50 unrecorded sentences per workplace category, retaining source order and full exact Dutch text",
+  "selectionRule": "50 unrecorded sentences per workplace category, in source order with one editorial swap (clarification-019 replaced by clarification-051)",
   "recordingVoice": "Diederik — Vlaamse warme stem",
   "editorialStatus": "The 600 workplace cards are marked AI-editorially-reviewed, not native-speaker checked; these 500 remain pending explicit recording approval.",
   "approvedCount": 0,
   "plannedClips": 500,
-  "plannedCharacters": 24033,
+  "plannedCharacters": 24038,
   "rows": [
     {
       "cardId": "career-changes-001",
@@ -623,13 +623,13 @@
       "reviewNote": ""
     },
     {
-      "cardId": "career-clarification-019",
+      "cardId": "career-clarification-051",
       "category": "clarification",
-      "dutch": "Ik heb de term nieuw als onbekend begrepen.",
-      "english": "I understood the term new as unfamiliar.",
+      "dutch": "Ik leer de Nederlandse termen voor dit werk nog.",
+      "english": "I am still learning the Dutch terms for this work.",
       "approvedForRecording": false,
       "independentHumanReview": false,
-      "reviewNote": ""
+      "reviewNote": "Prioritized practical Dutch-language workplace communication; replaces a potentially unnatural metalinguistic prompt."
     },
     {
       "cardId": "career-clarification-020",

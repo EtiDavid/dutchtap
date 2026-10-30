@@ -51,7 +51,7 @@ for (const row of rows) {
 }
 const statePath = path.join(output, 'generation-state.json');
 let state = { version: 1, clips: {} };
-try { state = JSON.parse(await readFile(statePath, 'utf8')); }
+try { state = JSON.parse((await readFile(statePath, 'utf8')).replace(/\\\\n\\s*$/, '\\n')); }
 catch (e) { if (e.code !== 'ENOENT') throw e; }
 const selected = [];
 let chars = 0, skipped = 0;
@@ -94,7 +94,7 @@ for (const { row, body, fingerprint, target } of selected) {
   await writeFile(target + '.part', bytes);
   await rename(target + '.part', target);
   state.clips[row.id] = { text: row.text, lang: 'nl', voice, model, settings, fingerprint, checksum: sha(bytes), generatedAt: new Date().toISOString(), approved: row.approved, roles: row.roles };
-  await writeFile(statePath + '.part', JSON.stringify(state, null, 2) + '\\n');
+  await writeFile(statePath + '.part', JSON.stringify(state, null, 2) + '\n');
   await rename(statePath + '.part', statePath);
   console.log('Saved ' + row.id + '.mp3 (' + row.text.length + ' characters)');
 }

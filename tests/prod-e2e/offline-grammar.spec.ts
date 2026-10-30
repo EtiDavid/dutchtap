@@ -48,8 +48,15 @@ test('visited grammar pages, the mixed round and a grammar session keep working 
   // 3. the grammar session is still there, the topic guide opens, and study works
   await page.goto(sessionUrl);
   await expect(page.getByTestId('session-name')).toBeVisible();
-  await page.getByTestId('grammar-topic-lesson').locator('summary').click();
-  await expect(page.getByTestId('grammar-topic-lesson')).toContainText('Sentence formulas');
+  const lesson = page.getByTestId('grammar-topic-lesson');
+  // The guide has an inner <details> for a self-check, so a descendant
+  // 'summary' selector matches multiple elements. Target the guide's own
+  // accessible summary and only open it if it is currently collapsed.
+  if (!(await lesson.evaluate((element) => (element as HTMLDetailsElement).open))) {
+    await page.getByTestId('grammar-topic-lesson-summary').click();
+  }
+  await expect(lesson).toHaveAttribute('open', '');
+  await expect(lesson.getByRole('heading', { name: /Sentence formulas/ })).toBeVisible();
 
   // 4. the create dialog and its lesson open offline too
   await page.goto('/flashcards?new=grammar:connectors');

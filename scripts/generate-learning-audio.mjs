@@ -51,7 +51,7 @@ for (const row of rows) {
 }
 const statePath = path.join(output, 'generation-state.json');
 let state = { version: 1, clips: {} };
-try { state = JSON.parse((await readFile(statePath, 'utf8')).replace(/\\\\n\\s*$/, '\\n')); }
+try { const raw = await readFile(statePath, 'utf8'); const clean = raw.trimEnd(); state = JSON.parse(clean.endsWith(String.raw`\n`) ? clean.slice(0, -2) : clean); }
 catch (e) { if (e.code !== 'ENOENT') throw e; }
 const selected = [];
 let chars = 0, skipped = 0;

@@ -19,7 +19,8 @@ const gitText = (args) => execFileSync("git", args, {cwd:root,encoding:"utf8"});
 const list = read("data/editorial/audio-workplace-500-review.json").rows;
 const current = read("data/audio-index.json").items;
 const baseline = JSON.parse(gitText(["show", "HEAD:data/audio-index.json"])).items;
-const state = read("audio-generated/generation-state.json").clips;
+const stateFile = fs.readFileSync(path.join(root, "audio-generated/generation-state.json"), "utf8").trimEnd();
+const state = JSON.parse(stateFile.endsWith("\\n") ? stateFile.slice(0, -2) : stateFile).clips;
 if (gitText(["branch","--show-current"]).trim() !== "audio/workplace-500-20261030")
   throw Error("Checkout audio/workplace-500-20261030 before finalising.");
 if (list.length !== 500 || list.some(x => !x.approvedForRecording)) throw Error("Recording campaign not approved.");
@@ -46,7 +47,7 @@ for (const row of list) {
 const additions = Object.keys(current).filter(id => !baseline[id]);
 if (additions.length !== 500 || additions.some(id => !expectedIDs.has(id)))
   throw Error("Audio index additions must be exactly these 500 reviewed clips.");
-const modified = gitText(["status","--porcelain=v1","--untracked-files=all"]).trim().split("\n").filter(Boolean);
+const modified = gitText(["status","--porcelain=v1","--untracked-files=all"]).trimEnd().split("\n").filter(Boolean);
 for (const line of modified) {
   const file = line.slice(3);
   if (file !== "data/audio-index.json" && !names.includes(file))

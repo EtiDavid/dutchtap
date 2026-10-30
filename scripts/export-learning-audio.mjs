@@ -117,6 +117,18 @@ export function inventory() {
   for (const note of Object.values(read("workplace-grammar-notes.json")))
     for (const key of ["examples", "originalExamples"])
       for (const example of note[key] || []) add(example.dutch, "workplace-example");
+  // The runtime also exposes reviewed same-meaning contrasts as children.
+  for (const filename of fs.readdirSync(path.join(root, "data")).filter(
+    (name) => /^grammar-.*-analysis\\.json$/.test(name),
+  )) {
+    for (const record of Object.values(read(filename).cards || {})) {
+      const contrast = record.contrast;
+      const normalize = (value) => String(value || "").toLocaleLowerCase("en")
+        .replace(/[.,!?;:]/g, "").replace(/\\s+/g, " ").trim();
+      if (contrast?.dutch && normalize(contrast.english) === normalize(record.meaning))
+        add(contrast.dutch, "grammar-runtime-contrast");
+    }
+  }
   const installed = read("audio-index.json");
   for (const item of items.values()) {
     item.existingAudio = installed.items[item.id]?.path || item.existingAudio;

@@ -103,7 +103,8 @@ export async function speakWithDevice(
 export async function play(item: PlayItem, slow = false) {
   stopAllSpeech();
   const mine = generation;
-  const recording = recordingFor(item.text, item.lang) ?? item.audio;
+  // Keep an explicitly assigned legacy flashcard recording; otherwise use the exact-text Flemish recording.
+  const recording = item.audio || recordingFor(item.text, item.lang);
   if (!recording) {
     await speakWithDevice(item, slow, mine);
     return;

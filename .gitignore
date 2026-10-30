@@ -24,6 +24,11 @@
 # production
 /build
 /audio-export
+/audio-export-full
+/audio-generated
+# Production utterance MP3s are tracked alongside data/audio-index.json.
+# Never ignore them: the deployed app needs these files.
+/audio-test-output/
 
 # misc
 .DS_Store

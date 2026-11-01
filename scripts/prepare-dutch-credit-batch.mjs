@@ -80,6 +80,23 @@ const wordCandidates=[...candidates];candidates.length=0;seen.clear();
 for(const [topic,group] of topicQueues)
  for(const text of group)add(text,'lesson-example:'+topic,'grammar-topic-lessons.json');
 const lessonCandidates=[...candidates];candidates.length=0;seen.clear();
+// Fill subsequent credit batches with authored grammar cards that have matching
+// per-card AI-editorial analysis. These sentences are already present in DutchTap;
+// the analysis status is NOT independent native-speaker certification.
+const analyses=new Map();
+for(const filename of fs.readdirSync(path.join(root,'data')).filter(x=>/^grammar-.*-analysis\.json$/.test(x))){
+ for(const [cardId,record] of Object.entries(data(filename).cards||{})){
+   if(record.status==='ai-editorial-checked')analyses.set(cardId,record);
+ }
+}
+let grammarEligible=0,grammarMissingAnalysis=0;
+for(const card of data('grammar-pattern-cards.json')){
+ if(!analyses.has(card.id)){grammarMissingAnalysis++;continue}
+ grammarEligible++;
+ add(card.dutch,'grammar-card:'+card.category,'grammar-pattern-cards.json');
+}
+const grammarCandidates=[...candidates];candidates.length=0;seen.clear();
+
 const selected=[],picked=new Set();let characters=0;
 function choose(row){
  if(picked.has(row.id)||characters+row.text.length>budget)return false;
@@ -103,8 +120,22 @@ while(progressed){
   if(choose(group.shift()))progressed=true;
  }
 }
+const grammarGroups=new Map();
+for(const row of grammarCandidates){
+ const topic=row.roles[0].split(':')[1];
+ if(!grammarGroups.has(topic))grammarGroups.set(topic,[]);
+ grammarGroups.get(topic).push(row);
+}
+progressed=true;
+while(progressed){
+ progressed=false;
+ for(const group of grammarGroups.values())if(group.length){
+  if(choose(group.shift()))progressed=true;
+ }
+}
 for(const row of wordCandidates)choose(row);
 for(const row of lessonCandidates)choose(row);
+for(const row of grammarCandidates)choose(row);
 if(!selected.length)throw Error('No new Dutch content can be selected');
 if(characters>budget)throw Error('Budget exceeded');
 fs.mkdirSync(output,{recursive:true});
@@ -120,6 +151,8 @@ console.log(JSON.stringify({
  language:'nl',accountLabel:label,requestedBudget:budget,selected:selected.length,characters,
  words:selected.filter(x=>!x.roles[0].startsWith('lesson-example')).length,
  lessonExamples:selected.filter(x=>x.roles[0].startsWith('lesson-example')).length,
+ grammarCards:selected.filter(x=>x.roles[0].startsWith('grammar-card')).length,
+ grammarEligible,grammarMissingAnalysis,
  skippedAlreadyInstalled:skippedIndexed,skippedAlreadyGenerated:skippedSaved,
  ignoredOutsideFullAudit:skippedOutsideAudit,
  manifest:path.relative(root,path.join(output,'manifest.json')),

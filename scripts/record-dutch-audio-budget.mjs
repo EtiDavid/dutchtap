@@ -30,9 +30,9 @@ const budget=Number(option('--budget','0'));
 const apply=args.includes('--apply');
 // Optional R2 publication after each installed ElevenLabs batch.
 const r2Remote=option('--r2-remote','');
-if(r2Remote && !/^[a-zA-Z0-9_-]+:[^\\s]+\\/utterances\\/?$/.test(r2Remote))
+if(r2Remote && !/^[a-zA-Z0-9_-]+:[^\s]+\/utterances\/?$/.test(r2Remote))
   throw Error('--r2-remote must be an rclone path ending in /utterances');
-const r2Root=r2Remote ? r2Remote.replace(/\\/+$/,'').slice(0,-'/utterances'.length) : '';
+const r2Root=r2Remote ? r2Remote.replace(/\/+$/,'').slice(0,-'/utterances'.length) : '';
 if(!/^[a-zA-Z0-9_-]+$/.test(account))throw Error('Use --account with a simple unique label for each ElevenLabs account.');
 if(!Number.isSafeInteger(budget)||budget<100)throw Error('Provide --budget with a positive character allowance (at least 100).');
 const generatedDir=path.join(root,'audio-generated');

@@ -113,7 +113,7 @@ while(iteration++<100){
    '--manifest',manifestPath,'--max-characters',String(limit),
    '--max-clips','1000','--campaign-label',account,'--apply']);
  // Install completed clips even if the network fails partway through a batch.
- if(!run('install-learning-audio.mjs',['--apply']))
+ if(!run('install-learning-audio.mjs',r2Remote?['--apply','--r2-remote',r2Root]:['--apply']))
    throw Error('Audio installation failed; generated MP3s remain on disk for recovery.');
  // Publish completed and partial batches before reporting generation failures.
  if(r2Remote && !run('publish-dutch-audio-r2.mjs',['--remote',r2Remote,'--apply']))

@@ -18,7 +18,7 @@ vi.mock("../lib/speech/voices", () => ({
 
 describe("Dutch recorded-only audio", () => {
   const speech = { cancel: vi.fn(), speak: vi.fn() };
-  const audioInstances: Array<{ src: string; pause: ReturnType<typeof vi.fn>; play: ReturnType<typeof vi.fn> }> = [];
+  const audioInstances: Array<{ src: string }> = [];
   const audioFactory = vi.fn((src: string) => {
     const element = {
       src, pause: vi.fn(), play: vi.fn(async () => undefined),

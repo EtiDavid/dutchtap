@@ -11,6 +11,10 @@ async function dutchtapFullAudioAudit() {
   // --r2-remote accepts a configured rclone bucket root, not the public URL.
   // Every indexed MP3 is validated against the remote listing: fail closed.
   const argv = process.argv.slice(2);
+  // Local CI can verify inventory metadata without R2 credentials. This is
+  // NOT an availability check and must never replace --r2-remote for generation.
+  const indexOnly = argv.includes('--index-only');
+  if (indexOnly && argv.includes('--r2-remote')) throw Error('Select only one audit mode');
   const remoteArg = argv.indexOf('--r2-remote');
   if (remoteArg !== -1 && (!argv[remoteArg + 1] || argv[remoteArg + 1].startsWith('--')))
     throw Error('Provide the R2 bucket root after --r2-remote');
@@ -28,6 +32,7 @@ async function dutchtapFullAudioAudit() {
   const remoteUtterances = listRemote('utterances');
   const remoteLegacy = listRemote('flashcards');
   function available(audioPath) {
+    if (indexOnly) return /^\/audio\/(?:utterances\/[a-f0-9]{24}|flashcards\/[a-z0-9-]+)\.mp3$/.test(audioPath);
     if (!r2Root) return fs.existsSync(path.join(root,'public',audioPath.replace(/^\//,'')));
     const u = /^\/audio\/utterances\/([a-f0-9]{24}\.mp3)$/.exec(audioPath);
     if (u) return remoteUtterances.has(u[1]);
@@ -165,7 +170,7 @@ async function dutchtapFullAudioAudit() {
     sourceCommit:'5a207a0 plus later audit-only changes',
     scope:'Dutch-only audio targets: cards, variations, model answers, vocabulary, game word forms, lesson examples, spoken Dutch prompts, grammar corrections and drills. English remains text-only in this campaign; French untouched. Not all explanatory prose is a recording target.',
     indexedAudioFiles:Object.keys(existing).length,
-    verificationSource:r2Root ? 'R2 object listing' : 'local MP3s',
+    verificationSource:r2Root ? 'R2 object listing' : indexOnly ? 'INDEX METADATA ONLY — R2 availability NOT verified' : 'local MP3s',
     stats:{...stats,analysisFiles:analyses.length,missingLegacyFiles},
     languages:{},
     excludedLanguages:['en','fr'],

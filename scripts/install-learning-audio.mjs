@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const source = path.join(root, 'audio-generated');
 const state = JSON.parse(await fs.readFile(path.join(source, 'generation-state.json'), 'utf8'));
@@ -13,6 +14,25 @@ if (index.version !== 1 || !index.items || Array.isArray(index.items)) throw Err
 const hash = (data) => createHash('sha256').update(data).digest('hex');
 const targetDir = path.join(root, 'public/audio/utterances');
 const apply = process.argv.includes('--apply');
+// A remote-only Git clone intentionally has no historical MP3s. Verify every
+// existing indexed recording against R2 rather than silently regenerating it.
+const remoteArg = process.argv.indexOf('--r2-remote');
+if (remoteArg !== -1 && (!process.argv[remoteArg + 1] || process.argv[remoteArg + 1].startsWith('--')))
+  throw Error('Expected R2 bucket root after --r2-remote');
+const r2Root = remoteArg !== -1 ? process.argv[remoteArg + 1].replace(/\/+$/, '') : '';
+if (r2Root && !/^[a-zA-Z0-9_-]+:[^\s]+$/.test(r2Root)) throw Error('Invalid R2 bucket root');
+let remoteFiles = null;
+if (r2Root) {
+  const run = spawnSync('rclone', ['lsf',r2Root+'/utterances/','--files-only','--include','*.mp3'],
+    {cwd:root,encoding:'utf8',maxBuffer:8*1024*1024});
+  if (run.error) throw run.error;
+  if (run.status !== 0) throw Error('Cannot verify R2 inventory: '+(run.stderr||'').trim());
+  remoteFiles = new Set(run.stdout.trim().split('\n').filter(Boolean));
+  for (const [id, item] of Object.entries(index.items)) {
+    if (item.path !== '/audio/utterances/'+id+'.mp3' || !remoteFiles.has(id+'.mp3'))
+      throw Error('Existing indexed MP3 missing from R2. Publish before installing: '+id);
+  }
+}
 const install = []; let already = 0, unapproved = 0;
 for (const [id, entry] of Object.entries(state.clips)) {
   if (entry.lang !== 'nl' || entry.approved !== true) { unapproved++; continue; }
@@ -26,7 +46,7 @@ for (const [id, entry] of Object.entries(state.clips)) {
   if (existing && hash(existing) !== entry.checksum) throw Error('Refusing to overwrite different existing MP3: ' + id);
   if (index.items[id]) {
     if (JSON.stringify(index.items[id]) !== JSON.stringify(item)) throw Error('Existing audio index entry differs: ' + id);
-    if (!existing) throw Error('Index references missing file: ' + id);
+    if (!existing && !remoteFiles?.has(id + '.mp3')) throw Error('Index references a recording missing both locally and on R2: ' + id);
     already++; continue;
   }
   if (existing) throw Error('Existing MP3 has no matching index entry: ' + id);

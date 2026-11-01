@@ -2,6 +2,8 @@ import { readFile, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
 const root = new URL('../', import.meta.url);
+const remoteAudio = process.argv.includes('--remote-audio'); // metadata-only check; see audit-cloudflare-audio.mjs
+
 const originals = JSON.parse(await readFile(new URL('data/flashcards.json', root), 'utf8'));
 const additions = JSON.parse(await readFile(new URL('data/flashcard-additions.json', root), 'utf8'));
 const moreAdditions = JSON.parse(await readFile(new URL('data/flashcard-additions-2.json', root), 'utf8'));
@@ -22,6 +24,12 @@ for (const card of cards) {
     paths.add(path);
     const ready = !card[`${kind}Status`] || card[`${kind}Status`] === 'ready';
     if (!ready) continue;
+    if (kind === 'audio' && remoteAudio) {
+      if (!/^\/audio\/flashcards\/[a-z0-9-]+\.mp3$/.test(path)) errors.push('Invalid R2 flashcard audio path: '+card.id);
+      else readyAudio++;
+      continue;
+    }
+
     try {
       const file = new URL(`public${path}`, root);
       if ((await stat(file)).size === 0) throw new Error('empty file');
@@ -40,5 +48,5 @@ for (const card of workplace) {
   seen.add(card.id);
   if (!card.id.startsWith('career-') || card.collection !== 'workplace' || card.image !== '' || card.audio !== '' || card.imageStatus !== 'not-applicable' || card.audioStatus !== 'device') errors.push(`Invalid intentional media policy: ${card.id}`);
 }
-console.log(JSON.stringify({ cards: cards.length + workplace.length, recordedIllustratedCards: cards.length, intentionalPicturelessDeviceCards: workplace.length, additions: additions.length + moreAdditions.length, readyImages, pendingImages: cards.length - readyImages, readyAudio, awaitingRecordings: cards.length - readyAudio, errors }, null, 2));
+console.log(JSON.stringify({ cards: cards.length + workplace.length, recordedIllustratedCards: cards.length, intentionalPicturelessDeviceCards: workplace.length, additions: additions.length + moreAdditions.length, readyImages, pendingImages: cards.length - readyImages, readyAudio, awaitingRecordings: cards.length - readyAudio, audioValidation: remoteAudio ? 'R2 PATH METADATA ONLY; run audit-cloudflare-audio.mjs for live availability' : 'local files', errors }, null, 2));
 if (workplace.length !== 600 || cards.length !== 600 || additions.length !== 250 || moreAdditions.length !== 300 || errors.length || (process.argv.includes('--complete') && (readyImages !== cards.length || readyAudio !== cards.length))) process.exitCode = 1;

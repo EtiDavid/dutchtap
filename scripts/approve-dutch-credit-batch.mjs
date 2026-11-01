@@ -16,13 +16,13 @@ for(let i=0;i<rows.length;i++){
  const [status,id,text,roles]=review[i].replace(/\r$/,'').split('\t');
  const original=rows[i];
  if(id!==original.id||text!==original.text||roles!==original.roles.join(',')||original.lang!=='nl')throw Error('Review/manifest mismatch on row '+i);
- if(createHash('sha256').update('nl\\0'+text).digest('hex').slice(0,24)!==id)throw Error('ID mismatch on row '+i);
+ if(createHash('sha256').update('nl\0'+text).digest('hex').slice(0,24)!==id)throw Error('ID mismatch on row '+i);
  if(status==='APPROVED')approved.push({...original,approved:true});
  else if(status==='PENDING')pending++;
  else if(status==='REJECT')rejected++;
  else throw Error('Invalid review status on row '+i);
 }
-text(JSON.stringify({approved:approved.length,pending,rejected,approvedCharacters:approved.reduce((n,x)=>n+x.text.length,0)}));
+console.log(JSON.stringify({approved:approved.length,pending,rejected,approvedCharacters:approved.reduce((n,x)=>n+x.text.length,0)}));
 if(!args.includes('--apply'))process.exit(0);
 if(approved.length===0)throw Error('No approved rows');
 const output={...input,approvedOnly:true,batches:[{...input.batches[0],items:approved}]};

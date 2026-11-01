@@ -5,8 +5,35 @@ async function dutchtapFullAudioAudit() {
   const path = await import('node:path');
   const { createHash } = await import('node:crypto');
   const { fileURLToPath } = await import('node:url');
+  const { spawnSync } = await import('node:child_process');
   const { inventory } = await import('./export-learning-audio.mjs');
   const root = fileURLToPath(new URL('../', import.meta.url));
+  // --r2-remote accepts a configured rclone bucket root, not the public URL.
+  // Every indexed MP3 is validated against the remote listing: fail closed.
+  const argv = process.argv.slice(2);
+  const remoteArg = argv.indexOf('--r2-remote');
+  if (remoteArg !== -1 && (!argv[remoteArg + 1] || argv[remoteArg + 1].startsWith('--')))
+    throw Error('Provide the R2 bucket root after --r2-remote');
+  const r2Root = remoteArg !== -1 ? argv[remoteArg + 1].replace(/\/+$/, '') : '';
+  if (r2Root && !/^[a-zA-Z0-9_-]+:[^\s]+$/.test(r2Root))
+    throw Error('Invalid rclone remote: '+r2Root);
+  function listRemote(subfolder) {
+    if (!r2Root) return null;
+    const run = spawnSync('rclone', ['lsf', r2Root+'/'+subfolder+'/', '--files-only', '--include','*.mp3'],
+      {cwd:root,encoding:'utf8',maxBuffer:8*1024*1024});
+    if (run.error) throw run.error;
+    if (run.status !== 0) throw Error('R2 '+subfolder+' listing failed: '+(run.stderr||'').trim());
+    return new Set(run.stdout.trim().split('\n').filter(Boolean));
+  }
+  const remoteUtterances = listRemote('utterances');
+  const remoteLegacy = listRemote('flashcards');
+  function available(audioPath) {
+    if (!r2Root) return fs.existsSync(path.join(root,'public',audioPath.replace(/^\//,'')));
+    const u = /^\/audio\/utterances\/([a-f0-9]{24}\.mp3)$/.exec(audioPath);
+    if (u) return remoteUtterances.has(u[1]);
+    const old = /^\/audio\/flashcards\/([a-z0-9-]+\.mp3)$/.exec(audioPath);
+    return !!(old && remoteLegacy.has(old[1]));
+  }
   const read = name => JSON.parse(fs.readFileSync(path.join(root, 'data', name), 'utf8'));
   const hash = (text, lang) => createHash('sha256').update(`${lang}\0${text}`).digest('hex').slice(0, 24);
   const cap = 28000, maxItems = 1000;
@@ -112,14 +139,14 @@ async function dutchtapFullAudioAudit() {
   let missingIndexedFiles=0,badIndexedIds=0, missingLegacyFiles=0;
   for(const [id,entry] of Object.entries(existing)){
     if(entry.lang!=='nl' || hash(entry.text,entry.lang)!==id)badIndexedIds++;
-    if(!fs.existsSync(path.join(root,'public',entry.path.replace(/^\//,''))))missingIndexedFiles++;
+    if(entry.path !== '/audio/utterances/'+id+'.mp3' || !available(entry.path))missingIndexedFiles++;
   }
   if(missingIndexedFiles||badIndexedIds)throw Error(`Indexed audio invalid: ${missingIndexedFiles} missing files, ${badIndexedIds} bad IDs.`);
   for(const item of collected.values()) {
     const indexed=existing[item.id];
     if(indexed && indexed.lang===item.lang && indexed.text===item.text &&
-      fs.existsSync(path.join(root,'public',indexed.path.replace(/^\//,''))))item.existingAudio=indexed.path;
-    else if(item.existingAudio && !fs.existsSync(path.join(root,'public',item.existingAudio.replace(/^\//,'')))){
+      available(indexed.path))item.existingAudio=indexed.path;
+    else if(item.existingAudio && !available(item.existingAudio)){
       missingLegacyFiles++; item.existingAudio='';
     }
   }
@@ -138,6 +165,7 @@ async function dutchtapFullAudioAudit() {
     sourceCommit:'5a207a0 plus later audit-only changes',
     scope:'Dutch-only audio targets: cards, variations, model answers, vocabulary, game word forms, lesson examples, spoken Dutch prompts, grammar corrections and drills. English remains text-only in this campaign; French untouched. Not all explanatory prose is a recording target.',
     indexedAudioFiles:Object.keys(existing).length,
+    verificationSource:r2Root ? 'R2 object listing' : 'local MP3s',
     stats:{...stats,analysisFiles:analyses.length,missingLegacyFiles},
     languages:{},
     excludedLanguages:['en','fr'],

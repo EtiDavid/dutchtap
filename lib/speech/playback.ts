@@ -100,7 +100,7 @@ export async function speakWithDevice(
   return true;
 }
 
-/** Plays a sentence: a recording when it has one (Dutch), otherwise a device voice for its language. */
+/** Dutch is recorded-only. Other languages may use a device voice if no recording exists. */
 export async function play(item: PlayItem, slow = false) {
   stopAllSpeech();
   const mine = generation;
@@ -110,6 +110,10 @@ export async function play(item: PlayItem, slow = false) {
     ? (item.lang === "nl" ? resolveRecordingUrl(item.audio) : item.audio)
     : recordingFor(item.text, item.lang);
   if (!recording) {
+    if (item.lang === "nl") {
+      setMessage("Recorded Dutch audio is unavailable for this sentence. No device voice was substituted.");
+      return;
+    }
     await speakWithDevice(item, slow, mine);
     return;
   }
@@ -129,6 +133,10 @@ export async function play(item: PlayItem, slow = false) {
   } catch {
     if (mine !== generation) return;
     audio = null;
+    if (item.lang === "nl") {
+      setMessage("Dutch recording failed to play. Check your connection and try again; no device voice was substituted.");
+      return;
+    }
     await speakWithDevice(item, slow, mine, {
       fallbackNote: "Device voice used · recording could not be played",
     });

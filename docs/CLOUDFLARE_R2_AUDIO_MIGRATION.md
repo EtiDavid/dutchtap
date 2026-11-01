@@ -203,3 +203,67 @@ pair and use a replacement** before any further publishing. Never paste keys int
 the chat, create public GitHub files containing them, or put them in
 `NEXT_PUBLIC_...` variables. The public URL is safe to share; the S3 API
 credentials are not.
+
+
+## Verified full R2 cutover (user evidence, 2026-11-01)
+
+The operator ran `node scripts/audit-cloudflare-audio.mjs` and reported:
+
+```json
+{"status":"PASS","allAppReferencedMp3sInR2":true,"checked":8396,"nonReferencedExtraFiles":0}
+```
+
+An authenticated Vercel Preview screenshot shows an original flashcard
+`/flashcards/work-312.mp3` requested from Cloudflare, returning HTTP **304**
+(cached, not an error), `Content-Type: audio/mpeg`. Previous Preview
+testing confirmed indexed `/utterances/*.mp3` with HTTP 206. Both pathways
+are now working in **Preview**. This does NOT prove that Vercel Production has
+the correct environment variables, that every audio URL is exercised in
+the browser, or that the 600 original files have been byte-compared against
+their R2 copies. Keep the local and Git copies until the remaining gates pass.
+
+### Remote-only generation and auditing
+
+The audio scripts now accept remote-only Git clones. When audio is omitted
+from `public/`, validate the entire R2 inventory **before** any paid calls:
+
+```bash
+node scripts/audit-cloudflare-audio.mjs
+node scripts/audit-all-learning-audio.mjs \
+  --r2-remote dutchtap-r2:dutchtap-audio
+node scripts/audit-recorded-audio.mjs \
+  --r2-remote dutchtap-r2:dutchtap-audio
+node scripts/publish-dutch-audio-r2.mjs  # dry-run: verifies locally present MP3s
+```
+
+The publisher `--apply` uploads only locally present, SHA-256-verified
+indexed MP3s and validates the complete remote inventory; it accepts remote
+existing MP3s that do not exist locally. The budget runner
+`--r2-remote dutchtap-r2:dutchtap-audio/utterances` runs the remote
+audit **before spending** and publishes each newly generated batch.
+
+```bash
+# Existing campaign label and budget are CUMULATIVE; choose based on real credits.
+node scripts/record-dutch-audio-budget.mjs \
+  --account account2 --budget <CUMULATIVE_CHARACTER_BUDGET> \
+  --r2-remote dutchtap-r2:dutchtap-audio/utterances --apply
+```
+
+New `public/audio/utterances/` and `public/audio/flashcards/` files are
+ignored by Git, but existing Git-tracked MP3s have **not** been removed by
+this change. The user must commit the **JSON index only** after remote
+validation, not new MP3s. Keep local `audio-generated` and MP3 copies as
+recovery backups. The end-to-end remote-only scripts have not yet been
+executed in the user's WSL; do not claim that remote-only generation has
+passed until it has.
+
+### Production prerequisites
+
+The public `r2.dev` origin is a rate-limited **development** endpoint.
+Before serving production learners, add a bucket **custom domain** managed
+by Cloudflare, verify direct MP3 HTTP response and correct content type,
+configure the Vercel **Production** variables, then redeploy and test.
+Next, create a dedicated audio-untracking PR after backing up local assets.
+Do not delete old Git objects from history or remove MP3s from the existing
+production branch without this validation.
+

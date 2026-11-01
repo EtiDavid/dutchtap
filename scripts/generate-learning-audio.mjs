@@ -23,6 +23,8 @@ const number = (name, fallback) => {
 };
 const apply = args.includes('--apply');
 const includeUnreviewed = args.includes('--include-unreviewed');
+const campaignLabel = option('--campaign-label', '');
+if(campaignLabel && !/^[A-Za-z0-9_-]+$/.test(campaignLabel)) throw Error('Invalid campaign label');
 const maxCharacters = number('--max-characters', 1000);
 const maxClips = number('--max-clips', 5);
 const manifestPath = path.resolve(option('--manifest', path.join(root, 'audio-export', 'manifest.json')));
@@ -98,7 +100,7 @@ for (const { row, body, fingerprint, target } of selected) {
     throw Error('Invalid MP3 returned for ' + row.id);
   await writeFile(target + '.part', bytes);
   await rename(target + '.part', target);
-  state.clips[row.id] = { text: row.text, lang: 'nl', voice, model, settings, fingerprint, checksum: sha(bytes), generatedAt: new Date().toISOString(), approved: row.approved, roles: row.roles };
+  state.clips[row.id] = { text: row.text, lang: 'nl', voice, model, settings, fingerprint, checksum: sha(bytes), generatedAt: new Date().toISOString(), campaignLabel, approved: row.approved, roles: row.roles };
   await writeFile(statePath + '.part', JSON.stringify(state, null, 2) + '\n');
   await rename(statePath + '.part', statePath);
   console.log('Saved ' + row.id + '.mp3 (' + row.text.length + ' characters)');

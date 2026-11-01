@@ -13,17 +13,17 @@ if(at<0||!args[at+1]||args[at+1].startsWith('--'))throw Error('Provide --manifes
 const filepath=path.resolve(args[at+1]);
 const input=JSON.parse(fs.readFileSync(filepath,'utf8'));
 if(input.language!=='nl'||!Array.isArray(input.batches))throw Error('Dutch audio manifest required');
-const idFor=text=>createHash('sha256').update('nl\\0'+text).digest('hex').slice(0,24);
+const idFor=text=>createHash('sha256').update('nl\0'+text).digest('hex').slice(0,24);
 
 const auditPath=path.join(root,'audio-export/full-coverage/missing-nl.tsv');
 if(!fs.existsSync(auditPath))throw Error('First run: node scripts/audit-all-learning-audio.mjs');
-const lines=fs.readFileSync(auditPath,'utf8').trimEnd().split(/\\r?\\n/);
-if(lines.shift()!=='lang\\ttext\\tcharacters\\troles\\tapproved\\tid')
+const lines=fs.readFileSync(auditPath,'utf8').trimEnd().split(/\r?\n/);
+if(lines.shift()!=='lang\ttext\tcharacters\troles\tapproved\tid')
  throw Error('Unexpected full audio audit header');
 const audited=new Map();
 for(const line of lines){
  if(!line)continue;
- const cols=line.split('\\t');
+ const cols=line.split('\t');
  if(cols.length!==6)throw Error('Malformed full audio audit row');
  const [lang,text,characters,roles,approved,id]=cols;
  if(lang!=='nl'||text.length!==Number(characters)||id!==idFor(text))
@@ -55,6 +55,6 @@ console.log(JSON.stringify({verifiedFromApp:all.length,alreadyApproved,newlyAuto
  pending:0,approvedCharacters:all.reduce((n,row)=>n+row.text.length,0)},null,2));
 if(args.includes('--apply')){
  const dest=path.join(path.dirname(filepath),'approved-manifest.json');
- fs.writeFileSync(dest,JSON.stringify(output,null,2)+'\\n');
+ fs.writeFileSync(dest,JSON.stringify(output,null,2)+'\n');
  console.log('Wrote '+dest+' (no manual TSV approval required).');
 }

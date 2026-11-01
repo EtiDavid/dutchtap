@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { execFileSync } from 'node:child_process';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 
 describe('Full audio inventory planning', () => {
-  it('builds deterministic no-cost, bounded Dutch and English recording batches', () => {
+  it('builds deterministic, no-cost, Dutch-only recording batches', () => {
     const result = execFileSync('node', ['scripts/audit-all-learning-audio.mjs'], {
       cwd: process.cwd(), encoding: 'utf8', maxBuffer: 8 * 1024 * 1024
     });
@@ -11,7 +11,11 @@ describe('Full audio inventory planning', () => {
     const report = JSON.parse(readFileSync('audio-export/full-coverage/audit.json', 'utf8'));
     expect(report.languages.nl.total.uniqueUtterances).toBeGreaterThan(1334);
     expect(report.languages.nl.missing.uniqueUtterances).toBeGreaterThan(0);
-    for (const lang of ['nl', 'en']) {
+    expect(Object.keys(report.languages)).toEqual(['nl']);
+    expect(report.excludedLanguages).toEqual(['en', 'fr']);
+    expect(existsSync('audio-export/full-coverage/missing-en.tsv')).toBe(false);
+    expect(existsSync('audio-export/full-coverage/en')).toBe(false);
+    for (const lang of ['nl']) {
       const { total, recorded, missing, batches } = report.languages[lang];
       expect(total.uniqueUtterances).toBe(recorded.uniqueUtterances + missing.uniqueUtterances);
       expect(total.characters).toBe(recorded.characters + missing.characters);

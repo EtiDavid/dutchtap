@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 const root = fileURLToPath(new URL('../', import.meta.url));
-for (const file of ['.env', '.env.local']) {
+for (const file of ['.env.local', '.env']) {
   try { loadEnvFile(path.join(root, file)); } catch (e) { if (e.code !== 'ENOENT') throw e; }
 }
 const args = process.argv.slice(2);

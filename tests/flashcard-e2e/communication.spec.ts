@@ -196,7 +196,7 @@ test("a child gives a precise instruction scenario, meaningful alternatives, pro
   await expect(page.getByTestId("quiz-points")).toHaveText("10");
 });
 
-test("a recorded alternative requests its own Flemish MP3, then falls back to Dutch speech if playback fails", async ({
+test("a recorded alternative requests the right MP3 and never replaces failed Dutch playback with device speech", async ({
   page,
 }) => {
   await page.addInitScript(() => {
@@ -250,9 +250,9 @@ test("a recorded alternative requests its own Flemish MP3, then falls back to Du
   )?.path;
   expect(expectedRecording).toBeTruthy();
   const requestedPaths: string[] = [];
-  // Deliberately fail the indexed MP3: playback must first request the correct alternative,
-  // never the original card audio, and then recover using a Dutch device voice.
-  await page.route("**/audio/**", (route) => {
+  // Deliberately fail the indexed MP3, whether the app points at Cloudflare R2
+  // or the legacy local URL. Never replace the failed Dutch recording with TTS.
+  await page.route(/\\/(?:audio\\/)?utterances\\/[a-f0-9]{24}\\.mp3(?:\\?.*)?$/, (route) => {
     requestedPaths.push(new URL(route.request().url()).pathname);
     return route.abort();
   });
@@ -260,18 +260,12 @@ test("a recorded alternative requests its own Flemish MP3, then falls back to Du
   await solveQuiz(page, "Ik heb een nieuw gerecht geprobeerd.");
   await page.getByRole("button", { name: "Check", exact: true }).click();
   await page.getByRole("button", { name: "Listen", exact: true }).click();
-  await expect
-    .poll(() =>
-      page.evaluate(
-        () => (window as unknown as { __spoken: unknown[] }).__spoken.length,
-      ),
-    )
-    .toBe(1);
-  expect(
-    await page.evaluate(
-      () => (window as unknown as { __spoken: unknown[] }).__spoken,
-    ),
-  ).toEqual([{ text: "Ik heb een nieuw gerecht geprobeerd.", lang: "nl-BE" }]);
+  await expect(page.getByText(/Dutch recording failed to play/)).toBeVisible();
+  expect(await page.evaluate(
+    () => (window as unknown as { __spoken: unknown[] }).__spoken,
+  )).toEqual([]);
   await expect.poll(() => requestedPaths.length).toBe(1);
-  expect(requestedPaths).toEqual([expectedRecording]);
+  expect(requestedPaths[0]).toMatch(new RegExp(
+    "/(?:audio/)?utterances/" + expectedRecording!.split("/").pop()!.replace(".", "\\\\.") + "$",
+  ));
 });

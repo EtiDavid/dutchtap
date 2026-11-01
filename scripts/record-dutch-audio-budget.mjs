@@ -28,6 +28,8 @@ const option=(name,fallback)=>{
 const account=option('--account','');
 const budget=Number(option('--budget','0'));
 const apply=args.includes('--apply');
+// Optional R2 publication after each installed ElevenLabs batch.
+const r2Remote=option('--r2-remote','');
 if(!/^[a-zA-Z0-9_-]+$/.test(account))throw Error('Use --account with a simple unique label for each ElevenLabs account.');
 if(!Number.isSafeInteger(budget)||budget<100)throw Error('Provide --budget with a positive character allowance (at least 100).');
 const generatedDir=path.join(root,'audio-generated');
@@ -108,6 +110,9 @@ while(iteration++<100){
  // Install completed clips even if the network fails partway through a batch.
  if(!run('install-learning-audio.mjs',['--apply']))
    throw Error('Audio installation failed; generated MP3s remain on disk for recovery.');
+ // Publish completed and partial batches before reporting generation failures.
+ if(r2Remote && !run('publish-dutch-audio-r2.mjs',['--remote',r2Remote,'--apply']))
+   throw Error('R2 publication/verification failed. Local MP3s remain intact; rerun the publisher before any cleanup.');
  if(!success)
    throw Error('Audio generation stopped (possibly API credits/permission/network). Completed clips were installed; rerun the same campaign command to resume.');
  const now=usage();

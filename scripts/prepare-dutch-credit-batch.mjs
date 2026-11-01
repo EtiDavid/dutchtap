@@ -136,17 +136,56 @@ while(progressed){
 for(const row of wordCandidates)choose(row);
 for(const row of lessonCandidates)choose(row);
 for(const row of grammarCandidates)choose(row);
-if(!selected.length)throw Error('No new Dutch content can be selected');
+// The authored/AI-edited pools can become exhausted long before all audio is
+// recorded. Fill remaining space with exact-text items from the full audit,
+// marking them PENDING editorial review rather than silently approving them.
+const fallback=[];
+for(const line of fs.readFileSync(missingPath,'utf8').split(/\r?\n/).slice(1)){
+ if(!line)continue;
+ const columns=line.split('\t');
+ if(columns.length!==6)throw Error('Malformed audio inventory TSV line');
+ const [lang,text,characters,roles,approved,id]=columns;
+ if(lang!=='nl'||id!==idFor(text)||text.length!==Number(characters))
+   throw Error('Bad Dutch inventory row: '+id);
+ if(recorded.has(id)||picked.has(id))continue;
+ const saved=savedState[id];
+ if(saved){
+   const filename=path.join(cache,id+'.mp3');
+   if(!fs.existsSync(filename)||sha(fs.readFileSync(filename))!==saved.checksum)
+     throw Error('Unresolved generated audio state: '+id);
+   continue;
+ }
+ // Existing unreviewed targets remain unreviewed, regardless of source.
+ const roleList=roles.split(',').filter(Boolean);
+ const priority=roleList.some(x=>/^(verb|separable|word:|plural:|game-)/.test(x))?0:
+   roleList.some(x=>/^(prompt:|answer|reviewed-|grammar-child|card-prompt|grammar-prompt)/.test(x))?1:
+   roleList.some(x=>/^(lesson|note:|grammar-example|workplace-example|card-example|grammar-card)/.test(x))?2:3;
+ fallback.push({id,lang,text,roles:roleList,source:'full-audio-audit',
+   approved:false,existingAudio:'',review:'PENDING: check spelling, idiomatic Dutch and context before authorizing audio',priority});
+}
+fallback.sort((a,b)=>a.priority-b.priority || a.text.length-b.text.length || a.id.localeCompare(b.id));
+let pendingSelected=0;
+for(const row of fallback) {
+ if(selected.length>=1000)break;
+ const {priority,...candidate}=row;
+ if(choose(candidate))pendingSelected++;
+}
+if(!selected.length)throw Error('No unrecorded Dutch audio remains: rerun the full audit after verifying installed recordings.');
+
 if(characters>budget)throw Error('Budget exceeded');
 fs.mkdirSync(output,{recursive:true});
 const manifest={
- version:1,language:'nl',approvedOnly:true,accountLabel:label,
+ version:1,language:'nl',approvedOnly:selected.every(x=>x.approved),accountLabel:label,
  provenance:'Authored AI-edited Dutch lessons and verified vocabulary/word-game banks. No independent native-speaker certification.',
  plannedCharacters:characters,requestedBudget:budget,
  batches:[{id:'nl-credit-'+label,items:selected}]
 };
 fs.writeFileSync(path.join(output,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');
 fs.writeFileSync(path.join(output,'review.txt'),selected.map((row,i)=>(i+1)+'. ['+row.roles[0]+'] '+row.text).join('\n')+'\n');
+fs.writeFileSync(path.join(output,'review.tsv'),
+ 'status\tid\ttext\troles\n'+selected.map(x=>[
+   x.approved?'APPROVED':'PENDING',x.id,x.text.replace(/[\t\r\n]/g,' '),x.roles.join(',')
+ ].join('\t')).join('\n')+'\n');
 console.log(JSON.stringify({
  language:'nl',accountLabel:label,requestedBudget:budget,selected:selected.length,characters,
  words:selected.filter(x=>!x.roles[0].startsWith('lesson-example')).length,
@@ -157,6 +196,9 @@ console.log(JSON.stringify({
  ignoredOutsideFullAudit:skippedOutsideAudit,
  manifest:path.relative(root,path.join(output,'manifest.json')),
  review:path.relative(root,path.join(output,'review.txt')),
- editorialStatus:'AI-edited sources only, no independent native review',
+ editorialStatus:pendingSelected+' newly selected items require editorial review (no independent native certification)',
+ pendingReview:pendingSelected,alreadyApproved:selected.length-pendingSelected,
+ approvedOnly:manifest.approvedOnly,
+ reviewTsv:path.relative(root,path.join(output,'review.tsv')),
  paidRequestsMade:0
 },null,2));

@@ -12,7 +12,7 @@ describe('Full audio inventory planning', () => {
     expect(manifest.approvedOnly).toBe(true);
     expect(items.length).toBeGreaterThanOrEqual(20);
     expect(items.every((x: { text: string; lang: string; approved: boolean; id: string }) =>
-      x.lang === 'nl' && x.approved && x.id === createHash('sha256').update('nl\\0' + x.text).digest('hex').slice(0, 24)
+      x.lang === 'nl' && x.approved && x.id === createHash('sha256').update('nl\0' + x.text).digest('hex').slice(0, 24)
     )).toBe(true);
   });
   it('builds deterministic, no-cost, Dutch-only recording batches', () => {

@@ -99,7 +99,7 @@ const grammarCandidates=[...candidates];candidates.length=0;seen.clear();
 
 const selected=[],picked=new Set();let characters=0;
 function choose(row){
- if(picked.has(row.id)||characters+row.text.length>budget)return false;
+ if(selected.length>=1000||picked.has(row.id)||characters+row.text.length>budget)return false;
  picked.add(row.id);characters+=row.text.length;selected.push(row);return true;
 }
 const wordReserve=Math.floor(budget*0.30);

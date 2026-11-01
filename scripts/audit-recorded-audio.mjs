@@ -5,8 +5,31 @@ import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
+
+const args = process.argv.slice(2);
+const at = args.indexOf('--r2-remote');
+if (at !== -1 && (!args[at+1] || args[at+1].startsWith('--'))) throw Error('Missing --r2-remote bucket root');
+const remoteRoot = at >= 0 ? args[at+1].replace(/\/+$/, '') : '';
+function r2Listing(folder) {
+  if (!remoteRoot) return null;
+  const run = spawnSync('rclone',['lsf',remoteRoot+'/'+folder+'/', '--files-only','--include','*.mp3'],
+    {cwd:root,encoding:'utf8',maxBuffer:8*1024*1024});
+  if (run.error) throw run.error;
+  if (run.status!==0) throw Error('Cannot verify R2 '+folder+': '+(run.stderr||'').trim());
+  return new Set(run.stdout.trim().split('\n').filter(Boolean));
+}
+const r2Utterances = r2Listing('utterances');
+const r2Flashcards = r2Listing('flashcards');
+const hasR2 = audioPath => {
+  const indexed = /^\/audio\/utterances\/([a-f0-9]{24}\.mp3)$/.exec(audioPath);
+  if (indexed) return !!r2Utterances?.has(indexed[1]);
+  const legacy = /^\/audio\/flashcards\/([a-z0-9-]+\.mp3)$/.exec(audioPath);
+  return !!(legacy && r2Flashcards?.has(legacy[1]));
+};
+
 const load = (file) => JSON.parse(fs.readFileSync(path.join(root, "data", file), "utf8"));
 const index = load("audio-index.json");
 const everyday = [
@@ -44,6 +67,11 @@ for (const [id, item] of Object.entries(index.items || {})) {
   const key = item.lang + "\0" + item.text;
   if (indexedText.has(key)) errors.push("Duplicate indexed sentence: " + item.text);
   indexedText.set(key, item.path);
+  if (remoteRoot) {
+    if (!hasR2(item.path)) { errors.push("MP3 missing from R2: " + id); continue; }
+    verified++; // R2 object-name presence only; run rclone check --download for bytes.
+    continue;
+  }
   const file = path.join(root, "public", item.path.slice(1));
   if (!fs.existsSync(file)) { errors.push("Missing MP3: " + id); continue; }
   const bytes = fs.readFileSync(file);
@@ -55,7 +83,7 @@ for (const [id, item] of Object.entries(index.items || {})) {
 const recorded = (text, audio) => {
   if (audio && typeof audio === "string" && audio.startsWith("/")) {
     const target = path.join(root, "public", audio.slice(1));
-    if (fs.existsSync(target) && fs.statSync(target).size > 0) return true;
+    if (remoteRoot ? hasR2(audio) : fs.existsSync(target) && fs.statSync(target).size > 0) return true;
   }
   return indexedText.has("nl\0" + text);
 };
@@ -77,6 +105,7 @@ const baseTotal = baseGroups.reduce((n, item) => n + item.total, 0);
 const baseRecorded = baseGroups.reduce((n, item) => n + item.recorded, 0);
 console.log(JSON.stringify({
   indexed: Object.keys(index.items || {}).length,
+  verificationSource: remoteRoot ? 'R2 object name listing; bytes not checked' : 'local MP3 checksums',
   verified,
   missingOrInvalid: errors.length,
   baseCards: { total: baseTotal, recorded: baseRecorded,

@@ -1,4 +1,5 @@
 import { recordingFor } from "./recordings";
+import { resolveRecordingUrl } from "./audio-url";
 import {
   loadVoices,
   pickVoice,
@@ -103,8 +104,11 @@ export async function speakWithDevice(
 export async function play(item: PlayItem, slow = false) {
   stopAllSpeech();
   const mine = generation;
-  // Keep an explicitly assigned legacy flashcard recording; otherwise use the exact-text Flemish recording.
-  const recording = item.audio || recordingFor(item.text, item.lang);
+  // Explicit legacy flashcard recordings retain priority, but can be served from R2
+  // after their separately verified upload. French and other languages are unaffected.
+  const recording = item.audio
+    ? (item.lang === "nl" ? resolveRecordingUrl(item.audio) : item.audio)
+    : recordingFor(item.text, item.lang);
   if (!recording) {
     await speakWithDevice(item, slow, mine);
     return;

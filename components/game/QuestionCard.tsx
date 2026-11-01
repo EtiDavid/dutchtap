@@ -5,7 +5,7 @@ import { AnswerButton, answerButtonState } from "./AnswerButton";
 import type { AnswerFeedback } from "@/lib/game/useGameSession";
 import { WordImage } from "@/components/words/WordImage";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
-import { adjectiveSpeech, nounSpeech, wordAudioUrl } from "@/lib/words/assets";
+import { adjectiveSpeech, nounSpeech } from "@/lib/words/assets";
 import adjectiveImageIds from "@/data/adjective-image-ids.json";
 
 const adjectiveImageIdSet = new Set<string>(adjectiveImageIds);
@@ -44,8 +44,9 @@ export function QuestionCard({
   const { sound, listen, stop } = useCardAudio();
   const { noun } = question;
   const word = question.isPlural ? noun.plural : noun.singular;
-  // The recording says the singular noun with its article; plural questions use the device voice instead.
-  const speech = { text: nounSpeech(noun, question.isPlural), lang: "nl" as const, audio: question.isPlural ? undefined : wordAudioUrl("noun", noun.id) };
+  // All singular/plural forms are now indexed exact-text Cloudflare recordings.
+  // Never pass old /words/*.mp3 paths: those bypass the verified R2 audio index.
+  const speech = { text: nounSpeech(noun, question.isPlural), lang: "nl" as const };
   const gridCols = question.mode === "demonstrative" ? "grid-cols-2" : "grid-cols-2";
 
   return (
@@ -102,7 +103,7 @@ export function QuestionCard({
             {question.mode === "adjective" && (
               <button
                 type="button"
-                onClick={() => void listen({ text: adjectiveSpeech(question.adjective), lang: "nl", audio: wordAudioUrl("adjective", question.adjective.id) })}
+                onClick={() => void listen({ text: adjectiveSpeech(question.adjective), lang: "nl" })}
                 className="h-10 rounded-xl border border-border px-4 text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent"
               >
                 🔊 {question.adjective.base}

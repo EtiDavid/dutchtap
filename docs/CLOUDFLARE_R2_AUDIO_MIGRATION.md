@@ -267,3 +267,44 @@ Next, create a dedicated audio-untracking PR after backing up local assets.
 Do not delete old Git objects from history or remove MP3s from the existing
 production branch without this validation.
 
+
+
+## Cloudflare custom domain activated (operator screenshot, 2026-11-01)
+
+The R2 bucket Custom Domains screen now lists **`audio.davideti.dev`** as
+**Active / Enabled**. This is the intended public production audio origin.
+The screenshot alone does not prove that the two public MP3 URLs return
+200, or that Vercel is rebuilt with the new environment values.
+
+Test both R2 object families from the operator's WSL machine:
+
+```bash
+for path in \
+  flashcards/work-312.mp3 \
+  utterances/0003d9bb40d98b32b6931297.mp3; do
+  curl -sS -o /dev/null -w '%{http_code} %{content_type} %{url_effective}\n' \
+    "https://audio.davideti.dev/$path"
+done
+```
+
+Expected: **200 audio/mpeg** for each. For an already-cached browser response,
+304 is also normal if the browser uses an ETag.
+
+Update Vercel DutchTap **Preview / Config** values:
+
+```text
+NEXT_PUBLIC_DUTCH_AUDIO_BASE_URL=https://audio.davideti.dev
+NEXT_PUBLIC_DUTCH_AUDIO_LEGACY_R2=true
+```
+
+Redeploy `feature/cloudflare-r2-audio-20261101`: `NEXT_PUBLIC_...`
+values are build-time. Verify /audio-preview and actual original/new card
+Listen buttons using Network → Media. Both groups must use
+`audio.davideti.dev`, not Vercel's `/audio/` or `r2.dev`.
+
+**Do not switch Production solely by adding variables**: PR #30 is still
+draft and based on PR #29, which is itself a draft based on main. The
+production branch does not yet contain this migration. Review/merge the
+stack before shipping a production build, retaining a rollback path.
+Existing MP3s are still tracked, and remote-only publisher/integration
+must be smoke-tested before untracking.

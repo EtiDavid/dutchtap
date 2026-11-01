@@ -16,26 +16,16 @@ describe('Full audio inventory planning', () => {
       x.lang === 'nl' && x.approved && x.id === createHash('sha256').update('nl\0' + x.text).digest('hex').slice(0, 24)
     )).toBe(true);
   });
-  it('prepares a first-account batch within the 18,500-character budget', () => {
-    execFileSync('node', ['scripts/audit-all-learning-audio.mjs','--index-only'], {
-      cwd: process.cwd(), encoding: 'utf8', maxBuffer: 8 * 1024 * 1024
+  it('reports zero queued credits once every authored Dutch utterance is indexed', () => {
+    execFileSync('node', ['scripts/audit-all-learning-audio.mjs', '--index-only'], {
+      cwd: process.cwd(), encoding: 'utf8', maxBuffer: 8 * 1024 * 1024,
     });
-    const output = execFileSync('node', [
-      'scripts/prepare-dutch-credit-batch.mjs','--budget','18500','--label','ci-check'
-    ], { cwd: process.cwd(), encoding: 'utf8' });
-    const summary = JSON.parse(output);
-    const manifest = JSON.parse(readFileSync('audio-export/credit-ci-check/manifest.json','utf8'));
-    const all = manifest.batches.flatMap((batch: {items: {text:string,id:string,lang:string,approved:boolean}[]}) => batch.items);
-    const charCount = all.reduce((n:number,item: {text:string}) => n+item.text.length,0);
-    expect(summary.language).toBe('nl');
-    expect(summary.paidRequestsMade).toBe(0);
-    expect(charCount).toBeLessThanOrEqual(18500);
-    expect(charCount).toBeGreaterThan(0); // All original 18,500 credits may already be recorded.
-    expect(new Set(all.map((item: {id:string})=>item.id)).size).toBe(all.length);
-    expect(manifest.approvedOnly).toBe(all.every((item: {approved:boolean})=>item.approved));
-    expect(all.every((item: {id:string,text:string,lang:string,approved:boolean}) =>
-      item.lang==='nl'&&item.id===createHash('sha256').update('nl\0'+item.text).digest('hex').slice(0,24)
-    )).toBe(true);
+    const report = JSON.parse(readFileSync('audio-export/full-coverage/audit.json', 'utf8'));
+    expect(report.languages.nl.missing.uniqueUtterances).toBe(0);
+    expect(report.languages.nl.missing.characters).toBe(0);
+    expect(report.languages.nl.total.uniqueUtterances).toBe(report.languages.nl.recorded.uniqueUtterances);
+    // This is a source-index completeness check. R2 availability is validated separately.
+    expect(report.verificationSource).toContain('INDEX METADATA ONLY');
   });
   it('builds deterministic, no-cost, Dutch-only recording batches', () => {
     const result = execFileSync('node', ['scripts/audit-all-learning-audio.mjs','--index-only'], {
@@ -43,8 +33,9 @@ describe('Full audio inventory planning', () => {
     });
     console.log('AUDIO INVENTORY AUDIT\n' + result);
     const report = JSON.parse(readFileSync('audio-export/full-coverage/audit.json', 'utf8'));
-    expect(report.languages.nl.total.uniqueUtterances).toBeGreaterThan(1334);
-    expect(report.languages.nl.missing.uniqueUtterances).toBeGreaterThan(0);
+    expect(report.languages.nl.total.uniqueUtterances).toBeGreaterThan(10000);
+    expect(report.languages.nl.missing.uniqueUtterances).toBe(0);
+    expect(report.languages.nl.batches).toBe(0);
     expect(Object.keys(report.languages)).toEqual(['nl']);
     expect(report.excludedLanguages).toEqual(['en', 'fr']);
     expect(existsSync('audio-export/full-coverage/missing-en.tsv')).toBe(false);

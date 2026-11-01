@@ -100,16 +100,25 @@ export async function speakWithDevice(
   return true;
 }
 
-/** Plays a sentence: a recording when it has one (Dutch), otherwise a device voice for its language. */
+/** Dutch is recorded-only. Other languages may use a device voice if no recording exists. */
 export async function play(item: PlayItem, slow = false) {
   stopAllSpeech();
   const mine = generation;
-  // Explicit legacy flashcard recordings retain priority, but can be served from R2
-  // after their separately verified upload. French and other languages are unaffected.
-  const recording = item.audio
-    ? (item.lang === "nl" ? resolveRecordingUrl(item.audio) : item.audio)
-    : recordingFor(item.text, item.lang);
+  // Dutch recordings are always indexed by their exact spoken text, except
+  // the original 600 flashcards which intentionally keep their legacy MP3s.
+  // Do not prefer stale /words/*.mp3 paths from de/het and adjective games:
+  // the indexed utterance is stored on Cloudflare R2.
+  // French and English may still use explicitly provided audio/device voices.
+  const recording = item.lang === "nl"
+    ? (item.audio?.startsWith("/audio/flashcards/")
+        ? resolveRecordingUrl(item.audio)
+        : recordingFor(item.text, "nl"))
+    : item.audio || recordingFor(item.text, item.lang);
   if (!recording) {
+    if (item.lang === "nl") {
+      setMessage("Recorded Dutch audio is unavailable for this sentence. No device voice was substituted.");
+      return;
+    }
     await speakWithDevice(item, slow, mine);
     return;
   }
@@ -129,6 +138,10 @@ export async function play(item: PlayItem, slow = false) {
   } catch {
     if (mine !== generation) return;
     audio = null;
+    if (item.lang === "nl") {
+      setMessage("Dutch recording failed to play. Check your connection and try again; no device voice was substituted.");
+      return;
+    }
     await speakWithDevice(item, slow, mine, {
       fallbackNote: "Device voice used · recording could not be played",
     });

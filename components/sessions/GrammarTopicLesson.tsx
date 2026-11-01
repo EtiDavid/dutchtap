@@ -63,7 +63,7 @@ export function GrammarTopicLesson({topic, defaultOpen = false}: {topic:string; 
         </details>
       </section>}
       {lesson.sources.length>0 && <section className="border-t border-border pt-4"><h3 className="font-bold">References</h3><ul className="mt-2 space-y-1">{lesson.sources.map(s=><li key={s[1]}><a className="text-sm text-accent underline" href={s[1]} target="_blank" rel="noopener noreferrer">{s[0]}</a></li>)}</ul></section>}
-      <p className="border-t border-border pt-3 text-xs text-muted">Lesson v{lesson.revision} · {lesson.status}. Example audio uses the Dutch device voice.</p>
+      <p className="border-t border-border pt-3 text-xs text-muted">Lesson v{lesson.revision} · {lesson.status}. Examples play from the recorded Dutch audio library.</p>
       {sound && <p role="status" className="text-xs text-muted">{sound}</p>}
       <button className={button} type="button" onClick={stop}>Stop audio</button>
     </div>

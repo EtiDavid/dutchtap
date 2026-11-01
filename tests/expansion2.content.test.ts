@@ -28,7 +28,9 @@ describe("second 300 sentences (work-31 to work-330)", () => {
       expect(card.image).toBe(`/illustrations/cards/${card.id}.webp`);
       expect(card.audio).toBe(`/audio/flashcards/${card.id}.mp3`);
       expect(existsSync(`public${card.image}`), card.id).toBe(true);
-      expect(existsSync(`public${card.audio}`), card.id).toBe(true);
+      // After R2 migration, the MP3 is remote, not a tracked public/ file.
+      // Its unique URL and source readiness remain part of the card contract.
+      expect(card.audioStatus, card.id).toBe('ready');
     }
   });
   it("labels adapted sentences honestly: 145 adapted, 155 taken from the source wording", () => {

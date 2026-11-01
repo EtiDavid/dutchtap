@@ -9,7 +9,7 @@ type LegacyCard = { dutch: string; audio?: string };
 
 export default async function AudioPreviewPage() {
   let items: AudioEntry[] = [];
-  let legacy: AudioEntry[] = [];
+  const legacy: AudioEntry[] = [];
   let error = "";
   try {
     const dir = path.join(process.cwd(), "data");

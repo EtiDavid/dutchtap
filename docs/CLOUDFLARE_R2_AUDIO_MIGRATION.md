@@ -33,10 +33,57 @@ R2 object storage is private by default. To test browser playback:
   production use, add a custom domain under R2 bucket Settings → Custom Domains. The
   domain must be managed by the same Cloudflare account as the bucket.
 
+## Step 1b — Migrate the 600 original base flashcard recordings
+
+The initial R2 copy included **7,796** files in `public/audio/utterances/`. It did
+**not** include the **600 original MP3s** stored in `public/audio/flashcards/`.
+These original base cards have explicit `audio` paths in the three flashcard JSON files
+(`50 + 250 + 300`) and take priority over indexed exact-text recordings.
+
+On the user's WSL machine, upload **only MP3s** (the legacy directory also contains
+a non-audio JSON file):
+
+```bash
+cd ~/dutch/dutchTap
+rclone copy public/audio/flashcards/ \
+  dutchtap-r2:dutchtap-audio/flashcards/ \
+  --include '*.mp3' --progress --transfers 8
+
+rclone check public/audio/flashcards/ \
+  dutchtap-r2:dutchtap-audio/flashcards/ \
+  --include '*.mp3' --download
+
+find public/audio/flashcards -maxdepth 1 -name '*.mp3' | wc -l
+rclone lsf dutchtap-r2:dutchtap-audio/flashcards/ \
+  --files-only --include '*.mp3' | wc -l
+```
+
+Require **600 matching MP3s and zero differences** before enabling the cutover.
+Test public R2 audio playback directly, e.g.:
+
+`https://pub-5d02f88f4e784eaba8df9e2b6eb77f13.r2.dev/flashcards/shopping-01.mp3`
+
+Then set this extra Vercel **Preview / Config** environment variable and redeploy
+the migration branch:
+
+```text
+NEXT_PUBLIC_DUTCH_AUDIO_LEGACY_R2=true
+```
+
+This uses the **existing** `NEXT_PUBLIC_DUTCH_AUDIO_BASE_URL` origin, but redirects
+the 600 original card paths to `/flashcards/*.mp3` on R2. Leave the toggle **unset**
+until upload verification passes; otherwise existing base cards would fail to play.
+With the toggle disabled, existing base cards still use Vercel's local files.
+The toggle can be disabled and redeployed to roll back.
+
+Verify original base cards (including `shopping-01` and `work-31`), their slow
+playback, and the new indexed card prompts. All should request media from R2.
+No existing cards need to be re-recorded, and none of these commands delete files.
+
 ## Step 2 — Deploy a reversible client routing change
 
 Only **indexed** `/audio/utterances/<24-hex-id>.mp3` files are redirected.
-Legacy word/flashcard audio and French remain unchanged.
+Legacy flashcard audio is opt-in via `NEXT_PUBLIC_DUTCH_AUDIO_LEGACY_R2=true` after verifying its separate 600-file upload. French remains unchanged.
 `data/audio-index.json` retains its local-style `path` values and does not need a
 risky 7,796-entry rewrite.
 

@@ -147,7 +147,7 @@ for(const line of fs.readFileSync(missingPath,'utf8').split(/\r?\n/).slice(1)){
  if(!line)continue;
  const columns=line.split('\t');
  if(columns.length!==6)throw Error('Malformed audio inventory TSV line');
- const [lang,text,characters,roles,approved,id]=columns;
+ const [lang,text,characters,roles,,id]=columns;
  if(lang!=='nl'||id!==idFor(text)||text.length!==Number(characters))
    throw Error('Bad Dutch inventory row: '+id);
  if(recorded.has(id)||picked.has(id))continue;
@@ -170,7 +170,7 @@ fallback.sort((a,b)=>a.priority-b.priority || a.text.length-b.text.length || a.i
 let auditSelected=0;
 for(const row of fallback) {
  if(selected.length>=1000)break;
- const {priority,...candidate}=row;
+ const {priority: _priority,...candidate}=row;
  if(choose(candidate))auditSelected++;
 }
 if(!selected.length)throw Error('No unrecorded Dutch audio remains: rerun the full audit after verifying installed recordings.');

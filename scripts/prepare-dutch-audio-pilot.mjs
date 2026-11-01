@@ -63,7 +63,7 @@ for(const word of wordPilot){
   items.push({id,lang:'nl',text:word.text,roles:[word.role],approved:true,
     existingAudio:'',review:'AI-reviewed Dutch word form; independent native-speaker review not performed'});
 }
-if(!items.length)throw Error('Pilot already recorded; no new clips needed.');
+// A finished pilot is a success: keep an empty manifest so the test and audit remain repeatable.
 const out=path.join(root,'audio-export','pilot-001');
 fs.mkdirSync(out,{recursive:true});
 const manifest={

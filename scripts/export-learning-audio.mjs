@@ -132,11 +132,10 @@ export function inventory() {
   const installed = read("audio-index.json");
   for (const item of items.values()) {
     item.existingAudio = installed.items[item.id]?.path || item.existingAudio;
-    if (
-      item.existingAudio &&
-      !fs.existsSync(path.join(root, "public", item.existingAudio))
-    )
-      item.existingAudio = "";
+    // An indexed recording may now live only on Cloudflare R2. Do not mistake a
+    // missing local MP3 for an unrecorded sentence (which would spend credits
+    // again). scripts/audit-all-learning-audio.mjs validates local or remote
+    // inventory separately before the paid batch runner can generate anything.
   }
   return [...items.values()];
 }

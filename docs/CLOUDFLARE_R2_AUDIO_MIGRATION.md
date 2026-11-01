@@ -135,6 +135,50 @@ then runs `rclone check --size-only`. Use `--deep-check` when you want to
 re-download and byte-compare the remote files. Publication errors stop the batch
 runner; generated local MP3s are preserved.
 
+## Mandatory gate — confirm EVERY app-referenced MP3 lives in Cloudflare
+
+On the migration branch after the legacy 600-MP3 upload:
+
+```bash
+git switch feature/cloudflare-r2-audio-20261101
+git pull --ff-only
+node scripts/audit-cloudflare-audio.mjs
+```
+
+The read-only auditor derives **7,796 indexed utterance paths** from
+`data/audio-index.json` and **600 original card MP3 paths** from the
+three original flashcard JSON files, then independently lists both Cloudflare
+R2 folders using local rclone credentials. Success prints `status: "PASS"`
+and `allAppReferencedMp3sInR2: true` with 8,396 references. On failure it
+prints missing objects and exits nonzero. The check is a file-name inventory:
+it is **not proof** of byte equality or Vercel production routing.
+
+For integrity verification, run both checks:
+
+```bash
+rclone check public/audio/utterances/ dutchtap-r2:dutchtap-audio/utterances/ --download
+rclone check public/audio/flashcards/ dutchtap-r2:dutchtap-audio/flashcards/ --include '*.mp3' --download
+```
+
+The Vercel **Preview** build must have both public **Config** variables:
+
+```text
+NEXT_PUBLIC_DUTCH_AUDIO_BASE_URL=https://pub-5d02f88f4e784eaba8df9e2b6eb77f13.r2.dev
+NEXT_PUBLIC_DUTCH_AUDIO_LEGACY_R2=true
+```
+
+Redeploy Preview after saving. Open `/audio-preview`; it now reports both
+audio sources separately and gives examples of the original and indexed
+recordings. Both must say **Cloudflare R2** and browser Network → Media
+must show R2 requests (HTTP 200 or 206). **Production remains unchanged**
+until its environment variables are deliberately configured and a production
+build is deployed. The `r2.dev` URL is rate-limited; use a Cloudflare
+custom domain before enabling production.
+
+Other MP3 files under `audio-batches-for-recording/clips/` are offline
+source material, not served from Next.js `public/` or referenced by the
+app's recording index. They are outside this live-playback migration.
+
 ## Step 4 — Later cleanup, only after verified playback
 
 Do **not** delete MP3s, rewrite Git history, or turn on production routing during

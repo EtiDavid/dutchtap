@@ -12,6 +12,18 @@ migrated. Do not remove those assets. None of these steps delete local or remote
 
 ## Step 1 — Make the public audio origin work
 
+R2 public development origin provided by the operator:
+
+\`https://pub-5d02f88f4e784eaba8df9e2b6eb77f13.r2.dev\`
+
+The sample \`0003d9bb40d98b32b6931297.mp3\` is present in the audited index and corresponds to **Ik ga nog niet met de uitvoering akkoord.** The public URL itself still requires an actual HTTP/browser playback check; an uploaded R2 object is not proof of public availability.
+
+From the project root, run the no-credentials HTTP smoke test:
+
+\`\`\`bash
+node scripts/check-r2-public-audio.mjs https://pub-5d02f88f4e784eaba8df9e2b6eb77f13.r2.dev
+\`\`\`
+
 R2 object storage is private by default. To test browser playback:
 - Cloudflare dashboard → R2 → `dutchtap-audio` → Settings → **Public Development URL** → Enable.
 - Use a recorded example: `<PUBLIC_BASE_URL>/utterances/68562b3c36c0464133b45a08.mp3`

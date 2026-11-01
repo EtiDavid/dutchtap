@@ -1,4 +1,4 @@
-// DutchTap full audio inventory, draft manifests capped at 28,000 V2 credits.
+// DutchTap DUTCH-ONLY audio inventory and draft manifests capped at 28,000 V2 credits.
 // Read-only: no network calls or paid text-to-speech generation.
 async function dutchtapFullAudioAudit() {
   const fs = await import('node:fs');
@@ -16,7 +16,8 @@ async function dutchtapFullAudioAudit() {
   function add(value, role, lang='nl', approved=false, audio='') {
     if (typeof value !== 'string' || !value.trim()) return;
     const text = value.trim();
-    if (lang !== 'nl' && lang !== 'en') throw Error('Unexpected language '+lang);
+    if (lang === 'en') return; // English text remains available; no English audio is planned.
+    if (lang !== 'nl') throw Error('Unexpected language '+lang);
     stats.sourceOccurrences++;
     if (/…|\[\s*\.\.\.|\{\s*[^{}]+\s*\}/.test(text)) {stats.excludedNonSpeechTemplates++; return;}
     const id = hash(text,lang);
@@ -135,19 +136,23 @@ async function dutchtapFullAudioAudit() {
   const report={
     campaign:'full-coverage',
     sourceCommit:'5a207a0 plus later audit-only changes',
-    scope:'Authored Dutch and English audio targets: cards, variations, model answers, vocabulary, game word forms, lesson examples, spoken prompts, grammar corrections and drills. No French. Not all prose in explanations.',
+    scope:'Dutch-only audio targets: cards, variations, model answers, vocabulary, game word forms, lesson examples, spoken Dutch prompts, grammar corrections and drills. English remains text-only in this campaign; French untouched. Not all explanatory prose is a recording target.',
     indexedAudioFiles:Object.keys(existing).length,
     stats:{...stats,analysisFiles:analyses.length,missingLegacyFiles},
     languages:{},
+    excludedLanguages:['en','fr'],
     billingNote:'ElevenLabs eleven_multilingual_v2 subscription pricing: 1 input character = 1 credit; actual account balance and current billing must still be checked before generation.',
     maxBatchCredits:cap,
     maxBatchUtterances:maxItems,
-    warning:'Generation and approval are NOT performed by this script; final audit must also confirm no live Dutch or English playback path can fall back to device TTS.'
+    warning:'Generation and approval are NOT performed by this script. Final audit must confirm every Dutch Listen path uses recorded audio without device-TTS fallback. English and French playback are out of scope.'
   };
   fs.mkdirSync(out,{recursive:true});
   const tsv=list=>['lang\ttext\tcharacters\troles\tapproved\tid',
     ...list.map(x=>[x.lang,x.text.replace(/[\n\t]/g,' '),x.text.length,x.roles.join(','),x.approved,x.id].join('\t'))].join('\n')+'\n';
-  for(const lang of ['nl','en']){
+  // Remove stale English planning files from any earlier run of this planner.
+  fs.rmSync(path.join(out, 'missing-en.tsv'), { force: true });
+  fs.rmSync(path.join(out, 'en'), { recursive: true, force: true });
+  for(const lang of ['nl']){
     const everything=all.filter(x=>x.lang===lang), notYet=pending.filter(x=>x.lang===lang);
     const sorted=notYet.sort((a,b)=>a.text.localeCompare(b.text,lang));
     report.languages[lang]={

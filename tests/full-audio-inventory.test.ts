@@ -1,8 +1,20 @@
 import { describe, it, expect } from 'vitest';
 import { execFileSync } from 'node:child_process';
 import { readFileSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 
 describe('Full audio inventory planning', () => {
+  it('builds a checked Dutch-only pilot manifest without spending ElevenLabs credits', () => {
+    execFileSync('node', ['scripts/prepare-dutch-audio-pilot.mjs'], { cwd: process.cwd(), encoding: 'utf8' });
+    const manifest = JSON.parse(readFileSync('audio-export/pilot-001/manifest.json', 'utf8'));
+    const items = manifest.batches.flatMap((b: { items: { id: string; text: string; lang: string; approved: boolean }[] }) => b.items);
+    expect(manifest.language).toBe('nl');
+    expect(manifest.approvedOnly).toBe(true);
+    expect(items.length).toBeGreaterThanOrEqual(20);
+    expect(items.every((x: { text: string; lang: string; approved: boolean; id: string }) =>
+      x.lang === 'nl' && x.approved && x.id === createHash('sha256').update('nl\\0' + x.text).digest('hex').slice(0, 24)
+    )).toBe(true);
+  });
   it('builds deterministic, no-cost, Dutch-only recording batches', () => {
     const result = execFileSync('node', ['scripts/audit-all-learning-audio.mjs'], {
       cwd: process.cwd(), encoding: 'utf8', maxBuffer: 8 * 1024 * 1024

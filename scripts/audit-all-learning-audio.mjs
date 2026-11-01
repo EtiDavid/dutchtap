@@ -91,10 +91,17 @@ async function dutchtapFullAudioAudit() {
     if(v.past?.plural)add(`wij ${v.past.plural}`,`verb-past:${v.lemma}`);
     if(v.perfect)add(`ik ${v.perfect}`,`verb-perfect:${v.lemma}`);
   }
+  // On-screen correct grammar breakdown contrasts and corrected model sentences.
+  for(const file of ['grammar-breakdowns.json','workplace-breakdowns.json'])
+    for(const [id,breakdown] of Object.entries(load(file))) {
+      add(breakdown.contrast?.dutch,`breakdown-contrast:${id}`);
+      add(breakdown.mistake?.right,`breakdown-correction:${id}`);
+      for(const mistake of breakdown.extraMistakes||[])add(mistake.right,`breakdown-correction:${id}`);
+    }
   for(const [lemma,forms] of Object.entries(load('grammar-separable-forms.json')))
     for(const field of ['lemma','modal','teInfinitive','subordinate','subordinatePast','imperative'])
       add(forms[field],`separable-${field}:${lemma}`);
-  for(const file of ['flashcards.json','flashcard-additions.json','flashcard-additions-2.json','workplace-cards.json'])
+  for(const file of ['flashcards.json','flashcard-additions.json','flashcard-additions-2.json','workplace-cards.json','grammar-pattern-cards.json'])
     for(const card of load(file)){
       add(card.scenarioNl,`card-prompt:${card.id}`);
       add(card.scenario,`card-situation:${card.id}`,'en');

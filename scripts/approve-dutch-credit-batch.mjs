@@ -25,7 +25,7 @@ for(const line of lines){
  if(!line)continue;
  const cols=line.split('\t');
  if(cols.length!==6)throw Error('Malformed full audio audit row');
- const [lang,text,characters,roles,approved,id]=cols;
+ const [lang,text,characters,roles,,id]=cols;
  if(lang!=='nl'||text.length!==Number(characters)||id!==idFor(text))
    throw Error('Invalid full audio audit entry '+id);
  audited.set(id,{text,roles:roles.split(',')});

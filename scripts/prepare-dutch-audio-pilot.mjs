@@ -58,7 +58,7 @@ const wordPilot = [
 ];
 for(const word of wordPilot){
   if(!word.valid)throw Error('Unexpected pilot word form: '+word.text);
-  const id=createHash('sha256').update('nl\\0'+word.text).digest('hex').slice(0,24);
+  const id=createHash('sha256').update('nl\0'+word.text).digest('hex').slice(0,24);
   if(existing[id]){skippedRecorded.push(word.role);continue;}
   items.push({id,lang:'nl',text:word.text,roles:[word.role],approved:true,
     existingAudio:'',review:'AI-reviewed Dutch word form; independent native-speaker review not performed'});

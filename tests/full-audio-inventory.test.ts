@@ -17,7 +17,7 @@ describe('Full audio inventory planning', () => {
     )).toBe(true);
   });
   it('prepares a first-account batch within the 18,500-character budget', () => {
-    execFileSync('node', ['scripts/audit-all-learning-audio.mjs'], {
+    execFileSync('node', ['scripts/audit-all-learning-audio.mjs','--index-only'], {
       cwd: process.cwd(), encoding: 'utf8', maxBuffer: 8 * 1024 * 1024
     });
     const output = execFileSync('node', [
@@ -38,7 +38,7 @@ describe('Full audio inventory planning', () => {
     )).toBe(true);
   });
   it('builds deterministic, no-cost, Dutch-only recording batches', () => {
-    const result = execFileSync('node', ['scripts/audit-all-learning-audio.mjs'], {
+    const result = execFileSync('node', ['scripts/audit-all-learning-audio.mjs','--index-only'], {
       cwd: process.cwd(), encoding: 'utf8', maxBuffer: 8 * 1024 * 1024
     });
     console.log('AUDIO INVENTORY AUDIT\n' + result);

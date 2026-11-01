@@ -252,8 +252,10 @@ test("a recorded alternative requests the right MP3 and never replaces failed Du
   const requestedPaths: string[] = [];
   // Deliberately fail the indexed MP3, whether the app points at Cloudflare R2
   // or the legacy local URL. Never replace the failed Dutch recording with TTS.
-  await page.route(/\\/(?:audio\\/)?utterances\\/[a-f0-9]{24}\\.mp3(?:\\?.*)?$/, (route) => {
-    requestedPaths.push(new URL(route.request().url()).pathname);
+  await page.route("**/*.mp3", (route) => {
+    const path = new URL(route.request().url()).pathname;
+    if (!path.includes("/utterances/")) return route.continue();
+    requestedPaths.push(path);
     return route.abort();
   });
   await seed(page, selected!);
@@ -265,7 +267,6 @@ test("a recorded alternative requests the right MP3 and never replaces failed Du
     () => (window as unknown as { __spoken: unknown[] }).__spoken,
   )).toEqual([]);
   await expect.poll(() => requestedPaths.length).toBe(1);
-  expect(requestedPaths[0]).toMatch(new RegExp(
-    "/(?:audio/)?utterances/" + expectedRecording!.split("/").pop()!.replace(".", "\\\\.") + "$",
-  ));
+  expect(requestedPaths[0]).toContain("/utterances/");
+  expect(requestedPaths[0].endsWith("/" + expectedRecording!.split("/").pop())).toBe(true);
 });

@@ -53,7 +53,7 @@ const wordPilot = [
   {text:'de huizen', role:'game-plural', valid: nouns.includes('singular: "huis", article: "het", plural: "huizen"')},
   {text:'mooie', role:'game-adjective-e-form', valid: adjectives.includes('base: "mooi", eForm: "mooie"')},
   {text:'belangrijke', role:'game-adjective-e-form', valid: adjectives.includes('base: "belangrijk", eForm: "belangrijke"')},
-  {text:'de afspraken', role:'vocabulary-plural', valid: generalVocabulary.some(w=>w.plural==='afspraken')},
+  {text:'de afspraken', role:'vocabulary-plural', valid: [...generalVocabulary,...workplaceVocabulary].some(w=>w.plural==='afspraken')},
   {text:"de collega's", role:'workplace-vocabulary-plural', valid: workplaceVocabulary.some(w=>w.plural==="collega's")}
 ];
 for(const word of wordPilot){

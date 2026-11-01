@@ -38,7 +38,7 @@ if (!manifest.approvedOnly && !includeUnreviewed)
   throw Error('Unreviewed manifest: use an approved-only export, or explicitly add --include-unreviewed after checking the content.');
 if (!voice || !/^[a-zA-Z0-9_-]+$/.test(voice)) throw Error('Set ELEVENLABS_VOICE_ID in .env.');
 if (apply && !key) throw Error('Set ELEVENLABS_API_KEY in .env.');
-if (apply && maxCharacters > 14000) throw Error('Per-run safety cap: --max-characters cannot exceed 14000.');
+if (apply && maxCharacters > 28000) throw Error('Per-run safety cap: --max-characters cannot exceed 28000.');
 const rows = manifest.batches.flatMap((batch) => batch.items);
 const seen = new Set();
 const candidates = [];
@@ -77,6 +77,25 @@ for (const row of candidates) {
 }
 console.log(JSON.stringify({ mode: apply ? 'PAID GENERATION' : 'DRY RUN', model, voice, approvedOnly: manifest.approvedOnly, selected: selected.length, characters: chars, skipped, maxCharacters, maxClips, output }, null, 2));
 if (!apply) process.exit(0);
+// Check the actual account attached to the local API key before each paid run.
+// This deliberately leaves a 500-credit margin and fails closed if the
+// subscription endpoint is unavailable; switching accounts requires a valid key.
+const budgetResponse = await fetch('https://api.elevenlabs.io/v1/user/subscription', {
+  headers: { 'xi-api-key': key, Accept: 'application/json' },
+  signal: AbortSignal.timeout(15000),
+});
+if (!budgetResponse.ok) throw Error('Cannot verify ElevenLabs balance (HTTP ' + budgetResponse.status + '), refusing paid generation.');
+const subscription = await budgetResponse.json();
+const creditLimit = Number(subscription.character_limit);
+const creditUsed = Number(subscription.character_count);
+if (!Number.isFinite(creditLimit) || !Number.isFinite(creditUsed) || creditLimit < creditUsed)
+  throw Error('ElevenLabs credit counter is unavailable or invalid. Refusing paid generation.');
+const available = creditLimit - creditUsed;
+const reserve = 500;
+if (chars > available - reserve) {
+  throw Error('Selected ' + chars + ' characters but only ' + available + ' estimated credits remain on this API key. Keep ' + reserve + ' credits reserved; reduce --max-characters.');
+}
+console.log(JSON.stringify({verifiedCreditLimit:creditLimit,verifiedCreditUsed:creditUsed,verifiedCreditsRemaining:available,selectedCharacters:chars,reservedCredits:reserve}));
 await mkdir(output, { recursive: true });
 for (const { row, body, fingerprint, target } of selected) {
   // Never retry a POST automatically: an interrupted response might still incur charges.

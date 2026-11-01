@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { resolveRecordingUrl } from "@/lib/speech/audio-url";
 
 export const dynamic = "force-dynamic";
 
@@ -17,7 +18,7 @@ export default async function AudioPreviewPage() {
   }
   return (
     <main style={{ maxWidth: 900, margin: "2rem auto", padding: "1rem", fontFamily: "system-ui" }}>
-      <h1>DutchTap — local audio preview</h1>
+      <h1>DutchTap — recorded audio preview</h1>
       <p>Installed Dutch clips: {items.length}. This page tests file playback; it does not replace existing audio buttons.</p>
       {error && <p role="alert">Cannot read audio index: {error}</p>}
       {!items.length && <p>No installed clips yet. Run the installer with --apply after checking its dry run.</p>}
@@ -25,7 +26,7 @@ export default async function AudioPreviewPage() {
         {items.slice(0, 200).map((item) => (
           <li key={item.path} style={{ marginBottom: "1.25rem" }}>
             <div lang="nl" style={{ marginBottom: "0.4rem" }}>{item.text}</div>
-            <audio controls preload="none" src={item.path} aria-label={`Play: ${item.text}`} />
+            <audio controls preload="none" src={resolveRecordingUrl(item.path)} aria-label={`Play: ${item.text}`} />
           </li>
         ))}
       </ol>

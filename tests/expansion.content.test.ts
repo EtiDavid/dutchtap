@@ -46,8 +46,9 @@ describe('250 reviewed additions', () => {
         expect(existsSync(`public${card.image}`)).toBe(true);
         expect(prompt.status).toBe('installed');
       } else expect(card.imageStatus).toBe('pending');
-      if (card.audioStatus === 'ready') expect(existsSync(`public${card.audio}`)).toBe(true);
-      else expect(card.audioStatus).toBe('awaiting-recording');
+      // Flashcard MP3s were deliberately moved to Cloudflare R2. They are no
+      // longer committed in public/; availability and byte integrity need the R2 audit.
+      expect(card.audioStatus).toBe('ready');
     }
   });
   it('provides ten Dutch-only recording batches in exactly the documented ID order', () => {

@@ -21,8 +21,8 @@ describe('Full audio inventory planning', () => {
         const items = manifest.batches[0].items;
         expect(items.length).toBeGreaterThan(0);
         expect(items.length).toBeLessThanOrEqual(1000);
-        expect(items.every(row => row.lang === lang && !row.existingAudio)).toBe(true);
-        expect(items.reduce((n, row) => n + row.text.length, 0)).toBeLessThanOrEqual(28000);
+        expect(items.every((row: { lang: string; existingAudio: string }) => row.lang === lang && !row.existingAudio)).toBe(true);
+        expect(items.reduce((n: number, row: { text: string }) => n + row.text.length, 0)).toBeLessThanOrEqual(28000);
       }
     }
   });

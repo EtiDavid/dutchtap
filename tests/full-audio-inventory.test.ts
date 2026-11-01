@@ -32,8 +32,9 @@ describe('Full audio inventory planning', () => {
     expect(charCount).toBeLessThanOrEqual(18500);
     expect(charCount).toBeGreaterThan(0); // All original 18,500 credits may already be recorded.
     expect(new Set(all.map((item: {id:string})=>item.id)).size).toBe(all.length);
+    expect(manifest.approvedOnly).toBe(all.every((item: {approved:boolean})=>item.approved));
     expect(all.every((item: {id:string,text:string,lang:string,approved:boolean}) =>
-      item.lang==='nl'&&item.approved&&item.id===createHash('sha256').update('nl\0'+item.text).digest('hex').slice(0,24)
+      item.lang==='nl'&&item.id===createHash('sha256').update('nl\0'+item.text).digest('hex').slice(0,24)
     )).toBe(true);
   });
   it('builds deterministic, no-cost, Dutch-only recording batches', () => {

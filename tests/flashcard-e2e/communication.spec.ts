@@ -262,7 +262,8 @@ test("a recorded alternative requests the right MP3 and never replaces failed Du
   await solveQuiz(page, "Ik heb een nieuw gerecht geprobeerd.");
   await page.getByRole("button", { name: "Check", exact: true }).click();
   await page.getByRole("button", { name: "Listen", exact: true }).click();
-  await expect(page.getByText(/Dutch recording failed to play/)).toBeVisible();
+  // The app can show the playback error both on the card and in grammar notes.
+  await expect(page.getByRole("status").filter({ hasText: /Dutch recording failed to play/ }).first()).toBeVisible();
   expect(await page.evaluate(
     () => (window as unknown as { __spoken: unknown[] }).__spoken,
   )).toEqual([]);

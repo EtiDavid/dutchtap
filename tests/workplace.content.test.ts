@@ -111,13 +111,21 @@ describe('complete Dutch at Work publication',()=>{
     expect(ids('career-office-030')).toContain('career-dienst-shift');expect(ids('career-office-030')).not.toContain('dienst');
     expect(ids('career-meetings-041')).toContain('career-afspreken-agreement');expect(ids('career-meetings-053')).toContain('afspreken');
   });
-  it('preserves protected data, all 1,200 existing media files and the French-only deck',()=>{
+  it('preserves protected data, original image bytes, R2 audio references and the French-only deck',()=>{
     // Only explanation/scenario metadata is editable in these three files.
     // The original sentences, historical answers and related examples remain frozen.
     for(const [path,digest] of Object.entries({...baseline.files,...baseline.assets})) {
       const contract = editorialBaseline.files[path as keyof typeof editorialBaseline.files];
       if (contract) {
         expect(protectedEditorialDigest(path, JSON.parse(readFileSync(path, 'utf8')), editorialBaseline.addedRawAnswerIds), path).toBe(contract);
+      } else if (path.startsWith('public/audio/flashcards/')) {
+        // Migration intentionally untracked 600 local MP3s. Verify the
+        // frozen digest and card reference here; R2 byte integrity is a
+        // separate rclone check --download gate, not a local-file assertion.
+        const originalId=path.split('/').at(-1)!.replace(/\.mp3$/,'');
+        const original=EVERYDAY_CARDS.find(c=>c.id===originalId);
+        expect(original?.audio,path).toBe('/'+path.replace(/^public\//,''));
+        expect(digest,path).toMatch(/^[a-f0-9]{64}$/);
       } else expect(hash(path),path).toBe(digest);
     }
     expect(cardsFor('fr')).toHaveLength(600);

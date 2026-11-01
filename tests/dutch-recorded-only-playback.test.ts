@@ -19,7 +19,7 @@ vi.mock("../lib/speech/voices", () => ({
 describe("Dutch recorded-only audio", () => {
   const speech = { cancel: vi.fn(), speak: vi.fn() };
   const audioInstances: Array<{ src: string }> = [];
-  const audioFactory = vi.fn((src: string) => {
+  const audioFactory = vi.fn(function audioConstructor(src: string) {
     const element = {
       src, pause: vi.fn(), play: vi.fn(async () => undefined),
       playbackRate: 1, preservesPitch: false,
@@ -76,7 +76,7 @@ describe("Dutch recorded-only audio", () => {
 
   it("reports an MP3 playback error without synthesizing Dutch", async () => {
     vi.mocked(recordingFor).mockReturnValue("https://audio.davideti.dev/utterances/unreachable.mp3");
-    audioFactory.mockImplementationOnce((src: string) => {
+    audioFactory.mockImplementationOnce(function failingAudioConstructor(src: string) {
       const element = {
         src, pause: vi.fn(), play: vi.fn(async () => { throw new Error("network error"); }),
         playbackRate: 1, preservesPitch: false,

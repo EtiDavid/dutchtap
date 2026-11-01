@@ -60,6 +60,13 @@ describe("Dutch recorded-only audio", () => {
     expect(speech.speak).not.toHaveBeenCalled();
   });
 
+  it("ignores legacy /words/*.mp3 paths and plays indexed noun/adjective MP3s", async () => {
+    vi.mocked(recordingFor).mockReturnValue("https://audio.davideti.dev/utterances/game-word.mp3");
+    await play({ text: "de huizen", lang: "nl", audio: "/words/nouns/huis.mp3" });
+    expect(audioInstances[0]?.src).toBe("https://audio.davideti.dev/utterances/game-word.mp3");
+    expect(speech.speak).not.toHaveBeenCalled();
+  });
+
   it("never silently substitutes device TTS for missing Dutch", async () => {
     await play({ text: "Nonexistent Dutch sentence.", lang: "nl" });
     expect(audioFactory).not.toHaveBeenCalled();

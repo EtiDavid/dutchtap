@@ -136,9 +136,12 @@ while(progressed){
 for(const row of wordCandidates)choose(row);
 for(const row of lessonCandidates)choose(row);
 for(const row of grammarCandidates)choose(row);
-// The authored/AI-edited pools can become exhausted long before all audio is
-// recorded. Fill remaining space with exact-text items from the full audit,
-// marking them PENDING editorial review rather than silently approving them.
+// The individually analysed lesson/card pools can be exhausted while the app
+// still has audio targets. All remaining targets below are exact text/IDs from
+// DutchTap's full source-content audio audit (which excludes intentionally
+// incorrect drill options). They are trusted for recording as existing app
+// content, NOT independently certified by a native-speaking editor.
+// Do not impose an additional manual approval workflow for those app targets.
 const fallback=[];
 for(const line of fs.readFileSync(missingPath,'utf8').split(/\r?\n/).slice(1)){
  if(!line)continue;
@@ -155,20 +158,20 @@ for(const line of fs.readFileSync(missingPath,'utf8').split(/\r?\n/).slice(1)){
      throw Error('Unresolved generated audio state: '+id);
    continue;
  }
- // Existing unreviewed targets remain unreviewed, regardless of source.
+ // Existing DutchTap content is eligible for audio without per-row review.
  const roleList=roles.split(',').filter(Boolean);
  const priority=roleList.some(x=>/^(verb|separable|word:|plural:|game-)/.test(x))?0:
    roleList.some(x=>/^(prompt:|answer|reviewed-|grammar-child|card-prompt|grammar-prompt)/.test(x))?1:
    roleList.some(x=>/^(lesson|note:|grammar-example|workplace-example|card-example|grammar-card)/.test(x))?2:3;
  fallback.push({id,lang,text,roles:roleList,source:'full-audio-audit',
-   approved:false,existingAudio:'',review:'PENDING: check spelling, idiomatic Dutch and context before authorizing audio',priority});
+   approved:true,existingAudio:'',review:'Automatically eligible for audio: exact text from DutchTap source-content audit; not independently native-speaker certified',priority});
 }
 fallback.sort((a,b)=>a.priority-b.priority || a.text.length-b.text.length || a.id.localeCompare(b.id));
-let pendingSelected=0;
+let auditSelected=0;
 for(const row of fallback) {
  if(selected.length>=1000)break;
  const {priority,...candidate}=row;
- if(choose(candidate))pendingSelected++;
+ if(choose(candidate))auditSelected++;
 }
 if(!selected.length)throw Error('No unrecorded Dutch audio remains: rerun the full audit after verifying installed recordings.');
 
@@ -176,16 +179,15 @@ if(characters>budget)throw Error('Budget exceeded');
 fs.mkdirSync(output,{recursive:true});
 const manifest={
  version:1,language:'nl',approvedOnly:selected.every(x=>x.approved),accountLabel:label,
- provenance:'Authored AI-edited Dutch lessons and verified vocabulary/word-game banks. No independent native-speaker certification.',
+ provenance:'Exact text from existing DutchTap app sources and full audio audit. Auto-authorized for recording, not independently native-speaker certified.',
  plannedCharacters:characters,requestedBudget:budget,
  batches:[{id:'nl-credit-'+label,items:selected}]
 };
 fs.writeFileSync(path.join(output,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');
-fs.writeFileSync(path.join(output,'review.txt'),selected.map((row,i)=>(i+1)+'. ['+row.roles[0]+'] '+row.text).join('\n')+'\n');
-fs.writeFileSync(path.join(output,'review.tsv'),
- 'status\tid\ttext\troles\n'+selected.map(x=>[
-   x.approved?'APPROVED':'PENDING',x.id,x.text.replace(/[\t\r\n]/g,' '),x.roles.join(',')
- ].join('\t')).join('\n')+'\n');
+// Earlier generator versions wrote human-approval sheets. They are no longer
+// required and must not be mistaken for a current prerequisite.
+for(const stale of ['review.txt','review.tsv','approved-manifest.json'])
+ fs.rmSync(path.join(output,stale),{force:true});
 console.log(JSON.stringify({
  language:'nl',accountLabel:label,requestedBudget:budget,selected:selected.length,characters,
  words:selected.filter(x=>!x.roles[0].startsWith('lesson-example')).length,
@@ -195,10 +197,8 @@ console.log(JSON.stringify({
  skippedAlreadyInstalled:skippedIndexed,skippedAlreadyGenerated:skippedSaved,
  ignoredOutsideFullAudit:skippedOutsideAudit,
  manifest:path.relative(root,path.join(output,'manifest.json')),
- review:path.relative(root,path.join(output,'review.txt')),
- editorialStatus:pendingSelected+' newly selected items require editorial review (no independent native certification)',
- pendingReview:pendingSelected,alreadyApproved:selected.length-pendingSelected,
+ editorialStatus:'Recording eligible from existing app source. No manual per-row approval required; independent native verification not claimed.',
+ fromAuditedApp:auditSelected, pendingReview:0,alreadyApproved:selected.length,
  approvedOnly:manifest.approvedOnly,
- reviewTsv:path.relative(root,path.join(output,'review.tsv')),
  paidRequestsMade:0
 },null,2));

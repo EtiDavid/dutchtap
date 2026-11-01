@@ -44,6 +44,25 @@ for(const [topic,text] of Object.entries(pilot)){
   items.push({id,lang:'nl',text,roles:['grammar-lesson:'+topic],
     approved:true,existingAudio:'',review:'AI-reviewed for pilot; independent native-speaker review not performed'});
 }
+// Add vocabulary, adjective inflection and noun plurals to cover the word-game paths.
+const nouns = fs.readFileSync(path.join(root,'data','nouns.ts'),'utf8');
+const adjectives = fs.readFileSync(path.join(root,'data','adjectives.ts'),'utf8');
+const generalVocabulary = read('vocabulary.json');
+const workplaceVocabulary = read('workplace-vocabulary.json');
+const wordPilot = [
+  {text:'de huizen', role:'game-plural', valid: nouns.includes('singular: "huis", article: "het", plural: "huizen"')},
+  {text:'mooie', role:'game-adjective-e-form', valid: adjectives.includes('base: "mooi", eForm: "mooie"')},
+  {text:'belangrijke', role:'game-adjective-e-form', valid: adjectives.includes('base: "belangrijk", eForm: "belangrijke"')},
+  {text:'de afspraken', role:'vocabulary-plural', valid: generalVocabulary.some(w=>w.plural==='afspraken')},
+  {text:"de collega's", role:'workplace-vocabulary-plural', valid: workplaceVocabulary.some(w=>w.plural==="collega's")}
+];
+for(const word of wordPilot){
+  if(!word.valid)throw Error('Unexpected pilot word form: '+word.text);
+  const id=createHash('sha256').update('nl\\0'+word.text).digest('hex').slice(0,24);
+  if(existing[id]){skippedRecorded.push(word.role);continue;}
+  items.push({id,lang:'nl',text:word.text,roles:[word.role],approved:true,
+    existingAudio:'',review:'AI-reviewed Dutch word form; independent native-speaker review not performed'});
+}
 if(!items.length)throw Error('Pilot already recorded; no new clips needed.');
 const out=path.join(root,'audio-export','pilot-001');
 fs.mkdirSync(out,{recursive:true});

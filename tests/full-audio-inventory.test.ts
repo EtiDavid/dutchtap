@@ -15,6 +15,26 @@ describe('Full audio inventory planning', () => {
       x.lang === 'nl' && x.approved && x.id === createHash('sha256').update('nl\0' + x.text).digest('hex').slice(0, 24)
     )).toBe(true);
   });
+  it('prepares a first-account batch within the 18,500-character budget', () => {
+    execFileSync('node', ['scripts/audit-all-learning-audio.mjs'], {
+      cwd: process.cwd(), encoding: 'utf8', maxBuffer: 8 * 1024 * 1024
+    });
+    const output = execFileSync('node', [
+      'scripts/prepare-dutch-credit-batch.mjs','--budget','18500','--label','ci-check'
+    ], { cwd: process.cwd(), encoding: 'utf8' });
+    const summary = JSON.parse(output);
+    const manifest = JSON.parse(readFileSync('audio-export/credit-ci-check/manifest.json','utf8'));
+    const all = manifest.batches.flatMap((batch: {items: {text:string,id:string,lang:string,approved:boolean}[]}) => batch.items);
+    const charCount = all.reduce((n:number,item: {text:string}) => n+item.text.length,0);
+    expect(summary.language).toBe('nl');
+    expect(summary.paidRequestsMade).toBe(0);
+    expect(charCount).toBeLessThanOrEqual(18500);
+    expect(charCount).toBeGreaterThan(16000);
+    expect(new Set(all.map((item: {id:string})=>item.id)).size).toBe(all.length);
+    expect(all.every((item: {id:string,text:string,lang:string,approved:boolean}) =>
+      item.lang==='nl'&&item.approved&&item.id===createHash('sha256').update('nl\0'+item.text).digest('hex').slice(0,24)
+    )).toBe(true);
+  });
   it('builds deterministic, no-cost, Dutch-only recording batches', () => {
     const result = execFileSync('node', ['scripts/audit-all-learning-audio.mjs'], {
       cwd: process.cwd(), encoding: 'utf8', maxBuffer: 8 * 1024 * 1024

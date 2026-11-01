@@ -1,4 +1,4 @@
-// Resumable, budget-limited Dutch-only ElevenLabs generator. Dry-run by default.
+// Resumable, per-run character-capped Dutch-only ElevenLabs generator. Dry-run by default.
 // Node 20.12+. Never stores credentials or installs unreviewed clips into the app.
 import { loadEnvFile } from 'node:process';
 import { readFile, writeFile, mkdir, rename, stat } from 'node:fs/promises';
@@ -77,25 +77,11 @@ for (const row of candidates) {
 }
 console.log(JSON.stringify({ mode: apply ? 'PAID GENERATION' : 'DRY RUN', model, voice, approvedOnly: manifest.approvedOnly, selected: selected.length, characters: chars, skipped, maxCharacters, maxClips, output }, null, 2));
 if (!apply) process.exit(0);
-// Check the actual account attached to the local API key before each paid run.
-// This deliberately leaves a 500-credit margin and fails closed if the
-// subscription endpoint is unavailable; switching accounts requires a valid key.
-const budgetResponse = await fetch('https://api.elevenlabs.io/v1/user/subscription', {
-  headers: { 'xi-api-key': key, Accept: 'application/json' },
-  signal: AbortSignal.timeout(15000),
-});
-if (!budgetResponse.ok) throw Error('Cannot verify ElevenLabs balance (HTTP ' + budgetResponse.status + '), refusing paid generation.');
-const subscription = await budgetResponse.json();
-const creditLimit = Number(subscription.character_limit);
-const creditUsed = Number(subscription.character_count);
-if (!Number.isFinite(creditLimit) || !Number.isFinite(creditUsed) || creditLimit < creditUsed)
-  throw Error('ElevenLabs credit counter is unavailable or invalid. Refusing paid generation.');
-const available = creditLimit - creditUsed;
-const reserve = 500;
-if (chars > available - reserve) {
-  throw Error('Selected ' + chars + ' characters but only ' + available + ' estimated credits remain on this API key. Keep ' + reserve + ' credits reserved; reduce --max-characters.');
-}
-console.log(JSON.stringify({verifiedCreditLimit:creditLimit,verifiedCreditUsed:creditUsed,verifiedCreditsRemaining:available,selectedCharacters:chars,reservedCredits:reserve}));
+// No ElevenLabs subscription/balance API call: this endpoint can return HTTP 401
+// for restricted API keys even when text-to-speech is permitted.
+// The explicit --max-characters/--max-clips limits still constrain this run.
+// A failed synthesis request stops immediately; previously saved clips remain.
+console.log('ElevenLabs balance lookup skipped. Generating ' + chars + ' characters (up to ' + selected.length + ' clips).');
 await mkdir(output, { recursive: true });
 for (const { row, body, fingerprint, target } of selected) {
   // Never retry a POST automatically: an interrupted response might still incur charges.
@@ -105,7 +91,7 @@ for (const { row, body, fingerprint, target } of selected) {
     body: JSON.stringify(body),
     signal: AbortSignal.timeout(90000),
   });
-  if (!response.ok) throw Error('Stopped at ' + row.id + ' (HTTP ' + response.status + '). Previous files remain saved.');
+  if (!response.ok) throw Error('TTS request failed at ' + row.id + ' (HTTP ' + response.status + '). ' + (response.status === 401 ? 'Check the ElevenLabs API key and text-to-speech permission. ' : '') + 'Previous files remain saved; no automatic retry.');
   if (!response.headers.get('content-type')?.includes('audio/')) throw Error('Unexpected response content type for ' + row.id);
   const bytes = Buffer.from(await response.arrayBuffer());
   if (bytes.length < 100 || bytes.toString('ascii', 0, 3) !== 'ID3' && (bytes[0] !== 0xff || (bytes[1] & 0xe0) !== 0xe0))

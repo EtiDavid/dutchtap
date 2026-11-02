@@ -9,6 +9,7 @@ describe('Dutch variation audio source coverage', () => {
   it('reports every unindexed everyday practice sentence rather than silently claiming full coverage', () => {
     const output = execFileSync('node', ['scripts/prepare-unindexed-dutch-audio.mjs'], { encoding: 'utf8' });
     const report = JSON.parse(output.slice(0, output.indexOf('\nNo credits spent.')));
+    console.log('DUTCH_AUDIO_COVERAGE ' + JSON.stringify(report));
     const manifest = JSON.parse(readFileSync('audio-export/unindexed-dutch/manifest.json','utf8'));
     const rows = manifest.batches.flatMap((batch: {items: Array<{text:string;id:string;lang:string}>}) => batch.items);
     const present = new Set(Object.values(index.items).map(row=>row.text));

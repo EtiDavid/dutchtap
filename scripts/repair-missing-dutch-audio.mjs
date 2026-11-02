@@ -38,7 +38,3 @@ run('publish-dutch-audio-r2.mjs',['--remote',utteranceRemote,'--apply']);
 run('prepare-unindexed-dutch-audio.mjs',['--strict']);
 console.log('PASS: Missing source recordings generated, installed and R2 object names verified.');
 console.log('Commit and push data/audio-index.json from this branch to deploy; do not commit audio-generated/ or secrets.');
-), '')+'/utterances','--apply']);
-run('prepare-unindexed-dutch-audio.mjs',['--strict']);
-console.log('PASS: Missing source recordings generated, installed and R2 object names verified.');
-console.log('Commit and push data/audio-index.json from this branch to deploy; do not commit audio-generated/ or secrets.');

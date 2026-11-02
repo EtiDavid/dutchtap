@@ -32,7 +32,13 @@ const everydayRefs = read('dutch-variations.json');
 const workplace = read('workplace-practice-bank.json');
 const workplaceRefs = read('workplace-families.json');
 const grammar = read('grammar-variation-families.json');
-for (const item of inventory()) if (item.lang === 'nl') add(item.text, 'learning-inventory', true);
+for (const item of inventory()) {
+  if (item.lang !== 'nl') continue;
+  // The original 600 cards already have dedicated legacy MP3s on Cloudflare R2.
+  // They deliberately are NOT in the exact-text utterance index; don't pay twice.
+  if (item.existingAudio?.startsWith('/audio/flashcards/')) continue;
+  add(item.text, 'learning-inventory', true);
+}
 // All authored pairs, including not-yet-used ones, are included to prevent the next card
 // variation from becoming silent when a learner reaches it.
 for (const [pattern, group] of Object.entries(everyday))

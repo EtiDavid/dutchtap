@@ -33,7 +33,11 @@ if(!apply){console.log('Review '+manifestPath+' and rerun with --apply to spend 
 run('audit-cloudflare-audio.mjs',['--remote',remote]);
 run('generate-learning-audio.mjs',['--manifest',manifestPath,'--max-characters',String(limit),'--max-clips','1000','--campaign-label','missing-dutch-20261102','--apply']);
 run('install-learning-audio.mjs',['--apply','--r2-remote',remote]);
-run('publish-dutch-audio-r2.mjs',['--remote',remote.replace(/\\/+$/,'')+'/utterances','--apply']);
+run('publish-dutch-audio-r2.mjs',['--remote',remote.replace(new RegExp('/++'/utterances','--apply']);
+run('prepare-unindexed-dutch-audio.mjs',['--strict']);
+console.log('PASS: Missing source recordings generated, installed and R2 object names verified.');
+console.log('Commit and push data/audio-index.json from this branch to deploy; do not commit audio-generated/ or secrets.');
+), '')+'/utterances','--apply']);
 run('prepare-unindexed-dutch-audio.mjs',['--strict']);
 console.log('PASS: Missing source recordings generated, installed and R2 object names verified.');
 console.log('Commit and push data/audio-index.json from this branch to deploy; do not commit audio-generated/ or secrets.');

@@ -86,7 +86,7 @@ export function AudioControls({
           </button>
         </div>
       )}
-      {card.lang === "nl" && !hasRecording && <p className="mt-2 text-xs text-muted">Recorded Dutch audio is unavailable for this card. Device speech will not replace it.</p>}
+      {card.lang === "nl" && !hasRecording && <p className="mt-2 text-xs text-muted">Recording not yet available. Listen uses your device’s Dutch voice temporarily (not a studio recording).</p>}
       {card.lang === "fr" && !hasRecording && (
         <p className="mt-2 text-xs text-muted">
           Spoken by your device’s French voice (synthetic speech, not a
@@ -98,7 +98,7 @@ export function AudioControls({
           {sound}
         </p>
       )}
-      {!hasRecording && card.lang !== "nl" && <VoicePicker lang={card.lang} />}
+      {!hasRecording && <VoicePicker lang={card.lang} />}
     </>
   );
 }

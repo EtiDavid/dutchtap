@@ -14,7 +14,7 @@ describe('Dutch variation audio source coverage', () => {
     const present = new Set(Object.values(index.items).map(row=>row.text));
     const authored = new Set(Object.values(bank).flatMap(group=>group.pairs.map(pair=>pair[0])));
     const absent = [...authored].filter(text=>!present.has(text));
-    const manifestTexts = new Set(rows.map(row=>row.text));
+    const manifestTexts = new Set(rows.map((row: {text:string})=>row.text));
     expect(report.missingUnique).toBe(rows.length);
     for (const text of absent) expect(manifestTexts.has(text), text).toBe(true);
     for (const row of rows) {

@@ -8,8 +8,8 @@ vi.mock("../lib/speech/recordings", () => ({
 
 vi.mock("../lib/speech/voices", () => ({
   speechSupported: vi.fn(() => true),
-  loadVoices: vi.fn(async () => [{ name: "French voice", lang: "fr-BE" }]),
-  pickVoice: vi.fn(() => ({ name: "French voice", lang: "fr-BE" })),
+  loadVoices: vi.fn(async () => [{ name: "French voice", lang: "fr-BE" }, { name: "Dutch voice", lang: "nl-BE" }]),
+  pickVoice: vi.fn((lang: string) => lang === "nl" ? { name: "Dutch voice", lang: "nl-BE" } : { name: "French voice", lang: "fr-BE" }),
   readVoicePreference: vi.fn(() => null),
   speechInfo: vi.fn(() => ({ english: "French" })),
   voiceInstallHint: vi.fn(() => ""),
@@ -67,11 +67,11 @@ describe("Dutch recorded-only audio", () => {
     expect(speech.speak).not.toHaveBeenCalled();
   });
 
-  it("never silently substitutes device TTS for missing Dutch", async () => {
+  it("uses clearly labelled device Dutch only when the recording is absent", async () => {
     await play({ text: "Nonexistent Dutch sentence.", lang: "nl" });
     expect(audioFactory).not.toHaveBeenCalled();
-    expect(speech.speak).not.toHaveBeenCalled();
-    expect(playbackMessage()).toContain("Recorded Dutch audio is unavailable");
+    expect(speech.speak).toHaveBeenCalledOnce();
+    expect(playbackMessage()).toContain("Recorded MP3 missing");
   });
 
   it("reports an MP3 playback error without synthesizing Dutch", async () => {

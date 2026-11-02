@@ -96,11 +96,11 @@ export async function speakWithDevice(
   };
   window.speechSynthesis.cancel();
   window.speechSynthesis.speak(utterance);
-  setMessage(`Playing with ${voice.name} (${voice.lang})…`);
+  setMessage(`${options.fallbackNote ? "Recorded MP3 missing · " : ""}Playing with device voice ${voice.name} (${voice.lang})…`);
   return true;
 }
 
-/** Dutch is recorded-only. Other languages may use a device voice if no recording exists. */
+/** Prefer recorded Dutch. Missing exact-text recordings use an explicitly labelled temporary Dutch device voice. */
 export async function play(item: PlayItem, slow = false) {
   stopAllSpeech();
   const mine = generation;
@@ -116,7 +116,9 @@ export async function play(item: PlayItem, slow = false) {
     : item.audio || recordingFor(item.text, item.lang);
   if (!recording) {
     if (item.lang === "nl") {
-      setMessage("Recorded Dutch audio is unavailable for this sentence. No device voice was substituted.");
+      await speakWithDevice(item, slow, mine, {
+        fallbackNote: "No recorded MP3 for this sentence · Dutch device voice used instead.",
+      });
       return;
     }
     await speakWithDevice(item, slow, mine);

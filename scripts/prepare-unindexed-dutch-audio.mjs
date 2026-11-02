@@ -87,7 +87,7 @@ const missing = [...selected].map(([text, meta]) => ({
   review: 'Source-authored DutchTap text, approved for recording; native-speaker certification not claimed',
   usedInApp: meta.usedInApp,
 })).sort((a,b) => Number(b.usedInApp)-Number(a.usedInApp) || a.text.localeCompare(b.text,'nl'));
-const lines = missing.map(({usedInApp,...row}) => row);
+const lines = missing.map(row => ({ id: row.id, lang: row.lang, text: row.text, roles: row.roles, approved: row.approved, existingAudio: row.existingAudio, review: row.review }));
 const characters = lines.reduce((n,row) => n+row.text.length,0);
 const report = {
   indexEntries: Object.keys(index.items).length,

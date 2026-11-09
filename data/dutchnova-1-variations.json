@@ -1,0 +1,450 @@
+{
+  "dutchnova1-0001": [
+    {
+      "id": "dutchnova1-0001~v01",
+      "parentId": "dutchnova1-0001",
+      "text": "Je moet nog even melk halen.",
+      "english": "You still need to quickly get some milk.",
+      "scenario": "You're making breakfast, but milk is missing. Explain the remaining errand.",
+      "explanation": "Nog signals that getting milk remains unfinished; even presents it as a small task. The modal moet keeps halen as an infinitive at the end.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik blijf nog even in de supermarkt.",
+        "english": "I'll stay at the supermarket a little longer."
+      }
+    },
+    {
+      "id": "dutchnova1-0001~v02",
+      "parentId": "dutchnova1-0001",
+      "text": "Ik blijf nog even in de supermarkt.",
+      "english": "I'll stay at the supermarket a little longer.",
+      "scenario": "You're already shopping but want to look around a bit longer.",
+      "explanation": "Because blijven is a continuing action, nog even means a short extension, not an uncompleted errand. The first person finite verb is blijf.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Je moet nog even melk halen.",
+        "english": "You still need to quickly get some milk."
+      }
+    }
+  ],
+  "dutchnova1-0003": [
+    {
+      "id": "dutchnova1-0003~v01",
+      "parentId": "dutchnova1-0003",
+      "text": "Heb je nog een zakje?",
+      "english": "Do you have another bag?",
+      "scenario": "You already have one bag and need one more.",
+      "explanation": "Nog een asks for an additional item; it does not imply a different type. In this yes/no question heb comes before je.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Heb je een ander zakje?",
+        "english": "Do you have a different bag?"
+      }
+    },
+    {
+      "id": "dutchnova1-0003~v02",
+      "parentId": "dutchnova1-0003",
+      "text": "Heb je een ander zakje?",
+      "english": "Do you have a different bag?",
+      "scenario": "Your first bag is too small and you want a different bag.",
+      "explanation": "Ander, without -e, modifies singular indefinite het zakje. This changes the goal from adding a bag to replacing it with another kind.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Heb je nog een zakje?",
+        "english": "Do you have another bag?"
+      }
+    }
+  ],
+  "dutchnova1-0019": [
+    {
+      "id": "dutchnova1-0019~v01",
+      "parentId": "dutchnova1-0019",
+      "text": "Heb je vandaag al iets gegeten?",
+      "english": "Have you eaten anything today yet?",
+      "scenario": "Ask a friend who has been busy all day whether they have eaten yet.",
+      "explanation": "Vandaag sets the time, al asks whether the event has happened by now, and gegeten is the participle of eten.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik heb vandaag nog niets gegeten.",
+        "english": "I haven't eaten anything today yet."
+      }
+    },
+    {
+      "id": "dutchnova1-0019~v02",
+      "parentId": "dutchnova1-0019",
+      "text": "Ik heb vandaag nog niets gegeten.",
+      "english": "I haven't eaten anything today yet.",
+      "scenario": "You have not had any food today; tell your friend.",
+      "explanation": "Nog niets signals an expected but unrealised event. The negative word niets replaces iets in the statement; gegeten stays as the perfect participle.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Heb je vandaag al iets gegeten?",
+        "english": "Have you eaten anything today yet?"
+      }
+    }
+  ],
+  "dutchnova1-0022": [
+    {
+      "id": "dutchnova1-0022~v01",
+      "parentId": "dutchnova1-0022",
+      "text": "Wacht nog even op de bus.",
+      "english": "Wait for the bus a little longer.",
+      "scenario": "The bus is late, but your friend wants to leave. Ask them to wait a bit longer.",
+      "explanation": "Nog even extends the ongoing wait. Op is the fixed preposition after wachten; it should not be translated from English literally.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik moet nog even op de bus wachten.",
+        "english": "I still need to wait for the bus for a moment."
+      }
+    },
+    {
+      "id": "dutchnova1-0022~v02",
+      "parentId": "dutchnova1-0022",
+      "text": "Ik moet nog even op de bus wachten.",
+      "english": "I still need to wait for the bus for a moment.",
+      "scenario": "Your bus is due soon; explain the one remaining thing you're doing.",
+      "explanation": "Moet + infinitive makes wachten the final verb, nog says the wait remains and even presents it as brief.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Wacht nog even op de bus.",
+        "english": "Wait for the bus a little longer."
+      }
+    }
+  ],
+  "dutchnova1-0025": [
+    {
+      "id": "dutchnova1-0025~v01",
+      "parentId": "dutchnova1-0025",
+      "text": "Je komt morgen toch nog?",
+      "english": "You're still coming tomorrow, right?",
+      "scenario": "Your friend had planned to visit tomorrow. Check that the plan still stands.",
+      "explanation": "Toch asks for confirmation of the expected visit; nog says the plan is still current.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Je komt morgen toch niet?",
+        "english": "You're not coming tomorrow, are you?"
+      }
+    },
+    {
+      "id": "dutchnova1-0025~v02",
+      "parentId": "dutchnova1-0025",
+      "text": "Je komt morgen toch niet?",
+      "english": "You're not coming tomorrow, are you?",
+      "scenario": "You expect your friend has cancelled tomorrow. Check your assumption.",
+      "explanation": "Toch can still request confirmation, but niet reverses the expectation. This is not the same question as the parent card.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Je komt morgen toch nog?",
+        "english": "You're still coming tomorrow, right?"
+      }
+    }
+  ],
+  "dutchnova1-0026": [
+    {
+      "id": "dutchnova1-0026~v01",
+      "parentId": "dutchnova1-0026",
+      "text": "Ik ben ziek, maar ik ga toch werken.",
+      "english": "I'm ill, but I'm going to work anyway.",
+      "scenario": "You feel ill but decide to go to work.",
+      "explanation": "Toch expresses action despite a reason against it. Maar coordinates two main clauses; in the second one, ik remains the subject.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Het regent, maar ik ga toch voetballen.",
+        "english": "It's raining, but I'm going to play football anyway."
+      }
+    },
+    {
+      "id": "dutchnova1-0026~v02",
+      "parentId": "dutchnova1-0026",
+      "text": "Het regent, maar ik ga toch voetballen.",
+      "english": "It's raining, but I'm going to play football anyway.",
+      "scenario": "It's raining and a friend thinks you will cancel football, but you decide to go.",
+      "explanation": "Toch counters the expectation created by the rain; gaan + infinitive puts voetballen at the end.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik ben ziek, maar ik ga toch werken.",
+        "english": "I'm ill, but I'm going to work anyway."
+      }
+    }
+  ],
+  "dutchnova1-0029": [
+    {
+      "id": "dutchnova1-0029~v01",
+      "parentId": "dutchnova1-0029",
+      "text": "Voel je je vandaag beter?",
+      "english": "Are you feeling better today?",
+      "scenario": "Ask a sick friend whether they feel better today.",
+      "explanation": "The first je is the subject; the second je is reflexive. Without the second je, this is not the usual form of zich voelen.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Je voelt je toch weer goed?",
+        "english": "You're feeling well again, right?"
+      }
+    },
+    {
+      "id": "dutchnova1-0029~v02",
+      "parentId": "dutchnova1-0029",
+      "text": "Je voelt je toch weer goed?",
+      "english": "You're feeling well again, right?",
+      "scenario": "You expect your friend to have recovered. Seek reassurance.",
+      "explanation": "The subject je precedes voelt in a statement-shaped confirmation question. The next je is reflexive; toch asks for agreement and weer signals a restored state.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Voel je je vandaag beter?",
+        "english": "Are you feeling better today?"
+      }
+    }
+  ],
+  "dutchnova1-0033": [
+    {
+      "id": "dutchnova1-0033~v01",
+      "parentId": "dutchnova1-0033",
+      "text": "We hadden samen voetbal moeten kijken.",
+      "english": "We should have watched football together.",
+      "scenario": "You regret missing a football night with friends.",
+      "explanation": "Hadden + moeten + infinitive expresses hindsight or regret. Kijken remains an infinitive rather than the participle gekeken.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "We moeten binnenkort eens afspreken.",
+        "english": "We should arrange to meet sometime soon."
+      }
+    },
+    {
+      "id": "dutchnova1-0033~v02",
+      "parentId": "dutchnova1-0033",
+      "text": "We moeten binnenkort eens afspreken.",
+      "english": "We should arrange to meet sometime soon.",
+      "scenario": "You are suggesting a future get-together rather than regretting the past.",
+      "explanation": "Moeten + infinitive is a direct present/future suggestion; compare hadden moeten for regret about an earlier missed opportunity.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "We hadden samen voetbal moeten kijken.",
+        "english": "We should have watched football together."
+      }
+    }
+  ],
+  "dutchnova1-0041": [
+    {
+      "id": "dutchnova1-0041~v01",
+      "parentId": "dutchnova1-0041",
+      "text": "Ik heb het lekker warm onder de deken.",
+      "english": "I'm comfortably warm under the blanket.",
+      "scenario": "You're cosy under a blanket.",
+      "explanation": "Het warm hebben expresses the person's comfort, not the room temperature. Lekker adds pleasantness; onder de deken indicates location.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Het wordt hier langzaam koud.",
+        "english": "It's slowly getting cold here."
+      }
+    },
+    {
+      "id": "dutchnova1-0041~v02",
+      "parentId": "dutchnova1-0041",
+      "text": "Het wordt hier langzaam koud.",
+      "english": "It's slowly getting cold here.",
+      "scenario": "The heater has stopped working and the room temperature is dropping.",
+      "explanation": "Wordt signals a change in the environmental condition, whereas het is koud would only describe the current temperature.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik heb het lekker warm onder de deken.",
+        "english": "I'm comfortably warm under the blanket."
+      }
+    }
+  ],
+  "dutchnova1-0048": [
+    {
+      "id": "dutchnova1-0048~v01",
+      "parentId": "dutchnova1-0048",
+      "text": "Ik probeer de deur niet aan te raken.",
+      "english": "I'm trying not to touch the door.",
+      "scenario": "The door has wet paint. Explain you're avoiding touching it.",
+      "explanation": "Aanraken is separable. After proberen, te is inserted inside the verb: aan te raken. Niet negates the touching.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Raak dat scherm niet aan.",
+        "english": "Don't touch that screen."
+      }
+    },
+    {
+      "id": "dutchnova1-0048~v02",
+      "parentId": "dutchnova1-0048",
+      "text": "Raak dat scherm niet aan.",
+      "english": "Don't touch that screen.",
+      "scenario": "A child is about to touch a monitor. Tell them not to.",
+      "explanation": "Raak ... aan is the imperative form of aanraken: the separable particle comes later in the clause.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik probeer de deur niet aan te raken.",
+        "english": "I'm trying not to touch the door."
+      }
+    }
+  ],
+  "dutchnova1-0055": [
+    {
+      "id": "dutchnova1-0055~v01",
+      "parentId": "dutchnova1-0055",
+      "text": "Als de server offline is, bel ik de beheerder.",
+      "english": "If the server is offline, I'll call the administrator.",
+      "scenario": "Your server is offline. Explain the action you take in that case.",
+      "explanation": "The fronted als-clause ends with is; the following main clause has V2 inversion, bel ik, not ik bel.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik bel de beheerder als de server offline is.",
+        "english": "I'll call the administrator if the server is offline."
+      }
+    },
+    {
+      "id": "dutchnova1-0055~v02",
+      "parentId": "dutchnova1-0055",
+      "text": "Ik bel de beheerder als de server offline is.",
+      "english": "I'll call the administrator if the server is offline.",
+      "scenario": "You explain the same rule with the main clause first.",
+      "explanation": "The main clause begins ik bel, so there is no inversion. The dependent als-clause still uses offline is.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Als de server offline is, bel ik de beheerder.",
+        "english": "If the server is offline, I'll call the administrator."
+      }
+    }
+  ],
+  "dutchnova1-0058": [
+    {
+      "id": "dutchnova1-0058~v01",
+      "parentId": "dutchnova1-0058",
+      "text": "Kun je even controleren of de printer werkt?",
+      "english": "Could you quickly check whether the printer works?",
+      "scenario": "A colleague reports a printer issue. Ask someone to test it.",
+      "explanation": "Of introduces an indirect yes/no question, so werkt follows de printer. Even softens the request.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Als de printer niet werkt, bel ik IT.",
+        "english": "If the printer doesn't work, I'll call IT."
+      }
+    },
+    {
+      "id": "dutchnova1-0058~v02",
+      "parentId": "dutchnova1-0058",
+      "text": "Als de printer niet werkt, bel ik IT.",
+      "english": "If the printer doesn't work, I'll call IT.",
+      "scenario": "Explain what you will do if the printer fails.",
+      "explanation": "Als introduces a condition, not an indirect question. Fronting the clause causes bel ik inversion.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Kun je even controleren of de printer werkt?",
+        "english": "Could you quickly check whether the printer works?"
+      }
+    }
+  ],
+  "dutchnova1-0066": [
+    {
+      "id": "dutchnova1-0066~v01",
+      "parentId": "dutchnova1-0066",
+      "text": "Moet je de dokter morgen nog bellen?",
+      "english": "Do you still have to call the doctor tomorrow?",
+      "scenario": "Your friend planned to phone the doctor tomorrow. Check whether they still need to.",
+      "explanation": "Moet introduces necessity, nog means the task remains and bellen is the final infinitive.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Heb je de dokter al gebeld?",
+        "english": "Have you already called the doctor?"
+      }
+    },
+    {
+      "id": "dutchnova1-0066~v02",
+      "parentId": "dutchnova1-0066",
+      "text": "Heb je de dokter al gebeld?",
+      "english": "Have you already called the doctor?",
+      "scenario": "Ask if the call you discussed has already happened.",
+      "explanation": "Al checks completed status; heb + gebeld forms the perfect. This is not equivalent to asking whether the call is still required.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Moet je de dokter morgen nog bellen?",
+        "english": "Do you still have to call the doctor tomorrow?"
+      }
+    }
+  ],
+  "dutchnova1-0074": [
+    {
+      "id": "dutchnova1-0074~v01",
+      "parentId": "dutchnova1-0074",
+      "text": "Ik blijf nog even naar de wedstrijd kijken.",
+      "english": "I'll keep watching the match a little longer.",
+      "scenario": "The game is nearly over but you will keep watching a bit longer.",
+      "explanation": "Blijf + infinitive kijken expresses continuation, and nog even limits the remaining period.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik kijk graag naar voetbal, maar ik speel liever.",
+        "english": "I enjoy watching football, but I prefer playing."
+      }
+    },
+    {
+      "id": "dutchnova1-0074~v02",
+      "parentId": "dutchnova1-0074",
+      "text": "Ik kijk graag naar voetbal, maar ik speel liever.",
+      "english": "I enjoy watching football, but I prefer playing.",
+      "scenario": "You enjoy both watching and playing football, but playing is your preference.",
+      "explanation": "Graag denotes enjoyment and liever denotes preference. They are not equivalents: the second choice outranks the first.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik blijf nog even naar de wedstrijd kijken.",
+        "english": "I'll keep watching the match a little longer."
+      }
+    }
+  ],
+  "dutchnova1-0098": [
+    {
+      "id": "dutchnova1-0098~v01",
+      "parentId": "dutchnova1-0098",
+      "text": "Ik moet nog even naar de bakker.",
+      "english": "I still need to pop to the baker's.",
+      "scenario": "You are almost finished running errands, except buying bread.",
+      "explanation": "Nog signals an unfinished errand, and even suggests a small trip. Naar de bakker is direction, not a present location.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik blijf nog even bij de bakker.",
+        "english": "I'll stay at the bakery a little longer."
+      }
+    },
+    {
+      "id": "dutchnova1-0098~v02",
+      "parentId": "dutchnova1-0098",
+      "text": "Ik blijf nog even bij de bakker.",
+      "english": "I'll stay at the bakery a little longer.",
+      "scenario": "You're already at the bakery and continue waiting for a friend.",
+      "explanation": "Blijf denotes continued presence, so nog even means a little longer, not a remaining trip.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik moet nog even naar de bakker.",
+        "english": "I still need to pop to the baker's."
+      }
+    }
+  ],
+  "dutchnova1-0117": [
+    {
+      "id": "dutchnova1-0117~v01",
+      "parentId": "dutchnova1-0117",
+      "text": "Je voelt je toch al beter?",
+      "english": "You're feeling better already, right?",
+      "scenario": "You expect a friend to have recovered. Check politely.",
+      "explanation": "Je refers to the subject and the reflexive object separately. Toch signals expectation; al expresses recovery by now.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik voel me vandaag veel beter.",
+        "english": "I feel much better today."
+      }
+    },
+    {
+      "id": "dutchnova1-0117~v02",
+      "parentId": "dutchnova1-0117",
+      "text": "Ik voel me vandaag veel beter.",
+      "english": "I feel much better today.",
+      "scenario": "You recovered from a cold. Explain how you feel.",
+      "explanation": "Zich voelen uses me with ik. Veel intensifies the comparative beter; vandaag supplies the time.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Je voelt je toch al beter?",
+        "english": "You're feeling better already, right?"
+      }
+    }
+  ]
+}

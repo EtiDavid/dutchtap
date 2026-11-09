@@ -1,4 +1,5 @@
 import workplace from "@/data/workplace-communication.json";
+import dutchNova from "@/data/dutchnova-1-cards.json";
 import catalogue from "@/data/dutch-communication.json";
 import corrections from "@/data/editorial/communication-corrections.json";
 import alsExpansion from "@/data/editorial/grammar-als-expansion.json";
@@ -30,6 +31,7 @@ export type PracticeSentence = {
   scenario: string;
   lang: Lang;
 };
+const novaById = new Map(dutchNova.cards.map(card => [card.id, card]));
 const tasks: Record<string, CommunicationTask> = Object.fromEntries(
   Object.entries({ ...catalogue, ...workplace }).map(([text, task]) => [
     text,
@@ -116,6 +118,11 @@ const normalEnglish = (value: string) =>
  * accepted as alternatives.
  */
 export function communicationFor(card: PracticeSentence): CommunicationTask {
+  const nova = card.id ? novaById.get(card.id) : undefined;
+  if (nova && card.lang === 'nl') return {
+    scenario: nova.scenarioEn,
+    answers: [{ id: 'model', text: nova.text, english: nova.scenarioEn, explanation: `${nova.teaching.meaningAndUsage} ${nova.teaching.grammarReason}` }],
+  };
   const base =
     card.lang === "nl" && tasks[card.text]
       ? {

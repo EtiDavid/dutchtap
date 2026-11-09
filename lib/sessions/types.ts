@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { COLLECTIONS, GRAMMAR_AREAS, WORK_AREAS, collectionAvailable, validTopic } from "@/lib/content/collections";
+import { COLLECTIONS, GRAMMAR_AREAS, WORK_AREAS, DUTCHNOVA_AREAS, collectionAvailable, validTopic } from "@/lib/content/collections";
 import { CARDS, CATEGORIES, LEVELS, type Level } from "@/lib/flashcards/engine";
 import { ID_PATTERN } from "./ids";
 import { DEFAULT_LANG, LANGS, type Lang } from "@/lib/lang";
@@ -24,8 +24,8 @@ export const MAX_ACTIONS_PER_REQUEST = 60;
 
 export type Mode = "study" | "speaking" | "quiz";
 export const MODES: readonly Mode[] = ["study", "speaking", "quiz"];
-export type Topic = "all" | keyof typeof CATEGORIES | keyof typeof WORK_AREAS | keyof typeof GRAMMAR_AREAS;
-export const TOPICS = ["all", ...Object.keys(CATEGORIES), ...Object.keys(WORK_AREAS), ...Object.keys(GRAMMAR_AREAS)] as readonly string[];
+export type Topic = "all" | keyof typeof CATEGORIES | keyof typeof WORK_AREAS | keyof typeof GRAMMAR_AREAS | keyof typeof DUTCHNOVA_AREAS;
+export const TOPICS = ["all", ...Object.keys(CATEGORIES), ...Object.keys(WORK_AREAS), ...Object.keys(GRAMMAR_AREAS), ...Object.keys(DUTCHNOVA_AREAS)] as readonly string[];
 
 const deckIds = new Set(CARDS.map((card) => card.id));
 const cardId = z.string().refine((id) => deckIds.has(id), "Unknown card");

@@ -1,5 +1,6 @@
 "use client";
 import { notesFor } from "@/lib/grammarNotes";
+import { DutchNovaGrammarNotes } from "./DutchNovaGrammarNotes";
 import type { Lang } from "@/lib/lang";
 import { breakdownFor, hasForms, patternOf } from "@/lib/grammarBreakdowns";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
@@ -48,6 +49,7 @@ export function GrammarNotes({
   const variationEnglish =
     lang === "fr" ? cardFor(lang, cardId)?.variationEnglish : undefined;
   const { sound, listen, stop } = useCardAudio();
+  if (cardId.startsWith('dutchnova1-')) return <DutchNovaGrammarNotes cardId={cardId} defaultOpen={defaultOpen} />;
   if (!note && !breakdown) return null;
   const words = HEADINGS[lang];
   return (

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { GRAMMAR_AREAS, WORK_AREAS, type Collection } from '@/lib/content/collections';
+import { GRAMMAR_AREAS, WORK_AREAS, DUTCHNOVA_AREAS, type Collection } from '@/lib/content/collections';
 import { MAX_ACTIVE_SESSIONS, type Session } from '@/lib/sessions/types';
 import { createSessionFromIds } from '@/lib/sessions/engine';
 import { clearLegacy, readLegacy, type LegacyPractice } from '@/lib/sessions/legacy';
@@ -36,6 +36,7 @@ export function SessionsDashboard({ lang, onSwitchLanguage, store, snapshot, rev
   const [initial] = useState<{ collection: Collection; topic: string } | undefined>(() => {
     const [collection, topic = 'all'] = (requested ?? '').split(':');
     if (collection === 'grammar' && (topic === 'all' || Object.hasOwn(GRAMMAR_AREAS, topic))) return { collection, topic };
+    if (collection === 'dutchnova_1' && (topic === 'all' || Object.hasOwn(DUTCHNOVA_AREAS, topic))) return { collection, topic };
     if (collection === 'workplace' && (topic === 'all' || Object.hasOwn(WORK_AREAS, topic))) return { collection, topic };
     return undefined;
   });

@@ -54,9 +54,10 @@ export function AudioControls({
 }) {
   const item = speakable(card);
   const hasRecording = !!(recordingFor(card.text, card.lang) ?? card.audio);
+  const novaAudioPending = card.collection === 'dutchnova_1' && !hasRecording;
   return (
     <>
-      {card.audioStatus === "awaiting-recording" && !hasRecording ? (
+      {card.audioStatus === "awaiting-recording" && !hasRecording && !novaAudioPending ? (
         <p className="mt-4 text-sm text-muted">
           Diederik recording awaiting installation.
         </p>
@@ -66,6 +67,7 @@ export function AudioControls({
             type="button"
             className={button}
             onClick={() => void listen(item)}
+            disabled={novaAudioPending}
           >
             Listen
           </button>
@@ -73,6 +75,7 @@ export function AudioControls({
             type="button"
             className={button}
             onClick={() => void listen(item, true)}
+            disabled={novaAudioPending}
           >
             Listen slowly
           </button>
@@ -86,7 +89,7 @@ export function AudioControls({
           </button>
         </div>
       )}
-      {card.lang === "nl" && !hasRecording && <p className="mt-2 text-xs text-muted">Recorded Dutch audio is unavailable for this card. Device speech will not replace it.</p>}
+      {card.lang === "nl" && !hasRecording && <p className="mt-2 text-xs text-muted">{novaAudioPending ? 'Listen and Listen slowly are ready for the future recording, but disabled until Dutch audio is installed.' : 'Recorded Dutch audio is unavailable for this card. Device speech will not replace it.'}</p>}
       {card.lang === "fr" && !hasRecording && (
         <p className="mt-2 text-xs text-muted">
           Spoken by your device’s French voice (synthetic speech, not a

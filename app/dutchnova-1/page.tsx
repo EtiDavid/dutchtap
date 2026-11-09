@@ -133,9 +133,17 @@ export default function DutchNovaOne() {
           {state.mode === "study" || revealed ? <>
             <p className="mt-5 border-t border-border pt-4 text-xl font-bold" lang="nl-BE">{current.text}</p>
             <div className="mt-4 space-y-3 text-sm leading-relaxed">
-              <p><strong>Why it works:</strong> {current.explanation}</p>
-              <p><strong>Common learner mistake:</strong> <span lang="nl-BE">{current.commonMistake}</span></p>
-              <p><strong>Contrast:</strong> {current.contrast}</p>
+              <p><strong>What you're communicating:</strong> {current.teaching.communicationGoal}</p>
+              <p><strong>Meaning and sentence structure:</strong> {current.teaching.meaningAndUsage}</p>
+              <p><strong>Why Dutch uses this construction:</strong> {current.teaching.grammarReason}</p>
+              <div className="rounded-lg border border-border bg-surface p-3">
+                <p className="font-semibold">Common mistake and how to correct it</p>
+                <p className="mt-1 text-error" lang="nl-BE">✕ {current.teaching.commonError.incorrect}</p>
+                <p className="mt-1 text-success" lang="nl-BE">✓ {current.teaching.commonError.correction}</p>
+                <p className="mt-2">{current.teaching.commonError.reason}</p>
+              </div>
+              <p><strong>Meaning-changing contrast:</strong> {current.teaching.meaningfulContrast}</p>
+              <p className="text-xs text-muted">{current.teaching.learnerInstruction}</p>
               <p className="text-xs text-muted">AI-drafted, not independently native-reviewed. Audio not generated.</p>
             </div>
           </> : <button type="button" className="btn btn-primary mt-5" onClick={() => setRevealed(true)}>Reveal Dutch + explanation</button>}

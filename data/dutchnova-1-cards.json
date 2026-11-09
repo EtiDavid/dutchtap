@@ -1185,19 +1185,19 @@
       "focus": "zitten",
       "scenarioEn": "Tell someone you are sitting on a chair.",
       "text": "Ik zit op een stoel.",
-      "explanation": "Zitten expresses being in a sitting position.",
-      "commonMistake": "Ik ga op een stoel zitten nu al.",
+      "explanation": "Zitten describes an existing seated position, not the action of sitting down. Ik zit op een stoel says where and how you are positioned right now. To describe the transition into sitting, use gaan zitten: Ik ga op een stoel zitten. In the first sentence zit is the finite main verb; in the second, ga is finite and zitten remains an infinitive at the end.",
+      "commonMistake": "Ik ben op een stoel zitten.",
       "contrast": "Ik ga op een stoel zitten. = move into the position.",
       "reviewStatus": "ai-draft",
       "audioStatus": "not-generated",
       "teaching": {
         "communicationGoal": "Tell someone you are sitting on a chair.",
-        "meaningAndUsage": "Zitten expresses being in a sitting position.",
-        "grammarReason": "First identify the intended meaning and the main finite verb. Compare the learner mistake with the model, then notice what changes in word order, choice of preposition or the nuance of a small word.",
+        "meaningAndUsage": "Zitten describes an existing seated position, not the action of sitting down. Ik zit op een stoel says where and how you are positioned right now. To describe the transition into sitting, use gaan zitten: Ik ga op een stoel zitten. In the first sentence zit is the finite main verb; in the second, ga is finite and zitten remains an infinitive at the end.",
+        "grammarReason": "Zit is already the conjugated verb of zitten, so a second infinitive does not follow ben here. Dutch distinguishes the ongoing state ik zit from the movement ik ga zitten. On a chair is op een stoel in both descriptions.",
         "commonError": {
-          "incorrect": "Ik ga op een stoel zitten nu al.",
+          "incorrect": "Ik ben op een stoel zitten.",
           "correction": "Ik zit op een stoel.",
-          "reason": "Compare the sentence with the corrected model. First identify the intended meaning and the main finite verb. Compare the learner mistake with the model, then notice what changes in word order, choice of preposition or the nuance of a small word."
+          "reason": "Ben ... zitten is not the right construction for simply describing a seated position. Use ik zit for the position or ik ga zitten for sitting down; do not mix the two verb patterns."
         },
         "meaningfulContrast": "Ik ga op een stoel zitten. = move into the position.",
         "learnerInstruction": "Say the answer aloud before revealing it, then explain what the key grammar adds to the meaning."
@@ -2962,7 +2962,7 @@
       "scenarioEn": "Explain that you're cleaning the kitchen right now.",
       "text": "Ik ben de keuken aan het schoonmaken.",
       "explanation": "Zijn + aan het + infinitive emphasises an activity currently in progress. Schoonmaken stays together as an infinitive after aan het; the kitchen is its object.",
-      "commonMistake": "Ik ben de keuken schoon aan het maken.",
+      "commonMistake": "Ik ben de keuken aan het schoongemaakt.",
       "contrast": "Ik maak de keuken schoon. = simple-present description.",
       "reviewStatus": "ai-draft",
       "audioStatus": "not-generated",
@@ -2971,9 +2971,9 @@
         "meaningAndUsage": "Zijn + aan het + infinitive emphasises an activity currently in progress. Schoonmaken stays together as an infinitive after aan het; the kitchen is its object.",
         "grammarReason": "Check whether the verb is separable. In a simple finite main clause its particle can go to the end; after a modal the infinitive normally stays together. With te, the particle may appear before te, as in aan te raken.",
         "commonError": {
-          "incorrect": "Ik ben de keuken schoon aan het maken.",
+          "incorrect": "Ik ben de keuken aan het schoongemaakt.",
           "correction": "Ik ben de keuken aan het schoonmaken.",
-          "reason": "Compare the sentence with the corrected model. Check whether the verb is separable. In a simple finite main clause its particle can go to the end; after a modal the infinitive normally stays together. With te, the particle may appear before te, as in aan te raken."
+          "reason": "After aan het you need the infinitive schoonmaken, not the past participle schoongemaakt. The construction describes an action in progress; ik heb de keuken schoongemaakt describes a completed cleaning."
         },
         "meaningfulContrast": "Ik maak de keuken schoon. = simple-present description.",
         "learnerInstruction": "Say the answer aloud before revealing it, then explain what the key grammar adds to the meaning."

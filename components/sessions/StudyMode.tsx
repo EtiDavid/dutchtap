@@ -54,7 +54,7 @@ export function StudyMode({ session, store, onPractised }: ModeProps) {
           <p lang={card.lang} className="text-2xl font-semibold leading-snug">
             {card.text}
           </p>
-          <p className="mt-3 text-base text-muted">{card.english}</p>
+          <p className="mt-3 text-base text-muted">{card.collection === "dutchnova_1" ? "English situation: " : ""}{card.english}</p>
           <AudioControls
             card={card}
             sound={sound}

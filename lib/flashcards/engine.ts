@@ -4,8 +4,9 @@ import moreAdditions from '@/data/flashcard-additions-2.json';
 import workplace from '@/data/workplace-cards.json';
 import grammarPatterns from '@/data/grammar-pattern-cards.json';
 import grammarReuseLinks from '@/data/grammar-reuse-links.json';
+import dutchNova from '@/data/dutchnova-1-cards.json';
 export type Card = typeof rawCards[number] & {
-  collection?: "everyday" | "workplace" | "grammar";
+  collection?: "everyday" | "workplace" | "grammar" | "dutchnova_1";
   difficulty?: string;
   source?: { videoId: string; timestampSeconds: number };
   vocabularyIds?: string[];
@@ -41,7 +42,25 @@ export const GRAMMAR_REUSED_CARDS: Card[] = grammarReuseLinks.map(link => {
   } as Card;
 });
 export const GRAMMAR_CARDS: Card[] = [...grammarPatterns, ...GRAMMAR_REUSED_CARDS] as Card[];
-export const CARDS: Card[] = [...CORE_CARDS, ...GRAMMAR_CARDS];
+/** An isolated learning collection built from real-life conversation cases. Its identifiers do not reuse prior card IDs. */
+export const DUTCHNOVA_CARDS: Card[] = dutchNova.cards.map((entry) => ({
+  id: entry.id,
+  collection: "dutchnova_1",
+  category: entry.setting,
+  dutch: entry.text,
+  english: entry.scenarioEn,
+  cue: entry.scenarioEn,
+  scenario: entry.scenarioEn,
+  scenarioNl: undefined,
+  grammar: entry.teaching.meaningAndUsage,
+  variation: "",
+  image: "",
+  imageStatus: "not-applicable",
+  audio: "",
+  audioStatus: "not-generated",
+  difficulty: "intermediate",
+})) as Card[];
+export const CARDS: Card[] = [...CORE_CARDS, ...GRAMMAR_CARDS, ...DUTCHNOVA_CARDS];
 export const CATEGORIES = { shopping: 'Shopping', school: 'School', transport: 'Train & transport', home: 'Home', conversation: 'Conversation', administration: 'Administration', weather: 'Weather', food: 'Food & cafés', work: 'Work', health: 'Health', leisure: 'Leisure' };
 
 // How well the learner knows a card. New cards start as "difficult".

@@ -3,6 +3,7 @@
 import nova from "@/data/dutchnova-1-cards.json";
 import { variationsFor } from "@/lib/variations/content";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
+import { recordingFor } from "@/lib/speech/recordings";
 
 const byId = new Map(nova.cards.map((card) => [card.id, card]));
 const btn = "min-h-10 rounded-xl border border-border bg-surface px-3 py-2 text-sm font-semibold";
@@ -54,11 +55,12 @@ export function DutchNovaGrammarNotes({ cardId, defaultOpen = false }: {cardId:s
             {authored.length > 0
               ? <p className="mt-2 text-xs text-muted">An independently tracked variation. Enable variations in the session to practise this sentence.</p>
               : <p className="mt-2 text-xs text-muted">Related reading example. Not yet an independently tracked variation.</p>}
-            <button type="button" disabled className={`${btn} mt-3 opacity-50`} title="Audio not recorded yet" aria-label={`Audio for example awaiting recording: ${example.text}`}>🔊 Listen (audio pending)</button>
+            <button type="button" disabled={!recordingFor(example.text, "nl")} onClick={() => void listen({text:example.text, lang:"nl"})} className={`${btn} mt-3 ${recordingFor(example.text, "nl") ? "" : "opacity-50"}`} title={recordingFor(example.text, "nl") ? "Play Dutch recording" : "Audio not recorded yet"} aria-label={`Listen to example: ${example.text}`}>🔊 {recordingFor(example.text, "nl") ? "Listen" : "Audio pending"}</button>
           </li>)}
         </ul> : <p className="mt-2 text-muted">Additional examples are still being authored for this pattern.</p>}
       </section>
       <p className="text-xs text-muted">These notes are AI-drafted and require a final Dutch language review. Recorded Dutch audio and independent variation examples are being added separately.</p>
+      <button type="button" className={btn} onClick={stop}>Stop audio</button>
       {sound && <p className="text-xs text-muted" role="status">{sound}</p>}
     </div>
   </details>;

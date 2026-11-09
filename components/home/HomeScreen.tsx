@@ -138,6 +138,7 @@ export function HomeScreen() {
 
       <Section title="Practise">
         <div className="flex flex-col gap-3">
+          {dutch && <ModeCard href="/dutchnova-1" icon="book" title="DutchNova_1 · Conversation mastery" subtitle="Practise the grammar we covered together in real-life situations." example="We moeten nog even naar de supermarkt." />}
           <ModeCard href={withLang("/flashcards", lang)} icon="practise" title="Flashcards" subtitle="Study a fixed set, say it from memory, then quiz it." example={dutch ? "Kan ik met de kaart betalen?" : "Puis-je payer par carte ?"} />
           <ModeCard href={withLang("/quiz", lang)} icon="puzzle" title="Quiz" subtitle="Put the words of your session sentences in order." example={dutch ? "kaart · betalen · ik · kan" : "carte · payer · je · puis"} />
           <ModeCard href={withLang("/vocabulary", lang)} icon="book" title="Vocabulary" subtitle="Words and expressions from your sentence cards." example={dutch ? "op slot doen · to lock" : "payer · to pay"} />

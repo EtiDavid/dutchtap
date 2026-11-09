@@ -1,10 +1,10 @@
 import { CATEGORIES } from '@/lib/flashcards/engine';
 import type { Lang } from '@/lib/lang';
 
-export const COLLECTIONS = ['everyday', 'workplace', 'grammar'] as const;
+export const COLLECTIONS = ['everyday', 'workplace', 'grammar', 'dutchnova_1'] as const;
 export type Collection = typeof COLLECTIONS[number];
 export const COLLECTION_LABELS: Record<Collection, string> = {
-  everyday: 'Everyday', workplace: 'Dutch at Work', grammar: 'Grammar patterns',
+  everyday: 'Everyday', workplace: 'Dutch at Work', grammar: 'Grammar patterns', dutchnova_1: 'DutchNova_1',
 };
 export const WORK_AREAS = {
   office: 'Office conversation and introductions',
@@ -42,12 +42,23 @@ export const GRAMMAR_AREAS = {
   tense: 'Present, past & perfect',
 } as const;
 /** What the "place" choice is called for each collection, so the Create session form says the right thing. */
+export const DUTCHNOVA_AREAS = {
+  market: 'Supermarket & shopping',
+  food: 'Food & restaurants',
+  friends: 'Friends & conversation',
+  home: 'Home & daily life',
+  work: 'Office, IT & jobs',
+  doctor: 'Doctor & appointments',
+  football: 'Football & gaming',
+  travel: 'Transport & travel',
+} as const;
 export const TOPIC_WORDS: Record<Collection, { field: string; all: string; plural: string }> = {
   everyday: { field: 'Place (topic)', all: 'All places', plural: 'all places' },
   workplace: { field: 'Workplace area', all: 'All workplace areas', plural: 'all workplace areas' },
   grammar: { field: 'Grammar pattern', all: 'All patterns', plural: 'all patterns' },
+  dutchnova_1: { field: 'Situation', all: 'All situations', plural: 'all situations' },
 };
-export const topicsFor = (collection: Collection) => collection === 'workplace' ? WORK_AREAS : collection === 'grammar' ? GRAMMAR_AREAS : CATEGORIES;
+export const topicsFor = (collection: Collection) => collection === 'workplace' ? WORK_AREAS : collection === 'grammar' ? GRAMMAR_AREAS : collection === 'dutchnova_1' ? DUTCHNOVA_AREAS : CATEGORIES;
 /** Work and grammar patterns are Dutch-only; French has only its Everyday sentences. */
 export const collectionAvailable = (lang: Lang, collection: Collection) => lang === 'nl' || collection === 'everyday';
 export const validTopic = (collection: Collection, topic: string) => topic === 'all' || Object.hasOwn(topicsFor(collection), topic);

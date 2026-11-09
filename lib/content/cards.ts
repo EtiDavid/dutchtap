@@ -1,6 +1,7 @@
 import { CARDS, type Card } from "@/lib/flashcards/engine";
 import { meaningFor, scenarioFor } from "@/lib/practice/communication";
 import frCards from "@/data/fr/cards.json";
+import dutchNova from "@/data/dutchnova-1-cards.json";
 import { DEFAULT_LANG, type Lang } from "@/lib/lang";
 import { situationEnFor, situationNlFor } from "@/lib/grammarAnalysis";
 
@@ -10,7 +11,7 @@ import { situationEnFor, situationNlFor } from "@/lib/grammarAnalysis";
  * (Study, Speaking, Quiz, sentence pages, notes, vocabulary, speech) resolves cards here, so none of it hard-codes a language.
  */
 export type LCard = {
-  collection: "everyday" | "workplace" | "grammar";
+  collection: "everyday" | "workplace" | "grammar" | "dutchnova_1";
   id: string;
   lang: Lang;
   category: string;
@@ -58,20 +59,22 @@ export type FrenchCardRecord = {
   difficulty?: string;
 };
 
+const novaById = new Map(dutchNova.cards.map((entry) => [entry.id, entry]));
 const dutchById = new Map<string, Card>(CARDS.map((card) => [card.id, card]));
 const frenchById = new Map<string, FrenchCardRecord>(
   (frCards as FrenchCardRecord[]).map((record) => [record.id, record]),
 );
 
 function dutchCard(card: Card): LCard {
+  const nova = novaById.get(card.id);
   return {
     id: card.id,
     lang: "nl",
     collection: card.collection ?? "everyday",
     category: card.category,
     text: card.dutch,
-    english: meaningFor(card.dutch, card.english),
-    scenario: situationEnFor(card.id) ?? scenarioFor(card.dutch, card.scenario),
+    english: nova ? nova.scenarioEn : meaningFor(card.dutch, card.english),
+    scenario: nova ? nova.scenarioEn : situationEnFor(card.id) ?? scenarioFor(card.dutch, card.scenario),
     // An authored Dutch-first situation wins over an older one that gave the conjunction away.
     scenarioNl: situationNlFor(card.id) ?? card.scenarioNl,
     cue: card.cue === card.scenario ? (situationEnFor(card.id) ?? card.cue) : card.cue,

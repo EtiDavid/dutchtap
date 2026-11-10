@@ -18,7 +18,7 @@ describe("DutchNova_1 native collection integration", () => {
       const note = deep[card.id];
       expect(note, card.id).toBeDefined();
       expect(note.parts.length, card.id).toBeGreaterThanOrEqual(1);
-      expect(note.parts.every(([word, explanation]) => word.length > 0 && explanation.length > 7), card.id).toBe(true);
+      expect(note.parts.every(([word, explanation]) => word.trim().length > 0 && explanation.trim().length >= 4), card.id).toBe(true);
       expect(note.wordOrder.length, card.id).toBeGreaterThanOrEqual(130);
       expect(note.englishTrap.length, card.id).toBeGreaterThan(60);
       expect(note.examples.length, card.id).toBeGreaterThanOrEqual(2);

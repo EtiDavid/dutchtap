@@ -251,34 +251,6 @@
       }
     }
   ],
-  "dutchnova1-0048": [
-    {
-      "id": "dutchnova1-0048~v01",
-      "parentId": "dutchnova1-0048",
-      "text": "Ik probeer de deur niet aan te raken.",
-      "english": "I'm trying not to touch the door.",
-      "scenario": "The door has wet paint. Explain you're avoiding touching it.",
-      "explanation": "Aanraken is separable. After proberen, te is inserted inside the verb: aan te raken. Niet negates the touching.",
-      "focus": "DutchNova_1 · transfer practice",
-      "example": {
-        "text": "Raak dat scherm niet aan.",
-        "english": "Don't touch that screen."
-      }
-    },
-    {
-      "id": "dutchnova1-0048~v02",
-      "parentId": "dutchnova1-0048",
-      "text": "Raak dat scherm niet aan.",
-      "english": "Don't touch that screen.",
-      "scenario": "A child is about to touch a monitor. Tell them not to.",
-      "explanation": "Raak ... aan is the imperative form of aanraken: the separable particle comes later in the clause.",
-      "focus": "DutchNova_1 · transfer practice",
-      "example": {
-        "text": "Ik probeer de deur niet aan te raken.",
-        "english": "I'm trying not to touch the door."
-      }
-    }
-  ],
   "dutchnova1-0055": [
     {
       "id": "dutchnova1-0055~v01",
@@ -304,90 +276,6 @@
       "example": {
         "text": "Als de server offline is, bel ik de beheerder.",
         "english": "If the server is offline, I'll call the administrator."
-      }
-    }
-  ],
-  "dutchnova1-0058": [
-    {
-      "id": "dutchnova1-0058~v01",
-      "parentId": "dutchnova1-0058",
-      "text": "Kun je even controleren of de printer werkt?",
-      "english": "Could you quickly check whether the printer works?",
-      "scenario": "A colleague reports a printer issue. Ask someone to test it.",
-      "explanation": "Of introduces an indirect yes/no question, so werkt follows de printer. Even softens the request.",
-      "focus": "DutchNova_1 · transfer practice",
-      "example": {
-        "text": "Als de printer niet werkt, bel ik IT.",
-        "english": "If the printer doesn't work, I'll call IT."
-      }
-    },
-    {
-      "id": "dutchnova1-0058~v02",
-      "parentId": "dutchnova1-0058",
-      "text": "Als de printer niet werkt, bel ik IT.",
-      "english": "If the printer doesn't work, I'll call IT.",
-      "scenario": "Explain what you will do if the printer fails.",
-      "explanation": "Als introduces a condition, not an indirect question. Fronting the clause causes bel ik inversion.",
-      "focus": "DutchNova_1 · transfer practice",
-      "example": {
-        "text": "Kun je even controleren of de printer werkt?",
-        "english": "Could you quickly check whether the printer works?"
-      }
-    }
-  ],
-  "dutchnova1-0066": [
-    {
-      "id": "dutchnova1-0066~v01",
-      "parentId": "dutchnova1-0066",
-      "text": "Moet je de dokter morgen nog bellen?",
-      "english": "Do you still have to call the doctor tomorrow?",
-      "scenario": "Your friend planned to phone the doctor tomorrow. Check whether they still need to.",
-      "explanation": "Moet introduces necessity, nog means the task remains and bellen is the final infinitive.",
-      "focus": "DutchNova_1 · transfer practice",
-      "example": {
-        "text": "Heb je de dokter al gebeld?",
-        "english": "Have you already called the doctor?"
-      }
-    },
-    {
-      "id": "dutchnova1-0066~v02",
-      "parentId": "dutchnova1-0066",
-      "text": "Heb je de dokter al gebeld?",
-      "english": "Have you already called the doctor?",
-      "scenario": "Ask if the call you discussed has already happened.",
-      "explanation": "Al checks completed status; heb + gebeld forms the perfect. This is not equivalent to asking whether the call is still required.",
-      "focus": "DutchNova_1 · transfer practice",
-      "example": {
-        "text": "Moet je de dokter morgen nog bellen?",
-        "english": "Do you still have to call the doctor tomorrow?"
-      }
-    }
-  ],
-  "dutchnova1-0074": [
-    {
-      "id": "dutchnova1-0074~v01",
-      "parentId": "dutchnova1-0074",
-      "text": "Ik blijf nog even naar de wedstrijd kijken.",
-      "english": "I'll keep watching the match a little longer.",
-      "scenario": "The game is nearly over but you will keep watching a bit longer.",
-      "explanation": "Blijf + infinitive kijken expresses continuation, and nog even limits the remaining period.",
-      "focus": "DutchNova_1 · transfer practice",
-      "example": {
-        "text": "Ik kijk graag naar voetbal, maar ik speel liever.",
-        "english": "I enjoy watching football, but I prefer playing."
-      }
-    },
-    {
-      "id": "dutchnova1-0074~v02",
-      "parentId": "dutchnova1-0074",
-      "text": "Ik kijk graag naar voetbal, maar ik speel liever.",
-      "english": "I enjoy watching football, but I prefer playing.",
-      "scenario": "You enjoy both watching and playing football, but playing is your preference.",
-      "explanation": "Graag denotes enjoyment and liever denotes preference. They are not equivalents: the second choice outranks the first.",
-      "focus": "DutchNova_1 · transfer practice",
-      "example": {
-        "text": "Ik blijf nog even naar de wedstrijd kijken.",
-        "english": "I'll keep watching the match a little longer."
       }
     }
   ],
@@ -444,6 +332,118 @@
       "example": {
         "text": "Je voelt je toch al beter?",
         "english": "You're feeling better already, right?"
+      }
+    }
+  ],
+  "dutchnova1-0046": [
+    {
+      "id": "dutchnova1-0046~v01",
+      "parentId": "dutchnova1-0046",
+      "text": "Ik probeer de deur niet aan te raken.",
+      "english": "I'm trying not to touch the door.",
+      "scenario": "The door has wet paint. Explain you're avoiding touching it.",
+      "explanation": "Aanraken is separable. After proberen, te is inserted inside the verb: aan te raken. Niet negates the touching.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Raak dat scherm niet aan.",
+        "english": "Don't touch that screen."
+      }
+    },
+    {
+      "id": "dutchnova1-0046~v02",
+      "parentId": "dutchnova1-0046",
+      "text": "Raak dat scherm niet aan.",
+      "english": "Don't touch that screen.",
+      "scenario": "A child is about to touch a monitor. Tell them not to.",
+      "explanation": "Raak ... aan is the imperative form of aanraken: the separable particle comes later in the clause.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik probeer de deur niet aan te raken.",
+        "english": "I'm trying not to touch the door."
+      }
+    }
+  ],
+  "dutchnova1-0056": [
+    {
+      "id": "dutchnova1-0056~v01",
+      "parentId": "dutchnova1-0056",
+      "text": "Kun je even controleren of de printer werkt?",
+      "english": "Could you quickly check whether the printer works?",
+      "scenario": "A colleague reports a printer issue. Ask someone to test it.",
+      "explanation": "Of introduces an indirect yes/no question, so werkt follows de printer. Even softens the request.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Als de printer niet werkt, bel ik IT.",
+        "english": "If the printer doesn't work, I'll call IT."
+      }
+    },
+    {
+      "id": "dutchnova1-0056~v02",
+      "parentId": "dutchnova1-0056",
+      "text": "Als de printer niet werkt, bel ik IT.",
+      "english": "If the printer doesn't work, I'll call IT.",
+      "scenario": "Explain what you will do if the printer fails.",
+      "explanation": "Als introduces a condition, not an indirect question. Fronting the clause causes bel ik inversion.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Kun je even controleren of de printer werkt?",
+        "english": "Could you quickly check whether the printer works?"
+      }
+    }
+  ],
+  "dutchnova1-0068": [
+    {
+      "id": "dutchnova1-0068~v01",
+      "parentId": "dutchnova1-0068",
+      "text": "Moet je de dokter morgen nog bellen?",
+      "english": "Do you still have to call the doctor tomorrow?",
+      "scenario": "Your friend planned to phone the doctor tomorrow. Check whether they still need to.",
+      "explanation": "Moet introduces necessity, nog means the task remains and bellen is the final infinitive.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Heb je de dokter al gebeld?",
+        "english": "Have you already called the doctor?"
+      }
+    },
+    {
+      "id": "dutchnova1-0068~v02",
+      "parentId": "dutchnova1-0068",
+      "text": "Heb je de dokter al gebeld?",
+      "english": "Have you already called the doctor?",
+      "scenario": "Ask if the call you discussed has already happened.",
+      "explanation": "Al checks completed status; heb + gebeld forms the perfect. This is not equivalent to asking whether the call is still required.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Moet je de dokter morgen nog bellen?",
+        "english": "Do you still have to call the doctor tomorrow?"
+      }
+    }
+  ],
+  "dutchnova1-0150": [
+    {
+      "id": "dutchnova1-0150~v01",
+      "parentId": "dutchnova1-0150",
+      "text": "Ik kijk graag naar tennis, maar ik speel liever voetbal.",
+      "english": "I enjoy watching tennis, but I prefer playing football.",
+      "scenario": "You enjoy watching tennis, but when you play a sport you prefer football.",
+      "explanation": "Graag describes enjoyment of watching; liever contrasts a stronger preference for actually playing football. Naar is the fixed preposition of kijken naar. These are preferences about different activities, not equivalent sentences.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik kijk graag naar voetbal, maar ik speel liever.",
+        "english": "I enjoy watching football, but I prefer playing."
+      }
+    },
+    {
+      "id": "dutchnova1-0150~v02",
+      "parentId": "dutchnova1-0150",
+      "text": "Ik kijk graag naar voetbal, maar ik speel liever.",
+      "english": "I enjoy watching football, but I prefer playing.",
+      "scenario": "You enjoy both watching and playing football, but playing is your preference.",
+      "explanation": "Graag denotes enjoyment and liever denotes preference. They are not equivalents: the second choice outranks the first.",
+      "focus": "DutchNova_1 · transfer practice",
+      "example": {
+        "text": "Ik kijk graag naar tennis, maar ik speel liever voetbal.",
+        "english": "I enjoy watching tennis, but I prefer playing football."
       }
     }
   ]

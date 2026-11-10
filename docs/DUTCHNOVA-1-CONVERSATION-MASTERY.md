@@ -1,5 +1,5 @@
 # DutchNova_1 — Conversation Mastery Pack
-Status: **development branch implementation; not production released or native-speaker certified**.
+Status: **164/164 deep notes and 164/164 variation families completed in a draft development branch; not merged, production released, or native-speaker certified.**
 Created from the user's Dutch grammar/conversation exchanges in this project, 10 November 2026.
 Target: a *new independent practice section* in DutchTap, preserving all existing IDs, decks, scores and session behavior. This pack is NOT a replacement for Grammar Patterns or a production release.
 
@@ -41,14 +41,14 @@ Editorial integrity: not every earlier tutor explanation is fully correct. Reche
 ## Current implementation on this branch (10 November 2026)
 - 164 independent DutchNova_1 parent cards are in `data/dutchnova-1-cards.json` and surfaced in the existing session collection selector via `COLLECTIONS`.
 - The old standalone `/dutchnova-1` route redirects to `/flashcards?new=dutchnova_1:all`, so ratings and sessions use the existing shared engine.
-- Speaking and Quiz support the authored `data/dutchnova-1-variations.json`: 32 tracked children in 16 meaningful families, with independent progression; do not claim that every card has variations yet.
-- Structured explanations appear via `DutchNovaGrammarNotes`, with 18 hand-authored deep word-by-word walkthroughs and per-card reasons, corrections, contrasts and related examples for the rest.
+- Speaking and Quiz support the authored `data/dutchnova-1-variations.json`: 180 tracked child variations spread across all 164 parent families, with independent progression. Sixteen parent families currently have two child variations; the other parents have one. These are content-drafted and still require language review.
+- Structured explanations appear via `DutchNovaGrammarNotes`, with 164 individualized sentence-part and word-order walkthroughs, each with at least two contextual examples, plus per-card reasons, corrections and contrasts. Language review remains an explicit release gate.
 - The normal card audio controls show Listen and Listen slowly as **disabled pending actual recordings**, then automatically enable when a known recording is installed. The app does not pretend recordings exist.
 - This content is AI-drafted, not independently language-reviewed. Some English sentences are **scenarios rather than exact translations**; UI labels this explicitly.
 - CI/build/regression coverage and editorial QA are still release gates. Do not merge or tag production without complete green validation and signoff.
 
-## Proposed coverage target
-Start with **80–120 carefully authored parent cards** covering the audit; then expand through contextual transfer to **250–400 unique scenarios**, plus independently tracked variations only when each tests a real change of meaning, tense, word order or setting. This is a proposed target, **not a count of completed cards**. For each major rule, test in ≥3 contexts (e.g. home/market/work), and combine 2–4 earlier topics in higher-level cards rather than simply duplicating translations. Include short micro-dialogues and realistic spoken Belgian Dutch using **je**, not **ge**.
+## Longer-term coverage target
+The initial pack now has **164 parent cards and 180 tracked variations**. A later independent expansion could target **250–400 unique scenarios**, but no such expansion is included here. The initial design was to start with **80–120 carefully authored parent cards** covering the audit; then expand through contextual transfer to **250–400 unique scenarios**, plus independently tracked variations only when each tests a real change of meaning, tense, word order or setting. This is a proposed target, **not a count of completed cards**. For each major rule, test in ≥3 contexts (e.g. home/market/work), and combine 2–4 earlier topics in higher-level cards rather than simply duplicating translations. Include short micro-dialogues and realistic spoken Belgian Dutch using **je**, not **ge**.
 
 ## Parent-card data contract
 Each record must eventually support:
@@ -71,7 +71,7 @@ Each record must eventually support:
 - No countdown timer by default; no penalty for alternative natural phrasing.
 
 ## Editorial seed: 20 concrete parent cards
-Each is a starting *content draft* to review and map into the existing canonical data pipeline; **not yet loaded by the app**.
+This historical editorial seed shows the original design intent; **the final IDs and sentences are in `data/dutchnova-1-cards.json` and may differ from this table.** These rows are no longer an app-loading source.
 
 | ID | Setting & English situation | Target Dutch | Teaching contrast |
 | --- | --- | --- | --- |

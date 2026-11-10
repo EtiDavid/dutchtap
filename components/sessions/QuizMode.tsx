@@ -322,7 +322,7 @@ export function QuizMode({ session, store, onPractised }: ModeProps) {
                   className="mt-2 text-sm text-muted"
                   data-testid="quiz-english"
                 >
-                  {feedback.english}
+                  {card.collection === "dutchnova_1" ? "English situation: " : ""}{feedback.english}
                 </p>
               )}
               {!outcome.correct && (

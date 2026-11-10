@@ -213,7 +213,7 @@ export function SpeakingMode({
               >
                 {card.text}
               </p>
-              <p className="mt-3 text-base text-muted">{card.english}</p>
+              <p className="mt-3 text-base text-muted">{card.collection === "dutchnova_1" ? "English situation: " : ""}{card.english}</p>
               <AudioControls
                 card={card}
                 sound={sound}

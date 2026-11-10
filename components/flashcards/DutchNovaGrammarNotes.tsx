@@ -1,6 +1,7 @@
 "use client";
 
 import nova from "@/data/dutchnova-1-cards.json";
+import deepNotes from "@/data/dutchnova-1-deep-notes.json";
 import { variationsFor } from "@/lib/variations/content";
 import { useCardAudio } from "@/lib/flashcards/useCardAudio";
 import { recordingFor } from "@/lib/speech/recordings";
@@ -13,6 +14,7 @@ export function DutchNovaGrammarNotes({ cardId, defaultOpen = false }: {cardId:s
   const { listen, stop, sound } = useCardAudio();
   if (!card) return null;
 
+  const deep = (deepNotes as Record<string, {meaning:string;parts:string[][];wordOrder:string;englishTrap:string;examples:string[][]}>)[cardId];
   const authored = variationsFor(cardId);
   const parallel = nova.cards
     .filter((other) => other.id !== cardId && other.focus === card.focus)
@@ -27,13 +29,19 @@ export function DutchNovaGrammarNotes({ cardId, defaultOpen = false }: {cardId:s
     <div className="mt-4 space-y-4 text-sm leading-relaxed">
       <section>
         <h3 className="font-bold text-base">1. What you're trying to say</h3>
-        <p className="mt-1">{card.teaching.communicationGoal}</p>
+        <p className="mt-1">{deep?.meaning ?? card.teaching.communicationGoal}</p>
         <p lang="nl-BE" className="mt-2 font-semibold text-base">{card.text}</p>
       </section>
       <section>
         <h3 className="font-bold text-base">2. Why this Dutch sentence works</h3>
         <p className="mt-1">{card.teaching.meaningAndUsage}</p>
-        <p className="mt-2">{card.teaching.grammarReason}</p>
+        {deep && <ol className="mt-3 flex flex-wrap gap-2" aria-label="Sentence explained part by part">
+          {deep.parts.map(([part, explanation], i) => <li key={i} className="rounded-lg border border-border bg-surface p-2">
+            <strong lang="nl-BE">{part}</strong><span className="block text-xs text-muted">{explanation}</span>
+          </li>)}
+        </ol>}
+        <p className="mt-2">{deep?.wordOrder ?? card.teaching.grammarReason}</p>
+        {deep && <p className="mt-2"><strong>What English makes tempting:</strong> {deep.englishTrap}</p>}
       </section>
       <section className="rounded-xl bg-surface p-3">
         <h3 className="font-bold text-base">3. Mistake and correction</h3>
@@ -47,6 +55,7 @@ export function DutchNovaGrammarNotes({ cardId, defaultOpen = false }: {cardId:s
       </section>
       <section>
         <h3 className="font-bold text-base">5. More real-life examples</h3>
+        {deep && <ul className="mt-2 space-y-2">{deep.examples.map(([text, english], i) => <li key={i} className="rounded-lg bg-surface p-3"><p lang="nl-BE" className="font-semibold">{text}</p><p className="text-muted">{english}</p></li>)}</ul>}
         {examples.length ? <ul className="mt-2 space-y-3">
           {examples.map((example) => <li key={example.id} className="rounded-xl border border-border bg-surface p-3">
             <p lang="nl-BE" className="font-semibold">{example.text}</p>

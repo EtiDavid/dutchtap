@@ -957,7 +957,7 @@
         "plural noun phrase"
       ]
     ],
-    "wordOrder": "Spaanse takes -e before plural series; een paar expresses quantity, unlike soms frequency. Een paar counts a small number of series. Spaanse receives -e before a plural noun. G ezien is the past participle of zien; the helper is heb.",
+    "wordOrder": "Spaanse takes -e before plural series; een paar expresses quantity, unlike soms frequency. Een paar counts a small number of series. Spaanse receives -e before a plural noun. Gezien is the past participle of zien; the helper is heb.",
     "englishTrap": "Sometimes means soms, not een paar. This sentence says a few series were watched, not how often you watch them. Ik kijk soms Spaanse series. = sometimes.",
     "examples": []
   },
@@ -1289,7 +1289,7 @@
         "both items"
       ]
     ],
-    "wordOrder": "Allebei refers to the two titles; gezien is the past participle of zien. Allebei refers to two already named shows. G ezien is a past participle; use heb for completed viewing.",
+    "wordOrder": "Allebei refers to the two titles; gezien is the past participle of zien. Allebei refers to two already named shows. Gezien is a past participle; use heb for completed viewing.",
     "englishTrap": "Beide is often used before a noun ('beide series'); allebei works naturally as a standalone both. Ik heb beide series gezien. = beide before the noun.",
     "examples": []
   },
@@ -1689,7 +1689,7 @@
         "final infinitive"
       ]
     ],
-    "wordOrder": "Afspreken means arrange to meet; kunnen + infinitive sends afspreken to the end; even softens the request. Afspreken is an inseparable infinitive in this modal construction even though its finite form separates: we spreken morgen af. Even softens the meeting request.",
+    "wordOrder": "Afspreken means arrange to meet; kunnen + infinitive sends afspreken to the end; even softens the request. Afspreken stays joined as an infinitive in this modal construction even though its finite form separates: we spreken morgen af. Even softens the meeting request.",
     "englishTrap": "Kennen we afspreken? confuses kunnen (can) with kennen (know). Keep afspreken whole after kunnen. Zullen we morgen even afspreken? = proposal.",
     "examples": []
   },
@@ -4116,5 +4116,38 @@
     "wordOrder": "Tot straks is a conventional farewell implying a meeting soon, normally later today. Tot later leaves the timing less precise. This is a conventional fixed expression, not a finite-verb sentence. Straks usually points to later relatively soon, often the same day.",
     "englishTrap": "Tot later is less specific about how soon; daarnet points to the recent past, so 'tot daarnet' is not this farewell. Tot later! = see you later, broader timing.",
     "examples": []
+  },
+  "dutchnova1-0055": {
+    "meaning": "Your colleague asks what happens after the backup is finished; explain the condition and your next action.",
+    "parts": [
+      [
+        "Als de back-up klaar is",
+        "fronted if-clause; is closes this dependent clause"
+      ],
+      [
+        "bel",
+        "finite main verb in second position"
+      ],
+      [
+        "ik",
+        "main-clause subject"
+      ],
+      [
+        "mijn manager",
+        "person receiving the phone call"
+      ]
+    ],
+    "wordOrder": "Als introduces the condition 'if/when the backup is ready'. The complete als-clause occupies the first position in the overall sentence, causing verb–subject inversion in the main clause: bel ik, not ik bel. Inside the subordinate clause the finite verb is follows klaar. The expression 'de back-up is klaar' describes the completed state, not that the work is currently happening.",
+    "englishTrap": "English 'If the backup is ready, I call my manager' retains subject–verb order after the conditional. Dutch instead says 'Als de back-up klaar is, bel ik mijn manager.' If you put the main clause first, ordinary order returns: 'Ik bel mijn manager als de back-up klaar is.'",
+    "examples": [
+      [
+        "Als het rapport klaar is, stuur ik het op.",
+        "When the report is ready, I'll send it."
+      ],
+      [
+        "Ik bel mijn manager als de back-up klaar is.",
+        "I'll call my manager when the backup is ready."
+      ]
+    ]
   }
 }

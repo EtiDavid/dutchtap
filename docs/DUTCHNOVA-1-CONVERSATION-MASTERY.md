@@ -1,5 +1,5 @@
 # DutchNova_1 — Conversation Mastery Pack
-Status: **planning + editorial seed; not implemented in the app yet**.
+Status: **development branch implementation; not production released or native-speaker certified**.
 Created from the user's Dutch grammar/conversation exchanges in this project, 10 November 2026.
 Target: a *new independent practice section* in DutchTap, preserving all existing IDs, decks, scores and session behavior. This pack is NOT a replacement for Grammar Patterns or a production release.
 
@@ -37,6 +37,15 @@ Editorial integrity: not every earlier tutor explanation is fully correct. Reche
 - Don't label “Kijk je iets op tv?” the only way to describe current viewing; nuance simple present versus progressive.
 - **Heb je de gynaecoloog nog te bellen?** is not standard. Use *Moet je ... nog bellen?*; *Hoef je ... nog te bellen?* is possible but not always pragmatically identical.
 - *Lust jij dat?* and *Lust je dat?* are correct; with inversion do not blindly remove -t from all verbs (e.g. *eet je* retains lexical final t); compare *jij lust → lust jij*, *jij vindt → vind jij*.
+
+## Current implementation on this branch (10 November 2026)
+- 164 independent DutchNova_1 parent cards are in `data/dutchnova-1-cards.json` and surfaced in the existing session collection selector via `COLLECTIONS`.
+- The old standalone `/dutchnova-1` route redirects to `/flashcards?new=dutchnova_1:all`, so ratings and sessions use the existing shared engine.
+- Speaking and Quiz support the authored `data/dutchnova-1-variations.json`: 32 tracked children in 16 meaningful families, with independent progression; do not claim that every card has variations yet.
+- Structured explanations appear via `DutchNovaGrammarNotes`, with 18 hand-authored deep word-by-word walkthroughs and per-card reasons, corrections, contrasts and related examples for the rest.
+- The normal card audio controls show Listen and Listen slowly as **disabled pending actual recordings**, then automatically enable when a known recording is installed. The app does not pretend recordings exist.
+- This content is AI-drafted, not independently language-reviewed. Some English sentences are **scenarios rather than exact translations**; UI labels this explicitly.
+- CI/build/regression coverage and editorial QA are still release gates. Do not merge or tag production without complete green validation and signoff.
 
 ## Proposed coverage target
 Start with **80–120 carefully authored parent cards** covering the audit; then expand through contextual transfer to **250–400 unique scenarios**, plus independently tracked variations only when each tests a real change of meaning, tense, word order or setting. This is a proposed target, **not a count of completed cards**. For each major rule, test in ≥3 contexts (e.g. home/market/work), and combine 2–4 earlier topics in higher-level cards rather than simply duplicating translations. Include short micro-dialogues and realistic spoken Belgian Dutch using **je**, not **ge**.
@@ -98,10 +107,10 @@ Each is a starting *content draft* to review and map into the existing canonical
 8. **Friends + nog steeds + question:** “You're surprised they are still watching football.” Model: *Ben je nog steeds voetbal aan het kijken?*
 
 ## Proposed implementation sequence
-1. Audit the complete conversation and the live repo canonical data/schema; mark observed topics vs expansions.
-2. Prepare validated 80–120 base cards with IDs, scenarios, accepted answers and tailored teaching explanations. Include per-topic coverage tests, duplicates check, contrast test.
-3. Integrate **DutchNova_1** in existing app navigation/session/deck plumbing, without changing existing core content or scores. Study + Speaking + Quiz share session selection.
-4. Add mixed-topic/context transfer, children with independent state, and English→Dutch scenario setting.
+1. Audit the complete conversation and the live repo canonical data/schema; mark observed topics vs expansions. (initial inventory complete)
+2. Prepare 150–200 base cards with IDs, scenarios and tailored teaching explanations. (164 authored; language validation and deep individual analysis incomplete)
+3. Integrate **DutchNova_1** in existing app navigation/session/deck plumbing, without changing existing core content or scores. Study + Speaking + Quiz share session selection. (initial integration implemented; CI and account sync tests pending)
+4. Add mixed-topic/context transfer, children with independent state, and English→Dutch scenario setting. (32 authored children, coverage incomplete)
 5. Run unit/content check, regression tests and build; user review of difficult cards, then PR; don't merge or release before gates.
 6. After written content is stable and reviewed, batch TTS + audio manifest + voice/audio QA (Dutch-BE; test Belgian pronunciation).
 

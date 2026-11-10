@@ -446,5 +446,755 @@
         "english": "I enjoy watching tennis, but I prefer playing football."
       }
     }
+  ],
+  "dutchnova1-0002": [
+    {
+      "id": "dutchnova1-0002~v01",
+      "parentId": "dutchnova1-0002",
+      "text": "We moeten alleen nog brood kopen.",
+      "english": "We only still need to buy bread.",
+      "scenario": "In a market situation, communicate this new situation in Dutch: We only still need to buy bread.",
+      "explanation": "Alleen nog identifies bread as the one remaining shopping task; moeten + kopen names the required action rather than using a shopping-list fragment. Compare the base expression: Nu alleen nog een lekker stukje vlees. The new sentence changes the situation while keeping the targeted alleen nog pattern.",
+      "focus": "DutchNova_1 · alleen nog",
+      "example": {
+        "text": "Nu alleen nog een lekker stukje vlees.",
+        "english": "Everything is ready for dinner except a piece of meat."
+      }
+    }
+  ],
+  "dutchnova1-0004": [
+    {
+      "id": "dutchnova1-0004~v01",
+      "parentId": "dutchnova1-0004",
+      "text": "Mag ik een andere maat proberen?",
+      "english": "May I try another size?",
+      "scenario": "In a market situation, communicate this new situation in Dutch: May I try another size?",
+      "explanation": "Een andere maat shifts the object from coat to size, keeping the -e adjective with the de-word maat and the modal question construction. Compare the base expression: Mag ik een andere jas passen? The new sentence changes the situation while keeping the targeted een andere pattern.",
+      "focus": "DutchNova_1 · een andere",
+      "example": {
+        "text": "Mag ik een andere jas passen?",
+        "english": "The first coat did not fit. Ask to try a different coat."
+      }
+    }
+  ],
+  "dutchnova1-0005": [
+    {
+      "id": "dutchnova1-0005~v01",
+      "parentId": "dutchnova1-0005",
+      "text": "Kan ik de andere schoenen even passen?",
+      "english": "Can I quickly try the other shoes on?",
+      "scenario": "In a market situation, communicate this new situation in Dutch: Can I quickly try the other shoes on?",
+      "explanation": "De andere refers to one identifiable alternative among the shoes. Even softens the fitting request; passen is the final infinitive after kan. Compare the base expression: Mag ik de andere jas passen? The new sentence changes the situation while keeping the targeted de andere pattern.",
+      "focus": "DutchNova_1 · de andere",
+      "example": {
+        "text": "Mag ik de andere jas passen?",
+        "english": "You saw two coats and now want the other specific one."
+      }
+    }
+  ],
+  "dutchnova1-0006": [
+    {
+      "id": "dutchnova1-0006~v01",
+      "parentId": "dutchnova1-0006",
+      "text": "Heeft u nog een andere kleur?",
+      "english": "Do you have another different color?",
+      "scenario": "In a market situation, communicate this new situation in Dutch: Do you have another different color?",
+      "explanation": "Nog een andere requests an additional distinct option; kleur is a de-word, so andere takes -e. Heeft u is a formal shop question. Compare the base expression: Heb je nog een andere jas? The new sentence changes the situation while keeping the targeted nog een andere pattern.",
+      "focus": "DutchNova_1 · nog een andere",
+      "example": {
+        "text": "Heb je nog een andere jas?",
+        "english": "You have already tried several coats; ask for yet another different one."
+      }
+    }
+  ],
+  "dutchnova1-0007": [
+    {
+      "id": "dutchnova1-0007~v01",
+      "parentId": "dutchnova1-0007",
+      "text": "Dan krijg je nog twee euro terug.",
+      "english": "Then you get another two euros back.",
+      "scenario": "In a market situation, communicate this new situation in Dutch: Then you get another two euros back.",
+      "explanation": "Starting with dan requires krijg before je; terug is the separable particle of terugkrijgen. The situation is informal, unlike the parent card's u. Compare the base expression: Dan krijgt u nog drie euro terug. The new sentence changes the situation while keeping the targeted wisselgeld pattern.",
+      "focus": "DutchNova_1 · wisselgeld",
+      "example": {
+        "text": "Dan krijgt u nog drie euro terug.",
+        "english": "A cashier politely tells a customer they will get three euros back."
+      }
+    }
+  ],
+  "dutchnova1-0008": [
+    {
+      "id": "dutchnova1-0008~v01",
+      "parentId": "dutchnova1-0008",
+      "text": "Die appels zijn vandaag in de aanbieding.",
+      "english": "Those apples are on offer today.",
+      "scenario": "In a market situation, communicate this new situation in Dutch: Those apples are on offer today.",
+      "explanation": "Die modifies plural appels, and plural zijn agrees with it. In de aanbieding is the fixed phrase for a sale. Compare the base expression: De uien zijn in de aanbieding. The new sentence changes the situation while keeping the targeted aanbieding pattern.",
+      "focus": "DutchNova_1 · aanbieding",
+      "example": {
+        "text": "De uien zijn in de aanbieding.",
+        "english": "Tell your friend that onions are on special offer."
+      }
+    }
+  ],
+  "dutchnova1-0009": [
+    {
+      "id": "dutchnova1-0009~v01",
+      "parentId": "dutchnova1-0009",
+      "text": "Krijg ik korting op deze jas?",
+      "english": "Do I get a discount on this coat?",
+      "scenario": "In a market situation, communicate this new situation in Dutch: Do I get a discount on this coat?",
+      "explanation": "Korting op is the fixed combination and deze goes with the de-word jas. Question inversion puts krijg before ik. Compare the base expression: Is er korting op de uien? The new sentence changes the situation while keeping the targeted korting pattern.",
+      "focus": "DutchNova_1 · korting",
+      "example": {
+        "text": "Is er korting op de uien?",
+        "english": "Ask if there is a discount on the onions."
+      }
+    }
+  ],
+  "dutchnova1-0010": [
+    {
+      "id": "dutchnova1-0010~v01",
+      "parentId": "dutchnova1-0010",
+      "text": "Ik heb de appels gekocht omdat ze goedkoper waren.",
+      "english": "I bought the apples because they were cheaper.",
+      "scenario": "In a market situation, communicate this new situation in Dutch: I bought the apples because they were cheaper.",
+      "explanation": "Omdat gives the reason and sends waren to the end; cheaper is expressed with the comparative goedkoper. Compare the base expression: Ik heb aardappelen gekocht omdat ze in promotie waren. The new sentence changes the situation while keeping the targeted aanbieding pattern.",
+      "focus": "DutchNova_1 · aanbieding",
+      "example": {
+        "text": "Ik heb aardappelen gekocht omdat ze in promotie waren.",
+        "english": "Explain that you bought potatoes because they were on promotion."
+      }
+    }
+  ],
+  "dutchnova1-0013": [
+    {
+      "id": "dutchnova1-0013~v01",
+      "parentId": "dutchnova1-0013",
+      "text": "Ik drink liever water dan frisdrank.",
+      "english": "I prefer drinking water to soft drinks.",
+      "scenario": "In a food situation, communicate this new situation in Dutch: I prefer drinking water to soft drinks.",
+      "explanation": "Liever ... dan compares the two drinks, and the present-tense verb drink comes after ik. Compare the base expression: Ik eet liever kip dan vis. The new sentence changes the situation while keeping the targeted liever pattern.",
+      "focus": "DutchNova_1 · liever",
+      "example": {
+        "text": "Ik eet liever kip dan vis.",
+        "english": "Say you prefer chicken to fish."
+      }
+    }
+  ],
+  "dutchnova1-0014": [
+    {
+      "id": "dutchnova1-0014~v01",
+      "parentId": "dutchnova1-0014",
+      "text": "Ik eet het liefst rijst met kip.",
+      "english": "I prefer rice with chicken most of all.",
+      "scenario": "In a food situation, communicate this new situation in Dutch: I prefer rice with chicken most of all.",
+      "explanation": "Het liefst names a strongest preference rather than a two-option comparison; the meal has a different ingredient order. Compare the base expression: Ik eet het liefst kip met rijst. The new sentence changes the situation while keeping the targeted het liefst pattern.",
+      "focus": "DutchNova_1 · het liefst",
+      "example": {
+        "text": "Ik eet het liefst kip met rijst.",
+        "english": "Explain that chicken with rice is your favourite thing to eat."
+      }
+    }
+  ],
+  "dutchnova1-0015": [
+    {
+      "id": "dutchnova1-0015~v01",
+      "parentId": "dutchnova1-0015",
+      "text": "Ik lust geen paprika, maar wel tomaten.",
+      "english": "I dislike peppers but do like tomatoes.",
+      "scenario": "In a food situation, communicate this new situation in Dutch: I dislike peppers but do like tomatoes.",
+      "explanation": "Geen negates the general food preference; wel makes the positive contrast with the next food explicit. Compare the base expression: Ik lust geen uien. The new sentence changes the situation while keeping the targeted niet vs geen pattern.",
+      "focus": "DutchNova_1 · niet vs geen",
+      "example": {
+        "text": "Ik lust geen uien.",
+        "english": "Tell your friend you do not like onions."
+      }
+    }
+  ],
+  "dutchnova1-0016": [
+    {
+      "id": "dutchnova1-0016~v01",
+      "parentId": "dutchnova1-0016",
+      "text": "Mag ik een klein stukje cake?",
+      "english": "May I have a small piece of cake?",
+      "scenario": "In a food situation, communicate this new situation in Dutch: May I have a small piece of cake?",
+      "explanation": "Klein has no -e because stukje is a singular indefinite het-word, even though cake is a de-word in other constructions. Compare the base expression: Mag ik een stukje taart? The new sentence changes the situation while keeping the targeted stukje pattern.",
+      "focus": "DutchNova_1 · stukje",
+      "example": {
+        "text": "Mag ik een stukje taart?",
+        "english": "Ask for a small piece of cake."
+      }
+    }
+  ],
+  "dutchnova1-0017": [
+    {
+      "id": "dutchnova1-0017~v01",
+      "parentId": "dutchnova1-0017",
+      "text": "Ik wil graag een warm stukje vlees.",
+      "english": "I'd like a warm piece of meat.",
+      "scenario": "In a food situation, communicate this new situation in Dutch: I'd like a warm piece of meat.",
+      "explanation": "Warm is uninflected before een stukje (singular indefinite het-word); wil graag makes a polite preference statement. Compare the base expression: Mag ik een lekker stukje vlees? The new sentence changes the situation while keeping the targeted adjective pattern.",
+      "focus": "DutchNova_1 · adjective",
+      "example": {
+        "text": "Mag ik een lekker stukje vlees?",
+        "english": "Ask for a tasty little piece of meat."
+      }
+    }
+  ],
+  "dutchnova1-0018": [
+    {
+      "id": "dutchnova1-0018~v01",
+      "parentId": "dutchnova1-0018",
+      "text": "We hebben drie Nederlandse films gezien.",
+      "english": "We have watched three Dutch films.",
+      "scenario": "In a food situation, communicate this new situation in Dutch: We have watched three Dutch films.",
+      "explanation": "Nederlandse takes -e before plural films. Gezien remains the past participle after hebben, but the number is now explicit. Compare the base expression: Ik heb een paar Spaanse series gezien. The new sentence changes the situation while keeping the targeted adjective pattern.",
+      "focus": "DutchNova_1 · adjective",
+      "example": {
+        "text": "Ik heb een paar Spaanse series gezien.",
+        "english": "Tell someone you watched a few Spanish series."
+      }
+    }
+  ],
+  "dutchnova1-0020": [
+    {
+      "id": "dutchnova1-0020~v01",
+      "parentId": "dutchnova1-0020",
+      "text": "Ik heb vandaag nog geen koffie gedronken.",
+      "english": "I haven't had any coffee today yet.",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: I haven't had any coffee today yet.",
+      "explanation": "Nog geen negates an unspecified amount of coffee; nog niet would more naturally negate the whole drinking event. Compare the base expression: Ik heb nog niet gegeten. The new sentence changes the situation while keeping the targeted nog niet pattern.",
+      "focus": "DutchNova_1 · nog niet",
+      "example": {
+        "text": "Ik heb nog niet gegeten.",
+        "english": "Explain that you have not eaten yet."
+      }
+    }
+  ],
+  "dutchnova1-0021": [
+    {
+      "id": "dutchnova1-0021~v01",
+      "parentId": "dutchnova1-0021",
+      "text": "Ben je nog steeds die serie aan het kijken?",
+      "english": "Are you still watching that series?",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: Are you still watching that series?",
+      "explanation": "Aan het kijken describes the ongoing viewing; nog steeds asks about its surprising continuation. Die modifies de serie. Compare the base expression: Ben je nog steeds voetbal aan het kijken? The new sentence changes the situation while keeping the targeted nog steeds pattern.",
+      "focus": "DutchNova_1 · nog steeds",
+      "example": {
+        "text": "Ben je nog steeds voetbal aan het kijken?",
+        "english": "You are surprised your friend is still watching football."
+      }
+    }
+  ],
+  "dutchnova1-0023": [
+    {
+      "id": "dutchnova1-0023~v01",
+      "parentId": "dutchnova1-0023",
+      "text": "Ik moet nog even mijn moeder terugbellen.",
+      "english": "I still need to quickly call my mother back.",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: I still need to quickly call my mother back.",
+      "explanation": "Moet governs the whole infinitive terugbellen; nog even marks a small outstanding action and specifies the person. Compare the base expression: Ik moet nog even bellen. The new sentence changes the situation while keeping the targeted nog even pattern.",
+      "focus": "DutchNova_1 · nog even",
+      "example": {
+        "text": "Ik moet nog even bellen.",
+        "english": "Say you still need to make a quick call."
+      }
+    }
+  ],
+  "dutchnova1-0024": [
+    {
+      "id": "dutchnova1-0024~v01",
+      "parentId": "dutchnova1-0024",
+      "text": "Je hebt het alweer vergeten!",
+      "english": "You've forgotten it again already!",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: You've forgotten it again already!",
+      "explanation": "Alweer expresses annoyed repetition; the participle vergeten is part of the perfect tense with hebt. Compare the base expression: Je vraagt het alweer! The new sentence changes the situation while keeping the targeted alweer pattern.",
+      "focus": "DutchNova_1 · alweer",
+      "example": {
+        "text": "Je vraagt het alweer!",
+        "english": "Your friend has just asked the same question again."
+      }
+    }
+  ],
+  "dutchnova1-0027": [
+    {
+      "id": "dutchnova1-0027~v01",
+      "parentId": "dutchnova1-0027",
+      "text": "We gaan toch niet naar de markt.",
+      "english": "We're not going to the market after all.",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: We're not going to the market after all.",
+      "explanation": "Toch niet signals changed plans; gaan + destination states the cancelled movement rather than an invitation. Compare the base expression: Ik ga toch niet mee. The new sentence changes the situation while keeping the targeted toch after all pattern.",
+      "focus": "DutchNova_1 · toch after all",
+      "example": {
+        "text": "Ik ga toch niet mee.",
+        "english": "You changed your mind: you are not coming after all."
+      }
+    }
+  ],
+  "dutchnova1-0030": [
+    {
+      "id": "dutchnova1-0030~v01",
+      "parentId": "dutchnova1-0030",
+      "text": "Sorry, ik heb me in het adres vergist.",
+      "english": "Sorry, I made a mistake about the address.",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: Sorry, I made a mistake about the address.",
+      "explanation": "Zich vergissen needs me with ik. In het adres makes the mistaken detail explicit. Compare the base expression: Ik heb me vergist. The new sentence changes the situation while keeping the targeted zich vergissen pattern.",
+      "focus": "DutchNova_1 · zich vergissen",
+      "example": {
+        "text": "Ik heb me vergist.",
+        "english": "Admit you made a mistake."
+      }
+    }
+  ],
+  "dutchnova1-0031": [
+    {
+      "id": "dutchnova1-0031~v01",
+      "parentId": "dutchnova1-0031",
+      "text": "Herinner je je dat gesprek nog?",
+      "english": "Do you still remember that conversation?",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: Do you still remember that conversation?",
+      "explanation": "The first je is subject and the second reflexive; nog asks whether the memory remains. Dat modifies the het-word gesprek. Compare the base expression: Herinner je je onze voetbalwedstrijd nog? The new sentence changes the situation while keeping the targeted zich herinneren pattern.",
+      "focus": "DutchNova_1 · zich herinneren",
+      "example": {
+        "text": "Herinner je je onze voetbalwedstrijd nog?",
+        "english": "Ask a friend whether they still remember your old football game."
+      }
+    }
+  ],
+  "dutchnova1-0032": [
+    {
+      "id": "dutchnova1-0032~v01",
+      "parentId": "dutchnova1-0032",
+      "text": "We zouden volgende week eens kunnen afspreken.",
+      "english": "We could arrange to meet sometime next week.",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: We could arrange to meet sometime next week.",
+      "explanation": "Zouden + kunnen + afspreken softens a suggested meeting. Volgende week gives a different time. Compare the base expression: We zouden binnenkort eens moeten afspreken. The new sentence changes the situation while keeping the targeted zou pattern.",
+      "focus": "DutchNova_1 · zou",
+      "example": {
+        "text": "We zouden binnenkort eens moeten afspreken.",
+        "english": "Suggest meeting up sometime soon."
+      }
+    }
+  ],
+  "dutchnova1-0034": [
+    {
+      "id": "dutchnova1-0034~v01",
+      "parentId": "dutchnova1-0034",
+      "text": "We hadden moeten afspreken om samen te koken.",
+      "english": "We should have arranged to meet to cook together.",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: We should have arranged to meet to cook together.",
+      "explanation": "Hadden moeten + afspreken expresses hindsight; om ... te koken states the missed meeting's purpose. Compare the base expression: We hadden moeten afspreken om samen voetbal te kijken. The new sentence changes the situation while keeping the targeted om te pattern.",
+      "focus": "DutchNova_1 · om te",
+      "example": {
+        "text": "We hadden moeten afspreken om samen voetbal te kijken.",
+        "english": "Say you should have met up to watch football."
+      }
+    }
+  ],
+  "dutchnova1-0035": [
+    {
+      "id": "dutchnova1-0035~v01",
+      "parentId": "dutchnova1-0035",
+      "text": "Kijk je vanavond nog iets op Netflix?",
+      "english": "Are you watching anything on Netflix tonight?",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: Are you watching anything on Netflix tonight?",
+      "explanation": "Nog asks whether an additional or outstanding viewing is planned; iets is the unspecified object, and op Netflix marks the platform. Compare the base expression: Kijk je iets op tv? The new sentence changes the situation while keeping the targeted iets pattern.",
+      "focus": "DutchNova_1 · iets",
+      "example": {
+        "text": "Kijk je iets op tv?",
+        "english": "Ask whether someone is watching anything on TV."
+      }
+    }
+  ],
+  "dutchnova1-0036": [
+    {
+      "id": "dutchnova1-0036~v01",
+      "parentId": "dutchnova1-0036",
+      "text": "Wat ben je op dit moment aan het lezen?",
+      "english": "What are you reading at the moment?",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: What are you reading at the moment?",
+      "explanation": "Aan het lezen uses the same progressive structure, now with the reading activity and a more explicit time phrase. Compare the base expression: Wat ben je nu aan het doen? The new sentence changes the situation while keeping the targeted aan het pattern.",
+      "focus": "DutchNova_1 · aan het",
+      "example": {
+        "text": "Wat ben je nu aan het doen?",
+        "english": "Ask what someone is doing right now."
+      }
+    }
+  ],
+  "dutchnova1-0037": [
+    {
+      "id": "dutchnova1-0037~v01",
+      "parentId": "dutchnova1-0037",
+      "text": "Ik heb beide series op Netflix gezien.",
+      "english": "I've watched both series on Netflix.",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: I've watched both series on Netflix.",
+      "explanation": "Beide modifies plural series before its noun, contrasting with allebei after the two titles in the parent. Compare the base expression: Ik heb Money Heist en Elite allebei gezien. The new sentence changes the situation while keeping the targeted allebei pattern.",
+      "focus": "DutchNova_1 · allebei",
+      "example": {
+        "text": "Ik heb Money Heist en Elite allebei gezien.",
+        "english": "Say you have seen both Money Heist and Elite."
+      }
+    }
+  ],
+  "dutchnova1-0040": [
+    {
+      "id": "dutchnova1-0040~v01",
+      "parentId": "dutchnova1-0040",
+      "text": "Zou je eerder gaan slapen als je morgen moest werken?",
+      "english": "Would you go to sleep earlier if you had to work tomorrow?",
+      "scenario": "In a friends situation, communicate this new situation in Dutch: Would you go to sleep earlier if you had to work tomorrow?",
+      "explanation": "Zou ... gaan slapen asks hypothetically; als introduces a condition ending with moest werken. Compare the base expression: Hoe laat zou je gaan slapen als je morgen vrij was? The new sentence changes the situation while keeping the targeted conditional zou pattern.",
+      "focus": "DutchNova_1 · conditional zou",
+      "example": {
+        "text": "Hoe laat zou je gaan slapen als je morgen vrij was?",
+        "english": "Ask what time someone would go to bed if tomorrow were free."
+      }
+    }
+  ],
+  "dutchnova1-0042": [
+    {
+      "id": "dutchnova1-0042~v01",
+      "parentId": "dutchnova1-0042",
+      "text": "Ik krijg het warm zodra de zon schijnt.",
+      "english": "I start feeling warm as soon as the sun shines.",
+      "scenario": "In a home situation, communicate this new situation in Dutch: I start feeling warm as soon as the sun shines.",
+      "explanation": "Krijg het warm marks the onset of a sensation, and zodra introduces a time clause with schijnt in final position. Compare the base expression: Ik krijg het koud. The new sentence changes the situation while keeping the targeted krijg het koud pattern.",
+      "focus": "DutchNova_1 · krijg het koud",
+      "example": {
+        "text": "Ik krijg het koud.",
+        "english": "Tell someone you're starting to feel cold."
+      }
+    }
+  ],
+  "dutchnova1-0043": [
+    {
+      "id": "dutchnova1-0043~v01",
+      "parentId": "dutchnova1-0043",
+      "text": "Het wordt hier langzaam warmer.",
+      "english": "It's slowly getting warmer here.",
+      "scenario": "In a home situation, communicate this new situation in Dutch: It's slowly getting warmer here.",
+      "explanation": "Wordt expresses a change rather than a static condition; warmer is the comparative of warm. Compare the base expression: Het is lekker warm hier. The new sentence changes the situation while keeping the targeted lekker warm pattern.",
+      "focus": "DutchNova_1 · lekker warm",
+      "example": {
+        "text": "Het is lekker warm hier.",
+        "english": "Say the room feels pleasantly warm."
+      }
+    }
+  ],
+  "dutchnova1-0044": [
+    {
+      "id": "dutchnova1-0044~v01",
+      "parentId": "dutchnova1-0044",
+      "text": "Die koffie is nog lekker warm.",
+      "english": "That coffee is still pleasantly warm.",
+      "scenario": "In a home situation, communicate this new situation in Dutch: That coffee is still pleasantly warm.",
+      "explanation": "Die can refer to de koffie; nog means the earlier temperature continues, not that the surrounding room is warm. Compare the base expression: De koffie is lekker warm. The new sentence changes the situation while keeping the targeted de/het pronoun pattern.",
+      "focus": "DutchNova_1 · de/het pronoun",
+      "example": {
+        "text": "De koffie is lekker warm.",
+        "english": "You are holding a warm cup of coffee; tell a friend it is pleasantly warm."
+      }
+    }
+  ],
+  "dutchnova1-0045": [
+    {
+      "id": "dutchnova1-0045~v01",
+      "parentId": "dutchnova1-0045",
+      "text": "Raak dat snoer niet aan!",
+      "english": "Don't touch that cable!",
+      "scenario": "In a home situation, communicate this new situation in Dutch: Don't touch that cable!",
+      "explanation": "Raak ... aan splits the imperative of aanraken, and dat goes with the singular het-word snoer. Compare the base expression: Raak de hete pan niet aan. The new sentence changes the situation while keeping the targeted aanraken pattern.",
+      "focus": "DutchNova_1 · aanraken",
+      "example": {
+        "text": "Raak de hete pan niet aan.",
+        "english": "Tell a child not to touch the hot pan."
+      }
+    }
+  ],
+  "dutchnova1-0047": [
+    {
+      "id": "dutchnova1-0047~v01",
+      "parentId": "dutchnova1-0047",
+      "text": "Ik ruik verse koffie in de keuken.",
+      "english": "I can smell fresh coffee in the kitchen.",
+      "scenario": "In a home situation, communicate this new situation in Dutch: I can smell fresh coffee in the kitchen.",
+      "explanation": "Ruik is present tense of ruiken; verse modifies de koffie with -e, and in de keuken gives the location. Compare the base expression: Ik ruik rook in de keuken. The new sentence changes the situation while keeping the targeted ruiken pattern.",
+      "focus": "DutchNova_1 · ruiken",
+      "example": {
+        "text": "Ik ruik rook in de keuken.",
+        "english": "Say you smell smoke in the kitchen."
+      }
+    }
+  ],
+  "dutchnova1-0048": [
+    {
+      "id": "dutchnova1-0048~v01",
+      "parentId": "dutchnova1-0048",
+      "text": "Ik rook vorige week gas in de kelder.",
+      "english": "I smelled gas in the basement last week.",
+      "scenario": "In a home situation, communicate this new situation in Dutch: I smelled gas in the basement last week.",
+      "explanation": "Rook is past tense of ruiken, not a reference to tobacco here; vorige week establishes a clear past setting. Compare the base expression: Ik rook gisteren iets vreemds. The new sentence changes the situation while keeping the targeted rook past pattern.",
+      "focus": "DutchNova_1 · rook past",
+      "example": {
+        "text": "Ik rook gisteren iets vreemds.",
+        "english": "Say you smelled something strange yesterday."
+      }
+    }
+  ],
+  "dutchnova1-0049": [
+    {
+      "id": "dutchnova1-0049~v01",
+      "parentId": "dutchnova1-0049",
+      "text": "Na een lange dag word ik moe.",
+      "english": "After a long day, I start feeling tired.",
+      "scenario": "In a home situation, communicate this new situation in Dutch: After a long day, I start feeling tired.",
+      "explanation": "The fronted time phrase causes word-second inversion, word ik; word (without -t) remains the first-person form. Compare the base expression: Ik word moe. The new sentence changes the situation while keeping the targeted worden pattern.",
+      "focus": "DutchNova_1 · worden",
+      "example": {
+        "text": "Ik word moe.",
+        "english": "Say you are becoming tired."
+      }
+    }
+  ],
+  "dutchnova1-0050": [
+    {
+      "id": "dutchnova1-0050~v01",
+      "parentId": "dutchnova1-0050",
+      "text": "Ik ga op de bank zitten.",
+      "english": "I'm going to sit down on the sofa.",
+      "scenario": "In a home situation, communicate this new situation in Dutch: I'm going to sit down on the sofa.",
+      "explanation": "Gaan zitten describes movement into a seated position, contrasting with already being seated: ik zit. Compare the base expression: Ik zit op een stoel. The new sentence changes the situation while keeping the targeted zitten pattern.",
+      "focus": "DutchNova_1 · zitten",
+      "example": {
+        "text": "Ik zit op een stoel.",
+        "english": "Tell someone you are sitting on a chair."
+      }
+    }
+  ],
+  "dutchnova1-0051": [
+    {
+      "id": "dutchnova1-0051~v01",
+      "parentId": "dutchnova1-0051",
+      "text": "Ik blijf nog even bij mijn vrienden.",
+      "english": "I'll stay with my friends a little longer.",
+      "scenario": "In a home situation, communicate this new situation in Dutch: I'll stay with my friends a little longer.",
+      "explanation": "Nog even extends an existing visit; bij shows being with people rather than going toward them. Compare the base expression: Ik blijf nog even hier. The new sentence changes the situation while keeping the targeted blijven pattern.",
+      "focus": "DutchNova_1 · blijven",
+      "example": {
+        "text": "Ik blijf nog even hier.",
+        "english": "Say you are staying here for a little longer."
+      }
+    }
+  ],
+  "dutchnova1-0052": [
+    {
+      "id": "dutchnova1-0052~v01",
+      "parentId": "dutchnova1-0052",
+      "text": "Ik werk in IT en ik leer Nederlands.",
+      "english": "I work in IT and I'm learning Dutch.",
+      "scenario": "At work, communicate this new situation in Dutch: I work in IT and I'm learning Dutch.",
+      "explanation": "Two independent clauses connected by en each have a finite verb after the subject; the second describes language learning. Compare the base expression: Ik ben system engineer en ik zoek momenteel een job. The new sentence changes the situation while keeping the targeted job pattern.",
+      "focus": "DutchNova_1 · job",
+      "example": {
+        "text": "Ik ben system engineer en ik zoek momenteel een job.",
+        "english": "Say you are a system engineer and currently looking for a job."
+      }
+    }
+  ],
+  "dutchnova1-0053": [
+    {
+      "id": "dutchnova1-0053~v01",
+      "parentId": "dutchnova1-0053",
+      "text": "Terwijl ik thuis werk, oefen ik Nederlandse zinnen.",
+      "english": "While I work from home, I practise Dutch sentences.",
+      "scenario": "At work, communicate this new situation in Dutch: While I work from home, I practise Dutch sentences.",
+      "explanation": "Terwijl's dependent verb werk comes at clause end, and fronting it requires oefen ik in the main clause. Compare the base expression: Terwijl ik Nederlands leer, blijf ik mijn IT-skills ontwikkelen. The new sentence changes the situation while keeping the targeted terwijl pattern.",
+      "focus": "DutchNova_1 · terwijl",
+      "example": {
+        "text": "Terwijl ik Nederlands leer, blijf ik mijn IT-skills ontwikkelen.",
+        "english": "While learning Dutch, you are continuing to develop IT skills."
+      }
+    }
+  ],
+  "dutchnova1-0054": [
+    {
+      "id": "dutchnova1-0054~v01",
+      "parentId": "dutchnova1-0054",
+      "text": "Omdat de printer vastloopt, bel ik de helpdesk.",
+      "english": "Because the printer jams, I call the helpdesk.",
+      "scenario": "At work, communicate this new situation in Dutch: Because the printer jams, I call the helpdesk.",
+      "explanation": "The subordinate clause with omdat ends in vastloopt; the main verb bel is inverted before ik after the fronted cause. Compare the base expression: Omdat de server niet reageert, controleer ik de logs. The new sentence changes the situation while keeping the targeted omdat pattern.",
+      "focus": "DutchNova_1 · omdat",
+      "example": {
+        "text": "Omdat de server niet reageert, controleer ik de logs.",
+        "english": "Explain that you check the logs because the server is unresponsive."
+      }
+    }
+  ],
+  "dutchnova1-0057": [
+    {
+      "id": "dutchnova1-0057~v01",
+      "parentId": "dutchnova1-0057",
+      "text": "Ik vraag even wanneer het gesprek begint.",
+      "english": "I'll quickly ask when the meeting starts.",
+      "scenario": "At work, communicate this new situation in Dutch: I'll quickly ask when the meeting starts.",
+      "explanation": "Wanneer introduces an indirect question, so the finite verb begint follows het gesprek rather than preceding it. Compare the base expression: Ik kijk even wanneer de vergadering begint. The new sentence changes the situation while keeping the targeted wanneer pattern.",
+      "focus": "DutchNova_1 · wanneer",
+      "example": {
+        "text": "Ik kijk even wanneer de vergadering begint.",
+        "english": "Say you're checking when the meeting starts."
+      }
+    }
+  ],
+  "dutchnova1-0058": [
+    {
+      "id": "dutchnova1-0058~v01",
+      "parentId": "dutchnova1-0058",
+      "text": "Ik moet de configuratie nog afmaken.",
+      "english": "I still have to finish the configuration.",
+      "scenario": "At work, communicate this new situation in Dutch: I still have to finish the configuration.",
+      "explanation": "Moet takes infinitive afmaken at the end and nog marks the unfinished item; the object is changed to an IT configuration. Compare the base expression: Ik moet het verslag nog afmaken. The new sentence changes the situation while keeping the targeted nog pattern.",
+      "focus": "DutchNova_1 · nog",
+      "example": {
+        "text": "Ik moet het verslag nog afmaken.",
+        "english": "Tell your colleague you still have to finish the report."
+      }
+    }
+  ],
+  "dutchnova1-0059": [
+    {
+      "id": "dutchnova1-0059~v01",
+      "parentId": "dutchnova1-0059",
+      "text": "Morgen ga ik meteen naar kantoor.",
+      "english": "Tomorrow I'll go straight to the office.",
+      "scenario": "At work, communicate this new situation in Dutch: Tomorrow I'll go straight to the office.",
+      "explanation": "Fronted morgen triggers ga ik inversion and meteen means immediately rather than usually. Compare the base expression: Na het werk ga ik meteen naar huis. The new sentence changes the situation while keeping the targeted inversion pattern.",
+      "focus": "DutchNova_1 · inversion",
+      "example": {
+        "text": "Na het werk ga ik meteen naar huis.",
+        "english": "Say you are going home immediately after work."
+      }
+    }
+  ],
+  "dutchnova1-0060": [
+    {
+      "id": "dutchnova1-0060~v01",
+      "parentId": "dutchnova1-0060",
+      "text": "Kunnen we volgende week een afspraak maken?",
+      "english": "Could we make an appointment next week?",
+      "scenario": "At work, communicate this new situation in Dutch: Could we make an appointment next week?",
+      "explanation": "Een afspraak maken names the appointment as an object; it contrasts with afspreken, agreeing to meet. Compare the base expression: Kunnen we morgen even afspreken? The new sentence changes the situation while keeping the targeted afspreken pattern.",
+      "focus": "DutchNova_1 · afspreken",
+      "example": {
+        "text": "Kunnen we morgen even afspreken?",
+        "english": "Ask to arrange a meeting with your colleague tomorrow."
+      }
+    }
+  ],
+  "dutchnova1-0061": [
+    {
+      "id": "dutchnova1-0061~v01",
+      "parentId": "dutchnova1-0061",
+      "text": "Ik bereid me voor op het technisch interview.",
+      "english": "I'm preparing myself for the technical interview.",
+      "scenario": "At work, communicate this new situation in Dutch: I'm preparing myself for the technical interview.",
+      "explanation": "Me is reflexive with ik, the separable verb is bereid ... voor, and op indicates the thing prepared for. Compare the base expression: Ik bereid me voor op mijn sollicitatiegesprek. The new sentence changes the situation while keeping the targeted voorbereiden pattern.",
+      "focus": "DutchNova_1 · voorbereiden",
+      "example": {
+        "text": "Ik bereid me voor op mijn sollicitatiegesprek.",
+        "english": "Say you're preparing for a job interview."
+      }
+    }
+  ],
+  "dutchnova1-0062": [
+    {
+      "id": "dutchnova1-0062~v01",
+      "parentId": "dutchnova1-0062",
+      "text": "Ik houd de documentatie elke week bij.",
+      "english": "I keep the documentation updated every week.",
+      "scenario": "At work, communicate this new situation in Dutch: I keep the documentation updated every week.",
+      "explanation": "The separable verb bijhouden becomes houd ... bij; elke week marks a recurring habit. Compare the base expression: Ik houd mijn technische kennis bij. The new sentence changes the situation while keeping the targeted bijhouden pattern.",
+      "focus": "DutchNova_1 · bijhouden",
+      "example": {
+        "text": "Ik houd mijn technische kennis bij.",
+        "english": "Explain that you keep your technical knowledge up to date."
+      }
+    }
+  ],
+  "dutchnova1-0063": [
+    {
+      "id": "dutchnova1-0063~v01",
+      "parentId": "dutchnova1-0063",
+      "text": "Heb je hulp nodig bij de installatie?",
+      "english": "Do you need help with the installation?",
+      "scenario": "At work, communicate this new situation in Dutch: Do you need help with the installation?",
+      "explanation": "Nodig hebben governs the noun hulp; bij marks the activity in which help is needed, and inversion gives heb je. Compare the base expression: Ik heb hulp nodig met het netwerk. The new sentence changes the situation while keeping the targeted nodig pattern.",
+      "focus": "DutchNova_1 · nodig",
+      "example": {
+        "text": "Ik heb hulp nodig met het netwerk.",
+        "english": "Say you need help with the network."
+      }
+    }
+  ],
+  "dutchnova1-0064": [
+    {
+      "id": "dutchnova1-0064~v01",
+      "parentId": "dutchnova1-0064",
+      "text": "Je hoeft de router vandaag niet te herstarten.",
+      "english": "You don't need to restart the router today.",
+      "scenario": "At work, communicate this new situation in Dutch: You don't need to restart the router today.",
+      "explanation": "Hoeven requires te before herstarten and the negation niet says there is no necessity, not a prohibition. Compare the base expression: Je hoeft de server niet meer opnieuw op te starten. The new sentence changes the situation while keeping the targeted hoeven pattern.",
+      "focus": "DutchNova_1 · hoeven",
+      "example": {
+        "text": "Je hoeft de server niet meer opnieuw op te starten.",
+        "english": "Tell a colleague they no longer need to restart the server."
+      }
+    }
+  ],
+  "dutchnova1-0065": [
+    {
+      "id": "dutchnova1-0065~v01",
+      "parentId": "dutchnova1-0065",
+      "text": "Ik heb de back-up al nagekeken.",
+      "english": "I've already checked the backup.",
+      "scenario": "At work, communicate this new situation in Dutch: I've already checked the backup.",
+      "explanation": "Nagekeken is the past participle of nakijken, with prefix and participle joined; al means completed by now. Compare the base expression: Ik heb de logs al gecontroleerd. The new sentence changes the situation while keeping the targeted perfect pattern.",
+      "focus": "DutchNova_1 · perfect",
+      "example": {
+        "text": "Ik heb de logs al gecontroleerd.",
+        "english": "Tell a colleague you have already checked the logs."
+      }
+    }
+  ],
+  "dutchnova1-0066": [
+    {
+      "id": "dutchnova1-0066~v01",
+      "parentId": "dutchnova1-0066",
+      "text": "Tegen wanneer moet ik dit formulier indienen?",
+      "english": "By when must I submit this form?",
+      "scenario": "At work, communicate this new situation in Dutch: By when must I submit this form?",
+      "explanation": "Tegen wanneer asks a deadline, and dit modifies the singular het-word formulier; indienen follows the modal moet. Compare the base expression: Wanneer moet ik deze opdracht indienen? The new sentence changes the situation while keeping the targeted vragen pattern.",
+      "focus": "DutchNova_1 · vragen",
+      "example": {
+        "text": "Wanneer moet ik deze opdracht indienen?",
+        "english": "Ask when you have to submit the assignment."
+      }
+    }
+  ],
+  "dutchnova1-0067": [
+    {
+      "id": "dutchnova1-0067~v01",
+      "parentId": "dutchnova1-0067",
+      "text": "Je hebt de nieuwe link toch gezien?",
+      "english": "You did see the new link, right?",
+      "scenario": "At work, communicate this new situation in Dutch: You did see the new link, right?",
+      "explanation": "Toch asks for confirmation of an expected event. Gezien is the participle of zien; nieuwe takes -e with de link. Compare the base expression: Je hebt mijn mail toch gekregen? The new sentence changes the situation while keeping the targeted toch pattern.",
+      "focus": "DutchNova_1 · toch",
+      "example": {
+        "text": "Je hebt mijn mail toch gekregen?",
+        "english": "You expect the colleague to have received your email; check politely."
+      }
+    }
   ]
 }

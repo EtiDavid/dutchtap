@@ -16,9 +16,13 @@ export function DutchNovaGrammarNotes({ cardId, defaultOpen = false }: {cardId:s
 
   const deep = (deepNotes as Record<string, {meaning:string;parts:string[][];wordOrder:string;englishTrap:string;examples:string[][]}>)[cardId];
   const authored = variationsFor(cardId);
-  const parallel = nova.cards
-    .filter((other) => other.id !== cardId && other.focus === card.focus)
-    .slice(0, 3)
+  const samePattern = nova.cards.filter((other) => other.id !== cardId && other.focus === card.focus);
+  const related = samePattern.length >= 2 ? samePattern : [
+    ...samePattern,
+    ...nova.cards.filter((other) => other.id !== cardId && other.setting === card.setting && other.focus !== card.focus),
+  ];
+  const parallel = related
+    .slice(0, 2)
     .map((other) => ({ id: other.id, text: other.text, scenario: other.scenarioEn, explanation: other.explanation }));
   const examples = authored.length
     ? authored.map((v) => ({ id: v.id, text: v.text, scenario: v.scenario, explanation: v.explanation }))
@@ -63,7 +67,7 @@ export function DutchNovaGrammarNotes({ cardId, defaultOpen = false }: {cardId:s
             <p className="mt-2">{example.explanation}</p>
             {authored.length > 0
               ? <p className="mt-2 text-xs text-muted">An independently tracked variation. Enable variations in the session to practise this sentence.</p>
-              : <p className="mt-2 text-xs text-muted">Related reading example. Not yet an independently tracked variation.</p>}
+              : <p className="mt-2 text-xs text-muted">Related reading example; it may practise a different grammar pattern. It is not yet a tracked variation.</p>}
             <button type="button" disabled={!recordingFor(example.text, "nl")} onClick={() => void listen({text:example.text, lang:"nl"})} className={`${btn} mt-3 ${recordingFor(example.text, "nl") ? "" : "opacity-50"}`} title={recordingFor(example.text, "nl") ? "Play Dutch recording" : "Audio not recorded yet"} aria-label={`Listen to example: ${example.text}`}>🔊 {recordingFor(example.text, "nl") ? "Listen" : "Audio pending"}</button>
           </li>)}
         </ul> : <p className="mt-2 text-muted">Additional examples are still being authored for this pattern.</p>}

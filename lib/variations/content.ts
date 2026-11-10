@@ -6,7 +6,7 @@ import dutchNovaFamilies from "@/data/dutchnova-1-variations.json";
 import workplaceBank from "@/data/workplace-practice-bank.json";
 import references from "@/data/dutch-variations.json";
 import practiceBank from "@/data/dutch-practice-bank.json";
-import { CARDS } from "@/lib/flashcards/engine";
+import { SESSION_CARDS as CARDS } from "@/lib/flashcards/engine";
 import type { LCard } from "@/lib/content/cards";
 
 export type Variation = {

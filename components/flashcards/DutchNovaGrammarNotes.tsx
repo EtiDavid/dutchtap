@@ -28,7 +28,7 @@ export function DutchNovaGrammarNotes({ cardId, defaultOpen = false }: {cardId:s
     <summary className="cursor-pointer text-sm font-bold">Full explanation · grammar, mistakes and examples</summary>
     <div className="mt-4 space-y-4 text-sm leading-relaxed">
       <section>
-        <h3 className="font-bold text-base">1. What you're trying to say</h3>
+        <h3 className="font-bold text-base">1. What you&apos;re trying to say</h3>
         <p className="mt-1">{deep?.meaning ?? card.teaching.communicationGoal}</p>
         <p lang="nl-BE" className="mt-2 font-semibold text-base">{card.text}</p>
       </section>

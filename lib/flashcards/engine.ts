@@ -60,7 +60,10 @@ export const DUTCHNOVA_CARDS: Card[] = dutchNova.cards.map((entry) => ({
   audioStatus: "not-generated",
   difficulty: "intermediate",
 })) as Card[];
-export const CARDS: Card[] = [...CORE_CARDS, ...GRAMMAR_CARDS, ...DUTCHNOVA_CARDS];
+/** Preserve the original 2,890-card inventory for legacy exercises and audited Grammar Patterns. */
+export const CARDS: Card[] = [...CORE_CARDS, ...GRAMMAR_CARDS];
+/** Extended deck only for the unified session system and new collections. */
+export const SESSION_CARDS: Card[] = [...CARDS, ...DUTCHNOVA_CARDS];
 export const CATEGORIES = { shopping: 'Shopping', school: 'School', transport: 'Train & transport', home: 'Home', conversation: 'Conversation', administration: 'Administration', weather: 'Weather', food: 'Food & cafés', work: 'Work', health: 'Health', leisure: 'Leisure' };
 
 // How well the learner knows a card. New cards start as "difficult".

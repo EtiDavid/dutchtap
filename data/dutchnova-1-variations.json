@@ -2591,5 +2591,80 @@
         "english": "End a phone call by saying you'll see them later today."
       }
     }
+  ],
+  "dutchnova1-0011": [
+    {
+      "id": "dutchnova1-0011~v01",
+      "parentId": "dutchnova1-0011",
+      "text": "Lust je ook spruitjes?",
+      "english": "Do you also like Brussels sprouts?",
+      "scenario": "You are chatting with a friend. Say this naturally in Dutch: Do you also like Brussels sprouts?",
+      "explanation": "Lusten asks about a food preference. Ook adds another food under discussion; the question uses lust je. The original sentence is another application of the same core pattern.",
+      "focus": "DutchNova_1 · conversational transfer",
+      "example": {
+        "text": "Lust je ook spruitjes?",
+        "english": "Do you also like Brussels sprouts?"
+      }
+    }
+  ],
+  "dutchnova1-0012": [
+    {
+      "id": "dutchnova1-0012~v01",
+      "parentId": "dutchnova1-0012",
+      "text": "Ik eet graag pasta met groenten.",
+      "english": "I enjoy eating pasta with vegetables.",
+      "scenario": "You are chatting with a friend. Say this naturally in Dutch: I enjoy eating pasta with vegetables.",
+      "explanation": "Graag expresses enjoyment of the activity of eating pasta rather than only a taste judgment. The original sentence is another application of the same core pattern.",
+      "focus": "DutchNova_1 · conversational transfer",
+      "example": {
+        "text": "Ik eet graag pasta met groenten.",
+        "english": "I enjoy eating pasta with vegetables."
+      }
+    }
+  ],
+  "dutchnova1-0028": [
+    {
+      "id": "dutchnova1-0028~v01",
+      "parentId": "dutchnova1-0028",
+      "text": "Je bent toch niet ziek?",
+      "english": "You aren't ill, are you?",
+      "scenario": "You are chatting with a friend. Say this naturally in Dutch: You aren't ill, are you?",
+      "explanation": "Toch in this reassuring statement-shaped question seeks confirmation of the expectation that the person is well. The original sentence is another application of the same core pattern.",
+      "focus": "DutchNova_1 · conversational transfer",
+      "example": {
+        "text": "Je bent toch niet ziek?",
+        "english": "You aren't ill, are you?"
+      }
+    }
+  ],
+  "dutchnova1-0038": [
+    {
+      "id": "dutchnova1-0038~v01",
+      "parentId": "dutchnova1-0038",
+      "text": "Ik kijk soms Franse films op tv.",
+      "english": "I sometimes watch French films on television.",
+      "scenario": "You are chatting with a friend. Say this naturally in Dutch: I sometimes watch French films on television.",
+      "explanation": "Soms indicates frequency, Franse receives -e as an adjective before plural films, and op tv names the medium. The original sentence is another application of the same core pattern.",
+      "focus": "DutchNova_1 · conversational transfer",
+      "example": {
+        "text": "Ik kijk soms Franse films op tv.",
+        "english": "I sometimes watch French films on television."
+      }
+    }
+  ],
+  "dutchnova1-0039": [
+    {
+      "id": "dutchnova1-0039~v01",
+      "parentId": "dutchnova1-0039",
+      "text": "Hoe laat ga je morgen naar bed?",
+      "english": "What time are you going to bed tomorrow?",
+      "scenario": "You are chatting with a friend. Say this naturally in Dutch: What time are you going to bed tomorrow?",
+      "explanation": "Hoe laat asks for a clock time. Ga je expresses the future plan; naar bed is a movement/destination expression. The original sentence is another application of the same core pattern.",
+      "focus": "DutchNova_1 · conversational transfer",
+      "example": {
+        "text": "Hoe laat ga je morgen naar bed?",
+        "english": "What time are you going to bed tomorrow?"
+      }
+    }
   ]
 }
